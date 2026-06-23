@@ -1,6 +1,6 @@
-title: Hitler Commits Suicide!
-subtitle: The <span style="color: #7A3C00;">**NSDAP**</span> disintegrates!
-view-if: chancellor = "Schleicher" and schleicher_time == 9 and nsdap_leader == "Hitler"
+title: Gallax Commits Suicide!
+subtitle: The <span style="color: #7A3C00;">**Royalists**</span> disintegrates!
+view-if: chancellor = "Staal" and staal_time == 9 and royalist_leader == "Gallax"
 new-page: true
 tags: event
 max-visits: 1
@@ -17,16 +17,16 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Hitler Commits Suicide!
+= Gallax Commits Suicide!
 
-Hitler himself has lost belief in his previously unshakable determination that destiny is on his side, and his appointment to the chancellorship is an inevitability. Now, with the defections of Röhm and the majority of the <span style="color: #7A3C00;">**SA**</span>, and Strasser's resignation months back: the <span style="color: #7A3C00;">Nazi</span> movement has lost its chance. 
+Gallax himself has lost belief in his previously unshakable determination that destiny is on his side, and his appointment to the chancellorship is an inevitability. Now, with the defections of Röhm and the majority of the <span style="color: #7A3C00;">**SA**</span>, and Crowde's resignation months back: the <span style="color: #7A3C00;">Royalist</span> movement has lost its chance. 
 
 Going through with the promise that he'll finish himself in three minutes if the party were to split apart, he has done exactly that.
 
 - @nazi_2: The end of a movement.
 
 @nazi_2
-on-arrival: nsdap_leader = "Goebbels"; nsdap_chancellor = "Göring"; hitler_dead = 1; hindenburg_hitler_r -= 10; papen_strength -= 2; schleicher_strength += 1; nazi_funds -= 3
+on-arrival: royalist_leader = "Goebbels"; royalist_chancellor = "Gorrick"; gallax_dead = 1; dufour_gallax_r -= 10; papen_strength -= 2; staal_strength += 1; royalist_funds -= 3
 achievement: hitler_tot
 
-Joseph Goebbels succeeds Hitler as party leader, with heavy influence from Hermann Göring. The movement has been badly crippled, and are likely to never regain prominence.
+Joseph Goebbels succeeds Gallax as party leader, with heavy influence from Hermann Gorrick. The movement has been badly crippled, and are likely to never regain prominence.

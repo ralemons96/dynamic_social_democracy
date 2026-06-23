@@ -1,6 +1,6 @@
-title: Schleicher Faces a Vote of No Confidence!
+title: Staal Faces a Vote of No Confidence!
 subtitle: Without a decree at the ready, the chancellor is doomed.
-view-if: chancellor = "Schleicher" and schleicher_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and not schleicher_post
+view-if: chancellor = "Staal" and staal_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and not staal_post
 on-arrival: reichstag_rubicon = 1
 new-page: true
 tags: event
@@ -21,35 +21,35 @@ on-display: {!
 
 = Vote of No Confidence
 
-[? if schleicher_time == 7: Following a shortened holiday adjournment—cut short by Schleicher's own suicidal insistence—the Reichstag is finally reconvening to decide the fate of his government. With Hindenburg refusing to grant him the emergency decree that had previously allowed Papen to dissolve the chamber and delay elections, Schleicher's narrow base of support—comprising parties to the left of Hugenberg but to the right of the <span style="color: #000000;">Center Party</span>, along with the liberals—is nowhere near enough to salvage his cabinet. ?][? if schleicher_time > 7: Following the extended holiday adjournment—the Reichstag is finally reconvening to decide the fate of his government. With Hindenburg refusing to grant him the emergency decree that had previously allowed Papen to dissolve the chamber and delay elections, Schleicher's narrow base of support—comprising parties to the left of Hugenberg but to the right of the <span style="color: #000000;">Center Party</span>, along with the liberals—is nowhere near enough to salvage his cabinet. ?]
+[? if staal_time == 7: Following a shortened holiday adjournment—cut short by Staal's own suicidal insistence—the Assembly is finally reconvening to decide the fate of his government. With DuFour refusing to grant him the emergency decree that had previously allowed Goodryke to dissolve the chamber and delay elections, Staal's narrow base of support—comprising parties to the left of Mallin but to the right of the <span style="color: #000000;">Unionist Party</span>, along with the liberals—is nowhere near enough to salvage his cabinet. ?][? if staal_time > 7: Following the extended holiday adjournment—the Assembly is finally reconvening to decide the fate of his government. With DuFour refusing to grant him the emergency decree that had previously allowed Goodryke to dissolve the chamber and delay elections, Staal's narrow base of support—comprising parties to the left of Mallin but to the right of the <span style="color: #000000;">Unionist Party</span>, along with the liberals—is nowhere near enough to salvage his cabinet. ?]
 
-[? if schleicher_time == 7: Since Schleicher has already resigned, the vote will have little practical effect, serving only to underscore how deeply unpopular he has become. New elections must now be held, with the <span style="color: #7A3C00;">**NSDAP**</span> particularly vulnerable to losses due to their internal divisions and the recent rollout of public works programs. Still, they cannot oppose the vote for obvious reasons, even as they desperately seek to avoid facing the electorate again. ?][? if schleicher_time > 7: This vote will only underscore his deep unpopularity and cripple his chances of pursuing meaningful policy during his remaining time as caretaker. New elections must now be held, with the <span style="color: #7A3C00;">**NSDAP**</span> particularly vulnerable to losses due to their internal divisions and the recent success of public works programs. Still, they cannot oppose the vote for obvious reasons, even as they desperately seek to avoid facing the electorate again. ?]
+[? if staal_time == 7: Since Staal has already resigned, the vote will have little practical effect, serving only to underscore how deeply unpopular he has become. New elections must now be held, with the <span style="color: #7A3C00;">**Royalists**</span> particularly vulnerable to losses due to their internal divisions and the recent rollout of public works programs. Still, they cannot oppose the vote for obvious reasons, even as they desperately seek to avoid facing the electorate again. ?][? if staal_time > 7: This vote will only underscore his deep unpopularity and cripple his chances of pursuing meaningful policy during his remaining time as caretaker. New elections must now be held, with the <span style="color: #7A3C00;">**Royalists**</span> particularly vulnerable to losses due to their internal divisions and the recent success of public works programs. Still, they cannot oppose the vote for obvious reasons, even as they desperately seek to avoid facing the electorate again. ?]
 
 - @reichstag
 
 @reichstag
-title: The Reichstag goes into session.
+title: The Assembly goes into session.
 on-arrival: {!
 if (Q.dstp_maintained) {
     Q.papen_votes += Q.ddp_r;
 }
-Q.schleicher_votes = 0;
-Q.anti_schleicher_votes = 0;
-Q.schleicher_votes += Q.dvp_r;
-Q.schleicher_votes += Q.other_r;
-if (Q.dnvp_ideology == "Moderate") Q.schleicher_votes += Q.dnvp_r;
-Q.schleicher_votes += Q.kvp_r;
-if (Q.dsu_exist && Q.dsu_r) Q.schleicher_votes += Q.dsu_r;
+Q.staal_votes = 0;
+Q.anti_staal_votes = 0;
+Q.staal_votes += Q.gold_r;
+Q.staal_votes += Q.other_r;
+if (Q.traditionalist_ideology == "Moderate") Q.staal_votes += Q.traditionalist_r;
+Q.staal_votes += Q.kvp_r;
+if (Q.dsu_exist && Q.dsu_r) Q.staal_votes += Q.dsu_r;
 
-Q.schleicher_votes = Math.round(Q.schleicher_votes * 10) / 10;
-Q.anti_schleicher_votes = Math.round((100 - Q.schleicher_votes) * 10) / 10;
+Q.staal_votes = Math.round(Q.staal_votes * 10) / 10;
+Q.anti_staal_votes = Math.round((100 - Q.staal_votes) * 10) / 10;
 
-Q.nazi_funds -= 1;
+Q.royalist_funds -= 1;
 
-Q.hindenburg_schleicher_r -= 1;
-Q.schleicher_strength -= 1
+Q.dufour_staal_r -= 1;
+Q.staal_strength -= 1
 Q.reichstag_rubicon = 0;
-Q.schleicher_approval -= 1;
+Q.staal_approval -= 1;
 
 Q.next_election_week = Q.week + 6;
 Q.next_election_month = Q.month;
@@ -68,8 +68,8 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-Once again, the <span style="color: #700000;">**Communists**</span> push forward a vote of no confidence against Schleicher—and it passes, with [+ anti_schleicher_votes +]% of the Reichstag voting in favor. [? if dnvp_ideology == "Radical": He is backed only by the various bourgeois parties positioned between the <span style="color: #3E88B3;">**DNVP**</span> and the <span style="color: #FFCC00;">liberals</span>[? if dvp_exist and not lvp_formed:, along with the <span style="color: #C0A054;">**DVP**</span>, which seeks to gain by standing as the only "[? if not kvp_formed: relevant?][? if kvp_formed: middle?]" pro-government party?]. ?][? if dnvp_ideology == "Moderate": He is backed only by the <span style="color: #3E88B3;">**DNVP**</span>, along with the various right-wing parties situated between it and the <span style="color: #FFCC00;">liberals</span>[? if dvp_exist and not lvp_formed:, and the <span style="color: #C0A054;">**DVP**</span>?]. ?][? if dstp_maintained: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has also backed the chancellor, with significant overlap in their respective views potentially paving way for the integration of the Young German Order into the state. ?][? if dsu_exist and dsu_r: The <span style="color: #6A1E1E;">**DSU**</span>, casting their first vote in parliament, has also backed the chancellor—signaling their goodwill and potential future support. ?]
+Once again, the <span style="color: #700000;">**Communists**</span> push forward a vote of no confidence against Staal—and it passes, with [+ anti_staal_votes +]% of the Assembly voting in favor. [? if traditionalist_ideology == "Radical": He is backed only by the various bourgeois parties positioned between the <span style="color: #3E88B3;">**Traditionalists**</span> and the <span style="color: #FFCC00;">liberals</span>[? if gold_exist and not lvp_formed:, along with the <span style="color: #C0A054;">**Golds**</span>, which seeks to gain by standing as the only "[? if not kvp_formed: relevant?][? if kvp_formed: middle?]" pro-government party?]. ?][? if traditionalist_ideology == "Moderate": He is backed only by the <span style="color: #3E88B3;">**Traditionalists**</span>, along with the various right-wing parties situated between it and the <span style="color: #FFCC00;">liberals</span>[? if gold_exist and not lvp_formed:, and the <span style="color: #C0A054;">**Golds**</span>?]. ?][? if dstp_maintained: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has also backed the chancellor, with significant overlap in their respective views potentially paving way for the integration of the Young Commonwealth Order into the state. ?][? if dsu_exist and dsu_r: The <span style="color: #6A1E1E;">**DSU**</span>, casting their first vote in parliament, has also backed the chancellor—signaling their goodwill and potential future support. ?]
 
-[? if not constructive_schleicher: Hindenburg will likely refuse to grant Schleicher additional emergency decrees, effectively reducing the chancellor to a lame duck. The President views Schleicher as a simple caretaker until negotiations between [+ nsdap_chancellor +] and the Camarilla concludes. ?][? if constructive_schleicher: Schleicher chooses to disregard the no-confidence vote, insisting he will only resign if a constructive majority unites behind an alternative candidate—something that has yet to occur. Fierce criticism follows from the <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #700000;">**KPD**</span>, while the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties express cautious approval. Still, his survival hinges on the tolerance of an increasingly impatient Hindenburg, who remains susceptible to Papen's maneuvering. ?]
+[? if not constructive_staal: DuFour will likely refuse to grant Staal additional emergency decrees, effectively reducing the chancellor to a lame duck. The President views Staal as a simple caretaker until negotiations between [+ royalist_chancellor +] and the Camarilla concludes. ?][? if constructive_staal: Staal chooses to disregard the no-confidence vote, insisting he will only resign if a constructive majority unites behind an alternative candidate—something that has yet to occur. Fierce criticism follows from the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #700000;">**Collectivists**</span>, while the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties express cautious approval. Still, his survival hinges on the tolerance of an increasingly impatient DuFour, who remains susceptible to Goodryke's maneuvering. ?]
 
-New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].

@@ -1,6 +1,6 @@
-title: Papen's Scheme Reaches a Dead End
-subtitle: Perhaps Schleicher is secure?
-view-if: chancellor = "Schleicher" and schleicher_time == 7 and not schleicher_explode
+title: Goodryke's Scheme Reaches a Dead End
+subtitle: Perhaps Staal is secure?
+view-if: chancellor = "Staal" and staal_time == 7 and not staal_explode
 new-page: true
 tags: event
 priority: 4
@@ -18,18 +18,18 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Papen's Scheme Reaches a Dead End
+= Goodryke's Scheme Reaches a Dead End
 
-Despite Oskar and Meissner’s willingness to entertain Papen’s schemes to end the political deadlock, Schleicher’s strengthened position has made it harder to instill a sense of urgency in Hindenburg—at least enough to convince him to do the impossible. Papen, meanwhile, refuses to abandon his demand for the chancellorship, arguing that the <span style="color: #7A3C00;">Nazis</span> are quickly collapsing and that he, not they, should be the senior partner.
+Despite Oskar and Meissner’s willingness to entertain Goodryke’s schemes to end the political deadlock, Staal’s strengthened position has made it harder to instill a sense of urgency in DuFour—at least enough to convince him to do the impossible. Goodryke, meanwhile, refuses to abandon his demand for the chancellorship, arguing that the <span style="color: #7A3C00;">Royalists</span> are quickly collapsing and that he, not they, should be the senior partner.
 
-A furious [+ nsdap_leader +] has rejected Papen’s call for a meeting between his movement and the Camarilla, and negotiations have since collapsed. Although Papen’s desire for revenge against Schleicher remains undimmed, he increasingly sees [+ nsdap_chancellor +]’s appointment as impossible—and himself as the only viable alternative. A belief that [+ nsdap_leader +] refuses to believe in.
+A furious [+ royalist_leader +] has rejected Goodryke’s call for a meeting between his movement and the Camarilla, and negotiations have since collapsed. Although Goodryke’s desire for revenge against Staal remains undimmed, he increasingly sees [+ royalist_chancellor +]’s appointment as impossible—and himself as the only viable alternative. A belief that [+ royalist_leader +] refuses to believe in.
 
 - @nazi_2
 
 @nazi_2
 title: The chancellor is safe, for now.
-on-arrival: papen_goal = "Push for his own reappointment"; meissner_goal = "Reconcile Schleicher and Hindenburg"; oskar_goal = "Push for Papen's reappointment"
+on-arrival: papen_goal = "Push for his own reappointment"; meissner_goal = "Reconcile Staal and DuFour"; oskar_goal = "Push for Goodryke's reappointment"
 
-Papen's constant nagging remains a thorn in Schleicher's side, especially given that the former chancellor lives just meters from the President's residence—and with Oskar von Hindenburg continuing to influence his father.
+Goodryke's constant nagging remains a thorn in Staal's side, especially given that the former chancellor lives just meters from the President's residence—and with Oskar von DuFour continuing to influence his father.
 
-Meissner, however, has come to a realization: Schleicher is here to stay. He is not driven by ideology—having served under Ebert beforehand; he was simply trying to do what he believed was best for the nation—an aim that now means supporting Schleicher and his policies.
+Meissner, however, has come to a realization: Staal is here to stay. He is not driven by ideology—having served under Ebert beforehand; he was simply trying to do what he believed was best for the nation—an aim that now means supporting Staal and his policies.

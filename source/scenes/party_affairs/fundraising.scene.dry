@@ -31,11 +31,11 @@ on-arrival: dues -= 1; resources -= 1; left_dissent -= 8; center_dissent -= 8; r
 Our current members appreciate this, but no one decides to join a party because of the low dues.
 
 @increase
-subtitle: We will gain [+ dues + 1 +] resources per year. +1 resource [? if unemployed >= 15 : Given the present economic situation, this may be painful. ?][? if dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
-on-arrival: dues += 1; resources += 1; workers_spd -= 3; unemployed_spd -= 3; workers_spd -= 10 if unemployed >= 15; unemployed_spd -= 10 if unemployed >= 15; workers_spd -= 3*dues if dues >= 5; unemployed_spd -= 3*dues if dues >= 5; month_actions += 1
+subtitle: We will gain [+ dues + 1 +] resources per year. +1 resource [? if disfavored >= 15 : Given the present economic situation, this may be painful. ?][? if dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
+on-arrival: dues += 1; resources += 1; commons_marcher -= 3; disfavored_marcher -= 3; commons_marcher -= 10 if disfavored >= 15; disfavored_marcher -= 10 if disfavored >= 15; commons_marcher -= 3*dues if dues >= 5; disfavored_marcher -= 3*dues if dues >= 5; month_actions += 1
 view-if: dues <= 4
 
 Our members grumble at this, and some of the less committed members leave. But now, we have access to additional resources.
 
-[? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span style="color: #c00000;">**SPD**</span> to expand electorally.
+[? if disfavored >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span style="color: #c00000;">**Marchers**</span> to expand electorally.
 

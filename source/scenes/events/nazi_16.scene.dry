@@ -1,6 +1,6 @@
 title: The Decision 2010
-subtitle: The fate of Germany rests in Hindenburg.
-view-if: chancellor = "Schleicher" and schleicher_time == 7 and schleicher_explode and not schleicher_coup
+subtitle: The fate of the Commonwealth rests in DuFour.
+view-if: chancellor = "Staal" and staal_time == 7 and staal_explode and not staal_coup
 new-page: true
 tags: event
 priority: -5
@@ -17,50 +17,50 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
-on-arrival: nazi_16_triggered = 1
+on-arrival: royalist_16_triggered = 1
 
 = Negotiations, Pt. 3
 
-The details of a cabinet headed by [+ nsdap_chancellor +] have begun to take final shape, and Hindenburg took a major step in that direction by summoning General Werner von Blomberg to Berlin to be available to succeed Schleicher as Defense Minister. Hindenburg believed that he had selected an apolitical, professional officer, but he had instead chosen a man highly susceptible to the allures of <span style="color: #7A3C00;">Nazism</span>.
+The details of a cabinet headed by [+ royalist_chancellor +] have begun to take final shape, and DuFour took a major step in that direction by summoning General Werner von Blomberg to Axton to be available to succeed Staal as Defense Minister. DuFour believed that he had selected an apolitical, professional officer, but he had instead chosen a man highly susceptible to the allures of <span style="color: #7A3C00;">Nazism</span>.
 
-Meanwhile, [+ nsdap_chancellor +] gave in to Hindenburg's insistence that Papen become [? if prussia_leader == "Schleicher": both the Minister-President of Prussia and?] the Vice Chancellor, leading to Papen approving Wilhelm Frick's appointment to the national Interior Ministry, and Göring to the Prussian one. [+ nsdap_leader +] then introduced a new demand: the dissolution of the Reichstag so a new election could be held. And as Chancellor, he would also require the passage of an "enabling act", centralizing authority in the cabinet.
+Meanwhile, [+ royalist_chancellor +] gave in to DuFour's insistence that Goodryke become [? if heartland_leader == "Staal": both the Minister-President of Heartland and?] the Vice Chancellor, leading to Goodryke approving Wilhelm Frask's appointment to the national Interior Ministry, and Gorrick to the Heartland one. [+ royalist_leader +] then introduced a new demand: the dissolution of the Assembly so a new election could be held. And as Chancellor, he would also require the passage of an "enabling act", centralizing authority in the cabinet.
 
-Papen raised no objections to this new demand, although Hugenberg may raise his concerns in an upcoming meeting to secure his participation in the cabinet.
+Goodryke raised no objections to this new demand, although Mallin may raise his concerns in an upcoming meeting to secure his participation in the cabinet.
 
 - @nazi_2
 
 @nazi_2
-title: Hugenberg and the <span style="color: #3E88B3;">**Stahlhelm**</span> meet with Papen once again.
-on-arrival: hindenburg_hitler_r += 1
+title: Mallin and the <span style="color: #3E88B3;">**Wardens**</span> meet with Goodryke once again.
+on-arrival: dufour_gallax_r += 1
 
-The prospect of personal command over the country’s agriculture and economy is enticing to Hugenberg, who aims to eliminate all forms of <span style="color: #c00000;">socialism</span>, restructure Germany’s economy into a heavily capitalistic and laissez-faire system, and transfer power to an elite few. The offer proves too great for Hugenberg to maintain his stance. Franz Seldte of the <span style="color: #3E88B3;">**Stahlhelm**</span> is now also confirmed as the next Labor Minister.
+The prospect of personal command over the country’s agriculture and economy is enticing to Mallin, who aims to eliminate all forms of <span style="color: #c00000;">socialism</span>, restructure the Commonwealth’s economy into a heavily capitalistic and laissez-faire system, and transfer power to an elite few. The offer proves too great for Mallin to maintain his stance. Franz Selden of the <span style="color: #3E88B3;">**Wardens**</span> is now also confirmed as the next Labor Minister.
 
-Papen has refrained from mentioning to Hugenberg [+ nsdap_leader +]’s demand for new elections, where the <span style="color: #7A3C00;">**NSDAP**</span> would have a decisive advantage over his own [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?]. However, despite Hugenberg’s willingness to join the cabinet, <span style="color: #3E88B3;">**Stahlhelm**</span> leader Theodor Duesterberg leads a group of prominent conservatives to vehemently oppose that step, and urge that he only support another Papen cabinet instead.
+Goodryke has refrained from mentioning to Mallin [+ royalist_leader +]’s demand for new elections, where the <span style="color: #7A3C00;">**Royalists**</span> would have a decisive advantage over his own [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?]. However, despite Mallin’s willingness to join the cabinet, <span style="color: #3E88B3;">**Wardens**</span> leader Theodor Dusterel leads a group of prominent conservatives to vehemently oppose that step, and urge that he only support another Goodryke cabinet instead.
 
-However, as is all too common, [+ nsdap_leader +] is underestimated once more. Hugenberg responds, "We’ll box Hitler in," and, "In two months we’ll have pushed Hitler so far into a corner that he’ll squeal." When another conservative warned that [+ nsdap_leader +] sought a dictatorship, Papen dismissively replied, "You’re mistaken. We’ve hired him!"
+However, as is all too common, [+ royalist_leader +] is underestimated once more. Mallin responds, "We’ll box Gallax in," and, "In two months we’ll have pushed Gallax so far into a corner that he’ll squeal." When another conservative warned that [+ royalist_leader +] sought a dictatorship, Goodryke dismissively replied, "You’re mistaken. We’ve hired him!"
 
 - @schleicher_cabinet_6
 
 @nazi_3
-on-arrival: hindenburg_hitler_r += 3
+on-arrival: dufour_gallax_r += 3
 
 = Negotiations, Pt. 4
 
-Hindenburg and his son have suspected the worst of Schleicher and didn’t take the trouble to investigate the rumors. Taking advantage of this atmosphere of crisis, Papen finally secured Hindenburg’s agreement that tomorrow morning, he is to swear in a new cabinet headed by [+ nsdap_chancellor +].
+DuFour and his son have suspected the worst of Staal and didn’t take the trouble to investigate the rumors. Taking advantage of this atmosphere of crisis, Goodryke finally secured DuFour’s agreement that tomorrow morning, he is to swear in a new cabinet headed by [+ royalist_chancellor +].
 
-Hindenburg has approved the ministers proposed, but Papen, knowing that Hindenburg will never make [+ nsdap_chancellor +] the chancellor of a presidential cabinet, purposefully avoids disclosing that detail to him—though he knows Hindenburg will realize it soon enough.
+DuFour has approved the ministers proposed, but Goodryke, knowing that DuFour will never make [+ royalist_chancellor +] the chancellor of a presidential cabinet, purposefully avoids disclosing that detail to him—though he knows DuFour will realize it soon enough.
 
-By leaving the Justice Ministry vacant on the list of cabinet members, Papen sought to create the impression that it was being reserved for a <span style="color: #000000;">Center Party</span> member, and that its appointment was pending final negotiations. This simple act of deception has convinced Hindenburg that he is appointing a parliamentary chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credence to the scheme.
+By leaving the Justice Ministry vacant on the list of cabinet members, Goodryke sought to create the impression that it was being reserved for a <span style="color: #000000;">Unionist Party</span> member, and that its appointment was pending final negotiations. This simple act of deception has convinced DuFour that he is appointing a parliamentary chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credence to the scheme.
 
 - @root: We await tomorrow.
 
 @nazi_4
-on-arrival: hindenburg_hitler_r += 1
+on-arrival: dufour_gallax_r += 1
 
 = Negotiations, Pt. 4
 
-That evening, Papen once again asked Hindenburg to appoint [+ nsdap_chancellor +] as Chancellor—preferably before Schleicher faces an embarrassing defeat in the Reichstag. However, Hindenburg feels no urgency to remove Schleicher so soon.
+That evening, Goodryke once again asked DuFour to appoint [+ royalist_chancellor +] as Chancellor—preferably before Staal faces an embarrassing defeat in the Assembly. However, DuFour feels no urgency to remove Staal so soon.
 
-Hindenburg has since approved the proposed ministers, but Papen, fully aware that the President would never accept [+ nsdap_chancellor +] as the head of a presidential cabinet, deliberately withholds that detail—though he knows Hindenburg will realize it soon enough.
+DuFour has since approved the proposed ministers, but Goodryke, fully aware that the President would never accept [+ royalist_chancellor +] as the head of a presidential cabinet, deliberately withholds that detail—though he knows DuFour will realize it soon enough.
 
-By leaving the Justice Ministry vacant on the cabinet list, Papen creates the illusion that the post is being reserved for a <span style="color: #000000;">Center Party</span> member and that final negotiations are still ongoing. This simple act of deception convinces Hindenburg that he is appointing a parliamentary Chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credibility to the ruse.
+By leaving the Justice Ministry vacant on the cabinet list, Goodryke creates the illusion that the post is being reserved for a <span style="color: #000000;">Unionist Party</span> member and that final negotiations are still ongoing. This simple act of deception convinces DuFour that he is appointing a parliamentary Chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credibility to the ruse.

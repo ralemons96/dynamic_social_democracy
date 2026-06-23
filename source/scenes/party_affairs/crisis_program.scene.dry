@@ -1,7 +1,7 @@
 title: The Economic Crisis
 new-page: true
 is-card: true
-view-if: (crisis_urgency >= 2 or year >= 1931 or (month >= 6 and year == 1930)) and crisis_program_timer = 0 and economic_plan = 0 and black_thursday_seen == 1
+view-if: (crisis_urgency >= 2 or year >= 1931 or (month >= 6 and year == 1930)) and crisis_program_timer = 0 and economic_plan = 0 and veran_crash_seen == 1
 frequency: 200
 on-arrival: month_actions += 1; crisis_program_timer = 5
 card-image: img/bankrun.jpg
@@ -9,11 +9,11 @@ tags: party_affairs, govt_affairs
 
 = Addressing the Economic Crisis
 
-Our party is wracked as to how to deal with the economic crisis. From the centrist faction, Hilferding argues that the economic crisis must be allowed to play out, because it is simply a part of the cyclic nature of capitalism.
+Our party is wracked as to how to deal with the economic crisis. From the centrist faction, Bell argues that the economic crisis must be allowed to play out, because it is simply a part of the cyclic nature of capitalism.
 
-[? if not wtb_concept: The Labor faction is arguing for increased welfare spending to alleviate the suffering of the workers. Their economist, Wladimir Woytinsky, has voiced support for a public works campaign involving deficit spending, but it will take time to iron out the details. Furthermore, he will need the united support of the ADGB; otherwise, he won't have the power to challenge Hilferding's stance. ?][? if wtb_concept: From labor, the economist Wladimir Woytinsky argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Hilferding, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Hilferding, Woytinsky's strategy is opposed to Marxist principles. ?]
+[? if not wtb_concept: The Labor faction is arguing for increased welfare spending to alleviate the suffering of the workers. Their economist, Wladimir Voss, has voiced support for a public works campaign involving deficit spending, but it will take time to iron out the details. Furthermore, he will need the united support of the ADGB; otherwise, he won't have the power to challenge Bell's stance. ?][? if wtb_concept: From labor, the economist Wladimir Voss argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Bell, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Bell, Voss's strategy is opposed to Marxist principles. ?]
 
-[? if wtb_concept: The so-called WTB plan, after its chief supporters Woytinsky, Tarnow, and Baade, is receiving more attention within the party. ?]
+[? if wtb_concept: The so-called WTB plan, after its chief supporters Voss, Tarnow, and Bayle, is receiving more attention within the party. ?]
 
 However, leftists in the party argue that the WTB plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to <span style="color: #c00000;">socialism</span>.
 
@@ -30,7 +30,7 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 subtitle: Let the depression play itself out.
 on-arrival: center_strength += 5; center_dissent -= 5; labor_dissent += 10; wtb_support -= 1; left_dissent += 10;
 
-Woytinsky and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Woytinsky for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
+Voss and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Voss for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
 Our policy course is currently that nothing can be done to alleviate the depression.
 
@@ -66,9 +66,9 @@ We attempt to convince the party to support a program of mass nationalizations i
 We have not yet formally adopted the plan. More work needs to be done.
 
 @adopt_left
-on-arrival: left_strength += 15; left_dissent -= 10; reformist_dissent += 10; neorevisionist_dissent += 8; labor_dissent += 6; nationalization_adopted = 1; coup_progress += 1; economic_plan = 3; kpd_relation += 5*(1-dissent)
+on-arrival: left_strength += 15; left_dissent -= 10; reformist_dissent += 10; knight_dissent += 8; labor_dissent += 6; nationalization_adopted = 1; coup_progress += 1; economic_plan = 3; collectivist_relation += 5*(1-dissent)
 
-With our hard work, we have convinced the majority of the party to adopt the <span style="color: #c00000;">socialist</span> economic plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Bourgeois opposition is likely to be fierce. [? if spd_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
+With our hard work, we have convinced the majority of the party to adopt the <span style="color: #c00000;">socialist</span> economic plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Bourgeois opposition is likely to be fierce. [? if marcher_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
 subtitle: Call for a limited program of job creation without deficit spending.
@@ -84,10 +84,10 @@ We attempt to convince the party to support a moderate program of job creation w
 We have not yet adopted the plan. More work needs to be done.
 
 @adopt_moderate
-on-arrival: reformist_strength += 10; reformist_dissent -= 10; left_dissent += 8; labor_dissent += 6; moderate_plan_adopted = 1; economic_plan = 2; coalition_dissent -= 1 if unemployed > 15; z_relation += 5;
+on-arrival: reformist_strength += 10; reformist_dissent -= 10; left_dissent += 8; labor_dissent += 6; moderate_plan_adopted = 1; economic_plan = 2; coalition_dissent -= 1 if disfavored > 15; unionist_relation += 5;
 
-With our hard work, we have convinced the majority of the party to adopt the moderate job creation plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?]
+With our hard work, we have convinced the majority of the party to adopt the moderate job creation plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?]
 
 @defer
 
-We hold off on making a decision on economic policy, awaiting more information. Woytinsky and his supporters argue that inaction is a form of action of its own. 
+We hold off on making a decision on economic policy, awaiting more information. Voss and his supporters argue that inaction is a form of action of its own. 

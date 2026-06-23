@@ -1,6 +1,6 @@
 title: Fiscal Stimulus?
 subtitle: The ADGB suggests changing our economic stance, away from a passive approach.
-view-if: ((black_thursday_seen and wtb_points >= 100) or banking_crisis_seen) and not economic_plan
+view-if: ((veran_crash_seen and wtb_points >= 100) or banking_crisis_seen) and not economic_plan
 max-visits: 1
 tags: event
 new-page: true
@@ -20,7 +20,7 @@ on-display: {!
 
 = Fiscal Stimulus
 
-The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Nazis</span>, and the declining strength of <span style="color: #c00000;">Social Democracy</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the depression. Chief economist of the ADGB, Wladimir Woytinsky has outlined a national action plan to stimulate the economy through public works, with the backing of union chairman Fritz Tarnow and the <span style="color: #c00000;">**SPD**</span>'s agricultural spokesman, Fritz Baade.
+The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Royalists</span>, and the declining strength of <span style="color: #c00000;">Reformism</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the depression. Chief economist of the ADGB, Wladimir Voss has outlined a national action plan to stimulate the economy through public works, with the backing of union chairman Fritz Tarnow and the <span style="color: #c00000;">**Marchers**</span>'s agricultural spokesman, Fritz Bayle.
 
 We can either support their attempts to craft a formal plan, committing to an active economic policy, or retain our current course, which holds that nothing can be done to alleviate the depression.
 
@@ -39,19 +39,19 @@ Job creation and stimulus are necessary, but deficit spending, especially with h
 view-if: left_strength >= reformist_strength and left_strength >= center_strength and left_strength >= labor_strength
 on-arrival: left_strength += 10; reformist_dissent += 5; labor_dissent += 5; nationalization_support += 2
 
-We should use this economic crisis to transform Germany toward actual <span style="color: #9b0000;">socialism</span>, in accordance with our long-standing <span style="color: #c00000;">socialist</span> platform. Reformists and the Woytinsky group argue that the plan is unrealistic and that we need to focus on more immediate improvements to workers' lives.
+We should use this economic crisis to transform the Commonwealth toward actual <span style="color: #9b0000;">socialism</span>, in accordance with our long-standing <span style="color: #c00000;">socialist</span> platform. Reformists and the Voss group argue that the plan is unrealistic and that we need to focus on more immediate improvements to workers' lives.
 
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10
 
-Woytinsky is promising the workers false hope; nothing can be done to alleviate the depression. We also express concern about the fear of another round of hyperinflation that may result from deficit spending.
+Voss is promising the workers false hope; nothing can be done to alleviate the depression. We also express concern about the fear of another round of hyperinflation that may result from deficit spending.
 
 @wtb_plan
 view-if: labor_strength >= left_strength and labor_strength >= center_strength
 choose-if: labor_strength >= left_strength and labor_strength >= center_strength
 on-arrival: center_dissent += 20; left_dissent += 10; labor_strength += 15; labor_dissent -= 20; wtb_support += 3; wtb_points += 25
 
-We cannot, as the party for the workers, stand idly by as they suffer. *Something* must be done, and it must happen soon. With our encouragement, Woytinsky will present an official plan in the next few months.
+We cannot, as the party for the workers, stand idly by as they suffer. *Something* must be done, and it must happen soon. With our encouragement, Voss will present an official plan in the next few months.
 
 > *"Now, however, we stand at the sickbed of capitalism not only as diagnosticians, but also—well, what can I say?—as doctors who want to heal? Or as happy heirs who can't wait for the end and would prefer to give it a helping hand with poison? This dual role, doctor and heir, is a damned difficult task."*
 

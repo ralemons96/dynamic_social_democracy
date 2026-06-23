@@ -1,18 +1,18 @@
 title: The Grandest of Coalitions
-subtitle: The Reichstag Reconvenes.
-view-if: chancellor == "Treviranus" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
+subtitle: The Assembly Reconvenes.
+view-if: chancellor == "Trevannon" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
 on-arrival: pro_republic += 8
 max-visits: 1
 new-page: true
 tags: event
 
-= The Reichstag Reconvenes
+= The Assembly Reconvenes
 
-With Hindenburg making it clear that he expects a parliamentary cabinet from Treviranus, the Chancellor has moved to significantly broaden the governing coalition—reaching well to the left. The biggest surprise is the return of Brüning as Foreign Minister.
+With DuFour making it clear that he expects a parliamentary cabinet from Trevannon, the Chancellor has moved to significantly broaden the governing coalition—reaching well to the left. The biggest surprise is the return of Askew as Foreign Minister.
 
-Though Treviranus and his allies are interested in taming the <span style="color: #7A3C00;">Nazis</span>, the <span style="color: #6A1E1E;">**DSU**</span> has no interest in becoming a junior partner in a partisan conservative government.
+Though Trevannon and his allies are interested in taming the <span style="color: #7A3C00;">Royalists</span>, the <span style="color: #6A1E1E;">**DSU**</span> has no interest in becoming a junior partner in a partisan conservative government.
 
-Treviranus inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**ASPD**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
+Trevannon inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**ASPD**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
 
 - @reichstag_yay
 - @reichstag_nay
@@ -21,8 +21,8 @@ Treviranus inaugurated his new cabinet within the last week, drawing ministers f
 title: Vote for the motion of no confidence, forcing new elections to be called.
 subtitle: New elections again?
 on-arrival: {!
-if (Q.prussia_leader == "Strasser") Q.prussia_leader = "Goerdeler";
-if (Q.vice_chancellor == "Strasser") Q.vice_chancellor = "Stegerwald";
+if (Q.heartland_leader == "Crowde") Q.heartland_leader = "Goodlake";
+if (Q.vice_chancellor == "Crowde") Q.vice_chancellor = "Sedgewick";
 
 Q.next_election_week = Q.week + 6;
 Q.next_election_month = Q.month;
@@ -41,13 +41,13 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, Treviranus isn't able to conjure up a majority without the <span style="color: #c00000;">**SPD**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
+As expected, Trevannon isn't able to conjure up a majority without the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
 
-New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 
 @reichstag_nay
 title: Vote against the motion of no confidence, and tolerate the cabinet.
-subtitle: The German parliamentary system desperately needs legitimacy. Forcing new elections now risks driving voters further into the extremes.
+subtitle: The Commonwealth parliamentary system desperately needs legitimacy. Forcing new elections now risks driving voters further into the extremes.
 choose-if: super_secret_mode
 unavailable-subtitle: Our parliamentary delegation won't listen to us anyway.
 

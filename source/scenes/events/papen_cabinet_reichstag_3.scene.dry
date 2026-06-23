@@ -1,6 +1,6 @@
-title: Papen Faces a Vote of No Confidence!
-subtitle: His first test of strength before the Reichstag.
-view-if: chancellor = "Papen" and papen_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and reichstag_decree_rubicon
+title: Goodryke Faces a Vote of No Confidence!
+subtitle: His first test of strength before the Assembly.
+view-if: chancellor = "Goodryke" and papen_time and next_reichstag_time == rubicon_time and next_reichstag_time > 0 and reichstag_decree_rubicon
 on-arrival: reichstag_rubicon = 1
 new-page: true
 tags: event
@@ -20,97 +20,97 @@ on-display: {!
 
 = Vote of No Confidence
 
-The Reichstag has reconvened after its brief adjournment, prepared to address the issue of the Papen cabinet. Von Papen has lost all hope of gaining the <span style="color: #7A3C00;">**NSDAP**</span>'s toleration, especially after their stubborn insistence on making [+ nsdap_chancellor +] chancellor. All parties, except for the [? if not true_christian_democracy: <span style="color: #3E88B3;">**DNVP**</span>?][? if not true_christian_democracy and dnvp_ideology == "Moderate":, and?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>,?][? if dvp_exist and not lvp_formed:&nbsp;and <span style="color: #C0A054;">**DVP**</span>,?] have made their opposition to Papen clear, making his dismissal nearly certain.
+The Assembly has reconvened after its brief adjournment, prepared to address the issue of the Goodryke cabinet. Von Goodryke has lost all hope of gaining the <span style="color: #7A3C00;">**Royalists**</span>'s toleration, especially after their stubborn insistence on making [+ royalist_chancellor +] chancellor. All parties, except for the [? if not true_christian_democracy: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if not true_christian_democracy and traditionalist_ideology == "Moderate":, and?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>,?][? if gold_exist and not lvp_formed:&nbsp;and <span style="color: #C0A054;">**Golds**</span>,?] have made their opposition to Goodryke clear, making his dismissal nearly certain.
 
-Yet, von Papen holds a card up his sleeve. Hindenburg has already secured a decree allowing him to suspend elections beyond the constitutionally mandated 60 days. All he needs now is to present it to the Reichstag before the vote of no confidence begins.
+Yet, von Goodryke holds a card up his sleeve. DuFour has already secured a decree allowing him to suspend elections beyond the constitutionally mandated 60 days. All he needs now is to present it to the Assembly before the vote of no confidence begins.
 
 # TODO
 
 - @reichstag
 
 @reichstag
-title: The Reichstag goes into session.
+title: The Assembly goes into session.
 on-arrival: {!
 Q.papen_votes = 0;
 Q.anti_papen_votes = 0;
 
-if (Q.hugenberg_dvp) {
-    Q.papen_votes += Q.dvp_r;
+if (Q.hugenberg_gold) {
+    Q.papen_votes += Q.gold_r;
 }
-if (Q.dnvp_ideology == "Radical") Q.papen_votes += Q.dnvp_r;
-if (Q.dnvp_ideology == "Moderate" && (Q.dnvp_leader == "Schiele" || Q.dnvp_leader == "Westarp" || Q.dnvp_leader == "Hergt" || Q.dnvp_leader == "Treviranus" && !Q.true_christian_democracy)) {
-    Q.papen_votes += Q.dnvp_r;
-    Q.dnvp_papen = 1;
+if (Q.traditionalist_ideology == "Radical") Q.papen_votes += Q.traditionalist_r;
+if (Q.traditionalist_ideology == "Moderate" && (Q.traditionalist_leader == "Schiele" || Q.traditionalist_leader == "Westmore" || Q.traditionalist_leader == "Hargen" || Q.traditionalist_leader == "Trevannon" && !Q.true_christian_democracy)) {
+    Q.papen_votes += Q.traditionalist_r;
+    Q.traditionalist_papen = 1;
 }
-if (Q.dnvp_ideology == "Moderate") Q.papen_votes += Q.dnf_r;
-if (Q.kvp_formed && Q.schleicher_kvp) {
+if (Q.traditionalist_ideology == "Moderate") Q.papen_votes += Q.dnf_r;
+if (Q.kvp_formed && Q.staal_kvp) {
     Q.papen_votes += Q.kvp_r;
     Q.kvp_papen = 1;
-    Q.workers_kvp -= 2;
-    Q.unemployed_kvp -= 2;
+    Q.commons_kvp -= 2;
+    Q.disfavored_kvp -= 2;
 }
 Q.papen_votes = Math.round(Q.papen_votes * 10) / 10;
 Q.anti_papen_votes = Math.round((100 - Q.papen_votes) * 10) / 10;
 
-Q.new_middle_nsdap -= 3;
-if (Q.hugenberg_dvp) Q.new_middle_dvp += 1;
-if (Q.dnvp_ideology == "Radical") Q.new_middle_dnvp += 4;
+Q.burgher_royalist -= 3;
+if (Q.hugenberg_gold) Q.burgher_gold += 1;
+if (Q.traditionalist_ideology == "Radical") Q.burgher_traditionalist += 4;
 if (Q.kvp_papen) {
-    Q.new_middle_kvp += 2;
-    Q.new_middle_dnvp -= 2;
+    Q.burgher_kvp += 2;
+    Q.burgher_traditionalist -= 2;
 }
-Q.new_middle_dnf += 4;
-if (Q.dnvp_papen) {
-    Q.new_middle_dnvp += 3;
-    Q.new_middle_dnf -= 3;
+Q.burgher_dnf += 4;
+if (Q.traditionalist_papen) {
+    Q.burgher_traditionalist += 3;
+    Q.burgher_dnf -= 3;
 }
 
-Q.old_middle_nsdap -= 4;
-if (Q.dnvp_ideology == "Radical") Q.old_middle_dnvp += 6;
+Q.guild_royalist -= 4;
+if (Q.traditionalist_ideology == "Radical") Q.guild_traditionalist += 6;
 if (Q.kvp_papen) {
-    Q.old_middle_kvp += 1;
-    Q.old_middle_dnvp -= 1;
+    Q.guild_kvp += 1;
+    Q.guild_traditionalist -= 1;
 }
-Q.old_middle_dnf += 6;
-if (Q.dnvp_papen) {
-    Q.old_middle_dnvp += 2;
-    Q.old_middle_dnf -= 2;
+Q.guild_dnf += 6;
+if (Q.traditionalist_papen) {
+    Q.guild_traditionalist += 2;
+    Q.guild_dnf -= 2;
 }
 
-Q.rural_nsdap -= 3;
-if (Q.dnvp_ideology == "Radical") Q.rural_dnvp += 4;
+Q.landed_royalist -= 3;
+if (Q.traditionalist_ideology == "Radical") Q.landed_traditionalist += 4;
 if (Q.kvp_papen) {
-    Q.rural_kvp += 1;
-    Q.rural_dnvp -= 1;
+    Q.landed_kvp += 1;
+    Q.landed_traditionalist -= 1;
 }
-Q.rural_dnf += 4;
-if (Q.dnvp_papen) {
-    Q.rural_dnvp += 2;
-    Q.rural_dnf -= 2;
+Q.landed_dnf += 4;
+if (Q.traditionalist_papen) {
+    Q.landed_traditionalist += 2;
+    Q.landed_dnf -= 2;
 }
 
-Q.catholics_nsdap -= 5;
-if (Q.hugenberg_dvp) Q.catholics_dvp += 1;
-if (Q.dnvp_ideology == "Radical") Q.catholics_dnvp += 4;
+Q.faithful_royalist -= 5;
+if (Q.hugenberg_gold) Q.faithful_gold += 1;
+if (Q.traditionalist_ideology == "Radical") Q.faithful_traditionalist += 4;
 if (Q.kvp_papen) {
-    Q.catholics_kvp += 3;
-    Q.catholics_dnvp -= 3;
+    Q.faithful_kvp += 3;
+    Q.faithful_traditionalist -= 3;
 }
-Q.catholics_dnf += 5;
-if (Q.dnvp_papen) {
-    Q.catholics_dnvp += 4;
-    Q.catholics_dnf -= 4;
+Q.faithful_dnf += 5;
+if (Q.traditionalist_papen) {
+    Q.faithful_traditionalist += 4;
+    Q.faithful_dnf -= 4;
 }
 !}
 go-to: reichstag_1 if papen_votes < 14; reichstag_1_alt if papen_votes >= 14
 
 @reichstag_1
 
-As expected, the <span style="color: #700000;">**Communists**</span> have secured unanimous approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Papen, and not even the <span style="color: #3E88B3;">**DNVP**</span> was willing to lift a finger to prevent this. 
+As expected, the <span style="color: #700000;">**Communists**</span> have secured unanimous approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Goodryke, and not even the <span style="color: #3E88B3;">**Traditionalists**</span> was willing to lift a finger to prevent this. 
 
-With no objection, the vote was to begin just as Chancellor von Papen has arrived inside the Reichstag to present his emergency decree to the chamber, disrupting his plans to present both decrees at once. He had placed the folder on Reichstag President [? if reichstag_president == "Göring": Hermann Göring?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, and demanded him to read it to the floor. However, [+ reichstag_president +] has trick up his sleeve: he could pretend he didn't see it and proceed with the no confidence motion anyway.
+With no objection, the vote was to begin just as Chancellor von Goodryke has arrived inside the Assembly to present his emergency decree to the chamber, disrupting his plans to present both decrees at once. He had placed the folder on Assembly President [? if reichstag_president == "Gorrick": Hermann Gorrick?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, and demanded him to read it to the floor. However, [+ reichstag_president +] has trick up his sleeve: he could pretend he didn't see it and proceed with the no confidence motion anyway.
 
-In the end, Papen is defeated by a humiliating margin with [+ anti_papen_votes +]% of the Reichstag voting against him, only supported by the [? if dnvp_papen or dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if (dnvp_ideology == "Moderate" and dnvp_papen) or kvp_papen:, ?][? if dnvp_ideology == "Moderate":<span style="color: #003755;">**DNF**</span>?][? if kvp_papen: <span style="color: #0087DC;">**KVP**</span>?][? if hugenberg_dvp:&nbsp;and <span style="color: #C0A054;">**DVP**</span>?]. They're expected to benefit from disillusioned conservative <span style="color: #7A3C00;">Nazi</span> voters, who had backed them under the impression they would support the Papen cabinet.
+In the end, Goodryke is defeated by a humiliating margin with [+ anti_papen_votes +]% of the Assembly voting against him, only supported by the [? if traditionalist_papen or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if (traditionalist_ideology == "Moderate" and traditionalist_papen) or kvp_papen:, ?][? if traditionalist_ideology == "Moderate":<span style="color: #003755;">**DNF**</span>?][? if kvp_papen: <span style="color: #0087DC;">**KVP**</span>?][? if hugenberg_gold:&nbsp;and <span style="color: #C0A054;">**Golds**</span>?]. They're expected to benefit from disillusioned conservative <span style="color: #7A3C00;">Royalist</span> voters, who had backed them under the impression they would support the Goodryke cabinet.
 
 - @reichstag_2
 
@@ -119,9 +119,9 @@ on-arrival: {!
 Q.papen_goal = "Maintain public order";
 Q.marburg_time = 0;
 Q.marburg_trigger = 1;
-Q.hindenburg_papen_r += 1;
+Q.dufour_papen_r += 1;
 Q.papen_strength += 1;
-Q.schleicher_papen_r -= 1;
+Q.staal_papen_r -= 1;
 Q.reichstag_rubicon = 0;
 
 Q.next_election_week = Q.week + 36;
@@ -141,21 +141,21 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, the <span style="color: #700000;">**Communists**</span> have attempted to secure approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Papen, but however, the [? if dnvp_papen: <span style="color: #3E88B3;">**DNVP**</span>?][? if not dnvp_papen and dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?][? if not dnvp_papen and dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] had objected to the motion, delaying it.
+As expected, the <span style="color: #700000;">**Communists**</span> have attempted to secure approval for a change in the order of business to allow an immediate vote on a motion of no confidence against Goodryke, but however, the [? if traditionalist_papen: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if not traditionalist_papen and traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?][? if not traditionalist_papen and traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] had objected to the motion, delaying it.
 
-Before the vote was to begin, Chancellor von Papen has arrived inside the Reichstag to present his emergency decree to the chamber, one to dissolve it and one to postpone future elections. He had placed the folder on Reichstag President [? if reichstag_president == "Göring": Hermann Göring?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, who read it to the floor. The chamber erupted in uproar, prompting police on standby to detain numerous Reichstag members involved in the violence, primarily from the <span style="color: #700000;">**Communists**</span>.
+Before the vote was to begin, Chancellor von Goodryke has arrived inside the Assembly to present his emergency decree to the chamber, one to dissolve it and one to postpone future elections. He had placed the folder on Assembly President [? if reichstag_president == "Gorrick": Hermann Gorrick?][? if reichstag_president == "Löbe": Paul Löbe?][? if reichstag_president == "Eßer": Thomas Eßer?]'s desk, who read it to the floor. The chamber erupted in uproar, prompting police on standby to detain numerous Assembly members involved in the violence, primarily from the <span style="color: #700000;">**Communists**</span>.
 
-News has quickly spread, and Papen has only narrowly escaped from the area before violent mobs assembled all across Berlin were formed to protest the violation of the constitution. Brüning and the <span style="color: #000000;">Center Party</span> vow to impeach President Hindenburg, if the Reichstag ever convenes. Germany's in for a violent civil war, and Papen shows no sign of backing down.
+News has quickly spread, and Goodryke has only narrowly escaped from the area before violent mobs assembled all across Axton were formed to protest the violation of the constitution. Askew and the <span style="color: #000000;">Unionist Party</span> vow to impeach President DuFour, if the Assembly ever convenes. the Commonwealth's in for a violent civil war, and Goodryke shows no sign of backing down.
 
 - @reichstag_2_alt
 
 @reichstag_2
-title: The Reichstag is dissolved for new elections.
+title: The Assembly is dissolved for new elections.
 subtitle: The cabinet can still sign the decree though...
 on-arrival: {!
 Q.papen_explode = 1;
 Q.papen_goal = "Rule in a presidential government";
-Q.hindenburg_papen_r -= 1;
+Q.dufour_papen_r -= 1;
 Q.reichstag_rubicon = 0;
 
 Q.next_election_week = Q.week + 6;
@@ -175,11 +175,11 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-With the vulnerability and widespread opposition to the Papen cabinet now fully exposed in parliament, Schleicher’s plan for Papen to sign the decree postponing elections indefinitely has been put on hold. The <span style="color: #000000;">Center Party</span> has also threatened to impeach Hindenburg should he proceed with such an action.
+With the vulnerability and widespread opposition to the Goodryke cabinet now fully exposed in parliament, Staal’s plan for Goodryke to sign the decree postponing elections indefinitely has been put on hold. The <span style="color: #000000;">Unionist Party</span> has also threatened to impeach DuFour should he proceed with such an action.
 
-The time is not yet right for the government to openly violate the constitution, and doing so could spark a civil war. The Reichswehr would not be able to withstand the opposition of 90% of the nation.
+The time is not yet right for the government to openly violate the constitution, and doing so could spark a civil war. The Commonwealth Army would not be able to withstand the opposition of 90% of the nation.
 
-A minor constitutional crisis erupts when Reichstag President [+ reichstag_president +] disputes the validity of Papen's dissolution decree. [+ reichstag_president +] argues that the Reichstag remains in session, contending that the decree is invalid as it was countersigned by a government that had just been overthrown by a vote of no confidence. [+ reichstag_president +] ultimately concedes the issue before the courts were to decide, and new Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+A minor constitutional crisis erupts when Assembly President [+ reichstag_president +] disputes the validity of Goodryke's dissolution decree. [+ reichstag_president +] argues that the Assembly remains in session, contending that the decree is invalid as it was countersigned by a government that had just been overthrown by a vote of no confidence. [+ reichstag_president +] ultimately concedes the issue before the courts were to decide, and new Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 
 @reichstag_2_alt
 title: The government cannot adequately suppress unrest, civil war is inevitable.

@@ -1,7 +1,7 @@
 title: [+ year +] Presidential Elections
 new-page: true
 view-if: rubicon_president_week == week and rubicon_president_month == month and rubicon_president_year == year
-on-arrival: round = 0; spd_candidate = "Eckener"; kpd_candidate = "Boycott"; z_candidate = "Adenauer"; ddp_candidate = "Gessler"; lvp_candidate = "Gessler"; nsdap_candidate = "Seeckt"; dnvp_candidate = "Seeckt"; dvp_candidate = "Gessler"; other_candidate = "Seeckt"; is_unity_candidate = 0; sapd_candidate = kpd_candidate; kvp_candidate = dnvp_candidate; dnf_candidate = dnvp_candidate
+on-arrival: round = 0; marcher_candidate = "Eckhart"; collectivist_candidate = "Boycott"; unionist_candidate = "Aldermoor"; ddp_candidate = "Gesling"; lvp_candidate = "Gesling"; royalist_candidate = "Seckard"; traditionalist_candidate = "Seckard"; gold_candidate = "Gesling"; other_candidate = "Seckard"; is_unity_candidate = 0; sapd_candidate = collectivist_candidate; kvp_candidate = traditionalist_candidate; dnf_candidate = traditionalist_candidate
 max-visits: 1
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -26,60 +26,60 @@ An era of history is closing, and the future remains to be seen.
 @candidates
 go-to: candidate_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seeckt—former Chief of the German Army from 1920 to 1926, and a staunch conservative monarchist, infamous for his refusal to suppress the Kapp Putsch with the remark: "Reichswehr do not fire on Reichswehr". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seeckt enters the race for the presidency—backed by many of Hindenburg’s former allies and the disgraced Schleicher.
+The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seckard—former Chief of the Commonwealth Army from 1920 to 1926, and a staunch conservative monarchist, infamous for his refusal to suppress the Kapp Putsch with the remark: "Commonwealth Army do not fire on Commonwealth Army". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seckard enters the race for the presidency—backed by many of DuFour’s former allies and the disgraced Staal.
 
-The <span style="color: #7A3C00;">Nazis</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seeckt for the presidency. [? if not hindenburg_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ nsdap_candidate_1932 +] in 1932. ?]
+The <span style="color: #7A3C00;">Royalists</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seckard for the presidency. [? if not dufour_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ royalist_candidate_1932 +] in 1932. ?]
 
-The <span style="color: #700000;">**Communists**</span> are too disorganized following Schleicher's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">socialist</span>.
+The <span style="color: #700000;">**Communists**</span> are too disorganized following Staal's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">socialist</span>.
 
-Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #c00000;">**SPD**</span> float the idea of running Hugo Eckener, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
+Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
 
-Barring that, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**SPD**</span> runs its own candidate. The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is considering nominating Konrad Adenauer, mayor of Köln and member of the Prussian state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] might nominate Otto Gessler, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Nazi</span> alliance.
+Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] might nominate Otto Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
 
-As for the <span style="color: #c00000;">**SPD**</span>, we could support a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate or run our own.
+As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own.
 
-A leading candidate is Albert Grzesinski of our Reformist faction. Former Interior Minister of Prussia and currently Berlin’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Schleicher. However, his hardline stance against the <span style="color: #700000;">**Communists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
+A leading candidate is Albert Grzesinski of our Reformist faction. Former Interior Minister of Heartland and currently Axton’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Staal. However, his hardline stance against the <span style="color: #700000;">**Communists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
 
-Alternatively, we could nominate Otto Wels, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Communists</span>, who may begrudgingly tolerate his candidacy.
+Alternatively, we could nominate Otto Vesh, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Communists</span>, who may begrudgingly tolerate his candidacy.
 
 @candidate_menu
 
-- @eckener_r1: Support Hugo Eckener as a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate.
-- @adenauer_r1: Support Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
-- @gessler_r1: Support Otto Gessler of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+- @eckener_r1: Support Hugo Eckhart as a joint Unity Coalition candidate.
+- @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+- @gessler_r1: Support Otto Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
 - @grzesinski_r1: Support Albert Grzesinski.
-- @wels_r1: Support Otto Wels.
+- @wels_r1: Support Otto Vesh.
 
 @eckener_r1
 subtitle: -1 resource - After nominating him, we still have to convince the other parties to support him.
 unavailable-subtitle: [? if resources < 1 : -1 resource - Not enough resources. ?]
 choose-if: resources >= 1
-on-arrival: spd_candidate = "Eckener"; is_unity_candidate = 1
+on-arrival: marcher_candidate = "Eckhart"; is_unity_candidate = 1
 go-to: r1_menu
 
-We have convinced Hugo Eckener to run on behalf of the <span style="color: #c00000;">**SPD**</span>, and hopefully the rest of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition as well.
+We have convinced Hugo Eckhart to run on behalf of the <span style="color: #c00000;">**Marchers**</span>, and hopefully the rest of the Unity Coalition as well.
 
 @adenauer_r1
-on-arrival: spd_candidate = "Adenauer"; z_relation += 4; Adenauer_bonus -= 2.5 if not impeachment_bvp; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+on-arrival: marcher_candidate = "Aldermoor"; unionist_relation += 4; Adenauer_bonus -= 2.5 if not impeachment_bvp; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r1_menu
 
-We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
+We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if not impeachment_bvp: With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seeckt. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seckard. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
 
 @gessler_r1
-on-arrival: spd_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
+on-arrival: marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
 go-to: r1_menu
 
-We have endorsed Otto Gessler, independent formerly of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
+We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 
-[? if impeachment_dvp and dvp_exist and not lvp_formed: With our support of Gessler, the <span style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now shifting their support to Seeckt. ?]
+[? if impeachment_gold and gold_exist and not lvp_formed: With our support of Gesling, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to Seckard. ?]
 
 @grzesinski_r1
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 choose-if: grzesinski_campaign = 0 and resources >= 2
-on-arrival: spd_candidate = "Grzesinski"; resources -= 2; is_unity_candidate = 0; z_relation += 5; ddp_relation += 5; dvp_relation += 5; lvp_relation += 5
+on-arrival: marcher_candidate = "Grzesinski"; resources -= 2; is_unity_candidate = 0; unionist_relation += 5; ddp_relation += 5; gold_relation += 5; lvp_relation += 5
 go-to: r1_menu
 
 We have convinced Albert Grzesinski to run for president.
@@ -88,10 +88,10 @@ We have convinced Albert Grzesinski to run for president.
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 choose-if: resources >= 2
-on-arrival: spd_candidate = "Wels"; resources -= 2; is_unity_candidate = 0
+on-arrival: marcher_candidate = "Vesh"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Otto Wels to be our presidential candidate.
+We have nominated Otto Vesh to be our presidential candidate.
 
 @r1_menu
 view-if: round = 0
@@ -109,160 +109,160 @@ view-if: round = 0
 
 # convincing Z to support a unity candidate
 @convince_z_unity
-title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Gessler") and z_candidate != spd_candidate
+title: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +].
+view-if: (marcher_candidate = "Eckhart" or marcher_candidate = "Gesling") and unionist_candidate != marcher_candidate
 on-arrival: {!
-Q.z_support_grzesinski = 0;
-if (Q.z_relation >= 40 || (Q.z_relation > 20 && Q.z_leader == "Joos")) {
-    Q.z_support_grzesinski = 1;
-} else if (Q.z_relation <= 20) {
-    Q.z_support_grzesinski = 0;
+Q.unionist_support_grzesinski = 0;
+if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader == "Joos")) {
+    Q.unionist_support_grzesinski = 1;
+} else if (Q.unionist_relation <= 20) {
+    Q.unionist_support_grzesinski = 0;
 } else {
-    Q.z_support_grzesinski = 2;
+    Q.unionist_support_grzesinski = 2;
 }
 !}
 max-visits: 1
-go-to: z_failed if z_support_grzesinski = 0; z_success if z_support_grzesinski = 1; z_partial if z_support_grzesinski = 2
+go-to: z_failed if unionist_support_grzesinski = 0; z_success if unionist_support_grzesinski = 1; z_partial if unionist_support_grzesinski = 2
 
-We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition can defeat the <span style="color: #7A3C00;">Nazis</span> and return Germany to its democratic path. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the Unity Coalition can defeat the <span style="color: #7A3C00;">Royalists</span> and return the Commonwealth to its democratic path. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
 
 @convince_z_spd
-title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +].
-choose-if: spd_votes >= z_votes
-unavailable-subtitle: [? if spd_votes < z_votes: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] knows that they are more popular than us; they do not see a reason to support our candidate. ?]
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and z_candidate != spd_candidate
+title: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +].
+choose-if: marcher_votes >= unionist_votes
+unavailable-subtitle: [? if marcher_votes < unionist_votes: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] knows that they are more popular than us; they do not see a reason to support our candidate. ?]
+view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and unionist_candidate != marcher_candidate
 on-arrival: {!
-Q.z_support_grzesinski = 0;
+Q.unionist_support_grzesinski = 0;
 
-if (Q.z_relation >= 60 || (Q.z_relation > 50 && Q.z_leader == "Joos")) {
-    Q.z_support_grzesinski = 1;
-} else if (Q.z_relation <= 40) {
-    Q.z_support_grzesinski = 0;
+if (Q.unionist_relation >= 60 || (Q.unionist_relation > 50 && Q.unionist_leader == "Joos")) {
+    Q.unionist_support_grzesinski = 1;
+} else if (Q.unionist_relation <= 40) {
+    Q.unionist_support_grzesinski = 0;
 } else {
-    Q.z_support_grzesinski = 2;
+    Q.unionist_support_grzesinski = 2;
 }
 !}
 max-visits: 1
-go-to: z_failed if z_support_grzesinski = 0; z_success if z_support_grzesinski = 1; z_partial if z_support_grzesinski = 2
+go-to: z_failed if unionist_support_grzesinski = 0; z_success if unionist_support_grzesinski = 1; z_partial if unionist_support_grzesinski = 2
 
-We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Nazis</span> led by Seeckt. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Royalists</span> led by Seckard. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
 
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-Unfortunately, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is not convinced.
+Unfortunately, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not convinced.
 
 @z_success
-on-arrival: z_candidate = spd_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: unionist_candidate = marcher_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is convinced! They will be supporting [+ spd_candidate +] for the election.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is convinced! They will be supporting [+ marcher_candidate +] for the election.
 
-[? if not impeachment_bvp : Unfortunately, the <span style="color: #A2D8E0;">**BVP**</span> is breaking with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] on this election, supporting Seeckt instead. ?]
+[? if not impeachment_bvp : Unfortunately, the <span style="color: #A2D8E0;">**Arcanists**</span> is breaking with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] on this election, supporting Seckard instead. ?]
 
 @z_partial
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] are not satisfied with our arguments, but they are open to being convinced. They are willing to run a joint campaign if we front the resources.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] are not satisfied with our arguments, but they are open to being convinced. They are willing to run a joint campaign if we front the resources.
 
 - @pay_z: Give them the resources they need.
-- @r1_menu: Forget about the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
-- @r2_campaigning: Forget about the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
+- @r1_menu: Forget about the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+- @r2_campaigning: Forget about the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
 @pay_z
 choose-if: resources >= 2
 subtitle: -2 resources
-on-arrival: resources -= 2; z_candidate = spd_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: resources -= 2; unionist_candidate = marcher_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-With our resources, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] are convinced to support [+ spd_candidate +]. Konrad Adenauer will drop out of the race.
+With our resources, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] are convinced to support [+ marcher_candidate +]. Konrad Aldermoor will drop out of the race.
 
-[? if not impeachment_bvp: Unfortunately, the <span style="color: #A2D8E0;">**BVP**</span> is breaking with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] on this election, supporting Seeckt instead.  ?]
+[? if not impeachment_bvp: Unfortunately, the <span style="color: #A2D8E0;">**Arcanists**</span> is breaking with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] on this election, supporting Seckard instead.  ?]
 
 
 @convince_ddp_unity
-title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Adenauer") and ddp_candidate != spd_candidate and not lvp_formed
-on-arrival: ddp_candidate = spd_candidate if ddp_relation >= 40
+title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ marcher_candidate +].
+view-if: (marcher_candidate = "Eckhart" or marcher_candidate = "Aldermoor") and ddp_candidate != marcher_candidate and not lvp_formed
+on-arrival: ddp_candidate = marcher_candidate if ddp_relation >= 40
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if ddp_candidate != spd_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
+[? if ddp_candidate = marcher_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing. ?]
 
 
 @convince_ddp_spd
-title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and ddp_candidate != spd_candidate and not lvp_formed
-on-arrival: ddp_candidate = spd_candidate if ddp_relation >= 60
+title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ marcher_candidate +].
+view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and ddp_candidate != marcher_candidate and not lvp_formed
+on-arrival: ddp_candidate = marcher_candidate if ddp_relation >= 60
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if ddp_candidate != spd_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ spd_candidate +]. ?]
+[? if ddp_candidate = marcher_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. ?]
 
 @convince_lvp_unity
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Adenauer") and lvp_candidate != spd_candidate and lvp_formed
-on-arrival: lvp_candidate = spd_candidate if lvp_relation >= 50
+title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+view-if: (marcher_candidate = "Eckhart" or marcher_candidate = "Aldermoor") and lvp_candidate != marcher_candidate and lvp_formed
+on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 50
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = spd_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if lvp_candidate != spd_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
+[? if lvp_candidate = marcher_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing. ?]
 
 
 @convince_lvp_spd
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and lvp_candidate != spd_candidate and lvp_formed
-on-arrival: lvp_candidate = spd_candidate if lvp_relation >= 65
+title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and lvp_candidate != marcher_candidate and lvp_formed
+on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 65
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = spd_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if lvp_candidate != spd_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ spd_candidate +]. ?]
+[? if lvp_candidate = marcher_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]. ?]
 
 @convince_kpd_spd
-title: Convince the <span style="color: #700000;">**KPD**</span> to support [+ spd_candidate +].
-view-if: spd_candidate = "Wels" and kpd_candidate != spd_candidate
-choose-if: spd_votes >= kpd_votes
-unavailable-subtitle: The <span style="color: #700000;">KPD</span> knows that they are more popular than us; they do not see a reason to support our candidate.
+title: Convince the <span style="color: #700000;">**Collectivists**</span> to support [+ marcher_candidate +].
+view-if: marcher_candidate = "Vesh" and collectivist_candidate != marcher_candidate
+choose-if: marcher_votes >= collectivist_votes
+unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> knows that they are more popular than us; they do not see a reason to support our candidate.
 max-visits: 1
 
-The <span style="color: #700000;">**KPD**</span> isn't supporting anyone at the moment. [? if kpd_relation >= 50 : However, they are willing to be convinced to drop their campaign and support [+ spd_candidate +]; how do we convince them? ?][? if kpd_relation < 50 or kpd_leader != "Conciliators" : They do not seem willing to be convinced. ?]
+The <span style="color: #700000;">**Collectivists**</span> isn't supporting anyone at the moment. [? if collectivist_relation >= 50 : However, they are willing to be convinced to drop their campaign and support [+ marcher_candidate +]; how do we convince them? ?][? if collectivist_relation < 50 or collectivist_leader != "Conciliators" : They do not seem willing to be convinced. ?]
 
 - @kpd_resources: Use our resources.
 - @kpd_relations: Use our good relations.
-- @r1_menu: Forget about the <span style="color: #700000;">**KPD**</span>.
-- @r2_campaigning: Forget about the <span style="color: #700000;">**KPD**</span>.
+- @r1_menu: Forget about the <span style="color: #700000;">**Collectivists**</span>.
+- @r2_campaigning: Forget about the <span style="color: #700000;">**Collectivists**</span>.
 
 @kpd_resources
-view-if: kpd_relation >= 40 
+view-if: collectivist_relation >= 40 
 choose-if: resources >= 2
 subtitle: -2 resources
 unavailable-subtitle: Not enough resources (need 2).
-on-arrival: resources -= 3; kpd_candidate = spd_candidate; sapd_candidate = spd_candidate;
+on-arrival: resources -= 3; collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**KPD**</span> now endorses [+ spd_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @kpd_relations
-view-if: kpd_relation >= 50 or (kpd_leader == "Conciliators" and kpd_relation >= 35)
+view-if: collectivist_relation >= 50 or (collectivist_leader == "Conciliators" and collectivist_relation >= 35)
 unavailable-subtitle: Our relations are not good enough.
-on-arrival: kpd_candidate = spd_candidate; sapd_candidate = spd_candidate;
+on-arrival: collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**KPD**</span> now endorses [+ spd_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @convince_dvp_unity
-title: Convince the <span style="color: #C0A054;">**DVP**</span> to support [+ spd_candidate +].
-unavailable-subtitle: The <span style="color: #C0A054;">DVP</span> is not willing to support our candidate.
-view-if: (spd_candidate = "Adenauer" or spd_candidate = "Gessler" or spd_candidate = "Eckener") and dvp_candidate != spd_candidate and not lvp_formed and dvp_exist
-choose-if: impeachment_dvp
-on-arrival: dvp_candidate = spd_candidate
+title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
+unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> is not willing to support our candidate.
+view-if: (marcher_candidate = "Aldermoor" or marcher_candidate = "Gesling" or marcher_candidate = "Eckhart") and gold_candidate != marcher_candidate and not lvp_formed and gold_exist
+choose-if: impeachment_gold
+on-arrival: gold_candidate = marcher_candidate
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if dvp_candidate = spd_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span style="color: #c00000;">**SPD**</span>, the <span style="color: #C0A054;">**DVP**</span> is persuaded to support [+ spd_candidate +]. ?]
+[? if gold_candidate = marcher_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span style="color: #c00000;">**Marchers**</span>, the <span style="color: #C0A054;">**Golds**</span> is persuaded to support [+ marcher_candidate +]. ?]
 
 
 @round_1
@@ -273,12 +273,12 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 var candidate_descs = {
-Seeckt: "Hans von Seeckt, an independent formerly of the <span style='color: #C0A054; font-weight: bold;'>DVP</span>",
-Eckener: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckener",
-Adenauer: "Konrad Adenauer of the <span style='color: #000000; font-weight: bold;'>Center Party</span>",
-Gessler: "Otto Gessler, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>DDP</span>",
-Wels: "Otto Wels of the <span style='color: #c00000; font-weight: bold;'>SPD</span>",
-Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>SPD</span>"
+Seckard: "Hans von Seckard, an independent formerly of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>",
+Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
+Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
+Gesling: "Otto Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
+Vesh: "Otto Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
+Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
 }
 for (var k in candidate_descs) {
     Q[k + '_running'] = 0;
@@ -321,9 +321,9 @@ Q.winner_votes = Math.round(1000*Q.winner_votes/total_votes)/10;
 Q.winner_votes_disp = Q.winner_votes.toFixed(1);
 Q.winner_desc = candidate_descs[Q.winner];
 
-if (Q.sapd_candidate == "Boycott" || Q.kpd_candidate == "Boycott"){
+if (Q.sapd_candidate == "Boycott" || Q.collectivist_candidate == "Boycott"){
     Q.boycott_votes = 0;
-    if (Q.kpd_candidate == "Boycott") Q.boycott_votes += Q.kpd_votes;
+    if (Q.collectivist_candidate == "Boycott") Q.boycott_votes += Q.collectivist_votes;
     if (Q.sapd_candidate == "Boycott") Q.boycott_votes += Q.sapd_votes;
 }
 
@@ -333,50 +333,50 @@ go-to: r2_start if round = 1 and not has_majority; election_end if round > 1; r1
 
 Election results:
 
-[? if Seeckt_running : <span style="color: #808080;">**Seeckt**</span> - [+ Seeckt_votes_disp +]% ?]
+[? if Seeckt_running : <span style="color: #808080;">**Seckard**</span> - [+ Seeckt_votes_disp +]% ?]
 
-[? if Adenauer_running : <span style="color: #000000;">**Adenauer**</span> - [+ Adenauer_votes_disp +]% ?]
+[? if Adenauer_running : <span style="color: #000000;">**Aldermoor**</span> - [+ Adenauer_votes_disp +]% ?]
 
-[? if Gessler_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Gessler**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Gessler**</span>?] - [+ Gessler_votes_disp +]% ?]
+[? if Gessler_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Gesling**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Gesling**</span>?] - [+ Gessler_votes_disp +]% ?]
 
 [? if Eckener_running : <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> - [+ Eckener_votes_disp +]% ?]
 
 [? if Grzesinski_running : <span style="color: #c00000;">**Grzesinski**</span> - [+ Grzesinski_votes_disp +]% ?]
-[? if Wels_running : <span style="color: #c00000;">**Wels**</span> - [+ Wels_votes_disp +]% ?]
+[? if Wels_running : <span style="color: #c00000;">**Vesh**</span> - [+ Wels_votes_disp +]% ?]
 
-[? if sapd_candidate == "Boycott" or kpd_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
+[? if sapd_candidate == "Boycott" or collectivist_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
 
 @r2_start
 on-arrival: {!
 Q.adenauer_drops_out = 0;
 Q.gessler_drops_out = 0;
-if (Q.z_candidate == "Adenauer" && (Q.ddp_candidate == "Gessler" && !Q.lvp_formed || Q.dvp_candidate == "Gessler" && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate == "Gessler" && Q.lvp_formed) && Q.z_candidate != Q.spd_candidate && (Q.ddp_candidate != Q.spd_candidate && !Q.lvp_formed || Q.dvp_candidate != Q.spd_candidate && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate != Q.spd_candidate && Q.lvp_exist)) {
+if (Q.unionist_candidate == "Aldermoor" && (Q.ddp_candidate == "Gesling" && !Q.lvp_formed || Q.gold_candidate == "Gesling" && !Q.lvp_formed && Q.gold_exist || Q.lvp_candidate == "Gesling" && Q.lvp_formed) && Q.unionist_candidate != Q.marcher_candidate && (Q.ddp_candidate != Q.marcher_candidate && !Q.lvp_formed || Q.gold_candidate != Q.marcher_candidate && !Q.lvp_formed && Q.gold_exist || Q.lvp_candidate != Q.marcher_candidate && Q.lvp_exist)) {
     if (Q.Adenauer_votes > Q.Gessler_votes) {
         Q.gessler_drops_out = 1;
-        if (Q.ddp_candidate != Q.spd_candidate) {
-            Q.ddp_candidate = "Adenauer";
+        if (Q.ddp_candidate != Q.marcher_candidate) {
+            Q.ddp_candidate = "Aldermoor";
         }
-        if (Q.dvp_candidate != Q.spd_candidate) {
-            Q.dvp_candidate = "Adenauer";
+        if (Q.gold_candidate != Q.marcher_candidate) {
+            Q.gold_candidate = "Aldermoor";
         }
-        if (Q.lvp_candidate != Q.spd_candidate) {
-            Q.lvp_candidate = "Adenauer";
+        if (Q.lvp_candidate != Q.marcher_candidate) {
+            Q.lvp_candidate = "Aldermoor";
         }
     } else {
         Q.adenauer_drops_out = 1;
-        Q.z_candidate = "Gessler";
+        Q.unionist_candidate = "Gesling";
     }
 }
-// DVP drops out to favor the center candidate
-if (Q.dvp_candidate != Q.spd_candidate && Q.dvp_candidate != Q.ddp_candidate && Q.dvp_candidate != Q.z_candidate) {
+// Golds drops out to favor the center candidate
+if (Q.gold_candidate != Q.marcher_candidate && Q.gold_candidate != Q.ddp_candidate && Q.gold_candidate != Q.unionist_candidate) {
 }
 !}
 go-to: r2_menu
 
 In the lead is [+ winner_desc +]. There is no majority in the first round. In the second round, any candidate who wins a plurality will win overall.
 
-[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Otto Gessler has dropped out in favor of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]'s Konrad Adenauer. This consolidates the votes of the moderate bürgerblock. ?]
-[? if adenauer_drops_out : The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] candidate Konrad Adenauer has dropped out in favor of Otto Gessler. This consolidates the votes of the moderate bürgerblock. ?]
+[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Otto Gesling has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate bürgerblock. ?]
+[? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of Otto Gesling. This consolidates the votes of the moderate bürgerblock. ?]
 
 What should we do?
 
@@ -389,41 +389,41 @@ What should we do?
 - @r2_vote: Let the voting begin.
 
 @r2_endorse_adenauer
-title: Switch our support to Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
-view-if: z_candidate = "Adenauer" and spd_candidate != z_candidate
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Adenauer"; z_relation += 4; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+title: Switch our support to Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+view-if: unionist_candidate = "Aldermoor" and marcher_candidate != unionist_candidate
+on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Aldermoor"; unionist_relation += 4; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r2_campaigning
 
-We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
+We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if not impeachment_bvp: With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to Seeckt. ?]
+[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to Seckard. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one.  ?]
+[? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and supporting no one.  ?]
 
 @r2_endorse_gessler
-title: Switch our support to Otto Gessler.
-view-if: ddp_candidate = "Gessler" and spd_candidate != ddp_candidate
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
+title: Switch our support to Otto Gesling.
+view-if: ddp_candidate = "Gesling" and marcher_candidate != ddp_candidate
+on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
 go-to: r2_campaigning
 
-We have endorsed Otto Gessler, independent formerly of the <span style="color: #D3C24D;">**DDP**</span>.
+We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>.
 
-[? if not impeachment_dvp and dvp_exist and not lvp_formed : With our support of Gessler, the <span style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now shifting their support to Seeckt. ?]
+[? if not impeachment_gold and gold_exist and not lvp_formed : With our support of Gesling, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to Seckard. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
+[? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and supporting no one. ?]
 
 @r2_endorse_eckener
-title: Convince the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition parties to unite behind Hugo Eckener.
+title: Convince the Unity Coalition parties to unite behind Hugo Eckhart.
 subtitle: -2 resources
-unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?][? if (z_relation < 55 and z_ideology == "Right") or (z_relation < 35 and z_ideology == "Left") : We need higher relations with the <span style="color: #000000;">Center Party</span>. ?][? if ddp_relation < 35 and not lvp_formed : We need higher relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?][? if lvp_relation < 45 and lvp_formed : We need higher relations with the <span style="color: #FFCC00;">LVP</span>. ?]
-choose-if: resources >= 2 and ((z_relation >= 55 and z_ideology == "Right") or (z_relation >= 45 and z_ideology = "Left")) and ((ddp_relation >= 35 and not lvp_formed) or lvp_relation >= 45 and lvp_formed)
-view-if: z_candidate = "Adenauer" and ((ddp_candidate = "Gessler" and not lvp_formed) or (lvp_candidate = "Gessler" and lvp_formed)) and spd_candidate != "Eckener"
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Eckener"; z_candidate = "Eckener"; ddp_candidate = "Eckener"; lvp_candidate = "Eckener"; resources -= 2; is_unity_candidate = 1
+unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?][? if (unionist_relation < 55 and unionist_ideology == "Right") or (unionist_relation < 35 and unionist_ideology == "Left") : We need higher relations with the <span style="color: #000000;">Unionist Party</span>. ?][? if ddp_relation < 35 and not lvp_formed : We need higher relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?][? if lvp_relation < 45 and lvp_formed : We need higher relations with the <span style="color: #FFCC00;">LVP</span>. ?]
+choose-if: resources >= 2 and ((unionist_relation >= 55 and unionist_ideology == "Right") or (unionist_relation >= 45 and unionist_ideology = "Left")) and ((ddp_relation >= 35 and not lvp_formed) or lvp_relation >= 45 and lvp_formed)
+view-if: unionist_candidate = "Aldermoor" and ((ddp_candidate = "Gesling" and not lvp_formed) or (lvp_candidate = "Gesling" and lvp_formed)) and marcher_candidate != "Eckhart"
+on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Eckhart"; unionist_candidate = "Eckhart"; ddp_candidate = "Eckhart"; lvp_candidate = "Eckhart"; resources -= 2; is_unity_candidate = 1
 go-to: r2_campaigning
 
-We have successfully united all of the parties of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition behind Hugo Eckener!
+We have successfully united all of the parties of the Unity Coalition behind Hugo Eckhart!
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
+[? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and supporting no one. ?]
 
 @r2_campaigning
 view-if: round = 1
@@ -450,9 +450,9 @@ set-jump: post_election
 go-to: election_end
 
 @seeckt_victory
-on-arrival: chancellor = "Frick"; chancellor_party = "DSU"
+on-arrival: chancellor = "Frask"; chancellor_party = "DSU"
 
-With Seeckt's victory, the balance of power passes to the <span style="color: #7A3C00;">Nazis</span> once more, who expect a reward for their support for him. He has gone ahead with appointing Wilhelm Frick of the <span style="color: #6A1E1E;">**DSU**</span> as chancellor, which will inevitably start a full-scale civil war.
+With Seckard's victory, the balance of power passes to the <span style="color: #7A3C00;">Royalists</span> once more, who expect a reward for their support for him. He has gone ahead with appointing Wilhelm Frask of the <span style="color: #6A1E1E;">**DSU**</span> as chancellor, which will inevitably start a full-scale civil war.
 
 - @fight: Did we do all this for nothing? Fight!
 
@@ -463,16 +463,16 @@ Do we realize that this means civil war, against the full force of the state?
 - @civil_war: Yes.
 
 @election_end
-go-to: eckener_win if winner = "Eckener"; bundesrepublik_win if winner = "Adenauer"; seeckt_victory if winner = "Seeckt"; nazis_lose if winner = "Grzesinski" or winner == "Wels" or winner = "Gessler"
+go-to: eckener_win if winner = "Eckhart"; bundesrepublik_win if winner = "Aldermoor"; seeckt_victory if winner = "Seckard"; nazis_lose if winner = "Grzesinski" or winner == "Vesh" or winner = "Gesling"
 on-arrival: {!
 Q.president = Q.winner;
-if (Q.president == "Thalmann") Q.president = "Thälmann";
-if (Q.president == "Munzenberg") Q.president = "Münzenberg";
-if (Q.president == "Goring") Q.president = "Göring";
+if (Q.president == "Thalmann") Q.president = "Halsmark";
+if (Q.president == "Munzenberg") Q.president = "Munzer";
+if (Q.president == "Goring") Q.president = "Gorrick";
 
-if (Q.president == "Thälmann" || Q.president == "Münzenberg" || Q.president == "Schumacher" || Q.president == "Wels" || Q.president == "Grzesinski" || Q.president == "Juchacz" || Q.president == "Braun" || Q.president == "Ossietzky" || Q.president == "Mann" || Q.president == "Einstein") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Einstein") {
     Q.president_ideology = "Left";
-} else if (Q.president == "Eckener" || Q.president == "Adenauer" || Q.president == "Gessler" || Q.president == "Heuss") {
+} else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";
 } else {
     Q.president_ideology = "Right";

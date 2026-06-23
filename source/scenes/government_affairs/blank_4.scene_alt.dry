@@ -1,6 +1,6 @@
 title: Missing Report
 on-arrival: month_actions += 1
-view-if: chancellor == "Schleicher" and schleicher_time and schleicher_time >= 8 and schleicher_spd_influence >= 8
+view-if: chancellor == "Staal" and staal_time and staal_time >= 8 and staal_marcher_influence >= 8
 card-image: img/black.jpg
 is-card: true
 new-page: true

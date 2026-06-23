@@ -8,154 +8,154 @@ set-jump: post_election
 
 @1928
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.commons = 46; // industry and trade
+Q.guild = 13; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.burgher = 14; // "new mittelstand"
+Q.landed = 25; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.disfavored = 8.6;
+Q.faithful = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 65;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.commons_marcher = 65;
+Q.commons_collectivist = 20;
+Q.commons_unionist = 5;
+Q.commons_ddp = 0;
+Q.commons_gold = 0;
+Q.commons_traditionalist = 5;
+Q.commons_royalist = 0;
+Q.commons_other = 10;
 
-Q.old_middle_spd = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.guild_marcher = 5;
+Q.guild_collectivist = 0;
+Q.guild_unionist = 5;
+Q.guild_ddp= 10;
+Q.guild_gold = 25;
+Q.guild_traditionalist = 25;
+Q.guild_royalist = 10;
+Q.guild_other = 10;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 0;
-Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.burgher_marcher = 5;
+Q.burgher_collectivist = 0;
+Q.burgher_unionist = 10;
+Q.burgher_ddp= 25;
+Q.burgher_gold = 25;
+Q.burgher_traditionalist = 10;
+Q.burgher_royalist = 5;
+Q.burgher_other = 15;
 
-Q.rural_spd = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.landed_marcher = 10;
+Q.landed_collectivist = 0;
+Q.landed_unionist = 5;
+Q.landed_ddp= 5;
+Q.landed_gold = 15;
+Q.landed_traditionalist = 45;
+Q.landed_royalist = 5;
+Q.landed_other = 10;
 
-Q.unemployed_spd = 25;
-Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
+Q.disfavored_marcher = 25;
+Q.disfavored_collectivist = 55;
+Q.disfavored_unionist = 1;
+Q.disfavored_ddp = 0;
+Q.disfavored_gold = 0;
+Q.disfavored_traditionalist = 5;
+Q.disfavored_royalist = 15;
+Q.disfavored_other = 9;
 
-Q.catholics_spd = 15;
-Q.catholics_kpd = 5;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
-Q.catholics_other = 10;
+Q.faithful_marcher = 15;
+Q.faithful_collectivist = 5;
+Q.faithful_unionist = 50;
+Q.faithful_ddp = 0;
+Q.faithful_gold = 5;
+Q.faithful_traditionalist = 5;
+Q.faithful_royalist = 0;
+Q.faithful_other = 10;
 !}
 go-to: election_algorithm
 set-jump: post_election
 
 @1930
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.commons = 46; // industry and trade
+Q.guild = 13; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.burgher = 14; // "new mittelstand"
+Q.landed = 25; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 20;
-Q.catholics = 30;
+Q.disfavored = 20;
+Q.faithful = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 0;
-Q.workers_nsdap = 10;
-Q.workers_other = 15;
+Q.commons_marcher = 60;
+Q.commons_collectivist = 20;
+Q.commons_unionist = 5;
+Q.commons_ddp = 0;
+Q.commons_gold = 0;
+Q.commons_traditionalist = 0;
+Q.commons_royalist = 10;
+Q.commons_other = 15;
 
-Q.old_middle_spd = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 5;
-Q.old_middle_dvp = 10;
-Q.old_middle_dnvp = 20;
-Q.old_middle_nsdap = 30;
-Q.old_middle_other = 15;
+Q.guild_marcher = 5;
+Q.guild_collectivist = 0;
+Q.guild_unionist = 5;
+Q.guild_ddp= 5;
+Q.guild_gold = 10;
+Q.guild_traditionalist = 20;
+Q.guild_royalist = 30;
+Q.guild_other = 15;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 0;
-Q.new_middle_z = 5;
-Q.new_middle_ddp = 10;
-Q.new_middle_dvp = 20;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 25;
-Q.new_middle_other = 15;
+Q.burgher_marcher = 5;
+Q.burgher_collectivist = 0;
+Q.burgher_unionist = 5;
+Q.burgher_ddp = 10;
+Q.burgher_gold = 20;
+Q.burgher_traditionalist = 10;
+Q.burgher_royalist = 25;
+Q.burgher_other = 15;
 
-Q.rural_spd = 5;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 10;
-Q.rural_dnvp = 20;
-Q.rural_nsdap = 25;
-Q.rural_other = 15;
+Q.landed_marcher = 5;
+Q.landed_collectivist = 0;
+Q.landed_unionist = 5;
+Q.landed_ddp= 5;
+Q.landed_gold = 10;
+Q.landed_traditionalist = 20;
+Q.landed_royalist = 25;
+Q.landed_other = 15;
 
-Q.unemployed_spd = 20;
-Q.unemployed_kpd = 50;
-Q.unemployed_z = 0;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 25;
-Q.unemployed_other = 5;
+Q.disfavored_marcher = 20;
+Q.disfavored_collectivist = 50;
+Q.disfavored_unionist = 0;
+Q.disfavored_ddp = 0;
+Q.disfavored_gold = 0;
+Q.disfavored_traditionalist = 5;
+Q.disfavored_royalist = 25;
+Q.disfavored_other = 5;
 
-Q.catholics_spd = 10;
-Q.catholics_kpd = 5;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 10;
-Q.catholics_other = 5;
+Q.faithful_marcher = 10;
+Q.faithful_collectivist = 5;
+Q.faithful_unionist = 50;
+Q.faithful_ddp = 0;
+Q.faithful_gold = 5;
+Q.faithful_traditionalist = 5;
+Q.faithful_royalist = 10;
+Q.faithful_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
+Q.marcher_r = 25;
+Q.collectivist_r = 10;
+Q.unionist_r = 15;
 Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
+Q.gold_r = 10;
+Q.traditionalist_r = 14;
+Q.royalist_r = 10;
 Q.other_r = 5;
 !}
 go-to: election_algorithm
@@ -163,81 +163,81 @@ set-jump: post_election
 
 @1932
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.commons = 46; // industry and trade
+Q.guild = 13; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.burgher = 14; // "new mittelstand"
+Q.landed = 25; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 33;
-Q.catholics = 30;
+Q.disfavored = 33;
+Q.faithful = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 55;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 0;
-Q.workers_nsdap = 15;
-Q.workers_other = 5;
+Q.commons_marcher = 55;
+Q.commons_collectivist = 20;
+Q.commons_unionist = 5;
+Q.commons_ddp = 0;
+Q.commons_gold = 0;
+Q.commons_traditionalist = 0;
+Q.commons_royalist = 15;
+Q.commons_other = 5;
 
-Q.old_middle_spd = 0;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp = 4;
-Q.old_middle_dvp = 4;
-Q.old_middle_dnvp = 15;
-Q.old_middle_nsdap = 70;
-Q.old_middle_other = 5;
+Q.guild_marcher = 0;
+Q.guild_collectivist = 0;
+Q.guild_unionist = 5;
+Q.guild_ddp = 4;
+Q.guild_gold = 4;
+Q.guild_traditionalist = 15;
+Q.guild_royalist = 70;
+Q.guild_other = 5;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 0;
-Q.new_middle_z = 5;
-Q.new_middle_ddp = 10;
-Q.new_middle_dvp = 10;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 60;
-Q.new_middle_other = 5;
+Q.burgher_marcher = 5;
+Q.burgher_collectivist = 0;
+Q.burgher_unionist = 5;
+Q.burgher_ddp = 10;
+Q.burgher_gold = 10;
+Q.burgher_traditionalist = 10;
+Q.burgher_royalist = 60;
+Q.burgher_other = 5;
 
-Q.rural_spd = 0;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp = 0;
-Q.rural_dvp = 5;
-Q.rural_dnvp = 15;
-Q.rural_nsdap = 65;
-Q.rural_other = 5;
+Q.landed_marcher = 0;
+Q.landed_collectivist = 0;
+Q.landed_unionist = 5;
+Q.landed_ddp = 0;
+Q.landed_gold = 5;
+Q.landed_traditionalist = 15;
+Q.landed_royalist = 65;
+Q.landed_other = 5;
 
-Q.unemployed_spd = 20;
-Q.unemployed_kpd = 40;
-Q.unemployed_z = 0;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 0;
-Q.unemployed_nsdap = 50;
-Q.unemployed_other = 5;
+Q.disfavored_marcher = 20;
+Q.disfavored_collectivist = 40;
+Q.disfavored_unionist = 0;
+Q.disfavored_ddp = 0;
+Q.disfavored_gold = 0;
+Q.disfavored_traditionalist = 0;
+Q.disfavored_royalist = 50;
+Q.disfavored_other = 5;
 
-Q.catholics_spd = 10;
-Q.catholics_kpd = 5;
-Q.catholics_z = 60;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 10;
-Q.catholics_other = 5;
+Q.faithful_marcher = 10;
+Q.faithful_collectivist = 5;
+Q.faithful_unionist = 60;
+Q.faithful_ddp = 0;
+Q.faithful_gold = 5;
+Q.faithful_traditionalist = 5;
+Q.faithful_royalist = 10;
+Q.faithful_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
+Q.marcher_r = 25;
+Q.collectivist_r = 10;
+Q.unionist_r = 15;
 Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
+Q.gold_r = 10;
+Q.traditionalist_r = 14;
+Q.royalist_r = 10;
 Q.other_r = 5;
 !}
 go-to: election_algorithm
@@ -246,74 +246,74 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.spd_r = Q.spd_votes;
-Q.z_r = Q.z_votes;
-Q.kpd_r = Q.kpd_votes;
+Q.marcher_r = Q.marcher_votes;
+Q.unionist_r = Q.unionist_votes;
+Q.collectivist_r = Q.collectivist_votes;
 Q.ddp_r = Q.ddp_votes;
-Q.dvp_r = Q.dvp_votes;
-Q.dnvp_r = Q.dnvp_votes;
-Q.nsdap_r = Q.nsdap_votes;
+Q.gold_r = Q.gold_votes;
+Q.traditionalist_r = Q.traditionalist_votes;
+Q.royalist_r = Q.royalist_votes;
 Q.other_r = Q.other_votes;
 
-// The largest party can only be the NSDAP or the <span style="color: #c00000;">**SPD**</span>.
-Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
-    Q.largest_party = 'NSDAP';
+// The largest party can only be the Royalists or the <span style="color: #c00000;">**Marchers**</span>.
+Q.largest_party = 'Marcher';
+if (Q.royalist_r >= Q.marcher_r && Q.royalist_r >= Q.collectivist_r) {
+    Q.largest_party = 'Royalist';
 }
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
-    Q.largest_party = 'KPD';
+if (Q.collectivist_r >= Q.marcher_r && Q.collectivist_r >= Q.royalist_r) {
+    Q.largest_party = 'Collectivist';
 }
 
 // coalitions
-Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
-Q.grand_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r;
-Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
-Q.center_right_coalition = Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.right_coalition = Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.far_right_coalition = Q.dnvp_r + Q.nsdap_r;
-Q.left_coalition = Q.spd_r + Q.kpd_r;
+Q.weimar_coalition = Q.marcher_r + Q.ddp_r + Q.unionist_r - 3;
+Q.grand_coalition = Q.marcher_r + Q.ddp_r + Q.unionist_r + Q.gold_r;
+Q.bourgeois_coalition = Q.ddp_r + Q.unionist_r + Q.gold_r + Q.other_r;
+Q.center_right_coalition = Q.unionist_r + Q.ddp_r + Q.gold_r + Q.other_r + Q.traditionalist_r;
+Q.right_coalition = Q.unionist_r + Q.gold_r + Q.other_r + Q.traditionalist_r;
+Q.far_right_coalition = Q.traditionalist_r + Q.royalist_r;
+Q.left_coalition = Q.marcher_r + Q.collectivist_r;
 // this is an absurd concept lol
-Q.united_front_coalition = Q.spd_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
-Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
+Q.united_front_coalition = Q.marcher_r + Q.collectivist_r + Q.unionist_r + Q.ddp_r - 3;
+Q.anti_democratic_coalition = Q.collectivist_r + Q.royalist_r;
 // aka everyone except nazi, kpd, dnvp
-Q.neo_weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
+Q.neo_weimar_coalition = Q.marcher_r + Q.ddp_r + Q.unionist_r + Q.gold_r + Q.other_r;
 !}
 
-The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
+The electoral system is essentially proportional, with the proportion of Assembly seats roughly equal to the proportion of votes.
  
 **Election results:**
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]
+Marchers: [+ marcher_r +]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]
+Z + Arcanists: [+ unionist_r +]
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_r +]
+Collectivists: [+ collectivist_r +]
 
 # 1928: 5, 1930: 4 (as DStP)
-DDP: [+ ddp_r +]
+Golds: [+ ddp_r +]
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_r +]
+Golds: [+ gold_r +]
 
 # 1928: 14, 1930: 7
-DNVP: [+ dnvp_r +]
+Traditionalists: [+ traditionalist_r +]
 
 # 1928: 3, 1930: 18
-NSDAP: [+ nsdap_r +]
+Royalists: [+ royalist_r +]
 
 # 1928: 9, 1930: 10
 Other: [+ other_r +]
 
 **Potential coalitions:**
 
-Weimar Coalition (SPD + Z + DDP): [+ weimar_coalition +]
+Unity Coalition (Marchers + Z + Golds): [+ weimar_coalition +]
 
-Grand Coalition (SPD + Z + BVP + DDP + DVP): [+ grand_coalition +]
+Grand Coalition (Marchers + Z + Arcanists + Golds + Golds): [+ grand_coalition +]
 
-Bourgeois Coalition (Z + BVP + DDP + DVP + Others): [+ bourgeois_coalition +]
+Bourgeois Coalition (Z + Arcanists + Golds + Golds + Others): [+ bourgeois_coalition +]
 
-Right-wing Coalition (Z + BVP + DVP + Others + DNVP): [+ right_coalition +]
+Right-wing Coalition (Z + Arcanists + Golds + Others + Traditionalists): [+ right_coalition +]
 

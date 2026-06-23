@@ -5,34 +5,34 @@ tags: event
 view-if: reformist_dissent >= 60
 on-arrival: {!
 if (Q.reformist_strength < 10) {
-    Q.workers_spd -= 4; 
-    Q.new_middle_spd -= 2; 
-    Q.old_middle_spd -= 2; 
-    Q.rural_spd -= 2; 
+    Q.commons_marcher -= 4; 
+    Q.burgher_marcher -= 2; 
+    Q.guild_marcher -= 2; 
+    Q.landed_marcher -= 2; 
     Q.rb_strength -= 200; 
 } else if (Q.reformist_strength < 25) {
-    Q.workers_spd -= 5; 
-    Q.new_middle_spd -= 3; 
-    Q.old_middle_spd -= 3; 
-    Q.rural_spd -= 3; 
+    Q.commons_marcher -= 5; 
+    Q.burgher_marcher -= 3; 
+    Q.guild_marcher -= 3; 
+    Q.landed_marcher -= 3; 
     Q.rb_strength -= 250; 
 } else if (Q.reformist_strength < 40) {
-    Q.workers_spd -= 6; 
-    Q.new_middle_spd -= 4; 
-    Q.old_middle_spd -= 4; 
-    Q.rural_spd -= 4; 
+    Q.commons_marcher -= 6; 
+    Q.burgher_marcher -= 4; 
+    Q.guild_marcher -= 4; 
+    Q.landed_marcher -= 4; 
     Q.rb_strength -= 300; 
 } else if (Q.reformist_strength < 60) {
-    Q.workers_spd -= 8; 
-    Q.new_middle_spd -= 6; 
-    Q.old_middle_spd -= 6; 
-    Q.rural_spd -= 6; 
+    Q.commons_marcher -= 8; 
+    Q.burgher_marcher -= 6; 
+    Q.guild_marcher -= 6; 
+    Q.landed_marcher -= 6; 
     Q.rb_strength -= 350; 
 } else {
-    Q.workers_spd -= 10; 
-    Q.new_middle_spd -= 8; 
-    Q.old_middle_spd -= 8; 
-    Q.rural_spd -= 8; 
+    Q.commons_marcher -= 10; 
+    Q.burgher_marcher -= 8; 
+    Q.guild_marcher -= 8; 
+    Q.landed_marcher -= 8; 
     Q.rb_strength -= 400; 
 }
 

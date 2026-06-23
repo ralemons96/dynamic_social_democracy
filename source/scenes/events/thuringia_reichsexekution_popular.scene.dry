@@ -1,53 +1,53 @@
-title: Reichsexekution of Thuringia
+title: Commonwealth intervention of Stathmore
 subtitle: History repeats itself.
-view-if: reichsexekution_defeated = 0 and president = "Hindenburg" and red_thuringia and (rb_force + rfb_force < 75) and not presidential_powers and (prussian_coup_seen or prussian_reichsexekution or hindenburg_angry >= 100 or hindenburg_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or saxony_joever) and year >= 1930
-on-arrival: thuringia_joever = 1; strife += 1; hindenburg_angry += 25; hindenburg_angry_bruning -= 25
+view-if: reichsexekution_defeated = 0 and president = "DuFour" and red_thuringia and (rb_force + rfb_force < 75) and not presidential_powers and (heartland_coup_seen or heartland_reichsexekution or dufour_angry >= 100 or dufour_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or saxony_joever) and year >= 1930
+on-arrival: thuringia_joever = 1; strife += 1; dufour_angry += 25; dufour_angry_bruning -= 25
 new-page: true
 tags: event
 max-visits: 1
-face-image: img/Reichswehr.jpg
+face-image: img/Commonwealth Army.jpg
 
-= Reichsexekution of Thuringia
+= Commonwealth intervention of Stathmore
 
-President [+ president +] has invoked the <i>Reichsexekution</i> to dismiss the Thuringian government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, Reichsbanner, and the increasingly militant <span style="color: #700000;">**RFB**</span>.
+President [+ president +] has invoked the <i>Commonwealth intervention</i> to dismiss the Thuringian government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, the Banners, and the increasingly militant <span style="color: #700000;">**RFB**</span>.
 
-However, the true motivation is clear: the left-wing coalition governing Thuringia poses a direct threat to the conservative and nationalist establishment in Germany.
+However, the true motivation is clear: the left-wing coalition governing Stathmore poses a direct threat to the conservative and nationalist establishment in the Commonwealth.
 
 - @defend
 - @surrender
 
 @defend
 title: Fight against this overthrow attempt!
-subtitle: Labor will call a general strike. The Reichsbanner and RFB will be mobilized to resist the Reichswehr. 
+subtitle: Labor will call a general strike. The the Banners and RFB will be mobilized to resist the Commonwealth Army. 
 
-The Reichswehr and Stalhelm are already preparing to enter Thuringia. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Thuringia is too high. Do we recognize this?
+The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Stathmore is too high. Do we recognize this?
 
 - @defend_2: We will defend the Thuringian Government with the Communists. 
 - @surrender
 
 @defend_2
-on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += workers_spd_normalized*(1 - dissent)*(2 - unemployed/100); defense_strength += workers_kpd_normalized*(2 - unemployed/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)
+on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)
 go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory if defense_strength >= enemy_strength
 
 @defend_2_civil_war
 
-As the Reichswehr and their reactionary auxiliaries march into Thuringia, armed fighting erupts between them and the leftist forces of the Thuringian government. Hindenburg refuses to withdraw the Reichsexekution and orders more Reichswehr troops into Thuringia.  
+As the Commonwealth Army and their reactionary auxiliaries march into Stathmore, armed fighting erupts between them and the leftist forces of the Thuringian government. DuFour refuses to withdraw the Commonwealth intervention and orders more Commonwealth Army troops into Stathmore.  
 
 - @civil_war: It is a civil war.
 
 @defend_2_victory
-on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; left_dissent -= 10; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; workers_spd += 4; unemployed_spd += 4; workers_kpd += 3; unemployed_kpd += 3; workers_nsdap -= 6; unemployed_nsdap -= 6; hindenburg_angry -= 35; hindenburg_angry_bruning += 30; coup_victory = 1; kpd_relation += 15; rfb_strength += 100; rfb_militancy += 0.1; rb_strength += 200
+on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; left_dissent -= 10; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 35; dufour_angry_bruning += 30; coup_victory = 1; collectivist_relation += 15; rfb_strength += 100; rfb_militancy += 0.1; rb_strength += 200
 achievement: drei_pfeile
 
-The Reichsbanner and RFB confront the reactionaries on the road to Thuringia and somehow, the enemy has retreated without a fight! They were surprised by our resistance and Hindenburg has decided to not risk a civil war over Thuringia.
+The the Banners and RFB confront the reactionaries on the road to Stathmore and somehow, the enemy has retreated without a fight! They were surprised by our resistance and DuFour has decided to not risk a civil war over Stathmore.
 
-This show of force has reinvigorated support for both the <span style="color: #c00000;">**SPD**</span> and <span style="color: #700000;">**KPD**</span> and has weakened the fascists and reactionaries. Hindenburg's ire has also been turned away from us. For now. 
+This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the fascists and reactionaries. DuFour's ire has also been turned away from us. For now. 
 
 @surrender
 title: Resign our positions, to prevent bloodshed.
-subtitle: Hindenburg will appoint a new <i>Reichskommissar</i>.
-on-arrival: red_thuringia = 0; workers_spd -= 3; workers_kpd -= 3; unemployed_kpd -= 3; unemployed_spd -= 3; left_dissent += 10; labor_dissent += 5; rb_militancy = rb_militancy*0.8; rb_strength -= 200; rfb_banned = 1; rfb_strength -= 100; rfb_militancy -= 0.1; kpd_relation -= 25; communist_coalition -= 1
+subtitle: DuFour will appoint a new <i>Reichskommissar</i>.
+on-arrival: red_thuringia = 0; commons_marcher -= 3; commons_collectivist -= 3; disfavored_collectivist -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 5; rb_militancy = rb_militancy*0.8; rb_strength -= 200; rfb_banned = 1; rfb_strength -= 100; rfb_militancy -= 0.1; collectivist_relation -= 25; communist_coalition -= 1
 
-The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Reichswehr patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
+The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
 
-Hindenburg appoints <span style="color: #7FCEB1;">**CNBLP**</span> member Erwin Baum as <i>Reichskommissar</i> to govern Thuringia, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.
+DuFour appoints <span style="color: #7FCEB1;">**CNBLP**</span> member Erwin Baum as <i>Reichskommissar</i> to govern Stathmore, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.

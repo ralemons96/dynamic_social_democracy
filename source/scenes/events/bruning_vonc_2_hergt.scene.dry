@@ -1,23 +1,23 @@
 title: End of the [+ chancellor +] government
 subtitle: Chancellor [+ chancellor +] proposes a controversial tax bill.
 new-page: true
-view-if: bruning_event_timer = 2 and dnvp_ideology == "Moderate" and spd_toleration_hergt and not bourgeois_coalition >= 50 and not cvp_formed
+view-if: bruning_event_timer = 2 and traditionalist_ideology == "Moderate" and marcher_toleration_hergt and not bourgeois_coalition >= 50 and not concord_formed
 on-arrival: bruning_event_seen = 1
 tags: event
 max-visits: 1
 
 = Tax reform
 
-Due to the crisis of the Great Depression, government budgets have fallen and welfare spending has risen substantially. Chancellor [+ chancellor +] has proposed another reform of German finances featuring unpopular tax increases and welfare cuts.
+Due to the crisis of the Great Depression, government budgets have fallen and welfare spending has risen substantially. Chancellor [+ chancellor +] has proposed another reform of Commonwealth finances featuring unpopular tax increases and welfare cuts.
 
-Chancellor [+ chancellor +] has used Article 48 of the constitution for the first time in order to pass the bill. In response, a motion has been put forward to rescind the government's emergency powers, and if it succeeds, [+ chancellor +] is prepared to dissolve the Reichstag and call for new elections.
+Chancellor [+ chancellor +] has used Article 48 of the constitution for the first time in order to pass the bill. In response, a motion has been put forward to rescind the government's emergency powers, and if it succeeds, [+ chancellor +] is prepared to dissolve the Assembly and call for new elections.
 
 - @vote_no
 - @vote_yes
 
 @vote_no
 title: Vote for this motion, ending the coalition.
-on-arrival: time_to_election = 2; spd_in_government = 0; in_grand_coalition = 0; spd_toleration = 0; spd_toleration_right = 0; pro_republic -= 3; bruning_event_timer = 0
+on-arrival: time_to_election = 2; marcher_in_government = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 3; bruning_event_timer = 0
 call: set_next_election_time_2
 go-to: recalculate
 
@@ -29,7 +29,7 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 @vote_yes
 title: Vote against the motion and to start a toleration agreement.
 subtitle: Our parliamentary delegation may refuse to obey our orders.
-on-arrival: time_to_election = 2; spd_in_government = 0; in_grand_coalition = 0; spd_toleration = 0; spd_toleration_right = 0; pro_republic -= 3; bruning_event_timer = 0; center_dissent += 20; labor_dissent += 20; left_dissent += 20
+on-arrival: time_to_election = 2; marcher_in_government = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 3; bruning_event_timer = 0; center_dissent += 20; labor_dissent += 20; left_dissent += 20
 call: set_next_election_time_2
 go-to: recalculate
 
@@ -40,19 +40,19 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 
 @recalculate
 on-arrival: {!
-if (Q.year >= 1930 && Q.year < 1932 && !Q.spd_in_government && Q.chancellor == "Brüning" && Q.bourgeois_negotiations == 0 && Q.dvp_exist) {
+if (Q.year >= 1930 && Q.year < 1932 && !Q.marcher_in_government && Q.chancellor == "Askew" && Q.bourgeois_negotiations == 0 && Q.gold_exist) {
     Q.bourgeois_negotiations = 1;
     Q.bourgeois_negotiations_1 = 1;
     Q.bourgeois_negotiations_1930_timer = 6;
 }
 
-if (Q.bourgeois_negotiations_1930_timer > 0 && Q.bourgeois_negotiations <= 1 && Q.next_election_time - Q.time < 4 && Q.dvp_exist) {
+if (Q.bourgeois_negotiations_1930_timer > 0 && Q.bourgeois_negotiations <= 1 && Q.next_election_time - Q.time < 4 && Q.gold_exist) {
     Q.bourgeois_negotiations = 2;
     Q.bourgeois_negotiations_1_election = 1;
     Q.bourgeois_negotiations_elections_1930_timer = 2;
 }
 
-if (Q.bourgeois_negotiations_elections_1930_timer > 0 && Q.bourgeois_negotiations_1930_timer > 0 && Q.dvp_exist) {
+if (Q.bourgeois_negotiations_elections_1930_timer > 0 && Q.bourgeois_negotiations_1930_timer > 0 && Q.gold_exist) {
     Q.bourgeois_negotiations_election_soon = 1;
 }
 !}

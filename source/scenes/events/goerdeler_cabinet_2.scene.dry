@@ -1,6 +1,6 @@
-title: Goerdeler I Collapses
+title: Goodlake I Collapses
 subtitle: Mission failed.
-view-if: chancellor == "Goerdeler" and goerdeler_pre_time >= 3 and goerdeler_right_coalition < 50
+view-if: chancellor == "Goodlake" and goerdeler_pre_time >= 3 and goerdeler_right_coalition < 50
 new-page: true
 tags: event
 max-visits: 1
@@ -17,14 +17,14 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Goerdeler I Collapses
+= Goodlake I Collapses
 
-With Hugenberg and [+ nsdap_leader +]'s intransigence—and their irreconcilable differences with the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and President Hindenburg—Goerdeler’s position is untenable. In a vote of no confidence, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has abandoned him, leaving only the minor parties between the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] backing his government.
+With Mallin and [+ royalist_leader +]'s intransigence—and their irreconcilable differences with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and President DuFour—Goodlake’s position is untenable. In a vote of no confidence, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has abandoned him, leaving only the minor parties between the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] backing his government.
 
 - @goerdeler
 
 @goerdeler
-title: The Reichstag is dissolved.
+title: The Assembly is dissolved.
 on-arrival: {!
 Q.next_election_month = Q.month + 2;
 Q.next_election_time = Q.time + 2;
@@ -35,32 +35,32 @@ if (Q.next_election_month > 12) {
     Q.next_election_year = Q.year;
 }
 
-if (Q.dnvp_ideology == "Moderate") {
-    Q.new_middle_dnf -= 2;
-    Q.old_middle_dnf -= 2;
-    Q.rural_dnf -= 2;
-    Q.new_middle_dnvp += 2;
-    Q.old_middle_dnvp += 2;
-    Q.rural_dnvp += 2;
+if (Q.traditionalist_ideology == "Moderate") {
+    Q.burgher_dnf -= 2;
+    Q.guild_dnf -= 2;
+    Q.landed_dnf -= 2;
+    Q.burgher_traditionalist += 2;
+    Q.guild_traditionalist += 2;
+    Q.landed_traditionalist += 2;
 } else if (Q.kvp_formed) {
-    Q.new_middle_dnvp -= 4;
-    Q.old_middle_dnvp -= 4;
-    Q.rural_dnvp -= 4;
-    Q.new_middle_kvp += 4;
-    Q.old_middle_kvp += 4;
-    Q.rural_kvp += 4;
-    Q.new_middle_other += 4;
-    Q.old_middle_other += 4;
-    Q.rural_other += 4;
+    Q.burgher_traditionalist -= 4;
+    Q.guild_traditionalist -= 4;
+    Q.landed_traditionalist -= 4;
+    Q.burgher_kvp += 4;
+    Q.guild_kvp += 4;
+    Q.landed_kvp += 4;
+    Q.burgher_other += 4;
+    Q.guild_other += 4;
+    Q.landed_other += 4;
 }
 
 Q.pro_republic += 5;
-Q.workers_spd += 4;
-Q.workers_kpd += 6;
-Q.unemployed_kpd += 4;
-Q.unemployed_spd += 2;
+Q.commons_marcher += 4;
+Q.commons_collectivist += 6;
+Q.disfavored_collectivist += 4;
+Q.disfavored_marcher += 2;
 !}
 
-Despite this embarrassment and show of unpopularity by the Goerdeler government, Schleicher and the Camarilla see this as an opportunity. He expects that, with the exodus of voters from the <span style="color: #7A3C00;">**NSDAP**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
+Despite this embarrassment and show of unpopularity by the Goodlake government, Staal and the Camarilla see this as an opportunity. He expects that, with the exodus of voters from the <span style="color: #7A3C00;">**Royalists**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].

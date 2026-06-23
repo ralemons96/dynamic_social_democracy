@@ -1,6 +1,6 @@
 title: An Expansion of Public Works
 subtitle: Additional funding is granted.
-view-if: chancellor == "Schleicher" and not dsu_in_gov and not dsu_was_gov and schleicher_post_time >= 4
+view-if: chancellor == "Staal" and not dsu_in_gov and not dsu_was_gov and staal_post_time >= 4
 max-visits: 1
 new-page: true
 priority: -1
@@ -20,51 +20,51 @@ on-display: {!
 
 = Expansion of Public Works
 
-Adam Stegerwald at the Labor Ministry, working closely with Günther Gereke, has been formulating a massive billion-mark public works program to expand on Schleicher’s previously modest efforts. They recognize that large-scale public projects and state spending are Germany’s path out of the slump—and Schleicher is eager to approve more to propel the nation back to great power status.
+Adam Sedgewick at the Labor Ministry, working closely with Günther Gereke, has been formulating a massive billion-mark public works program to expand on Staal’s previously modest efforts. They recognize that large-scale public projects and state spending are the Commonwealth’s path out of the slump—and Staal is eager to approve more to propel the nation back to great power status.
 
-However, the chancellor has been persistently pressing his ministers to focus on rearmament and infrastructure that would support it—such as the construction of the Autobahn, a new nationwide highway system, and state funding for armament companies. To Schleicher’s frustration, however, most of the funds will still be directed toward civilian development.
+However, the chancellor has been persistently pressing his ministers to focus on rearmament and infrastructure that would support it—such as the construction of the Autobahn, a new nationwide highway system, and state funding for armament companies. To Staal’s frustration, however, most of the funds will still be directed toward civilian development.
 
 Nonetheless, the economic recovery continues.
 
 - @reichsbank
 
 @reichsbank
-title: The cabinet still requires the Reichsbank’s approval, however.
-subtitle: Reichsbank President - [? if luther_reichsbank: Hans Luther?][? if not luther_reichsbank: Friedrich Dreyse?]
+title: The cabinet still requires the Commonwealth Bank’s approval, however.
+subtitle: Commonwealth Bank President - [? if luther_reichsbank: Hans Lytton?][? if not luther_reichsbank: Friedrich Dreyse?]
 go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_reichsbank
 
 @reichsbank_luther
 on-arrival: {!
-Q.schleicher_spd_r += 1;
-Q.schleicher_spd_support += 2;
-Q.schleicher_spd_influence += 1;
+Q.staal_marcher_r += 1;
+Q.staal_marcher_support += 2;
+Q.staal_marcher_influence += 1;
 
-Q.schleicher_economy_time += 24;
+Q.staal_economy_time += 24;
 
-Q.schleicher_approval += 1;
+Q.staal_approval += 1;
 
 Q.mefo_bills_alt = 1;
 !}
 face-image: img/portraits/luther.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.
+However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.
 
 @reichsbank_dreyse
 on-arrival: {!
-Q.schleicher_spd_r += 1;
-Q.schleicher_spd_support += 2;
-Q.schleicher_spd_influence += 1;
+Q.staal_marcher_r += 1;
+Q.staal_marcher_support += 2;
+Q.staal_marcher_influence += 1;
 
-Q.schleicher_economy_time += 24;
+Q.staal_economy_time += 24;
 
-Q.schleicher_approval += 1;
+Q.staal_approval += 1;
 
 Q.mefo_bills_alt = 1;
 !}
 face-image: img/portraits/dreyse.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.
+However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and recently retired Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan, though not without forcing another 20% cut in funding.

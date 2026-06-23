@@ -1,6 +1,6 @@
 title: Disputes within the Popular Front
-subtitle: As expected, there are clashes between the <span style="color: #700000;">**KPD**</span> and [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
-view-if: in_popular_front = 1 and popular_front_dispute_timer = 0 and (labor_minister_party = "Z" or economic_minister_party = "Z" or interior_minister_party = "Z" or agriculture_minister_party = "Z")
+subtitle: As expected, there are clashes between the <span style="color: #700000;">**Collectivists**</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+view-if: in_popular_front = 1 and popular_front_dispute_timer = 0 and (labor_minister_party = "Unionist" or economic_minister_party = "Unionist" or interior_minister_party = "Unionist" or agriculture_minister_party = "Unionist")
 new-page: true
 on-arrival: popular_front_dispute_timer = 5;
 #tags: event

@@ -1,13 +1,13 @@
 title: Economic Sanctions
-subtitle: Our military buildup has caused sanctions from France and other countries.
+subtitle: Our military buildup has caused sanctions from Ethia and other countries.
 new-page: true
-on-arrival: workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 4; rural_nsdap += 3; unemployed += 3; workers_spd -= 4 if spd_in_government; new_middle_spd -= 5 if spd_in_government; old_middle_spd -= 5 if spd_in_government; rural_spd -= 4 if spd_in_government; economic_growth -= 1; nationalism += 5; pacifism -= 1
+on-arrival: commons_royalist += 3; burgher_royalist += 3; guild_royalist += 4; landed_royalist += 3; disfavored += 3; commons_marcher -= 4 if marcher_in_government; burgher_marcher -= 5 if marcher_in_government; guild_marcher -= 5 if marcher_in_government; landed_marcher -= 4 if marcher_in_government; economic_growth -= 1; nationalism += 5; pacifism -= 1
 #tags: event
 view-if: reichswehr_strength > 140
 max-visits: 1
 
 = Economic Sanctions
 
-In response to our military rearmament in contravention of the Versailles Treaty, the Western Allies have imposed economic sanctions on Germany. The costs of the sanctions are largely borne by the proletariat; the people are facing increasing poverty.
+In response to our military rearmament in contravention of the Versailles Treaty, the Western Allies have imposed economic sanctions on the Commonwealth. The costs of the sanctions are largely borne by the proletariat; the people are facing increasing poverty.
 
 # options: 

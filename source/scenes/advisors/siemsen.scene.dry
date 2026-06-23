@@ -1,13 +1,13 @@
-title: Anna Siemsen
+title: Anna Siemen
 is-pinned-card: true
 tags: advisor, left
 card-image: img/portraits/SiemsenAnna.jpg
 view-if: siemsen_advisor = 1
 new-page: true 
 
-= Anna Siemsen
+= Anna Siemen
 
-Anna Siemsen is an educational reform advocate and pacifist, who was one of the few German women to receive a PhD in the pre-war period. She was a former member of the <span style="color: #D47B9B;">**USPD**</span>.
+Anna Siemen is an educational reform advocate and pacifist, who was one of the few Commonwealth women to receive a PhD in the pre-war period. She was a former member of the <span style="color: #D47B9B;">**USPD**</span>.
 
 - @campaign_pacifism
 - @structure_
@@ -25,15 +25,15 @@ go-to: rally.pacifism
 
 @curriculum_
 title: Change the educational curriculum.
-choose-if: advisor_action_timer = 0 and spd_in_government and chancellor_party = "SPD" and (prussia_leader == "Braun" or prussia_leader == "Rosenfeld") and curriculum_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span style="color: #c00000;">SPD</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span style="color: #c00000;">SPD</span> must control the Prussian Minister-President position. ?][? if curriculum_timer > 0 : It is too early to change the curriculum again. ?]
+choose-if: advisor_action_timer = 0 and marcher_in_government and chancellor_party = "Marcher" and (heartland_leader == "Bristol" or heartland_leader == "Pendrigon") and curriculum_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not currently in government. ?][? if chancellor_party != "Marcher": The <span style="color: #c00000;">Marchers</span> must control the chancellorship. ?][? if heartland_leader != "Bristol" and heartland_leader != "Pendrigon": The <span style="color: #c00000;">Marchers</span> must control the Heartland Minister-President position. ?][? if curriculum_timer > 0 : It is too early to change the curriculum again. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.curriculum
 
 
 @structure_
 title: Change the structure and funding of education.
-choose-if: advisor_action_timer = 0 and spd_in_government and chancellor_party = "SPD" and (prussia_leader == "Braun" or prussia_leader == "Rosenfeld")
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span style="color: #c00000;">SPD</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span style="color: #c00000;">SPD</span> must control the Prussian Minister-President position. ?]
+choose-if: advisor_action_timer = 0 and marcher_in_government and chancellor_party = "Marcher" and (heartland_leader == "Bristol" or heartland_leader == "Pendrigon")
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not currently in government. ?][? if chancellor_party != "Marcher": The <span style="color: #c00000;">Marchers</span> must control the chancellorship. ?][? if heartland_leader != "Bristol" and heartland_leader != "Pendrigon": The <span style="color: #c00000;">Marchers</span> must control the Heartland Minister-President position. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.structure

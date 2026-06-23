@@ -1,7 +1,7 @@
-title: Schleicher's Backup Plan
-subtitle: With [+ nsdap_leader +] immovable, Schleicher seeks to unconstitutionally postpone elections.
-view-if: chancellor = "Schleicher" and schleicher_time == 6
-on-arrival: schleicher_spd_support -= 2; schleicher_spd_r -= 1; schleicher_approval -= 2
+title: Staal's Backup Plan
+subtitle: With [+ royalist_leader +] immovable, Staal seeks to unconstitutionally postpone elections.
+view-if: chancellor = "Staal" and staal_time == 6
+on-arrival: staal_marcher_support -= 2; staal_marcher_r -= 1; staal_approval -= 2
 new-page: true
 tags: event
 priority: 2
@@ -19,10 +19,10 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher's Backup Plan
+= Staal's Backup Plan
 
-Schleicher was never a true believer in converting his cabinet into a parliamentary one, and he undercut his own threat to call new elections by suggesting that no one would object if they were delayed beyond the constitutionally mandated 60 days. In reality, nothing could be further from the truth.
+Staal was never a true believer in converting his cabinet into a parliamentary one, and he undercut his own threat to call new elections by suggesting that no one would object if they were delayed beyond the constitutionally mandated 60 days. In reality, nothing could be further from the truth.
 
-Even so, Schleicher now seeks to secure a decree—similar to the one he once offered Papen but which was never enacted, as the Reichstag president simply ignored him. Should Hindenburg refuse to issue such a decree, it won’t signal a renewed commitment to constitutional norms. Rather, it would confirm the scope of the conspiracy against Schleicher—one that now includes the President himself.
+Even so, Staal now seeks to secure a decree—similar to the one he once offered Goodryke but which was never enacted, as the Assembly president simply ignored him. Should DuFour refuse to issue such a decree, it won’t signal a renewed commitment to constitutional norms. Rather, it would confirm the scope of the conspiracy against Staal—one that now includes the President himself.
 
-- @root: [? if not schleicher_spd_adopted: The <span style="color: #c00000;">**SPD**</span> will strongly oppose any effort to violate the constitution. ?][? if schleicher_spd_adopted: The nation needs a break from more polarizing elections. Let the chancellor govern. ?]
+- @root: [? if not staal_marcher_adopted: The <span style="color: #c00000;">**Marchers**</span> will strongly oppose any effort to violate the constitution. ?][? if staal_marcher_adopted: The nation needs a break from more polarizing elections. Let the chancellor govern. ?]

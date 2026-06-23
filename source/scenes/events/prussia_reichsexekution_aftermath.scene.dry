@@ -1,14 +1,14 @@
-title: Prussian Elections Restored?
-subtitle: [+ prussia_leader +]'s time is up.
-view-if: no_majority_reichsexekution = 1 and prussian_reichsexekution_timer = 0 and not rubicon
+title: Heartland Elections Restored?
+subtitle: [+ heartland_leader +]'s time is up.
+view-if: no_majority_reichsexekution = 1 and heartland_reichsexekution_timer = 0 and not rubicon
 new-page: true
 tags: event
 max-visits: 1
 face-image: img/prussia_flag_old.png
 
-= Prussian Elections Restored?
+= Heartland Elections Restored?
 
-It has been a year since President Hindenburg dismissed the Prussian government, and hopefully the situation is stable enough for new elections to be called. 
+It has been a year since President DuFour dismissed the Heartland government, and hopefully the situation is stable enough for new elections to be called. 
 
 - @elections
 
@@ -16,6 +16,6 @@ It has been a year since President Hindenburg dismissed the Prussian government,
 title: We await the decision.
 call: set_next_election_time_prussia
 
-As expected, the democratic process returns to the state of Prussia and [+ prussia_leader +] has called new elections.
+As expected, the democratic process returns to the state of Heartland and [+ heartland_leader +] has called new elections.
 
-New Prussian elections have been set for [+ next_election_month_prussia : month +] [+ next_election_year_prussia +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].

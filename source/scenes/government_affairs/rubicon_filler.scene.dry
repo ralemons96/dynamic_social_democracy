@@ -4,7 +4,7 @@ view-if: rubicon
 card-image: img/hourglass.jpg
 is-card: true
 new-page: true
-go-to: blank if schleicher_spd_influence >= 6
+go-to: blank if staal_marcher_influence >= 6
 
 = Biding our Time
 
@@ -33,11 +33,11 @@ We have reduced dissent across all factions.
 subtitle: We must defend our creation.
 on-arrival: pro_republic += 2
 
-In a few years time, the German people will thank us.
+In a few years time, the Commonwealth people will thank us.
 
 @protest
 subtitle: The [+ chancellor +] cabinet must not be allowed to stand.
 view-if: papen_post_2
-on-arrival: pro_republic -= 2; workers_spd += 1; new_middle_spd += 1
+on-arrival: pro_republic -= 2; commons_marcher += 1; burgher_marcher += 1
 
 Labor has taken to the streets.

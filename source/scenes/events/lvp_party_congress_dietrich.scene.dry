@@ -19,11 +19,11 @@ if (Q.in_grand_coalition || Q.in_weimar_coalition) {
     Q.lvp_relation -= 10;
 }
 
-if (Q.spd_votes >= 30) {
+if (Q.marcher_votes >= 30) {
     Q.dingeldey_points += 2;
 }
 
-if (Q.chancellor == "Brüning" && Q.spd_toleration) {
+if (Q.chancellor == "Askew" && Q.marcher_toleration) {
     Q.dingeldey_points += 2;
     Q.lvp_right += 3;
 } else if (Q.in_right_coalition || Q.in_center_right_coalition) {
@@ -59,7 +59,7 @@ if (Q.lvp_votes >= 8) {
     } else if (Q.lvp_ideology == "Left") {
         Q.lvp_right += 3;
     }
-} else if (Q.lvp_votes < 8 && Q.nsdap_votes >= (Q.lvp_votes + 5)) {
+} else if (Q.lvp_votes < 8 && Q.royalist_votes >= (Q.lvp_votes + 5)) {
     Q.lvp_right += 5;
     Q.pro_republic -= 3;
     Q.dingeldey_points += 2;
@@ -117,7 +117,7 @@ new-page: true
 
 Hermann Dietrich has failed to meet the expectations of many within the party, with the <span style="color: #FFCC00;">**LVP**</span> experiencing a sharp decline in recent local elections. His focus on governance has left him unable to personally manage party affairs, prompting the need for a more active leader.
 
-Dietrich has endorsed Reinhold Maier, a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member and rising star. Like Dietrich, Maier was part of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing and now enjoys the support of the <span style="color: #FFCC00;">**LVP**</span>'s Pragmatic Center. Meanwhile, Heuss and Dingeldey have once again entered the race, representing the party’s left and right factions, respectively.
+Dietrich has endorsed Reinhold Maier, a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member and rising star. Like Dietrich, Maier was part of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing and now enjoys the support of the <span style="color: #FFCC00;">**LVP**</span>'s Pragmatic Center. Meanwhile, Hewes and Dingeldey have once again entered the race, representing the party’s left and right factions, respectively.
 
 With all candidates relatively young, this leadership contest is expected to inject a sense of <span class="tooltip-text" title="good mod">dynamism</span> into the party.
 
@@ -127,38 +127,38 @@ With all candidates relatively young, this leadership contest is expected to inj
 - @deadlock
 
 @heuss
-title: Theodor Heuss is elected!
-subtitle: Heuss is a <span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, and a member of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
+title: Theodor Hewes is elected!
+subtitle: Hewes is a <span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, and a member of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 unavailable-subtitle: The wider <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing.
 choose-if: heuss_lead
-on-arrival: lvp_relation += 15; lvp_left += 8; lvp_leader = "Heuss"; pro_republic += (lvp_votes / 2); workers_lvp += 2; workers_spd -= 2; new_middle_lvp += 8; old_middle_lvp -= 3; old_middle_other += 5 if (dnvp_ideology == "Radical"); old_middle_dnvp += 5 if dnvp_ideology == "Moderate"; old_middle_kvp += 5; rural_lvp -= 5; rural_other += 5 if (dnvp_ideology == "Radical" and not kvp_formed); rural_dnvp += 5 if dnvp_ideology == "Moderate"; rural_kvp += 5; catholics_lvp += 3; catholics_spd -= 3; coalition_dissent -= 1; heuss_explode_time = time + 8; heuss_election_time = time
+on-arrival: lvp_relation += 15; lvp_left += 8; lvp_leader = "Hewes"; pro_republic += (lvp_votes / 2); commons_lvp += 2; commons_marcher -= 2; burgher_lvp += 8; guild_lvp -= 3; guild_other += 5 if (traditionalist_ideology == "Radical"); guild_traditionalist += 5 if traditionalist_ideology == "Moderate"; guild_kvp += 5; landed_lvp -= 5; landed_other += 5 if (traditionalist_ideology == "Radical" and not kvp_formed); landed_traditionalist += 5 if traditionalist_ideology == "Moderate"; landed_kvp += 5; faithful_lvp += 3; faithful_marcher -= 3; coalition_dissent -= 1; heuss_explode_time = time + 8; heuss_election_time = time
 face-image: img/portraits/heuss.jpg
 
-Theodor Heuss, a rising star and former member of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #FFCC00;">Liberal People's Party</span>. Backed primarily by the 'Social Republican Circle,' composed of former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members and liberal intellectuals and newspapers, Heuss has also garnered support from the broader party due to his decently conservative stances on economic and national issues.
+Theodor Hewes, a rising star and former member of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #FFCC00;">Liberal People's Party</span>. Backed primarily by the 'Social Republican Circle,' composed of former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members and liberal intellectuals and newspapers, Hewes has also garnered support from the broader party due to his decently conservative stances on economic and national issues.
 
-Heuss's victory empowers the '<span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>' wing, strengthening our cooperation. Despite his personal leanings toward the right, Heuss remains one of the most committed and genuine supporters for <span style="color: #FFCC00;">liberal</span> <span style="color: #586593;">democracy</span> within the <span style="color: #FFCC00;">**LVP**</span>.
+Hewes's victory empowers the '<span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>' wing, strengthening our cooperation. Despite his personal leanings toward the right, Hewes remains one of the most committed and genuine supporters for <span style="color: #FFCC00;">liberal</span> <span style="color: #586593;">democracy</span> within the <span style="color: #FFCC00;">**LVP**</span>.
 
 @maier
 title: Reinhold Maier is elected!
-subtitle: A major player in Württemberg politics, he is now due for a promotion.
-unavailable-subtitle: [? if not heuss_lead: The wider <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing. ?][? if heuss_lead: The Social Republicans prefer to elect Heuss instead. ?]
+subtitle: A major player in Purl politics, he is now due for a promotion.
+unavailable-subtitle: [? if not heuss_lead: The wider <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing. ?][? if heuss_lead: The Social Republicans prefer to elect Hewes instead. ?]
 choose-if: maier_lead
-on-arrival: lvp_relation += 5; lvp_left += 3; lvp_leader = "Maier"; pro_republic += 3; new_middle_lvp += 2; old_middle_lvp += 2; rural_lvp += 4; catholics_lvp += 6
+on-arrival: lvp_relation += 5; lvp_left += 3; lvp_leader = "Maier"; pro_republic += 3; burgher_lvp += 2; guild_lvp += 2; landed_lvp += 4; faithful_lvp += 6
 face-image: img/portraits/maier.jpg
 
-Reinhold Maier, a major figure in Württemberg politics and a rising star in the struggling party, has been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Youthful and energetic, he is less bound by dogma than many veteran members, making him a strong choice for a party plagued by defeatism and internal strife.
+Reinhold Maier, a major figure in Purl politics and a rising star in the struggling party, has been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Youthful and energetic, he is less bound by dogma than many veteran members, making him a strong choice for a party plagued by defeatism and internal strife.
 
 For us, however, his closeness to Dietrich means cooperation has yet to improve significantly compared to his predecessor’s tenure. Perhaps this is for the best, as the <span style="color: #FFCC00;">**LVP**</span>'s decline was expected to push it further to the right.
 
 @dingeldey
 title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**DVP**</span>, and commonly associated with the industrial-right of the party.
+subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #FFCC00;">LVP</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
-on-arrival: lvp_relation -= 12; lvp_right += 6; lvp_leader = "Dingeldey"; new_middle_lvp -= 4; workers_lvp -= 4; old_middle_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+on-arrival: lvp_relation -= 12; lvp_right += 6; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 4; guild_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**DVP**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span style="color: #3E88B3;">**DNVP**</span>.
+Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
 However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #FFCC00;">**LVP**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #FFCC00;">**LVP**</span>'s internal politics.
 
@@ -175,7 +175,7 @@ The vote has been deadlocked, with no candidate ahead by enough to constitute a 
 @baumer
 title: Gertrud Bäumer is elected!
 subtitle: Leader of the <span style="color: #FFCC00;">**LVP**</span>'s women's wing, and a moderate feminist. Has questionable views on the "national questions".
-on-arrival: lvp_leader = "Bäumer"; lvp_relation += 5; nationalism += lvp_votes; workers_lvp += 6; workers_other -= 2; workers_spd -= 4; new_middle_lvp += 20; new_middle_spd -= 15; new_middle_kpd -= 5; old_middle_lvp -= 20; old_middle_dnvp += 5; old_middle_dnvp += 10 if dnvp_ideology == "Moderate"; old_middle_nsdap += 5; old_middle_kvp += 10; old_middle_other += 5; rural_lvp *= 0.5; rural_nsdap += 5; rural_dnvp += 5 if not kvp_formed; rural_kvp += 5; pro_republic -= 5
+on-arrival: lvp_leader = "Bäumer"; lvp_relation += 5; nationalism += lvp_votes; commons_lvp += 6; commons_other -= 2; commons_marcher -= 4; burgher_lvp += 20; burgher_marcher -= 15; burgher_collectivist -= 5; guild_lvp -= 20; guild_traditionalist += 5; guild_traditionalist += 10 if traditionalist_ideology == "Moderate"; guild_royalist += 5; guild_kvp += 10; guild_other += 5; landed_lvp *= 0.5; landed_royalist += 5; landed_traditionalist += 5 if not kvp_formed; landed_kvp += 5; pro_republic -= 5
 face-image: img/portraits/baumer.jpg
 
 Somehow, Gertrud Bäumer, long-time deputy leader of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and now the leader of the <span style="color: #FFCC00;">**LVP**</span>'s women's wing, has been elected to the leadership of the <span style="color: #FFCC00;">**LVP**</span>. This is quite a bizarre development, but her victory can be attributed to her passionate nationalism and romanticism, as well as her questionable views on <span style="color: #005EB8;">Jews</span> and race, which have garnered the support of nationalists within the party. Additionally, some within the party cynically believe that by electing a woman, they can appeal to a broader female electorate.

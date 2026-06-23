@@ -1,39 +1,39 @@
-title: Hindenburg's Announcement
+title: DuFour's Announcement
 subtitle: The President is to announce whether or not he will run again.
 new-page: true
 on-arrival: {!
 Q.the_decision_2010 = 1;
-Q.hindenburg_run_points = 0;
-if (Q.nsdap_votes + Q.dnf_votes > Q.dnvp_votes + Q.other_votes + Q.dvp_votes + Q.z_votes + Q.ddp_votes + Q.lvp_votes && Q.dnvp_ideology == "Moderate") {
-    Q.hindenburg_run_points += 4;
-} else if (Q.nsdap_votes + Q.dnvp_votes > Q.kvp_votes + Q.other_votes + Q.dvp_votes + Q.z_votes + Q.ddp_votes + Q.lvp_votes && Q.dnvp_ideology == "Radical") {
-    Q.hindenburg_run_points += 4;
+Q.dufour_run_points = 0;
+if (Q.royalist_votes + Q.dnf_votes > Q.traditionalist_votes + Q.other_votes + Q.gold_votes + Q.unionist_votes + Q.ddp_votes + Q.lvp_votes && Q.traditionalist_ideology == "Moderate") {
+    Q.dufour_run_points += 4;
+} else if (Q.royalist_votes + Q.traditionalist_votes > Q.kvp_votes + Q.other_votes + Q.gold_votes + Q.unionist_votes + Q.ddp_votes + Q.lvp_votes && Q.traditionalist_ideology == "Radical") {
+    Q.dufour_run_points += 4;
 }
-if (Q.dnvp_ideology == "Radical") {
-    Q.hindenburg_run_points += 1;
-} else if (Q.dnvp_ideology == "Moderate") {
-    Q.hindenburg_run_points += 3;
+if (Q.traditionalist_ideology == "Radical") {
+    Q.dufour_run_points += 1;
+} else if (Q.traditionalist_ideology == "Moderate") {
+    Q.dufour_run_points += 3;
 }
-if (Q.schleicher_spd) Q.hindenburg_run_points += 8;
-if (Q.bruning_toleration_time) Q.hindenburg_run_points += 3;
-if (Q.in_center_right_coalition || Q.in_right_coalition) Q.hindenburg_run_points -= 1;
-if (Q.spd_votes >= 26) Q.hindenburg_run_points += 1;
-if (Q.spd_votes >= 29) Q.hindenburg_run_points += 1;
-if (Q.spd_votes >= 32) Q.hindenburg_run_points += 1;
+if (Q.staal_marcher) Q.dufour_run_points += 8;
+if (Q.bruning_toleration_time) Q.dufour_run_points += 3;
+if (Q.in_center_right_coalition || Q.in_right_coalition) Q.dufour_run_points -= 1;
+if (Q.marcher_votes >= 26) Q.dufour_run_points += 1;
+if (Q.marcher_votes >= 29) Q.dufour_run_points += 1;
+if (Q.marcher_votes >= 32) Q.dufour_run_points += 1;
 if (Q.left_strength >= Q.reformist_strength) {
-    Q.hindenburg_run_points += 1;
+    Q.dufour_run_points += 1;
 }
-if (Q.spd_votes + (Q.z_votes*0.8) + Q.ddp_votes + (Q.lvp_votes / 2) >= 50) Q.hindenburg_run_points += 2;
-if (Q.kpd_relation >= 40) Q.hindenburg_run_points += 1;
-if (Q.capital_strike_progress >= 6) Q.hindenburg_run_points += 1;
-if (Q.coup_progress >= 5) Q.hindenburg_run_points += 1;
-if (Q.pro_republic >= 70) Q.hindenburg_run_points -= 1;
-if (Q.unemployed < 15) Q.hindenburg_run_points -= 1;
-if (Q.unemployed >= 30) Q.hindenburg_run_points += 1;
-if (Q.rubicon_mini) Q.hindenburg_run_points = 8;
-if (Q.hindenburg_run_points >= 7) Q.hindenburg_run = 1;
+if (Q.marcher_votes + (Q.unionist_votes*0.8) + Q.ddp_votes + (Q.lvp_votes / 2) >= 50) Q.dufour_run_points += 2;
+if (Q.collectivist_relation >= 40) Q.dufour_run_points += 1;
+if (Q.capital_strike_progress >= 6) Q.dufour_run_points += 1;
+if (Q.coup_progress >= 5) Q.dufour_run_points += 1;
+if (Q.pro_republic >= 70) Q.dufour_run_points -= 1;
+if (Q.disfavored < 15) Q.dufour_run_points -= 1;
+if (Q.disfavored >= 30) Q.dufour_run_points += 1;
+if (Q.rubicon_mini) Q.dufour_run_points = 8;
+if (Q.dufour_run_points >= 7) Q.dufour_run = 1;
 
-Q.hindenburg_signatures = Math.round(Q.hindenburg_run_points * 0.445 * 100) / 100;
+Q.dufour_signatures = Math.round(Q.dufour_run_points * 0.445 * 100) / 100;
 !}
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -48,41 +48,41 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 tags: event
-view-if: year = 1932 and month >= 2 and not hindenburg_term_extended
+view-if: year = 1932 and month >= 2 and not dufour_term_extended
 priority: 2
 max-visits: 1
 
 
-= Hindenburg's Announcement
+= DuFour's Announcement
 
-President Hindenburg has expressed his reluctance to run for re-election. At 84 years old, he prefers to spend his remaining years in retirement free from the burdens of his high office. While he has been open to serving longer if his term were extended by the Reichstag, the failure of those efforts, combined with his unwillingness to endure a grueling presidential campaign, has caused concern, particularly for Kurt von Schleicher[? if bruning_toleration_time: and Chancellor [+ chancellor +], on whom he depends to enact his decrees?].
+President DuFour has expressed his reluctance to run for re-election. At 84 years old, he prefers to spend his remaining years in retirement free from the burdens of his high office. While he has been open to serving longer if his term were extended by the Assembly, the failure of those efforts, combined with his unwillingness to endure a grueling presidential campaign, has caused concern, particularly for Kurt von Staal[? if bruning_toleration_time: and Chancellor [+ chancellor +], on whom he depends to enact his decrees?].
 
-Heinrich Sahm, the Mayor of Berlin, has formed a re-election committee to persuade Hindenburg to run again. This effort has included the collection of over [+ hindenburg_signatures +] million signatures and appeals from a wide array of figures and political parties across German society, including Artur Mahraun of the Young German Order, and controversial former Defense Ministers Otto Gessler and Gustav Noske.
+Heinrich Sahm, the Mayor of Axton, has formed a re-election committee to persuade DuFour to run again. This effort has included the collection of over [+ dufour_signatures +] million signatures and appeals from a wide array of figures and political parties across Commonwealth society, including Artur Mahraun of the Young Commonwealth Order, and controversial former Defense Ministers Otto Gesling and Gustav Noske.
 
-Impressed by the public support, Hindenburg is reconsidering his decision but insists that his candidacy must be backed by the German Right and veteran organizations rather than the German Left and Center. [? if not hitler_deported: Hitler?][? if hitler_deported: Goebbels?], Hugenberg, their parties, and the <span style="color: #3E88B3;">**Stahlhelm**</span>—aligned with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>—have demanded concessions in exchange for their support, despite the <span style="color: #3E88B3;">**Stahlhelm**</span>'s general friendliness toward Hindenburg and its belief that he is one of their own. However, Hindenburg sees these demands as an affront to his personal honor and refuses to tie his candidacy to the dismissal of the current government or the appointment of Hugenberg and Hitler.
+Impressed by the public support, DuFour is reconsidering his decision but insists that his candidacy must be backed by the Commonwealth Right and veteran organizations rather than the Commonwealth Left and Center. [? if not gallax_deported: Gallax?][? if gallax_deported: Goebbels?], Mallin, their parties, and the <span style="color: #3E88B3;">**Wardens**</span>—aligned with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>—have demanded concessions in exchange for their support, despite the <span style="color: #3E88B3;">**Wardens**</span>'s general friendliness toward DuFour and its belief that he is one of their own. However, DuFour sees these demands as an affront to his personal honor and refuses to tie his candidacy to the dismissal of the current government or the appointment of Mallin and Gallax.
 
 - @hindenburg_drop_out
 - @hindenburg_running
 
 @hindenburg_drop_out
 title: We await his decision.
-view-if: not hindenburg_run
+view-if: not dufour_run
 
-President Hindenburg has decided not to run for re-election, citing his health problems and old age as the primary reasons. He feels that the current national situation doesn't warrant a reelection campaign.
+President DuFour has decided not to run for re-election, citing his health problems and old age as the primary reasons. He feels that the current national situation doesn't warrant a reelection campaign.
 
-This development could be either beneficial or detrimental to us. If we wanted to rally behind Hindenburg to oppose Hitler and the <span style="color: #7A3C00;">Nazis</span>, the absence of a unifying, widely supported national figure—one capable of garnering support from both the moderate left and right—leaves us at a disadvantage. On the other hand, if we decide to run a candidate of our own, the lack of someone with Hindenburg's charisma could make it easier for us to secure a victory.
+This development could be either beneficial or detrimental to us. If we wanted to rally behind DuFour to oppose Gallax and the <span style="color: #7A3C00;">Royalists</span>, the absence of a unifying, widely supported national figure—one capable of garnering support from both the moderate left and right—leaves us at a disadvantage. On the other hand, if we decide to run a candidate of our own, the lack of someone with DuFour's charisma could make it easier for us to secure a victory.
 
-The absence of a candidate for the German middle and moderate right to rally behind creates a vacuum, which will likely be filled as other parties announce their candidates in the near future.
+The absence of a candidate for the Commonwealth middle and moderate right to rally behind creates a vacuum, which will likely be filled as other parties announce their candidates in the near future.
 
-- @presidential_election_1932_candidate: Who will the candidates be now that Hindenburg is retiring?
+- @presidential_election_1932_candidate: Who will the candidates be now that DuFour is retiring?
 
 @hindenburg_running
 title: We await his decision.
-view-if: hindenburg_run
-on-arrival: new_middle_kvp += 4; old_middle_kvp += 4; rural_kvp += 2
+view-if: dufour_run
+on-arrival: burgher_kvp += 4; guild_kvp += 4; landed_kvp += 2
 
-[? if dnvp_ideology == "Moderate": The break of the <span style="color: #3E88B3;">**Stahlhelm**</span> from the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> to endorse Hindenburg's candidacy, combined with the unconditional support of the Kyffhäuser League, has given Hindenburg the motivation to run for re-election. He is now convinced that his primary source of support will come from the right.?][? if dnvp_ideology == "Radical": Despite Hindenburg rejecting the demands of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>, he still (incorrectly) believes that the friendly leadership of the <span style="color: #3E88B3;">**Stahlhelm**</span>, despite his rejection of their demands, would unconditionally support him. Together with the unconditional backing of the Kyffhäuser League, this has given Hindenburg the motivation to run for re-election, convinced his primary support would come from the right.?] Of course, a multitude of other factors contributed, including the signature campaign and Schleicher's persistence.
+[? if traditionalist_ideology == "Moderate": The break of the <span style="color: #3E88B3;">**Wardens**</span> from the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> to endorse DuFour's candidacy, combined with the unconditional support of the Kyffhäuser League, has given DuFour the motivation to run for re-election. He is now convinced that his primary source of support will come from the right.?][? if traditionalist_ideology == "Radical": Despite DuFour rejecting the demands of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>, he still (incorrectly) believes that the friendly leadership of the <span style="color: #3E88B3;">**Wardens**</span>, despite his rejection of their demands, would unconditionally support him. Together with the unconditional backing of the Kyffhäuser League, this has given DuFour the motivation to run for re-election, convinced his primary support would come from the right.?] Of course, a multitude of other factors contributed, including the signature campaign and Staal's persistence.
 
-The Sahm committee for Hindenburg's re-election has been dissolved and replaced by a much larger, national "United Hindenburg Committees" organization, which will work in coordination with the various local Hindenburg committees across the country. With the appointment of Westarp and Gereke to top positions, and the exclusion of <span style="color: #c00000;">socialist</span> and [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] politicians, they are attempting to position Hindenburg as the candidate of the moderate right.
+The Sahm committee for DuFour's re-election has been dissolved and replaced by a much larger, national "United DuFour Committees" organization, which will work in coordination with the various local DuFour committees across the country. With the appointment of Westmore and Gereke to top positions, and the exclusion of <span style="color: #c00000;">socialist</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] politicians, they are attempting to position DuFour as the candidate of the moderate right.
 
-- @presidential_election_1932_candidate: Who will the candidates be now that Hindenburg has decided to run for re-election?
+- @presidential_election_1932_candidate: Who will the candidates be now that DuFour has decided to run for re-election?

@@ -2,7 +2,7 @@ title: Women's Rights
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
-view-if: spd_in_government = 1 and womens_rights_timer = 0 and chancellor_party == "SPD" and not cvp_women_accepted
+view-if: marcher_in_government = 1 and womens_rights_timer = 0 and chancellor_party == "Marcher" and not concord_women_accepted
 on-arrival: womens_rights_timer += 10; month_actions += 1
 card-image: img/portraits/PfülfAntonie.jpg
 frequency: 50
@@ -10,9 +10,9 @@ max-visits: 6
 
 = Women's Rights
 
-According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in Germany.
+According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in the Commonwealth.
 
-For better or for worse, the <span style="color: #c00000;">Socialists</span> stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+For better or for worse, the <span style="color: #c00000;">Socialists</span> stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if marcher_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
 - @labor: Institute policies that help women in the workforce.
 - @family: Reform marriage, divorce, and property law.
@@ -24,14 +24,14 @@ For better or for worse, the <span style="color: #c00000;">Socialists</span> sta
 
 @labor
 subtitle: Paid maternal leave policies, equal pay policies, and so on.
-on-arrival: womens_work += 1; womens_rights += 1; workers_spd -= 4 if unemployed > 15; new_middle_spd += 4*(1-dissent); workers_spd += 4*(1 - dissent); women_goal_spd += 1; economic_growth += 0.1;
+on-arrival: womens_work += 1; womens_rights += 1; commons_marcher -= 4 if disfavored > 15; burgher_marcher += 4*(1-dissent); commons_marcher += 4*(1 - dissent); women_goal_marcher += 1; economic_growth += 0.1;
 max-visits: 3
 
-These policies mean that our party is increasing in popularity among the "new women" who work outside the home. [? if unemployed > 15 : However, many male workers develop a backlash towards women in the workplace, especially given the rising unemployment. ?]
+These policies mean that our party is increasing in popularity among the "new women" who work outside the home. [? if disfavored > 15 : However, many male workers develop a backlash towards women in the workplace, especially given the rising unemployment. ?]
 
 @family
 subtitle: Change family and inheritance law to treat women more equally.
-on-arrival: family_law += 1; womens_rights += 1; new_middle_spd += 2*(1-dissent); workers_spd += 3*(1-dissent); old_middle_spd -= 2; rural_spd -= 2; catholics_spd -= 4; coalition_dissent += 1; z_relation -= 4; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 0.5; women_goal_spd += 1
+on-arrival: family_law += 1; womens_rights += 1; burgher_marcher += 2*(1-dissent); commons_marcher += 3*(1-dissent); guild_marcher -= 2; landed_marcher -= 2; faithful_marcher -= 4; coalition_dissent += 1; unionist_relation -= 4; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 0.5; women_goal_marcher += 1
 max-visits: 2
 
 These policies aim to ensure that women have equal rights within a marriage, including the right to divorce. The more conservative segments of society treat our reforms as deleterious to the social fabric.
@@ -40,9 +40,9 @@ These policies aim to ensure that women have equal rights within a marriage, inc
 @welfare
 subtitle: -1 budget
 choose-if: budget > 0
-on-arrival: welfare += 1; workers_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent); budget -= 1; womens_rights += 1; coalition_dissent += 1 if welfare >= 1 and unemployed >= 15; unemployed -= 0.4; inflation += 0.2; dvp_right += 1 if welfare >= 1; lvp_right += 1 if welfare >= 1; women_goal_spd += 1; economic_growth += 0.3;
+on-arrival: welfare += 1; commons_marcher += 5*(1-dissent); disfavored_marcher += 5*(1-dissent); budget -= 1; womens_rights += 1; coalition_dissent += 1 if welfare >= 1 and disfavored >= 15; disfavored -= 0.4; inflation += 0.2; gold_right += 1 if welfare >= 1; lvp_right += 1 if welfare >= 1; women_goal_marcher += 1; economic_growth += 0.3;
 
-We have increased welfare spending on women and children. [? if welfare >= 1 and unemployed >= 15 : Some of our coalition partners consider increased welfare spending profligate at this time. ?]
+We have increased welfare spending on women and children. [? if welfare >= 1 and disfavored >= 15 : Some of our coalition partners consider increased welfare spending profligate at this time. ?]
 
 
 @liberalize
@@ -51,11 +51,11 @@ subtitle: [? if progressive_coalition < 50 : This is unlikely to succeed; we do 
 go-to: liberalize_fail if progressive_coalition < 50; liberalize_success if progressive_coalition >= 50
 
 @liberalize_fail
-on-arrival: z_relation -= 5; coalition_dissent += 1; workers_spd += 3*(1-dissent); catholics_spd -= 5;
+on-arrival: unionist_relation -= 5; coalition_dissent += 1; commons_marcher += 3*(1-dissent); faithful_marcher -= 5;
 
-Unfortunately, our proposal is voted down in the Reichstag, with the Catholic [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] party (our long-time partners) speaking in particularly vehement opposition, and some of our own members breaking party discipline. The activists, feeling demoralized from this attempt, have decided to bide their time.
+Unfortunately, our proposal is voted down in the Assembly, with the Catholic [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] party (our long-time partners) speaking in particularly vehement opposition, and some of our own members breaking party discipline. The activists, feeling demoralized from this attempt, have decided to bide their time.
 
 @liberalize_success
-on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 2; coalition_dissent += 3 if in_social_catholic_coalition; z_relation -= 8; catholics_spd -= 10; dvp_relation -= 5; ddp_relation += 4; lvp_relation -= 2; workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); workers_z += 3; new_middle_z += 3; old_middle_z += 3; old_middle_dnvp += 3; rural_dnvp += 3; workers_nsdap -= 3; new_middle_nsdap -= 3; old_middle_nsdap -= 2; rural_nsdap -= 2; unemployed_nsdap -= 2; unemployed_z += 3; unemployed_spd += 3*(1-dissent); new_middle_ddp += 4; workers_ddp += 1; rural_ddp -= 2; ddp_left += 3; lvp_left += 1; rural_lvp -= 3; old_middle_lvp -= 3; new_middle_lvp += 3; workers_lvp += 2; women_goal_spd += 1
+on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 2; coalition_dissent += 3 if in_social_catholic_coalition; unionist_relation -= 8; faithful_marcher -= 10; gold_relation -= 5; ddp_relation += 4; lvp_relation -= 2; commons_marcher += 3*(1-dissent); burgher_marcher += 3*(1-dissent); commons_unionist += 3; burgher_unionist += 3; guild_unionist += 3; guild_traditionalist += 3; landed_traditionalist += 3; commons_royalist -= 3; burgher_royalist -= 3; guild_royalist -= 2; landed_royalist -= 2; disfavored_royalist -= 2; disfavored_unionist += 3; disfavored_marcher += 3*(1-dissent); burgher_ddp += 4; commons_ddp += 1; landed_ddp -= 2; ddp_left += 3; lvp_left += 1; landed_lvp -= 3; guild_lvp -= 3; burgher_lvp += 3; commons_lvp += 2; women_goal_marcher += 1
 
-With the support of a "progressive coalition" including the <span style="color: #700000;">**KPD**</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: leftist <span style="color: #FFCC00;">**LVP**</span> members?], we have successfully passed a bill to legalize abortion in Germany! This has heartened our more progressive supporters, while hurting our relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. With the increasing political discourse around abortion, the religiously-oriented [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and <span style="color: #3E88B3;">**DNVP**</span> have gained conservative votes at the expense of the <span style="color: #7A3C00;">**NSDAP**</span>.
+With the support of a "progressive coalition" including the <span style="color: #700000;">**Collectivists**</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: leftist <span style="color: #FFCC00;">**LVP**</span> members?], we have successfully passed a bill to legalize abortion in the Commonwealth! This has heartened our more progressive supporters, while hurting our relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. With the increasing political discourse around abortion, the religiously-oriented [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #3E88B3;">**Traditionalists**</span> have gained conservative votes at the expense of the <span style="color: #7A3C00;">**Royalists**</span>.

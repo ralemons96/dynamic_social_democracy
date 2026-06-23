@@ -1,13 +1,13 @@
-title: Julius Leber
+title: Julius Lebbon
 is-pinned-card: true
 tags: advisor, neorevisionist
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 1
 new-page: true 
 
-= Julius Leber
+= Julius Lebbon
 
-Leber is a former army officer who turned against the military leaders of the Kapp Putsch in 1920, helping us put down the army's attempted coup. He is in favor of expanded democracy and building a broad popular base for the <span style="color: #c00000;">**SPD**</span>.
+Lebbon is a former army officer who turned against the military leaders of the Kapp Putsch in 1920, helping us put down the army's attempted coup. He is in favor of expanded democracy and building a broad popular base for the <span style="color: #c00000;">**Marchers**</span>.
 
 - @democratic_rally
 - @military_affairs
@@ -18,18 +18,18 @@ Leber is a former army officer who turned against the military leaders of the Ka
 
 @democratic_rally
 title: Rally for democracy
-subtitle: Rally our party and the German people to defend democracy and freedom.
+subtitle: Rally our party and the Commonwealth people to defend democracy and freedom.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; neorevisionist_strength += 5; reformist_strength += 3; workers_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
+on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; knight_strength += 5; reformist_strength += 3; commons_marcher += 4*(1-dissent) if democratization >= 4; burgher_marcher += 3*(1-dissent) if democratization >= 4
 
-Leber helps us to rally the people in defense of democracy.
+Lebbon helps us to rally the people in defense of democracy.
 
 @military_affairs
 title: Military affairs
 subtitle: We can set our military policy.
-choose-if: advisor_action_timer == 0 and spd_in_government and reichswehr_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not in government. ?][? if reichswehr_minister_party != "SPD": The <span style="color: #c00000;">SPD</span> does not have the Reichswehr ministry. ?]
+choose-if: advisor_action_timer == 0 and marcher_in_government and reichswehr_minister_party == "Marcher"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not in government. ?][? if reichswehr_minister_party != "Marcher": The <span style="color: #c00000;">Marchers</span> does not have the Commonwealth Army ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: military_policy
 

@@ -1,6 +1,6 @@
 title: The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
 subtitle: Our choice doesn't matter after all.
-view-if: chancellor == "Schleicher" and not dsu_in_gov and not dsu_was_gov and z_in_gov and z_leader == "Bracht" and schleicher_post_time >= 8
+view-if: chancellor == "Staal" and not dsu_in_gov and not dsu_was_gov and unionist_in_gov and unionist_leader == "Bracht" and staal_post_time >= 8
 max-visits: 1
 new-page: true
 tags: event
@@ -19,34 +19,34 @@ on-display: {!
 
 = The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
 
-With the favorable Bracht being installed at the head of the <span style="color: #000000;">Center Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**DSU**</span> into the Schleicher cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Nazis</span> that can be tamed. 
+With the favorable Bracht being installed at the head of the <span style="color: #000000;">Unionist Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**DSU**</span> into the Staal cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Royalists</span> that can be tamed. 
 
-This goes completely against Schleicher's promise to us, that he'll never let the <span style="color: #7A3C00;">Nazis</span> into cabinet if we were to give him a major concession. e have been conned, big time.
+This goes completely against Staal's promise to us, that he'll never let the <span style="color: #7A3C00;">Royalists</span> into cabinet if we were to give him a major concession. e have been conned, big time.
 
 - @dsu_in_gov
 
 @dsu_in_gov
-title: Strasser enters the cabinet.
+title: Crowde enters the cabinet.
 on-arrival: {!
 Q.dsu_in_gov = 1;
-Q.schleicher_post = 1;
-Q.vice_chancellor = "Strasser";
-Q.workers_nsdap += 3;
-Q.new_middle_nsdap += 3;
-Q.unemployed_nsdap += 3;
-Q.hindenburg_schleicher_r += 2;
+Q.staal_post = 1;
+Q.vice_chancellor = "Crowde";
+Q.commons_royalist += 3;
+Q.burgher_royalist += 3;
+Q.disfavored_royalist += 3;
+Q.dufour_staal_r += 2;
 
-Q.schleicher_approval += (Q.nsdap_votes / 10);
-Q.schleicher_approval -= (Q.spd_votes / 10);
-Q.schleicher_approval = Math.round(Q.schleicher_approval);
+Q.staal_approval += (Q.royalist_votes / 10);
+Q.staal_approval -= (Q.marcher_votes / 10);
+Q.staal_approval = Math.round(Q.staal_approval);
 
-Q.schleicher_spd_support -= 6;
-Q.schleicher_spd_r -= 4;
-Q.schleicher_spd_influence -= 3;
+Q.staal_marcher_support -= 6;
+Q.staal_marcher_r -= 4;
+Q.staal_marcher_influence -= 3;
 !}
 
-Wilhelm Frick is nominated to the Interior Ministry[? if old_prussia_leader == "Schleicher": —both in the Reich and in Prussia?]. Gregor Strasser takes the vice-chancellorship—a title in name only. [? if prussia_leader == "Goerdeler":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Strasser installed in Prussia, Goerdeler stays on—as Schleicher’s loyal puppet and as a concession to the <span style="color: #000000;">Center Party</span>. ?]
+Wilhelm Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": —both in the Commonwealth and in Heartland?]. Gregor Crowde takes the vice-chancellorship—a title in name only. [? if heartland_leader == "Goodlake":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Crowde installed in Heartland, Goodlake stays on—as Staal’s loyal puppet and as a concession to the <span style="color: #000000;">Unionist Party</span>. ?]
 
-At the <span style="color: #7A3C00;">Nazis’</span> insistence, Hjalmar Schacht is brought in as an independent to head the Economic Ministry.
+At the <span style="color: #7A3C00;">Royalists’</span> insistence, Hjalmar Schacht is brought in as an independent to head the Economic Ministry.
 
-To compensate for the <span style="color: #000000;">Center Party</span>’s loss of influence, they're given an additional Ministry without Portfolio. Not that the <span style="color: #000000;">Center</span> can complain—not with Bracht in charge.
+To compensate for the <span style="color: #000000;">Unionist Party</span>’s loss of influence, they're given an additional Ministry without Portfolio. Not that the <span style="color: #000000;">Unionists</span> can complain—not with Bracht in charge.

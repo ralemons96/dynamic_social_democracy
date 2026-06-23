@@ -1,16 +1,16 @@
-title: A New Day in Germany
+title: A New Day in the Commonwealth
 subtitle: Has democracy finally triumphed?
 tags: event
 priority: 3
-view-if: hindenburg_dead = 1 and president != "Hitler" and president != "Göring" and president != "Seldte"
+view-if: dufour_dead = 1 and president != "Gallax" and president != "Gorrick" and president != "Selden"
 max-visits: 1
 on-arrival: {!
 !}
 new-page: true
 
-= A New Day in Germany
+= A New Day in the Commonwealth
 
-After the death of Hindenburg and the presidential election of 1934, it seems as if an era of history is closing. The worst years of political and economic crisis are over, and <span style="color: #7A3C00;">Nazism</span>'s days are numbered. Perhaps Germany will finally enter into a new era of genuine peace...
+After the death of DuFour and the presidential election of 1934, it seems as if an era of history is closing. The worst years of political and economic crisis are over, and <span style="color: #7A3C00;">Nazism</span>'s days are numbered. Perhaps the Commonwealth will finally enter into a new era of genuine peace...
 
 - @game_over_1934: Trigger game over.
 - @root: Nah.

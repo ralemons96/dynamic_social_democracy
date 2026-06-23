@@ -1,13 +1,13 @@
-title: Kurt Rosenfeld
+title: Kurt Pendrigon
 is-pinned-card: true
 tags: advisor, left
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 1
 new-page: true 
 
-= Kurt Rosenfeld
+= Kurt Pendrigon
 
-Rosenfeld works as a lawyer in Berlin who defends left-wing individuals and causes. He favors cooperation with the <span style="color: #700000;">**KPD**</span> and a path of class struggle for the <span style="color: #c00000;">**SPD**</span>.
+Pendrigon works as a lawyer in Axton who defends left-wing individuals and causes. He favors cooperation with the <span style="color: #700000;">**Collectivists**</span> and a path of class struggle for the <span style="color: #c00000;">**Marchers**</span>.
 
 - @building_the_left
 - @kpd_cooperation
@@ -18,65 +18,65 @@ Rosenfeld works as a lawyer in Berlin who defends left-wing individuals and caus
 
 @building_the_left
 title: Building the Left
-subtitle: Push the <span style="color: #c00000;">**SPD**</span> to the left.
+subtitle: Push the <span style="color: #c00000;">**Marchers**</span> to the left.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 6; left_dissent -= 8; reformist_dissent += 2
 
-We have increased the strength of the left faction with the <span style="color: #c00000;">**SPD**</span>.
+We have increased the strength of the left faction with the <span style="color: #c00000;">**Marchers**</span>.
 
 @kpd_cooperation
-title: Cooperation with the <span style="color: #700000;">**KPD**</span>
-subtitle: Push the party to be more friendly towards the <span style="color: #700000;">**KPD**</span>.
+title: Cooperation with the <span style="color: #700000;">**Collectivists**</span>
+subtitle: Push the party to be more friendly towards the <span style="color: #700000;">**Collectivists**</span>.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 5; kpd_relation += 4*(1-dissent); reformist_dissent += 2; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
+on-arrival: advisor_action_timer = 6; left_strength += 5; collectivist_relation += 4*(1-dissent); reformist_dissent += 2; communist_coalition += 1 if collectivist_cooperation_seen <= 1; collectivist_cooperation_seen += 1
 
-Through his work, Rosenfeld has defended individual <span style="color: #700000;">**KPD**</span> members; this should make some connections possible.
+Through his work, Pendrigon has defended individual <span style="color: #700000;">**Collectivists**</span> members; this should make some connections possible.
 
 @prussian_bulwark
-title: The Prussian Bulwark
-subtitle: As the Minister-President of Prussia, Rosenfeld has power over the Prussian bureaucracy and security services.
-choose-if: advisor_action_timer <= 0 and prussia_leader = "Rosenfeld"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if prussia_leader != "Rosenfeld" : Rosenfeld doesn't control Prussia. ?]
-on-arrival: advisor_action_timer = 6; prussian_affairs_timer -= 6; last_advisor_action = 1
+title: The Heartland Bulwark
+subtitle: As the Minister-President of Heartland, Pendrigon has power over the Heartland bureaucracy and security services.
+choose-if: advisor_action_timer <= 0 and heartland_leader = "Pendrigon"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if heartland_leader != "Pendrigon" : Pendrigon doesn't control Heartland. ?]
+on-arrival: advisor_action_timer = 6; heartland_affairs_timer -= 6; last_advisor_action = 1
 go-to: prussian_affairs_left
 
 @against_toleration
 title: Against toleration
 view-if: not constructive_vonc
 subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_toleration == 0 : The <span style="color: #c00000;">SPD</span> is not currently in toleration. ?]
-choose-if: advisor_action_timer == 0 and spd_toleration
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; spd_toleration_right = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 8; left_dissent -= 5; dvp_relation -= 4; z_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; ddp_right += 1; dvp_right += 2; spd_break_toleration += 1
-go-to: new_prussia_election if in_social_catholic_coalition_prussia or in_weimar_coalition_prussia or in_grand_coalition_prussia or in_popular_front_prussia and ((center_right_coalition_prussia < 50 and dnvp_ideology == "Moderate") or dnvp_ideology == "Radical"); center_right_coalition_prussia if in_social_catholic_coalition_prussia or in_weimar_coalition_prussia or in_grand_coalition_prussia or in_popular_front_prussia and center_right_coalition_prussia >= 50 and dnvp_ideology == "Moderate"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if marcher_toleration == 0 : The <span style="color: #c00000;">Marchers</span> is not currently in toleration. ?]
+choose-if: advisor_action_timer == 0 and marcher_toleration
+on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; marcher_toleration = 0; marcher_toleration_right = 0; left_strength += 8; pro_republic -= 4; burgher_marcher -= 3; landed_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3; reformist_dissent += 8; left_dissent -= 5; gold_relation -= 4; unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; ddp_right += 1; gold_right += 2; marcher_break_toleration += 1
+go-to: new_prussia_election if in_social_catholic_coalition_heartland or in_weimar_coalition_heartland or in_grand_coalition_heartland or in_popular_front_heartland and ((center_right_coalition_heartland < 50 and traditionalist_ideology == "Moderate") or traditionalist_ideology == "Radical"); center_right_coalition_prussia if in_social_catholic_coalition_heartland or in_weimar_coalition_heartland or in_grand_coalition_heartland or in_popular_front_heartland and center_right_coalition_heartland >= 50 and traditionalist_ideology == "Moderate"
 
 We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
 @new_prussia_election
-on-arrival: z_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; kpd_relation += 5; dvp_right += 3; ddp_right += 2; lvp_right += 2; pro_republic -= 3; new_middle_spd -= 2; rural_spd -= 2; old_middle_spd -= 2; catholics_spd -= 2; new_middle_nsdap += 2; old_middle_nsdap += 2; rural_nsdap += 2; catholics_nsdap += 2; in_right_coalition_prussia = 0; in_social_catholic_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_minority_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_far_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; right_prussia = 0; ddp_in_popular_front_prussia = 0; kpd_goals_seen_prussia = 0; spd_toleration_prussia = 0; prussia_coalition_trigger = 0
+on-arrival: unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; collectivist_relation += 5; gold_right += 3; ddp_right += 2; lvp_right += 2; pro_republic -= 3; burgher_marcher -= 2; landed_marcher -= 2; guild_marcher -= 2; faithful_marcher -= 2; burgher_royalist += 2; guild_royalist += 2; landed_royalist += 2; faithful_royalist += 2; in_right_coalition_heartland = 0; in_social_catholic_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; ddp_in_popular_front_heartland = 0; collectivist_goals_seen_heartland = 0; marcher_toleration_heartland = 0; heartland_coalition_trigger = 0
 call: set_next_election_time_prussia
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has called a retaliatory vote in Prussia, forcing the dissolution of the Landtag for new elections.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has called a retaliatory vote in Heartland, forcing the dissolution of the state Assembly for new elections.
 
-New Prussian elections have been set for [+ next_election_month_prussia : month +] [+ next_election_year_prussia +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
 
-A double dissolution has shaken the people's faith in democracy, with the <span style="color: #7A3C00;">Nazis</span> exploiting the instability to claim that democracy is unworkable, and that Germany needs a strong leader.
+A double dissolution has shaken the people's faith in democracy, with the <span style="color: #7A3C00;">Royalists</span> exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader.
 
 @center_right_coalition_prussia
-on-arrival: in_center_right_coalition_prussia = 1; in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_minority_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_far_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; right_prussia = 0; ddp_in_popular_front_prussia = 0; kpd_goals_seen_prussia = 0; spd_toleration_prussia = 0; prussia_coalition_trigger = 0; prussia_leader = "Stegerwald"; prussia_leader = "Brüning" if z_leader == "Stegerwald"; new_middle_spd -= 3; z_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; dvp_right += 3; ddp_right += 2; pro_republic -= 3; prussian_police_loyalty -= 0.06; prussian_police_strength -= 8; 
+on-arrival: in_center_right_coalition_heartland = 1; in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; ddp_in_popular_front_heartland = 0; collectivist_goals_seen_heartland = 0; marcher_toleration_heartland = 0; heartland_coalition_trigger = 0; heartland_leader = "Sedgewick"; heartland_leader = "Askew" if unionist_leader == "Sedgewick"; burgher_marcher -= 3; unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; gold_right += 3; ddp_right += 2; pro_republic -= 3; heartland_police_loyalty -= 0.06; heartland_police_strength -= 8; 
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has called a retaliatory no confidence vote in Prussia, replacing our government with a center-right coalition composed of all parties to our right, except for the <span style="color: #003755;">**DNF**</span> and <span style="color: #7A3C00;">**NSDAP**</span>. While this is a setback, it is not the worst possible outcome, as new elections could have led to significant gains for extremist parties.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has called a retaliatory no confidence vote in Heartland, replacing our government with a center-right coalition composed of all parties to our right, except for the <span style="color: #003755;">**DNF**</span> and <span style="color: #7A3C00;">**Royalists**</span>. While this is a setback, it is not the worst possible outcome, as new elections could have led to significant gains for extremist parties.
 
-[? if z_leader != "Stegerwald": Adam Stegerwald?][? if z_leader == "Stegerwald": Heinrich Brüning?] of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is selected to be the Minister-President of Prussia.
+[? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Heinrich Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @snap_election
 title: Snap Election
 subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Rosenfeld" and president != "Rosenfeld" : Rosenfeld must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if president = "Rosenfeld" and presidential_powers : We have removed this power from the president with a constitutional reform. ?]
-choose-if: advisor_action_timer == 0 and (chancellor == "Rosenfeld" or (president == "Rosenfeld" and not presidential_powers))
+unavailable-subtitle: [? if chancellor != "Pendrigon" and president != "Pendrigon" : Pendrigon must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if president = "Pendrigon" and presidential_powers : We have removed this power from the president with a constitutional reform. ?]
+choose-if: advisor_action_timer == 0 and (chancellor == "Pendrigon" or (president == "Pendrigon" and not presidential_powers))
 on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; 
 
 We have called for new elections, set for [+ next_election_month : month +] [+ next_election_year +].

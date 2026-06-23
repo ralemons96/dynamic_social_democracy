@@ -1,6 +1,6 @@
-title: Lippe Landtag Election
+title: High Cross state Assembly Election
 subtitle: 
-view-if: rubicon and chancellor == "Schleicher" and year == 1933 and month == 1 and week == 3
+view-if: rubicon and chancellor == "Staal" and year == 1933 and month == 1 and week == 3
 new-page: true
 tags: event
 on-arrival: lippe_election_seen = 1
@@ -21,7 +21,7 @@ on-display: {!
 
 = Elections, [+ month : month +] [+ year +]
 
-The state elections for the Free State of Lippe are to take place.
+The state elections for the Free State of High Cross are to take place.
 
 - @lippe: May we do our best...
 
@@ -43,113 +43,113 @@ var lippe_adjustment_factors = {
     dnf: 0.6
 };
 
-Q.spd_r_lippe = 0;
+Q.marcher_r_lippe = 0;
 Q.sapd_r_lippe = 0;
-Q.kpd_r_lippe = 0;
+Q.collectivist_r_lippe = 0;
 Q.ddp_r_lippe = 0;
 Q.lvp_r_lippe = 0;
-Q.z_r_lippe = 0;
-Q.dvp_r_lippe = 0;
-Q.dnvp_r_lippe = 0;
-Q.nsdap_r_lippe = 0;
+Q.unionist_r_lippe = 0;
+Q.gold_r_lippe = 0;
+Q.traditionalist_r_lippe = 0;
+Q.royalist_r_lippe = 0;
 Q.other_r_lippe = 0;
 Q.kvp_r_lippe = 0;
 Q.dnf_r_lippe = 0;
 
-Q.spd_lippe_elections_vote = 0;
+Q.marcher_lippe_elections_vote = 0;
 Q.sapd_lippe_elections_vote = 0;
-Q.kpd_lippe_elections_vote = 0;
+Q.collectivist_lippe_elections_vote = 0;
 Q.ddp_lippe_elections_vote = 0;
 Q.lvp_lippe_elections_vote = 0;
-Q.z_lippe_elections_vote = 0;
-Q.dvp_lippe_elections_vote = 0;
-Q.dnvp_lippe_elections_vote = 0;
-Q.nsdap_lippe_elections_vote = 0;
+Q.unionist_lippe_elections_vote = 0;
+Q.gold_lippe_elections_vote = 0;
+Q.traditionalist_lippe_elections_vote = 0;
+Q.royalist_lippe_elections_vote = 0;
 Q.other_lippe_elections_vote = 0;
 Q.kvp_lippe_elections_vote = 0;
 Q.dnf_lippe_elections_vote = 0;
 
-if (Q.new_middle_spd_normalized + Q.old_middle_spd_normalized >= 30) lippe_adjustment_factors.spd += 0.05;
-if (Q.rural_spd_normalized >= 20) lippe_adjustment_factors.spd += 0.15;
-if (Q.spd_lippe) lippe_adjustment_factors.spd *= Q.spd_lippe;
-Q.spd_lippe_elections_vote = Q.spd_votes*lippe_adjustment_factors.spd;
+if (Q.burgher_marcher_normalized + Q.guild_marcher_normalized >= 30) lippe_adjustment_factors.spd += 0.05;
+if (Q.landed_marcher_normalized >= 20) lippe_adjustment_factors.spd += 0.15;
+if (Q.marcher_lippe) lippe_adjustment_factors.spd *= Q.marcher_lippe;
+Q.marcher_lippe_elections_vote = Q.marcher_votes*lippe_adjustment_factors.spd;
 Q.sapd_lippe_elections_vote = Q.sapd_votes*lippe_adjustment_factors.sapd;
-Q.kpd_lippe_elections_vote = Q.kpd_votes*lippe_adjustment_factors.kpd;
+Q.collectivist_lippe_elections_vote = Q.collectivist_votes*lippe_adjustment_factors.kpd;
 Q.ddp_lippe_elections_vote = Q.ddp_votes*lippe_adjustment_factors.ddp;
 Q.lvp_lippe_elections_vote = Q.lvp_votes*lippe_adjustment_factors.lvp;
-if (!Q.stegerwald_path) Q.z_lippe_elections_vote = Q.z_votes*lippe_adjustment_factors.z;
-if (Q.stegerwald_path) Q.z_lippe_elections_vote = Q.z_votes * 0.8;
-if (Q.dvp_leader != "Dingeldey") lippe_adjustment_factors.dvp += 0.1;
-if (Q.dvp_votes >= 3) lippe_adjustment_factors.dvp -= 0.2;
-if (Q.dvp_votes >= 4) lippe_adjustment_factors.dvp -= 0.2;
-if (Q.dvp_votes >= 5) lippe_adjustment_factors.dvp -= 0.2;
-Q.dvp_lippe_elections_vote = Q.dvp_votes*lippe_adjustment_factors.dvp;
-if (Q.dnvp_ideology == "Moderate") lippe_adjustment_factors.dnvp += 0.4;
-Q.dnvp_lippe_elections_vote = Q.dnvp_votes*lippe_adjustment_factors.dnvp;
-if (Q.nsdap_lippe) lippe_adjustment_factors.nsdap *= Q.nsdap_lippe;
-Q.nsdap_lippe_elections_vote = Q.nsdap_votes*lippe_adjustment_factors.nsdap;
-if (Q.dnvp_ideology == "Moderate") lippe_adjustment_factors.other -= 1.0;
+if (!Q.stegerwald_path) Q.unionist_lippe_elections_vote = Q.unionist_votes*lippe_adjustment_factors.z;
+if (Q.stegerwald_path) Q.unionist_lippe_elections_vote = Q.unionist_votes * 0.8;
+if (Q.gold_leader != "Dingeldey") lippe_adjustment_factors.dvp += 0.1;
+if (Q.gold_votes >= 3) lippe_adjustment_factors.dvp -= 0.2;
+if (Q.gold_votes >= 4) lippe_adjustment_factors.dvp -= 0.2;
+if (Q.gold_votes >= 5) lippe_adjustment_factors.dvp -= 0.2;
+Q.gold_lippe_elections_vote = Q.gold_votes*lippe_adjustment_factors.dvp;
+if (Q.traditionalist_ideology == "Moderate") lippe_adjustment_factors.dnvp += 0.4;
+Q.traditionalist_lippe_elections_vote = Q.traditionalist_votes*lippe_adjustment_factors.dnvp;
+if (Q.royalist_lippe) lippe_adjustment_factors.nsdap *= Q.royalist_lippe;
+Q.royalist_lippe_elections_vote = Q.royalist_votes*lippe_adjustment_factors.nsdap;
+if (Q.traditionalist_ideology == "Moderate") lippe_adjustment_factors.other -= 1.0;
 if (Q.kvp_formed) lippe_adjustment_factors.other -= 0.6;
 Q.other_lippe_elections_vote = Q.other_votes*lippe_adjustment_factors.other;
 Q.kvp_lippe_elections_vote = Q.kvp_votes*lippe_adjustment_factors.kvp;
 Q.dnf_lippe_elections_vote = Q.dnf_votes*lippe_adjustment_factors.dnf;
 
-Q.total_votes_lippe = Q.spd_lippe_elections_vote + Q.sapd_lippe_elections_vote + Q.kpd_lippe_elections_vote + Q.ddp_lippe_elections_vote + Q.lvp_lippe_elections_vote + Q.z_lippe_elections_vote + Q.dvp_lippe_elections_vote + Q.dnvp_lippe_elections_vote + Q.nsdap_lippe_elections_vote + Q.other_lippe_elections_vote + Q.kvp_lippe_elections_vote + Q.dnf_lippe_elections_vote;
+Q.total_votes_lippe = Q.marcher_lippe_elections_vote + Q.sapd_lippe_elections_vote + Q.collectivist_lippe_elections_vote + Q.ddp_lippe_elections_vote + Q.lvp_lippe_elections_vote + Q.unionist_lippe_elections_vote + Q.gold_lippe_elections_vote + Q.traditionalist_lippe_elections_vote + Q.royalist_lippe_elections_vote + Q.other_lippe_elections_vote + Q.kvp_lippe_elections_vote + Q.dnf_lippe_elections_vote;
 
 if (Q.total_votes_lippe > 0) {
-    Q.spd_lippe_elections_vote = (Q.spd_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.marcher_lippe_elections_vote = (Q.marcher_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.sapd_lippe_elections_vote = (Q.sapd_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.kpd_lippe_elections_vote = (Q.kpd_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.collectivist_lippe_elections_vote = (Q.collectivist_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.ddp_lippe_elections_vote = (Q.ddp_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.lvp_lippe_elections_vote = (Q.lvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.z_lippe_elections_vote = (Q.z_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.dvp_lippe_elections_vote = (Q.dvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.dnvp_lippe_elections_vote = (Q.dnvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.nsdap_lippe_elections_vote = (Q.nsdap_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.unionist_lippe_elections_vote = (Q.unionist_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.gold_lippe_elections_vote = (Q.gold_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.traditionalist_lippe_elections_vote = (Q.traditionalist_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.royalist_lippe_elections_vote = (Q.royalist_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.other_lippe_elections_vote = (Q.other_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.kvp_lippe_elections_vote = (Q.kvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.dnf_lippe_elections_vote = (Q.dnf_lippe_elections_vote / Q.total_votes_lippe) * 100;
     let target = 30;
-    Q.spd_lippe_elections_vote = Math.round((Q.spd_lippe_elections_vote + (target - Q.spd_lippe_elections_vote) * 0.2) * 10) / 10;
+    Q.marcher_lippe_elections_vote = Math.round((Q.marcher_lippe_elections_vote + (target - Q.marcher_lippe_elections_vote) * 0.2) * 10) / 10;
     let target_2 = 39.5;
-    Q.nsdap_lippe_elections_vote = Math.round((Q.nsdap_lippe_elections_vote + (target_2 - Q.nsdap_lippe_elections_vote) * 0.2) * 10) / 10;
-    Q.total_votes_lippe = Q.spd_lippe_elections_vote + Q.sapd_lippe_elections_vote + Q.kpd_lippe_elections_vote + Q.ddp_lippe_elections_vote + Q.lvp_lippe_elections_vote + Q.z_lippe_elections_vote + Q.dvp_lippe_elections_vote + Q.dnvp_lippe_elections_vote + Q.nsdap_lippe_elections_vote + Q.other_lippe_elections_vote + Q.kvp_lippe_elections_vote + Q.dnf_lippe_elections_vote;
-    Q.spd_lippe_elections_vote = (Q.spd_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.royalist_lippe_elections_vote = Math.round((Q.royalist_lippe_elections_vote + (target_2 - Q.royalist_lippe_elections_vote) * 0.2) * 10) / 10;
+    Q.total_votes_lippe = Q.marcher_lippe_elections_vote + Q.sapd_lippe_elections_vote + Q.collectivist_lippe_elections_vote + Q.ddp_lippe_elections_vote + Q.lvp_lippe_elections_vote + Q.unionist_lippe_elections_vote + Q.gold_lippe_elections_vote + Q.traditionalist_lippe_elections_vote + Q.royalist_lippe_elections_vote + Q.other_lippe_elections_vote + Q.kvp_lippe_elections_vote + Q.dnf_lippe_elections_vote;
+    Q.marcher_lippe_elections_vote = (Q.marcher_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.sapd_lippe_elections_vote = (Q.sapd_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.kpd_lippe_elections_vote = (Q.kpd_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.collectivist_lippe_elections_vote = (Q.collectivist_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.ddp_lippe_elections_vote = (Q.ddp_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.lvp_lippe_elections_vote = (Q.lvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.z_lippe_elections_vote = (Q.z_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.dvp_lippe_elections_vote = (Q.dvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.dnvp_lippe_elections_vote = (Q.dnvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
-    Q.nsdap_lippe_elections_vote = (Q.nsdap_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.unionist_lippe_elections_vote = (Q.unionist_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.gold_lippe_elections_vote = (Q.gold_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.traditionalist_lippe_elections_vote = (Q.traditionalist_lippe_elections_vote / Q.total_votes_lippe) * 100;
+    Q.royalist_lippe_elections_vote = (Q.royalist_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.other_lippe_elections_vote = (Q.other_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.kvp_lippe_elections_vote = (Q.kvp_lippe_elections_vote / Q.total_votes_lippe) * 100;
     Q.dnf_lippe_elections_vote = (Q.dnf_lippe_elections_vote / Q.total_votes_lippe) * 100;
 }
 
-Q.spd_lippe_elections_vote = (Q.spd_lippe_elections_vote != undefined ? parseFloat(Q.spd_lippe_elections_vote.toFixed(1)) : 0);
+Q.marcher_lippe_elections_vote = (Q.marcher_lippe_elections_vote != undefined ? parseFloat(Q.marcher_lippe_elections_vote.toFixed(1)) : 0);
 Q.sapd_lippe_elections_vote = (Q.sapd_lippe_elections_vote != undefined ? parseFloat(Q.sapd_lippe_elections_vote.toFixed(1)) : 0);
-Q.kpd_lippe_elections_vote = (Q.kpd_lippe_elections_vote != undefined ? parseFloat(Q.kpd_lippe_elections_vote.toFixed(1)) : 0);
+Q.collectivist_lippe_elections_vote = (Q.collectivist_lippe_elections_vote != undefined ? parseFloat(Q.collectivist_lippe_elections_vote.toFixed(1)) : 0);
 Q.ddp_lippe_elections_vote = (Q.ddp_lippe_elections_vote != undefined ? parseFloat(Q.ddp_lippe_elections_vote.toFixed(1)) : 0);
 Q.lvp_lippe_elections_vote = (Q.lvp_lippe_elections_vote != undefined ? parseFloat(Q.lvp_lippe_elections_vote.toFixed(1)) : 0);
-Q.z_lippe_elections_vote = (Q.z_lippe_elections_vote != undefined ? parseFloat(Q.z_lippe_elections_vote.toFixed(1)) : 0);
-Q.dvp_lippe_elections_vote = (Q.dvp_lippe_elections_vote != undefined ? parseFloat(Q.dvp_lippe_elections_vote.toFixed(1)) : 0);
-Q.dnvp_lippe_elections_vote = (Q.dnvp_lippe_elections_vote != undefined ? parseFloat(Q.dnvp_lippe_elections_vote.toFixed(1)) : 0);
-Q.nsdap_lippe_elections_vote = (Q.nsdap_lippe_elections_vote != undefined ? parseFloat(Q.nsdap_lippe_elections_vote.toFixed(1)) : 0);
+Q.unionist_lippe_elections_vote = (Q.unionist_lippe_elections_vote != undefined ? parseFloat(Q.unionist_lippe_elections_vote.toFixed(1)) : 0);
+Q.gold_lippe_elections_vote = (Q.gold_lippe_elections_vote != undefined ? parseFloat(Q.gold_lippe_elections_vote.toFixed(1)) : 0);
+Q.traditionalist_lippe_elections_vote = (Q.traditionalist_lippe_elections_vote != undefined ? parseFloat(Q.traditionalist_lippe_elections_vote.toFixed(1)) : 0);
+Q.royalist_lippe_elections_vote = (Q.royalist_lippe_elections_vote != undefined ? parseFloat(Q.royalist_lippe_elections_vote.toFixed(1)) : 0);
 Q.other_lippe_elections_vote = (Q.other_lippe_elections_vote != undefined ? parseFloat(Q.other_lippe_elections_vote.toFixed(1)) : 0);
 Q.kvp_lippe_elections_vote = (Q.kvp_lippe_elections_vote != undefined ? parseFloat(Q.kvp_lippe_elections_vote.toFixed(1)) : 0);
 Q.dnf_lippe_elections_vote = (Q.dnf_lippe_elections_vote != undefined ? parseFloat(Q.dnf_lippe_elections_vote.toFixed(1)) : 0);
 
-if (Q.spd_lippe_elections_vote >= 3.2) Q.spd_r_lippe = Q.spd_lippe_elections_vote;
+if (Q.marcher_lippe_elections_vote >= 3.2) Q.marcher_r_lippe = Q.marcher_lippe_elections_vote;
 if (Q.sapd_lippe_elections_vote >= 3.2) Q.sapd_r_lippe = Q.sapd_lippe_elections_vote;
-if (Q.kpd_lippe_elections_vote >= 3.2) Q.kpd_r_lippe = Q.kpd_lippe_elections_vote;
+if (Q.collectivist_lippe_elections_vote >= 3.2) Q.collectivist_r_lippe = Q.collectivist_lippe_elections_vote;
 if (Q.ddp_lippe_elections_vote >= 3.2) Q.ddp_r_lippe = Q.ddp_lippe_elections_vote;
 if (Q.lvp_lippe_elections_vote >= 3.2) Q.lvp_r_lippe = Q.lvp_lippe_elections_vote;
-if (Q.z_lippe_elections_vote >= 3.2) Q.z_r_lippe = Q.z_lippe_elections_vote;
-if (Q.dvp_lippe_elections_vote >= 3.2) Q.dvp_r_lippe = Q.dvp_lippe_elections_vote;
-if (Q.dnvp_lippe_elections_vote >= 3.2) Q.dnvp_r_lippe = Q.dnvp_lippe_elections_vote;
-if (Q.nsdap_lippe_elections_vote >= 3.2) Q.nsdap_r_lippe = Q.nsdap_lippe_elections_vote;
+if (Q.unionist_lippe_elections_vote >= 3.2) Q.unionist_r_lippe = Q.unionist_lippe_elections_vote;
+if (Q.gold_lippe_elections_vote >= 3.2) Q.gold_r_lippe = Q.gold_lippe_elections_vote;
+if (Q.traditionalist_lippe_elections_vote >= 3.2) Q.traditionalist_r_lippe = Q.traditionalist_lippe_elections_vote;
+if (Q.royalist_lippe_elections_vote >= 3.2) Q.royalist_r_lippe = Q.royalist_lippe_elections_vote;
 if (Q.other_lippe_elections_vote >= 3.2) Q.other_r_lippe = Q.other_lippe_elections_vote;
 if (Q.kvp_lippe_elections_vote >= 3.2) Q.kvp_r_lippe = Q.kvp_lippe_elections_vote;
 if (Q.dnf_lippe_elections_vote >= 3.2) Q.dnf_r_lippe = Q.dnf_lippe_elections_vote;
@@ -169,46 +169,46 @@ var lippe_adjustment_r_factors = {
     dnf: 1.0
 };
 
-Q.spd_r_lippe = Q.spd_r_lippe*lippe_adjustment_r_factors.spd;
+Q.marcher_r_lippe = Q.marcher_r_lippe*lippe_adjustment_r_factors.spd;
 Q.sapd_r_lippe = Q.sapd_r_lippe*lippe_adjustment_r_factors.sapd;
-Q.kpd_r_lippe = Q.kpd_r_lippe*lippe_adjustment_r_factors.kpd;
+Q.collectivist_r_lippe = Q.collectivist_r_lippe*lippe_adjustment_r_factors.kpd;
 Q.ddp_r_lippe = Q.ddp_r_lippe*lippe_adjustment_r_factors.ddp;
 Q.lvp_r_lippe = Q.lvp_r_lippe*lippe_adjustment_r_factors.lvp;
-if (!Q.stegerwald_path) Q.z_r_lippe = Q.z_r_lippe*lippe_adjustment_r_factors.z;
-if (Q.stegerwald_path) Q.z_r_lippe = Q.z_r_lippe;
-Q.dvp_r_lippe = Q.dvp_r_lippe*lippe_adjustment_r_factors.dvp;
-Q.dnvp_r_lippe = Q.dnvp_r_lippe*lippe_adjustment_r_factors.dnvp;
-Q.nsdap_r_lippe = Q.nsdap_r_lippe*lippe_adjustment_r_factors.nsdap;
-if (Q.dnvp_ideology == "Moderate") lippe_adjustment_r_factors.other -= 0.5;
+if (!Q.stegerwald_path) Q.unionist_r_lippe = Q.unionist_r_lippe*lippe_adjustment_r_factors.z;
+if (Q.stegerwald_path) Q.unionist_r_lippe = Q.unionist_r_lippe;
+Q.gold_r_lippe = Q.gold_r_lippe*lippe_adjustment_r_factors.dvp;
+Q.traditionalist_r_lippe = Q.traditionalist_r_lippe*lippe_adjustment_r_factors.dnvp;
+Q.royalist_r_lippe = Q.royalist_r_lippe*lippe_adjustment_r_factors.nsdap;
+if (Q.traditionalist_ideology == "Moderate") lippe_adjustment_r_factors.other -= 0.5;
 Q.other_r_lippe = Q.other_r_lippe*lippe_adjustment_r_factors.other;
 Q.kvp_r_lippe = Q.kvp_r_lippe*lippe_adjustment_r_factors.kvp;
 Q.dnf_r_lippe = Q.dnf_r_lippe*lippe_adjustment_r_factors.dnf;
 
 Q.total_r_lippe = 0;
 
-if (Q.spd_r_lippe) Q.total_r_lippe += Q.spd_r_lippe;
+if (Q.marcher_r_lippe) Q.total_r_lippe += Q.marcher_r_lippe;
 if (Q.sapd_r_lippe) Q.total_r_lippe += Q.sapd_r_lippe;
-if (Q.kpd_r_lippe) Q.total_r_lippe += Q.kpd_r_lippe;
+if (Q.collectivist_r_lippe) Q.total_r_lippe += Q.collectivist_r_lippe;
 if (Q.ddp_r_lippe) Q.total_r_lippe += Q.ddp_r_lippe;
 if (Q.lvp_r_lippe) Q.total_r_lippe += Q.lvp_r_lippe;
-if (Q.z_r_lippe) Q.total_r_lippe += Q.z_r_lippe;
-if (Q.dvp_r_lippe) Q.total_r_lippe += Q.dvp_r_lippe;
-if (Q.dnvp_r_lippe) Q.total_r_lippe += Q.dnvp_r_lippe;
-if (Q.nsdap_r_lippe) Q.total_r_lippe += Q.nsdap_r_lippe;
+if (Q.unionist_r_lippe) Q.total_r_lippe += Q.unionist_r_lippe;
+if (Q.gold_r_lippe) Q.total_r_lippe += Q.gold_r_lippe;
+if (Q.traditionalist_r_lippe) Q.total_r_lippe += Q.traditionalist_r_lippe;
+if (Q.royalist_r_lippe) Q.total_r_lippe += Q.royalist_r_lippe;
 if (Q.other_r_lippe) Q.total_r_lippe += Q.other_r_lippe;
 if (Q.kvp_r_lippe) Q.total_r_lippe += Q.kvp_r_lippe;
 if (Q.dnf_r_lippe) Q.total_r_lippe += Q.dnf_r_lippe;
 
 if (Q.total_r_lippe > 0) {
-    Q.spd_r_lippe = (Q.spd_r_lippe / Q.total_r_lippe) * 100;
+    Q.marcher_r_lippe = (Q.marcher_r_lippe / Q.total_r_lippe) * 100;
     Q.sapd_r_lippe = (Q.sapd_r_lippe / Q.total_r_lippe) * 100;
-    Q.kpd_r_lippe = (Q.kpd_r_lippe / Q.total_r_lippe) * 100;
+    Q.collectivist_r_lippe = (Q.collectivist_r_lippe / Q.total_r_lippe) * 100;
     Q.ddp_r_lippe = (Q.ddp_r_lippe / Q.total_r_lippe) * 100;
     Q.lvp_r_lippe = (Q.lvp_r_lippe / Q.total_r_lippe) * 100;
-    Q.z_r_lippe = (Q.z_r_lippe / Q.total_r_lippe) * 100;
-    Q.dvp_r_lippe = (Q.dvp_r_lippe / Q.total_r_lippe) * 100;
-    Q.dnvp_r_lippe = (Q.dnvp_r_lippe / Q.total_r_lippe) * 100;
-    Q.nsdap_r_lippe = (Q.nsdap_r_lippe / Q.total_r_lippe) * 100;
+    Q.unionist_r_lippe = (Q.unionist_r_lippe / Q.total_r_lippe) * 100;
+    Q.gold_r_lippe = (Q.gold_r_lippe / Q.total_r_lippe) * 100;
+    Q.traditionalist_r_lippe = (Q.traditionalist_r_lippe / Q.total_r_lippe) * 100;
+    Q.royalist_r_lippe = (Q.royalist_r_lippe / Q.total_r_lippe) * 100;
     Q.other_r_lippe = (Q.other_r_lippe / Q.total_r_lippe) * 100;
     Q.kvp_r_lippe = (Q.kvp_r_lippe / Q.total_r_lippe) * 100;
     Q.dnf_r_lippe = (Q.dnf_r_lippe / Q.total_r_lippe) * 100;
@@ -219,11 +219,11 @@ Q.csvd_r_lippe = 0;
 Q.wp_r_lippe = 0;
 
 let farm_share = 0.13;
-if (Q.rural_other_normalized) farm_share += (Q.rural_other_normalized / 50);
+if (Q.landed_other_normalized) farm_share += (Q.landed_other_normalized / 50);
 let csvd_share = 0.87;
 if (!Q.csvd_formed) csvd_share = 0;
 let wp_share = 0.0;
-if (Q.new_middle_other_normalized + Q.old_middle_other_normalized >= 15 && Q.other_votes >= 4) wp_share = 0.2;
+if (Q.burgher_other_normalized + Q.guild_other_normalized >= 15 && Q.other_votes >= 4) wp_share = 0.2;
 
 let total_share = csvd_share + farm_share + wp_share;
 
@@ -246,7 +246,7 @@ Q.wp_lippe_elections_vote = (Q.wp_lippe_elections_vote != undefined ? parseFloat
 
 Q.lippe_parties = [...Q.parties];
 if (Q.csvd_formed) Q.lippe_parties.push('csvd');
-if (Q.new_middle_other_normalized + Q.old_middle_other_normalized >= 15 && Q.other_votes >= 4) Q.lippe_parties.push('wp');
+if (Q.burgher_other_normalized + Q.guild_other_normalized >= 15 && Q.other_votes >= 4) Q.lippe_parties.push('wp');
 Q.lippe_parties.push('farm');
 
 function allocateSeats(percentages, totalSeats = 21) {
@@ -278,15 +278,15 @@ function allocateSeats(percentages, totalSeats = 21) {
 }
 
 const inputPercentages = {
-    spd_r_lippe: Q.spd_r_lippe,
+    spd_r_lippe: Q.marcher_r_lippe,
     sapd_r_lippe: Q.sapd_r_lippe,
-    kpd_r_lippe: Q.kpd_r_lippe,
+    kpd_r_lippe: Q.collectivist_r_lippe,
     ddp_r_lippe: Q.ddp_r_lippe,
     lvp_r_lippe: Q.lvp_r_lippe,
-    z_r_lippe: Q.z_r_lippe,
-    dvp_r_lippe: Q.dvp_r_lippe,
-    dnvp_r_lippe: Q.dnvp_r_lippe,
-    nsdap_r_lippe: Q.nsdap_r_lippe,
+    z_r_lippe: Q.unionist_r_lippe,
+    dvp_r_lippe: Q.gold_r_lippe,
+    dnvp_r_lippe: Q.traditionalist_r_lippe,
+    nsdap_r_lippe: Q.royalist_r_lippe,
     wp_r_lippe: Q.wp_r_lippe,
     farm_r_lippe: Q.farm_r_lippe,
     csvd_r_lippe: Q.csvd_r_lippe,
@@ -302,13 +302,13 @@ for (const party in allocatedSeats) {
 
 Q.other_r_lippe = Q.farm_r_lippe + Q.wp_r_lippe + Q.csvd_r_lippe;
 
-Q.old_spd_r_lippe = 42.8;
-Q.old_kpd_r_lippe = 4.8;
-Q.old_z_r_lippe = 0.0;
+Q.old_marcher_r_lippe = 42.8;
+Q.old_collectivist_r_lippe = 4.8;
+Q.old_unionist_r_lippe = 0.0;
 Q.old_ddp_r_lippe = 4.8;
-Q.old_dvp_r_lippe = 14.3;
-Q.old_dnvp_r_lippe = 14.3;
-Q.old_nsdap_r_lippe = 4.8;
+Q.old_gold_r_lippe = 14.3;
+Q.old_traditionalist_r_lippe = 14.3;
+Q.old_royalist_r_lippe = 4.8;
 Q.old_wp_r_lippe = 4.8;
 Q.old_farm_r_lippe = 4.8;
 Q.old_other_r_lippe = 4.8;
@@ -318,13 +318,13 @@ Q.old_kvp_r_lippe = 0.0;
 Q.old_dnf_r_lippe = 0.0;
 Q.old_sapd_r_lippe = 0.0;
 
-if (Q.lvp_formed) Q.old_lvp_r_lippe = Q.old_dvp_r_lippe + Q.old_ddp_r_lippe;
+if (Q.lvp_formed) Q.old_lvp_r_lippe = Q.old_gold_r_lippe + Q.old_ddp_r_lippe;
 if (Q.kvp_formed) {
-    Q.old_dnvp_r_lippe - 4.8;
+    Q.old_traditionalist_r_lippe - 4.8;
     Q.old_kvp_r_lippe = 4.8;
 }
-if (Q.dnvp_ideology == "Moderate") {
-    Q.old_dnvp_r_lippe - 4.8;
+if (Q.traditionalist_ideology == "Moderate") {
+    Q.old_traditionalist_r_lippe - 4.8;
     Q.old_dnf_r_lippe = 4.8;
 }
 
@@ -352,15 +352,15 @@ for (var party of Q.lippe_parties) {
     Q['str_votes_change_' + party + '_lippe'] = sign2 + Math.abs(Q['change_' + party + '_votes_lippe']).toFixed(1);
 }   
 
-Q.change_nsdap_votes_lippe = (Q.change_nsdap_votes_lippe != undefined ? parseFloat(Q.change_nsdap_votes_lippe.toFixed(1)) : 0);
+Q.change_royalist_votes_lippe = (Q.change_royalist_votes_lippe != undefined ? parseFloat(Q.change_royalist_votes_lippe.toFixed(1)) : 0);
 
 !}
 on-display: {!
 data = [{
     "id": "kpd",
-    "legend": "KPD",
-    "name": "KPD",
-    "seats": Math.round(Q.kpd_r_lippe * 0.21),
+    "legend": "Collectivist",
+    "name": "Collectivist",
+    "seats": Math.round(Q.collectivist_r_lippe * 0.21),
 }];
 
 if (Q.sapd_formed && Q.sapd_r_lippe) {
@@ -374,9 +374,9 @@ if (Q.sapd_formed && Q.sapd_r_lippe) {
 
 data = data.concat([{
     "id": "spd",
-    "legend": "SPD",
-    "name": "SPD",
-    "seats": Math.round(Q.spd_r_lippe * 0.21),
+    "legend": "Marcher",
+    "name": "Marcher",
+    "seats": Math.round(Q.marcher_r_lippe * 0.21),
 }]);
 
 if (Q.ddp_r_lippe && !Q.lvp_formed) {
@@ -397,21 +397,21 @@ if (Q.lvp_r_lippe && Q.lvp_formed) {
     });
 }
 
-if (Q.z_r_lippe) {
+if (Q.unionist_r_lippe) {
     data.push({
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": Math.round(Q.z_r_lippe * 0.21),
+        "seats": Math.round(Q.unionist_r_lippe * 0.21),
     });
 }
 
-if (Q.dvp_r_lippe && !Q.lvp_formed && Q.dvp_exist) {
+if (Q.gold_r_lippe && !Q.lvp_formed && Q.gold_exist) {
     data.push({
         "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Math.round(Q.dvp_r_lippe * 0.21),
+        "legend": "Gold",
+        "name": "Gold",
+        "seats": Math.round(Q.gold_r_lippe * 0.21),
     });
 }
 
@@ -452,9 +452,9 @@ if (Q.kvp_formed && Q.kvp_r_lippe) {
 
 data = data.concat([{
     "id": "dnvp",
-    "legend": "DNVP",
-    "name": "DNVP",
-    "seats": Math.round(Q.dnvp_r_lippe * 0.21),
+    "legend": "Traditionalist",
+    "name": "Traditionalist",
+    "seats": Math.round(Q.traditionalist_r_lippe * 0.21),
 }]);
 if (Q.dnf_formed && Q.dnf_r_lippe) {
     data.push({
@@ -466,9 +466,9 @@ if (Q.dnf_formed && Q.dnf_r_lippe) {
 }
 data = data.concat([{
     "id": "nsdap",
-    "legend": "NSDAP",
-    "name": "NSDAP",
-    "seats": Math.round(Q.nsdap_r_lippe * 0.21),
+    "legend": "Royalist",
+    "name": "Royalist",
+    "seats": Math.round(Q.royalist_r_lippe * 0.21),
 }, ]);
 
 if (window && d3) {
@@ -490,25 +490,25 @@ if (window && d3) {
 go-to: lippe_coalition_menu
 
 
-**Lippe results:**
+**High Cross results:**
 
 {!<svg id="lippe_landtag" style="width: 500px; height: 250px;"> </svg>!}
-Vote % changes are compared to the last *Reichstag* election. <br> Seat % changes are compared to the last *Landtag* election.
+Vote % changes are compared to the last *Assembly* election. <br> Seat % changes are compared to the last *state Assembly* election.
 {!<table>!} 
-{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Landtag Seats</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_lippe_elections_vote +]%** {!</td><td>!} **[+ str_votes_change_spd_lippe +]** {!</td><td>!} **[+ spd_r_lippe +]%** {!</td><td>!} **[+ str_change_spd_lippe +]** {!</td></tr>!}
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>state Assembly Seats</td><td>% Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_lippe_elections_vote +]%** {!</td><td>!} **[+ str_votes_change_marcher_lippe +]** {!</td><td>!} **[+ marcher_r_lippe +]%** {!</td><td>!} **[+ str_change_marcher_lippe +]** {!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_sapd_lippe +] {!</td><td>!} [+ sapd_r_lippe +]% {!</td><td>!} [+ str_change_sapd_lippe +] ?]
 
-{!<tr><td><div class="box" style='background-color:#700000'> </div> !}KPD: {!</td><td>!} [+ kpd_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_kpd_lippe +] {!</td><td>!} [+ kpd_r_lippe +]% {!</td><td>!} [+ str_change_kpd_lippe +] {! </td></tr>!}
+{!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_collectivist_lippe +] {!</td><td>!} [+ collectivist_r_lippe +]% {!</td><td>!} [+ str_change_collectivist_lippe +] {! </td></tr>!}
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_ddp_lippe +] {!</td><td>!} [+ ddp_r_lippe +]% {!</td><td>!} [+ str_change_ddp_lippe +] {! </td></tr>!} ?]
 
 [? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_lvp_lippe +] {!</td><td>!} [+ lvp_r_lippe +]% {!</td><td>!} [+ str_change_lvp_lippe +] {! </td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_z_lippe +] {!</td><td>!} [+ z_r_lippe +]% {!</td><td>!} [+ str_change_z_lippe +] {! </td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ unionist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_unionist_lippe +] {!</td><td>!} [+ unionist_r_lippe +]% {!</td><td>!} [+ str_change_unionist_lippe +] {! </td></tr>!}
 
-[? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} DVP: {!</td><td>!} [+ dvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_dvp_lippe +] {!</td><td>!} [+ dvp_r_lippe +]% {!</td><td>!} [+ str_change_dvp_lippe +] {! </td></tr>!} ?]
+[? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} Golds: {!</td><td>!} [+ gold_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_gold_lippe +] {!</td><td>!} [+ gold_r_lippe +]% {!</td><td>!} [+ str_change_gold_lippe +] {! </td></tr>!} ?]
 
 [? if wp_lippe_elections_vote: {!<tr><td><div class="box" style='background-color:#b8996f'> </div> !} WP: {!</td><td>!} [+ wp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_wp_lippe +] {!</td><td>!} [+ wp_r_lippe +]% {!</td><td>!} [+ str_change_wp_lippe +] {! </td></tr>!} ?]
 
@@ -518,16 +518,16 @@ Vote % changes are compared to the last *Reichstag* election. <br> Seat % change
 
 [? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_kvp_lippe +] {!</td><td>!} [+ kvp_r_lippe +]% {!</td><td>!} [+ str_change_kvp_lippe +] {! </td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} DNVP: {!</td><td>!} [+ dnvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_dnvp_lippe +] {!</td><td>!} [+ dnvp_r_lippe +]% {!</td><td>!} [+ str_change_dnvp_lippe +] {! </td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_traditionalist_lippe +] {!</td><td>!} [+ traditionalist_r_lippe +]% {!</td><td>!} [+ str_change_traditionalist_lippe +] {! </td></tr>!}
 
 [? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_dnf_lippe +] {!</td><td>!} [+ dnf_r_lippe +]% {!</td><td>!} [+ str_change_dnf_lippe +] {! </td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_nsdap_lippe +] {!</td><td>!} [+ nsdap_r_lippe +]% {!</td><td>!} [+ str_change_nsdap_lippe +] {! </td></tr>!}
+{!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_royalist_lippe +] {!</td><td>!} [+ royalist_r_lippe +]% {!</td><td>!} [+ str_change_royalist_lippe +] {! </td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-Lippe has been governed for the past four years by a coalition of the <span style="color: #c00000;">**SPD**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span style="color: #c00000;">**SPD**</span> maintaining a more moderate image.
+High Cross has been governed for the past four years by a coalition of the <span style="color: #c00000;">**Marchers**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span style="color: #c00000;">**Marchers**</span> maintaining a more moderate image.
 <hr id="read-marker">
-But the real question isn’t the future of Lippe—it’s what the election says about the nation. A <span style="color: #7A3C00;">Nazi</span> victory could prove the party still has life. But a defeat, even after throwing everything into their campaign, would be a crushing blow. With no local elections until the fall, the <span style="color: #7A3C00;">Nazis</span> won’t get another moment like this to remotivate their party.
+But the real question isn’t the future of High Cross—it’s what the election says about the nation. A <span style="color: #7A3C00;">Royalist</span> victory could prove the party still has life. But a defeat, even after throwing everything into their campaign, would be a crushing blow. With no local elections until the fall, the <span style="color: #7A3C00;">Royalists</span> won’t get another moment like this to remotivate their party.
 
 Who cares what coalition forms here?
 
@@ -540,95 +540,95 @@ Who cares what coalition forms here?
 - @nsdap_explode
 
 @nsdap_big_win
-title: The <span style="color: #7A3C00;">**NSDAP**</span> score a crushing victory.
-view-if: change_nsdap_votes_lippe >= 6
-on-arrival: lippe_big_win = 1; hindenburg_hitler_r += 2; hindenburg_schleicher_r -= 2; workers_nsdap += 2; unemployed_nsdap += 2; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; nazi_funds += 1; lippe_good = 1
+title: The <span style="color: #7A3C00;">**Royalists**</span> score a crushing victory.
+view-if: change_royalist_votes_lippe >= 6
+on-arrival: lippe_big_win = 1; dufour_gallax_r += 2; dufour_staal_r -= 2; commons_royalist += 2; disfavored_royalist += 2; burgher_royalist += 4; guild_royalist += 4; landed_royalist += 4; royalist_funds += 1; lippe_good = 1
 
-Unexpectedly, the <span style="color: #7A3C00;">**NSDAP**</span> matched their peak electoral performance—proof that the movement isn’t dying, but growing.
+Unexpectedly, the <span style="color: #7A3C00;">**Royalists**</span> matched their peak electoral performance—proof that the movement isn’t dying, but growing.
 
-This is a major propaganda win for the <span style="color: #7A3C00;">**NSDAP**</span>, sure to energize the party and reinforce the belief that [+ nsdap_leader +]’s all-or-nothing strategy is paying off. It’s only a matter of time before Hindenburg acknowledges the <span style="color: #7A3C00;">Nazi</span> surge.
+This is a major propaganda win for the <span style="color: #7A3C00;">**Royalists**</span>, sure to energize the party and reinforce the belief that [+ royalist_leader +]’s all-or-nothing strategy is paying off. It’s only a matter of time before DuFour acknowledges the <span style="color: #7A3C00;">Royalist</span> surge.
 
 @nsdap_moderate_win
-title: The <span style="color: #7A3C00;">**NSDAP**</span> score a dubious triumph.
-view-if: change_nsdap_votes_lippe >= 3 and change_nsdap_votes_lippe < 6
-on-arrival: hindenburg_hitler_r += 1; hindenburg_schleicher_r -= 1; new_middle_nsdap += 2; old_middle_nsdap += 2; rural_nsdap += 2; lippe_good = 1
+title: The <span style="color: #7A3C00;">**Royalists**</span> score a dubious triumph.
+view-if: change_royalist_votes_lippe >= 3 and change_royalist_votes_lippe < 6
+on-arrival: dufour_gallax_r += 1; dufour_staal_r -= 1; burgher_royalist += 2; guild_royalist += 2; landed_royalist += 2; lippe_good = 1
 
-The <span style="color: #7A3C00;">Nazis</span> fell short of their peak results—but still gained votes compared to the last election. To the casual observer, the <span style="color: #7A3C00;">**NSDAP**</span> looks like it’s back on the rise, and they’ve seized on the outcome as a cheap propaganda boost to reenergize their disillusioned base.
+The <span style="color: #7A3C00;">Royalists</span> fell short of their peak results—but still gained votes compared to the last election. To the casual observer, the <span style="color: #7A3C00;">**Royalists**</span> looks like it’s back on the rise, and they’ve seized on the outcome as a cheap propaganda boost to reenergize their disillusioned base.
 
-But if we were to look closer. The <span style="color: #7A3C00;">**NSDAP**</span> cannot replicate the scale of its Lippe campaign—conducted in a state with barely a quarter of a percent of Germany’s population—across the country, especially given its financial troubles. The victory feels artificial.
+But if we were to look closer. The <span style="color: #7A3C00;">**Royalists**</span> cannot replicate the scale of its High Cross campaign—conducted in a state with barely a quarter of a percent of the Commonwealth’s population—across the country, especially given its financial troubles. The victory feels artificial.
 
-Still, pressure to bring [+ nsdap_chancellor +] into government is once again rising.
+Still, pressure to bring [+ royalist_chancellor +] into government is once again rising.
 
 - @hitler_good
 
 @nothing_ever_happens
-title: The <span style="color: #7A3C00;">**NSDAP**</span> fails to make a breakthrough.
-view-if: change_nsdap_votes_lippe >= 0 and change_nsdap_votes_lippe < 3
-on-arrival: new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; lippe_good = 1
+title: The <span style="color: #7A3C00;">**Royalists**</span> fails to make a breakthrough.
+view-if: change_royalist_votes_lippe >= 0 and change_royalist_votes_lippe < 3
+on-arrival: burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; lippe_good = 1
 
-The <span style="color: #7A3C00;">**NSDAP**</span>, despite going all-out on this campaign, only managed to achieve gains of [+ change_nsdap_votes_lippe +]%. This serves as evidence that the movement is in decline, though slowly.
+The <span style="color: #7A3C00;">**Royalists**</span>, despite going all-out on this campaign, only managed to achieve gains of [+ change_royalist_votes_lippe +]%. This serves as evidence that the movement is in decline, though slowly.
 
-Nevertheless, the <span style="color: #7A3C00;">**NSDAP**</span> continues to use their modest gains as cheap propaganda, though few are swayed. Replicating the success of their Lippe campaign—conducted in a state that comprises barely a quarter of a percent of Germany’s population—across the entire country is not feasible, particularly given their financial troubles. The victory feels artificial.
+Nevertheless, the <span style="color: #7A3C00;">**Royalists**</span> continues to use their modest gains as cheap propaganda, though few are swayed. Replicating the success of their High Cross campaign—conducted in a state that comprises barely a quarter of a percent of the Commonwealth’s population—across the entire country is not feasible, particularly given their financial troubles. The victory feels artificial.
 
 - @hitler_eh
 
 @nsdap_joever
-title: The <span style="color: #7A3C00;">**NSDAP**</span>'s suffers a crushing defeat!
-view-if: change_nsdap_votes_lippe < 0 and change_nsdap_votes_lippe > -4
-on-arrival: hindenburg_hitler_r -= 1; workers_nsdap -= 2; unemployed_nsdap -= 2; new_middle_nsdap -= 4; old_middle_nsdap -= 4; rural_nsdap -= 4; catholics_nsdap -= 2; nazi_funds -= 1
+title: The <span style="color: #7A3C00;">**Royalists**</span>'s suffers a crushing defeat!
+view-if: change_royalist_votes_lippe < 0 and change_royalist_votes_lippe > -4
+on-arrival: dufour_gallax_r -= 1; commons_royalist -= 2; disfavored_royalist -= 2; burgher_royalist -= 4; guild_royalist -= 4; landed_royalist -= 4; faithful_royalist -= 2; royalist_funds -= 1
 
-The <span style="color: #7A3C00;">**NSDAP**</span> has suffered a crushing defeat! Despite throwing everything into this campaign, their vote share has actually declined. This is clear evidence that the movement is collapsing rapidly—and that new elections would be disastrous for the <span style="color: #7A3C00;">Nazi</span> cause.
+The <span style="color: #7A3C00;">**Royalists**</span> has suffered a crushing defeat! Despite throwing everything into this campaign, their vote share has actually declined. This is clear evidence that the movement is collapsing rapidly—and that new elections would be disastrous for the <span style="color: #7A3C00;">Royalist</span> cause.
 
-Donations are drying up, party membership is plummeting, defections are soaring, and the political pressure on Schleicher has eased. Land is in sight.
+Donations are drying up, party membership is plummeting, defections are soaring, and the political pressure on Staal has eased. Land is in sight.
 
 - @hitler_bad
 
 @nsdap_explode
-title: The <span style="color: #7A3C00;">**NSDAP**</span> is rapidly imploding!
-view-if: change_nsdap_votes_lippe <= -4
-on-arrival: hindenburg_hitler_r -= 2; workers_nsdap -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 8; old_middle_nsdap -= 8; rural_nsdap -= 6; catholics_nsdap -= 4; nazi_funds -= 2
+title: The <span style="color: #7A3C00;">**Royalists**</span> is rapidly imploding!
+view-if: change_royalist_votes_lippe <= -4
+on-arrival: dufour_gallax_r -= 2; commons_royalist -= 4; disfavored_royalist -= 4; burgher_royalist -= 8; guild_royalist -= 8; landed_royalist -= 6; faithful_royalist -= 4; royalist_funds -= 2
 
-The <span style="color: #7A3C00;">**NSDAP**</span> is in free fall! Despite throwing everything they had into this campaign, their vote share has actually declined—a humiliating blow that confirms the movement’s rapid implosion.
+The <span style="color: #7A3C00;">**Royalists**</span> is in free fall! Despite throwing everything they had into this campaign, their vote share has actually declined—a humiliating blow that confirms the movement’s rapid implosion.
 
-Donors are abandoning them, defections are accelerating, and local organizations are collapsing. Even fanatics at the highest levels of the party are starting to lose faith. The threat they once posed is rapidly fading, and with the pressure on Schleicher easing, the worst may finally be over.
+Donors are abandoning them, defections are accelerating, and local organizations are collapsing. Even fanatics at the highest levels of the party are starting to lose faith. The threat they once posed is rapidly fading, and with the pressure on Staal easing, the worst may finally be over.
 
 - @hitler_explode
 
 @hitler_good
-title: How will this affect [+ nsdap_leader +] and his party?
+title: How will this affect [+ royalist_leader +] and his party?
 
-In a meeting between [+ nsdap_leader +] and the <span style="color: #7A3C00;">Nazi</span> gauleiters, immediately after the Lippe results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. However, the <span style="color: #7A3C00;">Nazi</span> gains have alleviated their concerns about his all-or-nothing strategy, and [+ nsdap_leader +] used the opportunity to finally address the Strasser issue.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. However, the <span style="color: #7A3C00;">Royalist</span> gains have alleviated their concerns about his all-or-nothing strategy, and [+ royalist_leader +] used the opportunity to finally address the Crowde issue.
 
-He unleashed the full force of his anger against Strasser, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ nsdap_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Strasser. This appears to have silenced dissent among the gauleiters.
+He unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the gauleiters.
 
-His denunciation of his former ally has been kept out of the press, deliberately by [+ nsdap_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Schleicher, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
+His denunciation of his former ally has been kept out of the press, deliberately by [+ royalist_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Staal, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
 
 @hitler_eh
-title: How will this affect [+ nsdap_leader +] and his party?
-on-arrival: nazi_explode += 1
+title: How will this affect [+ royalist_leader +] and his party?
+on-arrival: royalist_explode += 1
 
-In a meeting between [+ nsdap_leader +] and the <span style="color: #7A3C00;">Nazi</span> gauleiters, immediately after the Lippe results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. While the <span style="color: #7A3C00;">Nazi</span> gains somewhat mitigated the unrest, the gauleiters still voiced concerns about [+ nsdap_leader +]'s strategy. Leaks of discontent continue to reach the press.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. While the <span style="color: #7A3C00;">Royalist</span> gains somewhat mitigated the unrest, the gauleiters still voiced concerns about [+ royalist_leader +]'s strategy. Leaks of discontent continue to reach the press.
 
-In an attempt to suppress dissent, he unleashed the full force of his anger against Strasser, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ nsdap_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Strasser. This appears to have silenced dissent among the gauleiters.
+In an attempt to suppress dissent, he unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the gauleiters.
 
-His denunciation of his former ally has been kept out of the press, deliberately by [+ nsdap_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Schleicher, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
+His denunciation of his former ally has been kept out of the press, deliberately by [+ royalist_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Staal, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
 
 @hitler_bad
-title: How will this affect [+ nsdap_leader +] and his party?
-on-arrival: nazi_explode += 2
+title: How will this affect [+ royalist_leader +] and his party?
+on-arrival: royalist_explode += 2
 
-In a meeting between [+ nsdap_leader +] and the <span style="color: #7A3C00;">Nazi</span> gauleiters immediately after the Lippe results became known, it was clear—they were not pleased. The consensus among the leadership was that [+ nsdap_leader +]’s all-or-nothing strategy is failing. They cannot simply wait for Hindenburg to have a sudden change of heart, nor can they rely on a victory at the ballot box.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters immediately after the High Cross results became known, it was clear—they were not pleased. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy is failing. They cannot simply wait for DuFour to have a sudden change of heart, nor can they rely on a victory at the ballot box.
 
-In an attempt to crush dissent, [+ nsdap_leader +] unleashed the full force of his anger on Strasser—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. He warned that anyone questioning his strategy was aligning themselves with the disgraced Strasser. But many in the room still sympathized with Strasser’s arguments, and the tirade only deepened their disillusionment with the man they had once seen as a prophet.
+In an attempt to crush dissent, [+ royalist_leader +] unleashed the full force of his anger on Crowde—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. He warned that anyone questioning his strategy was aligning themselves with the disgraced Crowde. But many in the room still sympathized with Crowde’s arguments, and the tirade only deepened their disillusionment with the man they had once seen as a prophet.
 
-The denunciation—and the evident unrest among the <span style="color: #7A3C00;">Nazi</span> leadership—quickly leaked to the press. Word soon reached Chancellor von Schleicher, who was elated at their collapse and hopeful that it might finally compel [+ nsdap_leader +] to act more rationally.
+The denunciation—and the evident unrest among the <span style="color: #7A3C00;">Royalist</span> leadership—quickly leaked to the press. Word soon reached Chancellor von Staal, who was elated at their collapse and hopeful that it might finally compel [+ royalist_leader +] to act more rationally.
 
 @hitler_explode
-title: How will this affect [+ nsdap_leader +] and his party?
-on-arrival: nazi_explode += 3
+title: How will this affect [+ royalist_leader +] and his party?
+on-arrival: royalist_explode += 3
 
-In a meeting between [+ nsdap_leader +] and the <span style="color: #7A3C00;">Nazi</span> gauleiters immediately after the Lippe results became known, it was clear—they were outraged. The consensus among the leadership was that [+ nsdap_leader +]’s all-or-nothing strategy was failing, and the party was collapsing fast. They could no longer wait for Hindenburg to have a sudden change of heart, nor could they rely on a victory at the ballot box.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters immediately after the High Cross results became known, it was clear—they were outraged. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy was failing, and the party was collapsing fast. They could no longer wait for DuFour to have a sudden change of heart, nor could they rely on a victory at the ballot box.
 
-In a fit of rage, [+ nsdap_leader +] launched into a long and incoherent tirade against Strasser—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. Many in the room still sympathized with Strasser’s arguments, and the outburst only deepened their disillusionment with the man they had once regarded as a prophet.
+In a fit of rage, [+ royalist_leader +] launched into a long and incoherent tirade against Crowde—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. Many in the room still sympathized with Crowde’s arguments, and the outburst only deepened their disillusionment with the man they had once regarded as a prophet.
 
-After [+ nsdap_leader +] seemingly lost control, a growing minority within the party now openly call for a reconciliation with Strasser and the <span style="color: #7A3C00;">**NSDAP**</span> entering the Schleicher cabinet. The unrest within the party has quickly leaked to the press, with numerous local <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #7A3C00;">**SA**</span> leaders now at each other’s throats, accelerating the party's collapse.
+After [+ royalist_leader +] seemingly lost control, a growing minority within the party now openly call for a reconciliation with Crowde and the <span style="color: #7A3C00;">**Royalists**</span> entering the Staal cabinet. The unrest within the party has quickly leaked to the press, with numerous local <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #7A3C00;">**SA**</span> leaders now at each other’s throats, accelerating the party's collapse.

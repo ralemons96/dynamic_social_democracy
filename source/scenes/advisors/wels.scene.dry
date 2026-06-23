@@ -1,13 +1,13 @@
-title: Otto Wels
+title: Otto Vesh
 is-pinned-card: true
 tags: advisor, centrist
 card-image: img/portraits/WelsOtto.jpg
 view-if: wels_advisor = 1
 new-page: true
 
-= Otto Wels
+= Otto Vesh
 
-Wels is the long-time chairman of the <span style="color: #c00000;">**SPD**</span>. He is a gifted organizer and a member of the centrist faction.
+Vesh is the long-time chairman of the <span style="color: #c00000;">**Marchers**</span>. He is a gifted organizer and a member of the centrist faction.
 
 - @clear_agenda
 - @party_discipline
@@ -38,7 +38,7 @@ title: Party Discipline
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; reformist_dissent -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; reformist_dissent -= 10; knight_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.
 
@@ -48,9 +48,9 @@ view-if: difficulty < 1
 subtitle: An emergency infusion of resources.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; emergency_used += 1; resources += 2; workers_spd -= 2 if emergency_used > 1; labor_dissent += 5 if emergency_used > 1; unemployed_spd -= 2 if emergency_used > 1; workers_spd -= 2 if emergency_used > 2; unemployed_spd -= 2 if emergency_used > 2; labor_dissent += 5 if emergency_used > 2; labor_dissent += 5 if emergency_used > 2
+on-arrival: advisor_action_timer = 6; emergency_used += 1; resources += 2; commons_marcher -= 2 if emergency_used > 1; labor_dissent += 5 if emergency_used > 1; disfavored_marcher -= 2 if emergency_used > 1; commons_marcher -= 2 if emergency_used > 2; disfavored_marcher -= 2 if emergency_used > 2; labor_dissent += 5 if emergency_used > 2; labor_dissent += 5 if emergency_used > 2
 
-[? if emergency_used <= 1: Wels has leveraged his position as party chairman to pull in donations and arrange quick loans. ?][? if emergency_used > 1 and emergency_used < 3: Discontent is brewing among the <span style="color: #c00000;">**SPD**</span>'s rank and file due to our persistent attempts at begging for money. ?][? if emergency_used > 2: We’re really scraping the barrel now—committed members are pressured into selling their valuables, while many others leave in frustration. ?]
+[? if emergency_used <= 1: Vesh has leveraged his position as party chairman to pull in donations and arrange quick loans. ?][? if emergency_used > 1 and emergency_used < 3: Discontent is brewing among the <span style="color: #c00000;">**Marchers**</span>'s rank and file due to our persistent attempts at begging for money. ?][? if emergency_used > 2: We’re really scraping the barrel now—committed members are pressured into selling their valuables, while many others leave in frustration. ?]
 
 We have gained +2 resources.
 
@@ -80,8 +80,8 @@ Ok.
 @snap_election
 title: Snap Election
 subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Wels" and president != "Wels" : Wels must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer == 0 and (chancellor == "Wels" or president == "Wels")
+unavailable-subtitle: [? if chancellor != "Vesh" and president != "Vesh" : Vesh must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 and (chancellor == "Vesh" or president == "Vesh")
 on-arrival: advisor_action_timer = 6; time_to_election = 3
 call: set_next_election_time
 

@@ -35,38 +35,38 @@ for (var party of Q.parties) {
     Q[party + '_support'] = party_support;
     total_support += party_support;
     if (party == "other") {
-        Q.cnblp_normalized = Q.rural_other_normalized*Q.rural;
-        Q.wp_normalized = (Q.new_middle_other_normalized*Q.new_middle) + (Q.old_middle_other_normalized*Q.old_middle);
-        if (Q.csvd_formed && !Q.aspd_other) Q.csvd_normalized = Q.workers_other_normalized*Q.workers;
-        if (Q.aspd_other) Q.aspd_normalized = (Q.workers_other_normalized*Q.workers) + (Q.unemployed_other_normalized*Q.unemployed);
-        if (Q.aspd_kvp) Q.aspd_normalized = (Q.workers_kvp_normalized*Q.workers) + (Q.unemployed_kvp_normalized*Q.unemployed);
-        if (Q.right_dnef) Q.right_dnef_normalized = ((Q.new_middle_dnef_normalized / 2)*Q.new_middle) + (Q.old_middle_dnef_normalized*Q.old_middle) + (Q.rural_dnef_normalized*Q.rural) + ((Q.catholics_dnef_normalized / 2)*Q.catholics);
-        if (Q.left_dnef) Q.left_dnef_normalized = ((Q.new_middle_dnef_normalized / 2)*Q.new_middle) + (Q.workers_dnef_normalized*Q.workers) + (Q.unemployed_dnef_normalized*Q.unemployed) + ((Q.catholics_dnef_normalized / 2)*Q.catholics);
+        Q.cnblp_normalized = Q.landed_other_normalized*Q.landed;
+        Q.wp_normalized = (Q.burgher_other_normalized*Q.burgher) + (Q.guild_other_normalized*Q.guild);
+        if (Q.csvd_formed && !Q.aspd_other) Q.csvd_normalized = Q.commons_other_normalized*Q.commons;
+        if (Q.aspd_other) Q.aspd_normalized = (Q.commons_other_normalized*Q.commons) + (Q.disfavored_other_normalized*Q.disfavored);
+        if (Q.aspd_kvp) Q.aspd_normalized = (Q.commons_kvp_normalized*Q.commons) + (Q.disfavored_kvp_normalized*Q.disfavored);
+        if (Q.right_gnu) Q.right_gnu_normalized = ((Q.burgher_gnu_normalized / 2)*Q.burgher) + (Q.guild_gnu_normalized*Q.guild) + (Q.landed_gnu_normalized*Q.landed) + ((Q.faithful_gnu_normalized / 2)*Q.faithful);
+        if (Q.left_gnu) Q.left_gnu_normalized = ((Q.burgher_gnu_normalized / 2)*Q.burgher) + (Q.commons_gnu_normalized*Q.commons) + (Q.disfavored_gnu_normalized*Q.disfavored) + ((Q.faithful_gnu_normalized / 2)*Q.faithful);
     }
-    if (party == "nsdap" && Q.nsdap_split) {
-        Q.nsdap_hitler_support = Q.rural_nsdap_normalized*Q.rural;
-        Q.nsdap_hitler_support += Q.old_middle_nsdap_normalized*Q.old_middle;
-        Q.nsdap_hitler_support += Q.catholics_nsdap_normalized*Q.catholics;
+    if (party == "nsdap" && Q.royalist_split) {
+        Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
+        Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
+        Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.workers_nsdap*Q.workers*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.unemployed_nsdap*Q.unemployed*((80 - Q.sa_force) / 100);
-            Q.dsu_support += Q.new_middle_nsdap*Q.new_middle;
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.unemployed_nsdap*Q.unemployed*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.workers_nsdap*Q.workers*((Q.sa_force - 80) / 100);
-            Q.nvf_support += Q.new_middle_nsdap*Q.new_middle;
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.workers_nsdap*Q.workers*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.unemployed_nsdap*Q.unemployed*((80 - Q.sa_force) / 100);
-            Q.dsu_support += Q.new_middle_nsdap*Q.new_middle;
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.unemployed_nsdap*Q.unemployed*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.workers_nsdap*Q.workers*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
         } else {
-            Q.nsdap_hitler_support += Q.workers_nsdap*Q.workers;
-            Q.nsdap_hitler_support += Q.unemployed_nsdap*Q.unemployed;
-            Q.nsdap_hitler_support += Q.new_middle_nsdap*Q.new_middle;
+            Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
+            Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
+            Q.royalist_gallax_support += Q.burgher_royalist*Q.burgher;
         }
     }
 }
@@ -79,14 +79,14 @@ for (var party of Q.parties) {
         Q.wp_votes = (Q.wp_normalized/total_support);
         if (Q.csvd_formed && !Q.aspd_other) Q.csvd_votes = (Q.csvd_normalized/total_support);
         if (Q.aspd_other || Q.aspd_kvp) Q.aspd_votes = (Q.aspd_normalized/total_support);
-        if (Q.right_dnef) Q.right_dnef_votes = (Q.right_dnef_normalized/total_support);
-        if (Q.left_dnef) Q.left_dnef_votes = (Q.left_dnef_normalized/total_support);
+        if (Q.right_gnu) Q.right_gnu_votes = (Q.right_gnu_normalized/total_support);
+        if (Q.left_gnu) Q.left_gnu_votes = (Q.left_gnu_normalized/total_support);
     }
-    if (party == "nsdap" && Q.nsdap_split) {
-        Q.nsdap_hitler_normalized = Q.nsdap_hitler_support / total_support;
+    if (party == "nsdap" && Q.royalist_split) {
+        Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         if (Q.nvf_exist) Q.nvf_normalized = Q.nvf_support / total_support;
-        Q.nsdap_hitler_votes = Math.round(Q.nsdap_hitler_normalized*1000) / 10;
+        Q.royalist_gallax_votes = Math.round(Q.royalist_gallax_normalized*1000) / 10;
         Q.dsu_votes = Math.round(Q.dsu_normalized*1000) / 10;
         if (Q.nvf_exist) Q.nvf_votes = Math.round(Q.nvf_normalized*1000) / 10;
     }
@@ -96,8 +96,8 @@ for (var party of Q.parties) {
         Q.wp_votes = Math.round((Q.wp_votes*1000)/10);
         if (Q.csvd_formed && !Q.aspd_other) Q.csvd_votes = Math.round((Q.csvd_votes*1000)/10);
         if (Q.aspd_other || Q.aspd_kvp) Q.aspd_votes = Math.round((Q.aspd_votes*1000)/10);
-        if (Q.right_dnef) Q.right_dnef_votes = Math.round((Q.right_dnef_votes*1000)/10);
-        if (Q.left_dnef) Q.left_dnef_votes = Math.round((Q.left_dnef_votes*1000)/10);
+        if (Q.right_gnu) Q.right_gnu_votes = Math.round((Q.right_gnu_votes*1000)/10);
+        if (Q.left_gnu) Q.left_gnu_votes = Math.round((Q.left_gnu_votes*1000)/10);
     }
 }
 !}

@@ -1,6 +1,6 @@
-title: Prussian Police Dissolved
+title: Heartland Police Dissolved
 subtitle: The <i>Staatsschutzamt</i> is formed in its stead.
-view-if: chancellor == "Schleicher" and (dsu_in_gov or dsu_was_gov) and ((reichstag_joever_time >= 6 and not schleicher_post_protests) or (reichstag_joever_time >= 16 and schleicher_post_protests)) and not schleicher_rights and prussia_leader == "Strasser"
+view-if: chancellor == "Staal" and (dsu_in_gov or dsu_was_gov) and ((reichstag_joever_time >= 6 and not staal_post_protests) or (reichstag_joever_time >= 16 and staal_post_protests)) and not staal_rights and heartland_leader == "Crowde"
 max-visits: 1
 new-page: true
 priority: -1
@@ -18,11 +18,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Prussian Police Dissolved
+= Heartland Police Dissolved
 
-Frick, the <span style="color: #6A1E1E;">**DSU**</span>, and Schleicher have been coordinating closely to smooth Germany’s transition into a more authoritarian system. The Prussian police, still riddled with <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers, remains a key obstacle—too entrenched to purge outright without crippling the force.
+Frask, the <span style="color: #6A1E1E;">**DSU**</span>, and Staal have been coordinating closely to smooth the Commonwealth’s transition into a more authoritarian system. The Heartland police, still riddled with <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers, remains a key obstacle—too entrenched to purge outright without crippling the force.
 
-But with the Reichswehr’s militia now patrolling the streets under Frick and Strasser’s oversight, there is no longer any need for this relic of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic. In its place, the <i>Staatsschutzamt</i> (State Security Office) has been created, staffed by [? if dsu_in_gov: <span style="color: #7A3C00;">Nazis</span> and?] Schleicher loyalists.
+But with the Commonwealth Army’s militia now patrolling the streets under Frask and Crowde’s oversight, there is no longer any need for this relic of the Unity Republic. In its place, the <i>Staatsschutzamt</i> (State Security Office) has been created, staffed by [? if dsu_in_gov: <span style="color: #7A3C00;">Royalists</span> and?] Staal loyalists.
 
 - @gestapo
 
@@ -32,43 +32,43 @@ on-arrival: {!
 Q.state_police = 1;
 Q.pro_republic -= 5;
 
-Q.schleicher_spd_influence += 2;
+Q.staal_marcher_influence += 2;
 
-Q.workers_spd -= 4;
-Q.workers_z -= 2;
-Q.workers_ddp -= 2;
-Q.workers_lvp -= 2;
+Q.commons_marcher -= 4;
+Q.commons_unionist -= 2;
+Q.commons_ddp -= 2;
+Q.commons_lvp -= 2;
 
-Q.new_middle_spd -= 4;
-Q.new_middle_ddp -= 4;
-Q.new_middle_lvp -= 4;
+Q.burgher_marcher -= 4;
+Q.burgher_ddp -= 4;
+Q.burgher_lvp -= 4;
 
-Q.old_middle_spd -= 4;
-Q.old_middle_ddp -= 4;
-Q.old_middle_lvp -= 4;
-Q.old_middle_nsdap -= 4;
+Q.guild_marcher -= 4;
+Q.guild_ddp -= 4;
+Q.guild_lvp -= 4;
+Q.guild_royalist -= 4;
 
-Q.rural_spd -= 2;
-Q.rural_z -= 2;
-Q.rural_ddp -= 2;
-Q.rural_lvp -= 2;
-Q.rural_nsdap -= 2;
+Q.landed_marcher -= 2;
+Q.landed_unionist -= 2;
+Q.landed_ddp -= 2;
+Q.landed_lvp -= 2;
+Q.landed_royalist -= 2;
 
-Q.catholics_spd -= 4;
-Q.catholics_z -= 2;
+Q.faithful_marcher -= 4;
+Q.faithful_unionist -= 2;
 
-Q.unemployed_spd -= 6;
-Q.unemployed_kpd -= 2;
-Q.unemployed_nsdap -= 4;
+Q.disfavored_marcher -= 6;
+Q.disfavored_collectivist -= 2;
+Q.disfavored_royalist -= 4;
 
-Q.workers_dnef += 8;
-Q.new_middle_dnef += 8;
-Q.old_middle_dnef += 8;
-Q.rural_dnef += 6;
-Q.catholics_dnef += 6;
-Q.unemployed_dnef += 8;
+Q.commons_gnu += 8;
+Q.burgher_gnu += 8;
+Q.guild_gnu += 8;
+Q.landed_gnu += 6;
+Q.faithful_gnu += 6;
+Q.disfavored_gnu += 8;
 !}
 
-For now, the organization remains confined to Prussia, but its presence is felt everywhere. Local party members whisper that their phones are tapped, and troublesome politicians vanish—never to be seen again. With the police now firmly under government control, they decide which crimes to overlook and coordinate raids hand-in-hand with the Reichswehr.
+For now, the organization remains confined to Heartland, but its presence is felt everywhere. Local party members whisper that their phones are tapped, and troublesome politicians vanish—never to be seen again. With the police now firmly under government control, they decide which crimes to overlook and coordinate raids hand-in-hand with the Commonwealth Army.
 
 Yet, their reach still depends on the willingness of people to betray their comrades by reporting them to the police.

@@ -1,11 +1,11 @@
-title: The Reichstag Agenda Committee Discusses Reconvocation
-subtitle: Schleicher's new lease on life?
-view-if: chancellor = "Schleicher" and schleicher_time and (next_reichstag_time - 1) == rubicon_time
+title: The Assembly Agenda Committee Discusses Reconvocation
+subtitle: Staal's new lease on life?
+view-if: chancellor = "Staal" and staal_time and (next_reichstag_time - 1) == rubicon_time
 on-arrival: {!
-if (((Q.reichswehr_strength*Q.reichswehr_militancy + Q.prussian_police_strength*Q.prussian_police_militancy)*2 < Q.total_force && Q.prussia_leader == "Schleicher") || (Q.reichswehr_strength*Q.reichswehr_militancy)*2 < (Q.total_force + Q.prussian_police_strength*Q.prussian_police_militancy*Q.prussian_police_loyalty) && Q.prussia_leader != "Schleicher") {
-  Q.schleicher_reichstag_smart = 1;
+if (((Q.reichswehr_strength*Q.reichswehr_militancy + Q.heartland_police_strength*Q.heartland_police_militancy)*2 < Q.total_force && Q.heartland_leader == "Staal") || (Q.reichswehr_strength*Q.reichswehr_militancy)*2 < (Q.total_force + Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty) && Q.heartland_leader != "Staal") {
+  Q.staal_reichstag_smart = 1;
 }
-if (Q.schleicher_economy_time) Q.schleicher_reichstag_smart = 1;
+if (Q.staal_economy_time) Q.staal_reichstag_smart = 1;
 !}
 new-page: true
 tags: event
@@ -25,15 +25,15 @@ on-display: {!
 !}
 go-to: schleicher_reichstag_menu
 
-= Reichstag Reconvocation Decision
+= Assembly Reconvocation Decision
 
-The Reichstag, which Schleicher had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Schleicher cabinet and a hostile parliament will occur. The <span style="color: #700000;">**KPD**</span> and <span style="color: #c00000;">**SPD**</span> spokesmen support reconvening the chamber as planned, while the <span style="color: #7A3C00;">**NSDAP**</span>'s spokesman, Wilhelm Frick, has adopted a noticeably less confrontational tone.
+The Assembly, which Staal had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Staal cabinet and a hostile parliament will occur. The <span style="color: #700000;">**Collectivists**</span> and <span style="color: #c00000;">**Marchers**</span> spokesmen support reconvening the chamber as planned, while the <span style="color: #7A3C00;">**Royalists**</span>'s spokesman, Wilhelm Frask, has adopted a noticeably less confrontational tone.
 
-Frick shares many of Strasser’s concerns about [+ nsdap_leader +]’s all-or-nothing stance and fears that a new election would bring disastrous <span style="color: #7A3C00;">Nazi</span> losses. Yet even figures like Goebbels believe they need more time, and the top <span style="color: #7A3C00;">Nazi</span> leaders have pushed Frick to propose delaying the reconvening until the cabinet can present its budget in a few months.
+Frask shares many of Crowde’s concerns about [+ royalist_leader +]’s all-or-nothing stance and fears that a new election would bring disastrous <span style="color: #7A3C00;">Royalist</span> losses. Yet even figures like Goebbels believe they need more time, and the top <span style="color: #7A3C00;">Royalist</span> leaders have pushed Frask to propose delaying the reconvening until the cabinet can present its budget in a few months.
 
-[? if not schleicher_economy_time: Nevertheless, Schleicher appears determined to continue his unwise strategy of offense—pushing for an immediate showdown with the Reichstag in hopes that [+ nsdap_leader +] will shift position to avoid new elections or, failing that, that Hindenburg will grant him an emergency decree. ?][? if schleicher_economy_time: It is expected that Schleicher will reverse his earlier, unwise strategy of confrontation and instead lend his support to Frick's proposal. ?]
+[? if not staal_economy_time: Nevertheless, Staal appears determined to continue his unwise strategy of offense—pushing for an immediate showdown with the Assembly in hopes that [+ royalist_leader +] will shift position to avoid new elections or, failing that, that DuFour will grant him an emergency decree. ?][? if staal_economy_time: It is expected that Staal will reverse his earlier, unwise strategy of confrontation and instead lend his support to Frask's proposal. ?]
 
-In any case, there’s enough support among the other parties to pass Frick’s motion to extend the recess, rendering our vote irrelevant.
+In any case, there’s enough support among the other parties to pass Frask’s motion to extend the recess, rendering our vote irrelevant.
 
 @schleicher_reichstag_menu
 
@@ -41,15 +41,15 @@ In any case, there’s enough support among the other parties to pass Frick’s 
 - @reichstag_2
 
 @reichstag_1
-title: Frick's proposal is shot down!
-view-if: not schleicher_reichstag_smart
+title: Frask's proposal is shot down!
+view-if: not staal_reichstag_smart
 on-arrival: {!
 Q.next_reichstag_time = Q.rubicon_time + 1;
 Q.next_reichstag_week = Q.week + 1;
 Q.next_reichstag_month = Q.month;
 Q.next_reichstag_year = Q.year;
 
-Q.schleicher_explode = 1;
+Q.staal_explode = 1;
 
 if (Q.next_reichstag_week > 4) {
   Q.next_reichstag_week -= 4;
@@ -67,26 +67,26 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-As expected, the objections raised by Schleicher’s spokesman—acting on direct orders—have sunk the <span style="color: #7A3C00;">Nazi</span> motion. In response, the <span style="color: #000000;">Center Party</span> has introduced a compromise: a one-week extension of the recess to allow for further negotiations. 
+As expected, the objections raised by Staal’s spokesman—acting on direct orders—have sunk the <span style="color: #7A3C00;">Royalist</span> motion. In response, the <span style="color: #000000;">Unionist Party</span> has introduced a compromise: a one-week extension of the recess to allow for further negotiations. 
 
-Papen’s scheme has become considerably easier, as Schleicher is now forced to test the President’s support by requesting a decree to dissolve the Reichstag and postpone elections. But if Hindenburg denies the request, the question becomes unavoidable: who would succeed him? Papen? Hitler?
+Goodryke’s scheme has become considerably easier, as Staal is now forced to test the President’s support by requesting a decree to dissolve the Assembly and postpone elections. But if DuFour denies the request, the question becomes unavoidable: who would succeed him? Goodryke? Gallax?
 
-Schleicher has squandered a critical opportunity to salvage his cabinet—and perhaps Germany itself. Had the elections been postponed just a few months, his position would likely have improved significantly. He stood to gain from the launch of Gereke’s public works program and the natural recovery of the global economy. Meanwhile, the <span style="color: #7A3C00;">Nazis</span>, with no upcoming state elections to boost morale, would have been increasingly vulnerable to internal collapse—driven by mounting dissatisfaction with [+ nsdap_leader +] and the disintegration of the <span style="color: #7A3C00;">**SA**</span>.
+Staal has squandered a critical opportunity to salvage his cabinet—and perhaps the Commonwealth itself. Had the elections been postponed just a few months, his position would likely have improved significantly. He stood to gain from the launch of Gereke’s public works program and the natural recovery of the global economy. Meanwhile, the <span style="color: #7A3C00;">Royalists</span>, with no upcoming state elections to boost morale, would have been increasingly vulnerable to internal collapse—driven by mounting dissatisfaction with [+ royalist_leader +] and the disintegration of the <span style="color: #7A3C00;">**SA**</span>.
 
 None of this is to be.
 
 @reichstag_2
-title: Schleicher approves Frick's proposal.
+title: Staal approves Frask's proposal.
 subtitle: This is a turning point.
-unavailable-subtitle: Schleicher remains committed to his delusions.
-choose-if: schleicher_reichstag_smart
+unavailable-subtitle: Staal remains committed to his delusions.
+choose-if: staal_reichstag_smart
 on-arrival: {!
 Q.next_reichstag_time = Q.rubicon_time + 9;
 Q.next_reichstag_week = Q.week + 9;
 Q.next_reichstag_month = Q.month;
 Q.next_reichstag_year = Q.year;
 
-Q.schleicher_explode = 0;
+Q.staal_explode = 0;
 
 if (Q.next_reichstag_week > 4) {
   Q.next_reichstag_week -= 4;
@@ -104,6 +104,6 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-[? if not schleicher_economy_time: However, Schleicher, having learned about Frick's plans to delay the Reichstag's reconvocation, has had a sudden change of heart. A new round of war games—this time not rigged—has revealed that the Reichswehr cannot survive fighting against all paramilitaries[? if prussia_leader == "Schleicher":, even with the Prussian police?][? if prussia_leader != "Schleicher":, and the Prussian police force as well?]. Despite his efforts to strengthen the army with streetfighting equipment and training, the limited but well-trained force remains unable to withstand being heavily outnumbered. ?][? if schleicher_economy_time: Schleicher, seeking to benefit from his public works program before calling for confrontation in the Reichstag that'll likely lead to new elections, has decided that Frick's proposal is most prudent. ?]
+[? if not staal_economy_time: However, Staal, having learned about Frask's plans to delay the Assembly's reconvocation, has had a sudden change of heart. A new round of war games—this time not rigged—has revealed that the Commonwealth Army cannot survive fighting against all paramilitaries[? if heartland_leader == "Staal":, even with the Heartland police?][? if heartland_leader != "Staal":, and the Heartland police force as well?]. Despite his efforts to strengthen the army with streetfighting equipment and training, the limited but well-trained force remains unable to withstand being heavily outnumbered. ?][? if staal_economy_time: Staal, seeking to benefit from his public works program before calling for confrontation in the Assembly that'll likely lead to new elections, has decided that Frask's proposal is most prudent. ?]
 
-[? if not schleicher_economy_time: The chancellor makes it clear that he still hopes [+ nsdap_leader +] might have a sudden change of heart, but with his backup plan no longer viable, he pushes for the adoption of Frick's proposal. ?] The Reichstag is now adjourned until [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +], and Schleicher is expected to unveil his public works program during this time.
+[? if not staal_economy_time: The chancellor makes it clear that he still hopes [+ royalist_leader +] might have a sudden change of heart, but with his backup plan no longer viable, he pushes for the adoption of Frask's proposal. ?] The Assembly is now adjourned until [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +], and Staal is expected to unveil his public works program during this time.

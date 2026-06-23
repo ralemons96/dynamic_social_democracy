@@ -1,4 +1,4 @@
-title: The Death of Paul Levi
+title: The Death of Paul Tarrand
 view-if: year == 1930 and month >= 2
 frequency: 1000
 max-visits: 1
@@ -7,6 +7,6 @@ tags: event
 new-page: true
 face-image: img/portraits/LeviPaul.jpg
 
-= The Death of Paul Levi
+= The Death of Paul Tarrand
 
-Paul Levi, a leader of the left wing of our party, has died in an unfortunate accident. He will be missed.
+Paul Tarrand, a leader of the left wing of our party, has died in an unfortunate accident. He will be missed.

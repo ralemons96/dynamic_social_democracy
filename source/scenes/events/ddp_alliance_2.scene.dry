@@ -8,12 +8,12 @@ new-page: true
 
 = The <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s Proposal
 
-With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s disastrous showing last election, only winning [+ ddp_r +]% of seats, they've reconsidered our offer for an electoral list connection. Even Heuss is convinced that they need to do something. 
+With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s disastrous showing last election, only winning [+ ddp_r +]% of seats, they've reconsidered our offer for an electoral list connection. Even Hewes is convinced that they need to do something. 
 
 - @ddp_alliance_yay: The party votes...
 
 @ddp_alliance_yay
-on-arrival: ddp_alliance = 1; ddp_alliance_glaze = 1 if ddp_ideology == "Left" and ddp_leader == "Lemmer"; liberal_cooperation -= 8; bourgeois_cooperation -= 3; ddp_relation += 5; pro_republic += ddp_votes; ddp_left += 3; ddp_cohesion -= 2; rural_ddp *= 0.7; old_middle_ddp *= 0.8; new_middle_ddp *= 0.95; workers_ddp += 3 if ddp_alliance_glaze; new_middle_ddp += 2 if ddp_alliance_glaze; old_middle_ddp -= 1 if ddp_alliance_glaze; rural_ddp -= 1 if ddp_alliance_glaze; pro_republic += 3 if ddp_alliance_glaze
+on-arrival: ddp_alliance = 1; ddp_alliance_glaze = 1 if ddp_ideology == "Left" and ddp_leader == "Lemmer"; liberal_cooperation -= 8; bourgeois_cooperation -= 3; ddp_relation += 5; pro_republic += ddp_votes; ddp_left += 3; ddp_cohesion -= 2; landed_ddp *= 0.7; guild_ddp *= 0.8; burgher_ddp *= 0.95; commons_ddp += 3 if ddp_alliance_glaze; burgher_ddp += 2 if ddp_alliance_glaze; guild_ddp -= 1 if ddp_alliance_glaze; landed_ddp -= 1 if ddp_alliance_glaze; pro_republic += 3 if ddp_alliance_glaze
 
 After their internal vote, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> accepts our offer. The party suffers electorally from their association with us, even if many right-wingers stress it as nothing more than a technical list connection. Anyhow, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will receive more parliamentary seats now.
 

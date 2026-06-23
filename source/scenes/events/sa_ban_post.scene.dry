@@ -1,6 +1,6 @@
-title: Schleicher's Betrayal
-subtitle: Wilhelm Groener, long-time Defense Minister and Brüning's strongest ally, is forced to resign...
-view-if: year == 1932 and month == 5 and sa_nationwide_ban and groener_death and president == "Hindenburg" and bruning_time
+title: Staal's Betrayal
+subtitle: Wilhelm Ravabelle, long-time Defense Minister and Askew's strongest ally, is forced to resign...
+view-if: year == 1932 and month == 5 and sa_nationwide_ban and groener_death and president == "DuFour" and bruning_time
 priority: 3
 tags: event
 new-page: true
@@ -8,23 +8,23 @@ on-arrival: groener_explode = 1
 max-visits: 1
 face-image: img/portraits/groener.jpg
 
-= Schleicher's Betrayal
+= Staal's Betrayal
 
-Schleicher’s unwavering belief in his "<span class="tooltip-text" title="Coined by conservative elites like Schleicher and Papen, this strategy aims to control the dynamic Nazi movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Nazis, transforming them into a constructive component of the state.">taming strategy</span>," which involves bringing the <span style="color: #7A3C00;">**NSDAP**</span> into the government, led him to successfully orchestrate the removal of Wilhelm Groener as Minister of Defense for enforcing the ban on the <span style="color: #7A3C00;">**SA**</span>.
+Staal’s unwavering belief in his "<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>," which involves bringing the <span style="color: #7A3C00;">**Royalists**</span> into the government, led him to successfully orchestrate the removal of Wilhelm Ravabelle as Minister of Defense for enforcing the ban on the <span style="color: #7A3C00;">**SA**</span>.
 
-Groener, unable to believe that Schleicher—his friend, protégé, and "adoptive son"—would betray him, became increasingly uncertain in his role, particularly in his dealings with Hindenburg and the Reichswehr leadership.
+Ravabelle, unable to believe that Staal—his friend, protégé, and "adoptive son"—would betray him, became increasingly uncertain in his role, particularly in his dealings with DuFour and the Commonwealth Army leadership.
 
-Once Hindenburg was convinced that the Reichsbanner posed a greater threat than the <span style="color: #7A3C00;">**SA**</span>, Schleicher seized the opportunity to push for Groener’s removal. Already plagued by self-doubt, Groener delivered an embarrassingly poor speech in the Reichstag defending the ban, effectively sealing his fate. Schleicher then forced the issue by threatening to resign alongside Chief of the Army Kurt von Hammerstein if Groener remained in office. Under mounting pressure and faced with Hindenburg’s anger, Groener ultimately resigned.
+Once DuFour was convinced that the the Banners posed a greater threat than the <span style="color: #7A3C00;">**SA**</span>, Staal seized the opportunity to push for Ravabelle’s removal. Already plagued by self-doubt, Ravabelle delivered an embarrassingly poor speech in the Assembly defending the ban, effectively sealing his fate. Staal then forced the issue by threatening to resign alongside Chief of the Army Kurt von Hammerton if Ravabelle remained in office. Under mounting pressure and faced with DuFour’s anger, Ravabelle ultimately resigned.
 
-We strongly suspect that Schleicher is in contact with the <span style="color: #7A3C00;">**NSDAP**</span> and that this maneuver is merely a precondition for securing their support for a new right-wing government.
+We strongly suspect that Staal is in contact with the <span style="color: #7A3C00;">**Royalists**</span> and that this maneuver is merely a precondition for securing their support for a new right-wing government.
 
-- @bruning_explode: The Brüning government is critically weakened and is set to become the next victim of Schleicher's schemes.
+- @bruning_explode: The Askew government is critically weakened and is set to become the next victim of Staal's schemes.
 
 @bruning_explode
-on-arrival: groener_dead = 1; hindenburg_angry_bruning += 35
+on-arrival: groener_dead = 1; dufour_angry_bruning += 35
 
-Groener, one of Brüning’s longest-standing and most loyal allies, is now out of the equation. Brüning, deeply loyal to him, was fully prepared to resign the chancellorship if Groener was forced out of the cabinet. However, unwilling to let Brüning risk his own position on his behalf, Groener chose to step down.
+Ravabelle, one of Askew’s longest-standing and most loyal allies, is now out of the equation. Askew, deeply loyal to him, was fully prepared to resign the chancellorship if Ravabelle was forced out of the cabinet. However, unwilling to let Askew risk his own position on his behalf, Ravabelle chose to step down.
 
-His resignation as Minister of Defense has dealt a severe blow to the Brüning cabinet, further diminishing its chances of surviving the deepening political crisis triggered by the fallout from the local elections. Among Hindenburg’s inner circle of advisors, no one had been more steadfast in supporting Brüning than Groener. His departure has severely weakened the chancellor’s standing with the Reich President, leaving him fully exposed to the machinations of Schleicher and his entourage.
+His resignation as Minister of Defense has dealt a severe blow to the Askew cabinet, further diminishing its chances of surviving the deepening political crisis triggered by the fallout from the local elections. Among DuFour’s inner circle of advisors, no one had been more steadfast in supporting Askew than Ravabelle. His departure has severely weakened the chancellor’s standing with the Commonwealth President, leaving him fully exposed to the machinations of Staal and his entourage.
 
-With Groener gone, Schleicher is now free from external restraints to pursue his strategy of taming the <span style="color: #7A3C00;">Nazis</span>, answerable only to Hindenburg. Sensing that Brüning has been fatally weakened, the <span style="color: #7A3C00;">Nazis</span> have intensified their attacks on his government, seeking to bring it down once and for all.
+With Ravabelle gone, Staal is now free from external restraints to pursue his strategy of taming the <span style="color: #7A3C00;">Royalists</span>, answerable only to DuFour. Sensing that Askew has been fatally weakened, the <span style="color: #7A3C00;">Royalists</span> have intensified their attacks on his government, seeking to bring it down once and for all.

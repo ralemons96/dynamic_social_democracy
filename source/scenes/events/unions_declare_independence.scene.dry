@@ -2,74 +2,74 @@ title: Unions Declare Independence
 new-page: true 
 subtitle: Labor's disagreements with our policies have grown too severe.
 tags: event
-view-if: labor_dissent >= 60 and dnvp_leader != "Lambach" and not unions_independent and chancellor != "Schleicher"
+view-if: labor_dissent >= 60 and traditionalist_leader != "Lambach" and not unions_independent and chancellor != "Staal"
 on-arrival: {!
 Q.unions_independent = 1; 
 
 if (Q.labor_strength < 10) {
-    Q.workers_spd -= 16;
-    Q.unemployed_spd -= 8;
+    Q.commons_marcher -= 16;
+    Q.disfavored_marcher -= 8;
     if (Q.sapd_formed) {
-        Q.workers_sapd += 8;
-        Q.unemployed_sapd += 4;
+        Q.commons_sapd += 8;
+        Q.disfavored_sapd += 4;
     } else {
-        Q.workers_kpd += 4;
+        Q.commons_collectivist += 4;
     }
-    Q.workers_kpd += 4;
-    Q.workers_nsdap += 4;
+    Q.commons_collectivist += 4;
+    Q.commons_royalist += 4;
     Q.rb_strength -= 400;
 } else if (Q.labor_strength < 25) {
-    Q.workers_spd -= 20;
-    Q.unemployed_spd -= 10;
+    Q.commons_marcher -= 20;
+    Q.disfavored_marcher -= 10;
     if (Q.sapd_formed) {
-        Q.workers_sapd += 10;
-        Q.unemployed_sapd += 6;
+        Q.commons_sapd += 10;
+        Q.disfavored_sapd += 6;
     } else {
-        Q.workers_kpd += 5;
+        Q.commons_collectivist += 5;
     }
-    Q.workers_kpd += 5;
-    Q.workers_nsdap += 5;
+    Q.commons_collectivist += 5;
+    Q.commons_royalist += 5;
     Q.rb_strength -= 500;
 } else if (Q.labor_strength < 40) {
-    Q.workers_spd -= 22;
-    Q.unemployed_spd -= 12;
+    Q.commons_marcher -= 22;
+    Q.disfavored_marcher -= 12;
     if (Q.sapd_formed) {
-        Q.workers_sapd += 12;
-        Q.unemployed_sapd += 8;
+        Q.commons_sapd += 12;
+        Q.disfavored_sapd += 8;
     } else {
-        Q.workers_kpd += 6;
+        Q.commons_collectivist += 6;
     }
-    Q.workers_kpd += 6;
-    Q.workers_nsdap += 6;
+    Q.commons_collectivist += 6;
+    Q.commons_royalist += 6;
     Q.rb_strength -= 600;
 } else if (Q.labor_strength < 60) {
-    Q.workers_spd -= 24;
-    Q.unemployed_spd -= 14;
+    Q.commons_marcher -= 24;
+    Q.disfavored_marcher -= 14;
     if (Q.sapd_formed) {
-        Q.workers_sapd += 15;
-        Q.unemployed_sapd += 10;
+        Q.commons_sapd += 15;
+        Q.disfavored_sapd += 10;
     } else {
-        Q.workers_kpd += 7;
+        Q.commons_collectivist += 7;
     }
-    Q.workers_kpd += 7;
-    Q.workers_nsdap += 7;
+    Q.commons_collectivist += 7;
+    Q.commons_royalist += 7;
     Q.rb_strength -= 700;
 } else {
-    Q.workers_spd -= 26;
-    Q.unemployed_spd -= 16;
+    Q.commons_marcher -= 26;
+    Q.disfavored_marcher -= 16;
     if (Q.sapd_formed) {
-        Q.workers_sapd += 18;
-        Q.unemployed_sapd += 12;
+        Q.commons_sapd += 18;
+        Q.disfavored_sapd += 12;
     } else {
-        Q.workers_kpd += 8;
+        Q.commons_collectivist += 8;
     }
-    Q.workers_kpd += 8;
-    Q.workers_nsdap += 8;
+    Q.commons_collectivist += 8;
+    Q.commons_royalist += 8;
     Q.rb_strength -= 800;
 }
 
-Q.workers_nsdap -= 3;
-Q.workers_kpd -= 3;
+Q.commons_royalist -= 3;
+Q.commons_collectivist -= 3;
 
 Q.labor_strength = Q.labor_strength / 2; 
 
@@ -84,8 +84,8 @@ max-visits: 1
 
 = Unions Declare Independence
 
-Our policy choices have greatly offended the labor movement. Union leaders have declared that they are independent of any political party, and some have been seen seeking accommodation with the <span style="color: #700000;">**KPD**</span> and even the <span style="color: #7A3C00;">**NSDAP**</span>.
+Our policy choices have greatly offended the labor movement. Union leaders have declared that they are independent of any political party, and some have been seen seeking accommodation with the <span style="color: #700000;">**Collectivists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span>.
 
-Most workers remain loyal to the <span style="color: #c00000;">**SPD**</span>, although their affiliation is less solid. Many workers move left[? if sapd_formed:, to the <span style="color: #700000;">**KPD**</span> or the nascent <span style="color: #9B0000;">**SAPD**</span>?]. Others move in a more nationalist direction, as the ADGB signals its willingness to work with the right to solve the economic crisis. [? if dnvp_ideology == "Moderate": This also has the effect of strengthening the Christian Labor movement within the <span style="color: #3E88B3;">**DNVP**</span>. ?]
+Most workers remain loyal to the <span style="color: #c00000;">**Marchers**</span>, although their affiliation is less solid. Many workers move left[? if sapd_formed:, to the <span style="color: #700000;">**Collectivists**</span> or the nascent <span style="color: #9B0000;">**SAPD**</span>?]. Others move in a more nationalist direction, as the ADGB signals its willingness to work with the right to solve the economic crisis. [? if traditionalist_ideology == "Moderate": This also has the effect of strengthening the Christian Labor movement within the <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
 
 Much of our working-class base has defected, and labor's influence in our party has greatly diminished.

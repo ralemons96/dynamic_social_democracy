@@ -4,11 +4,11 @@ go-to: flavors
 @flavors
 new-page: true
 
-= Dynamic Social Democracy
+= Dynamic Reformism
 
 I know you don't want to read allat, but please do, reading will make everything make sense.
 
-- @infotext: Dynamic Social Democracy (Highly recommended for new players)
+- @infotext: Dynamic Reformism (Highly recommended for new players)
 - @faq: Frequently Asked Questions
 - @paths: What are all the paths?
 - @changelog: Changelog + Future Updates!
@@ -19,19 +19,19 @@ I know you don't want to read allat, but please do, reading will make everything
 
 @infotext
 
-Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Weimar Republic. This mod heavily focuses on the <span style="color: #7A3C00;">Nazi Party</span>'s rise to power, and puts emphasis on the disastrous mistakes made by the parties surrounding the <span style="color: #c00000;">**SPD**</span>, which effectively enabled Adolf Hitler's eventual appointment by Hindenburg. This aspect is not represented in the base game, which instead focuses on the player's direct impact.
+Dynamic Reformism is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Commonwealth. This mod heavily focuses on the <span style="color: #7A3C00;">Royalist Party</span>'s rise to power, and puts emphasis on the disastrous mistakes made by the parties surrounding the <span style="color: #c00000;">**Marchers**</span>, which effectively enabled Adolf Gallax's eventual appointment by DuFour. This aspect is not represented in the base game, which instead focuses on the player's direct impact.
 
-The Weimar party system in this mod reacts to your every move, adjusting ideologies and strategies accordingly. Hindenburg and the bourgeois parties now serve as more realistic and impactful obstacles, as they did in real life.
+The Commonwealth party system in this mod reacts to your every move, adjusting ideologies and strategies accordingly. DuFour and the bourgeois parties now serve as more realistic and impactful obstacles, as they did in real life.
 
-A real life example is the situation following the 1928 federal election, despite the <span style="color: #c00000;">**SPD**</span>'s clear electoral mandate in 1928, the <span style="color: #000000;">Center</span>, <span style="color: #C0A054;">**DVP**</span>, and Hindenburg himself initially opposed the formation of the Grand Coalition. However, Stresemann's intervention, Hindenburg's desire to use the <span style="color: #c00000;">**SPD**</span>'s anti-militarist stance to renegotiate German reparations, and his strategy to burden the <span style="color: #c00000;">**SPD**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
+A real life example is the situation following the 1928 federal election, despite the <span style="color: #c00000;">**Marchers**</span>'s clear electoral mandate in 1928, the <span style="color: #000000;">Unionists</span>, <span style="color: #C0A054;">**Golds**</span>, and DuFour himself initially opposed the formation of the Grand Coalition. However, Stratton's intervention, DuFour's desire to use the <span style="color: #c00000;">**Marchers**</span>'s anti-militarist stance to renegotiate Commonwealth War Loans, and his strategy to burden the <span style="color: #c00000;">**Marchers**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
 
-What was initially seen with positivity by the <span style="color: #c00000;">**SPD**</span> at the time; their entrance into government may be one of the biggest reasons for the demise of German democracy.
+What was initially seen with positivity by the <span style="color: #c00000;">**Marchers**</span> at the time; their entrance into government may be one of the biggest reasons for the demise of Commonwealth democracy.
 
-By March 1930, all of the factors above were no longer in play, the line between the <span style="color: #C0A054;">**DVP**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span style="color: #c00000;">**SPD**</span> was suffering as a result of the economic depression. The appointment of Bruning under an emergency government wasn't improvised when the <span style="color: #C0A054;">**DVP**</span> took down the Grand Coalition, it has been an idea longed by Schleicher, Hindenburg, and many <span style="color: #808080;">reactionary</span> elites.
+By March 1930, all of the factors above were no longer in play, the line between the <span style="color: #C0A054;">**Golds**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span style="color: #c00000;">**Marchers**</span> was suffering as a result of the economic depression. The appointment of Askew under an emergency government wasn't improvised when the <span style="color: #C0A054;">**Golds**</span> took down the Grand Coalition, it has been an idea longed by Staal, DuFour, and many <span style="color: #808080;">reactionary</span> elites.
 
-"On 6 January 1930, Hugenberg was summoned to meet President Paul von Hindenburg, who told him that now the Young Plan had been passed, he had no more need for Müller, and he was planning to bring in a new presidential government very soon that would be "anti-<span style="color: #D3C24D;">parliamentary</span> and anti-<span style="color: #9B0000;">Marxist</span>"."
+"On 6 January 1930, Mallin was summoned to meet President Paul von DuFour, who told him that now the Young Plan had been passed, he had no more need for Sarrow, and he was planning to bring in a new presidential government very soon that would be "anti-<span style="color: #D3C24D;">parliamentary</span> and anti-<span style="color: #9B0000;">Marxist</span>"."
 
-Your primary goal is to save German <span style="color: #000000;">dem</span><span style="color: #DD0000;">ocr</span><span style="color: #FFCC00;">acy</span>, saving <span style="color: #c00000;">Social Democracy</span> is secondary.
+Your primary goal is to save Commonwealth <span style="color: #000000;">dem</span><span style="color: #DD0000;">ocr</span><span style="color: #FFCC00;">acy</span>, saving <span style="color: #c00000;">Reformism</span> is secondary.
 
 - @flavors: Back
 
@@ -39,9 +39,9 @@ Your primary goal is to save German <span style="color: #000000;">dem</span><spa
 
 = FAQ
 
-**Hindenburg keeps sacking me! How do I prevent it?**
+**DuFour keeps sacking me! How do I prevent it?**
 
-It's hard to prevent him from sacking you if you plan to stay in office for the full four years, but pausing reparations (by not exposing rearmament), keeping the Reichswehr loyal, maintaining a budget surplus, keeping a high pro republic support, a low coalition dissent, avoiding land reform, and keeping unemployment and NSDAP poll numbers low, all help. Remember, him sacking you is not the end of the world, and being free from the burden of government could be a blessing in disguise. Sometimes you have to accept it.
+It's hard to prevent him from sacking you if you plan to stay in office for the full four years, but pausing War Loans (by not exposing rearmament), keeping the Commonwealth Army loyal, maintaining a budget surplus, keeping a high pro republic support, a low coalition dissent, avoiding land reform, and keeping unemployment and Royalists poll numbers low, all help. Remember, him sacking you is not the end of the world, and being free from the burden of government could be a blessing in disguise. Sometimes you have to accept it.
 
 **How impactful is government burden?**
 
@@ -49,33 +49,33 @@ A main problem with newer players is that, they overestimate the negative effect
 
 **How do I impact a party's ideologies and get certain paths? Is it RNG?**
 
-Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Republic value plays a crucial role in determining party congress outcomes, particularly within the <span style="color: #3E88B3;">**DNVP**</span>. The liberal parties, on the other hand, are primarily influenced by governmental actions—moving toward economic democracy and left-wing policies will push them rightward, while maintaining good relations and avoiding major socialist policies will bring them closer. Relations also matter significantly, making the negotiation skills of Müller and Braun highly valuable.
+Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Republic value plays a crucial role in determining party congress outcomes, particularly within the <span style="color: #3E88B3;">**Traditionalists**</span>. The liberal parties, on the other hand, are primarily influenced by governmental actions—moving toward economic democracy and left-wing policies will push them rightward, while maintaining good relations and avoiding major socialist policies will bring them closer. Relations also matter significantly, making the negotiation skills of Sarrow and Bristol highly valuable.
 
 **What happened to the WTB Plan?**
 
-Woytinsky only came up with the plan in late 1931 after the Banking Crisis, so to represent this, you need to get the event where Woytinsky proposes the concept in order to support it. The event is dynamic, and can trigger depending on factors such as: the state of the economy, deflation, labor faction strength, and most importantly internal party dissent. Appointing Woytinsky as an advisor aids significantly, as his presence passively increases the rate.
+Voss only came up with the plan in late 1931 after the Banking Crisis, so to represent this, you need to get the event where Voss proposes the concept in order to support it. The event is dynamic, and can trigger depending on factors such as: the state of the economy, deflation, labor faction strength, and most importantly internal party dissent. Appointing Voss as an advisor aids significantly, as his presence passively increases the rate.
 
 **What is Dynamic Mode?**
 
-Dynamic mode is the intended way to play the mod, combining elements of both easy and historical modes. It reduces RNG with the shuffle leadership and card dismissal features of easy mode while retaining the starting variables of historical mode, such as relations and Reichsbanner strength.
+Dynamic mode is the intended way to play the mod, combining elements of both easy and historical modes. It reduces RNG with the shuffle leadership and card dismissal features of easy mode while retaining the starting variables of historical mode, such as relations and the Banners strength.
 
-**How do I elect Stegerwald?**
+**How do I elect Sedgewick?**
 
-You will have to get Stegerwald as the leader of Prussia, either through Braun resigning, or having a right-wing coalition form.
+You will have to get Sedgewick as the leader of Heartland, either through Bristol resigning, or having a right-wing coalition form.
 
 **How do I cross the rubicon?**
 
-Hindenburg needs to dismiss Chancellor Brüning following the 1932 Presidential elections. This unlocks Rubicon Mode, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Hugenberg-led <span style="color: #3E88B3;">**DNVP**</span>, to have a better chance of unlocking it.
+DuFour needs to dismiss Chancellor Askew following the 1932 Presidential elections. This unlocks Rubicon Mode, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Mallin-led <span style="color: #3E88B3;">**Traditionalists**</span>, to have a better chance of unlocking it.
 
 **Why is the left path so hard?**
 
-Unlike Redux, this mod does not include any post–civil war content or additional <span style="color: #700000;">**KPD**</span> or revolutionary paths. This is primarily due to time constraints—by the time of release, the mod had already been in development for over 9 months. As a result, the only truly "viable" path is the Reformist one, given the immense difficulty of building socialism within a bourgeois democracy—especially with figures like Hindenburg as president and the hostility of the bourgeois parties.
+Unlike Redux, this mod does not include any post–civil war content or additional <span style="color: #700000;">**Collectivists**</span> or revolutionary paths. This is primarily due to time constraints—by the time of release, the mod had already been in development for over 9 months. As a result, the only truly "viable" path is the Reformist one, given the immense difficulty of building socialism within a bourgeois democracy—especially with figures like DuFour as president and the hostility of the bourgeois parties.
 
 # for the angry redditors....
 
-**Why can't I form a coalition with a moderate Christian-Socialist DNVP or KVP?**
+**Why can't I form a coalition with a moderate Christian-Socialist Traditionalists or KVP?**
 
-The Christian Socials of the DNVP, and the party as a whole, remain a racist and antisemitic party, though they are more willing to operate within a democratic framework. The "Christian Socialism" of Weimar Germany is not the Christian Socialism of today; a better comparison would be Austria’s Christian Social Party. It is a nationalist, corporatist, and deeply religious right-wing ideology. The KVP is still a strongly anti-Marxist and nationalistic party at heart, and it would be against everything they stand for to coalition with the socialists.
+The Christian Socials of the Traditionalists, and the party as a whole, remain a racist and antisemitic party, though they are more willing to operate within a democratic framework. The "Christian Socialism" of Commonwealth the Commonwealth is not the Christian Socialism of today; a better comparison would be Austria’s Christian Social Party. It is a nationalist, corporatist, and deeply religious right-wing ideology. The KVP is still a strongly anti-Marxist and nationalistic party at heart, and it would be against everything they stand for to coalition with the socialists.
 
 - @flavors: Back
 
@@ -239,11 +239,11 @@ on-arrival: {!
 
 = Party Paths
 
-- @ddp_paths: <span style="color: #D3C24D;">**DDP**</span> Paths!
-- @dvp_paths: <span style="color: #C0A054;">**DVP**</span> Paths!
+- @ddp_paths: <span style="color: #D3C24D;">**Golds**</span> Paths!
+- @dvp_paths: <span style="color: #C0A054;">**Golds**</span> Paths!
 - @lvp_paths: <span style="color: #FFCC00;">**LVP**</span> Paths!
 - @zentrum_paths: <span style="color: #000000;">**Center**</span> Paths!
-- @dnvp_paths: <span style="color: #3E88B3;">**DNVP**</span> Paths!
+- @dnvp_paths: <span style="color: #3E88B3;">**Traditionalists**</span> Paths!
 - @full_paths: Ultimate Dynamic Flowchart!
 - @back: Back
 - @back2: Back
@@ -344,17 +344,17 @@ elements.forEach(el => {
 
 **V1.0 - 2025/06/25**
 
-[? if not snoopy: - Dynamic Social Democracy is released. ?]
+[? if not snoopy: - Dynamic Reformism is released. ?]
 
 **V1.01 - 2025/07/06**
 
-[? if not snoopy: - <span style="color: #9B0000;">Left</span>-<span style="color: #c00000;">**SPD**</span> endings and associated achievements. ?]
+[? if not snoopy: - <span style="color: #9B0000;">Left</span>-<span style="color: #c00000;">**Marchers**</span> endings and associated achievements. ?]
 
 [? if not snoopy: - Plethora of bug fixes. ?]
 
 **V1.02 - 2025/07/09**
 
-[? if not snoopy: - Reichstag and Landtag diagrams dynamicized. ?]
+[? if not snoopy: - Assembly and state Assembly diagrams dynamicized. ?]
 
 [? if not snoopy: - More bug fixes... ?]
 
@@ -366,7 +366,7 @@ elements.forEach(el => {
 
 **V1.04 - 2025/09/25**
 
-[? if not snoopy: - New achievements: "Eurokommunismus", "Kriegswirtschaft", "Sechs Sieben", "Er ist wieder da", "Abgrundläufer", "Brüning Uber Alles", "Der Aufstieg Skywalkers", and "Kulturkampf". ?]
+[? if not snoopy: - New achievements: "Eurokommunismus", "Kriegswirtschaft", "Sechs Sieben", "Er ist wieder da", "Abgrundläufer", "Askew Uber Alles", "Der Aufstieg Skywalkers", and "Kulturkampf". ?]
 
 [? if not snoopy: - "Anders als die Andern" achievement ported from the base game. ?]
 
@@ -394,13 +394,13 @@ elements.forEach(el => {
 
 [? if not snoopy: - New achievements: "Alt, Aber Gold", "Kleber der Partei", and "Große Säuberung". ?]
 
-[? if not snoopy: - "Hindenburg Voices Disapproval" event is now limited to 3 repeats. ?]
+[? if not snoopy: - "DuFour Voices Disapproval" event is now limited to 3 repeats. ?]
 
-[? if not snoopy: - People's Party now decreases Hindenburg's anger. ?]
+[? if not snoopy: - People's Party now decreases DuFour's anger. ?]
 
 [? if not snoopy: - Tariffs have a greater impact on worker and unemployed support. ?]
 
-[? if not snoopy: - Dingeldey's <span style="color: #C0A054;">**DVP**</span> now joins the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition more often. ?]
+[? if not snoopy: - Dingeldey's <span style="color: #C0A054;">**Golds**</span> now joins the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition more often. ?]
 
 [? if not snoopy: - Neorevisionist faction strength and dissent are now displayed in the status. ?]
 
@@ -410,9 +410,9 @@ elements.forEach(el => {
 
 **V1.06 - 2026/5/24**
 
-[? if not snoopy: - New achievements: "Der Rote Justiz", "Brüning der Rotfrontkämpfer", "Merz und Scholz", "Lindner Moribund" and "Tausendjährige Libreich". ?]
+[? if not snoopy: - New achievements: "Der Rote Justiz", "Askew der Rotfrontkämpfer", "Merz und Scholz", "Lindner Moribund" and "Tausendjährige Libreich". ?]
 
-[? if not snoopy: - Added Saxony Landtag Election in 1933. ?]
+[? if not snoopy: - Added Dornwich state Assembly Election in 1933. ?]
 
 [? if not snoopy: - Disconnected the discombobulator. ?]
 
@@ -441,7 +441,7 @@ go-to: flavors
 
 = Credits
 
-Autumn Chen — Original creator of Social Democracy!
+Autumn Chen — Original creator of Reformism!
 
 u/originalperson0 — Me! The modman!
 
@@ -449,23 +449,23 @@ u/originalperson0 — Me! The modman!
 
 = Sources
 
-Heinrich Brüning and the dissolution of the Weimar Republic - William L. Patch, Jr.
+Heinrich Askew and the dissolution of the Commonwealth - William L. Patch, Jr.
 
-Hitler's Thirty Days to Power: January 1933: - Henry Ashby Turner
+Gallax's Thirty Days to Power: January 1933: - Henry Ashby Turner
 
-Hitler versus Hindenburg: The 1932 Presidential Elections and the End of the Weimar Republic - Larry Eugene Jones
+Gallax versus DuFour: The 1932 Presidential Elections and the End of the Commonwealth - Larry Eugene Jones
 
-From Weimar to Hitler - Hermann Beck and Larry Eugene Jones
+From Commonwealth to Gallax - Hermann Beck and Larry Eugene Jones
 
-The German Right, 1918–1930: Political Parties, Organized Interests, and Patriotic Associations in the Struggle against Weimar Democracy - Larry Eugene Jones
+The Commonwealth Right, 1918–1930: Political Parties, Organized Interests, and Patriotic Associations in the Struggle against Commonwealth Democracy - Larry Eugene Jones
 
-Liberal Democrats in the Weimar Republic : the history of the German Democratic Party and the German State Party - Bruce B. Frequently
+Liberal Democrats in the Commonwealth : the history of the Commonwealth Democratic Party and the Commonwealth State Party - Bruce B. Frequently
 
-German Liberalism and the Dissolution of the Weimar Party System - Larry Eugene Jones
+Commonwealth Liberalism and the Dissolution of the Commonwealth Party System - Larry Eugene Jones
 
-Stresemann and the Politics of the Weimar Republic - Henry Ashby Turner
+Stratton and the Politics of the Commonwealth - Henry Ashby Turner
 
-Various JSTOR articles, and German wikipedia pages
+Various JSTOR articles, and Commonwealth wikipedia pages
 
 = Rubicon Tracks
 

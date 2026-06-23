@@ -1,7 +1,7 @@
-title: The Reichstag Reconvenes
-subtitle: Schleicher's first test has come.
-view-if: chancellor = "Schleicher" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
-on-arrival: reichstag_rubicon = 1; reichstag_schleicher_seen = 1
+title: The Assembly Reconvenes
+subtitle: Staal's first test has come.
+view-if: chancellor = "Staal" and next_reichstag_time == rubicon_time and next_reichstag_time > 0
+on-arrival: reichstag_rubicon = 1; reichstag_staal_seen = 1
 new-page: true
 tags: event
 max-visits: 1
@@ -19,11 +19,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichstag Reconvenes
+= Assembly Reconvenes
 
-Schleicher’s first test with the Reichstag comes immediately after his appointment, and he's expected to lose by a wide margin. To head off defeat, he offered Gregor Strasser of the <span style="color: #7A3C00;">**NSDAP**</span> the vice chancellorship and control of Prussia, hoping Strasser could persuade the party to tolerate his government. However, [+ nsdap_leader +] would only accept the obedient Göring as leader.
+Staal’s first test with the Assembly comes immediately after his appointment, and he's expected to lose by a wide margin. To head off defeat, he offered Gregor Crowde of the <span style="color: #7A3C00;">**Royalists**</span> the vice chancellorship and control of Heartland, hoping Crowde could persuade the party to tolerate his government. However, [+ royalist_leader +] would only accept the obedient Gorrick as leader.
 
-Nonetheless, despite the <span style="color: #7A3C00;">**NSDAP**</span>’s uncompromising stance, they are seeking a respite—pushing for an early holiday recess and delaying any immediate showdown with the newly appointed cabinet.
+Nonetheless, despite the <span style="color: #7A3C00;">**Royalists**</span>’s uncompromising stance, they are seeking a respite—pushing for an early holiday recess and delaying any immediate showdown with the newly appointed cabinet.
 
 - @reichstag
 
@@ -31,14 +31,14 @@ Nonetheless, despite the <span style="color: #7A3C00;">**NSDAP**</span>’s unco
 title: The <span style="color: #700000;">**Communists**</span> put forth a motion of no confidence.
 on-arrival: pro_republic += 5
 
-The motion is defeated! In a surprise to the public, the <span style="color: #700000;">**Communist**</span> proposal to prioritize a no-confidence vote is voted down—thanks to support from the <span style="color: #7A3C00;">Nazis</span>. But this is no act of reconciliation; it’s certainly not the toleration Schleicher deludes himself into believing stems from his connections with Strasser.
+The motion is defeated! In a surprise to the public, the <span style="color: #700000;">**Communist**</span> proposal to prioritize a no-confidence vote is voted down—thanks to support from the <span style="color: #7A3C00;">Royalists</span>. But this is no act of reconciliation; it’s certainly not the toleration Staal deludes himself into believing stems from his connections with Crowde.
 
 In any case, after clearing a few remaining bills, the chamber agrees to a holiday recess of indefinite duration.
 
 - @reichstag_2
 
 @reichstag_2
-title: Papen's decree on wages is repealed!
-on-arrival: workers_kpd -= 4; unemployed_kpd -= 4; workers_z += 2; workers_spd += 2; unemployed_spd += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Schleicher"; papen_goal = "Scheme against Schleicher"; schleicher_approval += 1
+title: Goodryke's decree on wages is repealed!
+on-arrival: commons_collectivist -= 4; disfavored_collectivist -= 4; commons_unionist += 2; commons_marcher += 2; disfavored_marcher += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Staal"; papen_goal = "Scheme against Staal"; staal_approval += 1
 
-Schleicher has given his consent for the Reichstag to repeal one of Papen's more egregious decrees that had particulary offended the labor unions, as part of his prior promise and to calm their fury against the government. 
+Staal has given his consent for the Assembly to repeal one of Goodryke's more egregious decrees that had particulary offended the labor unions, as part of his prior promise and to calm their fury against the government. 

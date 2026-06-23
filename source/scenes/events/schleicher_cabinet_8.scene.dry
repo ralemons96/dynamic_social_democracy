@@ -1,6 +1,6 @@
 title: <span style="color: #6A1E1E;">**DSU**</span> Policy
-subtitle: The <span style="color: #7A3C00;">Nazi</span> ministers are carrying out their own policies. 
-view-if: chancellor == "Schleicher" and dsu_in_gov and dsu_policy_timer <= 0
+subtitle: The <span style="color: #7A3C00;">Royalist</span> ministers are carrying out their own policies. 
+view-if: chancellor == "Staal" and dsu_in_gov and dsu_policy_timer <= 0
 on-arrival: {!
 Q.dsu_policy_timer += 4;
 !}
@@ -23,41 +23,41 @@ on-display: {!
 
 = <span style="color: #6A1E1E;">**DSU**</span> Policy
 
-With the <span style="color: #7A3C00;">Nazis</span> in government, they seek to pursue their policy course. 
+With the <span style="color: #7A3C00;">Royalists</span> in government, they seek to pursue their policy course. 
 
 - @interior
 - @works
 - @works_alt
 
 @interior
-title: The <span style="color: #7A3C00;">Nazis</span> crack down on the Reichsbanner and <span style="color: #700000;">**RFB**</span>!
-subtitle: Ordered by Wilhelm Frick of the Interior Ministry.
+title: The <span style="color: #7A3C00;">Royalists</span> crack down on the the Banners and <span style="color: #700000;">**RFB**</span>!
+subtitle: Ordered by Wilhelm Frask of the Interior Ministry.
 on-arrival: {!
-Q.schleicher_spd_r -= 1;
-Q.schleicher_spd_support -= 2;
+Q.staal_marcher_r -= 1;
+Q.staal_marcher_support -= 2;
 Q.rb_militancy *= 0.95;
 Q.rb_strength *= 0.95;
 Q.rfb_militancy *= 0.9;
 Q.rfb_strength *= 0.9;
 Q.sa_strength += 25;
 Q.sa_militancy += 0.03;
-Q.prussian_police_loyalty -= 0.1;
+Q.heartland_police_loyalty -= 0.1;
 Q.interior_police_loyalty -= 0.2;
 
-Q.workers_spd -= 2;
-Q.workers_kpd -= 2;
-Q.workers_nsdap += 2;
+Q.commons_marcher -= 2;
+Q.commons_collectivist -= 2;
+Q.commons_royalist += 2;
 
-Q.unemployed_spd -= 3;
-Q.unemployed_kpd -= 3;
-Q.unemployed_nsdap += 3;
+Q.disfavored_marcher -= 3;
+Q.disfavored_collectivist -= 3;
+Q.disfavored_royalist += 3;
 
-if (Q.prussia_leader === "Strasser") {
-  Q.prussian_police_loyalty -= 0.1;
+if (Q.heartland_leader === "Crowde") {
+  Q.heartland_police_loyalty -= 0.1;
 }
 
-if (Q.prussian_police_loyalty < 0) {
-  Q.prussian_police_loyalty = 0;
+if (Q.heartland_police_loyalty < 0) {
+  Q.heartland_police_loyalty = 0;
 }
 if (Q.interior_police_loyalty < 0) {
   Q.interior_police_loyalty = 0;
@@ -71,28 +71,28 @@ face-image: img/portraits/frick.jpg
 
 @interior_1
 
-With the <span style="color: #7A3C00;">Nazis</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if prussia_leader != "Strasser": Without control of the Prussian Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Nazis</span>. ?][? if prussia_leader == "Strasser": The Prussian Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Schleicher has barred <span style="color: #7A3C00;">Nazi</span> Party members from joining the police, maintaining the same restriction already enforced in the Reichswehr.
+With the <span style="color: #7A3C00;">Royalists</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if heartland_leader != "Crowde": Without control of the Heartland Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Royalists</span>. ?][? if heartland_leader == "Crowde": The Heartland Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Staal has barred <span style="color: #7A3C00;">Royalist</span> Party members from joining the police, maintaining the same restriction already enforced in the Commonwealth Army.
 
-Lately, we have observed the police exclusively targeting Reichsbanner and <span style="color: #700000;">**RFB**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Schleicher to transfer command of the Reichswehr's militia to the Interior Ministry, citing the need for centralized control.
+Lately, we have observed the police exclusively targeting the Banners and <span style="color: #700000;">**RFB**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Staal to transfer command of the Commonwealth Army's militia to the Interior Ministry, citing the need for centralized control.
 
 @interior_2
 
-The <span style="color: #7A3C00;">Nazis</span> have continued cracking down on even lawful <span style="color: #c00000;">leftist</span> activity, on bogus claims of "inciting violence." It seems Frick is doing Schleicher's dirty work for him—cracking down on democrats and all, while Schleicher is still viewed highly in the eyes of many workers.
+The <span style="color: #7A3C00;">Royalists</span> have continued cracking down on even lawful <span style="color: #c00000;">leftist</span> activity, on bogus claims of "inciting violence." It seems Frask is doing Staal's dirty work for him—cracking down on democrats and all, while Staal is still viewed highly in the eyes of many workers.
 
 @works
 title: "MEFO Bills"
 subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
 view-if: dsu_policy == 2 and not mefo_bills_alt
 on-arrival: {!
-Q.schleicher_spd_r -= 1;
-Q.schleicher_spd_support -= 2;
+Q.staal_marcher_r -= 1;
+Q.staal_marcher_support -= 2;
 
-Q.schleicher_economy_time += 24;
+Q.staal_economy_time += 24;
 
-Q.unemployed -= 1;
+Q.disfavored -= 1;
 Q.inflation += 0.5;
 Q.economic_growth += 0.5;
-Q.schleicher_approval += 2;
+Q.staal_approval += 2;
 
 Q.reichswehr_militancy += 2;
 
@@ -101,48 +101,48 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite Hjalmar Schacht not being a Keynesian, he understands that large scale public works and state funded projected are the way out of Germany's slump, and for Germany to retake its great power status on the international stage. He believes that, since <span style="color: #002654;">France</span> and <span style="color: #C8102E;">Britain</span> are preoccupied with their own economic woes, the time is right for a mass industrialization and rearmament program.
+Despite Hjalmar Schacht not being a Keynesian, he understands that large scale public works and state funded projected are the way out of the Commonwealth's slump, and for the Commonwealth to retake its great power status on the international stage. He believes that, since <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Britain</span> are preoccupied with their own economic woes, the time is right for a mass industrialization and rearmament program.
 
-The construction of the "Autobahn", a new nationwide highway system, by poorly paid workers has begun, as an expansion of Schleicher's public works plans. A new innovative method for disguising rearmament has also been devised, a "MEFO bill", a system of promissory notes issued through a dummy company to secretly fund arms production while keeping the spending off the official government budget. However, he insists that a revival of Germany's economy should take precedent over rearmament.
+The construction of the "Autobahn", a new nationwide highway system, by poorly paid workers has begun, as an expansion of Staal's public works plans. A new innovative method for disguising rearmament has also been devised, a "MEFO bill", a system of promissory notes issued through a dummy company to secretly fund arms production while keeping the spending off the official government budget. However, he insists that a revival of the Commonwealth's economy should take precedent over rearmament.
 
 - @reichsbank
 
 @reichsbank
-title: What will the Reichsbank say?
-subtitle: Reichsbank President - [? if luther_reichsbank: Hans Luther?][? if not luther_reichsbank: Friedrich Dreyse?]
+title: What will the Commonwealth Bank say?
+subtitle: Commonwealth Bank President - [? if luther_reichsbank: Hans Lytton?][? if not luther_reichsbank: Friedrich Dreyse?]
 go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_reichsbank
 
 
 @reichsbank_luther
 face-image: img/portraits/luther.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan.
+However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
 
 @reichsbank_dreyse
 face-image: img/portraits/dreyse.jpg
 
-The Reichsbank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Schleicher's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
+The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Reichsbank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Reichsbank is ultimately coerced into backing the plan.
+However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
 
 @works_alt
 title: "MEFO Bills"
 subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
 view-if: dsu_policy == 2 and mefo_bills_alt
 on-arrival: {!
-Q.schleicher_spd_r -= 2;
-Q.schleicher_spd_support -= 3;
-Q.schleicher_spd_influence -= 1;
+Q.staal_marcher_r -= 2;
+Q.staal_marcher_support -= 3;
+Q.staal_marcher_influence -= 1;
 
-Q.schleicher_economy_time += 24;
+Q.staal_economy_time += 24;
 
-Q.unemployed -= 0.8;
+Q.disfavored -= 0.8;
 Q.inflation += 0.4;
 Q.economic_growth += 0.4;
 
-Q.schleicher_approval += 1;
+Q.staal_approval += 1;
 
 Q.reichswehr_militancy += 1.5;
 
@@ -151,6 +151,6 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite the public works campaign being expanded before Hjalmar Schacht took office as Economic Minister, he now seeks to build upon it—transforming it into a mass industrialization and rearmament program, more closely aligned with Schleicher's ambitions. Only then, he argues, can Germany hope to rival the major powers.
+Despite the public works campaign being expanded before Hjalmar Schacht took office as Economic Minister, he now seeks to build upon it—transforming it into a mass industrialization and rearmament program, more closely aligned with Staal's ambitions. Only then, he argues, can the Commonwealth hope to rival the major powers.
 
-An innovative new method for disguising rearmament has also been devised: the "MEFO bill," a system of promissory notes issued through a dummy company to secretly finance arms production while keeping the spending off the official government books. Nevertheless, Schacht insists that reviving Germany's economy must take precedence over rearmament—for now.
+An innovative new method for disguising rearmament has also been devised: the "MEFO bill," a system of promissory notes issued through a dummy company to secretly finance arms production while keeping the spending off the official government books. Nevertheless, Schacht insists that reviving the Commonwealth's economy must take precedence over rearmament—for now.

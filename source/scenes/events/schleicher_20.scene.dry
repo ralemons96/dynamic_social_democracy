@@ -1,6 +1,6 @@
-title: Schleicher and the <span style="color: #3E88B3;">**Stahlhelm**</span>
+title: Staal and the <span style="color: #3E88B3;">**Wardens**</span>
 subtitle: The veterans organization is integrated into the state.
-view-if: chancellor = "Schleicher" and dnef_formed and (nationalists_schleicher >= 10 and (dnvp_dnef or dnvp_dnef_alt)) and schleicher_post_time >= 6
+view-if: chancellor = "Staal" and gnu_formed and (nationalists_staal >= 10 and (traditionalist_gnu or traditionalist_gnu_alt)) and staal_post_time >= 6
 new-page: true
 priority: 2
 tags: event
@@ -18,17 +18,17 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Schleicher and the <span style="color: #3E88B3;">**Stahlhelm**</span>
+= Staal and the <span style="color: #3E88B3;">**Wardens**</span>
 
-The <span style="color: #3E88B3;">**Stahlhelm**</span>, a veterans' and paramilitary organization that shares much of Schleicher's worldview and commands his respect, has long been courted by the chancellor for cooperation with the Reichswehr. To this end, Schleicher plans to subsidize the organization with state funds, gradually making it dependent on the state and available for use. Still, the general is irritated that its military exercises often overshadow the numerically inferior Reichswehr.
+The <span style="color: #3E88B3;">**Wardens**</span>, a veterans' and paramilitary organization that shares much of Staal's worldview and commands his respect, has long been courted by the chancellor for cooperation with the Commonwealth Army. To this end, Staal plans to subsidize the organization with state funds, gradually making it dependent on the state and available for use. Still, the general is irritated that its military exercises often overshadow the numerically inferior Commonwealth Army.
 
-Despite their shared views, <span style="color: #3E88B3;">**Stahlhelm**</span> leaders Franz Seldte and Theodor Duesterberg remain wary of Schleicher’s encroachments on their independence. But with the <span style="color: #3E88B3;">**DNVP**</span> now folded into the <span style="color: #BFC8CC;">**DNEF**</span>, the organization finds itself politically isolated, as even its rank-and-file begin to drift into subordination.
+Despite their shared views, <span style="color: #3E88B3;">**Wardens**</span> leaders Franz Selden and Theodor Dusterel remain wary of Staal’s encroachments on their independence. But with the <span style="color: #3E88B3;">**Traditionalists**</span> now folded into the <span style="color: #BFC8CC;">**GNU**</span>, the organization finds itself politically isolated, as even its rank-and-file begin to drift into subordination.
 
-- @schleicher_2: The <span style="color: #3E88B3;">**Stahlhelm**</span> is integrated into the state.
+- @schleicher_2: The <span style="color: #3E88B3;">**Wardens**</span> is integrated into the state.
 
 @schleicher_2
 on-arrival: {!
-Q.schleicher_stahlhelm = 1;
+Q.staal_stahlhelm = 1;
 
 Q.pro_republic -= 3;
 
@@ -37,17 +37,17 @@ Q.sh_militancy = 0;
 
 Q.reichswehr_strength += 75;
 
-Q.old_middle_dnef += 12;
-Q.old_middle_dnvp -= 4;
-Q.old_middle_kvp -= 4;
-Q.old_middle_dvp -= 2;
-Q.old_middle_nsdap -= 2;
+Q.guild_gnu += 12;
+Q.guild_traditionalist -= 4;
+Q.guild_kvp -= 4;
+Q.guild_gold -= 2;
+Q.guild_royalist -= 2;
 
-Q.schleicher_spd_influence -= 1;
-Q.schleicher_spd_r -= 1;
-Q.schleicher_spd_support -= 2;
+Q.staal_marcher_influence -= 1;
+Q.staal_marcher_r -= 1;
+Q.staal_marcher_support -= 2;
 !}
 
-Subordination is the last thing a self-proud veterans' organization like the <span style="color: #3E88B3;">**Stahlhelm**</span> would accept—but attempts by its leaders to resist have only backfired. At a leadership conference between national and local chapters, they conceded that the era of paramilitaries and political maneuvering is over, and agreed to align the organization with the state in service of the national interest.
+Subordination is the last thing a self-proud veterans' organization like the <span style="color: #3E88B3;">**Wardens**</span> would accept—but attempts by its leaders to resist have only backfired. At a leadership conference between national and local chapters, they conceded that the era of paramilitaries and political maneuvering is over, and agreed to align the organization with the state in service of the national interest.
 
-In return, the <span style="color: #3E88B3;">**Stahlhelm**</span> is granted official status as a veterans' association, while sympathetic leaders are rewarded with government posts. Many of its seasoned fighters and officers are absorbed into the Reichswehr, where they will be tasked with training the next generation of recruits.
+In return, the <span style="color: #3E88B3;">**Wardens**</span> is granted official status as a veterans' association, while sympathetic leaders are rewarded with government posts. Many of its seasoned fighters and officers are absorbed into the Commonwealth Army, where they will be tasked with training the next generation of recruits.

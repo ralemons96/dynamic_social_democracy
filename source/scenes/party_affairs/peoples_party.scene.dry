@@ -6,7 +6,7 @@ view-if: neorevisionism > 0 and peoples_party_support >= 3 and peoples_party = 0
 on-arrival: peoples_party_timer = 6
 tags: party_affairs
 max-visits: 4
-#subtitle: Can the SPD move beyond the working class?
+#subtitle: Can the Marchers move beyond the working class?
 
 = Building a People's Party
 
@@ -23,19 +23,19 @@ In order to build a <span style="color: #c00000;">socialist</span> majority, man
 - @cancel_advisor_action
 
 @build_support
-view-if: (neorevisionist_strength + reformist_strength < left_strength + center_strength) or peoples_party_support < 5
-on-arrival: peoples_party_support += 1; neorevisionist_strength += 5; left_strength -= 5; left_dissent += 5
+view-if: (knight_strength + reformist_strength < left_strength + center_strength) or peoples_party_support < 5
+on-arrival: peoples_party_support += 1; knight_strength += 5; left_strength -= 5; left_dissent += 5
 
 Within our party, we are pushing forward proposals for a people's party against the Left and Center.
 
 
 @support_peoples_party
-choose-if: (neorevisionist_strength + reformist_strength >= left_strength + center_strength) and peoples_party_support >= 4
+choose-if: (knight_strength + reformist_strength >= left_strength + center_strength) and peoples_party_support >= 4
 unavailable-subtitle: The opposition is too strong.
-on-arrival: neorevisionist_strength += 15; reformist_strength += 15; neorevisionist_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; workers_spd -= 12; rural_spd += 10; new_middle_spd += 10; old_middle_spd += 8; catholics_spd += 8; left_dissent += 25; center_dissent += 20; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 5*(1-dissent); dvp_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 3; ddp_left += 3; ddp_cohesion += 2; lvp_left += 3; hindenburg_angry -= 30; hindenburg_angry_base -= 30
+on-arrival: knight_strength += 15; reformist_strength += 15; knight_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; commons_marcher -= 12; landed_marcher += 10; burgher_marcher += 10; guild_marcher += 8; faithful_marcher += 8; left_dissent += 25; center_dissent += 20; collectivist_relation -= 10; collectivist_coalition_dissent += 1; coalition_dissent -= 1; unionist_relation += 5*(1-dissent); gold_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); gold_left += 3; ddp_left += 3; ddp_cohesion += 2; lvp_left += 3; dufour_angry -= 30; dufour_angry_base -= 30
 achievement: volkspartei
 
-In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of Germany, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Marxism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
+In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of the Commonwealth, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Marxism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
 
 Should we run a new campaign to publicize our new platform?
 
@@ -49,8 +49,8 @@ Should we run a new campaign to publicize our new platform?
 
 @support_peoples_party_hard
 subtitle: This will increase dissent.
-view-if: (neorevisionist_strength + reformist_strength < left_strength + center_strength) or (peoples_party_support < 4)
-on-arrival: neorevisionist_strength += 10; reformist_strength += 8; peoples_party = 1; workers_spd -= 15; rural_spd += 10; new_middle_spd += 10; old_middle_spd += 8; catholics_spd += 8; left_dissent += 40; center_dissent += 40; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 4*(1-dissent); dvp_relation += 4*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 2; ddp_left += 2; ddp_cohesion += 1.5; lvp_left += 2; hindenburg_angry -= 20; hindenburg_angry_base -= 20
+view-if: (knight_strength + reformist_strength < left_strength + center_strength) or (peoples_party_support < 4)
+on-arrival: knight_strength += 10; reformist_strength += 8; peoples_party = 1; commons_marcher -= 15; landed_marcher += 10; burgher_marcher += 10; guild_marcher += 8; faithful_marcher += 8; left_dissent += 40; center_dissent += 40; collectivist_relation -= 10; collectivist_coalition_dissent += 1; coalition_dissent -= 1; unionist_relation += 4*(1-dissent); gold_relation += 4*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); gold_left += 2; ddp_left += 2; ddp_cohesion += 1.5; lvp_left += 2; dufour_angry -= 20; dufour_angry_base -= 20
 achievement: volkspartei
 
 It is an arduous and contentious process, but we have pushed through the proposal to become a people's party. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Marxism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
@@ -66,45 +66,45 @@ Should we run a new campaign to publicize our new platform?
 
 @campaign_workers
 title: Campaign among the workers, to assuage their doubts about our changes.
-on-arrival: workers_spd += 6*(1-dissent);
+on-arrival: commons_marcher += 6*(1-dissent);
 
 The workers are still a key part of our constituency, and we must not alienate them in the transformation of our party.
 
 @campaign_middle
 title: Campaign among the middle classes.
-on-arrival: old_middle_spd += 5*(1-dissent); new_middle_spd += 6*(1-dissent)
+on-arrival: guild_marcher += 5*(1-dissent); burgher_marcher += 6*(1-dissent)
 
 As a people's party, we represent the employees and small businesspeople of the middle class, and they are becoming receptive to our messages.
 
 @campaign_rural
 title: Campaign in rural areas.
-choose-if: rural_policy > 0
+choose-if: landed_policy > 0
 unavailable-subtitle: We have not enacted any rural policies yet.
-on-arrival: rural_spd += 7*(1-dissent)
+on-arrival: landed_marcher += 7*(1-dissent)
 
 As a people's party, we represent farmers and rural workers as well, and they are becoming receptive to our messages.
 
 @campaign_unemployed
 title: Campaign among the unemployed.
-on-arrival: unemployed_spd += 6*(1-dissent);
+on-arrival: disfavored_marcher += 6*(1-dissent);
 
 As a people's party, the urban poor are still a key part of our constituency.
 
 @campaign_women
 title: Campaign among women of all classes.
-on-arrival: workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent); rural_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent);
+on-arrival: commons_marcher += 3*(1-dissent); burgher_marcher += 3*(1-dissent); guild_marcher += 3*(1-dissent); landed_marcher += 3*(1-dissent); disfavored_marcher += 3*(1-dissent);
 
 As a people's party, we represent women of all classes.
 
 @campaign_catholics
 title: Campaign among political Catholics.
-on-arrival: catholics_spd += 7*(1-dissent);
+on-arrival: faithful_marcher += 7*(1-dissent);
 
-Catholics have historically been tied to the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], but there is no reason why our party cannot appeal to them. The Prussian Concordat in particular is a sign of our friendship with Catholicism.
+Catholics have historically been tied to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], but there is no reason why our party cannot appeal to them. The Heartland Concordat in particular is a sign of our friendship with Catholicism.
 
 
 @no_new_ideas
-on-arrival: neorevisionist_strength -= 6; neorevisionist_dissent += 5; center_strength += 8; left_strength += 3; peoples_party = 0; peoples_party_support -= 3
+on-arrival: knight_strength -= 6; knight_dissent += 5; center_strength += 8; left_strength += 3; peoples_party = 0; peoples_party_support -= 3
 
 The <span style="color: #c00000;">Social Democrats</span> have been and will always be a party of the working class.
 

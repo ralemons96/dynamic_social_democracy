@@ -1,5 +1,5 @@
 title: Snap Elections Called
-view-if: chancellor = "Schleicher" and schleicher_time and not schleicher_post_protests and reichstag_break and dnef_total_votes >= 35
+view-if: chancellor = "Staal" and staal_time and not staal_post_protests and reichstag_break and gnu_total_votes >= 35
 on-arrival: {!
 Q.reichstag_rubicon = 0;
 Q.reichstag_break = 0;
@@ -27,23 +27,23 @@ priority: 2
 
 = Snap Elections Called
 
-Chancellor Schleicher and the <span style="color: #BFC8CC;">**DNEF**</span> now see an opportunity to dramatically boost their seat share in fresh elections—paving the way to consolidate power and govern outright with only the loyal <span style="color: #6A1E1E;">**DSU**</span>, free from parliamentarianism.
+Chancellor Staal and the <span style="color: #BFC8CC;">**GNU**</span> now see an opportunity to dramatically boost their seat share in fresh elections—paving the way to consolidate power and govern outright with only the loyal <span style="color: #6A1E1E;">**DSU**</span>, free from parliamentarianism.
 
-New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 
 - @prussia_election
 
 @prussia_election
-title: Schleicher pressures [+ prussia_leader +] for a double dissolution.
-view-if: prussia_leader != "Goerdeler" and prussia_leader != "Strasser"
+title: Staal pressures [+ heartland_leader +] for a double dissolution.
+view-if: heartland_leader != "Goodlake" and heartland_leader != "Crowde"
 
-Schleicher communicates to [+ prussia_leader +] that a double dissolution of the chambers of the Reich and Prussia is necessary for the legislature of the former to be accurate to the updated opinions of the people. The threat of federal action is also present.
+Staal communicates to [+ heartland_leader +] that a double dissolution of the chambers of the Commonwealth and Heartland is necessary for the legislature of the former to be accurate to the updated opinions of the people. The threat of federal action is also present.
 
 - @prussia_election_2
 
 @prussia_election_2
-title: [+ prussia_leader +] bends to pressure.
-on-arrival: next_election_week_prussia = next_election_week if rubicon and next_election_time - time < 3; next_election_week_prussia = week + 6 if rubicon and next_election_time - time >= 3; next_election_week_prussia -= 4 if rubicon and next_election_week_prussia > 4; next_election_week_prussia -= 4 if rubicon and next_election_week_prussia > 4
+title: [+ heartland_leader +] bends to pressure.
+on-arrival: next_election_week_heartland = next_election_week if rubicon and next_election_time - time < 3; next_election_week_heartland = week + 6 if rubicon and next_election_time - time >= 3; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4
 call: set_next_election_time_prussia
 
-New Landtag elections are scheduled for [+ next_election_month_prussia : month +] [+ next_election_year_prussia +], Week [+ next_election_week +].
+New state Assembly elections are scheduled for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +], Week [+ next_election_week +].
