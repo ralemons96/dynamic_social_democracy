@@ -1,0 +1,15 @@
+# Enforce LF line endings — dendry parser requires LF; CRLF breaks multi-line conditionals.
+* text=auto eol=lf
+
+# Binary assets must never be normalized.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mp4 binary
+*.mp3 binary
+*.webm binary
+*.woff binary
+*.woff2 binary
+*.ttf binary

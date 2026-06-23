@@ -4,3 +4,9 @@ out/game.json
 out/html/core.js
 package-lock.json
 out/html/jquery-1.11.1.min.js
+
+# Local build/verification artifacts
+out/game.json.baseline
+tmp_*
+out/html/game.json
+.claude/
