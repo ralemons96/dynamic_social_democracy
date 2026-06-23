@@ -19,7 +19,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Elections, [+ month : month +] [+ year +]
+= Elections, [+ month : month +] [+ year_display +]
 
 The state elections for the Free State of High Cross are to take place.
 

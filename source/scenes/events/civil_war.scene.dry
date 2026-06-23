@@ -33,14 +33,14 @@ if (Q.marcher_heartland && Q.heartland_leader == "Bristol" || Q.heartland_leader
 } else if (Q.marcher_heartland && Q.heartland_leader !== "Bristol" && Q.heartland_leader !== "Pendrigon") {
     Q.total_power += (Q.heartland_police_power / 2);
 }
-if (Q.reichswehr_loyalty < 0) {
-    Q.reichswehr_loyalty = 0;
+if (Q.army_loyalty < 0) {
+    Q.army_loyalty = 0;
 }
-Q.loyal_reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy*Q.reichswehr_loyalty;
+Q.loyal_army_power = Q.army_strength*Q.army_militancy*Q.army_loyalty;
 if (Q.marcher_in_government && Q.chancellor_party == "Marcher") {
-    Q.total_power += Q.loyal_reichswehr_power;
+    Q.total_power += Q.loyal_army_power;
 } else {
-    Q.total_power += Q.loyal_reichswehr_power/4;
+    Q.total_power += Q.loyal_army_power/4;
 }
 Q.rfb_power = Q.rfb_strength*Q.rfb_militancy;
 if (Q.collectivist_relation >= 60) {
@@ -80,8 +80,8 @@ Q.sa_power = Q.sa_strength*Q.sa_militancy;
 Q.enemy_power += Q.sa_power;
 Q.sh_power = Q.sh_strength*Q.sh_militancy;
 Q.enemy_power += Q.sh_power;
-Q.hostile_reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy*(1-Q.reichswehr_loyalty);
-Q.enemy_power += Q.hostile_reichswehr_power;
+Q.hostile_army_power = Q.army_strength*Q.army_militancy*(1-Q.army_loyalty);
+Q.enemy_power += Q.hostile_army_power;
 console.log("Enemy strength:", Q.enemy_power);
 
 if (Q.total_power > Q.enemy_power*1.1) {
@@ -102,7 +102,7 @@ go-to: war_menu
 
 = The Array of Forces
 
-Our enemies are the <span style="color: #808080;">nationalist</span> <span style="color: #3E88B3;">**Wardens**</span>, with [+ sh_strength +] thousand troops, and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>, with [+ sa_strength +] thousand troops. The loyalties of the Commonwealth Army, with its [+ reichswehr_strength +] thousand regular soldiers, and Heartland police, with [+ heartland_police_strength +] thousand members, are unclear.
+Our enemies are the <span style="color: #808080;">nationalist</span> <span style="color: #3E88B3;">**Wardens**</span>, with [+ sh_strength +] thousand troops, and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>, with [+ sa_strength +] thousand troops. The loyalties of the Commonwealth Army, with its [+ army_strength +] thousand regular soldiers, and Heartland police, with [+ heartland_police_strength +] thousand members, are unclear.
 
 [? if chancellor_party == "Collectivist" or president == "Halsmark" or collectivist_reichsex_sax : The <span style="color: #700000;">**Collectivists**</span>'s paramilitary, the <span style="color: #8B0000;">**RFB**</span>, is leading the battle, and we are their co-combatants. ?]
 
@@ -127,7 +127,7 @@ max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-We have urged the Commonwealth Army to stand down, to avoid killing their countrymen. [? if reichswehr_loyalty < 0.2 : Unfortunately, few heed our calls; the Commonwealth Army detests us. ?][? if reichswehr_loyalty >= 0.2 and reichswehr_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if reichswehr_loyalty >= 0.4 and reichswehr_loyalty < 0.6 : The Commonwealth Army is split. Many avoid taking a side, or join our side. ?][? if reichswehr_loyalty >= 0.6 : Surprisingly, the majority of the Commonwealth Army is on our side! Our preparations have worked. ?]
+We have urged the Commonwealth Army to stand down, to avoid killing their countrymen. [? if army_loyalty < 0.2 : Unfortunately, few heed our calls; the Commonwealth Army detests us. ?][? if army_loyalty >= 0.2 and army_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if army_loyalty >= 0.4 and army_loyalty < 0.6 : The Commonwealth Army is split. Many avoid taking a side, or join our side. ?][? if army_loyalty >= 0.6 : Surprisingly, the majority of the Commonwealth Army is on our side! Our preparations have worked. ?]
 
 @kpd_help
 max-visits: 1

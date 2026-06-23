@@ -1,0 +1,37 @@
+title: The Veran Crash
+subtitle: The markets of Vera collapse...
+new-page: true
+on-arrival: veran_crash_seen = 1; crisis_start_time = time; commons_collectivist += 5; commons_royalist += 3; commons_marcher -= 3 if marcher_in_government; burgher_marcher -= 3 if marcher_in_government; commons_marcher += 3 if not marcher_in_government; burgher_royalist += 4; guild_royalist += 5; landed_royalist += 5; disfavored_collectivist += 5; disfavored_royalist += 3; disfavored += 2; budget -= 1; dues -= 1 if dues > 2; inflation -= 1; economic_growth -= 1;
+tags: event
+view-if: year = 1929 and month >= 10
+max-visits: 1
+on-display: {!
+    var cardEl = document.createElement('div');
+    cardEl.className = "face-figure2";
+
+    var image = new Image();
+    image.className = "face-img";
+    image.src = "img/bankrun.jpg";
+
+    cardEl.appendChild(image);
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+priority: 1
+
+= The Veran Crash
+
+The great exchange-houses of Vera — the financial heart of Ethia, and of the continent — have suffered the worst collapse in living memory. Credit is freezing across the realms, and the Commonwealth, chained to Ethian capital by the War Loans, will not be spared. Already the effects are upon us: work will vanish, and wages with it. As it ever is, it is the financiers' crisis, and the Commons' burden.
+
+
+- @cap: It is the nature of high finance...
+- @do_something: We must do something to spare the people...
+
+@cap
+
+Perhaps this is simply one of the periodic convulsions of high finance. Perhaps this moment will pass of its own accord.
+
+@do_something
+on-arrival: crisis_urgency += 1
+
+What can we do to staunch the suffering of the Commons? It is fast becoming the question of the hour.

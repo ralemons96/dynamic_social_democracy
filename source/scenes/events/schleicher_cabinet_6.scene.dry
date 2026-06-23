@@ -29,7 +29,7 @@ Nonetheless, Staal set up a meeting between his confidants, General Kurt von Ham
 @schleicher_2
 title: A putsch!
 subtitle: An unfounded rumor, that Staal will attempt to maintain his power at all costs.
-view-if: ((reichswehr_strength*reichswehr_militancy)*2 > total_force and heartland_leader != "Staal") or ((reichswehr_strength*reichswehr_militancy + heartland_police_strength*heartland_police_militancy)*2 > total_force and heartland_leader == "Staal")
+view-if: ((army_strength*army_militancy)*2 > total_force and heartland_leader != "Staal") or ((army_strength*army_militancy + heartland_police_strength*heartland_police_militancy)*2 > total_force and heartland_leader == "Staal")
 on-arrival: staal_coup = 1; staal_approval -= 1
 
 The day after, Staal sent a conservative with <span style="color: #7A3C00;">Royalist</span> connections to extract more details from [+ royalist_leader +]. Unfortunately for Staal, the person he sent boasted that the army command stood ready to intervene if a new cabinet didn't conform to its wishes. The <span style="color: #7A3C00;">Royalist</span> leaders became fearful of a possible military putsch aimed at thwarting [+ royalist_chancellor +]'s appointment.
@@ -44,6 +44,6 @@ go-to: nazi_16.nazi_3
 
 
 @schleicher_4
-view-if: not (((reichswehr_strength*reichswehr_militancy)*2 > total_force and heartland_leader != "Staal") or ((reichswehr_strength*reichswehr_militancy + heartland_police_strength*heartland_police_militancy)*2 > total_force and heartland_leader == "Staal"))
+view-if: not (((army_strength*army_militancy)*2 > total_force and heartland_leader != "Staal") or ((army_strength*army_militancy + heartland_police_strength*heartland_police_militancy)*2 > total_force and heartland_leader == "Staal"))
 go-to: nazi_16.nazi_4
 

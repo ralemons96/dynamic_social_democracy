@@ -35,7 +35,7 @@ Q.pro_republic -= 3;
 Q.sh_strength = 0;
 Q.sh_militancy = 0;
 
-Q.reichswehr_strength += 75;
+Q.army_strength += 75;
 
 Q.guild_gnu += 12;
 Q.guild_traditionalist -= 4;

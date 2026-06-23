@@ -261,7 +261,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('kommunistische_alternative');
   }
 
-  if (Q.labor_minister_party == "Marcher" && Q.interior_minister_party == "Marcher" && Q.finance_minister_party == "Marcher" && Q.economic_minister_party == "Marcher" && Q.foreign_minister_party == "Marcher" && Q.justice_minister_party == "Marcher" && Q.agriculture_minister_party == "Marcher" && Q.reichswehr_minister_party == "Marcher" && (Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") && Q.chancellor_party == "Marcher" && (Q.president == "Bristol" || Q.president == "Pendrigon" && !Q.left_split || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || (Q.president == "Pendrigon" && !Q.left_split))) {
+  if (Q.labor_minister_party == "Marcher" && Q.interior_minister_party == "Marcher" && Q.finance_minister_party == "Marcher" && Q.economic_minister_party == "Marcher" && Q.foreign_minister_party == "Marcher" && Q.justice_minister_party == "Marcher" && Q.agriculture_minister_party == "Marcher" && Q.army_minister_party == "Marcher" && (Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") && Q.chancellor_party == "Marcher" && (Q.president == "Bristol" || Q.president == "Pendrigon" && !Q.left_split || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || (Q.president == "Pendrigon" && !Q.left_split))) {
       this.achieve('die_rote_republik');
   }
 
@@ -323,7 +323,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if ((Q.in_left_front || Q.in_popular_front) && Q.collectivist_coalition_success && Q.wurttemberg_collectivist && Q.bavaria_collectivist && Q.red_thuringia && Q.red_saxony && Q.weimar_win_calc && !Q.collectivist_points_calc && !Q.civil_war_seen && Q.year >= 1934) {
     this.achieve('eurokommunismus');
   }
-  if (Q.reichswehr_strength >= 200 && Q.disfavored < 15 && Q.budget > 0 && Q.tariffs > 5 && (Q.marcher_in_government || Q.chancellor_party == "Marcher")) {
+  if (Q.army_strength >= 200 && Q.disfavored < 15 && Q.budget > 0 && Q.tariffs > 5 && (Q.marcher_in_government || Q.chancellor_party == "Marcher")) {
     this.achieve('kriegswirtschaft');
   }
   if (Q.marcher_votes >= 67 && Q.marcher_r >= 67 && Q.in_social_liberal_coalition) {
@@ -347,7 +347,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if (Q.year == 1934 && Q.month == 7 && Q.hilferding_advisor && Q.wels_advisor && Q.kleber_der_partei) {
     this.achieve('kleber_der_partei');
   }
-  if (Q.heartland_police_loyalty >= 0.95 && Q.reichswehr_loyalty >= 0.95 && Q.interior_police_loyalty >= 0.95 && Q.judicial_reform >= 2 && Q.heartland_purge >= 2) {
+  if (Q.heartland_police_loyalty >= 0.95 && Q.army_loyalty >= 0.95 && Q.interior_police_loyalty >= 0.95 && Q.judicial_reform >= 2 && Q.heartland_purge >= 2) {
     this.achieve('grosse_sauberung');
   }
   if (Q.judicial_reform >= 4 && Q.weltbuhne_dropped == 1 && Q.gallax_deported == 1 && Q.rohm_explode == 1 && Q.heartland_legal_returned == 1 && Q.rfb_banned == 1) {

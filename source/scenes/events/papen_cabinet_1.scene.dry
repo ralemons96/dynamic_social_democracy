@@ -1,7 +1,7 @@
 title: Goodryke Unveils His Cabinet
 subtitle: The "Cabinet of Barons", they call it.
 view-if: chancellor = "Goodryke" and papen_time == 1
-on-arrival: chancellor_party = "I"; finance_minister_party = "I"; interior_minister_party = "Traditionalist"; economic_minister_party = "I"; labor_minister_party = "I"; justice_minister_party = "Traditionalist"; foreign_minister_party = "I"; agriculture_minister_party = "Traditionalist"; reichswehr_minister = "I"
+on-arrival: chancellor_party = "I"; finance_minister_party = "I"; interior_minister_party = "Traditionalist"; economic_minister_party = "I"; labor_minister_party = "I"; justice_minister_party = "Traditionalist"; foreign_minister_party = "I"; agriculture_minister_party = "Traditionalist"; army_minister = "I"
 new-page: true
 tags: event
 max-visits: 1

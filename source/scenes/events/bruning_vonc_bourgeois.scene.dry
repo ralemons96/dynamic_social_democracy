@@ -2,7 +2,7 @@ title: Askew's government lives on?
 subtitle: Chancellor [+ chancellor +] has assembled a majority government.
 new-page: true
 view-if: marcher_in_government == 0 and marcher_toleration == 0 and chancellor = "Askew" and bourgeois_coalition >= 50 and not in_bourgeois_coalition and (not kvp_formed or young_plan_ratified)
-on-arrival: bruning_event_seen = 1; marcher_in_government = 0; marcher_toleration = 0; marcher_toleration_right = 0; in_bourgeois_coalition = 1; chancellor = "Askew"; chancellor_party = "Unionist"; foreign_minister_party = "Gold"; interior_minister_party = "Unionist"; justice_minister_party = "Unionist"; labor_minister_party = "Unionist"; reichswehr_minister_party = ddp_name; economic_minister_party = "Unionist"; finance_minister_party = "Unionist"; agriculture_minister_party = "Unionist"; bruning_event_timer = 0; bourgeois_cooperation += 10; unionist_relation -= 5; judicial_reform -= 1
+on-arrival: bruning_event_seen = 1; marcher_in_government = 0; marcher_toleration = 0; marcher_toleration_right = 0; in_bourgeois_coalition = 1; chancellor = "Askew"; chancellor_party = "Unionist"; foreign_minister_party = "Gold"; interior_minister_party = "Unionist"; justice_minister_party = "Unionist"; labor_minister_party = "Unionist"; army_minister_party = ddp_name; economic_minister_party = "Unionist"; finance_minister_party = "Unionist"; agriculture_minister_party = "Unionist"; bruning_event_timer = 0; bourgeois_cooperation += 10; unionist_relation -= 5; judicial_reform -= 1
 tags: event
 priority: -1
 max-visits: 1

@@ -2,7 +2,7 @@ title: The Assembly Agenda Committee Discusses Reconvocation
 subtitle: Staal's new lease on life?
 view-if: chancellor = "Staal" and staal_time and (next_reichstag_time - 1) == rubicon_time
 on-arrival: {!
-if (((Q.reichswehr_strength*Q.reichswehr_militancy + Q.heartland_police_strength*Q.heartland_police_militancy)*2 < Q.total_force && Q.heartland_leader == "Staal") || (Q.reichswehr_strength*Q.reichswehr_militancy)*2 < (Q.total_force + Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty) && Q.heartland_leader != "Staal") {
+if (((Q.army_strength*Q.army_militancy + Q.heartland_police_strength*Q.heartland_police_militancy)*2 < Q.total_force && Q.heartland_leader == "Staal") || (Q.army_strength*Q.army_militancy)*2 < (Q.total_force + Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty) && Q.heartland_leader != "Staal") {
   Q.staal_reichstag_smart = 1;
 }
 if (Q.staal_economy_time) Q.staal_reichstag_smart = 1;

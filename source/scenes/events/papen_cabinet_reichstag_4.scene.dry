@@ -77,7 +77,7 @@ go-to: papen_civil_war
 @reichstag_4
 title: Martial law is declared. The Commonwealth Army quells pockets of unrest.
 on-arrival: marburg_time = 0; marburg_trigger = 1; rb_strength -= 500; rb_militancy *= 0.7; sa_strength *= 0.5; rfb_strength *= 0.5; commons_collectivist -= 5; disfavored_collectivist -= 5; commons_royalist -= 5; burgher_royalist -= 5; guild_royalist -= 5; landed_royalist -= 5; faithful_royalist -= 5; disfavored_royalist -= 5; disfavored += 2; economic_growth -= 1.5; pro_republic = 0
-view-if: reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty) >= (sa_strength*sa_militancy + rfb_strength*rfb_militancy + disfavored_royalist_normalized + disfavored_collectivist_normalized + commons_collectivist_normalized + disfavored_collectivist_normalized)
+view-if: army_strength*army_militancy*(1-army_loyalty) >= (sa_strength*sa_militancy + rfb_strength*rfb_militancy + disfavored_royalist_normalized + disfavored_collectivist_normalized + commons_collectivist_normalized + disfavored_collectivist_normalized)
 
 The disorganized <span style="color: #7A3C00;">**SA**</span> and <span style="color: #700000;">**RFB**</span> have failed to spark a mass uprising, and a civil war is averted. A widespread crackdown on paramilitaries have begun, with the the Banners not even being spared. 
 

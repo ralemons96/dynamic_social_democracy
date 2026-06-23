@@ -33,7 +33,7 @@ The Commonwealth Army are already on the streets of Axton, with a national force
 - @surrender
 
 @defend_2
-view-if: (royalist_votes >= 25 or rb_militancy < 0.2) and ((reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3
+view-if: (royalist_votes >= 25 or rb_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3
 on-arrival: {!
 
 Q.sa_force_heartland = Q.sa_strength*Q.sa_militancy;
@@ -41,7 +41,7 @@ Q.sh_force_heartland = Q.sh_strength*Q.sh_militancy;
 Q.rb_force_heartland = Q.rb_strength*Q.rb_militancy;
 Q.rfb_force_heartland = Q.rfb_strength*Q.rfb_militancy;
 Q.heartland_force_heartland = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
-Q.army_force_heartland = Q.reichswehr_strength*Q.reichswehr_militancy*(1-Q.reichswehr_loyalty);
+Q.army_force_heartland = Q.army_strength*Q.army_militancy*(1-Q.army_loyalty);
 var total_force_prussia = (Q.sa_force_heartland+Q.sh_force_heartland+Q.rb_force_heartland+Q.rfb_force_heartland+Q.heartland_force_heartland+Q.army_force_heartland);
 
 Q.sa_force_heartland = Math.round((Q.sa_force_heartland/total_force_prussia)*100);
@@ -66,7 +66,7 @@ go-to: defend_2_civil_war if happy_forces < angry_forces; defend_2_victory if ha
 
 
 @defend_2_victory
-on-arrival: heartland_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_republic += 12; commons_collectivist -= 4; disfavored_collectivist -= 4; commons_marcher += 8; disfavored_marcher += 8; commons_royalist -= 6; disfavored_royalist -= 6; burgher_royalist -= 4; burgher_marcher += 4; guild_royalist -= 3; guild_ddp += 2; guild_gold += 1; guild_lvp += 3; landed_royalist -= 3; landed_ddp += 2; landed_gold += 1; landed_lvp += 3; faithful_royalist -= 3; faithful_marcher += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; unionist_relation += 5; ddp_relation += 5 if rb_stay; unionist_relation += 5 if rb_stay; heartland_police_loyalty = 1; heartland_police_strength += 25; reichswehr_militancy -= 0.5; papen_strength -= 10; dufour_papen_r -= 10
+on-arrival: heartland_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_republic += 12; commons_collectivist -= 4; disfavored_collectivist -= 4; commons_marcher += 8; disfavored_marcher += 8; commons_royalist -= 6; disfavored_royalist -= 6; burgher_royalist -= 4; burgher_marcher += 4; guild_royalist -= 3; guild_ddp += 2; guild_gold += 1; guild_lvp += 3; landed_royalist -= 3; landed_ddp += 2; landed_gold += 1; landed_lvp += 3; faithful_royalist -= 3; faithful_marcher += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; unionist_relation += 5; ddp_relation += 5 if rb_stay; unionist_relation += 5 if rb_stay; heartland_police_loyalty = 1; heartland_police_strength += 25; army_militancy -= 0.5; papen_strength -= 10; dufour_papen_r -= 10
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 
@@ -85,7 +85,7 @@ Our forces confront the government troops and their supporters on the streets of
 - @civil_war: It is a civil war.
 
 @defend_3
-view-if: not ((royalist_votes >= 25 or rb_militancy < 0.2) and ((reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3)
+view-if: not ((royalist_votes >= 25 or rb_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3)
 on-arrival: papen_strength -= 1; dufour_papen_r -= 1; pro_republic += 5
 achievement: bollwerk_der_demokratie
 

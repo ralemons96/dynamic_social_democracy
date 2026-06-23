@@ -27,7 +27,7 @@ The <span style="color: #c00000;">left-wing</span> news and literary magazine We
 view-if: marcher_in_government
 choose-if: marcher_in_government and justice_minister_party = "Marcher"
 unavailable-subtitle: [? if not marcher_in_government : <span style="color: #c00000;">Marchers</span> not in government. ?] [? if marcher_in_government and justice_minister_party != "Marcher": The <span style="color: #c00000;">Marchers</span> does not control the Justice Ministry. ?]
-on-arrival: weltbuhne_dropped = 1; gold_relation -= 4; nationalism -= 3*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); reichswehr_loyalty -= 0.05; west_relation += 1; east_relation += 1; coup_progress += 1; reparations_negotiation += 1; pacifism += 1; ddp_relation += 3; ddp_left += 1; lvp_relation -= 2; dufour_angry += 5
+on-arrival: weltbuhne_dropped = 1; gold_relation -= 4; nationalism -= 3*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); army_loyalty -= 0.05; west_relation += 1; east_relation += 1; coup_progress += 1; reparations_negotiation += 1; pacifism += 1; ddp_relation += 3; ddp_left += 1; lvp_relation -= 2; dufour_angry += 5
 
 The Justice Ministry has dropped all persecution of Carl von Ostwick and Walter Kreiser, the journalist responsible for the offending publication. In fact, some say that the Weltbühne journalists should be feted as heroes.
 
@@ -36,13 +36,13 @@ The Western powers and all countries that feel threatened by Commonwealth milita
 
 @let_persecute
 view-if: marcher_in_government
-on-arrival: weltbuhne_dropped = 0; gold_relation += 4; reichswehr_loyalty += 0.05; west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; pacifism -= 1; nationalism += 4; left_dissent += 5; lvp_relation += 2; dufour_angry -= 5
+on-arrival: weltbuhne_dropped = 0; gold_relation += 4; army_loyalty += 0.05; west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; pacifism -= 1; nationalism += 4; left_dissent += 5; lvp_relation += 2; dufour_angry -= 5
 
 The case progresses slowly, given the military secrets involved, and there will be no determination made for a while. The Commonwealth Army is pleased of our loyalty. However, the affair has made the Western powers suspicious of our resurgent militarism, as well as displeasing the left wing of the party.
 
 @pressure_drop
 view-if: marcher_in_government and justice_minister_party != "Marcher"
-on-arrival: weltbuhne_dropped = 1; gold_relation -= 5; lvp_relation -= 3; nationalism += 3*(1-dissent); coalition_dissent += 1; coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); reichswehr_loyalty -= 0.05; coup_progress += 1; west_relation += 1; east_relation += 1; reparations_negotiation += 1; ddp_left += 1; dufour_angry += 5
+on-arrival: weltbuhne_dropped = 1; gold_relation -= 5; lvp_relation -= 3; nationalism += 3*(1-dissent); coalition_dissent += 1; coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); army_loyalty -= 0.05; coup_progress += 1; west_relation += 1; east_relation += 1; reparations_negotiation += 1; ddp_left += 1; dufour_angry += 5
 
 We have pressured the Justice Ministry to drop the case against the Weltbühne, raising tensions with our coalition.
 

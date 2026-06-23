@@ -351,7 +351,7 @@ Q.staal_post_protests = 1;
 Q.staal_rights = 1;
 Q.reichstag_break = 0;
 
-Q.reichswehr_strength -= 50;
+Q.army_strength -= 50;
 
 Q.commons_staal_bonus -= 2;
 Q.republicans_staal_bonus -= 2;
@@ -423,7 +423,7 @@ Q.staal_rights = 1;
 Q.staal_pause = 1;
 Q.reichstag_break = 0;
 
-Q.reichswehr_strength -= 100;
+Q.army_strength -= 100;
 
 Q.commons_staal_bonus -= 3;
 Q.republicans_staal_bonus -= 3;

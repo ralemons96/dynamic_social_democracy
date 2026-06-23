@@ -43,7 +43,7 @@ if (Q.labor_strength < 10) {
     Q.disfavored_gnu_bonus += 9;
 
     Q.rb_strength -= 600;
-    Q.reichswehr_strength += 10;
+    Q.army_strength += 10;
 } else if (Q.labor_strength < 60) {
     Q.commons_marcher -= 24;
     Q.disfavored_marcher -= 14;
@@ -56,7 +56,7 @@ if (Q.labor_strength < 10) {
     Q.disfavored_gnu_bonus += 12;
 
     Q.rb_strength -= 700;
-    Q.reichswehr_strength += 25;
+    Q.army_strength += 25;
 } else {
     Q.commons_marcher -= 26;
     Q.disfavored_marcher -= 16;
@@ -69,7 +69,7 @@ if (Q.labor_strength < 10) {
     Q.disfavored_gnu_bonus += 14;
 
     Q.rb_strength -= 800;
-    Q.reichswehr_strength += 50;
+    Q.army_strength += 50;
 }
 
 Q.commons_royalist -= 3;

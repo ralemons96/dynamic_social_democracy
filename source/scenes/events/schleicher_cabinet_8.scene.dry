@@ -94,7 +94,7 @@ Q.inflation += 0.5;
 Q.economic_growth += 0.5;
 Q.staal_approval += 2;
 
-Q.reichswehr_militancy += 2;
+Q.army_militancy += 2;
 
 Q.mefo_bills = 1;
 Q.dsu_policy += 1;
@@ -144,7 +144,7 @@ Q.economic_growth += 0.4;
 
 Q.staal_approval += 1;
 
-Q.reichswehr_militancy += 1.5;
+Q.army_militancy += 1.5;
 
 Q.mefo_bills = 1;
 Q.dsu_policy += 1;

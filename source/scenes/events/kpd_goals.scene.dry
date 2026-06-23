@@ -1,6 +1,6 @@
 title: The <span style="color: #700000;">**Collectivists**</span> presents its list of goals for the coalition.
 view-if: (in_popular_front = 1 or in_left_front = 1) and collectivist_goals_seen = 0 and collectivist_coalition_success = 0 and next_election_time - time > 12 and marcher_in_government
-on-arrival: collectivist_goals_seen = 1; welfare_goal = 1; foreign_goal = 0; agriculture_goal = 1 if agriculture_minister_party != "Collectivist"; economy_goal = 1 if economic_minister_party != "Collectivist"; finance_goal = 1 if finance_minister_party != "Collectivist"; labor_goal = 1 if labor_minister_party != "Collectivist"; reichswehr_goal = 1 if reichswehr_minister_party != "Collectivist"; collectivist_ultimatum_timer = 12; collectivist_ultimatum_timer = 16 if collectivist_relation >= 60; collectivist_ultimatum_timer = 24 if collectivist_leader == "Conciliators" or constructive_vonc; collectivist_ultimatum_timer = next_election_time - time - 1 if next_election_time - time <= 12;
+on-arrival: collectivist_goals_seen = 1; welfare_goal = 1; foreign_goal = 0; agriculture_goal = 1 if agriculture_minister_party != "Collectivist"; economy_goal = 1 if economic_minister_party != "Collectivist"; finance_goal = 1 if finance_minister_party != "Collectivist"; labor_goal = 1 if labor_minister_party != "Collectivist"; army_goal = 1 if army_minister_party != "Collectivist"; collectivist_ultimatum_timer = 12; collectivist_ultimatum_timer = 16 if collectivist_relation >= 60; collectivist_ultimatum_timer = 24 if collectivist_leader == "Conciliators" or constructive_vonc; collectivist_ultimatum_timer = next_election_time - time - 1 if next_election_time - time <= 12;
 new-page: true
 tags: event
 
@@ -22,6 +22,6 @@ The <span style="color: #700000;">**Collectivists**</span> presents us with a li
 
 #[? if interior_goal = 1 : - Ban the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
 
-[? if reichswehr_goal = 1 : - Reduce funding for the Commonwealth Army. ?]
+[? if army_goal = 1 : - Reduce funding for the Commonwealth Army. ?]
 
 They say that they expect to see these goals fulfilled in [+ collectivist_ultimatum_timer +] months. Otherwise, they will vote to dissolve the coalition.

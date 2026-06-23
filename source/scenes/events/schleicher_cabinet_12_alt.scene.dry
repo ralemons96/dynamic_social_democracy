@@ -407,8 +407,8 @@ if (Q.marcher_heartland && Q.heartland_leader == "Bristol" || Q.heartland_leader
 if (Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodlake" || Q.heartland_leader == "Crowde") {
     Q.staal_points += Q.evil_heartland_police_power / 50;
 }
-Q.reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy;
-Q.staal_points += Q.reichswehr_power/50;
+Q.army_power = Q.army_strength*Q.army_militancy;
+Q.staal_points += Q.army_power/50;
 
 Q.rfb_power = Q.rfb_strength*Q.rfb_militancy / 50;
 if (Q.collectivist_relation >= 40) {

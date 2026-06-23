@@ -1,4 +1,4 @@
-title: [+ year +] Presidential Elections
+title: [+ year_display +] Presidential Elections
 new-page: true
 view-if: rubicon_president_week == week and rubicon_president_month == month and rubicon_president_year == year
 on-arrival: round = 0; marcher_candidate = "Eckhart"; collectivist_candidate = "Boycott"; unionist_candidate = "Aldermoor"; ddp_candidate = "Gesling"; lvp_candidate = "Gesling"; royalist_candidate = "Seckard"; traditionalist_candidate = "Seckard"; gold_candidate = "Gesling"; other_candidate = "Seckard"; is_unity_candidate = 0; sapd_candidate = collectivist_candidate; kvp_candidate = traditionalist_candidate; dnf_candidate = traditionalist_candidate
@@ -17,7 +17,7 @@ on-display: {!
 !}
 tags: event
 
-= [+ year +] Presidential Elections
+= [+ year_display +] Presidential Elections
 
 An era of history is closing, and the future remains to be seen.
 

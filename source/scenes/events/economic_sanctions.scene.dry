@@ -3,7 +3,7 @@ subtitle: Our military buildup has caused sanctions from Ethia and other countri
 new-page: true
 on-arrival: commons_royalist += 3; burgher_royalist += 3; guild_royalist += 4; landed_royalist += 3; disfavored += 3; commons_marcher -= 4 if marcher_in_government; burgher_marcher -= 5 if marcher_in_government; guild_marcher -= 5 if marcher_in_government; landed_marcher -= 4 if marcher_in_government; economic_growth -= 1; nationalism += 5; pacifism -= 1
 #tags: event
-view-if: reichswehr_strength > 140
+view-if: army_strength > 140
 max-visits: 1
 
 = Economic Sanctions

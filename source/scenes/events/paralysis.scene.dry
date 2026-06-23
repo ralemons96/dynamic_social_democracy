@@ -1,0 +1,24 @@
+title: Paralysis
+subtitle: The economy seizes; the Assembly deadlocks...
+new-page: true
+on-arrival: paralysis_seen = 1; economic_growth -= 1; budget -= 1; dues -= 1 if dues > 2; disfavored += 2; disfavored_collectivist += 2; crisis_urgency += 1;
+tags: event
+view-if: veran_crash_seen = 1 and time >= crisis_start_time + 1
+max-visits: 1
+priority: 1
+
+= Paralysis
+
+The crash has hardened into a paralysis. Workshops stand idle, the great houses of the Guilds will not lend a single coin, and the Assembly sits deadlocked — each bench blaming the others while the ruin spreads. Every week of inaction drives more of the Commons into the ranks of the Disfavored, and the cry for action grows louder in the streets. Something must be done, and soon, or the Commonwealth's economy will seize entirely.
+
+- @emergency: We must demand emergency measures.
+- @hold: We must hold to sound finance and weather it.
+
+@emergency
+on-arrival: crisis_urgency += 1
+
+We press for extraordinary measures — relief for the workless, public works, whatever will keep the people fed through the winter. Whether the Assembly can be moved to act is another question.
+
+@hold
+
+We counsel patience and a balanced budget, and trust that the storm will spend itself before it breaks us. It is a gamble, and everyone knows it.

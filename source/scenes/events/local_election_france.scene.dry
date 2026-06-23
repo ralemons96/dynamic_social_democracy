@@ -19,7 +19,7 @@ on-display: {!
 max-visits: 1
 set-bg: img/france_map.jpg
 
-= Elections, [+ month : month +] [+ year +]
+= Elections, [+ month : month +] [+ year_display +]
 
 The Ethian Third Republic are to hold their legislative elections now.
 

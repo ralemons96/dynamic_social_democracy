@@ -33,7 +33,7 @@ Mallin arrives at Goodryke's apartment, accompanied by the leaders of the <span 
 
 > *"If the new cabinet is not installed by eleven o’clock, the army will march. We’re threatened with a military dictatorship under Staal and Hammerton."*
 
- - Franz von Goodryke, to the leaders of the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?], [+ year +]
+ - Franz von Goodryke, to the leaders of the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?], [+ year_display +]
 
 - @nazi_3
 

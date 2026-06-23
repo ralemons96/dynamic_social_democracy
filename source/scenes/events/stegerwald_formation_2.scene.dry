@@ -1,4 +1,4 @@
-title: [+ year +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
+title: [+ year_display +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
 subtitle: Sedgewick faces internal opposition.
 view-if: (year == 1929 and month >= 12) or (stegerwald_transformation_timer == 1) and unionist_leader == "Sedgewick"
 new-page: true
@@ -7,7 +7,7 @@ max-visits: 1
 tags: event
 face-image: img/zentrum_3.jpg
 
-= [+ year +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
+= [+ year_display +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
 
 The transformation of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] into an interconfessional party is now set in stone, but Sedgewick has made himself some enemies in doing so. Conservative Catholics have jumped ship [? if traditionalist_ideology == "Moderate": to the <span style="color: #3E88B3;">**Traditionalists**</span>.?][? if traditionalist_ideology == "Radical": to the various right-wing parties that claim to have Catholic interests at heart.?] The left of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] under Joseph Werth has become a thorn in Sedgewick's side due to his antipathy towards the <span style="color: #c00000;">**Marchers**</span>.
 

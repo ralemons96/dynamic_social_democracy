@@ -26,7 +26,7 @@ The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our
 - @surrender
 
 @defend_2
-on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty)
+on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty)
 go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory if defense_strength >= enemy_strength
 
 @defend_2_civil_war

@@ -1,6 +1,6 @@
 title: Staal's Proposal
 subtitle: General Kurt von Staal contacts our party...
-view-if: year >= 1930 and president = "DuFour" and marcher_in_government and not in_left_front and not in_popular_front and not presidential_powers and wtb_adopted and not unions_independent and reformist_strength + labor_strength >= left_strength + center_strength and reichswehr_loyalty >= 0.2 and (not panzerkreuzer_no or panzerkreuser_seen) and not rearmament_exposed and reparations_negotiation >= 3 and not weltbuhne_dropped and collectivist_relation < 35 and reichswehr_minister_party != "Marcher" and pacifism < 5 and nationalization_progress < 5 and not works_program
+view-if: year >= 1930 and president = "DuFour" and marcher_in_government and not in_left_front and not in_popular_front and not presidential_powers and wtb_adopted and not unions_independent and reformist_strength + labor_strength >= left_strength + center_strength and army_loyalty >= 0.2 and (not panzerkreuzer_no or panzerkreuser_seen) and not rearmament_exposed and reparations_negotiation >= 3 and not weltbuhne_dropped and collectivist_relation < 35 and army_minister_party != "Marcher" and pacifism < 5 and nationalization_progress < 5 and not works_program
 on-arrival: staal_wtb_proposal_seen = 1
 new-page: true
 max-visits: 1
@@ -32,7 +32,7 @@ Now, the decision is ours. Do we accept his offer?
 @schleicher_yay_2
 title: We are defenseless—defenseless and without honor.
 subtitle: This is the point of no return.
-on-arrival: staal_marcher = 1; dufour_angry = 0; dufour_angry_pause_time = time + 12; nationalism += 20; pacifism -= 5; democratization -= 5; pro_republic -= marcher_votes / 2; left_dissent += 50; center_dissent += 30; reformist_dissent += 10; royalist_radicalization += 5; royalist_strasser_time = time + 6; data_miner_detected = 1; collectivist_relation -= 100; communist_coalition -= 5; reichswehr_loyalty += 0.05
+on-arrival: staal_marcher = 1; dufour_angry = 0; dufour_angry_pause_time = time + 12; nationalism += 20; pacifism -= 5; democratization -= 5; pro_republic -= marcher_votes / 2; left_dissent += 50; center_dissent += 30; reformist_dissent += 10; royalist_radicalization += 5; royalist_strasser_time = time + 6; data_miner_detected = 1; collectivist_relation -= 100; communist_coalition -= 5; army_loyalty += 0.05
 
 We have been given one year to implement the WTB Plan, and Staal—once an active schemer calling for DuFour to dismiss the [+ chancellor +] government—is now working to prevent DuFour from dismissing us. Unfortunately, Staal has failed to convince DuFour to grant us emergency powers.
 

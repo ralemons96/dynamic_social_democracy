@@ -1,7 +1,7 @@
 title: Discontent in the Commonwealth Army
 subtitle:  The <span style="color: #808080;">reactionary</span> nest begins to voice its discontent aloud.
-view-if: reichswehr_loyalty <= 0 and marcher_in_government and not rubicon and reichswehr_minister_party != "Marcher"
-on-arrival: reichswehr_angry = 1
+view-if: army_loyalty <= 0 and marcher_in_government and not rubicon and army_minister_party != "Marcher"
+on-arrival: army_angry = 1
 tags: event
 new-page: true
 max-visits: 1
@@ -22,7 +22,7 @@ title: Perhaps another battleship will keep them happy?
 subtitle: Conceding to the Commonwealth Army is viewed as a betrayal of our core values.
 choose-if: reformist_strength >= labor_strength and reformist_strength >= left_strength and budget >= 1
 unavailable-subtitle: [? if (labor_strength > reformist_strength) or (left_strength > reformist_strength): Our party refuses to tolerate concessions to the Commonwealth Army. ?][? if budget < 1: We lack the necessary budget. ?]
-on-arrival: reichswehr_loyalty += 0.2; reichswehr_militancy += 1; left_dissent += 30; labor_dissent += 25; center_dissent += 20; reformist_dissent += 10; budget -= 1; commons_marcher -= 6; disfavored_marcher -= 6; burgher_marcher -= 2; faithful_marcher -= 2; guild_marcher += 2; nationalism += 8; pacifism -= 3; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; dufour_angry -= 25
+on-arrival: army_loyalty += 0.2; army_militancy += 1; left_dissent += 30; labor_dissent += 25; center_dissent += 20; reformist_dissent += 10; budget -= 1; commons_marcher -= 6; disfavored_marcher -= 6; burgher_marcher -= 2; faithful_marcher -= 2; guild_marcher += 2; nationalism += 8; pacifism -= 3; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; dufour_angry -= 25
 
 We have accepted Staal’s demands for increased funding toward the army’s modernization program, securing the purchase of new equipment for the small force. This decision has drawn intense criticism from the <span style="color: #700000;">**Communists**</span> and many within our own party, who condemn the diversion of funds into the black hole of the defense budget instead of toward welfare for women and children.
 
@@ -31,7 +31,7 @@ title: Fire these rabble rousers immediately!
 subtitle: The bourgeois parties will not be pleased.
 choose-if: (coalition_dissent <= 0 and (unionist_relation >= 60 or (not in_grand_coalition and not in_weimar_coalition))) or in_left_front
 unavailable-subtitle: We lack the leverage—or sympathy—among our coalition partners.
-on-arrival: coalition_dissent += 1 if in_weimar_coalition or in_grand_coalition; burgher_marcher -= 2; guild_marcher -= 2; landed_marcher -= 2; unionist_relation -= 5; ddp_relation -= 5 if ddp_ideology != "Left"; gold_relation -= 8; lvp_relation -= 5; lvp_right += 2; gold_right += 2; ddp_right += 1; ddp_cohesion -= 1; dufour_angry += 25; reichswehr_minister = "Oster"; groener_explode = 1; reichswehr_loyalty += 0.2; coup_progress += 3; capital_strike_progress += 1
+on-arrival: coalition_dissent += 1 if in_weimar_coalition or in_grand_coalition; burgher_marcher -= 2; guild_marcher -= 2; landed_marcher -= 2; unionist_relation -= 5; ddp_relation -= 5 if ddp_ideology != "Left"; gold_relation -= 8; lvp_relation -= 5; lvp_right += 2; gold_right += 2; ddp_right += 1; ddp_cohesion -= 1; dufour_angry += 25; army_minister = "Oster"; groener_explode = 1; army_loyalty += 0.2; coup_progress += 3; capital_strike_progress += 1
 face-image: img/portraits/oster.jpg
 
 Our request to dismiss Wilhelm Ravabelle has been approved by our coalition partners. He is replaced by Hans Oster, a relatively minor officer in the Commonwealth Army. While Oster shares the nationalist leanings common within the military and is conservative enough to be accepted as Ravabelle’s successor, our lack of control over the Commonwealth Army Ministry limits us—we can only remove a handful of officials involved in political interference.

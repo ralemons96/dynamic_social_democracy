@@ -25,6 +25,8 @@ const SINGLE = {
   // figures / factions / subsystems / flags
   nazi: 'royalist', prussia: 'heartland', prussian: 'heartland', schleicher: 'staal',
   hindenburg: 'dufour', hitler: 'gallax', reichsbanner: 'banner', neorevisionist: 'knight',
+  // the national army (Phase 2): reichswehr_* -> army_* (loyalty/strength/militancy/...)
+  reichswehr: 'army',
 };
 
 function applyPhrases(parts) {

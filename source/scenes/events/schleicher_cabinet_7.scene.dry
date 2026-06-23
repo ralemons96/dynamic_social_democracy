@@ -3,7 +3,7 @@ subtitle: Staal moves to end streetfighting.
 view-if: chancellor == "Staal" and (staal_time == 11 and heartland_leader == "Staal") or (staal_post_time >= 4 and heartland_leader != "Bristol" and heartland_leader != "Pendrigon")
 on-arrival: {!
 Q.banner_disarm_cost = Math.round(Q.rb_militancy * 15);
-Q.reichswehr_strength += 25;
+Q.army_strength += 25;
 Q.sa_strength *= 0.8;
 Q.sa_militancy -= 0.3;
 Q.rb_strength -= 100;
@@ -12,7 +12,7 @@ Q.rfb_strength -= 50;
 Q.rfb_militancy -= 0.1;
 Q.heartland_police_strength += 100;
 Q.heartland_police_militancy += 0.5;
-Q.reichswehr_street = 1;
+Q.army_street = 1;
 Q.sa_banned = 1;
 Q.sa_nationwide_ban = 1;
 

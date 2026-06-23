@@ -33,6 +33,8 @@ Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
 Q.year = 1928;
+// Commonwealth calendar: displayed year = internal year + 2365 (4293 = 1928).
+Q.year_display = Q.year + 2365;
 Q.month = 1;
 Q.week = 0;
 Q.week_checked = 0;
@@ -89,8 +91,10 @@ Q.social_patriot = 0;
 
 // crisis_urgency indicates how seriously the Marchers is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
-// nazi_urgency indicates how seriously the Marchers takes the nazis - scale from 0 to 10.
+// royalist_urgency indicates how seriously the Marchers take the Royalist threat - scale from 0 to 10.
 Q.royalist_urgency = 0;
+// imperial_fear: public dread of the Empire-in-Exile after the Fall of Ivion - scale from 0 to 10.
+Q.imperial_fear = 0;
 // radicalization indicates how radical the Marchers's rhetoric is - scale from 0 to 10.
 Q.radicalization = 0;
 // Support for the WTB plan and proto-Keynesian works creation plans in general
@@ -177,9 +181,9 @@ Q.heartland_police_militancy = 2;
 Q.heartland_police_loyalty = 0.5;
 
 // strength includes actual military and de facto reserves?
-Q.reichswehr_strength = 100;
-Q.reichswehr_militancy = 5;
-Q.reichswehr_loyalty = 0.2;
+Q.army_strength = 100;
+Q.army_militancy = 5;
+Q.army_loyalty = 0.2;
 
 // The state of the country
 
@@ -587,7 +591,7 @@ Q.women_goal_marcher = 0;
 Q.education_goal_marcher = 0;
 Q.economic_plan_goal_marcher = 0;
 Q.agriculture_goal_marcher = 0;
-Q.reichswehr_goal_marcher = 0;
+Q.army_goal_marcher = 0;
 Q.goal_marcher_cancel = 0;
 Q.goal_marcher_total = 0;
 
@@ -624,8 +628,8 @@ Q.justice_minister = 'Hargen';
 Q.justice_minister_party = 'Traditionalist';
 Q.labor_minister = 'Brennan';
 Q.labor_minister_party = 'Unionist';
-Q.reichswehr_minister = 'Ravabelle';
-Q.reichswehr_minister_party = 'I';
+Q.army_minister = 'Ravabelle';
+Q.army_minister_party = 'I';
 Q.economic_minister = 'Curtius';
 Q.economic_minister_party = 'Gold';
 Q.finance_minister = 'Köhler';

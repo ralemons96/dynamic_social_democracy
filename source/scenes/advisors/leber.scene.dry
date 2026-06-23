@@ -28,8 +28,8 @@ Lebbon helps us to rally the people in defense of democracy.
 @military_affairs
 title: Military affairs
 subtitle: We can set our military policy.
-choose-if: advisor_action_timer == 0 and marcher_in_government and reichswehr_minister_party == "Marcher"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not in government. ?][? if reichswehr_minister_party != "Marcher": The <span style="color: #c00000;">Marchers</span> does not have the Commonwealth Army ministry. ?]
+choose-if: advisor_action_timer == 0 and marcher_in_government and army_minister_party == "Marcher"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not in government. ?][? if army_minister_party != "Marcher": The <span style="color: #c00000;">Marchers</span> does not have the Commonwealth Army ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: military_policy
 

@@ -1,4 +1,4 @@
-title: [+ year +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
+title: [+ year_display +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
 subtitle: [+ unionist_leader +] moves to merge with the anti-Mallin Right...
 view-if: stegerwald_skibidi_time == time and (unionist_leader == "Sedgewick" or unionist_leader == "Aldermoor") and traditionalist_ideology == "Radical" and not kvp_cnblp_sister and not dkp_merger_waiting
 new-page: true
@@ -6,7 +6,7 @@ max-visits: 1
 tags: event
 face-image: img/zentrum_3.jpg
 
-= [+ year +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
+= [+ year_display +] [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
 
 With Mallin’s hardliners tightening their grip over the <span style="color: #3E88B3;">**Traditionalists**</span>, any prospect of a merger with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has evaporated. But a new path to expansion has emerged. The party leadership now turns its attention to the fragmented remains of the anti-Mallin right—figures like Westmore and his <span style="color: #0087DC;">**KVP**</span>—as potential candidates for absorption.
 

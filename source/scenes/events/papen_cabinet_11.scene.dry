@@ -70,7 +70,7 @@ if (Q.heartland_leader == "Goodryke") Q.heartland_leader = "Staal"
 Q.staal_time = 0
 
 Q.pro_republic += 5;
-Q.reichswehr_militancy += 0.5;
+Q.army_militancy += 0.5;
 
 Q.papen_goal = "Cry over spilt milk";
 Q.staal_goal = "Scavenge for parliamentary backing";

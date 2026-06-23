@@ -1,0 +1,33 @@
+title: The Fall of Ivion
+subtitle: The Empire seizes the isle; the old order stirs...
+new-page: true
+on-arrival: ivion_seen = 1; army_loyalty -= 0.05; sa_strength += 10; royalist_funds += 3; royalist_urgency += 2; imperial_fear += 3; faithful_royalist += 4; faithful_traditionalist += 3; faithful_marcher -= 3;
+tags: event
+view-if: paralysis_seen = 1 and time >= crisis_start_time + 2
+max-visits: 1
+priority: 1
+
+= The Fall of Ivion
+
+While the Commonwealth turned inward upon its ruin, the Empress's forces moved. The garrison on the Isle of Ivion — that long-contested rock off the northern frontier — has been overrun, its banner struck and the eagle of New Axton raised in its place. The Empire calls it a restoration of order on its own marches. Everyone understands what it truly is: a test, and a promise.
+
+The shock runs through the Commonwealth like cold water. In the barracks the General Staff is divided, and not every officer's heart beats for the republic. The Empire's coin flows quietly to the Royalists, who no longer trouble to hide their joy. And among the Faithful, who had only feared the God of Magic's cult from afar, the fear has become something nearer and colder. The Empire is awake again.
+
+- @rally: Rally the Banners — the streets must not be left undefended.
+- @calm: Call for calm — we must not let the Empire stampede us into panic.
+- @dufour: Appeal to President DuFour to stand firm for the Commonwealth.
+
+@rally
+on-arrival: rb_strength += 50; rb_militancy += 0.05
+
+We call up the Banners and the Iron Banner. If the Empire means to test the Commonwealth's nerve, let it not find the streets of Axton undefended.
+
+@calm
+on-arrival: imperial_fear -= 2; pro_republic += 1
+
+We urge calm and unity across the realms, and refuse to let one distant island stampede the Commonwealth into the arms of those who would welcome the Empress home.
+
+@dufour
+on-arrival: royalist_urgency += 1
+
+We press President DuFour to stand firm for the republic he heads. He hears us — but his gaze, of late, seems to drift ever northward, toward the order he knew in his youth.

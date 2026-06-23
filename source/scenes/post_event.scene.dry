@@ -154,8 +154,8 @@ for (var c of Q.classes) {
 if (Q.pro_republic < 0) {
     Q.pro_republic = 0;
 }
-if (Q.reichswehr_strength < 0) {
-    Q.reichswehr_strength = 0;
+if (Q.army_strength < 0) {
+    Q.army_strength = 0;
 }
 if (Q.pro_republic >= 100) {
     Q.pro_republic = 99;
@@ -293,22 +293,22 @@ Q.rb_force = Q.rb_strength*Q.rb_militancy;
 Q.rfb_force = Q.rfb_strength*Q.rfb_militancy;
 Q.heartland_force = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 if (Q.heartland_leader == "Crowde" || Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodryke") Q.heartland_force = Q.heartland_police_strength*Q.heartland_police_militancy*(1 - Q.heartland_police_loyalty);
-Q.reichswehr_force = Q.reichswehr_strength*Q.reichswehr_militancy*(1 - Q.reichswehr_loyalty);
+Q.army_force = Q.army_strength*Q.army_militancy*(1 - Q.army_loyalty);
 Q.total_force = (Q.sa_force+Q.sh_force+Q.rb_force+Q.rfb_force);
 var total_force = (Q.sa_force+Q.sh_force+Q.rb_force+Q.rfb_force+Q.heartland_force);
-if (Q.reichswehr_street) total_force += Q.reichswehr_force;
+if (Q.army_street) total_force += Q.army_force;
 
 Q.sa_force = Math.round((Q.sa_force/total_force)*100);
 Q.sh_force = Math.round((Q.sh_force/total_force)*100);
 Q.rb_force = Math.round((Q.rb_force/total_force)*100);
 Q.rfb_force = Math.round((Q.rfb_force/total_force)*100);
-if (Q.reichswehr_street) Q.reichswehr_force = Math.round((Q.reichswehr_force/total_force)*100);
+if (Q.army_street) Q.army_force = Math.round((Q.army_force/total_force)*100);
 Q.heartland_force = Math.round((Q.heartland_force/total_force)*100);
 
 Q.far_right_force = Q.sh_force + Q.sa_force;
 Q.democracy_force = Q.rb_force + Q.heartland_force;
 Q.state_force = 0;
-if (Q.reichswehr_street) Q.state_force += Q.reichswehr_force;
+if (Q.army_street) Q.state_force += Q.army_force;
 if (Q.heartland_leader == "Crowde" || Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodryke") {
     Q.state_force += Q.heartland_force;
     Q.democracy_force -= Q.heartland_force;
@@ -613,7 +613,7 @@ if (Q.gnu_formed) {
     if (Q.gold_gnu) Q.republicans_staal += 1;
     if (Q.lvp_gnu) Q.republicans_staal += 2;
     if (Q.nvf_gnu) Q.republicans_staal -= 3;
-    if (Q.reichswehr_strength > 100) Q.republicans_staal -= Q.reichswehr_strength / 100;
+    if (Q.army_strength > 100) Q.republicans_staal -= Q.army_strength / 100;
     if (Q.gnu_total_votes >= Q.pro_republic) Q.republicans_staal += 1;
     if (Q.gnu_total_votes >= Q.pro_republic + 5) Q.republicans_staal += 1;
     if (Q.gnu_total_votes >= Q.pro_republic + 10) Q.republicans_staal += 1;
@@ -644,7 +644,7 @@ if (Q.gnu_formed) {
     if (Q.kvp_gnu) Q.nationalists_staal += 1;
     if (Q.traditionalist_gnu) Q.nationalists_staal += 3;
     if (Q.nvf_gnu) Q.nationalists_staal -= 2;
-    if (Q.reichswehr_strength > 100) Q.nationalists_staal += Q.reichswehr_strength / 50;
+    if (Q.army_strength > 100) Q.nationalists_staal += Q.army_strength / 50;
     if (Q.gold_gnu) Q.nationalists_staal += 1;
     if (Q.dstp_maintained) Q.nationalists_staal += 1;
     if (Q.traditionalist_ideology == "Moderate") Q.nationalists_staal += 2;
@@ -995,6 +995,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
     if (Q.month >= 13) {
         Q.month = 1;
         Q.year += 1;
+        Q.year_display = Q.year + 2365;
         Q.resources += Q.dues;
         if (Q.dissent_percent < 5) {
             Q.resources += 1;
@@ -3870,7 +3871,7 @@ if (Q.marcher_government_burden_seen == 1 && Q.marcher_in_government) {
     if (Q.agriculture_goal_marcher >= 1) {
         Q.goal_marcher_total += 1
     }
-    if (Q.reichswehr_goal_marcher >= 1) {
+    if (Q.army_goal_marcher >= 1) {
         Q.goal_marcher_total += 1
     }
 }
@@ -3929,7 +3930,7 @@ if (Q.marcher_government_burden_timer == 0 && Q.marcher_government_burden_seen =
     if (Q.agriculture_goal_marcher >= 1) {
         Q.goal_marcher_total += 1
     }
-    if (Q.reichswehr_goal_marcher >= 1) {
+    if (Q.army_goal_marcher >= 1) {
         Q.goal_marcher_total += 1
     }
     if (Q.goal_marcher_cancel >= 1 || Q.goal_marcher_total < 2) {
@@ -3949,7 +3950,7 @@ if (Q.marcher_government_burden_timer == 0 && Q.marcher_government_burden_seen =
     Q.education_goal_marcher = 0;
     Q.economic_plan_goal_marcher = 0;
     Q.agriculture_goal_marcher = 0;
-    Q.reichswehr_goal_marcher = 0;
+    Q.army_goal_marcher = 0;
     Q.goal_marcher_cancel = 0;
     if (Q.marcher_government_burden_peoples == 0) {
         Q.marcher_government_burden_timer = 6;
@@ -4010,7 +4011,7 @@ if (!Q.marcher_in_government) {
     Q.education_goal_marcher = 0;
     Q.economic_plan_goal_marcher = 0;
     Q.agriculture_goal_marcher = 0;
-    Q.reichswehr_goal_marcher = 0;
+    Q.army_goal_marcher = 0;
     Q.goal_marcher_total = 0;
     Q.goal_marcher_cancel = 0;
 
@@ -4158,23 +4159,23 @@ if (Q.marcher_in_government_time >= 6) {
     } else if (Q.traditionalist_ideology == "Radical") {
         Q.dufour_angry -= 1;
     }
-    if (Q.reichswehr_loyalty <= 0.1) {
+    if (Q.army_loyalty <= 0.1) {
         Q.dufour_angry += 4;
-    } else if (Q.reichswehr_loyalty <= 0.15) {
+    } else if (Q.army_loyalty <= 0.15) {
         Q.dufour_angry += 2;
-    } else if (Q.reichswehr_loyalty <= 0.2) {
+    } else if (Q.army_loyalty <= 0.2) {
         Q.dufour_angry += 1;
-    } else if (Q.reichswehr_loyalty <= 0.25) {
+    } else if (Q.army_loyalty <= 0.25) {
 
-    } else if (Q.reichswehr_loyalty <= 0.3) {
+    } else if (Q.army_loyalty <= 0.3) {
         Q.dufour_angry -= 2;
-    } else if (Q.reichswehr_loyalty <= 0.5) {
-        Q.dufour_angry -= (Q.reichswehr_loyalty * 5)
-    } else if (Q.reichswehr_loyalty > 0.5) {
-        Q.dufour_angry -= (Q.reichswehr_loyalty * 10);
+    } else if (Q.army_loyalty <= 0.5) {
+        Q.dufour_angry -= (Q.army_loyalty * 5)
+    } else if (Q.army_loyalty > 0.5) {
+        Q.dufour_angry -= (Q.army_loyalty * 10);
     }
-    if (Q.reichswehr_strength > 100) {
-        Q.dufour_angry -= (Q.reichswehr_strength / 50)
+    if (Q.army_strength > 100) {
+        Q.dufour_angry -= (Q.army_strength / 50)
     }
     if (Q.rb_militancy >= 0.1 || Q.sa_force >= 40 || Q.rfb_force >= 40) {
         Q.dufour_angry += 1;
@@ -4297,7 +4298,7 @@ if (Q.bruning_time > 1) {
     } else if (Q.pro_republic < 50) {
         Q.dufour_angry_bruning += ((100 - Q.pro_republic) / 25);
     }
-    if (Q.reichswehr_loyalty < 0.2) Q.dufour_angry_bruning += (1 - Q.reichswehr_loyalty)*5
+    if (Q.army_loyalty < 0.2) Q.dufour_angry_bruning += (1 - Q.army_loyalty)*5
     if (Q.royalist_votes + Q.dnf_votes >= 22 && Q.traditionalist_ideology == "Moderate") {
         Q.dufour_angry_bruning += (Q.royalist_votes + Q.dnf_votes) / 10;
     } else if (Q.royalist_votes + Q.dnf_votes < 22 && Q.traditionalist_ideology == "Moderate") {
@@ -5195,7 +5196,7 @@ if (typeof window !== "undefined" && window.generateBar) {
 !}
 go-to: bg_change if rubicon; events_choice if has_event = 1 and not rubicon; main if has_event = 0 and difficulty >= 0 and not rubicon; main.main_easy if has_event = 0 and difficulty < 0 and not rubicon
 
-= [+ month : month +] [+ year +][? if rubicon:, Week [+ week +]?]
+= [+ month : month +] [+ year_display +][? if rubicon:, Week [+ week +]?]
 
 @bg_change
 set-bg: img/street.jpg

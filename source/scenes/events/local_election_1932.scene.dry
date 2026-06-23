@@ -18,7 +18,7 @@ on-display: {!
 !}
 max-visits: 1
 
-= Local Elections, [+ month : month +] [+ year +]
+= Local Elections, [+ month : month +] [+ year_display +]
 
 The majority of state Assembly elections are to be held now.
 

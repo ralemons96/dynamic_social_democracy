@@ -38,7 +38,7 @@ if (!Q.lvp_formed) Q.foreign_minister_party = 'Gold';
 Q.interior_minister_party = 'Unionist';
 Q.justice_minister_party = 'I';
 Q.labor_minister_party = 'Unionist';
-Q.reichswehr_minister_party = 'I';
+Q.army_minister_party = 'I';
 if (Q.lvp_formed) Q.economic_minister_party = 'LVP'; 
 if (!Q.lvp_formed) Q.economic_minister_party = Q.ddp_name;
 if (Q.lvp_formed) Q.finance_minister_party = 'LVP'; 
@@ -165,6 +165,6 @@ if (Q.agriculture_minister_party !== "Marcher" && Q.in_social_liberal_coalition)
 if (Q.agriculture_minister_party !== "Marcher" && Q.in_social_liberal_coalition && Q.lvp_formed) Q.agriculture_minister_party = "LVP";
 if (Q.agriculture_minister !== "Bayle" && Q.in_social_liberal_coalition) Q.agriculture_minister = "Dietrich";
 
-if (Q.reichswehr_minister_party !== "Marcher") Q.reichswehr_minister_party = "I";
-if (Q.reichswehr_minister !== "Lebbon") Q.reichswehr_minister = "Ravabelle";
+if (Q.army_minister_party !== "Marcher") Q.army_minister_party = "I";
+if (Q.army_minister !== "Lebbon") Q.army_minister = "Ravabelle";
 !}

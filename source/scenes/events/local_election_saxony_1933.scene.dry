@@ -16,7 +16,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Elections, [+ month : month +] [+ year +]
+= Elections, [+ month : month +] [+ year_display +]
 
 
 The Dornish state elections are to be held now.
@@ -977,7 +977,7 @@ President [+ president +] is considering the use of a <i>Commonwealth interventi
 @do
 title: The power of <i>Commonwealth intervention</i> exists for a reason, and times like this call for it.
 subtitle: President [+ president +] will remove Crowde from his post, by force if necessary.
-on-arrival: pres_strength = rb_strength*rb_militancy*(1-dissent/2); enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; pres_strength += reichswehr_strength*reichswehr_loyalty*reichswehr_militancy; pres_strength += rfb_strength*rfb_militancy if (president == "Munzer" or president == "Halsmark"); pres_strength += rfb_strength*rfb_militancy*(collectivist_relation/100) if (collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland) and president != "Munzer" and president != "Halsmark"
+on-arrival: pres_strength = rb_strength*rb_militancy*(1-dissent/2); enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; pres_strength += army_strength*army_loyalty*army_militancy; pres_strength += rfb_strength*rfb_militancy if (president == "Munzer" or president == "Halsmark"); pres_strength += rfb_strength*rfb_militancy*(collectivist_relation/100) if (collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland) and president != "Munzer" and president != "Halsmark"
 go-to: pres_victory if pres_strength >= enemy_strength; war if pres_strength < enemy_strength
 
 @pres_victory

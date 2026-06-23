@@ -213,19 +213,19 @@ Foreign:
 [? if foreign_minister_party == "I": [+ foreign_minister_party +] ?]
 
 Commonwealth Army: 
-[? if reichswehr_minister_party == "Marcher": <span style="color: #c00000;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Collectivist": <span style="color: #700000;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == ddp_name: <span style="color: #D3C24D;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "LVP": <span style="color: #FFCC00;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Unionist": <span style="color: #000000;">[+ unionist_party_name +]</span> ?]
-[? if reichswehr_minister_party == "Arcanists": <span style="color: #A2D8E0;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Gold": <span style="color: #C0A054;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Others": <span style="color: #c00000;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "KVP": <span style="color: #0087DC;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Traditionalist": <span style="color: #3E88B3;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "DNF": <span style="color: #003755;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "Royalist": <span style="color: #7A3C00;">[+ reichswehr_minister_party +]</span> ?]
-[? if reichswehr_minister_party == "I": [+ reichswehr_minister_party +] ?]
+[? if army_minister_party == "Marcher": <span style="color: #c00000;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Collectivist": <span style="color: #700000;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == ddp_name: <span style="color: #D3C24D;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "LVP": <span style="color: #FFCC00;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Unionist": <span style="color: #000000;">[+ unionist_party_name +]</span> ?]
+[? if army_minister_party == "Arcanists": <span style="color: #A2D8E0;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Gold": <span style="color: #C0A054;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Others": <span style="color: #c00000;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "KVP": <span style="color: #0087DC;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Traditionalist": <span style="color: #3E88B3;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "DNF": <span style="color: #003755;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "Royalist": <span style="color: #7A3C00;">[+ army_minister_party +]</span> ?]
+[? if army_minister_party == "I": [+ army_minister_party +] ?]
 
 Agriculture: 
 [? if agriculture_minister_party == "Marcher": <span style="color: #c00000;">[+ agriculture_minister_party +]</span> ?]
@@ -563,9 +563,9 @@ Militarization: [+ sa_militancy : militancy +]
 
 **Official military/paramilitary groups:**
 
-**Commonwealth Army**: [+ reichswehr_strength +] thousand troops. This is the Commonwealth's military.
+**Commonwealth Army**: [+ army_strength +] thousand troops. This is the Commonwealth's military.
 
-Loyalty: [+ reichswehr_loyalty : loyalty +]
+Loyalty: [+ army_loyalty : loyalty +]
 
 **Heartland police**: [+ heartland_police_strength +] thousand members.
 

@@ -1,5 +1,5 @@
 title: The <span style="color: #700000;">**Collectivists**</span> checks upon our progress in accomplishing the coalition's goals...
-view-if: (in_popular_front or in_left_front) and (collectivist_ultimatum_timer = 0 or (welfare_goal_completed and agriculture_goal_completed and economy_goal_completed and finance_goal_completed and labor_goal_completed and reichswehr_goal_completed)) and collectivist_goals_seen = 1 and collectivist_ultimatum_seen = 0 and marcher_in_government
+view-if: (in_popular_front or in_left_front) and (collectivist_ultimatum_timer = 0 or (welfare_goal_completed and agriculture_goal_completed and economy_goal_completed and finance_goal_completed and labor_goal_completed and army_goal_completed)) and collectivist_goals_seen = 1 and collectivist_ultimatum_seen = 0 and marcher_in_government
 on-arrival: {!
 Q.collectivist_ultimatum_seen = 1;
 Q.collectivist_goals_completed = 1;
@@ -31,7 +31,7 @@ if (Q.foreign_goal && !Q.foreign_goal_completed) {
 if (Q.interior_goal && !Q.interior_goal_completed) {
     Q.collectivist_goals_completed = 0;
 }
-if (Q.reichswehr_goal && !Q.reichswehr_goal_completed) {
+if (Q.army_goal && !Q.army_goal_completed) {
     Q.collectivist_goals_completed = 0;
     Q.collectivist_score -= 1;
 }
@@ -56,7 +56,7 @@ At the start of this government, the <span style="color: #700000;">**Collectivis
 
 [? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Soviet Union</span>. - [? if foreign_goal_completed : success ?][? if not foreign_goal_completed: failed ?] ?]
 
-[? if reichswehr_goal = 1 : - Reduce funding for the Commonwealth Army. - [? if reichswehr_goal_completed : success ?][? if not reichswehr_goal_completed: failed ?] ?]
+[? if army_goal = 1 : - Reduce funding for the Commonwealth Army. - [? if army_goal_completed : success ?][? if not army_goal_completed: failed ?] ?]
 
 @goals_failed
 on-arrival: collectivist_relation -= 10; commons_marcher -= 8; disfavored_marcher -= 8;
