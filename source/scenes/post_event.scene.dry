@@ -607,7 +607,7 @@ if (Q.gnu_formed) {
     if (Q.unionist_in_gov) Q.republicans_staal += 2;
     if (Q.staal_labor) Q.republicans_staal += 1;
     if (Q.unionist_leader == "Sedgewick") Q.republicans_staal += 1;
-    if (Q.unionist_leader == "Bracht" || Q.unionist_gnu) Q.republicans_staal += 3;
+    if (Q.unionist_leader == "Hughes" || Q.unionist_gnu) Q.republicans_staal += 3;
     if (Q.unionist_gnu) Q.republicans_staal += 1;
     if (Q.dstp_gnu) Q.republicans_staal += 1;
     if (Q.gold_gnu) Q.republicans_staal += 1;
@@ -738,7 +738,7 @@ if (Q.rubicon && Q.month_actions >= 1 && Q.month_actions != Q.month_actions_chec
             if (Q.unionist_in_gov) Q.unionist_in_gov_time += 1;
             if (Q.dsu_in_gov) Q.dsu_in_gov_time += 1;
         }
-        if (Q.unionist_leader == "Bracht") Q.bracht_time += 1;
+        if (Q.unionist_leader == "Hughes") Q.bracht_time += 1;
         if (Q.reichstag_joever) Q.reichstag_joever_time += 1;
     } else if (Q.chancellor == "Bredon") {
         Q.bredow_time += 1;
@@ -1842,7 +1842,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
                 Q.inflation += 1/12;
             }
         }
-        if (Q.unionist_leader == "Kaas") {
+        if (Q.unionist_leader == "Renck") {
             Q.faithful_unionist += 3/12;
         }
         if (Q.gold_leader == "Curtius" && Q.bruning_time) {
@@ -1858,8 +1858,8 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         if (Q.bruning_time) {
             Q.guild_ddp -= 3/12;
             Q.burgher_ddp -= 3/12;
-            if (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") Q.guild_gold -= 1/12;
-            if (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") Q.burgher_gold -= 1/12;
+            if (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") Q.guild_gold -= 1/12;
+            if (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") Q.burgher_gold -= 1/12;
             Q.guild_gold -= 2/12;
             Q.burgher_gold -= 2/12;
             if (Q.lvp_leader == "Dingeldey") Q.burgher_lvp -= 3/12;
@@ -2011,7 +2011,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.disfavored += 3/12; 
             Q.inflation -= 2/12;
             Q.economic_growth -= 1/12;
-            if (Q.unionist_leader == "Kaas") {
+            if (Q.unionist_leader == "Renck") {
                 Q.faithful_unionist += 5/12;
             }
             if (Q.dnf_formed) {
@@ -2924,7 +2924,7 @@ if (Q.year == 1928 && Q.month == 9 && Q.marcher_in_government == 0) {
     Q.panzerkreuser_right_seen = 1
 }
 
-if (Q.year >= 1930 && Q.chancellor == "Askew" && !Q.marcher_in_government && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && Q.liberal_cooperation < 5) {
+if (Q.year >= 1930 && Q.chancellor == "Askew" && !Q.marcher_in_government && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && Q.liberal_cooperation < 5) {
     Q.gold_right += 0.5;
     Q.gold_relation -= 1;
 }
@@ -2933,7 +2933,7 @@ if (Q.year >= 1930 && Q.gold_relation < 30) {
     Q.gold_right += 1;
 }
 
-if (Q.year >= 1930 && Q.in_grand_coalition && Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey" && Q.gold_ideology != "Right") {
+if (Q.year >= 1930 && Q.in_grand_coalition && Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey" && Q.gold_ideology != "Right") {
     Q.gold_right += 0.5;
     if (Q.gold_relation >= 35) Q.gold_relation -= 1;
 }
@@ -3121,26 +3121,26 @@ if (Q.traditionalist_split_2_timer == 2 && !Q.kvp_cnblp_sister && Q.bourgeois_co
     Q.bourgeois_cooperation += 1;
 }
 
-if ((((Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r >= 3 && !Q.lvp_formed && Q.flavour_10_effect_trigger == 1 && Q.flavour_10_trigger_time == Q.time - 1) || (Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_11_effect_trigger == 1 && Q.flavour_11_trigger_time == Q.time - 1)) && (Q.gold_leader != "Scholz" || !Q.dstp_formed)) && Q.gold_exist) {
+if ((((Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r >= 3 && !Q.lvp_formed && Q.flavour_10_effect_trigger == 1 && Q.flavour_10_trigger_time == Q.time - 1) || (Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_11_effect_trigger == 1 && Q.flavour_11_trigger_time == Q.time - 1)) && (Q.gold_leader != "Eikenvorst" || !Q.dstp_formed)) && Q.gold_exist) {
     Q.liberal_parliament = 1;
     Q.liberal_cooperation += 3;
     Q.gold_left += 5;
     Q.ddp_right += 3;
     Q.ddp_factionless = 0;
-} else if (((Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_11_effect_trigger == 1 && Q.flavour_11_trigger_time == Q.time - 1) && (Q.gold_leader == "Scholz" && Q.dstp_formed)) && Q.gold_exist) {
+} else if (((Q.ddp_factionless && !Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_11_effect_trigger == 1 && Q.flavour_11_trigger_time == Q.time - 1) && (Q.gold_leader == "Eikenvorst" && Q.dstp_formed)) && Q.gold_exist) {
     Q.burgher_ddp += 2;
     Q.guild_ddp += 2;
     Q.ddp_right += 3;
     Q.ddp_relation -= 5;
     Q.ddp_factionless = 0;
-} else if ((((Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r >= 3 && !Q.lvp_formed && Q.flavour_32_effect_trigger == 1) || (Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_33_effect_trigger == 1 && Q.flavour_33_trigger_time == Q.time - 1)) && (Q.gold_leader != "Scholz" || !Q.dstp_formed)) && Q.gold_exist) {
+} else if ((((Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r >= 3 && !Q.lvp_formed && Q.flavour_32_effect_trigger == 1) || (Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_33_effect_trigger == 1 && Q.flavour_33_trigger_time == Q.time - 1)) && (Q.gold_leader != "Eikenvorst" || !Q.dstp_formed)) && Q.gold_exist) {
     Q.bourgeois_parliament_ddp = 1;
     Q.liberal_cooperation += 2;
     Q.bourgeois_cooperation += 1;
     Q.gold_left += 3;
     Q.ddp_right += 3;
     Q.ddp_factionless = 0;
-} else if (((Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_33_effect_trigger == 1 && Q.flavour_33_trigger_time == Q.time - 1) && (Q.gold_leader == "Scholz" && Q.dstp_formed)) && Q.gold_exist) {
+} else if (((Q.ddp_factionless && Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp && !Q.liberal_parliament && Q.ddp_r < 3 && !Q.lvp_formed && Q.flavour_33_effect_trigger == 1 && Q.flavour_33_trigger_time == Q.time - 1) && (Q.gold_leader == "Eikenvorst" && Q.dstp_formed)) && Q.gold_exist) {
     Q.burgher_ddp -= 2;
     Q.guild_ddp -= 2;
     Q.faithful_ddp += 2;
@@ -3353,21 +3353,21 @@ if (Q.gold_leader == "Dingeldey" && !Q.lvp_formed && Q.traditionalist_ideology =
 }
 
 // historical route, ddp is right-wing and doesn't care about socialist cooperation as much, bourgeois parliament with ddp
-if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && Q.ddp_ideology == "Right" && Q.ddp_relation < 45 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
+if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && Q.ddp_ideology == "Right" && Q.ddp_relation < 45 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger = 1;
 }
 
 // historical route, trigger_1 = bourgeois parliament without ddp || otherwise historical failure due to skeptics in the cnblp and wp
-if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation >= 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
+if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation >= 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger_1 = 1;
-} else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation < 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
+} else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation < 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_negotiations_fail = 1;
 }
 
 // a-historical route, dvp isn't scholz and somewhat cares about socialist cooperation, higher lib cooperation leads to liberal parliamentary group, potentially forming lvp || otherwise bourgeois parliament with ddp
-if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
+if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger_2 = 1;
-} else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") && Q.bourgeois_cooperation >= Q.liberal_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
+} else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.bourgeois_cooperation >= Q.liberal_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger_3 = 1;
 }
 
@@ -3379,7 +3379,7 @@ if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiatio
     Q.bourgeois_negotiations_fail_elections_dstp = 1;
 } 
 
-if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation >= 12 && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
+if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation >= 12 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
     Q.bourgeois_merger_trigger_scholz = 1;
     Q.bourgeois_parliament = 1;
     Q.bourgeois_parliament_ddp = 1;
@@ -3394,9 +3394,9 @@ if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiatio
     Q.gold_right += 5;
     Q.lvp_relation -= 3;
     Q.lvp_right += 2;
-} else if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation < 12 && (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
+} else if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation < 12 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
     Q.bourgeois_negotiations_fail_elections = 1;
-} else if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation >= 8 && (Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
+} else if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation >= 8 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
     Q.bourgeois_merger_trigger_moderate = 1;
     Q.bourgeois_parliament = 1;
     Q.bourgeois_parliament_ddp = 1;
@@ -3411,7 +3411,7 @@ if (Q.bourgeois_negotiations_elections_1930_timer == 1 && Q.bourgeois_negotiatio
     Q.gold_right += 5;
     Q.lvp_relation -= 3;
     Q.lvp_right += 2;
-} else if (Q.bourgeois_negotiations_elections_1930_timer == 1  && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation < 8 && (Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
+} else if (Q.bourgeois_negotiations_elections_1930_timer == 1  && Q.bourgeois_negotiations_1930_done && !Q.dstp_formed && Q.combined_cooperation < 8 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && !Q.liberal_parliament && !Q.lvp_formed) {
     Q.bourgeois_negotiations_fail_elections = 1;
 }
 
@@ -3638,7 +3638,7 @@ if (Q.bourgeois_negotiations_1930_timer == 4 && Q.lvp_formed && Q.bourgeois_nego
 }
 
 // a-historical route, liberal parliament is formed instead of a bourgeois parliament, for flavour text only
-if (Q.bourgeois_negotiations_1930_timer == 4 && !Q.bourgeois_negotiations_election_soon && (Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.lvp_formed) {
+if (Q.bourgeois_negotiations_1930_timer == 4 && !Q.bourgeois_negotiations_election_soon && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.lvp_formed) {
     Q.bourgeois_negotiations_fail_liberal = 1;
 }
 
@@ -3704,7 +3704,7 @@ if (Q.kvp_cnblp_sister) {
     Q.landed_royalist -= 3/12;
 }
 
-if (Q.year == 1930 && Q.month == 1 && Q.traditionalist_historical_1929 && (Q.peoples_party || Q.weimar_coalition >= 50 || Q.stegerwald_path || (Q.unionist_leader == "Joos" && Q.gold_reform))) {
+if (Q.year == 1930 && Q.month == 1 && Q.traditionalist_historical_1929 && (Q.peoples_party || Q.weimar_coalition >= 50 || Q.stegerwald_path || (Q.unionist_leader == "Hawkins" && Q.gold_reform))) {
     Q.kvp_formed = 1;
     Q.staal_kvp = 1;
     Q.parties.push('kvp');
@@ -4643,7 +4643,7 @@ if (Q.ddp_ideology == "Right" && Q.ddp_leader == "Dietrich" && !Q.dstp_formed &&
     Q.industrial_ddp_backing = 0;
 }
 
-if (((Q.gold_ideology == "Right" || (Q.gold_leader == "Dingeldey" || Q.gold_leader == "Scholz" || Q.gold_leader == "Lytton" || (Q.gold_leader == "Stratton" && !Q.gold_reform))) || (Q.gold_ideology == "Moderate" && Q.gold_relation < 30)) && ((Q.bourgeois_parliament || Q.liberal_parliament) || Q.year < 1930) && !Q.lvp_formed) {
+if (((Q.gold_ideology == "Right" || (Q.gold_leader == "Dingeldey" || Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Lytton" || (Q.gold_leader == "Stratton" && !Q.gold_reform))) || (Q.gold_ideology == "Moderate" && Q.gold_relation < 30)) && ((Q.bourgeois_parliament || Q.liberal_parliament) || Q.year < 1930) && !Q.lvp_formed) {
     Q.industrial_gold_backing = 3;
 } else if (Q.gold_leader != "Glatzel" && Q.gold_leader != "Thiel" && Q.gold_votes >= 3 && !Q.lvp_formed) {
     Q.industrial_gold_backing = 2;
@@ -5091,7 +5091,7 @@ if (Q.collectivist_relation >= 30 && Q.sapd_formed == 1) {
 if (Q.in_social_catholic_coalition_heartland || Q.in_social_liberal_coalition_heartland || Q.in_weimar_coalition_heartland == 1 || Q.in_grand_coalition_heartland == 1 || Q.in_popular_front_heartland == 1 || Q.in_left_front_heartland == 1 || Q.in_marcher_majority_heartland == 1 || Q.in_minority_weimar_coalition_heartland == 1 || Q.in_minority_grand_coalition_heartland == 1) {
     Q.marcher_heartland = 1;
     Q.right_heartland = 0;
-} else if (Q.in_right_coalition_heartland == 1 || Q.in_center_right_coalition_heartland == 1 || Q.heartland_leader == "Goodryke" || Q.heartland_leader == "Goring" || Q.in_far_right_coalition_heartland == 1) {
+} else if (Q.in_right_coalition_heartland == 1 || Q.in_center_right_coalition_heartland == 1 || Q.heartland_leader == "Goodryke" || Q.heartland_leader == "Gorrick" || Q.in_far_right_coalition_heartland == 1) {
     Q.right_heartland = 1;
     Q.marcher_heartland = 0;
 }

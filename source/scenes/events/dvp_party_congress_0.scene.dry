@@ -67,6 +67,6 @@ We have noticed a small improvement in relations with the <span style="color: #C
 on-arrival: gold_right += 5; gold_relation -= 5; coalition_dissent += 1 if in_grand_coalition; guild_traditionalist += 2; burgher_traditionalist += 2; gold_reform = 0; pro_republic -= 3; ddp_right += 1; ddp_cohesion -= 1
 face-image: img/portraits/ernst_scholz.jpg
 
-Stratton has faced a resounding defeat at the hands of the right-wing industrial interests inside the <span style="color: #C0A054;">**Golds**</span>. They have capitalized on this defeat by restricting the powers of the party chairmanship under Stratton towards the more conservative Assembly delegation led by Ernst Scholz, the lead figure on the right-wing. 
+Stratton has faced a resounding defeat at the hands of the right-wing industrial interests inside the <span style="color: #C0A054;">**Golds**</span>. They have capitalized on this defeat by restricting the powers of the party chairmanship under Stratton towards the more conservative Assembly delegation led by Reginald Eikenvorst, the lead figure on the right-wing. 
 
 We have noticed an deterioration in relations with the <span style="color: #C0A054;">**Golds**</span>[? if in_grand_coalition:, and increased tension in the coalition?]. It is also a major setback for the efforts to create a united bourgeois party.

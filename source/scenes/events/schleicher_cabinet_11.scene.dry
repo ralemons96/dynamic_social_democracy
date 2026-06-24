@@ -1,6 +1,6 @@
 title: The <i>Reichskonkordat</i> Is Signed!
 subtitle: Catholic rights across the Commonwealth are now formally guaranteed.
-view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Kaas" and reichskonkordat = 0 
+view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Renck" and reichskonkordat = 0 
 max-visits: 1
 new-page: true
 tags: event
@@ -19,7 +19,7 @@ on-display: {!
 
 = Reichskonkordat Signing
 
-During weeks of intense negotiations in Rome headed by Ludwig Kaas, the <i>Reichskonkordat</i> has officially been signed between the Commonwealth and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
+During weeks of intense negotiations in Rome headed by Aurelian Renck, the <i>Reichskonkordat</i> has officially been signed between the Commonwealth and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
 
 - @reichskonkordat
 
@@ -71,28 +71,28 @@ if (Q.unionist_relation < 10) {
 Q.stegerwald_points += Q.commons_unionist_normalized / 2;
 Q.bracht_points += Q.faithful_unionist_normalized / 10;
 !}
-face-image: img/portraits/KaasLudwig.jpg
+face-image: img/portraits/RenckLudwig.jpg
 
 = Unionist Party Conference
 
-Having achieved his lifelong goal, Kaas sees little reason to remain as leader of the <span style="color: #000000;">Unionist Party</span>—a position he had long described as a burden and expressed displeasure with. As a result, a new leadership race is set to take place within the party, with Staal able to influence the outcome through his connections with Kaas and the <span style="color: #000000;">Christian</span> Trade Unions.
+Having achieved his lifelong goal, Renck sees little reason to remain as leader of the <span style="color: #000000;">Unionist Party</span>—a position he had long described as a burden and expressed displeasure with. As a result, a new leadership race is set to take place within the party, with Staal able to influence the outcome through his connections with Renck and the <span style="color: #000000;">Christian</span> Trade Unions.
 
 The candidate backed by the <span style="color: #000000;">Christian</span> unions and those advocating for a more interconfessional <span style="color: #000000;">Unionist Party</span> rallies around Sedgewick.
 
-Franz Bracht, Staal's [? if not dsu_in_gov: former ?]Interior Minister[? if heartland_coup_lose:&nbsp;of Heartland and the Commonwealth?], has rejoined the party and is Staal’s preferred candidate. Bracht is a true believer in Staal's vision for a new the Commonwealth—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Unionists</span>'s right wing, though not as far right as Goodryke. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Staal's backing that remains the key to elevating him to leadership.
+Edwin Hughes, Staal's [? if not dsu_in_gov: former ?]Interior Minister[? if heartland_coup_lose:&nbsp;of Heartland and the Commonwealth?], has rejoined the party and is Staal’s preferred candidate. Hughes is a true believer in Staal's vision for a new the Commonwealth—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Unionists</span>'s right wing, though not as far right as Goodryke. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Staal's backing that remains the key to elevating him to leadership.
 
 - @bracht
 - @stegerwald
 
 @bracht
-title: Franz Bracht is installed as the <span style="color: #000000;">Unionist Party</span>'s new chairman.
+title: Edwin Hughes is installed as the <span style="color: #000000;">Unionist Party</span>'s new chairman.
 unavailable-subtitle: The <span style="color: #000000;">Unionist Party</span> is still rooted in <span style="color: #000000;">repub</span><span style="color: #DD0000;">lica</span><span style="color: #FFCC00;">nism</span>.
 choose-if: bracht_points > stegerwald_points
-on-arrival: unionist_leader = "Bracht"; commons_unionist -= 4; disfavored_unionist -= 2; burgher_unionist -= 2; guild_unionist += 4; landed_unionist += 4; unionist_relation -= 15
+on-arrival: unionist_leader = "Hughes"; commons_unionist -= 4; disfavored_unionist -= 2; burgher_unionist -= 2; guild_unionist += 4; landed_unionist += 4; unionist_relation -= 15
 
-Undoubtedly thanks to Staal's meddling, Franz Bracht has been elected chairman of the <span style="color: #000000;">Unionist Party</span>. With Kaas’s endorsement and Staal's ability to "persuade" key party members to switch their votes, Bracht narrowly defeats Sedgewick and his more <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> support base.
+Undoubtedly thanks to Staal's meddling, Edwin Hughes has been elected chairman of the <span style="color: #000000;">Unionist Party</span>. With Renck’s endorsement and Staal's ability to "persuade" key party members to switch their votes, Hughes narrowly defeats Sedgewick and his more <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> support base.
 
-The internal reaction has been surprisingly muted. Perhaps the <span style="color: #000000;">Unionist Party</span>’s gradual shift to the right has made a <span style="color: #808080;">reactionary</span> like Bracht finally acceptable—or perhaps other forces are quietly at work.
+The internal reaction has been surprisingly muted. Perhaps the <span style="color: #000000;">Unionist Party</span>’s gradual shift to the right has made a <span style="color: #808080;">reactionary</span> like Hughes finally acceptable—or perhaps other forces are quietly at work.
 
 @stegerwald
 title: Sedgewick wins the leadership vote!
@@ -100,6 +100,6 @@ unavailable-subtitle: Sedgewick is unavailable.
 choose-if: stegerwald_points >= bracht_points
 on-arrival: unionist_leader = "Sedgewick"; faithful_unionist -= 8; faithful_marcher += 2; faithful_traditionalist += 2; faithful -= 5; commons_unionist += 4; burgher_unionist += 2; guild_unionist += 2; landed_unionist += 2; unionist_relation -= 5
 
-Sedgewick has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Bracht from seizing control of the <span style="color: #000000;">Unionist Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Staal's growing influence.
+Sedgewick has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Hughes from seizing control of the <span style="color: #000000;">Unionist Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Staal's growing influence.
 
 Although Sedgewick favors immediately opening the <span style="color: #000000;">Unionist Party</span> to Protestants, the party simply lacks the funds to establish regional branches across Protestant the Commonwealth, with recent elections having already exhausted its resources.

@@ -240,12 +240,12 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('wir_schaffen_das');
   }
 
-  if (((Q.ddp_leader == "Lemmer" || Q.ddp_leader == "Lüders") && (Q.gold_leader == "Thiel" && Q.gold_exist) && !Q.lvp_formed || ((Q.lvp_leader == "Hewes" || Q.lvp_leader == "Bäumer" || Q.lvp_leader == "Stolper") && Q.lvp_formed)) && Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.collectivist_leader == "Conciliators" && (((Q.unionist_leader == "Emperor" || Q.unionist_leader == "Joos" && !Q.fake_joos) && !Q.concord_formed) || Q.concord_leader == "Sedgewick" && Q.concord_formed)) {
+  if (((Q.ddp_leader == "Lemmer" || Q.ddp_leader == "Lüders") && (Q.gold_leader == "Thiel" && Q.gold_exist) && !Q.lvp_formed || ((Q.lvp_leader == "Hewes" || Q.lvp_leader == "Bäumer" || Q.lvp_leader == "Stolper") && Q.lvp_formed)) && Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.collectivist_leader == "Conciliators" && (((Q.unionist_leader == "Stilling" || Q.unionist_leader == "Hawkins" && !Q.fake_joos) && !Q.concord_formed) || Q.concord_leader == "Sedgewick" && Q.concord_formed)) {
       this.achieve('blockparteien_parade');
   }
 
   if 
-    (((Q.ddp_leader == "Lemmer" || Q.lvp_formed) && (Q.gold_leader == "Thiel" || Q.gold_leader == "Glatzel" || !Q.gold_exist || Q.lvp_formed) && (Q.lvp_leader == "Glatzel" || !Q.lvp_formed)) && ((Q.traditionalist_leader == "Lambach" && Q.unionist_leader == "Emperor") && !Q.concord_formed || (Q.concord_leader == "Lambach" || Q.concord_leader == "Sedgewick") && Q.concord_formed)) {
+    (((Q.ddp_leader == "Lemmer" || Q.lvp_formed) && (Q.gold_leader == "Thiel" || Q.gold_leader == "Glatzel" || !Q.gold_exist || Q.lvp_formed) && (Q.lvp_leader == "Glatzel" || !Q.lvp_formed)) && ((Q.traditionalist_leader == "Lambach" && Q.unionist_leader == "Stilling") && !Q.concord_formed || (Q.concord_leader == "Lambach" || Q.concord_leader == "Sedgewick") && Q.concord_formed)) {
       this.achieve('der_arbeiterstaat');
   }
 
@@ -354,7 +354,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
     this.achieve('die_rote_justiz');
   }
 // Askew der Rotfrontkampfer
-// Merz und Scholz
+// Merz und Eikenvorst
   if (Q.lvp_r == 0 && Q.lvp_formed) {
     this.achieve('lindner_moribund');
   }
@@ -998,7 +998,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Volksfront</div>
-      <div class="achievement_subtitle"> - With Joos or Emperor leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
+      <div class="achievement_subtitle"> - With Hawkins or Stilling leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
       </div>
     </div>
   {!</td>!}
@@ -1749,7 +1749,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Für Gott und Emperor</div>
-      <div class="achievement_subtitle"> - Jakob Emperor leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - Aldwin Stilling leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2199,7 +2199,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Stilling at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2720,12 +2720,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if game_achievement_merz_und_scholz: 
 {!<tr>!}
   {!<td style="width: 60px; height: 78px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Scholz"
+    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Eikenvorst"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Merz und Scholz</div>
+      <div style="font-weight: bold;">Merz und Eikenvorst</div>
       <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}
@@ -2910,7 +2910,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Volksfront</div>
-      <div class="achievement_subtitle"> - With Joos or Emperor leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
+      <div class="achievement_subtitle"> - With Hawkins or Stilling leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
       </div>
     </div>
   {!</td>!}
@@ -3661,7 +3661,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Für Gott und Emperor</div>
-      <div class="achievement_subtitle"> - Jakob Emperor leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - Aldwin Stilling leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4111,7 +4111,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Stilling at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4631,12 +4631,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if achievement_merz_und_scholz: 
 {!<tr>!}
   {!<td style="width: 60px; height: 78px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Scholz"
+    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Eikenvorst"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Merz und Scholz</div>
+      <div style="font-weight: bold;">Merz und Eikenvorst</div>
       <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}
@@ -4821,7 +4821,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Volksfront</div>
-      <div class="achievement_subtitle"> - With Joos or Emperor leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
+      <div class="achievement_subtitle"> - With Hawkins or Stilling leading the <span style="color: #000000;">Unionist Party</span> and the Conciliators leading the <span style="color: #700000; font-weight: bold;">Collectivists</span>, form a government consisting of the <span style="color: #c00000; font-weight: bold;">Marchers</span>, <span style="color: #700000; font-weight: bold;">Collectivists</span>, and <span style="color: #000000; font-weight: bold;">Z</span>.
       </div>
     </div>
   {!</td>!}
@@ -5572,7 +5572,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Für Gott und Emperor</div>
-      <div class="achievement_subtitle"> - Jakob Emperor leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - Aldwin Stilling leads the <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6022,7 +6022,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Stilling at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6541,12 +6541,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if not achievement_merz_und_scholz: 
 {!<tr>!}
   {!<td style="width: 60px; height: 78px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Scholz"
+    <img src="img/achievement/merz_und_scholz.png" alt="Merz und Eikenvorst"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Merz und Scholz</div>
+      <div style="font-weight: bold;">Merz und Eikenvorst</div>
       <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}

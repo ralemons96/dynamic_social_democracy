@@ -1,6 +1,6 @@
 title: The <span style="color: #000000;">Unionist Party</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 subtitle: Staal consolidates further.
-view-if: chancellor = "Staal" and (unionist_in_gov or in_staal_majority_coalition) and unionist_in_gov_time >= 10 and ((unionist_leader == "Bracht" and not unionist_gnu and bracht_time >= 8) or republicans_staal >= 8 and unionist_leader == "Sedgewick" or republicans_staal >= 10) and gnu_formed
+view-if: chancellor = "Staal" and (unionist_in_gov or in_staal_majority_coalition) and unionist_in_gov_time >= 10 and ((unionist_leader == "Hughes" and not unionist_gnu and bracht_time >= 8) or republicans_staal >= 8 and unionist_leader == "Sedgewick" or republicans_staal >= 10) and gnu_formed
 new-page: true
 priority: 1
 tags: event

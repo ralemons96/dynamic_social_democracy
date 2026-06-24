@@ -333,7 +333,7 @@ for (var party of Q.parties) {
     Q[party+'_votes'] = Math.round(Q[party+'_normalized']*1000)/ 10;
 }
 
-if (Q.unionist_leader == "Bracht") {
+if (Q.unionist_leader == "Hughes") {
     Q.old_unionist_leader = Q.unionist_leader;
     Q.unionist_leader = "Sedgewick";
     Q.commons_unionist += 6;

@@ -16,7 +16,7 @@ if (Q.gold_ideology == "Left") {
 if (Q.ddp_ideology == "Right") {
     Q.lvp_formation_points += 2;
 }
-if (Q.gold_leader == "Scholz" || Q.gold_leader == "Dingeldey") {
+if (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") {
     Q.lvp_formation_points -= 2;
 }
 if (Q.ddp_leader == "Lemmer") {

@@ -189,11 +189,11 @@ The Allies are grateful of our exposure and repudiation of militarism. Our partn
 @concordat_negotiate
 title: Negotiate a Concordat between the Commonwealth and the Vatican.
 view-if: (heartland_concordat = 1 or not marcher_heartland) and reichskonkordat = 0 and reichskonkordat_progress < 4
-on-arrival: reichskonkordat_progress += 1; reichskonkordat_progress += 1 if unionist_leader == "Kaas"; reichskonkordat_progress -= 1 if abortion_rights; reichskonkordat_progress -= 1 if family_law; unionist_relation += 3*(1-dissent); gold_relation -= 1; ddp_relation -= 2; ddp_cohesion -= 0.25; lvp_relation -= 1; foreign_goal_marcher_peoples += 1
+on-arrival: reichskonkordat_progress += 1; reichskonkordat_progress += 1 if unionist_leader == "Renck"; reichskonkordat_progress -= 1 if abortion_rights; reichskonkordat_progress -= 1 if family_law; unionist_relation += 3*(1-dissent); gold_relation -= 1; ddp_relation -= 2; ddp_cohesion -= 0.25; lvp_relation -= 1; foreign_goal_marcher_peoples += 1
 
 The Roman Catholic Church is interested in furthering relations with the Commonwealth Republic, seeing us as preferable to the old anti-Catholic policies of the Empire. We are working towards the signing of a Concordat, an agreement between the Vatican and the Republic that formally recognizes the Church's rights and interests in the country. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is especially interested in making this agreement. The liberal parties are against this idea.
 
-[? if family_law : Our liberalized divorce policies make it difficult to build relations with the Vatican. ?] [? if abortion : Our legalization of abortion make it difficult to connect with the Church. ?] [? if unionist_leader == "Kaas" : Kaas from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is able to use his connections to speed up negotiations. ?]
+[? if family_law : Our liberalized divorce policies make it difficult to build relations with the Vatican. ?] [? if abortion : Our legalization of abortion make it difficult to connect with the Church. ?] [? if unionist_leader == "Renck" : Renck from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is able to use his connections to speed up negotiations. ?]
 
 @concordat
 title: We can sign a Concordat with the Vatican!

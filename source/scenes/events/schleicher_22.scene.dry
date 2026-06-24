@@ -347,4 +347,4 @@ if (d3 && window) {
 [? if nvf_exist and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r +]% {!</td></tr>!} ?]
 {!</table>!}
 
-The Interior Ministry returns to Staal loyalist Franz Bracht, while Hjalmar Schacht retains his position as Economic Minister. <span style="color: #7A3C00;">Royalists</span> who have chosen to join the <span style="color: #BFC8CC;">**GNU**</span> are generously rewarded with government positions.
+The Interior Ministry returns to Staal loyalist Edwin Hughes, while Hjalmar Schacht retains his position as Economic Minister. <span style="color: #7A3C00;">Royalists</span> who have chosen to join the <span style="color: #BFC8CC;">**GNU**</span> are generously rewarded with government positions.

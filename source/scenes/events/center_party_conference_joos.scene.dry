@@ -1,6 +1,6 @@
 title: <span style="color: #000000;">Unionist Party</span> Conference
-subtitle: Joseph Joos has been forced to resign...
-view-if: year >= 1930 and unionist_leader = "Joos" and not kaas_explode_seen and ((unionist_relation < 40 or marcher_break_toleration) or ((not reichskonkordat_progress and in_weimar_coalition and foreign_minister_party == "Marcher" and marcher_in_foreign_time >= 24) and (marcher_heartland_time >= 30 and not heartland_concordat_progress and not heartland_concordat)) or secularized_a or abortion_rights or homosexual_rights) 
+subtitle: Cormac Hawkins has been forced to resign...
+view-if: year >= 1930 and unionist_leader = "Hawkins" and not kaas_explode_seen and ((unionist_relation < 40 or marcher_break_toleration) or ((not reichskonkordat_progress and in_weimar_coalition and foreign_minister_party == "Marcher" and marcher_in_foreign_time >= 24) and (marcher_heartland_time >= 30 and not heartland_concordat_progress and not heartland_concordat)) or secularized_a or abortion_rights or homosexual_rights) 
 on-arrival: {!
 Q.unionist_relation -= 10;
 
@@ -12,31 +12,31 @@ if ((Q.marcher_in_foreign_time >= 24 && (!Q.reichskonkordat_progress && Q.in_wei
 max-visits: 1
 tags: event
 new-page: true
-face-image: img/portraits/Joseph_Joos.jpg
+face-image: img/portraits/Joseph_Hawkins.jpg
 
 = <span style="color: #000000;">Unionist Party</span> Conference
 
-[? if marcher_break_toleration: Due to the breaking of our toleration agreement toward the [+ chancellor +] government, the right wing of the <span style="color: #000000;">Unionist Party</span> finally has enough strength and anger toward the <span style="color: #c00000;">**Marchers**</span> to oust the friendly Joos as leader. ?]
+[? if marcher_break_toleration: Due to the breaking of our toleration agreement toward the [+ chancellor +] government, the right wing of the <span style="color: #000000;">Unionist Party</span> finally has enough strength and anger toward the <span style="color: #c00000;">**Marchers**</span> to oust the friendly Hawkins as leader. ?]
 
-[? if unionist_relation < 40 and not marcher_break_toleration: Due to the worsening of our relationship, even with Joos at the helm, the right wing of the <span style="color: #000000;">Unionist Party</span> finally has enough power to oust the friendly Joos as leader. ?]
+[? if unionist_relation < 40 and not marcher_break_toleration: Due to the worsening of our relationship, even with Hawkins at the helm, the right wing of the <span style="color: #000000;">Unionist Party</span> finally has enough power to oust the friendly Hawkins as leader. ?]
 
-[? if concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our lack of progress toward an agreement with the Vatican, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Joos's resignation for his unwillingness to force the <span style="color: #c00000;">**Marchers**</span> to take action. ?]
+[? if concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our lack of progress toward an agreement with the Vatican, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins's resignation for his unwillingness to force the <span style="color: #c00000;">**Marchers**</span> to take action. ?]
 
-[? if secularized_a or abortion_rights or homosexual_rights and not concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our progress on rights for women and <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">ox</span><span style="color: green;">se</span><span style="color: blue;">ua</span><span style="color: purple;">ls</span>, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Joos from the chairmanship, citing his unwillingness to obstruct these changes. ?]
+[? if secularized_a or abortion_rights or homosexual_rights and not concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our progress on rights for women and <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">ox</span><span style="color: green;">se</span><span style="color: blue;">ua</span><span style="color: purple;">ls</span>, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins from the chairmanship, citing his unwillingness to obstruct these changes. ?]
 
-Ludwig Kaas, a devoted Catholic priest is expected to succeed him, but Adam Sedgewick is once again running for the party's leadership. 
+Aurelian Renck, a devoted Catholic priest is expected to succeed him, but Adam Sedgewick is once again running for the party's leadership. 
 
-- @kaas: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] elects Ludwig Kaas as the party chair.
+- @kaas: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] elects Aurelian Renck as the party chair.
 - @stegerwald: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] elects Adam Sedgewick as the party chair.
 
 @kaas
 view-if: not heartland_leader == "Sedgewick" and ((marcher_in_government_time >= 36 and (not reichskonkordat_progress and in_weimar_coalition and foreign_minister_party == "Marcher")) or (marcher_heartland_time >= 30 and not heartland_concordat_progress))
-on-arrival: unionist_leader = "Kaas"; unionist_relation -= 5; heartland_concordat_progress += 1; unionist_ideology = "Right"
-face-image: img/portraits/Ludwig_Kaas.jpg
+on-arrival: unionist_leader = "Renck"; unionist_relation -= 5; heartland_concordat_progress += 1; unionist_ideology = "Right"
+face-image: img/portraits/Ludwig_Renck.jpg
 
-Ludwig Kaas has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He represents a rightward turn from Joos, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
+Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He represents a rightward turn from Hawkins, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
 
-Despite this, Kaas is committed to the current constitutional order and the republic. He maintains a close friendship with Eugenio Pacelli, the Papal Nuncio to the Commonwealth, which may prove useful during concordat negotiations.
+Despite this, Renck is committed to the current constitutional order and the republic. He maintains a close friendship with Eugenio Pacelli, the Papal Nuncio to the Commonwealth, which may prove useful during concordat negotiations.
 
 @stegerwald
 choose-if: heartland_leader == "Sedgewick" or not concordat_explode

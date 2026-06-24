@@ -1,6 +1,6 @@
 title: <span style="color: #C0A054;">**Golds**</span> Executive Committee Meeting
-subtitle: Ernst Scholz has resigned!
-view-if: year = 1930 and month = 12 and gold_leader == "Scholz" and not lvp_formed
+subtitle: Reginald Eikenvorst has resigned!
+view-if: year = 1930 and month = 12 and gold_leader == "Eikenvorst" and not lvp_formed
 on-arrival: gold_left += 2 if gold_relation >= 35; gold_left += 2 if in_grand_coalition
 max-visits: 1
 tags: event
@@ -9,7 +9,7 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Executive Committee Meeting
 
-Ernst Scholz, recovering from surgery the past few months due to a resurgence of his health problems, has ultimately resigned in favor of his deputy Eduard Dingeldey, who is now guaranteed to succeed him as chairman.
+Reginald Eikenvorst, recovering from surgery the past few months due to a resurgence of his health problems, has ultimately resigned in favor of his deputy Eduard Dingeldey, who is now guaranteed to succeed him as chairman.
 
 Eduard Dingeldey is one of the first within the <span style="color: #C0A054;">**Golds**</span> to support the movement for bourgeois unity and is popular with the youth and bourgeois unity groups that have coalesced on the <span style="color: #C0A054;">**Golds**</span>'s left wing, having rallied around Schnell and his efforts last month. Dingeldey is also sufficiently conservative on most political issues—particularly on the question of cooperation with the <span style="color: #c00000;">**Marchers**</span>—to gain support from the party's right wing.
 

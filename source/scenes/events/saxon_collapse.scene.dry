@@ -5,9 +5,9 @@ on-arrival: {!
 Q.saxony_kill = 1;
 let dvp_toleration_threshold = 40;
 let lvp_toleration_threshold = 50;
-if (Q.gold_leader == "Scholz") {
+if (Q.gold_leader == "Eikenvorst") {
     dvp_toleration_threshold += 20;
-} else if (Q.gold_leader != "Scholz") {
+} else if (Q.gold_leader != "Eikenvorst") {
     dvp_toleration_threshold -= 10;
 }
 if (Q.gold_ideology != "Left") {

@@ -26,7 +26,7 @@ Q.faithful_other += 4;
 Q.burgher_ddp += (Q.pro_republic / 10);
 Q.guild_ddp += (Q.pro_republic / 10);
 Q.landed_ddp += (Q.pro_republic / 20);
-if (Q.gold_ideology != "Right" || Q.gold_leader != "Scholz" && Q.gold_leader != "Dingeldey") {
+if (Q.gold_ideology != "Right" || Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") {
     Q.burgher_gold += (Q.pro_republic / 10);
     Q.guild_gold += (Q.pro_republic / 10);
     Q.landed_gold += (Q.pro_republic / 10);

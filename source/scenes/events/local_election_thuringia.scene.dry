@@ -77,12 +77,12 @@ Q.ddp_thuringia_elections_vote = Q.ddp_votes*thuringia_adjustment_factors.ddp;
 Q.lvp_thuringia_elections_vote = Q.lvp_votes*thuringia_adjustment_factors.lvp;
 if (!Q.stegerwald_path) Q.unionist_thuringia_elections_vote = Q.unionist_votes*thuringia_adjustment_factors.z;
 if (Q.stegerwald_path) Q.unionist_thuringia_elections_vote = Q.unionist_votes * 0.8;
-if (Q.gold_leader != "Scholz") thuringia_adjustment_factors.dvp += 0.1;
+if (Q.gold_leader != "Eikenvorst") thuringia_adjustment_factors.dvp += 0.1;
 Q.gold_thuringia_elections_vote = Q.gold_votes*thuringia_adjustment_factors.dvp;
 if (Q.traditionalist_ideology == "Moderate") thuringia_adjustment_factors.dnvp += 1.0;
 Q.traditionalist_thuringia_elections_vote = Q.traditionalist_votes*thuringia_adjustment_factors.dnvp;
 Q.royalist_thuringia_elections_vote = Q.royalist_votes*thuringia_adjustment_factors.nsdap;
-if (Q.gold_leader != "Scholz") thuringia_adjustment_factors.other -= 0.1;
+if (Q.gold_leader != "Eikenvorst") thuringia_adjustment_factors.other -= 0.1;
 if (Q.stolper_program_adopted) thuringia_adjustment_factors.other -= 0.1;
 Q.other_thuringia_elections_vote = Q.other_votes*thuringia_adjustment_factors.other;
 Q.kvp_thuringia_elections_vote = Q.kvp_votes*thuringia_adjustment_factors.kvp;
@@ -211,7 +211,7 @@ let farm_share = 0.6;
 if (Q.traditionalist_ideology == "Moderate") farm_share -= 0.3;
 let wp_share = 0.35;
 if (Q.stolper_program_adopted) wp_share -= 0.1;
-if (Q.gold_leader != "Scholz") wp_share -= 0.1;
+if (Q.gold_leader != "Eikenvorst") wp_share -= 0.1;
 let other_share = 0.05;
 
 let total_share = wp_share + farm_share + other_share;
@@ -470,7 +470,7 @@ Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">
 on-arrival: {!
 let dvp_toleration_threshold = 50;
 let lvp_toleration_threshold = 60;
-if (Q.gold_leader == "Scholz") {
+if (Q.gold_leader == "Eikenvorst") {
     dvp_toleration_threshold += 5;
 } else if (Q.gold_leader == "Curtius") {
     dvp_toleration_threshold -= 5;
@@ -590,7 +590,7 @@ view-if: bourgeois_coalition_thuringia < 50 and far_right_coalition_thuringia < 
 on-arrival: {!
 let dvp_toleration_threshold = 30;
 let lvp_toleration_threshold = 40;
-if (Q.gold_leader == "Scholz") {
+if (Q.gold_leader == "Eikenvorst") {
     dvp_toleration_threshold += 5;
 } else if (Q.gold_leader == "Curtius") {
     dvp_toleration_threshold -= 5;

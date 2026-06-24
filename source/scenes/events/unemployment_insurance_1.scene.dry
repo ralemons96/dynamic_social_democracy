@@ -73,8 +73,8 @@ on-arrival: commons_marcher -= 0.1*commons_marcher; disfavored_marcher -= 0.15*d
 A compromise put forward by Edmund Askew is put into place and the issue is delayed until the autumn. A fixed amount is loaned to the program in the meantime, although not nearly enough for the millions of unemployed. The Left and Labor factions view this as a betrayal of our duty to support unemployment insurance during a crisis.
 
 @compromise
-unavailable-subtitle: [? if gold_relation < 30 or ddp_relation < 30 or (unionist_relation < 30 or (unionist_relation < 25 and unionist_leader == "Joos") or (unionist_relation < 20 and unionist_leader == "Emperor")): We do not have good enough relations with the right-wing parties. ?]
-choose-if: gold_relation >= 30 and ddp_relation >= 30 and (unionist_relation >= 30 or (unionist_relation >= 25 and unionist_leader == "Joos") or (unionist_relation >= 20 and unionist_leader == "Emperor"))
+unavailable-subtitle: [? if gold_relation < 30 or ddp_relation < 30 or (unionist_relation < 30 or (unionist_relation < 25 and unionist_leader == "Hawkins") or (unionist_relation < 20 and unionist_leader == "Stilling")): We do not have good enough relations with the right-wing parties. ?]
+choose-if: gold_relation >= 30 and ddp_relation >= 30 and (unionist_relation >= 30 or (unionist_relation >= 25 and unionist_leader == "Hawkins") or (unionist_relation >= 20 and unionist_leader == "Stilling"))
 
 The <span style="color: #C0A054;">**Golds**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the bourgeoisie.
 

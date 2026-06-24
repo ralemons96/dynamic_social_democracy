@@ -101,14 +101,14 @@ The <span style="color: #700000;">Communist</span> <span style="color: #700000;"
 
 @negotiate_concordat
 subtitle: The <span style="color: #C0A054;">**Golds**</span> won't like this.
-view-if: (heartland_concordat_progress < 2 and unionist_leader != "Kaas") or (heartland_concordat_progress < 1 and unionist_leader = "Kaas") and heartland_concordat = 0
+view-if: (heartland_concordat_progress < 2 and unionist_leader != "Renck") or (heartland_concordat_progress < 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat_progress += 1; unionist_relation += 2*(1-dissent); gold_relation -= 2; ddp_relation -= 1
 
-We are making progress towards negotiating a concordat between Heartland and the Catholic church. [? if unionist_leader = "Kaas": Ludwig Kaas of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party uses his connections to speed up negotiations. ?]
+We are making progress towards negotiating a concordat between Heartland and the Catholic church. [? if unionist_leader = "Renck": Aurelian Renck of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party uses his connections to speed up negotiations. ?]
 
 @sign_concordat
 subtitle: The <span style="color: #C0A054;">**Golds**</span> won't like this.
-view-if: (heartland_concordat_progress >= 2 and not unionist_leader = "Kaas") or (heartland_concordat_progress >= 1 and unionist_leader = "Kaas") and heartland_concordat = 0
+view-if: (heartland_concordat_progress >= 2 and not unionist_leader = "Renck") or (heartland_concordat_progress >= 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat = 1; unionist_relation += 5; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; coalition_dissent += 1 if in_grand_coalition; gold_relation -= 5; ddp_relation -= 3; ddp_cohesion -= 1
 
 We have signed a Concordat between the Free State of Heartland and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Heartland. This sets the stage for the negotiation of a national Concordat covering all of the Commonwealth.

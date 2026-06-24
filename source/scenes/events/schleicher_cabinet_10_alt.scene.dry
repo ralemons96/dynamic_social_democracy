@@ -1,6 +1,6 @@
 title: The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
 subtitle: Our choice doesn't matter after all.
-view-if: chancellor == "Staal" and not dsu_in_gov and not dsu_was_gov and unionist_in_gov and unionist_leader == "Bracht" and staal_post_time >= 8
+view-if: chancellor == "Staal" and not dsu_in_gov and not dsu_was_gov and unionist_in_gov and unionist_leader == "Hughes" and staal_post_time >= 8
 max-visits: 1
 new-page: true
 tags: event
@@ -19,7 +19,7 @@ on-display: {!
 
 = The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
 
-With the favorable Bracht being installed at the head of the <span style="color: #000000;">Unionist Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**DSU**</span> into the Staal cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Royalists</span> that can be tamed. 
+With the favorable Hughes being installed at the head of the <span style="color: #000000;">Unionist Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**DSU**</span> into the Staal cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Royalists</span> that can be tamed. 
 
 This goes completely against Staal's promise to us, that he'll never let the <span style="color: #7A3C00;">Royalists</span> into cabinet if we were to give him a major concession. e have been conned, big time.
 
@@ -49,4 +49,4 @@ Wilhelm Frask is nominated to the Interior Ministry[? if old_heartland_leader ==
 
 At the <span style="color: #7A3C00;">Royalists’</span> insistence, Hjalmar Schacht is brought in as an independent to head the Economic Ministry.
 
-To compensate for the <span style="color: #000000;">Unionist Party</span>’s loss of influence, they're given an additional Ministry without Portfolio. Not that the <span style="color: #000000;">Unionists</span> can complain—not with Bracht in charge.
+To compensate for the <span style="color: #000000;">Unionist Party</span>’s loss of influence, they're given an additional Ministry without Portfolio. Not that the <span style="color: #000000;">Unionists</span> can complain—not with Hughes in charge.

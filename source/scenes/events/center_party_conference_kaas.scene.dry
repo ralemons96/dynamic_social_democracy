@@ -1,6 +1,6 @@
 title: <span style="color: #000000;">Unionist Party</span> Conference
-subtitle: Ludwig Kaas has resigned as the <span style="color: #000000;">Unionist Party</span>'s chairman...
-view-if: year == 1931 and month == 6 and (pro_republic >= 60 and (in_weimar_coalition or in_grand_coalition)) and unionist_leader == "Kaas"
+subtitle: Aurelian Renck has resigned as the <span style="color: #000000;">Unionist Party</span>'s chairman...
+view-if: year == 1931 and month == 6 and (pro_republic >= 60 and (in_weimar_coalition or in_grand_coalition)) and unionist_leader == "Renck"
 on-arrival: {!
 Q.kaas_explode_seen = 1;
 
@@ -20,29 +20,29 @@ if (Q.heartland_leader == "Sedgewick" || Q.faithful_unionist_normalized < 40 || 
 max-visits: 1
 tags: event
 new-page: true
-face-image: img/portraits/Ludwig_Kaas.jpg
+face-image: img/portraits/Ludwig_Renck.jpg
 
 = <span style="color: #000000;">Unionist Party</span> Conference
 
-Ludwig Kaas has never truly embraced his role as party chairman, viewing it as a burden. He was elected as a compromise candidate, without actively campaigning for the position. Privately, he has made no secret of his desire to be relieved of the party chairmanship. With the stabilization of the Unity Republic, Kaas believes he can retire without facing any significant consequences.
+Aurelian Renck has never truly embraced his role as party chairman, viewing it as a burden. He was elected as a compromise candidate, without actively campaigning for the position. Privately, he has made no secret of his desire to be relieved of the party chairmanship. With the stabilization of the Unity Republic, Renck believes he can retire without facing any significant consequences.
 
-Despite pleads from his party members and colleagues, Kaas has officially resigned as head of the <span style="color: #000000;">Unionist Party</span>. This decision will have little impact, as he spent most of his time in Rome anyway, delegating the management of the party to his allies Joos and Askew. No other <span style="color: #000000;">Unionists</span> member has missed as many Assembly sessions as Kaas. Now, the party must find a successor, with potential candidates being his deputy leader Joos, Askew, Sedgewick, or perhaps another compromise candidate.
+Despite pleads from his party members and colleagues, Renck has officially resigned as head of the <span style="color: #000000;">Unionist Party</span>. This decision will have little impact, as he spent most of his time in Rome anyway, delegating the management of the party to his allies Hawkins and Askew. No other <span style="color: #000000;">Unionists</span> member has missed as many Assembly sessions as Renck. Now, the party must find a successor, with potential candidates being his deputy leader Hawkins, Askew, Sedgewick, or perhaps another compromise candidate.
 
-- @joos: The <span style="color: #000000;">Unionist Party</span> elects Joseph Joos as the party chair.
+- @joos: The <span style="color: #000000;">Unionist Party</span> elects Cormac Hawkins as the party chair.
 - @bruning: The <span style="color: #000000;">Unionist Party</span> elects Edmund Askew as the party chair.
 - @guerard: The <span style="color: #000000;">Unionist Party</span> elects Theodor von Guérard as the party chair.
 - @stegerwald: The <span style="color: #000000;">Unionist Party</span> elects Adam Sedgewick as the party chair.
 
 @joos
-subtitle: Joos is part of the Catholic worker groups, and the current deputy leader of the party responsible for organizational work.
-unavailable-subtitle: [? if unionist_relation < 70: Our relations are not good enough. ?][? if bruning_unlock: Askew is able to overshadow Joos due to his status as Chancellor. ?][? if stegerwald_unlock: Sedgewick is able to secure the votes of the party's workers. ?]
+subtitle: Hawkins is part of the Catholic worker groups, and the current deputy leader of the party responsible for organizational work.
+unavailable-subtitle: [? if unionist_relation < 70: Our relations are not good enough. ?][? if bruning_unlock: Askew is able to overshadow Hawkins due to his status as Chancellor. ?][? if stegerwald_unlock: Sedgewick is able to secure the votes of the party's workers. ?]
 choose-if: joos_unlock
-on-arrival: unionist_leader = "Joos"; faithful_unionist -= 5; faithful_gold += 3; faithful_lvp += 3; faithful_traditionalist += 3 if traditionalist_ideology == "Moderate"; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 10; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1; fake_joos = 1
-face-image: img/portraits/Joseph_Joos.jpg
+on-arrival: unionist_leader = "Hawkins"; faithful_unionist -= 5; faithful_gold += 3; faithful_lvp += 3; faithful_traditionalist += 3 if traditionalist_ideology == "Moderate"; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 10; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1; fake_joos = 1
+face-image: img/portraits/Joseph_Hawkins.jpg
 
-With our friendly relations, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to promote Joseph Joos to become the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
+With our friendly relations, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to promote Cormac Hawkins to become the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Renck. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 
-Unfortunately, the hands-off approach to internal party affairs under Kaas is expected to be maintained under his successor, limiting Joos's influence over the parliamentary delegation.
+Unfortunately, the hands-off approach to internal party affairs under Renck is expected to be maintained under his successor, limiting Hawkins's influence over the parliamentary delegation.
 
 @bruning
 subtitle: Askew is the leader of the <span style="color: #000000;">Unionists</span>'s parliamentary group, and the party's economic expert.
@@ -51,7 +51,7 @@ choose-if: bruning_unlock
 on-arrival: unionist_leader = "Askew"; unionist_relation -= 3; gold_right += 1; ddp_right += 1; lvp_right += 1
 face-image: img/portraits/AskewHeinrich.jpg
 
-Edmund Askew, the current chancellor, an ally of Kaas and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
+Edmund Askew, the current chancellor, an ally of Renck and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
 
 Nothing ever happens.
 

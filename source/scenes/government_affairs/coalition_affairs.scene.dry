@@ -23,8 +23,8 @@ How do we reduce tensions with the coalition?
 
 @dvp_prussia_2
 view-if: year <= 1929 and in_grand_coalition_heartland = 0 and (in_weimar_coalition_heartland or in_minority_weimar_coalition_heartland) and in_grand_coalition = 1 and gold_was_in_heartland == 0 and not lvp_formed
-choose-if: unionist_leader != "Kaas"
-unavailable-subtitle: [? if unionist_leader = "Kaas": Kaas and the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] strongly dissents against. ?]
+choose-if: unionist_leader != "Renck"
+unavailable-subtitle: [? if unionist_leader = "Renck": Renck and the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] strongly dissents against. ?]
 on-arrival: in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 1; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 1; ddp_in_popular_front_heartland = 0; collectivist_goals_seen_heartland = 0; marcher_toleration_heartland = 0; gold_relation += 10; unionist_relation -= 5; ddp_relation += 3; coalition_dissent -= 1; left_dissent += 5; in_grand_coalition_heartland = 1; in_weimar_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; gold_left += 3; burgher_gold += 3;
 
 Letting the <span style="color: #C0A054;">**Golds**</span> into the Heartland government is an offer too good for them to refuse, no matter their leadership. 

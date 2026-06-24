@@ -37,9 +37,9 @@ The <span style="color: #700000;">communists</span> are suspicious of our overtu
 
 @kpd_rectification_of_history
 
-One stumbling block for our relations with the <span style="color: #700000;">**Collectivists**</span> is our history of conflict, dating back to 1918 and 1919. The <span style="color: #700000;">**Collectivists**</span> is especially contemptuous of Gustav Noske, the <span style="color: #c00000;">**Marchers**</span> "bloodhound" who reportedly ordered the violent suppression of the <span style="color: #700000;">Spartacist</span> uprising and other <span style="color: #700000;">**Collectivists**</span> revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two <span style="color: #c00000;">**Marchers**</span>-turned-<span style="color: #700000;">**Collectivists**</span> leaders who were killed during the suppression of the uprising.
+One stumbling block for our relations with the <span style="color: #700000;">**Collectivists**</span> is our history of conflict, dating back to 1918 and 1919. The <span style="color: #700000;">**Collectivists**</span> is especially contemptuous of Gustav Brask, the <span style="color: #c00000;">**Marchers**</span> "bloodhound" who reportedly ordered the violent suppression of the <span style="color: #700000;">Spartacist</span> uprising and other <span style="color: #700000;">**Collectivists**</span> revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two <span style="color: #c00000;">**Marchers**</span>-turned-<span style="color: #700000;">**Collectivists**</span> leaders who were killed during the suppression of the uprising.
 
-For further improvements in <span style="color: #700000;">**Collectivists**</span> relations, it might be necessary to expel Noske, and hold some sort of commemoration for Luxemburg and Liebknecht.
+For further improvements in <span style="color: #700000;">**Collectivists**</span> relations, it might be necessary to expel Brask, and hold some sort of commemoration for Luxemburg and Liebknecht.
 
 - @yes_history: Yes, we must apologize for our past actions.
 - @no_history: No, we have no need to apologize.
@@ -47,14 +47,14 @@ For further improvements in <span style="color: #700000;">**Collectivists**</spa
 @yes_history
 on-arrival: reformist_dissent += 12; reformist_strength -= 2; knight_dissent += 5; left_dissent -= 6; left_strength += 5; collectivist_rectified_history = 1; unionist_relation -= 3; unionist_relation -= 3 if unionist_ideology == "Right"; gold_relation -= 6; lvp_relation -= 6; ddp_relation -= 4; collectivist_relation += 8*(1-dissent); coalition_dissent += 1; gold_right += 2; ddp_right += 2; lvp_right += 2
 
-As part of normalizing relations with the <span style="color: #700000;">**Collectivists**</span>, we have to acknowledge the wrongdoings of our past. We have expelled Noske, and have held public commemorations for those killed by troops during the uprisings.
+As part of normalizing relations with the <span style="color: #700000;">**Collectivists**</span>, we have to acknowledge the wrongdoings of our past. We have expelled Brask, and have held public commemorations for those killed by troops during the uprisings.
 
 This leads to tensions with the moderates and reformists within our party, and criticism from the <span style="color: #000000;">conservative</span> and <span style="color: #C0A054;">liberal</span> parties.
 
 @no_history
 on-arrival: collectivist_relation -= 3
 
-We have no need to apologize for the actions of Ebert and Noske; it is the <span style="color: #700000;">communists</span>' fault for launching a violent insurrection.
+We have no need to apologize for the actions of Ebert and Brask; it is the <span style="color: #700000;">communists</span>' fault for launching a violent insurrection.
 
 
 @kpd_2

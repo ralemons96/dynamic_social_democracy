@@ -113,7 +113,7 @@ title: Convince the [? if unionist_party_name != "Concord": <span style="color: 
 view-if: (marcher_candidate = "Eckhart" or marcher_candidate = "Gesling") and unionist_candidate != marcher_candidate
 on-arrival: {!
 Q.unionist_support_grzesinski = 0;
-if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader == "Joos")) {
+if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader == "Hawkins")) {
     Q.unionist_support_grzesinski = 1;
 } else if (Q.unionist_relation <= 20) {
     Q.unionist_support_grzesinski = 0;
@@ -134,7 +134,7 @@ view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and un
 on-arrival: {!
 Q.unionist_support_grzesinski = 0;
 
-if (Q.unionist_relation >= 60 || (Q.unionist_relation > 50 && Q.unionist_leader == "Joos")) {
+if (Q.unionist_relation >= 60 || (Q.unionist_relation > 50 && Q.unionist_leader == "Hawkins")) {
     Q.unionist_support_grzesinski = 1;
 } else if (Q.unionist_relation <= 40) {
     Q.unionist_support_grzesinski = 0;
@@ -468,7 +468,7 @@ on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
-if (Q.president == "Goring") Q.president = "Gorrick";
+if (Q.president == "Gorrick") Q.president = "Gorrick";
 
 if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Einstein") {
     Q.president_ideology = "Left";

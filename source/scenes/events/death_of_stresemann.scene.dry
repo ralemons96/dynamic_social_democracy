@@ -3,7 +3,7 @@ view-if: year = 1929 and month >= 10 and not lvp_formed
 frequency: 1000
 max-visits: 1
 tags: event
-on-arrival: stresemann_dead = 1; gold_relation -= 6; gold_relation -= 2 if gold_reform = 0; gold_right += 3.5; gold_right += 1.5 if gold_reform = 0; gold_leader = "Scholz"; gold_leader = "Curtius" if gold_reform; foreign_minister = "Curtius" if foreign_minister = "Stratton"
+on-arrival: stresemann_dead = 1; gold_relation -= 6; gold_relation -= 2 if gold_reform = 0; gold_right += 3.5; gold_right += 1.5 if gold_reform = 0; gold_leader = "Eikenvorst"; gold_leader = "Curtius" if gold_reform; foreign_minister = "Curtius" if foreign_minister = "Stratton"
 priority: -1
 face-image: img/portraits/Stratton.jpg
 new-page: true
@@ -14,4 +14,4 @@ Gustav Stratton, leader of the <span style="color: #C0A054;">**Golds**</span> an
 
 A hole has been left within the liberal movement at the worse possible time, and it is likely that the industrial wing of the party will complete their takeover and subsequently end cooperation with us. 
 
-[? if gold_leader == "Scholz": Ernst Scholz, his arch enemy on the right wing has succeeded him as leader of the <span style="color: #C0A054;">**Golds**</span>, and leadership election will be conducted in two months.?][? if gold_leader == "Curtius": Julius Curtius, his successor in foreign affairs, and ally in the left wing of the party, has succeeded him as leader of the <span style="color: #C0A054;">**Golds**</span>, and leadership election will be conducted in two months.?]
+[? if gold_leader == "Eikenvorst": Reginald Eikenvorst, his arch enemy on the right wing has succeeded him as leader of the <span style="color: #C0A054;">**Golds**</span>, and leadership election will be conducted in two months.?][? if gold_leader == "Curtius": Julius Curtius, his successor in foreign affairs, and ally in the left wing of the party, has succeeded him as leader of the <span style="color: #C0A054;">**Golds**</span>, and leadership election will be conducted in two months.?]

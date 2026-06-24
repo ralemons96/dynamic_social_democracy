@@ -325,7 +325,7 @@ title: Convince the [? if unionist_party_name != "Concord": <span style="color: 
 view-if: (marcher_candidate = "Eckhart" or marcher_candidate = lib_candidate_1934) and unionist_candidate != marcher_candidate and not concord_formed
 on-arrival: {!
 Q.unionist_support_braun = 0;
-if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader == "Joos")) {
+if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader == "Hawkins")) {
     Q.unionist_support_braun = 1;
 } else if (Q.unionist_relation <= 20) {
     Q.unionist_support_braun = 0;
@@ -349,7 +349,7 @@ view-if: (marcher_candidate = "Bristol" or marcher_candidate = "Shackley" or mar
 on-arrival: {!
 Q.unionist_support_braun = 0;
 if (Q.marcher_candidate == "Jessamy") {
-    if (Q.unionist_relation >= 60 || (Q.unionist_relation > 40 && Q.unionist_leader == "Joos")) {
+    if (Q.unionist_relation >= 60 || (Q.unionist_relation > 40 && Q.unionist_leader == "Hawkins")) {
         Q.unionist_support_braun = 1;
     } else if (Q.unionist_relation <= 40) {
         Q.unionist_support_braun = 0;
@@ -357,7 +357,7 @@ if (Q.marcher_candidate == "Jessamy") {
         Q.unionist_support_braun = 2;
     }
 } else {
-    if (Q.unionist_relation >= 55 || (Q.unionist_relation > 35 && Q.unionist_leader == "Joos")) {
+    if (Q.unionist_relation >= 55 || (Q.unionist_relation > 35 && Q.unionist_leader == "Hawkins")) {
         Q.unionist_support_braun = 1;
     } else if (Q.unionist_relation <= 35) {
         Q.unionist_support_braun = 0;
@@ -498,7 +498,7 @@ set-jump: post_election
 on-arrival: {!
 var candidate_descs = {
 Gallax: "Alaric Gallax of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
-Goring: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
 Selden: "Roderick Selden of the <span style='color: #3E88B3; font-weight: bold;'>Wardens</span>/<span style='color: #3E88B3; font-weight: bold;'>Traditionalists</span>",
 Hargen: "Oskar Hargen of the <span style='color: #3E88B3; font-weight: bold;'>Traditionalists</span>",
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
@@ -668,7 +668,7 @@ go-to: r2_start if round = 1 and not has_majority; election_end if round > 1; r1
 Election results:
 
 [? if Hitler_running : <span style="color: #7A3C00;">**Gallax**</span> - [+ Hitler_votes_disp +]% ?]
-[? if Goring_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Goring_votes_disp +]% ?]
+[? if Gorrick_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Gorrick_votes_disp +]% ?]
 
 [? if hamster_running : <span style="color: #003755;">**Mallin**</span> - [+ Mallin_votes_disp +]% ?]
 
@@ -710,12 +710,12 @@ if (!Q.concord_formed) {
             Q.royalist_candidate = Q.reactionary_candidate_1934;
             Q.dnf_candidate = Q.reactionary_candidate_1934;
         }
-    } else if (Q.Goring_votes && Q.Reactionary_votes) {
-        if (Q.Goring_votes > Q.Reactionary_votes) {
+    } else if (Q.Gorrick_votes && Q.Reactionary_votes) {
+        if (Q.Gorrick_votes > Q.Reactionary_votes) {
             Q.traditionalist_candidate = "Gorrick";
             if (Q.kvp_candidate == Q.reactionary_candidate_1934) Q.other_candidate = "Gorrick";
             Q.dnf_candidate = "Gorrick";
-            Q.Goring_bonus = (Q.Goring_bonus || 0) - 0.25*Q.other_votes;
+            Q.Gorrick_bonus = (Q.Gorrick_bonus || 0) - 0.25*Q.other_votes;
             if (Q.center_running) {
                 Q.Center_bonus = (Q.Center_bonus || 0) + 0.25*Q.other_votes;
             } else if (Q.lib_running) {
@@ -960,13 +960,13 @@ Despite the <span style="color: #7A3C00;">Royalist</span> threats, supporters of
 
 
 @election_end
-go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Goring"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzenberg" or winner = "Munzer"; thalmann_victory if winner = "Halsmark" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Mann"; einstein_victory if winner = "Einstein"
+go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Gorrick"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzenberg" or winner = "Munzer"; thalmann_victory if winner = "Halsmark" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Mann"; einstein_victory if winner = "Einstein"
 on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Askew") Q.president = "Askew";
 if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
-if (Q.president == "Goring") Q.president = "Gorrick";
+if (Q.president == "Gorrick") Q.president = "Gorrick";
 
 if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Einstein") {
     Q.president_ideology = "Left";

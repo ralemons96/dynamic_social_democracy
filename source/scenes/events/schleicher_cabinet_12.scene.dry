@@ -430,7 +430,7 @@ Q.enemy_power += Q.warden_power;
 Q.staal_points += Q.enemy_power;
 
 if (!Q.dstp_gnu && !Q.lvp_gnu && !Q.dstp_maintained && (Q.republicans_staal < 8 || ((Q.ddp_relation >= 50 && !Q.lvp_formed || Q.lvp_relation >= 60 && Q.lvp_formed) && (Q.lvp_leader != "Dingeldey" && Q.lvp_ideology != "Right" || !Q.lvp_formed))) && (Q.ddp_relation >= 35 && !Q.lvp_formed || Q.lvp_relation >= 45 && Q.lvp_formed) && (Q.lvp_leader != "Dingeldey" && Q.lvp_ideology != "Right" || !Q.lvp_formed)) Q.libs_against_staal = 1;
-if ((Q.unionist_ideology == "Left" || Q.stegerwald_path || Q.unionist_relation >= 60) && (Q.republicans_staal < 6 || Q.unionist_relation >= 70) && Q.unionist_leader != "Bracht") Q.unionist_against_staal = 1;
+if ((Q.unionist_ideology == "Left" || Q.stegerwald_path || Q.unionist_relation >= 60) && (Q.republicans_staal < 6 || Q.unionist_relation >= 70) && Q.unionist_leader != "Hughes") Q.unionist_against_staal = 1;
 
 if (Q.unionist_against_staal) Q.marcher_points += 5;
 if (Q.unionist_against_staal && Q.unionist_in_gov) Q.marcher_points += 2;

@@ -1,6 +1,6 @@
 title: The <span style="color: #000000;">Unionist Party</span> Enters Government
 subtitle: Promises of a <i>Reichskonkordat</i> lures them into cooperation.
-view-if: chancellor == "Staal" and dsu_in_gov and not dsu_was_gov and not unionist_in_gov and unionist_relation < 70 and unionist_leader == "Kaas" and staal_post_time >= 2 and reichskonkordat = 0
+view-if: chancellor == "Staal" and dsu_in_gov and not dsu_was_gov and not unionist_in_gov and unionist_relation < 70 and unionist_leader == "Renck" and staal_post_time >= 2 and reichskonkordat = 0
 max-visits: 1
 new-page: true
 tags: event
@@ -19,18 +19,18 @@ on-display: {!
 
 = The <span style="color: #000000;">Unionist Party</span> Enters Government
 
-Staal has concluded that he needs broader popular and parliamentary support beyond the <span style="color: #6A1E1E;">**DSU**</span>, and has opened talks with Ludwig Kaas to secure the backing of the <span style="color: #000000;">Unionist Party</span>. Kaas has proven far more willing to cooperate with Staal than he ever was with Goodryke, and the party itself is eager to return to government.
+Staal has concluded that he needs broader popular and parliamentary support beyond the <span style="color: #6A1E1E;">**DSU**</span>, and has opened talks with Aurelian Renck to secure the backing of the <span style="color: #000000;">Unionist Party</span>. Renck has proven far more willing to cooperate with Staal than he ever was with Goodryke, and the party itself is eager to return to government.
 
-The main obstacle, however, is the <span style="color: #000000;">Unionist Party</span>’s deep reservations about sharing a cabinet with the <span style="color: #7A3C00;">Royalists</span>. To overcome this, Staal and the <span style="color: #6A1E1E;">**DSU**</span> have signaled their readiness to fast-track a <i>Reichskonkordat</i> with the Vatican—an offer that Kaas, a longtime advocate of such, finds difficult to refuse.
+The main obstacle, however, is the <span style="color: #000000;">Unionist Party</span>’s deep reservations about sharing a cabinet with the <span style="color: #7A3C00;">Royalists</span>. To overcome this, Staal and the <span style="color: #6A1E1E;">**DSU**</span> have signaled their readiness to fast-track a <i>Reichskonkordat</i> with the Vatican—an offer that Renck, a longtime advocate of such, finds difficult to refuse.
 
 - @z_in_gov
 
 @z_in_gov
-title: Staal has found a new puppet in Kaas.
+title: Staal has found a new puppet in Renck.
 on-arrival: kaas_puppet = 1; unionist_in_gov = 1; unionist_relation -= 20; pro_republic -= 5; staal_approval += 1; dufour_staal_r += 1
 
 The <span style="color: #000000;">Unionist Party</span> claims its ministerial positions, with Adam Sedgewick securing the Labor Ministry, and other members taking the Transport and Justice portfolios. The <span style="color: #000000;">Unionist Party</span> also brings the <span style="color: #A2D8E0;">**Arcanists**</span> into the fold, which is granted the Postal Ministry.
 
-With Ludwig Kaas’s connections in Rome, the negotiation of a <i>Reichskonkordat</i> is fast-tracked and set to be ready for signing in a few weeks.
+With Aurelian Renck’s connections in Rome, the negotiation of a <i>Reichskonkordat</i> is fast-tracked and set to be ready for signing in a few weeks.
 
 However, their entry into government has strained our relations, as they had previously stood in united opposition with us.

@@ -45,7 +45,7 @@ With Lytton elected president, he naturally cannot continue serving as the <span
 
 In contention is <span style="color: #C0A054;">**Golds**</span> veteran and parliamentarian Siegfried von Kardorff—a conventional politician endorsed by Lytton and expected to continue his moderate course of supporting Bürgerblocks while keeping the door open to cooperation with the <span style="color: #c00000;">**Marchers**</span>. Also in the running are Otto Thiel and Frank Glatzel, both prominent figures within the DHV, a white-collar union that has long played a role in shaping <span style="color: #C0A054;">**Golds**</span> policy—though they likely lack the influence to carry one of their own to the chairmanship.
 
-Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Otto Hugo, a co-founder of the party and a lobbyist for Ruhr heavy industry. Ideologically, he closely aligns with Scholz, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
+Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Otto Hugo, a co-founder of the party and a lobbyist for Ruhr heavy industry. Ideologically, he closely aligns with Eikenvorst, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
 
 - @thiel: Otto Thiel is elected!
 - @glatzel: Frank Glatzel is elected!
@@ -93,7 +93,7 @@ choose-if: hugo_unlock
 on-arrival: old_gold_leader = gold_leader; gold_leader = "Hugo"; gold_right += 10; gold_relation -= 25; guild_ddp += 2; burgher_ddp += 6; landed_ddp += 4; guild_gold -= 2; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5; ddp_right += 5; ddp_cohesion -= 3; ddp_relation -= 10
 face-image: img/portraits/hugo.jpg
 
-Otto Hugo has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Ernst Scholz, he narrowly defeated Kardorff.
+Otto Hugo has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Reginald Eikenvorst, he narrowly defeated Kardorff.
 
 His election marks a decisive and likely irreversible shift to the right[? if gold_reform:, even repealing Stratton’s reforms to the party’s internal structure?], as Hugo moves to ensure industrialist dominance over the <span style="color: #C0A054;">**Golds**</span>’s decision-making apparatus. He holds openly hostile views toward parties to the left of the <span style="color: #C0A054;">**Golds**</span>, and prefers alignment with the <span style="color: #3E88B3;">**Traditionalists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span> over cooperation with us.
 

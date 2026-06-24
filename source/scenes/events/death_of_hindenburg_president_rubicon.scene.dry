@@ -81,7 +81,7 @@ Q.gnu_candidate = "Hammerton";
 Q.marcher_candidate = "Shackley";
 Q.collectivist_candidate = Q.marcher_candidate;
 Q.unionist_candidate = "Aldermoor";
-if (Q.unionist_leader == "Bracht") Q.unionist_candidate = Q.gnu_candidate;
+if (Q.unionist_leader == "Hughes") Q.unionist_candidate = Q.gnu_candidate;
 Q.ddp_candidate = "Hewes";
 Q.lvp_candidate = "Hewes";
 Q.gold_candidate = "Hewes";
@@ -397,7 +397,7 @@ on-arrival: {!
 var candidate_descs = {
   Crowde: "Otto Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
   Frask: "Wilhelm Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
-  Goring: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+  Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt von Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
   Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
@@ -479,7 +479,7 @@ go-to: r2_start if round = 1 and not has_majority; election_end if round > 1; r1
 
 Election results:
 
-[? if Goring_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Goring_votes_disp +]% ?]
+[? if Gorrick_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Gorrick_votes_disp +]% ?]
 
 [? if Strasser_running : <span style="color: #6A1E1E;">**Crowde**</span> - [+ Strasser_votes_disp +]% ?]
 
@@ -647,7 +647,7 @@ Kurt Shackley has won the presidency! This is a historic victory—how far we’
 - @game_over: Game over.
 
 @election_end
-go-to: hammerstein_win if winner == "Hammerton" or winner == "Crowde" or winner == "Goring" or winner == "Gorrick" or winner == "Frask"; heuss_win if winner == "Hewes"; adenauer_win if winner == "Aldermoor"; schumacher_win if winner == "Shackley"
-on-arrival: president = winner; president = "Hammerton" if (winner == "Crowde" or winner == "Goring" or winner == "Gorrick" or winner == "Frask")
+go-to: hammerstein_win if winner == "Hammerton" or winner == "Crowde" or winner == "Gorrick" or winner == "Gorrick" or winner == "Frask"; heuss_win if winner == "Hewes"; adenauer_win if winner == "Aldermoor"; schumacher_win if winner == "Shackley"
+on-arrival: president = winner; president = "Hammerton" if (winner == "Crowde" or winner == "Gorrick" or winner == "Gorrick" or winner == "Frask")
 
 The election has been won by [+ winner_desc +].

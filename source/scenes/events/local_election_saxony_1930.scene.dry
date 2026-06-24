@@ -84,7 +84,7 @@ Q.ddp_saxony_elections_vote = Q.ddp_votes*saxony_adjustment_factors.ddp;
 Q.lvp_saxony_elections_vote = Q.lvp_votes*saxony_adjustment_factors.lvp;
 if (!Q.stegerwald_path) Q.unionist_saxony_elections_vote = Q.unionist_votes*saxony_adjustment_factors.z;
 if (Q.stegerwald_path) Q.unionist_saxony_elections_vote = Q.unionist_votes * 0.8;
-if (Q.gold_ideology != "Right" || Q.gold_leader != "Scholz") saxony_adjustment_factors.dvp += 0.1;
+if (Q.gold_ideology != "Right" || Q.gold_leader != "Eikenvorst") saxony_adjustment_factors.dvp += 0.1;
 if (Q.gold_votes >= 6) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 7) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 8) saxony_adjustment_factors.dvp -= 0.1;
@@ -256,7 +256,7 @@ let farm_share = 0.22;
 if (Q.traditionalist_ideology == "Moderate") farm_share -= 0.1;
 let wp_share = 0.52;
 if (Q.stolper_program_adopted) wp_share -= 0.05;
-if (Q.gold_ideology != "Right" && Q.gold_leader != "Scholz") wp_share -= 0.1;
+if (Q.gold_ideology != "Right" && Q.gold_leader != "Eikenvorst") wp_share -= 0.1;
 let csvd_share = 0.11;
 if (!Q.csvd_formed) csvd_share = 0;
 let vrp_share = 0.08;
@@ -658,9 +658,9 @@ Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style
 on-arrival: {!
 let dvp_toleration_threshold = 40;
 let lvp_toleration_threshold = 50;
-if (Q.gold_leader == "Scholz") {
+if (Q.gold_leader == "Eikenvorst") {
     dvp_toleration_threshold += 5;
-} else if (Q.gold_leader != "Scholz") {
+} else if (Q.gold_leader != "Eikenvorst") {
     dvp_toleration_threshold -= 10;
 }
 if (Q.gold_ideology != "Left") {

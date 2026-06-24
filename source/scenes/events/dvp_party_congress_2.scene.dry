@@ -80,7 +80,7 @@ choose-if: dingeldey_unlock
 on-arrival: old_gold_leader = gold_leader; gold_leader = "Dingeldey"; gold_right += 10; gold_relation -= 25; guild_gold -= 3; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">**Golds**</span>. Backed by broad and unified support from the party’s right wing, and endorsed by Ernst Scholz, he has narrowly clinched victory against Kardorff.
+Eduard Dingeldey has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">**Golds**</span>. Backed by broad and unified support from the party’s right wing, and endorsed by Reginald Eikenvorst, he has narrowly clinched victory against Kardorff.
 
 Dingeldey's election represents a significant and irreversible shift to the right,[? if gold_reform:&nbsp;with him even repealing Stratton's reform of the internal party structure,?] granting the industrialists back their lost influence on the <span style="color: #C0A054;">**Golds**</span>'s decision making. [? if chancellor == "Askew" and not marcher_in_government: Dingeldey doesn't even feel great loyalty toward the Askew government and believes that the party could only fulfill its mission towards bourgeois concentration after it is freed from the burden of governmental responsibility.?] 
 
