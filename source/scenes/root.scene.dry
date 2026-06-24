@@ -144,6 +144,12 @@ Q.commonwealth_standing = 50;
 // empire_posture (0-100): the Empire-in-Exile's stance. Low = the Hardliners ascendant (war);
 // high = the Empress's reconciliation faction prevails (peace). Drifts toward our standing.
 Q.empire_posture = 50;
+// reunification_support (0-100): readiness for a peaceful return to the Empire. Recomputed
+// when the status is viewed; read by the Convention endgame for the Reunification outcome.
+Q.reunification_support = 33;
+// empire_outcome: set by the Convention endgame for a surviving republic - "" / "cold_war" /
+// "reunification" / "war_repel" / "war_stalemate" / "war_conquest".
+Q.empire_outcome = "";
 
 Q.collectivist_leader = "Halsmark";
 Q.unionist_leader = "Vance";

@@ -43,6 +43,41 @@ if (Q.weimar_win && (Q.president == "Pendrigon" || Q.president == "Halsmark" || 
     Q.collectivist_win = 0;
   }
 }
+
+// Empire outcome matrix (lift 5 - the Commonwealth Convention): if the republic survived the
+// internal crisis (weimar_win), the real question is the Empire-in-Exile. Strength deters it
+// into a Cold War; a moderated realm reunifies in peace; weakness provokes the invasion the
+// Hardliners have wanted - resolved, repel/stalemate/conquest, by the civil-war power math.
+Q.empire_outcome = "";
+if (Q.weimar_win) {
+  var _posture = (Q.empire_posture === undefined) ? 50 : Q.empire_posture;
+  var _reunion = (Q.reunification_support === undefined) ? 33 : Q.reunification_support;
+  var _stab = (Q.stability === undefined) ? 50 : Q.stability;
+  var _ready = Q.military_readiness || 0;
+  if (_posture >= 65 && _reunion >= 60) {
+    Q.empire_outcome = "reunification";
+  } else if (_posture >= 50 || (_stab >= 55 && _ready >= 250)) {
+    Q.empire_outcome = "cold_war";
+  } else {
+    // Provoke -> War. Reuse the civil-war strength x militancy x loyalty model: our loyal army
+    // + the republican Banners + a popular-defence levy, against the Empire's invading host.
+    var _loyalArmy = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0);
+    var _banners = (Q.banner_strength || 0) * (Q.banner_militancy || 0);
+    var _levy = (Q.pro_republic || 0) * 2;
+    Q.defense_power = Math.round(_loyalArmy + _banners + _levy);
+    // The Empire's host: a strong, magically-backed army, swollen by the loyalists who rally to
+    // it and emboldened by our fear and our weakness.
+    Q.empire_power = Math.round(700 + (Q.loyalist_strength || 0) * (Q.loyalist_militancy || 0)
+        + (Q.imperial_fear || 0) * 30 + Math.max(0, 50 - _posture) * 8);
+    if (Q.defense_power > Q.empire_power * 1.1) {
+      Q.empire_outcome = "war_repel";
+    } else if (Q.defense_power / Q.empire_power >= 0.55) {
+      Q.empire_outcome = "war_stalemate";
+    } else {
+      Q.empire_outcome = "war_conquest";
+    }
+  }
+}
 !}
 set-bg: img/paper.jpg
 new-page: true
@@ -58,6 +93,11 @@ A chapter in history closes.
 - @monarchy_win
 - @papen_win
 - @left_win
+- @cold_war
+- @reunification
+- @war_repel
+- @war_stalemate
+- @war_conquest
 
 @taming_lose
 title: The <span style="color: #7A3C00;">Royalist</span> Beast Tamed?
@@ -99,7 +139,7 @@ Today, the <span style="color: #BFC8CC;">**GNU**</span> operates as a convention
 @weimar_win
 title: The Unity Republic Limps Forward
 subtitle: Ending 2
-view-if: (weimar_win and not return_to_normalcy and marcher_votes < 50 and marcher_r < 50 and pro_republic < 80 and royalist_votes >= 8 and not civil_war_seen) or (weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and rubicon)
+view-if: ((weimar_win and not return_to_normalcy and marcher_votes < 50 and marcher_r < 50 and pro_republic < 80 and royalist_votes >= 8 and not civil_war_seen) or (weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and rubicon)) and empire_outcome == ""
 new-page: true
 
 Following the scarring experience of the <span style="color: #7A3C00;">Royalist</span> movement’s rapid rise and implosion, the flaws of the Unity system became impossible to ignore. But in the end, the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> who once battled in the streets now stand together in soup lines. Though a number of neo-<span style="color: #7A3C00;">Royalist</span> movements would emerge after [+ royalist_leader +]’s mask of sanity slipped, the ideology itself remains irrevocably discredited.
@@ -128,7 +168,7 @@ Though real democracy was formally restored in the 1960s following massive publi
 @weimar_mega_win
 title: The Unity Republic Marches On
 subtitle: Ending 3
-view-if: weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and not rubicon
+view-if: weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and not rubicon and empire_outcome == ""
 new-page: true
 
 At the turn of the decade, the Great Depression and widespread disillusionment with the Unity system left few optimists in the Commonwealth. Yet, the Republic—forged by the will of the people all those years ago—has weathered a crisis of unprecedented proportions. <span style="color: #c00000;">Reformism</span> endures, as do its detractors.
@@ -370,3 +410,87 @@ elements.forEach(el => {
 !}
 set-bg: img/map_2.jpg
 go-to: game_over.eg_menu
+@cold_war
+title: The Cold Frontier
+subtitle: Ending — Deterrence
+view-if: empire_outcome == "cold_war"
+new-page: true
+set-bg: img/paper.jpg
+
+The Empire blinked.
+
+It had wagered, in the end, on a Commonwealth that would fall to fear and faction before a single legion crossed the Stathmore — a brittle thing, ripe for the taking. What the Empress's Hardliners found instead was a republic that worked: its streets quiet, its army loyal, its banks open, its people — magi and faithful, commons and guild — bound, however grudgingly, to the thing they had built. An invasion of that would not be a restoration. It would be a war, long and uncertain, against a nation that did not wish to be ruled.
+
+So the envoys came not with ultimatums but with the cold courtesies of two powers who have decided, for now, not to destroy each other. The frontier hardened into a permanent thing — watchtowers and customs houses, a generation of soldiers who would grow old staring north across the moors. The Restoration, denied the war it needed to ride home, withered in the cold: the Royalists who had pinned everything on the Empress's coming found themselves a fringe, and the magi, watching the republic endure, quietly made their peace with it.
+
+It is not love, this peace. It is only that the Commonwealth made itself too strong and too whole to be worth the swallowing — and in the world we were given, that was enough.
+
+- @go_back
+
+@reunification
+title: The Reunion
+subtitle: Ending — Reconciliation
+view-if: empire_outcome == "reunification"
+new-page: true
+set-bg: img/paper.jpg
+
+There was no war.
+
+It is the strangest of all the things that might have happened — that the Commonwealth, having clawed its way through the crisis with its institutions intact, having made its peace with the magi and folded the cooled remnant of the Royalists into a Concord that could be reasoned with, should choose by treaty and by open vote the very thing the Empress's armies could never have taken by force. The negotiations ran for two years at New Axton. The Empress Jacqueline, no fool, understood that a crown offered is worth more than a crown imposed, and the Hardliners who had wanted only subjugation were, one by one, eased out of her council.
+
+What returned to the Empire was not a conquered province but a constituent realm: its Assembly preserved, its magi enfranchised and their circles recognized at last under a throne that reveres the God of Magic, its president become a chancellor who kneels — once, and lightly — to a constitutional crown. The God-Emperor's long shadow and the republic's stubborn parliament, reconciled in a single state that neither the old loyalists nor the old radicals had ever thought possible.
+
+There are those who weep that the republic is ended. There are those who weep with relief that it ended in a signing-hall and not in fire. Both are right. The Commonwealth returned to the Empire on its own terms, upright and unbroken — and that, the histories will say, was a kind of victory that no battle could have won.
+
+- @go_back
+
+@war_repel
+title: Broken on Our Walls
+subtitle: Ending — The Empire Repelled
+view-if: empire_outcome == "war_repel"
+new-page: true
+set-bg: img/paper.jpg
+
+They came, and we held.
+
+When the Hardliners finally had their war — when the eagle-standards crossed the Stathmore in the grey of a Lowmoon dawn — they found a Commonwealth that did not break. The army held to its oath. The Banners and the Iron Banner filled the streets behind them, and behind the banners stood a people who had decided, against every prophecy of their enemies, that the republic was worth dying for. It was bloody beyond telling. Whole towns of the north changed hands and changed back. But the invasion crested, and stalled, and was thrown back across the frontier it had crossed.
+
+The reckoning fell hardest on those who had wagered against their own country. The Royalists who had welcomed the Empress's coming were finished — not banned, for the republic had learned the cost of martyrs, but disgraced past all recovery, a byword for the men who cheered an invading army. At New Axton, the Empress's Hardliner faction collapsed in recrimination, and a chastened court returned, at last, to the slow business of coexistence.
+
+The Commonwealth that emerged was scarred and poorer and prouder. It had been tested in the one way a republic most fears, and it had not been found wanting.
+
+- @go_back
+
+@war_stalemate
+title: The Long War
+subtitle: Ending — Stalemate
+view-if: empire_outcome == "war_stalemate"
+new-page: true
+set-bg: img/paper.jpg
+
+Neither side could break the other, and so both bled.
+
+The Empire's host was strong enough to take the northern realms and not strong enough to hold the whole; the Commonwealth was strong enough to survive and too weak to win. The frontier became a wound that would not close — a belt of ruined country across the old marches where the lines moved a few miles each season and a generation of young men went into the ground. Stathmore was lost, retaken, lost again. Ivion changed hands four times. The cities of the interior learned the sound of distant guns the way an old house learns the sound of wind.
+
+The republic endured, after a fashion. It had to become harder to survive — emergency powers that were never quite repealed, a censorship that was never quite lifted, a politics narrowed by the long emergency to the single question of the war. The magi who had thrown in with the Commonwealth fought brilliantly and were never entirely trusted; the Royalists in the occupied north set up their grateful little courts under the eagle and were hanged or fêted depending on which way the line had last moved.
+
+When the armistice finally came, it settled nothing. It only stopped the dying, and left two exhausted states glaring across a partitioned land, each calling itself the true heir of a country that the war had cut in half.
+
+- @go_back
+
+@war_conquest
+title: The Eagle Over Axton
+subtitle: Ending — Conquest
+view-if: empire_outcome == "war_conquest"
+new-page: true
+set-bg: img/paper.jpg
+
+The Commonwealth that could not defend itself did not survive the testing.
+
+It was over more quickly than anyone had feared. An army half-loyal and underfed, a republic hollowed by crisis and division, a people too weary and too frightened to rise — against these the Empress's legions moved almost without checking, and within a season the eagle of New Axton flew over Axton Proper, over the Assembly hall where the Commonwealth had been proclaimed a lifetime before. The last government fled south, or to Ethia, or to a cell. The republic was not so much conquered as folded up and put away, as one puts away a thing that has stopped working.
+
+The Restoration had its day of triumph. The Royalists rode home behind the legions; the Registry was reopened and the loyalty-oaths restored, save that now it was the magi, elevated as the chosen caste of the God of Magic's restored cult, who held the whip-hand over those who had once watched them. The faithful gave thanks for order. The schools taught that the long republican experiment had been an aberration, a fever, now mercifully broken.
+
+And the people who had built the Commonwealth, who had voted in it and argued in it and never quite loved it enough to save it, learned the oldest lesson of all the failed republics: that liberty undefended is liberty surrendered, and that the bill, when it comes, is always paid in full.
+
+- @go_back
