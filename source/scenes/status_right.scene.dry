@@ -31,7 +31,7 @@ is-special: true
 [? if not gnu_existed: </div> ?]
 [? if not gnu_existed: <div style="display: flex; justify-content: space-between; gap: 0px; margin-bottom: 5px;"> ?]
 [? if not gnu_existed: <div style="flex: 1;"> ?]
-[? if not gnu_existed: <p style="font-weight: bold;margin-bottom: 2px;">Otto Marsden</p> ?]
+[? if not gnu_existed: <p style="font-weight: bold;margin-bottom: 2px;">Oren Marsden</p> ?]
 [? if not gnu_existed: <p style="margin-bottom: 2px;">Influence: [+ meissner_strength : camarilla_strength +]</p> ?]
 [? if not gnu_existed: <p style="margin-bottom: 2px;">Goal: [+ meissner_goal +]</p> ?]
 [? if not gnu_existed: </div> ?]
@@ -45,7 +45,7 @@ is-special: true
 [? if gnu_existed: <div style="position: relative; width: 100%; max-width: 600px; margin: auto;"> ?]
 
 [? if gnu_existed: <div style="white-space: nowrap; display: flex; justify-content: space-between; width: 100%;"> ?]
-[? if gnu_existed: [? if president == "DuFour": <div style="text-align: left; flex: 1;">Paul von DuFour</div> ?][? if president == "Burnell (acting)": <div style="text-align: left; flex: 1;">Erwin Burnell (acting)</div> ?][? if president == "Grothmoor (acting)": <div style="text-align: left; flex: 1;">Hermann Grothmoor (acting)</div> ?][? if president == "Hammerton": <div style="text-align: left; flex: 1;">Kurt von Hammerton-Equord</div> ?][? if president == "Seckard": <div style="text-align: left; flex: 1;">Hans von Seckard</div> ?] ?]
+[? if gnu_existed: [? if president == "DuFour": <div style="text-align: left; flex: 1;">Paul von DuFour</div> ?][? if president == "Burnell (acting)": <div style="text-align: left; flex: 1;">Erwin Burnell (acting)</div> ?][? if president == "Grothmoor (acting)": <div style="text-align: left; flex: 1;">Gorman Grothmoor (acting)</div> ?][? if president == "Hammerton": <div style="text-align: left; flex: 1;">Kurt von Hammerton-Equord</div> ?][? if president == "Seckard": <div style="text-align: left; flex: 1;">Hans von Seckard</div> ?] ?]
 [? if gnu_existed and chancellor == "Staal": <div style="text-align: right; flex: 1;">Kurt von Staal</div> ?]
 [? if gnu_existed and chancellor == "Bredon": <div style="text-align: right; flex: 1;">Ferdinand von Bredon</div> ?]
 [? if gnu_existed and chancellor == "Goodlake": <div style="text-align: right; flex: 1;">Reynold Goodlake</div> ?]

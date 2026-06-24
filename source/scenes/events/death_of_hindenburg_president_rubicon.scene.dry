@@ -138,7 +138,7 @@ President Paul von DuFour has passed away at age 86. An era of history is closin
 
 The nation erupts in grief over the death of its war hero and president—though this mourning is confined largely to the political right. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
 
-New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Hermann Grothmoor ?] serves as the acting president.
+New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Gorman Grothmoor ?] serves as the acting president.
 
 - @candidates: Who are the candidates so far?
 
@@ -153,7 +153,7 @@ title: The <span style="color: #7A3C00;">Royalist</span>'s last hurrah?
 
 With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate.
 
-The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Wilhelm Frask as a separate candidate. ?]
+The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Bram Frask as a separate candidate. ?]
 
 [? if nvf_candidate == gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be backing [+ gnu_candidate +], as they remain within the <span style="color: #BFC8CC;">**GNU**</span> umbrella. ?][? if nvf_candidate != gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be boycotting the election entirely—continuing their deluded course of waiting for the "right moment" to spark an armed rebellion. ?]
 
@@ -396,7 +396,7 @@ set-jump: post_election
 on-arrival: {!
 var candidate_descs = {
   Crowde: "Corin Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
-  Frask: "Wilhelm Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
+  Frask: "Bram Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
   Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt von Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",

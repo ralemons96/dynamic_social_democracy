@@ -22,7 +22,7 @@ on-display: {!
 
 In [+ royalist_leader +]'s pursuit of power, a certain champagne salesman by the name of Joachim von Ribbentrop has offered to act as an intermediary to former Chancellor von Goodryke, whom he met during the Great War. [? if lippe_election_seen: With the High Cross campaign now over, ?][+ royalist_leader +] finally has time to resume talks with Goodryke—who is more than eager himself.
 
-Accompanied by Heinrich Brocke and [? if not rohm_explode: Ernst Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], [+ royalist_leader +] joined Goodryke for lunch at Ribbentrop’s villa, reiterating his demand for the chancellorship. He claimed that the <span style="color: #7A3C00;">Royalist</span> movement was still very much alive, and could not accept a subordinate role in any Goodryke-led cabinet.
+Accompanied by Torin Brocke and [? if not rohm_explode: Isen Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], [+ royalist_leader +] joined Goodryke for lunch at Ribbentrop’s villa, reiterating his demand for the chancellorship. He claimed that the <span style="color: #7A3C00;">Royalist</span> movement was still very much alive, and could not accept a subordinate role in any Goodryke-led cabinet.
 
 Goodryke pushed back, insisting that President DuFour’s opposition to appointing [+ royalist_chancellor +] as Chancellor remained firm—and that even he could not change the old man's mind. The meeting ended without resolution, and with no plans to meet again. Despite increased secrecy, some of the details still leaked to the press.
 

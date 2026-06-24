@@ -23,7 +23,7 @@ unavailable-subtitle: [?  if not levi_advisor and not rosenfeld_advisor: Our par
 on-arrival: collectivist_leader = "Conciliators"; communist_coalition += 3; collectivist_relation += 10*(1-dissent); left_strength += 5; left_dissent -= 8; pro_republic += (collectivist_votes / 2)
 achievement: versohnler
 
-With our support, the Conciliators have won the leadership contest! The new leadership is a group of Conciliators, including Arthur Ewlan, Hugo Steunenberg, and Ernst Merrow. Halsmark remains, but largely as a figurehead only, it seems. We hope that the new leadership will be more inclined towards cooperation.
+With our support, the Conciliators have won the leadership contest! The new leadership is a group of Conciliators, including Eamon Ewlan, Kelby Steunenberg, and Joren Merrow. Halsmark remains, but largely as a figurehead only, it seems. We hope that the new leadership will be more inclined towards cooperation.
 
 
 @conciliator_fail

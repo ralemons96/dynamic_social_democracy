@@ -642,7 +642,7 @@ go-to: saxony_coalition_menu
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_saxony_elections_vote +]% {!</td><td>!} [+ royalist_r_saxony +]%  {!</td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-The [+ saxony_leader +] Cabinet has collapsed a few months ago due to a dispute involving the Dornish Reichrat delegation voting for the Young Plan, which has resulted in the loss of confidence from the <span style="color: #3E88B3;">**Traditionalists**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**Royalists**</span>. However, they do elect the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]'s Walther Sheckley as Minister-President in a caretaker cabinet of experts, before the <span style="color: #7A3C00;">**Royalists**</span> ultimately voted for dissolving parliament. The political climate has greatly changed from last year, and the extremist parties are expected to gain. 
+The [+ saxony_leader +] Cabinet has collapsed a few months ago due to a dispute involving the Dornish Reichrat delegation voting for the Young Plan, which has resulted in the loss of confidence from the <span style="color: #3E88B3;">**Traditionalists**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**Royalists**</span>. However, they do elect the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]'s Orrin Sheckley as Minister-President in a caretaker cabinet of experts, before the <span style="color: #7A3C00;">**Royalists**</span> ultimately voted for dissolving parliament. The political climate has greatly changed from last year, and the extremist parties are expected to gain. 
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_saxony +]% 
 
@@ -750,7 +750,7 @@ view-if: marcher_coalition_saxony >= 50
 choose-if: marcher_coalition_possible_saxony and left_strength < 20
 on-arrival: saxony_marcher = 1; saxony_groko = 1; commons_royalist -= 3; disfavored_royalist -= 3; commons_marcher += 3; disfavored_marcher += 3; commons_royalist -= 3; disfavored_royalist -= 3; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; gold_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; aspd_dead = 1
 
-Somehow, the propertied parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, rather than continuing their current government with Max Hale and the right-wing parties.
+Somehow, the propertied parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, rather than continuing their current government with Bevan Hale and the right-wing parties.
 
 With the <span style="color: #fe9e00;">**ASPD**</span> (whose Dornish chapter is notably more sane) now convinced of our reformist path, they have rejoined the Dornish <span style="color: #c00000;">**Marchers**</span>! This development has weakened the <span style="color: #7A3C00;">**Royalists**</span>, who are now relegated to the powerless opposition.
 

@@ -464,21 +464,21 @@ choose-if: bolz_unlock
 on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 4; faithful_unionist += 5; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Bolz"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/bolz.jpg
 
-Minister-President of Purl Eugen Bolz has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Bolz has worked harmoniously with the respected Wilhelm Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
+Minister-President of Purl Eugen Bolz has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Bolz has worked harmoniously with the respected Cassian Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
 
 However, Bolz's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Bolz will attempt to bridge the confessional divides between Catholic and Protestant conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
 
 Given Bolz's refusal to enter a Unity Coalition in Purl back in 4293, viewing the <span style="color: #c00000;">**Marchers**</span> as 'incapable of governing,' we do not expect much improvement in our relationship moving forward.
 
 @lejeune_jung
-title: Paul Lenmoor-Jung, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+title: Edras Lenmoor-Jung, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: Major member of the former <span style="color: #3E88B3;">Traditionalists</span>'s Catholic wing, and aligned with Westmore's group. - <span style="color: #3E88B3;">National Conservative</span> Wing
 unavailable-subtitle: Despite his Catholic faith, he is unable to garner the expected support from <span style="color: #000000;">Unionists</span> and <span style="color: #3E88B3;">nationalist</span> politicians - <span style="color: #3E88B3;">National Conservative</span> Wing
 choose-if: lejeune_jung_unlock
 on-arrival: unionist_relation -= 5; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 3; faithful_unionist += 5; faithful_dnf -= 3; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Lenmoor-Jung"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/lejeune_jung.jpg
 
-Paul Lenmoor-Jung, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>'s Catholic wing, and an advocate for closer ties to the <span style="color: #000000;">Unionists</span> has been elected as leader of a merger between the two. His Catholic faith has made him acceptable to former <span style="color: #000000;">Unionists</span> members, and his alignment with Westmore's faction has solidified <span style="color: #3E88B3;">nationalist</span> support.
+Edras Lenmoor-Jung, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>'s Catholic wing, and an advocate for closer ties to the <span style="color: #000000;">Unionists</span> has been elected as leader of a merger between the two. His Catholic faith has made him acceptable to former <span style="color: #000000;">Unionists</span> members, and his alignment with Westmore's faction has solidified <span style="color: #3E88B3;">nationalist</span> support.
 
 However, Lenmoor-Jung's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Lenmoor-Jung will attempt to bridge the confessional divides between Catholic and Protestant conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
 

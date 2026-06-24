@@ -45,7 +45,7 @@ Q.staal_marcher_r -= 4;
 Q.staal_marcher_influence -= 3;
 !}
 
-Wilhelm Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": —both in the Commonwealth and in Heartland?]. Garrick Crowde takes the vice-chancellorship—a title in name only. [? if heartland_leader == "Goodlake":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Crowde installed in Heartland, Goodlake stays on—as Staal’s loyal puppet and as a concession to the <span style="color: #000000;">Unionist Party</span>. ?]
+Bram Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": —both in the Commonwealth and in Heartland?]. Garrick Crowde takes the vice-chancellorship—a title in name only. [? if heartland_leader == "Goodlake":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Crowde installed in Heartland, Goodlake stays on—as Staal’s loyal puppet and as a concession to the <span style="color: #000000;">Unionist Party</span>. ?]
 
 At the <span style="color: #7A3C00;">Royalists’</span> insistence, Edrik Halbridge is brought in as an independent to head the Economic Ministry.
 

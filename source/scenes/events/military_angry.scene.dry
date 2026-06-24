@@ -34,7 +34,7 @@ unavailable-subtitle: We lack the leverage—or sympathy—among our coalition p
 on-arrival: coalition_dissent += 1 if in_weimar_coalition or in_grand_coalition; burgher_marcher -= 2; guild_marcher -= 2; landed_marcher -= 2; unionist_relation -= 5; ddp_relation -= 5 if ddp_ideology != "Left"; gold_relation -= 8; lvp_relation -= 5; lvp_right += 2; gold_right += 2; ddp_right += 1; ddp_cohesion -= 1; dufour_angry += 25; army_minister = "Ostren"; groener_explode = 1; army_loyalty += 0.2; coup_progress += 3; capital_strike_progress += 1
 face-image: img/portraits/oster.jpg
 
-Our request to dismiss Roland Ravabelle has been approved by our coalition partners. He is replaced by Hans Ostren, a relatively minor officer in the Commonwealth Army. While Ostren shares the nationalist leanings common within the military and is conservative enough to be accepted as Ravabelle’s successor, our lack of control over the Commonwealth Army Ministry limits us—we can only remove a handful of officials involved in political interference.
+Our request to dismiss Roland Ravabelle has been approved by our coalition partners. He is replaced by Wystan Ostren, a relatively minor officer in the Commonwealth Army. While Ostren shares the nationalist leanings common within the military and is conservative enough to be accepted as Ravabelle’s successor, our lack of control over the Commonwealth Army Ministry limits us—we can only remove a handful of officials involved in political interference.
 
 Staal has been dismissed from the Office for Ministerial Affairs, and von Hammerton, for now, has remained notably quiet.
 

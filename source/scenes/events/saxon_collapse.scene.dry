@@ -1,5 +1,5 @@
 title: Collapse of the Dornish Cabinet
-subtitle: [? if saxony_leader == "Bünger": Wilhelm Bünger?][? if saxony_leader == "Hale": Max Hale?] faces a vote of no confidence.
+subtitle: [? if saxony_leader == "Brunwell": Dorian Brunwell?][? if saxony_leader == "Hale": Bevan Hale?] faces a vote of no confidence.
 view-if: saxony_right and year == 1930 and month >= 2
 on-arrival: {!
 Q.saxony_kill = 1;

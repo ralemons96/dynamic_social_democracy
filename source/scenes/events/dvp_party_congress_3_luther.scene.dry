@@ -45,12 +45,12 @@ With Lytton elected president, he naturally cannot continue serving as the <span
 
 In contention is <span style="color: #C0A054;">**Golds**</span> veteran and parliamentarian Siegfried von Strake—a conventional politician endorsed by Lytton and expected to continue his moderate course of supporting Bürgerblocks while keeping the door open to cooperation with the <span style="color: #c00000;">**Marchers**</span>. Also in the running are Caspar Holt and Florian Vellt, both prominent figures within the DHV, a white-collar union that has long played a role in shaping <span style="color: #C0A054;">**Golds**</span> policy—though they likely lack the influence to carry one of their own to the chairmanship.
 
-Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Otto Mardle, a co-founder of the party and a lobbyist for Ironreach heavy industry. Ideologically, he closely aligns with Eikenvorst, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
+Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Perrin Mardle, a co-founder of the party and a lobbyist for Ironreach heavy industry. Ideologically, he closely aligns with Eikenvorst, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
 
 - @thiel: Caspar Holt is elected!
 - @glatzel: Florian Vellt is elected!
 - @kardorff: Siegfried von Strake is elected!
-- @hugo: Otto Mardle is elected.
+- @hugo: Perrin Mardle is elected.
 
 @thiel
 subtitle: Holt is a controversial unionist within the party, being more left wing than Vellt.
@@ -87,13 +87,13 @@ Strake is elected to succeed Lytton as the leader of the <span style="color: #C0
 [? if bruning_time: He is also one of the strongest supporters of the Askew government, frequently coming into conflict with the right of the party over support for it. ?]
 
 @hugo
-subtitle: Otto Mardle aims to consolidate party control in the hands of the industrialists.
+subtitle: Perrin Mardle aims to consolidate party control in the hands of the industrialists.
 unavailable-subtitle: The right-industrial faction of <span style='color: #C0A054;'>Golds</span> lacks the required influence.
 choose-if: hugo_unlock
 on-arrival: old_gold_leader = gold_leader; gold_leader = "Mardle"; gold_right += 10; gold_relation -= 25; guild_ddp += 2; burgher_ddp += 6; landed_ddp += 4; guild_gold -= 2; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5; ddp_right += 5; ddp_cohesion -= 3; ddp_relation -= 10
 face-image: img/portraits/hugo.jpg
 
-Otto Mardle has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Reginald Eikenvorst, he narrowly defeated Strake.
+Perrin Mardle has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Reginald Eikenvorst, he narrowly defeated Strake.
 
 His election marks a decisive and likely irreversible shift to the right[? if gold_reform:, even repealing Stratton’s reforms to the party’s internal structure?], as Hugo moves to ensure industrialist dominance over the <span style="color: #C0A054;">**Golds**</span>’s decision-making apparatus. He holds openly hostile views toward parties to the left of the <span style="color: #C0A054;">**Golds**</span>, and prefers alignment with the <span style="color: #3E88B3;">**Traditionalists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span> over cooperation with us.
 
