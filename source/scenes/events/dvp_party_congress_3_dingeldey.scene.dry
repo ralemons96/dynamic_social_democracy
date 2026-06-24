@@ -1,5 +1,5 @@
 title: <span style="color: #C0A054;">**Golds**</span> Party Vote
-subtitle: The Kunz-Dohna group ousts Coalfax!
+subtitle: The Karnoth-Dohna group ousts Coalfax!
 view-if: ((year == 1931 and month == 12) or year >= 1932) and gold_leader == "Coalfax" and (gold_ideology == "Left" or (gold_ideology == "Moderate" and pro_republic >= 60)) and gold_exist and (traditionalist_ideology == "Radical" or traditionalist_leader == "Lambach") and not lvp_formed and not (lvp_timer_1_trigger and (lvp_merger_1_timer or lvp_trigger_1_time))
 on-arrival: gold_right += 3 if gold_relation < 30; gold_left += 2 if gold_relation >= 50; gold_right += 2 if not in_grand_coalition
 max-visits: 1
@@ -11,7 +11,7 @@ new-page: true
 
 The non-industrialist and Strattonite elements of the <span style="color: #C0A054;">**Golds**</span> have revolted, angered by their marginalization at the hands of the industrialists, who have pushed to realign Stratton’s former party with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>.
 
-Led by Wilhelm Kunz, a Axton lawyer, and Count Alexander zu Dohna, a legal expert and widely respected figure on the party’s left wing, they aim to publicly challenge Coalfax and the industrialist faction that has effectively puppeteered him.
+Led by Wilhelm Karnoth, a Axton lawyer, and Count Alexander zu Dohna, a legal expert and widely respected figure on the party’s left wing, they aim to publicly challenge Coalfax and the industrialist faction that has effectively puppeteered him.
 
 They both advocate for cooperation with the minor propertied parties and the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and firmly reject what they call the “psychosis of <span style="color: #7A3C00;">Imperial Sovereigntism</span>.”
 

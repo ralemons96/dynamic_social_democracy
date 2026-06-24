@@ -1068,7 +1068,7 @@ Q.woytinsky_advisor = 0; // Valdemar Voss (post-1930)
 Q.wissell_advisor = 0; // Rudolf Wistle
 
 // Revisionist advisors
-Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
+Q.mierendorff_advisor = 0; // Carlo Marrow (post-1930)
 
 Q.leber_advisor = 0; // Lucan Lebbon (post-1930)
 Q.schumacher_advisor = 0; // Kurt Shackley (post-1930)

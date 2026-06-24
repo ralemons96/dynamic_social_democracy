@@ -638,7 +638,7 @@ go-to: election_menu
 
 Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other propertied parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Catholics. ?]
 
-Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helder, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @bvp_majority
 title: The <span style="color: #A2D8E0;">**Arcanists**</span> has captured another majority.
@@ -649,7 +649,7 @@ go-to: election_menu
 
 The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the propertied parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though.
 
-Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helder, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @nsdap_majority
 title: The <span style="color: #7A3C00;">**Royalists**</span> wins a majority?
@@ -669,7 +669,7 @@ go-to: election_menu
 
 The former incumbent coalition consisting of the <span style="color: #A2D8E0;">**Arcanists**</span>, <span style="color: #38C538;">Avrizan Peasants’ League</span>, and the various smaller propertied parties has continued. This show of stability will weaken the <span style="color: #7A3C00;">Royalists</span>.
 
-Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helder, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @spd_majority
 title: The <span style="color: #c00000;">**Marchers**</span> forms a majority government.
@@ -1098,7 +1098,7 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 The <span style="color: #000000;">Unionist Party</span> in Purl has historically been unfriendly toward us, opting to continue governing in a minority coalition with the <span style="color: #3E88B3;">**Traditionalists**</span> as they view us as incapable of governing, even when a Unity Coalition was possible in 4293.
 
-Under the stable leadership of <span style="color: #000000;">Eugen Bolz</span> and <span style="color: #3E88B3;">Wilhelm Bazille</span>, Purl has surprisingly managed to mitigate the worst effects of the economic depression. However, its police force is notorious for its anti-<span style="color: #c00000;">Reformist</span> bias, targeting us more aggressively than the more violent <span style="color: #7A3C00;">Royalists</span>.
+Under the stable leadership of <span style="color: #000000;">Eugen Bolz</span> and <span style="color: #3E88B3;">Wilhelm Baswick</span>, Purl has surprisingly managed to mitigate the worst effects of the economic depression. However, its police force is notorious for its anti-<span style="color: #c00000;">Reformist</span> bias, targeting us more aggressively than the more violent <span style="color: #7A3C00;">Royalists</span>.
 
 - @z_toleration_wurttemberg
 - @nsdap_majority_wurttemberg

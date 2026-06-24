@@ -56,7 +56,7 @@ if (Q.rubicon_president_month > 12) {
 }
 
 Q.president = "Burnell (acting)";
-if (Q.judicial_reform >= 4) Q.president = "Großmann (acting)"
+if (Q.judicial_reform >= 4) Q.president = "Grothmoor (acting)"
 
 Q.pro_republic += 10;
 Q.commons_kvp -= 4; 
@@ -72,7 +72,7 @@ if (Q.aspd_other) {
 
 The referendum succeeds with [+ dufour_ref_votes +]% of the vote—the Commonwealth is saved! If the current coalition holds, we may finally elect a democratic president capable of guiding the nation out of the chaos left by DuFour and Staal.
 
-Disgraced and isolated, DuFour is forced to resign from the presidency. In his place, [? if president == "Burnell (acting)": Erwin Burnell?][? if president == "Großmann (acting)": Hermann Großmann?], President of the Commonwealth Court, has been elevated to acting president until new elections are held.
+Disgraced and isolated, DuFour is forced to resign from the presidency. In his place, [? if president == "Burnell (acting)": Erwin Burnell?][? if president == "Grothmoor (acting)": Hermann Grothmoor?], President of the Commonwealth Court, has been elevated to acting president until new elections are held.
 
 Presidential elections are scheduled for Week [+ rubicon_president_week +] of [+ rubicon_president_month : month +], [+ rubicon_president_year +].
 

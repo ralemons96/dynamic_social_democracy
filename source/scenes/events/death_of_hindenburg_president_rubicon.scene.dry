@@ -73,7 +73,7 @@ for (var party of Q.parties) {
 Q.round = 0;
 Q.dufour_dead = 1;
 Q.president = "Burnell (acting)";
-if (Q.judicial_reform >= 4) Q.president = "Großmann (acting)"
+if (Q.judicial_reform >= 4) Q.president = "Grothmoor (acting)"
 
 Q.Heuss_votes_pre = 0;
 
@@ -138,7 +138,7 @@ President Paul von DuFour has passed away at age 86. An era of history is closin
 
 The nation erupts in grief over the death of its war hero and president—though this mourning is confined largely to the political right. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
 
-New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Hermann Großmann ?] serves as the acting president.
+New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Hermann Grothmoor ?] serves as the acting president.
 
 - @candidates: Who are the candidates so far?
 

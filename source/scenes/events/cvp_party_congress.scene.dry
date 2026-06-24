@@ -458,13 +458,13 @@ All the compromise candidates that have emerged are broadly acceptable to the ma
 
 @bolz
 title: Eugen Bolz, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
-subtitle: Bolz is the current Minister-President of Purl, having governed harmoniously with Bazille's state <span style="color: #3E88B3;">**Traditionalists**</span> for the entire duration - <span style="color: #000099;">Catholic Right</span> Wing
+subtitle: Bolz is the current Minister-President of Purl, having governed harmoniously with Baswick's state <span style="color: #3E88B3;">**Traditionalists**</span> for the entire duration - <span style="color: #000099;">Catholic Right</span> Wing
 unavailable-subtitle: Bolz is already reluctant to give up his job, and without unified support behind him, he will stay out of national politics. - <span style="color: #000099;">Catholic Right</span> Wing
 choose-if: bolz_unlock
 on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 4; faithful_unionist += 5; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Bolz"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/bolz.jpg
 
-Minister-President of Purl Eugen Bolz has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Bolz has worked harmoniously with the respected Wilhelm Bazille, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
+Minister-President of Purl Eugen Bolz has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Bolz has worked harmoniously with the respected Wilhelm Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
 
 However, Bolz's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Bolz will attempt to bridge the confessional divides between Catholic and Protestant conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
 
