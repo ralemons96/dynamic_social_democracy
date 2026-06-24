@@ -6,7 +6,7 @@ on-arrival: month_actions += 1; foreign_policy_timer += 8
 view-if: marcher_in_government = 1 and foreign_minister_party = "Marcher" and  foreign_policy_timer <= 0
 card-image: img/portraits/BreitscheidRudolf.jpg
 go-to: fp_menu
-#subtitle: International relations and dealing with Versailles.
+#subtitle: International relations and dealing with Etaluxia.
 
 = Foreign Policy
 
@@ -40,29 +40,29 @@ on-arrival: west_relation += 2; reparations_negotiation += 1
 The key to peace in Europe is a rapprochement between <span style="color: #002654;">Ethia</span> and the Commonwealth. We are taking steps towards that rapprochement. [? if young_plan_seen == 0 : This is difficult to do when <span style="color: #002654;">Ethia</span> is occupying a major portion of the Commonwealth's territory, but we are working on that part. ?]
 
 @improve_east
-title: Improve our relations with our eastern neighbors.
+title: Improve our relations with our northern neighbors.
 on-arrival: east_relation += 2;
 
-We also aim to improve relations with our eastern neighbors, <span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span>, who are rightfully terrified of Commonwealth aggression. Hopefully we can convince them of our peaceful intentions.
+We also aim to improve relations with our northern neighbors, <span style="color: #DC143C;">the Allied States</span> and <span style="color: #11457E;">Cinderwall</span>, who are rightfully terrified of Commonwealth aggression. Hopefully we can convince them of our peaceful intentions.
 
 @improve_soviet_eco
-title: Expand our exports to the <span style="color: #750e0e;">**Soviet Union**</span>.
+title: Expand our exports to the <span style="color: #750e0e;">**Central Union**</span>.
 subtitle: A win for our economy and for our relationship with the <span style="color: #700000;">**Collectivists**</span>.
 view-if: year >= 1930
 on-arrival: soviet_export = 1; soviet_relation += 1; economic_growth += 0.5; disfavored -= 0.5; foreign_goal_completed += 1; collectivist_relation += 6; communist_coalition += 1; dufour_angry += 15; unionist_relation -= 3; ddp_relation -= 3; gold_relation -= 3; lvp_relation -= 3; gold_right += 1; lvp_right += 1; ddp_right += 1
 max-visits: 1
 
-The <span style="color: #750e0e;">Soviet Union</span>, with its centrally planned economy and isolation from global markets, has insulated itself from the effects of the Great Depression. They have since been rapidly industrializing in accordance with their Five-Year Plan, making them a prime partner for exports, especially as tariffs from our nominal trading partners in the West have increased, along with their general isolation from international markets.
+The <span style="color: #750e0e;">Central Union</span>, with its centrally planned economy and isolation from global markets, has insulated itself from the effects of the Great Depression. They have since been rapidly industrializing in accordance with their Five-Year Plan, making them a prime partner for exports, especially as tariffs from our nominal trading partners in the West have increased, along with their general isolation from international markets.
 
-The <span style="color: #940000;">Soviets</span> are pleased by this, and we stand to reap the economic benefits. The only downside is that the right-wing propaganda machine has decried this action, pressuring [? if president == "DuFour": President DuFour and?] the bourgeois parties to break with us.
+The <span style="color: #940000;">Central Unionists</span> are pleased by this, and we stand to reap the economic benefits. The only downside is that the right-wing propaganda machine has decried this action, pressuring [? if president == "DuFour": President DuFour and?] the bourgeois parties to break with us.
 
 @improve_soviet
-title: Improve our relations with the <span style="color: #750e0e;">**Soviet Union**</span>.
+title: Improve our relations with the <span style="color: #750e0e;">**Central Union**</span>.
 subtitle: We could also broach the question of the <span style="color: #700000;">**Collectivists**</span>...
 
-The <span style="color: #750e0e;">Soviet Union</span> also suffered from the international order created by the Treaty of Versailles; they have been participating in our secret rearmament program. The Treaty of Rapallo in 1922 affirmed our friendly relations.
+The <span style="color: #750e0e;">Central Union</span> also suffered from the international order created by the Treaty of Etaluxia; they have been participating in our secret rearmament program. The the secret accord with the Central Union in 1922 affirmed our friendly relations.
 
-The <span style="color: #940000;">Soviets</span> are asking for economic and developmental assistance. They are still a poor country on the whole, and are desperately trying to catch up to the western powers. There is a chance that our <span style="color: #FF0000;">anti</span>-<span style="color: #700000;">communist</span> coalition partners would be upset, but we could assuage them by asking the <span style="color: #940000;">Soviets</span> for secret assistance in training and equipping the Commonwealth Army.
+The <span style="color: #940000;">Central Unionists</span> are asking for economic and developmental assistance. They are still a poor country on the whole, and are desperately trying to catch up to the western powers. There is a chance that our <span style="color: #FF0000;">anti</span>-<span style="color: #700000;">communist</span> coalition partners would be upset, but we could assuage them by asking the <span style="color: #940000;">Central Unionists</span> for secret assistance in training and equipping the Commonwealth Army.
 
 - @soviet_economic_aid_yes_mil: Provide aid, in exchange for Commonwealth Army assistance.
 - @soviet_economic_aid_yes: Provide aid, in exchange for only good relations.
@@ -73,28 +73,28 @@ choose-if: budget >= 1
 subtitle: -1 budget
 on-arrival: soviet_aid_forpol = 1; budget -= 1; soviet_relation += 1; army_militancy += 0.2; army_loyalty += 0.05; foreign_goal_completed += 1
 
-The <span style="color: #940000;">Soviets</span> are pleased that we have sent them aid, and have agreed to help train our military. The Commonwealth Army appreciates our support.
+The <span style="color: #940000;">Central Unionists</span> are pleased that we have sent them aid, and have agreed to help train our military. The Commonwealth Army appreciates our support.
 
 @soviet_economic_aid_yes
 choose-if: budget >= 1
 subtitle: -1 budget
 on-arrival: soviet_aid_forpol = 1; budget -= 1; soviet_relation += 2; coalition_dissent += 1; foreign_goal_completed += 1
 
-The <span style="color: #940000;">Soviets</span> are pleased that we have sent them aid, and have not asked for anything specific in exchange. Our coalition partners are less pleased.
+The <span style="color: #940000;">Central Unionists</span> are pleased that we have sent them aid, and have not asked for anything specific in exchange. Our coalition partners are less pleased.
 
-- @kpd: Ask if <span style="color: #940000;">Moscow</span> could help repair our relations with the <span style="color: #700000;">**Collectivists**</span>.
-- @wittorf: Do the <span style="color: #940000;">Soviets</span> know about the Wittorf Affair? Do they know that we know?
+- @kpd: Ask if <span style="color: #940000;">the Central Union</span> could help repair our relations with the <span style="color: #700000;">**Collectivists**</span>.
+- @wittorf: Do the <span style="color: #940000;">Central Unionists</span> know about the Wittorf Affair? Do they know that we know?
 - @root: Do not mention the <span style="color: #700000;">**Collectivists**</span>.
 
 @soviet_economic_aid_no
 
-The <span style="color: #940000;">Soviets</span> are slightly upset, but they seemed to expect this answer.
+The <span style="color: #940000;">Central Unionists</span> are slightly upset, but they seemed to expect this answer.
 
 
 @kpd
 on-arrival: collectivist_relation += 8*(1-dissent); communist_coalition += 1 if collectivist_foreign_seen == 0; collectivist_foreign_seen = 1
 
-We also mention the <span style="color: #700000;">**Collectivists**</span> in our conversations with the <span style="color: #940000;">Soviet</span> ambassador. They claim that the <span style="color: #700000;">**Collectivists**</span> is entirely independent of the <span style="color: #940000;">Soviet</span> government, and that the conflict is Halsmark's doing. But, soon after our conversation we notice a slight improvement in attitudes from the <span style="color: #700000;">**Collectivists**</span>.
+We also mention the <span style="color: #700000;">**Collectivists**</span> in our conversations with the <span style="color: #940000;">Central Union</span> ambassador. They claim that the <span style="color: #700000;">**Collectivists**</span> is entirely independent of the <span style="color: #940000;">Central Union</span> government, and that the conflict is Halsmark's doing. But, soon after our conversation we notice a slight improvement in attitudes from the <span style="color: #700000;">**Collectivists**</span>.
 
 @wittorf
 view-if: wittorf_secret = 1 and ((year = 1929 and month < 6) or year = 1928) and wittorf_soviet_union = 0
@@ -106,15 +106,15 @@ Of course <span style="color: #8B0000;">Halsmark</span> and the various leaders 
 
 
 @customs_union
-title: Form a customs union with Austria?
+title: Form a customs union with the Freehold?
 subtitle: This will likely incur the wrath of <span style="color: #002654;">Ethia</span>.
 unavailable-subtitle: This is superseded by the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>.
 choose-if: eu = 0
 view-if: veran_crash_seen = 1 and customs_union = 0
 
-The right has long desired closer ties with Austria, with the eventual goal of the merger of the two Commonwealth-speaking countries. A customs union with Austria is the first step towards this goal. Additionally, many believe that a union with Austria would improve our current economic circumstances.
+The right has long desired closer ties with the Freehold, with the eventual goal of the merger of the two Commonwealth-speaking countries. A customs union with the Freehold is the first step towards this goal. Additionally, many believe that a union with the Freehold would improve our current economic circumstances.
 
-However, the Allies, especially <span style="color: #002654;">Ethia</span>, are likely to object. This agreement would break the terms of the Versailles Treaty, and could lead to economic sanctions, further hurting our economy.
+However, the Allies, especially <span style="color: #002654;">Ethia</span>, are likely to object. This agreement would break the terms of the Etaluxia Treaty, and could lead to economic sanctions, further hurting our economy.
 
 - @customs_union_2: Yes, do it!
 - @fp_menu: No, we should do something else.
@@ -123,14 +123,14 @@ However, the Allies, especially <span style="color: #002654;">Ethia</span>, are 
 on-arrival: banking_crisis_timer = 4; customs_union = 1; west_relation -= 2; east_relation -= 2; unionist_relation += 6; gold_relation += 6; ddp_relation += 4; lvp_relation += 6; coalition_dissent -= 1 if coalition_dissent > 0; coup_progress -= 1; dufour_angry -= 15
 max-visits: 1
 
-We have formed a customs union with Austria! The right-wing parties are praising us for this unexpected turn of events.
+We have formed a customs union with the Freehold! The right-wing parties are praising us for this unexpected turn of events.
 
 Immediately, <span style="color: #002654;">Ethia</span> and other neighboring countries lodge their protests. The longer-term response is yet to be seen.
 
 
 @negotiate
-title: Negotiate regarding our remaining obligations from the Treaty of Versailles.
-subtitle: [? if young_plan_seen == 1 and veran_crash_seen : After passing the Young Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Rhineland. Now, we must see if they can reduce our War Loans further, given the economic depression. ?][? if young_plan_seen == 1 and not veran_crash_seen : After passing the Young Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Rhineland. Now, we must see if they can reduce our War Loans further. ?]
+title: Negotiate regarding our remaining obligations from the Treaty of Etaluxia.
+subtitle: [? if young_plan_seen == 1 and veran_crash_seen : After passing the Young Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further, given the economic depression. ?][? if young_plan_seen == 1 and not veran_crash_seen : After passing the Young Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further. ?]
 view-if: war_loans > -2 and reparations_negotiation < 3
 on-arrival: west_relation += 1; reparations_negotiation += 1; reparations_negotiation += 1 if pacifism >= 3; reparations_negotiation += 1 if nationalism <= 50; reparations_negotiation += 1 if west_relation >= 3
 
@@ -171,7 +171,7 @@ title: But of course, Staal stipulates that we demand military parity.
 subtitle: This will be a severe betrayal of our values!
 on-arrival: military_parity = 1 if eu or (west_relation >= 8 and reformist_strength >= left_strength + center_strength and soviet_relation == 0 and collectivist_relation < 30); army_strength += 300 if military_parity; warden_strength -= 100 if military_parity; loyalist_strength -= 50 if military_parity; banner_strength -= 150 if military_parity; nationalism += 5; nationalism += 15 if military_parity; pacifism -= 3; army_loyalty += 0.5 if military_parity; army_militancy += 2 if military_parity; commons_marcher -= 6; guild_marcher -= 2; burgher_marcher -= 4; landed_marcher -= 2; faithful_marcher -= 2; disfavored_marcher -= 4; commons_collectivist += 6; guild_ddp += 2; burgher_ddp += 4; landed_ddp += 2; faithful_collectivist += 2; disfavored_collectivist += 4; guild_marcher += 20 if military_parity; commons_royalist -= 3 if military_parity; disfavored_royalist -= 4 if military_parity; burgher_royalist -= 3 if military_parity; guild_royalist -= 15 if military_parity; landed_royalist -= 3 if military_parity; faithful_royalist -= 3 if military_parity; left_dissent += 50; center_dissent += 40; labor_dissent += 30; reformist_dissent += 20; knight_dissent += 20; left_strength -= 20; center_strength -= 10; ddp_relation -= 5; gold_relation += 15; gold_left += 5; ddp_left += 10; ddp_cohesion += 5; lvp_relation += 5; burgher_ddp += 10 if ddp_leader == "Lüders"; burgher_marcher -= 10 if ddp_leader == "Lüders"; commons_ddp += 5 if ddp_leader == "Lüders"; commons_marcher -= 5 if ddp_leader == "Lüders"; west_relation -= 4; eu_progress -= 2
 
-General Staal has demanded that we raise the issue of rearmament, which remains restricted under the Treaty of Versailles. However, <span style="color: #002654;">Ethian</span> Premier Édouard Herriot seized on this as an admission that the Commonwealth is, in fact, capable of paying its War Loans and would simply redirect freed-up funds toward rearmament.
+General Staal has demanded that we raise the issue of rearmament, which remains restricted under the Treaty of Etaluxia. However, <span style="color: #002654;">Ethian</span> Premier Édouard Herriot seized on this as an admission that the Commonwealth is, in fact, capable of paying its War Loans and would simply redirect freed-up funds toward rearmament.
 
 [? if military_parity:[? if eu: However, with the formation of the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> and its defense agreements, preventing the Commonwealth’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">revolutionaries</span>.?] As a result, the <span style="color: #7A3C00;">**Royalists**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Communists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
 
@@ -182,7 +182,7 @@ title: Expose the secret rearmament plans of the previous foreign ministry!
 view-if: rearmament_exposed == 0
 on-arrival: west_relation += 2; east_relation += 1; nationalism -= 5*(1-dissent); pro_republic += 5*(1-dissent); coalition_dissent += 1; army_loyalty -= 0.05; rearmament_exposed += 1; reparations_negotiation += 3; coup_progress += 2; gold_right += 2; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; dufour_angry += 20
 
-The previous foreign ministry, despite its benevolent and peaceful face, was secretly helping the Commonwealth Army to build up its forces, in contravention of the Treaty of Versailles.
+The previous foreign ministry, despite its benevolent and peaceful face, was secretly helping the Commonwealth Army to build up its forces, in contravention of the Treaty of Etaluxia.
 
 The Allies are grateful of our exposure and repudiation of militarism. Our partners in the coalition are less supportive.
 
@@ -204,30 +204,30 @@ achievement: reichskonkordat
 We have successfully signed a Concordat between the Commonwealth and the Roman Catholic Church! This treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
 @support_austria
-title: Diplomatically support Austrian democracy against the Dollfuß dictatorship.
+title: Diplomatically support Freehold democracy against the Dollfuß dictatorship.
 view-if: austrian_parliament_seen = 1 and austrian_civil_war_seen = 0
 on-arrival: sdapo_strength += 1; left_dissent -= 3; center_dissent -= 3
 
-We provide verbal backing to Austrian democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Time will tell if it will be enough.
+We provide verbal backing to Freehold democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Time will tell if it will be enough.
 
 @support_austria_2
-title: Provide material support to Austrian democracy against the Dollfuß dictatorship.
+title: Provide material support to Freehold democracy against the Dollfuß dictatorship.
 subtitle: -1 budget
 choose-if: budget >= 1
 view-if: austrian_parliament_seen = 1 and austrian_civil_war_seen = 0
 on-arrival: budget -= 1; sdapo_strength += 3; left_dissent -= 6; center_dissent -= 6
 
-In public, we provide verbal backing to Austrian democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Privately, we provide financial and various forms of "support" to our comrades in Austria in their struggle against dictatorship.
+In public, we provide verbal backing to Freehold democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Privately, we provide financial and various forms of "support" to our comrades in the Freehold in their struggle against dictatorship.
 
 @european_union
 title: Take steps to form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>".
-subtitle: Is a "United States of Europe" possible?
+subtitle: Is a "the Allied States of Europe" possible?
 unavailable-subtitle: [? if west_relation < 7 : Our relations with the West are not good enough. ?] [? if east_relation < 4 : Our relations with the East are not good enough. ?]
 view-if: war_loans <= -2 and eu_progress < 3 and not eu and france_left_seen
 choose-if: west_relation >= 7 and east_relation >= 4
 on-arrival: eu_negotiation = 1; eu_progress += 1; west_relation += 1; foreign_goal_marcher_peoples += 1
 
-Forming a "<span style="color: #FFDD00;">United States</span> of <span style="color: #001489;">Europe</span>" has long been part of the <span style="color: #c00000;">**Reformist**</span> foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of <span style="color: #001489;">Europe</span>, we can begin to hold multilateral negotiations for more <span style="color: #001489;">European</span> <span style="color: #FFDD00;">federalism</span>. It will take time to hammer out the exact shape of this future "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>", however.
+Forming a "<span style="color: #FFDD00;">the Allied States</span> of <span style="color: #001489;">Europe</span>" has long been part of the <span style="color: #c00000;">**Reformist**</span> foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of <span style="color: #001489;">Europe</span>, we can begin to hold multilateral negotiations for more <span style="color: #001489;">European</span> <span style="color: #FFDD00;">federalism</span>. It will take time to hammer out the exact shape of this future "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>", however.
 
 
 @european_union_2
@@ -237,8 +237,8 @@ on-arrival: eu = 1; disfavored -= 2 if disfavored >= 10; inflation += 2 if infla
 max-visits: 1
 achievement: eu
 
-Along with <span style="color: #002654;">Ethia</span>, <span style="color: #C8102E;">Great Britain</span>, and many other states of Western and Eastern Europe, we have signed a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>! It is hoped that <span style="color: #001489;">Europe</span> has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
+Along with <span style="color: #002654;">Ethia</span>, <span style="color: #C8102E;">Fulyria</span>, and many other states of Western and Eastern Europe, we have signed a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>! It is hoped that <span style="color: #001489;">Europe</span> has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
 
 A major component of the union is the free movement of people and goods across the countries of Europe, as well as the stabilization of currency exchange rates. This provides new markets for Commonwealth products and new sources of investment.
 
-<span style="color: #7A3C00;">Fascist</span> Italy remains a problem, and the <span style="color: #750e0e;">Soviet Union</span> also lies outside the system. But for now, there is new hope for peace and prosperity throughout the continent.
+<span style="color: #7A3C00;">Fascist</span> the southern realms remains a problem, and the <span style="color: #750e0e;">Central Union</span> also lies outside the system. But for now, there is new hope for peace and prosperity throughout the continent.

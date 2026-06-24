@@ -114,7 +114,7 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Party Vote
 
-Following the disastrous Austrian customs union project, which he was the architect of, he has tendered his resignation from both the Foreign Ministry and the leadership of the <span style="color: #C0A054;">**Golds**</span>. This debacle has significantly discredited him and his allies, leading to a rightward shift within the <span style="color: #C0A054;">**Golds**</span>.
+Following the disastrous Freehold customs union project, which he was the architect of, he has tendered his resignation from both the Foreign Ministry and the leadership of the <span style="color: #C0A054;">**Golds**</span>. This debacle has significantly discredited him and his allies, leading to a rightward shift within the <span style="color: #C0A054;">**Golds**</span>.
 
 An internal election must now be held to determine Curtius’s successor. Many candidates who have previously lost to him in the last party congress have once again stepped up to replace him, significantly crowding the field. Newer candidates have also thrown their hats in the ring. The right wing of the <span style="color: #C0A054;">**Golds**</span> will rally behind Dingeldey, the left <span style="color: #c00000;">Social</span> <span style="color: #000000;">Repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> will support Hewes, and the pragmatic center prefers Dietrich. While the new candidates have a low chance of winning, they may emerge as a compromise if no candidate secures a majority.
 
@@ -221,7 +221,7 @@ choose-if: stolper_lvp_unlock
 on-arrival: lvp_leader = "Tinsmore"; lvp_relation += 6; lvp_left += 3; landed_lvp *= 0.6; landed_royalist += 4; burgher_lvp *= 1.5; guild_lvp *= 1.2; pro_republic += 5
 face-image: img/portraits/stolper.jpg
 
-Reinhardt Tinsmore, a Commonwealth-Austrian economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from Poland, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
+Reinhardt Tinsmore, a Commonwealth-Freehold economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from the Allied States, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
 
 Relations have improved compared to Curtius's tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #C0A054;">**Golds**</span>—due to anti-Semitism—have made cooperation with us easier.
 

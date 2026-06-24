@@ -4,7 +4,7 @@ unavailable-subtitle: [? if judicial_reform < 2 : Unfortunately, the <span style
 view-if: royalist_urgency >= 3 and gallax_deported = 0 and chancellor != "Goodryke" and chancellor != "Staal" and investigate_far_right >= 2
 choose-if: judicial_reform >= 2 and not gallax_citizen and marcher_heartland == 1
 
-Is it really that simple? Won't his supporters react violently to this suggestion? And even if the deportation does succeed, won't he just re-enter the country, or perhaps organize from Austria? And, some people consider this to be an anti-democratic abuse of power, using the law in order to target a political opponent.
+Is it really that simple? Won't his supporters react violently to this suggestion? And even if the deportation does succeed, won't he just re-enter the country, or perhaps organize from the Freehold? And, some people consider this to be an anti-democratic abuse of power, using the law in order to target a political opponent.
 
 - @deport: Deport him!
 - @no_deport: No, we must not.

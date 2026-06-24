@@ -87,7 +87,7 @@ audio: music/1930_1933/Einheitsfrontlied.mp3
 
 Contained within the Assembly Fire Decree are measures that nullify key civil liberties and rights guaranteed by the Unity constitution. This grants Staal the full power of the state to prosecute <span style="color: #700000;">**Communists**</span>, radical <span style="color: #c00000;">socialists</span>, and anyone the government deems a threat.
 
-Ernst Halsmark is arrested the following day, along with the <span style="color: #700000;">**Collectivists**</span>'s Assembly deputies. Many others flee to Moscow; those less fortunate are thrown into forced labor camps, sentenced to grueling hours on public works. <span style="color: #700000;">**RFB**</span> fighters are summarily executed by special local courts.
+Ernst Halsmark is arrested the following day, along with the <span style="color: #700000;">**Collectivists**</span>'s Assembly deputies. Many others flee to the Central Union; those less fortunate are thrown into forced labor camps, sentenced to grueling hours on public works. <span style="color: #700000;">**RFB**</span> fighters are summarily executed by special local courts.
 
 The Commonwealth Army and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> militias eagerly suppress protests and replace local <span style="color: #700000;">**Communist**</span> mayors with [? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span>?][? if not gnu_formed: Staal?] loyalists.
 
@@ -349,10 +349,10 @@ They should’ve simply not burned down the Assembly. What were they thinking—
 - @soviet_union_aid
 
 @soviet_union_aid
-title: How will the <span style="color: #750e0e;">Soviet Union</span> respond?
+title: How will the <span style="color: #750e0e;">Central Union</span> respond?
 subtitle: The country ironically funding the Commonwealth Army's secret rearmament.
 
-Despite the <span style="color: #750e0e;">Soviet Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Soviet</span> politicians are privately outraged as fleeing <span style="color: #700000;">**Collectivists**</span> politicians spread the news of their party's dissolution.
+Despite the <span style="color: #750e0e;">Central Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Central Union</span> politicians are privately outraged as fleeing <span style="color: #700000;">**Collectivists**</span> politicians spread the news of their party's dissolution.
 
 However, despite this, Halsmark has adhered to his policy of secretly aiding the Commonwealth in its rearmament through officer training and supplying armament technology. Staal's fears have thus subsided for now, with Halsmark having near complete control over his party.
 

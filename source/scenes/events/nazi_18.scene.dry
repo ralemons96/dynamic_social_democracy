@@ -22,7 +22,7 @@ on-display: {!
 
 The Stegmann dispute marked the beginning of the end for the <span style="color: #7A3C00;">**SA**</span>, as the organization now faces a wave of defections, fund misappropriation, insubordination, and resignations. [+ royalist_leader +]'s all-or-nothing strategy has proven to be disastrous: the <span style="color: #7A3C00;">Royalist</span> movement has squandered its opportunity.
 
-Instances of the Stegmann revolt are spreading across the nation, first in Hesse, and now among Crowde loyalists in Hamburg and Axton, who are publicly criticizing Gorrick and Goebbels for their failed strategy. Ernst Röhm[? if rohm_explode:, now released from prison?], leader of the <span style="color: #7A3C00;">**SA**</span>, has reportedly been considering the idea of the <span style="color: #7A3C00;">**SA**</span> declaring independence from the party and pursuing its "own course."
+Instances of the Stegmann revolt are spreading across the nation, first in Hesse, and now among Crowde loyalists in Abysm and Axton, who are publicly criticizing Gorrick and Goebbels for their failed strategy. Ernst Röhm[? if rohm_explode:, now released from prison?], leader of the <span style="color: #7A3C00;">**SA**</span>, has reportedly been considering the idea of the <span style="color: #7A3C00;">**SA**</span> declaring independence from the party and pursuing its "own course."
 
 Nonetheless, this is great news! The the Banners and police can finally bring an end to the unceasing political violence plaguing the Commonwealth the past years.
 
@@ -31,6 +31,6 @@ Nonetheless, this is great news! The the Banners and police can finally bring an
 @nazi_2
 on-arrival: loyalist_strength *= 0.9; loyalist_militancy -= 0.05; army_strength += 25; reichstag_militancy -= 1.5; vanguard_strength += 75; vanguard_militancy += 0.1; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1
 
-Staal had long sought to integrate the <span style="color: #7A3C00;">**SA**</span> into the state apparatus. With the organization's rapid collapse, he sees an opportunity to recruit rank-and-file members into a newly formed "self-defense militia" attached to the Commonwealth Army. However, the Geneva Disarmament Conference has not yet concluded, and any such move would violate the Treaty of Versailles—at least until a formal agreement on rearmament is secured.
+Staal had long sought to integrate the <span style="color: #7A3C00;">**SA**</span> into the state apparatus. With the organization's rapid collapse, he sees an opportunity to recruit rank-and-file members into a newly formed "self-defense militia" attached to the Commonwealth Army. However, the Vera Disarmament Conference has not yet concluded, and any such move would violate the Treaty of Etaluxia—at least until a formal agreement on rearmament is secured.
 
 In the meantime, the government is creatively re-purposing the Commonwealth’s youth for “civilian purposes,” subtly blending their efforts into the broader public works program.

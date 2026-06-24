@@ -18,7 +18,7 @@ The <span style="color: #700000;">**Collectivists**</span> presents us with a li
 
 [? if labor_goal = 1 : - Support workers in labor disputes. ?]
 
-[? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Soviet Union</span>. ?]
+[? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Central Union</span>. ?]
 
 #[? if interior_goal = 1 : - Ban the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
 

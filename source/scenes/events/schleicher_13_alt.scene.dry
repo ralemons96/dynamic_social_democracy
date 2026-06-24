@@ -12,7 +12,7 @@ Commonwealth <span style="color: #FFCC00;">liberalism</span> has long been inter
 
 This makes the <span style="color: #C0A054;">**Golds**</span> a natural candidate for incorporation into the <span style="color: #BFC8CC;">**GNU**</span>, as it has long championed a <i>Volksgemeinschaft</i>—a national community to reconcile the classes in service of the nation—offered as an alternative to <span style="color: #9B0000;">Marxist</span> class struggle.
 
-[? if industrialists_gnu: The <span style="color: #C0A054;">**Golds**</span>, however, is drawn more by Staal’s promises to the industrialists, who dominate the party’s leadership. ?][? if not industrialists_gnu: Disillusionment with parliamentarianism and democracy has driven much of the party to back a strongman who can restore stability and tear up the disgraceful terms of Versailles. The committed democrats, mostly on the party’s left wing—figures like Hewes and Dietrich—are powerless to stop this. ?]
+[? if industrialists_gnu: The <span style="color: #C0A054;">**Golds**</span>, however, is drawn more by Staal’s promises to the industrialists, who dominate the party’s leadership. ?][? if not industrialists_gnu: Disillusionment with parliamentarianism and democracy has driven much of the party to back a strongman who can restore stability and tear up the disgraceful terms of Etaluxia. The committed democrats, mostly on the party’s left wing—figures like Hewes and Dietrich—are powerless to stop this. ?]
 
 - @schleicher_2: The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
 

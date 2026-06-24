@@ -10,11 +10,11 @@ max-visits: 4
 
 At the <span style="color: #D50032;">Labor and Socialist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">socialist</span> parties in <span style="color: #001489;">Europe</span> and across the world.
 
-- @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">British</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in the Commonwealth's favor.
-- @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">SDAPÖ</span>.
+- @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">Fulyrian</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in the Commonwealth's favor.
+- @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Liberty Movement</span>.
 - @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">social democrats</span>.
 - @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Comintern</span>'s conference.
-- @america: Contact the <span style="color: #940f0f;">Socialist Party of America</span>.
+- @america: Contact the <span style="color: #940f0f;">Socialist Party of the Allied States</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -25,19 +25,19 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; west_relation += 1; reformist_strength += 3; pacifism += 1; moderate_plan_support += 1; international_socialist_support += 1
 
-The <span style="color: #f0456a;">socialists</span> of <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Britain</span> can influence their governments to be friendlier towards the Commonwealth. Hopefully they will reduce our War Loans burden.
+The <span style="color: #f0456a;">socialists</span> of <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> can influence their governments to be friendlier towards the Commonwealth. Hopefully they will reduce our War Loans burden.
 
 @austria
-subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
+subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Freeholds oppose their dictatorship. ?]
 view-if: not banner_explode
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 audio: shuffle music/communist/workers_of_vienna_normalized.mp3
 on-arrival: left_strength += 3; radicalization += 1; banner_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
 
-Our the Banners can learn much in paramilitary organization and training from the Austrian Republikanischer Schutzbund (Republican Protection Units), the paramilitary branch of the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">social democrats</span>.
+Our the Banners can learn much in paramilitary organization and training from the Freehold Republikanischer Liberty militia (Republican Protection Units), the paramilitary branch of the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">social democrats</span>.
 
-[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian <span style="color: #A50034;">Reformist Worker's Party</span> build up their resources in preparation for a future struggle, legally and illegally. ?]
+[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Freehold <span style="color: #A50034;">Reformist Worker's Party</span> build up their resources in preparation for a future struggle, legally and illegally. ?]
 
 
 @scandi
@@ -62,7 +62,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
-The <span style="color: #940f0f;">Socialist Party of America</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+The <span style="color: #940f0f;">Socialist Party of the Allied States</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
 
 @reduce
 

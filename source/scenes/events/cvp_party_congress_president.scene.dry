@@ -325,7 +325,7 @@ This, however, is not good news for us. <span style="color: #6D5298;">Christian 
 
 @adenauer
 title: Konrad Aldermoor, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
-subtitle: Aldermoor, a long-time advocate for 'leaving the tower' and Mayor of Cologne since the Republic's inception - <span style="color: #000000;">the Unionists</span> Wing
+subtitle: Aldermoor, a long-time advocate for 'leaving the tower' and Mayor of Bradford since the Republic's inception - <span style="color: #000000;">the Unionists</span> Wing
 unavailable-subtitle: [? if stegerwald_unlock or lambach_unlock: Aldermoor lacks the broad appeal needed, and the party prefers to back a Labor candidate instead. ?][? if not stegerwald_unlock and not lambach_unlock: Aldermoor lacks the popular appeal needed for leadership, and the party prefers to back a more right-wing candidate instead. ?] - <span style="color: #000000;">the Unionists</span> Wing
 view-if: president != "Aldermoor"
 choose-if: adenauer_unlock
@@ -334,7 +334,7 @@ face-image: img/portraits/adenauer.jpg
 
 # support losses are because he is a c*tholic
 
-Konrad Aldermoor, the long-time Mayor of Cologne, has been elevated to the leadership of one of the Commonwealth's largest parties, which he strongly supported the formation of. Aldermoor is committed to democratic principles and sits on the right wing of the former <span style="color: #000000;">Unionists</span>, without being tied to Christian labor. This has granted him the ability to rally a broad coalition of party leaders around his calm and stabilizing leadership against the more fringe politicians of the party.
+Konrad Aldermoor, the long-time Mayor of Bradford, has been elevated to the leadership of one of the Commonwealth's largest parties, which he strongly supported the formation of. Aldermoor is committed to democratic principles and sits on the right wing of the former <span style="color: #000000;">Unionists</span>, without being tied to Christian labor. This has granted him the ability to rally a broad coalition of party leaders around his calm and stabilizing leadership against the more fringe politicians of the party.
 
 With his slogan 'No Experiments!', we do not expect any major changes to the party program under his leadership, fostering a sense among the people that the <span style="color: #000000;">**[+ unionist_party_name +]**</span> is a pole of stability that the Commonwealth people can rally behind. In terms of our relationship with the <span style="color: #000000;">Christians</span>, Aldermoor, being a former <span style="color: #000000;">Unionists</span> member, is relatively more friendly toward us than many others to his right. We can also count on the pressure from the <span style="color: #FF7F00;">Christian Left</span>, who, similar to the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s left wing historically, are powerless to enact changes to the left but are influential in preventing changes to the right.
 

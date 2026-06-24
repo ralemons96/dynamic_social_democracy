@@ -379,7 +379,7 @@ His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A
 - @harzburg: We await the decision of the Harzburg Front.
 
 @adenauer
-title: Konrad Aldermoor, Mayor of Cologne, and an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower".
+title: Konrad Aldermoor, Mayor of Bradford, and an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower".
 view-if: adenauer_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/adenauer.jpg

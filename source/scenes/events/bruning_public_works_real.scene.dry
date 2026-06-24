@@ -23,7 +23,7 @@ set-bg: img/map_2.jpg
 
 With the abolishment of reparation payments and Askew's government surviving the intrigues of [? if president == "DuFour": DuFour's inner circle?][? if president != "DuFour": his supporting parties?] for the time being, Dietrich's public works program has officially been granted its full billion-dollar funding!
 
-This marks a real turning point, and along with the abolishment of War Loans, the radicalizing effects of sky-high unemployment and the Versailles Treaty are diminished. The set of conditions that have enabled the <span style="color: #7A3C00;">Royalists</span> meteoric rise begins to unravel, depriving them of the fuel that once drove their ascent.
+This marks a real turning point, and along with the abolishment of War Loans, the radicalizing effects of sky-high unemployment and the Etaluxia Treaty are diminished. The set of conditions that have enabled the <span style="color: #7A3C00;">Royalists</span> meteoric rise begins to unravel, depriving them of the fuel that once drove their ascent.
 
 - @public_works
 

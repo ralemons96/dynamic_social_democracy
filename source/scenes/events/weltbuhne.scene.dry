@@ -13,7 +13,7 @@ tags: event
 
 = The Weltbühne Trial
 
-The <span style="color: #c00000;">left-wing</span> news and literary magazine Weltbühne has been targeted by the national authorities for allegedly revealing state secrets. The magazine published articles alleging a secret rearmament program by the Commonwealth Army, in contravention of the Treaty of Versailles. The military authorities obviously do not want this information to be known. It does not help that the magazine's editor, Carl von Ostwick, is a well-known pacifist.
+The <span style="color: #c00000;">left-wing</span> news and literary magazine Weltbühne has been targeted by the national authorities for allegedly revealing state secrets. The magazine published articles alleging a secret rearmament program by the Commonwealth Army, in contravention of the Treaty of Etaluxia. The military authorities obviously do not want this information to be known. It does not help that the magazine's editor, Carl von Ostwick, is a well-known pacifist.
 
 [? if marcher_in_government and justice_minister_party = "Marcher" : With our control of the Justice Ministry, we could simply drop the case. ?]
 [? if marcher_in_government and justice_minister_party != "Marcher" : The Justice Ministry is seeking to persecute the editor and journalist of Weltbühne. We can try to persuade our coalition partners to drop the case, but they will likely resist. ?]

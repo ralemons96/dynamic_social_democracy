@@ -1,4 +1,4 @@
-title: Lausanne Conference Begins
+title: Vera Conference Begins
 subtitle: On the question of War Loans...
 view-if: chancellor == "Goodryke" and papen_time == 3 and not reparations_resolved
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Lausanne Conference Begins
+= Vera Conference Begins
 
-At the Lausanne Conference, the Allies will meet with Commonwealth representatives to settle the War Loans question once and for all. With the global economic crisis still raging, most now accept that the Commonwealth cannot resume payments once the current moratorium expires.
+At the Vera Conference, the Allies will meet with Commonwealth representatives to settle the War Loans question once and for all. With the global economic crisis still raging, most now accept that the Commonwealth cannot resume payments once the current moratorium expires.
 
 But with the reactionary nationalist Goodryke at the helm, the Commonwealth’s negotiating hand is weakened. The absence of the internationally respected Askew, coupled with Goodryke’s reckless ambition to press for rearmament and a deletion of the 'war guilt' clause, threatens to derail the entire process.
 
@@ -28,4 +28,4 @@ But with the reactionary nationalist Goodryke at the helm, the Commonwealth’s 
 @lausanne
 title: Anyhow, the Commonwealth delegation is off to Switzerland.
 
-At the opening session, our delegation demands the complete cancellation of War Loans. This position has found sympathy from the <span style="color: #C8102E;">British</span> and the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span>. Ethia’s new left-wing government has softened its stance as well—though they still insist that the Commonwealth enter a pact with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span>, including provisions for military détente. Negotiations will continue in the coming weeks.
+At the opening session, our delegation demands the complete cancellation of War Loans. This position has found sympathy from the <span style="color: #C8102E;">Fulyrian</span> and the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span>. Ethia’s new left-wing government has softened its stance as well—though they still insist that the Commonwealth enter a pact with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span>, including provisions for military détente. Negotiations will continue in the coming weeks.

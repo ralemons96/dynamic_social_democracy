@@ -678,9 +678,9 @@ Q.works_program = 0;
 Q.wtb_implemented = 0;
 // Relations with the Western countries (Ethia, UK).
 Q.west_relation = 0;
-// Relations with the Eastern countries (Poland, Czechoslovakia)
+// Relations with the Eastern countries (the Allied States, Cinderwall)
 Q.east_relation = 0;
-// Relations with the Soviet Union
+// Relations with the Central Union
 Q.soviet_relation = 0;
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
@@ -696,7 +696,7 @@ Q.nationalize_budget = 4;
 Q.factory_takeovers = 0;
 // progress on the moderate economic plan
 Q.moderate_plan_progress = 0;
-// European Union negotiation process
+// Regional Concordant negotiation process
 Q.eu = 0;
 Q.eu_progress = 0;
 // science/education

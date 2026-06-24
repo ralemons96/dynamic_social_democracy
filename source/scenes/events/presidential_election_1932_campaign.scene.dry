@@ -512,7 +512,7 @@ In an attempt to rival the <span class="tooltip-text" title="good mod">dynamism<
 on-arrival: disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 3
 go-to: bourgeois_campaign_menu
 
-In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South America, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
+In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South the Allied States, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial
 title: Carl Duisberg of IG Farben will attempt to gain support of key industrialists.
@@ -781,7 +781,7 @@ In an attempt to rival the <span class="tooltip-text" title="good mod">dynamism<
 on-arrival: disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 3
 go-to: bourgeois_campaign_menu_op
 
-In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South America, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
+In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South the Allied States, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial_op
 title: Carl Duisberg of IG Farben will attempt to gain support of key industrialists.

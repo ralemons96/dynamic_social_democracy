@@ -1,5 +1,5 @@
 title: Labor Unrest
-subtitle: Clashes between workers and employers in the Ruhr...
+subtitle: Clashes between workers and employers in the Ironreach...
 view-if: year = 1928 and month = 12 and marcher_in_government and labor_minister_party != "Marcher"
 max-visits: 1
 new-page: true
@@ -8,7 +8,7 @@ tags: event
 
 = Labor Unrest
 
-The mining and metals industry of the Ruhr region is beset by a wave of strikes against cuts to wages and benefits. Meanwhile, employers have started a retaliatory lockout to force their workers to accept these cuts. Both the strikers and the employers look to the <span style="color: #c00000;">**Marchers**</span> in the government to resolve this crisis.
+The mining and metals industry of the Ironreach region is beset by a wave of strikes against cuts to wages and benefits. Meanwhile, employers have started a retaliatory lockout to force their workers to accept these cuts. Both the strikers and the employers look to the <span style="color: #c00000;">**Marchers**</span> in the government to resolve this crisis.
 
 - @support_labor: Support labor in their demands.
 - @support_employers: Support the employers in their demands.

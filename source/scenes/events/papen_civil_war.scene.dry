@@ -202,9 +202,9 @@ While we might want to call for foreign assistance, the foreign powers see the "
 
 @long_war_intervention
 
-- @west_aid: Perhaps we can receive aid from the Western powers, <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Britain</span>.
-- @soviet_aid: Perhaps we can receive aid from the <span style="color: #750e0e;">Soviet Union</span>.
-- @east_aid: Perhaps our eastern neighbors, <span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span>, can help us. If they know anything, they do not want <span style="color: #7A3C00;">fascists</span> coming to power in the Commonwealth.
+- @west_aid: Perhaps we can receive aid from the Western powers, <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span>.
+- @soviet_aid: Perhaps we can receive aid from the <span style="color: #750e0e;">Central Union</span>.
+- @east_aid: Perhaps our northern neighbors, <span style="color: #DC143C;">the Allied States</span> and <span style="color: #11457E;">Cinderwall</span>, can help us. If they know anything, they do not want <span style="color: #7A3C00;">fascists</span> coming to power in the Commonwealth.
 - @game_over: Game over.
 
 @west_aid
@@ -223,7 +223,7 @@ unavailable-subtitle: Our relations are not strong enough.
 max-visits: 1
 go-to: long_war_intervention
 
-We send a call for help to the <span style="color: #750e0e;">Soviet Union</span>. The <span style="color: #700000;">**Collectivists**</span> receives the bulk of the aid, while the the Banners and our loyal military units are left floundering. If we win, this does not bode well for our future.
+We send a call for help to the <span style="color: #750e0e;">Central Union</span>. The <span style="color: #700000;">**Collectivists**</span> receives the bulk of the aid, while the the Banners and our loyal military units are left floundering. If we win, this does not bode well for our future.
 
 @east_aid
 choose-if: east_relation >= 2
@@ -232,7 +232,7 @@ unavailable-subtitle: Our relations are not strong enough.
 max-visits: 1
 go-to: long_war_intervention
 
-<span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span> are largely too absorbed in their own problems to be of much help, but weapons and volunteers filter through the parts of the borders that we control.
+<span style="color: #DC143C;">the Allied States</span> and <span style="color: #11457E;">Cinderwall</span> are largely too absorbed in their own problems to be of much help, but weapons and volunteers filter through the parts of the borders that we control.
 
 @republic_victory
 

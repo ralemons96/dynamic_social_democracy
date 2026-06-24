@@ -86,12 +86,12 @@ The <span style="color: #700000;">**Collectivists**</span>-controlled Finance Mi
 
 @foreign
 title: Foreign Ministry
-subtitle: The Foreign Ministry is aiding the <span style="color: #750e0e;">Soviet Union</span>.
+subtitle: The Foreign Ministry is aiding the <span style="color: #750e0e;">Central Union</span>.
 view-if: foreign_minister_party = "Collectivist"
 
-The <span style="color: #700000;">**Collectivists**</span>-controlled Foreign Ministry is planning to send economic aid to the <span style="color: #750e0e;">Soviet Union</span>.
+The <span style="color: #700000;">**Collectivists**</span>-controlled Foreign Ministry is planning to send economic aid to the <span style="color: #750e0e;">Central Union</span>.
 
-- @foreign_support: Yes, we support aiding the <span style="color: #750e0e;">Soviet Union</span>.
+- @foreign_support: Yes, we support aiding the <span style="color: #750e0e;">Central Union</span>.
 - @foreign_oppose: No, this must be stopped.
 
 @foreign_support

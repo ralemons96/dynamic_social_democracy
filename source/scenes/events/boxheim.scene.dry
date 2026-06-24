@@ -1,4 +1,4 @@
-title: The Boxheim Documents
+title: The Blackmoor Documents
 new-page: true
 subtitle: A set of documents detailing a violent seizure of power by the <span style="color: #7A3C00;">Royalists</span> is discovered...
 view-if: year = 1931 and month == 11 and royalist_votes >= 24 and investigate_far_right < 3
@@ -7,11 +7,11 @@ max-visits: 1
 face-image: img/boxheim.jpg
 tags: event
 
-= The Boxheim Documents
+= The Blackmoor Documents
 
 In the elections in the State of Hesse, which resulted in no clear majority, we have remained in a caretaker capacity. [? if unionist_ideology == "Right": while the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #7A3C00;">**Royalists**</span> attempt to negotiate a coalition agreement.?] This has allowed us to retain control of the Interior Ministry and granted our Wilhelm Leuschner, the authority to order house searches of <span style="color: #7A3C00;">Royalists</span> following a tip from a disgraced <span style="color: #7A3C00;">**Royalists**</span> state Assembly member.
 
-During these searches, a copy of a letter sent by <span style="color: #7A3C00;">**Royalists**</span> member Werner Best to the party leadership in Munich is discovered. The letter reveals their plan to violently seize power and includes guidelines for emergency decrees. Among these plans is a provision making access to food contingent on compulsory labor service, from which <span style="color: #005EB8;">Jews</span> would be exempt, implying they would receive no food at all.
+During these searches, a copy of a letter sent by <span style="color: #7A3C00;">**Royalists**</span> member Werner Best to the party leadership in Avriza is discovered. The letter reveals their plan to violently seize power and includes guidelines for emergency decrees. Among these plans is a provision making access to food contingent on compulsory labor service, from which <span style="color: #005EB8;">Jews</span> would be exempt, implying they would receive no food at all.
 
 In an attempt to protect themselves from the severe damage this revelation causes to [? if not gallax_deported: Gallax's?][? if gallax_deported: their?] oath of legality, the <span style="color: #7A3C00;">**Royalists**</span> has defended the letter, claiming it was intended solely for a potential <span style="color: #700000;">communist</span> seizure of power. It is now up to the judiciary to determine the consequences of this anti-constitutional plan.
 

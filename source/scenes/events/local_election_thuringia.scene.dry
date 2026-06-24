@@ -1,4 +1,4 @@
-title: Thuringian state Assembly Election
+title: Stathmore state Assembly Election
 view-if: (year == 1929 and month == 12 and not thuringia_election_seen) or (thuringia_election_2_trigger_time == time and thuringia_election_seen_time != time)
 new-page: true
 tags: event
@@ -19,7 +19,7 @@ on-display: {!
 
 = Elections, [+ month : month +] [+ year_display +]
 
-The Thuringian state elections are to be held now.
+The Stathmore state elections are to be held now.
 
 - @thuringia: May we do our best...
 

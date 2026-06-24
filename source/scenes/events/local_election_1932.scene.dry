@@ -704,7 +704,7 @@ The conservative stronghold of the republic, home to the largest concentration o
 The legacy of the Avrizan Worker’s Republic has been avenged, but at what cost?
 
 @wurttemberg
-title: <span style="color: #000000;">Württ</span><span style="color: #c00025;">emberg</span>'s state Assembly Election
+title: Purl's state Assembly Election
 subtitle: Will the <span style="color: #FFCC00;">liberal</span> stronghold survive?
 view-if: not wurttemberg_seen
 on-arrival: {!
@@ -1183,4 +1183,4 @@ view-if: left_coalition_wurttemberg >= 50 and (collectivist_relation >= 50 and c
 on-arrival: wurttemberg_marcher = 1; wurttemberg_collectivist = 1; unionist_relation -= 3; ddp_relation -= 3; gold_relation -= 3; lvp_relation -= 3; coup_progress += 3
 go-to: election_menu
 
-Even as the forces of the bourgeoisie have remained numerous in the state Assembly, the newly unified <span style="color: #700000;">Left</span> has triumphed over the reigning coalition and inserted ourselves into a new <span style="color: #c00000;">Red</span> Württemburg. Of course, the rabidly anti-<span style="color: #c00000;">socialist</span> nature of the previous government does not make this transition easy, with mass purges of the police force to ensure that we can retain our influence with <span style="color: #700000;">communist</span> assistance. We can expect that <span style="color: #3E88B3;">**Wardens**</span> units, met with such a loss in the elections, will soon bring their fury to the stairs of the Assembly.
+Even as the forces of the bourgeoisie have remained numerous in the state Assembly, the newly unified <span style="color: #700000;">Left</span> has triumphed over the reigning coalition and inserted ourselves into a new <span style="color: #c00000;">Red</span> Purl. Of course, the rabidly anti-<span style="color: #c00000;">socialist</span> nature of the previous government does not make this transition easy, with mass purges of the police force to ensure that we can retain our influence with <span style="color: #700000;">communist</span> assistance. We can expect that <span style="color: #3E88B3;">**Wardens**</span> units, met with such a loss in the elections, will soon bring their fury to the stairs of the Assembly.

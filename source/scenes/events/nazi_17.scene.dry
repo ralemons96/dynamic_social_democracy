@@ -162,7 +162,7 @@ on-arrival: month += 2; week -= 1; month -= 1 if week < 1; year += 1 if month > 
 
 Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is bought back from Austria and appointed chancellor. ?]
+The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is bought back from the Freehold and appointed chancellor. ?]
 
 - @enabling_act
 

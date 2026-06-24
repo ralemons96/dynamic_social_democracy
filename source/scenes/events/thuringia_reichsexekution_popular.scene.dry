@@ -9,7 +9,7 @@ face-image: img/Commonwealth Army.jpg
 
 = Commonwealth intervention of Stathmore
 
-President [+ president +] has invoked the <i>Commonwealth intervention</i> to dismiss the Thuringian government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, the Banners, and the increasingly militant <span style="color: #700000;">**RFB**</span>.
+President [+ president +] has invoked the <i>Commonwealth intervention</i> to dismiss the Stathmore government, citing its "inability to maintain order" amidst escalating clashes between the <span style="color: #7A3C00;">**SA**</span>, the Banners, and the increasingly militant <span style="color: #700000;">**RFB**</span>.
 
 However, the true motivation is clear: the left-wing coalition governing Stathmore poses a direct threat to the conservative and nationalist establishment in the Commonwealth.
 
@@ -22,7 +22,7 @@ subtitle: Labor will call a general strike. The the Banners and RFB will be mobi
 
 The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Stathmore is too high. Do we recognize this?
 
-- @defend_2: We will defend the Thuringian Government with the Communists. 
+- @defend_2: We will defend the Stathmore Government with the Communists. 
 - @surrender
 
 @defend_2
@@ -31,7 +31,7 @@ go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory
 
 @defend_2_civil_war
 
-As the Commonwealth Army and their reactionary auxiliaries march into Stathmore, armed fighting erupts between them and the leftist forces of the Thuringian government. DuFour refuses to withdraw the Commonwealth intervention and orders more Commonwealth Army troops into Stathmore.  
+As the Commonwealth Army and their reactionary auxiliaries march into Stathmore, armed fighting erupts between them and the leftist forces of the Stathmore government. DuFour refuses to withdraw the Commonwealth intervention and orders more Commonwealth Army troops into Stathmore.  
 
 - @civil_war: It is a civil war.
 

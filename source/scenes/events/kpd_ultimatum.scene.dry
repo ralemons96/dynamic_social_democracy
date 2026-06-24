@@ -54,7 +54,7 @@ At the start of this government, the <span style="color: #700000;">**Collectivis
 
 [? if labor_goal = 1 : - Support workers in labor disputes. - [? if labor_goal_completed : success ?][? if not labor_goal_completed: failed ?] ?]
 
-[? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Soviet Union</span>. - [? if foreign_goal_completed : success ?][? if not foreign_goal_completed: failed ?] ?]
+[? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Central Union</span>. - [? if foreign_goal_completed : success ?][? if not foreign_goal_completed: failed ?] ?]
 
 [? if army_goal = 1 : - Reduce funding for the Commonwealth Army. - [? if army_goal_completed : success ?][? if not army_goal_completed: failed ?] ?]
 
