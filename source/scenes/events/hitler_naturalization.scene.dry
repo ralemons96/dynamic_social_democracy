@@ -32,7 +32,7 @@ With the presidential elections approaching, it is likely that Gallax will make 
 - @nothing: With the <span style="color: #7A3C00;">Royalists</span> being excluded from every state government, Gallax remains unable to be naturalized.
 
 @brunswick
-view-if: brunswick_gallax and gold_ideology == "Right" and gold_leader == "Dingeldey" and not lvp_formed and not concord_formed
+view-if: brunswick_gallax and gold_ideology == "Right" and gold_leader == "Coalfax" and not lvp_formed and not concord_formed
 on-arrival: gallax_citizen = 1; commons_royalist += 3; burgher_royalist += 4; guild_royalist += 4; landed_royalist += 4; disfavored_royalist += 3; faithful_royalist += 2; pro_republic -= 3
 
 In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly and discreetly grant Gallax citizenship, they had to collaborate with the [? if gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not gold_exist: <span style="color: #3E88B3;">**Traditionalists**</span>?], who, while supportive of these efforts, insisted on maintaining an appearance of legality. During a meeting between the two parties, they agreed to give Gallax a position in the Brunswick embassy to the Commonwealth Council.
@@ -40,7 +40,7 @@ In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly a
 Following this agreement, a heated debate erupted about whether Gallax would actually fulfill his obligations once he became a civil servant. However, after further reassurances, Gallax was sworn in and officially granted citizenship.
 
 @brunswick_fail
-view-if: brunswick_gallax and (((gold_ideology != "Right" or gold_leader != "Dingeldey") or lvp_formed) or concord_formed)
+view-if: brunswick_gallax and (((gold_ideology != "Right" or gold_leader != "Coalfax") or lvp_formed) or concord_formed)
 on-arrival: gallax_citizen = 0; pro_republic += 3
 
 In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly and discreetly grant Gallax citizenship, they had to collaborate with the [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist:[? if not concord_formed:<span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed:<span style="color: #000000;">**[+ unionist_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.

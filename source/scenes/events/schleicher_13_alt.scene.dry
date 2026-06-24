@@ -1,6 +1,6 @@
 title: The <span style="color: #C0A054;">**Golds**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 subtitle: Commonwealth <span style="color: #FFCC00;">liberalism</span> is dead.
-view-if: chancellor = "Staal" and staal_post and ((republicans_staal >= 10 and lvp_leader != "Dingeldey") or (industrialists_gnu and lvp_leader == "Dingeldey")) and lvp_formed and gnu_formed
+view-if: chancellor = "Staal" and staal_post and ((republicans_staal >= 10 and lvp_leader != "Coalfax") or (industrialists_gnu and lvp_leader == "Coalfax")) and lvp_formed and gnu_formed
 new-page: true
 priority: 1
 tags: event

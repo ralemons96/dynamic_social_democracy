@@ -94,7 +94,7 @@ if (Q.ddp_leader == "Dietrich") saxony_adjustment_factors.ddp -= 0.1;
 if (!Q.gold_exist) saxony_adjustment_factors.ddp += 0.2;
 Q.ddp_saxony_elections_vote = Q.ddp_votes*saxony_adjustment_factors.ddp;
 if (Q.lvp_leader == "Dieckmann") saxony_adjustment_factors.lvp += 0.1;
-if (Q.lvp_leader == "Glatzel") saxony_adjustment_factors.lvp += 0.1;
+if (Q.lvp_leader == "Vellt") saxony_adjustment_factors.lvp += 0.1;
 Q.lvp_saxony_elections_vote = Q.lvp_votes*saxony_adjustment_factors.lvp;
 if (Q.stegerwald_path) saxony_adjustment_factors.z += 1.0;
 if (Q.concord_formed && Q.concord_leader == "Sedgewick") saxony_adjustment_factors.z += 0.1;
@@ -102,12 +102,12 @@ if (Q.concord_formed && Q.concord_leader == "Lambach") saxony_adjustment_factors
 if (Q.concord_formed && Q.concord_leader == "Gereke") saxony_adjustment_factors.z -= 0.2;
 if (Q.gold_in_concord) saxony_adjustment_factors.z += 0.3;
 Q.unionist_saxony_elections_vote = Q.unionist_votes*saxony_adjustment_factors.z;
-if (Q.gold_ideology != "Right" && Q.gold_leader != "Hugo" && !Q.gold_leader != "Dingeldey") saxony_adjustment_factors.dvp += 0.1;
+if (Q.gold_ideology != "Right" && Q.gold_leader != "Hugo" && !Q.gold_leader != "Coalfax") saxony_adjustment_factors.dvp += 0.1;
 if (Q.gold_votes >= 4) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 6) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 8) saxony_adjustment_factors.dvp -= 0.1;
-if (Q.gold_leader == "Thiel") saxony_adjustment_factors.dvp += 0.2;
-if (Q.gold_leader == "Glatzel") saxony_adjustment_factors.dvp += 0.1;
+if (Q.gold_leader == "Holt") saxony_adjustment_factors.dvp += 0.2;
+if (Q.gold_leader == "Vellt") saxony_adjustment_factors.dvp += 0.1;
 Q.gold_saxony_elections_vote = Q.gold_votes*saxony_adjustment_factors.dvp;
 if (Q.traditionalist_ideology == "Moderate") saxony_adjustment_factors.dnvp += 0.3;
 if (Q.traditionalist_leader == "Lambach") saxony_adjustment_factors.dnvp += 0.2;
@@ -278,7 +278,7 @@ let farm_share = 0.18;
 if (Q.traditionalist_ideology == "Moderate") farm_share -= 0.1;
 let wp_share = 0.45;
 if (Q.stolper_program_adopted) wp_share -= 0.05;
-if (Q.gold_ideology != "Right" && Q.gold_leader != "Dingeldey" && Q.gold_leader != "Hugo") wp_share -= 0.1;
+if (Q.gold_ideology != "Right" && Q.gold_leader != "Coalfax" && Q.gold_leader != "Hugo") wp_share -= 0.1;
 let csvd_share = 0.22;
 if (!Q.csvd_formed) csvd_share = 0;
 let vrp_share = 0.07;
@@ -689,13 +689,13 @@ Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style
 on-arrival: {!
 let dvp_toleration_threshold = 30;
 let lvp_toleration_threshold = 40;
-if (Q.gold_leader == "Dingeldey") {
+if (Q.gold_leader == "Coalfax") {
     dvp_toleration_threshold += 10;
 } else if (Q.gold_leader == "Hugo") {
     dvp_toleration_threshold += 20;
-} else if (Q.gold_leader == "Thiel") {
+} else if (Q.gold_leader == "Holt") {
     dvp_toleration_threshold -= 15;
-} else if (Q.gold_leader == "Glatzel") {
+} else if (Q.gold_leader == "Vellt") {
     dvp_toleration_threshold -= 10;
 } else if (Q.gold_leader == "Curtius") {
     dvp_toleration_threshold -= 10;
@@ -705,7 +705,7 @@ if (Q.gold_ideology != "Left") {
 } else if (Q.gold_ideology == "Left") {
     dvp_toleration_threshold -= 10;
 }
-if (Q.lvp_leader == "Dingeldey") {
+if (Q.lvp_leader == "Coalfax") {
     lvp_toleration_threshold += 10;
 } else if (Q.lvp_leader == "Dieckmann") {
     lvp_toleration_threshold -= 10;
@@ -715,7 +715,7 @@ if (Q.lvp_leader == "Dingeldey") {
     lvp_toleration_threshold -= 10;
 } else if (Q.lvp_leader == "Hewes") {
     lvp_toleration_threshold -= 10;
-} else if (Q.lvp_leader == "Glatzel") {
+} else if (Q.lvp_leader == "Vellt") {
     lvp_toleration_threshold -= 5;
 } else if (Q.lvp_leader == "Dietrich") {
     lvp_toleration_threshold -= 5;
@@ -835,7 +835,7 @@ on-arrival: gallax_explode = time + 36; saxony_royalist_maj = 1; royalist_left +
 go-to: president_hate if (president_ideology == "Left") and not presidential_powers; president_allow if (president_ideology != "Left") and not presidential_powers; president_oops if presidential_powers
 face-image: img/portraits/strasser.jpg
 
-The worst has come to pass in Dornwich: an <span style="color: #7A3C00;">**Royalists**</span> majority.  Gregor Crowde becomes the new minister-president.
+The worst has come to pass in Dornwich: an <span style="color: #7A3C00;">**Royalists**</span> majority.  Garrick Crowde becomes the new minister-president.
 
 Dornwich, once a stronghold of <span style="color: #c00000;">Reformism</span> and democracy, is now being dismantled by the <span style="color: #7A3C00;">Royalists</span>. The "democratic" aspect more so, as Crowde has adopted relatively pro-worker and anti-capitalist policies, at least compared to the propertied parties.  The state police, now almost entirely <span style="color: #7A3C00;">Royalists</span>, are actively suppressing <span style="color: #c00000;">Reformist</span>, <span style="color: #700000;">collectivist</span>, and even <span style="color: #FFCC00;">liberal</span> organizations and meetings.  Newspapers critical of the government have been banned, and civil servants with suspected <span style="color: #c00000;">Reformist</span> or <span style="color: #D3C24D;">democratic</span> leanings are being purged in large numbers.
 
@@ -961,7 +961,7 @@ on-arrival: saxony_royalist = 1; royalist_left += 5; gallax_explode = time + 36;
 go-to: reichsex_dilemma if president_ideology == "Left" and not presidential_powers
 face-image: img/portraits/strasser.jpg
 
-After a failed negotiation previously, the propertied parties are now willing to offer a ministerial position to the <span style="color: #7A3C00;">**Royalists**</span> in exchange for their support. Gregor Crowde, leader of the <span style="color: #7A3C00;">**Royalists**</span>'s left wing, has been appointed as the new Interior Minister, a role he had been denied in the past due to his more radical anti-capitalist views.
+After a failed negotiation previously, the propertied parties are now willing to offer a ministerial position to the <span style="color: #7A3C00;">**Royalists**</span> in exchange for their support. Garrick Crowde, leader of the <span style="color: #7A3C00;">**Royalists**</span>'s left wing, has been appointed as the new Interior Minister, a role he had been denied in the past due to his more radical anti-capitalist views.
 
 Dornwich, once a stronghold of <span style="color: #c00000;">Reformism</span> and democracy, is now being dismantled by the <span style="color: #7A3C00;">Royalists</span>. The "democratic" aspect more so, as Crowde has pushed for the cabinet to adopt pro-worker and anti-capitalist policies in an attempt to win their votes. The state police, now largely comprised of <span style="color: #7A3C00;">Royalists</span>, are actively suppressing <span style="color: #c00000;">Reformist</span> and <span style="color: #700000;">collectivist</span> organizations and meetings. Reformist newspapers critical of the government have been banned, and civil servants with suspected <span style="color: #c00000;">Reformist</span> or <span style="color: #D3C24D;">democratic</span> leanings are being purged in large numbers.
 

@@ -3,7 +3,7 @@ subtitle: A petition for the dissolution of the state Assembly is launched.
 new-page: true
 tags: event
 view-if: year = 1931 and month >= 3 and next_election_time_heartland - time >= 6 and marcher_heartland
-on-arrival: landtag_ref_gold = 1 if gold_ideology == "Right" and gold_leader == "Dingeldey" and not in_grand_coalition_heartland and not lvp_formed; liberal_cooperation -= 3 if landtag_ref_gold; strife += 1; pro_republic += gold_votes if not landtag_ref_gold; PLR_launched = 1
+on-arrival: landtag_ref_gold = 1 if gold_ideology == "Right" and gold_leader == "Coalfax" and not in_grand_coalition_heartland and not lvp_formed; liberal_cooperation -= 3 if landtag_ref_gold; strife += 1; pro_republic += gold_votes if not landtag_ref_gold; PLR_launched = 1
 max-visits: 1
 on-display: {!  
     var cardEl = document.createElement('div');  

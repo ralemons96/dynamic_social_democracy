@@ -69,7 +69,7 @@ Anyhow, let's see who will be the candidates on <span class="tooltip-text" title
 on-arrival: {!
 Q.bourgeois_votes = Q.ddp_votes + Q.gold_votes + Q.lvp_votes + Q.other_votes + Q.kvp_votes + Q.traditionalist_votes + Q.unionist_votes;
 
-if ((Q.lvp_ideology == "Right" && Q.lvp_leader == "Dingeldey" && Q.lvp_formed || Q.gold_votes >= 6 && Q.bourgeois_parliament && Q.bourgeois_votes >= 40 && !Q.lvp_formed) && Q.liberal_vote >= 8) Q.jarres_unlock_pres = 1;
+if ((Q.lvp_ideology == "Right" && Q.lvp_leader == "Coalfax" && Q.lvp_formed || Q.gold_votes >= 6 && Q.bourgeois_parliament && Q.bourgeois_votes >= 40 && !Q.lvp_formed) && Q.liberal_vote >= 8) Q.jarres_unlock_pres = 1;
 if ((Q.gold_leader == "Lytton" || Q.lvp_leader == "Lytton") && Q.pro_republic >= 50 && Q.liberal_vote >= 8 && Q.bourgeois_votes >= 35) Q.luther_unlock_pres = 1;
 if (((Q.dstp_formed || Q.ddp_relation < 40 || Q.pro_republic < 40) && Q.ddp_ideology != "Left" && !Q.lvp_formed || Q.lvp_formed && Q.lvp_ideology != "Left" && Q.pro_republic < 50) && Q.liberal_vote >= 8 && Q.bourgeois_votes >= 35) Q.gessler_unlock_pres = 1;
 if (Q.stegerwald_path) Q.adenauer_unlock_pres = 1;
@@ -500,7 +500,7 @@ Q.royalist_candidate_1932_disp = "Alaric Gallax";
 view-if: not harzburg_unity
 face-image: img/portraits/hitler2.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Gregor Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Joseph Goebbels argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
+The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Garrick Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Joseph Goebbels argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
 
 - @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 
@@ -512,7 +512,7 @@ Q.royalist_candidate_1932_disp = "Wilhelm Frask";
 view-if: not harzburg_unity
 face-image: img/portraits/frick.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> has nominated Wilhelm Frask, who is expected to receive backing only from his own party. [? if dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s deep reluctance to challenge the universally respected and personally popular President DuFour—believing such a move would tarnish his image. Gregor Crowde’s argument ultimately prevailed over Goebbels’, and Gallax has chosen to sit this one out. ?][? if not dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s reluctance to enter an unwinnable race, fearing it would damage his image. By putting forward the more pragmatic Frask, he hopes to attract some conservative support ahead of the local elections.?] Should Frask win, he would serve as little more than a proxy for the <span style="color: #7A3C00;">Royalist</span> leader. 
+The <span style="color: #7A3C00;">**Royalists**</span> has nominated Wilhelm Frask, who is expected to receive backing only from his own party. [? if dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s deep reluctance to challenge the universally respected and personally popular President DuFour—believing such a move would tarnish his image. Garrick Crowde’s argument ultimately prevailed over Goebbels’, and Gallax has chosen to sit this one out. ?][? if not dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s reluctance to enter an unwinnable race, fearing it would damage his image. By putting forward the more pragmatic Frask, he hopes to attract some conservative support ahead of the local elections.?] Should Frask win, he would serve as little more than a proxy for the <span style="color: #7A3C00;">Royalist</span> leader. 
 
 - @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 
@@ -1027,7 +1027,7 @@ Unfortunately, under the influence of their business wing, the <span style="colo
 @convince_lvp
 view-if: lvp_formed
 max-visits: 1
-go-to: convince_lvp_success if ((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Dingeldey"; convince_lvp_fail if not (((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Dingeldey")
+go-to: convince_lvp_success if ((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Coalfax"; convince_lvp_fail if not (((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Coalfax")
 
 The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party.
 
@@ -1210,7 +1210,7 @@ Unfortunately, under the influence of its business wing, the <span style="color:
 @convince_lvp_eckener
 view-if: lvp_formed
 max-visits: 1
-go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"))
+go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"))
 
 The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party away from Eckhart.
 

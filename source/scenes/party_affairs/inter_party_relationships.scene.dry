@@ -403,10 +403,10 @@ Due to our shared values of wholesomeness and love, we have agreed to run a join
 @nsdap
 view-if: wacky_weimar
 choose-if: resources >= 1 and saxony_royalist
-unavailable-subtitle: [? if resources < 1: Not enough resources. ?] [? if not saxony_royalist: Gregor Crowde have a position in the Dornish state government in order to wholesomeify him via governmental participation. ?]
+unavailable-subtitle: [? if resources < 1: Not enough resources. ?] [? if not saxony_royalist: Garrick Crowde have a position in the Dornish state government in order to wholesomeify him via governmental participation. ?]
 on-arrival: resources -= 1; royalist_relation += 10*(1-dissent); pro_republic += 3; left_dissent += 10; center_dissent += 10
 
-We have began our work in wholesomeifying Gregor Crowde, who is beginning to form a moderate pro-democratic <span style="color: #7A3C00;">National Reformist</span> faction within the <span style="color: #7A3C00;">**Royalists**</span> under Gallax's nose. Our Left and Center factions voice their disapproval.
+We have began our work in wholesomeifying Garrick Crowde, who is beginning to form a moderate pro-democratic <span style="color: #7A3C00;">National Reformist</span> faction within the <span style="color: #7A3C00;">**Royalists**</span> under Gallax's nose. Our Left and Center factions voice their disapproval.
 
 - @nsdap_wholesome
 - @nsdap_wholesome_2

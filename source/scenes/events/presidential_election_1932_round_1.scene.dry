@@ -747,7 +747,7 @@ Unfortunately, under the influence of its business wing, the <span style="color:
 @convince_lvp_eckener
 view-if: lvp_formed and eckener_campaign and not lvp_support_marcher
 max-visits: 1
-go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"))
+go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"))
 
 The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party away from Eckhart.
 
@@ -1005,9 +1005,9 @@ Unfortunately, under the influence of their business wing, the <span style="colo
 view-if: lvp_formed and marcher_campaign > 0 and lvp_support_marcher != 1 and not eckener_campaign and not rosenfeld_campaign
 max-visits: 1
 on-arrival: {!
-if ((Q.lvp_relation >= 65 && Q.lvp_ideology == "Right" || Q.lvp_relation >= 55 && Q.lvp_ideology == "Moderate" || Q.lvp_relation >= 40 && Q.lvp_ideology == "Left") && Q.lvp_leader != "Dingeldey") {
+if ((Q.lvp_relation >= 65 && Q.lvp_ideology == "Right" || Q.lvp_relation >= 55 && Q.lvp_ideology == "Moderate" || Q.lvp_relation >= 40 && Q.lvp_ideology == "Left") && Q.lvp_leader != "Coalfax") {
     Q.convince_lvp_success = 1;
-} else if ((Q.lvp_relation >= 55 && Q.lvp_ideology == "Right" || Q.lvp_relation >= 45 && Q.lvp_ideology == "Moderate" || Q.lvp_relation >= 30 && Q.lvp_ideology == "Left") && Q.lvp_leader != "Dingeldey") {
+} else if ((Q.lvp_relation >= 55 && Q.lvp_ideology == "Right" || Q.lvp_relation >= 45 && Q.lvp_ideology == "Moderate" || Q.lvp_relation >= 30 && Q.lvp_ideology == "Left") && Q.lvp_leader != "Coalfax") {
     Q.convince_lvp_success = 2;
 } else {
     Q.convince_lvp_success = 0;

@@ -9,9 +9,9 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Executive Committee Meeting
 
-Reginald Eikenvorst, recovering from surgery the past few months due to a resurgence of his health problems, has ultimately resigned in favor of his deputy Eduard Dingeldey, who is now guaranteed to succeed him as chairman.
+Reginald Eikenvorst, recovering from surgery the past few months due to a resurgence of his health problems, has ultimately resigned in favor of his deputy Soren Coalfax, who is now guaranteed to succeed him as chairman.
 
-Eduard Dingeldey is one of the first within the <span style="color: #C0A054;">**Golds**</span> to support the movement for propertied unity and is popular with the youth and propertied unity groups that have coalesced on the <span style="color: #C0A054;">**Golds**</span>'s left wing, having rallied around Schnell and his efforts last month. Dingeldey is also sufficiently conservative on most political issues—particularly on the question of cooperation with the <span style="color: #c00000;">**Marchers**</span>—to gain support from the party's right wing.
+Soren Coalfax is one of the first within the <span style="color: #C0A054;">**Golds**</span> to support the movement for propertied unity and is popular with the youth and propertied unity groups that have coalesced on the <span style="color: #C0A054;">**Golds**</span>'s left wing, having rallied around Schnell and his efforts last month. Coalfax is also sufficiently conservative on most political issues—particularly on the question of cooperation with the <span style="color: #c00000;">**Marchers**</span>—to gain support from the party's right wing.
 
 - @resultsdvp: The party votes...
 
@@ -28,9 +28,9 @@ if (Q.gold_right > (Q.gold_left*1.5) || (Q.gold_right > (Q.gold_left + 4))) {
 go-to: dingeldey
 
 @dingeldey
-on-arrival: gold_leader = "Dingeldey"; guild_gold -= 2; burgher_gold -= 2; guild_royalist += 2; burgher_royalist += 2; pro_republic -= 3; liberal_cooperation -= 1; bourgeois_cooperation += 1
+on-arrival: gold_leader = "Coalfax"; guild_gold -= 2; burgher_gold -= 2; guild_royalist += 2; burgher_royalist += 2; pro_republic -= 3; liberal_cooperation -= 1; bourgeois_cooperation += 1
 face-image: img/portraits/dingeldey.jpg
 
-Dingeldey's election to the chairmanship represents a triumph for the reform-minded elements on the <span style="color: #C0A054;">**Golds**</span>'s left wing and met with strong approval from the movement towards propertied unity. However, despite the enthusiasm exhibited by those on the left wing, his election doesn't seem to represent a shift to the left at all and only confirms the party's shift to the right. [? if chancellor == "Askew" and not marcher_in_government: Dingeldey doesn't even feel great loyalty toward the Askew government and believes that the party could only fulfill its mission towards propertied concentration after it is freed from the burden of governmental responsibility.?] So far, he has proven to be a weak and ineffectual leader, capitulating to the right wing at every possible opportunity.
+Coalfax's election to the chairmanship represents a triumph for the reform-minded elements on the <span style="color: #C0A054;">**Golds**</span>'s left wing and met with strong approval from the movement towards propertied unity. However, despite the enthusiasm exhibited by those on the left wing, his election doesn't seem to represent a shift to the left at all and only confirms the party's shift to the right. [? if chancellor == "Askew" and not marcher_in_government: Coalfax doesn't even feel great loyalty toward the Askew government and believes that the party could only fulfill its mission towards propertied concentration after it is freed from the burden of governmental responsibility.?] So far, he has proven to be a weak and ineffectual leader, capitulating to the right wing at every possible opportunity.
 
-Furthermore, Dingeldey is not particularly interested in a closer relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and definitely not with us, but rather with parties to the right, such as the <span style="color: #3E88B3;">**Traditionalists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span>, to transform them into a 'constructive component of the state.' This does not bode well for the future of Unity democracy.
+Furthermore, Coalfax is not particularly interested in a closer relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and definitely not with us, but rather with parties to the right, such as the <span style="color: #3E88B3;">**Traditionalists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span>, to transform them into a 'constructive component of the state.' This does not bode well for the future of Unity democracy.

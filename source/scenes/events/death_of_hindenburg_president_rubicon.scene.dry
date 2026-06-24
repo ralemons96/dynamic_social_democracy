@@ -106,8 +106,8 @@ if (Q.Heuss_votes_pre < 8) {
 }
 Q.royalist_candidate = "Gorrick";
 Q.royalist_gallax_candidate = "Gorrick";
-if (Q.dsu_leader != "Otto Crowde") Q.dsu_candidate = "Frask";
-if (Q.dsu_leader == "Otto Crowde") Q.dsu_candidate = "Crowde";
+if (Q.dsu_leader != "Corin Crowde") Q.dsu_candidate = "Frask";
+if (Q.dsu_leader == "Corin Crowde") Q.dsu_candidate = "Crowde";
 Q.nvf_candidate = "Boycott";
 if (Q.nvf_gnu) Q.nvf_candidate = "Hammerton";
 Q.traditionalist_candidate = "Hammerton";
@@ -153,7 +153,7 @@ title: The <span style="color: #7A3C00;">Royalist</span>'s last hurrah?
 
 With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate.
 
-The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Otto Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Wilhelm Frask as a separate candidate. ?]
+The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Wilhelm Frask as a separate candidate. ?]
 
 [? if nvf_candidate == gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be backing [+ gnu_candidate +], as they remain within the <span style="color: #BFC8CC;">**GNU**</span> umbrella. ?][? if nvf_candidate != gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be boycotting the election entirely—continuing their deluded course of waiting for the "right moment" to spark an armed rebellion. ?]
 
@@ -378,7 +378,7 @@ title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+
 subtitle: [? if marcher_candidate = ddp_candidate and not gold_gnu: The <span style="color: #C0A054;">**Golds**</span> are uncomfortable in participating on the same side as the <span style="color: #c00000;">Reformists</span>. ?]
 unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> is not willing to support our candidate.
 view-if: (marcher_candidate = "Aldermoor" or marcher_candidate = "Hewes") and gold_candidate != marcher_candidate and not gold_gnu and not lvp_formed
-choose-if: gold_relation >= 60 and gold_leader != "Dingeldey" and gold_ideology != "Right"
+choose-if: gold_relation >= 60 and gold_leader != "Coalfax" and gold_ideology != "Right"
 on-arrival: gold_candidate = marcher_candidate; gold_relation += 5; gold_left += 1; gold_candidate_switch = 1 if gold_candidate != gnu_candidate and gold_candidate == marcher_candidate; gold_candidate = gnu_candidate if gold_candidate == marcher_candidate
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
@@ -395,7 +395,7 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 var candidate_descs = {
-  Crowde: "Otto Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
+  Crowde: "Corin Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
   Frask: "Wilhelm Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
   Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt von Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",

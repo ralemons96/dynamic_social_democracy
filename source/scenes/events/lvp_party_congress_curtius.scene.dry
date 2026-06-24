@@ -116,7 +116,7 @@ new-page: true
 
 Following the disastrous Freehold customs union project, which he was the architect of, he has tendered his resignation from both the Foreign Ministry and the leadership of the <span style="color: #C0A054;">**Golds**</span>. This debacle has significantly discredited him and his allies, leading to a rightward shift within the <span style="color: #C0A054;">**Golds**</span>.
 
-An internal election must now be held to determine Curtius’s successor. Many candidates who have previously lost to him in the last party congress have once again stepped up to replace him, significantly crowding the field. Newer candidates have also thrown their hats in the ring. The right wing of the <span style="color: #C0A054;">**Golds**</span> will rally behind Dingeldey, the left <span style="color: #c00000;">Social</span> <span style="color: #000000;">Repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> will support Hewes, and the pragmatic center prefers Dietrich. While the new candidates have a low chance of winning, they may emerge as a compromise if no candidate secures a majority.
+An internal election must now be held to determine Curtius’s successor. Many candidates who have previously lost to him in the last party congress have once again stepped up to replace him, significantly crowding the field. Newer candidates have also thrown their hats in the ring. The right wing of the <span style="color: #C0A054;">**Golds**</span> will rally behind Coalfax, the left <span style="color: #c00000;">Social</span> <span style="color: #000000;">Repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> will support Hewes, and the pragmatic center prefers Dietrich. While the new candidates have a low chance of winning, they may emerge as a compromise if no candidate secures a majority.
 
 - @heuss
 - @dietrich
@@ -148,16 +148,16 @@ Albrecht Dietrich, formerly affiliated with the business wing of the <span style
 Despite this, Dietrich is not as extreme as the industrialists on the right of the party and remains open to cooperation with us if there is no other majority. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @dingeldey
-title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
+title: Soren Coalfax is elected.
+subtitle: Coalfax was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #C0A054;">Golds</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
-on-arrival: lvp_relation -= 8; lvp_right += 5; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 3; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+on-arrival: lvp_relation -= 8; lvp_right += 5; lvp_leader = "Coalfax"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 3; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Soren Coalfax, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
+However, Coalfax has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 
 @deadlock
 title: The vote has been deadlocked!
@@ -189,15 +189,15 @@ The vote has been deadlocked, with no candidate ahead by enough to constitute a 
 
 
 @glatzel
-title: Frank Glatzel is elected!
-subtitle: Glatzel, a former member of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #C0A054;">**Golds**</span>, advocates the idea of broadening the party's appeal to workers.
+title: Florian Vellt is elected!
+subtitle: Vellt, a former member of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #C0A054;">**Golds**</span>, advocates the idea of broadening the party's appeal to workers.
 unavailable-subtitle: His trade union membership has made him a non-option in the eyes of the <span style="color: #C0A054;">Golds</span>, and his supporters lack meaningful influence.
 choose-if: glatzel_lvp_unlock
-on-arrival: lvp_leader = "Glatzel"; bourgeois_cooperation -= 3; commons_lvp += 12; commons_traditionalist -= 4; commons_dnf -= 4; commons_other -= 4; commons_royalist -= 4; commons_marcher -= 4; commons_unionist -= 2; burgher_lvp += 8; burgher_royalist -= 4; burgher_other -= 2; burgher_marcher -= 2; faithful_lvp += 6; faithful_other -= 2; faithful_traditionalist -= 2; faithful_unionist -= 2; guild_lvp += 4; guild_traditionalist -= 4; landed_lvp -= 6; landed_traditionalist += 4; landed_other += 2; landed_traditionalist += 2 if traditionalist_ideology == "Moderate"; landed_kvp += 2 if kvp_formed
+on-arrival: lvp_leader = "Vellt"; bourgeois_cooperation -= 3; commons_lvp += 12; commons_traditionalist -= 4; commons_dnf -= 4; commons_other -= 4; commons_royalist -= 4; commons_marcher -= 4; commons_unionist -= 2; burgher_lvp += 8; burgher_royalist -= 4; burgher_other -= 2; burgher_marcher -= 2; faithful_lvp += 6; faithful_other -= 2; faithful_traditionalist -= 2; faithful_unionist -= 2; guild_lvp += 4; guild_traditionalist -= 4; landed_lvp -= 6; landed_traditionalist += 4; landed_other += 2; landed_traditionalist += 2 if traditionalist_ideology == "Moderate"; landed_kvp += 2 if kvp_formed
 face-image: img/portraits/glatzel.jpg
 achievement: neuer_nationalismus
 
-Frank Glatzel, a trade unionist affiliated with the conservative white-collar union, the DHV, has been elected the new leader of the <span style="color: #C0A054;">**Golds**</span>. He advocates for a "New Nationalism," emphasizing solidarity among all classes to defend the country's "<span class="tooltip-text" title="Lebensraum">living space</span>" and to foster freedom for the people. In his push for national community, aimed at reducing class conflict, he has incorporated more nationalistic and corporatist elements into the party platform. This vision gained him the support of nationalists and Strattonites within the <span style="color: #C0A054;">**Golds**</span>, with the paramilitary group "Young Commonwealth Order" even backing his leadership bid.
+Florian Vellt, a trade unionist affiliated with the conservative white-collar union, the DHV, has been elected the new leader of the <span style="color: #C0A054;">**Golds**</span>. He advocates for a "New Nationalism," emphasizing solidarity among all classes to defend the country's "<span class="tooltip-text" title="Lebensraum">living space</span>" and to foster freedom for the people. In his push for national community, aimed at reducing class conflict, he has incorporated more nationalistic and corporatist elements into the party platform. This vision gained him the support of nationalists and Strattonites within the <span style="color: #C0A054;">**Golds**</span>, with the paramilitary group "Young Commonwealth Order" even backing his leadership bid.
 
 As expected, this shift has caused concern among the remaining industrialists in the <span style="color: #C0A054;">**Golds**</span>, as the party moves away from its traditional sole focus on middle-class interests. This has resulted in a significant change in the party’s financial backing, with funding from big business dwindling and being replaced by donations and newly established dues. His <span class="tooltip-text" title="good mod">dynamic</span> leadership should be closely watched.
 

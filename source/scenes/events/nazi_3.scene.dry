@@ -1,4 +1,4 @@
-title: Gregor Crowde Resigns from the <span style="color: #7A3C00;">**Royalists**</span>!
+title: Garrick Crowde Resigns from the <span style="color: #7A3C00;">**Royalists**</span>!
 subtitle: A lone resignation or perhaps something larger?
 view-if: chancellor = "Staal" and not reichstag_rubicon and reichstag_staal_seen
 new-page: true
@@ -8,7 +8,7 @@ face-image: img/portraits/strasser.jpg
 
 = Crowde's Resignation
 
-Arguably the second most powerful man in the <span style="color: #7A3C00;">**Royalists**</span>, just behind [+ royalist_leader +] himself, Gregor Crowde, has resigned from his party posts! As head of the party organization and standard-bearer of its "left wing", Crowde had built a reputation as a sober and pragmatic counterbalance in a movement otherwise dominated by fanatics. 
+Arguably the second most powerful man in the <span style="color: #7A3C00;">**Royalists**</span>, just behind [+ royalist_leader +] himself, Garrick Crowde, has resigned from his party posts! As head of the party organization and standard-bearer of its "left wing", Crowde had built a reputation as a sober and pragmatic counterbalance in a movement otherwise dominated by fanatics. 
 
 A realist, Crowde believed the <span style="color: #7A3C00;">**Royalists**</span> could not win a majority at the ballot box and should have participated in the Goodryke cabinet when their bargaining power was strongest. His deep understanding of the grassroots conditions had led him to predict that another election would devastate the party’s support and morale, ultimately drying up their funding.
 

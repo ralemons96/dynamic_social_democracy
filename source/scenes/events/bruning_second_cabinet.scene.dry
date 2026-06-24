@@ -1,7 +1,7 @@
 title: The Second Askew cabinet
 subtitle: Chancellor [+ chancellor +] has reorganized his cabinet!
 new-page: true
-view-if: total_bruning_time > 0 and bruning_toleration_time and not in_center_right_coalition and not in_right_coalition and banking_crisis_seen and emergency_decree_seen and not emergency_decree_mitigated and gold_leader == "Dingeldey" and not lvp_formed and flavour_24_trigger and time == flavour_24_trigger_time + 3 and not second_bruning_cabinet_seen and gold_exist
+view-if: total_bruning_time > 0 and bruning_toleration_time and not in_center_right_coalition and not in_right_coalition and banking_crisis_seen and emergency_decree_seen and not emergency_decree_mitigated and gold_leader == "Coalfax" and not lvp_formed and flavour_24_trigger and time == flavour_24_trigger_time + 3 and not second_bruning_cabinet_seen and gold_exist
 on-arrival: {!
 Q.second_bruning_cabinet_seen = 1;
 Q.judicial_reform -= 1;
@@ -72,7 +72,7 @@ go-to: bruning_lives_wp if bruning_coalition >= 50 and wp_reversal; bruning_live
 on-arrival: second_bruning_cabinet_survived = 1; burgher_royalist += burgher_other*0.6; burgher_other *= 0.4; guild_royalist += guild_other*0.6; guild_other *= 0.4
 face-image: img/wp2.jpg
 
-The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively neutralizing the impact of the <span style="color: #C0A054;">**Golds**</span>'s withdrawal. Additionally, some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, including Curtius and Otto Thiel, either voted with the government or abstained.
+The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively neutralizing the impact of the <span style="color: #C0A054;">**Golds**</span>'s withdrawal. Additionally, some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, including Curtius and Caspar Holt, either voted with the government or abstained.
 
 This sudden shift by the <span style="color: #b8996f;">**WP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 
@@ -81,7 +81,7 @@ Despite the formation of a more right-leaning cabinet, the <span style="color: #
 @bruning_lives_no_wp
 on-arrival: second_bruning_cabinet_survived = 1
 
-We are once again compelled to vote in favor of the [+ chancellor +] government to prevent the extremist parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span> from translating their growing popular support into parliamentary gains. Some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, such as Curtius and Otto Thiel, have also voted with the government or abstained, going against their wider party.
+We are once again compelled to vote in favor of the [+ chancellor +] government to prevent the extremist parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span> from translating their growing popular support into parliamentary gains. Some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, such as Curtius and Caspar Holt, have also voted with the government or abstained, going against their wider party.
 
 Despite the new right-wing cabinet, the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> is still refusing to support Askew, as they want all the power to themselves. 
 
@@ -90,7 +90,7 @@ on-arrival: time_to_election = 3; marcher_toleration = 0; marcher_toleration_rig
 face-image: img/wp2.jpg
 call: set_next_election_time
 
-The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, counteracting the impact of the <span style="color: #C0A054;">**Golds**</span>'s withdrawal. Additionally, some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, including Curtius and Otto Thiel, either voted with the government or abstained.
+The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, counteracting the impact of the <span style="color: #C0A054;">**Golds**</span>'s withdrawal. Additionally, some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, including Curtius and Caspar Holt, either voted with the government or abstained.
 
 This sudden shift by the <span style="color: #b8996f;">**WP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 
@@ -100,6 +100,6 @@ Unfortunately, all of this effort is for naught, with only [+ bruning_coalition 
 on-arrival: time_to_election = 3; marcher_toleration = 0; marcher_toleration_right = 0; second_bruning_cabinet_dead = 1
 call: set_next_election_time
 
-We are once again compelled to vote in favor of the [+ chancellor +] government to prevent the extremist parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span> from translating their growing popular support into parliamentary gains. Some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, such as Curtius and Otto Thiel, have also voted with the government or abstained, going against their wider party.
+We are once again compelled to vote in favor of the [+ chancellor +] government to prevent the extremist parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span> from translating their growing popular support into parliamentary gains. Some members of the <span style="color: #C0A054;">**Golds**</span>'s left wing, such as Curtius and Caspar Holt, have also voted with the government or abstained, going against their wider party.
 
 Unfortunately, all efforts to save the government have been in vain. Only [+ bruning_coalition +]% of the Assembly voted to support Askew’s government. As a result, new elections have been scheduled for [+ next_election_month : month +] [+ next_election_year +].

@@ -1,6 +1,6 @@
 title: The <span style="color: #C0A054;">**Golds**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
-subtitle: [? if gold_votes < 4 and gold_leader != "Glatzel": Struggling at the polls, the party tries to stay relevant by merging into a larger bloc?][? if gold_leader == "Glatzel": Glatzel's views align closely with the chancellor's?].
-view-if: chancellor = "Staal" and staal_time >= 11 and not lvp_formed and gold_exist and ((gold_votes < 4 and not bourgeois_list) or gold_leader == "Glatzel") and gnu_formed and next_election_time - time < 2 and gold_ideology != "Left" and not gold_r_alt
+subtitle: [? if gold_votes < 4 and gold_leader != "Vellt": Struggling at the polls, the party tries to stay relevant by merging into a larger bloc?][? if gold_leader == "Vellt": Vellt's views align closely with the chancellor's?].
+view-if: chancellor = "Staal" and staal_time >= 11 and not lvp_formed and gold_exist and ((gold_votes < 4 and not bourgeois_list) or gold_leader == "Vellt") and gnu_formed and next_election_time - time < 2 and gold_ideology != "Left" and not gold_r_alt
 new-page: true
 priority: 1
 tags: event
@@ -9,11 +9,11 @@ face-image: img/portraits/schleicher.jpg
 
 = <span style="color: #C0A054;">**Golds**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 
-[? if gold_votes < 4 and gold_leader != "Glatzel": The electoral decline of the <span style="color: #C0A054;">**Golds**</span> and the threat of being wiped out of parliament due to the Commonwealth's imperfect proportional system have forced the party to abandon its political independence and join Staal's <span style="color: #BFC8CC;">**GNU**</span>. This decision has faced significant internal objections, as many still hope for an understanding with the propertied and right-wing parties to secure a place on their electoral list. ?]
-[? if gold_leader == "Glatzel": Frank Glatzel, leader of the <span style="color: #C0A054;">**Golds**</span>, shares much ideological ground with Staal's new party—nationalism, corporatism, and the goal of a <i>national community</i>. A merger with the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> has thus become inevitable. ?]
+[? if gold_votes < 4 and gold_leader != "Vellt": The electoral decline of the <span style="color: #C0A054;">**Golds**</span> and the threat of being wiped out of parliament due to the Commonwealth's imperfect proportional system have forced the party to abandon its political independence and join Staal's <span style="color: #BFC8CC;">**GNU**</span>. This decision has faced significant internal objections, as many still hope for an understanding with the propertied and right-wing parties to secure a place on their electoral list. ?]
+[? if gold_leader == "Vellt": Florian Vellt, leader of the <span style="color: #C0A054;">**Golds**</span>, shares much ideological ground with Staal's new party—nationalism, corporatism, and the goal of a <i>national community</i>. A merger with the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> has thus become inevitable. ?]
 
-[? if gold_votes < 4 and gold_leader != "Glatzel": Nonetheless, the <span style="color: #C0A054;">**Golds**</span> and its industrial backers will bolster the <span style="color: #BFC8CC;">**GNU**</span> and legitimize it among the middle class, eliminating yet another option for non-<span style="color: #7A3C00;">Royalist</span> propertied voters. ?]
-[? if gold_leader == "Glatzel": Glatzel's vision of a "new nationalism" will carry a sizable following into his new political home, along with his affiliated white-collar union, the DHV, which he is bringing into the <span style="color: #BFC8CC;">**GNU**</span> as well. ?]
+[? if gold_votes < 4 and gold_leader != "Vellt": Nonetheless, the <span style="color: #C0A054;">**Golds**</span> and its industrial backers will bolster the <span style="color: #BFC8CC;">**GNU**</span> and legitimize it among the middle class, eliminating yet another option for non-<span style="color: #7A3C00;">Royalist</span> propertied voters. ?]
+[? if gold_leader == "Vellt": Vellt's vision of a "new nationalism" will carry a sizable following into his new political home, along with his affiliated white-collar union, the DHV, which he is bringing into the <span style="color: #BFC8CC;">**GNU**</span> as well. ?]
 
 - @schleicher_2: The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
 

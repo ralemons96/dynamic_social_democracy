@@ -21,7 +21,7 @@ After all, it’s Staal the people thank for their jobs—not the <span style="c
 on-arrival: {!
 Q.dsu_explode = 1;
 
-Q.dsu_leader = "Otto Crowde";
+Q.dsu_leader = "Corin Crowde";
 Q.dsu_in_gov = 0;
 Q.dsu_was_gov = 1;
 
@@ -68,7 +68,7 @@ The various <span style="color: #7A3C00;">Royalist</span> splinter parties that 
 
 Overcome with resignation, Crowde announces his withdrawal from political life, intending to return to his old profession as a local pharmacist. Many other top <span style="color: #7A3C00;">Royalist</span> figures follow suit, as [+ royalist_leader +] remains too paranoid and vengeful to allow any splitters back into the <span style="color: #7A3C00;">**Royalists**</span>.
 
-The <span style="color: #6A1E1E;">**DSU**</span> has since fallen under the control of a radical clique of self-styled "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolsheviks</span>" surrounding Gregor Crowde’s more extreme brother, Otto Crowde. 
+The <span style="color: #6A1E1E;">**DSU**</span> has since fallen under the control of a radical clique of self-styled "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolsheviks</span>" surrounding Garrick Crowde’s more extreme brother, Corin Crowde. 
 
 Yet only a handful of fanatics remain in this rump organization, while the "tamed" <span style="color: #7A3C00;">Royalists</span> drift into the ranks of the <span style="color: #BFC8CC;">**GNU**</span>, including most of its parliamentary delegation.
 

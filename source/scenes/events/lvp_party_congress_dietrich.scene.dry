@@ -117,7 +117,7 @@ new-page: true
 
 Albrecht Dietrich has failed to meet the expectations of many within the party, with the <span style="color: #C0A054;">**Golds**</span> experiencing a sharp decline in recent local elections. His focus on governance has left him unable to personally manage party affairs, prompting the need for a more active leader.
 
-Dietrich has endorsed Reinhold Maier, a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member and rising star. Like Dietrich, Maier was part of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing and now enjoys the support of the <span style="color: #C0A054;">**Golds**</span>'s Pragmatic Center. Meanwhile, Hewes and Dingeldey have once again entered the race, representing the party’s left and right factions, respectively.
+Dietrich has endorsed Reinhold Maier, a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member and rising star. Like Dietrich, Maier was part of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing and now enjoys the support of the <span style="color: #C0A054;">**Golds**</span>'s Pragmatic Center. Meanwhile, Hewes and Coalfax have once again entered the race, representing the party’s left and right factions, respectively.
 
 With all candidates relatively young, this leadership contest is expected to inject a sense of <span class="tooltip-text" title="good mod">dynamism</span> into the party.
 
@@ -151,16 +151,16 @@ Reinhold Maier, a major figure in Purl politics and a rising star in the struggl
 For us, however, his closeness to Dietrich means cooperation has yet to improve significantly compared to his predecessor’s tenure. Perhaps this is for the best, as the <span style="color: #C0A054;">**Golds**</span>'s decline was expected to push it further to the right.
 
 @dingeldey
-title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
+title: Soren Coalfax is elected.
+subtitle: Coalfax was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #C0A054;">Golds</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
-on-arrival: lvp_relation -= 12; lvp_right += 6; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 4; guild_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+on-arrival: lvp_relation -= 12; lvp_right += 6; lvp_leader = "Coalfax"; burgher_lvp -= 4; commons_lvp -= 4; guild_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Soren Coalfax, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
+However, Coalfax has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 
 @deadlock
 title: The vote has been deadlocked!

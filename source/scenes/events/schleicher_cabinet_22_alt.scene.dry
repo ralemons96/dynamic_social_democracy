@@ -37,7 +37,7 @@ if (Q.gold_ideology != "Right" && Q.gold_exist && !Q.lvp_formed) {
   Q.impeachment_votes += Q.gold_r;
   Q.impeachment_gold = 1;
 }
-if (Q.lvp_leader != "Dingeldey" && Q.lvp_ideology != "Right" && Q.lvp_formed) { 
+if (Q.lvp_leader != "Coalfax" && Q.lvp_ideology != "Right" && Q.lvp_formed) { 
   Q.impeachment_votes += Q.lvp_r;
   Q.impeachment_lvp = 1;
 }

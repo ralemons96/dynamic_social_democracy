@@ -88,7 +88,7 @@ if (Q.traditionalist_ideology === "Moderate") {
     Q.far_right_coalition = parseFloat((Q.traditionalist_r + Q.royalist_r).toFixed(1));
 }
 
-if (Q.gold_leader == "Dingeldey" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
+if (Q.gold_leader == "Coalfax" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
     Q.far_right_coalition = parseFloat((Q.far_right_coalition + Q.gold_r).toFixed(1));
 }
 
@@ -191,7 +191,7 @@ if (Q.traditionalist_ideology === "Moderate") {
     Q.far_right_coalition_heartland = parseFloat((Q.traditionalist_r_heartland + Q.royalist_r_heartland).toFixed(1));
 }
 
-if (Q.gold_leader == "Dingeldey" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
+if (Q.gold_leader == "Coalfax" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
     Q.far_right_coalition_heartland = parseFloat((Q.far_right_coalition_heartland + Q.gold_r_heartland).toFixed(1));
 }
 

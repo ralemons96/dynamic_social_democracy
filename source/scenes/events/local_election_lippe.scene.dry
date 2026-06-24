@@ -79,7 +79,7 @@ Q.ddp_lippe_elections_vote = Q.ddp_votes*lippe_adjustment_factors.ddp;
 Q.lvp_lippe_elections_vote = Q.lvp_votes*lippe_adjustment_factors.lvp;
 if (!Q.stegerwald_path) Q.unionist_lippe_elections_vote = Q.unionist_votes*lippe_adjustment_factors.z;
 if (Q.stegerwald_path) Q.unionist_lippe_elections_vote = Q.unionist_votes * 0.8;
-if (Q.gold_leader != "Dingeldey") lippe_adjustment_factors.dvp += 0.1;
+if (Q.gold_leader != "Coalfax") lippe_adjustment_factors.dvp += 0.1;
 if (Q.gold_votes >= 3) lippe_adjustment_factors.dvp -= 0.2;
 if (Q.gold_votes >= 4) lippe_adjustment_factors.dvp -= 0.2;
 if (Q.gold_votes >= 5) lippe_adjustment_factors.dvp -= 0.2;

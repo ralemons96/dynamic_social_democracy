@@ -110,6 +110,17 @@ character inherited from Müller, currently male in prose) — needs a careful p
 Confirm prose pronouns also read female for Vellath, Sennet (and the already-female Jessamy,
 Siemen).
 
+## A5 — comprehensive cast cleanup (assigned as completed)
+**A5a (value-reconciled leaders — the name is a string value in conditions):**
+- Eduard Dingeldey → **Soren Coalfax** (Golds/DVP leader; `gold_leader`/`lvp_leader` value)
+- Otto Thiel → **Caspar Holt** (Golds; `gold_leader` value)
+- Frank Glatzel → **Florian Vellt** (Golds; `gold_leader`/`lvp_leader` value)
+- the Crowde brothers (the Strassers): Gregor → **Garrick Crowde**, Otto → **Corin Crowde**
+  (surname *Crowde* kept — pool-canonical; the bare `"Crowde"` value, e.g. `heartland_leader == "Crowde"`,
+  stays; only the full-name `dsu_leader == "Otto Crowde"` value moved to "Corin Crowde").
+- The lowercase `@dingeldey`/`thiel_unlock`/`glatzel_*` ids and the lowercase portrait files
+  (`img/portraits/dingeldey.jpg`…) stay internal/art-deferred.
+
 ## Still deferred
 Real-world historical name-drops in flavour prose (Hess, Liebknecht, Noske, Röhm, Goering, the
 WWII-era references in the endings) — these go under Track A2/A3 of the second pass, not here.

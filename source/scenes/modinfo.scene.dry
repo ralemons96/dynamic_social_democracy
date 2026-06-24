@@ -400,7 +400,7 @@ elements.forEach(el => {
 
 [? if not snoopy: - Tariffs have a greater impact on worker and unemployed support. ?]
 
-[? if not snoopy: - Dingeldey's <span style="color: #C0A054;">**Golds**</span> now joins the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition more often. ?]
+[? if not snoopy: - Coalfax's <span style="color: #C0A054;">**Golds**</span> now joins the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition more often. ?]
 
 [? if not snoopy: - Neorevisionist faction strength and dissent are now displayed in the status. ?]
 

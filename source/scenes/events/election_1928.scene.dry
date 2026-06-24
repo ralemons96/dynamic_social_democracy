@@ -143,7 +143,7 @@ go-to: boycott_elections_menu
 
 [? if not lvp_formed and not dstp_gnu: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> are effectively dead electorally and offer little of value to us. However, they are embroiled in an internal struggle, and surprisingly, the business wing of the party—figures like Hewes and Dietrich—are more inclined to align with us than the left wing's Lemmer. ?][? if not lvp_formed and dstp_gnu: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have fully fallen under Staal's influence. Not like their electorally dead party could offer much impact anyway. ?]
 
-[? if not lvp_formed and gold_exist and not gold_gnu: The <span style="color: #C0A054;">**Golds**</span> is quite distant from us, even more so as they drift under Staal's influence. [? if gold_relation < 40: We cannot expect them to take part in a <span style="color: #c00000;">Reformist</span>-led boycott. ?][? if gold_relation >= 40: We can count on the support of Strattonites like Thiel and Curtius to lobby the party. ?] ?][? if not lvp_formed and gold_exist and gold_gnu: The <span style="color: #C0A054;">**Golds**</span> is firmly under Staal's control, and their leadership is far too hostile to us to consider participation, even if they weren’t a <i>bloc party</i>. ?]
+[? if not lvp_formed and gold_exist and not gold_gnu: The <span style="color: #C0A054;">**Golds**</span> is quite distant from us, even more so as they drift under Staal's influence. [? if gold_relation < 40: We cannot expect them to take part in a <span style="color: #c00000;">Reformist</span>-led boycott. ?][? if gold_relation >= 40: We can count on the support of Strattonites like Holt and Curtius to lobby the party. ?] ?][? if not lvp_formed and gold_exist and gold_gnu: The <span style="color: #C0A054;">**Golds**</span> is firmly under Staal's control, and their leadership is far too hostile to us to consider participation, even if they weren’t a <i>bloc party</i>. ?]
 
 Boycott efficacy: [+ lib_boycott_efficacy : boycott_efficacy +]
 
@@ -1128,7 +1128,7 @@ if (Q.traditionalist_ideology === "Moderate") {
     Q.far_right_coalition = parseFloat((Q.traditionalist_r + Q.royalist_r).toFixed(1));
 }
 
-if (Q.gold_leader == "Dingeldey" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
+if (Q.gold_leader == "Coalfax" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
     Q.far_right_coalition = parseFloat((Q.far_right_coalition + Q.gold_r).toFixed(1));
 }
 
@@ -1946,9 +1946,9 @@ go-to: achievement_check_e
 
 [? if gnu_formed: Staal Left Coalition (<span style="color: #BFC8CC;">**GNU**</span> + <span style="color: #c00000;">**Marchers**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]): [+ staal_left_coalition +]% ?]
 
-[? if traditionalist_ideology == "Radical" and far_right_coalition >= 35 and not concord_formed: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Dingeldey" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #3E88B3;">**Traditionalists**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
+[? if traditionalist_ideology == "Radical" and far_right_coalition >= 35 and not concord_formed: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Coalfax" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #3E88B3;">**Traditionalists**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
 
-[? if traditionalist_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Dingeldey" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #003755;">**DNF**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
+[? if traditionalist_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Coalfax" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #003755;">**DNF**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
 
 [? if royalist_urgency <= 1 and royalist_r >= 15 : The rapid rise in <span style="color: #7A3C00;">**Royalists**</span> votes is extremely worrying. Many had believed that the party was <span style="color: #ff0000;">moribund</span>; now, some of us consider it to be the greatest threat to democracy in the Commonwealth. ?]
 
@@ -2741,7 +2741,7 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-Wilhelm Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": in both the Commonwealth and Heartland, with the latter now under the control of [+ heartland_leader +], appointed as commissioner?]. Gregor Crowde takes the vice-chancellorship—a title without power.
+Wilhelm Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": in both the Commonwealth and Heartland, with the latter now under the control of [+ heartland_leader +], appointed as commissioner?]. Garrick Crowde takes the vice-chancellorship—a title without power.
 
 At the <span style="color: #7A3C00;">Royalists’</span> insistence, Edrik Halbridge is named to the Economic Ministry as an independent. Hans Kerrl, a <span style="color: #7A3C00;">Royalist</span> parliamentarian, receives the post of Minister without Portfolio.
 

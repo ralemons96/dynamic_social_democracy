@@ -192,23 +192,23 @@ Q.pro_republic -= 5;
 
 !}
 
-Unfortunately, Hewes has lost the vote of no confidence and must step down as leader, paving the way for a right-wing successor. With strong backing from the industrial-right faction of the <span style="color: #C0A054;">**Golds**</span>, Dingeldey is now the frontrunner in the upcoming leadership election. [? if not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen): The Pragmatic Center has put forward Curtius as their candidate, leading Dietrich to withdraw and endorse him. ?][? if curtius_resign_lvp or (curtius_banking_crisis and banking_crisis_seen): The Pragmatic Center has nominated Dietrich as their candidate, though there is hesitation about electing yet another former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member. ?]
+Unfortunately, Hewes has lost the vote of no confidence and must step down as leader, paving the way for a right-wing successor. With strong backing from the industrial-right faction of the <span style="color: #C0A054;">**Golds**</span>, Coalfax is now the frontrunner in the upcoming leadership election. [? if not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen): The Pragmatic Center has put forward Curtius as their candidate, leading Dietrich to withdraw and endorse him. ?][? if curtius_resign_lvp or (curtius_banking_crisis and banking_crisis_seen): The Pragmatic Center has nominated Dietrich as their candidate, though there is hesitation about electing yet another former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member. ?]
 
 - @dingeldey
 - @dietrich
 - @curtius
 
 @dingeldey
-title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
+title: Soren Coalfax is elected.
+subtitle: Coalfax was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #C0A054;">Golds</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
-on-arrival: lvp_relation -= 15; lvp_right += 8; lvp_leader = "Dingeldey"; burgher_lvp -= 8; commons_lvp -= 4; guild_lvp += 6; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+on-arrival: lvp_relation -= 15; lvp_right += 8; lvp_leader = "Coalfax"; burgher_lvp -= 8; commons_lvp -= 4; guild_lvp += 6; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Soren Coalfax, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
+However, Coalfax has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 
 @dietrich
 title: Albrecht Dietrich is elected!
@@ -221,7 +221,7 @@ face-image: img/portraits/dietrich.jpg
 
 Albrecht Dietrich, [? if not dietrich_resign_lvp: formerly affiliated with the business wing of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if dietrich_resign_lvp: former chairman of the <span style="color: #C0A054;">**Golds**</span>?], has been [? if not dietrich_resign_lvp: elected chairman of the <span style="color: #C0A054;">**Golds**</span>?][? if dietrich_resign_lvp: reelected to the leadership?]. Dietrich is mainly supported by smaller businesses and ruralites, and [? if chancellor == "Askew" and not marcher_in_government: is known for formulating Askew's emergency decrees during his tenure as Finance Minister.?][? if not (chancellor == "Askew" and not marcher_in_government): is known for his fiscal conservatism.?]
 
-Despite this, Dietrich is a huge step up from Dingeldey's leadership, and is open to cooperation. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
+Despite this, Dietrich is a huge step up from Coalfax's leadership, and is open to cooperation. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @curtius
 title: Julius Curtius is elected!

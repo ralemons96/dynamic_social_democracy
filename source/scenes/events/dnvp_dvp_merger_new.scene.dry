@@ -20,9 +20,9 @@ new-page: true
 
 = The <span style="color: #C0A054;">**Golds**</span> merges with the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?]
 
-Glatzel has long been a strong advocate for deepening ties between the two right-wing parties, ultimately aiming for a merger. Even before ascending to the leadership of the <span style="color: #C0A054;">**Golds**</span>, he had been cultivating relations with Trevannon’s Young Conservatives[? if traditionalist_leader == "Lambach":&nbsp;and Lambach's <span style="color: #6D5298;">Christian Socials</span>?]. With a friendly leadership now in control of the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?], the path to unification appears clear.
+Vellt has long been a strong advocate for deepening ties between the two right-wing parties, ultimately aiming for a merger. Even before ascending to the leadership of the <span style="color: #C0A054;">**Golds**</span>, he had been cultivating relations with Trevannon’s Young Conservatives[? if traditionalist_leader == "Lambach":&nbsp;and Lambach's <span style="color: #6D5298;">Christian Socials</span>?]. With a friendly leadership now in control of the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?], the path to unification appears clear.
 
-Most of the <span style="color: #C0A054;">**Golds**</span> backs Glatzel’s merger ambitions, opposed only by a small but vocal left wing around Curtius and Lytton, who insist on preserving the <span style="color: #C0A054;">**Golds**</span> as a liberal force. Within the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?], resistance stems primarily from its <span style="color: #385A38;">agrarian</span> wing, reluctant to unite with the capitalist, and middle-class oriented <span style="color: #C0A054;">**Golds**</span>. The party’s old guard, led by Westmore, also remains skeptical—citing differences over the national questions.
+Most of the <span style="color: #C0A054;">**Golds**</span> backs Vellt’s merger ambitions, opposed only by a small but vocal left wing around Curtius and Lytton, who insist on preserving the <span style="color: #C0A054;">**Golds**</span> as a liberal force. Within the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?], resistance stems primarily from its <span style="color: #385A38;">agrarian</span> wing, reluctant to unite with the capitalist, and middle-class oriented <span style="color: #C0A054;">**Golds**</span>. The party’s old guard, led by Westmore, also remains skeptical—citing differences over the national questions.
 
 - @dnvp_dvp: Regardless, an agreement has been reached.
 
@@ -104,7 +104,7 @@ on-arrival: {!
     if (Q.gold_reform == 2) {
         Q.dhv_fkp = Q.dhv_fkp*1.5;
     }
-    if (Q.gold_leader == "Hugo" || Q.gold_leader == "Dingeldey") {
+    if (Q.gold_leader == "Hugo" || Q.gold_leader == "Coalfax") {
         Q.industrialists_fkp = Q.industrialists_fkp*1.5;
     }
     if (Q.pro_republic >= 60) {
@@ -137,8 +137,8 @@ on-arrival: {!
         }
     }
     if (Q.raumer_points + Q.treviranus_points_fkp + Q.glatzel_points_fkp > Q.hergt_points_fkp + Q.westarp_points_fkp) {
-        if (Q.gold_leader == "Glatzel" && Q.raumer_points + Q.glatzel_points_fkp + (Q.treviranus_points_fkp*0.4) > Q.hergt_points_fkp + Q.westarp_points_fkp) {
-            Q.winner_fkp = "Glatzel";
+        if (Q.gold_leader == "Vellt" && Q.raumer_points + Q.glatzel_points_fkp + (Q.treviranus_points_fkp*0.4) > Q.hergt_points_fkp + Q.westarp_points_fkp) {
+            Q.winner_fkp = "Vellt";
         } else {
             if (Q.raumer_points_fkp + Q.glatzel_points_fkp > Q.treviranus_points_fkp) {
                 Q.winner_fkp = "Raumer";
@@ -179,7 +179,7 @@ Major Factions:
 
 <span style="color: #0087DC;">People's Conservatives</span> ([? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?]) [+ ppconservatives_fkp +]
 
-- @glatzel: Frank Glatzel.
+- @glatzel: Florian Vellt.
 - @treviranus: Gottfried Trevannon.
 - @raumer: Hans von Raumer.
 - @hergt: Oskar Hargen.
@@ -187,14 +187,14 @@ Major Factions:
 
 @glatzel
 subtitle: Hailing from the reformist elements of the <span style="color: #C0A054;">**Golds**</span>, he seeks to create a unitary force on the right.
-choose-if: winner_fkp = "Glatzel"
-on-arrival: fkp_leader = "Glatzel"; fkp_ideology = "Paternalistic Conservatism";
+choose-if: winner_fkp = "Vellt"
+on-arrival: fkp_leader = "Vellt"; fkp_ideology = "Paternalistic Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/glatzel.jpg
 
-Against expectations, Frank Glatzel prevailed in a drawn‑out, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress. Centrists like Trevannon and von Raumer were the first to fall in the election, ultimately endorsing Glatzel over hard‑line monarchists such as Hargen and Westmore. By the final ballot, Glatzel had assembled a coalition of moderate [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?] holdouts, white-collar union delegates, and the remaining <span style="color: #C0A054;">**Golds**</span> moderates, clinching the chairmanship despite standing on the party’s left.
+Against expectations, Frank Vellt prevailed in a drawn‑out, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress. Centrists like Trevannon and von Raumer were the first to fall in the election, ultimately endorsing Vellt over hard‑line monarchists such as Hargen and Westmore. By the final ballot, Vellt had assembled a coalition of moderate [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?] holdouts, white-collar union delegates, and the remaining <span style="color: #C0A054;">**Golds**</span> moderates, clinching the chairmanship despite standing on the party’s left.
 
-This outcome represents the best potential scenario for us, as Glatzel remains open to some negotiation with the <span style="color: #c00000;">**Marchers**</span>. However, the new <span style="color: #00C0FF;">**FKP**</span> will still be a far more obstinate partner than Stratton’s <span style="color: #C0A054;">**Golds**</span>, given the enduring influence of agrarian and industrialist factions. Any cooperation will likely be more constrained than in the past. Still, compared to the uncompromising hardliners who nearly won the contest, Glatzel’s victory is a relief. 
+This outcome represents the best potential scenario for us, as Vellt remains open to some negotiation with the <span style="color: #c00000;">**Marchers**</span>. However, the new <span style="color: #00C0FF;">**FKP**</span> will still be a far more obstinate partner than Stratton’s <span style="color: #C0A054;">**Golds**</span>, given the enduring influence of agrarian and industrialist factions. Any cooperation will likely be more constrained than in the past. Still, compared to the uncompromising hardliners who nearly won the contest, Vellt’s victory is a relief. 
 
 @raumer
 subtitle: Backed by manu prominent industrialists from the <span style="color: #C0A054;">**Golds**</span>, von Raumer aims to strengthen the bourgiois.
@@ -203,7 +203,7 @@ on-arrival: fkp_leader = "von-Raumer"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/von_raumer.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Hans von Raumer secured the chairmanship by consolidating the party’s pro‑business wing. The moderate Frank Glatzel was the first to fall in the competition. In the penultimate round, Gottfried Trevannon withdrew and threw his support behind von Raumer, rather than the hard‑line monarchists. Industrialists and big‑business delegates, long allied with von Raumer, rallied en masse, joined by former <span style="color: #C0A054;">**Golds**</span> deputies and even some trade unionists, giving him a decisive edge over Kuno von Westmore in the final ballot.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Hans von Raumer secured the chairmanship by consolidating the party’s pro‑business wing. The moderate Frank Vellt was the first to fall in the competition. In the penultimate round, Gottfried Trevannon withdrew and threw his support behind von Raumer, rather than the hard‑line monarchists. Industrialists and big‑business delegates, long allied with von Raumer, rallied en masse, joined by former <span style="color: #C0A054;">**Golds**</span> deputies and even some trade unionists, giving him a decisive edge over Kuno von Westmore in the final ballot.
 
 This represents an interesting development for us. While von Raumer is firmly linked to the industrialist wing of <span style="color: #00C0FF;">**FKP**</span>, he has demonstrated firm support for Unity Coalitions in previous governments. He even has a good working relationship with Vendrin Bell. However, he would still be active in trying to limit our policies in any future government. Additionally, many of his own supporters in the industrialist wing would seek to prevent any coalition with us, so cooperation will still be more difficult than it was with Stratton's <span style="color: #C0A054;">**Golds**</span>. 
 
@@ -214,7 +214,7 @@ on-arrival: fkp_leader = "Trevannon"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/Trevannon.jpg
 
-After a protracted, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Gottfried Trevannon secured the party chairmanship. Building a coalition of moderate <span style="color: #3E88B3;">**Traditionalists**</span> dissidents, rural‑Chamber delegates, and a sprinkling of pragmatic ex‑<span style="color: #C0A054;">**Golds**</span> members allowed him to do well in the first round. Frank Glatzel, representing the party’s moderates, was the first to be eliminated. Then industrial conservatives around Hans von Raumer, unwilling to back the hard‑line monarchists, shifted en masse to Trevannon by the penultimate ballot, giving him a clear path to the chairmanship against Kuno von Westmore.
+After a protracted, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Gottfried Trevannon secured the party chairmanship. Building a coalition of moderate <span style="color: #3E88B3;">**Traditionalists**</span> dissidents, rural‑Chamber delegates, and a sprinkling of pragmatic ex‑<span style="color: #C0A054;">**Golds**</span> members allowed him to do well in the first round. Frank Vellt, representing the party’s moderates, was the first to be eliminated. Then industrial conservatives around Hans von Raumer, unwilling to back the hard‑line monarchists, shifted en masse to Trevannon by the penultimate ballot, giving him a clear path to the chairmanship against Kuno von Westmore.
 
 Many in our party have signaled their resigned acceptance of Trevannon. While they remain deeply suspicious of his nationalist rhetoric and austere economic agenda, they acknowledge he is less hostile to the Unity order than the outright monarchists within his party. Hopefully, he will act as a bulwark against the rising [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">far</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">far</span>?]-<span style="color: #3E88B3;">right</span> in the country.
 
@@ -225,7 +225,7 @@ on-arrival: fkp_leader = "Hargen"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/OskarHergt.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Oskar Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Glatzel was the first to go, followed by Hans von Raumer, whose industrialist backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Gottfried Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Oskar Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Vellt was the first to go, followed by Hans von Raumer, whose industrialist backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Gottfried Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
 
 Hargen’s victory has seen our relations with the <span style="color: #00C0FF;">**FKP**</span> sour. His entrenched monarchism and hostility toward democratic processes have already led him to explore increased cooperation with the far right, including informal contacts with the Wardens. Genuine legislative collaboration now seems all but impossible, making building coalitions in the future increasingly difficult.
 
@@ -236,6 +236,6 @@ on-arrival: fkp_leader = "Westmore"; fkp_ideology = "National Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Glatzel was the first to be eliminated. In subsequent ballots, moderate conservatives around Hans von Raumer and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Oskar Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Gottfried Trevannon.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Vellt was the first to be eliminated. In subsequent ballots, moderate conservatives around Hans von Raumer and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Oskar Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Gottfried Trevannon.
 
 Westmore’s ascension means that the right is now effectively devoid of democratic parties. His explicit antisemitism and paramilitary sympathies signal a dangerous shift toward radical exclusion and street‑tier violence. This will make stabilizing the republic increasingly difficult, as the right increasingly rejects the republic.

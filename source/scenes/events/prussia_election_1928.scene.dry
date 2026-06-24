@@ -525,7 +525,7 @@ if (Q.traditionalist_ideology === "Moderate") {
     Q.far_right_coalition_heartland = parseFloat((Q.traditionalist_r_heartland + Q.royalist_r_heartland).toFixed(1));
 }
 
-if (Q.gold_leader == "Dingeldey" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
+if (Q.gold_leader == "Coalfax" && Q.gold_ideology == "Right" && Q.gold_right - Q.gold_left >= 15 || Q.hugenberg_gold) {
     Q.far_right_coalition_heartland = parseFloat((Q.far_right_coalition_heartland + Q.gold_r_heartland).toFixed(1));
 }
 
@@ -885,8 +885,8 @@ Placeholder
 title: Staal forms a majority with the right.
 subtitle: <span style="color: #BFC8CC;">**GNU**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if not other_gnu:&nbsp;+ **Others**?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">**DSU**</span>?] ([+ staal_right_coalition_heartland +]%)
 view-if: staal_right_coalition_heartland >= 50 and chancellor == "Staal" and staal_time and gnu_formed
-choose-if: dsu_leader != "Otto Crowde"
-unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">[+ unionist_party_name +]</span> + <span style="color: #A2D8E0;">Arcanists</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if not other_gnu:&nbsp;+ Others?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">KVP</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">Traditionalists</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">DSU</span>?] ([+ staal_right_coalition_heartland +]%) [? if dsu_leader == "Otto Crowde": -The <span style="color: #6A1E1E;">DSU</span> have gone completely off the deep end. ?]
+choose-if: dsu_leader != "Corin Crowde"
+unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">[+ unionist_party_name +]</span> + <span style="color: #A2D8E0;">Arcanists</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if not other_gnu:&nbsp;+ Others?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">KVP</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">Traditionalists</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">DSU</span>?] ([+ staal_right_coalition_heartland +]%) [? if dsu_leader == "Corin Crowde": -The <span style="color: #6A1E1E;">DSU</span> have gone completely off the deep end. ?]
 on-arrival: in_staal_right_coalition_heartland = 1; heartland_leader = "Goodlake" if heartland_leader != "Crowde"; heartland_leader = "Crowde" if heartland_leader != "Goodlake"; commons_collectivist -= 2; commons_marcher -= 2; vanguard_banned = 1; vanguard_strength -= 40; banner_strength -= 150; heartland_police_loyalty = 0; pro_republic -= 8
 
 Staal's preferred coalition is one with the right, cooperating with the hard line <span style="color: #6A1E1E;">**DSU**</span> to enact sweeping reforms to the education and policing system reformed under our years of rule. 
@@ -1222,7 +1222,7 @@ on-arrival: no_majority_elections_heartland_staal = 1
 go-to: call_new_elections_2_rubicon if heartland_leader != "Bristol" and heartland_leader != "Sedgewick" and heartland_leader != "Lytton" and heartland_leader != "Askew"; prussia_explode if heartland_leader == "Bristol" or heartland_leader == "Sedgewick" or heartland_leader == "Lytton" or heartland_leader == "Askew"
 
 @call_new_elections_2_rubicon
-view-if: gnu_r_heartland < 50 and (staal_right_coalition_heartland < 50 or dsu_leader == "Otto Crowde")
+view-if: gnu_r_heartland < 50 and (staal_right_coalition_heartland < 50 or dsu_leader == "Corin Crowde")
 on-arrival: next_election_week_heartland = next_election_week if rubicon and next_election_time - time < 3; next_election_week_heartland = week + 6 if rubicon and next_election_time - time >= 3; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4
 call: set_next_election_time_prussia
 

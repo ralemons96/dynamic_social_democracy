@@ -161,7 +161,7 @@ on-arrival: {!
 Q.luther_endorsed_candidate = "None"
 
 if (Q.lvp_ideology == "Right") {
-    Q.luther_endorsed_candidate = "Eduard Dingeldey"
+    Q.luther_endorsed_candidate = "Soren Coalfax"
 } else if (Q.lvp_ideology == "Moderate") {
     Q.luther_endorsed_candidate = "Julius Curtius"
 } else if (Q.lvp_ideology == "Left") {
@@ -176,7 +176,7 @@ if (((Q.curtius_resign_lvp) || (Q.curtius_banking_crisis && Q.banking_crisis_see
     Q.luther_endorsed_candidate = "Albrecht Dietrich";
 }
 
-if (Q.luther_endorsed_candidate == "Eduard Dingeldey") {
+if (Q.luther_endorsed_candidate == "Soren Coalfax") {
     Q.dingeldey_points += 0.5;
 } else if (Q.luther_endorsed_candidate == "Julius Curtius") {
     Q.curtius_points += 0.5;
@@ -264,16 +264,16 @@ Julius Curtius, Stratton's successor in foreign affairs and a former member of t
 As a former member of the <span style="color: #C0A054;">**Golds**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 
 @dingeldey
-title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
+title: Soren Coalfax is elected.
+subtitle: Coalfax was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #C0A054;">Golds</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
-on-arrival: lvp_relation -= 8; lvp_right += 5; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 3; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+on-arrival: lvp_relation -= 8; lvp_right += 5; lvp_leader = "Coalfax"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 3; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Soren Coalfax, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
+However, Coalfax has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 
 @deadlock
 title: The vote has been deadlocked!

@@ -27,7 +27,7 @@ if (Q.sapd_formed && Q.sapd_r_pre) Q.sapd_r_alt = Q.sapd_r_pre;
 Q.marcher_r_alt = Q.marcher_r_pre;
 if (!Q.dstp_maintained && Q.libs_against_staal && !Q.lvp_formed) Q.ddp_r_alt = Q.ddp_r_pre;
 if (Q.libs_against_staal && Q.lvp_formed) Q.lvp_r_alt = Q.lvp_r_pre;
-if (Q.libs_against_staal && Q.gold_relation >= 40 && Q.gold_leader != "Dingeldey" && (Q.industrialists_staal < 4 || Q.republicans_staal <= 0) && Q.gold_exist && !Q.lvp_formed) Q.gold_r_alt = Q.gold_r_pre;
+if (Q.libs_against_staal && Q.gold_relation >= 40 && Q.gold_leader != "Coalfax" && (Q.industrialists_staal < 4 || Q.republicans_staal <= 0) && Q.gold_exist && !Q.lvp_formed) Q.gold_r_alt = Q.gold_r_pre;
 if (Q.unionist_against_staal) Q.unionist_r_alt = Q.unionist_r_pre - Q.bvp_r;
 
 Q.total_r_alt = parseFloat(Q.collectivist_r_alt + Q.sapd_r_alt + Q.marcher_r_alt + Q.ddp_r_alt + Q.gold_r_alt + Q.unionist_r_alt + Q.lvp_r_alt).toFixed(1);
