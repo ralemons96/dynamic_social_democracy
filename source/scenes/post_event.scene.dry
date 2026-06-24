@@ -4892,7 +4892,9 @@ if (Q.lvp_formed) {
 Q.social_catholic_coalition = parseFloat((Q.marcher_r + Q.unionist_r - Q.bvp_r).toFixed(1));
 
 if (Q.lvp_formed) {
-    Q.grand_coalition = parseFloat((Q.marcher_r + Q.lvp_r + Q.unionist_r).toFixed(1));
+    // Golds unified (Fix 1): with one liberal party, the Grand and Unity coalitions are the
+    // same Marcher-Golds-Unionist bloc. Keep them identical.
+    Q.grand_coalition = Q.weimar_coalition;
 } else {
     Q.grand_coalition = parseFloat((Q.marcher_r + Q.ddp_r + Q.unionist_r + Q.gold_r).toFixed(1));
 }
@@ -4995,7 +4997,8 @@ if (Q.lvp_formed) {
 Q.social_catholic_coalition_heartland = parseFloat((Q.marcher_r_heartland + Q.unionist_r_heartland).toFixed(1));
 
 if (Q.lvp_formed) {
-    Q.grand_coalition_heartland = parseFloat((Q.marcher_r_heartland + Q.lvp_r_heartland + Q.unionist_r_heartland).toFixed(1));
+    // Golds unified (Fix 1): Grand == Unity in the heartland too.
+    Q.grand_coalition_heartland = Q.weimar_coalition_heartland;
 } else {
     Q.grand_coalition_heartland = parseFloat((Q.marcher_r_heartland + Q.ddp_r_heartland + Q.unionist_r_heartland + Q.gold_r_heartland).toFixed(1));
 }

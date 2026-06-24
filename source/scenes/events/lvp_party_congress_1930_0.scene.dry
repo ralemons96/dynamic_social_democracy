@@ -57,7 +57,7 @@ view-if: in_grand_coalition and marcher_in_government
 As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**Golds**</span> having merged, we could go ahead with kicking the small <span style="color: #A2D8E0;">**Arcanists**</span> out of government. This will leave us with a majority Unity Coalition.
 
 - @weimar: Form a Unity Coalition.
-- @groko: Maintain the Grand Coalition.
+- @groko: Maintain the Unity Coalition.
 
 @weimar
 on-arrival: lvp_relation -= 4; unionist_relation -= 3; lvp_right += 1; in_weimar_coalition = 1; in_grand_coalition = 0; coalition_dissent += 1

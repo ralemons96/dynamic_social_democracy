@@ -1624,7 +1624,7 @@ if (!Q.lvp_formed) {
     }
     // seed the key coalitions so the first status view is correct (post_event recomputes each turn)
     Q.weimar_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0) - (Q.bvp_r||0)).toFixed(1));
-    Q.grand_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0)).toFixed(1));
+    Q.grand_coalition = Q.weimar_coalition; // unified: Grand == Unity (one Marcher-Golds-Unionist bloc)
     Q.social_liberal_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r).toFixed(1));
     Q.bourgeois_coalition = parseFloat(((Q.unionist_r||0) + Q.lvp_r + (Q.other_r||0)).toFixed(1));
     Q.neo_weimar_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0) + (Q.other_r||0)).toFixed(1));

@@ -82,7 +82,7 @@ choose-if: kardorff_unlock
 on-arrival: gold_leader = "Kardorff"; gold_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; gold_relation += 5 if in_grand_coalition; burgher_gold += 4; faithful_gold += 2; landed_gold += 2; guild_gold += 2; pro_republic += 3
 face-image: img/portraits/kardorff.jpg
 
-Kardorff is elected to succeed Lytton as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Lytton's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Grand Coalition back in 1929.?]
+Kardorff is elected to succeed Lytton as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Lytton's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Unity Coalition back in 1929.?]
 
 [? if bruning_time: He is also one of the strongest supporters of the Askew government, frequently coming into conflict with the right of the party over support for it. ?]
 

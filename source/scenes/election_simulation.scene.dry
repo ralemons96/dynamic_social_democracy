@@ -311,7 +311,7 @@ Other: [+ other_r +]
 
 Unity Coalition (Marchers + Z + Golds): [+ weimar_coalition +]
 
-Grand Coalition (Marchers + Z + Arcanists + Golds + Golds): [+ grand_coalition +]
+Unity Coalition (Marchers + Z + Arcanists + Golds + Golds): [+ grand_coalition +]
 
 Bourgeois Coalition (Z + Arcanists + Golds + Golds + Others): [+ bourgeois_coalition +]
 
