@@ -81,7 +81,7 @@ The <span style="color: #7A3C00;">Royalists</span> have continued cracking down 
 
 @works
 title: "MEFO Bills"
-subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
+subtitle: Ordered by Edrik Halbridge of the Economic Ministry.
 view-if: dsu_policy == 2 and not mefo_bills_alt
 on-arrival: {!
 Q.staal_marcher_r -= 1;
@@ -101,7 +101,7 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite Hjalmar Schacht not being a Keynesian, he understands that large scale public works and state funded projected are the way out of the Commonwealth's slump, and for the Commonwealth to retake its great power status on the international stage. He believes that, since <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Britain</span> are preoccupied with their own economic woes, the time is right for a mass industrialization and rearmament program.
+Despite Edrik Halbridge not being a Keynesian, he understands that large scale public works and state funded projected are the way out of the Commonwealth's slump, and for the Commonwealth to retake its great power status on the international stage. He believes that, since <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Britain</span> are preoccupied with their own economic woes, the time is right for a mass industrialization and rearmament program.
 
 The construction of the "Autobahn", a new nationwide highway system, by poorly paid workers has begun, as an expansion of Staal's public works plans. A new innovative method for disguising rearmament has also been devised, a "MEFO bill", a system of promissory notes issued through a dummy company to secretly fund arms production while keeping the spending off the official government budget. However, he insists that a revival of the Commonwealth's economy should take precedent over rearmament.
 
@@ -118,18 +118,18 @@ face-image: img/portraits/luther.jpg
 
 The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
+However, the endorsement of the campaign by Edrik Halbridge—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
 
 @reichsbank_dreyse
 face-image: img/portraits/dreyse.jpg
 
 The Commonwealth Bank, long known for its strict fiscal conservatism and obsessive anti-inflation stance, had already slashed Staal's initial public works decree by 15%. So, it was no surprise when news of even greater government spending met with their disapproval.
 
-However, the endorsement of the campaign by Hjalmar Schacht—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
+However, the endorsement of the campaign by Edrik Halbridge—a respected banker and former Commonwealth Bank President credited with ending hyperinflation—has done much to calm the business community. Under government pressure, the Commonwealth Bank is ultimately coerced into backing the plan.
 
 @works_alt
 title: "MEFO Bills"
-subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
+subtitle: Ordered by Edrik Halbridge of the Economic Ministry.
 view-if: dsu_policy == 2 and mefo_bills_alt
 on-arrival: {!
 Q.staal_marcher_r -= 2;
@@ -151,6 +151,6 @@ Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
 
-Despite the public works campaign being expanded before Hjalmar Schacht took office as Economic Minister, he now seeks to build upon it—transforming it into a mass industrialization and rearmament program, more closely aligned with Staal's ambitions. Only then, he argues, can the Commonwealth hope to rival the major powers.
+Despite the public works campaign being expanded before Edrik Halbridge took office as Economic Minister, he now seeks to build upon it—transforming it into a mass industrialization and rearmament program, more closely aligned with Staal's ambitions. Only then, he argues, can the Commonwealth hope to rival the major powers.
 
-An innovative new method for disguising rearmament has also been devised: the "MEFO bill," a system of promissory notes issued through a dummy company to secretly finance arms production while keeping the spending off the official government books. Nevertheless, Schacht insists that reviving the Commonwealth's economy must take precedence over rearmament—for now.
+An innovative new method for disguising rearmament has also been devised: the "MEFO bill," a system of promissory notes issued through a dummy company to secretly finance arms production while keeping the spending off the official government books. Nevertheless, Halbridge insists that reviving the Commonwealth's economy must take precedence over rearmament—for now.

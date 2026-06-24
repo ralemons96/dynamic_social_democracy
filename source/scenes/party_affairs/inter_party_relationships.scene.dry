@@ -33,13 +33,13 @@ go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and collectivist_coaliti
 @kpd_1
 on-arrival: collectivist_relation += 6*(1 - dissent); communist_coalition += 1 if collectivist_inter_party_seen <= 1; reformist_dissent += 2; unionist_relation -= 2 if unionist_ideology == "Right"; gold_relation -= 3; ddp_relation -= 2; lvp_relation -= 3
 
-The <span style="color: #700000;">communists</span> are suspicious of our overtures, especially the <span style="color: #8B0000;">Stalinist</span> leadership, who persist in calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>". However, connections are made at the grassroots and local levels.
+The <span style="color: #700000;">communists</span> are suspicious of our overtures, especially the <span style="color: #8B0000;">hardline</span> leadership, who persist in calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>". However, connections are made at the grassroots and local levels.
 
 @kpd_rectification_of_history
 
-One stumbling block for our relations with the <span style="color: #700000;">**Collectivists**</span> is our history of conflict, dating back to 1918 and 1919. The <span style="color: #700000;">**Collectivists**</span> is especially contemptuous of Gustav Brask, the <span style="color: #c00000;">**Marchers**</span> "bloodhound" who reportedly ordered the violent suppression of the <span style="color: #700000;">Spartacist</span> uprising and other <span style="color: #700000;">**Collectivists**</span> revolts. They also blame us for the deaths of Rosa Luxemburg and Karl Liebknecht, two <span style="color: #c00000;">**Marchers**</span>-turned-<span style="color: #700000;">**Collectivists**</span> leaders who were killed during the suppression of the uprising.
+One stumbling block for our relations with the <span style="color: #700000;">**Collectivists**</span> is our history of conflict, dating back to 1918 and 1919. The <span style="color: #700000;">**Collectivists**</span> is especially contemptuous of Gustav Brask, the <span style="color: #c00000;">**Marchers**</span> "bloodhound" who reportedly ordered the violent suppression of the <span style="color: #700000;">Spartacist</span> uprising and other <span style="color: #700000;">**Collectivists**</span> revolts. They also blame us for the deaths of Verdwen and Falas, two <span style="color: #c00000;">**Marchers**</span>-turned-<span style="color: #700000;">**Collectivists**</span> leaders who were killed during the suppression of the uprising.
 
-For further improvements in <span style="color: #700000;">**Collectivists**</span> relations, it might be necessary to expel Brask, and hold some sort of commemoration for Luxemburg and Liebknecht.
+For further improvements in <span style="color: #700000;">**Collectivists**</span> relations, it might be necessary to expel Brask, and hold some sort of commemoration for Verdwen and Falas.
 
 - @yes_history: Yes, we must apologize for our past actions.
 - @no_history: No, we have no need to apologize.
@@ -54,7 +54,7 @@ This leads to tensions with the moderates and reformists within our party, and c
 @no_history
 on-arrival: collectivist_relation -= 3
 
-We have no need to apologize for the actions of Ebert and Brask; it is the <span style="color: #700000;">communists</span>' fault for launching a violent insurrection.
+We have no need to apologize for the actions of Harden and Brask; it is the <span style="color: #700000;">communists</span>' fault for launching a violent insurrection.
 
 
 @kpd_2

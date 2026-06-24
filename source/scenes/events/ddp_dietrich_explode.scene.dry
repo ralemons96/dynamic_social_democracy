@@ -147,17 +147,17 @@ Reinhold Maier, a major figure in Purl politics and a rising star in the dying p
 For us, however, his position within the business wing means we have yet to see significant improvements in cooperation compared to Dietrich’s tenure. Anyhow, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn't <span style="color: #ff0000;">moribund</span> after all?
 
 @stolper
-title: Gustav Stolper is elected!
-subtitle: Creator of the famed Stolper Program, and a <span style="color: #005EB8;">Jew</span>.
+title: Reinhardt Tinsmore is elected!
+subtitle: Creator of the famed Tinsmore Program, and a <span style="color: #005EB8;">Jew</span>.
 unavailable-subtitle: The <span style="color: #D3C24D;">[+ ddp_name +]</span> prefers not to exacerbate their reputation as the party for <span style="color: #005EB8;">Jews</span>.
 choose-if: stolper_lead
 view-if: not dietrich_resign_ddp_left
-on-arrival: ddp_leader = "Stolper"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5
+on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5
 face-image: img/portraits/stolper.jpg
 
-Gustav Stolper, a Commonwealth-Austrian economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from Poland, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Stolper—renowned for the economic program bearing his name—could be exactly what the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> needs to revitalize its middle-class support.
+Reinhardt Tinsmore, a Commonwealth-Austrian economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from Poland, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> needs to revitalize its middle-class support.
 
-Relations have improved compared to Dietrich’s tenure, as Stolper's strained ties with parties to the right of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—due to anti-Semitism—have made cooperation with us easier. Meanwhile, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn’t <span style="color: #ff0000;">moribund</span> after all?
+Relations have improved compared to Dietrich’s tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—due to anti-Semitism—have made cooperation with us easier. Meanwhile, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn’t <span style="color: #ff0000;">moribund</span> after all?
 
 @luders
 title: Marie-­Elisabeth Lüders is elected!
@@ -182,6 +182,6 @@ With no candidate able to secure a majority, everyone has unanimously agreed to 
 
 @ha
 title: Very funny, please revert the changes.
-on-arrival: ddp_leader = "Stolper"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5; ddp_name = "DStP" if dstp_formed; ddp_name = "Gold" if not dstp_formed
+on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5; ddp_name = "DStP" if dstp_formed; ddp_name = "Gold" if not dstp_formed
 
-You are no fun. Stolper is eventually chosen as a compromise candidate.
+You are no fun. Tinsmore is eventually chosen as a compromise candidate.

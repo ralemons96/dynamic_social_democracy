@@ -27,7 +27,7 @@ Supporting labor is always popular in the <span style="color: #c00000;">**Marche
 subtitle: Popular among the bourgeoisie, much less so among the workers.
 on-arrival: labor_dissent += 8; commons_marcher -= 3; coalition_dissent -= 1 if coalition_dissent > 0; gold_relation += 5; lvp_relation += 5; unionist_relation += 5; ddp_relation += 4; commons_collectivist += 3; collectivist_coalition_dissent += 1; collectivist_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; pro_labor -= 1; strike_term_seen += 1; gold_left += 1; ddp_right += 1; ddp_cohesion -= 0.5; lvp_left += 1; goal_marcher_cancel += 1; labor_goal_marcher_peoples += 1;
 
-The more radical workers despise our suppression of their strikes, recalling the days of Friedrich Ebert.
+The more radical workers despise our suppression of their strikes, recalling the days of Friedrich Harden.
 
 @balance
 subtitle: Both sides need to share the pain in the current crisis.

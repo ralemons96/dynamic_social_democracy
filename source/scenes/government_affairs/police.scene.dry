@@ -48,7 +48,7 @@ go-to: investigate_far_right_success if interior_police_loyalty >= 0.55; investi
 @investigate_far_right_success
 on-arrival: investigate_far_right += 1; loyalist_strength *= 0.96; loyalist_strength *= 0.96 if investigate_far_right == 2; commons_royalist -= 1; burgher_royalist -= 2; royalist_urgency += 1 if investigate_far_right == 2; royalist_urgency += 2 if investigate_far_right == 3; commons_royalist -= 2 if investigate_far_right == 3; burgher_royalist -= 3 if investigate_far_right == 3; guild_royalist -= 3 if investigate_far_right == 3; disfavored_marcher += 3 if investigate_far_right == 3; coup_progress -= 1 if coup_progress >= 6
 
-[? if investigate_far_right == 1 : We have discovered collusion between Hjalmar Schacht, president of the Commonwealth Bank, and the <span style="color: #7A3C00;">Royalists</span>. This is very useful information. ?]
+[? if investigate_far_right == 1 : We have discovered collusion between Edrik Halbridge, president of the Commonwealth Bank, and the <span style="color: #7A3C00;">Royalists</span>. This is very useful information. ?]
 [? if investigate_far_right == 2 : We have discovered illegal arms smuggling by the <span style="color: #7A3C00;">**SA**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary. ?]
 [? if investigate_far_right == 3 : We have discovered a secret cache of documents from the <span style="color: #7A3C00;">**Royalists**</span> detailing their plan to violently take over the country if they enter into power. This is an anti-constitutional plot, and will be publicized and persecuted. ?]
 [? if investigate_far_right > 3 : Of course the <span style="color: #7A3C00;">Royalists</span> are doing crimes; everyone knows that. Now, we finally have proof. ?]

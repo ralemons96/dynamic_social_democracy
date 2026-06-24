@@ -13,7 +13,7 @@ Despite their pragmatism, the <span style="color: #6A1E1E;">**DSU**</span> are s
 
 Now, a bitter realization dawns on Crowde and his top <span style="color: #7A3C00;">Royalist</span> lieutenants: they’ve been used. Staal has no intention of letting them control anything beyond the Interior Ministry. Worse, their party has been bleeding support in local elections, punished for failing to deliver on its grand promises.
 
-After all, it’s Staal the people thank for their jobs—not the <span style="color: #6A1E1E;">**DSU**</span>, whose fights with the <span style="color: #700000;">Bolsheviks</span> do little to put food on the table for their electoral base. The formation of the <span style="color: #BFC8CC;">**GNU**</span> has only deepened the wound, as many of their former voters flock to this new pole of order and stability.
+After all, it’s Staal the people thank for their jobs—not the <span style="color: #6A1E1E;">**DSU**</span>, whose fights with the <span style="color: #700000;">revolutionaries</span> do little to put food on the table for their electoral base. The formation of the <span style="color: #BFC8CC;">**GNU**</span> has only deepened the wound, as many of their former voters flock to this new pole of order and stability.
 
 - @schleicher_2: Out of funds, out of followers, out of luck.
 
@@ -347,4 +347,4 @@ if (d3 && window) {
 [? if nvf_exist and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r +]% {!</td></tr>!} ?]
 {!</table>!}
 
-The Interior Ministry returns to Staal loyalist Edwin Hughes, while Hjalmar Schacht retains his position as Economic Minister. <span style="color: #7A3C00;">Royalists</span> who have chosen to join the <span style="color: #BFC8CC;">**GNU**</span> are generously rewarded with government positions.
+The Interior Ministry returns to Staal loyalist Edwin Hughes, while Edrik Halbridge retains his position as Economic Minister. <span style="color: #7A3C00;">Royalists</span> who have chosen to join the <span style="color: #BFC8CC;">**GNU**</span> are generously rewarded with government positions.

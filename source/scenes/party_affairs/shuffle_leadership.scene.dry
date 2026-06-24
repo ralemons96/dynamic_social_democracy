@@ -403,7 +403,7 @@ Vendrin Bell is now an advisor.
 
 @add_wels
 title: Joran Vesh
-subtitle: Joran Vesh is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
+subtitle: Joran Vesh is a long-time party organizer and member of the leadership, serving under Friedrich Harden. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
 is-card: true
 card-image: img/portraits/WelsRudolf.jpg
 tags: center_advisor

@@ -155,7 +155,7 @@ max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_braun
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Fascism</span>, <span style="color:rgb(90, 0, 0);">Stalinism</span>, and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Fascism</span>, <span style="color:rgb(90, 0, 0);">Halsmarkism</span>, and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election.
 
 @media
 title: Use our radio stations to broadcast in favor of Bristol.
@@ -509,4 +509,4 @@ face-image: img/kpd_poster.jpg
 max-visits: 1
 go-to: campaigning_thalmann
 
-For some reason, the <span style="color: #700000;">**Communists**</span> aren't particularly grateful for our endorsement of [+ communist_candidate_1932 +]; perhaps it's due to orders from Moscow. Anyhow, we have managed to convince their leadership to allow us to participate together in joint rallies and other efforts.
+For some reason, the <span style="color: #700000;">**Communists**</span> aren't particularly grateful for our endorsement of [+ communist_candidate_1932 +]; perhaps it's due to their own revolutionary designs. Anyhow, we have managed to convince their leadership to allow us to participate together in joint rallies and other efforts.

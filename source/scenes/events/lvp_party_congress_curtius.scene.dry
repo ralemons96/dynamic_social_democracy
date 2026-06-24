@@ -214,16 +214,16 @@ Kardorff is elected to succeed Curtius as the leader of the <span style="color: 
 [? if bruning_time: He is also one of the strongest supporters of the Askew government, frequently coming into conflict with the right of the party over support for it. ?]
 
 @stolper
-title: Gustav Stolper is elected!
-subtitle: Creator of the famed Stolper Program, and a <span style="color: #005EB8;">Jew</span>.
+title: Reinhardt Tinsmore is elected!
+subtitle: Creator of the famed Tinsmore Program, and a <span style="color: #005EB8;">Jew</span>.
 unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> prefers not to exacerbate their reputation as the party for <span style="color: #005EB8;">Jews</span>.
 choose-if: stolper_lvp_unlock
-on-arrival: lvp_leader = "Stolper"; lvp_relation += 6; lvp_left += 3; landed_lvp *= 0.6; landed_royalist += 4; burgher_lvp *= 1.5; guild_lvp *= 1.2; pro_republic += 5
+on-arrival: lvp_leader = "Tinsmore"; lvp_relation += 6; lvp_left += 3; landed_lvp *= 0.6; landed_royalist += 4; burgher_lvp *= 1.5; guild_lvp *= 1.2; pro_republic += 5
 face-image: img/portraits/stolper.jpg
 
-Gustav Stolper, a Commonwealth-Austrian economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from Poland, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Stolper—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
+Reinhardt Tinsmore, a Commonwealth-Austrian economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from Poland, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
 
-Relations have improved compared to Curtius's tenure, as Stolper's strained ties with parties to the right of the <span style="color: #C0A054;">**Golds**</span>—due to anti-Semitism—have made cooperation with us easier.
+Relations have improved compared to Curtius's tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #C0A054;">**Golds**</span>—due to anti-Semitism—have made cooperation with us easier.
 
 @baumer
 title: Gertrud Bäumer is elected!

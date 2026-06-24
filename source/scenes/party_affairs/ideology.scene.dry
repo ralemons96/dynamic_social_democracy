@@ -15,7 +15,7 @@ The <span style="color: #c00000;">**Marchers**</span> is torn between many diffe
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center <span style="color: #9B0000;">Marxism</span> of Karl Kautsky remains the best way to resolve our internal contradictions.
+- @centrist: The Center <span style="color: #9B0000;">Marxism</span> of Corwin Vael remains the best way to resolve our internal contradictions.
 - @labor: We should work with the trade unions to improve the lives of workers.
 - @reform: Following Eduard Bernstein, we should work for ethical <span style="color: #c00000;">socialism</span>, strengthen democracy, and expand the party's electorate.
 - @socpat: Pursue the fusion of <span style='color: #c00000;'>socialism</span> and patriotism.
@@ -41,7 +41,7 @@ if (Q.ideology && Q.ideology != "centrist") {
 go-to: changed if changed = 1
 on-departure: ideology = "centrist"; center_strength += 8; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
 
-The Center Marxists, represented by Kautsky and Bell, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The Center Marxists, represented by Vael and Bell, support a middle course of preparing for revolution while building up the consciousness of the working class.
 
 @labor
 on-arrival: {!

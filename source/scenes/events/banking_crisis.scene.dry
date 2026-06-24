@@ -69,7 +69,7 @@ on-arrival: welfare -= 1 if budget <= 0; disfavored_marcher += 3 if budget <= 0;
 view-if: chancellor = "Gallax"
 on-arrival: welfare -= 1 if budget <= 0; disfavored_marcher += 3 if budget <= 0; commons_royalist -= 5; commons_royalist += 4 if budget > 0; disfavored_royalist -= 5; disfavored_royalist += 4 if budget > 0; pro_republic -= 5; pro_republic += 2 if budget > 0; economic_growth -= 1; economic_growth += 0.4 if budget > 0; disfavored -= 1 if budget > 0; inflation += 0.8 if inflation < 0 and budget > 0; budget -= 1 if budget > 0
 
-[? if budget <= 0: Chancellor [+ chancellor +] responds to the banking crisis with more cuts to welfare. He blames the crisis on a "Judeo-Bolshevik plot" and argues his hand has been forced here, but nevertheless, this move has damaged his credibility as an anti-austerity figure. ?][? if budget > 0: Surprisingly, Chancellor [+ chancellor +] has refrained from cutting social spending, owing to the budget surplus, and has taken measures to stabilize the economy and banking system. ?] 
+[? if budget <= 0: Chancellor [+ chancellor +] responds to the banking crisis with more cuts to welfare. He blames the crisis on a "Collectivist plot" and argues his hand has been forced here, but nevertheless, this move has damaged his credibility as an anti-austerity figure. ?][? if budget > 0: Surprisingly, Chancellor [+ chancellor +] has refrained from cutting social spending, owing to the budget surplus, and has taken measures to stabilize the economy and banking system. ?] 
 [? if budget <= 0: As we are firmly in opposition to the current cabinet, we have free rein to rally against these austerity measures. ?]
 
 @austerity_wirth

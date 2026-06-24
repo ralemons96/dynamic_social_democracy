@@ -56,12 +56,12 @@ unavailable-subtitle: This requires the Economic Ministry.
 - @cancel_advisor_action
 
 @kwg
-title: Fund the Emperor Wilhelm Society for basic scientific research.
+title: Fund the Reikzar Society for basic scientific research.
 subtitle: -1 budget
 choose-if: budget >= 1
 on-arrival: budget -= 1; science += 1; kwg_research += 1; economic_growth += 0.3 if economic_growth <= 8; burgher_marcher += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 3*(1-dissent); disfavored -= 0.2 if disfavored >= 4; west_relation += 1; science_funding += 1; ddp_left += 1; ddp_cohesion += 0.5; lvp_left += 0.5; education_goal_marcher_peoples += 1
 
-The Emperor Wilhelm Society is one of the most respected scientific research institutions in the world, with physicist Albert Einstein as its most famous employee. Our research program is to provide the Society with additional resources to hire and train scientists and conduct fundamental research, based on the scientists' own interests.
+The Reikzar Society is one of the most respected scientific research institutions in the world, with physicist Aldous Verrin as its most famous employee. Our research program is to provide the Society with additional resources to hire and train scientists and conduct fundamental research, based on the scientists' own interests.
 
 @applied
 title: Fund applied research in economically useful technologies.

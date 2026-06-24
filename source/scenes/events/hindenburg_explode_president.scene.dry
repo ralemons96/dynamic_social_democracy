@@ -470,7 +470,7 @@ if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
 if (Q.president == "Gorrick") Q.president = "Gorrick";
 
-if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Einstein") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
     Q.president_ideology = "Left";
 } else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";

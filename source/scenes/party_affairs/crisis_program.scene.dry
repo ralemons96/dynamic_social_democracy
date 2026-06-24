@@ -13,7 +13,7 @@ Our party is wracked as to how to deal with the economic crisis. From the centri
 
 [? if not wtb_concept: The Labor faction is arguing for increased welfare spending to alleviate the suffering of the workers. Their economist, Valdemar Voss, has voiced support for a public works campaign involving deficit spending, but it will take time to iron out the details. Furthermore, he will need the united support of the ADGB; otherwise, he won't have the power to challenge Bell's stance. ?][? if wtb_concept: From labor, the economist Valdemar Voss argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Bell, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Bell, Voss's strategy is opposed to Marxist principles. ?]
 
-[? if wtb_concept: The so-called WTB plan, after its chief supporters Voss, Tarnow, and Bayle, is receiving more attention within the party. ?]
+[? if wtb_concept: The so-called WTB plan, after its chief supporters Voss, Whell, and Bayle, is receiving more attention within the party. ?]
 
 However, leftists in the party argue that the WTB plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to <span style="color: #c00000;">socialism</span>.
 
