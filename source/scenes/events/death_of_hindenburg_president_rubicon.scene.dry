@@ -223,7 +223,7 @@ go-to: r1_menu
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. Perhaps we can form a Unity Bloc against Staal.
 
-[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 @heuss_r1
 view-if: heuss_run
@@ -275,7 +275,7 @@ if (Q.unionist_candidate == Q.gnu_candidate) Q.unionist_support_braun = 0;
 max-visits: 1
 go-to: z_failed if unionist_support_braun = 0 or (unionist_support_braun == 2 and historical_mode); z_success if unionist_support_braun = 1; z_partial if unionist_support_braun = 2 and not historical_mode
 
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against Staal, arguing that together, the Unity Coalition can defeat the <span style="color: #BFC8CC;">**GNU**</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against Staal, arguing that together, the Unity Coalition can defeat the <span style="color: #BFC8CC;">**GNU**</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 @convince_z_spd
 title: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +].
@@ -296,7 +296,7 @@ if (Q.unionist_candidate == Q.gnu_candidate) Q.unionist_support_braun = 0;
 max-visits: 1
 go-to: z_failed if unionist_support_braun = 0 or (unionist_support_braun == 2 and historical_mode); z_success if unionist_support_braun = 1; z_partial if unionist_support_braun = 2 and not historical_mode
 
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of Staal's dictatorial aspirations: that if we were divided, we would fall under influence of the <span style="color: #BFC8CC;">**GNU**</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of Staal's dictatorial aspirations: that if we were divided, we would fall under influence of the <span style="color: #BFC8CC;">**GNU**</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
@@ -309,7 +309,7 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is convinced! They will be supporting [+ marcher_candidate +] for the election.
 
-[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 [? if gold_candidate_switch: The <span style="color: #C0A054;">**Golds**</span> have also switched to supporting [+ gnu_candidate +] as they're heavily uncomfortable with being on the same side as us. ?]
 
@@ -329,7 +329,7 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
 With our resources, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] are convinced to support [+ marcher_candidate +]. Konrad Aldermoor will drop out of the race.
 
-[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 
 @convince_ddp_unity
@@ -553,7 +553,7 @@ go-to: r2_campaigning
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. Perhaps we can form a Unity Bloc against Staal.
 
-[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if unionist_relation < 50 : With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to [+ gnu_candidate +]. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 [? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and boycotting the election instead. ?]
 

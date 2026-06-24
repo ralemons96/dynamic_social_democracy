@@ -375,7 +375,7 @@ Do we continue to bide our time?
 - @do_nothing: This isn't our fight.
 
 @fight_mild_2
-title: The workers stopped the Kapp Putsch in 1920.
+title: The workers stopped the officers’ putsch in 4285.
 subtitle: And we can do it again.
 on-arrival: {!
 Q.staal_points = 0;

@@ -26,9 +26,9 @@ An era of history is closing, and the future remains to be seen.
 @candidates
 go-to: candidate_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seckard—former Chief of the Commonwealth Army from 1920 to 1926, and a staunch conservative monarchist, infamous for his refusal to suppress the Kapp Putsch with the remark: "Commonwealth Army do not fire on Commonwealth Army". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seckard enters the race for the presidency—backed by many of DuFour’s former allies and the disgraced Staal.
+The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seckard—former Chief of the Commonwealth Army from 4285 to 4291, and a staunch conservative monarchist, infamous for his refusal to suppress the officers’ putsch with the remark: "Commonwealth Army do not fire on Commonwealth Army". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seckard enters the race for the presidency—backed by many of DuFour’s former allies and the disgraced Staal.
 
-The <span style="color: #7A3C00;">Royalists</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seckard for the presidency. [? if not dufour_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ royalist_candidate_1932 +] in 1932. ?]
+The <span style="color: #7A3C00;">Royalists</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seckard for the presidency. [? if not dufour_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ royalist_candidate_1932 +] in 4297. ?]
 
 The <span style="color: #700000;">**Communists**</span> are too disorganized following Staal's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">socialist</span>.
 
@@ -65,7 +65,7 @@ go-to: r1_menu
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seckard. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
+[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seckard. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 @gessler_r1
 on-arrival: marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
@@ -124,7 +124,7 @@ if (Q.unionist_relation >= 40 || (Q.unionist_relation > 20 && Q.unionist_leader 
 max-visits: 1
 go-to: z_failed if unionist_support_grzesinski = 0; z_success if unionist_support_grzesinski = 1; z_partial if unionist_support_grzesinski = 2
 
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the Unity Coalition can defeat the <span style="color: #7A3C00;">Royalists</span> and return the Commonwealth to its democratic path. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the Unity Coalition can defeat the <span style="color: #7A3C00;">Royalists</span> and return the Commonwealth to its democratic path. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 @convince_z_spd
 title: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +].
@@ -145,7 +145,7 @@ if (Q.unionist_relation >= 60 || (Q.unionist_relation > 50 && Q.unionist_leader 
 max-visits: 1
 go-to: z_failed if unionist_support_grzesinski = 0; z_success if unionist_support_grzesinski = 1; z_partial if unionist_support_grzesinski = 2
 
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Royalists</span> led by Seckard. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Royalists</span> led by Seckard. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0

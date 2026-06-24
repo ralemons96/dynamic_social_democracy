@@ -48,7 +48,7 @@ go-to: candidate_selection
 
 = Presidential Election Candidates
 
-With the 1932 Commonwealth Presidential election coming up next month, we need to decide whether to run a candidate of our own or support one from another party. [? if dufour_run: Many are calling for us to support the incumbent DuFour, despite his <span style="color: #808080;">reactionary</span> tendencies. Contrary to fears, he hasn’t used his office to destroy the republic yet, so supporting him would hopefully prevent the <span style="color: #7A3C00;">Royalists</span>, who actually support destroying the republic, from winning. ?][? if not dufour_run: With DuFour's withdrawal, the Commonwealth Right is in disarray, struggling to find a candidate who can attract support from the moderate right and middle, while also embodying the unifying character of DuFour. It’s likely that the candidate they put forward will have a military or industrial background and will be distanced from the partisan bickering of politics. ?]
+With the 4297 Commonwealth Presidential election coming up next month, we need to decide whether to run a candidate of our own or support one from another party. [? if dufour_run: Many are calling for us to support the incumbent DuFour, despite his <span style="color: #808080;">reactionary</span> tendencies. Contrary to fears, he hasn’t used his office to destroy the republic yet, so supporting him would hopefully prevent the <span style="color: #7A3C00;">Royalists</span>, who actually support destroying the republic, from winning. ?][? if not dufour_run: With DuFour's withdrawal, the Commonwealth Right is in disarray, struggling to find a candidate who can attract support from the moderate right and middle, while also embodying the unifying character of DuFour. It’s likely that the candidate they put forward will have a military or industrial background and will be distanced from the partisan bickering of politics. ?]
 
 On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Communists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**SAPD**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Communists</span>. ?]
 
@@ -337,14 +337,14 @@ With local elections fast approaching, many parties have opted not to field thei
 - @westarp
 
 @jarres
-title: Lorne Jarrow, mayor of Duisburg, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 1925.
+title: Lorne Jarrow, mayor of Duisburg, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 4290.
 view-if: jarres_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/jarres.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Lorne Jarrow, having been compelled to withdraw his candidacy in 1925 in favor of DuFour, has once again entered the race. While not an overtly partisan figure—having remained relatively quiet in national politics in recent years—Jarrow is expected to share many of the same anti-<span style="color: #c00000;">**Marchers**</span> biases that DuFour currently harbors. Moreover, he subscribes to the "taming strategy" concerning the <span style="color: #7A3C00;">Royalists</span>. It is imperative that we field a candidate of our own to prevent such an outcome.
+Lorne Jarrow, having been compelled to withdraw his candidacy in 4290 in favor of DuFour, has once again entered the race. While not an overtly partisan figure—having remained relatively quiet in national politics in recent years—Jarrow is expected to share many of the same anti-<span style="color: #c00000;">**Marchers**</span> biases that DuFour currently harbors. Moreover, he subscribes to the "taming strategy" concerning the <span style="color: #7A3C00;">Royalists</span>. It is imperative that we field a candidate of our own to prevent such an outcome.
 
 His candidacy is supported by the <span style="color: #C0A054;">**Golds**</span>.
 
@@ -372,7 +372,7 @@ face-image: img/portraits/gessler.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Gareth Gesling, who served as Defense Minister for eight years following Noske’s departure and preceding Ravabelle, is a conservative and a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> by reason rather than conviction—often at odds with his colleagues in the <span style="color: #D3C24D;">**Golds**</span> throughout his tenure. He made little effort to reform the Commonwealth Army and played an active role in the <i>Commonwealth intervention</i> against our United Left governments in Dornwich and Stathmore during the Commonwealth October. Now, after stepping away from politics in early 1928, he seeks a return to the national stage.
+Gareth Gesling, who served as Defense Minister for eight years following Noske’s departure and preceding Ravabelle, is a conservative and a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> by reason rather than conviction—often at odds with his colleagues in the <span style="color: #D3C24D;">**Golds**</span> throughout his tenure. He made little effort to reform the Commonwealth Army and played an active role in the <i>Commonwealth intervention</i> against our United Left governments in Dornwich and Stathmore during the Commonwealth October. Now, after stepping away from politics in early 4293, he seeks a return to the national stage.
 
 His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, which has grown more right-wing and more accepting over the years. ?]
 
@@ -386,7 +386,7 @@ face-image: img/portraits/adenauer.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Konrad Aldermoor, a staunch advocate of the <span style="color: #000000;">Unionist Party</span>'s strategy to "leave the tower" and open itself to Protestant support, has decided to run for the presidency after achieving that very aim. Still relatively inexperienced in national politics, the Mayor is known for his strong anti-Heartland stance—going so far as to reject a chancellorship offer in 1926 on the grounds that Stratton was "too Heartland." Aligned with Sedgewick and situated on the party's right wing, Aldermoor has expressed interest in the so-called "taming strategy" toward the <span style="color: #7A3C00;">Royalists</span>.
+Konrad Aldermoor, a staunch advocate of the <span style="color: #000000;">Unionist Party</span>'s strategy to "leave the tower" and open itself to Protestant support, has decided to run for the presidency after achieving that very aim. Still relatively inexperienced in national politics, the Mayor is known for his strong anti-Heartland stance—going so far as to reject a chancellorship offer in 4291 on the grounds that Stratton was "too Heartland." Aligned with Sedgewick and situated on the party's right wing, Aldermoor has expressed interest in the so-called "taming strategy" toward the <span style="color: #7A3C00;">Royalists</span>.
 
 His candidacy is supported by the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
@@ -431,7 +431,7 @@ face-image: img/portraits/lettowvorbeck.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-By some miracle for the Commonwealth Right, they have managed to persuade Paul von Lethmoor—renowned for his successful guerrilla campaign in Commonwealth East Africa during the Great War—to run for the presidency. However, the circumstances now are far more dire than they were in 1925. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
+By some miracle for the Commonwealth Right, they have managed to persuade Paul von Lethmoor—renowned for his successful guerrilla campaign in Commonwealth East Africa during the Great War—to run for the presidency. However, the circumstances now are far more dire than they were in 4290. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
 
 How Lethmoor would govern remains uncertain. It is highly likely that, much like DuFour, a camarilla of close advisors would shape his decisions from behind the scenes.
 
@@ -535,7 +535,7 @@ go-to: thalmann
 @thalmann
 face-image: img/portraits/ThälmannErnst.jpg
 
-The <span style="color: #700000;">**Communists**</span> will run Ernst Halsmark, their leader and candidate in 1925. If we were to not run a candidate, or to support a right-wing or bourgeois one, Halsmark and the <span style="color: #700000;">**Collectivists**</span> would greatly capitalize by painting themselves as the only left-wing option in the race. However, if our relations with the <span style="color: #700000;">**Collectivists**</span> are high enough, we may be able to convince him to drop out in favour of a unity candidate between our two parties.
+The <span style="color: #700000;">**Communists**</span> will run Ernst Halsmark, their leader and candidate in 4290. If we were to not run a candidate, or to support a right-wing or bourgeois one, Halsmark and the <span style="color: #700000;">**Collectivists**</span> would greatly capitalize by painting themselves as the only left-wing option in the race. However, if our relations with the <span style="color: #700000;">**Collectivists**</span> are high enough, we may be able to convince him to drop out in favour of a unity candidate between our two parties.
 
 - @socialist: So, what is our decision? Should we run our own candidate?
 
@@ -546,7 +546,7 @@ go-to: braun
 @braun
 face-image: img/portraits/braun.jpg
 
-Lyle Bristol has been floated around as a candidate for the presidency once more, after his failed run in 1925. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">socialist</span> for President, even with his reformist and right-wing leanings within our own party. Joshua Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
+Lyle Bristol has been floated around as a candidate for the presidency once more, after his failed run in 4290. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">socialist</span> for President, even with his reformist and right-wing leanings within our own party. Joshua Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
 
 [? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Cael Pendrigon as a <span style="color: #9B0000;">Marxist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the bourgeois parties—perhaps permanently. ?]
 
@@ -1070,7 +1070,7 @@ if (Q.bruning_time) {
 go-to: z_failed if unionist_support_marcher = 0 or (unionist_support_marcher == 2 and historical_mode); z_success if unionist_support_marcher = 1; z_partial if unionist_support_marcher = 2 and not historical_mode
 max-visits: 1
 
-We remind the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] leaders of [? if dufour_run: <span style="color: #808080;">DuFour</span>'s anti-Catholicism, and try to convince them that DuFour's path will eventually lead to Gallax. ?][? if not dufour_run: our genuine <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> and democratic credentials. ?] [? if in_weimar_coalition_heartland: We also remind them of the successes they've had as part of our Unity coalition in Heartland with [+ marcher_candidate_1932_disp +], and our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 1925 presidential election?][? if not in_weimar_coalition_heartland: We also remind them of our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 1925 presidential election?]. [? if bruning_time and dufour_run: Unfortunately, DuFour's support for Askew's government has left them with little room to oppose the very president sustaining his cabinet. ?]
+We remind the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] leaders of [? if dufour_run: <span style="color: #808080;">DuFour</span>'s anti-Catholicism, and try to convince them that DuFour's path will eventually lead to Gallax. ?][? if not dufour_run: our genuine <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> and democratic credentials. ?] [? if in_weimar_coalition_heartland: We also remind them of the successes they've had as part of our Unity coalition in Heartland with [+ marcher_candidate_1932_disp +], and our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 4290 presidential election?][? if not in_weimar_coalition_heartland: We also remind them of our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 4290 presidential election?]. [? if bruning_time and dufour_run: Unfortunately, DuFour's support for Askew's government has left them with little room to oppose the very president sustaining his cabinet. ?]
 
 @z_success
 on-arrival: dufour_angry_bruning += 50 if bruning_time
@@ -1243,7 +1243,7 @@ if (Q.unionist_relation >= 65) Q.bvp_support_marcher = 1;
 go-to: z_failed_eckener if unionist_support_marcher = 0; z_success_eckener if unionist_support_marcher = 1; z_partial_eckener if unionist_support_marcher = 2
 max-visits: 1
 
-We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Marx in 1925, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
+We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Marx in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
 
 @z_success_eckener
 go-to: endorsements_eckener

@@ -1,4 +1,4 @@
-title: 1930 [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
+title: 4295 [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference 
 subtitle: The party seeks to oust Jakob Emperor...
 view-if: ((year == 1930 and month >= 11) or kaiser_time == time) and unionist_leader == "Emperor"
 new-page: true
@@ -7,7 +7,7 @@ max-visits: 1
 tags: event
 face-image: img/zentrum_3.jpg
 
-= 1930 [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
+= 4295 [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Conference
 
 The election of Jakob Emperor to the leadership of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has stalled any progress toward transforming the party into a true <span style="color: #000000;">Christian People's Party</span>. His left-leaning stances have alienated potential voters on the Protestant Right, leaving the party adrift—uncertain of its identity. Is it to remain a predominantly Catholic, left-leaning party of labor and social reform, or evolve into a broader, right-of-center *Volkspartei*?
 

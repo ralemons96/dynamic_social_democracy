@@ -781,7 +781,7 @@ if (Q.unionist_relation >= 65) Q.bvp_support_marcher = 1;
 go-to: z_failed_eckener if unionist_support_marcher = 0; z_success_eckener if unionist_support_marcher = 1; z_partial_eckener if unionist_support_marcher = 2
 max-visits: 1
 
-We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Marx in 1925, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
+We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Marx in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
 
 @z_success_eckener
 go-to: round2_menu

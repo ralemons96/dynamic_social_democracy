@@ -188,7 +188,7 @@ go-to: r1_menu
 
 We have endorsed [+ center_candidate_1934_disp +] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if unionist_relation < 40 : With our support of [+ center_candidate_1934 +], some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the [? if reactionary_candidate_1934 == "Selden": <span style="color: #3E88B3;">**Wardens**</span> leader?][? if reactionary_candidate_1934 != "Selden": <span style="color: #3E88B3;">nationalist</span> ?] [+ reactionary_candidate_1934 +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?][? if kvp_formed and kvp_wholesome: The <span style="color: #0087DC;">**KVP**</span> will now be supporting [+ kvp_candidate +].  ?]
+[? if unionist_relation < 40 : With our support of [+ center_candidate_1934 +], some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the [? if reactionary_candidate_1934 == "Selden": <span style="color: #3E88B3;">**Wardens**</span> leader?][? if reactionary_candidate_1934 != "Selden": <span style="color: #3E88B3;">nationalist</span> ?] [+ reactionary_candidate_1934 +]. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?][? if kvp_formed and kvp_wholesome: The <span style="color: #0087DC;">**KVP**</span> will now be supporting [+ kvp_candidate +].  ?]
 
 @gessler_r1
 view-if: lib_running
@@ -288,7 +288,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Mann"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Heinrich Mann is a world-renowned novelist and poet who is also known to be a left-wing activist. His political sympathy lies with the <span style="color: #700000;">far left</span>, and he supported the revolutions in 1918 and 1919. He has long lived in the shadow of his better-known brother, Thomas Mann.
+Heinrich Mann is a world-renowned novelist and poet who is also known to be a left-wing activist. His political sympathy lies with the <span style="color: #700000;">far left</span>, and he supported the revolutions in 4283 and 4284. He has long lived in the shadow of his better-known brother, Thomas Mann.
 
 Mann is willing to accept the nomination for president.
 
@@ -300,7 +300,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Ostwick"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Carl von Ostwick is a left-wing journalist who is the publisher of the Weltbühne, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 1929, which brought him international renown. In the 1932 presidential election, he endorsed the <span style="color: #700000;">**Communist**</span> Halsmark.
+Carl von Ostwick is a left-wing journalist who is the publisher of the Weltbühne, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 4294, which brought him international renown. In the 4297 presidential election, he endorsed the <span style="color: #700000;">**Communist**</span> Halsmark.
 
 Ostwick is extremely reluctant to become a politician, and has been an iconoclastic figure his entire life, criticizing the <span style="color: #c00000;">**Marchers**</span> as being part of the establishment. It is with a sense of irony that he accepts our nomination.
 
@@ -337,7 +337,7 @@ max-visits: 1
 go-to: z_failed if unionist_support_braun = 0 or (unionist_support_braun == 2 and historical_mode); z_success if unionist_support_braun = 1; z_partial if unionist_support_braun = 2 and not historical_mode
 
 # use the same supports as the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] in 1932
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the Unity Coalition can defeat the <span style="color: #7A3C00;">Royalists</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the Unity Coalition can defeat the <span style="color: #7A3C00;">Royalists</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 
 # convincing Z to support an Marchers candidate
@@ -369,7 +369,7 @@ if (Q.marcher_candidate == "Jessamy") {
 max-visits: 1
 go-to: z_failed if unionist_support_braun = 0 or (unionist_support_braun == 2 and historical_mode); z_success if unionist_support_braun = 1; z_partial if unionist_support_braun = 2 and not historical_mode
 
-We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Royalists</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Royalists</span>. [? if unionist_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 4283. ?]
 
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0

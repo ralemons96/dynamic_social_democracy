@@ -331,7 +331,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: marcher_support_reactionary
 go-to: embezzlement_options
 
-The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 1925 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options
 
@@ -449,7 +449,7 @@ face-image: img/weimar_coalition.jpg
 max-visits: 1
 go-to: campaigning_hindenburg_2
 
-We argue to our base that, despite DuFour's well-known <span style="color: #808080;">reactionary</span> beliefs, he has refrained from outright dismantling our democracy, and supporting him as the lesser evil is necessary. However, our strong campaign in favor of President DuFour has discredited him in the eyes of his <span style="color: #808080;">reactionary</span> supporters who initially voted for him in 1925. This has increased DuFour's desire to distance himself from our support by shifting further to the right.
+We argue to our base that, despite DuFour's well-known <span style="color: #808080;">reactionary</span> beliefs, he has refrained from outright dismantling our democracy, and supporting him as the lesser evil is necessary. However, our strong campaign in favor of President DuFour has discredited him in the eyes of his <span style="color: #808080;">reactionary</span> supporters who initially voted for him in 4290. This has increased DuFour's desire to distance himself from our support by shifting further to the right.
 
 @against_communists
 title: Focus our campaign against the <span style="color: #700000;">**Communist**</span> [+ communist_candidate_1932 +].
@@ -542,7 +542,7 @@ on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_norma
 max-visits: 1
 go-to: religion_2 if dufour_unity >= 3; religion_3 if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Marx in 1925. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Nazism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Marx in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Nazism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
 
 @religion_2
 on-arrival: dufour_support += 1
@@ -563,7 +563,7 @@ view-if: not marcher_campaign_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu
 
-Of course, the main goal of the United DuFour Committees is to dispel the notion that DuFour is supported by the <span style="color: #000000;">Black</span>-<span style="color: #c00000;">Red</span> parties. To this end, Westmore has sent a letter to 750 conservative elites who supported DuFour's election in 1925, with 500 reaffirming their support of DuFour today. [? if traditionalist_ideology == "Moderate": He has also played a key role in rallying the <span style="color: #3E88B3;">**Traditionalists**</span> around his candidacy. ?]
+Of course, the main goal of the United DuFour Committees is to dispel the notion that DuFour is supported by the <span style="color: #000000;">Black</span>-<span style="color: #c00000;">Red</span> parties. To this end, Westmore has sent a letter to 750 conservative elites who supported DuFour's election in 4290, with 500 reaffirming their support of DuFour today. [? if traditionalist_ideology == "Moderate": He has also played a key role in rallying the <span style="color: #3E88B3;">**Traditionalists**</span> around his candidacy. ?]
 
 @organizational_endorsements
 title: What about the endorsements of the non-partisan organizations?
@@ -686,7 +686,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: not marcher_support_reactionary
 go-to: embezzlement_options_op
 
-The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 1925 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options_op
 
@@ -811,7 +811,7 @@ on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_norma
 max-visits: 1
 go-to: religion_2_op if dufour_unity >= 3; religion_3_op if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Marx in 1925. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Nazism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Marx in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Nazism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
 
 @religion_2_op
 on-arrival: dufour_support += 1
@@ -832,7 +832,7 @@ view-if: not marcher_campaign_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu_op
 
-Of course, the main goal of the United DuFour Committees is to dispel the notion that DuFour is supported by the <span style="color: #000000;">Black</span>-<span style="color: #c00000;">Red</span> parties. To this end, Westmore has sent a letter to 750 conservative elites who supported DuFour's election in 1925, with 500 reaffirming their support of DuFour today. [? if traditionalist_ideology == "Moderate": He has also played a key role in rallying the <span style="color: #3E88B3;">**Traditionalists**</span> around his candidacy. ?]
+Of course, the main goal of the United DuFour Committees is to dispel the notion that DuFour is supported by the <span style="color: #000000;">Black</span>-<span style="color: #c00000;">Red</span> parties. To this end, Westmore has sent a letter to 750 conservative elites who supported DuFour's election in 4290, with 500 reaffirming their support of DuFour today. [? if traditionalist_ideology == "Moderate": He has also played a key role in rallying the <span style="color: #3E88B3;">**Traditionalists**</span> around his candidacy. ?]
 
 @organizational_endorsements_op
 title: What about the endorsements of the non-partisan organizations?

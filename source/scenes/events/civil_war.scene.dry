@@ -144,7 +144,7 @@ max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-A general strike stopped the Kapp Putsch in 1920, and it can stop <span style="color: #7A3C00;">fascism</span> today. [? if normalized_commons_total > 70 : The workers are largely united with us. ?][? if normalized_commons_total >= 50 and normalized_commons_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_commons_total > 30 and normalized_commons_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_commons_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
+A general strike stopped the officers’ putsch in 4285, and it can stop <span style="color: #7A3C00;">fascism</span> today. [? if normalized_commons_total > 70 : The workers are largely united with us. ?][? if normalized_commons_total >= 50 and normalized_commons_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_commons_total > 30 and normalized_commons_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_commons_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
 
 
 @loyal_police

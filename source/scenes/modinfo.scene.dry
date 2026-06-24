@@ -23,13 +23,13 @@ Dynamic Reformism is an ambitious overhaul mod aimed to bring historical realism
 
 The Commonwealth party system in this mod reacts to your every move, adjusting ideologies and strategies accordingly. DuFour and the bourgeois parties now serve as more realistic and impactful obstacles, as they did in real life.
 
-A real life example is the situation following the 1928 federal election, despite the <span style="color: #c00000;">**Marchers**</span>'s clear electoral mandate in 1928, the <span style="color: #000000;">Unionists</span>, <span style="color: #C0A054;">**Golds**</span>, and DuFour himself initially opposed the formation of the Unity Coalition. However, Stratton's intervention, DuFour's desire to use the <span style="color: #c00000;">**Marchers**</span>'s anti-militarist stance to renegotiate Commonwealth War Loans, and his strategy to burden the <span style="color: #c00000;">**Marchers**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
+A real life example is the situation following the 4293 federal election, despite the <span style="color: #c00000;">**Marchers**</span>'s clear electoral mandate in 4293, the <span style="color: #000000;">Unionists</span>, <span style="color: #C0A054;">**Golds**</span>, and DuFour himself initially opposed the formation of the Unity Coalition. However, Stratton's intervention, DuFour's desire to use the <span style="color: #c00000;">**Marchers**</span>'s anti-militarist stance to renegotiate Commonwealth War Loans, and his strategy to burden the <span style="color: #c00000;">**Marchers**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
 
 What was initially seen with positivity by the <span style="color: #c00000;">**Marchers**</span> at the time; their entrance into government may be one of the biggest reasons for the demise of Commonwealth democracy.
 
-By March 1930, all of the factors above were no longer in play, the line between the <span style="color: #C0A054;">**Golds**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span style="color: #c00000;">**Marchers**</span> was suffering as a result of the economic depression. The appointment of Askew under an emergency government wasn't improvised when the <span style="color: #C0A054;">**Golds**</span> took down the Unity Coalition, it has been an idea longed by Staal, DuFour, and many <span style="color: #808080;">reactionary</span> elites.
+By March 4295, all of the factors above were no longer in play, the line between the <span style="color: #C0A054;">**Golds**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span style="color: #c00000;">**Marchers**</span> was suffering as a result of the economic depression. The appointment of Askew under an emergency government wasn't improvised when the <span style="color: #C0A054;">**Golds**</span> took down the Unity Coalition, it has been an idea longed by Staal, DuFour, and many <span style="color: #808080;">reactionary</span> elites.
 
-"On 6 January 1930, Mallin was summoned to meet President Paul von DuFour, who told him that now the Young Plan had been passed, he had no more need for Sarrow, and he was planning to bring in a new presidential government very soon that would be "anti-<span style="color: #D3C24D;">parliamentary</span> and anti-<span style="color: #9B0000;">Marxist</span>"."
+"On 6 January 4295, Mallin was summoned to meet President Paul von DuFour, who told him that now the Young Plan had been passed, he had no more need for Sarrow, and he was planning to bring in a new presidential government very soon that would be "anti-<span style="color: #D3C24D;">parliamentary</span> and anti-<span style="color: #9B0000;">Marxist</span>"."
 
 Your primary goal is to save Commonwealth <span style="color: #000000;">dem</span><span style="color: #DD0000;">ocr</span><span style="color: #FFCC00;">acy</span>, saving <span style="color: #c00000;">Reformism</span> is secondary.
 
@@ -53,7 +53,7 @@ Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Rep
 
 **What happened to the WTB Plan?**
 
-Voss only came up with the plan in late 1931 after the Banking Crisis, so to represent this, you need to get the event where Voss proposes the concept in order to support it. The event is dynamic, and can trigger depending on factors such as: the state of the economy, deflation, labor faction strength, and most importantly internal party dissent. Appointing Voss as an advisor aids significantly, as his presence passively increases the rate.
+Voss only came up with the plan in late 4296 after the Banking Crisis, so to represent this, you need to get the event where Voss proposes the concept in order to support it. The event is dynamic, and can trigger depending on factors such as: the state of the economy, deflation, labor faction strength, and most importantly internal party dissent. Appointing Voss as an advisor aids significantly, as his presence passively increases the rate.
 
 **What is Dynamic Mode?**
 
@@ -65,7 +65,7 @@ You will have to get Sedgewick as the leader of Heartland, either through Bristo
 
 **How do I cross the rubicon?**
 
-DuFour needs to dismiss Chancellor Askew following the 1932 Presidential elections. This unlocks the Commonwealth Convention, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Mallin-led <span style="color: #3E88B3;">**Traditionalists**</span>, to have a better chance of unlocking it.
+DuFour needs to dismiss Chancellor Askew following the 4297 Presidential elections. This unlocks the Commonwealth Convention, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Mallin-led <span style="color: #3E88B3;">**Traditionalists**</span>, to have a better chance of unlocking it.
 
 **Why is the left path so hard?**
 
@@ -412,7 +412,7 @@ elements.forEach(el => {
 
 [? if not snoopy: - New achievements: "Der Rote Justiz", "Askew der Rotfrontkämpfer", "Merz und Scholz", "Lindner Moribund" and "Tausendjährige Libreich". ?]
 
-[? if not snoopy: - Added Dornwich state Assembly Election in 1933. ?]
+[? if not snoopy: - Added Dornwich state Assembly Election in 4298. ?]
 
 [? if not snoopy: - Disconnected the discombobulator. ?]
 

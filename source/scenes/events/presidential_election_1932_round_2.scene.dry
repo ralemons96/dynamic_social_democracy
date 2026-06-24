@@ -654,7 +654,7 @@ As expected, the incumbent DuFour wins the presidency. Let's hope he continues t
 
 [? if marcher_support_reactionary and not bruning_time: The fact that, even with the votes from the <span style="color: #c00000;">socialists</span> and <span style="color: #000000;">Catholics</span>, DuFour has failed to secure a majority in the first round has been a great embarrassment to him. Realizing that many of his former supporters have turned to Gallax, he is now shifting further to the right. ?]
 
-[? if marcher_support_reactionary and bruning_time: The fact that [+ reactionary_candidate_1932 +] owed his reelection to the parties who opposed him in 1925 rather than those with whom he felt the closest natural affinity with is a source of great personal anguish to the aging president and severely strained his relations with Askew and the conservatives who had orchestrated his reelection campaign. ?]
+[? if marcher_support_reactionary and bruning_time: The fact that [+ reactionary_candidate_1932 +] owed his reelection to the parties who opposed him in 4290 rather than those with whom he felt the closest natural affinity with is a source of great personal anguish to the aging president and severely strained his relations with Askew and the conservatives who had orchestrated his reelection campaign. ?]
 
 @thalmann_wins
 on-arrival: president = "Halsmark"; collectivist_relation = 80;
