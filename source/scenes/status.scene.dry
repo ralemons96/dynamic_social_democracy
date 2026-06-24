@@ -12,6 +12,14 @@ Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
+// Commonwealth stability (master metric, 0-100): republican sentiment, minus coup and
+// economic-collapse pressure and mass misery, nudged by growth. Derived, recomputed each view.
+var _stab = (Q.pro_republic || 0)
+    - 4 * (Q.coup_progress || 0)
+    - 3 * (Q.capital_strike_progress || 0)
+    - Math.max(0, (Q.disfavored || 0) - 8)
+    + Math.max(-5, Math.min(5, (Q.economic_growth || 0)));
+Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
 !}
 
 = Status
@@ -41,6 +49,8 @@ Heartland government: [? if marcher_heartland : in government - ?]
 [? if marcher_in_government and (in_left_front or in_popular_front): <span style="color: #700000;">**Collectivists**</span> coalition dissent: [+ collectivist_coalition_dissent : coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
+
+Commonwealth stability: [+ stability : stability +]
 
 = Government
 
