@@ -1584,7 +1584,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sturm und Drang</div>
-      <div class="achievement_subtitle"> - cross the Rubicon. </div>
+      <div class="achievement_subtitle"> - convene the Commonwealth Convention. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1944,7 +1944,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Nach Staal, wir!</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after crossing the Rubicon. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after the Commonwealth Convention is called. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3496,7 +3496,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sturm und Drang</div>
-      <div class="achievement_subtitle"> - cross the Rubicon. </div>
+      <div class="achievement_subtitle"> - convene the Commonwealth Convention. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3856,7 +3856,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Nach Staal, wir!</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after crossing the Rubicon. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after the Commonwealth Convention is called. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5407,7 +5407,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sturm und Drang</div>
-      <div class="achievement_subtitle"> - cross the Rubicon. </div>
+      <div class="achievement_subtitle"> - convene the Commonwealth Convention. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5767,7 +5767,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Nach Staal, wir!</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after crossing the Rubicon. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #700000; font-weight: bold;">Collectivists</span>'s candidate win the 1934 presidential election after the Commonwealth Convention is called. </div>
     </div>
   {!</td>!}
 {!</tr>!}

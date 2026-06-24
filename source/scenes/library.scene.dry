@@ -1023,7 +1023,7 @@ if (d3 && window) {
 
 = Party support history
 
-[? if historical_mode: Not available in historical mode. ?][? if rubicon and not historical_mode: Not available after crossing the Rubicon. ?]
+[? if historical_mode: Not available in historical mode. ?][? if rubicon and not historical_mode: Not available after the Commonwealth Convention is called. ?]
 
 {!<svg id="party_support_history" style="width: 500px; height: 400px;"> </svg>!}
 

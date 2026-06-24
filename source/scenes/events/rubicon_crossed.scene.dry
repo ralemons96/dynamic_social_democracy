@@ -1,4 +1,4 @@
-title: The Rubicon is Crossed
+title: The Commonwealth Convention
 subtitle: The fate of the Commonwealth rests in President DuFour.
 view-if: chancellor = "Goodryke" and president == "DuFour" and papen_time == 1
 priority: 3
@@ -115,11 +115,11 @@ audio: music/1930_1933/Backroom_Deal.ogg
 achievement: sturm_und_drang
 go-to: rubicon_crossing
 
-= The Rubicon is Crossed
+= The Commonwealth Convention
 
-With the dismissal of Askew’s government—despite its parliamentary majority—the foundations of democracy are crumbling before our eyes.
+With the dismissal of Askew’s government—despite its parliamentary majority—the foundations of democracy are crumbling before our eyes. What begins now will be remembered, if there is anyone left to remember it, as the Commonwealth Convention: the weeks in which the republic's fate—and the Empire's answer to it—are decided not in the chamber but in the corridor.
 
-Whatever path DuFour takes now will be chosen not by the people, but by those who whisper in his ear.
+Whatever path DuFour takes now will be chosen not by the people, but by those who whisper in his ear. And across the northern frontier, the Empress's court is watching to see whether the Commonwealth still has the strength to be worth bargaining with—or only the weakness to be taken.
 
 Time slows. We enter the week-by-week struggle.
 
