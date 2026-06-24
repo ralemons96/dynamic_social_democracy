@@ -105,10 +105,10 @@ generic. Assign uniquely as used.
 - **General Staff**: Wright (loyalist)
 
 ## Re-gendering / pronoun work (Track A2b)
-Adopting the lore makes some leads female. **Felicity Sarrow** is the major one (a much-named
-character inherited from Müller, currently male in prose) — needs a careful per-scene he→she pass.
-Confirm prose pronouns also read female for Vellath, Sennet (and the already-female Jessamy,
-Siemen).
+~~Adopting the lore makes some leads female. **Felicity Sarrow** is the major one… needs a careful
+per-scene he→she pass.~~ **RESOLVED (A5d):** Sarrow + Vellath/Sennet/Jessamy/Siemen all verified to
+read female (name/title/"She", 0 male pronouns). No changes were needed — the prose never used male
+pronouns for them.
 
 ## A5 — comprehensive cast cleanup (assigned as completed)
 **A5a (value-reconciled leaders — the name is a string value in conditions):**
@@ -126,6 +126,20 @@ Siemen).
 - *Display-only*: Himmler→Brocke, Stegmann→Tessen, Kerrl→Carlile, (Joseph) Hess→Olm, Sahm→Trent, Dreyse→Fenn, Duisberg→Slack, Geiger→Gaiger, Niekisch→Underthorn, Eberlein→Steunenberg, Mielke→Mellor, Crispien→Crale, Ziemer→Zorrel, Leuschner→Lespan, Anlauf→Anwell, Bernstein→Revane, Meissner→Marsden, Bumke→Burnell, Drewitz→Drenmoor, Lejeune→Lenmoor, Schlange→Sallow, Bechly→Beckley, Petersen→Pellish, Ewert→Ewlan, Beck→Brackel, Schmidt→Smitt, Meyer→Merrow, Held→Helder, Röhm→Glade, Rudolf Hess→Pleck, Feder→Fendral, Frick→Frell, Epp→Eppen.
 - *Residual mentions of already-reskinned characters → consolidated*: Braun→**Bristol** (Otto Braun = the Heartland leader), Severing→**Heath**, Hilferding→**Bell**, Papen→**Goodryke**, Hindenburg→**DuFour**.
 - First names on these are deduped in **A5c** (Wilhelm/Otto/Hans/Joseph/Heinrich/Ernst…). Lowercase ids + lowercase portrait files stay.
+
+**A5c (first-name dedup):** every over-shared first name keeps its most-prominent **anchor**
+character (Wilhelm→Croft, Otto→Colworth, Hans→Lytton, Joseph→Werth, Paul→DuFour, Ernst→Halsmark,
+Theodor→Hewes, Gustav→Stratton, Hugo→Eckhart, Adam→Sedgewick…); the rest got unique coined
+Commonwealth first names (Bram, Cassian, Dorian, Emory, Hadrian, Idris, Joss, Kerrick, Linus,
+Nevin, Oren, Perrin, Quillon, Sefton, Tarian, Varin, Wystan, Alden, Brennus, Damon, Edras, …).
+Two more leaked surnames the dedup census surfaced: Bünger→**Brunwell**, Trendelenburg→**Trennick**.
+Result: **every character has a globally-unique full name; 0 real-world names remain in the cast.**
+
+**A5d (re-gendering — VERIFIED, no changes needed):** Felicity Sarrow (ex-Müller) and the other
+re-gendered women (Antonie Vellath, Toni Sennet, Marie Jessamy, Anna Siemen) **already read female** —
+they are referred to by name / title / "She" with **0 male pronouns** in any prose (the death-of-Sarrow
+scene's `he/his` refer to her male successors; other `chancellor`/`leader` pronouns are other men). The
+"needs a pronoun pass" note below is resolved.
 
 ## Still deferred
 Real-world historical name-drops in flavour prose (Hess, Liebknecht, Noske, Röhm, Goering, the
