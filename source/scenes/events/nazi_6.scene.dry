@@ -1,4 +1,4 @@
-title: Dissent Within the <span style="color: #7A3C00;">**SA**</span>
+title: Dissent Within the <span style="color: #7A3C00;">**Loyalists**</span>
 subtitle: A lone incident, or the beginning of the end?
 view-if: chancellor = "Staal" and staal_time == 5 and royalist_funds <= 3
 new-page: true
@@ -18,11 +18,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Dissent Within the <span style="color: #7A3C00;">**SA**</span>
+= Dissent Within the <span style="color: #7A3C00;">**Loyalists**</span>
 
-With the <span style="color: #7A3C00;">**Royalists**</span>'s funds running low and the <span style="color: #7A3C00;">**SA**</span>'s frustration over the party's lack of action, tensions between the party and its paramilitary are rising. Financial support for the <span style="color: #7A3C00;">**SA**</span> is decreasing, and as morale dips, discipline weakens. Violent terrorist acts are on the rise, alarming party officials who fear it’s driving away voters. A high-ranking <span style="color: #7A3C00;">**SA**</span> commander has even publicly condemned [+ royalist_leader +]'s legal approach and called for more 'direct' methods.
+With the <span style="color: #7A3C00;">**Royalists**</span>'s funds running low and the <span style="color: #7A3C00;">**Loyalists**</span>'s frustration over the party's lack of action, tensions between the party and its paramilitary are rising. Financial support for the <span style="color: #7A3C00;">**Loyalists**</span> is decreasing, and as morale dips, discipline weakens. Violent terrorist acts are on the rise, alarming party officials who fear it’s driving away voters. A high-ranking <span style="color: #7A3C00;">**Loyalists**</span> commander has even publicly condemned [+ royalist_leader +]'s legal approach and called for more 'direct' methods.
 
-Since then, a major conflict has erupted between the <span style="color: #7A3C00;">**SA**</span> and the <span style="color: #7A3C00;">**Royalists**</span>'s gauleiter in northern Avriza. Wilhelm Stegmann, an <span style="color: #7A3C00;">**SA**</span> commander with Strasserist sympathies, clashed with the autocratic gauleiter over a broken promise to reimburse the <span style="color: #7A3C00;">**SA**</span>. Despite the national <span style="color: #7A3C00;">**SA**</span> siding with the gauleiter, Stegmann defied the order to resign by retaining the loyalty of his stormtroopers.
+Since then, a major conflict has erupted between the <span style="color: #7A3C00;">**Loyalists**</span> and the <span style="color: #7A3C00;">**Royalists**</span>'s gauleiter in northern Avriza. Wilhelm Stegmann, an <span style="color: #7A3C00;">**Loyalists**</span> commander with Strasserist sympathies, clashed with the autocratic gauleiter over a broken promise to reimburse the <span style="color: #7A3C00;">**Loyalists**</span>. Despite the national <span style="color: #7A3C00;">**Loyalists**</span> siding with the gauleiter, Stegmann defied the order to resign by retaining the loyalty of his stormtroopers.
 
 - @nazi_2
 
@@ -30,7 +30,7 @@ Since then, a major conflict has erupted between the <span style="color: #7A3C00
 title: The dispute escalates...
 on-arrival: loyalist_strength -= 25; loyalist_militancy -= 0.03; disfavored_royalist -= 4; commons_royalist -= 2
 
-One of Stegmann's aides infiltrated the <span style="color: #7A3C00;">**SA**</span> headquarters, locking up a stormtrooper loyal to the gauleiter and seizing official files. This then sparked a bloody brawl between Stegmann’s followers and the gauleiter’s supporters within the party headquarters.
+One of Stegmann's aides infiltrated the <span style="color: #7A3C00;">**Loyalists**</span> headquarters, locking up a stormtrooper loyal to the gauleiter and seizing official files. This then sparked a bloody brawl between Stegmann’s followers and the gauleiter’s supporters within the party headquarters.
 
 In response, [+ royalist_leader +] stripped Stegmann of all authority and, invoking the *Führerprinzip*, forced him to sign a statement of submission to the party leader. However, this resolution is expected to be temporary.
 

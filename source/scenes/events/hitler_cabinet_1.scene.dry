@@ -69,7 +69,7 @@ Staal regards this development as a betrayal, yet his options are limited. Presi
 @hitler_3
 title: [+ chancellor +] refuses to resign!
 
-In an act of defiance to President DuFour, Chancellor [+ chancellor +] has simply refused to acknowledge the president's power to dismiss the incumbent chancellor. The <span style="color: #7A3C00;">**SA**</span> mobilize on the streets, and things could get bloody.
+In an act of defiance to President DuFour, Chancellor [+ chancellor +] has simply refused to acknowledge the president's power to dismiss the incumbent chancellor. The <span style="color: #7A3C00;">**Loyalists**</span> mobilize on the streets, and things could get bloody.
 
 What are we to do now?
 
@@ -79,7 +79,7 @@ What are we to do now?
 @give_up_2
 go-to: give_up_3 if loyalist_force < 50; give_up_4 if loyalist_force >= 50
 
-The President may be on our side, but the <span style="color: #7A3C00;">**SA**</span> can simply intimidate their way around him.
+The President may be on our side, but the <span style="color: #7A3C00;">**Loyalists**</span> can simply intimidate their way around him.
 
 @give_up_3
 on-arrival: {!
@@ -138,7 +138,7 @@ Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: 
 
 @give_up_4
 
-Unfortunately, President DuFour is forced to concede defeat after a war game orchestrated by Staal reveals that the Commonwealth Army and Police cannot prevail in a civil war against the <span style="color: #7A3C00;">**SA**</span> and other paramilitary forces.
+Unfortunately, President DuFour is forced to concede defeat after a war game orchestrated by Staal reveals that the Commonwealth Army and Police cannot prevail in a civil war against the <span style="color: #7A3C00;">**Loyalists**</span> and other paramilitary forces.
 
 Reduced to little more than a figurehead, DuFour remains in office—signing off on every decree, fully aware that any resistance would plunge his beloved nation into civil war.
 

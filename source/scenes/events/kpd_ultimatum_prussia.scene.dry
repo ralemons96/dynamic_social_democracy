@@ -24,9 +24,9 @@ go-to: goals_success if collectivist_goals_completed_heartland >= 4; goals_faile
 
 At the start of this government, the <span style="color: #700000;">**Collectivists**</span> presented a list of goals for the Heartland coalition:
 
-[? if interior_goal_seen_heartland = 1 : - Ban the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>. - [? if interior_goal_heartland <= 0 : success ?][? if interior_goal_heartland >= 1: failed ?] ?]
+[? if interior_goal_seen_heartland = 1 : - Ban the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>. - [? if interior_goal_heartland <= 0 : success ?][? if interior_goal_heartland >= 1: failed ?] ?]
 
-[? if vanguard_goal_seen_heartland = 1 : - Unban the <span style="color: #700000;">**RFB**</span>. - [? if vanguard_goal_heartland <= 0: success ?][? if vanguard_goal_heartland >= 1: failed ?] ?]
+[? if vanguard_goal_seen_heartland = 1 : - Unban the <span style="color: #700000;">**Vanguard**</span>. - [? if vanguard_goal_heartland <= 0: success ?][? if vanguard_goal_heartland >= 1: failed ?] ?]
 
 [? if bureaucracy_goal_seen_heartland = 1 : - Purge the bureaucracy. - [? if bureaucracy_goal_heartland <= 0: success ?][? if bureaucracy_goal_heartland >= 1: failed ?] ?]
 

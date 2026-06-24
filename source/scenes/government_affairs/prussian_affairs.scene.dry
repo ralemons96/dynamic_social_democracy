@@ -16,11 +16,11 @@ We can enact policies in Heartland.
 - @police_loyalty: Bolster the loyalty of the police.
 - @police_strength: Recruit additional police.
 - @bureaucracy: Purge the bureaucracy of <span style="color: #808080;">reactionary</span> elements.
-- @ban_sa: Ban the <span style="color: #7A3C00;">**SA**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
-- @prosecute_sa: Target the <span style="color: #7A3C00;">**SA**</span>, and minimize their disruptions.
-- @unban_sa: Reverse the <span style="color: #7A3C00;">**SA**</span> ban.
-- @ban_rfb: Ban the <span style="color: #8B0000;">**RFB**</span>, the <span style="color: #700000;">Communist</span> paramilitary.
-- @unban_rfb: Reverse the <span style="color: #8B0000;">**RFB**</span> ban.
+- @ban_sa: Ban the <span style="color: #7A3C00;">**Loyalists**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
+- @prosecute_sa: Target the <span style="color: #7A3C00;">**Loyalists**</span>, and minimize their disruptions.
+- @unban_sa: Reverse the <span style="color: #7A3C00;">**Loyalists**</span> ban.
+- @ban_rfb: Ban the <span style="color: #8B0000;">**Vanguard**</span>, the <span style="color: #700000;">Communist</span> paramilitary.
+- @unban_rfb: Reverse the <span style="color: #8B0000;">**Vanguard**</span> ban.
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>, the Nationalist paramilitary.
 - @unban_sh: Reverse the <span style="color: #3E88B3;">**Wardens**</span> ban.
 - @negotiate_concordat: Negotiate a concordat with the Vatican.
@@ -53,7 +53,7 @@ choose-if: not loyalist_ban_repealed and (heartland_coup_win or not otl_heartlan
 unavailable-subtitle: [+ chancellor +] has threatened a <i>Commonwealth intervention</i>, if we don't follow the orders of his decree.
 on-arrival: loyalist_strength *= 0.9; loyalist_strength *= 0.75 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 1 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 0 if heartland_police_loyalty < 0.75; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; coup_progress -= 2 if coup_progress >= 6
 
-As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**SA**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**SA**</span> is substantially weakened by our ban. ?] 
+As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?] 
 
 [? if coup_progress >= 6: There are reports of an imminent coup by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. We have disrupted some of these plans, but the threat is still present. ?]
 
@@ -61,13 +61,13 @@ As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="
 view-if: royalist_urgency >= 3 and not loyalist_banned and (chancellor == "Goodryke" or chancellor == "Staal")
 on-arrival: loyalist_strength *= 0.97; loyalist_militancy -= 0.02; heartland_police_loyalty -= 0.02; loyalist_strength *= 0.98 if heartland_police_loyalty >= 0.75
 
-While an outright ban on the <span style="color: #7A3C00;">**SA**</span> may be out of reach, we can make life as difficult as possible for the <span style="color: #7A3C00;">Storm Troopers</span>. The most reckless among them can be prosecuted on charges of murder and related crimes, and we can ensure legal public demonstrations and meetings are protected from their unlawful disruptions.
+While an outright ban on the <span style="color: #7A3C00;">**Loyalists**</span> may be out of reach, we can make life as difficult as possible for the <span style="color: #7A3C00;">Storm Troopers</span>. The most reckless among them can be prosecuted on charges of murder and related crimes, and we can ensure legal public demonstrations and meetings are protected from their unlawful disruptions.
 
 @unban_sa
 view-if: loyalist_banned = 1
 on-arrival: loyalist_banned = 0; loyalist_strength += 100; loyalist_militancy += 0.05; coup_progress += 2 if loyalist_coup_progress >= 6
 
-The <span style="color: #7A3C00;">**SA**</span> is no longer banned. They immediately go on a recruiting spree.
+The <span style="color: #7A3C00;">**Loyalists**</span> is no longer banned. They immediately go on a recruiting spree.
 
 @ban_sh
 on-arrival: warden_strength *= 0.85; warden_strength *= 0.7 if heartland_police_loyalty >= 0.75; warden_banned = 1; gold_relation -= 5; lvp_relation -= 2; heartland_police_loyalty -= 0.1; coalition_dissent += 1 if marcher_in_government = 1 and in_grand_coalition = 1 and president = "DuFour"; coalition_dissent += 1 if in_social_catholic_coalition_heartland and concord_formed; warden_ban_timer = 6; warden_coup_progress = coup_progress; coup_progress -= 1 if coup_progress >= 6; dufour_angry += 5
@@ -92,7 +92,7 @@ The ban is enthusiastically carried out by the police, perhaps too enthusiastica
 view-if: vanguard_banned = 1 and not in_social_catholic_coalition_heartland
 on-arrival: vanguard_banned = 0; vanguard_strength += 50; heartland_police_loyalty -= 0.1; dufour_angry += 8
 
-The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> is no longer banned.
+The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
 
 @negotiate_concordat
 view-if: (heartland_concordat_progress < 2 and unionist_leader != "Renck") or (heartland_concordat_progress < 1 and unionist_leader = "Renck") and heartland_concordat = 0

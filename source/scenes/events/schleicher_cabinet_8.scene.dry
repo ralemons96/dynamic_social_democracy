@@ -30,7 +30,7 @@ With the <span style="color: #7A3C00;">Royalists</span> in government, they seek
 - @works_alt
 
 @interior
-title: The <span style="color: #7A3C00;">Royalists</span> crack down on the the Banners and <span style="color: #700000;">**RFB**</span>!
+title: The <span style="color: #7A3C00;">Royalists</span> crack down on the the Banners and <span style="color: #700000;">**Vanguard**</span>!
 subtitle: Ordered by Wilhelm Frask of the Interior Ministry.
 on-arrival: {!
 Q.staal_marcher_r -= 1;
@@ -73,7 +73,7 @@ face-image: img/portraits/frick.jpg
 
 With the <span style="color: #7A3C00;">Royalists</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if heartland_leader != "Crowde": Without control of the Heartland Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Royalists</span>. ?][? if heartland_leader == "Crowde": The Heartland Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Staal has barred <span style="color: #7A3C00;">Royalist</span> Party members from joining the police, maintaining the same restriction already enforced in the Commonwealth Army.
 
-Lately, we have observed the police exclusively targeting the Banners and <span style="color: #700000;">**RFB**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Staal to transfer command of the Commonwealth Army's militia to the Interior Ministry, citing the need for centralized control.
+Lately, we have observed the police exclusively targeting the Banners and <span style="color: #700000;">**Vanguard**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Staal to transfer command of the Commonwealth Army's militia to the Interior Ministry, citing the need for centralized control.
 
 @interior_2
 

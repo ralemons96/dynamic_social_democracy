@@ -16,9 +16,9 @@ We can enact policies in Heartland. [? if president == "DuFour": However, Presid
 - @police_loyalty: Bolster the loyalty of the police.
 - @police_strength: Recruit additional police.
 - @bureaucracy: Purge the bureaucracy of <span style="color: #808080;">reactionary</span> elements.
-- @ban_sa: Ban the <span style="color: #7A3C00;">**SA**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
+- @ban_sa: Ban the <span style="color: #7A3C00;">**Loyalists**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>, the Nationalist paramilitary.
-- @unban_rfb: Reverse the <span style="color: #8B0000;">**RFB**</span> ban.
+- @unban_rfb: Reverse the <span style="color: #8B0000;">**Vanguard**</span> ban.
 - @free_kpd: Protect <span style="color: #8B0000;">**Collectivists**</span> demonstrations from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 - @root: No new policies are needed.
 - @easy_discard
@@ -46,7 +46,7 @@ The bureaucracy is deeply <span style="color: #808080;">reactionary</span>, and 
 view-if: loyalist_banned == 0
 on-arrival: loyalist_strength *= 0.9; loyalist_strength *= 0.75 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 1 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 0 if heartland_police_loyalty < 0.75; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; interior_goal_heartland -= 1; coup_progress -= 2 if coup_progress >= 6
 
-As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**SA**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**SA**</span> is substantially weakened by our ban. ?] 
+As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?] 
 
 [? if coup_progress >= 6: There are reports of an imminent coup by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. We have disrupted some of these plans, but the threat is still present. ?]
 
@@ -60,7 +60,7 @@ view-if: warden_banned == 0
 view-if: vanguard_banned = 1
 on-arrival: vanguard_banned = 0; vanguard_strength += 100; heartland_police_loyalty -= 0.1; vanguard_goal_heartland -= 1; dufour_angry += 8
 
-The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> is no longer banned.
+The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
 
 @free_kpd
 view-if: vanguard_banned = 0

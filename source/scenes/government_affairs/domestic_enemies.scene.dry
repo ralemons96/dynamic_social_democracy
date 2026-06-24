@@ -12,14 +12,14 @@ view-if: marcher_in_government = 1 and interior_minister_party = "Marcher"
 As we have control over the Interior Ministry, we can direct police and intelligence services to investigate internal enemies. We can proscribe various organizations.
 
 - @deport_hitler
-- @ban_sa: Ban the <span style="color: #7A3C00;">**SA**</span>.
-- @unban_sa: Unban the <span style="color: #7A3C00;">**SA**</span>.
+- @ban_sa: Ban the <span style="color: #7A3C00;">**Loyalists**</span>.
+- @unban_sa: Unban the <span style="color: #7A3C00;">**Loyalists**</span>.
 - @persecute_sa
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>.
 - @unban_sh: Unban the <span style="color: #3E88B3;">**Wardens**</span>.
 - @persecute_sh
-- @ban_rfb: Ban the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span>.
-- @unban_rfb: Unban the <span style="color: #8B0000;">**RFB**</span>.
+- @ban_rfb: Ban the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**Vanguard**</span>.
+- @unban_rfb: Unban the <span style="color: #8B0000;">**Vanguard**</span>.
 - @persecute_rfb
 - @root: Take no action for now.
 
@@ -27,7 +27,7 @@ As we have control over the Interior Ministry, we can direct police and intellig
 view-if: royalist_urgency >= 3 and loyalist_banned == 0
 on-arrival: loyalist_strength *= 0.85; loyalist_strength *= 0.7 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 1 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 0 if interior_police_loyalty < 0.7; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; interior_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; loyalist_coup_progress = coup_progress; coup_progress -= 2 if coup_progress >= 6; interior_goal_heartland -= 1
 
-As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**SA**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**SA**</span> is substantially weakened by our ban. ?]
+As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?]
 
 [? if coup_progress >= 6: There are reports of an imminent coup by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. We have disrupted some of these plans, but the threat is still present. ?]
 
@@ -35,16 +35,16 @@ As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="
 view-if: loyalist_banned = 1 and in_popular_front_heartland == 0 and in_left_front_heartland == 0
 on-arrival: loyalist_banned = 0; loyalist_strength += 100; loyalist_militancy += 0.05; coup_progress += 2 if loyalist_coup_progress >= 6
 
-The <span style="color: #7A3C00;">**SA**</span> is no longer banned. They immediately go on a recruiting spree.
+The <span style="color: #7A3C00;">**Loyalists**</span> is no longer banned. They immediately go on a recruiting spree.
 
 @persecute_sa
-title: Further persecute the <span style="color: #7A3C00;">**SA**</span>.
+title: Further persecute the <span style="color: #7A3C00;">**Loyalists**</span>.
 view-if: loyalist_banned = 1
 choose-if: judicial_reform >= 3 and interior_police_loyalty >= 0.7
 unavailable-subtitle: [? if judicial_reform < 3 : The judiciary would not allow this. ?] [? if interior_police_loyalty < 0.7 : The police are too disloyal to be trusted with this. ?]
 on-arrival: loyalist_strength *= 0.7; loyalist_militancy -= 0.05; coup_progress -= 2 if coup_progress >= 4
 
-We have arrested more of the <span style="color: #7A3C00;">**SA**</span>'s leaders and confiscated their weapons.
+We have arrested more of the <span style="color: #7A3C00;">**Loyalists**</span>'s leaders and confiscated their weapons.
 
 [? if coup_progress >= 4: There are reports of a planned coup by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. We have cracked down on some of these plans, but the threat still lingers. ?]
 
@@ -81,11 +81,11 @@ The ban is enthusiastically carried out by the police, perhaps too enthusiastica
 view-if: vanguard_banned = 1
 on-arrival: vanguard_banned = 0; collectivist_relation += 5; vanguard_strength += 50; heartland_police_loyalty -= 0.05; interior_police_loyalty -= 0.05; dufour_angry += 8; vanguard_goal_heartland -= 1
 
-The <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span> is no longer banned.
+The <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**Vanguard**</span> is no longer banned.
 
 @persecute_rfb
-title: Further persecute the <span style="color: #8B0000;">**RFB**</span>.
+title: Further persecute the <span style="color: #8B0000;">**Vanguard**</span>.
 view-if: vanguard_banned = 1 and in_popular_front_heartland == 0 and in_left_front_heartland == 0
 on-arrival: vanguard_strength *= 0.7; vanguard_militancy -= 0.05; collectivist_relation -= 10; collectivist_coalition_dissent += 1; unionist_relation += 2; gold_relation += 2; lvp_relation += 2; heartland_police_loyalty += 0.1; interior_police_loyalty += 0.1; coalition_dissent -= 1 if coalition_dissent > 0 and n_vanguard_persecuted = 0; n_vanguard_persecuted += 1; dufour_angry -= 5
 
-We have arrested more of the <span style="color: #8B0000;">**RFB**</span>'s leaders and confiscated their weapons.
+We have arrested more of the <span style="color: #8B0000;">**Vanguard**</span>'s leaders and confiscated their weapons.

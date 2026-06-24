@@ -45,7 +45,7 @@ header.style.color = '#ffffff';
 
 The Assembly is forcibly adjourned! Police officers and Commonwealth Army soldiers prevent parliamentarians from entering the building, and fierce riots emerge across the country as news of this unconstitutional act reaches all corners of the nation. The <span style="color: #7A3C00;">**Royalists**</span>, now convinced that this is all an elaborate plot by Goodryke to get back into power, firmly breaks with him and any chance of them entering government.
 
-However, this time, the Commonwealth Army is much better equipped, internal conflict plagues the <span style="color: #7A3C00;">**SA**</span>, and Mallin, now friendly with Goodryke once more pressures the <span style="color: #3E88B3;">**Wardens**</span> to fight against leftists instead of the government. 
+However, this time, the Commonwealth Army is much better equipped, internal conflict plagues the <span style="color: #7A3C00;">**Loyalists**</span>, and Mallin, now friendly with Goodryke once more pressures the <span style="color: #3E88B3;">**Wardens**</span> to fight against leftists instead of the government. 
 
 Now, it's on us. Shall we mobilize the the Banners?
 
@@ -64,7 +64,7 @@ Do we realize that this means civil war, against the full force of the state?
 title: Bide our time.
 on-arrival: commons_marcher -= 5; burgher_marcher -= 5; disfavored_marcher -= 5; pro_republic -= 15; banner_strength -= 500; banner_militancy *= 0.7; loyalist_strength += 50; vanguard_strength += 200; vanguard_militancy += 0.1; left_dissent += 60; center_dissent += 50; reformist_dissent += 40; labor_dissent += 40; knight_dissent += 40
 
-The <span style="color: #c00000;">**Marchers**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized the Banners and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**RFB**</span>, vowing to fight against Goodryke regardless of our instructions.
+The <span style="color: #c00000;">**Marchers**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized the Banners and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**Vanguard**</span>, vowing to fight against Goodryke regardless of our instructions.
 
 - @reichstag_4
 - @papen_civil_war_2
@@ -79,6 +79,6 @@ title: Martial law is declared. The Commonwealth Army quells pockets of unrest.
 on-arrival: marburg_time = 0; marburg_trigger = 1; banner_strength -= 500; banner_militancy *= 0.7; loyalist_strength *= 0.5; vanguard_strength *= 0.5; commons_collectivist -= 5; disfavored_collectivist -= 5; commons_royalist -= 5; burgher_royalist -= 5; guild_royalist -= 5; landed_royalist -= 5; faithful_royalist -= 5; disfavored_royalist -= 5; disfavored += 2; economic_growth -= 1.5; pro_republic = 0
 view-if: army_strength*army_militancy*(1-army_loyalty) >= (loyalist_strength*loyalist_militancy + vanguard_strength*vanguard_militancy + disfavored_royalist_normalized + disfavored_collectivist_normalized + commons_collectivist_normalized + disfavored_collectivist_normalized)
 
-The disorganized <span style="color: #7A3C00;">**SA**</span> and <span style="color: #700000;">**RFB**</span> have failed to spark a mass uprising, and a civil war is averted. A widespread crackdown on paramilitaries have begun, with the the Banners not even being spared. 
+The disorganized <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #700000;">**Vanguard**</span> have failed to spark a mass uprising, and a civil war is averted. A widespread crackdown on paramilitaries have begun, with the the Banners not even being spared. 
 
 - @root: Goodryke lives?

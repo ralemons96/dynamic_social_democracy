@@ -478,14 +478,14 @@ We have a plethora of campaign options at our disposal.
 - @hope: Let's hope the Commonwealth will make the correct choice.
 
 @paramilitary
-title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
+title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 subtitle: This will permanently alienate the bourgeois parties!
 on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 100; banner_strength += 100; vanguard_militancy += 0.1; banner_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
 face-image: img/reichsbanner_2.jpg
 max-visits: 1
 go-to: campaigning_thalmann
 
-Closer ties between the the Banners and the <span style="color: #700000;">**RFB**</span> are established, protecting local party officials from political violence.
+Closer ties between the the Banners and the <span style="color: #700000;">**Vanguard**</span> are established, protecting local party officials from political violence.
 
 @media_communist
 title: Use our radio stations to broadcast in favor of [+ communist_candidate_1932 +].

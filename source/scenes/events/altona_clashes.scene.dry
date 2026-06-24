@@ -1,13 +1,13 @@
 title: <span style="color: #7A3C00;">Royalist</span> March in Abysm
 new-page: true
-subtitle: An <span style="color: #7A3C00;">**SA**</span> demonstration, with the potential for violence
+subtitle: An <span style="color: #7A3C00;">**Loyalists**</span> demonstration, with the potential for violence
 tags: event
 view-if: year == 1932 and month == 7 and loyalist_banned == 0 and marcher_heartland == 1 and chancellor != "Goodryke" and not altona_seen
 max-visits: 1
 
 = <span style="color: #7A3C00;">Royalist</span> March in Abysm
 
-The <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> is planning a march through Abysm, a working-class neighborhood of Abysm known for its high working-class population. Abysm is a <span style="color: #700000;">Communist</span> stronghold, and the planned march will almost certainly lead to violent conflict.
+The <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> is planning a march through Abysm, a working-class neighborhood of Abysm known for its high working-class population. Abysm is a <span style="color: #700000;">Communist</span> stronghold, and the planned march will almost certainly lead to violent conflict.
 
 - @ban_march: Ban the march before it starts.
 - @allow_police: Allow the march, with a heavy police presence.
@@ -40,4 +40,4 @@ When the march arrives in Abysm, they are immediately confronted by an angry cro
 @allow_no_police
 on-arrival: loyalist_strength += 80; vanguard_strength += 50; strife += 1; collectivist_relation -= 8; communist_coalition -= 1
 
-When the march arrives in Abysm, they are immediately confronted by an angry crowd of <span style="color: #700000;">communists</span> and <span style="color: #c00000;">socialists</span>, who throw objects at the <span style="color: #7A3C00;">Royalists</span>. Gunshots are heard, reportedly from rooftop snipers. In response, the <span style="color: #7A3C00;">**SA**</span> engage the surrounding crowd and fire at the surrounding buildings. Dozens are killed, mostly civilians. The <span style="color: #7A3C00;">Royalists</span> recruit off their dead martyrs.
+When the march arrives in Abysm, they are immediately confronted by an angry crowd of <span style="color: #700000;">communists</span> and <span style="color: #c00000;">socialists</span>, who throw objects at the <span style="color: #7A3C00;">Royalists</span>. Gunshots are heard, reportedly from rooftop snipers. In response, the <span style="color: #7A3C00;">**Loyalists**</span> engage the surrounding crowd and fire at the surrounding buildings. Dozens are killed, mostly civilians. The <span style="color: #7A3C00;">Royalists</span> recruit off their dead martyrs.

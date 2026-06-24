@@ -20,6 +20,6 @@ The <span style="color: #700000;">**Collectivists**</span> presents us with a ne
 
 [? if foreign_goal = 1 : - Improve our relations with the <span style="color: #750e0e;">Central Union</span>. ?]
 
-#[? if interior_goal = 1 : - Ban the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
+#[? if interior_goal = 1 : - Ban the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
 
 They say that they expect to see these goals fulfilled in [+ collectivist_ultimatum_timer +] months. Otherwise, they will vote to dissolve the coalition.

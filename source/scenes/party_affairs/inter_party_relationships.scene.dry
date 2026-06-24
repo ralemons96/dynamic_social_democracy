@@ -425,7 +425,7 @@ unavailable-subtitle: [? if royalist_relation < 50: We need higher relations. ?]
 choose-if: royalist_relation >= 50 and harzburg_front_seen
 on-arrival: banner_strength += loyalist_strength; banner_strength += warden_strength; banner_militancy += 0.5; loyalist_strength = 0; warden_strength = 0
 
-The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**SA**</span> has dissolved and joined the the Banners!
+The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> has dissolved and joined the the Banners!
 
 @spd_alone
 

@@ -1117,9 +1117,9 @@ go-to: popular_front_success_federal if heartland_negotiations_collectivist_trig
 
 The <span style="color: #700000;">**Collectivists**</span> presents us with a list of demands for the Heartland coalition:
 
-[? if interior_goal_heartland >= 1 : - Ban the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
+[? if interior_goal_heartland >= 1 : - Ban the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>. ?]
 
-[? if vanguard_goal_heartland = 1 : - Unban the <span style="color: #700000;">**RFB**</span>. ?]
+[? if vanguard_goal_heartland = 1 : - Unban the <span style="color: #700000;">**Vanguard**</span>. ?]
 
 [? if bureaucracy_goal_heartland = 1 : - Purge the bureaucracy. ?]
 

@@ -360,7 +360,7 @@ on-arrival: dufour_funds += 1; resources += 3; ddp_relation += 5; unionist_relat
 max-visits: 1
 go-to: embezzlement_options
 
-In a meeting with Chancellor Askew, Defense Minister Ravabelle, General Staal, Finance Minister and Vice-Chancellor Albrecht Dietrich, and our own Joshua Heath, discussions focused on the upcoming presidential election and the organization of an effective propaganda campaign for DuFour. Heath outlined the threat that <span style="color: #7A3C00;">Nazism</span>—particularly the <span style="color: #7A3C00;">**SA**</span>—posed to state authority and emphasized the election's critical role in keeping the <span style="color: #7A3C00;">Royalists</span> in check.
+In a meeting with Chancellor Askew, Defense Minister Ravabelle, General Staal, Finance Minister and Vice-Chancellor Albrecht Dietrich, and our own Joshua Heath, discussions focused on the upcoming presidential election and the organization of an effective propaganda campaign for DuFour. Heath outlined the threat that <span style="color: #7A3C00;">Nazism</span>—particularly the <span style="color: #7A3C00;">**Loyalists**</span>—posed to state authority and emphasized the election's critical role in keeping the <span style="color: #7A3C00;">Royalists</span> in check.
 
 All present agreed that a decisive victory for DuFour and a campaign free from violent disturbances would greatly accelerate the Commonwealth’s economic recovery and domestic political stabilization. Achieving this, however, would require the use of state funds. Dietrich himself passionately advocated for this, having secretly transferred 1.8 million marks to Heath and the Heartland government with the understanding that the funds would be distributed among various pro-DuFour organizations in the State of Heartland. This approach allowed Dietrich and the government to support pro-DuFour groups outside the right-wing United DuFour Committees.
 
@@ -638,14 +638,14 @@ We have a plethora of campaign options at our disposal.
 - @campaigning_hindenburg_op: It's DuFour's turn to campaign.
 
 @paramilitary
-title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
+title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 subtitle: This will permanently alienate the bourgeois parties!
 on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 100; banner_strength += 100; vanguard_militancy += 0.1; banner_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
 face-image: img/reichsbanner_2.jpg
 max-visits: 1
 go-to: campaigning_thalmann
 
-Closer ties between the the Banners and the <span style="color: #700000;">**RFB**</span> are established, protecting local party officials from political violence.
+Closer ties between the the Banners and the <span style="color: #700000;">**Vanguard**</span> are established, protecting local party officials from political violence.
 
 @media_communist
 title: Use our radio stations to broadcast in favor of [+ communist_candidate_1932 +].

@@ -21,7 +21,7 @@ on-display: {!
 
 = The <span style="color: #700000;">**Collectivists**</span> Is Banned!
 
-Wilhelm Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**RFB**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Central Union the Commonwealth</span>" in the aftermath of the revolt.
+Wilhelm Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**Vanguard**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Central Union the Commonwealth</span>" in the aftermath of the revolt.
 
 According to the government, these plans were to be set in motion in protest against Staal's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Communist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved the Commonwealth from violent revolt.
 
@@ -90,7 +90,7 @@ if (Q.heartland_leader === "Crowde") {
 !}
 audio: music/1930_1933/Einheitsfrontlied.mp3
 
-All <span style="color: #700000;">**Communist**</span> Assembly members who haven't fled to the Central Union are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**RFB**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
+All <span style="color: #700000;">**Communist**</span> Assembly members who haven't fled to the Central Union are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**Vanguard**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
 
 <span style="color: #700000;">**Communist**</span> party offices are officially closed down, with the Commonwealth Army's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span style="color: #700000;">**Collectivists**</span> are removed by force, and replaced with [? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span>?][? if not gnu_formed: Staal?] loyalists.
 
@@ -365,7 +365,7 @@ subtitle: But he may seize on this as a pretext to escalate the crackdown.
 unavailable-subtitle: Staal has too much influence over us.
 choose-if: staal_marcher_influence < 6
 
-We are in no position to fight a civil war against the full force of the state, but we cannot let Staal live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the the Banners as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**RFB**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
+We are in no position to fight a civil war against the full force of the state, but we cannot let Staal live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the the Banners as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**Vanguard**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
 
 We don't know if Staal will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**Marchers**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
 

@@ -537,25 +537,25 @@ go-to: menu
 
 **Paramilitary groups:**
 
-**the Banners** <span style="color: #000000;"><b>Schwarz</b></span>-<span style="color: #DD0000;"><b>Rot</b></span>-<span style="color: #FFCC00;"><b>Gold</b></span>: The the Banners is an organization affiliated with all of the democratic parties - the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">**[+ unionist_party_name +]**</span>, and [? if lvp_formed: the former ?]<span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but primarily with the <span style="color: #c00000;">**Marchers**</span>. Historically, this has been an unarmed organization.
+**the Banners** <span style="color: #000000;"><b>Schwarz</b></span>-<span style="color: #DD0000;"><b>Rot</b></span>-<span style="color: #FFCC00;"><b>Gold</b></span>: The Banners are an organization affiliated with all of the democratic parties - the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">**[+ unionist_party_name +]**</span>, and [? if lvp_formed: the former ?]<span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but primarily with the <span style="color: #c00000;">**Marchers**</span>. Historically, this has been an unarmed organization.
 
 Strength: [+ banner_strength +] thousand
 
 Militarization: [+ banner_militancy : militancy +]
 
-**Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the <span style="color: #700000;">**Collectivists**</span>.
+**the Vanguard**: The "Red Front", the paramilitary associated with the <span style="color: #700000;">**Collectivists**</span>.
 
 Strength: [+ vanguard_strength +] thousand
 
 Militarization: [+ vanguard_militancy : militancy +]
 
-**Der Wardens**: A <span style="color: #3E88B3;">right-wing nationalist</span> organization of primarily Great War veterans, descended from the *officer-militias* that emerged after the war. [? if not concord_formed: Associated with the <span style="color: #3E88B3;">**Traditionalists**</span>.?][? if concord_formed: Associated with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and <span style="color: #003755;">**DNF**</span>.?]
+**the Wardens**: A <span style="color: #3E88B3;">right-wing nationalist</span> organization of primarily Great War veterans, descended from the *officer-militias* that emerged after the war. [? if not concord_formed: Associated with the <span style="color: #3E88B3;">**Traditionalists**</span>.?][? if concord_formed: Associated with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and <span style="color: #003755;">**DNF**</span>.?]
 
 Strength: [+ warden_strength +] thousand
 
 Militarization: [+ warden_militancy : militancy +]
 
-**Sturmabteilung (SA)**: This is the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
+**the Loyalists**: This is the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
 
 Strength: [+ loyalist_strength +] thousand
 

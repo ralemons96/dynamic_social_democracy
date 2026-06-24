@@ -1247,7 +1247,7 @@ go-to: achievement_check_1
 
 Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
-However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Communist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
+However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Communist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
 
 @eckener_wins
 on-arrival: president = "Eckhart"; president_ideology = "Moderate"; reformist_dissent -= 20; center_dissent -= 5; labor_dissent -= 5; reformist_strength += 20; commons_marcher += 4*(1-dissent); disfavored_marcher += 2*(1-dissent); guild_marcher += 2*(1-dissent); burgher_marcher += 2*(1-dissent); landed_marcher += 2*(1-dissent)

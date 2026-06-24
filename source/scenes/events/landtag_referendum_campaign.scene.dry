@@ -101,7 +101,7 @@ on-arrival: resources -= 1; commons_collectivist -= 2; commons_royalist -= 1; co
 face-image: img/red-brown.jpg
 go-to: do_campaign
 
-Pointing out the obvious always helps, even some <span style="color: #8B0000;">**RFB**</span> men are disgusted by their own party collaborating with the <span style="color: #7A3C00;">fascists</span>. 
+Pointing out the obvious always helps, even some <span style="color: #8B0000;">**Vanguard**</span> men are disgusted by their own party collaborating with the <span style="color: #7A3C00;">fascists</span>. 
 
 @hope
 view-if: collectivist_campaign_landtag or political_decree_landtag_2 or radio_campaign_landtag or communist_campaign_landtag or bourgeois_campaign_landtag

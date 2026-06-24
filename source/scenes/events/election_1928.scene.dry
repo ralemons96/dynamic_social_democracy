@@ -169,7 +169,7 @@ view-if: boycott_count < 5
 max-visits: 1
 go-to: boycott_elections_menu
 
-It appears that the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #6A1E1E;">**DSU**</span> haven’t abandoned their ballot-box tactics and have chosen to participate in the elections regardless. [? if nvf_exist and not nvf_gnu: The <span style="color: #142e20;">**NVF**</span>, however, have boycotted, preferring to pool their limited resources into the <span style="color: #7A3C00;">**SA**</span> rather than waste them on a costly electoral campaign. ?]
+It appears that the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #6A1E1E;">**DSU**</span> haven’t abandoned their ballot-box tactics and have chosen to participate in the elections regardless. [? if nvf_exist and not nvf_gnu: The <span style="color: #142e20;">**NVF**</span>, however, have boycotted, preferring to pool their limited resources into the <span style="color: #7A3C00;">**Loyalists**</span> rather than waste them on a costly electoral campaign. ?]
 
 @boycott_elections_3
 title: We have finished negotiations.
@@ -2191,7 +2191,7 @@ The <span style="color: #700000;">**Collectivists**</span> has taken an abstenti
 @popular_front_civil_war
 on-arrival: collectivist_relation = 80; army_loyalty += 0.25;
 
-In response to the <span style="color: #700000;">**Collectivists**</span>'s entrance into the government, the right-wing immediately launches a coup attempt. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> enter Axton and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop us from taking power.
+In response to the <span style="color: #700000;">**Collectivists**</span>'s entrance into the government, the right-wing immediately launches a coup attempt. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> enter Axton and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop us from taking power.
 
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] manages to diffuse some of the hostility from the Commonwealth Army and the <span style="color: #3E88B3;">**Wardens**</span>, but fail to prevent the outbreak of fighting. We are forced to fight on the same side as the <span style="color: #700000;">**Collectivists**</span>, whether we want to or not.
 
@@ -2286,7 +2286,7 @@ With great reluctance, President [+ president +] appoints [+ chancellor +] as ch
 
 Immediately, [+ chancellor +] goes to work building a "<span style="color: #750e0e;">Central Union the Commonwealth</span>": consolidating as much power as possible in the <span style="color: #700000;">**Collectivists**</span>, purging state institutions of anti-<span style="color: #700000;">communists</span>, and sending street fighters against the "enemies of the people".
 
-In response to [+ chancellor +] being appointed Chancellor, the right-wing forces launches almost immediately launch an attempted coup. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> enter Axton and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop the <span style="color: #700000;">**Collectivists**</span> from taking power. We are forced to be on the same side as the <span style="color: #700000;">**Collectivists**</span>, whether we want to or not.
+In response to [+ chancellor +] being appointed Chancellor, the right-wing forces launches almost immediately launch an attempted coup. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> enter Axton and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop the <span style="color: #700000;">**Collectivists**</span> from taking power. We are forced to be on the same side as the <span style="color: #700000;">**Collectivists**</span>, whether we want to or not.
 
 - @civil_war
 
@@ -2382,7 +2382,7 @@ achievement: catastrophepolitik
 @left_coalition_civil_war
 on-arrival: army_loyalty += 0.1
 
-In response to the <span style="color: #700000;">**Collectivists**</span>'s entrance into the government, the right-wing immediately launches a coup attempt. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> enter Axton and begin clashing with our supporters. <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop us from taking power.
+In response to the <span style="color: #700000;">**Collectivists**</span>'s entrance into the government, the right-wing immediately launches a coup attempt. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> enter Axton and begin clashing with our supporters. <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop us from taking power.
 
 - @march_on_berlin_2: Fight against the <span style="color: #7A3C00;">fascists</span>!
 
@@ -2790,7 +2790,7 @@ on-arrival: staal_marcher_para = 1; staal_marcher_concession += 1; staal_marcher
 
 The the Banners has been largely disarmed, with Staal promising increased funding for the police to maintain order in the streets.
 
-The <span style="color: #c00000;">**Marchers**</span> is demoralized, as many the Banners members defect to the <span style="color: #700000;">**Collectivists**</span> and their <span style="color: #700000;">**RFB**</span>. We are now compelled to back the Commonwealth Army's auxiliaries in their campaigns against the <span style="color: #700000;">**Communists**</span>.
+The <span style="color: #c00000;">**Marchers**</span> is demoralized, as many the Banners members defect to the <span style="color: #700000;">**Collectivists**</span> and their <span style="color: #700000;">**Vanguard**</span>. We are now compelled to back the Commonwealth Army's auxiliaries in their campaigns against the <span style="color: #700000;">**Communists**</span>.
 
 - @schleicher_dsu_nay_2
 
@@ -3062,7 +3062,7 @@ on-arrival: warden_strength += 150; loyalist_strength += 150; warden_militancy +
 
 The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties, seeing that we are willing to deny them government by questionably democratic means, have decided that they can only take power by undemocratic means, and have risen up in force against the sitting government.
 
-Their numbers are bolstered by the many government workers who are against the prospect of a unified <span style="color: #c00000;">Socialist</span> government. Police and soldiers defect to the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>.
+Their numbers are bolstered by the many government workers who are against the prospect of a unified <span style="color: #c00000;">Socialist</span> government. Police and soldiers defect to the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>.
 
 - @civil_war: It is war.
 

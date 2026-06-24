@@ -9,7 +9,7 @@ new-page: true
 
 Friedrich Stamper is the long-time editor-in-chief of Vorwärts, our party newspaper, and also a Assembly member. He was historically part of the Majority <span style="color: #c00000;">**Marchers**</span> that supported our participation in the Great War, but also supports cooperation with the <span style="color: #700000;">**Collectivists**</span> to save the Republic. 
 
-[? if collectivist_truce: Since such a SPD-KPD cooperation can be considered achieved through a truce with the RFB, Stamper is emboldened to direct Vorwärts fully towards placating internal dissent by supporting a Center position. ?]
+[? if collectivist_truce: Since such a SPD-KPD cooperation can be considered achieved through a truce with the Vanguard, Stamper is emboldened to direct Vorwärts fully towards placating internal dissent by supporting a Center position. ?]
 
 - @media_
 - @faction_support_

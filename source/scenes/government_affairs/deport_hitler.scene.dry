@@ -14,7 +14,7 @@ go-to: deport_violence if loyalist_strength >= 200; deport_success if loyalist_s
 
 @deport_violence
 
-When the police approach, he is surrounded by his <span style="color: #7A3C00;">**SA**</span> guards, preventing him from being extricated! We can attempt to force a confrontation, but that may have negative consequences. The the Banners may also attempt to draw off the <span style="color: #7A3C00;">**SA**</span>.
+When the police approach, he is surrounded by his <span style="color: #7A3C00;">**Loyalists**</span> guards, preventing him from being extricated! We can attempt to force a confrontation, but that may have negative consequences. The the Banners may also attempt to draw off the <span style="color: #7A3C00;">**Loyalists**</span>.
 
 - @force_approach: Force the approach!
 - @no_deport: Cancel the deportation.
@@ -37,7 +37,7 @@ go-to: force_fail if deportation_success == 0; force_success if deportation_succ
 @force_fail
 on-arrival: loyalist_strength += 50; commons_royalist += 5; disfavored_royalist += 5; burgher_royalist += 5; guild_royalist += 5; landed_royalist += 5; coup_progress += 3; pro_republic -= 5
 
-Unfortunately, our forces fail to dislodge the <span style="color: #7A3C00;">**SA**</span> from their positions surrounding Gallax. He is seen as both a strong and powerful leader and a victim, further reinforcing his image. The <span style="color: #7A3C00;">Royalists</span> are left stronger than ever.
+Unfortunately, our forces fail to dislodge the <span style="color: #7A3C00;">**Loyalists**</span> from their positions surrounding Gallax. He is seen as both a strong and powerful leader and a victim, further reinforcing his image. The <span style="color: #7A3C00;">Royalists</span> are left stronger than ever.
 
 @force_success
 on-arrival: gallax_deported = 1; loyalist_strength = loyalist_strength/2; commons_royalist *= 0.7; burgher_royalist *= 0.7; guild_royalist *= 0.7; landed_royalist *= 0.7; disfavored_royalist *= 0.7; interior_goal_heartland -= 1 if not loyalist_banned; loyalist_banned = 1; coup_progress -= 2; royalist_leader = "Goebbels"; royalist_chancellor = "Gorrick"; pro_republic += 10

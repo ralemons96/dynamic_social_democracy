@@ -87,7 +87,7 @@ audio: music/1930_1933/Einheitsfrontlied.mp3
 
 Contained within the Assembly Fire Decree are measures that nullify key civil liberties and rights guaranteed by the Unity constitution. This grants Staal the full power of the state to prosecute <span style="color: #700000;">**Communists**</span>, radical <span style="color: #c00000;">socialists</span>, and anyone the government deems a threat.
 
-Ernst Halsmark is arrested the following day, along with the <span style="color: #700000;">**Collectivists**</span>'s Assembly deputies. Many others flee to the Central Union; those less fortunate are thrown into forced labor camps, sentenced to grueling hours on public works. <span style="color: #700000;">**RFB**</span> fighters are summarily executed by special local courts.
+Ernst Halsmark is arrested the following day, along with the <span style="color: #700000;">**Collectivists**</span>'s Assembly deputies. Many others flee to the Central Union; those less fortunate are thrown into forced labor camps, sentenced to grueling hours on public works. <span style="color: #700000;">**Vanguard**</span> fighters are summarily executed by special local courts.
 
 The Commonwealth Army and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> militias eagerly suppress protests and replace local <span style="color: #700000;">**Communist**</span> mayors with [? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span>?][? if not gnu_formed: Staal?] loyalists.
 
@@ -362,7 +362,7 @@ subtitle: But he may seize on this as a pretext to escalate the crackdown.
 unavailable-subtitle: Staal has too much influence over us.
 choose-if: staal_marcher_influence < 6
 
-We are in no position to fight a civil war against the full force of the state, but we cannot let Staal live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the the Banners as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**RFB**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
+We are in no position to fight a civil war against the full force of the state, but we cannot let Staal live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the the Banners as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**Vanguard**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
 
 We don't know if Staal will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**Marchers**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
 

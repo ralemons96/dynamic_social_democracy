@@ -8,7 +8,7 @@ tags: party_affairs; antifascism
 
 = Streetfighting
 
-Battles rage on the streets between the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>, nationalist <span style="color: #3E88B3;">**Wardens**</span>, communist <span style="color: #8B0000;">Rotfrontkämpferbund</span> (<span style="color: #8B0000;">**RFB**</span>), and our own the Banners. In some parts of the country, conditions are nearing civil war levels, as dozens of people are killed each month.
+Battles rage on the streets between the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>, nationalist <span style="color: #3E88B3;">**Wardens**</span>, communist <span style="color: #8B0000;">Rotfrontkämpferbund</span> (<span style="color: #8B0000;">**Vanguard**</span>), and our own the Banners. In some parts of the country, conditions are nearing civil war levels, as dozens of people are killed each month.
 
 We must do something to protect the workers against these predations.
 
@@ -17,7 +17,7 @@ We must do something to protect the workers against these predations.
 - @if_training: Train union members to fight as part of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>.
 - @prussian_police_training: Use the Heartland police to help train the the Banners.
 - @peace: Try to avoid all militant confrontations, as much as possible.
-- @truce_rfb: Try to make peace with the <span style="color: #8B0000;">**RFB**</span>.
+- @truce_rfb: Try to make peace with the <span style="color: #8B0000;">**Vanguard**</span>.
 - @easy_discard
 
 @battle
@@ -25,7 +25,7 @@ view-if: banner_militancy > 0.1 and banner_militancy < 0.5
 on-arrival: banner_militancy += 0.1; loyalist_strength += 40; banner_strength -= 100; 
 max-visits: 1
 
-Many the Banners members are not ready for actual fighting, and thus quit. However, the remainder are toughened as a result. Our confrontations also provide ample recruiting material for the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>.
+Many the Banners members are not ready for actual fighting, and thus quit. However, the remainder are toughened as a result. Our confrontations also provide ample recruiting material for the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>.
 
 @arm_rb
 subtitle: -[+ banner_militarization_cost +] resource
@@ -56,7 +56,7 @@ on-arrival: banner_militancy -= 0.02; banner_strength -= 50; pacifism += 1
 By not fighting, the strength of the the Banners atrophies. Pacifists in the party are gaining the upper hand.
 
 @truce_rfb
-subtitle: The <span style="color: #8B0000;">RFB</span> will be added to the balance of power.
+subtitle: The <span style="color: #8B0000;">Vanguard</span> will be added to the balance of power.
 choose-if: collectivist_relation >= 45
 view-if: collectivist_truce == 0
 unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> is not interested.

@@ -70,7 +70,7 @@ face-image: img/reichsbanner_2.jpg
 go-to: do_campaign
 max-visits: 1
 
-The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**SA**</span> have harassed us long enough—it’s time to strike back. The bourgeois parties are criticizing us turning the the Banners into a <span style="color: #c00000;">socialist</span> militia.
+The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The bourgeois parties are criticizing us turning the the Banners into a <span style="color: #c00000;">socialist</span> militia.
 
 @hope
 view-if: bourgeois_campaign_dufour or heartland_campaign_dufour or bourgeois_campaign_dufour
