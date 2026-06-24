@@ -188,7 +188,7 @@ choose-if: dingeldey_lead
 on-arrival: lvp_relation -= 5; lvp_right += 3; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Eduard Dingeldey, previously part of the movement for propertied unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
 However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 

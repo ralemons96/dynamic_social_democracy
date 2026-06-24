@@ -44,4 +44,4 @@ on-arrival: womens_rights += 1; commons_marcher += 4*(1-dissent); landed_marcher
 
 Jessamy's strategies for organizing women are aimed at working-class housewives, and acknowledge women's traditional household roles. We argue that our economic welfare programs will improve the livelihoods of women and their families.
 
-[? if marcher_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+[? if marcher_r < 50 : Unfortunately, women still disproportionately support the propertied parties. ?]

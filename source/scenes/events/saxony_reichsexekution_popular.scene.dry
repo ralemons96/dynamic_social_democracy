@@ -44,9 +44,9 @@ This show of force has reinvigorated support for both the <span style="color: #c
 
 @surrender
 title: Resign our positions, to prevent bloodshed.
-subtitle: [+ president +] will appoint a right-wing <i>Reichskommissar</i>.
+subtitle: [+ president +] will appoint a right-wing <i>Commonwealth Commissioner</i>.
 on-arrival: red_saxony = 0; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 15; labor_dissent += 5; banner_militancy = banner_militancy*0.7; banner_strength -= 250; vanguard_banned = 1; vanguard_strength -= 150; vanguard_militancy -= 0.1; collectivist_relation -= 20; communist_coalition -= 1
 
 The <span style="color: #700000;">collectivists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> as they harass local party officials.
 
-[+ president +] appoints [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] member Wilhelm Bünger as <i>Reichskommissar</i> to govern Dornwich, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**Vanguard**</span>.
+[+ president +] appoints [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] member Wilhelm Bünger as <i>Commonwealth Commissioner</i> to govern Dornwich, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**Vanguard**</span>.

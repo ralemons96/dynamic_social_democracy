@@ -20,7 +20,7 @@ on-arrival: labor_dissent += 5; left_dissent += 5; commons_marcher -= 4; coaliti
 
 Unfortunately, Labor Minister [+ labor_minister +] (**<span style="color: #000000;">**[+ unionist_party_name +]**</span>**) overrules our decision and sided with the employers instead.
 
-Many workers are unhappy at the government's decision, and our concession of the Labor Ministry to the bourgeois parties. There is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Collectivists**</span> stand to gain.
+Many workers are unhappy at the government's decision, and our concession of the Labor Ministry to the propertied parties. There is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Collectivists**</span> stand to gain.
 
 @support_employers
 subtitle: This will alienate the workers.

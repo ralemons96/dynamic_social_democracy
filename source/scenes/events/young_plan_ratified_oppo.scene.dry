@@ -7,7 +7,7 @@ max-visits: 1
 
 = Young Plan Ratified
 
-The Young Plan is finally ratified, and with that, the main reason President DuFour and the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: bourgeois right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of Commonwealth finances in order to make the payments, likely including cuts to social spending.
+The Young Plan is finally ratified, and with that, the main reason President DuFour and the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: propertied right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of Commonwealth finances in order to make the payments, likely including cuts to social spending.
 
 - @joever: If this year couldn't get any worse...
 

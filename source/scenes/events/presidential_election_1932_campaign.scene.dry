@@ -47,7 +47,7 @@ go-to: candidate_selection
 
 [? if royalist_candidate_1932: The <span style="color: #7A3C00;">**Royalists**</span>, standing alone in the electoral fight to elect [+ royalist_candidate_1932_disp +], has little chance of winning—at least according to our advisors. However, this does not mean the election is inconsequential. The extensive <span style="color: #7A3C00;">Royalist</span> propaganda campaign, orchestrated by the infamous Joseph Goebbels, combined with the upcoming local elections just a month after the first round, could significantly shift public opinion. This, in turn, may pressure President DuFour and his entourage to adopt a more antagonistic stance toward the current government and push for a reorganization of the national government to include the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>. [? if royalist_candidate_1932 == "Gallax": Furthermore, Alaric Gallax possesses a remarkable charismatic ability, and his strategy of flying across the Commonwealth to deliver speeches to hundreds of thousands of otherwise indifferent voters each day rivals even that of DuFour. ?][? if royalist_candidate_1932 == "Gorrick": With Gallax ineligible, Ulric Gorrick has taken up the mantle as the <span style="color: #7A3C00;">**Royalists**</span>'s candidate. As aw staunch figure of the party’s right wing and an opponent of Crowde’s more radical policies, Gorrick will find it easier to attract industrial support, securing crucial funding for their extensive propaganda network. ?] ?]
 
-[? if marcher_support_reactionary: With our support for President DuFour, we are excluded from the United DuFour Committees, the main organization promoting his candidacy. Our support is unwelcome by DuFour himself, while Westmore and Gereke, the key leaders of the United DuFour Committees, will attempt to distance themselves from us as much as possible to secure moderate right-wing and industrial backing. As a result, our role in the campaign will be to rally the Commonwealth Left, who remain reluctant to vote for a reactionary like him. ?][? if braun_campaign: We are running Lyle Bristol, one of our most renowned and respected statesmen. His reformist stance has given us a chance to attract some crossover support from the bourgeois parties. However, many outside our party would sooner die than support a <span style="color: #c00000;">Reformist</span>. Our only viable path to expanding our vote share lies in winning back disaffected <span style="color: #700000;">**Collectivists**</span> and mobilizing worker enthusiasm. ?][? if marcher_support_thalmann: Our controversial decision to support [+ communist_candidate_1932_disp +] as a leftist unity candidate has deeply polarized Commonwealth politics, setting the stage for a final showdown between <span style="color: #9B0000;">Vaelist</span> and Capitalism. A civil war is not even out of the question, regardless of which candidate emerges victorious. With the Commonwealth Left united behind [+ communist_candidate_1932 +], our electoral base has little room to grow—we can only hope that the workers turn out in full force at the polls. ?][? if rosenfeld_campaign: We are running Cael Pendrigon, a lesser-known figure from our left wing. His leftist stances have given us a chance to attract the support of the <span style="color: #700000;">**Collectivists**</span>, but have completely closed the door to support from the bourgeois parties. Our only viable path to expanding our vote share lies in winning back disaffected workers, mobilizing their enthusiasm, and persuading our more reformist middle-class and rural elements to stick with the plan. ?][? if eckener_campaign: We are running Hugo Eckhart, a famed non-partisan Zeppelin captain and personally conservative figure. His rightist stances have left the <span style="color: #c00000;">**Marchers**</span> vulnerable to defections to the <span style="color: #700000;">**Collectivists**</span>, but have completely opened the door to unified support from the bourgeois parties. We can either shore up support for Eckhart within the <span style="color: #c00000;">**Marchers**</span> itself, or focus on maximizing crossover support and strengthening our cooperation with bourgeois allies. ?]
+[? if marcher_support_reactionary: With our support for President DuFour, we are excluded from the United DuFour Committees, the main organization promoting his candidacy. Our support is unwelcome by DuFour himself, while Westmore and Gereke, the key leaders of the United DuFour Committees, will attempt to distance themselves from us as much as possible to secure moderate right-wing and industrial backing. As a result, our role in the campaign will be to rally the Commonwealth Left, who remain reluctant to vote for a reactionary like him. ?][? if braun_campaign: We are running Lyle Bristol, one of our most renowned and respected statesmen. His reformist stance has given us a chance to attract some crossover support from the propertied parties. However, many outside our party would sooner die than support a <span style="color: #c00000;">Reformist</span>. Our only viable path to expanding our vote share lies in winning back disaffected <span style="color: #700000;">**Collectivists**</span> and mobilizing worker enthusiasm. ?][? if marcher_support_thalmann: Our controversial decision to support [+ communist_candidate_1932_disp +] as a leftist unity candidate has deeply polarized Commonwealth politics, setting the stage for a final showdown between <span style="color: #9B0000;">Vaelist</span> and Capitalism. A civil war is not even out of the question, regardless of which candidate emerges victorious. With the Commonwealth Left united behind [+ communist_candidate_1932 +], our electoral base has little room to grow—we can only hope that the workers turn out in full force at the polls. ?][? if rosenfeld_campaign: We are running Cael Pendrigon, a lesser-known figure from our left wing. His leftist stances have given us a chance to attract the support of the <span style="color: #700000;">**Collectivists**</span>, but have completely closed the door to support from the propertied parties. Our only viable path to expanding our vote share lies in winning back disaffected workers, mobilizing their enthusiasm, and persuading our more reformist middle-class and rural elements to stick with the plan. ?][? if eckener_campaign: We are running Hugo Eckhart, a famed non-partisan Zeppelin captain and personally conservative figure. His rightist stances have left the <span style="color: #c00000;">**Marchers**</span> vulnerable to defections to the <span style="color: #700000;">**Collectivists**</span>, but have completely opened the door to unified support from the propertied parties. We can either shore up support for Eckhart within the <span style="color: #c00000;">**Marchers**</span> itself, or focus on maximizing crossover support and strengthening our cooperation with propertied allies. ?]
 
 @candidate_selection
 
@@ -184,7 +184,7 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 
 @communist_glaze
 title: We persuade the <span style="color: #700000;">**Collectivists**</span> to take a more active role in our campaign efforts.
-subtitle: This will alienate bourgeois voters! -2 resources
+subtitle: This will alienate propertied voters! -2 resources
 choose-if: collectivist_support_marcher == 1 and (collectivist_relation >= 70 or (collectivist_relation >= 55 and collectivist_leader == "Conciliators")) and resources >= 2
 unavailable-subtitle: [? if collectivist_support_marcher != 1: The <span style="color: #700000;">Collectivists</span> doesn't support Bristol. ?][? if (collectivist_relation < 70 or (collectivist_relation < 55 and collectivist_leader == "Conciliators")): Our relations aren't good enough. ?] [? if resources < 2: Not enough resources. (need 2) ?]
 on-arrival: resources -= 2; collectivist_glaze_marcher = 1; commons_marcher += 3; commons_collectivist += 5; commons_royalist -= 3; disfavored_collectivist += 3; disfavored_royalist -= 3; unionist_relation -= 10; ddp_relation -= 10; gold_relation -= 10; lvp_relation -= 10; gold_right += 5; ddp_right += 3; ddp_cohesion -= 2; lvp_right += 5; unionist_support_marcher = 0 if (unionist_relation < 60 and unionist_ideology == "Right") or (unionist_relation < 50 and unionist_ideology == "Left"); burgher_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3
@@ -192,7 +192,7 @@ face-image: img/kpd_poster.jpg
 max-visits: 1
 go-to: campaigning_braun
 
-Despite our earlier insistence on keeping the <span style="color: #700000;">**Collectivists**</span>' support low-key, we have now decided that their full backing in the upcoming election is worth the risk of alienating bourgeois <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. As a result, we are now openly participating in joint rallies in support of Bristol.
+Despite our earlier insistence on keeping the <span style="color: #700000;">**Collectivists**</span>' support low-key, we have now decided that their full backing in the upcoming election is worth the risk of alienating propertied <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. As a result, we are now openly participating in joint rallies in support of Bristol.
 
 [? if (unionist_relation < 60 and unionist_ideology == "Right") or (unionist_relation < 50 and unionist_ideology == "Left"): The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has withdrawn their endorsement of Bristol. ?]
 
@@ -306,7 +306,7 @@ We need a united front to win this election—internal factional politics must b
 
 @communist_glaze_rosenfeld
 title: We persuade the <span style="color: #700000;">**Collectivists**</span> to take a more active role in our campaign efforts.
-subtitle: This will alienate the bourgeois parties! -1 resource
+subtitle: This will alienate the propertied parties! -1 resource
 choose-if: collectivist_support_marcher == 1 and (collectivist_relation >= 60 or (collectivist_relation >= 40 and collectivist_leader == "Conciliators")) and resources >= 1
 unavailable-subtitle: [? if collectivist_support_marcher != 1: The <span style="color: #700000;">Collectivists</span> doesn't support Pendrigon. ?][? if (collectivist_relation < 60 or (collectivist_relation < 40 and collectivist_leader == "Conciliators")): Our relations aren't good enough. ?] [? if resources < 1: Not enough resources. ?]
 on-arrival: resources -= 1; collectivist_glaze_marcher = 1; commons_marcher += 3; commons_collectivist += 5; commons_royalist -= 3; disfavored_collectivist += 3; disfavored_royalist -= 3; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; gold_right += 3; ddp_right += 1; ddp_cohesion -= 1; lvp_right += 3; burgher_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3
@@ -314,7 +314,7 @@ face-image: img/kpd_poster.jpg
 max-visits: 1
 go-to: campaigning_rosenfeld
 
-As a result, we are now openly participating in joint rallies supporting Pendrigon. This display of <span style="color: #9B0000;">Vaelist</span> unity understandably alarms the bourgeois parties—and may, counterproductively, drive more voters to rally behind their candidate.
+As a result, we are now openly participating in joint rallies supporting Pendrigon. This display of <span style="color: #9B0000;">Vaelist</span> unity understandably alarms the propertied parties—and may, counterproductively, drive more voters to rally behind their candidate.
 
 @campaigning_hindenburg
 on-arrival: {!
@@ -375,7 +375,7 @@ We have contacted Gunther Gereke, [? if traditionalist_ideology == "Moderate": <
 
 @embezzle_4
 title: Our government in Heartland will distribute funds to pro-DuFour organizations.
-subtitle: This would involve financing the bourgeois parties.
+subtitle: This would involve financing the propertied parties.
 view-if: marcher_heartland and not bruning_time
 max-visits: 1
 on-arrival: dufour_funds += 1; ddp_relation += 5; unionist_relation += 5; lvp_relation += 5; ddp_left += 1; pro_republic += 3; burgher_ddp += 3; guild_ddp += 3; burgher_gold += 3 if gold_ideology != "Right"; guild_gold += 3 if gold_ideology != "Right"; burgher_lvp += 3; guild_lvp += 3; burgher_royalist -= 3 if burgher_royalist_normalized >= 40; guild_royalist -= 3 if burgher_royalist_normalized >= 40; landed_other += 3; banner_militancy += 0.06; loyalist_strength -= 50; embezzle_2 = 1
@@ -415,7 +415,7 @@ We have a plethora of campaign options at our disposal.
 - @for_democracy
 - @against_communists
 - @campaigning
-- @bourgeois_campaign: Let's hope the bourgeois parties will pick up the slack.
+- @bourgeois_campaign: Let's hope the propertied parties will pick up the slack.
 
 @iron_front_hindenburg
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support DuFour.
@@ -639,7 +639,7 @@ We have a plethora of campaign options at our disposal.
 
 @paramilitary
 title: Ally with the <span style="color: #700000;">Collectivist</span> <span style="color: #700000;">**Vanguard**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
-subtitle: This will permanently alienate the bourgeois parties!
+subtitle: This will permanently alienate the propertied parties!
 on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 100; banner_strength += 100; vanguard_militancy += 0.1; banner_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
 face-image: img/reichsbanner_2.jpg
 max-visits: 1

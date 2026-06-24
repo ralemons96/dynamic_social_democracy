@@ -1,5 +1,5 @@
 title: DuFour Voices Disapproval
-subtitle: While powerless, he still possesses significant sway over our bourgeois allies.
+subtitle: While powerless, he still possesses significant sway over our propertied allies.
 view-if: (president == "DuFour" and presidential_powers and marcher_in_government and dufour_angry >= 115 and dufour_angry_trigger) and chancellor != "Askew" and next_election_time - time > 3 and not in_marcher_majority and not in_left_front and time >= dufour_grr_time
 priority: -1
 new-page: true
@@ -11,4 +11,4 @@ max-visits: 3
 
 President DuFour has made his dissatisfaction with the <span style="color: #c00000;">Reformist</span> presence in government clear and would use his presidential powers to remove us by force—if he actually had them.
 
-[? if dufour_grr_amount <= 2: However, DuFour still holds great sway over the bourgeois parties and, along with his influential inner circle, has pressured them to break with our government. ?][? if dufour_grr_amount > 2: DuFour has been sidelined lately, and his influence over the bourgeois parties have weakened. This is the last time we will hear of the old man. ?]
+[? if dufour_grr_amount <= 2: However, DuFour still holds great sway over the propertied parties and, along with his influential inner circle, has pressured them to break with our government. ?][? if dufour_grr_amount > 2: DuFour has been sidelined lately, and his influence over the propertied parties have weakened. This is the last time we will hear of the old man. ?]

@@ -16,7 +16,7 @@ Max Seyton is a former leader of the youth wing, current supporter of the left w
 
 @class_struggle
 title: Rally for class struggle
-subtitle: The core of <span style="color: #c00000;">Reformism</span> should be the struggle of the proletariat against the bourgeoisie.
+subtitle: The core of <span style="color: #c00000;">Reformism</span> should be the struggle of the proletariat against the Burghers.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; commons_marcher += 4*(1-dissent); disfavored_marcher += 3*(1-dissent); commons_marcher += 4*(1-dissent) if nationalization_progress > 0; disfavored_marcher += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; guild_marcher -= 3; burgher_marcher -= 2; gold_relation -= 3; gold_right += 1; lvp_relation -= 3; lvp_right += 1

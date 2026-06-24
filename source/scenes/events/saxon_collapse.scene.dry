@@ -79,13 +79,13 @@ Surprisingly, despite reluctance on both sides due to fears that the <span style
 As one of the most left-wing and industrial states in the Commonwealth, we will use our leverage to implement comprehensive reforms and transform Dornwich into a stronghold of <span style="color: #c00000;">Reformism</span>. DuFour’s patience is especially thin. Tread carefully.
 
 @grand_coalition_saxony
-subtitle: We have somehow reconciled with the bourgeois parties, that they're willing to govern with us again.
+subtitle: We have somehow reconciled with the propertied parties, that they're willing to govern with us again.
 unavailable-subtitle: [? if unionist_relation < 45 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?][? if left_strength >= 30: Our Dornish organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ASPD</span>. ?]
 view-if: marcher_coalition_saxony >= 50
 choose-if: marcher_coalition_possible_saxony and left_strength < 30
 on-arrival: saxony_marcher = 1; commons_royalist -= 3; disfavored_royalist -= 3; commons_marcher += 3; disfavored_marcher += 3; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; gold_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; aspd_dead = 1; saxony_groko = 1
 
-Somehow, the bourgeois parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, replacing the [+ saxony_leader +] Cabinet and preventing the need for new elections.
+Somehow, the propertied parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, replacing the [+ saxony_leader +] Cabinet and preventing the need for new elections.
 
 With the <span style="color: #fe9e00;">**ASPD**</span> (whose Dornish chapter is notably more sane) now convinced of our reformist path, they have rejoined the Dornish <span style="color: #c00000;">**Marchers**</span>!
 
@@ -94,6 +94,6 @@ title: A majority can't be found!
 subtitle: New elections will be called.
 on-arrival: saxony_1930_trigger = 1
 
-As expected, the bourgeois government in Dornwich isn't able to survive the vote of no confidence. New elections are called for June, but the [+ saxony_leader +] Cabinet continues to operate as a caretaker government.
+As expected, the propertied government in Dornwich isn't able to survive the vote of no confidence. New elections are called for June, but the [+ saxony_leader +] Cabinet continues to operate as a caretaker government.
 
 This grants an opportunity for the <span style="color: #7A3C00;">**Royalists**</span> to exploit and capitalize on political instability and the perceived failure of parliamentary democracy.

@@ -22,7 +22,7 @@ new-page: true
 
 The <span style="color: #000000;">Unionist Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Christian People's Party</span> under [+ unionist_leader +], has been flirting with the idea of merging with [+ traditionalist_leader +]'s <span style="color: #3E88B3;">**Traditionalists**</span> for the past few months. Their mutual participation in the currently governing right-wing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #c00000;">Reformists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation.
 
-Following our fallout with the <span style="color: #000000;">Unionist Party</span> over their new direction, our remaining allies within their ranks have been sidelined, leaving them powerless to oppose the proposed merger. This shift has enabled the party’s leadership, alongside newly integrated right-wing Protestant politicians, to open negotiations with the <span style="color: #3E88B3;">**Traditionalists**</span> on a possible unification. However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Schiele, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans. Lambach himself is in favor, aligning with [+ unionist_leader +] in supporting the call for a *Volksgemeinschaft*.
+Following our fallout with the <span style="color: #000000;">Unionist Party</span> over their new direction, our remaining allies within their ranks have been sidelined, leaving them powerless to oppose the proposed merger. This shift has enabled the party’s leadership, alongside newly integrated right-wing Protestant politicians, to open negotiations with the <span style="color: #3E88B3;">**Traditionalists**</span> on a possible unification. However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Schiele, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans. Lambach himself is in favor, aligning with [+ unionist_leader +] in supporting the call for a national community.
 
 - @cvp_dnvp: Negotiations between the two parties have begun.
 
@@ -233,13 +233,13 @@ Great Depression - Maintain fiscal orthodoxy, productive industries and agricult
 on-arrival: guild_unionist += 4; guild_gold -= 2; guild_lvp -= 2; burgher_unionist += 4; burgher_dnf -= 2; commons_unionist -= 1.5; commons_marcher += 3; disfavored_unionist -= 1.5; disfavored_marcher += 3; concord_economy_keynes = 1
 go-to: cvp_dnvp_menu
 
-The <span style="color: #000000;">Christians</span> and <span style="color: #3E88B3;">nationalists</span> have begrudgingly come to an agreement, as pragmatism wins the day. The party must represent its diverse base, for the *Volksgemeinschaft*.
+The <span style="color: #000000;">Christians</span> and <span style="color: #3E88B3;">nationalists</span> have begrudgingly come to an agreement, as pragmatism wins the day. The party must represent its diverse base, for the national community.
 
 Taxation - Avoid tax increases at all costs
 
 Welfare - Focus on funding the current system, as the poor are suffering
 
-Labor - Against any <span style="color: #c00000;">socialistic</span> policies, but neutrality in labor affairs is a key component of the *Volksgemeinschaft*.
+Labor - Against any <span style="color: #c00000;">socialistic</span> policies, but neutrality in labor affairs is a key component of the national community.
 
 Great Depression - Experiment with a public works plan, combined with an increase in the money supply
 
@@ -318,7 +318,7 @@ face-image: img/cvp.jpg
 call: cvp_formed
 achievement: christliche_volkspartei
 
-The agreement is finalized, and the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>) is born.
+The agreement is finalized, and the <i>Christian People's Party</i> (<span style="color: #000000;">Christian People's Party</span>) is born.
 
 The <span style="color: #000000;">**Concord**</span> aims to follow the Essen Program of 4285, transforming the Commonwealth Right into a party that rallies around <span style="color: #000000;">Christian</span>, <span style="color: #586593;">democratic</span>, <span style="color: #000000;">Commonwealth</span>, and <span style="color: #c00000;">social</span> principles.
 

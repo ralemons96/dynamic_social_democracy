@@ -9,7 +9,7 @@ card-image: img/braun.jpg
 
 = Heartland Affairs
 
-Heartland, by far the largest and most important state in the Commonwealth, is governed solely by our party, free from the compromises demanded by the bourgeois parties. This grants us the opportunity to pursue meaningful reforms. Under the capable leadership of Lyle Bristol, Heartland stands as the most stable and democratic government in the Republic.
+Heartland, by far the largest and most important state in the Commonwealth, is governed solely by our party, free from the compromises demanded by the propertied parties. This grants us the opportunity to pursue meaningful reforms. Under the capable leadership of Lyle Bristol, Heartland stands as the most stable and democratic government in the Republic.
 
 All our actions have increased effectiveness. 
 
@@ -25,8 +25,8 @@ We can enact policies in Heartland.
 - @unban_rfb: Reverse the <span style="color: #8B0000;">**Vanguard**</span> ban.
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>, the Nationalist paramilitary.
 - @unban_sh: Reverse the <span style="color: #3E88B3;">**Wardens**</span> ban.
-- @negotiate_concordat: Negotiate a concordat with the Vatican.
-- @sign_concordat: Sign a concordat with the Vatican.
+- @negotiate_concordat: Negotiate a concordat with the Temple of the Faithful.
+- @sign_concordat: Sign a concordat with the Temple of the Faithful.
 - @root: No new policies are needed.
 - @easy_discard
 - @cancel_advisor_action

@@ -17,18 +17,18 @@ In our media and campaign materials, who should we consider as our main opponent
 - @far_right: The <span style="color: #7A3C00;">far</span>-[? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">right</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">right</span>?] - the <span style="color: #7A3C00;">**Royalists**</span> and [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?].
 - @nsdap: The <span style="color: #7A3C00;">**Royalists**</span> alone.
 - @kpd: The <span style="color: #700000;">**Collectivists**</span>.
-- @bourgeois: The bourgeois parties - the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
+- @propertied: The propertied parties - the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @easy_discard
 
 @anti_dem
 on-arrival: enemies = "anti-democratic parties"; center_strength += 5; reformist_strength += 5; left_dissent += 5; commons_collectivist -= 1.5; commons_royalist -= 2; commons_traditionalist -= 1 if traditionalist_ideology == "Radical"; commons_dnf -= 1; disfavored_collectivist -= 2; disfavored_royalist -= 2; collectivist_relation -= 10
 
-Attacking the <span style="color: #7A3C00;">far</span>-[? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">right</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">right</span>?] and <span style="color: #700000;">left</span> is popular among all but the left wing of our party, who would prefer to be fighting the bourgeois parties. This might also hamper our ability to reconcile with the <span style="color: #700000;">**Collectivists**</span> in the future.
+Attacking the <span style="color: #7A3C00;">far</span>-[? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">right</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">right</span>?] and <span style="color: #700000;">left</span> is popular among all but the left wing of our party, who would prefer to be fighting the propertied parties. This might also hamper our ability to reconcile with the <span style="color: #700000;">**Collectivists**</span> in the future.
 
 @far_right
 on-arrival: enemies = "far right"; left_strength += 5; left_dissent -= 5; commons_royalist -= 3; disfavored_royalist -= 3; commons_traditionalist -= 2 if traditionalist_ideology == "Radical"; commons_dnf -= 2
 
-Attacking the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is popular among the entire party, although the left considers the bourgeois parties to be just as dangerous, while the right is critical of our lack of response to the <span style="color: #700000;">**Collectivists**</span>. Our bourgeois coalition partners are also skeptical of our lack of commitment to anti-collectivism.
+Attacking the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is popular among the entire party, although the left considers the propertied parties to be just as dangerous, while the right is critical of our lack of response to the <span style="color: #700000;">**Collectivists**</span>. Our propertied coalition partners are also skeptical of our lack of commitment to anti-collectivism.
 
 @nsdap
 on-arrival: enemies = "Royalist"; knight_strength += 5; royalist_urgency += 1; commons_royalist -= 4; disfavored_royalist -= 4; commons_royalist += 8 if royalist_votes < 8; disfavored_royalist += 8 if royalist_votes < 8
@@ -38,9 +38,9 @@ on-arrival: enemies = "Royalist"; knight_strength += 5; royalist_urgency += 1; c
 @kpd
 on-arrival: enemies = "Collectivist"; reformist_strength += 5; left_dissent += 8; reformist_dissent -= 5; collectivist_relation -= 15; gold_relation += 5; ddp_relation += 3; unionist_relation += 5; lvp_relation += 5; commons_collectivist -= 3; disfavored_collectivist -= 4; gold_left += 1; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 1
 
-Attacking the <span style="color: #700000;">**Collectivists**</span> is supported by all but the most left-wing <span style="color: #c00000;">Reformists</span>, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the <span style="color: #700000;">**Collectivists**</span>, this may not be the best choice.
+Attacking the <span style="color: #700000;">**Collectivists**</span> is supported by all but the most left-wing <span style="color: #c00000;">Reformists</span>, and wins us some measure of approval among the propertied parties. However, If we are to reconcile with the <span style="color: #700000;">**Collectivists**</span>, this may not be the best choice.
 
-@bourgeois
-on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; gold_relation -= 5; unionist_relation -= 5; ddp_relation -= 3; lvp_relation -= 3; collectivist_relation += 5; reformist_dissent += 8; commons_unionist -= 3; burgher_gold -= 2; commons_gold -= 1; commons_ddp -= 0.5; commons_ddp -= 0.5 if not gold_exist; coalition_dissent += 1; gold_right += 1; ddp_cohesion -= 1; ddp_right += 1; lvp_right += 1
+@propertied
+on-arrival: enemies = "propertied parties"; left_strength += 8; left_dissent -= 5; gold_relation -= 5; unionist_relation -= 5; ddp_relation -= 3; lvp_relation -= 3; collectivist_relation += 5; reformist_dissent += 8; commons_unionist -= 3; burgher_gold -= 2; commons_gold -= 1; commons_ddp -= 0.5; commons_ddp -= 0.5 if not gold_exist; coalition_dissent += 1; gold_right += 1; ddp_cohesion -= 1; ddp_right += 1; lvp_right += 1
 
-Our anti-bourgeois rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
+Our anti-propertied rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.

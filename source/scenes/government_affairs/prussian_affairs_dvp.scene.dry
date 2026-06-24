@@ -23,8 +23,8 @@ We can enact policies in Heartland. The inclusion of the <span style="color: #C0
 - @unban_rfb: Reverse the <span style="color: #8B0000;">**Vanguard**</span> ban.
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>, the Nationalist paramilitary.
 - @unban_sh: Reverse the <span style="color: #3E88B3;">**Wardens**</span> ban.
-- @negotiate_concordat: Negotiate a concordat with the Vatican.
-- @sign_concordat: Sign a concordat with the Vatican.
+- @negotiate_concordat: Negotiate a concordat with the Temple of the Faithful.
+- @sign_concordat: Sign a concordat with the Temple of the Faithful.
 - @root: No new policies are needed.
 - @easy_discard
 - @cancel_advisor_action

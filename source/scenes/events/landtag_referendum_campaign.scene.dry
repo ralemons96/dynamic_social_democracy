@@ -22,7 +22,7 @@ max-visits: 1
 
 [? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span> has reversed its position and now supports the referendum! It’s astonishing that the <span style="color: #700000;">**Collectivists**</span>, which labels us <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>, is now collaborating with [+ royalist_leader +] and Mallin. They have rebranded the referendum as the "red plebiscite" following an unacceptable ultimatum to the Heartland government. The <span style="color: #700000;">**Collectivists**</span> have mobilized so extensively that many now believe they have "taken the lead" in directing the campaign from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. ?][? if not landtag_ref_collectivist: Fortunately, the <span style="color: #700000;">**Collectivists**</span>[? if collectivist_leader == "Halsmark": &nbsp;despite its <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntist</span> stance toward us,?] has refrained from taking a position on the referendum. The relatively low signature count of only [+ landtag_ref_signatures +]% is a positive sign, making a victory for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> highly unlikely. ?]
 
-[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span>’s newfound support for the referendum has dramatically altered the situation, crushing earlier optimism stemming from the low number of signatures gathered in the first phase. Fortunately, many <span style="color: #700000;">**Collectivist**</span> workers are disgusted by the "<span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span>" plebiscite. Likewise, many <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> voters are reluctant to cast their ballots in alignment with the <span style="color: #700000;">**Collectivists**</span>.?][? if not landtag_ref_collectivist: Even though this referendum is doomed to fail, it still provides the Commonwealth Right with an opportunity to deepen political polarization, as evidenced by the anti-democratic rightwards shift of the bourgeois parties.?]
+[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span>’s newfound support for the referendum has dramatically altered the situation, crushing earlier optimism stemming from the low number of signatures gathered in the first phase. Fortunately, many <span style="color: #700000;">**Collectivist**</span> workers are disgusted by the "<span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span>" plebiscite. Likewise, many <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> voters are reluctant to cast their ballots in alignment with the <span style="color: #700000;">**Collectivists**</span>.?][? if not landtag_ref_collectivist: Even though this referendum is doomed to fail, it still provides the Commonwealth Right with an opportunity to deepen political polarization, as evidenced by the anti-democratic rightwards shift of the propertied parties.?]
 
 With our control of the Heartland government, we can campaign using state resources.
 
@@ -33,7 +33,7 @@ With our control of the Heartland government, we can campaign using state resour
 
 We have a variety of options to choose from.
 
-- @bourgeois
+- @propertied
 - @communist_prussia
 - @media
 - @urge_paramilitary
@@ -41,7 +41,7 @@ We have a variety of options to choose from.
 - @hope: We have done enough.
 - @no_campaign_2: We shouldn't allocate resources to this.
 
-@bourgeois
+@propertied
 title: Request assistance from our coalition partners.
 view-if: marcher_heartland and not bourgeois_campaign_landtag
 choose-if: not in_popular_front_heartland and not in_left_front_heartland and unionist_relation >= 50
@@ -54,7 +54,7 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 
 @communist_prussia
 title: Request assistance from the <span style="color: #700000;">**Collectivists**</span>.
-subtitle: The bourgeois parties will not be pleased by our cooperation.
+subtitle: The propertied parties will not be pleased by our cooperation.
 view-if: marcher_heartland and not landtag_ref_collectivist and not communist_campaign_landtag
 choose-if: in_popular_front_heartland or in_left_front_heartland
 unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> sees no reason to intervene in saving a government in which they have no involvement.

@@ -19,7 +19,7 @@ call: lvp_formed
 on-arrival: lvp_relation += 5; lvp_left += 3; burgher_traditionalist += 2; guild_traditionalist += 2
 face-image: img/portraits/luther.jpg
 
-Hans Lytton is once again chosen to lead the <span style="color: #C0A054;">**Golds**</span>, a long-time advocate for liberal and bourgeois unity, and a figure acceptable to both wings of the newly unified party. 
+Hans Lytton is once again chosen to lead the <span style="color: #C0A054;">**Golds**</span>, a long-time advocate for liberal and propertied unity, and a figure acceptable to both wings of the newly unified party. 
 
 Meanwhile, the right wing of the <span style="color: #C0A054;">**Golds**</span>, despite their initial resistance to the merger, is now focusing on shifting the <span style="color: #C0A054;">**Golds**</span> further right, leveraging the support of the party's industrial backers.
 
@@ -62,13 +62,13 @@ As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**
 on-arrival: lvp_relation -= 3; unionist_relation -= 3; lvp_right += 1; in_weimar_coalition = 1; in_grand_coalition = 0; coalition_dissent += 1
 go-to: cabinet_reformation
 
-Expected, but the bourgeois parties are displeased by the exclusion of the <span style="color: #A2D8E0;">**Arcanists**</span> from the ruling coalition.
+Expected, but the propertied parties are displeased by the exclusion of the <span style="color: #A2D8E0;">**Arcanists**</span> from the ruling coalition.
 
 @groko
 on-arrival: lvp_relation += 3; unionist_relation += 3; lvp_left += 1
 go-to: cabinet_reformation
 
-The bourgeois parties are pleased and somewhat surprised by this move.
+The propertied parties are pleased and somewhat surprised by this move.
 
 @cabinet_reformation
 on-arrival: {!

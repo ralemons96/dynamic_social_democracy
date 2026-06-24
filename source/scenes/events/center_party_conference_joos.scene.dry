@@ -20,7 +20,7 @@ face-image: img/portraits/Joseph_Hawkins.jpg
 
 [? if unionist_relation < 40 and not marcher_break_toleration: Due to the worsening of our relationship, even with Hawkins at the helm, the right wing of the <span style="color: #000000;">Unionist Party</span> finally has enough power to oust the friendly Hawkins as leader. ?]
 
-[? if concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our lack of progress toward an agreement with the Vatican, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins's resignation for his unwillingness to force the <span style="color: #c00000;">**Marchers**</span> to take action. ?]
+[? if concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our lack of progress toward an agreement with the Temple of the Faithful, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins's resignation for his unwillingness to force the <span style="color: #c00000;">**Marchers**</span> to take action. ?]
 
 [? if secularized_a or abortion_rights or homosexual_rights and not concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our progress on rights for women and <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">ox</span><span style="color: green;">se</span><span style="color: blue;">ua</span><span style="color: purple;">ls</span>, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins from the chairmanship, citing his unwillingness to obstruct these changes. ?]
 

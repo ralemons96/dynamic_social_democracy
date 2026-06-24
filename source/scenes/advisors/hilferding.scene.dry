@@ -27,7 +27,7 @@ We have reduced the strength of the dissident factions in the party.
 
 @toleration
 title: Defending Toleration
-subtitle: Bell supports cooperation with the bourgeois parties.
+subtitle: Bell supports cooperation with the propertied parties.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_toleration: The <span style="color: #c00000;">Marchers</span> is not in toleration. ?]
 choose-if: marcher_in_government = 0 and marcher_toleration = 1 and advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_dissent -= 10; knight_dissent -= 8; center_dissent -= 5

@@ -7,7 +7,7 @@ new-page: true
 
 = Lyle Bristol
 
-Bristol [? if heartland_leader = "Bristol": is ?][? if heartland_leader != "Bristol" : was ?] the Minister-President of Heartland, the largest state in the Commonwealth. He is a reformist leader who seeks to work with the bourgeois parties.
+Bristol [? if heartland_leader = "Bristol": is ?][? if heartland_leader != "Bristol" : was ?] the Minister-President of Heartland, the largest state in the Commonwealth. He is a reformist leader who seeks to work with the propertied parties.
 
 - @coalition
 - @coalition_president

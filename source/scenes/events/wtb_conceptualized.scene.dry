@@ -33,7 +33,7 @@ We can either support their attempts to craft a formal plan, committing to an ac
 view-if: reformist_strength >= left_strength and reformist_strength >= labor_strength and reformist_strength >= center_strength
 on-arrival: left_dissent += 5; left_strength -= 5; reformist_strength += 10; reformist_dissent -= 5; center_dissent -= 5; labor_dissent -= 2; moderate_plan_support += 1
 
-Job creation and stimulus are necessary, but deficit spending, especially with hyperinflation still fresh in memory, is simply unrealistic and reckless. The reformists argue that this plan is most likely to receive support from the bourgeois parties and is the most practical in the immediate term. Opponents in the Left and Labor factions criticize the plan for being inadequate in its ambition.
+Job creation and stimulus are necessary, but deficit spending, especially with hyperinflation still fresh in memory, is simply unrealistic and reckless. The reformists argue that this plan is most likely to receive support from the propertied parties and is the most practical in the immediate term. Opponents in the Left and Labor factions criticize the plan for being inadequate in its ambition.
 
 @left_plan
 view-if: left_strength >= reformist_strength and left_strength >= center_strength and left_strength >= labor_strength

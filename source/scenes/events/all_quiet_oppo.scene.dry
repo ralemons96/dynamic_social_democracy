@@ -13,7 +13,7 @@ The Allied film *All Quiet on the Western Front*, based on the Commonwealth nove
 
 As an anti-war film, it is the target of major protest by <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> actors, especially the <span style="color: #7A3C00;">Royalists</span> and the <span style="color: #3E88B3;">**Wardens**</span>. They are calling for the government to ban the film. If we do not ban it, the <span style="color: #7A3C00;">**Loyalists**</span> threatens to violently stop the film from being shown or watched.
 
-Since we lack control over the Heartland state government, the decision to allow or ban the film will ultimately rest with the bourgeois parties.
+Since we lack control over the Heartland state government, the decision to allow or ban the film will ultimately rest with the propertied parties.
 
 - @ban: We await their decision...
 - @allow: We await their decision...
@@ -30,12 +30,12 @@ The [? if in_right_coalition_heartland: right-wing coalition?][? if in_center_ri
 view-if: unionist_ideology == "Left" and not (marcher_toleration_heartland and heartland_police_loyalty >= 0.65)
 on-arrival: nationalism += 3; guild_royalist += 4; burgher_royalist += 3; commons_royalist += 1; loyalist_strength += 15; pro_republic -= 3; strife += 1
 
-The bourgeois parties have permitted the film to be shown despite threats from the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span>. However, screenings are marred by violence. Showings of the film are eventually halted, allowing the <span style="color: #7A3C00;">Royalists</span> to declare the outcome a victory for their movement.
+The propertied parties have permitted the film to be shown despite threats from the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span>. However, screenings are marred by violence. Showings of the film are eventually halted, allowing the <span style="color: #7A3C00;">Royalists</span> to declare the outcome a victory for their movement.
 
 
 @allow_protect
 view-if: marcher_toleration_heartland and heartland_police_loyalty >= 0.65
 on-arrival: nationalism -= 3; pro_republic += 3*(1-dissent); strife += 1
 
-The bourgeois coalition in Heartland, who we are in a toleration agreement with, have surprisingly sent the Heartland police to prevent <span style="color: #7A3C00;">Royalist</span> violence. Under the protection of the police, the people are allowed to watch the film in relative peace.
+The propertied coalition in Heartland, who we are in a toleration agreement with, have surprisingly sent the Heartland police to prevent <span style="color: #7A3C00;">Royalist</span> violence. Under the protection of the police, the people are allowed to watch the film in relative peace.
 

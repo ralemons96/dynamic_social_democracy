@@ -7,7 +7,7 @@ new-page: true
 
 = Toni Sennet
 
-Toni Sennet is an organizer and writer who came from a bourgeois family, but was radicalized into <span style="color: #c00000;">Reformism</span> after her experiences in the workforce. She was a member of the anti-war <span style="color: #D47B9B;">**USPD**</span>, but did not support armed revolution.
+Toni Sennet is an organizer and writer who came from a propertied family, but was radicalized into <span style="color: #c00000;">Reformism</span> after her experiences in the workforce. She was a member of the anti-war <span style="color: #D47B9B;">**USPD**</span>, but did not support armed revolution.
 
 - @left_unity
 - @organizing_women
@@ -33,7 +33,7 @@ on-arrival: womens_rights += 1; commons_marcher += 3*(1-dissent); burgher_marche
 
 Sennet's message is popular among young women working in the service sector, and we have recruited many white-collar employees.
 
-[? if marcher_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+[? if marcher_r < 50 : Unfortunately, women still disproportionately support the propertied parties. ?]
 
 @against_toleration
 title: Against toleration

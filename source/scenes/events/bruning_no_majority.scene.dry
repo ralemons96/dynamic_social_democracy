@@ -8,7 +8,7 @@ on-arrival: pro_republic -= 3
 
 = Askew's government collapses!
 
-The defection of multiple bourgeois and special interest parties from their previously unwavering support for the Askew government has left the cabinet without a majority, even with our toleration. [? if not second_bruning_cabinet_seen: Askew himself continues to resist forming a more right-wing cabinet to appease the defectors, believing that at least one of them will waver in the face of the political and economic instability that would follow. ?]
+The defection of multiple propertied and special interest parties from their previously unwavering support for the Askew government has left the cabinet without a majority, even with our toleration. [? if not second_bruning_cabinet_seen: Askew himself continues to resist forming a more right-wing cabinet to appease the defectors, believing that at least one of them will waver in the face of the political and economic instability that would follow. ?]
 
 The <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> remains committed to its all-or-nothing approach, refusing to support the government unless they are granted the Chancellery. Despite this, many on the Right still believe that a compromise with Gallax and Mallin is possible and believe that Askew is not making enough of an effort to achieve it.
 
@@ -21,7 +21,7 @@ subtitle: Might as well cut our losses here.
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 3; unionist_relation -= 5; ddp_relation -= 3; lvp_relation -= 3; gold_right += 1; ddp_right += 1; lvp_right += 1
 call: set_next_election_time
 
-We have officially broken with the [+ chancellor +] government, voting against them in a vote of no confidence. The bourgeois parties have also joined in, rather than engage in a futile attempt to save Askew’s government.
+We have officially broken with the [+ chancellor +] government, voting against them in a vote of no confidence. The propertied parties have also joined in, rather than engage in a futile attempt to save Askew’s government.
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
@@ -59,7 +59,7 @@ go-to: bruning_lives_wp if bruning_coalition >= 50 and wp_reversal; bruning_dies
 on-arrival: bruning_not_joever = 1; burgher_royalist += burgher_other*0.5; burgher_other *= 0.5; guild_royalist += guild_other*0.5; guild_other *= 0.5
 face-image: img/wp2.jpg
 
-The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively canceling out the impact of the other bourgeois parties that voted against it.
+The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively canceling out the impact of the other propertied parties that voted against it.
 
 This sudden shift by the <span style="color: #b8996f;">**WP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 

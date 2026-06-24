@@ -31,7 +31,7 @@ title: Labor Ministry
 subtitle: The Labor Ministry is giving significant concessions to organized labor.
 view-if: labor_minister_party = "Collectivist"
 
-The <span style="color: #700000;">**Collectivists**</span>-controlled Labor Ministry is taking a policy of supporting labor in every dispute between workers and employees, leading to a proliferation of strikes across the country. Given the economic circumstances, there are worries that this could harm any potential economic recovery, not to mention the conflicts this may engender with the bourgeois parties.
+The <span style="color: #700000;">**Collectivists**</span>-controlled Labor Ministry is taking a policy of supporting labor in every dispute between workers and employees, leading to a proliferation of strikes across the country. Given the economic circumstances, there are worries that this could harm any potential economic recovery, not to mention the conflicts this may engender with the propertied parties.
 
 Do we support their radical labor policy?
 
@@ -63,7 +63,7 @@ Do we support this policy?
 @economy_support
 on-arrival: nationalization_progress += 1; capital_strike_progress += 4; disfavored -= 2.5 if disfavored >= 6; disfavored -= 1.2 if works_councils >= 3; budget -= 3; works_program += 1; commons_marcher += 4*(1-dissent); commons_collectivist += 8*(1-dissent); disfavored_collectivist += 4*(1-dissent); coalition_dissent += 2; gold_relation -= 6; lvp_relation -= 6; unionist_relation -= 4; burgher_marcher -= 3; guild_marcher -= 3; economy_goal_completed += 1; collectivist_influence += 2
 
-The <span style="color: #700000;">**Collectivists**</span> has gained credit with the workers for enabling many to keep their jobs. Meanwhile, the bourgeois parties and middle-class voters blame the <span style="color: #c00000;">**Marchers**</span> for enabling the nationalizations.
+The <span style="color: #700000;">**Collectivists**</span> has gained credit with the workers for enabling many to keep their jobs. Meanwhile, the propertied parties and middle-class voters blame the <span style="color: #c00000;">**Marchers**</span> for enabling the nationalizations.
 
 @economy_oppose
 on-arrival: collectivist_coalition_dissent += 1; commons_marcher -= 5; commons_collectivist += 5; collectivist_relation -= 6

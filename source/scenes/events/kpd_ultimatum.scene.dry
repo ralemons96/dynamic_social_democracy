@@ -81,7 +81,7 @@ We argue that we are working hard to achieve the coalition's goals, and in the n
 on-arrival: commons_marcher += 8; disfavored_marcher += 8; collectivist_relation += 10; commons_collectivist += 5; collectivist_coalition_success += 1
 go-to: popular_front_achievement if in_popular_front; united_front_achievement if in_left_front
 
-Against all expectations, the <span style="color: #700000;">**Collectivists**</span>'s goals have all been met! Apparently the <span style="color: #700000;">**Collectivists**</span> did not prepare for this eventuality, a worker's government successfully built through democratic means. They will continue to "tolerate" our government for the rest of our term, while still acting as a watchdog against bourgeois backsliding.
+Against all expectations, the <span style="color: #700000;">**Collectivists**</span>'s goals have all been met! Apparently the <span style="color: #700000;">**Collectivists**</span> did not prepare for this eventuality, a worker's government successfully built through democratic means. They will continue to "tolerate" our government for the rest of our term, while still acting as a watchdog against propertied backsliding.
 
 
 @popular_front_achievement

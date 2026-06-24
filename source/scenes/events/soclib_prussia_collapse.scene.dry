@@ -97,7 +97,7 @@ subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [
 view-if: bourgeois_coalition_heartland >= 50 and not concord_formed
 on-arrival: in_center_right_coalition_heartland = 1; heartland_leader = "Sedgewick"; heartland_leader = "Askew" if unionist_leader == "Sedgewick"; burgher_marcher -= 4; ddp_right += 2; ddp_cohesion -= 2; gold_right += 2; lvp_right += 2; center_dissent += 10; left_dissent += 5; labor_dissent += 20; reformist_dissent += 20; knight_dissent += 10; ddp_right += 1; lvp_right += 3; heartland_police_loyalty -= 0.06; heartland_police_strength -= 8; pro_republic -= 3; ddp_relation -= 4; unionist_relation -= 4; gold_relation -= 4; lvp_relation -= 4
 
-Letting go the democratic bulwark to the right-wing parties is deeply unpopular among all party members, and provides no discernible benefit. Our members are furious that we have alienated the bourgeois parties enough to let this happen.
+Letting go the democratic bulwark to the right-wing parties is deeply unpopular among all party members, and provides no discernible benefit. Our members are furious that we have alienated the propertied parties enough to let this happen.
 
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 

@@ -8,7 +8,7 @@ max-visits: 1
 
 = Vote of no confidence
 
-Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party in a government supported by bourgeois forces. However, they cannot survive without the support from us or Mallin's <span style="color: #3E88B3;">**Traditionalists**</span>.
+Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party in a government supported by propertied forces. However, they cannot survive without the support from us or Mallin's <span style="color: #3E88B3;">**Traditionalists**</span>.
 
 Askew, has reorganized his cabinet to include the parties to the right of the [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], such as the new <span style="color: #0087DC;">**KVP**</span>, which has been granted generous cabinet positions. We are left with the choice to "tolerate" the government to prevent the gains of extremists within the Assembly or vote to oust Askew for new elections.
 
@@ -29,7 +29,7 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 
 @vote_yes
 title: Oppose the vote of no confidence, voting for the government.
-subtitle: We would essentially provide "toleration" to a bourgeois government.
+subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: cordon_sanitaire >= 50
 on-arrival: welfare -= 1; left_dissent += 10; labor_dissent += 10; commons_marcher *= 0.9; disfavored_marcher *= 0.9; disfavored_royalist += 5; disfavored_collectivist += 5; commons_royalist += 5; commons_collectivist += 3; commons_marcher -= 4 if welfare < 0; disfavored_marcher -= 5 if welfare < 0; pro_republic -= 4; collectivist_relation -= 8; landed_kvp += 3; landed_traditionalist -= 3; guild_kvp += 3; guild_traditionalist -= 3; burgher_kvp += 3; burgher_traditionalist -= 3; marcher_toleration_kvp = 1
 
@@ -44,4 +44,4 @@ view-if: cordon_sanitaire < 50
 call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 5; bruning_event_timer = 0
 
-The bourgeois coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The propertied coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].

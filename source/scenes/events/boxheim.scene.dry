@@ -22,7 +22,7 @@ In an attempt to protect themselves from the severe damage this revelation cause
 view-if: judicial_reform >= 4
 on-arrival: boxheim_persecuted = 1; knight_dissent -= 20; knight_strength += 10; commons_royalist -= 6; burgher_royalist -= 10; guild_royalist -= 10; landed_royalist -= 4; faithful_royalist -= 3; commons_marcher += 3; burgher_marcher += 3; pro_republic += 10; loyalist_militancy -= 0.1; dufour_angry_bruning -= 50; 
 
-Due to our thorough reform of the judicial system, the <span style="color: #7A3C00;">Royalists</span> behind these documents can now be publicly exposed and prosecuted by the state for high treason. This has dealt a severe blow to the constitutional appearance of the <span style="color: #7A3C00;">**Royalists**</span>, causing great distrust between them and the bourgeois establishment, including President DuFour himself.
+Due to our thorough reform of the judicial system, the <span style="color: #7A3C00;">Royalists</span> behind these documents can now be publicly exposed and prosecuted by the state for high treason. This has dealt a severe blow to the constitutional appearance of the <span style="color: #7A3C00;">**Royalists**</span>, causing great distrust between them and the propertied establishment, including President DuFour himself.
 
 Our Hesse government is set to continue in a caretaker capacity for the foreseeable future, following the collapse of talks between the <span style="color: #7A3C00;">**Royalists**</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 

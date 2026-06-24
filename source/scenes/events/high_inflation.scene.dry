@@ -7,7 +7,7 @@ tags: event
 
 = High Inflation
 
-Inflation has risen. People of all social classes are seeing their purchasing power fall. Memories of the hyperinflation period of 4288 echo through the public conscious, even though the present inflation is not nearly as severe. The bourgeois parties and their laissez-faire platforms stand to gain from this, to a lesser degree the <span style="color: #7A3C00;">Royalists</span>.
+Inflation has risen. People of all social classes are seeing their purchasing power fall. Memories of the hyperinflation period of 4288 echo through the public conscious, even though the present inflation is not nearly as severe. The propertied parties and their laissez-faire platforms stand to gain from this, to a lesser degree the <span style="color: #7A3C00;">Royalists</span>.
 
 The people and the press are clamoring for action to reduce inflation.
 
@@ -30,7 +30,7 @@ Reducing the amount of government spending should reduce the inflation rate, acc
 @price_controls
 on-arrival: capital_strike_progress += 3; inflation -= 3; coalition_dissent += 1; disfavored += 1; guild_marcher -= 4; burgher_marcher -= 3; landed_marcher -= 5; commons_marcher -= 2; disfavored_marcher += 3; labor_dissent += 6; gold_relation -= 6; unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 6; gold_right += 3; ddp_right += 2; ddp_cohesion -= 1; lvp_right += 3; economic_growth -= 0.4
 
-Price controls are very unpopular with the bourgeoisie and their representatives, as well as rural producers, while wage controls hurt organized workers. However, the policies do stem the tide of inflation, at least somewhat.
+Price controls are very unpopular with the Burghers and their representatives, as well as rural producers, while wage controls hurt organized workers. However, the policies do stem the tide of inflation, at least somewhat.
 
 @bank
 on-arrival: capital_strike_progress += 2

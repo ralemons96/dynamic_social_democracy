@@ -149,7 +149,7 @@ This might be the <span style="color: #7A3C00;">Royalists</span>' last hurrah; t
 
 [? if not concord_formed: Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Imperial Sovereigntism</span>. ?]
 
-[? if not concord_formed: Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. [? if adenauer_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants.?][? if bruning_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Edmund Askew, their former Chancellor, known for his popular and successful public works program. Widely credited with reviving the Commonwealth’s economy, he is expected to receive broad support from the bourgeois parties that participated in his government should he choose to run. ?]?] [? if ddp_candidate == "Gesling": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives[? if gold_exist and not lvp_formed:&nbsp;in the <span style="color: #C0A054;">**Golds**</span>?] and other parties who dislike the <span style="color: #3E88B3;">**Traditionalists**</span>-<span style="color: #7A3C00;">**Royalists**</span> front. ?][? if ddp_candidate == "Hewes": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Theodor Hewes, a prominent left-liberal journalist, who presents a strong defense of the Unity Republic and its democratic institutions. He aims to be the candidate for the young generation, and bourgeois <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. ?]
+[? if not concord_formed: Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. [? if adenauer_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants.?][? if bruning_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Edmund Askew, their former Chancellor, known for his popular and successful public works program. Widely credited with reviving the Commonwealth’s economy, he is expected to receive broad support from the propertied parties that participated in his government should he choose to run. ?]?] [? if ddp_candidate == "Gesling": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives[? if gold_exist and not lvp_formed:&nbsp;in the <span style="color: #C0A054;">**Golds**</span>?] and other parties who dislike the <span style="color: #3E88B3;">**Traditionalists**</span>-<span style="color: #7A3C00;">**Royalists**</span> front. ?][? if ddp_candidate == "Hewes": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Theodor Hewes, a prominent left-liberal journalist, who presents a strong defense of the Unity Republic and its democratic institutions. He aims to be the candidate for the young generation, and propertied <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. ?]
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint [? if not concord_formed: Unity?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] ?] Coalition candidate or run our own.
 [? if braun_campaign : Lyle Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if braun_campaign = 0 and not marcher_heartland: Lyle Bristol is tired. After being deposed in Heartland, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if braun_campaign = 0 and marcher_heartland : Lyle Bristol is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
@@ -282,7 +282,7 @@ He did not wish to run for president, disliking the public nature of campaigning
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will endorse Verrin's candidacy.
 
 @mann_r1
-subtitle: -2 resources - He might be too <span style="color: #700000;">far left</span> for the bourgeois parties.
+subtitle: -2 resources - He might be too <span style="color: #700000;">far left</span> for the propertied parties.
 view-if: collectivist_relation >= 50
 choose-if: resources >= 2
 on-arrival: marcher_candidate = "Mann"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
@@ -295,7 +295,7 @@ Mann is willing to accept the nomination for president.
 
 @ossietzky_r1
 view-if: weltbuhne_dropped = 1
-subtitle: -2 resources - He might be too <span style="color: #700000;">far left</span> for the bourgeois parties.
+subtitle: -2 resources - He might be too <span style="color: #700000;">far left</span> for the propertied parties.
 choose-if: resources >= 2
 on-arrival: marcher_candidate = "Ostwick"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
@@ -466,7 +466,7 @@ unavailable-subtitle: Not enough resources (need 3).
 on-arrival: resources -= 3; collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters.
 
 @kpd_relations
 view-if: collectivist_relation >= 60 or (collectivist_leader == "Conciliators" and collectivist_relation >= 45)
@@ -474,7 +474,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters.
 
 @convince_dvp_unity
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
@@ -997,14 +997,14 @@ Halsmark wastes no time in consolidating power, using all means available to res
 
 @thalmann_democrat
 
-Despite the victory of the anti-constitutionalist Halsmark, he appears to be respecting the constitutional constraints on presidential power, at least for now. There is no appetite on the right for a coup at this moment. The bourgeoisie have to live with a <span style="color: #700000;">collectivist</span> president, at least for now.
+Despite the victory of the anti-constitutionalist Halsmark, he appears to be respecting the constitutional constraints on presidential power, at least for now. There is no appetite on the right for a coup at this moment. The Burghers have to live with a <span style="color: #700000;">collectivist</span> president, at least for now.
 
 
 @munzenberg_victory
 achievement: rote_millionar
 go-to: nazis_lose if not rubicon; nach_schleicher_wir if rubicon
 
-The bourgeois and right-wing parties are up in arms about the prospect of a <span style="color: #700000;">**Collectivist**</span> president, although Munzer and the <span style="color: #700000;">**Collectivists**</span> conciliators take pains to assure the Commonwealth of their commitment to the democratic republic. There is no energy for a coup against the new president. The bourgeoisie will have to live with whatever comes.
+The propertied and right-wing parties are up in arms about the prospect of a <span style="color: #700000;">**Collectivist**</span> president, although Munzer and the <span style="color: #700000;">**Collectivists**</span> conciliators take pains to assure the Commonwealth of their commitment to the democratic republic. There is no energy for a coup against the new president. The Burghers will have to live with whatever comes.
 
 @nach_schleicher_wir
 achievement: nach_schleicher_wir

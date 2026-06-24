@@ -51,7 +51,7 @@ This assuages some of the <span style="color: #700000;">**Collectivists**</span>
 @communist_fault
 on-arrival: collectivist_relation -= 10; unionist_relation += 3; gold_relation += 3; lvp_relation += 2; vanguard_strength -= 80; vanguard_banned = 1; dufour_angry -= 4
 
-If the <span style="color: #700000;">**Collectivists**</span> continues to act illegally, they must suffer the consequences. Thus, we have banned the <span style="color: #8B0000;">**RFKB**</span>, their paramilitary group. The bourgeois and right-leaning parties approve.
+If the <span style="color: #700000;">**Collectivists**</span> continues to act illegally, they must suffer the consequences. Thus, we have banned the <span style="color: #8B0000;">**RFKB**</span>, their paramilitary group. The propertied and right-leaning parties approve.
 
 @no_fault
 
@@ -76,4 +76,4 @@ unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> do 
 on-arrival: collectivist_relation += 15; commons_collectivist += 3; disfavored_collectivist += 5; commons_marcher += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; unionist_relation -= 10; gold_relation -= 10; coalition_dissent += 2; communist_coalition += 2; banner_strength += 100; vanguard_strength += 100; vanguard_militancy += 0.1; loyalist_strength += 50; warden_strength += 50; gold_right += 3; ddp_right += 3; ddp_relation -= 8; ddp_cohesion -= 1; lvp_right += 3; lvp_relation -= 10; dufour_angry += 20
 achievement: die_rote_fahne
 
-It is difficult to persuade the <span style="color: #700000;">**Collectivists**</span> to let us march with them, given the histories of their party and ours. However, they eventually relent. The display of proletarian unity inspires the workers and terrifies the bourgeoisie and middle class. [? if in_grand_coalition or in_weimar_coalition: Our coalition partners in the government are outraged at our display with the <span style="color: #700000;">collectivists</span>, and are threatening to break up the government. ?] The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries increase their recruitment to counter us.
+It is difficult to persuade the <span style="color: #700000;">**Collectivists**</span> to let us march with them, given the histories of their party and ours. However, they eventually relent. The display of proletarian unity inspires the workers and terrifies the Burghers and middle class. [? if in_grand_coalition or in_weimar_coalition: Our coalition partners in the government are outraged at our display with the <span style="color: #700000;">collectivists</span>, and are threatening to break up the government. ?] The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries increase their recruitment to counter us.

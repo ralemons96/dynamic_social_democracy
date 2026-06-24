@@ -164,7 +164,7 @@ With the <span style="color: #7A3C00;">Royalists</span> movement remaining divid
 @candidates_nats
 title: Moving on to the <span style="color: #3E88B3;">nationalists</span>.
 
-The <span style="color: #3E88B3;">nationalists</span> are unified in their support for [+ gnu_candidate +], joined by the various splinter factions and the minor bourgeois parties. Although Mallin is—somehow—still contemplating a presidential run, a strongly worded threat has convinced him to remain silent.
+The <span style="color: #3E88B3;">nationalists</span> are unified in their support for [+ gnu_candidate +], joined by the various splinter factions and the minor propertied parties. Although Mallin is—somehow—still contemplating a presidential run, a strongly worded threat has convinced him to remain silent.
 
 - @candidates_dems
 
@@ -175,7 +175,7 @@ With the <span style="color: #700000;">**Collectivists**</span> having been heav
 
 [? if unionist_candidate == "Aldermoor": The <span style="color: #000000;">Unionists</span> is not fully convinced to back [+ gnu_candidate +] and has chosen to run its own candidate: Konrad Aldermoor. The Mayor of Bradford since the Republic's inception, and a member of the Heartland legislature, he's an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower" to broaden its appeal among Protestants, Aldermoor was first proposed by Sedgewick himself. Though situated on the right wing of his party, he remains firmly committed to the Unity Republic and opposes Staal’s threats against it. ?]
 
-[? if heuss_run: The <span style="color: #FFCC00;">liberals</span> are running Theodor Hewes—a journalist and vocal supporter of the Unity Republic, and a staunch anti-Staalist within his own party. This stance has put him at odds with more pro-Staal elements in the Commonwealth middle class. While unlikely to secure significant support, Hewes has positioned himself as a "Unity" unity candidate in opposition to [+ gnu_candidate +]. ?][? if not heuss_run and ddp_candidate == unionist_candidate and unionist_candidate != gnu_candidate: The <span style="color: #FFCC00;">liberals</span>, mired in electoral ruin, lack the resources or energy to field a candidate of their own. Instead, they have thrown their support behind [+ unionist_candidate +] as the bourgeois alternative to Staal. However, their backing is far from solid—pro-Staal elements remain rogue, as his message of national solidarity continues to resonate with the historically nationalist Commonwealth liberal movement. ?][? if not heuss_run and ddp_candidate == gnu_candidate: The <span style="color: #FFCC00;">liberals</span>, mired in electoral ruin, lack the resources or energy to field a candidate of their own. They have thrown their support behind [+ gnu_candidate +], heavily influenced by pro-Staal elements and propaganda that has resonated especially strongly with their rank-and-file. Many within the party now see it as their national duty to support Staal and his successor, believing this to be the only path toward restoring the Commonwealth’s great power status abroad and securing concessions at home. ?]
+[? if heuss_run: The <span style="color: #FFCC00;">liberals</span> are running Theodor Hewes—a journalist and vocal supporter of the Unity Republic, and a staunch anti-Staalist within his own party. This stance has put him at odds with more pro-Staal elements in the Commonwealth middle class. While unlikely to secure significant support, Hewes has positioned himself as a "Unity" unity candidate in opposition to [+ gnu_candidate +]. ?][? if not heuss_run and ddp_candidate == unionist_candidate and unionist_candidate != gnu_candidate: The <span style="color: #FFCC00;">liberals</span>, mired in electoral ruin, lack the resources or energy to field a candidate of their own. Instead, they have thrown their support behind [+ unionist_candidate +] as the propertied alternative to Staal. However, their backing is far from solid—pro-Staal elements remain rogue, as his message of national solidarity continues to resonate with the historically nationalist Commonwealth liberal movement. ?][? if not heuss_run and ddp_candidate == gnu_candidate: The <span style="color: #FFCC00;">liberals</span>, mired in electoral ruin, lack the resources or energy to field a candidate of their own. They have thrown their support behind [+ gnu_candidate +], heavily influenced by pro-Staal elements and propaganda that has resonated especially strongly with their rank-and-file. Many within the party now see it as their national duty to support Staal and his successor, believing this to be the only path toward restoring the Commonwealth’s great power status abroad and securing concessions at home. ?]
 
 - @candidates_spd
 
@@ -301,7 +301,7 @@ We implore the [? if unionist_party_name != "Concord": <span style="color: #0000
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-Unfortunately, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not convinced. [? if unionist_candidate == gnu_candidate : This is hardly surprising—they’ve become a <i>Blocpartei</i> at this point.  ?]
+Unfortunately, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not convinced. [? if unionist_candidate == gnu_candidate : This is hardly surprising—they’ve become a <i>bloc party</i> at this point.  ?]
 
 @z_success
 on-arrival: unionist_candidate = marcher_candidate; center_bvp_votes = 1 if unionist_relation < 50; gold_candidate_switch = 1 if gold_candidate != gnu_candidate and gold_candidate == marcher_candidate; gold_candidate = gnu_candidate if gold_candidate == marcher_candidate
@@ -597,7 +597,7 @@ go-to: election_end
 @hammerstein_win
 on-arrival: hammerstein_win = 1
 
-With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Lyle Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Reichskommissar</i>. ?]
+With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Lyle Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Commonwealth Commissioner</i>. ?]
 
 - @game_over: Game over.
 

@@ -3352,19 +3352,19 @@ if (Q.gold_leader == "Dingeldey" && !Q.lvp_formed && Q.traditionalist_ideology =
     if (!Q.bruning_time) Q.landed_gold *= 0.8;
 }
 
-// historical route, ddp is right-wing and doesn't care about socialist cooperation as much, bourgeois parliament with ddp
+// historical route, ddp is right-wing and doesn't care about socialist cooperation as much, propertied parliament with ddp
 if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && Q.ddp_ideology == "Right" && Q.ddp_relation < 45 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger = 1;
 }
 
-// historical route, trigger_1 = bourgeois parliament without ddp || otherwise historical failure due to skeptics in the cnblp and wp
+// historical route, trigger_1 = propertied parliament without ddp || otherwise historical failure due to skeptics in the cnblp and wp
 if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation >= 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger_1 = 1;
 } else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Dingeldey") && (Q.ddp_ideology != "Right" || Q.ddp_ideology == "Right" && Q.ddp_relation >= 45) && Q.bourgeois_cooperation < 5 && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_negotiations_fail = 1;
 }
 
-// a-historical route, dvp isn't scholz and somewhat cares about socialist cooperation, higher lib cooperation leads to liberal parliamentary group, potentially forming lvp || otherwise bourgeois parliament with ddp
+// a-historical route, dvp isn't scholz and somewhat cares about socialist cooperation, higher lib cooperation leads to liberal parliamentary group, potentially forming lvp || otherwise propertied parliament with ddp
 if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
     Q.bourgeois_parliament_trigger_2 = 1;
 } else if (Q.bourgeois_negotiations_1930_timer == 4 && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.bourgeois_cooperation >= Q.liberal_cooperation && !Q.bourgeois_negotiations_election_soon && !Q.lvp_formed && !Q.dstp_formed) {
@@ -3624,7 +3624,7 @@ if (Q.bourgeois_negotiations_1930_timer == 3 && Q.bourgeois_parliament_trigger_e
     }
 }
 
-// a-historical route, lvp is formed and agreement is between minor bourgeois parties only || otherwise it fails
+// a-historical route, lvp is formed and agreement is between minor propertied parties only || otherwise it fails
 if (Q.bourgeois_negotiations_1930_timer == 4 && Q.lvp_formed && !Q.bourgeois_negotiations_election_soon && Q.bourgeois_cooperation >= 5) {
     Q.bourgeois_parliament = 1;
     Q.bourgeois_cooperation += 5;
@@ -3637,7 +3637,7 @@ if (Q.bourgeois_negotiations_1930_timer == 4 && Q.lvp_formed && Q.bourgeois_nego
     Q.bourgeois_cooperation += 3;
 }
 
-// a-historical route, liberal parliament is formed instead of a bourgeois parliament, for flavour text only
+// a-historical route, liberal parliament is formed instead of a propertied parliament, for flavour text only
 if (Q.bourgeois_negotiations_1930_timer == 4 && !Q.bourgeois_negotiations_election_soon && (Q.gold_leader != "Eikenvorst" && Q.gold_leader != "Dingeldey") && Q.liberal_cooperation >= Q.bourgeois_cooperation && !Q.lvp_formed) {
     Q.bourgeois_negotiations_fail_liberal = 1;
 }

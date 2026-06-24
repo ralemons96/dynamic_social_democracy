@@ -224,9 +224,9 @@ if (Q.unionist_local_elections_vote + Q.ddp_local_elections_vote + Q.gold_local_
 
 [? if collectivist_local_elections_vote + sapd_local_elections_vote >= 16: The gains made by the <span style="color: #700000;">**Collectivists**</span> have left our grassroots clamoring for a United Left coalition, as our local-level relations are far more cooperative than those between our national leaderships. ?]
 
-[? if bourgeois_local_win: The bourgeois parties have performed unexpectedly well in these elections, despite expectations that the economic crisis would push voters toward the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. This is expected to revitalize the bourgeois parties on the national stage. ?]
+[? if bourgeois_local_win: The propertied parties have performed unexpectedly well in these elections, despite expectations that the economic crisis would push voters toward the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. This is expected to revitalize the propertied parties on the national stage. ?]
 
-[? if bourgeois_local_concord_win: The bourgeois parties, especially the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, have performed unexpectedly well in these elections, defying expectations that the economic crisis would drive voters toward the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. As one of their first electoral tests, the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has enjoyed clear success so far. ?]
+[? if bourgeois_local_concord_win: The propertied parties, especially the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, have performed unexpectedly well in these elections, defying expectations that the economic crisis would drive voters toward the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. As one of their first electoral tests, the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has enjoyed clear success so far. ?]
 
 [? if bruning_time and royalist_local_elections_vote >= 20 and president == "DuFour": These results are likely the final nail in the coffin for Askew's government, as President DuFour loses confidence in him. It is likely that someone even more right-wing than Askew will replace him, given the nation's continued political shift to the right. ?]
 
@@ -613,9 +613,9 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 Traffic Light Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span>): [+ marcher_coalition_bavaria +]% 
 
-[? if not kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_bavaria +]% ?]
+[? if not kvp_formed: Propertied Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_bavaria +]% ?]
 
-[? if kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
+[? if kvp_formed: Propertied Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
 
 @bavaria_coalition_menu
 
@@ -636,7 +636,7 @@ view-if: bourgeois_coalition_bavaria < 50
 on-arrival: bavaria_minority_bvp = 1; pro_republic -= 2; faithful_royalist -= 2
 go-to: election_menu
 
-Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other bourgeois parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Catholics. ?]
+Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other propertied parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Catholics. ?]
 
 Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
@@ -647,7 +647,7 @@ view-if: unionist_r_bavaria >= 50
 on-arrival: bavaria_bvp = 1; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; faithful_royalist -= 2; burgher_unionist += 2; guild_unionist += 2; faithful_other += 2; landed_unionist += 2; pro_republic += 1
 go-to: election_menu
 
-The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the bourgeois parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though.
+The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the propertied parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though.
 
 Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
@@ -661,13 +661,13 @@ go-to: election_menu
 How the hell.
 
 @bvp_coalition
-title: The <span style="color: #A2D8E0;">**Arcanists**</span> coalitions with the <span style="color: #38C538;">Avrizan Peasants’ League</span> and various bourgeois parties.
+title: The <span style="color: #A2D8E0;">**Arcanists**</span> coalitions with the <span style="color: #38C538;">Avrizan Peasants’ League</span> and various propertied parties.
 subtitle: The <span style="color: #A2D8E0;">Arcanists</span> will make amends with the <span style="color: #38C538;">farmers</span>.
 view-if: bourgeois_coalition_bavaria >= 50
 on-arrival: bavaria_bvp = 1; burgher_royalist -= 2; guild_royalist -= 2; faithful_royalist -= 2; landed_royalist -= 3; landed_other += 3; pro_republic += 3
 go-to: election_menu
 
-The former incumbent coalition consisting of the <span style="color: #A2D8E0;">**Arcanists**</span>, <span style="color: #38C538;">Avrizan Peasants’ League</span>, and the various smaller bourgeois parties has continued. This show of stability will weaken the <span style="color: #7A3C00;">Royalists</span>.
+The former incumbent coalition consisting of the <span style="color: #A2D8E0;">**Arcanists**</span>, <span style="color: #38C538;">Avrizan Peasants’ League</span>, and the various smaller propertied parties has continued. This show of stability will weaken the <span style="color: #7A3C00;">Royalists</span>.
 
 Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
@@ -682,7 +682,7 @@ go-to: election_menu
 We have somehow managed to capture a majority in the state Assembly, and have put our Minister-President as the head of the most conservative state in the country. Hopefully this doesn't end badly like last time. Avriza has been governed by the political right ever since 4286, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and aggressively counter the <span style="color: #7A3C00;">**Loyalists**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Held government had mostly ignored ?].
 
 @spd_coalition
-title: The <span style="color: #c00000;">**Marchers**</span> will form a coalition government with the bourgeois parties.
+title: The <span style="color: #c00000;">**Marchers**</span> will form a coalition government with the propertied parties.
 subtitle: The <span style="color: #38C538;">Avrizan Peasants’ League</span> had a falling out right? Let's utilize our contacts with their left wing. -1 resource
 unavailable-subtitle: [? if marcher_coalition_bavaria < 50: <span style="color: #c00000;">Marchers</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span> ([+ marcher_coalition_bavaria +]%)  ?][? if resources < 1: - Not enough resources (need 1). ?]
 choose-if: marcher_coalition_bavaria >= 50 and resources >= 1
@@ -1088,9 +1088,9 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 [? if not concord_formed: Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #000000;">**[+ unionist_party_name +]**</span>): [+ marcher_coalition_wurttemberg +]% ?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_wurttemberg +]% ?]
 
-[? if not kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others**[? if traditionalist_ideology == "Moderate" and not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_wurttemberg +]% ?]
+[? if not kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others**[? if traditionalist_ideology == "Moderate" and not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_wurttemberg +]% ?]
 
-[? if kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
+[? if kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
 
 [? if( ddp_wurttemberg_elections_vote + gold_wurttemberg_elections_vote < 8 and not lvp_formed) or (lvp_wurttemberg_elections_vote < 12 and lvp_formed): The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> [? if gold_exist: and <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] have suffered a major defeat, losing a significant number of seats compared to 1928. This will severely demoralize the <span style="color: #FFCC00;">liberals</span>, who had hoped to maintain their traditional stronghold over Purl. Combined with other local elections, the <span style="color: #FFCC00;">liberal parties</span> are essentially dead as an effective political force. ?]
 
@@ -1129,7 +1129,7 @@ go-to: election_menu
 Damn that's crazy. Look dude I don't know what to write for this.
 
 @bourgeois_coalition_wurttemberg
-title: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] coalitions with the <span style="color: #006400;">**WBWB**</span>, the <span style="color: #FFCC00;">liberals</span>, and other minor bourgeois parties.
+title: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] coalitions with the <span style="color: #006400;">**WBWB**</span>, the <span style="color: #FFCC00;">liberals</span>, and other minor propertied parties.
 subtitle: This is the incumbent coalition.
 view-if: bourgeois_coalition_wurttemberg >= 50
 on-arrival: wurttemberg_right = 1; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; landed_other += 4; pro_republic += 2; faithful_royalist -= 3; faithful_unionist += 2; faithful_other += 1;
@@ -1183,4 +1183,4 @@ view-if: left_coalition_wurttemberg >= 50 and (collectivist_relation >= 50 and c
 on-arrival: wurttemberg_marcher = 1; wurttemberg_collectivist = 1; unionist_relation -= 3; ddp_relation -= 3; gold_relation -= 3; lvp_relation -= 3; coup_progress += 3
 go-to: election_menu
 
-Even as the forces of the bourgeoisie have remained numerous in the state Assembly, the newly unified <span style="color: #700000;">Left</span> has triumphed over the reigning coalition and inserted ourselves into a new <span style="color: #c00000;">Red</span> Purl. Of course, the rabidly anti-<span style="color: #c00000;">Reformist</span> nature of the previous government does not make this transition easy, with mass purges of the police force to ensure that we can retain our influence with <span style="color: #700000;">collectivist</span> assistance. We can expect that <span style="color: #3E88B3;">**Wardens**</span> units, met with such a loss in the elections, will soon bring their fury to the stairs of the Assembly.
+Even as the forces of the Burghers have remained numerous in the state Assembly, the newly unified <span style="color: #700000;">Left</span> has triumphed over the reigning coalition and inserted ourselves into a new <span style="color: #c00000;">Red</span> Purl. Of course, the rabidly anti-<span style="color: #c00000;">Reformist</span> nature of the previous government does not make this transition easy, with mass purges of the police force to ensure that we can retain our influence with <span style="color: #700000;">collectivist</span> assistance. We can expect that <span style="color: #3E88B3;">**Wardens**</span> units, met with such a loss in the elections, will soon bring their fury to the stairs of the Assembly.

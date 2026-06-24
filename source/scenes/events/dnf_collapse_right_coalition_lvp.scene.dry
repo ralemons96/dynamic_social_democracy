@@ -9,15 +9,15 @@ max-visits: 1
 
 When Mallin established his own party, he successfully attracted a significant number of former <span style="color: #3E88B3;">**Traditionalists**</span> Assembly members to join his party and to oppose the current right-wing coalition. The current government lacks a majority within the Assembly and may be taken down with a no-confidence vote.
 
-We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party.
+We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining propertied parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party.
 
-- @bourgeois
+- @propertied
 - @vonc_yes
 - @vonc_no  
 - @no_matter
 
-@bourgeois
-title: A bourgeois coalition shall be formed.
+@propertied
+title: A propertied coalition shall be formed.
 subtitle: The coalition will live for another day.
 view-if: bourgeois_coalition >= 50
 on-arrival: marcher_in_government = 0; in_center_right_coalition = 0; in_right_coalition = 0; guild_dnf -= 2; landed_dnf -= 2; ddp_right += 2; ddp_cohesion -= 1.5; liberal_cooperation += 3; bourgeois_cooperation += 10; secret_mode = 1
@@ -37,7 +37,7 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 
 @vonc_no
 title: Oppose the vote of no confidence, voting for the government.
-subtitle: We would essentially provide "toleration" to a bourgeois government.
+subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: cordon_sanitaire >= 50 and right_coalition < 50
 choose-if: (reformist_strength >= center_strength + left_strength)
 unavailable-subtitle: [? if (center_strength + left_strength >= reformist_strength) : Most of the party is in complete opposition to this. ?]

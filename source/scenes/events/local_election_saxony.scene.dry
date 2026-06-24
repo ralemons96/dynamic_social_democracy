@@ -515,7 +515,7 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ASPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
 
-Bourgeois Coalition ([? if aspd_r_saxony: <span style="color: #fe9e00;">**ASPD**</span> + ?][? if unionist_r_saxony: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #11DD11;">**SLV**</span> + <span style="color: #b8996f;">**WP**</span> + <span style="color: #0075EB;">**VRP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ true_bourgeois_coalition_saxony +]%
+Propertied Coalition ([? if aspd_r_saxony: <span style="color: #fe9e00;">**ASPD**</span> + ?][? if unionist_r_saxony: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #11DD11;">**SLV**</span> + <span style="color: #b8996f;">**WP**</span> + <span style="color: #0075EB;">**VRP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ true_bourgeois_coalition_saxony +]%
 
 Right-Wing Coalition ([? if aspd_r_saxony: <span style="color: #fe9e00;">**ASPD**</span> + ?][? if unionist_r_saxony: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #11DD11;">**SLV**</span> + <span style="color: #b8996f;">**WP**</span> + <span style="color: #0075EB;">**VRP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ bourgeois_coalition_saxony +]%
 
@@ -569,9 +569,9 @@ if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lv
 !}
 
 <hr id="read-marker">
-The bourgeois parties have historically been hostile to us in state politics, particularly after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. The split of our reformist wing into the <span style="color: #fe9e00;">**ASPD**</span> further pushed our state organization toward the left.
+The propertied parties have historically been hostile to us in state politics, particularly after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. The split of our reformist wing into the <span style="color: #fe9e00;">**ASPD**</span> further pushed our state organization toward the left.
 
-[? if aspd_saxony_elections_vote <= 3: With the <span style="color: #fe9e00;">**ASPD**</span>'s disastrous result of [+ aspd_saxony_elections_vote +]%, their viability as a political force in the state is coming to an end, with bourgeois parties are seeking a replacement for Max Heldt. ?][? if aspd_saxony_elections_vote > 3: The <span style="color: #fe9e00;">**ASPD**</span> has not suffered the decline we thought it would, winning [+ aspd_saxony_elections_vote +]% of the vote. Whether Max Heldt remains is up to the bourgeois parties. ?] Despite our cooperation on the local level, the national <span style="color: #700000;">**Collectivists**</span> is unlikely to ever accept a coalition.
+[? if aspd_saxony_elections_vote <= 3: With the <span style="color: #fe9e00;">**ASPD**</span>'s disastrous result of [+ aspd_saxony_elections_vote +]%, their viability as a political force in the state is coming to an end, with propertied parties are seeking a replacement for Max Heldt. ?][? if aspd_saxony_elections_vote > 3: The <span style="color: #fe9e00;">**ASPD**</span> has not suffered the decline we thought it would, winning [+ aspd_saxony_elections_vote +]% of the vote. Whether Max Heldt remains is up to the propertied parties. ?] Despite our cooperation on the local level, the national <span style="color: #700000;">**Collectivists**</span> is unlikely to ever accept a coalition.
 
 - @true_bourgeois_coalition_saxony
 - @bourgeois_coalition_saxony
@@ -584,10 +584,10 @@ The bourgeois parties have historically been hostile to us in state politics, pa
 @toleration_saxony
 title: We will enter a toleration agreement with the incumbent government.
 choose-if: toleration_possible_saxony and left_strength < 30
-unavailable-subtitle: [? if not toleration_possible_saxony: The bourgeois parties won't even accept our toleration. ?][? if left_strength >= 30: Our Dornish organization is too left-wing to even consider this as an option. With the reformists having largely split into the <span style="color: #fe9e00;">ASPD</span>, the left wing is dominant. ?]
+unavailable-subtitle: [? if not toleration_possible_saxony: The propertied parties won't even accept our toleration. ?][? if left_strength >= 30: Our Dornish organization is too left-wing to even consider this as an option. With the reformists having largely split into the <span style="color: #fe9e00;">ASPD</span>, the left wing is dominant. ?]
 on-arrival: saxony_toleration = 1; guild_royalist -= 1; landed_royalist -= 1; commons_marcher += 1; commons_collectivist += 2; left_dissent += 10
 
-We have entered a toleration agreement with the bourgeois cabinet, and have made it unnecessary for them to cooperate with the <span style="color: #7A3C00;">**Royalists**</span>. As part of our agreement, the bourgeois parties have allowed Max Heldt to retain his Minister-President position, and for the <span style="color: #fe9e00;">**ASPD**</span> to occupy the Work and Welfare	ministry. 
+We have entered a toleration agreement with the propertied cabinet, and have made it unnecessary for them to cooperate with the <span style="color: #7A3C00;">**Royalists**</span>. As part of our agreement, the propertied parties have allowed Max Heldt to retain his Minister-President position, and for the <span style="color: #fe9e00;">**ASPD**</span> to occupy the Work and Welfare	ministry. 
 
 Despite the unsavory qualities of the <span style="color: #fe9e00;">**ASPD**</span>, they're still Vaelist at the end of the day. The leftist Dornish organization has protested at our intervention, and many have jumped ship to the <span style="color: #700000;">**Collectivists**</span>.
 
@@ -600,7 +600,7 @@ on-arrival: saxony_right = 1; saxony_leader = "Heldt"; pro_republic += 1; landed
 The surprisingly good results for the incumbent coalition[? if aspd_saxony_elections_vote >= 4:&nbsp;and <span style="color: #fe9e00;">**ASPD**</span>?] have allowed them and Heldt to continue governing. The <span style="color: #7A3C00;">**Royalists**</span> is discouraged by this defeat, as they had hoped to use their gains to influence the government.
 
 @bourgeois_coalition_saxony
-title: A bourgeois coalition is formed.
+title: A propertied coalition is formed.
 subtitle: The incumbent coalition, which will survive on toleration from the <span style="color: #7A3C00;">**Royalists**</span>.
 view-if: bourgeois_coalition_saxony >= 50 and true_bourgeois_coalition_saxony < 50
 on-arrival: saxony_right = 1; saxony_leader = "Bünger"; saxony_irl = 1
@@ -611,13 +611,13 @@ Despite the exclusion of many supporting parties from the cabinet in favor of no
 
 @grand_coalition_saxony
 title: A [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition is formed!
-subtitle: We have somehow reconciled with the bourgeois parties, that they're willing to govern with us again.
+subtitle: We have somehow reconciled with the propertied parties, that they're willing to govern with us again.
 unavailable-subtitle: [? if unionist_relation < 50 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?][? if left_strength >= 15: Our Dornish organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ASPD</span>. ?]
 view-if: marcher_coalition_saxony >= 50
 choose-if: marcher_coalition_possible_saxony and left_strength < 15
 on-arrival: saxony_marcher = 1; saxony_groko = 1; commons_royalist -= 3; disfavored_royalist -= 3; commons_marcher += 3; disfavored_marcher += 3; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; gold_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; aspd_dead = 1
 
-Somehow, the bourgeois parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, rather than continuing their current government with Max Heldt and the right-wing parties.
+Somehow, the propertied parties are willing to form a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, rather than continuing their current government with Max Heldt and the right-wing parties.
 
 With the <span style="color: #fe9e00;">**ASPD**</span> (whose Dornish chapter is notably more sane) now convinced of our reformist path, they have rejoined the Dornish <span style="color: #c00000;">**Marchers**</span>!
 
@@ -645,7 +645,7 @@ As one of the most left-wing and industrial states in the Commonwealth, we will 
 
 @no_majority
 title: No majority can be found!
-subtitle: [? if bourgeois_coalition_saxony < 50 and marcher_coalition_saxony < 50: All possible coalitions lack a majority. ?][? if marcher_coalition_saxony >= 50 and not marcher_coalition_possible_saxony: The bourgeois parties are antagonistic to our Dornish organization. ?][? if marcher_coalition_saxony >= 50 and left_strength >= 15: Our party itself rejects the possibility of a majority coalition with the liberals. ?]
+subtitle: [? if bourgeois_coalition_saxony < 50 and marcher_coalition_saxony < 50: All possible coalitions lack a majority. ?][? if marcher_coalition_saxony >= 50 and not marcher_coalition_possible_saxony: The propertied parties are antagonistic to our Dornish organization. ?][? if marcher_coalition_saxony >= 50 and left_strength >= 15: Our party itself rejects the possibility of a majority coalition with the liberals. ?]
 view-if: bourgeois_coalition_saxony < 50 and (not marcher_coalition_possible_saxony or left_strength >= 15)
 on-arrival: {!
 let dvp_toleration_threshold = 30;
@@ -680,7 +680,7 @@ if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_rel
 }
 !}
 
-With the bourgeois parties unable to secure a majority even with the toleration of the <span style="color: #7A3C00;">**Royalists**</span>, and their refusal to form a coalition with us, no viable majority can be established. The ruling coalition fears that calling new elections will only accelerate their decline and further erode their support.
+With the propertied parties unable to secure a majority even with the toleration of the <span style="color: #7A3C00;">**Royalists**</span>, and their refusal to form a coalition with us, no viable majority can be established. The ruling coalition fears that calling new elections will only accelerate their decline and further erode their support.
 
 In an effort to avoid this, they are more open to negotiating a toleration agreement.
 
@@ -689,7 +689,7 @@ In an effort to avoid this, they are more open to negotiating a toleration agree
 
 @no_majority_2
 title: A majority still can't be found!
-subtitle: [? if not toleration_possible_saxony: This is getting ridiculous. ?][? if toleration_possible_saxony: We will refuse to tolerate the bourgeois government, forcing new elections. ?]
+subtitle: [? if not toleration_possible_saxony: This is getting ridiculous. ?][? if toleration_possible_saxony: We will refuse to tolerate the propertied government, forcing new elections. ?]
 on-arrival: saxony_election_2_trigger_time = time + 3; saxony_no_majority = 1 if not saxony_no_majority; saxony_no_majority += 1 if saxony_no_majority; burgher_royalist += 2; guild_royalist += 2; landed_royalist += 1; disfavored_royalist += 2; pro_republic -= 3; burgher_marcher -= 2 if toleration_possible_saxony; guild_marcher -= 2 if toleration_possible_saxony; landed_marcher -= 1 if toleration_possible_saxony
 
 A coalition of all the parties to the right of the <span style="color: #c00000;">**Marchers**</span> isn't possible, and the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] is refusing any form of a Unity Coalition including us.
@@ -704,4 +704,4 @@ subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -= 3; pro_republic += 5
 
-Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a government of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the bourgeois and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the <span style="color: #700000;">**Collectivists**</span>... [? if aspd_share > 0: The <span style="color: #fe9e00;">**ASPD**</span> seeing as we no longer require on coalition negotiations to form government has decided to join us. ?] 
+Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a government of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the propertied and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the <span style="color: #700000;">**Collectivists**</span>... [? if aspd_share > 0: The <span style="color: #fe9e00;">**ASPD**</span> seeing as we no longer require on coalition negotiations to form government has decided to join us. ?] 

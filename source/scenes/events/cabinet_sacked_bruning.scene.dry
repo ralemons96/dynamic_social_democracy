@@ -32,14 +32,14 @@ Replacing us is a cabinet to encompassing the right-wing parties, including the 
 @bruning_chain
 on-arrival: marcher_in_government = 0; minority_government = 1; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; coalition_dissent = 0; chancellor = "Askew"; chancellor_party = "Unionist"; foreign_minister_party = "Gold"; foreign_minister_party = "LVP" if lvp_formed; interior_minister_party = "Unionist"; justice_minister_party = "I"; labor_minister_party = "Unionist"; army_minister_party = "I"; economic_minister_party = ddp_name; economic_minister_party = "LVP" if lvp_formed; finance_minister_party = "Gold"; finance_minister_party = "LVP" if lvp_formed; agriculture_minister_party = "Unionist"; bruning_event_timer = 6 if not bruning_event_seen and year >= 1930
 
-Replacing us is a new cabinet encompassing solely the bourgeois parties. [? if bruning_event_seen or year < 1930: Although they lack a majority in the Assembly, we could tolerate their government at the next session to prevent new elections, effectively acquiescing to DuFour's wishes. ?][? if not bruning_event_seen and year >= 1930: New elections haven't been called yet but it's likely that they will be soon, considering Askew most likely doesn't have the majority of the Assembly behind him. ?]
+Replacing us is a new cabinet encompassing solely the propertied parties. [? if bruning_event_seen or year < 1930: Although they lack a majority in the Assembly, we could tolerate their government at the next session to prevent new elections, effectively acquiescing to DuFour's wishes. ?][? if not bruning_event_seen and year >= 1930: New elections haven't been called yet but it's likely that they will be soon, considering Askew most likely doesn't have the majority of the Assembly behind him. ?]
 
 - @tolerate
 - @dont_tolerate
 
 @tolerate
 title: Oppose any votes of no confidence, voting for the government.
-subtitle: We would essentially provide "toleration" to a bourgeois government.
+subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: bruning_event_seen or year < 1930
 on-arrival: marcher_toleration = 1; left_dissent += 10; pro_republic -= 3; commons_collectivist += 3; commons_royalist += 3; commons_marcher -= 3; disfavored_collectivist += 5; disfavored_royalist += 3; disfavored_marcher -= 5; gold_right += 2; ddp_right += 1; lvp_right += 2; liberal_cooperation += 1; welfare -= 2
 

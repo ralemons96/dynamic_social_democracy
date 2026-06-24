@@ -460,7 +460,7 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_thuringia:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_thuringia +]% 
 
-Bourgeois Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
+Propertied Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
 
 Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>[? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #003755;">**DNF**</span> ?] + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition_thuringia +]%
 
@@ -495,9 +495,9 @@ if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lv
 !}
 
 <hr id="read-marker">
-The bourgeois parties have historically been hostile to us in state politics, especially after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #D47B9B;">**USPD**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. They still haven't forgiven the <span style="color: #c00000;">**Marchers**</span> for this. 
+The propertied parties have historically been hostile to us in state politics, especially after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #D47B9B;">**USPD**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. They still haven't forgiven the <span style="color: #c00000;">**Marchers**</span> for this. 
 
-Meanwhile, the surging <span style="color: #7A3C00;">**Royalists**</span>, now controlling [+ royalist_r_thuringia +]% of the state Assembly, is no longer content with mere toleration and demands a role in government. With the bourgeois parties determined to exclude us from power, Stathmore may well become the first state to appoint a <span style="color: #7A3C00;">Royalist</span> minister.
+Meanwhile, the surging <span style="color: #7A3C00;">**Royalists**</span>, now controlling [+ royalist_r_thuringia +]% of the state Assembly, is no longer content with mere toleration and demands a role in government. With the propertied parties determined to exclude us from power, Stathmore may well become the first state to appoint a <span style="color: #7A3C00;">Royalist</span> minister.
 
 - @toleration_thuringia
 - @far_right_coalition_thuringia
@@ -509,14 +509,14 @@ Meanwhile, the surging <span style="color: #7A3C00;">**Royalists**</span>, now c
 
 
 @toleration_thuringia
-title: The incumbent bourgeois-right government has fallen short of a majority.
+title: The incumbent propertied-right government has fallen short of a majority.
 subtitle: We will offer our toleration to them, to prevent their dependence on the <span style="color: #7A3C00;">**Royalists**</span>.
-unavailable-subtitle: The bourgeois would rather work with <span style="color: #7A3C00;">Royalists</span> than accept our toleration.
+unavailable-subtitle: The propertied would rather work with <span style="color: #7A3C00;">Royalists</span> than accept our toleration.
 choose-if: toleration_possible
 view-if: bourgeois_coalition_thuringia < 50
 on-arrival: thuringia_right = 1; pro_republic -= 1; landed_royalist += 2; guild_royalist += 2; landed_other -= 2; guild_traditionalist -= 2
 
-Surprisingly, through our reconciliation with the bourgeois parties, they have accepted our toleration to prevent the <span style="color: #7A3C00;">**Royalists**</span> from entering government. However, this provides valuable propaganda for the <span style="color: #7A3C00;">Royalists</span>, who gain support at the expense of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #7FCEB1;">**CNBLP**</span>, who are now tainted by their association with us.
+Surprisingly, through our reconciliation with the propertied parties, they have accepted our toleration to prevent the <span style="color: #7A3C00;">**Royalists**</span> from entering government. However, this provides valuable propaganda for the <span style="color: #7A3C00;">Royalists</span>, who gain support at the expense of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #7FCEB1;">**CNBLP**</span>, who are now tainted by their association with us.
 
 @far_right_coalition_thuringia
 title: The incumbent coalition is expanded to include the <span style="color: #7A3C00;">**Royalists**</span>.
@@ -525,7 +525,7 @@ view-if: far_right_coalition_thuringia >= 50 and bourgeois_coalition_thuringia <
 on-arrival: thuringia_royalist = 1; commons_royalist += 2; burgher_royalist += 4; guild_royalist += 6; landed_royalist += 2; disfavored_collectivist -= 2; disfavored_royalist += 2; loyalist_strength += 20; loyalist_militancy += 0.05; heartland_police_loyalty -= 0.05; pro_republic -= 5
 face-image: img/portraits/frick.jpg
 
-Wilhelm Frask, a convicted Beer Hall Putsch participant, becomes the first <span style="color: #7A3C00;">Royalist</span> to hold a ministerial-level post in the Commonwealth. He is given control of the Interior and Education Ministries, and by passing an "Enabling Act" through a simple majority as an emergency decree, granting him the power to radically transform Stathmore.
+Wilhelm Frask, a convicted Avriza putsch participant, becomes the first <span style="color: #7A3C00;">Royalist</span> to hold a ministerial-level post in the Commonwealth. He is given control of the Interior and Education Ministries, and by passing an "Enabling Act" through a simple majority as an emergency decree, granting him the power to radically transform Stathmore.
 
 Gone are the days of <span style="color: #c00000;">Red</span> Stathmore. Suspected <span style="color: #c00000;">Reformists</span> and <span style="color: #D3C24D;">democrats</span> are purged en masse from the civil service. A state police force is established, with Frask preferentially employing <span style="color: #7A3C00;">Royalist</span> officials. All <span style="color: #700000;">collectivist</span> teachers and mayors are dismissed, and newspapers critical of government policy are banned. [? if heartland_leader == "Bristol" and interior_minister_party == "Marcher": Fortunately, Joshua Heath is able to halt the recruitment of <span style="color: #7A3C00;">Royalists</span> into the police force by suspending state subsidies, effectively ending the practice. ?]
 
@@ -541,13 +541,13 @@ Unexpectedly, the parties involved in the incumbent government have gained votes
 
 @grand_coalition_thuringia
 title: A [? if lvp_formed: Unity?][? if not lvp_formed: Grand?] Coalition is formed!
-subtitle: We have somehow reconciled with the bourgeois parties, that they're willing to govern with us again.
+subtitle: We have somehow reconciled with the propertied parties, that they're willing to govern with us again.
 unavailable-subtitle: [? if unionist_relation < 60 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?]
 view-if: marcher_coalition_thuringia >= 50
 choose-if: marcher_coalition_possible
 on-arrival: thuringia_marcher = 1; landed_royalist -= 2; burgher_royalist -= 2; guild_royalist -= 2; burgher_marcher += 2; guild_marcher += 2; landed_marcher += 2; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; heartland_police_loyalty += 0.03; loyalist_strength -= 25
 
-Somehow, the bourgeois parties are willing to form a [? if lvp_formed: Unity?][? if not lvp_formed: Grand?] Coalition with us, rather than continuing their current government.
+Somehow, the propertied parties are willing to form a [? if lvp_formed: Unity?][? if not lvp_formed: Grand?] Coalition with us, rather than continuing their current government.
 
 We will use our positions in government to root out right-wing and <span style="color: #3E88B3;">nationalist</span> sympathies within the civil service and to strengthen <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sentiment.
 
@@ -585,7 +585,7 @@ We have undertaken the purging of reactionary sentiments within the police, and 
 
 @no_majority
 title: No majority can be found!
-subtitle: [? if bourgeois_coalition_thuringia < 50 and far_right_coalition_thuringia < 50 and marcher_coalition_thuringia < 50: All possible coalitions lack a majority. ?][? if (bourgeois_coalition_thuringia < 50 and not toleration_possible) or (marcher_coalition_thuringia >= 50 and not marcher_coalition_possible): The bourgeois parties still haven't forgiven us. ?]
+subtitle: [? if bourgeois_coalition_thuringia < 50 and far_right_coalition_thuringia < 50 and marcher_coalition_thuringia < 50: All possible coalitions lack a majority. ?][? if (bourgeois_coalition_thuringia < 50 and not toleration_possible) or (marcher_coalition_thuringia >= 50 and not marcher_coalition_possible): The propertied parties still haven't forgiven us. ?]
 view-if: bourgeois_coalition_thuringia < 50 and far_right_coalition_thuringia < 50 and not toleration_possible and not marcher_coalition_possible
 on-arrival: {!
 let dvp_toleration_threshold = 30;
@@ -616,7 +616,7 @@ if (Q.thuringia_no_majority) {
 if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_relation >= lvp_toleration_threshold && Q.lvp_formed)) Q.toleration_possible = 1;
 !}
 
-With the bourgeois parties unable to secure a majority even with the inclusion of the <span style="color: #7A3C00;">**Royalists**</span>, and their refusal to form a coalition with us, no viable majority can be established. The ruling coalition fears that calling new elections will only accelerate their decline and further erode their support.
+With the propertied parties unable to secure a majority even with the inclusion of the <span style="color: #7A3C00;">**Royalists**</span>, and their refusal to form a coalition with us, no viable majority can be established. The ruling coalition fears that calling new elections will only accelerate their decline and further erode their support.
 
 In an effort to avoid this, they are more open to negotiating a toleration agreement.
 
@@ -625,9 +625,9 @@ In an effort to avoid this, they are more open to negotiating a toleration agree
 
 @no_majority_2
 title: A majority still can't be found!
-subtitle: [? if not toleration_possible: This is getting ridiculous. ?][? if toleration_possible: We will refuse to tolerate the bourgeois government, forcing new elections. ?]
+subtitle: [? if not toleration_possible: This is getting ridiculous. ?][? if toleration_possible: We will refuse to tolerate the propertied government, forcing new elections. ?]
 on-arrival: thuringia_election_2_trigger_time = time + 3; thuringia_no_majority = 1 if not thuringia_no_majority; thuringia_no_majority += 1 if thuringia_no_majority; burgher_royalist += 4; guild_royalist += 4; landed_royalist += 2; disfavored_royalist += 4; pro_republic -= 3; burgher_marcher -= 3 if toleration_possible; guild_marcher -= 3 if toleration_possible; landed_marcher -= 2 if toleration_possible
 
-[? if not toleration_possible: The bourgeois parties remain unwilling to accept our offer of toleration. [? if far_right_coalition_thuringia + ddp_r_thuringia >= 50: One option the incumbent coalition has considered is including both the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and the <span style="color: #7A3C00;">**Royalists**</span>, but for obvious reasons, both parties have vetoed this proposal. ?]?][? if toleration_possible: By refusing to enter any toleration agreement, and with the bourgeois parties unwilling to let us lead the government, no majority can be found. As a result, we have shouldered much of the blame for the deadlock and are likely to suffer in the next elections. ?]
+[? if not toleration_possible: The propertied parties remain unwilling to accept our offer of toleration. [? if far_right_coalition_thuringia + ddp_r_thuringia >= 50: One option the incumbent coalition has considered is including both the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and the <span style="color: #7A3C00;">**Royalists**</span>, but for obvious reasons, both parties have vetoed this proposal. ?]?][? if toleration_possible: By refusing to enter any toleration agreement, and with the propertied parties unwilling to let us lead the government, no majority can be found. As a result, we have shouldered much of the blame for the deadlock and are likely to suffer in the next elections. ?]
 
 With no viable alternatives, the state Assembly faces dissolution, triggering new elections—an opportunity the <span style="color: #7A3C00;">**Royalists**</span> hopes to exploit by capitalizing on political instability and the perceived failure of parliamentary democracy.

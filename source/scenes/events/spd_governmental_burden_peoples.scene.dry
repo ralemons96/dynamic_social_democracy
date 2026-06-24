@@ -6,7 +6,7 @@ on-arrival: goal_marcher_cancel_peoples = 0; economy_goal_marcher_peoples = 0; f
 
 = Burden of Government
 
-The weight of governance now falls upon our shoulders. It is our responsibility to maintain the delicate balance of appeasing our coalition partners while advancing our party's agenda. Our voter base consists of a broad array of different classes, but mainly consists of the working-class and the unemployed. They expect us to enact the following policies during our tenure, or we will suffer consequences. [? if labor_minister_party != "Marcher": So far, ceding control of the Labor Ministry to the bourgeois parties has left a poor impression with the workers. ?]
+The weight of governance now falls upon our shoulders. It is our responsibility to maintain the delicate balance of appeasing our coalition partners while advancing our party's agenda. Our voter base consists of a broad array of different classes, but mainly consists of the working-class and the unemployed. They expect us to enact the following policies during our tenure, or we will suffer consequences. [? if labor_minister_party != "Marcher": So far, ceding control of the Labor Ministry to the propertied parties has left a poor impression with the workers. ?]
 
 **Primary Goals**
 

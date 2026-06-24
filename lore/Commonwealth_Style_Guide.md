@@ -32,7 +32,7 @@ fall (Restorationist, Collectivist).
 | bourgeois parties / the propertied right | the Unity Front (Golds + Unionists) / the propertied parties |
 | Social Democrats / the SPD | the Marchers |
 | the left-revisionists / neorevisionists | the Knights |
-| Communists / the KPD / Marxists | the Collectivists |
+| Communists / the KPD | the Collectivists |
 | fascists / Nazis / the far right | the Royalists / the Restorationists |
 | reactionary monarchists / the DNVP | the Traditionalists |
 | "class struggle" | the struggle of the Commons against the merchant-barons, reactionary generals, and old elites (avoid bare Marxist framing) |
@@ -41,6 +41,30 @@ fall (Restorationist, Collectivist).
 | the World War / the Great War | the Two Great Wars (Axton vs Ethia & the Allied States) |
 | the army / the Reichswehr / the General Staff | the Commonwealth Army / the General Staff (Wright, Staal, Ravabelle) |
 | revolution of 1918 / the founding | the Founding (the Commonwealth's birth from the Empire's collapse) |
+
+## Ideology / creed taxonomy (A4 — the in-world -isms)
+The real-world ideologies map to Commonwealth **creeds** (the party names are separate, above —
+these are what parties and characters *profess*):
+| Real-world -ism | Commonwealth creed | Notes |
+|---|---|---|
+| socialism / socialist | **Reformism / Reformist** | the broad-left creed — a more classless society *via* democracy. The Marchers are its party; the Golds & Unionists have moderate-Reformist (left-liberal) wings. |
+| communism / communist | **Collectivism / Collectivist** | "radical, often violent Reformism" — the Collectivists' creed. |
+| Marxism / Marxist / Marx | **Vaelism / Vaelist / Vael** | after **Corwin Vael**, the founding theorist; "**Vael and Bell**" = the theorists (ex-Marx & Engels). The *person* "Wilhelm Marx" is unrelated → renamed **Wilhelm Croft**. |
+| fascism / Nazism / National Socialism | **Imperial Sovereigntism** (adj. **Sovereigntist**) | the Royalists' creed: restore the absolute-Emperor Axton system — power devolved paternalistically to weak advisory assemblies, appointed bureaucrats, and loyal feudal subjects. |
+| (Traditionalist creed) | **Aristocratic Nationalism** | → **Paternal / National Democracy** if they moderate into a parliamentary party; → **Feudal Nationalism** if they hardline. |
+| (Collectivists under the Conciliators) | **Radical Reformism** | drops the violent aspects of true Collectivism. |
+| democracy / democratic; Liberal / Conservative | *(unchanged)* | the Golds & Unionists are "the democratic parties"; Liberal/Conservative = real-world left/right slant (esp. the Golds' wings). |
+
+**Collision fix:** the broad creed is now "Reformism", so the Marchers' moderate internal **faction**
+was renamed **Reformists → Revisionists** (Bernsteinian; pairs with the existing Neorevisionists).
+The `reformist_strength`/`_dissent` variables stay internal.
+
+## Other A4 vocabulary (variables unchanged — display only)
+- **Paramilitary labels**: **SA → the Loyalists**, **RFB → the Vanguard** (`loyalist_strength`/`vanguard_strength` vars stay; Banners/Wardens already done).
+- **State / church terms**: Reichsexekution → **Commonwealth Intervention**; Reichskommissar → **Commonwealth Commissioner**; Reichskonkordat → **Temple Concordat**; the Vatican → **the Temple of the Faithful**.
+- **bourgeois / bourgeoisie** → **propertied** (adj.) / **the Burghers** (the propertied order); `bourgeois_coalition` var stays.
+- **German loanwords**: Volksgemeinschaft → "national community"; Mittelstand → "middle class"; Gleichschaltung → "consolidation"; the Kapp / Beer-Hall Putsch → the officers' / Avriza putsch.
+- **Library**: the German party-name italics (*Sozialdemokratische Partei…* etc.) are cut, keeping the English formal name.
 
 ## Lore hooks (weave in where natural — don't force)
 - **The magi** — a distrusted caste among the Disfavored; great workings invoke the dead God-Emperor, so open spellcraft reads as royalist. **Arcanists** (mage-circles) and **Eternals** (wealthy undead) lean monarchist; ordinary magi are apolitical. (Mechanics: `magi_balance`.)

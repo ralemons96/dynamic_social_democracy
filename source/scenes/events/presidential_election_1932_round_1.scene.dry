@@ -701,7 +701,7 @@ There is no majority in this round. In the second round, any candidate who wins 
 
 [? if gallax_support_dufour : In order to consolidate the vote for the <span style="color: #808080;">right</span>, and to prevent a <span style="color: #c00000;">Reformist</span> from becoming president, <span style="color: #7A3C00;">[+ royalist_candidate_1932 +]</span> is no longer running in the second round, and has switched his endorsement to <span style="color: #808080;">DuFour</span>. ?]
 
-[? if lib_drop_out_bourgeois : In order to consolidate the bourgeois electorate around a single candidate, [+ liberal_reactionary_candidate_1932_name +] has withdrawn from the race and endorsed [+ center_reactionary_candidate_1932_name +]. ?][? if unionist_drop_out_bourgeois : In order to consolidate the bourgeois electorate around a single candidate, [+ center_reactionary_candidate_1932_name +] has withdrawn from the race and endorsed [+ liberal_reactionary_candidate_1932_name +]. ?]
+[? if lib_drop_out_bourgeois : In order to consolidate the propertied electorate around a single candidate, [+ liberal_reactionary_candidate_1932_name +] has withdrawn from the race and endorsed [+ center_reactionary_candidate_1932_name +]. ?][? if unionist_drop_out_bourgeois : In order to consolidate the propertied electorate around a single candidate, [+ center_reactionary_candidate_1932_name +] has withdrawn from the race and endorsed [+ liberal_reactionary_candidate_1932_name +]. ?]
 
 @round2_menu
 on-arrival: {!
@@ -814,7 +814,7 @@ view-if: not lvp_formed and gold_exist and eckener_campaign and not gold_support
 max-visits: 1
 go-to: convince_dvp_success_eckener if (gold_relation >= 70 and gold_ideology == "Right") or (gold_relation >= 60 and gold_ideology == "Moderate") or (gold_relation >= 50 and gold_ideology == "Left"); convince_dvp_fail_eckener if not ((gold_relation >= 70 and gold_ideology == "Right") or (gold_relation >= 60 and gold_ideology == "Moderate") or (gold_relation >= 50 and gold_ideology == "Left"))
 
-The <span style="color: #C0A054;">**Golds**</span> will be the most difficult of the bourgeois parties to convince, given their preference to keep their distance from us. However, Eckhart’s status as a non-partisan conservative presents a unique opportunity to win them over.
+The <span style="color: #C0A054;">**Golds**</span> will be the most difficult of the propertied parties to convince, given their preference to keep their distance from us. However, Eckhart’s status as a non-partisan conservative presents a unique opportunity to win them over.
 
 @convince_dvp_success_eckener
 on-arrival: gold_support_marcher = 1; gold_left += 3; gold_relation += 5
@@ -972,7 +972,7 @@ unavailable-subtitle: Not enough resources (need 3).
 on-arrival: resources -= 3; collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: round2_menu
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Bristol in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses Bristol in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters.
 
 @r2_kpd_relations
 view-if: collectivist_relation >= 70 or (collectivist_leader == "Conciliators" and collectivist_relation >= 50)
@@ -980,14 +980,14 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: round2_menu
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Bristol in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters. 
+The <span style="color: #700000;">**Collectivists**</span> now endorses Bristol in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters. 
 
 @round2_convince_ddp
 view-if: not lvp_formed and marcher_campaign > 0 and ddp_support_marcher != 1 and not eckener_campaign and not rosenfeld_campaign
 max-visits: 1
 go-to: convince_ddp_success if (((ddp_relation >= 55 and ddp_ideology == "Right" or dstp_maintained) or (ddp_relation >= 45 and ddp_ideology == "Moderate" and not dstp_maintained) or (ddp_relation >= 35 and ddp_ideology == "Left" and not dstp_maintained)) and not gallax_support_dufour) or (((ddp_relation >= 50 and ddp_ideology == "Right" or dstp_maintained) or (ddp_relation >= 40 and ddp_ideology == "Moderate" and not dstp_maintained) or (ddp_relation >= 30 and ddp_ideology == "Left" and not dstp_maintained)) and gallax_support_dufour); convince_ddp_fail if not ((((ddp_relation >= 55 and ddp_ideology == "Right" or dstp_maintained) or (ddp_relation >= 45 and ddp_ideology == "Moderate" and not dstp_maintained) or (ddp_relation >= 35 and ddp_ideology == "Left" and not dstp_maintained)) and not gallax_support_dufour) or (((ddp_relation >= 50 and ddp_ideology == "Right" or dstp_maintained) or (ddp_relation >= 40 and ddp_ideology == "Moderate" and not dstp_maintained) or (ddp_relation >= 30 and ddp_ideology == "Left" and not dstp_maintained)) and gallax_support_dufour))
 
-The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has always been the most friendly of the bourgeois parties, hopefully reminding them of our successes in Unity coalitions will help convince them. [? if gallax_support_dufour: Furthermore, the withdrawal of [+ royalist_candidate_1932 +] in favor of DuFour has led them to distance themselves from him. ?]
+The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has always been the most friendly of the propertied parties, hopefully reminding them of our successes in Unity coalitions will help convince them. [? if gallax_support_dufour: Furthermore, the withdrawal of [+ royalist_candidate_1932 +] in favor of DuFour has led them to distance themselves from him. ?]
 
 @convince_ddp_success
 on-arrival: ddp_support_marcher = 1; ddp_left += 2; ddp_cohesion -= 1; ddp_relation += 4
@@ -1063,7 +1063,7 @@ Supporting Halsmark is rather unpopular in our party, even if the <span style="c
 on-arrival: marcher_campaign = 0; marcher_support_thalmann = 1; reformist_dissent += 20; center_dissent += 15; labor_dissent += 10; knight_dissent += 15; faithful_marcher -= 5; commons_marcher -= 3; commons_collectivist += 5; collectivist_relation += 10; communist_coalition += 2; gold_relation -= 15; ddp_relation -= 10; gold_right += 10; ddp_right += 6; ddp_cohesion -= 6; lvp_right += 10
 on-departure: unionist_support_marcher = 0; collectivist_support_marcher = 0;
 
-Fine. We have thrown our support to Chairman Halsmark of the <span style="color: #700000;">**Collectivists**</span> to the dismay of our bourgeois allies.
+Fine. We have thrown our support to Chairman Halsmark of the <span style="color: #700000;">**Collectivists**</span> to the dismay of our propertied allies.
 
 [? if unionist_support_marcher : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is confused at our capricious behavior, and have switched their support to DuFour. ?]
 

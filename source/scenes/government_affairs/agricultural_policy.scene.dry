@@ -27,7 +27,7 @@ choose-if: judicial_reform >= 2 and budget > 0
 on-arrival: budget -= 1; land_reform += 1; coalition_dissent += 1; landed_marcher += 7*(1-dissent); landed_royalist -= 4*(1-dissent); landed_other -= 2*(1-dissent); disfavored -= 1 if disfavored >= 5; gold_relation -= 5; unionist_relation -= 4; lvp_relation -= 3; left_strength += 8; left_dissent -= 5; landed_sol += 3; landed_policy += 1; coup_progress += 1; agriculture_goal_completed += 1; gold_right += 1; lvp_right += 1; agriculture_goal_marcher_peoples += 1; dufour_angry += 10
 max-visits: 4
 
-With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, breaking the semi-feudal property relations present in East Heartland and other areas with large estates. The bourgeois parties and large farmers despise our intrusion into the sacredness of private property, while leftists are cautiously optimistic.
+With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, breaking the semi-feudal property relations present in East Heartland and other areas with large estates. The propertied parties and large farmers despise our intrusion into the sacredness of private property, while leftists are cautiously optimistic.
 
 [? if president == "DuFour": This policy has especially earned us the ire of President DuFour and his inner circle. ?]
 
@@ -37,7 +37,7 @@ subtitle: -1 budget - Increase financing for agricultural credit and insurance.
 choose-if: budget >= 1
 on-arrival: budget -= 1; agricultural_finance += 1; landed_marcher += 5*(1-dissent); landed_royalist -= 3*(1-dissent); peoples_party_support += 1; center_dissent += 5; left_dissent += 4; landed_sol += 4; landed_policy += 1; agriculture_goal_marcher_peoples += 1; economic_growth += 0.2;
 
-We have increased financial support for small farmers, providing access to credit and insurance, saving them from privation. The left and center of our party are opposed to our rural policy, seeing these policies as giveaways to petit-bourgeois farmers.
+We have increased financial support for small farmers, providing access to credit and insurance, saving them from privation. The left and center of our party are opposed to our rural policy, seeing these policies as giveaways to petty-propertied farmers.
 
 
 @pro_consumer

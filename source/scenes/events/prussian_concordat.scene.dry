@@ -1,5 +1,5 @@
 title: Heartland Concordat
-subtitle: The Heartland government has reached an agreement with the Vatican.
+subtitle: The Heartland government has reached an agreement with the Temple of the Faithful.
 view-if: year = 1929 and month = 7 and heartland_leader != "Bristol" and marcher_heartland and heartland_concordat = 0
 max-visits: 1
 tags: event
@@ -7,7 +7,7 @@ new-page: true
 
 = Heartland Concordat
 
-Despite our Lyle Bristol losing his position as the Minister-President of Heartland, he still possesses great influence within state politics and together with <span style="color: #000000;">Unionist Party</span> members, have negotiated a concordat with the Vatican. 
+Despite our Lyle Bristol losing his position as the Minister-President of Heartland, he still possesses great influence within state politics and together with <span style="color: #000000;">Unionist Party</span> members, have negotiated a concordat with the Temple of the Faithful. 
 
 - @sign_concordat: The Heartland government shall sign the concordat.
 

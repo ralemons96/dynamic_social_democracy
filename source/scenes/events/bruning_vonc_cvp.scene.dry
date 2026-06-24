@@ -8,9 +8,9 @@ max-visits: 1
 
 = Vote of no confidence
 
-Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party to head a government supported by bourgeois forces. [? if center_right_coalition < 50: However, despite the size of his coalition, the <span style="color: #000000;">**[+ unionist_party_name +]**</span> lacks a majority, even with their preferred partner, the <span style="color: #FFCC00;">liberals</span>. ?][? if center_right_coalition >= 50: A majority is able to be found with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> forming a coalition with their preferred partner, the <span style="color: #FFCC00;">liberals</span>. ?]
+Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party to head a government supported by propertied forces. [? if center_right_coalition < 50: However, despite the size of his coalition, the <span style="color: #000000;">**[+ unionist_party_name +]**</span> lacks a majority, even with their preferred partner, the <span style="color: #FFCC00;">liberals</span>. ?][? if center_right_coalition >= 50: A majority is able to be found with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> forming a coalition with their preferred partner, the <span style="color: #FFCC00;">liberals</span>. ?]
 
-Askew has reorganized his cabinet to include the smaller parties to the right of us, such as the <span style="color: #b8996f;">**WP**</span> and various smaller bourgeois parties. [? if center_right_coalition < 50: We are now faced with the choice to either "tolerate" the government to prevent the gains of extremists in the Assembly or vote to oust Askew and push for new elections. ?]
+Askew has reorganized his cabinet to include the smaller parties to the right of us, such as the <span style="color: #b8996f;">**WP**</span> and various smaller propertied parties. [? if center_right_coalition < 50: We are now faced with the choice to either "tolerate" the government to prevent the gains of extremists in the Assembly or vote to oust Askew and push for new elections. ?]
 
 - @vote_no
 - @vote_yes
@@ -30,7 +30,7 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 
 @vote_yes
 title: Oppose the vote of no confidence, voting for the government.
-subtitle: We would essentially provide "toleration" to a bourgeois government.
+subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: cordon_sanitaire >= 50 and center_right_coalition < 50
 on-arrival: marcher_toleration = 1; in_right_coalition = 0; in_center_right_coalition = 0; left_dissent += 10; labor_dissent += 10; commons_marcher *= 0.9; disfavored_marcher *= 0.9; disfavored_royalist += 3; disfavored_collectivist += 3; commons_royalist += 3; commons_collectivist += 1; commons_marcher -= 2 if welfare < 0; disfavored_marcher -= 4 if welfare < 0; pro_republic -= 4; collectivist_relation -= 8
 
@@ -43,7 +43,7 @@ view-if: cordon_sanitaire < 50
 call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 5; bruning_event_timer = 0
 
-The bourgeois cabinet has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The propertied cabinet has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
 @center_right
 title: It does not matter what we do.
@@ -51,4 +51,4 @@ subtitle: Askew will form a center-right coalition.
 view-if: center_right_coalition >= 50
 on-arrival: marcher_in_government = 0; marcher_toleration = 0; marcher_toleration_right = 0; in_grand_coalition = 0; in_center_right_coalition = 1; in_right_coalition = 0; ddp_relation -= 5; gold_relation -= 5; unionist_relation -= 5; lvp_relation -= 5; guild_dnf -= 2; ddp_right += 1; bourgeois_cooperation += 2; liberal_cooperation += 1
 
-The bourgeois has survived without our toleration, leaving us as an opposition party. 
+The propertied has survived without our toleration, leaving us as an opposition party. 

@@ -30,13 +30,13 @@ This fragmented and feeble campaign on the Right may offer us a chance to win th
 
 We have a variety of options to choose from.
 
-- @bourgeois
+- @propertied
 - @prussia
 - @reichsbanner
 - @hope: We have done enough.
 - @no_campaign_2: We shouldn't allocate resources to this.
 
-@bourgeois
+@propertied
 title: Set up an inter-party campaign committee with the Unity Coalition.
 view-if: not banner_campaign_dufour
 choose-if: impeachment_unionist and ((impeachment_ddp and not lvp_formed) or (impeachment_lvp and lvp_formed)) and unionist_relation >= 50 and ((ddp_relation >= 50 and not lvp_formed) or (lvp_relation >= 50 and lvp_formed))
@@ -70,7 +70,7 @@ face-image: img/reichsbanner_2.jpg
 go-to: do_campaign
 max-visits: 1
 
-The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The bourgeois parties are criticizing us turning the the Banners into a <span style="color: #c00000;">Reformist</span> militia.
+The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The propertied parties are criticizing us turning the the Banners into a <span style="color: #c00000;">Reformist</span> militia.
 
 @hope
 view-if: bourgeois_campaign_dufour or heartland_campaign_dufour or bourgeois_campaign_dufour

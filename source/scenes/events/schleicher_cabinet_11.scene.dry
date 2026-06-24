@@ -1,4 +1,4 @@
-title: The <i>Reichskonkordat</i> Is Signed!
+title: The <i>Temple Concordat</i> Is Signed!
 subtitle: Catholic rights across the Commonwealth are now formally guaranteed.
 view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Renck" and reichskonkordat = 0 
 max-visits: 1
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Reichskonkordat Signing
+= Temple Concordat Signing
 
-During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Reichskonkordat</i> has officially been signed between the Commonwealth and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
+During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Concordat</i> has officially been signed between the Commonwealth and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
 
 - @reichskonkordat
 

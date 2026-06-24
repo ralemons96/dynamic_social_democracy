@@ -561,11 +561,11 @@ if (Q.chancellor === "Bredon") {
 }
 !}
 
-The Commonwealth people had only briefly united behind their so-called savior, General Kurt von Staal. Now, with a return to political normalcy looming, there is no place for an incoherent vehicle like the <span style="color: #BFC8CC;">**GNU**</span> to rally the nation behind lofty abstractions like "non-partisanship" and the <i>Volksgemeinschaft</i>.
+The Commonwealth people had only briefly united behind their so-called savior, General Kurt von Staal. Now, with a return to political normalcy looming, there is no place for an incoherent vehicle like the <span style="color: #BFC8CC;">**GNU**</span> to rally the nation behind lofty abstractions like "non-partisanship" and the <i>national community</i>.
 
 With Staal nearing the end—both politically and personally—he is in no position to stop the unraveling of his own creation. Perhaps this will be remembered as his greatest blunder: that everything he built ends in anticlimax. Yet the Unity system has already been gutted over the past few years.
 
-The Blocparteis will return to their independent status, and it is primarily the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Reformist Party</span> (<span style="color: #fe9e00;">**ASPD**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “Volksocialism,” whatever that’s supposed to mean.
+The bloc partys will return to their independent status, and it is primarily the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Reformist Party</span> (<span style="color: #fe9e00;">**ASPD**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “Volksocialism,” whatever that’s supposed to mean.
 
 - @dnef_collapse_2
 

@@ -54,7 +54,7 @@ max-visits: 1
 
 The <span style="color: #750e0e;">Central Union</span>, with its centrally planned economy and isolation from global markets, has insulated itself from the effects of the Great Depression. They have since been rapidly industrializing in accordance with their Five-Year Plan, making them a prime partner for exports, especially as tariffs from our nominal trading partners in the West have increased, along with their general isolation from international markets.
 
-The <span style="color: #940000;">Central Unionists</span> are pleased by this, and we stand to reap the economic benefits. The only downside is that the right-wing propaganda machine has decried this action, pressuring [? if president == "DuFour": President DuFour and?] the bourgeois parties to break with us.
+The <span style="color: #940000;">Central Unionists</span> are pleased by this, and we stand to reap the economic benefits. The only downside is that the right-wing propaganda machine has decried this action, pressuring [? if president == "DuFour": President DuFour and?] the propertied parties to break with us.
 
 @improve_soviet
 title: Improve our relations with the <span style="color: #750e0e;">**Central Union**</span>.
@@ -187,16 +187,16 @@ The previous foreign ministry, despite its benevolent and peaceful face, was sec
 The Allies are grateful of our exposure and repudiation of militarism. Our partners in the coalition are less supportive.
 
 @concordat_negotiate
-title: Negotiate a Concordat between the Commonwealth and the Vatican.
+title: Negotiate a Concordat between the Commonwealth and the Temple of the Faithful.
 view-if: (heartland_concordat = 1 or not marcher_heartland) and reichskonkordat = 0 and reichskonkordat_progress < 4
 on-arrival: reichskonkordat_progress += 1; reichskonkordat_progress += 1 if unionist_leader == "Renck"; reichskonkordat_progress -= 1 if abortion_rights; reichskonkordat_progress -= 1 if family_law; unionist_relation += 3*(1-dissent); gold_relation -= 1; ddp_relation -= 2; ddp_cohesion -= 0.25; lvp_relation -= 1; foreign_goal_marcher_peoples += 1
 
-The Roman Catholic Church is interested in furthering relations with the Commonwealth Republic, seeing us as preferable to the old anti-Catholic policies of the Empire. We are working towards the signing of a Concordat, an agreement between the Vatican and the Republic that formally recognizes the Church's rights and interests in the country. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is especially interested in making this agreement. The liberal parties are against this idea.
+The Roman Catholic Church is interested in furthering relations with the Commonwealth Republic, seeing us as preferable to the old anti-Catholic policies of the Empire. We are working towards the signing of a Concordat, an agreement between the Temple of the Faithful and the Republic that formally recognizes the Church's rights and interests in the country. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is especially interested in making this agreement. The liberal parties are against this idea.
 
-[? if family_law : Our liberalized divorce policies make it difficult to build relations with the Vatican. ?] [? if abortion : Our legalization of abortion make it difficult to connect with the Church. ?] [? if unionist_leader == "Renck" : Renck from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is able to use his connections to speed up negotiations. ?]
+[? if family_law : Our liberalized divorce policies make it difficult to build relations with the Temple of the Faithful. ?] [? if abortion : Our legalization of abortion make it difficult to connect with the Church. ?] [? if unionist_leader == "Renck" : Renck from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is able to use his connections to speed up negotiations. ?]
 
 @concordat
-title: We can sign a Concordat with the Vatican!
+title: We can sign a Concordat with the Temple of the Faithful!
 view-if: reichskonkordat_progress >= 4 and reichskonkordat = 0
 on-arrival: reichskonkordat = 1; unionist_relation += 15*(1-dissent); faithful_marcher += 8*(1-dissent); faithful_unionist += 5 if in_weimar_coalition or in_grand_coalition or in_popular_front; foreign_goal_marcher_peoples += 1
 achievement: reichskonkordat

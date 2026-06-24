@@ -110,7 +110,7 @@ go-to: let_it_happen_hindenburg if president_ideology != "Left"; let_it_happen_b
 on-arrival: chancellor = "Askew"; chancellor_party = "Unionist"; welfare -= 2; bruning_event_timer = 6 if not bruning_event_seen and year >= 1930
 go-to: elections if bruning_event_seen or year < 1930
 
-The vote succeeds, and our government has resigned. Chancellor Askew has been appointed as the head of a new cabinet, consisting solely of the bourgeois parties. He immediately proceeds to cut welfare spending substantially.
+The vote succeeds, and our government has resigned. Chancellor Askew has been appointed as the head of a new cabinet, consisting solely of the propertied parties. He immediately proceeds to cut welfare spending substantially.
 
 [? if not bruning_event_seen and year >= 1930: New elections haven't been called yet but it's likely that they will be soon, considering Askew most likely doesn't have the majority of the Assembly behind him. ?]
 

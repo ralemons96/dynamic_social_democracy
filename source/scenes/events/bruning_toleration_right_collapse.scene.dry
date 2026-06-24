@@ -27,7 +27,7 @@ go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_
 
 We have seized the initiative from the <span style="color: #3E88B3;">**Traditionalists**</span>, toppling Chancellor [+ chancellor +] government with the support of votes from the extremes of Commonwealth politics.
 
-The <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
 @vonc_no
 title: Oppose the vote of no confidence, voting in favor of the government.
@@ -198,11 +198,11 @@ The defections of even a small amount of members of the <span style="color: #3E8
 @election_set
 call: set_next_election_time
 
-The <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
 @new_prussia_election
 on-arrival: heartland_coalition_trigger = 1
 
-The Heartland coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**Traditionalists**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
+The Heartland coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**Traditionalists**</span> forces them to exit from the <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
 
 - @prussian_coalition_formation: Negotiate a new Heartland coalition.

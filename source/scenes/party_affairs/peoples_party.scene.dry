@@ -35,7 +35,7 @@ unavailable-subtitle: The opposition is too strong.
 on-arrival: knight_strength += 15; reformist_strength += 15; knight_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; commons_marcher -= 12; landed_marcher += 10; burgher_marcher += 10; guild_marcher += 8; faithful_marcher += 8; left_dissent += 25; center_dissent += 20; collectivist_relation -= 10; collectivist_coalition_dissent += 1; coalition_dissent -= 1; unionist_relation += 5*(1-dissent); gold_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); gold_left += 3; ddp_left += 3; ddp_cohesion += 2; lvp_left += 3; dufour_angry -= 30; dufour_angry_base -= 30
 achievement: volkspartei
 
-In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of the Commonwealth, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Vaelism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
+In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of the Commonwealth, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Vaelism</span> towards propertied opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
 
 Should we run a new campaign to publicize our new platform?
 
@@ -53,7 +53,7 @@ view-if: (knight_strength + reformist_strength < left_strength + center_strength
 on-arrival: knight_strength += 10; reformist_strength += 8; peoples_party = 1; commons_marcher -= 15; landed_marcher += 10; burgher_marcher += 10; guild_marcher += 8; faithful_marcher += 8; left_dissent += 40; center_dissent += 40; collectivist_relation -= 10; collectivist_coalition_dissent += 1; coalition_dissent -= 1; unionist_relation += 4*(1-dissent); gold_relation += 4*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); gold_left += 2; ddp_left += 2; ddp_cohesion += 1.5; lvp_left += 2; dufour_angry -= 20; dufour_angry_base -= 20
 achievement: volkspartei
 
-It is an arduous and contentious process, but we have pushed through the proposal to become a people's party. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Vaelism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
+It is an arduous and contentious process, but we have pushed through the proposal to become a people's party. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Vaelism</span> towards propertied opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
 
 Should we run a new campaign to publicize our new platform?
 

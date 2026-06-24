@@ -28,7 +28,7 @@ We have accepted Staal’s demands for increased funding toward the army’s mod
 
 @reform
 title: Fire these rabble rousers immediately!
-subtitle: The bourgeois parties will not be pleased.
+subtitle: The propertied parties will not be pleased.
 choose-if: (coalition_dissent <= 0 and (unionist_relation >= 60 or (not in_grand_coalition and not in_weimar_coalition))) or in_left_front
 unavailable-subtitle: We lack the leverage—or sympathy—among our coalition partners.
 on-arrival: coalition_dissent += 1 if in_weimar_coalition or in_grand_coalition; burgher_marcher -= 2; guild_marcher -= 2; landed_marcher -= 2; unionist_relation -= 5; ddp_relation -= 5 if ddp_ideology != "Left"; gold_relation -= 8; lvp_relation -= 5; lvp_right += 2; gold_right += 2; ddp_right += 1; ddp_cohesion -= 1; dufour_angry += 25; army_minister = "Oster"; groener_explode = 1; army_loyalty += 0.2; coup_progress += 3; capital_strike_progress += 1

@@ -40,7 +40,7 @@ As for the <span style="color: #c00000;">**Marchers**</span>, we could support a
 
 A leading candidate is Albert Grzesinski of our Revisionist faction. Former Interior Minister of Heartland and currently Axton’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Staal. However, his hardline stance against the <span style="color: #700000;">**Collectivists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
 
-Alternatively, we could nominate Joran Vesh, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Collectivists</span>, who may begrudgingly tolerate his candidacy.
+Alternatively, we could nominate Joran Vesh, our party chairman and leader of the Centrist faction. He is palatable to the propertied parties and the <span style="color: #700000;">Collectivists</span>, who may begrudgingly tolerate his candidacy.
 
 @candidate_menu
 
@@ -243,7 +243,7 @@ unavailable-subtitle: Not enough resources (need 2).
 on-arrival: resources -= 3; collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters.
 
 @kpd_relations
 view-if: collectivist_relation >= 50 or (collectivist_leader == "Conciliators" and collectivist_relation >= 35)
@@ -251,7 +251,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**Collectivists**</span> now endorses [+ marcher_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the propertied voters.
 
 @convince_dvp_unity
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].

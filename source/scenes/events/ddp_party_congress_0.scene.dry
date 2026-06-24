@@ -59,9 +59,9 @@ face-image: img/dstp.jpg
 achievement: dstp_dilemma
 go-to: recalculate
 
-This has come as a complete shock to those inside and outside the party, for the <span style="color: #D3C24D;">**Golds**</span> to merge with the political wing of a mildly anti-Semitic paramilitary group "Young Commonwealth Order". Ongoing negotiations to unite the liberal and bourgeois parties has been considerably damaged, due to the <span style="color: #D3C24D;">**Golds**</span>'s attempts to promote a left-wing split from the <span style="color: #C0A054;">**Golds**</span>.
+This has come as a complete shock to those inside and outside the party, for the <span style="color: #D3C24D;">**Golds**</span> to merge with the political wing of a mildly anti-Semitic paramilitary group "Young Commonwealth Order". Ongoing negotiations to unite the liberal and propertied parties has been considerably damaged, due to the <span style="color: #D3C24D;">**Golds**</span>'s attempts to promote a left-wing split from the <span style="color: #C0A054;">**Golds**</span>.
 
-In this agreement, the <span style="color: #D3C24D;">**Golds**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest bourgeois ally. Despite this, the formation of the <span style="color: #D3C24D;">**DStP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Emil Lemmer helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
+In this agreement, the <span style="color: #D3C24D;">**Golds**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest propertied ally. Despite this, the formation of the <span style="color: #D3C24D;">**DStP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Emil Lemmer helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
 
 @status_quo
 view-if: dstp_formation_points < 3

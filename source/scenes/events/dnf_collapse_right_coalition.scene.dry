@@ -11,7 +11,7 @@ When Mallin established his own party, he successfully attracted a significant n
 
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has indicated their willingness to join the government now that the <span style="color: #3E88B3;">**Traditionalists**</span> has rid of their radical right elements. [? if center_right_coalition >= 50 : This is enough to form a functional government without us. ?][? if center_right_coalition < 50 : Although, this still doesn't provide a sufficient majority. ?]
 
-[? if center_right_coalition < 50 : We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. ?]
+[? if center_right_coalition < 50 : We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining propertied parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. ?]
 
 - @center_right
 - @vonc_yes
@@ -25,7 +25,7 @@ view-if: center_right_coalition >= 50
 on-arrival: marcher_in_government = 0; in_center_right_coalition = 1; in_right_coalition = 0; guild_dnf -= 2; landed_dnf -= 2; ddp_right += 2; ddp_cohesion -= 1.5; liberal_cooperation += 1; bourgeois_cooperation += 2
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-The bourgeois has survived without our toleration, but it's unlikely that this governing arrangement will last much longer.
+The propertied has survived without our toleration, but it's unlikely that this governing arrangement will last much longer.
 
 @vonc_yes
 title: Support the vote of no confidence, voting against the government.
@@ -39,7 +39,7 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 
 @vonc_no
 title: Oppose the vote of no confidence, voting for the government.
-subtitle: We would essentially provide "toleration" to a bourgeois government.
+subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: cordon_sanitaire >= 50 and center_right_coalition < 50
 choose-if: (reformist_strength >= center_strength + left_strength)
 unavailable-subtitle: [? if (center_strength + left_strength >= reformist_strength) : Most of the party is in complete opposition to this. ?]

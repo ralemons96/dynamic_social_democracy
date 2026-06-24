@@ -21,7 +21,7 @@ In the midst of all this, our unemployment insurance program is underfunded; the
 subtitle: The workers will regard this as a betrayal.
 on-arrival: commons_marcher -= 0.12*commons_marcher; disfavored_marcher -= 0.2*disfavored_marcher; commons_collectivist += 4; commons_royalist += 6; disfavored_collectivist += 5; disfavored_royalist += 5; left_dissent += 15; center_dissent += 10; labor_dissent += 15; reformist_dissent += 5; welfare -= 2; budget += 1; disfavored += 3; pro_republic -= 4; collectivist_relation -= 8; inflation -= 2; unemployment_insurance_threshold = disfavored; unemployment_insurance_timer = 10; gold_left += 1; lvp_left += 1; ddp_left += 1; ddp_cohesion += 1; goal_marcher_cancel += 1; labor_goal_marcher_peoples += 1; economic_growth -= 0.4;
 
-For budgetary reasons, we have cut unemployment insurance benefits. Unfortunately, our reasons for fiscal discipline are alien to the workers. They are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000 ;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
+For budgetary reasons, we have cut unemployment insurance benefits. Unfortunately, our reasons for fiscal discipline are alien to the workers. They are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000 ;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the Burghers, have joined in criticizing us for our austerity.
 
 
 @increase_employers

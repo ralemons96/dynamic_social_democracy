@@ -30,7 +30,7 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 subtitle: Let the depression play itself out.
 on-arrival: center_strength += 5; center_dissent -= 5; labor_dissent += 10; wtb_support -= 1; left_dissent += 10;
 
-Voss and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Voss for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
+Voss and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with propertied austerity? On the other hand, the centrists criticize Voss for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
 Our policy course is currently that nothing can be done to alleviate the depression.
 
@@ -68,7 +68,7 @@ We have not yet formally adopted the plan. More work needs to be done.
 @adopt_left
 on-arrival: left_strength += 15; left_dissent -= 10; reformist_dissent += 10; knight_dissent += 8; labor_dissent += 6; nationalization_adopted = 1; coup_progress += 1; economic_plan = 3; collectivist_relation += 5*(1-dissent)
 
-With our hard work, we have convinced the majority of the party to adopt the <span style="color: #c00000;">Reformist</span> economic plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Bourgeois opposition is likely to be fierce. [? if marcher_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
+With our hard work, we have convinced the majority of the party to adopt the <span style="color: #c00000;">Reformist</span> economic plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Propertied opposition is likely to be fierce. [? if marcher_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
 subtitle: Call for a limited program of job creation without deficit spending.
@@ -79,7 +79,7 @@ go-to: adopt_moderate if moderate_plan_support >= 3; support_moderate_progress i
 
 @support_moderate_progress
 
-We attempt to convince the party to support a moderate program of job creation without deficit spending. Advocates of the moderate plan argue that this plan is most likely to receive support from the bourgeois parties, and most practical in the immediate term. Opponents in the left and labor factions criticize the plan for being inadequate in its ambition.
+We attempt to convince the party to support a moderate program of job creation without deficit spending. Advocates of the moderate plan argue that this plan is most likely to receive support from the propertied parties, and most practical in the immediate term. Opponents in the left and labor factions criticize the plan for being inadequate in its ambition.
 
 We have not yet adopted the plan. More work needs to be done.
 

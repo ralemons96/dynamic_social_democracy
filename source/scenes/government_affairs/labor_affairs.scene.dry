@@ -18,13 +18,13 @@ The industrial Ironreach region is aflame with labor unrest. The employers have 
 #- @cancel_advisor_action
 
 @support_labor
-subtitle: Popular among the workers, this will alienate the bourgeoisie.
+subtitle: Popular among the workers, this will alienate the Burghers.
 on-arrival: labor_strength += 5; labor_dissent -= 5; left_dissent -= 5; commons_marcher += 6*(1-dissent); coalition_dissent += 1; gold_relation -= 4; ddp_relation -= 2; capital_strike_progress += 1 if (gold_relation <= 30 and not lvp_formed); capital_strike_progress += 1 if (lvp_relation <= 30 and lvp_formed); capital_strike_progress += 1 if disfavored > 15; capital_strike_progress += 1 if disfavored > 24; labor_goal_completed += 1; inflation += 0.1; pro_labor += 1; strike_term_seen += 1; gold_right += 1; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; labor_goal_marcher += 1; goal_marcher_cancel_peoples += 1; economic_growth -= 0.1;
 
 Supporting labor is always popular in the <span style="color: #c00000;">**Marchers**</span>, although many of our coalition partners represent employers, and they are less enthused.
 
 @support_employers
-subtitle: Popular among the bourgeoisie, much less so among the workers.
+subtitle: Popular among the Burghers, much less so among the workers.
 on-arrival: labor_dissent += 8; commons_marcher -= 3; coalition_dissent -= 1 if coalition_dissent > 0; gold_relation += 5; lvp_relation += 5; unionist_relation += 5; ddp_relation += 4; commons_collectivist += 3; collectivist_coalition_dissent += 1; collectivist_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; pro_labor -= 1; strike_term_seen += 1; gold_left += 1; ddp_right += 1; ddp_cohesion -= 0.5; lvp_left += 1; goal_marcher_cancel += 1; labor_goal_marcher_peoples += 1;
 
 The more radical workers despise our suppression of their strikes, recalling the days of Friedrich Harden.
@@ -38,7 +38,7 @@ Many workers are unhappy at our compromises, but they will learn to accept that 
 
 
 # options: support the workers in their demands, pushing back against the employers.
-# this is the approach favored by the unions. While they do not get everything they desire, an agreement favorable to the workers is reached. The employer associations and their bourgeois allies accuse us of overstepping our bounds.
+# this is the approach favored by the unions. While they do not get everything they desire, an agreement favorable to the workers is reached. The employer associations and their propertied allies accuse us of overstepping our bounds.
 # try to make some compromise between the sides. Both sides need to share the pain in the current crisis.
 # whatever it takes, end the strikes and unrest as soon as possible.
 # this is not our business to intervene.
