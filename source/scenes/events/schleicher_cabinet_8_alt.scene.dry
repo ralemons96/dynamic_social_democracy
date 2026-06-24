@@ -30,7 +30,7 @@ Nonetheless, the economic recovery continues.
 
 @reichsbank
 title: The cabinet still requires the Commonwealth Bank’s approval, however.
-subtitle: Commonwealth Bank President - [? if luther_reichsbank: Hans Lytton?][? if not luther_reichsbank: Friedrich Dreyse?]
+subtitle: Commonwealth Bank President - [? if luther_reichsbank: Hans Lytton?][? if not luther_reichsbank: Friedrich Fenn?]
 go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_reichsbank
 
 @reichsbank_luther

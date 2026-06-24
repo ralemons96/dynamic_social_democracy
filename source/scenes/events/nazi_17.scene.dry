@@ -55,7 +55,7 @@ if (Q.traditionalist_r + Q.gold_r >= 10 && Q.hugenberg_gold) Q.hugenberg_gallax_
 if (Q.traditionalist_r + Q.gold_r >= 12 && Q.hugenberg_gold) Q.hugenberg_gallax_r -= 1;
 !}
 
-The co-leader of the <span style="color: #3E88B3;">**Wardens**</span>, alongside Otto Schmidt-Hannover of the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?], expresses serious reservations about [+ royalist_chancellor +]'s chancellorship.
+The co-leader of the <span style="color: #3E88B3;">**Wardens**</span>, alongside Otto Smitt-Hannover of the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?], expresses serious reservations about [+ royalist_chancellor +]'s chancellorship.
 
 Dusterel's consent is crucial for his co-leader Selden to enter the cabinet, but Dusterel, having been targeted by <span style="color: #7A3C00;">Royalist</span> attacks due to his <span style="color: #005EB8;">Jewish</span> ancestry, remains deeply wary of a [+ royalist_chancellor +] government.
 
@@ -91,7 +91,7 @@ Not yet. With the swearing-in of the cabinet only minutes away, a loose end begi
 
 Mallin, being unaware of Goodryke's promise to [+ royalist_leader +] that elections would immediately be called, was taken aback by [+ royalist_chancellor +] requesting a commitment on that point, and firmly refused to accept [+ royalist_leader +]'s demand.
 
-With Mallin uncompromising as ever, no matter what is conceded to him, his arrogance has actually paid off this time. Not until Meissner interrupts, and Mallin, seeing himself as the only obstacle, accedes to new elections.
+With Mallin uncompromising as ever, no matter what is conceded to him, his arrogance has actually paid off this time. Not until Marsden interrupts, and Mallin, seeing himself as the only obstacle, accedes to new elections.
 
 In an act of perjury, the <span style="color: #7A3C00;">Royalist</span> leader swore to defend and uphold the constitution and laws of the republic he had so long vowed to destroy.
 
@@ -243,7 +243,7 @@ Mallin, unaware of Goodryke's promise to [+ royalist_leader +] that elections wo
 
 With Mallin as uncompromising as ever, no matter what is conceded to him, his arrogance has actually paid off this time.
 
-Even when Meissner interrupts, Mallin—the only obstacle to [+ royalist_chancellor +]'s ascension—storms off after [+ royalist_leader +] continues to stubbornly reject his demand. With the leader of the only relevant party willing to coalition with them having left, DuFour's illusions that the <span style="color: #7A3C00;">**Royalists**</span> would form a parliamentary cabinet are shattered.
+Even when Marsden interrupts, Mallin—the only obstacle to [+ royalist_chancellor +]'s ascension—storms off after [+ royalist_leader +] continues to stubbornly reject his demand. With the leader of the only relevant party willing to coalition with them having left, DuFour's illusions that the <span style="color: #7A3C00;">**Royalists**</span> would form a parliamentary cabinet are shattered.
 
 - @nazi_7
 

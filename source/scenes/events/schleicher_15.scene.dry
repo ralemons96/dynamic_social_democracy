@@ -1,4 +1,4 @@
-title: Staal and Röhm?
+title: Staal and Glade?
 subtitle: A deal is struck.
 view-if: chancellor = "Staal" and reichstag_joever_time >= 3 and gnu_formed and nvf_exist
 new-page: true
@@ -7,14 +7,14 @@ tags: event
 max-visits: 1
 face-image: img/portraits/rohm.jpg
 
-= Staal and Röhm
+= Staal and Glade
 
-Ernst Röhm has found little success in his efforts to rebuild the <span style="color: #7A3C00;">**Loyalists**</span>, and in maintaining its new political organization, the 
-<span style="color: #142e20;">**NVF**</span>. There are simply not enough funds to go around, as demoralized <span style="color: #7A3C00;">Royalists</span> stopped contributing a while ago. Röhm's plan to wait for an opportune moment for his "national revolution" is no longer tenable, and a new approach has to be taken.
+Ernst Glade has found little success in his efforts to rebuild the <span style="color: #7A3C00;">**Loyalists**</span>, and in maintaining its new political organization, the 
+<span style="color: #142e20;">**NVF**</span>. There are simply not enough funds to go around, as demoralized <span style="color: #7A3C00;">Royalists</span> stopped contributing a while ago. Glade's plan to wait for an opportune moment for his "national revolution" is no longer tenable, and a new approach has to be taken.
 
-Staal and Röhm goes years back, with the two becoming best friends near the turn of the decade, to the paranoia of Gallax. The two have very distinct political views however, and their cooperation only goes as far as a secret agreement promising that the <span style="color: #7A3C00;">**Loyalists**</span> would mobilize and fight along with the Commonwealth Army if the Commonwealth was attacked by a foreign invader. 
+Staal and Glade goes years back, with the two becoming best friends near the turn of the decade, to the paranoia of Gallax. The two have very distinct political views however, and their cooperation only goes as far as a secret agreement promising that the <span style="color: #7A3C00;">**Loyalists**</span> would mobilize and fight along with the Commonwealth Army if the Commonwealth was attacked by a foreign invader. 
 
-Now, the two aim to rekindle this bond, and Röhm has officially attached the <span style="color: #7A3C00;">**Loyalists**</span> to be subordinate to the Commonwealth Army, in exchange for more authority over its operations. The <span style="color: #142e20;">**NVF**</span> has since been attached to the <span style="color: #BFC8CC;">**GNU**</span> as well.
+Now, the two aim to rekindle this bond, and Glade has officially attached the <span style="color: #7A3C00;">**Loyalists**</span> to be subordinate to the Commonwealth Army, in exchange for more authority over its operations. The <span style="color: #142e20;">**NVF**</span> has since been attached to the <span style="color: #BFC8CC;">**GNU**</span> as well.
 
 - @schleicher_2: The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
 
@@ -35,7 +35,7 @@ Q.gnu_r += Q.nvf_r;
 Q.nvf_r = 0;
 !}
 
-God knows what Röhm might do with an official government position. Fortunately, everyone, including President DuFour, are intensely distrustful of Röhm's <span style="color: #700000;">revolutionary</span> views. 
+God knows what Glade might do with an official government position. Fortunately, everyone, including President DuFour, are intensely distrustful of Glade's <span style="color: #700000;">revolutionary</span> views. 
 
 Current composition of the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>:
 
@@ -59,4 +59,4 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
 
-- @root: Röhm is unreliable, he will soon split.
+- @root: Glade is unreliable, he will soon split.

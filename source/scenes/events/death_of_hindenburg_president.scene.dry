@@ -20,7 +20,7 @@ Q.hergt_run_1934 = 0;
 Q.lettow_vorbeck_run_1934 = 0;
 Q.hugenberg_run_1934 = 0;
 
-Q.president = "Bumke (acting)";
+Q.president = "Burnell (acting)";
 if (Q.judicial_reform >= 4) Q.president = "Großmann (acting)";
 
 Q.reactionary_candidate_1934 = "Selden";
@@ -126,7 +126,7 @@ President Paul von DuFour has passed away at age 86. An era of history is closin
 
 The nation engages in an outpouring of grief for its war hero and president, with even some sympathy among committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> and <span style="color: #c00000;">Reformists</span>. After all, DuFour steered the republic through some of its most challenging times, without giving in to extremists on the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span>. Perhaps he is one reason democracy remains alive.
 
-New presidential elections are to be held as soon as possible. The Commonwealth political landscape is wide open, with contenders from all over the political space. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Bumke ?][? if judicial_reform >= 4 : Hermann Großmann ?] serves as the acting president.
+New presidential elections are to be held as soon as possible. The Commonwealth political landscape is wide open, with contenders from all over the political space. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Hermann Großmann ?] serves as the acting president.
 
 # Hermann Großmann is the supreme court chief justice in judicial reform.
 
@@ -968,7 +968,7 @@ if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
 if (Q.president == "Gorrick") Q.president = "Gorrick";
 
-if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
     Q.president_ideology = "Left";
 } else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Askew" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";

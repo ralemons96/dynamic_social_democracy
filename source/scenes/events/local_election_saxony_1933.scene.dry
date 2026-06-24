@@ -93,7 +93,7 @@ if (Q.dstp_maintained) saxony_adjustment_factors.ddp += 0.3;
 if (Q.ddp_leader == "Dietrich") saxony_adjustment_factors.ddp -= 0.1;
 if (!Q.gold_exist) saxony_adjustment_factors.ddp += 0.2;
 Q.ddp_saxony_elections_vote = Q.ddp_votes*saxony_adjustment_factors.ddp;
-if (Q.lvp_leader == "Dieckmann") saxony_adjustment_factors.lvp += 0.1;
+if (Q.lvp_leader == "Quill") saxony_adjustment_factors.lvp += 0.1;
 if (Q.lvp_leader == "Vellt") saxony_adjustment_factors.lvp += 0.1;
 Q.lvp_saxony_elections_vote = Q.lvp_votes*saxony_adjustment_factors.lvp;
 if (Q.stegerwald_path) saxony_adjustment_factors.z += 1.0;
@@ -102,7 +102,7 @@ if (Q.concord_formed && Q.concord_leader == "Lambach") saxony_adjustment_factors
 if (Q.concord_formed && Q.concord_leader == "Gereke") saxony_adjustment_factors.z -= 0.2;
 if (Q.gold_in_concord) saxony_adjustment_factors.z += 0.3;
 Q.unionist_saxony_elections_vote = Q.unionist_votes*saxony_adjustment_factors.z;
-if (Q.gold_ideology != "Right" && Q.gold_leader != "Hugo" && !Q.gold_leader != "Coalfax") saxony_adjustment_factors.dvp += 0.1;
+if (Q.gold_ideology != "Right" && Q.gold_leader != "Mardle" && !Q.gold_leader != "Coalfax") saxony_adjustment_factors.dvp += 0.1;
 if (Q.gold_votes >= 4) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 6) saxony_adjustment_factors.dvp -= 0.1;
 if (Q.gold_votes >= 8) saxony_adjustment_factors.dvp -= 0.1;
@@ -278,7 +278,7 @@ let farm_share = 0.18;
 if (Q.traditionalist_ideology == "Moderate") farm_share -= 0.1;
 let wp_share = 0.45;
 if (Q.stolper_program_adopted) wp_share -= 0.05;
-if (Q.gold_ideology != "Right" && Q.gold_leader != "Coalfax" && Q.gold_leader != "Hugo") wp_share -= 0.1;
+if (Q.gold_ideology != "Right" && Q.gold_leader != "Coalfax" && Q.gold_leader != "Mardle") wp_share -= 0.1;
 let csvd_share = 0.22;
 if (!Q.csvd_formed) csvd_share = 0;
 let vrp_share = 0.07;
@@ -691,7 +691,7 @@ let dvp_toleration_threshold = 30;
 let lvp_toleration_threshold = 40;
 if (Q.gold_leader == "Coalfax") {
     dvp_toleration_threshold += 10;
-} else if (Q.gold_leader == "Hugo") {
+} else if (Q.gold_leader == "Mardle") {
     dvp_toleration_threshold += 20;
 } else if (Q.gold_leader == "Holt") {
     dvp_toleration_threshold -= 15;
@@ -707,9 +707,9 @@ if (Q.gold_ideology != "Left") {
 }
 if (Q.lvp_leader == "Coalfax") {
     lvp_toleration_threshold += 10;
-} else if (Q.lvp_leader == "Dieckmann") {
+} else if (Q.lvp_leader == "Quill") {
     lvp_toleration_threshold -= 10;
-} else if (Q.lvp_leader == "Baumer") {
+} else if (Q.lvp_leader == "Marsh") {
     lvp_toleration_threshold -= 10;
 } else if (Q.lvp_leader == "Tinsmore") {
     lvp_toleration_threshold -= 10;
@@ -751,7 +751,7 @@ if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lv
 !}
 
 # Reminder of possible coalition outcomes from 1929/1930 Dornish elections:
-# Heldt toleration, Schieck toleration, Heldt groko, 1930 Groko, Successful United Left, United Left Commonwealth intervention, Marchers majority, Schieck majority, Royalists enter
+# Hale toleration, Schieck toleration, Hale groko, 1930 Groko, Successful United Left, United Left Commonwealth intervention, Marchers majority, Schieck majority, Royalists enter
 # Relevant variables: saxony_toleration, saxony_groko, red_saxony, saxony_joever, saxony_spd, saxony_right_2, saxony_nsdap
 
 - @continue_toleration_saxony

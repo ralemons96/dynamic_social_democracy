@@ -3062,7 +3062,7 @@ if (Q.year == 1929 && Q.stolper_program_adopted && Q.gold_reform && Q.gold_ideol
     Q.lvp_merger_1_timer = 4;
 }
 
-if ((Q.traditionalist_ideology == "Moderate" || Q.kvp_formed == 1) && ["Vellt", "Hugo", "Coalfax"].includes(Q.gold_leader) && Q.lvp_formed != 1 && Q.lvp_merger_2_timer != 1 && Q.dkp_merger_waiting != 1 && Q.in_grand_coalition != 1 && Q.concord_formed != 1 && Q.year >= 1931 && Q.super_secret_mode) {
+if ((Q.traditionalist_ideology == "Moderate" || Q.kvp_formed == 1) && ["Vellt", "Mardle", "Coalfax"].includes(Q.gold_leader) && Q.lvp_formed != 1 && Q.lvp_merger_2_timer != 1 && Q.dkp_merger_waiting != 1 && Q.in_grand_coalition != 1 && Q.concord_formed != 1 && Q.year >= 1931 && Q.super_secret_mode) {
     if (Q.royalist_votes > 30 || Q.marcher_votes + Q.collectivist_votes > 45 || (Q.year == 1932 && (Q.month == 4 || Q.month == 5))){
         Q.dkp_merger_timer = Q.time + 3;
         Q.dkp_merger_waiting = 1;

@@ -953,7 +953,7 @@ Q.international_socialist_support = 0;
 Q.banking_crisis_fallout_time = 0;
 Q.reformist_plan_time = 0;
 Q.concord_economy_accepted_time = 0;
-Q.public_works_name = "Lautenbach";
+Q.public_works_name = "Larkmoor";
 Q.gallax_right_coalition_time = 0;
 Q.papen_post = 0;
 Q.papen_post_2 = 0;
@@ -1040,8 +1040,8 @@ for (let i = 0; i <= 100; i++) {
 Q.wels_advisor = 1; // Joran Vesh
 Q.muller_advisor = 1; // Felicity Sarrow
 Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
-Q.crispien_advisor = 0; // Arthur Crispien
+// okay I know Arthur Crale was a leader irl but i couldn't find much interesting about him...
+Q.crispien_advisor = 0; // Arthur Crale
 Q.hilferding_advisor = 1; // Vendrin Bell
 
 // left advisors

@@ -104,7 +104,7 @@ on-arrival: {!
     if (Q.gold_reform == 2) {
         Q.dhv_fkp = Q.dhv_fkp*1.5;
     }
-    if (Q.gold_leader == "Hugo" || Q.gold_leader == "Coalfax") {
+    if (Q.gold_leader == "Mardle" || Q.gold_leader == "Coalfax") {
         Q.industrialists_fkp = Q.industrialists_fkp*1.5;
     }
     if (Q.pro_republic >= 60) {

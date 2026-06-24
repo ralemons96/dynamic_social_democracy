@@ -40,20 +40,20 @@ on-arrival: loyalist_strength += 50; commons_royalist += 5; disfavored_royalist 
 Unfortunately, our forces fail to dislodge the <span style="color: #7A3C00;">**Loyalists**</span> from their positions surrounding Gallax. He is seen as both a strong and powerful leader and a victim, further reinforcing his image. The <span style="color: #7A3C00;">Royalists</span> are left stronger than ever.
 
 @force_success
-on-arrival: gallax_deported = 1; loyalist_strength = loyalist_strength/2; commons_royalist *= 0.7; burgher_royalist *= 0.7; guild_royalist *= 0.7; landed_royalist *= 0.7; disfavored_royalist *= 0.7; interior_goal_heartland -= 1 if not loyalist_banned; loyalist_banned = 1; coup_progress -= 2; royalist_leader = "Goebbels"; royalist_chancellor = "Gorrick"; pro_republic += 10
+on-arrival: gallax_deported = 1; loyalist_strength = loyalist_strength/2; commons_royalist *= 0.7; burgher_royalist *= 0.7; guild_royalist *= 0.7; landed_royalist *= 0.7; disfavored_royalist *= 0.7; interior_goal_heartland -= 1 if not loyalist_banned; loyalist_banned = 1; coup_progress -= 2; royalist_leader = "Standerton"; royalist_chancellor = "Gorrick"; pro_republic += 10
 achievement: deport_hitler
 
 The confrontation ends with the police and the Banners prevailing, capturing Gallax so he can be deported! This is a sign of weakness, and his physical distance makes organizing difficult, impeding the <span style="color: #7A3C00;">Royalist</span> effort to win more votes.
 
-In Gallax's absence, Joseph Goebbels has become the temporary leader of the <span style="color: #7A3C00;">Royalist</span> party, with substantial influence from Ulric Gorrick.
+In Gallax's absence, Joseph Standerton has become the temporary leader of the <span style="color: #7A3C00;">Royalist</span> party, with substantial influence from Ulric Gorrick.
 
 @deport_success
-on-arrival: gallax_deported = 1; loyalist_strength = loyalist_strength/2; commons_royalist *= 0.7; burgher_royalist *= 0.7; guild_royalist *= 0.7; landed_royalist *= 0.7; disfavored_royalist *= 0.7; interior_goal_heartland -= 1 if not loyalist_banned; loyalist_banned = 1; coup_progress -= 2; royalist_leader = "Goebbels"; royalist_chancellor = "Gorrick"; pro_republic += 10
+on-arrival: gallax_deported = 1; loyalist_strength = loyalist_strength/2; commons_royalist *= 0.7; burgher_royalist *= 0.7; guild_royalist *= 0.7; landed_royalist *= 0.7; disfavored_royalist *= 0.7; interior_goal_heartland -= 1 if not loyalist_banned; loyalist_banned = 1; coup_progress -= 2; royalist_leader = "Standerton"; royalist_chancellor = "Gorrick"; pro_republic += 10
 achievement: deport_hitler
 
 Somehow, the plan worked! There was minimal resistance to Gallax's deportation. This is a sign of weakness, and his physical distance makes organizing difficult, impeding the <span style="color: #7A3C00;">Royalist</span> effort to win more votes.
 
-In Gallax's absence, Joseph Goebbels has become the temporary leader of the <span style="color: #7A3C00;">Royalist</span> party, with substantial influence from Ulric Gorrick.
+In Gallax's absence, Joseph Standerton has become the temporary leader of the <span style="color: #7A3C00;">Royalist</span> party, with substantial influence from Ulric Gorrick.
 
 @no_deport
 go-to: root

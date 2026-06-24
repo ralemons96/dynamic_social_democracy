@@ -638,7 +638,7 @@ go-to: election_menu
 
 Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other propertied parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Catholics. ?]
 
-Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @bvp_majority
 title: The <span style="color: #A2D8E0;">**Arcanists**</span> has captured another majority.
@@ -649,7 +649,7 @@ go-to: election_menu
 
 The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the propertied parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though.
 
-Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @nsdap_majority
 title: The <span style="color: #7A3C00;">**Royalists**</span> wins a majority?
@@ -669,7 +669,7 @@ go-to: election_menu
 
 The former incumbent coalition consisting of the <span style="color: #A2D8E0;">**Arcanists**</span>, <span style="color: #38C538;">Avrizan Peasants’ League</span>, and the various smaller propertied parties has continued. This show of stability will weaken the <span style="color: #7A3C00;">Royalists</span>.
 
-Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
+Heinrich Helderer, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
 @spd_majority
 title: The <span style="color: #c00000;">**Marchers**</span> forms a majority government.
@@ -679,7 +679,7 @@ on-arrival: bavaria_marcher = 1; burgher_royalist -= 3; guild_royalist -= 3; lan
 achievement: rotes_bayern
 go-to: election_menu
 
-We have somehow managed to capture a majority in the state Assembly, and have put our Minister-President as the head of the most conservative state in the country. Hopefully this doesn't end badly like last time. Avriza has been governed by the political right ever since 4286, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and aggressively counter the <span style="color: #7A3C00;">**Loyalists**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Held government had mostly ignored ?].
+We have somehow managed to capture a majority in the state Assembly, and have put our Minister-President as the head of the most conservative state in the country. Hopefully this doesn't end badly like last time. Avriza has been governed by the political right ever since 4286, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and aggressively counter the <span style="color: #7A3C00;">**Loyalists**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Helder government had mostly ignored ?].
 
 @spd_coalition
 title: The <span style="color: #c00000;">**Marchers**</span> will form a coalition government with the propertied parties.
@@ -690,7 +690,7 @@ on-arrival: resources -= 1; bavaria_marcher = 1; burgher_royalist -= 2; guild_ro
 go-to: election_menu
 achievement: ampelkoalition
 
-Somehow, we have brought the [? if not lvp_formed and ddp_r_bavaria: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and?][? if lvp_formed and lvp_r_bavaria: <span style="color: #C0A054;">**Golds**</span> and?] <span style="color: #38C538;">Avrizan Peasants’ League</span> to the negotiating table, despite their preference for working with the <span style="color: #A2D8E0;">**Arcanists**</span>. Through connections with the left-wing and liberal factions within the <span style="color: #38C538;">Avrizan Peasants’ League</span>, we have overcome their reluctance—and now, we are in government! Avriza has been governed by the political right ever since 4286, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and counter the <span style="color: #7A3C00;">**Loyalists**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Held government had mostly ignored ?].
+Somehow, we have brought the [? if not lvp_formed and ddp_r_bavaria: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and?][? if lvp_formed and lvp_r_bavaria: <span style="color: #C0A054;">**Golds**</span> and?] <span style="color: #38C538;">Avrizan Peasants’ League</span> to the negotiating table, despite their preference for working with the <span style="color: #A2D8E0;">**Arcanists**</span>. Through connections with the left-wing and liberal factions within the <span style="color: #38C538;">Avrizan Peasants’ League</span>, we have overcome their reluctance—and now, we are in government! Avriza has been governed by the political right ever since 4286, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and counter the <span style="color: #7A3C00;">**Loyalists**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Helder government had mostly ignored ?].
 
 
 @united_left

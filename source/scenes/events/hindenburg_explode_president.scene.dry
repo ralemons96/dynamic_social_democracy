@@ -38,7 +38,7 @@ Barring that, the [? if unionist_party_name != "Concord": <span style="color: #0
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own.
 
-A leading candidate is Albert Grzesinski of our Revisionist faction. Former Interior Minister of Heartland and currently Axton’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Staal. However, his hardline stance against the <span style="color: #700000;">**Collectivists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
+A leading candidate is Albert Grenshaw of our Revisionist faction. Former Interior Minister of Heartland and currently Axton’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Staal. However, his hardline stance against the <span style="color: #700000;">**Collectivists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
 
 Alternatively, we could nominate Joran Vesh, our party chairman and leader of the Centrist faction. He is palatable to the propertied parties and the <span style="color: #700000;">Collectivists</span>, who may begrudgingly tolerate his candidacy.
 
@@ -47,7 +47,7 @@ Alternatively, we could nominate Joran Vesh, our party chairman and leader of th
 - @eckener_r1: Support Hugo Eckhart as a joint Unity Coalition candidate.
 - @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @gessler_r1: Support Gareth Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
-- @grzesinski_r1: Support Albert Grzesinski.
+- @grzesinski_r1: Support Albert Grenshaw.
 - @wels_r1: Support Joran Vesh.
 
 @eckener_r1
@@ -79,10 +79,10 @@ We have endorsed Gareth Gesling, independent formerly of the <span style="color:
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 choose-if: grzesinski_campaign = 0 and resources >= 2
-on-arrival: marcher_candidate = "Grzesinski"; resources -= 2; is_unity_candidate = 0; unionist_relation += 5; ddp_relation += 5; gold_relation += 5; lvp_relation += 5
+on-arrival: marcher_candidate = "Grenshaw"; resources -= 2; is_unity_candidate = 0; unionist_relation += 5; ddp_relation += 5; gold_relation += 5; lvp_relation += 5
 go-to: r1_menu
 
-We have convinced Albert Grzesinski to run for president.
+We have convinced Albert Grenshaw to run for president.
 
 @wels_r1
 subtitle: -2 resources.
@@ -130,7 +130,7 @@ We implore the [? if unionist_party_name != "Concord": <span style="color: #0000
 title: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support [+ marcher_candidate +].
 choose-if: marcher_votes >= unionist_votes
 unavailable-subtitle: [? if marcher_votes < unionist_votes: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] knows that they are more popular than us; they do not see a reason to support our candidate. ?]
-view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and unionist_candidate != marcher_candidate
+view-if: (marcher_candidate = "Grenshaw" or marcher_candidate = "Vesh") and unionist_candidate != marcher_candidate
 on-arrival: {!
 Q.unionist_support_grzesinski = 0;
 
@@ -192,7 +192,7 @@ max-visits: 1
 
 @convince_ddp_spd
 title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ marcher_candidate +].
-view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and ddp_candidate != marcher_candidate and not lvp_formed
+view-if: (marcher_candidate = "Grenshaw" or marcher_candidate = "Vesh") and ddp_candidate != marcher_candidate and not lvp_formed
 on-arrival: ddp_candidate = marcher_candidate if ddp_relation >= 60
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
@@ -213,7 +213,7 @@ max-visits: 1
 
 @convince_lvp_spd
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
-view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and lvp_candidate != marcher_candidate and lvp_formed
+view-if: (marcher_candidate = "Grenshaw" or marcher_candidate = "Vesh") and lvp_candidate != marcher_candidate and lvp_formed
 on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 65
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
@@ -278,7 +278,7 @@ Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='c
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
 Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Vesh: "Joran Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
-Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
+Grenshaw: "Albert Grenshaw of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
 }
 for (var k in candidate_descs) {
     Q[k + '_running'] = 0;
@@ -341,7 +341,7 @@ Election results:
 
 [? if Eckener_running : <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> - [+ Eckener_votes_disp +]% ?]
 
-[? if Grzesinski_running : <span style="color: #c00000;">**Grzesinski**</span> - [+ Grzesinski_votes_disp +]% ?]
+[? if Grenshaw_running : <span style="color: #c00000;">**Grenshaw**</span> - [+ Grenshaw_votes_disp +]% ?]
 [? if Wels_running : <span style="color: #c00000;">**Vesh**</span> - [+ Wels_votes_disp +]% ?]
 
 [? if sapd_candidate == "Boycott" or collectivist_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
@@ -463,14 +463,14 @@ Do we realize that this means civil war, against the full force of the state?
 - @civil_war: Yes.
 
 @election_end
-go-to: eckener_win if winner = "Eckhart"; bundesrepublik_win if winner = "Aldermoor"; seeckt_victory if winner = "Seckard"; nazis_lose if winner = "Grzesinski" or winner == "Vesh" or winner = "Gesling"
+go-to: eckener_win if winner = "Eckhart"; bundesrepublik_win if winner = "Aldermoor"; seeckt_victory if winner = "Seckard"; nazis_lose if winner = "Grenshaw" or winner == "Vesh" or winner = "Gesling"
 on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
 if (Q.president == "Gorrick") Q.president = "Gorrick";
 
-if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
     Q.president_ideology = "Left";
 } else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";

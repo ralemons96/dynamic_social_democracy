@@ -3,7 +3,7 @@ on-arrival: {!
 if (Q.dynamic_mode || Q.historical_mode) {
     this.achieve('einigkeit_und_recht_und_freiheit');
     // Brüder, zur Sonne, zur Freiheit - reduce unemployment, pause war_loans, increase women's rights, elect Lyle Bristol president, and deport Gallax in one playthrough on at least normal difficulty.
-    if ((Q.president == "Bristol" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || Q.president == "Pendrigon") && !(Q.chancellor_party == "Royalist") && Q.disfavored < 20 && Q.year >= 1933 && !Q.civil_war_seen && Q.gallax_deported && Q.war_loans <= -2 && Q.womens_rights >= 3) {
+    if ((Q.president == "Bristol" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Pendrigon") && !(Q.chancellor_party == "Royalist") && Q.disfavored < 20 && Q.year >= 1933 && !Q.civil_war_seen && Q.gallax_deported && Q.war_loans <= -2 && Q.womens_rights >= 3) {
         this.achieve('bruder_zur_sonne');
     }
     // Freie Marktwirtschaft - win without doing an economic plan.

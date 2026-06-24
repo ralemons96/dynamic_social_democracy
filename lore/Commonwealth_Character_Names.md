@@ -121,6 +121,12 @@ Siemen).
 - The lowercase `@dingeldey`/`thiel_unlock`/`glatzel_*` ids and the lowercase portrait files
   (`img/portraits/dingeldey.jpg`…) stay internal/art-deferred.
 
+**A5b (leaked real-world surnames → unique pool/coined names):**
+- *Value-reconciled leaders* (same method as A5a): Goebbels→**Standerton** (royalist_leader), Kardorff→**Strake**, Maier→**Galanides**, Dieckmann→**Quill**, Stolper→**Penn**, Baumer→**Marsh** (she/her), Heldt→**Hale** (saxony_leader), Oster→**Ostren** (army_minister), Lautenbach→**Larkmoor** (public_works_name), Grzesinski→**Grenshaw** (presidential candidate), Otto Hugo→**Mardle** (gold_leader; *not* "Hugo Eckhart").
+- *Display-only*: Himmler→Brocke, Stegmann→Tessen, Kerrl→Carlile, (Joseph) Hess→Olm, Sahm→Trent, Dreyse→Fenn, Duisberg→Slack, Geiger→Gaiger, Niekisch→Underthorn, Eberlein→Steunenberg, Mielke→Mellor, Crispien→Crale, Ziemer→Zorrel, Leuschner→Lespan, Anlauf→Anwell, Bernstein→Revane, Meissner→Marsden, Bumke→Burnell, Drewitz→Drenmoor, Lejeune→Lenmoor, Schlange→Sallow, Bechly→Beckley, Petersen→Pellish, Ewert→Ewlan, Beck→Brackel, Schmidt→Smitt, Meyer→Merrow, Held→Helder, Röhm→Glade, Rudolf Hess→Pleck, Feder→Fendral, Frick→Frell, Epp→Eppen.
+- *Residual mentions of already-reskinned characters → consolidated*: Braun→**Bristol** (Otto Braun = the Heartland leader), Severing→**Heath**, Hilferding→**Bell**, Papen→**Goodryke**, Hindenburg→**DuFour**.
+- First names on these are deduped in **A5c** (Wilhelm/Otto/Hans/Joseph/Heinrich/Ernst…). Lowercase ids + lowercase portrait files stay.
+
 ## Still deferred
 Real-world historical name-drops in flavour prose (Hess, Liebknecht, Noske, Röhm, Goering, the
 WWII-era references in the endings) — these go under Track A2/A3 of the second pass, not here.

@@ -43,14 +43,14 @@ new-page: true
 
 With Lytton elected president, he naturally cannot continue serving as the <span style="color: #C0A054;">**Golds**</span>'s chairman. A party congress is convened to select his successor. This marks the first time the Commonwealth has elected a president from the political middle, and optimism within the party is running high.
 
-In contention is <span style="color: #C0A054;">**Golds**</span> veteran and parliamentarian Siegfried von Kardorff—a conventional politician endorsed by Lytton and expected to continue his moderate course of supporting Bürgerblocks while keeping the door open to cooperation with the <span style="color: #c00000;">**Marchers**</span>. Also in the running are Caspar Holt and Florian Vellt, both prominent figures within the DHV, a white-collar union that has long played a role in shaping <span style="color: #C0A054;">**Golds**</span> policy—though they likely lack the influence to carry one of their own to the chairmanship.
+In contention is <span style="color: #C0A054;">**Golds**</span> veteran and parliamentarian Siegfried von Strake—a conventional politician endorsed by Lytton and expected to continue his moderate course of supporting Bürgerblocks while keeping the door open to cooperation with the <span style="color: #c00000;">**Marchers**</span>. Also in the running are Caspar Holt and Florian Vellt, both prominent figures within the DHV, a white-collar union that has long played a role in shaping <span style="color: #C0A054;">**Golds**</span> policy—though they likely lack the influence to carry one of their own to the chairmanship.
 
-Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Otto Hugo, a co-founder of the party and a lobbyist for Ironreach heavy industry. Ideologically, he closely aligns with Eikenvorst, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
+Meanwhile, the <span style="color: #C0A054;">**Golds**</span>'s right wing—despite previous setbacks—remains very much alive. Their candidate is Otto Mardle, a co-founder of the party and a lobbyist for Ironreach heavy industry. Ideologically, he closely aligns with Eikenvorst, maintaining a staunch and irreconcilable opposition to any cooperation with the <span style="color: #c00000;">**Marchers**</span>.
 
 - @thiel: Caspar Holt is elected!
 - @glatzel: Florian Vellt is elected!
-- @kardorff: Siegfried von Kardorff is elected!
-- @hugo: Otto Hugo is elected.
+- @kardorff: Siegfried von Strake is elected!
+- @hugo: Otto Mardle is elected.
 
 @thiel
 subtitle: Holt is a controversial unionist within the party, being more left wing than Vellt.
@@ -76,24 +76,24 @@ Florian Vellt is elected to become the new leader of the <span style="color: #C0
 As expected, the remaining industrialists within the <span style="color: #C0A054;">**Golds**</span> are worried, as the party begins to shift towards including the demands of the worker. This has led to a dramatic shift in the party’s financial backing, as funding from big business dwindles and is replaced by donations and dues from the DHV and its affiliated members. His <span class="tooltip-text" title="good mod">dynamic</span> leadership should be closely watched.
 
 @kardorff
-subtitle: Kardorff is able to secure the continuation of Lytton's leadership.
-unavailable-subtitle: [? if hugo_unlock: The right-industrial faction blocks Kardorff’s ascension, ensuring the party veers further to the right. ?][? if thiel_unlock or glatzel_unlock: The party prefers a new and dynamic leader, preferably not one with closeness to Lytton. ?]
+subtitle: Strake is able to secure the continuation of Lytton's leadership.
+unavailable-subtitle: [? if hugo_unlock: The right-industrial faction blocks Strake’s ascension, ensuring the party veers further to the right. ?][? if thiel_unlock or glatzel_unlock: The party prefers a new and dynamic leader, preferably not one with closeness to Lytton. ?]
 choose-if: kardorff_unlock
-on-arrival: gold_leader = "Kardorff"; gold_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; gold_relation += 5 if in_grand_coalition; burgher_gold += 4; faithful_gold += 2; landed_gold += 2; guild_gold += 2; pro_republic += 3
+on-arrival: gold_leader = "Strake"; gold_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; gold_relation += 5 if in_grand_coalition; burgher_gold += 4; faithful_gold += 2; landed_gold += 2; guild_gold += 2; pro_republic += 3
 face-image: img/portraits/kardorff.jpg
 
-Kardorff is elected to succeed Lytton as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Lytton's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Unity Coalition back in 4294.?]
+Strake is elected to succeed Lytton as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Lytton's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Unity Coalition back in 4294.?]
 
 [? if bruning_time: He is also one of the strongest supporters of the Askew government, frequently coming into conflict with the right of the party over support for it. ?]
 
 @hugo
-subtitle: Otto Hugo aims to consolidate party control in the hands of the industrialists.
+subtitle: Otto Mardle aims to consolidate party control in the hands of the industrialists.
 unavailable-subtitle: The right-industrial faction of <span style='color: #C0A054;'>Golds</span> lacks the required influence.
 choose-if: hugo_unlock
-on-arrival: old_gold_leader = gold_leader; gold_leader = "Hugo"; gold_right += 10; gold_relation -= 25; guild_ddp += 2; burgher_ddp += 6; landed_ddp += 4; guild_gold -= 2; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5; ddp_right += 5; ddp_cohesion -= 3; ddp_relation -= 10
+on-arrival: old_gold_leader = gold_leader; gold_leader = "Mardle"; gold_right += 10; gold_relation -= 25; guild_ddp += 2; burgher_ddp += 6; landed_ddp += 4; guild_gold -= 2; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5; ddp_right += 5; ddp_cohesion -= 3; ddp_relation -= 10
 face-image: img/portraits/hugo.jpg
 
-Otto Hugo has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Reginald Eikenvorst, he narrowly defeated Kardorff.
+Otto Mardle has unexpectedly won the vote to replace [+ old_gold_leader +] as chairman of the <span style="color: #C0A054;">Golds</span>. Backed by unified support from the party’s right wing and endorsed by Reginald Eikenvorst, he narrowly defeated Strake.
 
 His election marks a decisive and likely irreversible shift to the right[? if gold_reform:, even repealing Stratton’s reforms to the party’s internal structure?], as Hugo moves to ensure industrialist dominance over the <span style="color: #C0A054;">**Golds**</span>’s decision-making apparatus. He holds openly hostile views toward parties to the left of the <span style="color: #C0A054;">**Golds**</span>, and prefers alignment with the <span style="color: #3E88B3;">**Traditionalists**</span> and even the <span style="color: #7A3C00;">**Royalists**</span> over cooperation with us.
 
