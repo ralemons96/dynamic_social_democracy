@@ -127,6 +127,6 @@ Despite our best efforts, we manage to rally only [+ impeachment_votes +]% of th
 @reichstag
 title: We can certainly wait a few months, accept the deal.
 subtitle: The Commonwealth parliamentary system desperately needs legitimacy. Forcing new elections now risks driving voters further into the extremes.
-on-arrival: collectivist_banned = 0; sapd_banned = 0; rfb_strength += 30; commons_collectivist += 6; disfavored_collectivist += 6; commons_sapd += 2; disfavored_sapd += 2; pro_republic += 10
+on-arrival: collectivist_banned = 0; sapd_banned = 0; vanguard_strength += 30; commons_collectivist += 6; disfavored_collectivist += 6; commons_sapd += 2; disfavored_sapd += 2; pro_republic += 10
 
 Under the influence of the plot and the modman's laziness, the <span style="color: #c00000;">**Marchers**</span> has agreed on a truce, and Trevannon survives another day. DuFour is reportedly displeased at this development, but doesn't intervene as expected. He must be really sick then.

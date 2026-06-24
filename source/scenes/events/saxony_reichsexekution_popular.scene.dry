@@ -1,6 +1,6 @@
 title: Commonwealth intervention of Dornwich
 subtitle: History repeats itself.
-view-if: not saxony_joever and (reichsex_sax_trigger or (reichsexekution_defeated = 0 and president = "DuFour" and red_saxony and (rb_force + rfb_force < 75) and not presidential_powers and (heartland_coup_seen or heartland_reichsexekution or dufour_angry >= 100 or dufour_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or thuringia_joever) and year >= 1930))
+view-if: not saxony_joever and (reichsex_sax_trigger or (reichsexekution_defeated = 0 and president = "DuFour" and red_saxony and (banner_force + vanguard_force < 75) and not presidential_powers and (heartland_coup_seen or heartland_reichsexekution or dufour_angry >= 100 or dufour_angry_bruning >= 50 or strife >= 5 or banner_militancy >= 0.1 or bruning_time or thuringia_joever) and year >= 1930))
 on-arrival: saxony_joever = 1; strife += 1; dufour_angry += 40; dufour_angry_bruning -= 40
 new-page: true
 tags: event
@@ -25,7 +25,7 @@ The Commonwealth Army and Stalhelm are already preparing to enter Dornwich. Our 
 - @surrender
 
 @defend_2
-on-arrival: resist_coup = 1; saxony_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty)
+on-arrival: resist_coup = 1; saxony_joever = 0; reformist_dissent += 10; defense_strength = banner_strength*banner_militancy*(1-dissent/2); defense_strength += vanguard_strength*vanguard_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty)
 go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory if defense_strength >= enemy_strength
 
 @defend_2_civil_war
@@ -35,7 +35,7 @@ As the Commonwealth Army and their reactionary auxiliaries march into Dornwich, 
 - @civil_war: It is a civil war.
 
 @defend_2_victory
-on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; left_dissent -= 15; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 5; disfavored_marcher += 5; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 50; dufour_angry_bruning += 40; coup_victory = 1; collectivist_relation += 15; rfb_strength += 150; rfb_militancy += 0.1; rb_strength += 200
+on-arrival: loyalist_strength *= 0.8; warden_strength *= 0.8; left_dissent -= 15; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 5; disfavored_marcher += 5; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 50; dufour_angry_bruning += 40; coup_victory = 1; collectivist_relation += 15; vanguard_strength += 150; vanguard_militancy += 0.1; banner_strength += 200
 achievement: drei_pfeile
 
 The the Banners and RFB confront the reactionaries on the road to Dornwich and somehow, the enemy has retreated without a fight! They were surprised by our resistance and [+ president +] has decided to not risk a civil war over Dornwich.
@@ -45,7 +45,7 @@ This show of force has reinvigorated support for both the <span style="color: #c
 @surrender
 title: Resign our positions, to prevent bloodshed.
 subtitle: [+ president +] will appoint a right-wing <i>Reichskommissar</i>.
-on-arrival: red_saxony = 0; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 15; labor_dissent += 5; rb_militancy = rb_militancy*0.7; rb_strength -= 250; rfb_banned = 1; rfb_strength -= 150; rfb_militancy -= 0.1; collectivist_relation -= 20; communist_coalition -= 1
+on-arrival: red_saxony = 0; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 15; labor_dissent += 5; banner_militancy = banner_militancy*0.7; banner_strength -= 250; vanguard_banned = 1; vanguard_strength -= 150; vanguard_militancy -= 0.1; collectivist_relation -= 20; communist_coalition -= 1
 
 The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
 

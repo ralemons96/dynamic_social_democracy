@@ -57,7 +57,7 @@ if (Q.in_center_right_coalition) {
     Q.in_right_coalition = 1;
 }
 
-Q.parties = Q.parties.filter(party => party !== 'ddp' && party !== 'dvp');
+Q.parties = Q.parties.filter(party => party !== 'ddp' && party !== 'gold');
 
 if (Q.labor_minister_party !== "Marcher") Q.labor_minister_party = "Unionist";
 if (Q.labor_minister !== "Wistle") Q.labor_minister = "Sedgewick";

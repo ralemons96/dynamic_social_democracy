@@ -52,7 +52,7 @@ The Unity Coalition has reunited to defend the very constitution we forged toget
 title: We will utilize the Heartland government to discretely fund the campaign.
 choose-if: marcher_heartland and (heartland_leader == "Pendrigon" or heartland_leader == "Bristol")
 unavailable-subtitle: We are not in full control of Heartland.
-on-arrival: commons_marcher += 4; burgher_marcher += 2; guild_marcher += 2; landed_marcher += 2; burgher_ddp += 2 if impeachment_ddp; guild_ddp += 2 if impeachment_ddp; burgher_gold += 2 if impeachment_gold; guild_gold += 2 if impeachment_gold; burgher_lvp += 4 if impeachment_lvp; guild_lvp += 4 if impeachment_lvp; commons_unionist += 2 if impeachment_unionist; burgher_unionist += 2 if impeachment_unionist; guild_unionist += 2 if impeachment_unionist; faithful_unionist += 2 if impeachment_unionist; pro_republic += 5; ddp_relation += 5; lvp_relation += 5; gold_relation += 5; unionist_relation += 5; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; heartland_campaign_dufour = 1; rb_militancy += 0.03; rb_strength += 100
+on-arrival: commons_marcher += 4; burgher_marcher += 2; guild_marcher += 2; landed_marcher += 2; burgher_ddp += 2 if impeachment_ddp; guild_ddp += 2 if impeachment_ddp; burgher_gold += 2 if impeachment_gold; guild_gold += 2 if impeachment_gold; burgher_lvp += 4 if impeachment_lvp; guild_lvp += 4 if impeachment_lvp; commons_unionist += 2 if impeachment_unionist; burgher_unionist += 2 if impeachment_unionist; guild_unionist += 2 if impeachment_unionist; faithful_unionist += 2 if impeachment_unionist; pro_republic += 5; ddp_relation += 5; lvp_relation += 5; gold_relation += 5; unionist_relation += 5; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; heartland_campaign_dufour = 1; banner_militancy += 0.03; banner_strength += 100
 face-image: img/weimar_coalition_3.jpg
 go-to: do_campaign
 max-visits: 1
@@ -65,7 +65,7 @@ subtitle: -2 resource
 view-if: not bourgeois_campaign_dufour
 choose-if: resources >= 2 and knight_strength >= reformist_strength
 unavailable-subtitle: [? if resources < 2: Not enough resources. ?][? if knight_strength < reformist_strength: The Neorevisionist faction needs to be more powerful than the Reformists. ?]
-on-arrival: resources -= 2; rb_strength += 150; rb_militancy += 0.1; sa_strength *= 0.9; sh_strength *= 0.9; commons_royalist -= 2; commons_marcher += 4; disfavored_royalist -= 4; disfavored_marcher += 6; burgher_marcher += 2; guild_marcher -= 4; landed_marcher -= 4; faithful_marcher -= 4; pro_republic -= 5; unionist_relation -= 10; ddp_relation -= 10; gold_relation -= 10; lvp_relation -= 10; gold_right += 3; ddp_right += 3; ddp_cohesion -= 3; banner_campaign_dufour = 1
+on-arrival: resources -= 2; banner_strength += 150; banner_militancy += 0.1; loyalist_strength *= 0.9; warden_strength *= 0.9; commons_royalist -= 2; commons_marcher += 4; disfavored_royalist -= 4; disfavored_marcher += 6; burgher_marcher += 2; guild_marcher -= 4; landed_marcher -= 4; faithful_marcher -= 4; pro_republic -= 5; unionist_relation -= 10; ddp_relation -= 10; gold_relation -= 10; lvp_relation -= 10; gold_right += 3; ddp_right += 3; ddp_cohesion -= 3; banner_campaign_dufour = 1
 face-image: img/reichsbanner_2.jpg
 go-to: do_campaign
 max-visits: 1

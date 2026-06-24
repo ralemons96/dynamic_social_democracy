@@ -29,7 +29,7 @@ Since we are currently ruling as part of an emergency government, we may use qua
 - @election_algorithm: No, let's hold the elections.
 
 @cancel_elections_2
-on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; gold_relation -= 8; lvp_relation -= 8; unionist_relation -= 8; ddp_relation -= 10; collectivist_relation -= 8; coup_progress += 2; commons_marcher -= 4; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; faithful_marcher -= 5; disfavored_marcher -= 5; coup_progress += 2 if royalist_normalized >= 0.3; coup_progress += 2 if royalist_normalized + traditionalist_normalized >= 0.5 and traditionalist_ideology = "Radical"; coup_progress += 2 if royalist_normalized + dnf_normalized >= 0.5 and traditionalist_ideology = "Moderate"; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
+on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; gold_relation -= 8; lvp_relation -= 8; unionist_relation -= 8; ddp_relation -= 10; collectivist_relation -= 8; coup_progress += 2; commons_marcher -= 4; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; faithful_marcher -= 5; disfavored_marcher -= 5; coup_progress += 2 if royalist_normalized >= 0.3; coup_progress += 2 if royalist_normalized + traditionalist_normalized >= 0.5 and traditionalist_ideology = "Radical"; coup_progress += 2 if royalist_normalized + dnf_normalized >= 0.5 and traditionalist_ideology = "Moderate"; loyalist_strength += 100 if coup_progress >= 7; warden_strength += 100 if coup_progress >= 7
 achievement: ausnahmezustand
 
 Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year +].
@@ -1378,7 +1378,7 @@ const data = [];
 
 if (Q.collectivist_r) {
     data.push({
-        "id": "kpd",
+        "id": "collectivist",
         "legend": "Collectivist",
         "name": "Collectivist",
         "seats": Math.round(Q.collectivist_r * Q.reichstag_size),
@@ -1396,14 +1396,14 @@ if (Q.sapd_r && Q.sapd_formed) {
 
 if (Q.marcher_r && !Q.rdp_r) {
     data.push({
-        "id": "spd",
+        "id": "marcher",
         "legend": "Marcher",
         "name": "Marcher",
         "seats": Math.round(Q.marcher_r * Q.reichstag_size),
     });
 } else if (Q.marcher_r && Q.rdp_r) {
     data.push({
-        "id": "spd",
+        "id": "marcher",
         "legend": "Marcher",
         "name": "Marcher",
         "seats": Math.round((Q.marcher_r - Q.rdp_r) * Q.reichstag_size),
@@ -1421,7 +1421,7 @@ if (Q.rdp_r) {
 
 if (Q.traditionalist_r && Q.traditionalist_wholesome) {
     data.push({
-        "id": "dnvp_wholesome",
+        "id": "traditionalist_wholesome",
         "legend": "Traditionalist",
         "name": "Traditionalist",
         "seats": Math.round(Q.traditionalist_r * Q.reichstag_size),
@@ -1449,7 +1449,7 @@ if (Q.lvp_r && Q.lvp_formed) {
 
 if (Q.unionist_minus_bvp_r) {
     data.push({
-        "id": "z",
+        "id": "unionist",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
@@ -1467,7 +1467,7 @@ if (Q.bvp_r) {
 
 if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
     data.push({
-        "id": "dvp",
+        "id": "gold",
         "legend": "Gold",
         "name": "Gold",
         "seats": Math.round(Q.gold_r * Q.reichstag_size),
@@ -1476,7 +1476,7 @@ if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
 
 if (Q.left_gnu_r && Q.left_gnu) {
     data.push({
-        "id": "left_dnef",
+        "id": "left_gnu",
         "legend": "Left_DNEF",
         "name": "Left_DNEF",
         "seats": Math.round(Q.left_gnu_r * Q.reichstag_size),
@@ -1485,7 +1485,7 @@ if (Q.left_gnu_r && Q.left_gnu) {
 
 if (Q.true_gnu_r && Q.gnu_formed && !Q.right_gnu && !Q.left_gnu) {
     data.push({
-        "id": "dnef",
+        "id": "gnu",
         "legend": "GNU",
         "name": "GNU",
         "seats": Math.round(Q.true_gnu_r * Q.reichstag_size),
@@ -1494,7 +1494,7 @@ if (Q.true_gnu_r && Q.gnu_formed && !Q.right_gnu && !Q.left_gnu) {
 
 if (Q.true_gnu_r && Q.gnu_formed && Q.right_gnu && !Q.left_gnu) {
     data.push({
-        "id": "dnef",
+        "id": "gnu",
         "legend": "GNU",
         "name": "GNU",
         "seats": Math.round((Q.true_gnu_r - Q.right_gnu_r) * Q.reichstag_size),
@@ -1503,7 +1503,7 @@ if (Q.true_gnu_r && Q.gnu_formed && Q.right_gnu && !Q.left_gnu) {
 
 if (Q.true_gnu_r && Q.gnu_formed && !Q.right_gnu && Q.left_gnu) {
     data.push({
-        "id": "dnef",
+        "id": "gnu",
         "legend": "GNU",
         "name": "GNU",
         "seats": Math.round((Q.true_gnu_r - Q.left_gnu_r) * Q.reichstag_size),
@@ -1512,7 +1512,7 @@ if (Q.true_gnu_r && Q.gnu_formed && !Q.right_gnu && Q.left_gnu) {
 
 if (Q.right_gnu_r && Q.right_gnu) {
     data.push({
-        "id": "right_dnef",
+        "id": "right_gnu",
         "legend": "Right_DNEF",
         "name": "Right_DNEF",
         "seats": Math.round(Q.right_gnu_r * Q.reichstag_size),
@@ -1591,7 +1591,7 @@ if (Q.traditionalist_gold_formed) {
 
 if (Q.traditionalist_r && !Q.traditionalist_wholesome) {
     data.push({
-        "id": "dnvp",
+        "id": "traditionalist",
         "legend": "Traditionalist",
         "name": "Traditionalist",
         "seats": Math.round(Q.traditionalist_r * Q.reichstag_size),
@@ -1618,7 +1618,7 @@ if (Q.dsu_exist && Q.dsu_r) {
 
 if (Q.royalist_split && Q.royalist_gallax_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_gallax_r * Q.reichstag_size),
@@ -1627,7 +1627,7 @@ if (Q.royalist_split && Q.royalist_gallax_r) {
 
 if (!Q.royalist_split && Q.royalist_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_r * Q.reichstag_size),
@@ -1660,8 +1660,8 @@ if (window && d3) {
 
     var lines = d3.linegraph(false, false,
             Q.parties_graph,
-            {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'dnef': '#BFC8CC', 'fkp': '#00C0FF'},
-            {'spd': 'Marcher', 'kpd': 'Collectivist', 'ddp': Q.ddp_name, 'z': Q.unionist_party_name + ' + Arcanists', 'dvp': 'Gold', 'dnvp': 'Traditionalist', 'nsdap': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'dnef': 'GNU', 'fkp': 'FKP'});
+            {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC', 'fkp': '#00C0FF'},
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FKP'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     d3.select("#election_history").datum(Q.election_records).call(lines);
@@ -1671,8 +1671,8 @@ if (window && d3) {
     if (!Q.historical_mode) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
-            {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'dnef': '#BFC8CC', 'fkp': '#00C0FF'},
-            {'spd': 'Marcher', 'kpd': 'Collectivist', 'ddp': Q.ddp_name, 'z': Q.unionist_party_name + ' + Arcanists', 'dvp': 'Gold', 'dnvp': 'Traditionalist', 'nsdap': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'dnef': 'GNU', 'fkp': 'FKP'});
+            {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC', 'fkp': '#00C0FF'},
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FKP'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -2137,7 +2137,7 @@ view-if: in_weimar_coalition_heartland
 title: Accept the <span style="color: #700000;">**Collectivists**</span>'s demands.
 unavailable-subtitle: [? if ddp_relation < 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0 and not lvp_formed: Our relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is not high enough. ?] [? if (unionist_relation < 50 and unionist_leader == "Emperor") or (unionist_relation < 60 and unionist_leader == "Joos") or (unionist_relation < 70 and unionist_ideology == "Right"): Our relationship with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not high enough. ?]
 choose-if: ((ddp_relation >= 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0) or (liberal_parliament == 1 or bourgeois_parliament_ddp == 1 or lvp_formed)) and ((unionist_relation >= 50 and unionist_leader == "Emperor") or (unionist_relation >= 60 and unionist_leader == "Joos") or (unionist_relation >= 70 and unionist_ideology == "Right"))
-on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 3; ddp_relation -= 3; lvp_relation -= 4; gold_relation -= 5; reformist_dissent += 10; gold_right += 2; lvp_right += 1.5; heartland_police_loyalty -= 0.1; rfb_militancy += 0.05; rfb_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
+on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 3; ddp_relation -= 3; lvp_relation -= 4; gold_relation -= 5; reformist_dissent += 10; gold_right += 2; lvp_right += 1.5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.05; vanguard_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
 
 Surprisingly, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] agrees to a reform of the ruling Unity Coalition. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Kurt Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
 
@@ -2152,7 +2152,7 @@ view-if: in_grand_coalition_heartland
 title: Accept the <span style="color: #700000;">**Collectivists**</span>'s demands.
 unavailable-subtitle: [? if ddp_relation < 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0 and not lvp_formed: Our relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is not high enough. ?] [? if (unionist_relation < 50 and unionist_leader == "Emperor") or (unionist_relation < 60 and unionist_leader == "Joos") or (unionist_relation < 70 and unionist_ideology == "Right"): Our relationship with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not high enough. ?]
 choose-if: ((ddp_relation >= 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0) or (liberal_parliament == 1 or bourgeois_parliament_ddp == 1 or lvp_formed)) and ((unionist_relation >= 50 and unionist_leader == "Emperor") or (unionist_relation >= 60 and unionist_leader == "Joos") or (unionist_relation >= 70 and unionist_ideology == "Right"))
-on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 10; gold_relation -= 15; reformist_dissent += 10; gold_right += 5; lvp_right += 4; heartland_police_loyalty -= 0.1; rfb_militancy += 0.05; rfb_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
+on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 10; gold_relation -= 15; reformist_dissent += 10; gold_right += 5; lvp_right += 4; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.05; vanguard_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
 
 We have kicked out the <span style="color: #C0A054;">**Golds**</span> from the government, and formed a Popular Front. The <span style="color: #C0A054;">**Golds**</span> is infuriated by our betrayal and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Kurt Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
 
@@ -2336,7 +2336,7 @@ view-if: in_weimar_coalition_heartland
 title: Accept the <span style="color: #700000;">**Collectivists**</span>'s demands.
 unavailable-subtitle: [? if reformist_strength >= left_strength: Our party reformists rule out this option. ?] [? if (president_ideology == "Right" or president == "DuFour") and not presidential_powers: [+ president +] will perform a <i>Commonwealth intervention</i> upon our government. ?]
 choose-if: left_strength >= reformist_strength and ((president_ideology != "Right" and president != "DuFour") or presidential_powers)
-on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 7; gold_relation -= 8; gold_right += 5; ddp_right += 3; ddp_cohesion -= 3; lvp_right += 5; heartland_police_loyalty -= 0.1; rfb_militancy += 0.1; rfb_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_dissent += 25; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
+on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 7; gold_relation -= 8; gold_right += 5; ddp_right += 3; ddp_cohesion -= 3; lvp_right += 5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.1; vanguard_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_dissent += 25; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
 
 We have exited our long standing Unity Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Kurt Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
 
@@ -2349,7 +2349,7 @@ view-if: in_grand_coalition_heartland
 title: Accept the <span style="color: #700000;">**Collectivists**</span>'s demands.
 unavailable-subtitle: [? if reformist_strength >= left_strength: Our party reformists rule out this option. ?] [? if president_ideology == "Right" or president == "DuFour": [+ president +] will perform a <i>Commonwealth intervention</i> upon our government. ?]
 choose-if: left_strength >= reformist_strength and president_ideology != "Right" and president != "DuFour"
-on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 15; ddp_relation -= 15; gold_relation -= 20; lvp_relation -= 20; reformist_dissent += 25; gold_right += 8; ddp_right += 5; ddp_cohesion -= 5; lvp_right += 5; heartland_police_loyalty -= 0.1; rfb_militancy += 0.1; rfb_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
+on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 15; ddp_relation -= 15; gold_relation -= 20; lvp_relation -= 20; reformist_dissent += 25; gold_right += 8; ddp_right += 5; ddp_cohesion -= 5; lvp_right += 5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.1; vanguard_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
 
 We have kicked out the <span style="color: #C0A054;">**Golds**</span> and the other bourgeois parties from the existing Grand Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The bourgeois parties are infuriated by our betrayal, and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Kurt Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
 
@@ -2546,7 +2546,7 @@ go-to: no_majority_bruning_toleration
 
 
 @hindenburg_appoints_papen
-on-arrival: chancellor = "Goodryke"; chancellor_party = "I"; next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; sa_banned = 0; pro_republic -= 8; finance_minister_party = "I"; interior_minister_party = "I"; economic_minister_party = "I"; labor_minister_party = "I"; foreign_minister_party = "I"; agriculture_minister_party = "I"; army_minister = "I"; papen_chancellor_timer = 4
+on-arrival: chancellor = "Goodryke"; chancellor_party = "I"; next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; loyalist_banned = 0; pro_republic -= 8; finance_minister_party = "I"; interior_minister_party = "I"; economic_minister_party = "I"; labor_minister_party = "I"; foreign_minister_party = "I"; agriculture_minister_party = "I"; army_minister = "I"; papen_chancellor_timer = 4
 face-image: img/portraits/PapenFranz.jpg
 
 There is no path to a majority government. President DuFour is tired of the chaos, and appoints Franz von Goodryke as chancellor instead of Askew. Goodryke is a independent formerly from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], and is significantly to the right of the majority of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
@@ -2786,7 +2786,7 @@ The working class is not entirely won over to the chancellor yet, and we stand t
 @schleicher_reichsbanner
 title: The the Banners is integrated into the state.
 subtitle: We will be defenseless.
-on-arrival: staal_marcher_para = 1; staal_marcher_concession += 1; staal_marcher_influence += 2; army_strength += 75; army_militancy -= (1 - rb_militancy); rb_militancy = 0.02; rb_strength = 300; sa_strength += 50; rfb_strength += 200; heartland_police_militancy = 1.5; heartland_police_strength += 15; commons_marcher -= 4; disfavored_marcher -= 6; burgher_marcher -= 2; commons_collectivist += 2; disfavored_collectivist += 4; knight_dissent += 60; knight_strength -= 10; labor_dissent += 30; center_dissent += 20; left_dissent += 50; reformist_dissent += 10; dues -= 1 if dues > 1; pro_republic -= 10
+on-arrival: staal_marcher_para = 1; staal_marcher_concession += 1; staal_marcher_influence += 2; army_strength += 75; army_militancy -= (1 - banner_militancy); banner_militancy = 0.02; banner_strength = 300; loyalist_strength += 50; vanguard_strength += 200; heartland_police_militancy = 1.5; heartland_police_strength += 15; commons_marcher -= 4; disfavored_marcher -= 6; burgher_marcher -= 2; commons_collectivist += 2; disfavored_collectivist += 4; knight_dissent += 60; knight_strength -= 10; labor_dissent += 30; center_dissent += 20; left_dissent += 50; reformist_dissent += 10; dues -= 1 if dues > 1; pro_republic -= 10
 
 The the Banners has been largely disarmed, with Staal promising increased funding for the police to maintain order in the streets.
 
@@ -2919,7 +2919,7 @@ There is no path to a majority government for now. The scheming around President
 title: <span style="color: #c00000;">**Marchers**</span> majority alone
 subtitle: <span style="color: #c00000;">**Marchers**</span>: [+ marcher_r +]%
 view-if: marcher_r >= 50
-on-arrival: chancellor = "Empty"; chancellor_party = "Marcher"; marcher_in_government = 1; in_marcher_majority = 1; pro_republic += 5; foreign_minister_party = "Marcher"; foreign_minister = "Yardley"; interior_minister_party = "Marcher"; interior_minister = "Heath"; justice_minister_party = "Marcher"; justice_minister = "Radbourne"; labor_minister_party = "Marcher"; labor_minister = "Wistle"; army_minister_party = "Marcher"; army_minister = "Lebbon"; economic_minister_party = "Marcher"; economic_minister = "Schmidt"; finance_minister_party = "Marcher"; finance_minister = "Bell"; agriculture_minister_party = "Marcher"; agriculture_minister = "Bayle"; army_loyalty -= 0.05;  ddp_right += 3; lvp_right += 4; gold_right += 5; liberal_cooperation += 8; bourgeois_cooperation += 8; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; dufour_angry = 70; comeback = 1 if (n_elections - comeback_a == 1); catastrophepolitik = 1 if n_elections >= 5 and not catastrophepolitik_cancel; mit_allen_notwendigen_stimmen = 1 if rb_militancy <= 0.01; seeheimer = 1 if commons_marcher_normalized < 10
+on-arrival: chancellor = "Empty"; chancellor_party = "Marcher"; marcher_in_government = 1; in_marcher_majority = 1; pro_republic += 5; foreign_minister_party = "Marcher"; foreign_minister = "Yardley"; interior_minister_party = "Marcher"; interior_minister = "Heath"; justice_minister_party = "Marcher"; justice_minister = "Radbourne"; labor_minister_party = "Marcher"; labor_minister = "Wistle"; army_minister_party = "Marcher"; army_minister = "Lebbon"; economic_minister_party = "Marcher"; economic_minister = "Schmidt"; finance_minister_party = "Marcher"; finance_minister = "Bell"; agriculture_minister_party = "Marcher"; agriculture_minister = "Bayle"; army_loyalty -= 0.05;  ddp_right += 3; lvp_right += 4; gold_right += 5; liberal_cooperation += 8; bourgeois_cooperation += 8; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; dufour_angry = 70; comeback = 1 if (n_elections - comeback_a == 1); catastrophepolitik = 1 if n_elections >= 5 and not catastrophepolitik_cancel; mit_allen_notwendigen_stimmen = 1 if banner_militancy <= 0.01; seeheimer = 1 if commons_marcher_normalized < 10
 achievement: majority_party
 go-to: achievement_check if (dynamic_mode or historical_mode or difficulty == 1); spd_majority_2 if not (dynamic_mode or historical_mode or difficulty == 1)
 
@@ -3005,7 +3005,7 @@ President [+ president +] faces a dilemma. He desperately desires a <span style=
 @emergency_braun
 title: We will form an emergency government with [+ president +]'s support.
 subtitle: This may have the effect of inflamming public sentiment against us, and the <span style="color: #808080;">reactionaries</span> will be against us each step of the way.
-on-arrival: sa_strength += 100; sh_strength += 100; in_emergency_government = 1; ddp_relation -= 5; lvp_relation -= 5; gold_relation -= 5; unionist_relation -= 5; ddp_right += 1; ddp_cohesion -= 0.5; gold_right += 3; lvp_right += 1; bourgeois_cooperation += 5; liberal_cooperation += 3
+on-arrival: loyalist_strength += 100; warden_strength += 100; in_emergency_government = 1; ddp_relation -= 5; lvp_relation -= 5; gold_relation -= 5; unionist_relation -= 5; ddp_right += 1; ddp_cohesion -= 0.5; gold_right += 3; lvp_right += 1; bourgeois_cooperation += 5; liberal_cooperation += 3
 
 Yes, an emergency minority government, with the support of the <span style="color: #c00000;">**Marchers**</span>. Who should lead this emergency minority government?
 
@@ -3058,7 +3058,7 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 @far_right_coup
 title: The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties immediately launch a military coup against us...
 view-if: far_right_coalition >= 45
-on-arrival: sh_strength += 150; sa_strength += 150; sh_militancy += 0.05; sa_militancy += 0.05
+on-arrival: warden_strength += 150; loyalist_strength += 150; warden_militancy += 0.05; loyalist_militancy += 0.05
 
 The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties, seeing that we are willing to deny them government by questionably democratic means, have decided that they can only take power by undemocratic means, and have risen up in force against the sitting government.
 
@@ -3078,8 +3078,8 @@ Q.gold_no_confidence = (Q.gold_relation < 45) ? 1 : 0;
 Q.ddp_no_confidence = (Q.ddp_relation < 35) ? 1 : 0;
 Q.lvp_no_confidence = (Q.lvp_relation < 40) ? 1 : 0;
 
-Q.sa_strength += 200;
-Q.sh_strength += 200;
+Q.loyalist_strength += 200;
+Q.warden_strength += 200;
 
 Q.no_confidence_votes = Q.royalist_r + Q.traditionalist_r + Q.dnf_r + Q.kvp_r;
 Q.no_confidence_votes += (Q.unionist_no_confidence ? Q.unionist_r : 0);
@@ -3374,8 +3374,8 @@ choose-if: concord_negotiations_points >= concord_negotiations_min
 unavailable-subtitle: The <span style="color: #000000;">[+ unionist_party_name +]</span> is not satisfied with our current promises.
 on-arrival: {!
 if (Q.concord_banner_accepted) {
-    Q.rb_militancy = 0.02;
-    if (Q.rb_strength > 2000) Q.rb_strength = 2000;
+    Q.banner_militancy = 0.02;
+    if (Q.banner_strength > 2000) Q.banner_strength = 2000;
     Q.heartland_police_strength += 40;
 }
 if (Q.concord_economy_accepted && Q.budget < 0) {
@@ -3610,8 +3610,8 @@ Q.burgher_royalist += 6;
 Q.landed_royalist += 6;
 Q.disfavored_royalist += 5;
 if (Q.far_right_coalition >= 50) {
-    Q.sa_strength += 100;
-    Q.sh_strength += 100;
+    Q.loyalist_strength += 100;
+    Q.warden_strength += 100;
     Q.coup_progress += 3;
 }
 !}
@@ -4115,7 +4115,7 @@ const ministries = [
     "interior_minister_party",
     "justice_minister_party",
     "labor_minister_party",
-    "reichswehr_minister_party",
+    "army_minister_party",
     "economic_minister_party",
     "finance_minister_party",
     "agriculture_minister_party"

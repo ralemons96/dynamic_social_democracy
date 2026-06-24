@@ -151,7 +151,7 @@ We have a plethora of campaign options at our disposal.
 @iron_front
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Bristol.
 view-if: iron_front_formed
-on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; rb_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
+on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_braun
@@ -273,7 +273,7 @@ We have a plethora of campaign options at our disposal.
 @iron_front_rosenfeld
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Pendrigon.
 view-if: iron_front_formed
-on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; rb_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
+on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_rosenfeld
@@ -356,7 +356,7 @@ subtitle: [? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?][? if 
 unavailable-subtitle: The <span style="color: #c00000;">Marchers</span> doesn't control Heartland.
 view-if: bruning_time
 choose-if: marcher_heartland
-on-arrival: dufour_funds += 1; resources += 3; ddp_relation += 5; unionist_relation += 3; lvp_relation += 3; ddp_left += 1; pro_republic += 3; burgher_ddp += 2; guild_ddp += 2; burgher_gold += 2 if gold_ideology != "Right"; guild_gold += 2 if gold_ideology != "Right"; burgher_lvp += 2; guild_lvp += 2; burgher_royalist -= 2 if burgher_royalist_normalized >= 40; guild_royalist -= 2 if guild_royalist_normalized >= 40; heartland_police_loyalty += 0.05; heartland_police_strength += 20; rb_militancy += 0.05; sa_strength -= 50; embezzle_2 = 1
+on-arrival: dufour_funds += 1; resources += 3; ddp_relation += 5; unionist_relation += 3; lvp_relation += 3; ddp_left += 1; pro_republic += 3; burgher_ddp += 2; guild_ddp += 2; burgher_gold += 2 if gold_ideology != "Right"; guild_gold += 2 if gold_ideology != "Right"; burgher_lvp += 2; guild_lvp += 2; burgher_royalist -= 2 if burgher_royalist_normalized >= 40; guild_royalist -= 2 if guild_royalist_normalized >= 40; heartland_police_loyalty += 0.05; heartland_police_strength += 20; banner_militancy += 0.05; loyalist_strength -= 50; embezzle_2 = 1
 max-visits: 1
 go-to: embezzlement_options
 
@@ -378,7 +378,7 @@ title: Our government in Heartland will distribute funds to pro-DuFour organizat
 subtitle: This would involve financing the bourgeois parties.
 view-if: marcher_heartland and not bruning_time
 max-visits: 1
-on-arrival: dufour_funds += 1; ddp_relation += 5; unionist_relation += 5; lvp_relation += 5; ddp_left += 1; pro_republic += 3; burgher_ddp += 3; guild_ddp += 3; burgher_gold += 3 if gold_ideology != "Right"; guild_gold += 3 if gold_ideology != "Right"; burgher_lvp += 3; guild_lvp += 3; burgher_royalist -= 3 if burgher_royalist_normalized >= 40; guild_royalist -= 3 if burgher_royalist_normalized >= 40; landed_other += 3; rb_militancy += 0.06; sa_strength -= 50; embezzle_2 = 1
+on-arrival: dufour_funds += 1; ddp_relation += 5; unionist_relation += 5; lvp_relation += 5; ddp_left += 1; pro_republic += 3; burgher_ddp += 3; guild_ddp += 3; burgher_gold += 3 if gold_ideology != "Right"; guild_gold += 3 if gold_ideology != "Right"; burgher_lvp += 3; guild_lvp += 3; burgher_royalist -= 3 if burgher_royalist_normalized >= 40; guild_royalist -= 3 if burgher_royalist_normalized >= 40; landed_other += 3; banner_militancy += 0.06; loyalist_strength -= 50; embezzle_2 = 1
 go-to: embezzlement_options
 
 We have met with politicians from the [? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?][? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?], the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party, the the Banners, and even some <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> peasant unions. We have agreed to allocate Heartland state funds to their groups, strengthening the DuFour campaign among those excluded from the official committee while also improving our relationship with these factions.
@@ -420,7 +420,7 @@ We have a plethora of campaign options at our disposal.
 @iron_front_hindenburg
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support DuFour.
 view-if: iron_front_formed
-on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 2; burgher_marcher += radicalization + 1; disfavored_marcher += radicalization + 1; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; rb_strength += 100; commons_royalist -= 2 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 2 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 2 if strife >= 5 and far_right_paramilitary
+on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 2; burgher_marcher += radicalization + 1; disfavored_marcher += radicalization + 1; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; banner_strength += 100; commons_royalist -= 2 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 2 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 2 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_hindenburg_2
@@ -640,7 +640,7 @@ We have a plethora of campaign options at our disposal.
 @paramilitary
 title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 subtitle: This will permanently alienate the bourgeois parties!
-on-arrival: collectivist_truce = 1; collectivist_relation += 5; rfb_strength += 100; rb_strength += 100; rfb_militancy += 0.1; rb_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
+on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 100; banner_strength += 100; vanguard_militancy += 0.1; banner_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
 face-image: img/reichsbanner_2.jpg
 max-visits: 1
 go-to: campaigning_thalmann

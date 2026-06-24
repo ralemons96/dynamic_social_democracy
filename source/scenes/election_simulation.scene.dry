@@ -17,8 +17,8 @@ Q.landed = 25; // agriculture and forestry employment... but many of those are p
 Q.disfavored = 8.6;
 Q.faithful = 30;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['commons', 'guild', 'burgher', 'landed', 'disfavored', 'faithful'];
+Q.parties = ['marcher', 'collectivist', 'unionist', 'ddp', 'gold', 'traditionalist', 'royalist', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -90,8 +90,8 @@ Q.landed = 25; // agriculture and forestry employment... but many of those are p
 Q.disfavored = 20;
 Q.faithful = 30;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['commons', 'guild', 'burgher', 'landed', 'disfavored', 'faithful'];
+Q.parties = ['marcher', 'collectivist', 'unionist', 'ddp', 'gold', 'traditionalist', 'royalist', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -172,8 +172,8 @@ Q.landed = 25; // agriculture and forestry employment... but many of those are p
 Q.disfavored = 33;
 Q.faithful = 30;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['commons', 'guild', 'burgher', 'landed', 'disfavored', 'faithful'];
+Q.parties = ['marcher', 'collectivist', 'unionist', 'ddp', 'gold', 'traditionalist', 'royalist', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.

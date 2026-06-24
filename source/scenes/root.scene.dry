@@ -63,7 +63,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist', 'social_patriot'];
+Q.factions = ['left', 'center', 'labor', 'reformist', 'knight', 'social_patriot'];
 // should this be normalized to 100%?
 Q.left_strength = 15;
 Q.left_dissent = 20;
@@ -155,22 +155,22 @@ Q.heartland_leader = "Bristol"
 // The array of forces - paramilitary groups
 // Number of members in 1928 (in thousands)
 // the Banners, stahlhelm, SA, rotfrontkämpferbund
-Q.rb_strength = 2000;
-Q.rb_militancy = 0.01;
-Q.women_in_rb = 0;
-Q.rb_banned = 0;
-Q.sh_strength = 500;
-Q.sh_militancy = 0.5;
-Q.sh_banned = 0;
-Q.sh_banned_heartland = 0;
-Q.sa_strength = 30;
-Q.sa_militancy = 0.8;
-Q.sa_banned = 0;
-Q.sa_banned_heartland = 0;
-Q.rfb_strength = 130;
-Q.rfb_militancy = 0.5;
-Q.rfb_banned = 0;
-Q.rfb_banned_heartland = 0;
+Q.banner_strength = 2000;
+Q.banner_militancy = 0.01;
+Q.women_in_banner = 0;
+Q.banner_banned = 0;
+Q.warden_strength = 500;
+Q.warden_militancy = 0.5;
+Q.warden_banned = 0;
+Q.warden_banned_heartland = 0;
+Q.loyalist_strength = 30;
+Q.loyalist_militancy = 0.8;
+Q.loyalist_banned = 0;
+Q.loyalist_banned_heartland = 0;
+Q.vanguard_strength = 130;
+Q.vanguard_militancy = 0.5;
+Q.vanguard_banned = 0;
+Q.vanguard_banned_heartland = 0;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
@@ -251,9 +251,9 @@ Q.disfavored_qol = 100;
 Q.guild_qol = 100;
 Q.burgher_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
-Q.parties_graph = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['commons', 'guild', 'burgher', 'landed', 'disfavored', 'faithful'];
+Q.parties = ['marcher', 'collectivist', 'unionist', 'ddp', 'gold', 'traditionalist', 'royalist', 'other'];
+Q.parties_graph = ['marcher', 'collectivist', 'unionist', 'ddp', 'gold', 'traditionalist', 'royalist', 'other'];
 
 Q.sapd_formed = 0;
 Q.dnf_formed = 0;
@@ -708,52 +708,52 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
     'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
-    'party_organizations', 'rally', 'reichsbanner',
+    'party_organizations', 'rally', 'banner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
     'party_disunity',
     // govt
     'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-    'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
+    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
+    'police', 'heartland_affairs', 'shuffle_cabinet', 'social_welfare',
     'homosexual_rights', 'economic_policy', 'coalition_affairs',
     'war_guilt', 'womens_rights', 'economic_democracy',
     'dealing_with_toleration',
-    'constitutional_reform', 'labor_rights', 'spd_government_burden',
+    'constitutional_reform', 'labor_rights', 'marcher_government_burden',
     'education_science', 'curriculum',
     // events
     'emergency_cuts', 'unemployment_insurance',
-    'sa_ban', 'sh_ban', 'papen_chancellor', 'schleicher_chancellor',
-    'kpd_policy', 'kpd_ultimatum', 'kpd_ultimatum_prussia', 'popular_front_dispute',
+    'loyalist_ban', 'warden_ban', 'papen_chancellor', 'staal_chancellor',
+    'collectivist_policy', 'collectivist_ultimatum', 'collectivist_ultimatum_heartland', 'popular_front_dispute',
     'high_inflation', 'banking_crisis', 'understanding_enemy',
-    'dnf_decay', 'march_on_berlin', 'prussian_reichsexekution',
+    'dnf_decay', 'march_on_berlin', 'heartland_reichsexekution',
     'bruning_event', 'lvp_merger', 'lvp_merger_1', 'lvp_merger_2', 'bourgeois_merger',
     'bourgeois_negotiations_1930', 'bourgeois_negotiations_1930_aftermath', 'schleichers_schemes',
-    'bourgeois_negotiations_elections_1930', 'nazi_decay', 'stegerwald_transformation', 'emergency_fundraising', 'red_general', 'weimar_rally', 'nazi_funds',
+    'bourgeois_negotiations_elections_1930', 'royalist_decay', 'stegerwald_transformation', 'emergency_fundraising', 'red_general', 'weimar_rally', 'royalist_funds',
     'dsu_policy'];
 Q.rubicon_timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
     'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
-    'party_organizations', 'rally', 'reichsbanner',
+    'party_organizations', 'rally', 'banner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
     'party_disunity',
     // govt
     'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-    'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
+    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
+    'police', 'heartland_affairs', 'shuffle_cabinet', 'social_welfare',
     'homosexual_rights', 'economic_policy', 'coalition_affairs',
     'war_guilt', 'womens_rights', 'economic_democracy',
     'dealing_with_toleration',
-    'constitutional_reform', 'labor_rights', 'spd_government_burden',
+    'constitutional_reform', 'labor_rights', 'marcher_government_burden',
     'education_science', 'curriculum',
     // events
     'emergency_cuts', 'unemployment_insurance',
-    'sa_ban', 'sh_ban', 'papen_chancellor', 'schleicher_chancellor',
-    'kpd_policy', 'kpd_ultimatum', 'kpd_ultimatum_prussia', 'popular_front_dispute',
+    'loyalist_ban', 'warden_ban', 'papen_chancellor', 'staal_chancellor',
+    'collectivist_policy', 'collectivist_ultimatum', 'collectivist_ultimatum_heartland', 'popular_front_dispute',
     'high_inflation', 'banking_crisis', 'understanding_enemy',
-    'dnf_decay', 'march_on_berlin', 'prussian_reichsexekution',
+    'dnf_decay', 'march_on_berlin', 'heartland_reichsexekution',
     'bruning_event', 'lvp_merger', 'lvp_merger_1', 'lvp_merger_2', 'bourgeois_merger', 'schleichers_schemes',
-    'bourgeois_negotiations_elections_1930', 'emergency_fundraising', 'red_general', 'weimar_rally', 'nazi_funds',
+    'bourgeois_negotiations_elections_1930', 'emergency_fundraising', 'red_general', 'weimar_rally', 'royalist_funds',
     'campaigning', 'dsu_policy'];
 Q.advisor_action_timer = 0;
 // party affairs timers
@@ -804,6 +804,7 @@ Q.foreign_policy_timer = 0;
 Q.judiciary_timer = 0;
 Q.labor_affairs_timer = 0;
 Q.military_policy_timer = 0;
+Q.defense_appropriations_timer = 0;
 Q.police_timer = 0;
 Q.heartland_affairs_timer = 0;
 Q.shuffle_cabinet_timer = 0;
@@ -816,8 +817,8 @@ Q.coalition_affairs_timer = 0;
 // event timers
 Q.emergency_cuts_timer = 0;
 Q.unemployment_insurance_timer = 0;
-Q.sa_ban_timer = 0;
-Q.sh_ban_timer = 0;
+Q.loyalist_ban_timer = 0;
+Q.warden_ban_timer = 0;
 Q.collectivist_ultimatum_timer = 0;
 Q.collectivist_ultimatum_heartland_timer = 0;
 Q.dnf_decay_timer = 0;
@@ -1074,7 +1075,7 @@ const achievements = [
   "achievement_einigkeit_und_recht_und_freiheit",
   "achievement_victory_for_the_republic",
   "achievement_bollwerk_der_demokratie",
-  "achievement_red_tzar_of_prussia",
+  "achievement_red_tzar_of_heartland",
   "achievement_einheitsfront",
   "achievement_einheitsfront_2",
   "achievement_volksfront",
@@ -1087,14 +1088,14 @@ const achievements = [
   "achievement_rote_millionar",
   "achievement_sohn_seiner_klasse",
   "achievement_versohnler",
-  "achievement_deport_hitler",
+  "achievement_deport_gallax",
   "achievement_wirtschaftspolitik",
   "achievement_wirtschaftswunder",
   "achievement_wirtschaftsexperiment",
   "achievement_freie_marktwirtschaft",
   "achievement_equality",
   "achievement_hirschfeld",
-  "achievement_women_reichsbanner",
+  "achievement_women_banner",
   "achievement_anders_als_die_andern",
   "achievement_bruder_zur_sonne",
   "achievement_die_rote_fahne",
@@ -1118,7 +1119,7 @@ const achievements = [
   "achievement_arbeiter_von_wien",
   "achievement_stolperstein",
   "achievement_sturm_und_drang",
-  "achievement_hitler_tot",
+  "achievement_gallax_tot",
   "achievement_vive_le_cartel",
   "achievement_neuer_nationalismus",
   "achievement_christliche_volkspartei",
@@ -1141,7 +1142,7 @@ const achievements = [
   "achievement_ein_interessantes_experiment",
   "achievement_das_grosste_aller_zelte",
   "achievement_getrennt_marschieren_vereint_schlagen",
-  "achievement_nach_schleicher_wir",
+  "achievement_nach_staal_wir",
   "achievement_sozialdemokratische_blockpartei",
   "achievement_aller_guten_dinge_sind_zwei",
   "achievement_wer_braucht_schon_freunde",
@@ -1168,7 +1169,7 @@ const achievements = [
   "achievement_blockparteien_parade",
   "achievement_der_arbeiterstaat",
   "achievement_soziale_marktwirtschaft",
-  "achievement_gegen_papen_hitler_thalmann",
+  "achievement_gegen_papen_gallax_thalmann",
   "achievement_wels",
   "achievement_kommunistische_alternative",
   "achievement_die_rote_republik",
@@ -1178,7 +1179,7 @@ const achievements = [
   "achievement_neue_geschaftsfuhrung",
   "achievement_rotes_bayern",
   "achievement_1919_geracht",
-  "achievement_nach_der_spd_wir",
+  "achievement_nach_der_marcher_wir",
   "achievement_eurokommunismus",
   "achievement_kriegswirtschaft",
   "achievement_sechs_sieben",
@@ -1237,11 +1238,11 @@ For more information on the politics and government of the Commonwealth Republic
 - @1928_challenge: Custom Modes
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; rb_strength = 2500; collectivist_relation = 29; unionist_relation = 54; gold_relation = 49; ddp_relation = 65; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; banner_strength = 2500; collectivist_relation = 29; unionist_relation = 54; gold_relation = 49; ddp_relation = 65; budget = 5;
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; unionist_relation = 41; collectivist_relation = 16; gold_relation = 31; ddp_relation = 50; budget = 3
+on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; banner_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; unionist_relation = 41; collectivist_relation = 16; gold_relation = 31; ddp_relation = 50; budget = 3
 go-to: 1928_main
 
 @1928_historical
@@ -1252,7 +1253,7 @@ Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 2;
 Q.base_dues = 2;
-Q.rb_strength = 2000;
+Q.banner_strength = 2000;
 Q.reformist_dissent = 25;
 Q.left_dissent = 30;
 Q.labor_dissent = 25;
@@ -1274,7 +1275,7 @@ Q.dynamic_mode = 1;
 Q.resources = 3;
 Q.dues = 3;
 Q.base_dues = 3;
-Q.rb_strength = 2000;
+Q.banner_strength = 2000;
 Q.unionist_relation = 41;
 Q.collectivist_relation = 21;
 Q.gold_relation = 31;
@@ -1290,7 +1291,7 @@ Q.difficulty = -1;
 Q.resources = 3;
 Q.dues = 3;
 Q.base_dues = 3;
-Q.rb_strength = 2000;
+Q.banner_strength = 2000;
 Q.unionist_relation = 41;
 Q.collectivist_relation = 21;
 Q.gold_relation = 31;
@@ -1348,26 +1349,26 @@ for (var party of Q.parties) {
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
         Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
         Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
             Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
         } else {
             Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
             Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
@@ -1377,7 +1378,7 @@ for (var party of Q.parties) {
 }
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         Q.nvf_normalized = Q.nvf_support / total_support;
@@ -1430,26 +1431,26 @@ for (var party of Q.parties) {
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
         Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
         Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
             Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
         } else {
             Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
             Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
@@ -1459,7 +1460,7 @@ for (var party of Q.parties) {
 }
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         Q.nvf_normalized = Q.nvf_support / total_support;
@@ -1507,26 +1508,26 @@ for (var party of Q.parties) {
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
         Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
         Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
             Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
         } else {
             Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
             Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
@@ -1536,7 +1537,7 @@ for (var party of Q.parties) {
 }
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         Q.nvf_normalized = Q.nvf_support / total_support;

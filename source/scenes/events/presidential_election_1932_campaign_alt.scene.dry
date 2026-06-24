@@ -150,7 +150,7 @@ We have a plethora of campaign options at our disposal.
 @iron_front
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Bristol.
 view-if: iron_front_formed
-on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; rb_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
+on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_braun
@@ -272,7 +272,7 @@ We have a plethora of campaign options at our disposal.
 @iron_front_rosenfeld
 title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Pendrigon.
 view-if: iron_front_formed
-on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; rb_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
+on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_rosenfeld
@@ -480,7 +480,7 @@ We have a plethora of campaign options at our disposal.
 @paramilitary
 title: Ally with the <span style="color: #700000;">Communist</span> <span style="color: #700000;">**RFB**</span> on the streets, to fight against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 subtitle: This will permanently alienate the bourgeois parties!
-on-arrival: collectivist_truce = 1; collectivist_relation += 5; rfb_strength += 100; rb_strength += 100; rfb_militancy += 0.1; rb_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
+on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 100; banner_strength += 100; vanguard_militancy += 0.1; banner_militancy += 0.04; knight_dissent += 10; reformist_dissent += 10; dufour_angry += 150; unionist_relation -= 20; ddp_relation -= 20; gold_relation -= 20; lvp_relation -= 20; ddp_cohesion -= 5; ddp_right += 6; gold_right += 10; lvp_right += 10
 face-image: img/reichsbanner_2.jpg
 max-visits: 1
 go-to: campaigning_thalmann

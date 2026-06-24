@@ -82,11 +82,11 @@ We have successfully pressured Askew to tone down the severity of his austerity 
 [? if bruning_austerity_limited == 1: We have successfully prevented Askew from decreasing taxes on high earners, lessening the burden of compensatory tax increases on the lower strata. ?][? if bruning_austerity_limited == 2: We have successfully pressured Askew into attempting to appease us by reinstating the 40-hour workweek, however wages themselves remains suboptimal. ?][? if bruning_austerity_limited >= 3: We have successfully pressured Askew in reversing some salary cuts to civil servants. ?]
 
 @urge_paramilitary
-view-if: political_decree < 2 and not sa_nationwide_ban
+view-if: political_decree < 2 and not loyalist_nationwide_ban
 choose-if: marcher_heartland and strife >= 3 and unionist_relation >= 35 and not marcher_toleration_right and not second_bruning_cabinet_seen
 unavailable-subtitle: [? if not marcher_heartland: We don't control the Heartland government. ?] [? if strife < 3: Paramilitary violence isn't severe enough to justify an emergency decree. ?] [? if unionist_relation < 35: We lack sufficient relations with Askew. ?] [? if second_bruning_cabinet_seen: Joseph Werth is no longer in charge of the Interior Ministry, meaning we can no longer rely on his connections. ?] [? if marcher_toleration_right: The <span style="color: #3E88B3;">Traditionalists</span> won't allow Askew to restrict the activities of their own paramilitary. ?]
 title: Urge Askew to grant us stronger actions against political extremists, and to restrict certain rights.
-on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; rfb_militancy *= 0.9; rfb_strength *= 0.85; sa_militancy *= 0.96; sa_strength *= 0.96; sh_militancy *= 0.98; sh_strength *= 0.98; commons_collectivist -= 1; commons_royalist -= 1; disfavored_collectivist -= 3; disfavored_royalist -= 3; burgher_royalist -= 2; dufour_angry_bruning += 5
+on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; vanguard_militancy *= 0.9; vanguard_strength *= 0.85; loyalist_militancy *= 0.96; loyalist_strength *= 0.96; warden_militancy *= 0.98; warden_strength *= 0.98; commons_collectivist -= 1; commons_royalist -= 1; disfavored_collectivist -= 3; disfavored_royalist -= 3; burgher_royalist -= 2; dufour_angry_bruning += 5
 
 Carl Heath and other Heartland officials have successfully urged Askew to issue an emergency decree expanding police authority to suppress political extremism. The decree imposes restrictions on political meetings, organizations, newspapers, and posters, all of which now require police approval beforehand.
 

@@ -29,7 +29,7 @@ Nonetheless, this is great news! The the Banners and police can finally bring an
 - @nazi_2: Staal seeks to attract former <span style="color: #7A3C00;">Storm Troopers</span> into a government militia.
 
 @nazi_2
-on-arrival: sa_strength *= 0.9; sa_militancy -= 0.05; army_strength += 25; reichstag_militancy -= 1.5; rfb_strength += 75; rfb_militancy += 0.1; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1
+on-arrival: loyalist_strength *= 0.9; loyalist_militancy -= 0.05; army_strength += 25; reichstag_militancy -= 1.5; vanguard_strength += 75; vanguard_militancy += 0.1; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1
 
 Staal had long sought to integrate the <span style="color: #7A3C00;">**SA**</span> into the state apparatus. With the organization's rapid collapse, he sees an opportunity to recruit rank-and-file members into a newly formed "self-defense militia" attached to the Commonwealth Army. However, the Geneva Disarmament Conference has not yet concluded, and any such move would violate the Treaty of Versailles—at least until a formal agreement on rearmament is secured.
 

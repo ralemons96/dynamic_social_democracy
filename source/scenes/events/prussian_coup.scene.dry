@@ -24,7 +24,7 @@ subtitle: Labor will call a general strike. The the Banners and the loyal elemen
 unavailable-subtitle: We do not have the forces to resist.
 choose-if: democracy_force >= 35
 
-[? if heartland_leader == "Sedgewick" or heartland_leader == "Askew": A potential roadblock to armed resistance is the unwillingness of Minister President [+ heartland_leader +] to do so, [? if not rb_stay:as a result, they've overruled Heath's call to resist the coup and has made the whole situation a mess. ?][? if rb_stay:however, the <span style="color: #000000;">Unionists</span>'s decision to remain in a militarized the Banners has rallied the Unity Coalition parties to the defense of the republic they helped create. ?] ?]
+[? if heartland_leader == "Sedgewick" or heartland_leader == "Askew": A potential roadblock to armed resistance is the unwillingness of Minister President [+ heartland_leader +] to do so, [? if not banner_stay:as a result, they've overruled Heath's call to resist the coup and has made the whole situation a mess. ?][? if banner_stay:however, the <span style="color: #000000;">Unionists</span>'s decision to remain in a militarized the Banners has rallied the Unity Coalition parties to the defense of the republic they helped create. ?] ?]
 
 The Commonwealth Army are already on the streets of Axton, with a national force of a hundred thousand men on standby, ready to crush any resistance. The <span style="color: #3E88B3;">**Wardens**</span> and the recently legalized <span style="color: #7A3C00;">**SA**</span> are poised to back them. The the Banners simply cannot match the small, but well-trained and heavily armed Commonwealth Army. If we resist, we face the very real prospect of civil war. We understand the gravity of this, don’t we?
 
@@ -33,28 +33,28 @@ The Commonwealth Army are already on the streets of Axton, with a national force
 - @surrender
 
 @defend_2
-view-if: (royalist_votes >= 25 or rb_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3
+view-if: (royalist_votes >= 25 or banner_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= banner_strength*banner_militancy) and (marcher_votes < 26 or banner_militancy < 0.2) and banner_militancy < 0.3
 on-arrival: {!
 
-Q.sa_force_heartland = Q.sa_strength*Q.sa_militancy;
-Q.sh_force_heartland = Q.sh_strength*Q.sh_militancy;
-Q.rb_force_heartland = Q.rb_strength*Q.rb_militancy;
-Q.rfb_force_heartland = Q.rfb_strength*Q.rfb_militancy;
+Q.loyalist_force_heartland = Q.loyalist_strength*Q.loyalist_militancy;
+Q.warden_force_heartland = Q.warden_strength*Q.warden_militancy;
+Q.banner_force_heartland = Q.banner_strength*Q.banner_militancy;
+Q.vanguard_force_heartland = Q.vanguard_strength*Q.vanguard_militancy;
 Q.heartland_force_heartland = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 Q.army_force_heartland = Q.army_strength*Q.army_militancy*(1-Q.army_loyalty);
-var total_force_prussia = (Q.sa_force_heartland+Q.sh_force_heartland+Q.rb_force_heartland+Q.rfb_force_heartland+Q.heartland_force_heartland+Q.army_force_heartland);
+var total_force_prussia = (Q.loyalist_force_heartland+Q.warden_force_heartland+Q.banner_force_heartland+Q.vanguard_force_heartland+Q.heartland_force_heartland+Q.army_force_heartland);
 
-Q.sa_force_heartland = Math.round((Q.sa_force_heartland/total_force_prussia)*100);
-Q.sh_force_heartland = Math.round((Q.sh_force_heartland/total_force_prussia)*100);
-Q.rb_force_heartland = Math.round((Q.rb_force_heartland/total_force_prussia)*100);
-Q.rfb_force_heartland = Math.round((Q.rfb_force_heartland/total_force_prussia)*100);
+Q.loyalist_force_heartland = Math.round((Q.loyalist_force_heartland/total_force_prussia)*100);
+Q.warden_force_heartland = Math.round((Q.warden_force_heartland/total_force_prussia)*100);
+Q.banner_force_heartland = Math.round((Q.banner_force_heartland/total_force_prussia)*100);
+Q.vanguard_force_heartland = Math.round((Q.vanguard_force_heartland/total_force_prussia)*100);
 Q.heartland_force_heartland = Math.round((Q.heartland_force_heartland/total_force_prussia)*100);
 
-Q.happy_forces = Q.rb_force*(1-Q.dissent) + Q.heartland_force;
-if (Q.heartland_leader == "Askew" || Q.heartland_leader == "Sedgewick" && !Q.rb_stay) Q.happy_forces -= (Q.heartland_force / 2);
-if (Q.collectivist_truce) Q.happy_forces += Q.rfb_force;
+Q.happy_forces = Q.banner_force*(1-Q.dissent) + Q.heartland_force;
+if (Q.heartland_leader == "Askew" || Q.heartland_leader == "Sedgewick" && !Q.banner_stay) Q.happy_forces -= (Q.heartland_force / 2);
+if (Q.collectivist_truce) Q.happy_forces += Q.vanguard_force;
 Q.happy_forces += (Q.commons_marcher_normalized*(1 - Q.dissent)*(1 - Q.disfavored/100))/5;
-Q.angry_forces = Q.sh_force + Q.sa_force + (Q.army_force_heartland/2);
+Q.angry_forces = Q.warden_force + Q.loyalist_force + (Q.army_force_heartland/2);
 
 Q.resist_coup = 1
 !}
@@ -66,7 +66,7 @@ go-to: defend_2_civil_war if happy_forces < angry_forces; defend_2_victory if ha
 
 
 @defend_2_victory
-on-arrival: heartland_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_republic += 12; commons_collectivist -= 4; disfavored_collectivist -= 4; commons_marcher += 8; disfavored_marcher += 8; commons_royalist -= 6; disfavored_royalist -= 6; burgher_royalist -= 4; burgher_marcher += 4; guild_royalist -= 3; guild_ddp += 2; guild_gold += 1; guild_lvp += 3; landed_royalist -= 3; landed_ddp += 2; landed_gold += 1; landed_lvp += 3; faithful_royalist -= 3; faithful_marcher += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; unionist_relation += 5; ddp_relation += 5 if rb_stay; unionist_relation += 5 if rb_stay; heartland_police_loyalty = 1; heartland_police_strength += 25; army_militancy -= 0.5; papen_strength -= 10; dufour_papen_r -= 10
+on-arrival: heartland_coup_win = 1; loyalist_strength *= 0.75; warden_strength *= 0.75; pro_republic += 12; commons_collectivist -= 4; disfavored_collectivist -= 4; commons_marcher += 8; disfavored_marcher += 8; commons_royalist -= 6; disfavored_royalist -= 6; burgher_royalist -= 4; burgher_marcher += 4; guild_royalist -= 3; guild_ddp += 2; guild_gold += 1; guild_lvp += 3; landed_royalist -= 3; landed_ddp += 2; landed_gold += 1; landed_lvp += 3; faithful_royalist -= 3; faithful_marcher += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; unionist_relation += 5; ddp_relation += 5 if banner_stay; unionist_relation += 5 if banner_stay; heartland_police_loyalty = 1; heartland_police_strength += 25; army_militancy -= 0.5; papen_strength -= 10; dufour_papen_r -= 10
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 
@@ -85,7 +85,7 @@ Our forces confront the government troops and their supporters on the streets of
 - @civil_war: It is a civil war.
 
 @defend_3
-view-if: not ((royalist_votes >= 25 or rb_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= rb_strength*rb_militancy) and (marcher_votes < 26 or rb_militancy < 0.2) and rb_militancy < 0.3)
+view-if: not ((royalist_votes >= 25 or banner_militancy < 0.2) and ((army_strength*army_militancy*(1-army_loyalty)) >= banner_strength*banner_militancy) and (marcher_votes < 26 or banner_militancy < 0.2) and banner_militancy < 0.3)
 on-arrival: papen_strength -= 1; dufour_papen_r -= 1; pro_republic += 5
 achievement: bollwerk_der_demokratie
 
@@ -96,7 +96,7 @@ For now, we remain in control of the democratic bulwark.
 @surrender
 title: Give up on the Heartland government.
 subtitle: We will attempt to fight this out legally.
-on-arrival: older_heartland_leader = heartland_leader; heartland_coup_lose = 1; pre_in_weimar_coalition_heartland = 1 if ((in_weimar_coalition_heartland == 1 or in_minority_weimar_coalition_heartland == 1) or (in_grand_coalition_heartland == 1 and lvp_formed)); pre_in_grand_coalition_heartland = 1 if (in_grand_coalition_heartland == 1 or in_minority_grand_coalition_heartland == 1); in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; heartland_leader = "Goodryke"; commons_marcher -= 5; burgher_marcher -= 5; burgher_ddp -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 10; knight_dissent += 20; rb_militancy *= 0.8; rb_strength -= 200; heartland_police_loyalty -= 0.5; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4; papen_strength += 1
+on-arrival: older_heartland_leader = heartland_leader; heartland_coup_lose = 1; pre_in_weimar_coalition_heartland = 1 if ((in_weimar_coalition_heartland == 1 or in_minority_weimar_coalition_heartland == 1) or (in_grand_coalition_heartland == 1 and lvp_formed)); pre_in_grand_coalition_heartland = 1 if (in_grand_coalition_heartland == 1 or in_minority_grand_coalition_heartland == 1); in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; heartland_leader = "Goodryke"; commons_marcher -= 5; burgher_marcher -= 5; burgher_ddp -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 10; knight_dissent += 20; banner_militancy *= 0.8; banner_strength -= 200; heartland_police_loyalty -= 0.5; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4; papen_strength += 1
 
 On the morning of the coup, the decree is presented to the Heartland government. Despite fierce objections to its constitutionality—and Heath’s vow to yield only to force—a hundred thousand Commonwealth Army troops occupy key government buildings in Axton. One by one, Heath and the police chiefs allow themselves to be removed without resistance.
 

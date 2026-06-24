@@ -30,7 +30,7 @@ These extreme precautions culminated in the spectacle of fifteen thousand <span 
 
 @nazi_2
 title: We are powerless, with the police on their side.
-on-arrival: sa_strength += 25; sa_militancy += 0.02; rfb_strength += 10; disfavored_collectivist -= 2; disfavored_royalist += 2; commons_collectivist -= 2; commons_royalist += 2; royalist_explode -= 1
+on-arrival: loyalist_strength += 25; loyalist_militancy += 0.02; vanguard_strength += 10; disfavored_collectivist -= 2; disfavored_royalist += 2; commons_collectivist -= 2; commons_royalist += 2; royalist_explode -= 1
 
 In the days that follow, <span style="color: #7A3C00;">Royalist</span> morale experiences a renewed, if temporary, surge. The rally projects an aura of legitimacy, as the <span style="color: #7A3C00;">Royalists</span> align themselves with the forces of law and order against the <span style="color: #700000;">**Communists**</span>.
 

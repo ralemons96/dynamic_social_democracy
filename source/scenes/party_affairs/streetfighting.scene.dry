@@ -1,7 +1,7 @@
 title: Streetfighting
 new-page: true
 is-card: true
-on-arrival: streetfighting_timer = 6; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25; strife += 1
+on-arrival: streetfighting_timer = 6; month_actions += 1; banner_militarization_cost = 2 if banner_militancy > 0.1 else banner_militarization_cost = 1; banner_militarization_cost = 3 if banner_militancy > 0.25; strife += 1
 view-if: year >= 1930 and far_right_force >= 30 and streetfighting_timer == 0 and not return_to_normalcy and (chancellor != "Staal" or staal_time < 8)
 card-image: img/blutmai_2.jpg
 tags: party_affairs; antifascism
@@ -21,37 +21,37 @@ We must do something to protect the workers against these predations.
 - @easy_discard
 
 @battle
-view-if: rb_militancy > 0.1 and rb_militancy < 0.5
-on-arrival: rb_militancy += 0.1; sa_strength += 40; rb_strength -= 100; 
+view-if: banner_militancy > 0.1 and banner_militancy < 0.5
+on-arrival: banner_militancy += 0.1; loyalist_strength += 40; banner_strength -= 100; 
 max-visits: 1
 
 Many the Banners members are not ready for actual fighting, and thus quit. However, the remainder are toughened as a result. Our confrontations also provide ample recruiting material for the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>.
 
 @arm_rb
-subtitle: -[+ rb_militarization_cost +] resource
-choose-if: resources >= rb_militarization_cost
-unavailable-subtitle: Not enough resources ([+ rb_militarization_cost +] needed).
-on-arrival: resources -= rb_militarization_cost; rb_militancy += 0.06; rb_strength += 50; sa_strength += 50; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
+subtitle: -[+ banner_militarization_cost +] resource
+choose-if: resources >= banner_militarization_cost
+unavailable-subtitle: Not enough resources ([+ banner_militarization_cost +] needed).
+on-arrival: resources -= banner_militarization_cost; banner_militancy += 0.06; banner_strength += 50; loyalist_strength += 50; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
 We have increased training and purchased more armaments for the the Banners.
 
-[? if not concord_leave_banner and not rb_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
+[? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 
 @if_training
 view-if: iron_front_formed == 1
-on-arrival: rb_militancy += 0.03; rb_strength += 200; sa_strength += 50; 
+on-arrival: banner_militancy += 0.03; banner_strength += 200; loyalist_strength += 50; 
 max-visits: 2
 
 As part of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>, we are increasing coordination between the the Banners and the unions, and many union members want to become more involved.
 
 @prussian_police_training
 view-if: heartland_leader = "Bristol" or heartland_leader = "Pendrigon" and heartland_police_loyalty > 0.5
-on-arrival: rb_militancy += 0.05; sa_strength += 50; heartland_police_training += 1
+on-arrival: banner_militancy += 0.05; loyalist_strength += 50; heartland_police_training += 1
 
 The loyal sections of the Heartland police can help train the the Banners.
 
 @peace
-on-arrival: rb_militancy -= 0.02; rb_strength -= 50; pacifism += 1
+on-arrival: banner_militancy -= 0.02; banner_strength -= 50; pacifism += 1
 
 By not fighting, the strength of the the Banners atrophies. Pacifists in the party are gaining the upper hand.
 
@@ -60,6 +60,6 @@ subtitle: The <span style="color: #8B0000;">RFB</span> will be added to the bala
 choose-if: collectivist_relation >= 45
 view-if: collectivist_truce == 0
 unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> is not interested.
-on-arrival: collectivist_truce = 1; collectivist_relation += 5; rfb_strength += 50; rb_strength += 50; sa_strength += 50;
+on-arrival: collectivist_truce = 1; collectivist_relation += 5; vanguard_strength += 50; banner_strength += 50; loyalist_strength += 50;
 
 We have made at least a temporary truce with the <span style="color: #700000;">**Collectivists**</span>, so that our respective paramilitaries will stop fighting.

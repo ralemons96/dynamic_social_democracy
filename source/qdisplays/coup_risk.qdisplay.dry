@@ -1,0 +1,6 @@
+
+(..2) <span style="color: #A7D8A7;">negligible</span>
+(2..5) <span style="color: #D9E8A1;">low</span>
+(5..8) <span style="color: #F2C7A1;">elevated</span>
+(8..10) <span style="color: #F29F9F;">high</span>
+(10..) <span style="color: #F08C8C;">imminent</span>

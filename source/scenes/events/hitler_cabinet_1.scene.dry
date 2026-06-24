@@ -77,7 +77,7 @@ What are we to do now?
 - @give_up_2: We will trust in the president's abilities.
 
 @give_up_2
-go-to: give_up_3 if sa_force < 50; give_up_4 if sa_force >= 50
+go-to: give_up_3 if loyalist_force < 50; give_up_4 if loyalist_force >= 50
 
 The President may be on our side, but the <span style="color: #7A3C00;">**SA**</span> can simply intimidate their way around him.
 
@@ -101,7 +101,7 @@ Q.disfavored_collectivist += 3;
 Q.commons_marcher += 3;
 Q.disfavored_marcher += 3;
 
-Q.sa_strength *= 0.8;
+Q.loyalist_strength *= 0.8;
 
 Q.old_chancellor = Q.chancellor;
 

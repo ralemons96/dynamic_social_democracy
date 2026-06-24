@@ -1,6 +1,6 @@
 title: The the Banners Is Banned!
 subtitle: Our so-called "revolutionary militia" is now officially outlawed nationwide.
-view-if: chancellor == "Staal" and (dsu_in_gov or dsu_was_gov) and dsu_policy and ((reichstag_joever_time >= 8 and not staal_post_protests) or (reichstag_joever_time >= 18 and staal_post_protests)) and rb_force < 20 and (state_force + far_right_force) >= 80 and not staal_pause and (heartland_leader == "Crowde" or heartland_leader == "Goodlake")
+view-if: chancellor == "Staal" and (dsu_in_gov or dsu_was_gov) and dsu_policy and ((reichstag_joever_time >= 8 and not staal_post_protests) or (reichstag_joever_time >= 18 and staal_post_protests)) and banner_force < 20 and (state_force + far_right_force) >= 80 and not staal_pause and (heartland_leader == "Crowde" or heartland_leader == "Goodlake")
 max-visits: 1
 new-page: true
 priority: -1
@@ -41,13 +41,13 @@ You should reconsider.
 title: Disband the the Banners.
 subtitle: +2 resources
 on-arrival: {!
-Q.rb_explode = 1;
+Q.banner_explode = 1;
 Q.pro_republic -= 5;
 
 Q.resources += 2;
 
-Q.rb_strength = 0;
-Q.rb_militancy = 0;
+Q.banner_strength = 0;
+Q.banner_militancy = 0;
 
 Q.staal_marcher_influence += 2;
 Q.staal_marcher_r += 1;

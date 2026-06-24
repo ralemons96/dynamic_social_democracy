@@ -27,6 +27,9 @@ const SINGLE = {
   hindenburg: 'dufour', hitler: 'gallax', reichsbanner: 'banner', neorevisionist: 'knight',
   // the national army (Phase 2): reichswehr_* -> army_* (loyalty/strength/militancy/...)
   reichswehr: 'army',
+  // paramilitary prefixes (Lift 2): rb=Banners, sh=Wardens, sa=Loyalists, rfb=Vanguard.
+  // rb->banner merges with the reichsbanner_*->banner_* card vars (disjoint, no collision).
+  rb: 'banner', sh: 'warden', sa: 'loyalist', rfb: 'vanguard',
 };
 
 function applyPhrases(parts) {

@@ -1,7 +1,7 @@
 title: The Harzburg Front
 subtitle: The right-wing forces unite against the incumbent government.
 new-page: true
-on-arrival: harzburg_front_seen = 1; harzburg_front_time = time; sa_strength += 50; sa_militancy += 0.05; sh_militancy += 0.05; guild_royalist += 3; landed_royalist += 3; royalist_urgency += 1; iron_front_timer = 0; gold_right += 1 if gold_leader == "Dingeldey"; lvp_right += 1; pro_republic -= 3; dufour_angry += 10; dufour_angry_bruning += 10
+on-arrival: harzburg_front_seen = 1; harzburg_front_time = time; loyalist_strength += 50; loyalist_militancy += 0.05; warden_militancy += 0.05; guild_royalist += 3; landed_royalist += 3; royalist_urgency += 1; iron_front_timer = 0; gold_right += 1 if gold_leader == "Dingeldey"; lvp_right += 1; pro_republic -= 3; dufour_angry += 10; dufour_angry_bruning += 10
 tags: event
 view-if: year = 1931 and month >= 10 and chancellor != "Staal" and chancellor != "Goodryke" and traditionalist_ideology == "Moderate"
 max-visits: 1

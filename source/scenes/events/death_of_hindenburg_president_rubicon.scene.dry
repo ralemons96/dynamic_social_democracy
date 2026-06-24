@@ -29,26 +29,26 @@ for (var party of Q.parties) {
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
         Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
         Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
             Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
         } else {
             Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
             Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
@@ -59,7 +59,7 @@ for (var party of Q.parties) {
 // 2. normalize support (fraction)
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         Q.nvf_normalized = Q.nvf_support / total_support;
@@ -419,7 +419,7 @@ for (var k in candidate_descs) {
 var candidate_votes = {};
 Q.parties_election = Q.parties;
 if (Q.dsu_exist) {
-    Q.parties_election.push('nsdap_hitler');
+    Q.parties_election.push('royalist_gallax');
     Q.parties_election.push('dsu');
     Q.royalist_normalized = 0;
 }

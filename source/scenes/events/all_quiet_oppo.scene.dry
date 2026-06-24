@@ -21,14 +21,14 @@ Since we lack control over the Heartland state government, the decision to allow
 
 @ban
 view-if: unionist_ideology == "Right" and not (marcher_toleration_heartland and heartland_police_loyalty >= 0.65)
-on-arrival: guild_royalist += 4; burgher_royalist += 3; commons_royalist += 2; disfavored_royalist += 2; sa_strength += 50; nationalism += 5; pro_republic -= 4
+on-arrival: guild_royalist += 4; burgher_royalist += 3; commons_royalist += 2; disfavored_royalist += 2; loyalist_strength += 50; nationalism += 5; pro_republic -= 4
 
 The [? if in_right_coalition_heartland: right-wing coalition?][? if in_center_right_coalition_heartland: center-right coalition?] has yielded to the <span style="color: #7A3C00;">Royalists</span>' demands, banning the controversial film. The <span style="color: #7A3C00;">Royalists</span> are quick to proclaim the decision as a significant triumph, leading to a notable boost in their morale and political confidence.
 
 
 @allow
 view-if: unionist_ideology == "Left" and not (marcher_toleration_heartland and heartland_police_loyalty >= 0.65)
-on-arrival: nationalism += 3; guild_royalist += 4; burgher_royalist += 3; commons_royalist += 1; sa_strength += 15; pro_republic -= 3; strife += 1
+on-arrival: nationalism += 3; guild_royalist += 4; burgher_royalist += 3; commons_royalist += 1; loyalist_strength += 15; pro_republic -= 3; strife += 1
 
 The bourgeois parties have permitted the film to be shown despite threats from the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span>. However, screenings are marred by violence. Showings of the film are eventually halted, allowing the <span style="color: #7A3C00;">Royalists</span> to declare the outcome a victory for their movement.
 

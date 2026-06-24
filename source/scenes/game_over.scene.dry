@@ -52,7 +52,7 @@ if (!dynamicMode && !historicalMode && Q.difficulty != 1) {
 if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1934 && Q.month > 7) || Q.year >= 1935)) {
   // Roter Zar von Preußen - At the end of the game, Otto Bristol is president, chancellor, and minister-president of prussia at the same time.
   if (Q.president == 'Bristol' && Q.chancellor == 'Bristol' && Q.heartland_leader == "Bristol") {
-      this.achieve('red_tzar_of_prussia');
+      this.achieve('red_tzar_of_heartland');
   }
   // Bürgerkrieg - enter a long civil war.
   if (Q.long_war) {
@@ -176,11 +176,11 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
     Q.the_largest_party = 'lvp';
   }
 
-  if (secondLargestParty === 'dnvp') {
-    Q.second_largest_party = 'dnvp';
+  if (secondLargestParty === 'traditionalist') {
+    Q.second_largest_party = 'traditionalist';
   }
 
-  if (Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.second_largest_party == "dnvp") {
+  if (Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.second_largest_party == "traditionalist") {
       this.achieve('deutsche_tory_demokratie');
   }
 
@@ -250,7 +250,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   }
 
   if (Q.papen_republic_victory && Q.collectivist_explode && Q.gallax_dead) {
-      this.achieve('gegen_papen_hitler_thalmann');
+      this.achieve('gegen_papen_gallax_thalmann');
   }
 
   if (Q.president == "Vesh") {
@@ -291,7 +291,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if (Q.president != "Hammerton" && Q.president != "Gallax" && Q.president !=   "Gorrick" && Q.president != "Selden" && Q.chancellor != "Gallax" && !Q.hammerstein_win && !(Q.president == "Hargen" && Q.chancellor == "Selden")) {
     if ((Q.president == "Pendrigon" || Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Ostwick" || Q.president == "Mann") && Q.in_left_front && !Q.civil_war_seen) {
       Q.collectivist_points_calc = 0;
-      Q.collectivist_points_calc += Q.rfb_force;
+      Q.collectivist_points_calc += Q.vanguard_force;
       Q.collectivist_points_calc += (100 - Q.pro_republic) / 2;
       Q.collectivist_points_calc += Q.disfavored / 2;
       Q.collectivist_points_calc += Q.collectivist_votes;
@@ -309,7 +309,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       if (Q.marcher_votes >= 40) Q.collectivist_points_calc -= 5;
 
       if (Q.collectivist_points_calc >= 50) {
-        this.achieve('nach_der_spd_wir');
+        this.achieve('nach_der_marcher_wir');
       } else {
         this.achieve('1919_geracht');
       }
@@ -350,7 +350,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if (Q.heartland_police_loyalty >= 0.95 && Q.army_loyalty >= 0.95 && Q.interior_police_loyalty >= 0.95 && Q.judicial_reform >= 2 && Q.heartland_purge >= 2) {
     this.achieve('grosse_sauberung');
   }
-  if (Q.judicial_reform >= 4 && Q.weltbuhne_dropped == 1 && Q.gallax_deported == 1 && Q.rohm_explode == 1 && Q.heartland_legal_returned == 1 && Q.rfb_banned == 1) {
+  if (Q.judicial_reform >= 4 && Q.weltbuhne_dropped == 1 && Q.gallax_deported == 1 && Q.rohm_explode == 1 && Q.heartland_legal_returned == 1 && Q.vanguard_banned == 1) {
     this.achieve('die_rote_justiz');
   }
 // Askew der Rotfrontkampfer
@@ -620,7 +620,7 @@ const achievements = [
   "achievement_einigkeit_und_recht_und_freiheit",
   "achievement_victory_for_the_republic",
   "achievement_bollwerk_der_demokratie",
-  "achievement_red_tzar_of_prussia",
+  "achievement_red_tzar_of_heartland",
   "achievement_einheitsfront",
   "achievement_einheitsfront_2",
   "achievement_volksfront",
@@ -633,14 +633,14 @@ const achievements = [
   "achievement_rote_millionar",
   "achievement_sohn_seiner_klasse",
   "achievement_versohnler",
-  "achievement_deport_hitler",
+  "achievement_deport_gallax",
   "achievement_wirtschaftspolitik",
   "achievement_wirtschaftswunder",
   "achievement_wirtschaftsexperiment",
   "achievement_freie_marktwirtschaft",
   "achievement_equality",
   "achievement_hirschfeld",
-  "achievement_women_reichsbanner",
+  "achievement_women_banner",
   "achievement_anders_als_die_andern",
   "achievement_bruder_zur_sonne",
   "achievement_die_rote_fahne",
@@ -664,7 +664,7 @@ const achievements = [
   "achievement_arbeiter_von_wien",
   "achievement_stolperstein",
   "achievement_sturm_und_drang",
-  "achievement_hitler_tot",
+  "achievement_gallax_tot",
   "achievement_vive_le_cartel",
   "achievement_neuer_nationalismus",
   "achievement_christliche_volkspartei",
@@ -687,7 +687,7 @@ const achievements = [
   "achievement_ein_interessantes_experiment",
   "achievement_das_grosste_aller_zelte",
   "achievement_getrennt_marschieren_vereint_schlagen",
-  "achievement_nach_schleicher_wir",
+  "achievement_nach_staal_wir",
   "achievement_sozialdemokratische_blockpartei",
   "achievement_aller_guten_dinge_sind_zwei",
   "achievement_wer_braucht_schon_freunde",
@@ -714,7 +714,7 @@ const achievements = [
   "achievement_blockparteien_parade",
   "achievement_der_arbeiterstaat",
   "achievement_soziale_marktwirtschaft",
-  "achievement_gegen_papen_hitler_thalmann",
+  "achievement_gegen_papen_gallax_thalmann",
   "achievement_wels",
   "achievement_kommunistische_alternative",
   "achievement_die_rote_republik",
@@ -724,7 +724,7 @@ const achievements = [
   "achievement_neue_geschaftsfuhrung",
   "achievement_rotes_bayern",
   "achievement_1919_geracht",
-  "achievement_nach_der_spd_wir",
+  "achievement_nach_der_marcher_wir",
   "achievement_eurokommunismus",
   "achievement_kriegswirtschaft",
   "achievement_sechs_sieben",

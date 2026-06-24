@@ -51,7 +51,7 @@ view-if: not political_decree_landtag and marcher_toleration
 choose-if: marcher_heartland and strife >= 3 and unionist_relation >= 35
 unavailable-subtitle: [? if not marcher_heartland: We don't control the Heartland government. ?] [? if strife < 3: Paramilitary violence isn't severe enough to justify an emergency decree. ?] [? if unionist_relation < 35: We lack sufficient relations with Askew. ?]
 title: Urge Askew to grant us stronger actions against political extremists, and to restrict certain rights.
-on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; rfb_militancy *= 0.9; rfb_strength *= 0.85; sa_militancy *= 0.96; sa_strength *= 0.96; sh_militancy *= 0.98; sh_strength *= 0.98; commons_collectivist -= 1; commons_royalist -= 1; disfavored_collectivist -= 3; disfavored_royalist -= 3; burgher_royalist -= 2; dufour_angry_bruning += 5; political_decree_landtag = 1
+on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; vanguard_militancy *= 0.9; vanguard_strength *= 0.85; loyalist_militancy *= 0.96; loyalist_strength *= 0.96; warden_militancy *= 0.98; warden_strength *= 0.98; commons_collectivist -= 1; commons_royalist -= 1; disfavored_collectivist -= 3; disfavored_royalist -= 3; burgher_royalist -= 2; dufour_angry_bruning += 5; political_decree_landtag = 1
 go-to: PLR_launched
 
 Carl Heath and other Heartland officials have successfully urged Askew to issue an emergency decree expanding police authority to suppress political extremism. The decree imposes restrictions on political meetings, organizations, newspapers, and posters, all of which now require police approval beforehand.

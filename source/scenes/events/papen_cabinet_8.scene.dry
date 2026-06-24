@@ -25,6 +25,6 @@ In a bid to win <span style="color: #7A3C00;">Royalist</span> support for his go
 
 @papen
 title: Shameful.
-on-arrival: pro_republic -= 3; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; sa_militancy += 0.02; sa_strength += 50
+on-arrival: pro_republic -= 3; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; loyalist_militancy += 0.02; loyalist_strength += 50
 
 Yet another disgraceful capitulation to the <span style="color: #7A3C00;">Royalists</span>. Still, their shameless defense of convicted murderers may alienate voters and cost them dearly at the next election.

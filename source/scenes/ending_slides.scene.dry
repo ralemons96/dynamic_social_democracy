@@ -20,7 +20,7 @@ if (Q.weimar_win && (Q.president == "Pendrigon" || Q.president == "Halsmark" || 
   Q.left_win = 1;
   Q.weimar_win = 0;
   Q.collectivist_points = 0;
-  Q.collectivist_points += Q.rfb_force;
+  Q.collectivist_points += Q.vanguard_force;
   Q.collectivist_points += (100 - Q.pro_republic) / 2;
   Q.collectivist_points += Q.disfavored / 2;
   Q.collectivist_points += Q.collectivist_votes;

@@ -30,7 +30,7 @@ The military and the center-right parties are pleasantly surprised that we would
 subtitle: +1 budget
 unavailable-subtitle: There is nothing left to cut.
 choose-if: army_strength > 0
-on-arrival: budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; coalition_dissent += 1 if (in_weimar_coalition and lvp_formed); gold_relation -= 8; ddp_relation -= 4; lvp_relation -= 6; unionist_relation -= 4; army_militancy -= 1; army_strength -= 20; sh_strength += 15; sa_strength += 5; sh_militancy += 0.05; army_loyalty -= 0.05 if army_loyalty > 0; coup_progress += 1; coup_progress += 1 if army_loyalty < 0.2; coup_progress += 1 if army_loyalty < 0.1; coup_progress += 1 if army_loyalty <= 0; army_goal_completed = 1; gold_right += 3; ddp_right += 1; ddp_cohesion -= 1; lvp_right += 2; army_goal_marcher += 1; dufour_angry += 10; economic_growth -= 0.1
+on-arrival: budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; coalition_dissent += 1 if (in_weimar_coalition and lvp_formed); gold_relation -= 8; ddp_relation -= 4; lvp_relation -= 6; unionist_relation -= 4; army_militancy -= 1; army_strength -= 20; warden_strength += 15; loyalist_strength += 5; warden_militancy += 0.05; army_loyalty -= 0.05 if army_loyalty > 0; coup_progress += 1; coup_progress += 1 if army_loyalty < 0.2; coup_progress += 1 if army_loyalty < 0.1; coup_progress += 1 if army_loyalty <= 0; army_goal_completed = 1; gold_right += 3; ddp_right += 1; ddp_cohesion -= 1; lvp_right += 2; army_goal_marcher += 1; dufour_angry += 10; economic_growth -= 0.1
 
 The military has fewer guns and fewer soldiers. There is no hint of a coup yet, but we do not know where the line will be drawn. The center-right parties are committed to the military and deeply opposed to our budget cuts.
 

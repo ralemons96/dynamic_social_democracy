@@ -1,6 +1,6 @@
 title: the Banners Membership Dwindles
 subtitle: Our unpopularity has impaired the the Banners's recruitment ability.
-view-if: rb_militancy >= 0.1 and commons_marcher_normalized + disfavored_marcher_normalized < (commons_collectivist_normalized + commons_royalist_normalized + commons_traditionalist_normalized + (rb_militancy*100)) and time >= banner_unpopularity_time
+view-if: banner_militancy >= 0.1 and commons_marcher_normalized + disfavored_marcher_normalized < (commons_collectivist_normalized + commons_royalist_normalized + commons_traditionalist_normalized + (banner_militancy*100)) and time >= banner_unpopularity_time
 new-page: true
 tags: event
 on-display: {!  
@@ -24,6 +24,6 @@ Unfortunately, the the Banners's effectiveness is dragged down by the <span styl
 - @reichsbanner_joever: Unfortunate.
 
 @reichsbanner_joever
-on-arrival: rb_strength *= 0.9; rb_militancy *= 0.8 if left_strength < 40; rb_militancy *= 0.9 if left_strength >= 40
+on-arrival: banner_strength *= 0.9; banner_militancy *= 0.8 if left_strength < 40; banner_militancy *= 0.9 if left_strength >= 40
 
 This will continue to be a problem if our popularity continues to flag.

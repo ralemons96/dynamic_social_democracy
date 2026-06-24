@@ -32,8 +32,8 @@ Q.staal_stahlhelm = 1;
 
 Q.pro_republic -= 3;
 
-Q.sh_strength = 0;
-Q.sh_militancy = 0;
+Q.warden_strength = 0;
+Q.warden_militancy = 0;
 
 Q.army_strength += 75;
 

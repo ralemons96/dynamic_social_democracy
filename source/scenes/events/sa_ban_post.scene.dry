@@ -1,6 +1,6 @@
 title: Staal's Betrayal
 subtitle: Wilhelm Ravabelle, long-time Defense Minister and Askew's strongest ally, is forced to resign...
-view-if: year == 1932 and month == 5 and sa_nationwide_ban and groener_death and president == "DuFour" and bruning_time
+view-if: year == 1932 and month == 5 and loyalist_nationwide_ban and groener_death and president == "DuFour" and bruning_time
 priority: 3
 tags: event
 new-page: true

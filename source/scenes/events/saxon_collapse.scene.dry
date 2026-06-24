@@ -60,7 +60,7 @@ subtitle: History will repeat itself.
 view-if: left_coalition_saxony >= 50
 choose-if: (collectivist_relation >= 35 and collectivist_leader == "Conciliators") or (collectivist_relation >= 55 and collectivist_leader != "Conciliators")
 unavailable-subtitle: Despite having the necessary votes, we lack the necessary relations.
-on-arrival: red_saxony = 1; unionist_relation -= 7; ddp_relation -= 7; gold_relation -= 7; lvp_relation -= 7; coup_progress += 5; dufour_angry += 60; rfb_militancy += 0.08; rfb_strength += 150; sa_strength += 80; sh_strength += 80; strife += 1; commons_marcher += 5; commons_collectivist += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; communist_coalition += 3; collectivist_relation += 15
+on-arrival: red_saxony = 1; unionist_relation -= 7; ddp_relation -= 7; gold_relation -= 7; lvp_relation -= 7; coup_progress += 5; dufour_angry += 60; vanguard_militancy += 0.08; vanguard_strength += 150; loyalist_strength += 80; warden_strength += 80; strife += 1; commons_marcher += 5; commons_collectivist += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; communist_coalition += 3; collectivist_relation += 15
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  

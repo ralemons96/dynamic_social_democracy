@@ -9,31 +9,31 @@ if (Q.reformist_strength < 10) {
     Q.burgher_marcher -= 2; 
     Q.guild_marcher -= 2; 
     Q.landed_marcher -= 2; 
-    Q.rb_strength -= 200; 
+    Q.banner_strength -= 200; 
 } else if (Q.reformist_strength < 25) {
     Q.commons_marcher -= 5; 
     Q.burgher_marcher -= 3; 
     Q.guild_marcher -= 3; 
     Q.landed_marcher -= 3; 
-    Q.rb_strength -= 250; 
+    Q.banner_strength -= 250; 
 } else if (Q.reformist_strength < 40) {
     Q.commons_marcher -= 6; 
     Q.burgher_marcher -= 4; 
     Q.guild_marcher -= 4; 
     Q.landed_marcher -= 4; 
-    Q.rb_strength -= 300; 
+    Q.banner_strength -= 300; 
 } else if (Q.reformist_strength < 60) {
     Q.commons_marcher -= 8; 
     Q.burgher_marcher -= 6; 
     Q.guild_marcher -= 6; 
     Q.landed_marcher -= 6; 
-    Q.rb_strength -= 350; 
+    Q.banner_strength -= 350; 
 } else {
     Q.commons_marcher -= 10; 
     Q.burgher_marcher -= 8; 
     Q.guild_marcher -= 8; 
     Q.landed_marcher -= 8; 
-    Q.rb_strength -= 400; 
+    Q.banner_strength -= 400; 
 }
 
 Q.reformist_strength *= 0.3; 

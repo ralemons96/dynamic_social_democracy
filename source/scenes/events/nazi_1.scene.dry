@@ -30,7 +30,7 @@ title: Immediately strengthen the the Banners in response.
 subtitle: -1 resource
 unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
-on-arrival: royalist_urgency += 1; resources -= 1; rb_strength += 200; rb_militancy += 0.05
+on-arrival: royalist_urgency += 1; resources -= 1; banner_strength += 200; banner_militancy += 0.05
 
 This development has persuaded the <span style="color: #c00000;">**Marchers**</span> leadership—and Otto Vesh himself—to grant the the Banners independent authority and financial support, which its leaders deem essential.
 

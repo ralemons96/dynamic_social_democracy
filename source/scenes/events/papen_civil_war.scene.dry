@@ -1,10 +1,10 @@
 title: The Final Battle
 audio: music/communist/A_las_barricadas.ogg
 on-arrival: {!
-Q.rb_strength = Math.round(Q.rb_strength);
-Q.sh_strength = Math.round(Q.sh_strength);
-Q.sa_strength = Math.round(Q.sa_strength);
-Q.rfb_strength = Math.round(Q.rfb_strength);
+Q.banner_strength = Math.round(Q.banner_strength);
+Q.warden_strength = Math.round(Q.warden_strength);
+Q.loyalist_strength = Math.round(Q.loyalist_strength);
+Q.vanguard_strength = Math.round(Q.vanguard_strength);
 // re-calculate dissent, in case we transitioned from, say, the Collectivists support that raised reformist dissent.
 var total_strength = Q.left_strength + Q.center_strength + Q.labor_strength + Q.reformist_strength + Q.knight_strength;
 var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent + Q.knight_strength*Q.knight_dissent;
@@ -22,11 +22,11 @@ Q.civil_war_seen = 1;
 
 // our allies
 Q.total_power = 0;
-Q.rb_power = Q.rb_strength*Q.rb_militancy;
+Q.banner_power = Q.banner_strength*Q.banner_militancy;
 if (Q.dissent > 0.15) {
-    Q.rb_power *= (1 - Q.dissent/1.5);
+    Q.banner_power *= (1 - Q.dissent/1.5);
 }
-Q.total_power += Q.rb_power;
+Q.total_power += Q.banner_power;
 Q.heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 if (Q.marcher_heartland && Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") {
     Q.total_power += Q.heartland_police_power;
@@ -42,11 +42,11 @@ if (Q.marcher_in_government && Q.chancellor_party == "Marcher") {
 } else {
     Q.total_power += Q.loyal_army_power/4;
 }
-Q.rfb_power = Q.rfb_strength*Q.rfb_militancy;
+Q.vanguard_power = Q.vanguard_strength*Q.vanguard_militancy;
 if (Q.collectivist_relation >= 60) {
-    Q.total_power += Q.rfb_power;
+    Q.total_power += Q.vanguard_power;
 } else if (Q.collectivist_relation >= 45) {
-    Q.total_power += Q.rfb_power*0.5;
+    Q.total_power += Q.vanguard_power*0.5;
 }
 // general strike strength
 // maximum (given 25 labor strength) is 400
@@ -64,10 +64,10 @@ console.log("Supporter strength:", Q.total_power);
 
 // our enemies
 Q.enemy_power = 0;
-Q.sa_power = Q.sa_strength*Q.sa_militancy;
-Q.enemy_power += Q.sa_power;
-Q.sh_power = Q.sh_strength*Q.sh_militancy;
-Q.enemy_power += Q.sh_power;
+Q.loyalist_power = Q.loyalist_strength*Q.loyalist_militancy;
+Q.enemy_power += Q.loyalist_power;
+Q.warden_power = Q.warden_strength*Q.warden_militancy;
+Q.enemy_power += Q.warden_power;
 Q.hostile_army_power = Q.army_strength*Q.army_militancy*(1-Q.army_loyalty);
 Q.enemy_power += Q.hostile_army_power;
 console.log("Enemy strength:", Q.enemy_power);
@@ -86,8 +86,8 @@ if (Q.total_defeat) {
     Q.royalist_power = 0;
     if (Q.hostile_army_power) Q.papen_power += Q.hostile_army_power;
     if (Q.heartland_leader == "Goodryke") Q.papen_power += Q.heartland_police_strength*Q.heartland_police_militancy*(1-Q.heartland_police_loyalty);
-    Q.papen_power += Q.sh_strength*Q.sh_militancy;
-    Q.royalist_power += Q.sa_strength*Q.sa_militancy;
+    Q.papen_power += Q.warden_strength*Q.warden_militancy;
+    Q.royalist_power += Q.loyalist_strength*Q.loyalist_militancy;
     Q.royalist_power += (Q.commons_royalist_normalized + Q.disfavored_royalist_normalized);
     if (Q.papen_power >= Q.royalist_power) {
         Q.papen_win = 1;
@@ -105,13 +105,13 @@ go-to: war_menu
 
 = The Array of Forces
 
-Our enemies are the <span style="color: #808080;">nationalist</span> <span style="color: #3E88B3;">**Wardens**</span>, with [+ sh_strength +] thousand troops, and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>, with [+ sa_strength +] thousand troops, both fighting on different sides. The loyalties of the Commonwealth Army, with its [+ army_strength +] thousand regular soldiers, and Heartland police, with [+ heartland_police_strength +] thousand members, are unclear, with many <span style="color: #7A3C00;">Royalist</span> and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers in each. 
+Our enemies are the <span style="color: #808080;">nationalist</span> <span style="color: #3E88B3;">**Wardens**</span>, with [+ warden_strength +] thousand troops, and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span>, with [+ loyalist_strength +] thousand troops, both fighting on different sides. The loyalties of the Commonwealth Army, with its [+ army_strength +] thousand regular soldiers, and Heartland police, with [+ heartland_police_strength +] thousand members, are unclear, with many <span style="color: #7A3C00;">Royalist</span> and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers in each. 
 
 Goodryke is backed primarily by the Commonwealth Army, the <span style="color: #3E88B3;">**Wardens**</span>, Mallin and his party, industrial elites, and President DuFour himself.
 
-On our side, we have the the Banners, at [+ rb_strength +] thousand members. [? if dissent > 0.15 and dissent <= 0.25: It is somewhat weakened by dissent within the party, and some members choose not to fight. ?][? if dissent > 0.25 and dissent < 0.5: It is weakened by dissent within the party, and many members choose not to fight. ?][? if dissent >= 0.5: It is heavily weakened by dissent within the party, and a substantial portion of members choose not to fight. ?]
+On our side, we have the the Banners, at [+ banner_strength +] thousand members. [? if dissent > 0.15 and dissent <= 0.25: It is somewhat weakened by dissent within the party, and some members choose not to fight. ?][? if dissent > 0.25 and dissent < 0.5: It is weakened by dissent within the party, and many members choose not to fight. ?][? if dissent >= 0.5: It is heavily weakened by dissent within the party, and a substantial portion of members choose not to fight. ?]
 
-[? if rb_militancy < 0.25 : Unfortunately, the the Banners are poorly trained and equipped, and will not be able to stand against our more militarized opponents. ?][? if rb_militancy >= 0.25 and rb_militancy < 0.5 : We have spent some resources training and equipping the the Banners. Let us hope our people can persist. ?][? if rb_militancy >= 0.5 : We have spent quite a great deal of resources on turning the the Banners into a fighting force. Let us hope that they survive. ?]
+[? if banner_militancy < 0.25 : Unfortunately, the the Banners are poorly trained and equipped, and will not be able to stand against our more militarized opponents. ?][? if banner_militancy >= 0.25 and banner_militancy < 0.5 : We have spent some resources training and equipping the the Banners. Let us hope our people can persist. ?][? if banner_militancy >= 0.5 : We have spent quite a great deal of resources on turning the the Banners into a fighting force. Let us hope that they survive. ?]
 
 What else do we have?
 
@@ -136,7 +136,7 @@ view-if: chancellor_party != "Collectivist" and president != "Halsmark"
 go-to: war_menu
 on-arrival: war_choices += 1
 
-There are [+ rfb_strength +] thousand fighters with the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span>, in addition to the workers who support the <span style="color: #700000;">**Collectivists**</span>.
+There are [+ vanguard_strength +] thousand fighters with the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span>, in addition to the workers who support the <span style="color: #700000;">**Collectivists**</span>.
 
 [? if collectivist_relation >= 60 : The <span style="color: #700000;">**Collectivists**</span> is entirely on our side, owing to our good relations. ?][? if collectivist_relation < 60 and collectivist_relation >= 45 : Most of the <span style="color: #700000;">**Collectivists**</span> is on our side, due to their good relations with us. ?][? if collectivist_relation < 45 : The <span style="color: #700000;">**Collectivists**</span> does not support us. ?]
 

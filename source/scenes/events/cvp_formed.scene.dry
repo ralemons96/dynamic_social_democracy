@@ -68,7 +68,7 @@ Q.traditionalist_r_heartland = 0;
 Q.traditionalist_votes = 0;
 Q.traditionalist_normalized = 0;
 
-Q.parties = Q.parties.filter(party => party !== 'dnvp');
+Q.parties = Q.parties.filter(party => party !== 'traditionalist');
 
 Q.concord_ideology = "Moderate";
 Q.concord_leader = "Sedgewick";
@@ -319,7 +319,7 @@ const ministries = [
     "interior_minister_party",
     "justice_minister_party",
     "labor_minister_party",
-    "reichswehr_minister_party",
+    "army_minister_party",
     "economic_minister_party",
     "finance_minister_party",
     "agriculture_minister_party"

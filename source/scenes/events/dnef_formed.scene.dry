@@ -2,8 +2,8 @@ on-arrival: {!
 
 Q.gnu_formed = 1;
 Q.gnu_existed = 1;
-Q.parties.push('dnef');
-Q.parties_graph.push('dnef');
+Q.parties.push('gnu');
+Q.parties_graph.push('gnu');
 
 Q.commons_gnu = 7;
 Q.commons_gnu += ((100 - Q.pro_republic) / 10);
@@ -365,9 +365,9 @@ if (Q.collectivist_relation >= 30 && Q.sapd_formed == 1) {
 }
 
 for (var record of Q.election_records) {
-    record['dnef'] = 0;
+    record['gnu'] = 0;
 }
 for (var record of Q.party_support_records) {
-    record['dnef'] = 0;
+    record['gnu'] = 0;
 }
 !}

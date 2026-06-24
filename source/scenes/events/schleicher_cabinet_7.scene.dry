@@ -2,19 +2,19 @@ title: Commonwealth Army Militia Deployed!
 subtitle: Staal moves to end streetfighting.
 view-if: chancellor == "Staal" and (staal_time == 11 and heartland_leader == "Staal") or (staal_post_time >= 4 and heartland_leader != "Bristol" and heartland_leader != "Pendrigon")
 on-arrival: {!
-Q.banner_disarm_cost = Math.round(Q.rb_militancy * 15);
+Q.banner_disarm_cost = Math.round(Q.banner_militancy * 15);
 Q.army_strength += 25;
-Q.sa_strength *= 0.8;
-Q.sa_militancy -= 0.3;
-Q.rb_strength -= 100;
-Q.rb_militancy -= 0.02;
-Q.rfb_strength -= 50;
-Q.rfb_militancy -= 0.1;
+Q.loyalist_strength *= 0.8;
+Q.loyalist_militancy -= 0.3;
+Q.banner_strength -= 100;
+Q.banner_militancy -= 0.02;
+Q.vanguard_strength -= 50;
+Q.vanguard_militancy -= 0.1;
 Q.heartland_police_strength += 100;
 Q.heartland_police_militancy += 0.5;
 Q.army_street = 1;
-Q.sa_banned = 1;
-Q.sa_nationwide_ban = 1;
+Q.loyalist_banned = 1;
+Q.loyalist_nationwide_ban = 1;
 
 Q.staal_approval += 1;
 !}
@@ -46,6 +46,6 @@ It's good to maintain our own self-defense organization, just in case.
 title: Defund the the Banners; the threat is no longer present.
 subtitle: +[+ banner_disarm_cost +] resources
 view-if: banner_disarm_cost > 0
-on-arrival: rb_militancy *= 0.5; rb_strength -= 400; resources += banner_disarm_cost; disfavored_marcher -= 4; disfavored_collectivist += 2; rfb_strength += 100
+on-arrival: banner_militancy *= 0.5; banner_strength -= 400; resources += banner_disarm_cost; disfavored_marcher -= 4; disfavored_collectivist += 2; vanguard_strength += 100
 
 With the Commonwealth Army keeping order in the streets, we have no further need for the the Banners's self-defense role. Better to spend our scarce funds on electoral propaganda rather than weapons.

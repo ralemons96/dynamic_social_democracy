@@ -80,7 +80,7 @@ if (Q.bvp_r == Q.unionist_r) Q.unionist_minus_bvp_r = 0;
 !}
 on-display: {!
 data = [{
-    "id": "kpd",
+    "id": "collectivist",
     "legend": "Collectivist",
     "name": "Collectivist",
     "seats": Math.round(Q.collectivist_r * Q.reichstag_size),
@@ -97,7 +97,7 @@ if (Q.sapd_formed && Q.sapd_r) {
 
 if (Q.marcher_r) {
     data.push({
-        "id": "spd",
+        "id": "marcher",
         "legend": "Marcher",
         "name": "Marcher",
         "seats": Math.round(Q.marcher_r * Q.reichstag_size),
@@ -133,7 +133,7 @@ if (Q.lvp_r && Q.lvp_formed) {
 
 if (Q.unionist_minus_bvp_r) {
     data.push({
-        "id": "z",
+        "id": "unionist",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
@@ -151,7 +151,7 @@ if (Q.bvp_r) {
 
 if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
     data.push({
-        "id": "dvp",
+        "id": "gold",
         "legend": "Gold",
         "name": "Gold",
         "seats": Math.round(Q.gold_r * Q.reichstag_size),
@@ -160,7 +160,7 @@ if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
 
 if (Q.gnu_r && Q.gnu_formed) {
     data.push({
-        "id": "dnef",
+        "id": "gnu",
         "legend": "GNU",
         "name": "GNU",
         "seats": Math.round(Q.gnu_r * Q.reichstag_size),
@@ -187,7 +187,7 @@ if (Q.kvp_formed && Q.kvp_r) {
 
 if (Q.traditionalist_r) {
     data.push({
-        "id": "dnvp",
+        "id": "traditionalist",
         "legend": "Traditionalist",
         "name": "Traditionalist",
         "seats": Math.round(Q.traditionalist_r * Q.reichstag_size),
@@ -214,7 +214,7 @@ if (Q.dsu_exist && Q.dsu_r) {
 
 if (Q.royalist_split && Q.royalist_gallax_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_gallax_r * Q.reichstag_size),
@@ -223,7 +223,7 @@ if (Q.royalist_split && Q.royalist_gallax_r) {
 
 if (!Q.royalist_split && Q.royalist_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_r * Q.reichstag_size),
@@ -256,8 +256,8 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties_graph,
-            {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'dnef': '#BFC8CC'},
-            {'spd': 'Marcher', 'kpd': 'Collectivist', 'ddp': Q.ddp_name, 'z': Q.unionist_party_name + ' + Arcanists', 'dvp': 'Gold', 'dnvp': 'Traditionalist', 'nsdap': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'dnef': 'GNU'});
+            {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC'},
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -269,8 +269,8 @@ if (d3 && window) {
     if (Q.game_over || (!Q.historical_mode && !Q.rubicon)) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
-            {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'dnef': '#BFC8CC'},
-            {'spd': 'Marcher', 'kpd': 'Collectivist', 'ddp': Q.ddp_name, 'z': Q.unionist_party_name + ' + Arcanists', 'dvp': 'Gold', 'dnvp': 'Traditionalist', 'nsdap': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'dnef': 'GNU'});
+            {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC'},
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }

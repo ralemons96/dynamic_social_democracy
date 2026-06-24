@@ -25,7 +25,7 @@ The so-called "Potempa Five"—the <span style="color: #7A3C00;">**SA**</span> m
 
 @papen
 title: The verdict goes down...
-on-arrival: sa_militancy += 0.05; rfb_strength += 25; rfb_militancy += 0.02; burgher_royalist -= 3; burgher_gold += 2; burgher_lvp += 3; guild_royalist -= 5; guild_traditionalist += 5 if traditionalist_ideology == "Radical"; guild_gold += 2; guild_dnf += 3; landed_royalist -= 3; landed_traditionalist += 3 if traditionalist_ideology == "Radical"; landed_gold += 1; landed_dnf += 3; pro_republic -= 3; commons_collectivist += 4; disfavored_collectivist += 4; dufour_gallax_r -= 1; potempa_five_convicted = 1
+on-arrival: loyalist_militancy += 0.05; vanguard_strength += 25; vanguard_militancy += 0.02; burgher_royalist -= 3; burgher_gold += 2; burgher_lvp += 3; guild_royalist -= 5; guild_traditionalist += 5 if traditionalist_ideology == "Radical"; guild_gold += 2; guild_dnf += 3; landed_royalist -= 3; landed_traditionalist += 3 if traditionalist_ideology == "Radical"; landed_gold += 1; landed_dnf += 3; pro_republic -= 3; commons_collectivist += 4; disfavored_collectivist += 4; dufour_gallax_r -= 1; potempa_five_convicted = 1
 
 Convicted! The five <span style="color: #7A3C00;">**SA**</span> men have been sentenced to death for their atrocious crime. Yet the <span style="color: #7A3C00;">Royalists</span> have only intensified their propaganda, portraying the killers as national heroes and the murder as a patriotic act. This grotesque campaign has emboldened the <span style="color: #7A3C00;">**SA**</span>, with the <span style="color: #7A3C00;">**Royalists**</span> now calling for an escalation in violence to render the Commonwealth "ungovernable."
 

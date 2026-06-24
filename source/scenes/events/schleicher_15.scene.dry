@@ -23,7 +23,7 @@ on-arrival: {!
 Q.nvf_gnu = 1
 Q.dufour_staal_r -= 1;
 
-Q.pro_republic -= Q.sa_force / 2;
+Q.pro_republic -= Q.loyalist_force / 2;
 
 Q.army_strength += 50;
 Q.army_loyalty = 0;

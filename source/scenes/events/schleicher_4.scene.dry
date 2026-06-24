@@ -32,7 +32,7 @@ We can either build goodwill and strengthen the the Banners through our particip
 title: Approve the participation of the the Banners and our youth organizations in the *Reichskuratorium*.
 unavailable-subtitle: The party is too distrustful of Staal to allow this.
 choose-if: staal_marcher_support >= 4 or knight_strength >= center_strength
-on-arrival: staal_marcher_support += 2; staal_marcher_r += 1; rb_militancy += 0.04; rb_strength += 125; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
+on-arrival: staal_marcher_support += 2; staal_marcher_r += 1; banner_militancy += 0.04; banner_strength += 125; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
 
 The the Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. the Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
 

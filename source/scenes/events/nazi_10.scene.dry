@@ -28,7 +28,7 @@ In past cases, condemnation from [+ royalist_leader +] was enough to snuff out d
 
 @nazi_2
 title: Is this the start of something greater?
-on-arrival: sa_strength -= 75; sa_militancy -= 0.1; rfb_strength += 30; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1
+on-arrival: loyalist_strength -= 75; loyalist_militancy -= 0.1; vanguard_strength += 30; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1
 
 Although Stegmann is careful not to denounce [+ royalist_leader +] directly, it is clear that his break stems from deep dissatisfaction with the party’s current strategy. He's called for a more violent seizure of power, arguing that the "movement’s historic moment has been missed", and that instead of clinging to the "mania of legality", they must act "in a more brutal and revolutionary fashion".
 

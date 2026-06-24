@@ -49,7 +49,7 @@ We arrested the police responsible for the killings, and put them on trial. [? i
 This assuages some of the <span style="color: #700000;">**Communists**</span>' outrage, but certainly not all.
 
 @communist_fault
-on-arrival: collectivist_relation -= 10; unionist_relation += 3; gold_relation += 3; lvp_relation += 2; rfb_strength -= 80; rfb_banned = 1; dufour_angry -= 4
+on-arrival: collectivist_relation -= 10; unionist_relation += 3; gold_relation += 3; lvp_relation += 2; vanguard_strength -= 80; vanguard_banned = 1; dufour_angry -= 4
 
 If the <span style="color: #700000;">**Collectivists**</span> continues to act illegally, they must suffer the consequences. Thus, we have banned the <span style="color: #8B0000;">**RFKB**</span>, their paramilitary group. The bourgeois and right-leaning parties approve.
 
@@ -65,7 +65,7 @@ The demonstration proceeds peacefully under the watchful eyes of the police. Onl
 
 
 @allow
-on-arrival: commons_collectivist += 3; disfavored_collectivist += 5; collectivist_relation += 10; rfb_strength += 50; unionist_relation -= 3; gold_relation -= 3; ddp_relation -= 2; lvp_relation -= 3; coalition_dissent += 1; rfb_militancy += 0.1; gold_right += 1; ddp_right += 0.5; lvp_right += 1; dufour_angry += 5
+on-arrival: commons_collectivist += 3; disfavored_collectivist += 5; collectivist_relation += 10; vanguard_strength += 50; unionist_relation -= 3; gold_relation -= 3; ddp_relation -= 2; lvp_relation -= 3; coalition_dissent += 1; vanguard_militancy += 0.1; gold_right += 1; ddp_right += 0.5; lvp_right += 1; dufour_angry += 5
 
 The demonstration proceeds peacefully, with a minimal police presence. Onlookers admire the strength of the <span style="color: #700000;">Communist</span> workers, and perhaps some of our members have been peeled off. The <span style="color: #700000;">**Collectivists**</span> will never admit it, but they are developing a less hostile view towards us (even if they do not *like* us yet). Our <span style="color: #000000;">cen</span><span style="color: #C0A054;">trist</span> allies denounce the demonstration, but their cries are ineffectual.
 
@@ -73,7 +73,7 @@ The demonstration proceeds peacefully, with a minimal police presence. Onlookers
 @join
 choose-if: collectivist_relation >= 45
 unavailable-subtitle: The <span style="color: #700000;">Communists</span> do not trust us enough.
-on-arrival: collectivist_relation += 15; commons_collectivist += 3; disfavored_collectivist += 5; commons_marcher += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; unionist_relation -= 10; gold_relation -= 10; coalition_dissent += 2; communist_coalition += 2; rb_strength += 100; rfb_strength += 100; rfb_militancy += 0.1; sa_strength += 50; sh_strength += 50; gold_right += 3; ddp_right += 3; ddp_relation -= 8; ddp_cohesion -= 1; lvp_right += 3; lvp_relation -= 10; dufour_angry += 20
+on-arrival: collectivist_relation += 15; commons_collectivist += 3; disfavored_collectivist += 5; commons_marcher += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; unionist_relation -= 10; gold_relation -= 10; coalition_dissent += 2; communist_coalition += 2; banner_strength += 100; vanguard_strength += 100; vanguard_militancy += 0.1; loyalist_strength += 50; warden_strength += 50; gold_right += 3; ddp_right += 3; ddp_relation -= 8; ddp_cohesion -= 1; lvp_right += 3; lvp_relation -= 10; dufour_angry += 20
 achievement: die_rote_fahne
 
 It is difficult to persuade the <span style="color: #700000;">**Communists**</span> to let us march with them, given the histories of their party and ours. However, they eventually relent. The display of proletarian unity inspires the workers and terrifies the bourgeoisie and middle class. [? if in_grand_coalition or in_weimar_coalition: Our coalition partners in the government are outraged at our display with the <span style="color: #700000;">communists</span>, and are threatening to break up the government. ?] The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries increase their recruitment to counter us.

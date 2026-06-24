@@ -35,12 +35,12 @@ subtitle: Ordered by Wilhelm Frask of the Interior Ministry.
 on-arrival: {!
 Q.staal_marcher_r -= 1;
 Q.staal_marcher_support -= 2;
-Q.rb_militancy *= 0.95;
-Q.rb_strength *= 0.95;
-Q.rfb_militancy *= 0.9;
-Q.rfb_strength *= 0.9;
-Q.sa_strength += 25;
-Q.sa_militancy += 0.03;
+Q.banner_militancy *= 0.95;
+Q.banner_strength *= 0.95;
+Q.vanguard_militancy *= 0.9;
+Q.vanguard_strength *= 0.9;
+Q.loyalist_strength += 25;
+Q.loyalist_militancy += 0.03;
 Q.heartland_police_loyalty -= 0.1;
 Q.interior_police_loyalty -= 0.2;
 

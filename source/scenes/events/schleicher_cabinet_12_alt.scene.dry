@@ -39,8 +39,8 @@ Q.staal_approval -= 1;
 
 Q.pro_republic -= 10;
 
-Q.rfb_militancy *= 0.8;
-Q.rfb_strength *= 0.6;
+Q.vanguard_militancy *= 0.8;
+Q.vanguard_strength *= 0.6;
 
 Q.commons_collectivist -= 8;
 Q.commons_sapd -= 6;
@@ -55,8 +55,8 @@ Q.collectivist_banned = 1;
 Q.sapd_banned = 1;
 
 if (Q.heartland_leader === "Goodlake") {
-  Q.rfb_militancy *= 0.9;
-  Q.rfb_strength *= 0.8;
+  Q.vanguard_militancy *= 0.9;
+  Q.vanguard_strength *= 0.8;
   Q.commons_collectivist -= 2;
   Q.disfavored_collectivist -= 2;
   Q.commons_sapd -= 2;
@@ -108,7 +108,7 @@ if (Q.bvp_r == Q.unionist_r) Q.unionist_minus_bvp_r = 0;
 !}
 on-display: {!
 data = [{
-    "id": "kpd",
+    "id": "collectivist",
     "legend": "Collectivist",
     "name": "Collectivist",
     "seats": Math.round(Q.collectivist_r * Q.reichstag_size),
@@ -125,7 +125,7 @@ if (Q.sapd_formed && Q.sapd_r) {
 
 if (Q.marcher_r) {
     data.push({
-        "id": "spd",
+        "id": "marcher",
         "legend": "Marcher",
         "name": "Marcher",
         "seats": Math.round(Q.marcher_r * Q.reichstag_size),
@@ -161,7 +161,7 @@ if (Q.lvp_r && Q.lvp_formed) {
 
 if (Q.unionist_minus_bvp_r) {
     data.push({
-        "id": "z",
+        "id": "unionist",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
@@ -179,7 +179,7 @@ if (Q.bvp_r) {
 
 if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
     data.push({
-        "id": "dvp",
+        "id": "gold",
         "legend": "Gold",
         "name": "Gold",
         "seats": Math.round(Q.gold_r * Q.reichstag_size),
@@ -188,7 +188,7 @@ if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
 
 if (Q.gnu_r && Q.gnu_formed) {
     data.push({
-        "id": "dnef",
+        "id": "gnu",
         "legend": "GNU",
         "name": "GNU",
         "seats": Math.round(Q.gnu_r * Q.reichstag_size),
@@ -215,7 +215,7 @@ if (Q.kvp_formed && Q.kvp_r) {
 
 if (Q.traditionalist_r) {
     data.push({
-        "id": "dnvp",
+        "id": "traditionalist",
         "legend": "Traditionalist",
         "name": "Traditionalist",
         "seats": Math.round(Q.traditionalist_r * Q.reichstag_size),
@@ -242,7 +242,7 @@ if (Q.dsu_exist && Q.dsu_r) {
 
 if (Q.royalist_split && Q.royalist_gallax_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_gallax_r * Q.reichstag_size),
@@ -251,7 +251,7 @@ if (Q.royalist_split && Q.royalist_gallax_r) {
 
 if (!Q.royalist_split && Q.royalist_r) {
     data.push({
-        "id": "nsdap",
+        "id": "royalist",
         "legend": "Royalist",
         "name": "Royalist",
         "seats": Math.round(Q.royalist_r * Q.reichstag_size),
@@ -391,11 +391,11 @@ if (Q.collectivist_relation >= 40) {
 }
 Q.marcher_points += ((1 - Q.labor_dissent/100)*Q.normalized_commons_total*(1 - Q.disfavored/100)*2.5) / 5;
 
-Q.rb_power = Q.rb_strength*Q.rb_militancy;
+Q.banner_power = Q.banner_strength*Q.banner_militancy;
 if (Q.dissent > 0.15) {
-    Q.rb_power *= (1 - Q.dissent/1.5);
+    Q.banner_power *= (1 - Q.dissent/1.5);
 }
-Q.marcher_points += Q.rb_power / 50;
+Q.marcher_points += Q.banner_power / 50;
 
 Q.heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 Q.evil_heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*(1 - Q.heartland_police_loyalty);
@@ -410,19 +410,19 @@ if (Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodlake" || Q.heart
 Q.army_power = Q.army_strength*Q.army_militancy;
 Q.staal_points += Q.army_power/50;
 
-Q.rfb_power = Q.rfb_strength*Q.rfb_militancy / 50;
+Q.vanguard_power = Q.vanguard_strength*Q.vanguard_militancy / 50;
 if (Q.collectivist_relation >= 40) {
-    Q.marcher_points += Q.rfb_power;
+    Q.marcher_points += Q.vanguard_power;
 } else if (Q.collectivist_relation < 40) {
-    Q.marcher_points += Q.rfb_power*0.5;
+    Q.marcher_points += Q.vanguard_power*0.5;
 }
 
 Q.enemy_power = 0;
-Q.sa_power = Q.sa_strength*Q.sa_militancy / 50;
+Q.loyalist_power = Q.loyalist_strength*Q.loyalist_militancy / 50;
 // adjust if sa is friends with schleicher
-Q.enemy_power += Q.sa_power;
-Q.sh_power = Q.sh_strength*Q.sh_militancy / 50;
-Q.enemy_power += Q.sh_power;
+Q.enemy_power += Q.loyalist_power;
+Q.warden_power = Q.warden_strength*Q.warden_militancy / 50;
+Q.enemy_power += Q.warden_power;
 
 Q.staal_points += Q.enemy_power;
 
@@ -492,10 +492,10 @@ Q.landed_gnu -= 6;
 Q.disfavored_gnu -= 6;
 Q.total_gnu_bonus -= 6;
 
-Q.rb_strength *= 1.2;
-Q.rb_militancy *= 0.8;
-Q.rfb_strength *= 1.4;
-Q.rfb_militancy *= 1.4;
+Q.banner_strength *= 1.2;
+Q.banner_militancy *= 0.8;
+Q.vanguard_strength *= 1.4;
+Q.vanguard_militancy *= 1.4;
 
 Q.reformist_dissent -= 20;
 Q.labor_dissent -= 20;
@@ -537,10 +537,10 @@ Q.landed_gnu -= 4;
 Q.disfavored_gnu -= 4;
 Q.total_gnu_bonus -= 4;
 
-Q.rb_strength *= 1.1;
-Q.rb_militancy *= 0.9;
-Q.rfb_strength *= 1.2;
-Q.rfb_militancy *= 1.2;
+Q.banner_strength *= 1.1;
+Q.banner_militancy *= 0.9;
+Q.vanguard_strength *= 1.2;
+Q.vanguard_militancy *= 1.2;
 
 Q.reformist_dissent -= 10;
 Q.labor_dissent -= 10;

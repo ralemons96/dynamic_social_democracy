@@ -1,9 +1,9 @@
 title: March on Axton
 subtitle: Right-wing militants are taking action...
-view-if: ((marcher_in_government = 1 and coup_progress >= 10 and year >= 1930 and (sa_banned=0 or sh_banned=0 or far_right_force >= 40)) or (year >= 1933 and month >= 2 and royalist_normalized + traditionalist_normalized >= 0.5)) and march_on_berlin_timer = 0
+view-if: ((marcher_in_government = 1 and coup_progress >= 10 and year >= 1930 and (loyalist_banned=0 or warden_banned=0 or far_right_force >= 40)) or (year >= 1933 and month >= 2 and royalist_normalized + traditionalist_normalized >= 0.5)) and march_on_berlin_timer = 0
 new-page: true
 max-visits: 4
-on-arrival: march_on_berlin_seen += 1; sa_strength += 80; sh_strength += 80; strife += 2; march_on_berlin_timer += 8
+on-arrival: march_on_berlin_seen += 1; loyalist_strength += 80; warden_strength += 80; strife += 2; march_on_berlin_timer += 8
 go-to: ask_resign if marcher_in_government and (president_ideology == "Right" or president == "DuFour"); govt_menu if president_ideology == "Left"; presidential_glaze if president_ideology == "Moderate"; non_govt_menu if marcher_in_government = 0 and (president_ideology == "Right" or president == "DuFour")
 tags: event
 
@@ -25,7 +25,7 @@ title: There is nothing we can do.
 go-to: accept_election if (royalist_normalized + traditionalist_normalized >= 0.5 and far_right_coalition < 50); accept_hitler if (royalist_normalized + traditionalist_normalized < 0.5 or far_right_coalition >= 50)
 
 @accept_election
-on-arrival: next_election_time = time + 1 if next_election_time > time+1; next_election_month = month + 1 if next_election_time >= time+1; next_election_year = year if next_election_time >= time+1; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; guild_royalist += 10; burgher_royalist += 10; commons_royalist += 10; landed_royalist += 10; disfavored_royalist += 8; commons_marcher -= 10; commons_collectivist -= 10; sa_strength += 100;
+on-arrival: next_election_time = time + 1 if next_election_time > time+1; next_election_month = month + 1 if next_election_time >= time+1; next_election_year = year if next_election_time >= time+1; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; guild_royalist += 10; burgher_royalist += 10; commons_royalist += 10; landed_royalist += 10; disfavored_royalist += 8; commons_marcher -= 10; commons_collectivist -= 10; loyalist_strength += 100;
 
 President [+ president +] has called for emergency elections, to be held next month, under a caretaker government. The <span style="color: #7A3C00;">**SA**</span> is permitted to act with impunity, intimidating voters into supporting the <span style="color: #7A3C00;">fascists</span>.
 
@@ -52,16 +52,16 @@ President [+ president +] has asked our government to resign.
 
 @fight
 title: Deploy the the Banners and call a general strike to resist the <span style="color: #7A3C00;">fascists</span>!
-on-arrival: defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += heartland_police_strength*heartland_police_militancy*heartland_police_loyalty if marcher_heartland; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; defense_strength += commons_marcher_normalized*(2 - dissent)*(2 - disfavored/100); defense_strength += army_strength*army_loyalty*army_militancy if president_ideology == "Left" and marcher_in_government; defense_strength += rfb_strength*rfb_militancy*(collectivist_relation/100) if collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland
+on-arrival: defense_strength = banner_strength*banner_militancy*(1-dissent/2); defense_strength += heartland_police_strength*heartland_police_militancy*heartland_police_loyalty if marcher_heartland; enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; defense_strength += commons_marcher_normalized*(2 - dissent)*(2 - disfavored/100); defense_strength += army_strength*army_loyalty*army_militancy if president_ideology == "Left" and marcher_in_government; defense_strength += vanguard_strength*vanguard_militancy*(collectivist_relation/100) if collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland
 go-to: fight_2_win if defense_strength >= enemy_strength and march_on_berlin_seen <= 1; fight_2_win_2 if defense_strength >= enemy_strength and march_on_berlin_seen > 1; fight_2_pre_civil_war if defense_strength < enemy_strength
 
-The the Banners number at [+ rb_strength +] thousand; many are in Axton to counter the <span style="color: #7A3C00;">fascist</span> demonstration.
+The the Banners number at [+ banner_strength +] thousand; many are in Axton to counter the <span style="color: #7A3C00;">fascist</span> demonstration.
 
 [? if marcher_heartland: The Heartland police has been deployed against the <span style="color: #7A3C00;">fascists</span>. ?] [? if marcher_in_government and president == "Bristol" : The portions of the Commonwealth Army that are loyal are also deployed. ?]
 
 
 @fight_2_win
-on-arrival: coup_progress = 0; sa_strength *= 0.7; sh_strength *= 0.7; rb_strength *= 0.9; commons_royalist -= 12*(1-dissent); disfavored_royalist -= 10*(1-dissent); burgher_royalist -= 6*(1-dissent); commons_marcher += 8*(1-dissent); disfavored_marcher += 6*(1-dissent); commons_traditionalist -= 2; burgher_traditionalist -= 2; guild_traditionalist -= 2; faithful_traditionalist -= 2; pro_republic += 15
+on-arrival: coup_progress = 0; loyalist_strength *= 0.7; warden_strength *= 0.7; banner_strength *= 0.9; commons_royalist -= 12*(1-dissent); disfavored_royalist -= 10*(1-dissent); burgher_royalist -= 6*(1-dissent); commons_marcher += 8*(1-dissent); disfavored_marcher += 6*(1-dissent); commons_traditionalist -= 2; burgher_traditionalist -= 2; guild_traditionalist -= 2; faithful_traditionalist -= 2; pro_republic += 15
 go-to: left_outcome if march_on_berlin_left
 achievement: drei_pfeile
 
@@ -70,7 +70,7 @@ Our forces confront the <span style="color: #7A3C00;">fascists</span>, and someh
 The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**Marchers**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
 
 @fight_2_win_2
-on-arrival: coup_progress = 0; pro_republic += 5; commons_royalist -= 2*(1-dissent); disfavored_royalist -= 2*(1-dissent); burgher_royalist -= 2*(1-dissent); rb_strength *= 0.9; sa_strength *= 0.9; sh_strength *= 0.9
+on-arrival: coup_progress = 0; pro_republic += 5; commons_royalist -= 2*(1-dissent); disfavored_royalist -= 2*(1-dissent); burgher_royalist -= 2*(1-dissent); banner_strength *= 0.9; loyalist_strength *= 0.9; warden_strength *= 0.9
 go-to: left_outcome if march_on_berlin_left
 
 Our forces confront the <span style="color: #7A3C00;">fascists</span>, and somehow, the <span style="color: #7A3C00;">fascists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.

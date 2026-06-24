@@ -45,7 +45,7 @@ Q.disfavored_collectivist += 3;
 Q.commons_marcher += 3;
 Q.disfavored_marcher += 3;
 
-Q.sa_strength *= 0.8;
+Q.loyalist_strength *= 0.8;
 
 Q.old_chancellor = Q.chancellor;
 

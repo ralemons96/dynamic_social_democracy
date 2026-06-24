@@ -1,6 +1,6 @@
 title: The <span style="color: #FFCC00;">**LVP**</span> and the the Banners
 subtitle: Due to its militarization, the <span style="color: #FFCC00;">liberals</span> are leaving the the Banners.
-view-if: rb_militancy >= 0.04 and not rb_exit and not rb_stay and lvp_formed and lvp_ideology != "Left"
+view-if: banner_militancy >= 0.04 and not banner_exit and not banner_stay and lvp_formed and lvp_ideology != "Left"
 new-page: true
 tags: event
 on-display: {!  
@@ -26,7 +26,7 @@ The the Banners has increasingly militarized, acquiring arms, conducting paramil
 - @keep_them: Can we convince them that a militant the Banners is necessary for defending the Republic?
 
 @let_go
-on-arrival: rb_strength *= 0.95; unionist_relation -= 3; lvp_relation -= 5; lvp_right += 3; pro_republic -= 3; lvp_leave_banner = 1
+on-arrival: banner_strength *= 0.95; unionist_relation -= 3; lvp_relation -= 5; lvp_right += 3; pro_republic -= 3; lvp_leave_banner = 1
 
 We have judged that the the Banners's militancy is more important than maintaining a coalition with the <span style="color: #FFCC00;">**LVP**</span>. The the Banners members affiliated with the <span style="color: #FFCC00;">liberals</span> leave, and this may inspire the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to follow suit.
 
@@ -34,7 +34,7 @@ We have judged that the the Banners's militancy is more important than maintaini
 
 
 @lower_militancy
-on-arrival: rb_militancy *= 0.5
+on-arrival: banner_militancy *= 0.5
 
 Bowing to the <span style="color: #FFCC00;">**LVP**</span>'s demands, we reduce the the Banners's military training, thus inducing them to stay.
 

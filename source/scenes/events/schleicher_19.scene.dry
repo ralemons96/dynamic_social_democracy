@@ -1,6 +1,6 @@
 title: Commonwealth Labor Front Formed
 subtitle: A state-controlled labor organization is established.
-view-if: chancellor = "Staal" and gnu_formed and ((commons_staal >= 10 and (rb_force < 30 or unions_independent or labor_dissent >= 40)) or staal_marcher_labor) and staal_post_time >= 14 and unionist_relation < 50 and not staal_pause
+view-if: chancellor = "Staal" and gnu_formed and ((commons_staal >= 10 and (banner_force < 30 or unions_independent or labor_dissent >= 40)) or staal_marcher_labor) and staal_post_time >= 14 and unionist_relation < 50 and not staal_pause
 on-arrival: {!
 Q.commons_staal_bonus += 2;
 
@@ -33,7 +33,7 @@ on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_staal = 1;
 
-Q.rb_strength -= 400;
+Q.banner_strength -= 400;
 Q.commons_marcher -= 15;
 Q.commons_gnu += 10;
 Q.disfavored_marcher -= 10;
@@ -74,7 +74,7 @@ Q.unions_independent_staal = 1;
 
 Q.pro_republic -= Q.marcher_votes / 2;
 
-Q.rb_strength -= 400;
+Q.banner_strength -= 400;
 Q.commons_marcher -= 15;
 Q.commons_gnu += 10;
 Q.disfavored_marcher -= 10;
@@ -121,11 +121,11 @@ if (Q.collectivist_relation >= 40) {
 }
 Q.marcher_points += ((1 - Q.labor_dissent/100)*Q.normalized_commons_total*(1 - Q.disfavored/100)*2.5) / 5;
 
-Q.rb_power = Q.rb_strength*Q.rb_militancy;
+Q.banner_power = Q.banner_strength*Q.banner_militancy;
 if (Q.dissent > 0.15) {
-    Q.rb_power *= (1 - Q.dissent/1.5);
+    Q.banner_power *= (1 - Q.dissent/1.5);
 }
-Q.marcher_points += Q.rb_power / 50;
+Q.marcher_points += Q.banner_power / 50;
 
 Q.heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 Q.evil_heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*(1 - Q.heartland_police_loyalty);
@@ -140,19 +140,19 @@ if (Q.heartland_leader == "Staal" || Q.heartland_leader == "Crowde") {
 Q.army_power = Q.army_strength*Q.army_militancy;
 Q.staal_points += Q.army_power/50;
 
-Q.rfb_power = Q.rfb_strength*Q.rfb_militancy / 50;
+Q.vanguard_power = Q.vanguard_strength*Q.vanguard_militancy / 50;
 if (Q.collectivist_relation >= 40) {
-    Q.marcher_points += Q.rfb_power;
+    Q.marcher_points += Q.vanguard_power;
 } else if (Q.collectivist_relation < 40) {
-    Q.marcher_points += Q.rfb_power*0.5;
+    Q.marcher_points += Q.vanguard_power*0.5;
 }
 
 Q.enemy_power = 0;
-Q.sa_power = Q.sa_strength*Q.sa_militancy / 50;
+Q.loyalist_power = Q.loyalist_strength*Q.loyalist_militancy / 50;
 // adjust if sa is friends with schleicher
-Q.enemy_power += Q.sa_power;
-Q.sh_power = Q.sh_strength*Q.sh_militancy / 50;
-Q.enemy_power += Q.sh_power;
+Q.enemy_power += Q.loyalist_power;
+Q.warden_power = Q.warden_strength*Q.warden_militancy / 50;
+Q.enemy_power += Q.warden_power;
 
 Q.staal_points += Q.enemy_power;
 
@@ -198,10 +198,10 @@ Q.landed_gnu -= 4;
 Q.disfavored_gnu -= 6;
 Q.total_gnu_bonus -= 4;
 
-Q.rb_strength *= 1.1;
-Q.rb_militancy *= 0.9;
-Q.rfb_strength *= 1.2;
-Q.rfb_militancy *= 1.2;
+Q.banner_strength *= 1.1;
+Q.banner_militancy *= 0.9;
+Q.vanguard_strength *= 1.2;
+Q.vanguard_militancy *= 1.2;
 
 Q.reformist_dissent -= 10;
 Q.labor_dissent -= 10;
@@ -241,7 +241,7 @@ Q.unions_independent_staal = 1;
 
 Q.pro_republic -= Q.marcher_votes / 2;
 
-Q.rb_strength -= 600;
+Q.banner_strength -= 600;
 Q.commons_marcher -= 20;
 Q.commons_gnu += 15;
 Q.disfavored_marcher -= 14;

@@ -20,7 +20,7 @@ title: Build up the <span style="color: #c00000;">Iron</span> <span style="color
 subtitle: Increase our propaganda measures to recruit more members into the the Banners. 
 choose-if: advisor_action_timer == 0 and iron_front_formed
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> has not yet been formed. ?]
-on-arrival: advisor_action_timer = 6; rb_strength += 200*(commons_marcher_normalized / 100);
+on-arrival: advisor_action_timer = 6; banner_strength += 200*(commons_marcher_normalized / 100);
 
 We have recruited more members into the the Banners.
 
@@ -29,7 +29,7 @@ We have recruited more members into the the Banners.
 title: Forming the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>
 choose-if: advisor_action_timer == 0 and iron_front_formed == 0 and royalist_urgency >= 2
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> has already been formed. ?][? if royalist_urgency < 2 : The party does not yet see the danger of the <span style="color: #7A3C00;">Royalists</span>. ?]
-on-arrival: advisor_action_timer = 6; rb_strength += 50; royalist_urgency += 1
+on-arrival: advisor_action_timer = 6; banner_strength += 50; royalist_urgency += 1
 go-to: confronting_nazis.iron_front 
 
 
@@ -38,6 +38,6 @@ title: Warning about the <span style="color: #7A3C00;">Royalists</span>
 subtitle: By warning the party about the <span style="color: #7A3C00;">Royalists</span>, we can spur our members to action.
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; royalist_urgency += 1; rb_militancy += 0.01 if not rb_explode; royalist_commons -= 4*(1-dissent);
+on-arrival: advisor_action_timer = 6; royalist_urgency += 1; banner_militancy += 0.01 if not banner_explode; royalist_commons -= 4*(1-dissent);
 
 We have begun a propaganda campaign to warn our members away from the <span style="color: #7A3C00;">Royalists</span>.

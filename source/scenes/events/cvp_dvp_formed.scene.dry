@@ -34,7 +34,7 @@ Q.gold_r_heartland = 0;
 Q.gold_votes = 0;
 Q.gold_normalized = 0;
 
-Q.parties = Q.parties.filter(party => party !== 'dvp');
+Q.parties = Q.parties.filter(party => party !== 'gold');
 
 if (Q.lvp_formed) {
     Q.weimar_coalition = parseFloat((Q.marcher_r + Q.lvp_r + Q.unionist_r - Q.bvp_r).toFixed(1));

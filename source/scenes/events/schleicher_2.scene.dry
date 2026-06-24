@@ -33,7 +33,7 @@ the Banners Chairman Karl Höltermann has put forward the most compelling argume
 title: Approve the participation of the the Banners and our youth organizations in the *Reichskuratorium*.
 unavailable-subtitle: The party is too distrustful of Staal to allow this.
 choose-if: staal_marcher_support >= 4 or knight_strength >= center_strength
-on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; rb_militancy += 0.06; rb_strength += 200; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
+on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; banner_militancy += 0.06; banner_strength += 200; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
 
 The the Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. the Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
 
@@ -41,7 +41,7 @@ This program has strengthened the the Banners and improved our relations with vo
 
 @wait
 title: Persuade the the Banners to remain non-committal for now, at least until the next election.
-on-arrival: staal_marcher_support += 1; staal_banner_wait = 1; rb_strength += 50; rb_militancy += 0.02
+on-arrival: staal_marcher_support += 1; staal_banner_wait = 1; banner_strength += 50; banner_militancy += 0.02
 
 We have secured a commitment from the the Banners leadership not to make any official decision regarding participation in the *Reichskuratorium* before the upcoming elections—a compromise between the party factions. However, some local members may still choose to enroll in the training programs on their own initiative.
 

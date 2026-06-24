@@ -45,14 +45,14 @@ on-arrival: resources -= 1; cultural_organizations += 1; left_dissent -= 6; cent
 
 It is not enough for the <span style="color: #c00000;">**Marchers**</span> to solely be a political party. The Worker Singer's League, Worker's Sports, and our schools and libraries are crucial to our members' lives. Funding these organizations makes our members more committed to the party, even when our policies might not be to their liking.
 
-[? if sa_strength > 500 : However, it feels frivolous to spend on sports and choirs when the <span style="color: #7A3C00;">fascists</span> are murdering us in the streets. ?]
+[? if loyalist_strength > 500 : However, it feels frivolous to spend on sports and choirs when the <span style="color: #7A3C00;">fascists</span> are murdering us in the streets. ?]
 
 @rb
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-view-if: not rb_explode
-on-arrival: resources -= 1; rb_strength  += 100; rb_militancy += 0.01; banner_timer = 0; funded_banner += 1
+view-if: not banner_explode
+on-arrival: resources -= 1; banner_strength  += 100; banner_militancy += 0.01; banner_timer = 0; funded_banner += 1
 
 We have increased recruiting to the the Banners.
 
@@ -60,8 +60,8 @@ We have increased recruiting to the the Banners.
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-view-if: not rb_explode
-on-arrival: resources -= 1; rb_strength += 50; rb_militancy += 0.02; young_socialists += 1; left_strength += 5; knight_strength += 5; radicalization += 1;
+view-if: not banner_explode
+on-arrival: resources -= 1; banner_strength += 50; banner_militancy += 0.02; young_socialists += 1; left_strength += 5; knight_strength += 5; radicalization += 1;
 
 Our new youth members flock to the left or neorevisionist wings of the party, and also bring new radicalism to the the Banners.
 

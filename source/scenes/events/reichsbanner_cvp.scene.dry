@@ -1,6 +1,6 @@
 title: The <span style="color: #000000;">**[+ unionist_party_name +]**</span> Disaffiliates with the the Banners
 subtitle: Expectedly, the <span style="color: #000000;">Christians</span> have left the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
-view-if: not rb_exit and concord_formed
+view-if: not banner_exit and concord_formed
 new-page: true
 tags: event
 on-display: {!  
@@ -26,7 +26,7 @@ In the meantime, the party is debating its stance on ties with the <span style="
 - @let_go: Let the <span style="color: #000000;">Christians</span> go.
 
 @let_go
-on-arrival: rb_strength *= 0.85; unionist_relation -= 5; lvp_relation -= 3; lvp_right += 3; pro_republic -= 5; concord_right += 3; concord_leave_banner = 1
+on-arrival: banner_strength *= 0.85; unionist_relation -= 5; lvp_relation -= 3; lvp_right += 3; pro_republic -= 5; concord_right += 3; concord_leave_banner = 1
 
 Despite the vigorous protest from the <span style="color: #FF7F00;">Christian Left</span> faction, and the refusal of ardent <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> like Werth to leave, this has dealt a significant blow to the organization. With the <span style="color: #000000;">Christians</span> gone, the the Banners, in the public's eye, is nothing more than a <span style="color: #c00000;">socialist</span> militia.
 

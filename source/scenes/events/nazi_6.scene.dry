@@ -28,7 +28,7 @@ Since then, a major conflict has erupted between the <span style="color: #7A3C00
 
 @nazi_2
 title: The dispute escalates...
-on-arrival: sa_strength -= 25; sa_militancy -= 0.03; disfavored_royalist -= 4; commons_royalist -= 2
+on-arrival: loyalist_strength -= 25; loyalist_militancy -= 0.03; disfavored_royalist -= 4; commons_royalist -= 2
 
 One of Stegmann's aides infiltrated the <span style="color: #7A3C00;">**SA**</span> headquarters, locking up a stormtrooper loyal to the gauleiter and seizing official files. This then sparked a bloody brawl between Stegmann’s followers and the gauleiter’s supporters within the party headquarters.
 

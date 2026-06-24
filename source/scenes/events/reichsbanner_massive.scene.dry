@@ -1,6 +1,6 @@
 title: Excessive Militarization of the the Banners
 subtitle: Many argue that its militarization is no longer necessary now that we have established dominance over the streets.
-view-if: rb_militancy >= 0.15 and democracy_paramilitary_highest and year >= 1931 and not rb_massive
+view-if: banner_militancy >= 0.15 and democracy_paramilitary_highest and year >= 1931 and not banner_massive
 new-page: true
 tags: event
 on-display: {!  
@@ -20,8 +20,8 @@ on-display: {!
 
 The argument that the militarization of the the Banners is necessary to defend against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span> no longer holds, given our dominance of the streets. With the threat now eliminated, the bourgeois parties fear it may instead function as a <span style="color: #c00000;">socialist</span> militia.
 
-[? if not rb_exit: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed:and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>&nbsp;?][? if not lvp_leave_banner and lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>&nbsp;?]have threatened drastic consequences if the the Banners isn't disarmed.?]
-[? if rb_exit and not concord_formed: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?][? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_banner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and have abandoned their strong opposition to the <span style="color: #3E88B3;">**Wardens**</span>.?][? if (rb_exit or concord_leave_banner) and concord_formed: The <span style="color: #000000;">**Concord**</span> [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_banner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and are getting noticeably friendly with the <span style="color: #3E88B3;">**Wardens**</span>.?]
+[? if not banner_exit: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed:and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>&nbsp;?][? if not lvp_leave_banner and lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>&nbsp;?]have threatened drastic consequences if the the Banners isn't disarmed.?]
+[? if banner_exit and not concord_formed: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?][? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_banner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and have abandoned their strong opposition to the <span style="color: #3E88B3;">**Wardens**</span>.?][? if (banner_exit or concord_leave_banner) and concord_formed: The <span style="color: #000000;">**Concord**</span> [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_leave_banner and lvp_formed: and <span style="color: #FFCC00;">**LVP**</span>?] have condemned the organization as nothing more than a <span style="color: #c00000;">socialist</span> militia and are getting noticeably friendly with the <span style="color: #3E88B3;">**Wardens**</span>.?]
 
 If no action is taken, we risk permanently alienating the bourgeois parties.
 
@@ -32,7 +32,7 @@ If no action is taken, we risk permanently alienating the bourgeois parties.
 subtitle: The the Banners is still needed, as the police cannot be trusted to do their job. [? if president == "DuFour" and marcher_in_government: DuFour has threatened to sack our government if no action is taken. ?][? if marcher_in_government and not in_left_front and not in_marcher_majority: Our coalition partners will call a vote of no confidence. ?] The bourgeois parties will be forever antagonistic.
 unavailable-subtitle: The reformist wing of the party is able to dissuade the party from endorsing this option.
 choose-if: left_strength + knight_strength >= reformist_strength
-on-arrival: rb_strength *= 0.8; unionist_relation -= 20; ddp_relation -= 20; lvp_relation -= 20; rb_exit = 1; left_strength += 10*(1-dissent); knight_strength += 20*(1-dissent); ddp_right += 8; lvp_right += 10; gold_right += 10; ddp_cohesion -= 5; pro_republic -= 10; coalition_dissent += 5; rb_massive = 1; dufour_angry += 100
+on-arrival: banner_strength *= 0.8; unionist_relation -= 20; ddp_relation -= 20; lvp_relation -= 20; banner_exit = 1; left_strength += 10*(1-dissent); knight_strength += 20*(1-dissent); ddp_right += 8; lvp_right += 10; gold_right += 10; ddp_cohesion -= 5; pro_republic -= 10; coalition_dissent += 5; banner_massive = 1; dufour_angry += 100
 
 We must not let our guard down; the the Banners must remain militarized. Whether they like it or not, paramilitaries are here to stay.
 
@@ -40,6 +40,6 @@ Unfortunately, the bourgeois parties[? if president == "DuFour":, and especially
 
 @lower_militancy
 subtitle: The necessity for paramilitaries is over; we can now let the Heartland police do its job.
-on-arrival: rb_militancy *= 0.5
+on-arrival: banner_militancy *= 0.5
 
 Bowing to the other parties' demands, we reduce the the Banners's military training, thus inducing them to stay.

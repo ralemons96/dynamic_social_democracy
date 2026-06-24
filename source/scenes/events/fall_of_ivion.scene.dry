@@ -1,7 +1,7 @@
 title: The Fall of Ivion
 subtitle: The Empire seizes the isle; the old order stirs...
 new-page: true
-on-arrival: ivion_seen = 1; army_loyalty -= 0.05; sa_strength += 10; royalist_funds += 3; royalist_urgency += 2; imperial_fear += 3; faithful_royalist += 4; faithful_traditionalist += 3; faithful_marcher -= 3;
+on-arrival: ivion_seen = 1; army_loyalty -= 0.05; loyalist_strength += 10; royalist_funds += 3; royalist_urgency += 2; imperial_fear += 3; faithful_royalist += 4; faithful_traditionalist += 3; faithful_marcher -= 3;
 tags: event
 view-if: paralysis_seen = 1 and time >= crisis_start_time + 2
 max-visits: 1
@@ -18,7 +18,7 @@ The shock runs through the Commonwealth like cold water. In the barracks the Gen
 - @dufour: Appeal to President DuFour to stand firm for the Commonwealth.
 
 @rally
-on-arrival: rb_strength += 50; rb_militancy += 0.05
+on-arrival: banner_strength += 50; banner_militancy += 0.05
 
 We call up the Banners and the Iron Banner. If the Empire means to test the Commonwealth's nerve, let it not find the streets of Axton undefended.
 

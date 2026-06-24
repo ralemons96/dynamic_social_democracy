@@ -10,36 +10,36 @@ if (Q.left_strength < 10) {
     Q.commons_marcher -= 3; 
     Q.disfavored_marcher -= 3; 
     Q.commons_collectivist += 3; 
-    Q.rb_strength -= 300; 
-    if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.04; 
+    Q.banner_strength -= 300; 
+    if (Q.banner_militancy >= 0.1) Q.banner_militancy -= 0.04; 
 } else if (Q.left_strength < 25) {
     Q.commons_marcher -= 4; 
     Q.disfavored_marcher -= 4; 
     Q.commons_collectivist += 4; 
     Q.disfavored_collectivist += 2;
-    Q.rb_strength -= 350; 
-    if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.05; 
+    Q.banner_strength -= 350; 
+    if (Q.banner_militancy >= 0.1) Q.banner_militancy -= 0.05; 
 } else if (Q.left_strength < 40) {
     Q.commons_marcher -= 5; 
     Q.disfavored_marcher -= 5; 
     Q.commons_collectivist += 5; 
     Q.disfavored_collectivist += 3;
-    Q.rb_strength -= 400; 
-    if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.06; 
+    Q.banner_strength -= 400; 
+    if (Q.banner_militancy >= 0.1) Q.banner_militancy -= 0.06; 
 } else if (Q.left_strength < 60) {
     Q.commons_marcher -= 6; 
     Q.disfavored_marcher -= 6; 
     Q.commons_collectivist += 6; 
     Q.disfavored_collectivist += 3;
-    Q.rb_strength -= 500; 
-    if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.08; 
+    Q.banner_strength -= 500; 
+    if (Q.banner_militancy >= 0.1) Q.banner_militancy -= 0.08; 
 } else {
     Q.commons_marcher -= 8; 
     Q.disfavored_marcher -= 8; 
     Q.commons_collectivist += 8; 
     Q.disfavored_collectivist += 4;
-    Q.rb_strength -= 600; 
-    if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.1; 
+    Q.banner_strength -= 600; 
+    if (Q.banner_militancy >= 0.1) Q.banner_militancy -= 0.1; 
 }
 
 Q.collectivist_r += 1; 

@@ -357,7 +357,7 @@ Q.change_royalist_votes_lippe = (Q.change_royalist_votes_lippe != undefined ? pa
 !}
 on-display: {!
 data = [{
-    "id": "kpd",
+    "id": "collectivist",
     "legend": "Collectivist",
     "name": "Collectivist",
     "seats": Math.round(Q.collectivist_r_lippe * 0.21),
@@ -373,7 +373,7 @@ if (Q.sapd_formed && Q.sapd_r_lippe) {
 }
 
 data = data.concat([{
-    "id": "spd",
+    "id": "marcher",
     "legend": "Marcher",
     "name": "Marcher",
     "seats": Math.round(Q.marcher_r_lippe * 0.21),
@@ -399,7 +399,7 @@ if (Q.lvp_r_lippe && Q.lvp_formed) {
 
 if (Q.unionist_r_lippe) {
     data.push({
-        "id": "z",
+        "id": "unionist",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.unionist_r_lippe * 0.21),
@@ -408,7 +408,7 @@ if (Q.unionist_r_lippe) {
 
 if (Q.gold_r_lippe && !Q.lvp_formed && Q.gold_exist) {
     data.push({
-        "id": "dvp",
+        "id": "gold",
         "legend": "Gold",
         "name": "Gold",
         "seats": Math.round(Q.gold_r_lippe * 0.21),
@@ -451,7 +451,7 @@ if (Q.kvp_formed && Q.kvp_r_lippe) {
 }
 
 data = data.concat([{
-    "id": "dnvp",
+    "id": "traditionalist",
     "legend": "Traditionalist",
     "name": "Traditionalist",
     "seats": Math.round(Q.traditionalist_r_lippe * 0.21),
@@ -465,7 +465,7 @@ if (Q.dnf_formed && Q.dnf_r_lippe) {
     });
 }
 data = data.concat([{
-    "id": "nsdap",
+    "id": "royalist",
     "legend": "Royalist",
     "name": "Royalist",
     "seats": Math.round(Q.royalist_r_lippe * 0.21),

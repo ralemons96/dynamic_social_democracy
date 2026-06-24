@@ -17,10 +17,10 @@ if (Q.difficulty >= 0) {
 if (Q[card.id + "_timer"]) {
     Q[card.id + "_timer"] = 0;
 }
-if (card.id == "prussian_affairs_dvp" || card.id == "prussian_affairs_left" || card.id == "prussian_affairs_majority") {
+if (card.id == "heartland_affairs_gold" || card.id == "heartland_affairs_left" || card.id == "heartland_affairs_majority") {
     Q.heartland_affairs_timer = 0;
 }
-if (card.id == "dealing_with_toleration_right" || card.id == "dealing_with_toleration_cvp") {
+if (card.id == "dealing_with_toleration_right" || card.id == "dealing_with_toleration_concord") {
     Q.dealing_with_toleration_timer = 0;
 }
 // reduce visit count

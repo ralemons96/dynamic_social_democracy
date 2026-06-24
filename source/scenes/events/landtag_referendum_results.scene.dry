@@ -34,7 +34,7 @@ title: The votes are counted.
 go-to: PLR_passed_votes if landtag_ref_votes >= 50; PLR_failed_votes if landtag_ref_votes < 50
 
 @PLR_passed_votes
-on-arrival: pro_republic -= 10; commons_marcher -= 8; commons_collectivist += 3; commons_royalist += 5; disfavored_marcher -= 5; disfavored_royalist += 5; burgher_marcher -= 5; burgher_royalist += 5; guild_marcher -= 5; guild_royalist += 5; landed_marcher -= 5; landed_royalist += 5; landed_traditionalist += 3; guild_traditionalist += 3; landed_dnf += 3; guild_dnf += 3; faithful_marcher -= 5; faithful_royalist += 5; sa_strength += 200; rfb_strength += 100; heartland_police_loyalty -= 0.3
+on-arrival: pro_republic -= 10; commons_marcher -= 8; commons_collectivist += 3; commons_royalist += 5; disfavored_marcher -= 5; disfavored_royalist += 5; burgher_marcher -= 5; burgher_royalist += 5; guild_marcher -= 5; guild_royalist += 5; landed_marcher -= 5; landed_royalist += 5; landed_traditionalist += 3; guild_traditionalist += 3; landed_dnf += 3; guild_dnf += 3; faithful_marcher -= 5; faithful_royalist += 5; loyalist_strength += 200; vanguard_strength += 100; heartland_police_loyalty -= 0.3
 call: set_next_election_time_prussia
 
 It's over for Commonwealth democracy. [+ landtag_ref_votes +]% of the eligible Heartland population has voted for it, dissolving the state Assembly and calling new elections, where the extremists are expected to make colossal gains at our expense. [? if landtag_ref_collectivist: All my homies hate the <span style="color: #700000;">**Collectivists**</span>. ?]

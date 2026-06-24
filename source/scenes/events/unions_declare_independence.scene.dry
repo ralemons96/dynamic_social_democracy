@@ -17,7 +17,7 @@ if (Q.labor_strength < 10) {
     }
     Q.commons_collectivist += 4;
     Q.commons_royalist += 4;
-    Q.rb_strength -= 400;
+    Q.banner_strength -= 400;
 } else if (Q.labor_strength < 25) {
     Q.commons_marcher -= 20;
     Q.disfavored_marcher -= 10;
@@ -29,7 +29,7 @@ if (Q.labor_strength < 10) {
     }
     Q.commons_collectivist += 5;
     Q.commons_royalist += 5;
-    Q.rb_strength -= 500;
+    Q.banner_strength -= 500;
 } else if (Q.labor_strength < 40) {
     Q.commons_marcher -= 22;
     Q.disfavored_marcher -= 12;
@@ -41,7 +41,7 @@ if (Q.labor_strength < 10) {
     }
     Q.commons_collectivist += 6;
     Q.commons_royalist += 6;
-    Q.rb_strength -= 600;
+    Q.banner_strength -= 600;
 } else if (Q.labor_strength < 60) {
     Q.commons_marcher -= 24;
     Q.disfavored_marcher -= 14;
@@ -53,7 +53,7 @@ if (Q.labor_strength < 10) {
     }
     Q.commons_collectivist += 7;
     Q.commons_royalist += 7;
-    Q.rb_strength -= 700;
+    Q.banner_strength -= 700;
 } else {
     Q.commons_marcher -= 26;
     Q.disfavored_marcher -= 16;
@@ -65,7 +65,7 @@ if (Q.labor_strength < 10) {
     }
     Q.commons_collectivist += 8;
     Q.commons_royalist += 8;
-    Q.rb_strength -= 800;
+    Q.banner_strength -= 800;
 }
 
 Q.commons_royalist -= 3;

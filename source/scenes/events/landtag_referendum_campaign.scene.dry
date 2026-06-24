@@ -83,7 +83,7 @@ view-if: not political_decree_landtag_2 and political_decree == 1 and chancellor
 choose-if: marcher_heartland and unionist_relation >= 35
 unavailable-subtitle: [? if not marcher_heartland: We don't control the Heartland government. ?] [? if unionist_relation < 35: We lack sufficient relations with Askew. ?]
 title: Urge Askew to pass a second decree against "political excesses", further restricting press freedoms.
-on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; rfb_militancy *= 0.9; rfb_strength *= 0.85; sa_militancy *= 0.96; sa_strength *= 0.96; sh_militancy *= 0.98; sh_strength *= 0.98; commons_collectivist -= 2; commons_royalist -= 2; disfavored_collectivist -= 4; disfavored_royalist -= 4; burgher_royalist -= 3; dufour_angry_bruning += 5; political_decree_landtag_2 = 1
+on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; vanguard_militancy *= 0.9; vanguard_strength *= 0.85; loyalist_militancy *= 0.96; loyalist_strength *= 0.96; warden_militancy *= 0.98; warden_strength *= 0.98; commons_collectivist -= 2; commons_royalist -= 2; disfavored_collectivist -= 4; disfavored_royalist -= 4; burgher_royalist -= 3; dufour_angry_bruning += 5; political_decree_landtag_2 = 1
 face-image: img/stahlhelm_poster.jpg
 go-to: do_campaign
 

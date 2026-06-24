@@ -1,6 +1,6 @@
 title: Exodus from the the Banners
 subtitle: Owing to its militarization, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_leave_banner: and <span style="color: #FFCC00;">**LVP**</span>?] are leaving the the Banners.
-view-if: rb_militancy >= 0.2 and not rb_exit and not rb_stay and not lvp_leave and not concord_formed
+view-if: banner_militancy >= 0.2 and not banner_exit and not banner_stay and not lvp_leave and not concord_formed
 new-page: true
 tags: event
 on-display: {!  
@@ -25,7 +25,7 @@ The the Banners has become increasingly militarized as of late, with ever-greate
 - @keep_them: Can we convince them that a militant the Banners is necessary for defending the Republic?
 
 @let_go
-on-arrival: rb_strength *= 0.9; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 5; rb_exit = 1; left_strength += 5*(1-dissent); ddp_right += 3; lvp_right += 3
+on-arrival: banner_strength *= 0.9; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 5; banner_exit = 1; left_strength += 5*(1-dissent); ddp_right += 3; lvp_right += 3
 
 We have judged that the the Banners's militancy is more important than maintaining a coalition with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_leave_banner: and <span style="color: #FFCC00;">**LVP**</span>?]. The the Banners members affiliated with these parties leave, while the left of the <span style="color: #c00000;">**Marchers**</span> is strengthened.
 
@@ -33,7 +33,7 @@ We have judged that the the Banners's militancy is more important than maintaini
 
 
 @lower_militancy
-on-arrival: rb_militancy *= 0.5
+on-arrival: banner_militancy *= 0.5
 
 Bowing to the other parties' demands, we reduce the the Banners's military training, thus inducing them to stay.
 
@@ -41,6 +41,6 @@ Bowing to the other parties' demands, we reduce the the Banners's military train
 @keep_them
 unavailable-subtitle: They are unable to be convinced at this time.
 choose-if: strife >= 5 and (unionist_relation >= 50 or unionist_leader == "Emperor" or (unionist_leader == "Joos" and unionist_relation >= 30)) and ((ddp_relation >= 50 and not lvp_formed) or (lvp_relation >= 50 and lvp_formed))
-on-arrival: rb_stay = 1; ddp_left += 2; ddp_cohesion += 2; lvp_left += 2
+on-arrival: banner_stay = 1; ddp_left += 2; ddp_cohesion += 2; lvp_left += 2
 
 Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_leave_banner: and <span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and will not leave the organization.

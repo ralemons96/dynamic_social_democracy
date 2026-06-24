@@ -1,7 +1,7 @@
 title: <span style="color: #7A3C00;">Royalists</span> in Crisis
 subtitle: Finally, the internal contradictions of the <span style="color: #7A3C00;">**Royalists**</span> have caught up to it.
 view-if: year = 1933 and month >= 9 and royalist_r >= 8 and royalist_normalized + traditionalist_normalized < 0.5
-on-arrival: commons_royalist -= 12; burgher_royalist -= 12; guild_royalist -= 12; landed_royalist -= 12; disfavored_royalist -= 10; sa_strength *= 0.7; coup_progress -= 4 if coup_progress > 4; burgher_ddp += 6; burgher_gold += 6; guild_ddp += 5; guild_gold += 5; guild_traditionalist += 3; landed_traditionalist += 6; landed_ddp += 2; landed_gold += 2; disfavored_collectivist += 4; disfavored_marcher += 4; ddp_cohesion += 2; ddp_left += 2; gold_left += 2; lvp_left += 2;
+on-arrival: commons_royalist -= 12; burgher_royalist -= 12; guild_royalist -= 12; landed_royalist -= 12; disfavored_royalist -= 10; loyalist_strength *= 0.7; coup_progress -= 4 if coup_progress > 4; burgher_ddp += 6; burgher_gold += 6; guild_ddp += 5; guild_gold += 5; guild_traditionalist += 3; landed_traditionalist += 6; landed_ddp += 2; landed_gold += 2; disfavored_collectivist += 4; disfavored_marcher += 4; ddp_cohesion += 2; ddp_left += 2; gold_left += 2; lvp_left += 2;
 max-visits: 1
 new-page: true
 #tags: event

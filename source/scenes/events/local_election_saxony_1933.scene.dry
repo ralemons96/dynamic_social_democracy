@@ -452,7 +452,7 @@ Q.marcher_coalition_saxony = parseFloat((Q.aspd_r_saxony + Q.marcher_r_saxony + 
 !}
 on-display: {!
 data = [{
-    "id": "kpd",
+    "id": "collectivist",
     "legend": "Collectivist",
     "name": "Collectivist",
     "seats": Math.round(Q.collectivist_r_saxony * 0.96),
@@ -468,7 +468,7 @@ if (Q.sapd_formed && Q.sapd_r_saxony) {
 }
 
 data = data.concat([{
-    "id": "spd",
+    "id": "marcher",
     "legend": "Marcher",
     "name": "Marcher",
     "seats": Math.round(Q.marcher_r_saxony * 0.96),
@@ -503,7 +503,7 @@ if (Q.lvp_r_saxony && Q.lvp_formed) {
 
 if (Q.unionist_r_saxony) {
     data.push({
-        "id": "z",
+        "id": "unionist",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.unionist_r_saxony * 0.96),
@@ -512,7 +512,7 @@ if (Q.unionist_r_saxony) {
 
 if (Q.gold_r_saxony && !Q.lvp_formed && Q.gold_exist) {
     data.push({
-        "id": "dvp",
+        "id": "gold",
         "legend": "Gold",
         "name": "Gold",
         "seats": Math.round(Q.gold_r_saxony * 0.96),
@@ -585,7 +585,7 @@ if (Q.traditionalist_ideology == "Radical" && Q.farm_r_saxony) {
 
 if (Q.traditionalist_r_saxony && !Q.concord_formed) {
     data.push({
-    "id": "dnvp",
+    "id": "traditionalist",
     "legend": "Traditionalist",
     "name": "Traditionalist",
     "seats": Math.round(Q.traditionalist_r_saxony * 0.96),
@@ -601,7 +601,7 @@ if (Q.dnf_formed && Q.dnf_r_saxony) {
     });
 }
 data = data.concat([{
-    "id": "nsdap",
+    "id": "royalist",
     "legend": "Royalist",
     "name": "Royalist",
     "seats": Math.round(Q.royalist_r_saxony * 0.96),
@@ -780,7 +780,7 @@ subtitle: The <span style="color: #700000;">**United**</span> <span style="color
 view-if: left_coalition_saxony >= 50 and red_saxony
 choose-if: (collectivist_relation >= 25 and collectivist_leader == "Conciliators") or (collectivist_relation >= 45 and collectivist_leader != "Conciliators")
 unavailable-subtitle: Our parties' relations have deteriorated too far.
-on-arrival: red_saxony = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; lvp_relation -= 4; coup_progress += 3; dufour_angry += 30; rfb_militancy += 0.04; rfb_strength += 100; sa_strength += 40; sh_strength += 40; strife += 1; commons_marcher += 3; commons_collectivist += 3; disfavored_marcher += 3; burgher_marcher -= 3; guild_marcher -= 3; landed_marcher -= 3; communist_coalition += 2; collectivist_relation += 10; saxony_toleration = 0; saxony_groko = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
+on-arrival: red_saxony = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; lvp_relation -= 4; coup_progress += 3; dufour_angry += 30; vanguard_militancy += 0.04; vanguard_strength += 100; loyalist_strength += 40; warden_strength += 40; strife += 1; commons_marcher += 3; commons_collectivist += 3; disfavored_marcher += 3; burgher_marcher -= 3; guild_marcher -= 3; landed_marcher -= 3; communist_coalition += 2; collectivist_relation += 10; saxony_toleration = 0; saxony_groko = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
 
 <span style="color: #c00000;">**Red**</span> Dornwich is maintained.  The bourgeois parties hate us all the more, but their cries are ineffectual.  We will continue transforming the state into a stronghold of <span style="color: #c00000;">socialism</span>.
 
@@ -831,7 +831,7 @@ The <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right
 title: The <span style="color: #7A3C00;">**Royalists**</span> forms a majority government.
 subtitle: We are so cooked... 
 view-if: royalist_r_saxony >= 50
-on-arrival: gallax_explode = time + 36; saxony_royalist_maj = 1; royalist_left += 5; pro_republic -= 10; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_collectivist = 0; saxony_marcher_maj = 0; data_miner_detected = 1; commons_royalist += 12; commons_collectivist -= 6; commons_marcher -= 4; disfavored_royalist += 12; disfavored_collectivist -= 6; disfavored_marcher -= 4; burgher_royalist += 8; burgher_ddp -= 2; burgher_lvp -= 2; burgher_marcher -= 6; sa_strength += 200; sa_militancy += 0.1; heartland_police_loyalty -= 0.1
+on-arrival: gallax_explode = time + 36; saxony_royalist_maj = 1; royalist_left += 5; pro_republic -= 10; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_collectivist = 0; saxony_marcher_maj = 0; data_miner_detected = 1; commons_royalist += 12; commons_collectivist -= 6; commons_marcher -= 4; disfavored_royalist += 12; disfavored_collectivist -= 6; disfavored_marcher -= 4; burgher_royalist += 8; burgher_ddp -= 2; burgher_lvp -= 2; burgher_marcher -= 6; loyalist_strength += 200; loyalist_militancy += 0.1; heartland_police_loyalty -= 0.1
 go-to: president_hate if (president_ideology == "Left") and not presidential_powers; president_allow if (president_ideology != "Left") and not presidential_powers; president_oops if presidential_powers
 face-image: img/portraits/strasser.jpg
 
@@ -957,7 +957,7 @@ subtitle: Unfortunately, there is no other viable option.
 view-if: saxony_no_majority_2
 choose-if: mega_bourgeois_coalition_saxony < 50 and far_right_coalition_saxony >= 50
 unavailable-subtitle: Even when including the <span style="color: #7A3C00;">Royalists</span>, the bourgeois government can't find a majority.
-on-arrival: saxony_royalist = 1; royalist_left += 5; gallax_explode = time + 36; data_miner_detected = 1; commons_royalist += 6; commons_collectivist -= 3; commons_marcher -= 2; disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 2; burgher_royalist += 4; burgher_ddp -= 1; burgher_lvp -= 1; burgher_marcher -= 3; sa_strength += 100; sa_militancy += 0.05; heartland_police_loyalty -= 0.05; pro_republic -= 5; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
+on-arrival: saxony_royalist = 1; royalist_left += 5; gallax_explode = time + 36; data_miner_detected = 1; commons_royalist += 6; commons_collectivist -= 3; commons_marcher -= 2; disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 2; burgher_royalist += 4; burgher_ddp -= 1; burgher_lvp -= 1; burgher_marcher -= 3; loyalist_strength += 100; loyalist_militancy += 0.05; heartland_police_loyalty -= 0.05; pro_republic -= 5; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
 go-to: reichsex_dilemma if president_ideology == "Left" and not presidential_powers
 face-image: img/portraits/strasser.jpg
 
@@ -977,11 +977,11 @@ President [+ president +] is considering the use of a <i>Commonwealth interventi
 @do
 title: The power of <i>Commonwealth intervention</i> exists for a reason, and times like this call for it.
 subtitle: President [+ president +] will remove Crowde from his post, by force if necessary.
-on-arrival: pres_strength = rb_strength*rb_militancy*(1-dissent/2); enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; pres_strength += army_strength*army_loyalty*army_militancy; pres_strength += rfb_strength*rfb_militancy if (president == "Munzer" or president == "Halsmark"); pres_strength += rfb_strength*rfb_militancy*(collectivist_relation/100) if (collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland) and president != "Munzer" and president != "Halsmark"
+on-arrival: pres_strength = banner_strength*banner_militancy*(1-dissent/2); enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; pres_strength += army_strength*army_loyalty*army_militancy; pres_strength += vanguard_strength*vanguard_militancy if (president == "Munzer" or president == "Halsmark"); pres_strength += vanguard_strength*vanguard_militancy*(collectivist_relation/100) if (collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland) and president != "Munzer" and president != "Halsmark"
 go-to: pres_victory if pres_strength >= enemy_strength; war if pres_strength < enemy_strength
 
 @pres_victory
-on-arrival: saxony_royalist = 0; commons_royalist -= 4; disfavored_royalist -= 4; burgher_royalist -= 4; guild_royalist -= 4; landed_royalist -= 4; sa_strength -= 100; sa_militancy *= 0.8; coup_progress -= 3; pro_republic += 2; saxony_1933_trigger_time = time + 3
+on-arrival: saxony_royalist = 0; commons_royalist -= 4; disfavored_royalist -= 4; burgher_royalist -= 4; guild_royalist -= 4; landed_royalist -= 4; loyalist_strength -= 100; loyalist_militancy *= 0.8; coup_progress -= 3; pro_republic += 2; saxony_1933_trigger_time = time + 3
 
 Crowde has backed down!  Unfortunately, as there was no other viable path to a coalition in the state Assembly, it will need to be dissolved for new elections once more.
 
@@ -1011,7 +1011,7 @@ The <span style="color: #7A3C00;">**Royalists**</span> is heavily demoralized by
 title: The <span style="color: #c00000;">**Marchers**</span> will form a coalition government with the <span style="color: #700000;">**Collectivists**</span>.
 subtitle: Will history repeat itself?
 view-if: left_coalition_saxony >= 50 and (collectivist_relation >= 35 and collectivist_leader == "Conciliators") or (collectivist_relation >= 55 and collectivist_leader != "Conciliators") and not red_saxony
-on-arrival: red_saxony = 1; unionist_relation -= 7; ddp_relation -= 7; gold_relation -= 7; lvp_relation -= 7; coup_progress += 5; dufour_angry += 60; rfb_militancy += 0.08; rfb_strength += 150; sa_strength += 80; sh_strength += 80; strife += 1; commons_marcher += 5; commons_collectivist += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; communist_coalition += 3; collectivist_relation += 15; saxony_toleration = 0; saxony_groko = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
+on-arrival: red_saxony = 1; unionist_relation -= 7; ddp_relation -= 7; gold_relation -= 7; lvp_relation -= 7; coup_progress += 5; dufour_angry += 60; vanguard_militancy += 0.08; vanguard_strength += 150; loyalist_strength += 80; warden_strength += 80; strife += 1; commons_marcher += 5; commons_collectivist += 5; disfavored_marcher += 5; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; communist_coalition += 3; collectivist_relation += 15; saxony_toleration = 0; saxony_groko = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
 go-to: president_nope if president_ideology == "Right" and not presidential_powers
 on-display: {!  
     var cardEl = document.createElement('div');  

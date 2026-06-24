@@ -57,7 +57,7 @@ Q.traditionalist_r = 0;
 Q.traditionalist_votes = 0;
 Q.traditionalist_normalized = 0;
 
-Q.parties = Q.parties.filter(party => party !== 'dnvp');
+Q.parties = Q.parties.filter(party => party !== 'traditionalist');
 
 if (Q.lvp_formed) {
     Q.weimar_coalition = parseFloat((Q.marcher_r + Q.lvp_r + Q.unionist_r - Q.bvp_r).toFixed(1));

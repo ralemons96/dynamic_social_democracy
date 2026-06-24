@@ -2,9 +2,9 @@ title: the Banners
 new-page: true
 is-card: true
 tags: party_affairs
-view-if: banner_timer <= 0 and not rb_explode
+view-if: banner_timer <= 0 and not banner_explode
 card-image: img/reichsbanner.jpg
-on-arrival: month_actions += 1; banner_timer += 6; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+on-arrival: month_actions += 1; banner_timer += 6; banner_militarization_cost = 2 if banner_militancy > 0.1 else banner_militarization_cost = 1; banner_militarization_cost = 3 if banner_militancy > 0.25
 max-visits: 6
 #subtitle: Paramilitary organizing in defense of the republic.
 
@@ -25,19 +25,19 @@ The *the Banners* <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<sp
 #- Orient reichsbanner towards anti-fascism (only available if we have prioritized anti fascism)
 
 @militant
-choose-if: resources >= rb_militarization_cost
-unavailable-subtitle: Not enough resources ([+ rb_militarization_cost +] needed).
-subtitle: -[+ rb_militarization_cost +] resources
-on-arrival: resources -= rb_militarization_cost; rb_investment += 1; rb_strength += 100; rb_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; marcher_militancy += 0.05; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent); unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
+choose-if: resources >= banner_militarization_cost
+unavailable-subtitle: Not enough resources ([+ banner_militarization_cost +] needed).
+subtitle: -[+ banner_militarization_cost +] resources
+on-arrival: resources -= banner_militarization_cost; banner_investment += 1; banner_strength += 100; banner_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; marcher_militancy += 0.05; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent); unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
 Some in our party decry the increasing militarization of the the Banners. They say it is emulating the <span style="color: #3E88B3;">right-wing nationalists</span> or the <span style="color: #700000;">communists</span>, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the <span style="color: #700000;">communists</span>.
 
-[? if not concord_leave_banner and not rb_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
+[? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 
 
 @militant_2
 view-if: funded_banner >= 1
-on-arrival: rb_militancy += 0.02; funded_banner -= 1
+on-arrival: banner_militancy += 0.02; funded_banner -= 1
 
 As we have already funded resources towards the the Banners, we can invest in building up their militancy. 
 
@@ -51,7 +51,7 @@ The the Banners is already serving the purpose it needs to serve. There is no re
 
 @cut_rb
 subtitle: +1 resources
-on-arrival: resources += 1; rb_strength -= 100; rb_militancy -= 0.05; left_strength -= 2; left_dissent -= 2; marcher_militancy -= 0.05; commons_collectivist += 2; disfavored_collectivist += 2
+on-arrival: resources += 1; banner_strength -= 100; banner_militancy -= 0.05; left_strength -= 2; left_dissent -= 2; marcher_militancy -= 0.05; commons_collectivist += 2; disfavored_collectivist += 2
 
 Cutting resources to the the Banners causes a drop in the membership, and leads some would-be members to join the <span style="color: #700000;">Communists</span> instead.
 
@@ -61,7 +61,7 @@ title: Allow women to join the the Banners.
 subtitle: -1 resources - This might cause a backlash from existing members.
 choose-if: resources > 0
 view-if: womens_rights >= 4 and sender_advisor == 1 and iron_front_formed == 1
-on-arrival: resources -= 1; rb_militancy *= 0.85; rb_strength += 400; women_in_rb = 1; rb_militancy += 0.05 if repealed_175; rb_militancy += 0.04 if trans_rights; rb_militancy += 0.02 if reformed_183;
+on-arrival: resources -= 1; banner_militancy *= 0.85; banner_strength += 400; women_in_banner = 1; banner_militancy += 0.05 if repealed_175; banner_militancy += 0.04 if trans_rights; banner_militancy += 0.02 if reformed_183;
 go-to: homosexual if trans_rights or repealed_175 or reformed_183
 max-visits: 1
 achievement: women_reichsbanner

@@ -20,6 +20,12 @@ var _stab = (Q.pro_republic || 0)
     - Math.max(0, (Q.disfavored || 0) - 8)
     + Math.max(-5, Math.min(5, (Q.economic_growth || 0)));
 Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
+// Military readiness / deterrence vs the Empire: the loyal army's fighting power for the
+// republic plus the republican Banners. A strong + loyal army deters; a weak or disloyal one
+// invites invasion. (A disloyal army still has internal coup power - see the force model.)
+var _ready = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0)
+    + (Q.banner_strength || 0) * (Q.banner_militancy || 0);
+Q.military_readiness = Math.round(_ready);
 !}
 
 = Status
@@ -51,6 +57,10 @@ Heartland government: [? if marcher_heartland : in government - ?]
 Internal dissent: [+ dissent_percent : dissent +]
 
 Commonwealth stability: [+ stability : stability +]
+
+Military readiness: [+ military_readiness : military_readiness +]
+
+Coup risk: [+ coup_progress : coup_risk +]
 
 = Government
 
@@ -152,7 +162,7 @@ Support for the Republic: [+ pro_republic_disp +]%<br>
 [? if red_general_unlock: <span style="color: #c00000;">**Marchers**</span> stance on [? if chancellor == "Staal" or not staal_post: Staal?][? if chancellor != "Staal" and staal_post: the State?]: [+ staal_marcher_support : staal_marcher_2 +]<br> ?]
 [? if staal_marcher_influence and staal_time >= 8: [? if chancellor == "Staal": Staal?][? if chancellor != "Staal" and staal_post: The State?]'s influence in <span style="color: #c00000;">**Marchers**</span>: [+ staal_marcher_influence : staal_marcher_3 +]<br> ?]
 <span style="color: #7A3C00;">**Royalists**</span> financial situation: [+ royalist_funds : royalist_funds +]<br>
-[? if not streetfighting_joever: Currently, the streets are [? if far_right_paramilitary and rfb_force < far_right_force:[? if far_right_paramilitary_highest: fully controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_high: dominated by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_med: controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_low: in the slight control of the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if sa_paramilitary:, mainly by the violent <span style="color: #7A3C00;">**SA**</span>?]?][? if rfb_force >= far_right_force and far_right_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if democracy_paramilitary and rfb_force < democracy_force:[? if democracy_paramilitary_highest: fully controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_high: dominated by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_med: controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_low: in the slight control of the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?]?][? if rfb_force >= democracy_force and democracy_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if state_paramilitary:[? if state_paramilitary_highest: fully controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_high: dominated by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_med: controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_low: in the slight control of the <span style="color: #BFC8CC;">**State**</span>?]?].?]
+[? if not streetfighting_joever: Currently, the streets are [? if far_right_paramilitary and vanguard_force < far_right_force:[? if far_right_paramilitary_highest: fully controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_high: dominated by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_med: controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_low: in the slight control of the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if loyalist_paramilitary:, mainly by the violent <span style="color: #7A3C00;">**SA**</span>?]?][? if vanguard_force >= far_right_force and far_right_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if democracy_paramilitary and vanguard_force < democracy_force:[? if democracy_paramilitary_highest: fully controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_high: dominated by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_med: controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_low: in the slight control of the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?]?][? if vanguard_force >= democracy_force and democracy_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if state_paramilitary:[? if state_paramilitary_highest: fully controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_high: dominated by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_med: controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_low: in the slight control of the <span style="color: #BFC8CC;">**State**</span>?]?].?]
 
 = Economics
 
@@ -262,47 +272,47 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-Q.rb_strength_2 = Q.rb_strength.toFixed(1);
-Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
-Q.sh_strength_2 = Q.sh_strength.toFixed(1);
-Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+Q.banner_strength_2 = Q.banner_strength.toFixed(1);
+Q.vanguard_strength_2 = Q.vanguard_strength.toFixed(1);
+Q.warden_strength_2 = Q.warden_strength.toFixed(1);
+Q.loyalist_strength_2 = Q.loyalist_strength.toFixed(1);
 !}
 
 = Paramilitaries
 
-<span class="tooltip-text" title="The the Banners Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD." style="color: #c00000;">**the Banners**</span> Strength: [+ rb_strength_2 +] thousand
+<span class="tooltip-text" title="The the Banners Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD." style="color: #c00000;">**the Banners**</span> Strength: [+ banner_strength_2 +] thousand
 
-<span style="color: #c00000;">**the Banners**</span> Militarization: [+ rb_militancy : militancy +]
+<span style="color: #c00000;">**the Banners**</span> Militarization: [+ banner_militancy : militancy +]
 
-<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD." style="color: #8B0000;">**RFB**</span> Strength: [+ rfb_strength_2 +] thousand
+<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD." style="color: #8B0000;">**RFB**</span> Strength: [+ vanguard_strength_2 +] thousand
 
-<span style="color: #8B0000;">**RFB**</span> Militarization: [+ rfb_militancy : militancy +]
+<span style="color: #8B0000;">**RFB**</span> Militarization: [+ vanguard_militancy : militancy +]
 
-<span class="tooltip-text" title="The Wardens is a right-wing organization of war veterans associated with the DNVP." style="color:#3E88B3;">**Wardens**</span> Strength: [+ sh_strength_2 +] thousand
+<span class="tooltip-text" title="The Wardens is a right-wing organization of war veterans associated with the DNVP." style="color:#3E88B3;">**Wardens**</span> Strength: [+ warden_strength_2 +] thousand
 
-<span style="color: #3E88B3;">**Wardens**</span> Militarization: [+ sh_militancy : militancy +]
+<span style="color: #3E88B3;">**Wardens**</span> Militarization: [+ warden_militancy : militancy +]
 
-<span class="tooltip-text" title="The SA (Sturmabteilung) is the Royalist paramilitary." style="color: #7A3C00;">**SA**</span> Strength: [+ sa_strength_2 +] thousand
+<span class="tooltip-text" title="The SA (Sturmabteilung) is the Royalist paramilitary." style="color: #7A3C00;">**SA**</span> Strength: [+ loyalist_strength_2 +] thousand
 
-<span style="color: #7A3C00;">**SA**</span> Militarization: [+ sa_militancy : militancy +]
+<span style="color: #7A3C00;">**SA**</span> Militarization: [+ loyalist_militancy : militancy +]
 
 [? if year >= 1930 and not streetfighting_joever: <h1>Distribution of Power</h1> ?]
 
 [? if year >= 1930 and not streetfighting_joever: <h4>[? if not collectivist_truce: <span style="color: #000000;">Dem</span><span style="color: #DD0000;">ocra</span><span style="color: #FFCC00;">tic</span>?][? if collectivist_truce: Anti-<span style="color: #7A3C00;">Fascist</span>?] strength: [+ democracy_force +]%</h4>?]
 
-[? if year >= 1930 and not streetfighting_joever: <span style="color: #c00000;">**the Banners**</span>: [+ rb_force +]%?]
+[? if year >= 1930 and not streetfighting_joever: <span style="color: #c00000;">**the Banners**</span>: [+ banner_force +]%?]
 
 [? if year >= 1930 and not streetfighting_joever and heartland_leader != "Goodryke" and heartland_leader != "Staal" and heartland_leader != "Crowde": <b>Heartland police: [+ heartland_force +]%</b>?]
 
-[? if year >= 1930 and not streetfighting_joever and collectivist_truce: <span style="color: #8B0000;">**RFB**</span>: [+ rfb_force +]%?]
+[? if year >= 1930 and not streetfighting_joever and collectivist_truce: <span style="color: #8B0000;">**RFB**</span>: [+ vanguard_force +]%?]
 
 [? if year >= 1930 and not streetfighting_joever: <h4><span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> strength: [+ far_right_force +]%</h4>?]
 
-[? if year >= 1930 and not streetfighting_joever: <span style="color: #7A3C00;">**SA**</span>: [+ sa_force +]%?]
+[? if year >= 1930 and not streetfighting_joever: <span style="color: #7A3C00;">**SA**</span>: [+ loyalist_force +]%?]
 
-[? if year >= 1930 and not streetfighting_joever: <span style="color: #3E88B3;">**Wardens**</span>: [+ sh_force +]%?]
+[? if year >= 1930 and not streetfighting_joever: <span style="color: #3E88B3;">**Wardens**</span>: [+ warden_force +]%?]
 
-[? if year >= 1930 and not streetfighting_joever and not collectivist_truce: <span style="color: #8B0000;">**RFB**</span>: [+ rfb_force +]%?]
+[? if year >= 1930 and not streetfighting_joever and not collectivist_truce: <span style="color: #8B0000;">**RFB**</span>: [+ vanguard_force +]%?]
 
 [? if year >= 1930 and not streetfighting_joever and (heartland_leader == "Goodryke" or heartland_leader == "Staal" or heartland_leader == "Crowde") or army_street: <h4><span style="color: #BFC8CC;">**State**</span> strength: [+ state_force +]%</h4>?]
 
@@ -310,7 +320,7 @@ Q.sa_strength_2 = Q.sa_strength.toFixed(1);
 
 [? if year >= 1930 and not streetfighting_joever and army_street: <b>Commonwealth Army Gendarmerie: [+ army_force +]%</b>?]
 
-[? if year >= 1930 and not streetfighting_joever: Currently, the streets are [? if far_right_paramilitary and rfb_force < far_right_force:[? if far_right_paramilitary_highest: fully controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_high: dominated by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_med: controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_low: in the slight control of the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if sa_paramilitary:, mainly by the violent <span style="color: #7A3C00;">**SA**</span>?]?][? if rfb_force >= far_right_force and far_right_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if democracy_paramilitary and rfb_force < democracy_force:[? if democracy_paramilitary_highest: fully controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_high: dominated by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_med: controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_low: in the slight control of the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?]?][? if rfb_force >= democracy_force and democracy_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if state_paramilitary:[? if state_paramilitary_highest: fully controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_high: dominated by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_med: controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_low: in the slight control of the <span style="color: #BFC8CC;">**State**</span>?]?].?]
+[? if year >= 1930 and not streetfighting_joever: Currently, the streets are [? if far_right_paramilitary and vanguard_force < far_right_force:[? if far_right_paramilitary_highest: fully controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_high: dominated by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_med: controlled by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if far_right_paramilitary_low: in the slight control of the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>?][? if loyalist_paramilitary:, mainly by the violent <span style="color: #7A3C00;">**SA**</span>?]?][? if vanguard_force >= far_right_force and far_right_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if democracy_paramilitary and vanguard_force < democracy_force:[? if democracy_paramilitary_highest: fully controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_high: dominated by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_med: controlled by the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?][? if democracy_paramilitary_low: in the slight control of the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>?]?][? if vanguard_force >= democracy_force and democracy_paramilitary: controlled by the <span style="color: #700000;">**RFB**</span>?][? if state_paramilitary:[? if state_paramilitary_highest: fully controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_high: dominated by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_med: controlled by the <span style="color: #BFC8CC;">**State**</span>?][? if state_paramilitary_low: in the slight control of the <span style="color: #BFC8CC;">**State**</span>?]?].?]
 
 
 = Official military/paramilitaries

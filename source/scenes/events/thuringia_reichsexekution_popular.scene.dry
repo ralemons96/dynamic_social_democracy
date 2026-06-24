@@ -1,6 +1,6 @@
 title: Commonwealth intervention of Stathmore
 subtitle: History repeats itself.
-view-if: reichsexekution_defeated = 0 and president = "DuFour" and red_thuringia and (rb_force + rfb_force < 75) and not presidential_powers and (heartland_coup_seen or heartland_reichsexekution or dufour_angry >= 100 or dufour_angry_bruning >= 50 or strife >= 5 or rb_militancy >= 0.1 or bruning_time or saxony_joever) and year >= 1930
+view-if: reichsexekution_defeated = 0 and president = "DuFour" and red_thuringia and (banner_force + vanguard_force < 75) and not presidential_powers and (heartland_coup_seen or heartland_reichsexekution or dufour_angry >= 100 or dufour_angry_bruning >= 50 or strife >= 5 or banner_militancy >= 0.1 or bruning_time or saxony_joever) and year >= 1930
 on-arrival: thuringia_joever = 1; strife += 1; dufour_angry += 25; dufour_angry_bruning -= 25
 new-page: true
 tags: event
@@ -26,7 +26,7 @@ The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our
 - @surrender
 
 @defend_2
-on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += rfb_strength*rfb_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty)
+on-arrival: resist_coup = 1; thuringia_joever = 0; reformist_dissent += 10; defense_strength = banner_strength*banner_militancy*(1-dissent/2); defense_strength += vanguard_strength*vanguard_militancy; defense_strength += commons_marcher_normalized*(1 - dissent)*(2 - disfavored/100); defense_strength += commons_collectivist_normalized*(2 - disfavored/100); defense_strength *= 0.8; enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty)
 go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory if defense_strength >= enemy_strength
 
 @defend_2_civil_war
@@ -36,7 +36,7 @@ As the Commonwealth Army and their reactionary auxiliaries march into Stathmore,
 - @civil_war: It is a civil war.
 
 @defend_2_victory
-on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; left_dissent -= 10; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 35; dufour_angry_bruning += 30; coup_victory = 1; collectivist_relation += 15; rfb_strength += 100; rfb_militancy += 0.1; rb_strength += 200
+on-arrival: loyalist_strength *= 0.8; warden_strength *= 0.8; left_dissent -= 10; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 35; dufour_angry_bruning += 30; coup_victory = 1; collectivist_relation += 15; vanguard_strength += 100; vanguard_militancy += 0.1; banner_strength += 200
 achievement: drei_pfeile
 
 The the Banners and RFB confront the reactionaries on the road to Stathmore and somehow, the enemy has retreated without a fight! They were surprised by our resistance and DuFour has decided to not risk a civil war over Stathmore.
@@ -46,7 +46,7 @@ This show of force has reinvigorated support for both the <span style="color: #c
 @surrender
 title: Resign our positions, to prevent bloodshed.
 subtitle: DuFour will appoint a new <i>Reichskommissar</i>.
-on-arrival: red_thuringia = 0; commons_marcher -= 3; commons_collectivist -= 3; disfavored_collectivist -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 5; rb_militancy = rb_militancy*0.8; rb_strength -= 200; rfb_banned = 1; rfb_strength -= 100; rfb_militancy -= 0.1; collectivist_relation -= 25; communist_coalition -= 1
+on-arrival: red_thuringia = 0; commons_marcher -= 3; commons_collectivist -= 3; disfavored_collectivist -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 5; banner_militancy = banner_militancy*0.8; banner_strength -= 200; vanguard_banned = 1; vanguard_strength -= 100; vanguard_militancy -= 0.1; collectivist_relation -= 25; communist_coalition -= 1
 
 The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
 

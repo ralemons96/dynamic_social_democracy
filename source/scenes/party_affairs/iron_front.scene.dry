@@ -2,7 +2,7 @@ title: The Iron Banner
 new-page: true
 is-card: true
 view-if: iron_front_formed == 1 and iron_front_timer = 0
-on-arrival: iron_front_timer = 7; month_actions += 1; month_actions -= 1 if harzburg_front_time = time; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+on-arrival: iron_front_timer = 7; month_actions += 1; month_actions -= 1 if harzburg_front_time = time; banner_militarization_cost = 2 if banner_militancy > 0.1 else banner_militarization_cost = 1; banner_militarization_cost = 3 if banner_militancy > 0.25
 card-image: img/iron_front.png
 frequency: 200
 tags: party_affairs, antifascism
@@ -33,14 +33,14 @@ The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">
 - @easy_discard
 
 @defense
-subtitle: -[+ rb_militarization_cost +] resources
-choose-if: resources >= rb_militarization_cost
-view-if: not rb_explode
-on-arrival: resources -= rb_militarization_cost; rb_strength += 50; rb_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
+subtitle: -[+ banner_militarization_cost +] resources
+choose-if: resources >= banner_militarization_cost
+view-if: not banner_explode
+on-arrival: resources -= banner_militarization_cost; banner_strength += 50; banner_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
 The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">fascists</span> paramilitaries, strengthening the the Banners.
 
-[? if not concord_leave_banner and not rb_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
+[? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 
 @pacifism
 on-arrival: pacifism += 1; nationalism -= 5 if pacifism >= 3; commons_marcher += 5*(1-dissent) if pacifism >= 4; disfavored_marcher += 4*(1-dissent) if pacifism >= 4; burgher_marcher += 4*(1-dissent) if pacifism >= 4

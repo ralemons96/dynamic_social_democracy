@@ -15,6 +15,6 @@ It is clear this is part of Goodryke’s wider plan for a "New State"—a centra
 - @surrender: How blatant can Goodryke be!?
 
 @surrender
-on-arrival: heartland_leader = "Goodryke"; commons_marcher -= 2; disfavored_marcher -= 2; rb_militancy *= 0.95; rb_strength -= 100; heartland_police_loyalty -= 0.1; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4; papen_strength += 1
+on-arrival: heartland_leader = "Goodryke"; commons_marcher -= 2; disfavored_marcher -= 2; banner_militancy *= 0.95; banner_strength -= 100; heartland_police_loyalty -= 0.1; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4; papen_strength += 1
 go-to: root
 

@@ -36,13 +36,13 @@ if (Q.kvp_formed) {
     Q.kvp_relation = (Q.traditionalist_relation + Q.gold_relation) / 2;
     Q.traditionalist_votes = 0;
     Q.traditionalist_normalized = 0;
-    Q.parties = Q.parties.filter(party => party !== 'dnvp');
+    Q.parties = Q.parties.filter(party => party !== 'traditionalist');
 }
 
 Q.gold_votes = 0;
 Q.gold_normalized = 0;
 Q.liberal_parliament = 0;
-Q.parties = Q.parties.filter(party => party !== 'dvp');
+Q.parties = Q.parties.filter(party => party !== 'gold');
 
 if (Q.winner_fkp = "Glatzel") {
     if (Q.traditionalist_ideology == "Moderate") {

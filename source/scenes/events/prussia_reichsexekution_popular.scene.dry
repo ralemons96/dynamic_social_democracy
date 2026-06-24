@@ -27,11 +27,11 @@ The Commonwealth Army and <span style="color: #3E88B3;">**Wardens**</span> are a
 - @surrender
 
 @defend_2
-on-arrival: resist_coup = 1; defense_strength = rb_strength*rb_militancy*(1-dissent/2); defense_strength += heartland_police_strength*heartland_police_militancy*heartland_police_loyalty if marcher_heartland; enemy_strength = sa_strength*sa_militancy + sh_strength*sh_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty); defense_strength += commons_marcher_normalized*(2 - dissent)*(2 - disfavored/100); defense_strength += rfb_strength*rfb_militancy*(collectivist_relation/100)
+on-arrival: resist_coup = 1; defense_strength = banner_strength*banner_militancy*(1-dissent/2); defense_strength += heartland_police_strength*heartland_police_militancy*heartland_police_loyalty if marcher_heartland; enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; enemy_strength += army_strength*army_militancy*(1-army_loyalty); defense_strength += commons_marcher_normalized*(2 - dissent)*(2 - disfavored/100); defense_strength += vanguard_strength*vanguard_militancy*(collectivist_relation/100)
 go-to: defend_2_civil_war if defense_strength < enemy_strength; defend_2_victory if defense_strength >= enemy_strength
 
 @defend_2_victory
-on-arrival: sa_strength *= 0.8; sh_strength *= 0.8; pro_republic += 6; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 2; disfavored_collectivist += 2; commons_royalist -= 6; disfavored_royalist -= 6; coup_victory = 1; ddp_cohesion += 2; ddp_left += 2; ddp_relation += 3; lvp_relation += 3; lvp_left += 1; unionist_relation += 3; collectivist_relation += 10; rfb_strength += 200; rfb_militancy += 0.1
+on-arrival: loyalist_strength *= 0.8; warden_strength *= 0.8; pro_republic += 6; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 2; disfavored_collectivist += 2; commons_royalist -= 6; disfavored_royalist -= 6; coup_victory = 1; ddp_cohesion += 2; ddp_left += 2; ddp_relation += 3; lvp_relation += 3; lvp_left += 1; unionist_relation += 3; collectivist_relation += 10; vanguard_strength += 200; vanguard_militancy += 0.1
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 
@@ -55,7 +55,7 @@ Our forces confront the government troops and their supporters on the streets of
 @surrender
 title: Give up on the Heartland government.
 subtitle: The <span style="color: #700000;">**RFB**</span> will fight alone.
-on-arrival: in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; heartland_leader = "Goodlake"; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 10; labor_dissent += 10; rb_militancy = rb_militancy/2; rb_strength -= 1000; rfb_banned = 1; rfb_strength -= 200; rfb_militancy -= 0.25; collectivist_relation -= 30; communist_coalition -= 3; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4
+on-arrival: in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; heartland_leader = "Goodlake"; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 10; labor_dissent += 10; banner_militancy = banner_militancy/2; banner_strength -= 1000; vanguard_banned = 1; vanguard_strength -= 200; vanguard_militancy -= 0.25; collectivist_relation -= 30; communist_coalition -= 3; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4
 
 The <span style="color: #700000;">communists</span> who resist are brutally suppressed, and without the support of the the Banners, we are forced to surrender the Heartland government to the <span style="color: #808080;">reactionaries</span>. A pall of hopelessness and despair descends over <span style="color: #c00000;">Reformism</span>. We have failed. The <span style="color: #700000;">**Collectivists**</span> will never trust us again. Many in the the Banners simply quit, demoralized by their leaders' lack of a call to action.
 

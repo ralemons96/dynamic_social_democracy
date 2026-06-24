@@ -188,26 +188,26 @@ for (var party of Q.parties) {
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_support = Q.landed_royalist_normalized*Q.landed;
         Q.royalist_gallax_support += Q.guild_royalist_normalized*Q.guild;
         Q.royalist_gallax_support += Q.faithful_royalist_normalized*Q.faithful;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
         } else if (!Q.dsu_exist && Q.nvf_exist) {
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
             Q.nvf_support += Q.burgher_royalist*Q.burgher;
         } else if (Q.dsu_exist && Q.nvf_exist) {
-            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.sa_force) / 100);
-            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.sa_force) / 100);
+            Q.dsu_support = Q.commons_royalist*Q.commons*((120 - Q.loyalist_force) / 100);
+            Q.dsu_support += Q.disfavored_royalist*Q.disfavored*((80 - Q.loyalist_force) / 100);
             Q.dsu_support += Q.burgher_royalist*Q.burgher;
 
-            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.sa_force) / 100);
-            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.sa_force - 80) / 100);
+            Q.nvf_support = Q.disfavored_royalist*Q.disfavored*((120 - Q.loyalist_force) / 100);
+            Q.nvf_support += Q.commons_royalist*Q.commons*((Q.loyalist_force - 80) / 100);
         } else {
             Q.royalist_gallax_support += Q.commons_royalist*Q.commons;
             Q.royalist_gallax_support += Q.disfavored_royalist*Q.disfavored;
@@ -218,7 +218,7 @@ for (var party of Q.parties) {
 // 2. normalize support (fraction)
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
-    if (party == "nsdap" && Q.royalist_split) {
+    if (party == "royalist" && Q.royalist_split) {
         Q.royalist_gallax_normalized = Q.royalist_gallax_support / total_support;
         Q.dsu_normalized = Q.dsu_support / total_support;
         Q.nvf_normalized = Q.nvf_support / total_support;
@@ -287,33 +287,33 @@ if (Q.dissent < 0) {
     Q.dissent = 0.95;
 }
 
-Q.sa_force = Q.sa_strength*Q.sa_militancy;
-Q.sh_force = Q.sh_strength*Q.sh_militancy;
-Q.rb_force = Q.rb_strength*Q.rb_militancy;
-Q.rfb_force = Q.rfb_strength*Q.rfb_militancy;
+Q.loyalist_force = Q.loyalist_strength*Q.loyalist_militancy;
+Q.warden_force = Q.warden_strength*Q.warden_militancy;
+Q.banner_force = Q.banner_strength*Q.banner_militancy;
+Q.vanguard_force = Q.vanguard_strength*Q.vanguard_militancy;
 Q.heartland_force = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
 if (Q.heartland_leader == "Crowde" || Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodryke") Q.heartland_force = Q.heartland_police_strength*Q.heartland_police_militancy*(1 - Q.heartland_police_loyalty);
 Q.army_force = Q.army_strength*Q.army_militancy*(1 - Q.army_loyalty);
-Q.total_force = (Q.sa_force+Q.sh_force+Q.rb_force+Q.rfb_force);
-var total_force = (Q.sa_force+Q.sh_force+Q.rb_force+Q.rfb_force+Q.heartland_force);
+Q.total_force = (Q.loyalist_force+Q.warden_force+Q.banner_force+Q.vanguard_force);
+var total_force = (Q.loyalist_force+Q.warden_force+Q.banner_force+Q.vanguard_force+Q.heartland_force);
 if (Q.army_street) total_force += Q.army_force;
 
-Q.sa_force = Math.round((Q.sa_force/total_force)*100);
-Q.sh_force = Math.round((Q.sh_force/total_force)*100);
-Q.rb_force = Math.round((Q.rb_force/total_force)*100);
-Q.rfb_force = Math.round((Q.rfb_force/total_force)*100);
+Q.loyalist_force = Math.round((Q.loyalist_force/total_force)*100);
+Q.warden_force = Math.round((Q.warden_force/total_force)*100);
+Q.banner_force = Math.round((Q.banner_force/total_force)*100);
+Q.vanguard_force = Math.round((Q.vanguard_force/total_force)*100);
 if (Q.army_street) Q.army_force = Math.round((Q.army_force/total_force)*100);
 Q.heartland_force = Math.round((Q.heartland_force/total_force)*100);
 
-Q.far_right_force = Q.sh_force + Q.sa_force;
-Q.democracy_force = Q.rb_force + Q.heartland_force;
+Q.far_right_force = Q.warden_force + Q.loyalist_force;
+Q.democracy_force = Q.banner_force + Q.heartland_force;
 Q.state_force = 0;
 if (Q.army_street) Q.state_force += Q.army_force;
 if (Q.heartland_leader == "Crowde" || Q.heartland_leader == "Staal" || Q.heartland_leader == "Goodryke") {
     Q.state_force += Q.heartland_force;
     Q.democracy_force -= Q.heartland_force;
 }
-if (Q.collectivist_truce) Q.democracy_force += Q.rfb_force;
+if (Q.collectivist_truce) Q.democracy_force += Q.vanguard_force;
 
 Q.far_right_paramilitary = 0;
 Q.democracy_paramilitary = 0;
@@ -341,12 +341,12 @@ if (Q.far_right_force >= Q.democracy_force && Q.far_right_force >= Q.state_force
     } else if (Q.far_right_force - Q.democracy_force >= 0) {
         Q.far_right_paramilitary_low = 1;
     }
-    if (Q.sa_force >= Q.sh_force) {
-        Q.sa_paramilitary = 1;
-        Q.sh_paramilitary = 0;
+    if (Q.loyalist_force >= Q.warden_force) {
+        Q.loyalist_paramilitary = 1;
+        Q.warden_paramilitary = 0;
     } else {
-        Q.sh_paramilitary = 1;
-        Q.sa_paramilitary = 0;
+        Q.warden_paramilitary = 1;
+        Q.loyalist_paramilitary = 0;
     }
     Q.far_right_paramilitary = 1;
 } else if (Q.democracy_force > Q.far_right_force && Q.democracy_force >= Q.state_force) {
@@ -827,7 +827,7 @@ if (Q.rubicon && Q.month_actions >= 1 && Q.month_actions != Q.month_actions_chec
     } else if (Q.papen_time == 15 && Q.gallax_right_coalition >= 50) {
         Q.commons_unionist -= 2;
         Q.burgher_unionist -= 1;
-        Q.rb_strength += 50;
+        Q.banner_strength += 50;
     }
     if (Q.staal_time == 4 && (Q.disfavored >= 42 || (Q.commons_royalist_normalized + Q.commons_collectivist_normalized) >= 55 || Q.staal_marcher_r >= 4)) {
         Q.staal_public_works_fast = 1;
@@ -865,7 +865,7 @@ if (Q.rubicon && Q.month_actions >= 1 && Q.month_actions != Q.month_actions_chec
         Q.royalist_peak = Q.royalist_peak_base;
         Q.royalist_peak += (Q.disfavored / 3);
         Q.royalist_peak += (100 - Q.pro_republic) / 10;
-        Q.royalist_peak += (Q.sa_force / 10)
+        Q.royalist_peak += (Q.loyalist_force / 10)
         if (Q.royalist_presidential_votes_disp >= 30) Q.royalist_peak += 5;
         if (Q.reparations_resolved && Q.chancellor == "Askew") Q.royalist_peak -= 5;
         if (Q.lautenbach_adopted && Q.chancellor == "Askew") Q.royalist_peak -= 5;
@@ -902,8 +902,8 @@ if (Q.rubicon && Q.month_actions >= 1 && Q.month_actions != Q.month_actions_chec
         Q.landed_royalist -= 8/12;
         Q.disfavored_royalist -= 8/12;
         Q.faithful_royalist -= 5/12;
-        Q.sa_strength *= 0.97;
-        Q.sa_militancy -= 0.01;
+        Q.loyalist_strength *= 0.97;
+        Q.loyalist_militancy -= 0.01;
         Q.burgher_ddp += 2/12;
         Q.burgher_gold += 2/12;
         Q.commons_collectivist += 3/12;
@@ -1217,29 +1217,29 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
     if ((Q.royalist_votes + Q.other_votes + Q.dnf_votes + Q.traditionalist_votes + Q.gold_votes + (Q.lvp_votes / 2) + Q.kvp_votes) > Q.nationalism) {
         Q.nationalism += 1;
     }
-    if (Q.rb_strength < 0) {
-        Q.rb_strength = 0;
+    if (Q.banner_strength < 0) {
+        Q.banner_strength = 0;
     }
-    if (Q.sh_strength < 0) {
-        Q.sh_strength = 0;
+    if (Q.warden_strength < 0) {
+        Q.warden_strength = 0;
     }
-    if (Q.sa_strength < 0) {
-        Q.sa_strength = 0;
+    if (Q.loyalist_strength < 0) {
+        Q.loyalist_strength = 0;
     }
-    if (Q.rfb_strength < 0) {
-        Q.rfb_strength = 0;
+    if (Q.vanguard_strength < 0) {
+        Q.vanguard_strength = 0;
     }
-    if (Q.rb_militancy < 0) {
-        Q.rb_militancy = 0;
+    if (Q.banner_militancy < 0) {
+        Q.banner_militancy = 0;
     }
-    if (Q.sh_militancy < 0) {
-        Q.sh_militancy = 0;
+    if (Q.warden_militancy < 0) {
+        Q.warden_militancy = 0;
     }
-    if (Q.sa_militancy < 0) {
-        Q.sa_militancy = 0;
+    if (Q.loyalist_militancy < 0) {
+        Q.loyalist_militancy = 0;
     }
-    if (Q.rfb_militancy < 0) {
-        Q.rfb_militancy = 0;
+    if (Q.vanguard_militancy < 0) {
+        Q.vanguard_militancy = 0;
     }
     if (Q.sapd_formed == 1 && Q.centrists_resign == 1) {
         Q.labor_dissent += 5/12;
@@ -1693,7 +1693,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         Q.burgher_ddp -= 3/12;
         Q.burgher_lvp -= 3/12;
         Q.commons_collectivist += 2/12;
-        Q.sa_strength += 50/12;
+        Q.loyalist_strength += 50/12;
         Q.landed_traditionalist -= 4/12;
         Q.landed_royalist += 8/12;
         Q.disfavored_royalist += 15/12;
@@ -1803,8 +1803,8 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.burgher_royalist += 4/12;
             Q.guild_royalist += 4/12;
             Q.commons_royalist += 4/12;
-            Q.sh_militancy += 0.05/12;
-            Q.sa_militancy += 0.15/12;
+            Q.warden_militancy += 0.05/12;
+            Q.loyalist_militancy += 0.15/12;
             if (Q.dnf_formed) {
                 Q.landed_dnf += 3/12;
                 Q.guild_dnf += 4/12;
@@ -1816,8 +1816,8 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
                 Q.guild_traditionalist += 3/12;
             }
         }
-        Q.sa_strength += 75/12;
-        Q.rfb_strength += 25/12;
+        Q.loyalist_strength += 75/12;
+        Q.vanguard_strength += 25/12;
     } else if (Q.year == 1931) {
         Q.disfavored += 5/12;
         Q.inflation -= 5/12;
@@ -1861,10 +1861,10 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
                 Q.inflation -= 1/12;
             }
         }
-        Q.old_sa_strength = Q.sa_strength;
-        Q.sa_strength += (100*(100 - Q.pro_republic) / 100) /12;
-        if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-            Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+        Q.old_loyalist_strength = Q.loyalist_strength;
+        Q.loyalist_strength += (100*(100 - Q.pro_republic) / 100) /12;
+        if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+            Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
         }
         Q.burgher_royalist += 4/12;
         Q.guild_royalist += 6/12;
@@ -1918,14 +1918,14 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             }
             Q.burgher_royalist += 4/12;
             Q.guild_royalist += 4/12;
-            Q.old_sa_strength = Q.sa_strength;
-            Q.sa_strength += (125*(100 - Q.pro_republic) / 100) /12;
-            if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-                Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+            Q.old_loyalist_strength = Q.loyalist_strength;
+            Q.loyalist_strength += (125*(100 - Q.pro_republic) / 100) /12;
+            if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+                Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
             }
-            Q.sh_militancy += 0.05/12;
-            Q.sa_militancy += 0.15/12;
-            Q.rfb_strength += 25/12;
+            Q.warden_militancy += 0.05/12;
+            Q.loyalist_militancy += 0.15/12;
+            Q.vanguard_strength += 25/12;
             Q.faithful_royalist += 2/12;
             Q.faithful_other -= 3/12;
             if (Q.kvp_formed) {
@@ -1953,7 +1953,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.guild_royalist += 4/12;
             Q.burgher_royalist += 4/12;
             Q.landed_royalist += 3/12;
-            Q.sa_militancy += 0.1/12;
+            Q.loyalist_militancy += 0.1/12;
             if (Q.dnf_formed) {
                 Q.landed_dnf += 3/12;
                 Q.guild_dnf += 4/12;
@@ -1977,10 +1977,10 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         Q.landed_royalist += 3/12;
         Q.disfavored_royalist += 3/12;
         Q.commons_collectivist += 2/12;
-        Q.old_sa_strength = Q.sa_strength;
-        Q.sa_strength += (100*(100 - Q.pro_republic) / 100) /12;
-        if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-            Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+        Q.old_loyalist_strength = Q.loyalist_strength;
+        Q.loyalist_strength += (100*(100 - Q.pro_republic) / 100) /12;
+        if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+            Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
         }
         if (Q.bruning_time) {
             if (Q.war_loans > -2) {
@@ -2021,13 +2021,13 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.guild_royalist += 4/12;
             Q.disfavored_royalist += 4/12;
             Q.disfavored_collectivist += 2/12;
-            Q.old_sa_strength = Q.sa_strength;
-            Q.sa_strength += (125*(100 - Q.pro_republic) / 100) /12;
-            if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-                Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+            Q.old_loyalist_strength = Q.loyalist_strength;
+            Q.loyalist_strength += (125*(100 - Q.pro_republic) / 100) /12;
+            if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+                Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
             }
-            Q.rfb_strength += 25/12;
-            Q.sa_militancy += 0.1/12;
+            Q.vanguard_strength += 25/12;
+            Q.loyalist_militancy += 0.1/12;
             Q.burgher_traditionalist += 4/12;
             if (Q.kvp_formed) {
                 Q.landed_kvp -= 3/12;
@@ -2051,10 +2051,10 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.disfavored_royalist += 4/12;
             Q.guild_royalist += 4/12;
             Q.burgher_royalist += 4/12;
-            Q.old_sa_strength = Q.sa_strength;
-            Q.sa_strength += (125*(100 - Q.pro_republic) / 100) /12;
-            if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-                Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+            Q.old_loyalist_strength = Q.loyalist_strength;
+            Q.loyalist_strength += (125*(100 - Q.pro_republic) / 100) /12;
+            if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+                Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
             }
             if (Q.dnf_formed) {
                 Q.commons_dnf += 2/12;
@@ -2073,10 +2073,10 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
             Q.disfavored_royalist += 3/12;
             Q.guild_royalist += 3/12;
             Q.burgher_royalist += 2/12;
-            Q.old_sa_strength = Q.sa_strength;
-            Q.sa_strength += (75*(100 - Q.pro_republic) / 100) /12;
-            if (Q.sa_banned && Q.sa_strength > Q.old_sa_strength) {
-                Q.sa_strength -= (50*(100 - Q.pro_republic) / 100) /12;
+            Q.old_loyalist_strength = Q.loyalist_strength;
+            Q.loyalist_strength += (75*(100 - Q.pro_republic) / 100) /12;
+            if (Q.loyalist_banned && Q.loyalist_strength > Q.old_loyalist_strength) {
+                Q.loyalist_strength -= (50*(100 - Q.pro_republic) / 100) /12;
             }
             if (Q.dnf_formed) {
                 Q.commons_dnf += 1/12;
@@ -2442,8 +2442,8 @@ if (Q.reformist_plan_time >= Q.time) {
 }
 
 Q.strife_size = 0;
-Q.strife_size += Q.sa_militancy*0.8;
-Q.strife_size += Q.sh_militancy/2;
+Q.strife_size += Q.loyalist_militancy*0.8;
+Q.strife_size += Q.warden_militancy/2;
 Q.strife_size += Q.strife / 50;
 if (Q.year == 1930) Q.strife_size = Q.strife_size / 2;
 
@@ -2515,7 +2515,7 @@ if (Q.far_right_paramilitary && Q.year >= 1930 && !Q.streetfighting_joever) {
         Q.burgher_marcher -= 1*Q.strife_size/12;
         Q.pro_republic -= 0.1;
     }
-    if (Q.sa_paramilitary) {
+    if (Q.loyalist_paramilitary) {
         Q.commons_royalist += 1*Q.strife_size/12;
         Q.disfavored_royalist += 2*Q.strife_size/12;
         Q.disfavored_marcher -= 1*Q.strife_size/12;
@@ -2528,7 +2528,7 @@ if (Q.far_right_paramilitary && Q.year >= 1930 && !Q.streetfighting_joever) {
         Q.faithful_marcher -= 1*Q.strife_size/12;
         Q.pro_republic -= 0.25;
     }
-    if (Q.rfb_force >= Q.far_right_force) {
+    if (Q.vanguard_force >= Q.far_right_force) {
         Q.commons_collectivist += 4*Q.strife_size/12;
         Q.commons_royalist -= 4*Q.strife_size/12;
         Q.disfavored_collectivist += 6*Q.strife_size/12;
@@ -2607,7 +2607,7 @@ if (Q.far_right_paramilitary && Q.year >= 1930 && !Q.streetfighting_joever) {
         Q.disfavored_marcher += 2*Q.strife_size/12;
         if (Q.pro_republic < 50) Q.pro_republic += Q.strife / 12;
     }
-    if (Q.rfb_force >= Q.democracy_force) {
+    if (Q.vanguard_force >= Q.democracy_force) {
         Q.commons_collectivist += 4*Q.strife_size/12;
         Q.commons_marcher -= 4*Q.strife_size/12;
         Q.disfavored_collectivist += 6*Q.strife_size/12;
@@ -4177,10 +4177,10 @@ if (Q.marcher_in_government_time >= 6) {
     if (Q.army_strength > 100) {
         Q.dufour_angry -= (Q.army_strength / 50)
     }
-    if (Q.rb_militancy >= 0.1 || Q.sa_force >= 40 || Q.rfb_force >= 40) {
+    if (Q.banner_militancy >= 0.1 || Q.loyalist_force >= 40 || Q.vanguard_force >= 40) {
         Q.dufour_angry += 1;
     }
-    if (Q.sh_banned) {
+    if (Q.warden_banned) {
         Q.dufour_angry += 2;
     }
     if (((Q.unionist_relation + Q.ddp_relation) / 2) < 40) {
@@ -4336,7 +4336,7 @@ if (Q.bruning_time > 1) {
     if (Q.strife >= 5) {
         Q.dufour_angry_bruning += Q.strife / 3;
     }
-    if (Q.rb_militancy >= 0.15 || Q.sa_force >= 35 || Q.rfb_force >= 20) {
+    if (Q.banner_militancy >= 0.15 || Q.loyalist_force >= 35 || Q.vanguard_force >= 20) {
         Q.dufour_angry_bruning += 2;
     }
     if (Q.traditionalist_ideology == "Moderate" && !Q.traditionalist_defect) {
@@ -4369,7 +4369,7 @@ if (!Q.royalist_peak_triggered && !Q.rubicon) {
     Q.royalist_peak = Q.royalist_peak_base;
     Q.royalist_peak += (Q.disfavored / 3);
     Q.royalist_peak += (100 - Q.pro_republic) / 10;
-    Q.royalist_peak += (Q.sa_force / 10)
+    Q.royalist_peak += (Q.loyalist_force / 10)
     if (Q.royalist_presidential_votes_disp >= 30) Q.royalist_peak += 5;
     if (Q.reparations_resolved && Q.chancellor == "Askew") Q.royalist_peak -= 5;
     if (Q.lautenbach_adopted && Q.chancellor == "Askew") Q.royalist_peak -= 5;
@@ -4407,8 +4407,8 @@ if (Q.royalist_decay_timer > 0 && Q.royalist_votes >= Q.royalist_peak_votes - 10
     Q.landed_royalist -= 8/12;
     Q.disfavored_royalist -= 8/12;
     Q.faithful_royalist -= 5/12;
-    Q.sa_strength *= 0.97;
-    Q.sa_militancy -= 0.01;
+    Q.loyalist_strength *= 0.97;
+    Q.loyalist_militancy -= 0.01;
     Q.burgher_ddp += 2/12;
     Q.burgher_gold += 2/12;
     Q.commons_collectivist += 3/12;

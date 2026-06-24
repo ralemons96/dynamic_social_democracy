@@ -50,13 +50,13 @@ Q.dufour_votes += Q.other_normalized / 2;
 if (Q.kvp_formed) Q.dufour_votes += Q.kvp_normalized;
 Q.dufour_votes += (Q.traditionalist_normalized*0.2);
 if (!Q.dufour_run) {
-    let parties = ['z', 'ddp', 'dvp', 'other'];
+    let parties = ['unionist', 'ddp', 'gold', 'other'];
 
     if (Q.kvp_formed) {
         parties.push('kvp');
     }
     if (Q.traditionalist_ideology == "Moderate") {
-        parties.push('dnvp');
+        parties.push('traditionalist');
     }
     if (Q.lvp_formed) {
         parties.push('lvp');
@@ -358,13 +358,13 @@ if (Q.gallax_support_dufour) {
     Q.dufour_votes += Q.royalist_normalized;
 }
 if (!Q.dufour_run) {
-    let parties = ['z', 'ddp', 'dvp', 'other'];
+    let parties = ['unionist', 'ddp', 'gold', 'other'];
 
     if (Q.kvp_formed) {
         parties.push('kvp');
     }
     if (Q.traditionalist_ideology == "Moderate") {
-        parties.push('dnvp');
+        parties.push('traditionalist');
     }
     if (Q.lvp_formed) {
         parties.push('lvp');
@@ -546,13 +546,13 @@ Q.vrp_presidential_majority = (Q.vrp_presidential_votes >= 50);
 Q.any_majority = Q.dufour_majority | Q.reactionary_candidate_1_majority | Q.reactionary_candidate_2_majority | Q.thalmann_majority | Q.royalist_president_majority | Q.marcher_president_majority | Q.traditionalist_presidential_majority | Q.vrp_presidential_majority
 
 const candidate_votes = [
-  "hindenburg_votes",
+  "dufour_votes",
   "reactionary_candidate_1_votes",
   "reactionary_candidate_2_votes",
   "thalmann_votes",
-  "nsdap_presidential_votes",
-  "spd_president_votes",
-  "dnvp_presidential_votes",
+  "royalist_presidential_votes",
+  "marcher_president_votes",
+  "traditionalist_presidential_votes",
   "vrp_presidential_votes"
 ];
 
