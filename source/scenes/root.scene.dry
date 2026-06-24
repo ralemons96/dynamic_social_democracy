@@ -133,6 +133,11 @@ Q.gold_relation = 35;
 Q.traditionalist_relation = 5;
 Q.royalist_relation = 0;
 Q.lvp_relation = 0;
+// the Arcanists/Eternals (magi party) start wary of the republic
+Q.bvp_relation = 10;
+// magi_balance (0-100): the magi caste's allegiance. Low = toward Restoration / the Empire
+// (when persecuted); high = toward the republic (when granted rights). 50 = wavering.
+Q.magi_balance = 50;
 
 Q.collectivist_leader = "Halsmark";
 Q.unionist_leader = "Vance";

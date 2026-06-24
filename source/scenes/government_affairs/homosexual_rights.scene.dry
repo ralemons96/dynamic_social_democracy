@@ -1,58 +1,52 @@
-title: Homosexual Rights
+title: Magi Civil Rights
 new-page: true
 is-card: true
 card-image: img/hirschfeld.jpg
 frequency: 25
-max-visits: 3
-view-if: marcher_in_government == 1 and (progressive_coalition >= 50) and chancellor_party == "Marcher" and homosexual_rights_timer == 0 and homosexual_rights < 3 and not concord_women_accepted
+view-if: marcher_in_government == 1 and chancellor_party == "Marcher" and homosexual_rights_timer == 0 and (magi_registry_repealed == 0 or magi_circles_recognized == 0 or magi_protected == 0 or magi_balance > 0)
 on-arrival: homosexual_rights_timer += 11; month_actions += 1
 tags: govt_affairs, cabinet
 
-= <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> Rights
+= Magi Civil Rights
 
-There is a constellation of different groups that have grown up around divergences in gender and sexuality, including <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">os</span><span style="color: green;">ex</span><span style="color: blue;">ua</span><span style="color: purple;">ls</span>, <span style="color: coral;">les</span><span style="color: linen;">bi</span><span style="color: mediumvioletred;">ans</span>, <span style="color: deepskyblue;">tran</span><span style="color: linen;">sse</span><span style="color: lightpink;">xuals</span>, transvestites, inverts, etc. Our party's policy is to support their right to live freely and free from persecution; Magnus Harnfell, the founder of the Institut für Sexualwissenschaft, is a member of our party and a major advocate for <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. 
+The magi caste lives beneath a thicket of old imperial law — the Registry that names every mage, the loyalty-oaths that bind them, the statutes that bar them from the guilds and the higher courts. Watched and resented, and knowing that the greatest workings of magic still invoke the dead God-Emperor's power, many magi have come to believe that only the Empire-in-Exile — which reveres the God of Magic — will ever restore their standing. Magnus Harnfell, the foremost advocate for the magi and a member of our party, urges us to court them with rights and protection. The order-loving centre warns that to coddle the God-of-Magic cult is to invite the Empire into our own house.
 
-- @repeal_175: Repeal Paragraph 175.
-- @reform_183: Reform Paragraph 183.
-- @change_sex: Create a legal process for changing sex.
-- @return: Do not enact any changes for now.
+- @repeal_registry: Repeal the Magi Registry.
+- @recognize_circles: Recognize the mage-circles in law.
+- @protect_magi: Outlaw the persecution of magi.
+- @impose_registry: Tighten the Registry and impose new loyalty-oaths.
+- @return: Make no change for now.
 - @easy_discard
 - @cancel_advisor_action
 
-# economic growth due to gay tourism, and creating a new economic niche for the gay populace.
+@repeal_registry
+subtitle: The Registry names and tracks every mage in the Commonwealth. We can strike it from the books.
+unavailable-subtitle: We have already repealed the Registry.
+view-if: magi_registry_repealed == 0
+on-arrival: magi_registry_repealed = 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-@repeal_175
-subtitle: Paragraph 175 currently criminalizes <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> acts. We can pass a law to change that.
-unavailable-subtitle: We do not have majority support for this policy.
-view-if: repealed_175 == 0
-choose-if: progressive_coalition >= 50 
-on-arrival: repealed_175 = 1; homosexual_rights += 1; unionist_relation -= 5; collectivist_relation += 4*(1-dissent); ddp_relation += 4*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); faithful_marcher -= 4; ddp_left += 1; ddp_cohesion -= 1; economic_growth += 0.1;
-go-to: heuchelei if rohm_explode
+We strike the Registry from the books. The magi breathe easier — and, courted at last by the republic that once only watched them, the <span style="color: #A2D8E0;">**Arcanists**</span> and even the harder Restorationist benches find a little less reason to look north to the Empress. But the Unity Front is aghast, and among the Faithful, who fear the God-of-Magic cult, the sense of betrayal runs deep.
 
-Together with the progressives in the <span style="color: #700000;">**Collectivists**</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: leftist <span style="color: #FFCC00;">**LVP**</span> members?], we have effectively decriminalized <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> sex in the Commonwealth. Persecution of <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> for their private acts will stop, as long as the police are loyal to the republic.
+@recognize_circles
+subtitle: The mage-circles have no standing in law. We can recognize them, as we do the craft-guilds.
+unavailable-subtitle: The mage-circles are already recognized.
+view-if: magi_circles_recognized == 0
+on-arrival: magi_circles_recognized = 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-Of course, conservatives and the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span> accuse us of "degeneracy".
+The mage-circles are recognized in law, granted the same standing as the craft-guilds. The <span style="color: #A2D8E0;">**Arcanists**</span> are gratified, and the magi caste begins, warily, to imagine a place for itself within the Commonwealth rather than beyond it. The Faithful and the Unity Front do not forgive the gesture.
 
-@heuchelei
-achievement: heuchelei
+@protect_magi
+subtitle: Magi are harried in the streets and the courts with impunity. We can make their persecution a crime.
+unavailable-subtitle: The magi are already protected in law.
+view-if: magi_protected == 0
+on-arrival: magi_protected = 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-@reform_183
-subtitle: Paragraph 183 criminalizes public <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> displays and cross-dressing. We can change that.
-unavailable-subtitle: We do not have majority support for this policy.
-view-if: reformed_183 == 0
-choose-if: progressive_coalition >= 50 
-on-arrival: reformed_183 = 1; homosexual_rights += 1; unionist_relation -= 5; collectivist_relation += 4*(1-dissent); ddp_relation += 4*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); faithful_marcher -= 4; ddp_left += 1; ddp_cohesion -= 1; economic_growth += 0.1;
+A law against the persecution of magi passes — enforceable, at least, where the police still answer to the republic. It is a profound signal to the magi that their future may lie with the Commonwealth after all. The order-loving centre reads it as capitulation to a power they have always feared.
 
-Voting together with the progressives in the <span style="color: #700000;">**Collectivists**</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: leftist <span style="color: #FFCC00;">**LVP**</span> members?], we have reformed Paragraph 183 so that it no longer criminalizes public <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> and <span style="color: deepskyblue;">cross</span>-<span style="color: deeppink;">dressing</span>.
+@impose_registry
+subtitle: We can tighten the Registry, bind the magi with fresh loyalty-oaths, and reassure the fearful.
+choose-if: magi_balance > 0
+unavailable-subtitle: The magi are already as estranged from the republic as they can be.
+on-arrival: magi_balance -= 10 if magi_balance > 0; bvp_relation -= 6*(1-dissent); royalist_funds += 2; faithful_marcher += 4; unionist_relation += 4*(1-dissent); gold_relation += 3*(1-dissent);
 
-
-@change_sex
-subtitle: We can create a legal process for individuals to change their sex, making their lives easier.
-unavailable-subtitle: We do not have majority support for this policy.
-view-if: trans_rights == 0
-choose-if: progressive_coalition >= 50
-on-arrival: trans_rights = 1; homosexual_rights += 1; unionist_relation -= 5; collectivist_relation += 4*(1-dissent); ddp_relation += 4*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); faithful_marcher -= 4; ddp_left += 1; ddp_cohesion -= 1; economic_growth += 0.1;
-
-We have passed a bill to allow legal recognition of <span style="color: deepskyblue;">tran</span><span style="color: linen;">sse</span><span style="color: lightpink;">xuals</span> and transvestite individuals as the sex in which they live, and allow them to change their name, dress as they wish without police persecution, and undergo medical treatment.
-
-Of course, conservatives and the <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span> accuse us of "degeneracy".
+We tighten the Registry and bind the magi with fresh loyalty-oaths. The Faithful and the order-loving centre are reassured — the cult is watched, the realm is safe. But the magi take the lesson to heart: the republic will never be their home, and the Empress's coin finds new and willing hands among the harried mage-circles.
