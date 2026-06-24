@@ -138,6 +138,12 @@ Q.bvp_relation = 10;
 // magi_balance (0-100): the magi caste's allegiance. Low = toward Restoration / the Empire
 // (when persecuted); high = toward the republic (when granted rights). 50 = wavering.
 Q.magi_balance = 50;
+// commonwealth_standing (0-100): the republic's overall strength = stability + military
+// readiness + legitimacy. Recomputed when the status is viewed. Strength makes peace credible.
+Q.commonwealth_standing = 50;
+// empire_posture (0-100): the Empire-in-Exile's stance. Low = the Hardliners ascendant (war);
+// high = the Empress's reconciliation faction prevails (peace). Drifts toward our standing.
+Q.empire_posture = 50;
 
 Q.collectivist_leader = "Halsmark";
 Q.unionist_leader = "Vance";
@@ -718,7 +724,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'party_disunity',
     // govt
     'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
+    'foreign_policy', 'imperial_relations', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
     'police', 'heartland_affairs', 'shuffle_cabinet', 'social_welfare',
     'homosexual_rights', 'economic_policy', 'coalition_affairs',
     'war_guilt', 'womens_rights', 'economic_democracy',
@@ -744,7 +750,7 @@ Q.rubicon_timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'party_disunity',
     // govt
     'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-    'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
+    'foreign_policy', 'imperial_relations', 'judiciary', 'labor_affairs', 'military_policy', 'defense_appropriations',
     'police', 'heartland_affairs', 'shuffle_cabinet', 'social_welfare',
     'homosexual_rights', 'economic_policy', 'coalition_affairs',
     'war_guilt', 'womens_rights', 'economic_democracy',
@@ -810,6 +816,7 @@ Q.judiciary_timer = 0;
 Q.labor_affairs_timer = 0;
 Q.military_policy_timer = 0;
 Q.defense_appropriations_timer = 0;
+Q.imperial_relations_timer = 0;
 Q.police_timer = 0;
 Q.heartland_affairs_timer = 0;
 Q.shuffle_cabinet_timer = 0;

@@ -1,0 +1,6 @@
+
+(..20) <span style="color: #F08C8C;">precarious</span>
+(20..40) <span style="color: #F29F9F;">weak</span>
+(40..60) <span style="color: #F2C7A1;">holding</span>
+(60..80) <span style="color: #D9E8A1;">strong</span>
+(80..) <span style="color: #A7D8A7;">commanding</span>

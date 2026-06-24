@@ -991,6 +991,19 @@ if (Q.ddp_in_popular_front && !Q.in_popular_front) Q.ddp_in_popular_front = 0;
 if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon)) {
     Q.time += 1;
     Q.month_actions = 0;
+    // Empire lever (lift 4): each turn the Empire's posture drifts toward our standing -
+    // strength makes peace credible, weakness invites war - and our standing cools or
+    // inflames the Royalists' nerve.
+    if (Q.empire_posture === undefined) Q.empire_posture = 50;
+    if (Q.commonwealth_standing === undefined) Q.commonwealth_standing = 50;
+    Q.empire_posture = Math.max(0, Math.min(100, Q.empire_posture + Math.round((Q.commonwealth_standing - Q.empire_posture) * 0.15)));
+    if (Q.commonwealth_standing >= 60) {
+        if (Q.royalist_urgency > 0) Q.royalist_urgency -= 0.5;
+        Q.royalist_relation += 0.5;
+    } else if (Q.commonwealth_standing <= 40) {
+        Q.royalist_urgency += 0.5;
+        Q.royalist_funds += 0.3;
+    }
     Q.month += 1;
     if (Q.month >= 13) {
         Q.month = 1;

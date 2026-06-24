@@ -1,0 +1,47 @@
+title: Relations with the Empire
+new-page: true
+is-card: true
+card-image: img/reichstag_2.jpg
+view-if: marcher_in_government == 1 and foreign_minister_party == "Marcher" and imperial_relations_timer <= 0
+on-arrival: imperial_relations_timer += 8; month_actions += 1
+tags: govt_affairs, cabinet
+
+= Relations with the Empire
+
+Across the northern frontier the Empire-in-Exile waits, and within its court two factions contend: the Empress Jacqueline, who would see the Commonwealth return as a crowned constituent realm by treaty rather than by the sword, and the Hardliners, who want only its total subjugation. Which of them prevails depends, in no small part, on us — for a Commonwealth that is strong, stable, and defended makes the Empress's case for her, while a weak and divided one is the Hardliners' best argument. The Foreign Ministry must choose how to carry itself toward the old order.
+
+- @disarmament: Propose mutual disarmament.
+- @reconciliation: Open quiet talks of reconciliation.
+- @saber_rattle: Rattle the saber, and let the Empire see our resolve.
+- @extradite: Extradite the anti-Imperial exiles as a gesture of good faith.
+- @return: Hold our present course.
+- @easy_discard
+- @cancel_advisor_action
+
+@disarmament
+subtitle: Scale back the shipyards and the garrisons in exchange for the same from the Empire. (Requires the War Ministry.)
+choose-if: army_minister_party == "Marcher" and army_strength > 0
+unavailable-subtitle: We must hold the War Ministry to negotiate disarmament.
+on-arrival: empire_posture += 8 if empire_posture < 100; army_strength -= 15 if army_strength > 0; army_militancy -= 0.3 if army_militancy > 0; nationalism -= 5 if nationalism > 0; pacifism += 1; west_relation += 1;
+
+We scale back the shipyards and thin the frontier garrisons, and the Empire, watched by Ethia, does the same. The temperature falls and the Empress's hand is strengthened — though a Commonwealth that disarms had best be sure the Empress, and not her Hardliners, will still be holding the reins when the treaties come due.
+
+@reconciliation
+subtitle: Open quiet talks - easing the War Loans and the frontier disputes in exchange for a lowering of the temperature.
+on-arrival: empire_posture += 7 if empire_posture < 100; budget += 1; nationalism -= 2 if nationalism > 0; dufour_angry -= 5; left_dissent += 2; pro_republic -= 1 if pro_republic > 0;
+
+Through back-channels we let it be known that the Commonwealth would welcome an easing of tensions, and the Empress's envoys respond in kind — a softening of the War Loans, a quiet word on the frontier. President DuFour, who wants nothing so much as to spare the realms another war, is gratified. Our own benches mutter of appeasement.
+
+@saber_rattle
+subtitle: A show of resolve - popular at home, but the Empire's reading of it depends on whether we are strong enough to back it.
+on-arrival: nationalism += 5; pro_republic += 2; army_militancy += 0.3; imperial_fear -= 1 if imperial_fear > 0; empire_posture += 4 if commonwealth_standing >= 55; empire_posture -= 6 if commonwealth_standing < 55;
+
+We answer the Empire's posturing with our own — a review of the fleet, a hard speech, a closing of ranks. At home it is met with a surge of defiant pride. [? if commonwealth_standing >= 55: And the Empress's moderates take the lesson: the Commonwealth is too strong and too sure to be had cheaply, and a treaty is the better bargain. ?][? if commonwealth_standing < 55: But the Hardliners, eyeing our weakness, take it as the provocation they have been waiting for - bluster from a republic that cannot back it only proves their case. ?]
+
+@extradite
+subtitle: Hand over the anti-Imperial exiles sheltering in the Commonwealth. (Requires the Justice Ministry.)
+choose-if: justice_minister_party == "Marcher"
+unavailable-subtitle: We must hold the Justice Ministry to order the extraditions.
+on-arrival: empire_posture += 6 if empire_posture < 100; pro_republic -= 3 if pro_republic > 0; collectivist_relation -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); left_dissent += 3;
+
+We deliver the exiles — the pamphleteers, the deserters, the old enemies of the throne who fled south for our protection — into the Empress's hands. The gesture is not lost on her court, and the Hardliners lose an argument. But it is a shameful business, illiberal and cold, and the Commonwealth's faith in itself is the poorer for it. The <span style="color: #700000;">**Collectivists**</span>, who counted many of the exiles as their own, will not soon forgive it.

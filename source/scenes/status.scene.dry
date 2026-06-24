@@ -26,6 +26,12 @@ Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
 var _ready = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0)
     + (Q.banner_strength || 0) * (Q.banner_militancy || 0);
 Q.military_readiness = Math.round(_ready);
+// Commonwealth standing (0-100): the three pillars - internal stability, military deterrence,
+// and popular legitimacy. The strength signal that drives the Empire's posture and the
+// Royalists' nerve (computed in the turn loop). Readiness is normalised to a 0-100 scale.
+var _readyNorm = Math.min(100, Q.military_readiness / 4);
+Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
+    0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
 !}
 
 = Status
@@ -63,6 +69,10 @@ Military readiness: [+ military_readiness : military_readiness +]
 Coup risk: [+ coup_progress : coup_risk +]
 
 Magi allegiance: [+ magi_balance : magi_balance +]
+
+Commonwealth standing: [+ commonwealth_standing : commonwealth_standing +]
+
+The Empire's posture: [+ empire_posture : empire_posture +]
 
 = Government
 
