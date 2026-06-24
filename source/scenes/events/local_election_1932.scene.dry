@@ -201,7 +201,7 @@ if (Q.unionist_local_elections_vote + Q.ddp_local_elections_vote + Q.gold_local_
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_local_elections_vote +]% {!</td></tr>!} ?]
 
-[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_local_elections_vote +]% {!</td></tr>!} ?]
+[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_local_elections_vote +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#000'> </div> !} [+ unionist_party_name +] + Arcanists: {!</td><td>!} [+ unionist_local_elections_vote +]% {!</td></tr>!}
 
@@ -588,7 +588,7 @@ go-to: bavaria_coalition_menu
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_bavaria_elections_vote +]% {!</td><td>!} [+ ddp_r_bavaria +]%  {!</td></tr>!} ?]
 
-[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_bavaria_elections_vote +]% {!</td><td>!} [+ lvp_r_bavaria +]%  {!</td></tr>!} ?]
+[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_bavaria_elections_vote +]% {!</td><td>!} [+ lvp_r_bavaria +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#A2D8E0'> </div> !} Arcanists: {!</td><td>!} [+ unionist_bavaria_elections_vote +]% {!</td><td>!} [+ unionist_r_bavaria +]%  {!</td></tr>!}
 
@@ -611,11 +611,11 @@ The <span style="color: #38C538;">Avrizan Peasants’ League</span> serves as th
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_bavaria +]% 
 
-Traffic Light Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span>): [+ marcher_coalition_bavaria +]% 
+Traffic Light Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span>): [+ marcher_coalition_bavaria +]% 
 
-[? if not kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_bavaria +]% ?]
+[? if not kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_bavaria +]% ?]
 
-[? if kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
+[? if kvp_formed: Bourgeois Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
 
 @bavaria_coalition_menu
 
@@ -684,13 +684,13 @@ We have somehow managed to capture a majority in the state Assembly, and have pu
 @spd_coalition
 title: The <span style="color: #c00000;">**Marchers**</span> will form a coalition government with the bourgeois parties.
 subtitle: The <span style="color: #38C538;">Avrizan Peasants’ League</span> had a falling out right? Let's utilize our contacts with their left wing. -1 resource
-unavailable-subtitle: [? if marcher_coalition_bavaria < 50: <span style="color: #c00000;">Marchers</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span> ([+ marcher_coalition_bavaria +]%)  ?][? if resources < 1: - Not enough resources (need 1). ?]
+unavailable-subtitle: [? if marcher_coalition_bavaria < 50: <span style="color: #c00000;">Marchers</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span> ([+ marcher_coalition_bavaria +]%)  ?][? if resources < 1: - Not enough resources (need 1). ?]
 choose-if: marcher_coalition_bavaria >= 50 and resources >= 1
 on-arrival: resources -= 1; bavaria_marcher = 1; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; burgher_unionist -= 2; guild_unionist -= 2; landed_unionist -= 2; burgher_marcher += 3; guild_marcher += 3; landed_marcher += 1; landed_other += 3; faithful_unionist -= 4; faithful_marcher += 4; unionist_relation -= 5; pro_republic += 3; heartland_police_loyalty += 0.05; loyalist_strength -= 50; loyalist_strength -= 50 if loyalist_nationwide_ban;
 go-to: election_menu
 achievement: ampelkoalition
 
-Somehow, we have brought the [? if not lvp_formed and ddp_r_bavaria: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and?][? if lvp_formed and lvp_r_bavaria: <span style="color: #FFCC00;">**LVP**</span> and?] <span style="color: #38C538;">Avrizan Peasants’ League</span> to the negotiating table, despite their preference for working with the <span style="color: #A2D8E0;">**Arcanists**</span>. Through connections with the left-wing and liberal factions within the <span style="color: #38C538;">Avrizan Peasants’ League</span>, we have overcome their reluctance—and now, we are in government! Avriza has been governed by the political right ever since 1921, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and counter the <span style="color: #7A3C00;">**SA**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Held government had mostly ignored ?].
+Somehow, we have brought the [? if not lvp_formed and ddp_r_bavaria: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and?][? if lvp_formed and lvp_r_bavaria: <span style="color: #C0A054;">**Golds**</span> and?] <span style="color: #38C538;">Avrizan Peasants’ League</span> to the negotiating table, despite their preference for working with the <span style="color: #A2D8E0;">**Arcanists**</span>. Through connections with the left-wing and liberal factions within the <span style="color: #38C538;">Avrizan Peasants’ League</span>, we have overcome their reluctance—and now, we are in government! Avriza has been governed by the political right ever since 1921, and the <span style="color: #A2D8E0;">**Arcanists**</span> has often covered for reactionary political activity. Now, we are able to change that and counter the <span style="color: #7A3C00;">**SA**</span> thugs roaming the streets [? if loyalist_nationwide_ban: and more aggressively enforce the national ban of the organization that the conservative Held government had mostly ignored ?].
 
 
 @united_left
@@ -1063,7 +1063,7 @@ go-to: wurttemberg_coalition_menu
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_wurttemberg_elections_vote +]% {!</td><td>!} [+ ddp_r_wurttemberg +]%  {!</td></tr>!} ?]
 
-[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_wurttemberg_elections_vote +]% {!</td><td>!} [+ lvp_r_wurttemberg +]%  {!</td></tr>!} ?]
+[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_wurttemberg_elections_vote +]% {!</td><td>!} [+ lvp_r_wurttemberg +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} [+ unionist_party_name +]: {!</td><td>!} [+ unionist_wurttemberg_elections_vote +]% {!</td><td>!} [+ unionist_r_wurttemberg +]%  {!</td></tr>!}
 
@@ -1086,13 +1086,13 @@ The <span style="color: #006400;">Purl Farmers' and Winegrowers' Association</sp
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_wurttemberg +]% 
 
-[? if not concord_formed: Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #000000;">**[+ unionist_party_name +]**</span>): [+ marcher_coalition_wurttemberg +]% ?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]): [+ marcher_coalition_wurttemberg +]% ?]
+[? if not concord_formed: Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #000000;">**[+ unionist_party_name +]**</span>): [+ marcher_coalition_wurttemberg +]% ?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_wurttemberg +]% ?]
 
-[? if not kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others**[? if traditionalist_ideology == "Moderate" and not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_wurttemberg +]% ?]
+[? if not kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others**[? if traditionalist_ideology == "Moderate" and not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_wurttemberg +]% ?]
 
-[? if kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
+[? if kvp_formed: Bourgeois Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
 
-[? if( ddp_wurttemberg_elections_vote + gold_wurttemberg_elections_vote < 8 and not lvp_formed) or (lvp_wurttemberg_elections_vote < 12 and lvp_formed): The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> [? if gold_exist: and <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] have suffered a major defeat, losing a significant number of seats compared to 1928. This will severely demoralize the <span style="color: #FFCC00;">liberals</span>, who had hoped to maintain their traditional stronghold over Purl. Combined with other local elections, the <span style="color: #FFCC00;">liberal parties</span> are essentially dead as an effective political force. ?]
+[? if( ddp_wurttemberg_elections_vote + gold_wurttemberg_elections_vote < 8 and not lvp_formed) or (lvp_wurttemberg_elections_vote < 12 and lvp_formed): The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> [? if gold_exist: and <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] have suffered a major defeat, losing a significant number of seats compared to 1928. This will severely demoralize the <span style="color: #FFCC00;">liberals</span>, who had hoped to maintain their traditional stronghold over Purl. Combined with other local elections, the <span style="color: #FFCC00;">liberal parties</span> are essentially dead as an effective political force. ?]
 
 @wurttemberg_coalition_menu
 
@@ -1151,7 +1151,7 @@ Kurt Shackley is elected as Minister-President.
 @weimar_coalition_wurttemberg
 title: A Unity Coalition is formed!
 subtitle: We have somehow convinced the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to let us into government.
-unavailable-subtitle: [? if unionist_relation < 60: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if (ddp_relation < 40 and not lvp_formed) or (lvp_relation < 40 and lvp_formed): We need higher relations with the [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?]
+unavailable-subtitle: [? if unionist_relation < 60: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if (ddp_relation < 40 and not lvp_formed) or (lvp_relation < 40 and lvp_formed): We need higher relations with the [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?]
 view-if: marcher_coalition_wurttemberg >= 50 and not concord_formed
 choose-if: unionist_relation >= 60 and ((ddp_relation >= 40 and not lvp_formed) or (lvp_relation >= 40 and lvp_formed))
 on-arrival: wurttemberg_marcher = 1; wurttemberg_weimar = 1; landed_royalist -= 2; burgher_marcher += 2; guild_marcher += 2; landed_other += 4; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; faithful_royalist -= 2; faithful_marcher += 2; faithful_unionist += 1; faithful_other += 1; loyalist_strength -= 25
@@ -1164,7 +1164,7 @@ Despite the [? if unionist_party_name != "Concord": <span style="color: #000000;
 @social_liberal_coalition_wurttemberg
 title: A <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition is formed!
 subtitle: We have bypassed the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, negotiating with the <span style="color: #FFCC00;">liberals</span> instead.
-unavailable-subtitle:[? if (ddp_relation < 55 and not lvp_formed) or (lvp_relation < 65 and lvp_formed): We need higher relations with the [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?]
+unavailable-subtitle:[? if (ddp_relation < 55 and not lvp_formed) or (lvp_relation < 65 and lvp_formed): We need higher relations with the [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?]
 view-if: marcher_coalition_wurttemberg >= 50 and concord_formed
 choose-if: (ddp_relation >= 55 and not lvp_formed) or (lvp_relation >= 65 and lvp_formed)
 on-arrival: wurttemberg_marcher = 1; wurttemberg_weimar = 1; landed_royalist -= 2; burgher_marcher += 2; guild_marcher += 2; burgher_ddp += 2; guild_ddp += 2; burgher_lvp += 2; guild_lvp += 2; landed_other += 4; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; loyalist_strength -= 25

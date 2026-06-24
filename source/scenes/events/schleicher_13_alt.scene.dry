@@ -1,4 +1,4 @@
-title: The <span style="color: #FFCC00;">**LVP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
+title: The <span style="color: #C0A054;">**Golds**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 subtitle: Commonwealth <span style="color: #FFCC00;">liberalism</span> is dead.
 view-if: chancellor = "Staal" and staal_post and ((republicans_staal >= 10 and lvp_leader != "Dingeldey") or (industrialists_gnu and lvp_leader == "Dingeldey")) and lvp_formed and gnu_formed
 new-page: true
@@ -6,13 +6,13 @@ priority: 1
 tags: event
 max-visits: 1
 
-= <span style="color: #FFCC00;">**LVP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
+= <span style="color: #C0A054;">**Golds**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 
 Commonwealth <span style="color: #FFCC00;">liberalism</span> has long been intertwined with nationalism, dating back to the revolutions of 1848. The image of <span style="color: #D3C24D;">left-liberals</span> as pacifists is mostly a stereotype, with only a fringe minority truly committed to pacifism.
 
-This makes the <span style="color: #FFCC00;">**LVP**</span> a natural candidate for incorporation into the <span style="color: #BFC8CC;">**GNU**</span>, as it has long championed a <i>Volksgemeinschaft</i>—a national community to reconcile the classes in service of the nation—offered as an alternative to <span style="color: #9B0000;">Marxist</span> class struggle.
+This makes the <span style="color: #C0A054;">**Golds**</span> a natural candidate for incorporation into the <span style="color: #BFC8CC;">**GNU**</span>, as it has long championed a <i>Volksgemeinschaft</i>—a national community to reconcile the classes in service of the nation—offered as an alternative to <span style="color: #9B0000;">Marxist</span> class struggle.
 
-[? if industrialists_gnu: The <span style="color: #FFCC00;">**LVP**</span>, however, is drawn more by Staal’s promises to the industrialists, who dominate the party’s leadership. ?][? if not industrialists_gnu: Disillusionment with parliamentarianism and democracy has driven much of the party to back a strongman who can restore stability and tear up the disgraceful terms of Versailles. The committed democrats, mostly on the party’s left wing—figures like Hewes and Dietrich—are powerless to stop this. ?]
+[? if industrialists_gnu: The <span style="color: #C0A054;">**Golds**</span>, however, is drawn more by Staal’s promises to the industrialists, who dominate the party’s leadership. ?][? if not industrialists_gnu: Disillusionment with parliamentarianism and democracy has driven much of the party to back a strongman who can restore stability and tear up the disgraceful terms of Versailles. The committed democrats, mostly on the party’s left wing—figures like Hewes and Dietrich—are powerless to stop this. ?]
 
 - @schleicher_2: The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
 
@@ -28,7 +28,7 @@ Q.gnu_r += Q.lvp_r;
 Q.lvp_r = 0;
 !}
 
-The Commonwealth middle has largely consolidated around Staal's regime. However, a small group of committed <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> from the <span style="color: #FFCC00;">**LVP**</span>’s left wing has split from the party in protest, forming the <span style="color: #E0B0FF;">Radical Democratic Party</span> (<span style="color: #E0B0FF;">**RDP**</span>). Lacking much of an electoral base of their own, they are now pleading for a place on our electoral list.
+The Commonwealth middle has largely consolidated around Staal's regime. However, a small group of committed <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> from the <span style="color: #C0A054;">**Golds**</span>’s left wing has split from the party in protest, forming the <span style="color: #E0B0FF;">Radical Democratic Party</span> (<span style="color: #E0B0FF;">**RDP**</span>). Lacking much of an electoral base of their own, they are now pleading for a place on our electoral list.
 
 Current composition of the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>:
 
@@ -36,7 +36,7 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if dstp_gnu: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
-[? if lvp_gnu: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if lvp_gnu: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if unionist_gnu: - <span style="color: #000000;">Unionist Party</span> ?]
 

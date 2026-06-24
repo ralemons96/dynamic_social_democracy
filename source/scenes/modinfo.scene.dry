@@ -241,7 +241,7 @@ on-arrival: {!
 
 - @ddp_paths: <span style="color: #D3C24D;">**Golds**</span> Paths!
 - @dvp_paths: <span style="color: #C0A054;">**Golds**</span> Paths!
-- @lvp_paths: <span style="color: #FFCC00;">**LVP**</span> Paths!
+- @lvp_paths: <span style="color: #C0A054;">**Golds**</span> Paths!
 - @zentrum_paths: <span style="color: #000000;">**Center**</span> Paths!
 - @dnvp_paths: <span style="color: #3E88B3;">**Traditionalists**</span> Paths!
 - @full_paths: Ultimate Dynamic Flowchart!

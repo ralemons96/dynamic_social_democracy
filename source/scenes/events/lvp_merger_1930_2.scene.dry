@@ -50,7 +50,7 @@ view-if: lvp_formation_points >= 3
 on-arrival: ddp_relation -= 5; ddp_right += 2; lvp_trigger_2_time = time + 1
 face-image: img/weimar_coalition_3.jpg
 
-Perhaps surprisingly, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span style="color: #C0A054;">**Golds**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Liberal People's Party</span>. It seems that the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have finally lost their battle to maintain the position of a '<span style="color: #c00000;">Social</span> and <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> party in the Unity party system.
+Perhaps surprisingly, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span style="color: #C0A054;">**Golds**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Golds</span>. It seems that the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have finally lost their battle to maintain the position of a '<span style="color: #c00000;">Social</span> and <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> party in the Unity party system.
 
 However, the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will wield little influence in the wider party, which will consist of twice as many <span style="color: #C0A054;">**Golds**</span> members as <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members.
 
@@ -59,4 +59,4 @@ view-if: lvp_formation_points < 3
 on-arrival: gold_right += 5; burgher_ddp -= 4; guild_ddp -= 4; pro_republic -= 5; liberal_cooperation -= 10
 face-image: img/portraits/hitler.jpg
 
-As always, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s left wing have rejected the plans to create a united <span style="color: #FFCC00;">Liberal People's Party</span>. It seems that the infighting that plagues the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> remains alive and well. This outcome has greatly demoralized the Commonwealth middle and has forced the disbandment of the Liberal Association. 
+As always, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s left wing have rejected the plans to create a united <span style="color: #FFCC00;">Golds</span>. It seems that the infighting that plagues the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> remains alive and well. This outcome has greatly demoralized the Commonwealth middle and has forced the disbandment of the Liberal Association. 

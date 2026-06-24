@@ -18,4 +18,4 @@ However, the right wing of the <span style="color: #C0A054;">**Golds**</span>, l
 on-arrival: gold_relation += 5; gold_left += 3; lvp_trigger_time = time + 1
 face-image: img/weimar_coalition_3.jpg
 
-The momentum towards liberal unity has proven too great for the few holdouts within the <span style="color: #C0A054;">**Golds**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who have also done the same. Both parties will now work together to establish the framework of the new <span style="color: #FFCC00;">Liberal People's Party</span>.
+The momentum towards liberal unity has proven too great for the few holdouts within the <span style="color: #C0A054;">**Golds**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who have also done the same. Both parties will now work together to establish the framework of the new <span style="color: #FFCC00;">Golds</span>.

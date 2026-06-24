@@ -9,7 +9,7 @@ go-to: vonc_menu
 
 = Vote of No Confidence
 
-[? if in_grand_coalition and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> ?][? if (in_grand_coalition or in_social_liberal_coalition) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> ?][? if in_weimar_coalition or in_popular_front or in_minority_government and not in_social_liberal_coalition: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?][? if lvp_formed and not in_social_catholic_coalition:&nbsp;and <span style="color: #FFCC00;">**LVP**</span>?]?][? if in_social_liberal_coalition and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?] has called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will likely be an election in a few months.
+[? if in_grand_coalition and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> ?][? if (in_grand_coalition or in_social_liberal_coalition) and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> ?][? if in_weimar_coalition or in_popular_front or in_minority_government and not in_social_liberal_coalition: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?][? if lvp_formed and not in_social_catholic_coalition:&nbsp;and <span style="color: #C0A054;">**Golds**</span>?]?][? if in_social_liberal_coalition and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?] has called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will likely be an election in a few months.
 
 @vonc_menu
 
@@ -58,7 +58,7 @@ Fine. We enacted a massive austerity program to cut welfare, in order to maintai
 @resources
 view-if: secularized = 0
 choose-if: (resources >= 3 and in_weimar_coalition or in_popular_front or in_minority_government) or ((resources >= 3 and in_grand_coalition and not (gold_ideology == "Right" and year >= 1930) and not lvp_formed) or (resources >= 3 and (in_grand_coalition or in_weimar_coalition) and not (lvp_ideology == "Right" and year >= 1930) and lvp_formed))
-unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
+unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?]
 subtitle: -3 resources
 on-arrival: resources -= 3; coalition_dissent -= 1;
 

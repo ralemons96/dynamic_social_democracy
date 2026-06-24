@@ -433,7 +433,7 @@ go-to: thuringia_coalition_menu
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_thuringia_elections_vote +]% {!</td><td>!} [+ ddp_r_thuringia +]%  {!</td></tr>!} ?]
 
-[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_thuringia_elections_vote +]% {!</td><td>!} [+ lvp_r_thuringia +]%  {!</td></tr>!} ?]
+[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_thuringia_elections_vote +]% {!</td><td>!} [+ lvp_r_thuringia +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ unionist_thuringia_elections_vote +]% {!</td><td>!} [+ unionist_r_thuringia +]%  {!</td></tr>!}
 
@@ -458,11 +458,11 @@ Stathmore is currently governed by a broad center-right coalition, which holds e
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_thuringia +]% 
 
-Grand Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?][? if unionist_r_thuringia:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_thuringia +]% 
+Grand Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_thuringia:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_thuringia +]% 
 
-Bourgeois Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
+Bourgeois Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
 
-Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>[? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #003755;">**DNF**</span> ?] + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition_thuringia +]%
+Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>[? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #003755;">**DNF**</span> ?] + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition_thuringia +]%
 
 [? if royalist_thuringia_elections_vote >= 8: The rapid rise of the <span style="color: #7A3C00;">**Royalists**</span> in state and local elections is certainly worth keeping an eye on. ?]
 
@@ -542,7 +542,7 @@ Unexpectedly, the parties involved in the incumbent government have gained votes
 @grand_coalition_thuringia
 title: A [? if lvp_formed: Unity?][? if not lvp_formed: Grand?] Coalition is formed!
 subtitle: We have somehow reconciled with the bourgeois parties, that they're willing to govern with us again.
-unavailable-subtitle: [? if unionist_relation < 60 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?]
+unavailable-subtitle: [? if unionist_relation < 60 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?]
 view-if: marcher_coalition_thuringia >= 50
 choose-if: marcher_coalition_possible
 on-arrival: thuringia_marcher = 1; landed_royalist -= 2; burgher_royalist -= 2; guild_royalist -= 2; burgher_marcher += 2; guild_marcher += 2; landed_marcher += 2; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; heartland_police_loyalty += 0.03; loyalist_strength -= 25

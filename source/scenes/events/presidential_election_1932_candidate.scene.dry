@@ -351,7 +351,7 @@ His candidacy is supported by the <span style="color: #C0A054;">**Golds**</span>
 - @harzburg: We await the decision of the Harzburg Front.
 
 @luther
-title: Hans Lytton, [? if luther_reichsbank: president of the Commonwealth Bank?][? if not luther_reichsbank: leader of the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?] and former chancellor.
+title: Hans Lytton, [? if luther_reichsbank: president of the Commonwealth Bank?][? if not luther_reichsbank: leader of the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]?] and former chancellor.
 view-if: luther_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/luther.jpg
@@ -360,7 +360,7 @@ go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
 Hans Lytton, former Chancellor of the first federal right-wing coalition and key figure in addressing the hyperinflationary crisis, is certainly not lacking in the experience required to assume the presidency of the Commonwealth. Among his peers, he stands out as relatively open to constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>, though it is clear that he favors a presidential bourgeois government over continued <span style="color: #c00000;">socialist</span> participation in power. Despite his party affiliation, he is widely viewed as a non-partisan candidate.
 
-His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. ?]
+His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. ?]
 
 - @harzburg: We await the decision of the Harzburg Front.
 
@@ -374,7 +374,7 @@ go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
 Otto Gesling, who served as Defense Minister for eight years following Noske’s departure and preceding Ravabelle, is a conservative and a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> by reason rather than conviction—often at odds with his colleagues in the <span style="color: #D3C24D;">**Golds**</span> throughout his tenure. He made little effort to reform the Commonwealth Army and played an active role in the <i>Commonwealth intervention</i> against our United Left governments in Dornwich and Stathmore during the Commonwealth October. Now, after stepping away from politics in early 1928, he seeks a return to the national stage.
 
-His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, which has grown more right-wing and more accepting over the years. ?]
+His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, which has grown more right-wing and more accepting over the years. ?]
 
 - @harzburg: We await the decision of the Harzburg Front.
 
@@ -578,7 +578,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if ddp_support_marcher == 1 and marcher_campaign: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
-[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if gold_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
@@ -590,7 +590,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if (unionist_choice == reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -610,7 +610,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if (unionist_choice == secondary_reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and secondary_reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == secondary_reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -810,7 +810,7 @@ on-arrival: resources -= 2; marcher_campaign = 1; braun_campaign = 1; reformist_
 
 It takes effort to run a somewhat unexpected campaign. First, Bristol has to be convinced to run. [? if dufour_run: He himself had supported voting for DuFour, and it takes a good deal of prodding to convince him of his destiny. ?][? if not dufour_run: It takes a good deal of prodding to convince him of his destiny. ?]
 
-[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> aren't exactly the biggest fans of <span style="color: #c00000;">socialism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Communists**</span>?
+[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #C0A054;">**Golds**</span> aren't exactly the biggest fans of <span style="color: #c00000;">socialism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Communists**</span>?
 
 - @endorsements_braun: Scout out potential endorsements. 
 
@@ -834,7 +834,7 @@ on-arrival: resources -= 1; marcher_campaign = 1; eckener_campaign = 1; reformis
 
 It takes effort to launch a somewhat unexpected campaign. First, Eckhart must be convinced to run. He isn't particularly eager to be the candidate of the <span style="color: #c00000;">socialists</span>, as it would invite slander from the Commonwealth Right—whom he feels a greater affinity with.
 
-With his status as a non-<span style="color: #c00000;">socialist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Communists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] are firmly opposed to supporting a bourgeois conservative—for obvious reasons.
+With his status as a non-<span style="color: #c00000;">socialist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Communists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] are firmly opposed to supporting a bourgeois conservative—for obvious reasons.
 
 - @endorsements_eckener: Scout out potential endorsements. 
 
@@ -885,7 +885,7 @@ We can't win this election alone, we need support from other parties. [? if marc
 - @convince_z: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #c00000;">Bristol</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
 - @convince_kpd: Convince the <span style="color: #700000;">**Communists**</span> to back <span style="color: #c00000;">Bristol</span>.
 - @convince_ddp: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to back <span style="color: #c00000;">Bristol</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
-- @convince_lvp: Convince the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #c00000;">Bristol</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
+- @convince_lvp: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @view_candidates: View party endorsements.
 - @hope: We have concluded negotiations with other parties.
 
@@ -1035,13 +1035,13 @@ The <span style="color: #FFCC00;">liberal</span> vote has been falling over time
 on-arrival: lvp_support_marcher = 1; lvp_left += 6; lvp_relation += 5; burgher_traditionalist += burgher_lvp*0.1 if not kvp_formed; guild_traditionalist += guild_lvp*0.2 if not kvp_formed; landed_traditionalist += landed_lvp*0.2 if not kvp_formed; burgher_kvp += burgher_lvp*0.1 if not kvp_formed; guild_kvp += guild_lvp*0.2 if not kvp_formed; landed_kvp += landed_lvp*0.2 if not kvp_formed; burgher_lvp *= 0.9; guild_lvp *= 0.8; landed_lvp *= 0.8
 go-to: endorsements_braun
 
-Surprisingly, we have convinced the <span style="color: #FFCC00;">**LVP**</span> to give <span style="color: #c00000;">Bristol</span> an official endorsement, to the shock of the party's industrial backers. In response, they begin to withdraw their support from the party en masse, and a significant portion of right-wing voters are refusing to support us.
+Surprisingly, we have convinced the <span style="color: #C0A054;">**Golds**</span> to give <span style="color: #c00000;">Bristol</span> an official endorsement, to the shock of the party's industrial backers. In response, they begin to withdraw their support from the party en masse, and a significant portion of right-wing voters are refusing to support us.
 
 @convince_lvp_fail
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: endorsements_braun
 
-Perhaps expectedly, we have failed to persuade the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">socialism</span> in general.
+Perhaps expectedly, we have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">socialism</span> in general.
 
 @convince_z
 choose-if: marcher_votes >= unionist_votes and not concord_formed
@@ -1183,7 +1183,7 @@ Eckhart can't win this election alone, he needs support from other parties.
 
 - @convince_z_eckener: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
 - @convince_ddp_eckener: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
-- @convince_lvp_eckener: Convince the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
+- @convince_lvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @convince_dvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @view_candidates: View party endorsements.
 - @hope: We have concluded negotiations with other parties.
@@ -1218,13 +1218,13 @@ The <span style="color: #FFCC00;">liberal</span> vote has been falling over time
 on-arrival: lvp_support_marcher = 1; lvp_left += 3; lvp_relation += 4; guild_lvp -= 2; landed_lvp -= 2; guild_kvp += 2; landed_kvp += 2; guild_kvp += 2 if not kvp_formed; landed_kvp += 2 if not kvp_formed
 go-to: endorsements_eckener
 
-We have convinced the <span style="color: #FFCC00;">**LVP**</span> to give Eckhart an official endorsement, to the displeasure of the party's industrial backers. In response, they begin to withdraw their support from the party, and a notable portion of right-wing voters are opting to abstain.
+We have convinced the <span style="color: #C0A054;">**Golds**</span> to give Eckhart an official endorsement, to the displeasure of the party's industrial backers. In response, they begin to withdraw their support from the party, and a notable portion of right-wing voters are opting to abstain.
 
 @convince_lvp_fail_eckener
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: endorsements_eckener
 
-We have failed to persuade the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">socialists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
+We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">socialists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
 
 @convince_z_eckener
 choose-if: marcher_votes >= unionist_votes and not concord_formed

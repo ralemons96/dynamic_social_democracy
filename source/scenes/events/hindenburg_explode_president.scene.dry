@@ -26,15 +26,15 @@ An era of history is closing, and the future remains to be seen.
 @candidates
 go-to: candidate_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seckard—former Chief of the Commonwealth Army from 1920 to 1926, and a staunch conservative monarchist, infamous for his refusal to suppress the Kapp Putsch with the remark: "Commonwealth Army do not fire on Commonwealth Army". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seckard enters the race for the presidency—backed by many of DuFour’s former allies and the disgraced Staal.
+The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancellor +] have chosen to nominate Hans von Seckard—former Chief of the Commonwealth Army from 1920 to 1926, and a staunch conservative monarchist, infamous for his refusal to suppress the Kapp Putsch with the remark: "Commonwealth Army do not fire on Commonwealth Army". In recent years, he was elected to parliament under the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], gradually drifting further to the radical right. He even appeared as a featured speaker at the Harzburg Rally. Now returned from a military advisory mission in China, Seckard enters the race for the presidency—backed by many of DuFour’s former allies and the disgraced Staal.
 
 The <span style="color: #7A3C00;">Royalists</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seckard for the presidency. [? if not dufour_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ royalist_candidate_1932 +] in 1932. ?]
 
 The <span style="color: #700000;">**Communists**</span> are too disorganized following Staal's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">socialist</span>.
 
-Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
+Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
 
-Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] might nominate Otto Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
+Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Otto Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own.
 
@@ -46,7 +46,7 @@ Alternatively, we could nominate Otto Vesh, our party chairman and leader of the
 
 - @eckener_r1: Support Hugo Eckhart as a joint Unity Coalition candidate.
 - @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
-- @gessler_r1: Support Otto Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+- @gessler_r1: Support Otto Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @grzesinski_r1: Support Albert Grzesinski.
 - @wels_r1: Support Otto Vesh.
 
@@ -201,25 +201,25 @@ max-visits: 1
 [? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. ?]
 
 @convince_lvp_unity
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
 view-if: (marcher_candidate = "Eckhart" or marcher_candidate = "Aldermoor") and lvp_candidate != marcher_candidate and lvp_formed
 on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 50
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = marcher_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
-[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing. ?]
+[? if lvp_candidate = marcher_candidate: The <span style="color: #C0A054;">**Golds**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing. ?]
 
 
 @convince_lvp_spd
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
 view-if: (marcher_candidate = "Grzesinski" or marcher_candidate = "Vesh") and lvp_candidate != marcher_candidate and lvp_formed
 on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 65
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = marcher_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
-[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]. ?]
+[? if lvp_candidate = marcher_candidate: The <span style="color: #C0A054;">**Golds**</span> is easily persuaded to support [+ marcher_candidate +]! ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]. ?]
 
 @convince_kpd_spd
 title: Convince the <span style="color: #700000;">**Collectivists**</span> to support [+ marcher_candidate +].
@@ -415,7 +415,7 @@ We have endorsed Otto Gesling, independent formerly of the <span style="color: #
 @r2_endorse_eckener
 title: Convince the Unity Coalition parties to unite behind Hugo Eckhart.
 subtitle: -2 resources
-unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?][? if (unionist_relation < 55 and unionist_ideology == "Right") or (unionist_relation < 35 and unionist_ideology == "Left") : We need higher relations with the <span style="color: #000000;">Unionist Party</span>. ?][? if ddp_relation < 35 and not lvp_formed : We need higher relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?][? if lvp_relation < 45 and lvp_formed : We need higher relations with the <span style="color: #FFCC00;">LVP</span>. ?]
+unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?][? if (unionist_relation < 55 and unionist_ideology == "Right") or (unionist_relation < 35 and unionist_ideology == "Left") : We need higher relations with the <span style="color: #000000;">Unionist Party</span>. ?][? if ddp_relation < 35 and not lvp_formed : We need higher relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?][? if lvp_relation < 45 and lvp_formed : We need higher relations with the <span style="color: #C0A054;">Golds</span>. ?]
 choose-if: resources >= 2 and ((unionist_relation >= 55 and unionist_ideology == "Right") or (unionist_relation >= 45 and unionist_ideology = "Left")) and ((ddp_relation >= 35 and not lvp_formed) or lvp_relation >= 45 and lvp_formed)
 view-if: unionist_candidate = "Aldermoor" and ((ddp_candidate = "Gesling" and not lvp_formed) or (lvp_candidate = "Gesling" and lvp_formed)) and marcher_candidate != "Eckhart"
 on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Eckhart"; unionist_candidate = "Eckhart"; ddp_candidate = "Eckhart"; lvp_candidate = "Eckhart"; resources -= 2; is_unity_candidate = 1

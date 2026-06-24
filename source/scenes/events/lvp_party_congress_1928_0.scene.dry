@@ -1,4 +1,4 @@
-title: First <span style="color: #FFCC00;">**LVP**</span> Congress
+title: First <span style="color: #C0A054;">**Golds**</span> Congress
 subtitle: The future of this new party will be decided here.
 view-if: lvp_trigger_time == time
 max-visits: 1
@@ -6,11 +6,11 @@ tags: event
 face-image: img/weimar_coalition.jpg
 new-page: true
 
-= First <span style="color: #FFCC00;">**LVP**</span> Party Congress
+= First <span style="color: #C0A054;">**Golds**</span> Party Congress
 
-The <span style="color: #FFCC00;">Liberal People's Party</span> (<span style="color: #FFCC00;">**LVP**</span>) has officially been founded! Hans Lytton, former chancellor and <span style="color: #C0A054;">**Golds**</span> member, has been chosen as the interim leader of the new party.
+The <span style="color: #FFCC00;">Golds</span> (<span style="color: #C0A054;">**Golds**</span>) has officially been founded! Hans Lytton, former chancellor and <span style="color: #C0A054;">**Golds**</span> member, has been chosen as the interim leader of the new party.
 
-The <span style="color: #FFCC00;">**LVP**</span>'s inaugural congress will play a major role in shaping the direction of the newly founded party, and most importantly, decide who will lead the liberal movement forward.
+The <span style="color: #C0A054;">**Golds**</span>'s inaugural congress will play a major role in shaping the direction of the newly founded party, and most importantly, decide who will lead the liberal movement forward.
 
 - @luther: The party votes...
 
@@ -19,9 +19,9 @@ call: lvp_formed
 on-arrival: lvp_relation += 5; lvp_left += 3; burgher_traditionalist += 2; guild_traditionalist += 2
 face-image: img/portraits/luther.jpg
 
-Hans Lytton is once again chosen to lead the <span style="color: #FFCC00;">**LVP**</span>, a long-time advocate for liberal and bourgeois unity, and a figure acceptable to both wings of the newly unified party. 
+Hans Lytton is once again chosen to lead the <span style="color: #C0A054;">**Golds**</span>, a long-time advocate for liberal and bourgeois unity, and a figure acceptable to both wings of the newly unified party. 
 
-Meanwhile, the right wing of the <span style="color: #C0A054;">**Golds**</span>, despite their initial resistance to the merger, is now focusing on shifting the <span style="color: #FFCC00;">**LVP**</span> further right, leveraging the support of the party's industrial backers.
+Meanwhile, the right wing of the <span style="color: #C0A054;">**Golds**</span>, despite their initial resistance to the merger, is now focusing on shifting the <span style="color: #C0A054;">**Golds**</span> further right, leveraging the support of the party's industrial backers.
 
 - @lvp_weimar
 - @lvp_groko

@@ -1629,7 +1629,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Neuer Nationalismus</div>
-      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #FFCC00; font-weight: bold;">LVP</span>. </div>
+      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2019,7 +2019,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Warum kämpfen wir immer noch?</div>
-      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #FFCC00; font-weight: bold;">LVP</span> has not formed.
+      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #C0A054; font-weight: bold;">Golds</span> has not formed.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2139,7 +2139,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Wahre Bundesrepublik</div>
-      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #FFCC00; font-weight: bold;'>LVP</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
+      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #C0A054; font-weight: bold;'>Golds</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2199,7 +2199,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #FFCC00; font-weight: bold;">LVP</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2741,7 +2741,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Lindner Moribund</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #FFCC00; font-weight: bold;">LVP</span> be formed but carry no seats in the Assembly.
+      <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2756,7 +2756,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Tausendjährige Libreich</div>
-      <div class="achievement_subtitle"> - have the  <span style="color: #FFCC00; font-weight: bold;">LVP</span> become the largest party in the Assembly.
+      <div class="achievement_subtitle"> - have the  <span style="color: #C0A054; font-weight: bold;">Golds</span> become the largest party in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3541,7 +3541,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Neuer Nationalismus</div>
-      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #FFCC00; font-weight: bold;">LVP</span>. </div>
+      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3931,7 +3931,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Warum kämpfen wir immer noch?</div>
-      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #FFCC00; font-weight: bold;">LVP</span> has not formed.
+      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #C0A054; font-weight: bold;">Golds</span> has not formed.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4051,7 +4051,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Wahre Bundesrepublik</div>
-      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #FFCC00; font-weight: bold;'>LVP</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
+      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #C0A054; font-weight: bold;'>Golds</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4111,7 +4111,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #FFCC00; font-weight: bold;">LVP</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4652,7 +4652,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Lindner Moribund</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #FFCC00; font-weight: bold;">LVP</span> be formed but carry no seats in the Assembly.
+      <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4667,7 +4667,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Tausendjährige Libreich</div>
-      <div class="achievement_subtitle"> - have the  <span style="color: #FFCC00; font-weight: bold;">LVP</span> become the largest party in the Assembly.
+      <div class="achievement_subtitle"> - have the  <span style="color: #C0A054; font-weight: bold;">Golds</span> become the largest party in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5452,7 +5452,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Neuer Nationalismus</div>
-      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #FFCC00; font-weight: bold;">LVP</span>. </div>
+      <div class="achievement_subtitle"> - Frank Glatzel becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5842,7 +5842,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Warum kämpfen wir immer noch?</div>
-      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #FFCC00; font-weight: bold;">LVP</span> has not formed.
+      <div class="achievement_subtitle"> - the <span style="color: #D3C24D; font-weight: bold;">Golds</span> and <span style="color: #C0A054; font-weight: bold;">Golds</span> share the same ideology, yet the <span style="color: #C0A054; font-weight: bold;">Golds</span> has not formed.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5962,7 +5962,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Wahre Bundesrepublik</div>
-      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #FFCC00; font-weight: bold;'>LVP</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
+      <div class="achievement_subtitle"> - achieve Hewes as President and Aldermoor as Chancellor, with the <span style='color: #000000; font-weight: bold;'>Concord</span> led by Aldermoor and the <span style='color: #C0A054; font-weight: bold;'>Golds</span> formed. All constitutional reforms are passed, the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span> and <span style='color: #700000; font-weight: bold;'>Collectivists</span> are both below the 5% threshold, Shackley is available as an advisor, and the <span style='color: #c00000; font-weight: bold;'>Marchers</span> is dominated by Reformists.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6022,7 +6022,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Große Weimarer Koalition</div>
-      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #FFCC00; font-weight: bold;">LVP</span>.
+      <div class="achievement_subtitle"> - form a Commonwealth coalition with Emperor at the head of the <span style="color: #000000;">Unionists</span>/<span style="color: #000000; font-weight: bold;">Concord</span> and Hewes leading the <span style="color: #C0A054; font-weight: bold;">Golds</span>.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6562,7 +6562,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Lindner Moribund</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #FFCC00; font-weight: bold;">LVP</span> be formed but carry no seats in the Assembly.
+      <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6577,7 +6577,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Tausendjährige Libreich</div>
-      <div class="achievement_subtitle"> - have the  <span style="color: #FFCC00; font-weight: bold;">LVP</span> become the largest party in the Assembly.
+      <div class="achievement_subtitle"> - have the  <span style="color: #C0A054; font-weight: bold;">Golds</span> become the largest party in the Assembly.
     </div>
   {!</td>!}
 {!</tr>!}

@@ -43,7 +43,7 @@ Following this agreement, a heated debate erupted about whether Gallax would act
 view-if: brunswick_gallax and (((gold_ideology != "Right" or gold_leader != "Dingeldey") or lvp_formed) or concord_formed)
 on-arrival: gallax_citizen = 0; pro_republic += 3
 
-In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly and discreetly grant Gallax citizenship, they had to collaborate with the [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist:[? if not concord_formed:<span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed:<span style="color: #000000;">**[+ unionist_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.
+In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly and discreetly grant Gallax citizenship, they had to collaborate with the [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist:[? if not concord_formed:<span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed:<span style="color: #000000;">**[+ unionist_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.
 
 As a result, Gallax will remain a stateless person, and this will damage his reputation as the Führer of the Germans.
 

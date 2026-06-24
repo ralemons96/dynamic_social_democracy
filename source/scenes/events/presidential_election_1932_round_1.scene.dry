@@ -713,10 +713,10 @@ if (Q.unionist_support_marcher == 1 && Q.center_reactionary_candidate_1932 && !Q
 - @round2_convince_z: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to switch their support to us.
 - @round2_convince_kpd: Convince the <span style="color: #700000;">**Collectivists**</span> to switch their support to us. 
 - @round2_convince_ddp: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to switch their support to us.
-- @round2_convince_lvp: Convince the <span style="color: #FFCC00;">**LVP**</span> to switch their support to us.
+- @round2_convince_lvp: Convince the <span style="color: #C0A054;">**Golds**</span> to switch their support to us.
 - @convince_z_eckener: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to switch their support to <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>.
 - @convince_ddp_eckener: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to switch their support to <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>.
-- @convince_lvp_eckener: Convince the <span style="color: #FFCC00;">**LVP**</span> to switch their support to <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>.
+- @convince_lvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to switch their support to <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>.
 - @convince_dvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to switch their support to <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>.
 - @round2_hindenburg: Switch our support to DuFour.
 - @round2_reactionary: Switch our support to [? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Gesling" or reactionary_candidate_1932 == "Jarrow") and lvp_formed: <span style="color: #FFCC00;">**[+ reactionary_candidate_1932 +]**</span>?][? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Jarrow") and not lvp_formed: <span style="color: #C0A054;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Gesling" and not lvp_formed: <span style="color: #D3C24D;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and not kvp_formed: <span style="color: #3E88B3;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and kvp_formed: <span style="color: #0087DC;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Aldermoor" or reactionary_candidate_1932 == "Askew" or reactionary_candidate_1932 == "Sedgewick" or (reactionary_candidate_1932 == "Lethmoor" and concord_formed): <span style="color: #000000;">**[+ reactionary_candidate_1932 +]**</span>?].
@@ -755,13 +755,13 @@ The <span style="color: #FFCC00;">liberal</span> vote has been falling over time
 on-arrival: lvp_support_marcher = 1; lvp_left += 3; lvp_relation += 4; guild_lvp -= 2; landed_lvp -= 2; guild_kvp += 2; landed_kvp += 2; guild_kvp += 2 if not kvp_formed; landed_kvp += 2 if not kvp_formed
 go-to: round2_menu
 
-We have convinced the <span style="color: #FFCC00;">**LVP**</span> to give Eckhart an official endorsement, to the displeasure of the party's industrial backers. In response, they begin to withdraw their support from the party, and a notable portion of right-wing voters are opting to abstain.
+We have convinced the <span style="color: #C0A054;">**Golds**</span> to give Eckhart an official endorsement, to the displeasure of the party's industrial backers. In response, they begin to withdraw their support from the party, and a notable portion of right-wing voters are opting to abstain.
 
 @convince_lvp_fail_eckener
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: round2_menu
 
-We have failed to persuade the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">socialists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
+We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">socialists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
 
 @convince_z_eckener
 view-if: eckener_campaign and not unionist_support_marcher
@@ -1021,20 +1021,20 @@ go-to: round2_convince_lvp_success if convince_lvp_success == 1; round2_convince
 on-arrival: lvp_support_marcher = 1; lvp_left += 4; lvp_relation += 3; burgher_traditionalist += burgher_lvp*0.05 if not kvp_formed; guild_traditionalist += guild_lvp*0.15 if not kvp_formed; landed_traditionalist += landed_lvp*0.15 if not kvp_formed; burgher_kvp += burgher_lvp*0.05 if not kvp_formed; guild_kvp += guild_lvp*0.15 if not kvp_formed; landed_kvp += landed_lvp*0.15 if not kvp_formed; burgher_lvp *= 0.95; guild_lvp *= 0.85; landed_lvp *= 0.85
 go-to: round2_menu
 
-Surprisingly, we have convinced the <span style="color: #FFCC00;">**LVP**</span> to give <span style="color: #c00000;">Bristol</span> an official endorsement, to the shock of the party's industrial backers. In response, some die-hard DuFour supporters begin withdrawing from the party.
+Surprisingly, we have convinced the <span style="color: #C0A054;">**Golds**</span> to give <span style="color: #c00000;">Bristol</span> an official endorsement, to the shock of the party's industrial backers. In response, some die-hard DuFour supporters begin withdrawing from the party.
 
 @round2_convince_lvp_fail
 on-arrival: lvp_support_marcher = 0
 go-to: round2_menu
 
-Perhaps expectedly, we have failed to persuade the <span style="color: #FFCC00;">**LVP**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">socialism</span> in general.
+Perhaps expectedly, we have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">socialism</span> in general.
 
 @round2_convince_lvp_partial
 
-The <span style="color: #FFCC00;">**LVP**</span> is not satisfied with our arguments, but they are open to being convinced[? if gallax_support_dufour: , especially given the <span style="color: #7A3C00;">Royalists</span>' support for DuFour?]. They are demanding a hefty amount of resources, and there is no guarantee that they will outright endorse us. Instead, they may simply withdraw their endorsement from DuFour.
+The <span style="color: #C0A054;">**Golds**</span> is not satisfied with our arguments, but they are open to being convinced[? if gallax_support_dufour: , especially given the <span style="color: #7A3C00;">Royalists</span>' support for DuFour?]. They are demanding a hefty amount of resources, and there is no guarantee that they will outright endorse us. Instead, they may simply withdraw their endorsement from DuFour.
 
 - @pay_lvp: Give them the resources they need.
-- @round2_menu: Forget about the <span style="color: #FFCC00;">**LVP**</span>.
+- @round2_menu: Forget about the <span style="color: #C0A054;">**Golds**</span>.
 
 @pay_lvp
 choose-if: resources >= 4
@@ -1044,7 +1044,7 @@ on-arrival: resources -= 4; lvp_support_marcher = 1; lvp_partial = 1
 on-departure: gallax_support_dufour = 1 if marcher_president_votes + lvp_votes > royalist_presidential_votes and unionist_support_marcher != 1; gallax_support_dufour = 1 if marcher_president_votes + lvp_votes + unionist_votes > royalist_presidential_votes and unionist_support_marcher == 1; 
 go-to: round2_menu
 
-With our resources, the <span style="color: #FFCC00;">**LVP**</span> are convinced to drop their endorsement of DuFour. [? if lvp_ideology == "Left": Through our friendly relations with their left wing, we are able to get them to endorse Bristol! ?][? if lvp_ideology != "Left": The business and industrial influences within their party prevent any shows of explicit support toward Bristol however. ?]
+With our resources, the <span style="color: #C0A054;">**Golds**</span> are convinced to drop their endorsement of DuFour. [? if lvp_ideology == "Left": Through our friendly relations with their left wing, we are able to get them to endorse Bristol! ?][? if lvp_ideology != "Left": The business and industrial influences within their party prevent any shows of explicit support toward Bristol however. ?]
 
 [? if not gallax_support_dufour and ((marcher_president_votes + lvp_votes > royalist_presidential_votes and unionist_support_marcher != 1) or marcher_president_votes + lvp_votes > royalist_presidential_votes and unionist_support_marcher == 1): With the <span style="color: #FFCC00;">liberals</span> supporting Bristol, [+ royalist_candidate_1932 +] has dropped out of the race, and the <span style="color: #7A3C00;">Royalists</span> have endorsed DuFour to prevent a <span style="color: #c00000;">socialist</span> from becoming president. ?]
 

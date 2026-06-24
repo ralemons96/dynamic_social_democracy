@@ -26,7 +26,7 @@ The organization’s main effort is to steer people away from the allure of the 
 @rally
 on-arrival: commons_marcher += (pro_republic / 15); burgher_marcher += (pro_republic / 15); guild_marcher += (pro_republic / 20); landed_marcher += (pro_republic / 20); commons_ddp += (pro_republic / 40); burgher_ddp += (pro_republic / 20); guild_ddp += (pro_republic / 20); landed_ddp += (pro_republic / 30); commons_lvp += (pro_republic / 30); burgher_lvp += (pro_republic / 15); guild_lvp += (pro_republic / 15); landed_lvp += (pro_republic / 25); commons_unionist += (pro_republic / 50); burgher_unionist += (pro_republic / 40); guild_unionist += (pro_republic / 40); landed_unionist += (pro_republic / 40); faithful_unionist += (pro_republic / 15); peoples_party_support += 1; knight_strength += 5; left_dissent += 3; collectivist_relation -= 5
 
-We rally alongside politicians from the <span style="color: #000000;">Unionists</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], united in our commitment to the Republic.
+We rally alongside politicians from the <span style="color: #000000;">Unionists</span> and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], united in our commitment to the Republic.
 
 @republic
 on-arrival: pro_republic += 6
@@ -36,4 +36,4 @@ The <span style="color: #7A3C00;">Royalist</span> and <span style="color: #70000
 @relation
 on-arrival: unionist_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); ddp_left += 1; lvp_left += 1
 
-We’ve been able to strengthen our relations with the involved parties through the participation of figures like Hewes and Werth—members of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] and the <span style="color: #000000;">Unionist Party</span>, respectively.
+We’ve been able to strengthen our relations with the involved parties through the participation of figures like Hewes and Werth—members of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] and the <span style="color: #000000;">Unionist Party</span>, respectively.

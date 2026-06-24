@@ -193,7 +193,7 @@ Kurt Shackley is an ambitious rising star in the party, and would be all too wil
 
 - @hammerstein_r1: Support the <span style="color: #BFC8CC;">**GNU**</span>'s [+ gnu_candidate +].
 - @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
-- @heuss_r1: Support Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+- @heuss_r1: Support Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @schumacher_r1: Run Kurt Shackley.
 - @abstain: Do nothing.
 
@@ -231,7 +231,7 @@ on-arrival: marcher_candidate = "Hewes"; collectivist_candidate = "Boycott"; sap
 go-to: r1_menu
 
 We have endorsed Theodor Hewes, journalist of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: 
-<span style="color: #FFCC00;">**LVP**</span>?]. Perhaps we can form a Unity Bloc against Staal.
+<span style="color: #C0A054;">**Golds**</span>?]. Perhaps we can form a Unity Bloc against Staal.
 
 [? if gold_relation < 60 and gold_candidate == marcher_candidate and gold_exist and not lvp_formed: With our support of Hewes, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now supporting [+ gnu_candidate +] if they haven't already. ?]
 
@@ -354,24 +354,24 @@ max-visits: 1
 [? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. Somewhat expectedly considering he's a <span style="color: #c00000;">socialist</span>. ?]
 
 @convince_lvp_spd
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
 view-if: marcher_candidate = "Shackley" and lvp_candidate != marcher_candidate and lvp_formed
 on-arrival: lvp_candidate = marcher_candidate if ((lvp_relation >= 55 and unionist_relation >= 60) or (lvp_relation >= 65 and unionist_relation < 60)) and not lvp_gnu
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = marcher_candidate: The <span style="color: #FFCC00;">**LVP**</span> is reluctantly persuaded to support [+ marcher_candidate +], convinced by our argument that his election is the last line of defense for democracy against Staal. ?]
-[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]—expected, given he's a <span style="color: #c00000;">socialist</span>, and that we're asking the <span style="color: #FFCC00;">**LVP**</span> in the first place. ?]
+[? if lvp_candidate = marcher_candidate: The <span style="color: #C0A054;">**Golds**</span> is reluctantly persuaded to support [+ marcher_candidate +], convinced by our argument that his election is the last line of defense for democracy against Staal. ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]—expected, given he's a <span style="color: #c00000;">socialist</span>, and that we're asking the <span style="color: #C0A054;">**Golds**</span> in the first place. ?]
 
 @convince_lvp_unity
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ marcher_candidate +].
+title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
 view-if: marcher_candidate = "Aldermoor" and lvp_candidate != marcher_candidate and lvp_formed
 on-arrival: lvp_candidate = marcher_candidate if lvp_relation >= 45 and not lvp_gnu
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = marcher_candidate:  The <span style="color: #FFCC00;">**LVP**</span> is reluctantly persuaded to support [+ marcher_candidate +]! This is largely because [+ marcher_candidate +] is the candidate of the <span style="color: #000000;">Unionist Party</span>, not of the <span style="color: #c00000;">**Marchers**</span>. ?]
-[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing with Staal undoubtedly playing a role. ?]
+[? if lvp_candidate = marcher_candidate:  The <span style="color: #C0A054;">**Golds**</span> is reluctantly persuaded to support [+ marcher_candidate +]! This is largely because [+ marcher_candidate +] is the candidate of the <span style="color: #000000;">Unionist Party</span>, not of the <span style="color: #c00000;">**Marchers**</span>. ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]. The Unity Coalition seems to be fracturing with Staal undoubtedly playing a role. ?]
 
 @convince_dvp_unity
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
@@ -408,7 +408,7 @@ if (Q.dstp_formed) {
     candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>DStP</span>";
 }
 if (Q.lvp_formed) {
-    candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #FFCC00; font-weight: bold;'>LVP</span>";
+    candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>";
 }
 if (Q.unionist_party_name == "Concord") {
     candidate_descs.Aldermoor = "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>";
@@ -563,7 +563,7 @@ view-if: (ddp_candidate = "Hewes" or lvp_candidate == "Hewes" or gold_candidate 
 on-departure: collectivist_candidate = "Boycott"; sapd_candidate = "Boycott"; marcher_candidate = "Hewes"; ddp_relation += 8; lvp_relation += 5; gold_candidate = gnu_candidate if gold_relation < 60 and gold_candidate == marcher_candidate and gold_exist and not lvp_formed; is_unity_candidate = 1
 go-to: r2_campaigning
 
-We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 
 [? if gold_relation < 60 and gold_candidate == marcher_candidate and gold_exist and not lvp_formed: With our support of Hewes, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now supporting [+ gnu_candidate +] if they haven't already. ?]
 

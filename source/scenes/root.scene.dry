@@ -1582,6 +1582,57 @@ go-to: 1928_mod_mode_lite
 @1928_main
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
+on-arrival: {!
+// === Fix 1 (the Golds): the Commonwealth has ONE liberal party. Fold the legacy DDP + Gold
+// split into the unified liberal party at the start of play, reusing the game's lvp_formed
+// machinery so every `if lvp_formed` branch (post_event coalition recompute, elections,
+// ministers, events) treats the liberals as a single party. Runs after the difficulty modes
+// finalise the starting state, before `main`. The merged party is displayed as "the Golds".
+if (!Q.lvp_formed) {
+    Q.lvp_formed = 1;
+    Q.commons_lvp = (Q.commons_ddp||0) + (Q.commons_gold||0);
+    Q.burgher_lvp = (Q.burgher_ddp||0) + (Q.burgher_gold||0);
+    Q.guild_lvp = (Q.guild_ddp||0) + (Q.guild_gold||0);
+    Q.landed_lvp = (Q.landed_ddp||0) + (Q.landed_gold||0);
+    Q.disfavored_lvp = (Q.disfavored_ddp||0) + (Q.disfavored_gold||0);
+    Q.faithful_lvp = (Q.faithful_ddp||0) + (Q.faithful_gold||0);
+    Q.lvp_r = Math.round(((Q.ddp_r||0) + (Q.gold_r||0)) * 10) / 10;
+    Q.lvp_r_heartland = Math.round(((Q.ddp_r_heartland||0) + (Q.gold_r_heartland||0)) * 10) / 10;
+    Q.lvp_votes = Math.round(((Q.ddp_votes||0) + (Q.gold_votes||0)) * 10) / 10;
+    Q.lvp_relation = Math.round(((Q.ddp_relation||0) + (Q.gold_relation||0)) / 2);
+    Q.lvp_left = ((Q.ddp_left||0) + (Q.gold_left||0)) * 0.5;
+    Q.lvp_right = ((Q.ddp_right||0) + (Q.gold_right||0)) * 0.5;
+    Q.lvp_leader = "Lytton";
+    Q.lvp_ideology = "Moderate";
+    Q.lvp_cohesion = (Q.ddp_cohesion||15);
+    Q.adjustmentFactors_lvp_heartland = 1.0;
+    // retire the legacy split parties
+    Q.ddp_r = 0; Q.gold_r = 0;
+    Q.ddp_r_heartland = 0; Q.gold_r_heartland = 0;
+    Q.ddp_votes = 0; Q.gold_votes = 0;
+    Q.ddp_normalized = 0; Q.gold_normalized = 0;
+    Q.gold_exist = 0;
+    Q.parties = Q.parties.filter(function(p){ return p !== 'ddp' && p !== 'gold'; });
+    Q.parties_graph = Q.parties_graph.filter(function(p){ return p !== 'ddp' && p !== 'gold'; });
+    if (Q.parties.indexOf('lvp') === -1) Q.parties.push('lvp');
+    if (Q.parties_graph.indexOf('lvp') === -1) Q.parties_graph.push('lvp');
+    // unify any starting Gold/DDP cabinet ministers under the merged party label
+    var _mins = ['foreign','economic','finance','justice','agriculture','interior','labor'];
+    for (var _i = 0; _i < _mins.length; _i++) {
+        var _p = Q[_mins[_i] + '_minister_party'];
+        if (_p === 'Gold' || _p === 'DDP' || _p === 'DStP') Q[_mins[_i] + '_minister_party'] = 'LVP';
+    }
+    // seed the key coalitions so the first status view is correct (post_event recomputes each turn)
+    Q.weimar_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0) - (Q.bvp_r||0)).toFixed(1));
+    Q.grand_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0)).toFixed(1));
+    Q.social_liberal_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r).toFixed(1));
+    Q.bourgeois_coalition = parseFloat(((Q.unionist_r||0) + Q.lvp_r + (Q.other_r||0)).toFixed(1));
+    Q.neo_weimar_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0) + (Q.other_r||0)).toFixed(1));
+    // past records: show the merged party's combined history in the graph
+    if (Q.election_records) { for (var _r2 = 0; _r2 < Q.election_records.length; _r2++) { Q.election_records[_r2]['lvp'] = (Q.election_records[_r2]['ddp']||0) + (Q.election_records[_r2]['gold']||0); } }
+    if (Q.party_support_records) { for (var _r3 = 0; _r3 < Q.party_support_records.length; _r3++) { Q.party_support_records[_r3]['lvp'] = (Q.party_support_records[_r3]['ddp']||0) + (Q.party_support_records[_r3]['gold']||0); } }
+}
+!}
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 

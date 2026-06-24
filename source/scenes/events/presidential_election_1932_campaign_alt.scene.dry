@@ -67,7 +67,7 @@ go-to: candidate_selection
 
 [? if ddp_support_marcher == 1 and marcher_campaign: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
-[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if gold_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
@@ -79,7 +79,7 @@ go-to: candidate_selection
 
 [? if (unionist_choice == reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -99,7 +99,7 @@ go-to: candidate_selection
 
 [? if (unionist_choice == secondary_reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and secondary_reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == secondary_reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -367,7 +367,7 @@ We need a united front to win this election—internal factional politics must b
 title: Persuade the bourgeois parties to let us into their campaign committees.
 subtitle: This will allow for a more coordinated effort.
 choose-if: unionist_support_marcher == 1 and ((unionist_relation >= 55 and unionist_ideology == "Right") or (unionist_relation >= 45 and unionist_ideology == "Left")) and ((ddp_relation >= 55 and not lvp_formed) or (lvp_relation >= 55 and lvp_formed)) and resources >= 1
-unavailable-subtitle: [? if unionist_support_marcher != 1: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?] doesn't support Eckhart. ?][? if ddp_support_marcher != 1 and not lvp_formed: The <span style="color: #D3C24D;">[+ ddp_name +]</span> doesn't support Eckhart. ?][? if lvp_support_marcher != 1 and lvp_formed: The <span style="color: #FFCC00;">LVP</span> doesn't support Eckhart. ?][? if (unionist_relation < 50 and unionist_ideology == "Right") or (unionist_relation < 40 and unionist_ideology == "Left"): Our relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?] aren't good enough. ?][? if ddp_relation < 55 and not lvp_formed: Our relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span> aren't good enough. ?][? if lvp_relation < 55 and lvp_formed: Our relations with the <span style="color: #FFCC00;">LVP</span> aren't good enough. ?] [? if resources < 1: Not enough resources. ?]
+unavailable-subtitle: [? if unionist_support_marcher != 1: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?] doesn't support Eckhart. ?][? if ddp_support_marcher != 1 and not lvp_formed: The <span style="color: #D3C24D;">[+ ddp_name +]</span> doesn't support Eckhart. ?][? if lvp_support_marcher != 1 and lvp_formed: The <span style="color: #C0A054;">Golds</span> doesn't support Eckhart. ?][? if (unionist_relation < 50 and unionist_ideology == "Right") or (unionist_relation < 40 and unionist_ideology == "Left"): Our relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?] aren't good enough. ?][? if ddp_relation < 55 and not lvp_formed: Our relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span> aren't good enough. ?][? if lvp_relation < 55 and lvp_formed: Our relations with the <span style="color: #C0A054;">Golds</span> aren't good enough. ?] [? if resources < 1: Not enough resources. ?]
 on-arrival: resources -= 1; pro_republic += 5; bourgeois_glaze_marcher = 1; faithful_royalist -= 2; faithful_marcher += 2; faithful_unionist += 2; landed_marcher += 2; burgher_marcher += 4; guild_marcher += 4; unionist_relation += 5; ddp_relation += 5; lvp_relation += 5; gold_relation += 5; ddp_left += 2; gold_left += 3; ddp_cohesion += 1; lvp_left += 2
 face-image: img/center_poster.jpg
 max-visits: 1

@@ -69,7 +69,7 @@ go-to: candidate_selection
 
 [? if ddp_support_marcher == 1 and marcher_campaign: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
-[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if lvp_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if gold_support_marcher == 1 and marcher_campaign: - <span style="color: #C0A054;">**Golds**</span> ?]
 
@@ -81,7 +81,7 @@ go-to: candidate_selection
 
 [? if (unionist_choice == reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -101,7 +101,7 @@ go-to: candidate_selection
 
 [? if (unionist_choice == secondary_reactionary_candidate_1932 or dufour_run) and not bvp_support_marcher and secondary_reactionary_candidate_1932: - <span style="color: #A2D8E0;">**Arcanists**</span> ?]
 
-[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if (lvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and lvp_support_marcher != 1 and lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if (ddp_choice == secondary_reactionary_candidate_1932 or dufour_run) and ddp_support_marcher != 1 and not lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
@@ -352,7 +352,7 @@ Gunther Gereke, [? if traditionalist_ideology == "Moderate": <span style="color:
 
 @embezzle_2
 title: Meet with the Askew cabinet, and lobby for state financing toward the Heartland government, with the goal of securing DuFour's reelection.
-subtitle: [? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] member and Vice-Chancellor Hermann Dietrich has shown a friendliness toward us. +3 resources 
+subtitle: [? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] member and Vice-Chancellor Hermann Dietrich has shown a friendliness toward us. +3 resources 
 unavailable-subtitle: The <span style="color: #c00000;">Marchers</span> doesn't control Heartland.
 view-if: bruning_time
 choose-if: marcher_heartland
@@ -381,7 +381,7 @@ max-visits: 1
 on-arrival: dufour_funds += 1; ddp_relation += 5; unionist_relation += 5; lvp_relation += 5; ddp_left += 1; pro_republic += 3; burgher_ddp += 3; guild_ddp += 3; burgher_gold += 3 if gold_ideology != "Right"; guild_gold += 3 if gold_ideology != "Right"; burgher_lvp += 3; guild_lvp += 3; burgher_royalist -= 3 if burgher_royalist_normalized >= 40; guild_royalist -= 3 if burgher_royalist_normalized >= 40; landed_other += 3; banner_militancy += 0.06; loyalist_strength -= 50; embezzle_2 = 1
 go-to: embezzlement_options
 
-We have met with politicians from the [? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?][? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?], the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party, the the Banners, and even some <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> peasant unions. We have agreed to allocate Heartland state funds to their groups, strengthening the DuFour campaign among those excluded from the official committee while also improving our relationship with these factions.
+We have met with politicians from the [? if lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?], the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party, the the Banners, and even some <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> peasant unions. We have agreed to allocate Heartland state funds to their groups, strengthening the DuFour campaign among those excluded from the official committee while also improving our relationship with these factions.
 
 @campaigning_hindenburg_2
 on-arrival: {!

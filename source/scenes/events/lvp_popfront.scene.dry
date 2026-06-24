@@ -1,4 +1,4 @@
-title: The <span style="color: #FFCC00;">**LVP**</span> leaves the Popular Front government[? if in_popular_front_heartland and not in_popular_front:&nbsp;in Heartland?]!
+title: The <span style="color: #C0A054;">**Golds**</span> leaves the Popular Front government[? if in_popular_front_heartland and not in_popular_front:&nbsp;in Heartland?]!
 subtitle: As expected.
 new-page: true
 on-arrival: lvp_relation -= 6; lvp_right += 3 {! 
@@ -21,7 +21,7 @@ if (Q.lvp_formed) {
 view-if: ((in_popular_front and ddp_in_popular_front) or (in_popular_front_heartland and ddp_in_popular_front_heartland)) and lvp_formed 
 tags: event
 
-= The <span style="color: #FFCC00;">**LVP**</span> leaves the Popular Front government!
+= The <span style="color: #C0A054;">**Golds**</span> leaves the Popular Front government!
 
 With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> dissolving itself and joining with the <span style="color: #C0A054;">**Golds**</span> in a significantly more right-wing party, they have expectedly withdrawn their support of our incumbent Popular Front[? if in_popular_front_heartland and not in_popular_front:&nbsp;in Heartland?][? if in_popular_front_heartland and in_popular_front:&nbsp;in Heartland, and nationally?]. 
 

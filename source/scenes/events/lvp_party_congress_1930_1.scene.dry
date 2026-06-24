@@ -1,5 +1,5 @@
-title: Second <span style="color: #FFCC00;">**LVP**</span> Congress
-subtitle: The <span style="color: #FFCC00;">**LVP**</span> decides their fate...
+title: Second <span style="color: #C0A054;">**Golds**</span> Congress
+subtitle: The <span style="color: #C0A054;">**Golds**</span> decides their fate...
 view-if: lvp_existence_timer == 12 and lvp_formed
 on-arrival: {!
 Q.heuss_points = 0;
@@ -139,11 +139,11 @@ tags: event
 face-image: img/weimar_coalition_3.jpg
 new-page: true
 
-= Second <span style="color: #FFCC00;">**LVP**</span> Party Congress
+= Second <span style="color: #C0A054;">**Golds**</span> Party Congress
 
-The merger of two notoriously factionalized parties has unsurprisingly introduced great dysfunction into the internal politics of the <span style="color: #FFCC00;">**LVP**</span>. Not even a unifying figure like Hans Lytton has been able to quell the endless bickering among the party's factions. The economic depression has only deepened these divisions, with disagreements arising even on broadly supported issues like parliamentary government, making unified action nearly impossible.
+The merger of two notoriously factionalized parties has unsurprisingly introduced great dysfunction into the internal politics of the <span style="color: #C0A054;">**Golds**</span>. Not even a unifying figure like Hans Lytton has been able to quell the endless bickering among the party's factions. The economic depression has only deepened these divisions, with disagreements arising even on broadly supported issues like parliamentary government, making unified action nearly impossible.
 
-[? if chancellor == "Askew" and not marcher_in_government: The <span style="color: #FFCC00;">**LVP**</span> has shifted significantly to the right due to their participation in [? if in_right_coalition: Askew's center-right coalition?][? if not in_right_coalition: Askew's emergency government?]. This election will be pivotal in determining their policy of cooperation with us in the foreseeable future.?] While Hans Lytton is expected to secure re-election, scattered candidates from across the party could emerge if the majority loses confidence in Lytton's leadership.
+[? if chancellor == "Askew" and not marcher_in_government: The <span style="color: #C0A054;">**Golds**</span> has shifted significantly to the right due to their participation in [? if in_right_coalition: Askew's center-right coalition?][? if not in_right_coalition: Askew's emergency government?]. This election will be pivotal in determining their policy of cooperation with us in the foreseeable future.?] While Hans Lytton is expected to secure re-election, scattered candidates from across the party could emerge if the majority loses confidence in Lytton's leadership.
 
 - @luther: The party votes...
 - @luther_fail: The party votes...
@@ -153,7 +153,7 @@ view-if: luther_points >= opposition_points
 on-arrival: lvp_relation += 3; lvp_left += 2
 face-image: img/portraits/luther.jpg
 
-Hans Lytton is expectedly re-elected as the leader of the <span style="color: #FFCC00;">**LVP**</span>. He will navigate the party through the economic depression and will hopefully try to maintain bourgeois backing for the Unity system, but there is only so much he can do.
+Hans Lytton is expectedly re-elected as the leader of the <span style="color: #C0A054;">**Golds**</span>. He will navigate the party through the economic depression and will hopefully try to maintain bourgeois backing for the Unity system, but there is only so much he can do.
 
 @luther_fail
 view-if: opposition_points > luther_points
@@ -218,7 +218,7 @@ if (!Q.dietrich_lead && !Q.heuss_lead && !Q.dingeldey_lead && !Q.curtius_lead) {
 
 !}
 
-Surprisingly, Lytton has failed to command the majority of the <span style="color: #FFCC00;">**LVP**</span> behind his candidacy. Following this result, Lytton has resigned from his chairmanship and now endorses [+ luther_endorsed_candidate +] for the leadership race, however his endorsement fails to sway much delegates into his favor. Lytton has now taken up a position as the President of the Commonwealth Bank, still holding some sway over party affairs.
+Surprisingly, Lytton has failed to command the majority of the <span style="color: #C0A054;">**Golds**</span> behind his candidacy. Following this result, Lytton has resigned from his chairmanship and now endorses [+ luther_endorsed_candidate +] for the leadership race, however his endorsement fails to sway much delegates into his favor. Lytton has now taken up a position as the President of the Commonwealth Bank, still holding some sway over party affairs.
 
 - @heuss
 - @dietrich
@@ -229,31 +229,31 @@ Surprisingly, Lytton has failed to command the majority of the <span style="colo
 @heuss
 title: Theodor Hewes is elected!
 subtitle: Hewes is a <span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, and a member of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
-unavailable-subtitle: The wider <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing.
+unavailable-subtitle: The wider <span style="color: #C0A054;">Golds</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing.
 choose-if: heuss_lead
 on-arrival: lvp_relation += 12; lvp_left += 7; lvp_leader = "Hewes"; pro_republic += (lvp_votes / 2); commons_lvp += 2; commons_marcher -= 2; burgher_lvp += 6; guild_lvp -= 3; guild_other += 5 if (traditionalist_ideology == "Radical"); guild_traditionalist += 5 if traditionalist_ideology == "Moderate"; guild_kvp += 5; landed_lvp -= 5; landed_other += 5 if (traditionalist_ideology == "Radical" and not kvp_formed); landed_traditionalist += 5 if traditionalist_ideology == "Moderate"; landed_kvp += 5; faithful_lvp += 3; faithful_marcher -= 3; coalition_dissent -= 1; heuss_explode_time = time + 8; heuss_election_time = time
 face-image: img/portraits/heuss.jpg
 
-Theodor Hewes, a rising star and former member of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #FFCC00;">Liberal People's Party</span>. Backed primarily by the 'Social Republican Circle,' composed of former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members and liberal intellectuals and newspapers, Hewes has also garnered support from the broader party due to his decently conservative stances on economic and national issues.
+Theodor Hewes, a rising star and former member of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #FFCC00;">Golds</span>. Backed primarily by the 'Social Republican Circle,' composed of former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members and liberal intellectuals and newspapers, Hewes has also garnered support from the broader party due to his decently conservative stances on economic and national issues.
 
-Hewes's victory empowers the '<span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>' wing, strengthening our cooperation. Despite his personal leanings toward the right, Hewes remains one of the most committed and genuine supporters for <span style="color: #FFCC00;">liberal</span> <span style="color: #586593;">democracy</span> within the <span style="color: #FFCC00;">**LVP**</span>.
+Hewes's victory empowers the '<span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>' wing, strengthening our cooperation. Despite his personal leanings toward the right, Hewes remains one of the most committed and genuine supporters for <span style="color: #FFCC00;">liberal</span> <span style="color: #586593;">democracy</span> within the <span style="color: #C0A054;">**Golds**</span>.
 
 @dietrich
 title: Hermann Dietrich is elected!
 subtitle: Dietrich was the former leader of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing, and is somewhat skeptical of cooperation with us.
-unavailable-subtitle: [? if not heuss_lead: The wider <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing. ?][? if heuss_lead: His lack of energy and the burden of his governmental roles have led the party to favor Hewes instead. ?]
+unavailable-subtitle: [? if not heuss_lead: The wider <span style="color: #C0A054;">Golds</span> perceive him as too left-wing, despite his previous affiliation with the <span style="color: #D3C24D;">[+ ddp_name +]</span>'s business wing. ?][? if heuss_lead: His lack of energy and the burden of his governmental roles have led the party to favor Hewes instead. ?]
 choose-if: dietrich_lead
 on-arrival: lvp_relation += 7; lvp_left += 3; lvp_leader = "Dietrich"; pro_republic += 5; guild_lvp += 4; landed_lvp += 4; burgher_lvp -= 4; dietrich_lvp_explode_time = time + 8; dietrich_election_time = time
 face-image: img/portraits/dietrich.jpg
 
-Hermann Dietrich, formerly affiliated with the business wing of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dietrich is mainly supported by smaller businesses and ruralites, and [? if chancellor == "Askew" and not marcher_in_government: is known for formulating Askew's emergency decrees during his tenure as Finance Minister.?][? if not (chancellor == "Askew" and not marcher_in_government): is known for his fiscal conservatism.?]
+Hermann Dietrich, formerly affiliated with the business wing of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dietrich is mainly supported by smaller businesses and ruralites, and [? if chancellor == "Askew" and not marcher_in_government: is known for formulating Askew's emergency decrees during his tenure as Finance Minister.?][? if not (chancellor == "Askew" and not marcher_in_government): is known for his fiscal conservatism.?]
 
 Despite this, Dietrich is not as extreme as the industrialists on the right of the party and remains open to cooperation with us if there is no other majority. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @curtius
 title: Julius Curtius is elected!
 subtitle: Curtius was a member of the former <span style="color: #C0A054;">**Golds**</span>, and is a committed Strattonite and member of their left wing. He has since succeeded Stratton on foreign policy matters.
-unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, and point out his lackluster record as a successor to Stratton. ?][? if dietrich_lead or heuss_lead: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Lytton. ?][? if lvp_deadlock: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span style="color: #C0A054;">Golds</span> member. ?]
+unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #C0A054;">Golds</span> perceive him as too left-wing, and point out his lackluster record as a successor to Stratton. ?][? if dietrich_lead or heuss_lead: The left wing of the <span style="color: #C0A054;">Golds</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Lytton. ?][? if lvp_deadlock: The left wing of the <span style="color: #C0A054;">Golds</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span style="color: #C0A054;">Golds</span> member. ?]
 choose-if: curtius_lead
 view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen)
 on-arrival: lvp_relation += 7; lvp_left += 4; lvp_leader = "Curtius"; pro_republic += 5; guild_lvp += 6; burgher_lvp += 6
@@ -266,14 +266,14 @@ As a former member of the <span style="color: #C0A054;">**Golds**</span>'s left 
 @dingeldey
 title: Eduard Dingeldey is elected.
 subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**Golds**</span>, and commonly associated with the industrial-right of the party.
-unavailable-subtitle: The right-industrial faction of the <span style="color: #FFCC00;">LVP</span> lack the power necessary to install their candidate.
+unavailable-subtitle: The right-industrial faction of the <span style="color: #C0A054;">Golds</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
 on-arrival: lvp_relation -= 8; lvp_right += 5; lvp_leader = "Dingeldey"; burgher_lvp -= 4; commons_lvp -= 2; guild_lvp += 3; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
+Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**Golds**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #FFCC00;">**LVP**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #FFCC00;">**LVP**</span>'s internal politics.
+However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #C0A054;">**Golds**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #C0A054;">**Golds**</span>'s internal politics.
 
 @deadlock
 title: The vote has been deadlocked!

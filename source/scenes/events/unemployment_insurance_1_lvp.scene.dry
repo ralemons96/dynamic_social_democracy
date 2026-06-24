@@ -13,7 +13,7 @@ go-to: what_do if unemployment_insurance_crisis = 2
 
 The economic crisis has caused mass layoffs all throughout the Commonwealth, affecting the industrial working class the hardest. Our welfare spending is increasing due to the greater need.
 
-In the midst of all this, our right-wing coalition partners in the <span style="color: #FFCC00;">**Liberal People's**</span> [? if unionist_party_name != "Concord" and unionist_ideology != "Left": and <span style="color: #000000;">Unionists</span>?][? if (unionist_party_name == "Concord" and unionist_ideology != "Left") or (concord_ideology == "Left" and concord_formed): and <span style="color: #000000;">**Concord**</span>?] have a plan to cut benefits for the unemployed, lower taxes on the rich, and raise taxes on the working class, as part of a plan to balance the budget and discipline labor. They do not see a possibility for compromise. If we do not accept, they could blow up the coalition.
+In the midst of all this, our right-wing coalition partners in the <span style="color: #C0A054;">**Golds**</span> [? if unionist_party_name != "Concord" and unionist_ideology != "Left": and <span style="color: #000000;">Unionists</span>?][? if (unionist_party_name == "Concord" and unionist_ideology != "Left") or (concord_ideology == "Left" and concord_formed): and <span style="color: #000000;">**Concord**</span>?] have a plan to cut benefits for the unemployed, lower taxes on the rich, and raise taxes on the working class, as part of a plan to balance the budget and discipline labor. They do not see a possibility for compromise. If we do not accept, they could blow up the coalition.
 
 [? if unemployment_insurance_crisis = 2 : This is the second such ultimatum thrown by the Right. Obviously, the bourgeoisie are trying to remove us from the government. ?]
 
@@ -76,9 +76,9 @@ A compromise put forward by Heinrich Askew is put into place and the issue is de
 unavailable-subtitle: [? if ((lvp_relation < 35 and lvp_ideology == "Right") or (lvp_relation < 30 and lvp_ideology == "Moderate") or (lvp_relation < 25 and lvp_ideology == "Left")) or (unionist_relation < 30 or (unionist_relation < 25 and unionist_leader == "Joos") or (unionist_relation < 20 and unionist_leader == "Emperor")): We do not have good enough relations with the right-wing parties. ?]
 choose-if: ((lvp_relation >= 35 and lvp_ideology == "Right") or (lvp_relation >= 30 and lvp_ideology == "Moderate") or (lvp_relation >= 25 and lvp_ideology == "Left")) and (unionist_relation >= 30 or (unionist_relation >= 25 and unionist_leader == "Joos") or (unionist_relation >= 20 and unionist_leader == "Emperor"))
 
-The <span style="color: #FFCC00;">**LVP**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the bourgeoisie.
+The <span style="color: #C0A054;">**Golds**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the bourgeoisie.
 
-The <span style="color: #FFCC00;">**LVP**</span> are themselves are split about this, the Assembly delegation may go against the compromise fashioned by their own ministers. [? if lvp_ideology == "Left": However, the <span style="color: #FFCC00;">**LVP**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span style="color: #FFCC00;">**LVP**</span>.
+The <span style="color: #C0A054;">**Golds**</span> are themselves are split about this, the Assembly delegation may go against the compromise fashioned by their own ministers. [? if lvp_ideology == "Left": However, the <span style="color: #C0A054;">**Golds**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span style="color: #C0A054;">**Golds**</span>.
 
 - @accept_compromise: Accept the compromise.
 - @destroy: Reject the compromise and let this government fall.
@@ -90,7 +90,7 @@ go-to: compromised_failed if (lvp_ideology == "Moderate" and lvp_relation < 45) 
 
 @compromised_failed
 
-We have accepted the compromise offered by the bourgeoisie. However, Commonwealth industry has lobbied especially hard to foment the <span style="color: #FFCC00;">**LVP**</span>'s split from the Grand coalition, and the compromise is voted down within the <span style="color: #FFCC00;">**LVP**</span> itself.
+We have accepted the compromise offered by the bourgeoisie. However, Commonwealth industry has lobbied especially hard to foment the <span style="color: #C0A054;">**Golds**</span>'s split from the Grand coalition, and the compromise is voted down within the <span style="color: #C0A054;">**Golds**</span> itself.
 
 - @destroy: At least we tried, let this government fall.
 - @prolong: Decide this at a later date.
@@ -102,4 +102,4 @@ on-arrival: commons_marcher -= 5; disfavored_marcher -= 6; commons_collectivist 
 
 We have accepted the compromise offered by the bourgeoisie. Many of the workers and unemployed see this as a betrayal, although we present it as the successful aversion of a much worse alternative.
 
-Despite the intense lobbying by Commonwealth industry, the <span style="color: #FFCC00;">**LVP**</span> have voted for the compromise in the narrowest of votes.
+Despite the intense lobbying by Commonwealth industry, the <span style="color: #C0A054;">**Golds**</span> have voted for the compromise in the narrowest of votes.

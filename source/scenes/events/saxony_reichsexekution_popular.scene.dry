@@ -49,4 +49,4 @@ on-arrival: red_saxony = 0; commons_marcher -= 5; commons_collectivist -= 5; dis
 
 The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
 
-[+ president +] appoints [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] member Wilhelm Bünger as <i>Reichskommissar</i> to govern Dornwich, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.
+[+ president +] appoints [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] member Wilhelm Bünger as <i>Reichskommissar</i> to govern Dornwich, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.

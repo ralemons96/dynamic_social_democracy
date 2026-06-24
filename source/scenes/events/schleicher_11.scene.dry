@@ -37,7 +37,7 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if dstp_gnu: - <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?]
 
-[? if lvp_gnu: - <span style="color: #FFCC00;">**LVP**</span> ?]
+[? if lvp_gnu: - <span style="color: #C0A054;">**Golds**</span> ?]
 
 [? if unionist_gnu: - <span style="color: #000000;">Unionist Party</span> ?]
 

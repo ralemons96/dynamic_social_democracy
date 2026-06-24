@@ -1,4 +1,4 @@
-title: The <span style="color: #FFCC00;">**LVP**</span> and the the Banners
+title: The <span style="color: #C0A054;">**Golds**</span> and the the Banners
 subtitle: Due to its militarization, the <span style="color: #FFCC00;">liberals</span> are leaving the the Banners.
 view-if: banner_militancy >= 0.04 and not banner_exit and not banner_stay and lvp_formed and lvp_ideology != "Left"
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
 !}
 max-visits: 1
 
-= The <span style="color: #FFCC00;">**LVP**</span> and the the Banners
+= The <span style="color: #C0A054;">**Golds**</span> and the the Banners
 
-The the Banners has increasingly militarized, acquiring arms, conducting paramilitary training, and attracting a stream of <span style="color: #9B0000;">radicalized</span> <span style="color: #c00000;">**Marchers**</span> members. The <span style="color: #FFCC00;">**LVP**</span> in particular is offended by this, as many of its members originate from the semi-monarchist <span style="color: #C0A054;">**Golds**</span> and even have <span style="color: #3E88B3;">**Wardens**</span> memberships. The organization's militarization has provided them with a pretext to sever formal ties with this <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
+The the Banners has increasingly militarized, acquiring arms, conducting paramilitary training, and attracting a stream of <span style="color: #9B0000;">radicalized</span> <span style="color: #c00000;">**Marchers**</span> members. The <span style="color: #C0A054;">**Golds**</span> in particular is offended by this, as many of its members originate from the semi-monarchist <span style="color: #C0A054;">**Golds**</span> and even have <span style="color: #3E88B3;">**Wardens**</span> memberships. The organization's militarization has provided them with a pretext to sever formal ties with this <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
 
 - @let_go: Let the <span style="color: #FFCC00;">liberals</span> go.
 - @lower_militancy: We must lower the the Banners's militancy.
@@ -28,7 +28,7 @@ The the Banners has increasingly militarized, acquiring arms, conducting paramil
 @let_go
 on-arrival: banner_strength *= 0.95; unionist_relation -= 3; lvp_relation -= 5; lvp_right += 3; pro_republic -= 3; lvp_leave_banner = 1
 
-We have judged that the the Banners's militancy is more important than maintaining a coalition with the <span style="color: #FFCC00;">**LVP**</span>. The the Banners members affiliated with the <span style="color: #FFCC00;">liberals</span> leave, and this may inspire the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to follow suit.
+We have judged that the the Banners's militancy is more important than maintaining a coalition with the <span style="color: #C0A054;">**Golds**</span>. The the Banners members affiliated with the <span style="color: #FFCC00;">liberals</span> leave, and this may inspire the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to follow suit.
 
 # TODO: this should make it harder to form Commonwealth coalitions
 
@@ -36,7 +36,7 @@ We have judged that the the Banners's militancy is more important than maintaini
 @lower_militancy
 on-arrival: banner_militancy *= 0.5
 
-Bowing to the <span style="color: #FFCC00;">**LVP**</span>'s demands, we reduce the the Banners's military training, thus inducing them to stay.
+Bowing to the <span style="color: #C0A054;">**Golds**</span>'s demands, we reduce the the Banners's military training, thus inducing them to stay.
 
 
 @keep_them
@@ -44,4 +44,4 @@ unavailable-subtitle: They are unable to be convinced at this time.
 choose-if: strife >= 3 and lvp_relation >= 55 and lvp_ideology != "Right"
 on-arrival: lvp_left += 3; lvp_relation += 3; guild_traditionalist += 3; guild_lvp -= 3; pro_republic += 3
 
-Seeing the strife that has filled the Commonwealth's streets, the <span style="color: #FFCC00;">**LVP**</span> seem to be convinced that it is necessary for the the Banners to be militarized, and will not leave the organization. Unfortunately, many die-hard <span style="color: #3E88B3;">**Wardens**</span> members within the party are constantly pressing for a reversal of this policy.
+Seeing the strife that has filled the Commonwealth's streets, the <span style="color: #C0A054;">**Golds**</span> seem to be convinced that it is necessary for the the Banners to be militarized, and will not leave the organization. Unfortunately, many die-hard <span style="color: #3E88B3;">**Wardens**</span> members within the party are constantly pressing for a reversal of this policy.

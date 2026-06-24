@@ -9,7 +9,7 @@ card-image: img/muller_cabinet.jpg
 
 = Coalition Affairs
 
-Our coalition is in trouble. The right-leaning members of the [? if not in_social_liberal_coalition: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?] [? if not in_social_catholic_coalition:[? if in_grand_coalition and not lvp_formed: and <span style="color: #C0A054;">**Golds**</span> ?][? if not lvp_formed and in_weimar_coalition: [? if not in_social_liberal_coalition: and?] <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?][? if lvp_formed: [? if not in_social_liberal_coalition: and?] <span style="color: #FFCC00;">**LVP**</span> ?]?] are constantly criticizing us for our policies, and are threatening to call a vote of no confidence to collapse this government[? if marcher_heartland :, or to do the same for our government in the state of Heartland?].
+Our coalition is in trouble. The right-leaning members of the [? if not in_social_liberal_coalition: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?] [? if not in_social_catholic_coalition:[? if in_grand_coalition and not lvp_formed: and <span style="color: #C0A054;">**Golds**</span> ?][? if not lvp_formed and in_weimar_coalition: [? if not in_social_liberal_coalition: and?] <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?][? if lvp_formed: [? if not in_social_liberal_coalition: and?] <span style="color: #C0A054;">**Golds**</span> ?]?] are constantly criticizing us for our policies, and are threatening to call a vote of no confidence to collapse this government[? if marcher_heartland :, or to do the same for our government in the state of Heartland?].
 
 How do we reduce tensions with the coalition?
 
@@ -49,7 +49,7 @@ Fine. By cutting welfare, we have reduced dissent within the coalition.
 subtitle: -2 resources
 view-if: historical_mode = 0
 choose-if: (resources >= 2 and in_weimar_coalition or in_popular_front or in_minority_government) or ((resources >= 2 and in_grand_coalition and not (gold_ideology == "Right" and year >= 1930) and not lvp_formed) or (resources >= 2 and (in_grand_coalition or in_weimar_coalition) and not (lvp_ideology == "Right" and year >= 1930) and lvp_formed))
-unavailable-subtitle: [? if resources < 2: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
+unavailable-subtitle: [? if resources < 2: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?]
 on-arrival: resources -= 2; coalition_dissent -= 1
 
 By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save democracy.

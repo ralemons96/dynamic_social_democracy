@@ -9,11 +9,11 @@ card-image: img/weimar_coalition_2.jpg
 
 = Inter-Party Relationships
 
-The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Unity Coalition of the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">Unionists</span>, and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Liberal People's**</span>?] parties. [? if concord_formed: However the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has only really made cooperation with the <span style="color: #D3C24D;">liberals</span> possible. ?] We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Unity Coalition of the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">Unionists</span>, and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties. [? if concord_formed: However the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has only really made cooperation with the <span style="color: #D3C24D;">liberals</span> possible. ?] We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
 - @liberals: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?] and conservative-liberal <span style="color: #C0A054;">Commonwealth People's Party</span>.
 - @liberals_ddp: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?].
-- @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Liberal People's Party</span>.
+- @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Golds</span>.
 - @center: Strengthen our bonds with the Catholic [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @cvp: Reconcile with the <span style="color: #000000;">Christian People's Party</span>.
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Communist Party</span>.
@@ -155,14 +155,14 @@ The former two liberal parties have been our closest allies through the course o
 @lvp_stresemann
 on-arrival: lvp_relation += 6*(1 - dissent); lvp_left += 1
 
-Gustav Stratton, the former leader of the <span style="color: #C0A054;">**Golds**</span>, is the best foreign policy leaders of the republic, and while he has previously expressed <span style="color: #808080;">monarchist</span> tendencies, he has been friendly towards us. Stratton's influence over the right wing of the <span style="color: #FFCC00;">**LVP**</span> helps sway some more reluctant party members towards us.
+Gustav Stratton, the former leader of the <span style="color: #C0A054;">**Golds**</span>, is the best foreign policy leaders of the republic, and while he has previously expressed <span style="color: #808080;">monarchist</span> tendencies, he has been friendly towards us. Stratton's influence over the right wing of the <span style="color: #C0A054;">**Golds**</span> helps sway some more reluctant party members towards us.
 
 @lvp_loss
 on-arrival: lvp_relation += 4*(1 - dissent); lvp_left += 1
 
-With the death of Gustav Stratton, the right wing of the <span style="color: #FFCC00;">**LVP**</span> is much less likely to be accommodating of us. In addition, the <span style="color: #D3C24D;">liberals</span> are electorally in decline, so perhaps our efforts are best spent elsewhere.
+With the death of Gustav Stratton, the right wing of the <span style="color: #C0A054;">**Golds**</span> is much less likely to be accommodating of us. In addition, the <span style="color: #D3C24D;">liberals</span> are electorally in decline, so perhaps our efforts are best spent elsewhere.
 
-However, given the influence of the <span style="color: #FFCC00;">**LVP**</span> among the other <span style="color: #808080;">right</span>-leaning parties [? if president == "DuFour" or president_ideology == "Moderate": and with President [+ president +] ?], it can still be helpful to influence them. 
+However, given the influence of the <span style="color: #C0A054;">**Golds**</span> among the other <span style="color: #808080;">right</span>-leaning parties [? if president == "DuFour" or president_ideology == "Moderate": and with President [+ president +] ?], it can still be helpful to influence them. 
 
 @dnvp
 view-if: wacky_weimar
@@ -396,7 +396,7 @@ if (d3 && window) {
 !}
 
 
-Due to our shared values of wholesomeness and love, we have agreed to run a joint list with the <span style="color: #3E88B3;">**Traditionalists**</span> and welcome them into our parliamentary group. However, because of this deal, we had to expel all our <span style="color: #005EB8;">Jewish</span> members, who join the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
+Due to our shared values of wholesomeness and love, we have agreed to run a joint list with the <span style="color: #3E88B3;">**Traditionalists**</span> and welcome them into our parliamentary group. However, because of this deal, we had to expel all our <span style="color: #005EB8;">Jewish</span> members, who join the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 

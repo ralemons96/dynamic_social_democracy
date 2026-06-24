@@ -38,7 +38,7 @@ on-arrival: collectivist_relation -= 8; commons_marcher -= 4; disfavored_marcher
 Unfortunately, we have failed to accomplish all of the goals the <span style="color: #700000;">**Collectivists**</span> set out. They plan to call a vote of no confidence against our government, and have already begun mounting a propaganda campaign to delegitimize our government in the eyes of the workers.
 
 - @new_elections: New elections will be called.
-- @skibidi: Could we form a new government based on the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist: (and possibly <span style="color: #C0A054;">**Golds**</span>)?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?
+- @skibidi: Could we form a new government based on the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist: (and possibly <span style="color: #C0A054;">**Golds**</span>)?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]?
 
 @goals_success
 on-arrival: commons_marcher += 4; disfavored_marcher += 4; collectivist_relation += 6; commons_collectivist += 4; collectivist_coalition_success += 1; vanguard_strength += 150; vanguard_militancy += 0.1; reichsexekution += 1

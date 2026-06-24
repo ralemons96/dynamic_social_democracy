@@ -60,7 +60,7 @@ Fine. We enacted a massive austerity program to cut welfare, in order to maintai
 
 @resources
 choose-if: (resources >= 3 and in_weimar_coalition or in_popular_front or in_minority_government) or ((resources >= 3 and in_grand_coalition and not (gold_ideology == "Right" and year >= 1930) and not lvp_formed) or (resources >= 3 and (in_grand_coalition or in_weimar_coalition) and not (lvp_ideology == "Right" and year >= 1930) and lvp_formed))
-unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
+unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (gold_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> doesn't want our resources anymore. ?]
 subtitle: -3 resources
 on-arrival: resources -= 3; coalition_dissent -= 1
 

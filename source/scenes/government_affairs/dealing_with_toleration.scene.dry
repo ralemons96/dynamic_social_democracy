@@ -95,7 +95,7 @@ As a result, several <span style="color: #7A3C00;">Royalist</span> and <span sty
 title: Improve relations with the parties of the coalition.
 on-arrival: unionist_relation += 5*(1-dissent); gold_relation += 4*(1-dissent); ddp_relation += 4*(1-dissent); lvp_relation += 4*(1-dissent); left_dissent += 5; gold_left += 1; ddp_left += 0.5; ddp_cohesion -= 0.5; lvp_left += 1
 
-We have increased our level of contact and discussions with the parties of the coalition, primarily the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed and gold_exist:and <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>?].
+We have increased our level of contact and discussions with the parties of the coalition, primarily the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed and gold_exist:and <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed:and <span style="color: #C0A054;">**Golds**</span>?].
 
 Our attempts to reach out to the center-right are met with disdain by leftists within our party.
 

@@ -1,5 +1,5 @@
 title: Unemployment Insurance Crisis
-subtitle: The <span style="color: #FFCC00;">**LVP**</span> presents an ultimatum.
+subtitle: The <span style="color: #C0A054;">**Golds**</span> presents an ultimatum.
 new-page: true
 view-if: marcher_in_government = 1 and (year = 1929 and month >= 10) and (in_grand_coalition or in_weimar_coalition) and lvp_formed and not ui0_seen and not constructive_vonc
 on-arrival: budget -= 1 if budget >= 1; lvp_relation -= 3; ui1_seen = 1
@@ -10,12 +10,12 @@ face-image: img/Kollwitz_Arbeitslosigkeit.jpg
 
 = Unemployment Insurance Crisis
 
-With the Young Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #FFCC00;">**LVP**</span> sets its eyes on cutting the unemployment insurance program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
+With the Young Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #C0A054;">**Golds**</span> sets its eyes on cutting the unemployment insurance program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
 
-[? if lvp_right - lvp_left > 6: The <span style="color: #FFCC00;">**LVP**</span> have been moving significantly rightwards since their formation and their industrial backers want nothing less than a collapse of our government.?][? if not lvp_right - lvp_left > 8: Our cabinet has proposed a compromise featuring small cuts to the program along with a slight increase to contributions, but it is not clear if the <span style="color: #FFCC00;">**LVP**</span> themselves would agree to it. ?]
+[? if lvp_right - lvp_left > 6: The <span style="color: #C0A054;">**Golds**</span> have been moving significantly rightwards since their formation and their industrial backers want nothing less than a collapse of our government.?][? if not lvp_right - lvp_left > 8: Our cabinet has proposed a compromise featuring small cuts to the program along with a slight increase to contributions, but it is not clear if the <span style="color: #C0A054;">**Golds**</span> themselves would agree to it. ?]
 
 - @destroy: Fine. We will end this coalition.
-- @accept: Unfortunately, we must accept the <span style="color: #FFCC00;">**LVP**</span>'s demands for the sake of stability.
+- @accept: Unfortunately, we must accept the <span style="color: #C0A054;">**Golds**</span>'s demands for the sake of stability.
 - @compromise: Surely there is some compromise to be had?
 
 @destroy
@@ -37,7 +37,7 @@ Unfortunately, we must accept this if we are to maintain this coalition. The <sp
 The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
 
 @compromise
-unavailable-subtitle: [? if lvp_relation < 25: We do not have good enough relations with the right-wing parties.?] [? if lvp_right - lvp_left > 8: The <span style="color: #FFCC00;">**LVP**</span> industrialists have great control over their party. ?]
+unavailable-subtitle: [? if lvp_relation < 25: We do not have good enough relations with the right-wing parties.?] [? if lvp_right - lvp_left > 8: The <span style="color: #C0A054;">**Golds**</span> industrialists have great control over their party. ?]
 choose-if: lvp_relation >= 25 and (lvp_right - lvp_left < 8)
 
 [? if not stresemann_dead: Stratton?][? if stresemann_dead: The Strattonites?] and other friendly figures of the former <span style="color: #C0A054;">**Golds**</span> has managed to rally [? if lvp_ideology == "Right" or lvp_ideology == "Moderate": an extremely slim majority of the party?][? if lvp_ideology == "Left": a majority of the party?] to vote in favor of a compromise that contains cuts to the program without increasing contributions. While this is not an ideal solution, what other choice do we have?
@@ -53,7 +53,7 @@ We have accepted the compromise offered by the bourgeoisie. Many of the workers 
 
 @accept_compromise_good
 choose-if: lvp_ideology == "Left" and lvp_relation >= 45
-unavailable-subtitle: [? if lvp_ideology != "Left": The <span style="color: #FFCC00;">**LVP**</span> industrialists have great control over their party. ?] [? if lvp_relation < 45: We do not have good enough relations with the right-wing parties. ?]
+unavailable-subtitle: [? if lvp_ideology != "Left": The <span style="color: #C0A054;">**Golds**</span> industrialists have great control over their party. ?] [? if lvp_relation < 45: We do not have good enough relations with the right-wing parties. ?]
 on-arrival: reformist_strength += 10; reformist_dissent -= 5; coalition_dissent -= 1; guild_lvp -= 3; guild_royalist += 3; unemployment_insurance_threshold = disfavored; gold_left += 3; ddp_left += 1; lvp_left += 3; ddp_cohesion += 1; unemployment_goal_marcher += 1; economic_growth -= 0.1
 
-We have pushed for an increase in both employer and employee contributions rather than to cut benefits for the program itself. The <span style="color: #FFCC00;">**LVP**</span> accepts with the influence of [? if not stresemann_dead: Stratton?][? if stresemann_dead: the Strattonites?] and pressures from members of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
+We have pushed for an increase in both employer and employee contributions rather than to cut benefits for the program itself. The <span style="color: #C0A054;">**Golds**</span> accepts with the influence of [? if not stresemann_dead: Stratton?][? if stresemann_dead: the Strattonites?] and pressures from members of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.

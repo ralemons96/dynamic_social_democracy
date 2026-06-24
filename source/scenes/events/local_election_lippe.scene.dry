@@ -504,7 +504,7 @@ Vote % changes are compared to the last *Assembly* election. <br> Seat % changes
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_ddp_lippe +] {!</td><td>!} [+ ddp_r_lippe +]% {!</td><td>!} [+ str_change_ddp_lippe +] {! </td></tr>!} ?]
 
-[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#FFCC00'> </div> !} LVP: {!</td><td>!} [+ lvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_lvp_lippe +] {!</td><td>!} [+ lvp_r_lippe +]% {!</td><td>!} [+ str_change_lvp_lippe +] {! </td></tr>!} ?]
+[? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_lvp_lippe +] {!</td><td>!} [+ lvp_r_lippe +]% {!</td><td>!} [+ str_change_lvp_lippe +] {! </td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ unionist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_unionist_lippe +] {!</td><td>!} [+ unionist_r_lippe +]% {!</td><td>!} [+ str_change_unionist_lippe +] {! </td></tr>!}
 
@@ -525,7 +525,7 @@ Vote % changes are compared to the last *Assembly* election. <br> Seat % changes
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_royalist_lippe +] {!</td><td>!} [+ royalist_r_lippe +]% {!</td><td>!} [+ str_change_royalist_lippe +] {! </td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-High Cross has been governed for the past four years by a coalition of the <span style="color: #c00000;">**Marchers**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span style="color: #c00000;">**Marchers**</span> maintaining a more moderate image.
+High Cross has been governed for the past four years by a coalition of the <span style="color: #c00000;">**Marchers**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span style="color: #c00000;">**Marchers**</span> maintaining a more moderate image.
 <hr id="read-marker">
 But the real question isn’t the future of High Cross—it’s what the election says about the nation. A <span style="color: #7A3C00;">Royalist</span> victory could prove the party still has life. But a defeat, even after throwing everything into their campaign, would be a crushing blow. With no local elections until the fall, the <span style="color: #7A3C00;">Royalists</span> won’t get another moment like this to remotivate their party.
 
