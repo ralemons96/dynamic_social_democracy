@@ -20,7 +20,7 @@ new-page: true
 
 = The <span style="color: #000000;">Unionists</span> merges with the <span style="color: #3E88B3;">**Traditionalists**</span>
 
-The <span style="color: #000000;">Unionist Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Christian People's Party</span> under [+ unionist_leader +], has been flirting with the idea of merging with [+ traditionalist_leader +]'s <span style="color: #3E88B3;">**Traditionalists**</span> for the past few months. Their mutual participation in the currently governing right-wing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #c00000;">socialists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation.
+The <span style="color: #000000;">Unionist Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Christian People's Party</span> under [+ unionist_leader +], has been flirting with the idea of merging with [+ traditionalist_leader +]'s <span style="color: #3E88B3;">**Traditionalists**</span> for the past few months. Their mutual participation in the currently governing right-wing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #c00000;">Reformists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation.
 
 Following our fallout with the <span style="color: #000000;">Unionist Party</span> over their new direction, our remaining allies within their ranks have been sidelined, leaving them powerless to oppose the proposed merger. This shift has enabled the party’s leadership, alongside newly integrated right-wing Protestant politicians, to open negotiations with the <span style="color: #3E88B3;">**Traditionalists**</span> on a possible unification. However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Schiele, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans.
 
@@ -248,7 +248,7 @@ The <span style="color: #000000;">Christians</span> and <span style="color: #6D5
 
 Taxation - Implement more progressive taxes and regulations, to ensure a fair the Commonwealth
 
-Economic Policy - Implement a 'Social market economy', a middle way between capitalism and <span style="color: #c00000;">socialism</span>
+Economic Policy - Implement a 'Social market economy', a middle way between capitalism and <span style="color: #c00000;">Reformism</span>
 
 Great Depression - A public works program is needed, the people must get back to work
 
@@ -259,13 +259,13 @@ view-if: concord_reparations and concord_economy and concord_monarchy and not co
 on-arrival: concord_coalition = 1
 go-to: coalition_right if concord_traditionalist_balance < 45; coalition_moderate if concord_traditionalist_balance >= 45 and concord_traditionalist_balance < 55; coalition_left if concord_traditionalist_balance >= 55
 
-The integration of the staunchly anti-<span style="color: #9B0000;">Marxist</span> <span style="color: #3E88B3;">**Traditionalists**</span> into the <span style="color: #000000;">Unionist Party</span> will likely rule out any future cooperation with them. However, a vocal minority of progressives still exists within the <span style="color: #000000;">Unionists</span>, who may argue in our favor.
+The integration of the staunchly anti-<span style="color: #9B0000;">Vaelist</span> <span style="color: #3E88B3;">**Traditionalists**</span> into the <span style="color: #000000;">Unionist Party</span> will likely rule out any future cooperation with them. However, a vocal minority of progressives still exists within the <span style="color: #000000;">Unionists</span>, who may argue in our favor.
 
 @coalition_right
 on-arrival: concord_traditionalist_balance += 10; concord_right += 5; unionist_relation -= 10; landed_unionist += 6; landed_dnf -= 2; landed_other -= 2; landed_royalist -= 2; guild_unionist += 10; guild_dnf -= 4; guild_gold -= 2; guild_lvp -= 2; guild_other -= 4; burgher_unionist += 6; burgher_dnf -= 2; burgher_other -= 4; commons_unionist -= 3; commons_marcher += 3; commons_ddp += 2; commons_lvp += 2; disfavored_unionist -= 3; disfavored_marcher += 3; disfavored_ddp += 2; disfavored_lvp += 2; concord_coalition_right = 1
 go-to: cvp_dnvp_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform.
+The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">Reformist</span> stance into the party platform.
 
 <span style="color: #c00000;">**Marchers**</span> - Strongly against governing with
 
@@ -279,7 +279,7 @@ The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #3
 on-arrival: unionist_relation -= 5; landed_unionist += 4; landed_other -= 2; landed_royalist -= 2; guild_unionist += 6; guild_gold -= 2; guild_lvp -= 2; guild_other -= 4; burgher_unionist += 2; burgher_other -= 2; concord_coalition_moderate = 1
 go-to: cvp_dnvp_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> has managed to keep an open door for future cooperation—though it's not a very wide one.
+The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">Reformist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> has managed to keep an open door for future cooperation—though it's not a very wide one.
 
 <span style="color: #c00000;">**Marchers**</span> - Against governing with
 
@@ -293,7 +293,7 @@ The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #3
 on-arrival: concord_traditionalist_balance -= 10; concord_left += 5; unionist_relation += 15; landed_unionist -= 4; landed_dnf += 2; landed_other += 4; guild_unionist -= 6; guild_dnf += 2; guild_other += 4; burgher_unionist -= 4; burgher_other += 4; commons_unionist += 3; commons_marcher += 3; disfavored_unionist += 3; disfavored_marcher += 3; concord_coalition_left = 1
 go-to: cvp_dnvp_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have attempted to use their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> and [+ unionist_leader +] has managed to keep an open door for future cooperation.
+The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have attempted to use their leverage to edit in their vehement anti-<span style="color: #c00000;">Reformist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> and [+ unionist_leader +] has managed to keep an open door for future cooperation.
 
 <span style="color: #c00000;">**Marchers**</span> - Open to an agreement
 

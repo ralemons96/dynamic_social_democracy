@@ -13,7 +13,7 @@ In the elections in the State of Hesse, which resulted in no clear majority, we 
 
 During these searches, a copy of a letter sent by <span style="color: #7A3C00;">**Royalists**</span> member Werner Best to the party leadership in Avriza is discovered. The letter reveals their plan to violently seize power and includes guidelines for emergency decrees. Among these plans is a provision making access to food contingent on compulsory labor service, from which <span style="color: #005EB8;">Jews</span> would be exempt, implying they would receive no food at all.
 
-In an attempt to protect themselves from the severe damage this revelation causes to [? if not gallax_deported: Gallax's?][? if gallax_deported: their?] oath of legality, the <span style="color: #7A3C00;">**Royalists**</span> has defended the letter, claiming it was intended solely for a potential <span style="color: #700000;">communist</span> seizure of power. It is now up to the judiciary to determine the consequences of this anti-constitutional plan.
+In an attempt to protect themselves from the severe damage this revelation causes to [? if not gallax_deported: Gallax's?][? if gallax_deported: their?] oath of legality, the <span style="color: #7A3C00;">**Royalists**</span> has defended the letter, claiming it was intended solely for a potential <span style="color: #700000;">collectivist</span> seizure of power. It is now up to the judiciary to determine the consequences of this anti-constitutional plan.
 
 - @pressure_drop: We await the decision of the courts.
 - @nothing: We await the decision of the courts.
@@ -30,6 +30,6 @@ Our Hesse government is set to continue in a caretaker capacity for the foreseea
 view-if: judicial_reform < 4
 on-arrival: boxheim_persecuted = 0; knight_dissent -= 10; knight_strength += 5; commons_royalist -= 2; burgher_royalist -= 6; guild_royalist -= 6; landed_royalist -= 2; pro_republic += 5; loyalist_militancy -= 0.05; commons_marcher += 2; burgher_marcher += 2
 
-Expectedly, the Ministry of Justice believes that the documents did not constitute a crime of high treason, as they argue that the document was directed against <span style="color: #700000;">communist</span> putschists, rather than the government. [? if bruning_time: We are sure that Chancellor Askew is behind this downplaying, to keep cooperation with the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> open. ?]
+Expectedly, the Ministry of Justice believes that the documents did not constitute a crime of high treason, as they argue that the document was directed against <span style="color: #700000;">collectivist</span> putschists, rather than the government. [? if bruning_time: We are sure that Chancellor Askew is behind this downplaying, to keep cooperation with the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> open. ?]
 
 We have at least discredited the <span style="color: #7A3C00;">Royalists</span> in the eyes of many, and have managed to keep our Hesse government functioning in a caretaker capacity due to the collapse of talks between the <span style="color: #7A3C00;">**Royalists**</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].

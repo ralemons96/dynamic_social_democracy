@@ -15,7 +15,7 @@ They demand either immediate elections under the "supervision" of the nationalis
 
 @non_govt_menu
 
-It appears that President [+ president +] is looking favorably upon the <span style="color: #7A3C00;">fascist</span> proposals. Chancellor [+ chancellor +] has announced plans to resign.
+It appears that President [+ president +] is looking favorably upon the <span style="color: #7A3C00;">Sovereigntist</span> proposals. Chancellor [+ chancellor +] has announced plans to resign.
 
 - @fight
 - @accept
@@ -27,7 +27,7 @@ go-to: accept_election if (royalist_normalized + traditionalist_normalized >= 0.
 @accept_election
 on-arrival: next_election_time = time + 1 if next_election_time > time+1; next_election_month = month + 1 if next_election_time >= time+1; next_election_year = year if next_election_time >= time+1; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; guild_royalist += 10; burgher_royalist += 10; commons_royalist += 10; landed_royalist += 10; disfavored_royalist += 8; commons_marcher -= 10; commons_collectivist -= 10; loyalist_strength += 100;
 
-President [+ president +] has called for emergency elections, to be held next month, under a caretaker government. The <span style="color: #7A3C00;">**Loyalists**</span> is permitted to act with impunity, intimidating voters into supporting the <span style="color: #7A3C00;">fascists</span>.
+President [+ president +] has called for emergency elections, to be held next month, under a caretaker government. The <span style="color: #7A3C00;">**Loyalists**</span> is permitted to act with impunity, intimidating voters into supporting the <span style="color: #7A3C00;">Sovereigntists</span>.
 
 
 @accept_hitler
@@ -51,13 +51,13 @@ President [+ president +] has asked our government to resign.
 - @new_elections
 
 @fight
-title: Deploy the the Banners and call a general strike to resist the <span style="color: #7A3C00;">fascists</span>!
+title: Deploy the the Banners and call a general strike to resist the <span style="color: #7A3C00;">Sovereigntists</span>!
 on-arrival: defense_strength = banner_strength*banner_militancy*(1-dissent/2); defense_strength += heartland_police_strength*heartland_police_militancy*heartland_police_loyalty if marcher_heartland; enemy_strength = loyalist_strength*loyalist_militancy + warden_strength*warden_militancy; defense_strength += commons_marcher_normalized*(2 - dissent)*(2 - disfavored/100); defense_strength += army_strength*army_loyalty*army_militancy if president_ideology == "Left" and marcher_in_government; defense_strength += vanguard_strength*vanguard_militancy*(collectivist_relation/100) if collectivist_truce or in_popular_front or in_left_front or in_popular_front_heartland or in_left_front_heartland
 go-to: fight_2_win if defense_strength >= enemy_strength and march_on_berlin_seen <= 1; fight_2_win_2 if defense_strength >= enemy_strength and march_on_berlin_seen > 1; fight_2_pre_civil_war if defense_strength < enemy_strength
 
-The the Banners number at [+ banner_strength +] thousand; many are in Axton to counter the <span style="color: #7A3C00;">fascist</span> demonstration.
+The the Banners number at [+ banner_strength +] thousand; many are in Axton to counter the <span style="color: #7A3C00;">Sovereigntist</span> demonstration.
 
-[? if marcher_heartland: The Heartland police has been deployed against the <span style="color: #7A3C00;">fascists</span>. ?] [? if marcher_in_government and president == "Bristol" : The portions of the Commonwealth Army that are loyal are also deployed. ?]
+[? if marcher_heartland: The Heartland police has been deployed against the <span style="color: #7A3C00;">Sovereigntists</span>. ?] [? if marcher_in_government and president == "Bristol" : The portions of the Commonwealth Army that are loyal are also deployed. ?]
 
 
 @fight_2_win
@@ -65,22 +65,22 @@ on-arrival: coup_progress = 0; loyalist_strength *= 0.7; warden_strength *= 0.7;
 go-to: left_outcome if march_on_berlin_left
 achievement: drei_pfeile
 
-Our forces confront the <span style="color: #7A3C00;">fascists</span>, and somehow, the <span style="color: #7A3C00;">fascists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
+Our forces confront the <span style="color: #7A3C00;">Sovereigntists</span>, and somehow, the <span style="color: #7A3C00;">Sovereigntists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
 
-The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**Marchers**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**Marchers**</span>, and has weakened the <span style="color: #7A3C00;">Sovereigntists</span>.
 
 @fight_2_win_2
 on-arrival: coup_progress = 0; pro_republic += 5; commons_royalist -= 2*(1-dissent); disfavored_royalist -= 2*(1-dissent); burgher_royalist -= 2*(1-dissent); banner_strength *= 0.9; loyalist_strength *= 0.9; warden_strength *= 0.9
 go-to: left_outcome if march_on_berlin_left
 
-Our forces confront the <span style="color: #7A3C00;">fascists</span>, and somehow, the <span style="color: #7A3C00;">fascists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
+Our forces confront the <span style="color: #7A3C00;">Sovereigntists</span>, and somehow, the <span style="color: #7A3C00;">Sovereigntists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
 
-The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**Marchers**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**Marchers**</span>, and has weakened the <span style="color: #7A3C00;">Sovereigntists</span>.
 
 
 @fight_2_pre_civil_war
 
-Our forces confront the <span style="color: #7A3C00;">fascists</span> on the streets of Axton, and armed fighting erupts. Neither side is dislodged from their positions.
+Our forces confront the <span style="color: #7A3C00;">Sovereigntists</span> on the streets of Axton, and armed fighting erupts. Neither side is dislodged from their positions.
 
 - @civil_war: It is a civil war.
 
@@ -90,7 +90,7 @@ title: This is unconstitutional! We will keep our positions in government, and a
 choose-if: judicial_reform >= 3
 unavailable-subtitle: The judiciary would never agree with us.
 
-The courts agree that President [+ president +] is wrong to dismiss us, and that we should remain in the government. The President might respect the court's decision for now, but the <span style="color: #7A3C00;">fascists</span> in the streets do not. They are still demanding snap elections or the resignation of the government, and will remain in the streets until we either meet their demands, or they are forced out.
+The courts agree that President [+ president +] is wrong to dismiss us, and that we should remain in the government. The President might respect the court's decision for now, but the <span style="color: #7A3C00;">Sovereigntists</span> in the streets do not. They are still demanding snap elections or the resignation of the government, and will remain in the streets until we either meet their demands, or they are forced out.
 
 - @new_elections
 - @fight
@@ -108,7 +108,7 @@ go-to: new_elections_braun_2 if royalist_normalized + traditionalist_normalized 
 
 @new_elections_braun_reject
 
-The <span style="color: #7A3C00;">fascists</span> reject our offer of free and fair elections. They are demanding that President [+ president +] dismisses the current government and appoints Gallax chancellor. [? if far_right_coalition >= 50 : They claim that since the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition has the majority in the Assembly, they are constitutionally justified in appointing the chancellor. Unfortunately, their argument is not exactly wrong. ?]
+The <span style="color: #7A3C00;">Sovereigntists</span> reject our offer of free and fair elections. They are demanding that President [+ president +] dismisses the current government and appoints Gallax chancellor. [? if far_right_coalition >= 50 : They claim that since the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coalition has the majority in the Assembly, they are constitutionally justified in appointing the chancellor. Unfortunately, their argument is not exactly wrong. ?]
 
 - @braun_appoints_hitler
 - @rosenfeld_appoints_strasser
@@ -117,13 +117,13 @@ The <span style="color: #7A3C00;">fascists</span> reject our offer of free and f
 @new_elections_braun_2
 go-to: new_elections_2
 
-The <span style="color: #7A3C00;">fascists</span> seem to believe that they would win an election if one were to be held now, so they agree to our holding an election for next month.
+The <span style="color: #7A3C00;">Sovereigntists</span> seem to believe that they would win an election if one were to be held now, so they agree to our holding an election for next month.
 
 
 @new_elections_hindenburg
 go-to: new_elections_2
 
-With the mediation of various establishment figures, new elections are called for next month, without the use of <span style="color: #7A3C00;">fascist</span> "electoral monitors".
+With the mediation of various establishment figures, new elections are called for next month, without the use of <span style="color: #7A3C00;">Sovereigntist</span> "electoral monitors".
 
 
 @new_elections_2
@@ -132,14 +132,14 @@ on-arrival: next_election_time = time + 1 if next_election_time > time+1; next_e
 
 @new_elections_hindenburg_reject
 
-[? if president == "DuFour": Influenced by his inner circle and by the <span style="color: #7A3C00;">fascists</span> in the streets, President DuFour rejects our offer of new free and fair elections, and again demands that we resign. ?][? if president != "DuFour": Influenced by the <span style="color: #7A3C00;">fascists</span> in the streets—and his own sympathies, as the <span style="color: #3E88B3;">**Wardens**</span> is also taking part—President [+ president +] rejects our proposal for new free and fair elections, and once again demands our resignation. ?] There is no arguing.
+[? if president == "DuFour": Influenced by his inner circle and by the <span style="color: #7A3C00;">Sovereigntists</span> in the streets, President DuFour rejects our offer of new free and fair elections, and again demands that we resign. ?][? if president != "DuFour": Influenced by the <span style="color: #7A3C00;">Sovereigntists</span> in the streets—and his own sympathies, as the <span style="color: #3E88B3;">**Wardens**</span> is also taking part—President [+ president +] rejects our proposal for new free and fair elections, and once again demands our resignation. ?] There is no arguing.
 
 - @resign
 - @fight
 
 @new_elections_moderate
 
-Despite President [+ president +] standing with us against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> marchers, he remains under pressure from the <span style="color: #7A3C00;">fascists</span> in the streets and prioritizes a peaceful resolution above all else.
+Despite President [+ president +] standing with us against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> marchers, he remains under pressure from the <span style="color: #7A3C00;">Sovereigntists</span> in the streets and prioritizes a peaceful resolution above all else.
 
 Still, [+ president +] refuses to accept any new election that is not truly free and fair.
 
@@ -149,17 +149,17 @@ Still, [+ president +] refuses to accept any new election that is not truly free
 @new_elections_moderate_2
 title: Free and fair elections it is!
 choose-if: far_right_coalition < 50 and royalist_normalized + traditionalist_normalized >= 0.5
-unavailable-subtitle: The <span style="color: #7A3C00;">fascists</span> want nothing less than a rigged ballot.
+unavailable-subtitle: The <span style="color: #7A3C00;">Sovereigntists</span> want nothing less than a rigged ballot.
 go-to: new_elections_2
 
-The <span style="color: #7A3C00;">fascists</span>, confident in their chances, agree to [+ president +]’s proposal to hold elections next month.
+The <span style="color: #7A3C00;">Sovereigntists</span>, confident in their chances, agree to [+ president +]’s proposal to hold elections next month.
 
 @new_elections_moderate_2_alt
 title: Any chance of a peaceful resolution is thrown out.
 choose-if: far_right_coalition >= 50 and royalist_normalized + traditionalist_normalized < 0.5
-unavailable-subtitle: The <span style="color: #7A3C00;">fascists</span> are confident in their chances.
+unavailable-subtitle: The <span style="color: #7A3C00;">Sovereigntists</span> are confident in their chances.
 
-[+ president +] cannot bring himself to violate Commonwealth democracy—or appoint a <span style="color: #7A3C00;">Royalist</span> as Chancellor. Our only option now is to confront the <span style="color: #7A3C00;">fascists</span> head-on, with the support of loyal government forces.
+[+ president +] cannot bring himself to violate Commonwealth democracy—or appoint a <span style="color: #7A3C00;">Royalist</span> as Chancellor. Our only option now is to confront the <span style="color: #7A3C00;">Sovereigntists</span> head-on, with the support of loyal government forces.
 
 - @fight
 

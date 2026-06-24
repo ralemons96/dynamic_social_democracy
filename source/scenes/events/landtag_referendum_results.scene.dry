@@ -25,7 +25,7 @@ max-visits: 1
 
 After months of intense and polarizing propaganda from both sides, the day of the plebiscite has arrived. For it to pass, over 50% of the eligible Heartland population must vote in favor—not just a majority of those who cast their ballots. Like the Young Plan referendum, this high threshold makes success nearly impossible. However, even a strong showing by the anti-democratic forces could give them significant momentum.
 
-[? if landtag_ref_collectivist: The <span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span> coalition—once unthinkable—is now a reality. <span style="color: #700000;">**Communist**</span>, <span style="color: #7A3C00;">**Royalist**</span> and <span style="color: #3E88B3;">**Wardens**</span> officials are sitting at the same tables at the polling stations, under the <span style="color: #7A3C00;">swastika</span> and the <span style="color: #700000;">Central Union star</span>. ?]
+[? if landtag_ref_collectivist: The <span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span> coalition—once unthinkable—is now a reality. <span style="color: #700000;">**Collectivist**</span>, <span style="color: #7A3C00;">**Royalist**</span> and <span style="color: #3E88B3;">**Wardens**</span> officials are sitting at the same tables at the polling stations, under the <span style="color: #7A3C00;">swastika</span> and the <span style="color: #700000;">Central Union star</span>. ?]
 
 - @PLR_results
 

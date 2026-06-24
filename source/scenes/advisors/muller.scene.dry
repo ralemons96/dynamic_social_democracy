@@ -8,7 +8,7 @@ view-if: muller_advisor = 1
 = Felicity Sarrow
 
 
-Sarrow is a former [? if chancellor = "Sarrow": and current ?] Chancellor, and is a long-time <span style="color: #c00000;">**Reformist**</span> leader.
+Sarrow is a former [? if chancellor = "Sarrow": and current ?] Chancellor, and is a long-time <span style="color: #c00000;">**Revisionist**</span> leader.
 
 - @coalition
 - @toleration

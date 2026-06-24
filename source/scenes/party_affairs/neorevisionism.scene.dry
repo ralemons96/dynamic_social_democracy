@@ -10,7 +10,7 @@ max-visits: 1
 
 = Neorevisionism: A New Idea
 
-Several young <span style="color: #f0456a;">socialists</span>, led by Carlo Marrow, are calling for a "new revisionism" in response to the <span style="color: #7A3C00;">Royalist</span> threat. This political tendency calls for a mass movement in favor of democracy in order to counter the <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">**Communist**</span> movements, and to update our rhetoric and imagery to appeal to emotion and not just reason.
+Several young <span style="color: #f0456a;">Reformists</span>, led by Carlo Marrow, are calling for a "new revisionism" in response to the <span style="color: #7A3C00;">Royalist</span> threat. This political tendency calls for a mass movement in favor of democracy in order to counter the <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">**Collectivist**</span> movements, and to update our rhetoric and imagery to appeal to emotion and not just reason.
 
 #- @shuffle_leadership: It's time to change our advisors to take into account new ideas.
 - @support_neo: Support the neorevisionist movement.
@@ -29,4 +29,4 @@ We support the new leaders, and start using new-style propaganda techniques in o
 @no_new_ideas
 on-arrival: knight_strength -= 5; center_strength += 5; neorevisionism = -1
 
-We do not need these new ideas; they seem to imitate too closely those of the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Communists**</span>.
+We do not need these new ideas; they seem to imitate too closely those of the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Collectivists**</span>.

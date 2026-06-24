@@ -20,9 +20,9 @@ max-visits: 1
 
 = Heartland state Assembly referendum
 
-[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span> has reversed its position and now supports the referendum! It’s astonishing that the <span style="color: #700000;">**Collectivists**</span>, which labels us <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>, is now collaborating with [+ royalist_leader +] and Mallin. They have rebranded the referendum as the "red plebiscite" following an unacceptable ultimatum to the Heartland government. The <span style="color: #700000;">**Communists**</span> have mobilized so extensively that many now believe they have "taken the lead" in directing the campaign from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. ?][? if not landtag_ref_collectivist: Fortunately, the <span style="color: #700000;">**Collectivists**</span>[? if collectivist_leader == "Halsmark": &nbsp;despite its <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascist</span> stance toward us,?] has refrained from taking a position on the referendum. The relatively low signature count of only [+ landtag_ref_signatures +]% is a positive sign, making a victory for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> highly unlikely. ?]
+[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span> has reversed its position and now supports the referendum! It’s astonishing that the <span style="color: #700000;">**Collectivists**</span>, which labels us <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>, is now collaborating with [+ royalist_leader +] and Mallin. They have rebranded the referendum as the "red plebiscite" following an unacceptable ultimatum to the Heartland government. The <span style="color: #700000;">**Collectivists**</span> have mobilized so extensively that many now believe they have "taken the lead" in directing the campaign from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. ?][? if not landtag_ref_collectivist: Fortunately, the <span style="color: #700000;">**Collectivists**</span>[? if collectivist_leader == "Halsmark": &nbsp;despite its <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntist</span> stance toward us,?] has refrained from taking a position on the referendum. The relatively low signature count of only [+ landtag_ref_signatures +]% is a positive sign, making a victory for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> highly unlikely. ?]
 
-[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span>’s newfound support for the referendum has dramatically altered the situation, crushing earlier optimism stemming from the low number of signatures gathered in the first phase. Fortunately, many <span style="color: #700000;">**Communist**</span> workers are disgusted by the "<span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span>" plebiscite. Likewise, many <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> voters are reluctant to cast their ballots in alignment with the <span style="color: #700000;">**Communists**</span>.?][? if not landtag_ref_collectivist: Even though this referendum is doomed to fail, it still provides the Commonwealth Right with an opportunity to deepen political polarization, as evidenced by the anti-democratic rightwards shift of the bourgeois parties.?]
+[? if landtag_ref_collectivist: The <span style="color: #700000;">**Collectivists**</span>’s newfound support for the referendum has dramatically altered the situation, crushing earlier optimism stemming from the low number of signatures gathered in the first phase. Fortunately, many <span style="color: #700000;">**Collectivist**</span> workers are disgusted by the "<span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span>" plebiscite. Likewise, many <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> voters are reluctant to cast their ballots in alignment with the <span style="color: #700000;">**Collectivists**</span>.?][? if not landtag_ref_collectivist: Even though this referendum is doomed to fail, it still provides the Commonwealth Right with an opportunity to deepen political polarization, as evidenced by the anti-democratic rightwards shift of the bourgeois parties.?]
 
 With our control of the Heartland government, we can campaign using state resources.
 
@@ -76,7 +76,7 @@ on-arrival: resources -= 1; burgher_marcher += (radio + commercialized_media); g
 face-image: img/vorwarts_2.jpg
 go-to: do_campaign
 
-The effect of this campaign depends on the strength of our already established media empire. [? if commercialized_media: Our commercialized newspapers and radio stations have been effective in persuading the middle classes to stay home. ?][? if radio: Our radio station has played a crucial role in reaching middle-class voters. ?][? if campaign_media: The widespread presence of <span style="color: #c00000;">socialist</span> propaganda among the working-class has helped sway some to our side. ?]
+The effect of this campaign depends on the strength of our already established media empire. [? if commercialized_media: Our commercialized newspapers and radio stations have been effective in persuading the middle classes to stay home. ?][? if radio: Our radio station has played a crucial role in reaching middle-class voters. ?][? if campaign_media: The widespread presence of <span style="color: #c00000;">Reformist</span> propaganda among the working-class has helped sway some to our side. ?]
 
 @urge_paramilitary
 view-if: not political_decree_landtag_2 and political_decree == 1 and chancellor == "Askew" and marcher_toleration
@@ -92,7 +92,7 @@ Joshua Heath and Lyle Bristol have successfully persuaded Askew to issue another
 This decision has further inflamed the already volatile political climate, prompting President DuFour to promise a review of the decree following strong backlash from the supporters of Mallin and Gallax.
 
 @kpd
-title: We will attempt to cause a general strike of <span style="color: #700000;">**Communist**</span> voters.
+title: We will attempt to cause a general strike of <span style="color: #700000;">**Collectivist**</span> voters.
 subtitle: -1 resource
 view-if: landtag_ref_collectivist and not collectivist_campaign_landtag
 choose-if: resources >= 1
@@ -101,7 +101,7 @@ on-arrival: resources -= 1; commons_collectivist -= 2; commons_royalist -= 1; co
 face-image: img/red-brown.jpg
 go-to: do_campaign
 
-Pointing out the obvious always helps, even some <span style="color: #8B0000;">**Vanguard**</span> men are disgusted by their own party collaborating with the <span style="color: #7A3C00;">fascists</span>. 
+Pointing out the obvious always helps, even some <span style="color: #8B0000;">**Vanguard**</span> men are disgusted by their own party collaborating with the <span style="color: #7A3C00;">Sovereigntists</span>. 
 
 @hope
 view-if: collectivist_campaign_landtag or political_decree_landtag_2 or radio_campaign_landtag or communist_campaign_landtag or bourgeois_campaign_landtag

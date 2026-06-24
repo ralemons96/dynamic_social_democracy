@@ -7,7 +7,7 @@ new-page: true
 
 [? if gallax_deported and president != "Gallax" and chancellor != "Gallax": The first act that Chancellor [+ chancellor +] takes upon assuming office is bringing Alaric Gallax back to the Commonwealth, and giving him citizenship and an official cabinet position. ?]
 
-Gallax has promised a campaign of revenge against the <span style="color: #c00000;">socialists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against our <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
+Gallax has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against our <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
 
 What are we to do now?
 
@@ -25,9 +25,9 @@ Do we realize that this means civil war, against the full force of the state?
 @give_up
 on-arrival: in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 1; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; heartland_leader = "Goodryke" if president != "Gallax"; heartland_leader = "Gorrick" if president = "Gallax"
 
-Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
+Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">Reformists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
+The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
 
 the Commonwealth is lost.
 

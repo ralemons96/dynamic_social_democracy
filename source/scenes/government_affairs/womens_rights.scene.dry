@@ -12,7 +12,7 @@ max-visits: 6
 
 According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in the Commonwealth.
 
-For better or for worse, the <span style="color: #c00000;">Socialists</span> stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if marcher_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+For better or for worse, the <span style="color: #c00000;">Reformists</span> stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if marcher_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
 - @labor: Institute policies that help women in the workforce.
 - @family: Reform marriage, divorce, and property law.

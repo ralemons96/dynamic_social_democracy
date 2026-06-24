@@ -9,7 +9,7 @@ card-image: img/braun.jpg
 
 = Heartland Affairs
 
-Heartland, by far the largest and most important state in the Commonwealth, is governed by our party, in a coalition with the [? if in_popular_front_heartland: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if ddp_in_popular_front_heartland and not lvp_formed: [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State**</span>?]?] and <span style="color: #700000;">**Communist**</span> parties.?][? if in_left_front_heartland: <span style="color: #700000;">**Communists**</span>.?] It is the most left-wing state government in the Commonwealth, led by Cael Pendrigon.
+Heartland, by far the largest and most important state in the Commonwealth, is governed by our party, in a coalition with the [? if in_popular_front_heartland: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if ddp_in_popular_front_heartland and not lvp_formed: [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State**</span>?]?] and <span style="color: #700000;">**Collectivist**</span> parties.?][? if in_left_front_heartland: <span style="color: #700000;">**Collectivists**</span>.?] It is the most left-wing state government in the Commonwealth, led by Cael Pendrigon.
 
 We can enact policies in Heartland. [? if president == "DuFour": However, President DuFour and the political right are closely monitoring our every move and can invoke Commonwealth intervention at any time. Tread lightly. ?]
 
@@ -60,10 +60,10 @@ view-if: warden_banned == 0
 view-if: vanguard_banned = 1
 on-arrival: vanguard_banned = 0; vanguard_strength += 100; heartland_police_loyalty -= 0.1; vanguard_goal_heartland -= 1; dufour_angry += 8
 
-The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
+The <span style="color: #700000;">Collectivist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
 
 @free_kpd
 view-if: vanguard_banned = 0
 on-arrival: vanguard_banned = 0; vanguard_strength += 50; vanguard_militancy += 0.03; heartland_police_loyalty -= 0.05; commons_collectivist += 4; disfavored_collectivist += 4; free_collectivist_goal_heartland -= 1; reichsexekution += 1; gold_relation -= 5; ddp_relation -= 4; lvp_relation -= 5; unionist_relation -= 4; gold_right += 2; ddp_right += 1; ddp_cohesion -= 0.5; lvp_right += 1.5; left_dissent -= 5; reformist_dissent += 5
 
-Restrictions are lifted and police are deployed to protect <span style="color: #700000;">Communist</span> demonstrations and organizations from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
+Restrictions are lifted and police are deployed to protect <span style="color: #700000;">Collectivist</span> demonstrations and organizations from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.

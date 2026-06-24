@@ -728,7 +728,7 @@ face-image: img/portraits/strasser.jpg
 
 After a failed negotiation previously, the bourgeois parties are now willing to offer a ministerial position to the <span style="color: #7A3C00;">**Royalists**</span> in exchange for their support. Gregor Crowde, leader of the <span style="color: #7A3C00;">**Royalists**</span>'s left wing, has been appointed as the new Interior Minister, a role he had been denied in the past due to his more radical anti-capitalist views.
 
-Dornwich, once a stronghold of <span style="color: #c00000;">socialism</span> and democracy, is now being dismantled by the <span style="color: #7A3C00;">Royalists</span>. The "democratic" aspect more so, as Crowde has pushed for the cabinet to adopt pro-worker and anti-capitalist policies in an attempt to win their votes. The state police, now largely comprised of <span style="color: #7A3C00;">Royalists</span>, are actively suppressing <span style="color: #c00000;">socialist</span> and <span style="color: #700000;">communist</span> organizations and meetings. Socialist newspapers critical of the government have been banned, and civil servants with suspected <span style="color: #c00000;">socialist</span> or <span style="color: #D3C24D;">democratic</span> leanings are being purged in large numbers.
+Dornwich, once a stronghold of <span style="color: #c00000;">Reformism</span> and democracy, is now being dismantled by the <span style="color: #7A3C00;">Royalists</span>. The "democratic" aspect more so, as Crowde has pushed for the cabinet to adopt pro-worker and anti-capitalist policies in an attempt to win their votes. The state police, now largely comprised of <span style="color: #7A3C00;">Royalists</span>, are actively suppressing <span style="color: #c00000;">Reformist</span> and <span style="color: #700000;">collectivist</span> organizations and meetings. Reformist newspapers critical of the government have been banned, and civil servants with suspected <span style="color: #c00000;">Reformist</span> or <span style="color: #D3C24D;">democratic</span> leanings are being purged in large numbers.
 
 However, there is a real possibility that Crowde could be removed from his position by his coalition partners, as they were never a huge fan of him.
 
@@ -774,7 +774,7 @@ on-display: {!
 
 Surprisingly, despite reluctance on both sides due to fears that the <span style="color: #808080;">reactionary</span> DuFour will order a <i>Commonwealth intervention</i> if a coalition were to form, <span style="color: #c00000;">Red</span> Dornwich is restored! 
 
-As one of the most left-wing and industrial states in the Commonwealth, we will use our leverage to implement comprehensive reforms and transform Dornwich into a stronghold of <span style="color: #c00000;">socialism</span>. DuFour’s patience is especially thin. Tread carefully.
+As one of the most left-wing and industrial states in the Commonwealth, we will use our leverage to implement comprehensive reforms and transform Dornwich into a stronghold of <span style="color: #c00000;">Reformism</span>. DuFour’s patience is especially thin. Tread carefully.
 
 @no_majority
 title: No majority can be found!
@@ -802,4 +802,4 @@ subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -=3; pro_republic += 5
 
-Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a goverment of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the bourgeois and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the communists... [? if aspd_share > 0: The ASPD seeing as we no longer require on coalition negoations to form goverment has decided to join us. ?] 
+Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a goverment of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the bourgeois and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the collectivists... [? if aspd_share > 0: The ASPD seeing as we no longer require on coalition negoations to form goverment has decided to join us. ?] 

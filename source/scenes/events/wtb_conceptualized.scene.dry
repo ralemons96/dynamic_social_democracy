@@ -39,7 +39,7 @@ Job creation and stimulus are necessary, but deficit spending, especially with h
 view-if: left_strength >= reformist_strength and left_strength >= center_strength and left_strength >= labor_strength
 on-arrival: left_strength += 10; reformist_dissent += 5; labor_dissent += 5; nationalization_support += 2
 
-We should use this economic crisis to transform the Commonwealth toward actual <span style="color: #9b0000;">socialism</span>, in accordance with our long-standing <span style="color: #c00000;">socialist</span> platform. Reformists and the Voss group argue that the plan is unrealistic and that we need to focus on more immediate improvements to workers' lives.
+We should use this economic crisis to transform the Commonwealth toward actual <span style="color: #9b0000;">Reformism</span>, in accordance with our long-standing <span style="color: #c00000;">Reformist</span> platform. Reformists and the Voss group argue that the plan is unrealistic and that we need to focus on more immediate improvements to workers' lives.
 
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10

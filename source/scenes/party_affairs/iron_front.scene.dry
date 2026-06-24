@@ -21,11 +21,11 @@ on-display: {!
 
 = The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">fascists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the trade unions, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">Sovereigntists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the trade unions, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
 
 [? if commons_marcher < 45 or commons_marcher < commons_royalist or commons_marcher < commons_collectivist : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>'s effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the <span style="color: #c00000;">**Marchers**</span> is no longer the dominant party among the workers. Many the Banners members have left, and many workers are not interested. ?]
 
-- @defense: Rally for defense against the <span style="color: #7A3C00;">fascists</span> with the the Banners.
+- @defense: Rally for defense against the <span style="color: #7A3C00;">Sovereigntists</span> with the the Banners.
 - @pacifism: Rally for pacifism, against nationalism and war.
 - @republic: Rally to save the democratic republic against <span style="color: #7A3C00;">dictatorship</span>.
 - @wtb: Rally for economic change and the WTB-Plan.
@@ -38,7 +38,7 @@ choose-if: resources >= banner_militarization_cost
 view-if: not banner_explode
 on-arrival: resources -= banner_militarization_cost; banner_strength += 50; banner_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">fascists</span> paramilitaries, strengthening the the Banners.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">Sovereigntists</span> paramilitaries, strengthening the the Banners.
 
 [? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 

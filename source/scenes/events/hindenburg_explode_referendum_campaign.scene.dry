@@ -46,7 +46,7 @@ face-image: img/weimar_coalition.jpg
 go-to: do_campaign
 max-visits: 1
 
-The Unity Coalition has reunited to defend the very constitution we forged together—holding joint rallies and coordinating their messaging in a show of unity. This helps dismantle the Right’s narrative that the referendum is a <span style="color: #c00000;">socialist</span> power grab.
+The Unity Coalition has reunited to defend the very constitution we forged together—holding joint rallies and coordinating their messaging in a show of unity. This helps dismantle the Right’s narrative that the referendum is a <span style="color: #c00000;">Reformist</span> power grab.
 
 @prussia
 title: We will utilize the Heartland government to discretely fund the campaign.
@@ -70,7 +70,7 @@ face-image: img/reichsbanner_2.jpg
 go-to: do_campaign
 max-visits: 1
 
-The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The bourgeois parties are criticizing us turning the the Banners into a <span style="color: #c00000;">socialist</span> militia.
+The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The bourgeois parties are criticizing us turning the the Banners into a <span style="color: #c00000;">Reformist</span> militia.
 
 @hope
 view-if: bourgeois_campaign_dufour or heartland_campaign_dufour or bourgeois_campaign_dufour

@@ -414,7 +414,7 @@ The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichsta
 @schemes
 title: Demand the above, and also guarantees for the continued independence of political organizations.
 subtitle: Including the <span style="color: #700000;">**Collectivists**</span>.
-unavailable-subtitle: [? if not marcher_win or total_r_alt_2 < 50: Not enough leverage. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_staal: Staal is dead-set on banning the <span style="color: #700000;">Communists</span>. ?]
+unavailable-subtitle: [? if not marcher_win or total_r_alt_2 < 50: Not enough leverage. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_staal: Staal is dead-set on banning the <span style="color: #700000;">Collectivists</span>. ?]
 view-if: gnu_formed
 choose-if: marcher_win and (pro_republic >= 50 or weimar_votes >= 45) and total_r_alt_2 >= 50 and not reichstag_fire_decree_staal
 on-arrival: {!

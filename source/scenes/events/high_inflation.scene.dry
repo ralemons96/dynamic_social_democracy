@@ -35,7 +35,7 @@ Price controls are very unpopular with the bourgeoisie and their representatives
 @bank
 on-arrival: capital_strike_progress += 2
 
-Unfortunately, but perhaps expectedly, the Commonwealth Bank is refusing to help the government, claiming that our <span style="color: #c00000;">socialist</span> policies are solely to blame. Commonwealth Bank president [? if not luther_reichsbank: Friedrich Dreyse ?][? if luther_reichsbank: Hans Lytton ?] is all but calling for the fall of the government.
+Unfortunately, but perhaps expectedly, the Commonwealth Bank is refusing to help the government, claiming that our <span style="color: #c00000;">Reformist</span> policies are solely to blame. Commonwealth Bank president [? if not luther_reichsbank: Friedrich Dreyse ?][? if luther_reichsbank: Hans Lytton ?] is all but calling for the fall of the government.
 
 @nothing
 on-arrival: capital_strike_progress += 1

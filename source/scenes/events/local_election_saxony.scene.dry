@@ -509,7 +509,7 @@ Dornwich is currently governed by the <span style="color: #fe9e00;">Old Reformis
 
 The Dornish Dispute arose when the Dornish branch of the <span style="color: #c00000;">**Marchers**</span> clashed with the party’s parliamentary delegation, demanding that Heldt dissolve the Unity Coalition and negotiate with the <span style="color: #700000;">**Collectivists**</span>—even after the Commonwealth intervention. This conflict led to the party’s reformists breaking away and forming the <span style="color: #fe9e00;">**ASPD**</span>, which has since evolved into a left-wing nationalist offshoot of the <span style="color: #c00000;">**Marchers**</span>. Despite initially securing a majority of the state Assembly delegation following the dispute, the <span style="color: #fe9e00;">**ASPD**</span> has struggled to achieve electoral success and now appears destined for irrelevance.
 
-Notable members of the <span style="color: #fe9e00;">**ASPD**</span> include Max Heldt, August Winnig (a supporter of the officers’ putsch), Ernst Niekisch (a "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolshevik</span>"), and its party leader, former Minister-President Wilhelm Buck. The party was labeled "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascist</span>" by the <span style="color: #700000;">**Communists**</span>, marking the <span class="tooltip-text" title="that's me! the modman!">origin</span> of the term.
+Notable members of the <span style="color: #fe9e00;">**ASPD**</span> include Max Heldt, August Winnig (a supporter of the officers’ putsch), Ernst Niekisch (a "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolshevik</span>"), and its party leader, former Minister-President Wilhelm Buck. The party was labeled "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntist</span>" by the <span style="color: #700000;">**Collectivists**</span>, marking the <span class="tooltip-text" title="that's me! the modman!">origin</span> of the term.
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_saxony +]% 
 
@@ -589,7 +589,7 @@ on-arrival: saxony_toleration = 1; guild_royalist -= 1; landed_royalist -= 1; co
 
 We have entered a toleration agreement with the bourgeois cabinet, and have made it unnecessary for them to cooperate with the <span style="color: #7A3C00;">**Royalists**</span>. As part of our agreement, the bourgeois parties have allowed Max Heldt to retain his Minister-President position, and for the <span style="color: #fe9e00;">**ASPD**</span> to occupy the Work and Welfare	ministry. 
 
-Despite the unsavory qualities of the <span style="color: #fe9e00;">**ASPD**</span>, they're still Marxist at the end of the day. The leftist Dornish organization has protested at our intervention, and many have jumped ship to the <span style="color: #700000;">**Collectivists**</span>.
+Despite the unsavory qualities of the <span style="color: #fe9e00;">**ASPD**</span>, they're still Vaelist at the end of the day. The leftist Dornish organization has protested at our intervention, and many have jumped ship to the <span style="color: #700000;">**Collectivists**</span>.
 
 @true_bourgeois_coalition_saxony
 title: The incumbent Heldt III cabinet will continue.
@@ -641,7 +641,7 @@ on-display: {!
 
 Surprisingly, despite reluctance on both sides due to fears that the <span style="color: #808080;">reactionary</span> DuFour will order a <i>Commonwealth intervention</i> if a coalition were to form, <span style="color: #c00000;">Red</span> Dornwich is restored! 
 
-As one of the most left-wing and industrial states in the Commonwealth, we will use our leverage to implement comprehensive reforms and transform Dornwich into a stronghold of <span style="color: #c00000;">socialism</span>. DuFour’s patience is especially thin. Tread carefully.
+As one of the most left-wing and industrial states in the Commonwealth, we will use our leverage to implement comprehensive reforms and transform Dornwich into a stronghold of <span style="color: #c00000;">Reformism</span>. DuFour’s patience is especially thin. Tread carefully.
 
 @no_majority
 title: No majority can be found!
@@ -704,4 +704,4 @@ subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -= 3; pro_republic += 5
 
-Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a government of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the bourgeois and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the <span style="color: #700000;">**Communists**</span>... [? if aspd_share > 0: The <span style="color: #fe9e00;">**ASPD**</span> seeing as we no longer require on coalition negotiations to form government has decided to join us. ?] 
+Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a government of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the bourgeois and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the <span style="color: #700000;">**Collectivists**</span>... [? if aspd_share > 0: The <span style="color: #fe9e00;">**ASPD**</span> seeing as we no longer require on coalition negotiations to form government has decided to join us. ?] 

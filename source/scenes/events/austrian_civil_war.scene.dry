@@ -1,6 +1,6 @@
 title: Uprising in the Freehold
 new-page: true
-subtitle: In response to police attacks, the <span style="color: #A50034;">Freehold socialists</span> are rising up...
+subtitle: In response to police attacks, the <span style="color: #A50034;">Freehold Reformists</span> are rising up...
 view-if: year = 1934 and (month = 2 or month = 3) and austrian_parliament_seen
 max-visits: 1
 on-arrival: austrian_civil_war_seen = 1
@@ -13,11 +13,11 @@ tags: event
 # long civil war if sdapo_strength = 5 or 4 - opportunity for interference/forced peace
 # instant defeat if sdapo_strength < 4
 
-The crisis in the Freehold is continuing. The "<span style="color: #7A3C00;">Freehold monarchist</span>" government led by Engelbert Dollfuß continues to rule by emergency decree. It has been persecuting its political opposition, primarily the <span style="color: #A50034;">social democrats</span> of the <span style="color: #A50034;">**Liberty Movement**</span>.
+The crisis in the Freehold is continuing. The "<span style="color: #7A3C00;">Freehold monarchist</span>" government led by Engelbert Dollfuß continues to rule by emergency decree. It has been persecuting its political opposition, primarily the <span style="color: #A50034;">Reformists</span> of the <span style="color: #A50034;">**Liberty Movement**</span>.
 
 [? if sdapo_strength < 6: Now, the Freehold is entering a state of civil war. When the police attempted to seize weapons from the Republikanischer Liberty militia, the Liberty militia responded with force, shooting at the government troops. Fighting has sporadically broken out between Liberty militia and government forces all over the Freehold. ?]
 
-[? if sdapo_strength >= 6: The government's attempts to suppress the <span style="color: #A50034;">socialist</span> party and the Liberty militia were met with mass protest, supported by the <span style="color: #c00000;">**Marchers**</span>[? if foreign_minister_party = "Marcher":&nbsp;and the Commonwealth government?]. [? if eu_austria: They are also supported by the recently formed <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>, with economic sanctions targeting the government. ?] ?]
+[? if sdapo_strength >= 6: The government's attempts to suppress the <span style="color: #A50034;">Reformist</span> party and the Liberty militia were met with mass protest, supported by the <span style="color: #c00000;">**Marchers**</span>[? if foreign_minister_party = "Marcher":&nbsp;and the Commonwealth government?]. [? if eu_austria: They are also supported by the recently formed <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>, with economic sanctions targeting the government. ?] ?]
 
 Eventually...
 
@@ -66,7 +66,7 @@ title: Can we bring the sides together for a peace?
 view-if: marcher_in_government and foreign_minister_party = "Marcher" and sdapo_strength = 5
 on-arrival: austria_peace = 1; pro_republic += 3; coup_progress -= 1; ddp_left += 2; gold_left += 2; lvp_left += 2
 
-The Freehold government obviously sees us as biased, so there is no way they will let us host peace negotiations. However, negotiations begin nonetheless. In Switzerland, with <span style="color: #7A3C00;">Fascist</span> the southern realms as the <span style="color: #7A3C00;">Freehold monarchists</span>' protector and the Commonwealth as the <span style="color: #A50034;">**Liberty Movement**</span>'s, a peace deal is hammered out. The <span style="color: #A50034;">socialists</span> are disarmed and give up all pretense of revolution, while the <span style="color: #ABDDA4;">right-wing</span> paramilitaries are also disarmed. Dictatorship ends, and normal government is restored, with free elections.
+The Freehold government obviously sees us as biased, so there is no way they will let us host peace negotiations. However, negotiations begin nonetheless. In Switzerland, with <span style="color: #7A3C00;">Sovereigntist</span> the southern realms as the <span style="color: #7A3C00;">Freehold monarchists</span>' protector and the Commonwealth as the <span style="color: #A50034;">**Liberty Movement**</span>'s, a peace deal is hammered out. The <span style="color: #A50034;">Reformists</span> are disarmed and give up all pretense of revolution, while the <span style="color: #ABDDA4;">right-wing</span> paramilitaries are also disarmed. Dictatorship ends, and normal government is restored, with free elections.
 
 Given the <span style="color: #A50034;">**Liberty Movement**</span>'s starting position, this is treated as a victory. Now begins the long work of reconstruction...
 

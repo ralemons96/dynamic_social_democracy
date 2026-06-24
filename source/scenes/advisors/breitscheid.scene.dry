@@ -17,7 +17,7 @@ Yardley is a long-time <span style="color: #c00000;">**Marchers**</span> leader,
 
 @breitscheid_international
 title: International Party Relations
-subtitle: Yardley is one of our contacts with international <span style="color: #c00000;">socialist</span> parties.
+subtitle: Yardley is one of our contacts with international <span style="color: #c00000;">Reformist</span> parties.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6; international_relations_timer -= 12; last_advisor_action = 1

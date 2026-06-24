@@ -90,7 +90,7 @@ on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_p
 
 Joshua Heath and other Heartland officials have successfully urged Askew to issue an emergency decree expanding police authority to suppress political extremism. The decree imposes restrictions on political meetings, organizations, newspapers, and posters, all of which now require police approval beforehand.
 
-As a result, several <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">Communist</span> newspapers have been banned, triggering violent clashes between their supporters and the police. [? if president == "DuFour": President DuFour has reluctantly signed the decree, but is losing patience with Askew for yielding to our demands. ?]
+As a result, several <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">Collectivist</span> newspapers have been banned, triggering violent clashes between their supporters and the police. [? if president == "DuFour": President DuFour has reluctantly signed the decree, but is losing patience with Askew for yielding to our demands. ?]
 
 @improve_relations
 title: Improve relations with the parties of the coalition.

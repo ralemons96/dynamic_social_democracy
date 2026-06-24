@@ -13,9 +13,9 @@ face-image: img/hugenberg_hitler.jpg
 
 Following their electoral truce in [? if lippe_election_seen: High Cross?][? if not lippe_election_seen: many local elections?], goodwill has been restored just enough to arrange a meeting between [+ royalist_leader +] and Mallin.
 
-- @nazi
+- @Sovereigntist
 
-@nazi
+@Sovereigntist
 title: What could those two be doing this time?
 
 Before this meeting, Mallin had already spoken with Chancellor von Staal, floating the idea of an arrangement that would give him control over national economic policy. As a result, he was hesitant to flip on the chancellor and side with a man who had repeatedly lied to him in the past.

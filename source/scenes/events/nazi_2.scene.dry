@@ -1,5 +1,5 @@
 title: Transport Strike in Axton
-subtitle: The <span style="color: #700000;">**Communists**</span> and <span style="color: #7A3C00;">**Royalists**</span> unite to bring the capital to a standstill.
+subtitle: The <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">**Royalists**</span> unite to bring the capital to a standstill.
 view-if: chancellor = "Goodryke" and papen_post and ((year = next_election_year and month >= next_election_month and (next_election_week == week or not rubicon)) or (year > next_election_year)) and collectivist_relation < 50 and collectivist_leader == "Halsmark"
 new-page: true
 tags: event
@@ -19,7 +19,7 @@ on-display: {!
 
 = Transport Strike in Axton
 
-In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Axton Transport Company) and our own <span style="color: #c00000;">socialist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span style="color: #700000;">**Collectivists**</span>'s union) has vehemently protested the change.
+In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Axton Transport Company) and our own <span style="color: #c00000;">Reformist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span style="color: #700000;">**Collectivists**</span>'s union) has vehemently protested the change.
 
 The <span style="color: #700000;">**Collectivists**</span> is not protesting a modest reduction in the BVG workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**RGO**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Gesamtverband and the <span style="color: #7A3C00;">**NSBO**</span>, the <span style="color: #7A3C00;">Royalist</span> union, is set to vote on whether to proceed with the strike.
 
@@ -47,7 +47,7 @@ on-arrival:  commons_marcher += 2; commons_collectivist += 2; disfavored_marcher
 
 Three days before the election, the strike brings all public transport in Axton to a halt, gaining significant sympathy among the city's working class. The <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">**Royalists**</span> quickly back the strikers, each hoping to make a breakthrough among working-class voters. However, the <span style="color: #c00000;">**Marchers**</span> benefits the most, as most strikers are from the Gesamtverband, reigniting worker support for the party.
 
-Chancellor [+ chancellor +] condemns the <span style="color: #7A3C00;">Royalist</span>-<span style="color: #700000;">Communist</span>-<span style="color: #c00000;">socialist</span> alliance as a national betrayal. Arbitrary arrests are made, paramilitary violence erupts, and clashes with police lead to numerous casualties.
+Chancellor [+ chancellor +] condemns the <span style="color: #7A3C00;">Royalist</span>-<span style="color: #700000;">Collectivist</span>-<span style="color: #c00000;">Reformist</span> alliance as a national betrayal. Arbitrary arrests are made, paramilitary violence erupts, and clashes with police lead to numerous casualties.
 
 Ultimately, the strike fizzles out after just a few days—unsustainable in a time of mass unemployment.
 
@@ -69,7 +69,7 @@ on-arrival: pro_republic -= 5; commons_collectivist += 2; disfavored_collectivis
 
 Three days before the election, the strike brings all public transport in Axton to a halt, garnering significant sympathy among the city's working class. The <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">**Royalists**</span> are quick to throw their propaganda weight behind the strikers, each hoping for a breakthrough among working-class voters. We have urged workers to abstain from participating in the illegal strike—pointing out that it never actually met the required three-fourths quorum, and that BVG workers remain better off than most in the Commonwealth.
 
-Chancellor [+ chancellor +] has condemned the <span style="color: #7A3C00;">Royalist</span>-<span style="color: #700000;">Communist</span> cooperation as a betrayal of the nation. While both the <span style="color: #700000;">**RGO**</span> and <span style="color: #7A3C00;">**NSBO**</span> are involved in the same strike, there is little coordination beyond that. The <span style="color: #700000;">**Collectivists**</span>, however, stands to gain the most politically.
+Chancellor [+ chancellor +] has condemned the <span style="color: #7A3C00;">Royalist</span>-<span style="color: #700000;">Collectivist</span> cooperation as a betrayal of the nation. While both the <span style="color: #700000;">**RGO**</span> and <span style="color: #7A3C00;">**NSBO**</span> are involved in the same strike, there is little coordination beyond that. The <span style="color: #700000;">**Collectivists**</span>, however, stands to gain the most politically.
 
 Ultimately, the strike fizzles out after just a few days—unsustainable in a time of mass unemployment.
 

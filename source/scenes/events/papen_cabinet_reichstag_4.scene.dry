@@ -64,7 +64,7 @@ Do we realize that this means civil war, against the full force of the state?
 title: Bide our time.
 on-arrival: commons_marcher -= 5; burgher_marcher -= 5; disfavored_marcher -= 5; pro_republic -= 15; banner_strength -= 500; banner_militancy *= 0.7; loyalist_strength += 50; vanguard_strength += 200; vanguard_militancy += 0.1; left_dissent += 60; center_dissent += 50; reformist_dissent += 40; labor_dissent += 40; knight_dissent += 40
 
-The <span style="color: #c00000;">**Marchers**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized the Banners and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**Vanguard**</span>, vowing to fight against Goodryke regardless of our instructions.
+The <span style="color: #c00000;">**Marchers**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized the Banners and party officials defeat to the <span style="color: #700000;">**Collectivists**</span> and the <span style="color: #700000;">**Vanguard**</span>, vowing to fight against Goodryke regardless of our instructions.
 
 - @reichstag_4
 - @papen_civil_war_2

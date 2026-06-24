@@ -169,9 +169,9 @@ The <span style="color: #3E88B3;">nationalists</span> are unified in their suppo
 - @candidates_dems
 
 @candidates_dems
-title: The <span style="color: #700000;">**Communists**</span>? The Unity Parties? Who will they support?
+title: The <span style="color: #700000;">**Collectivists**</span>? The Unity Parties? Who will they support?
 
-With the <span style="color: #700000;">**Communists**</span> having been heavily suppressed during Staal’s tenure, they are no longer a significant political force. [? if collectivist_banned: They are even banned outright, preventing them from endorsing their own candidate. With boycotting rendered pointless, they have no choice but to support whoever we put forward. ?][? if not collectivist_banned: Grateful for our role in sparing them from Staal’s crackdown months ago, they are fully backing whoever we choose to nominate. ?]
+With the <span style="color: #700000;">**Collectivists**</span> having been heavily suppressed during Staal’s tenure, they are no longer a significant political force. [? if collectivist_banned: They are even banned outright, preventing them from endorsing their own candidate. With boycotting rendered pointless, they have no choice but to support whoever we put forward. ?][? if not collectivist_banned: Grateful for our role in sparing them from Staal’s crackdown months ago, they are fully backing whoever we choose to nominate. ?]
 
 [? if unionist_candidate == "Aldermoor": The <span style="color: #000000;">Unionists</span> is not fully convinced to back [+ gnu_candidate +] and has chosen to run its own candidate: Konrad Aldermoor. The Mayor of Bradford since the Republic's inception, and a member of the Heartland legislature, he's an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower" to broaden its appeal among Protestants, Aldermoor was first proposed by Sedgewick himself. Though situated on the right wing of his party, he remains firmly committed to the Unity Republic and opposes Staal’s threats against it. ?]
 
@@ -242,7 +242,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Shackley"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Kurt Shackley to be our presidential candidate. However, convincing the Unity parties—many of which have shifted significantly to the right—to openly support a <span style="color: #c00000;">socialist</span> will be no easy task.
+We have nominated Kurt Shackley to be our presidential candidate. However, convincing the Unity parties—many of which have shifted significantly to the right—to openly support a <span style="color: #c00000;">Reformist</span> will be no easy task.
 
 @r1_menu
 view-if: round = 0
@@ -351,7 +351,7 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
 [? if ddp_candidate = marcher_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ marcher_candidate +], convinced by our argument that his election is the last line of defense for democracy against Staal. ?]
-[? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. Somewhat expectedly considering he's a <span style="color: #c00000;">socialist</span>. ?]
+[? if ddp_candidate != marcher_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ marcher_candidate +]. Somewhat expectedly considering he's a <span style="color: #c00000;">Reformist</span>. ?]
 
 @convince_lvp_spd
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
@@ -361,7 +361,7 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
 [? if lvp_candidate = marcher_candidate: The <span style="color: #C0A054;">**Golds**</span> is reluctantly persuaded to support [+ marcher_candidate +], convinced by our argument that his election is the last line of defense for democracy against Staal. ?]
-[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]—expected, given he's a <span style="color: #c00000;">socialist</span>, and that we're asking the <span style="color: #C0A054;">**Golds**</span> in the first place. ?]
+[? if lvp_candidate != marcher_candidate: Unfortunately, the <span style="color: #C0A054;">**Golds**</span> is unwilling to support [+ marcher_candidate +]—expected, given he's a <span style="color: #c00000;">Reformist</span>, and that we're asking the <span style="color: #C0A054;">**Golds**</span> in the first place. ?]
 
 @convince_lvp_unity
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
@@ -375,7 +375,7 @@ max-visits: 1
 
 @convince_dvp_unity
 title: Convince the <span style="color: #C0A054;">**Golds**</span> to support [+ marcher_candidate +].
-subtitle: [? if marcher_candidate = ddp_candidate and not gold_gnu: The <span style="color: #C0A054;">**Golds**</span> are uncomfortable in participating on the same side as the <span style="color: #c00000;">socialists</span>. ?]
+subtitle: [? if marcher_candidate = ddp_candidate and not gold_gnu: The <span style="color: #C0A054;">**Golds**</span> are uncomfortable in participating on the same side as the <span style="color: #c00000;">Reformists</span>. ?]
 unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> is not willing to support our candidate.
 view-if: (marcher_candidate = "Aldermoor" or marcher_candidate = "Hewes") and gold_candidate != marcher_candidate and not gold_gnu and not lvp_formed
 choose-if: gold_relation >= 60 and gold_leader != "Dingeldey" and gold_ideology != "Right"
@@ -642,7 +642,7 @@ if (rightTools) {
 }
 !}
 
-Kurt Shackley has won the presidency! This is a historic victory—how far we’ve come from the DuFour-backed Goodryke and Staal cabinets, all the way to a <span style="color: #c00000;">socialist</span> president. Perhaps now, at last, we can begin to reform the Commonwealth, set it back on the right track, and undo the damage Staal inflicted during his year in office.
+Kurt Shackley has won the presidency! This is a historic victory—how far we’ve come from the DuFour-backed Goodryke and Staal cabinets, all the way to a <span style="color: #c00000;">Reformist</span> president. Perhaps now, at last, we can begin to reform the Commonwealth, set it back on the right track, and undo the damage Staal inflicted during his year in office.
 
 - @game_over: Game over.
 

@@ -16,7 +16,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Golds</span>.
 - @center: Strengthen our bonds with the Catholic [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @cvp: Reconcile with the <span style="color: #000000;">Christian People's Party</span>.
-- @kpd: Work towards repairing relationships with the <span style="color: #700000;">Communist Party</span>.
+- @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
 - @dnvp: Open dialogue with [? if traditionalist_leader != "Lambach": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Lambach": Lambach and the <span style="color: #6D5298;">Christian Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
 - @spd_alone: The <span style="color: #c00000;">Marchers</span> can stand alone for now.
@@ -33,7 +33,7 @@ go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and collectivist_coaliti
 @kpd_1
 on-arrival: collectivist_relation += 6*(1 - dissent); communist_coalition += 1 if collectivist_inter_party_seen <= 1; reformist_dissent += 2; unionist_relation -= 2 if unionist_ideology == "Right"; gold_relation -= 3; ddp_relation -= 2; lvp_relation -= 3
 
-The <span style="color: #700000;">communists</span> are suspicious of our overtures, especially the <span style="color: #8B0000;">hardline</span> leadership, who persist in calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>". However, connections are made at the grassroots and local levels.
+The <span style="color: #700000;">collectivists</span> are suspicious of our overtures, especially the <span style="color: #8B0000;">hardline</span> leadership, who persist in calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>". However, connections are made at the grassroots and local levels.
 
 @kpd_rectification_of_history
 
@@ -54,7 +54,7 @@ This leads to tensions with the moderates and reformists within our party, and c
 @no_history
 on-arrival: collectivist_relation -= 3
 
-We have no need to apologize for the actions of Harden and Brask; it is the <span style="color: #700000;">communists</span>' fault for launching a violent insurrection.
+We have no need to apologize for the actions of Harden and Brask; it is the <span style="color: #700000;">collectivists</span>' fault for launching a violent insurrection.
 
 
 @kpd_2
@@ -65,7 +65,7 @@ After the success of the coalition government with the <span style="color: #7000
 @kpd_blutmai
 on-arrival: collectivist_relation += 3*(1 - dissent); reformist_dissent += 1
 
-After the events of Blütmai, reconciling with the <span style="color: #700000;">Communists</span> is difficult, if not impossible. Nevertheless, we must try.
+After the events of Blütmai, reconciling with the <span style="color: #700000;">Collectivists</span> is difficult, if not impossible. Nevertheless, we must try.
 
 @center
 subtitle: -1 resources

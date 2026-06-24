@@ -52,6 +52,7 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Vance | Walter | initial chancellor (Unionist; govt falls early) — *surname-only* |
 | Sedgewick | Adam | Unionist figure |
 | Askew | Edmund | Unionist (was "Heinrich") |
+| Croft | Wilhelm | former Unionist chancellor & presidential candidate (was "Wilhelm Marx" — the person, not the theorist; renamed in A4b to avoid colliding with Corwin Vael) |
 | Aldermoor | Konrad | |
 | Goodlake | Reynold | |
 | Trevannon | Gottfried | |

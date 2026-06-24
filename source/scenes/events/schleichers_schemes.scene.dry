@@ -9,7 +9,7 @@ face-image: img/portraits/StaalKurt.jpg
 
 = Staal's Schemes
 
-Chancellor Kurt von Staal claims to have a plan to save the Commonwealth, and he has reached out to the Social Democrats with vague promises. He claims that in order to govern, the Assembly must be temporarily suspended to prevent the Royalists and Communists from disrupting government, in effect giving him and DuFour dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
+Chancellor Kurt von Staal claims to have a plan to save the Commonwealth, and he has reached out to the Reformists with vague promises. He claims that in order to govern, the Assembly must be temporarily suspended to prevent the Royalists and Collectivists from disrupting government, in effect giving him and DuFour dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
 
 [? if works_program <= 0: The trade unions are somewhat favorable to Staal's plan, as they see a commonality between Staal's economic plan and the ADGB's WTB-plan for debt-funded job creation. However, the rest of our party is vehemently against Staal. ?]
 
@@ -40,7 +40,7 @@ go-to: schleicher_success if staal_support >= 50; schleicher_failed if staal_sup
 
 With the exception of the trade unions, every faction of the Marchers is horrified by this betrayal of democracy.
 
-[? if collectivist_relation <= 10 and left_strength + center_strength < labor_strength: Somehow, the Traditionalists has agreed to Staal's proposal, forming a temporary alliance with the general against Royalists and Communists. ?][? if unionist_relation >= 50 : The Unionist Party also supports Staal's plan. ?][? if gold_relation >= 30 : In addition, the Golds and some other smaller parties support this proposal. ?][? if collectivist_relation > 10 or left_strength + center_strength >= labor_strength: The Traditionalists, despite being courted by Staal, is not interested in joining this alliance. Traditionalists chairman Mallin seems to prefer working with Gallax to any alliance that includes the SPD. ?]
+[? if collectivist_relation <= 10 and left_strength + center_strength < labor_strength: Somehow, the Traditionalists has agreed to Staal's proposal, forming a temporary alliance with the general against Royalists and Collectivists. ?][? if unionist_relation >= 50 : The Unionist Party also supports Staal's plan. ?][? if gold_relation >= 30 : In addition, the Golds and some other smaller parties support this proposal. ?][? if collectivist_relation > 10 or left_strength + center_strength >= labor_strength: The Traditionalists, despite being courted by Staal, is not interested in joining this alliance. Traditionalists chairman Mallin seems to prefer working with Gallax to any alliance that includes the SPD. ?]
 
 @schleicher_success
 on-arrival: time_to_election = 13; schleichers_scheme_success = 1; next_election_time = 10000;

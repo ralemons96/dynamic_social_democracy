@@ -28,7 +28,7 @@ Attacking the <span style="color: #7A3C00;">far</span>-[? if traditionalist_ideo
 @far_right
 on-arrival: enemies = "far right"; left_strength += 5; left_dissent -= 5; commons_royalist -= 3; disfavored_royalist -= 3; commons_traditionalist -= 2 if traditionalist_ideology == "Radical"; commons_dnf -= 2
 
-Attacking the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is popular among the entire party, although the left considers the bourgeois parties to be just as dangerous, while the right is critical of our lack of response to the <span style="color: #700000;">**Collectivists**</span>. Our bourgeois coalition partners are also skeptical of our lack of commitment to anti-communism.
+Attacking the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is popular among the entire party, although the left considers the bourgeois parties to be just as dangerous, while the right is critical of our lack of response to the <span style="color: #700000;">**Collectivists**</span>. Our bourgeois coalition partners are also skeptical of our lack of commitment to anti-collectivism.
 
 @nsdap
 on-arrival: enemies = "Royalist"; knight_strength += 5; royalist_urgency += 1; commons_royalist -= 4; disfavored_royalist -= 4; commons_royalist += 8 if royalist_votes < 8; disfavored_royalist += 8 if royalist_votes < 8
@@ -38,7 +38,7 @@ on-arrival: enemies = "Royalist"; knight_strength += 5; royalist_urgency += 1; c
 @kpd
 on-arrival: enemies = "Collectivist"; reformist_strength += 5; left_dissent += 8; reformist_dissent -= 5; collectivist_relation -= 15; gold_relation += 5; ddp_relation += 3; unionist_relation += 5; lvp_relation += 5; commons_collectivist -= 3; disfavored_collectivist -= 4; gold_left += 1; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 1
 
-Attacking the <span style="color: #700000;">**Collectivists**</span> is supported by all but the most left-wing <span style="color: #c00000;">socialists</span>, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the <span style="color: #700000;">**Collectivists**</span>, this may not be the best choice.
+Attacking the <span style="color: #700000;">**Collectivists**</span> is supported by all but the most left-wing <span style="color: #c00000;">Reformists</span>, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the <span style="color: #700000;">**Collectivists**</span>, this may not be the best choice.
 
 @bourgeois
 on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; gold_relation -= 5; unionist_relation -= 5; ddp_relation -= 3; lvp_relation -= 3; collectivist_relation += 5; reformist_dissent += 8; commons_unionist -= 3; burgher_gold -= 2; commons_gold -= 1; commons_ddp -= 0.5; commons_ddp -= 0.5 if not gold_exist; coalition_dissent += 1; gold_right += 1; ddp_cohesion -= 1; ddp_right += 1; lvp_right += 1

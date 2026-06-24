@@ -24,7 +24,7 @@ As with the state police units and the Commonwealth Army, the internal police te
 @loyalty
 on-arrival: interior_police_loyalty += 0.1
 
-As with the Heartland state police, there are measures we can take to root out <span style="color: #808080;">reactionary</span> and anti-democratic sentiment in the police. We can improve training and recruiting procedures, and identify and remove known <span style="color: #7A3C00;">fascists</span> and the like.
+As with the Heartland state police, there are measures we can take to root out <span style="color: #808080;">reactionary</span> and anti-democratic sentiment in the police. We can improve training and recruiting procedures, and identify and remove known <span style="color: #7A3C00;">Sovereigntists</span> and the like.
 
 Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
 

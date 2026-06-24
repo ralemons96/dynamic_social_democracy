@@ -24,17 +24,17 @@ The <span style="color: #c00000;">**Marchers**</span> runs a veritable media emp
 
 @commercial
 title: Make our newspapers more commercialized by broadening their appeal beyond party supporters.
-subtitle: This might upset ideological purists, but it may bring in more funds and perhaps expose the middle class to <span style="color: #c00000;">socialist</span> views.
+subtitle: This might upset ideological purists, but it may bring in more funds and perhaps expose the middle class to <span style="color: #c00000;">Reformist</span> views.
 on-arrival: resources += 1; commercialized_media += 1; burgher_marcher += 4*(1 - dissent); guild_marcher += 3*(1-dissent); left_dissent += 10; labor_dissent += 10; socialism += 2*(1 - dissent); pro_republic += 1*(1-dissent); nationalism -= 1*(1 - dissent);
 
 Our commercialized newspapers are able to bring in more funds. However, the left and labor factions express their displeasure.
 
 @campaign
-title: The purpose of our media is to elect more <span style="color: #c00000;">Social Democrats</span>.
+title: The purpose of our media is to elect more <span style="color: #c00000;">Reformists</span>.
 subtitle: Our newspapers will focus on the electoral campaign.
 on-arrival: campaign_media += 1; commons_marcher += 4*(1 - dissent); disfavored_marcher += 2*(1-dissent);
 
-Our campaign media is mostly reaching the workers who are already saturated with <span style="color: #c00000;">Socialist</span> propaganda, but it must be doing *something*, or at least that is what we hope.
+Our campaign media is mostly reaching the workers who are already saturated with <span style="color: #c00000;">Reformist</span> propaganda, but it must be doing *something*, or at least that is what we hope.
 
 @ideological
 title: We will have vibrant ideological debate within our newspapers.
@@ -51,7 +51,7 @@ unavailable-subtitle: Not enough resources.
 view-if: radio = 0
 on-arrival: radio += 1; resources -= 2; burgher_marcher += 4*(1 - dissent); guild_marcher += 3*(1 - dissent); commons_marcher += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent);  nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent) if pacifism > 1; pro_republic += 2*(1-dissent)
 
-Our new radio station allows us to connect to people in a more intimate setting than before, spreading the message of <span style="color: #c00000;">socialism</span> along with music and other popular content. Since most proletarians cannot afford family radios right now, we are reaching the middle class, a fact of which our labor comrades are painfully aware.
+Our new radio station allows us to connect to people in a more intimate setting than before, spreading the message of <span style="color: #c00000;">Reformism</span> along with music and other popular content. Since most proletarians cannot afford family radios right now, we are reaching the middle class, a fact of which our labor comrades are painfully aware.
 
 @radio_2
 title: We must keep on building up our radio network.

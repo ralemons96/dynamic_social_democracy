@@ -22,7 +22,7 @@ The hope is that such unity will allow organized labor to resist coercion from S
 unavailable-subtitle: [? if staal_marcher_influence >= 6: Staal uses his influence within the ADGB to block further negotiations. ?][? if labor_dissent >= 40 or unions_independent: Labor dissent is too high. ?][? if unionist_relation < 40 or (unionist_relation < 60 and unionist_in_gov): We lack the adequate relations with the <span style="color: #000000;">Unionist Party</span>. ?]
 choose-if: staal_marcher_influence < 6 and (unionist_relation >= 40 or (unionist_relation >= 60 and unionist_in_gov)) and labor_dissent < 40 and not unions_independent
 
-Negotiations have progressed, but one major obstacle remains: the ADGB’s continued commitment to <span style="color: #9B0000;">Marxism</span>, setting it apart from the other unions that now advocate for class collaboration. The question stands—do we stay silent on this point, for the sake of unity?
+Negotiations have progressed, but one major obstacle remains: the ADGB’s continued commitment to <span style="color: #9B0000;">Vaelism</span>, setting it apart from the other unions that now advocate for class collaboration. The question stands—do we stay silent on this point, for the sake of unity?
 
 - @schleicher_2_pro
 - @schleicher_3: Negotiations stall.
@@ -70,4 +70,4 @@ Without coordination among the <span style="color: #000000;">rep</span><span sty
 
 The <span style="color: #000000;">Christian</span> unions have been cozying up to Staal for months[? if unionist_in_gov:, and Sedgewick's entry into government has only accelerated these talks of cooperation between his cabinet and the unionists.?][? if not unionist_in_gov:, though they remain broadly wary of Staal and his true intentions.?] Their advocacy for a "pluralistic" model, where unions retain formal autonomy within a corporatist the Commonwealth, has only made Staal’s task easier.
 
-[? if staal_marcher_influence >= 6: Staal has also been quietly cultivating allies within the ADGB itself. Voices calling for the rejection of <span style="color: #9B0000;">Marxism</span> and a break with the <span style="color: #c00000;">**Marchers**</span> are growing louder by the day. Damn it. ?]
+[? if staal_marcher_influence >= 6: Staal has also been quietly cultivating allies within the ADGB itself. Voices calling for the rejection of <span style="color: #9B0000;">Vaelism</span> and a break with the <span style="color: #c00000;">**Marchers**</span> are growing louder by the day. Damn it. ?]

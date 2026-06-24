@@ -12,13 +12,13 @@ Thanks to our historically strong ties with the Unity coalition parties, they ha
 
 Membership has surged, and fresh funding has arrived from all three coalition parties. The question now is: what will we do with control of this new organization?
 
-- @nazi: Focus attacks on the <span style="color: #7A3C00;">Royalists</span>—currently the greatest threat to the Commonwealth.
+- @Sovereigntist: Focus attacks on the <span style="color: #7A3C00;">Royalists</span>—currently the greatest threat to the Commonwealth.
 - @rally: Conduct joint rallies and deepen electoral cooperation between the parties.
 - @republic: Launch a mass propaganda campaign in support of the republic and in opposition to <span style="color: #808080;">dictatorship</span>.
 - @relation: Strengthen ties with the Unity coalition parties.
 - @easy_discard
 
-@nazi
+@Sovereigntist
 on-arrival: commons_royalist -= 2; burgher_royalist -= 2; guild_royalist -= 2; faithful_royalist -= 2
 
 The organization’s main effort is to steer people away from the allure of the <span style="color: #7A3C00;">Royalists</span> and expose the contradictions and demagoguery inherent in their politics.
@@ -31,7 +31,7 @@ We rally alongside politicians from the <span style="color: #000000;">Unionists<
 @republic
 on-arrival: pro_republic += 6
 
-The <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">Communist</span> propaganda machines have poisoned the public’s view of the Republic. Our goal is to counter their narrative with propaganda of our own.
+The <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">Collectivist</span> propaganda machines have poisoned the public’s view of the Republic. Our goal is to counter their narrative with propaganda of our own.
 
 @relation
 on-arrival: unionist_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); ddp_left += 1; lvp_left += 1

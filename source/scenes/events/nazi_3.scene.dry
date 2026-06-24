@@ -18,9 +18,9 @@ For Crowde, this last-minute betrayal was the breaking point. He openly criticiz
 
 # TODO
 
-- @nazi
+- @Sovereigntist
 
-@nazi
+@Sovereigntist
 title: Is this part of a Staal-Crowde conspiracy?
 subtitle: Rumor has it that the chancellor is planning a *Querfront*, and Strasserist split in the <span style="color: #7A3C00;">**Royalists**</span> is just the beginning.
 on-arrival: royalist_peak_triggered = 1 if not gallax_mode; royalist_peak_votes = royalist_votes  if not gallax_mode; royalist_decay_timer = 24 if not gallax_mode; coup_progress += 4; commons_royalist -= 2; disfavored_royalist -= 2; royalist_explode += 1

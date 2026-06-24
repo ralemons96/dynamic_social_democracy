@@ -97,11 +97,11 @@ Assembly composition:
 
 [? if gnu_formed: <span class="tooltip-text" title="Commonwealth National Unity Front" style="color: #BFC8CC;">**GNU**</span>: [+ gnu_r +]% ?]
 <span class="tooltip-text" title="Reformist Party of the Commonwealth" style="color: #c00000;">**Marchers**</span>: [+ marcher_r +]%
-[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Socialist Workers' Party of the Commonwealth" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
+[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Reformist Workers' Party of the Commonwealth" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 [? if started: [? if unionist_party_name != "Concord": <span class="tooltip-text" title="Unionist Party + the Arcanists"><span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span></span>?][? if unionist_party_name == "Concord": <span class="tooltip-text" title="Christian People's Party + the Arcanists"><span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span></span>?]?][? if not started: <span class="tooltip-text" title="Unionist Party + the Arcanists"><span style="color: #000000;">**Unionists**</span> + <span style="color: #A2D8E0;">**Arcanists**</span></span> ?]: [+ unionist_r +]%
 # 1928: 10, 1930: 13
-<span class="tooltip-text" title="Communist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_r +]%
+<span class="tooltip-text" title="Collectivist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_r +]%
 # 1928: 5, 1930: 4 (as DStP)
 [? if lvp_formed: <span class="tooltip-text" title="Golds" style="color: #C0A054;">**Golds**</span>: [+ lvp_r +]% ?]
 [? if (not lvp_formed or not ddp_name) : [? if not ddp_name:<span class="tooltip-text" title="Commonwealth Democratic Party" style="color: #D3C24D;">**Golds**</span>?][? if ddp_name = "Gold":<span class="tooltip-text" title="Commonwealth Democratic Party" style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if ddp_name = "DStP":<span class="tooltip-text" title="Commonwealth State Party" style="color: #D3C24D;">**[+ ddp_name +]**</span>?]: [+ ddp_r +]% ?]
@@ -114,8 +114,8 @@ Assembly composition:
 [? if dnf_formed: <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: [+ dnf_r +]% ?]
 # 1928: 3, 1930: 18
 [? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
-[? if not royalist_split: <span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
-[? if royalist_split: <span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
+[? if not royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
+[? if royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: [+ nvf_r +]%?]
 # 1928: 9, 1930: 10
 **Others**: [+ other_r +]%
@@ -205,7 +205,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if not lvp_formed and gold_exist: <span class="tooltip-text" title="Commonwealth People's Party" style="color: #C0A054;">**Golds**</span>: [+ gold_relation : relationships +] ?]
 
-<span class="tooltip-text" title="Communist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_relation : relationships +]
+<span class="tooltip-text" title="Collectivist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_relation : relationships +]
 
 [? if kvp_formed and not traditionalist_gold_formed : <span class="tooltip-text" title="Conservative People's Party" style="color: #0087DC;">**KVP**</span>: [+ kvp_relation : relationships +] ?]
 
@@ -215,7 +215,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if dnf_formed : <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: [+ dnf_relation : relationships +] ?]
 
-<span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>[? if royalist_split: (and its splinters)?]: [+ royalist_relation : relationships +]
+<span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>[? if royalist_split: (and its splinters)?]: [+ royalist_relation : relationships +]
 
 = Party Leadership
 
@@ -235,7 +235,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if not lvp_formed and gold_exist and ddp_name != 0 and gold_gnu: <span class="tooltip-text" title="Commonwealth People's Party" style="color: #C0A054;">**Golds**</span>: National Liberalism ([+ gold_leader +])?]
 
-[? if not ddp_name: UNINITIALIZED ?][? if ddp_name != 0: <span class="tooltip-text" title="Communist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [? if collectivist_leader = "Conciliators": United Front revolutionary Collectivism?][? if collectivist_leader = "Halsmark": Third Period revolutionary Collectivism?] ([+ collectivist_leader +])?]
+[? if not ddp_name: UNINITIALIZED ?][? if ddp_name != 0: <span class="tooltip-text" title="Collectivist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [? if collectivist_leader = "Conciliators": United Front revolutionary Collectivism?][? if collectivist_leader = "Halsmark": Third Period revolutionary Collectivism?] ([+ collectivist_leader +])?]
 
 [? if kvp_formed and not traditionalist_gold_formed: <span class="tooltip-text" title="Conservative People's Party" style="color: #0087DC;">**KVP**</span>: [? if not kvp_gnu: Christian Conservatism?][? if kvp_gnu: National Conservatism?] ([+ kvp_leader +])?]
 
@@ -247,9 +247,9 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if dnf_formed : <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: Authoritarian Conservatism (Mallin) ?]
 
-[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [? if not dsu_alt: Strasserism?][? if dsu_alt: Center Nazism?] ([+ dsu_leader +])?]
+[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [? if not dsu_alt: Strasserism?][? if dsu_alt: Center Imperial Sovereigntism?] ([+ dsu_leader +])?]
 
-[? if not ddp_name: UNINITIALIZED ?][? if ddp_name != 0: <span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: National Socialism ([+ royalist_leader +])?]
+[? if not ddp_name: UNINITIALIZED ?][? if ddp_name != 0: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: Imperial Sovereigntism ([+ royalist_leader +])?]
 
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: Revolutionary Volkism (Röhm)?]
 
@@ -275,7 +275,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: none ?]
 
-<span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [? if industrial_royalist_backing == 0: none?][? if industrial_royalist_backing == 1: low?][? if industrial_royalist_backing == 2: medium?]
+<span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [? if industrial_royalist_backing == 0: none?][? if industrial_royalist_backing == 1: low?][? if industrial_royalist_backing == 2: medium?]
 
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: none ?]
 
@@ -283,11 +283,11 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Unionists</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Center is a faction of Center Vaelists, between reform and revolution.">Unionists</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
 {!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Revisionists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 [? if neorevisionism: {!<span class="tooltip-text" title="Neorevisionists focus on defending the republic and expanding democracy, supporting new propaganda methods and extra-parliamentary action">Neorevisionist</span>!} strength: [+ knight_strength : strength +], dissent: [+ knight_dissent : dissent +] ?]
 
@@ -319,7 +319,7 @@ Q.loyalist_strength_2 = Q.loyalist_strength.toFixed(1);
 
 [? if year >= 1930 and not streetfighting_joever: <h1>Distribution of Power</h1> ?]
 
-[? if year >= 1930 and not streetfighting_joever: <h4>[? if not collectivist_truce: <span style="color: #000000;">Dem</span><span style="color: #DD0000;">ocra</span><span style="color: #FFCC00;">tic</span>?][? if collectivist_truce: Anti-<span style="color: #7A3C00;">Fascist</span>?] strength: [+ democracy_force +]%</h4>?]
+[? if year >= 1930 and not streetfighting_joever: <h4>[? if not collectivist_truce: <span style="color: #000000;">Dem</span><span style="color: #DD0000;">ocra</span><span style="color: #FFCC00;">tic</span>?][? if collectivist_truce: Anti-<span style="color: #7A3C00;">Sovereigntist</span>?] strength: [+ democracy_force +]%</h4>?]
 
 [? if year >= 1930 and not streetfighting_joever: <span style="color: #c00000;">**the Banners**</span>: [+ banner_force +]%?]
 

@@ -69,7 +69,7 @@ We are able to gather the support of [+ marcher_r + collectivist_r + sapd_r +]% 
 
 [? if impeachment_bvp: Even the <span style="color: #A2D8E0;">**Arcanists**</span>—once deeply loyal to DuFour—has grown disillusioned with his anti-constitutionalist and erratic behavior, and now supports our effort. ?][? if not impeachment_bvp: The <span style="color: #A2D8E0;">**Arcanists**</span> has, as expected, remained loyal to President DuFour, despite their reported discontent over his anti-constitutional conduct. ?]
 
-The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain DuFour’s most loyal supporters. Even Mallin recognizes the danger of a potential <span style="color: #c00000;">socialist</span> president should DuFour be removed from office.
+The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain DuFour’s most loyal supporters. Even Mallin recognizes the danger of a potential <span style="color: #c00000;">Reformist</span> president should DuFour be removed from office.
 
 The <span style="color: #7A3C00;">**Royalists**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NVF**</span>?] will break with the <span style="color: #6A1E1E;">**DSU**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
 

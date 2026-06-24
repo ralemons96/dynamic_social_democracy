@@ -69,11 +69,11 @@ The <span style="color: #7A3C00;">**Loyalists**</span> have won this show of str
 
 @main_rally
 
-Mass rallies are a common feature of <span style="color: #c00000;">social democratic</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
+Mass rallies are a common feature of <span style="color: #c00000;">Reformist</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
 
 - @class_struggle: The class struggle of the proletariat against the bourgeoisie.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #7A3C00;">fascism</span>.
+- @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
 - @wtb: Support the WTB plan!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
@@ -87,7 +87,7 @@ Our message of class struggle appeals to the left wing of the working class, whi
 @welfare
 on-arrival: commons_marcher += 3*(1-dissent); commons_marcher += 3*(1-dissent) if welfare > 0; disfavored_marcher += 3*(1-dissent) if welfare > 0; disfavored_marcher += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
 
-The reformist message appeals to the organized workers, whose benefits are the accomplishments of <span style="color: #c00000;">social democracy</span>. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+The reformist message appeals to the organized workers, whose benefits are the accomplishments of <span style="color: #c00000;">Reformism</span>. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 3*(1 - dissent); commons_marcher += 2*(1-dissent) if democratization >= 3; disfavored_marcher += 1*(1-dissent) if democratization >= 3; burgher_marcher += 2*(1-dissent) if democratization >= 3; ddp_left += 0.5 if pro_republic >= 70; lvp_left += 0.5 if pro_republic >= 70

@@ -40,11 +40,11 @@ Appointing individual advisors will boost their respective faction’s loyalty a
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Unionists</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Center is a faction of Center Vaelists, between reform and revolution.">Unionists</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
 {!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Revisionists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 @rm_main_menu
 
@@ -129,7 +129,7 @@ tags: remove_advisor
 on-arrival: severing_advisor = 0; reformist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Heath has been removed as an advisor. The Reformist faction disapproves.
+Heath has been removed as an advisor. The Revisionist faction disapproves.
 
 @remove_braun
 title: Remove Bristol
@@ -138,7 +138,7 @@ tags: remove_advisor
 on-arrival: braun_advisor = 0; reformist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Bristol has been removed as an advisor. The Reformist faction disapproves.
+Bristol has been removed as an advisor. The Revisionist faction disapproves.
 
 @remove_juchacz
 title: Remove Jessamy
@@ -147,7 +147,7 @@ tags: remove_advisor
 on-arrival: juchacz_advisor = 0; reformist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Jessamy has been removed as an advisor. The Reformist faction disapproves.
+Jessamy has been removed as an advisor. The Revisionist faction disapproves.
 
 @remove_pfulf
 title: Remove Vellath
@@ -156,7 +156,7 @@ tags: remove_advisor
 on-arrival: pfulf_advisor = 0; reformist_dissent += 10; n_advisors -= 1
 go-to: rm_main_menu
 
-Vellath has been removed as an advisor. The Reformist faction disapproves.
+Vellath has been removed as an advisor. The Revisionist faction disapproves.
 
 
 # labor
@@ -300,7 +300,7 @@ go-to: rm_main_menu
 
 Bayle has been removed as an advisor.
 
-#The Reformist faction disapproves.
+#The Revisionist faction disapproves.
 
 
 @remove_hirschfeld
@@ -391,7 +391,7 @@ view-if: n_advisors < 3
 
 @add_hilferding
 title: Vendrin Bell
-subtitle: Vendrin Bell is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+subtitle: Vendrin Bell is an economist and one of our chief Vaelist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
 is-card: true
 card-image: img/portraits/BellRudolf.jpg
 tags: center_advisor
@@ -494,7 +494,7 @@ Antonie Vellath is now an advisor.
 
 @add_levi
 title: Erric Tarrand
-subtitle: Erric Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Communist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
+subtitle: Erric Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Collectivist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
@@ -530,7 +530,7 @@ Cael Pendrigon is now an advisor.
 
 @add_seydewitz
 title: Max Seyton
-subtitle: Max Seyton is a former leader of the youth wing, current supporter of the left wing of the <span style="color: #c00000;">**Marchers**</span>, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Socialist Youth, Against Toleration ?]
+subtitle: Max Seyton is a former leader of the youth wing, current supporter of the left wing of the <span style="color: #c00000;">**Marchers**</span>, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Reformist Youth, Against Toleration ?]
 is-card: true
 card-image: img/portraits/SeydewitzMax.jpg
 view-if: seydewitz_advisor = 0 and n_advisors < 3 and left_split = 0

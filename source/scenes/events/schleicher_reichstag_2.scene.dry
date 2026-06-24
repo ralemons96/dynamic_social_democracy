@@ -22,7 +22,7 @@ on-display: {!
 
 Behind closed doors, the Assembly’s agenda committee convenes to decide when to reconvene the chamber after the holiday break—and with our position on it, our spokesmen have a say. Representing the cabinet, Staal’s aide strikes a confident tone, declaring the government ready to face the chamber at any time—and even opposing any adjournment until no-confidence motions are dealt with.
 
-In response, the <span style="color: #700000;">**Communists**</span> table a motion to resume sessions early next week. [? if reichstag_president == "Gorrick": But the <span style="color: #7A3C00;">Royalist</span> spokesmen show no interest, suggesting the decision be left to the Assembly’s president, Gorrick—who, in the end, fails to gain backing from any other party. ?][? if reichstag_president != "Gorrick": But the <span style="color: #7A3C00;">Royalist</span> spokesmen show no interest, and would rather back the <span style="color: #000000;">Unionist Party</span>'s compromise motion. ?]
+In response, the <span style="color: #700000;">**Collectivists**</span> table a motion to resume sessions early next week. [? if reichstag_president == "Gorrick": But the <span style="color: #7A3C00;">Royalist</span> spokesmen show no interest, suggesting the decision be left to the Assembly’s president, Gorrick—who, in the end, fails to gain backing from any other party. ?][? if reichstag_president != "Gorrick": But the <span style="color: #7A3C00;">Royalist</span> spokesmen show no interest, and would rather back the <span style="color: #000000;">Unionist Party</span>'s compromise motion. ?]
 
 The question is, how should our representatives vote?
 
@@ -31,7 +31,7 @@ The question is, how should our representatives vote?
 - @reichstag_3
 
 @reichstag_1
-title: Vote for the <span style="color: #700000;">**Communist**</span> motion to reconvene the chamber.
+title: Vote for the <span style="color: #700000;">**Collectivist**</span> motion to reconvene the chamber.
 on-arrival: {!
 Q.reichstag_staal = 1;
 Q.reichstag_break = 0;
@@ -57,7 +57,7 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-We must bring down the Staal cabinet as soon as possible. But the <span style="color: #c00000;">**Marchers**</span> and the <span style="color: #700000;">**Communists**</span> lack the votes on the committee to push the proposal through, as the <span style="color: #7A3C00;">Royalists</span> vote it down.
+We must bring down the Staal cabinet as soon as possible. But the <span style="color: #c00000;">**Marchers**</span> and the <span style="color: #700000;">**Collectivists**</span> lack the votes on the committee to push the proposal through, as the <span style="color: #7A3C00;">Royalists</span> vote it down.
 
 Instead, the <span style="color: #000000;">Unionist Party</span> offers a compromise: the Assembly will reconvene early in Week [+ next_reichstag_week +], [+ next_reichstag_month : month +] [+ next_reichstag_year +], with the condition that the committee will reexamine the matter one week prior.
 
@@ -93,7 +93,7 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-For some reason, we have pushed for the <span style="color: #7A3C00;">Royalist</span> proposal of letting Gorrick be in charge. However, our spokesmen simply laughed in our face at our "joke", and voted for the <span style="color: #700000;">**Communist**</span> motion.
+For some reason, we have pushed for the <span style="color: #7A3C00;">Royalist</span> proposal of letting Gorrick be in charge. However, our spokesmen simply laughed in our face at our "joke", and voted for the <span style="color: #700000;">**Collectivist**</span> motion.
 
 Eventually, the <span style="color: #000000;">Unionist Party</span> steps in with a compromise: the Assembly will reconvene early in Week [+ next_reichstag_week +], [+ next_reichstag_month : month +] [+ next_reichstag_year +], on the condition that the committee revisits the matter one week beforehand.
 

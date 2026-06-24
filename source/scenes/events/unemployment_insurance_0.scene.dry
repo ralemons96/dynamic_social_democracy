@@ -21,7 +21,7 @@ With the Young Plan not providing the necessary fiscal relief as many have hoped
 @destroy
 on-arrival: marcher_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; chancellor = "Askew"; chancellor_party = "Unionist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; marcher_toleration = 0; marcher_toleration_right = 0; left_strength += 8; pro_republic -= 5; burgher_marcher -= 3; landed_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3; reformist_dissent += 5; gold_right += 3; grand_coalition_collapsed = 1; economic_growth -= 0.3
 
-Fine. If the bourgeoisie wish to blow up the government, let them do so. <span style="color: #c00000;">Socialists</span> will not be complicit in the destruction of the working class.
+Fine. If the bourgeoisie wish to blow up the government, let them do so. <span style="color: #c00000;">Reformists</span> will not be complicit in the destruction of the working class.
 
 [? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-bourgeois cabinet. Using the emergency powers of Article 48, Askew and President DuFour have passed cuts over the objections of the Assembly. The <span style="color: #3E88B3;">**Traditionalists**</span> won't enter a government that is ratifying the Young Plan therefore no majority can be found.
 
@@ -32,7 +32,7 @@ unavailable-subtitle: [? if reformist_strength + center_strength + labor_strengt
 choose-if: reformist_strength + center_strength + labor_strength / 2 >= left_strength + labor_strength / 2
 on-arrival: commons_marcher -= 0.1*commons_marcher; disfavored_marcher -= 0.2*disfavored_marcher; commons_collectivist += 3; commons_royalist += 3; disfavored_collectivist += 5; disfavored_royalist += 5; left_dissent += 15; center_dissent += 10; labor_dissent += 15; welfare -= 1; budget += 1; pro_republic -= 3; collectivist_relation -= 5; inflation -= 1; unemployment_insurance_threshold = disfavored; gold_left += 2; coalition_dissent -= 1; goal_marcher_cancel += 1; economic_growth -= 0.3
 
-Unfortunately, we must accept this if we are to maintain this coalition. The <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Communists**</span> are waiting in the wings for us to fail, ready to pounce upon the instability that would result from a breakup of the governing coalition.
+Unfortunately, we must accept this if we are to maintain this coalition. The <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Collectivists**</span> are waiting in the wings for us to fail, ready to pounce upon the instability that would result from a breakup of the governing coalition.
 
 The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
 

@@ -8,13 +8,13 @@ card-image: img/international.jpg
 max-visits: 4
 #subtitle: Building ties with our fraternal socialist parties.
 
-At the <span style="color: #D50032;">Labor and Socialist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">socialist</span> parties in <span style="color: #001489;">Europe</span> and across the world.
+At the <span style="color: #D50032;">Labor and Reformist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">Reformist</span> parties in <span style="color: #001489;">Europe</span> and across the world.
 
 - @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">Fulyrian</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in the Commonwealth's favor.
 - @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Liberty Movement</span>.
-- @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">social democrats</span>.
+- @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">Reformists</span>.
 - @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Comintern</span>'s conference.
-- @america: Contact the <span style="color: #940f0f;">Socialist Party of the Allied States</span>.
+- @america: Contact the <span style="color: #940f0f;">Reformist Party of the Allied States</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -25,7 +25,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; west_relation += 1; reformist_strength += 3; pacifism += 1; moderate_plan_support += 1; international_socialist_support += 1
 
-The <span style="color: #f0456a;">socialists</span> of <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> can influence their governments to be friendlier towards the Commonwealth. Hopefully they will reduce our War Loans burden.
+The <span style="color: #f0456a;">Reformists</span> of <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> can influence their governments to be friendlier towards the Commonwealth. Hopefully they will reduce our War Loans burden.
 
 @austria
 subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Freeholds oppose their dictatorship. ?]
@@ -35,7 +35,7 @@ unavailable-subtitle: Not enough resources.
 audio: shuffle music/communist/workers_of_vienna_normalized.mp3
 on-arrival: left_strength += 3; radicalization += 1; banner_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
 
-Our the Banners can learn much in paramilitary organization and training from the Freehold Republikanischer Liberty militia (Republican Protection Units), the paramilitary branch of the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">social democrats</span>.
+Our the Banners can learn much in paramilitary organization and training from the Freehold Republikanischer Liberty militia (Republican Protection Units), the paramilitary branch of the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Reformists</span>.
 
 [? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Freehold <span style="color: #A50034;">Reformist Worker's Party</span> build up their resources in preparation for a future struggle, legally and illegally. ?]
 
@@ -46,7 +46,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: reformist_strength += 3; wtb_support += 1; resources -= 1; moderate_plan_support += 1
 
-The programs of the Nordic <span style="color: #D70926;">socialists</span> involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
+The programs of the Nordic <span style="color: #D70926;">Reformists</span> involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
 
 @comintern
 subtitle: -1 resources
@@ -54,7 +54,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; collectivist_relation += 5*(1-dissent); communist_coalition += 1 if comintern_seen == 0; comintern_seen += 1
 
-The <span style="color: #8B0000;">hardlines</span> of the <span style="color: #700000;">**Collectivists**</span> insists on calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>", suggesting that we <span style="color: #c00000;">social democrats</span> are as bad or worse than actual <span style="color: #7A3C00;">fascists</span>. Needless to say, this is not good for our relationship with the <span style="color: #700000;">communists</span>. By observing the <span style="color: #D50000;">Comintern</span>, we can better understand the <span style="color: #700000;">**Collectivists**</span>, enabling us to potentially improve relations, or counter the <span style="color: #700000;">**Collectivists**</span> if it may come to that.
+The <span style="color: #8B0000;">hardlines</span> of the <span style="color: #700000;">**Collectivists**</span> insists on calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>", suggesting that we <span style="color: #c00000;">Reformists</span> are as bad or worse than actual <span style="color: #7A3C00;">Sovereigntists</span>. Needless to say, this is not good for our relationship with the <span style="color: #700000;">collectivists</span>. By observing the <span style="color: #D50000;">Comintern</span>, we can better understand the <span style="color: #700000;">**Collectivists**</span>, enabling us to potentially improve relations, or counter the <span style="color: #700000;">**Collectivists**</span> if it may come to that.
 
 @america
 subtitle: -1 resources
@@ -62,7 +62,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
-The <span style="color: #940f0f;">Socialist Party of the Allied States</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+The <span style="color: #940f0f;">Reformist Party of the Allied States</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
 
 @reduce
 

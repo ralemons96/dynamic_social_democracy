@@ -77,11 +77,11 @@ Assembly composition:
 
 [? if gnu_formed: <span class="tooltip-text" title="Commonwealth National Unity Front" style="color: #BFC8CC;">**GNU**</span>: [+ gnu_r +]% ?]
 <span class="tooltip-text" title="Reformist Party of the Commonwealth" style="color: #c00000;">**Marchers**</span>: [+ marcher_r +]%
-[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Socialist Workers' Party of the Commonwealth" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
+[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Reformist Workers' Party of the Commonwealth" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 [? if unionist_party_name != "Concord": <span class="tooltip-text" title="Unionist Party + the Arcanists"><span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span></span>?][? if unionist_party_name == "Concord": <span class="tooltip-text" title="Christian People's Party + the Arcanists"><span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span></span>?]: [+ unionist_r +]%
 # 1928: 10, 1930: 13
-<span class="tooltip-text" title="Communist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_r +]%
+<span class="tooltip-text" title="Collectivist Party of the Commonwealth" style="color: #700000;">**Collectivists**</span>: [+ collectivist_r +]%
 # 1928: 5, 1930: 4 (as DStP)
 [? if lvp_formed: <span class="tooltip-text" title="Golds" style="color: #C0A054;">**Golds**</span>: [+ lvp_r +]% ?]
 [? if (not lvp_formed or not ddp_name) : [? if not ddp_name:<span class="tooltip-text" title="Commonwealth Democratic Party" style="color: #D3C24D;">**Golds**</span>?][? if ddp_name = "Gold":<span class="tooltip-text" title="Commonwealth Democratic Party" style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if ddp_name = "DStP":<span class="tooltip-text" title="Commonwealth State Party" style="color: #D3C24D;">**[+ ddp_name +]**</span>?]: [+ ddp_r +]% ?]
@@ -94,8 +94,8 @@ Assembly composition:
 [? if dnf_formed: <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: [+ dnf_r +]% ?]
 # 1928: 3, 1930: 18
 [? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
-[? if not royalist_split: <span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
-[? if royalist_split: <span class="tooltip-text" title="National-Socialist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
+[? if not royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
+[? if royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: [+ nvf_r +]%?]
 # 1928: 9, 1930: 10
 **Others**: [+ other_r +]%
@@ -248,7 +248,7 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are <span style="color: #c00000;">socialists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
+**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are <span style="color: #c00000;">Reformists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
 
 **Old Mittelstand**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. 10-15% of the population.
 
@@ -482,7 +482,7 @@ go-to: menu
 
 [? if gnu_formed: Current relations: [+ gnu_relation : relationships +] ?]
 
-<span style="color: #c00000;">**Marchers**</span> - *Sozialdemokratische Partei Deutschlands* (Reformist Party of the Commonwealth) - this is us. We are a socialist and democratic party of the working class. We are the heirs to the first reformers — to Corwin Vael, who gave the Commons its creed, and to the tribunes who carried it into the old Empire's Assembly. We are the foremost defenders of the Republic. The modern <span style="color: #c00000;">**Marchers**</span> was formed from the reunion of the "Patriot" <span style="color: #c00000;">**Marchers**</span>, who backed the Second Great War, and the "Independent" wing, who opposed it.
+<span style="color: #c00000;">**Marchers**</span> - *Sozialdemokratische Partei Deutschlands* (Reformist Party of the Commonwealth) - this is us. We are a Reformist and democratic party of the working class. We are the heirs to the first reformers — to Corwin Vael, who gave the Commons its creed, and to the tribunes who carried it into the old Empire's Assembly. We are the foremost defenders of the Republic. The modern <span style="color: #c00000;">**Marchers**</span> was formed from the reunion of the "Patriot" <span style="color: #c00000;">**Marchers**</span>, who backed the Second Great War, and the "Independent" wing, who opposed it.
 
 [? if not concord_formed: [? if started: <span style="color: #000000;">**[+ unionist_party_name +]**</span>?][? if not started: <span style="color: #000000;">**Unionists**</span>?] - [? if unionist_party_name != "Concord": <i>Zentrumspartei</i>?][? if unionist_party_name == "Concord": <i>Christliche Volkspartei</i>?] ([? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Christian People's Party</span>?]) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the <span style="color: #A2D8E0;">**Arcanists**</span> (the Arcanists), which represents Catholics in <span style="color: #00CCFF;">Avriza</span>. [? if (year >= 1930 or chancellor == "Askew") and unionist_leader == "Renck": They have appeared to take a more conservative turn recently, with the rise of Askew and the party leader, Aurelian Renck. ?][? if (year >= 1930 or chancellor == "Askew") and unionist_leader == "Sedgewick": They have appeared to take a more conservative turn recently, with the rise of Askew and the party leader, Adam Sedgewick, who has taken a focus on interconfessionalizing the party. ?][? if (year >= 1930 or chancellor == "Askew") and unionist_leader == "Hawkins": They have appeared to take a more conservative turn recently, with the rise of Askew and support of austerity. ?][? if year >= 1930 and unionist_leader == "Stilling": They have appeared to take a more leftist turn recently, with the election of Aldwin Stilling and support of certain left-wing economic policies. ?]?]
 
@@ -514,13 +514,13 @@ Current relations: [+ unionist_relation : relationships +]
 
 [? if dnf_formed: Current relations: [+ dnf_relation : relationships +] ?]
 
-<span style="color: #700000;">**Collectivists**</span> - *Kommunistische Partei Deutschlands* (Commonwealth Communist Party) - a radical left-wing offshoot of the <span style="color: #c00000;">**Marchers**</span> that emerged from the turmoil of the Founding. They reject parliamentary democracy, calling instead for a second revolution — a Second Republic that would sweep away the merchant-barons, the reactionary generals, and the old elites who, they say, corrupt the Commonwealth from within.
+<span style="color: #700000;">**Collectivists**</span> - *Kommunistische Partei Deutschlands* (Commonwealth Collectivist Party) - a radical left-wing offshoot of the <span style="color: #c00000;">**Marchers**</span> that emerged from the turmoil of the Founding. They reject parliamentary democracy, calling instead for a second revolution — a Second Republic that would sweep away the merchant-barons, the reactionary generals, and the old elites who, they say, corrupt the Commonwealth from within.
 
 Current relations: [+ collectivist_relation : relationships +]
 
-[? if sapd_formed: <span style="color: #9B0000;">**SAPD**</span> - <i>Sozialistische Arbeiterpartei Deutschlands</i> (Socialist Worker's Party of the Commonwealth) - a party recently formed in a split from the <span style="color: #c00000;">**Marchers**</span>, the <span style="color: #9B0000;">**SAPD**</span> is essentially an agglomeration of various left-wing splinter groups between the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span>. ?]
+[? if sapd_formed: <span style="color: #9B0000;">**SAPD**</span> - <i>Sozialistische Arbeiterpartei Deutschlands</i> (Reformist Worker's Party of the Commonwealth) - a party recently formed in a split from the <span style="color: #c00000;">**Marchers**</span>, the <span style="color: #9B0000;">**SAPD**</span> is essentially an agglomeration of various left-wing splinter groups between the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span>. ?]
 
-<span style="color: #7A3C00;">**Royalists**</span> - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist Commonwealth Worker's Party, or <span style="color: #7A3C00;">Royalists</span>) - a far-right nationalist and monarchist party that would see the Empire restored and its old hierarchy of blood with it. Led by Alaric Gallax, they attempted a coup in 4288, and were banned for it, but have since been legalized.
+<span style="color: #7A3C00;">**Royalists**</span> - *Nationalsozialistische Deutsche Arbeiterpartei* - (Imperial Sovereigntist Commonwealth Worker's Party, or <span style="color: #7A3C00;">Royalists</span>) - a far-right nationalist and monarchist party that would see the Empire restored and its old hierarchy of blood with it. Led by Alaric Gallax, they attempted a coup in 4288, and were banned for it, but have since been legalized.
 
 Current relations: [+ royalist_relation : relationships +]
 
@@ -589,7 +589,7 @@ Dissent: [+ left_dissent : dissent +]
 
 **Centrists**
 
-Centrists in the <span style="color: #c00000;">**Marchers**</span> are followers of the doctrine of orthodox <span style="color: #9B0000;">Marxism</span> as expounded by Corwin Vael and later Vendrin Bell. They seek a middle course between reform and revolution, while defending the democratic state.
+Centrists in the <span style="color: #c00000;">**Marchers**</span> are followers of the doctrine of orthodox <span style="color: #9B0000;">Vaelism</span> as expounded by Corwin Vael and later Vendrin Bell. They seek a middle course between reform and revolution, while defending the democratic state.
 
 Strength: [+ center_strength : strength +]
 
@@ -603,9 +603,9 @@ Strength: [+ labor_strength : strength +]
 
 Dissent: [+ labor_dissent : dissent +]
 
-**Reformists**
+**Revisionists**
 
-Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>. [? if marcher_heartland : They are dominant in the state government of Heartland. ?]
+Revisionists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>. [? if marcher_heartland : They are dominant in the state government of Heartland. ?]
 
 Strength: [+ reformist_strength : strength +]
 
@@ -621,7 +621,7 @@ Dissent: [+ reformist_dissent : dissent +]
 
 [? if social_patriot: **Social Patriots** ?]
 
-[? if social_patriot: Social Patriots combine support for pro-worker social programs with fervent Commonwealth nationalism and anti-<span style="color: #700000;">communism</span>. Many of those who identify with this tendency seem to be little more than lapdogs of Staal[? if gnu_formed :&nbsp;and his <span style="color: #BFC8CC;">**GNU**</span>?]. Other factions view their positions as contradictory and incoherent[? if staal_marcher_influence > 5 :, but perhaps they may know best after all..?]. ?]
+[? if social_patriot: Social Patriots combine support for pro-worker social programs with fervent Commonwealth nationalism and anti-<span style="color: #700000;">collectivism</span>. Many of those who identify with this tendency seem to be little more than lapdogs of Staal[? if gnu_formed :&nbsp;and his <span style="color: #BFC8CC;">**GNU**</span>?]. Other factions view their positions as contradictory and incoherent[? if staal_marcher_influence > 5 :, but perhaps they may know best after all..?]. ?]
 
 [? if social_patriot: Strength: [+ social_patriot_strength : strength +] ?]
 

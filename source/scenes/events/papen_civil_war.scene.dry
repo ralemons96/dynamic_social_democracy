@@ -118,7 +118,7 @@ What else do we have?
 @war_menu
 
 - @rw_help: Appeal to the Commonwealth Army to stand down.
-- @kpd_help: Call for support from the <span style="color: #700000;">Communists</span>.
+- @kpd_help: Call for support from the <span style="color: #700000;">Collectivists</span>.
 - @general_strike: Call a general strike!
 - @loyal_police: Call up the loyal portions of the police.
 - @war_outcome: Now, the battle...
@@ -136,7 +136,7 @@ view-if: chancellor_party != "Collectivist" and president != "Halsmark"
 go-to: war_menu
 on-arrival: war_choices += 1
 
-There are [+ vanguard_strength +] thousand fighters with the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**Vanguard**</span>, in addition to the workers who support the <span style="color: #700000;">**Collectivists**</span>.
+There are [+ vanguard_strength +] thousand fighters with the <span style="color: #700000;">Collectivist</span> <span style="color: #8B0000;">**Vanguard**</span>, in addition to the workers who support the <span style="color: #700000;">**Collectivists**</span>.
 
 [? if collectivist_relation >= 60 : The <span style="color: #700000;">**Collectivists**</span> is entirely on our side, owing to our good relations. ?][? if collectivist_relation < 60 and collectivist_relation >= 45 : Most of the <span style="color: #700000;">**Collectivists**</span> is on our side, due to their good relations with us. ?][? if collectivist_relation < 45 : The <span style="color: #700000;">**Collectivists**</span> does not support us. ?]
 
@@ -145,7 +145,7 @@ max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
 
-A general strike stopped the officers’ putsch in 4285, and it can stop <span style="color: #7A3C00;">fascism</span> today. [? if normalized_commons_total > 70 : The workers are largely united with us. ?][? if normalized_commons_total >= 50 and normalized_commons_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_commons_total > 30 and normalized_commons_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_commons_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
+A general strike stopped the officers’ putsch in 4285, and it can stop <span style="color: #7A3C00;">Imperial Sovereigntism</span> today. [? if normalized_commons_total > 70 : The workers are largely united with us. ?][? if normalized_commons_total >= 50 and normalized_commons_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_commons_total > 30 and normalized_commons_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_commons_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
 
 
 @loyal_police
@@ -204,7 +204,7 @@ While we might want to call for foreign assistance, the foreign powers see the "
 
 - @west_aid: Perhaps we can receive aid from the Western powers, <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span>.
 - @soviet_aid: Perhaps we can receive aid from the <span style="color: #750e0e;">Central Union</span>.
-- @east_aid: Perhaps our northern neighbors, <span style="color: #DC143C;">the Allied States</span> and <span style="color: #11457E;">Cinderwall</span>, can help us. If they know anything, they do not want <span style="color: #7A3C00;">fascists</span> coming to power in the Commonwealth.
+- @east_aid: Perhaps our northern neighbors, <span style="color: #DC143C;">the Allied States</span> and <span style="color: #11457E;">Cinderwall</span>, can help us. If they know anything, they do not want <span style="color: #7A3C00;">Sovereigntists</span> coming to power in the Commonwealth.
 - @game_over: Game over.
 
 @west_aid
@@ -240,7 +240,7 @@ go-to: long_war_intervention
 
 In a chaotic civil war between the the Banners and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties, <span style="color: #3E88B3;">**Wardens**</span> and the Commonwealth Army, and the <span style="color: #7A3C00;">**Loyalists**</span>: the anti-democratic forces are defeated! The infighting between the extremists have largely benefitted us.
 
-The battle lines hold, and the <span style="color: #7A3C00;">**Loyalists**</span>, <span style="color: #3E88B3;">**Wardens**</span>, and Commonwealth Army forces are defeated. Today, the forces of the republic prevail over the <span style="color: #7A3C00;">fascists</span> and the <span style="color: #3E88B3;">reactionaries</span>. There is a new revolution in the Commonwealth. Let us hope it produces a longer-lasting peace than the previous one.
+The battle lines hold, and the <span style="color: #7A3C00;">**Loyalists**</span>, <span style="color: #3E88B3;">**Wardens**</span>, and Commonwealth Army forces are defeated. Today, the forces of the republic prevail over the <span style="color: #7A3C00;">Sovereigntists</span> and the <span style="color: #3E88B3;">reactionaries</span>. There is a new revolution in the Commonwealth. Let us hope it produces a longer-lasting peace than the previous one.
 
 - @game_over: Game over.
 

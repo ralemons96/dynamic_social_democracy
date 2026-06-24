@@ -20,6 +20,6 @@ However, this show of unity lacks substance, as Mallin, Gallax, and the <span st
 view-if: royalist_urgency < 3
 on-arrival: royalist_urgency += 1
 
-We do not yet have a coherent strategy for combatting the fascists. We must develop one as soon as possible.
+We do not yet have a coherent strategy for combatting the Sovereigntists. We must develop one as soon as possible.
 
 # TODO

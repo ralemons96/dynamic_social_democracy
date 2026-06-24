@@ -8,9 +8,9 @@ tags: event
 
 = Wittorf Affair
 
-Our spies and contacts amongst the communists have brought news of a scandal engulfing the <span style="color: #700000;">**Collectivists**</span> leadership. An associate of <span style="color: #700000;">**Collectivists**</span> chairman Ernst Halsmark, a <span style="color: #700000;">**Collectivists**</span> official named John Wittorf, is accused of embezzling campaign funds, diverting thousands of Gold for personal use, and Halsmark is accused of covering up the affair. The party's central committee considers this charge serious.
+Our spies and contacts amongst the collectivists have brought news of a scandal engulfing the <span style="color: #700000;">**Collectivists**</span> leadership. An associate of <span style="color: #700000;">**Collectivists**</span> chairman Ernst Halsmark, a <span style="color: #700000;">**Collectivists**</span> official named John Wittorf, is accused of embezzling campaign funds, diverting thousands of Gold for personal use, and Halsmark is accused of covering up the affair. The party's central committee considers this charge serious.
 
-The Conciliators in the <span style="color: #700000;">**Collectivists**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident communists in the Vanguard League also have information about this affair, and are planning to publish it.
+The Conciliators in the <span style="color: #700000;">**Collectivists**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident collectivists in the Vanguard League also have information about this affair, and are planning to publish it.
 
 What should we do with this information?
 
@@ -22,7 +22,7 @@ What should we do with this information?
 title: We will publicize the scandal to damage the <span style="color: #700000;">**Collectivists**</span> and Halsmark.
 on-arrival: collectivist_relation -= 10; commons_collectivist -= 4; disfavored_collectivist -= 4
 
-Our newspapers are among the first to publicize the affair, bringing a torment of criticism to the hypocrisy of the communists. We have damaged the <span style="color: #700000;">**Collectivists**</span>'s standing among the workers, but also perhaps closed the door on further cooperation.
+Our newspapers are among the first to publicize the affair, bringing a torment of criticism to the hypocrisy of the collectivists. We have damaged the <span style="color: #700000;">**Collectivists**</span>'s standing among the workers, but also perhaps closed the door on further cooperation.
 
 In the end, <span style="color: #8B0000;">Halsmark</span>'s pressure helps to keep Halsmark from facing much in the way of consequences.
 
@@ -36,7 +36,7 @@ The information spreads without our help, leading to some loss of <span style="c
 @secret
 title: It is best to keep this information secret. Prevent the Vanguard League and dissident <span style="color: #700000;">**Collectivists**</span> members from spreading this.
 choose-if: levi_advisor or rosenfeld_advisor
-unavailable-subtitle: We do not have contacts among the dissident communists.
+unavailable-subtitle: We do not have contacts among the dissident collectivists.
 on-arrival: wittorf_secret = 1; reformist_dissent += 5; left_dissent += 5
 
 Some among our leadership consider it unsavory to engage in cloak-and-dagger scheming. However, keeping this secret might be necessary to work with the <span style="color: #700000;">**Collectivists**</span>, and the information might become useful later.

@@ -50,7 +50,7 @@ go-to: candidate_selection
 
 With the 4297 Commonwealth Presidential election coming up next month, we need to decide whether to run a candidate of our own or support one from another party. [? if dufour_run: Many are calling for us to support the incumbent DuFour, despite his <span style="color: #808080;">reactionary</span> tendencies. Contrary to fears, he hasn’t used his office to destroy the republic yet, so supporting him would hopefully prevent the <span style="color: #7A3C00;">Royalists</span>, who actually support destroying the republic, from winning. ?][? if not dufour_run: With DuFour's withdrawal, the Commonwealth Right is in disarray, struggling to find a candidate who can attract support from the moderate right and middle, while also embodying the unifying character of DuFour. It’s likely that the candidate they put forward will have a military or industrial background and will be distanced from the partisan bickering of politics. ?]
 
-On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Communists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**SAPD**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Communists</span>. ?]
+On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Collectivists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**SAPD**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Collectivists</span>. ?]
 
 Anyhow, let's see who will be the candidates on <span class="tooltip-text" title="good game">the campaign trail</span>.
 
@@ -358,7 +358,7 @@ face-image: img/portraits/luther.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Hans Lytton, former Chancellor of the first federal right-wing coalition and key figure in addressing the hyperinflationary crisis, is certainly not lacking in the experience required to assume the presidency of the Commonwealth. Among his peers, he stands out as relatively open to constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>, though it is clear that he favors a presidential bourgeois government over continued <span style="color: #c00000;">socialist</span> participation in power. Despite his party affiliation, he is widely viewed as a non-partisan candidate.
+Hans Lytton, former Chancellor of the first federal right-wing coalition and key figure in addressing the hyperinflationary crisis, is certainly not lacking in the experience required to assume the presidency of the Commonwealth. Among his peers, he stands out as relatively open to constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>, though it is clear that he favors a presidential bourgeois government over continued <span style="color: #c00000;">Reformist</span> participation in power. Despite his party affiliation, he is widely viewed as a non-partisan candidate.
 
 His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. ?]
 
@@ -447,7 +447,7 @@ face-image: img/portraits/Kuno_von_Westarp.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Kuno von Westmore, a familiar figure in Commonwealth politics, has long been a stalwart of the <span style="color: #3E88B3;">**Traditionalists**</span>, once serving as both party leader and head of its parliamentary group. While not entirely opposed to his party’s participation in a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system, he has made no secret of his monarchist aspirations. His rigid partisanship and staunchly anti-<span style="color: #c00000;">socialist</span> convictions are likely to define his rule—perhaps even making him a more hostile figure than DuFour.
+Kuno von Westmore, a familiar figure in Commonwealth politics, has long been a stalwart of the <span style="color: #3E88B3;">**Traditionalists**</span>, once serving as both party leader and head of its parliamentary group. While not entirely opposed to his party’s participation in a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system, he has made no secret of his monarchist aspirations. His rigid partisanship and staunchly anti-<span style="color: #c00000;">Reformist</span> convictions are likely to define his rule—perhaps even making him a more hostile figure than DuFour.
 
 It is imperative that we prevail over these forces of reaction if we are to have any hope of returning to government.
 
@@ -502,7 +502,7 @@ face-image: img/portraits/hitler2.jpg
 
 The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Gregor Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Joseph Goebbels argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
 
-- @communist: We await the decision the <span style="color: #700000;">Communists</span>.
+- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 
 @frick
 on-arrival: {!
@@ -514,7 +514,7 @@ face-image: img/portraits/frick.jpg
 
 The <span style="color: #7A3C00;">**Royalists**</span> has nominated Wilhelm Frask, who is expected to receive backing only from his own party. [? if dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s deep reluctance to challenge the universally respected and personally popular President DuFour—believing such a move would tarnish his image. Gregor Crowde’s argument ultimately prevailed over Goebbels’, and Gallax has chosen to sit this one out. ?][? if not dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s reluctance to enter an unwinnable race, fearing it would damage his image. By putting forward the more pragmatic Frask, he hopes to attract some conservative support ahead of the local elections.?] Should Frask win, he would serve as little more than a proxy for the <span style="color: #7A3C00;">Royalist</span> leader. 
 
-- @communist: We await the decision the <span style="color: #700000;">Communists</span>.
+- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 
 @goring
 on-arrival: {!
@@ -526,29 +526,29 @@ face-image: img/portraits/goring.jpg
 
 The <span style="color: #7A3C00;">**Royalists**</span> has nominated Ulric Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great War and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
 
-- @communist: We await the decision the <span style="color: #700000;">Communists</span>.
+- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 
-@communist
+@collectivist
 go-to: thalmann
 
 
 @thalmann
 face-image: img/portraits/HalsmarkErnst.jpg
 
-The <span style="color: #700000;">**Communists**</span> will run Ernst Halsmark, their leader and candidate in 4290. If we were to not run a candidate, or to support a right-wing or bourgeois one, Halsmark and the <span style="color: #700000;">**Collectivists**</span> would greatly capitalize by painting themselves as the only left-wing option in the race. However, if our relations with the <span style="color: #700000;">**Collectivists**</span> are high enough, we may be able to convince him to drop out in favour of a unity candidate between our two parties.
+The <span style="color: #700000;">**Collectivists**</span> will run Ernst Halsmark, their leader and candidate in 4290. If we were to not run a candidate, or to support a right-wing or bourgeois one, Halsmark and the <span style="color: #700000;">**Collectivists**</span> would greatly capitalize by painting themselves as the only left-wing option in the race. However, if our relations with the <span style="color: #700000;">**Collectivists**</span> are high enough, we may be able to convince him to drop out in favour of a unity candidate between our two parties.
 
-- @socialist: So, what is our decision? Should we run our own candidate?
+- @Reformist: So, what is our decision? Should we run our own candidate?
 
-@socialist
+@Reformist
 go-to: braun
 
 
 @braun
 face-image: img/portraits/braun.jpg
 
-Lyle Bristol has been floated around as a candidate for the presidency once more, after his failed run in 4290. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">socialist</span> for President, even with his reformist and right-wing leanings within our own party. Joshua Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
+Lyle Bristol has been floated around as a candidate for the presidency once more, after his failed run in 4290. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">Reformist</span> for President, even with his reformist and right-wing leanings within our own party. Joshua Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
 
-[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Cael Pendrigon as a <span style="color: #9B0000;">Marxist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the bourgeois parties—perhaps permanently. ?]
+[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Cael Pendrigon as a <span style="color: #9B0000;">Vaelist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the bourgeois parties—perhaps permanently. ?]
 
 So, what's our choice?
 
@@ -800,7 +800,7 @@ if (!Q.dufour_run) {
 }
 !}
 
-None of the candidates are worthy of our support, and we are either unable or unwilling to field a candidate of our own. This decision is widely seen as irresponsible, given our status as the nominally largest party. [? if dufour_run: DuFour is privately relieved by this, as receiving our endorsement would personally pain him. ?] The <span style="color: #700000;">**Communists**</span> will seize upon our lack of an endorsement, attempting to position [+ communist_candidate_1932_disp +] as the sole left-wing candidate in the race, likely drawing many of our voters as a protest vote.
+None of the candidates are worthy of our support, and we are either unable or unwilling to field a candidate of our own. This decision is widely seen as irresponsible, given our status as the nominally largest party. [? if dufour_run: DuFour is privately relieved by this, as receiving our endorsement would personally pain him. ?] The <span style="color: #700000;">**Collectivists**</span> will seize upon our lack of an endorsement, attempting to position [+ communist_candidate_1932_disp +] as the sole left-wing candidate in the race, likely drawing many of our voters as a protest vote.
 
 @run_braun
 subtitle: This will cost us 2 resources.
@@ -810,7 +810,7 @@ on-arrival: resources -= 2; marcher_campaign = 1; braun_campaign = 1; reformist_
 
 It takes effort to run a somewhat unexpected campaign. First, Bristol has to be convinced to run. [? if dufour_run: He himself had supported voting for DuFour, and it takes a good deal of prodding to convince him of his destiny. ?][? if not dufour_run: It takes a good deal of prodding to convince him of his destiny. ?]
 
-[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #C0A054;">**Golds**</span> aren't exactly the biggest fans of <span style="color: #c00000;">socialism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Communists**</span>?
+[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #C0A054;">**Golds**</span> aren't exactly the biggest fans of <span style="color: #c00000;">Reformism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Collectivists**</span>?
 
 - @endorsements_braun: Scout out potential endorsements. 
 
@@ -822,7 +822,7 @@ on-arrival: resources -= 2; marcher_campaign = 1; rosenfeld_campaign = 1; reform
 
 It takes effort to run a somewhat unexpected campaign. First, Pendrigon has to be convinced to run. He isn't particularly eager to be promoted to the presidency from his lowly position in the party.
 
-His candidacy has severely limited our options for endorsements, but we can likely count on the support of the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?]. But who else? The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is likely hostile, and the <span style="color: #FFCC00;">liberals</span> are irreconcilably opposed. Furthermore, many of our voters outside the working class have voiced objections to his candidacy and will not support him with much enthusiasm. Perhaps this will become the ultimate battle between the <span style="color: #9B0000;">Marxist</span> and bourgeois halves of the country.
+His candidacy has severely limited our options for endorsements, but we can likely count on the support of the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?]. But who else? The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is likely hostile, and the <span style="color: #FFCC00;">liberals</span> are irreconcilably opposed. Furthermore, many of our voters outside the working class have voiced objections to his candidacy and will not support him with much enthusiasm. Perhaps this will become the ultimate battle between the <span style="color: #9B0000;">Vaelist</span> and bourgeois halves of the country.
 
 - @endorsements_rosenfeld: Scout out potential endorsements. 
 
@@ -832,9 +832,9 @@ choose-if: resources >= 1 and not staal_marcher and not dufour_run and reformist
 unavailable-subtitle: [? if resources < 1: Not enough resources. ?][? if staal_marcher: As part of our deal with Staal, we are now obligated to support DuFour’s re-election. ?][? if dufour_run: He isn't interested in running against DuFour.?][? if reformist_strength < left_strength + center_strength: He isn't interested in being the candidate of the <span style="color: #c00000;">Marchers</span>, at least given our current ideological stance.?][? if unionist_relation < 40: Due to our poor relations with the <span style="color: #000000;">Unionist Party</span>, he isn’t interested unless he will genuinely be united behind as a unity candidate. ?]
 on-arrival: resources -= 1; marcher_campaign = 1; eckener_campaign = 1; reformist_dissent -= 10; left_dissent += 15; collectivist_relation -= 15; commons_marcher -= 3; commons_collectivist += 3; unionist_relation += 5; ddp_relation += 5; gold_relation += 5; lvp_relation += 5; lvp_left += 3; gold_left += 3; ddp_left += 3; ddp_cohesion += 2; ddp_support_marcher = 0; lvp_support_marcher = 0; gold_support_marcher = 0; marcher_candidate_1932 = "Eckhart"; marcher_candidate_1932_disp = "Hugo Eckhart"
 
-It takes effort to launch a somewhat unexpected campaign. First, Eckhart must be convinced to run. He isn't particularly eager to be the candidate of the <span style="color: #c00000;">socialists</span>, as it would invite slander from the Commonwealth Right—whom he feels a greater affinity with.
+It takes effort to launch a somewhat unexpected campaign. First, Eckhart must be convinced to run. He isn't particularly eager to be the candidate of the <span style="color: #c00000;">Reformists</span>, as it would invite slander from the Commonwealth Right—whom he feels a greater affinity with.
 
-With his status as a non-<span style="color: #c00000;">socialist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Communists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] are firmly opposed to supporting a bourgeois conservative—for obvious reasons.
+With his status as a non-<span style="color: #c00000;">Reformist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] are firmly opposed to supporting a bourgeois conservative—for obvious reasons.
 
 - @endorsements_eckener: Scout out potential endorsements. 
 
@@ -843,7 +843,7 @@ subtitle: This is the default option.
 view-if: dufour_run
 on-arrival: marcher_support_reactionary = 1; left_dissent += 15; labor_dissent += 10; dufour_angry_bruning += 25; dufour_angry -= 40; commons_marcher -= 3; commons_collectivist += 3; disfavored_marcher -= 3; disfavored_collectivist += 3
 
-Despite his known <span style="color: #808080;">reactionary</span> nature, DuFour has at least been keeping the <span style="color: #7A3C00;">Royalists</span> at bay. Thus, we must support him. [? if bruning_time: DuFour is reportedly dissatisfied with having been elected with the support of <span style="color: #c00000;">socialists</span>, blaming Askew and his unpopular cabinet for this outcome. ?]
+Despite his known <span style="color: #808080;">reactionary</span> nature, DuFour has at least been keeping the <span style="color: #7A3C00;">Royalists</span> at bay. Thus, we must support him. [? if bruning_time: DuFour is reportedly dissatisfied with having been elected with the support of <span style="color: #c00000;">Reformists</span>, blaming Askew and his unpopular cabinet for this outcome. ?]
 
 @support_reactionary
 subtitle: This is the default option.
@@ -861,9 +861,9 @@ For some reason, whether we are physically <i>unable</i> to run a candidate of o
 
 @support_thalmann
 choose-if: collectivist_relation >= 50 and reformist_strength < left_strength and not staal_marcher
-unavailable-subtitle: [? if collectivist_relation < 50 : We do not have good enough relations with the <span style="color: #700000;">Communists</span>, so they are not even willing to accept our support. ?] [? if reformist_strength >= left_strength : The reformist faction is able to dissuade the party from supporting this arrangement. ?][? if staal_marcher: As part of our deal with Staal, we are now obligated to support DuFour’s re-election. ?]
+unavailable-subtitle: [? if collectivist_relation < 50 : We do not have good enough relations with the <span style="color: #700000;">Collectivists</span>, so they are not even willing to accept our support. ?] [? if reformist_strength >= left_strength : The reformist faction is able to dissuade the party from supporting this arrangement. ?][? if staal_marcher: As part of our deal with Staal, we are now obligated to support DuFour’s re-election. ?]
 
-Supporting [+ communist_candidate_1932 +] is rather unpopular in our party, even if the <span style="color: #700000;">**Communists**</span> accept our support. Are we sure?
+Supporting [+ communist_candidate_1932 +] is rather unpopular in our party, even if the <span style="color: #700000;">**Collectivists**</span> accept our support. Are we sure?
 
 - @support_thalmann_2: Yes, we will support <span style="color: #700000;">**[+ communist_candidate_1932 +]**</span>, despite the reformists' pleas against it.
 - @run_braun: Support <span style="color: #c00000;">Bristol</span> instead.
@@ -883,7 +883,7 @@ on-arrival: unionist_support_marcher = 0 if unionist_support_marcher == 2
 We can't win this election alone, we need support from other parties. [? if marcher_votes >= 50: Nevermind. We actually can win this election alone. ?]
 
 - @convince_z: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #c00000;">Bristol</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
-- @convince_kpd: Convince the <span style="color: #700000;">**Communists**</span> to back <span style="color: #c00000;">Bristol</span>.
+- @convince_kpd: Convince the <span style="color: #700000;">**Collectivists**</span> to back <span style="color: #c00000;">Bristol</span>.
 - @convince_ddp: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to back <span style="color: #c00000;">Bristol</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @convince_lvp: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @view_candidates: View party endorsements.
@@ -1022,14 +1022,14 @@ Thanks to our friendly relations and connections with their left wing, the <span
 on-arrival: ddp_support_marcher = 0; ddp_right += 3; ddp_cohesion -= 2; ddp_relation -= 5
 go-to: endorsements_braun
 
-Unfortunately, under the influence of their business wing, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has refused to support a <span style="color: #c00000;">socialist</span> for the presidency. 
+Unfortunately, under the influence of their business wing, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has refused to support a <span style="color: #c00000;">Reformist</span> for the presidency. 
 
 @convince_lvp
 view-if: lvp_formed
 max-visits: 1
 go-to: convince_lvp_success if ((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Dingeldey"; convince_lvp_fail if not (((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Dingeldey")
 
-The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">socialist</span> industrialists influencing the party.
+The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party.
 
 @convince_lvp_success
 on-arrival: lvp_support_marcher = 1; lvp_left += 6; lvp_relation += 5; burgher_traditionalist += burgher_lvp*0.1 if not kvp_formed; guild_traditionalist += guild_lvp*0.2 if not kvp_formed; landed_traditionalist += landed_lvp*0.2 if not kvp_formed; burgher_kvp += burgher_lvp*0.1 if not kvp_formed; guild_kvp += guild_lvp*0.2 if not kvp_formed; landed_kvp += landed_lvp*0.2 if not kvp_formed; burgher_lvp *= 0.9; guild_lvp *= 0.8; landed_lvp *= 0.8
@@ -1041,7 +1041,7 @@ Surprisingly, we have convinced the <span style="color: #C0A054;">**Golds**</spa
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: endorsements_braun
 
-Perhaps expectedly, we have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">socialism</span> in general.
+Perhaps expectedly, we have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, owing to their strong antipathy toward <span style="color: #c00000;">Reformism</span> in general.
 
 @convince_z
 choose-if: marcher_votes >= unionist_votes and not concord_formed
@@ -1070,7 +1070,7 @@ if (Q.bruning_time) {
 go-to: z_failed if unionist_support_marcher = 0 or (unionist_support_marcher == 2 and historical_mode); z_success if unionist_support_marcher = 1; z_partial if unionist_support_marcher = 2 and not historical_mode
 max-visits: 1
 
-We remind the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] leaders of [? if dufour_run: <span style="color: #808080;">DuFour</span>'s anti-Catholicism, and try to convince them that DuFour's path will eventually lead to Gallax. ?][? if not dufour_run: our genuine <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> and democratic credentials. ?] [? if in_weimar_coalition_heartland: We also remind them of the successes they've had as part of our Unity coalition in Heartland with [+ marcher_candidate_1932_disp +], and our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 4290 presidential election?][? if not in_weimar_coalition_heartland: We also remind them of our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Marx in the 4290 presidential election?]. [? if bruning_time and dufour_run: Unfortunately, DuFour's support for Askew's government has left them with little room to oppose the very president sustaining his cabinet. ?]
+We remind the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] leaders of [? if dufour_run: <span style="color: #808080;">DuFour</span>'s anti-Catholicism, and try to convince them that DuFour's path will eventually lead to Gallax. ?][? if not dufour_run: our genuine <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> and democratic credentials. ?] [? if in_weimar_coalition_heartland: We also remind them of the successes they've had as part of our Unity coalition in Heartland with [+ marcher_candidate_1932_disp +], and our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Croft in the 4290 presidential election?][? if not in_weimar_coalition_heartland: We also remind them of our support for the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Wilhelm Croft in the 4290 presidential election?]. [? if bruning_time and dufour_run: Unfortunately, DuFour's support for Askew's government has left them with little room to oppose the very president sustaining his cabinet. ?]
 
 @z_success
 on-arrival: dufour_angry_bruning += 50 if bruning_time
@@ -1090,7 +1090,7 @@ subtitle: Bristol will resign.
 on-arrival: unionist_support_marcher = 1; heartland_leader = "Sedgewick"; heartland_leader = "Askew" if unionist_leader == "Sedgewick"; reformist_dissent += 10; center_dissent += 10; labor_dissent += 10; left_dissent += 5; commons_marcher -= 5; burgher_marcher -= 5; landed_marcher -= 3; braun_resign = 1; dufour_angry_bruning += 30 if bruning_time
 go-to: endorsements_braun
 
-Ironic, considering that seven years ago, we brokered a deal for Wilhelm Marx to resign in favor of Bristol in exchange for our support for him in the presidential elections. Anyhow, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is now convinced to support Bristol over [? if not dufour_run: [+ unionist_choice +]?][? if dufour_run: DuFour?].
+Ironic, considering that seven years ago, we brokered a deal for Wilhelm Croft to resign in favor of Bristol in exchange for our support for him in the presidential elections. Anyhow, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is now convinced to support Bristol over [? if not dufour_run: [+ unionist_choice +]?][? if dufour_run: DuFour?].
 
 The Minister-President position is transferred to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s [+ heartland_leader +]. Hopefully, their support will outweigh the loss of popularity and internal dissent caused by the resignation of our most well-known figure.
 
@@ -1132,7 +1132,7 @@ The <span style="color: #700000;">**Collectivists**</span> now endorses Bristol 
 
 We can't win this election alone, we need support from other parties. [? if marcher_votes >= 50: Nevermind. We actually can win this election alone. ?]
 
-- @convince_kpd_rosenfeld: Convince the <span style="color: #700000;">**Communists**</span> to back <span style="color: #c00000;">Pendrigon</span>.
+- @convince_kpd_rosenfeld: Convince the <span style="color: #700000;">**Collectivists**</span> to back <span style="color: #c00000;">Pendrigon</span>.
 - @convince_z_rosenfeld: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #c00000;">Pendrigon</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
 - @view_candidates: View party endorsements.
 - @hope: We have concluded negotiations with other parties.
@@ -1142,7 +1142,7 @@ choose-if: marcher_votes >= collectivist_votes
 unavailable-subtitle: The <span style="color: #700000;">Collectivists</span> knows that they are more popular than us; they do not see a reason to support our candidate.
 max-visits: 1
 
-The <span style="color: #700000;">**Collectivists**</span> is considering supporting Halsmark again, but the opportunity to switch their backing to Pendrigon is too enticing. Moreover, their grassroots are likely to vote for him anyhow, making it relatively easy to bring the <span style="color: #700000;">**Communists**</span> on board.
+The <span style="color: #700000;">**Collectivists**</span> is considering supporting Halsmark again, but the opportunity to switch their backing to Pendrigon is too enticing. Moreover, their grassroots are likely to vote for him anyhow, making it relatively easy to bring the <span style="color: #700000;">**Collectivists**</span> on board.
 
 - @kpd_resources_rosenfeld: Use our resources.
 - @kpd_relations_rosenfeld: Use our good relations.
@@ -1156,7 +1156,7 @@ unavailable-subtitle: Not enough resources (need 2).
 on-arrival: resources -= 2; collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: endorsements_rosenfeld
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The bourgeois parties tremble at the real prospect of a <span style="color: #9B0000;">Marxist</span> President.
+The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The bourgeois parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
 
 @kpd_relations_rosenfeld
 view-if: collectivist_relation >= 40 or (collectivist_leader == "Conciliators" and collectivist_relation >= 30)
@@ -1164,7 +1164,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: endorsements_rosenfeld
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The bourgeois parties tremble at the real prospect of a <span style="color: #9B0000;">Marxist</span> President.
+The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The bourgeois parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
 
 @convince_z_rosenfeld
 choose-if: marcher_votes >= unionist_votes
@@ -1175,7 +1175,7 @@ Q.unionist_support_marcher = 0;
 max-visits: 1
 go-to: endorsements_rosenfeld
 
-It's a long shot, but some in our party believed we could convince the <span style="color: #000000;">Unionist Party</span> to back Pendrigon. As expected, this effort failed—their leadership declared uncompromising opposition to cooperating with the <span style="color: #700000;">**Communists**</span> to elect a candidate from our left wing.
+It's a long shot, but some in our party believed we could convince the <span style="color: #000000;">Unionist Party</span> to back Pendrigon. As expected, this effort failed—their leadership declared uncompromising opposition to cooperating with the <span style="color: #700000;">**Collectivists**</span> to elect a candidate from our left wing.
 
 @endorsements_eckener
 
@@ -1205,14 +1205,14 @@ Thanks to our friendly relations, connections with their left wing, and Eckhart'
 on-arrival: ddp_support_marcher = 0; ddp_right += 1; ddp_cohesion -= 1; ddp_relation -= 3
 go-to: endorsements_eckener
 
-Unfortunately, under the influence of its business wing, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has refused to support a <span style="color: #c00000;">socialist</span>-backed candidate for the presidency. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
+Unfortunately, under the influence of its business wing, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has refused to support a <span style="color: #c00000;">Reformist</span>-backed candidate for the presidency. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
 
 @convince_lvp_eckener
 view-if: lvp_formed
 max-visits: 1
 go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Dingeldey" or lvp_ideology != "Right"))
 
-The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">socialist</span> industrialists influencing the party away from Eckhart.
+The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party away from Eckhart.
 
 @convince_lvp_success_eckener
 on-arrival: lvp_support_marcher = 1; lvp_left += 3; lvp_relation += 4; guild_lvp -= 2; landed_lvp -= 2; guild_kvp += 2; landed_kvp += 2; guild_kvp += 2 if not kvp_formed; landed_kvp += 2 if not kvp_formed
@@ -1224,7 +1224,7 @@ We have convinced the <span style="color: #C0A054;">**Golds**</span> to give Eck
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: endorsements_eckener
 
-We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">socialists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
+We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">Reformists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
 
 @convince_z_eckener
 choose-if: marcher_votes >= unionist_votes and not concord_formed
@@ -1243,7 +1243,7 @@ if (Q.unionist_relation >= 65) Q.bvp_support_marcher = 1;
 go-to: z_failed_eckener if unionist_support_marcher = 0; z_success_eckener if unionist_support_marcher = 1; z_partial_eckener if unionist_support_marcher = 2
 max-visits: 1
 
-We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Marx in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
+We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Croft in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
 
 @z_success_eckener
 go-to: endorsements_eckener
@@ -1282,7 +1282,7 @@ The <span style="color: #C0A054;">**Golds**</span> will be the most difficult of
 on-arrival: gold_support_marcher = 1; gold_left += 3; gold_relation += 5
 go-to: endorsements_eckener
 
-Thanks to our friendly relations and Eckhart's non-partisanship, the <span style="color: #C0A054;">**Golds**</span> is now campaigning for Eckhart in the election. However, they refuse to join <span style="color: #c00000;">socialist</span>-led campaign committees and emphasize their independence from us.
+Thanks to our friendly relations and Eckhart's non-partisanship, the <span style="color: #C0A054;">**Golds**</span> is now campaigning for Eckhart in the election. However, they refuse to join <span style="color: #c00000;">Reformist</span>-led campaign committees and emphasize their independence from us.
 
 @convince_dvp_fail_eckener
 on-arrival: gold_support_marcher = 0; gold_right += 1; gold_relation -= 3

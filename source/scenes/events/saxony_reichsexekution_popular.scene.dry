@@ -21,7 +21,7 @@ subtitle: Labor will call a general strike. The the Banners and Vanguard will be
 
 The Commonwealth Army and Stalhelm are already preparing to enter Dornwich. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Dornwich is too high. Do we recognize this?
 
-- @defend_2: We will defend the Dornish Government with the Communists. 
+- @defend_2: We will defend the Dornish Government with the Collectivists. 
 - @surrender
 
 @defend_2
@@ -40,13 +40,13 @@ achievement: drei_pfeile
 
 The the Banners and Vanguard confront the reactionaries on the road to Dornwich and somehow, the enemy has retreated without a fight! They were surprised by our resistance and [+ president +] has decided to not risk a civil war over Dornwich.
 
-This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the fascists and reactionaries. [+ president +]'s ire has also been turned away from us. For now.
+This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the Sovereigntists and reactionaries. [+ president +]'s ire has also been turned away from us. For now.
 
 @surrender
 title: Resign our positions, to prevent bloodshed.
 subtitle: [+ president +] will appoint a right-wing <i>Reichskommissar</i>.
 on-arrival: red_saxony = 0; commons_marcher -= 5; commons_collectivist -= 5; disfavored_collectivist -= 5; disfavored_marcher -= 5; left_dissent += 15; labor_dissent += 5; banner_militancy = banner_militancy*0.7; banner_strength -= 250; vanguard_banned = 1; vanguard_strength -= 150; vanguard_militancy -= 0.1; collectivist_relation -= 20; communist_coalition -= 1
 
-The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> as they harass local party officials.
+The <span style="color: #700000;">collectivists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> as they harass local party officials.
 
 [+ president +] appoints [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] member Wilhelm Bünger as <i>Reichskommissar</i> to govern Dornwich, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**Vanguard**</span>.

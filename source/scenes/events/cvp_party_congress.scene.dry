@@ -300,7 +300,7 @@ face-image: img/portraits/stegerwald.jpg
 
 Somewhat surprisingly, <span style="color: #000000;">Unionists</span> leader Adam Sedgewick is elected as the chairman of its successor party. This is largely attributed to the unified support from the various Christian labor unions and backing from former <span style="color: #000000;">Unionists</span> and Catholic politicians. However, he remains largely opposed by former <span style="color: #3E88B3;">**Traditionalists**</span> members due to his willingness to cooperate constructively with the <span style="color: #c00000;">**Marchers**</span>.
 
-It was widely expected that, with the merger of the two parties, politicians like Sedgewick would shift to the left wing of the newly created party—and this has indeed proven true. His strongest supporters, aside from the trade unions, include the now strengthened <span style="color: #FF7F00;">Christian Left</span> faction, which will push for a paternalistic economic policy and greater cooperation with the <span style="color: #c00000;">socialists</span>. Sedgewick is also a committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, a stance that has pushed some ardent monarchists over to the <span style="color: #003755;">**DNF**</span>.
+It was widely expected that, with the merger of the two parties, politicians like Sedgewick would shift to the left wing of the newly created party—and this has indeed proven true. His strongest supporters, aside from the trade unions, include the now strengthened <span style="color: #FF7F00;">Christian Left</span> faction, which will push for a paternalistic economic policy and greater cooperation with the <span style="color: #c00000;">Reformists</span>. Sedgewick is also a committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, a stance that has pushed some ardent monarchists over to the <span style="color: #003755;">**DNF**</span>.
 
 @lambach
 title: Walther Lambach, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
@@ -315,7 +315,7 @@ Somehow, the <span style="color: #6D5298;">Christian Social</span> wing, now dil
 
 More <span style="color: #c00000;">worker-friendly</span> policies have been added to the platform, such as expanding social welfare, increasing pensions, and implementing more progressive income taxes. They've even rejected austerity as a solution to the Commonwealth's current economic crisis, instead voicing support for public works. However, this has significantly strained industrial enthusiasm for the formation of the new party, and they have begun redirecting funds toward the <span style="color: #FFCC00;">liberals</span>.
 
-This, however, is not good news for us. <span style="color: #6D5298;">Christian Social</span> ideology is deeply rooted in antisemitism, racism, nationalism, and religiosity. If anything, we've noticed worsening relations with the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, as they attempt to present a non-<span style="color: #9B0000;">Marxist</span> alternative to the workers.
+This, however, is not good news for us. <span style="color: #6D5298;">Christian Social</span> ideology is deeply rooted in antisemitism, racism, nationalism, and religiosity. If anything, we've noticed worsening relations with the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, as they attempt to present a non-<span style="color: #9B0000;">Vaelist</span> alternative to the workers.
 
 @adenauer
 title: Konrad Aldermoor, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
@@ -357,7 +357,7 @@ Gottfried Trevannon[? if traditionalist_leader == "Trevannon":, the most recent 
 
 With his control of the colossally sized <span style="color: #000000;">**[+ unionist_party_name +]**</span>, Trevannon has finally been able to mold it into the <span style="color: #0087DC;">Tory Democratic</span> party he has long envisioned. His extensive connections with Staal, Commonwealth industry[? if president == "DuFour":, President DuFour?], and the bourgeois elite are expected to greatly aid his leadership ambitions.
 
-Despite his democratic leanings, the <span style="color: #000000;">[+ unionist_party_name +]</span> remains firmly opposed to <span style="color: #9B0000;">Marxism</span>, effectively ruling out any prospects of coalition with us.
+Despite his democratic leanings, the <span style="color: #000000;">[+ unionist_party_name +]</span> remains firmly opposed to <span style="color: #9B0000;">Vaelism</span>, effectively ruling out any prospects of coalition with us.
 
 @compromise
 title: The vote has been deadlocked!

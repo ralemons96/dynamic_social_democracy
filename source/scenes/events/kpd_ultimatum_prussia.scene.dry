@@ -30,7 +30,7 @@ At the start of this government, the <span style="color: #700000;">**Collectivis
 
 [? if bureaucracy_goal_seen_heartland = 1 : - Purge the bureaucracy. - [? if bureaucracy_goal_heartland <= 0: success ?][? if bureaucracy_goal_heartland >= 1: failed ?] ?]
 
-[? if free_collectivist_goal_seen_heartland = 1 : - Protect <span style="color: #700000;">communist</span> demonstrations. - [? if free_collectivist_goal_heartland <= 0: success ?][? if free_collectivist_goal_heartland >= 1: failed ?] ?]
+[? if free_collectivist_goal_seen_heartland = 1 : - Protect <span style="color: #700000;">collectivist</span> demonstrations. - [? if free_collectivist_goal_heartland <= 0: success ?][? if free_collectivist_goal_heartland >= 1: failed ?] ?]
 
 @goals_failed
 on-arrival: collectivist_relation -= 8; commons_marcher -= 4; disfavored_marcher -= 4; commons_collectivist += 4; vanguard_strength += 100; vanguard_militancy += 0.05; in_popular_front_heartland = 0; in_left_front_heartland = 0; heartland_leader = "Bristol"; collectivist_coalition_dissent += 2

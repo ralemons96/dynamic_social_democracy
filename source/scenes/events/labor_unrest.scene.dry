@@ -20,13 +20,13 @@ on-arrival: labor_dissent += 5; left_dissent += 5; commons_marcher -= 4; coaliti
 
 Unfortunately, Labor Minister [+ labor_minister +] (**<span style="color: #000000;">**[+ unionist_party_name +]**</span>**) overrules our decision and sided with the employers instead.
 
-Many workers are unhappy at the government's decision, and our concession of the Labor Ministry to the bourgeois parties. There is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Communists**</span> stand to gain.
+Many workers are unhappy at the government's decision, and our concession of the Labor Ministry to the bourgeois parties. There is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Collectivists**</span> stand to gain.
 
 @support_employers
 subtitle: This will alienate the workers.
 on-arrival: labor_dissent += 8; left_dissent += 8; commons_marcher -= 6; coalition_dissent -= 1; gold_relation += 5; unionist_relation += 5; ddp_relation += 4; lvp_relation += 5; coalition_dissent -= 1; commons_collectivist += 5; collectivist_coalition_dissent += 1; collectivist_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; gold_left += 1; ddp_right += 0.5; lvp_left += 0.5; ddp_cohesion -= 1; goal_marcher_cancel += 1; labor_goal_marcher_peoples += 1; pro_labor -= 1
 
-Even though most workers grudgingly accept the our intervention, there is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Communists**</span> stand to gain.
+Even though most workers grudgingly accept the our intervention, there is deep bitterness developing against the <span style="color: #c00000;">**Marchers**</span>, especially among the more radical workers. The <span style="color: #700000;">**Collectivists**</span> stand to gain.
 
 @balance
 subtitle: Both sides need to share the pain in the current crisis.

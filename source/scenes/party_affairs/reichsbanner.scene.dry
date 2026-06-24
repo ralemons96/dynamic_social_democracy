@@ -30,7 +30,7 @@ unavailable-subtitle: Not enough resources ([+ banner_militarization_cost +] nee
 subtitle: -[+ banner_militarization_cost +] resources
 on-arrival: resources -= banner_militarization_cost; banner_investment += 1; banner_strength += 100; banner_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; marcher_militancy += 0.05; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent); unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
-Some in our party decry the increasing militarization of the the Banners. They say it is emulating the <span style="color: #3E88B3;">right-wing nationalists</span> or the <span style="color: #700000;">communists</span>, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the <span style="color: #700000;">communists</span>.
+Some in our party decry the increasing militarization of the the Banners. They say it is emulating the <span style="color: #3E88B3;">right-wing nationalists</span> or the <span style="color: #700000;">collectivists</span>, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the <span style="color: #700000;">collectivists</span>.
 
 [? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 
@@ -53,7 +53,7 @@ The the Banners is already serving the purpose it needs to serve. There is no re
 subtitle: +1 resources
 on-arrival: resources += 1; banner_strength -= 100; banner_militancy -= 0.05; left_strength -= 2; left_dissent -= 2; marcher_militancy -= 0.05; commons_collectivist += 2; disfavored_collectivist += 2
 
-Cutting resources to the the Banners causes a drop in the membership, and leads some would-be members to join the <span style="color: #700000;">Communists</span> instead.
+Cutting resources to the the Banners causes a drop in the membership, and leads some would-be members to join the <span style="color: #700000;">Collectivists</span> instead.
 
 
 @women_rb

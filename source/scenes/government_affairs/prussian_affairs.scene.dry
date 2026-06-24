@@ -19,7 +19,7 @@ We can enact policies in Heartland.
 - @ban_sa: Ban the <span style="color: #7A3C00;">**Loyalists**</span>, the <span style="color: #7A3C00;">Royalist</span> paramilitary group.
 - @prosecute_sa: Target the <span style="color: #7A3C00;">**Loyalists**</span>, and minimize their disruptions.
 - @unban_sa: Reverse the <span style="color: #7A3C00;">**Loyalists**</span> ban.
-- @ban_rfb: Ban the <span style="color: #8B0000;">**Vanguard**</span>, the <span style="color: #700000;">Communist</span> paramilitary.
+- @ban_rfb: Ban the <span style="color: #8B0000;">**Vanguard**</span>, the <span style="color: #700000;">Collectivist</span> paramilitary.
 - @unban_rfb: Reverse the <span style="color: #8B0000;">**Vanguard**</span> ban.
 - @ban_sh: Ban the <span style="color: #3E88B3;">**Wardens**</span>, the Nationalist paramilitary.
 - @unban_sh: Reverse the <span style="color: #3E88B3;">**Wardens**</span> ban.
@@ -86,13 +86,13 @@ The <span style="color: #3E88B3;">**Wardens**</span> is no longer banned.
 view-if: communist_coalition < 3 and vanguard_banned = 0
 on-arrival: collectivist_relation -= 15; vanguard_strength -= 50; vanguard_banned = 1; communist_coalition -= 1; unionist_relation += 5; gold_relation += 5; ddp_relation += 5; lvp_relation += 5; heartland_police_loyalty += 0.1; gold_left += 1; ddp_left += 0.5; lvp_left += 1; dufour_angry -= 8
 
-The ban is enthusiastically carried out by the police, perhaps too enthusiastically. The <span style="color: #700000;">Communists</span> take this as one more reason why the <span style="color: #c00000;">Socialists</span> are traitors to the <span style="color: #9B0000;">left</span>. However, the <span style="color: #000000;">moderate</span> and <span style="color: #C0A054;">center-right</span> parties approve, as do the police.
+The ban is enthusiastically carried out by the police, perhaps too enthusiastically. The <span style="color: #700000;">Collectivists</span> take this as one more reason why the <span style="color: #c00000;">Reformists</span> are traitors to the <span style="color: #9B0000;">left</span>. However, the <span style="color: #000000;">moderate</span> and <span style="color: #C0A054;">center-right</span> parties approve, as do the police.
 
 @unban_rfb
 view-if: vanguard_banned = 1 and not in_social_catholic_coalition_heartland
 on-arrival: vanguard_banned = 0; vanguard_strength += 50; heartland_police_loyalty -= 0.1; dufour_angry += 8
 
-The <span style="color: #700000;">Communist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
+The <span style="color: #700000;">Collectivist</span> <span style="color: #700000;">**Vanguard**</span> is no longer banned.
 
 @negotiate_concordat
 view-if: (heartland_concordat_progress < 2 and unionist_leader != "Renck") or (heartland_concordat_progress < 1 and unionist_leader = "Renck") and heartland_concordat = 0

@@ -21,7 +21,7 @@ on-display: {!
 
 Defense Minister von Staal has founded the *Reichskuratorium für Jugendertüchtigung* (Commonwealth Institute to Promote Youth Fitness), a program designed to have Commonwealth Army officers teach “military sports” to young workers. Staal aims to secure the participation of the the Banners in this initiative, hoping it will serve as a counterweight to the <span style="color: #7A3C00;">**Loyalists**</span> and advance his broader strategy of integrating paramilitary groups into the state. Preparing youth for future military service has long been part of his rearmament agenda. The program will be led by General Stülpnagel, an advisor of his.
 
-Staal has begun talks with <span style="color: #c00000;">socialist</span> youth organizations, who have in turn informed the <span style="color: #c00000;">**Marchers**</span> leadership. While the the Banners and the ADGB support participation, the <span style="color: #c00000;">**Marchers**</span> leadership is wary. They fear that joining the initiative is a thinly veiled attempt toward rearmament and would tie them too closely to the unpopular [+ chancellor +] government, and instead seek to maintain total opposition.
+Staal has begun talks with <span style="color: #c00000;">Reformist</span> youth organizations, who have in turn informed the <span style="color: #c00000;">**Marchers**</span> leadership. While the the Banners and the ADGB support participation, the <span style="color: #c00000;">**Marchers**</span> leadership is wary. They fear that joining the initiative is a thinly veiled attempt toward rearmament and would tie them too closely to the unpopular [+ chancellor +] government, and instead seek to maintain total opposition.
 
 the Banners Chairman Karl Höltermann has put forward the most compelling argument in favor: without military training—especially for its officers—the the Banners cannot hope to defend itself effectively against the <span style="color: #7A3C00;">**Loyalists**</span>.
 
@@ -37,7 +37,7 @@ on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; banner_militancy +
 
 The the Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. the Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
 
-This program has strengthened the the Banners and improved our relations with von Staal. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Communists**</span>.
+This program has strengthened the the Banners and improved our relations with von Staal. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Collectivists**</span>.
 
 @wait
 title: Persuade the the Banners to remain non-committal for now, at least until the next election.
@@ -49,4 +49,4 @@ We have secured a commitment from the the Banners leadership not to make any off
 title: Force the the Banners to reject this offer, and persuade them to cut off communications with the general.
 on-arrival: staal_marcher_r -= 1; staal_marcher_support -= 2; labor_dissent += 10; knight_dissent += 10
 
-Our explicit rejection of the Banners participation in the program has caused discontent within both the ADGB and the the Banners, who have nonetheless reluctantly yielded to the party leadership’s decision. As a <span style="color: #c00000;">socialist</span> party, we cannot lend our support to what is, in essence, a thinly veiled rearmament scheme.
+Our explicit rejection of the Banners participation in the program has caused discontent within both the ADGB and the the Banners, who have nonetheless reluctantly yielded to the party leadership’s decision. As a <span style="color: #c00000;">Reformist</span> party, we cannot lend our support to what is, in essence, a thinly veiled rearmament scheme.

@@ -22,7 +22,7 @@ subtitle: Labor will call a general strike. The the Banners and Vanguard will be
 
 The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Stathmore is too high. Do we recognize this?
 
-- @defend_2: We will defend the Stathmore Government with the Communists. 
+- @defend_2: We will defend the Stathmore Government with the Collectivists. 
 - @surrender
 
 @defend_2
@@ -41,13 +41,13 @@ achievement: drei_pfeile
 
 The the Banners and Vanguard confront the reactionaries on the road to Stathmore and somehow, the enemy has retreated without a fight! They were surprised by our resistance and DuFour has decided to not risk a civil war over Stathmore.
 
-This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the fascists and reactionaries. DuFour's ire has also been turned away from us. For now. 
+This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the Sovereigntists and reactionaries. DuFour's ire has also been turned away from us. For now. 
 
 @surrender
 title: Resign our positions, to prevent bloodshed.
 subtitle: DuFour will appoint a new <i>Reichskommissar</i>.
 on-arrival: red_thuringia = 0; commons_marcher -= 3; commons_collectivist -= 3; disfavored_collectivist -= 3; disfavored_marcher -= 3; left_dissent += 10; labor_dissent += 5; banner_militancy = banner_militancy*0.8; banner_strength -= 200; vanguard_banned = 1; vanguard_strength -= 100; vanguard_militancy -= 0.1; collectivist_relation -= 25; communist_coalition -= 1
 
-The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> as they harass local party officials.
+The <span style="color: #700000;">collectivists</span> protesting in the streets are brutally suppressed, with the Commonwealth Army patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> as they harass local party officials.
 
 DuFour appoints <span style="color: #7FCEB1;">**CNBLP**</span> member Erwin Baum as <i>Reichskommissar</i> to govern Stathmore, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**Vanguard**</span>.

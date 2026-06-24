@@ -45,7 +45,7 @@ on-arrival: resources -= 1; cultural_organizations += 1; left_dissent -= 6; cent
 
 It is not enough for the <span style="color: #c00000;">**Marchers**</span> to solely be a political party. The Worker Singer's League, Worker's Sports, and our schools and libraries are crucial to our members' lives. Funding these organizations makes our members more committed to the party, even when our policies might not be to their liking.
 
-[? if loyalist_strength > 500 : However, it feels frivolous to spend on sports and choirs when the <span style="color: #7A3C00;">fascists</span> are murdering us in the streets. ?]
+[? if loyalist_strength > 500 : However, it feels frivolous to spend on sports and choirs when the <span style="color: #7A3C00;">Sovereigntists</span> are murdering us in the streets. ?]
 
 @rb
 choose-if: resources > 0

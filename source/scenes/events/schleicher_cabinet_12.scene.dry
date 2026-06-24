@@ -21,11 +21,11 @@ on-display: {!
 
 = The <span style="color: #700000;">**Collectivists**</span> Is Banned!
 
-Wilhelm Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**Vanguard**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Central Union the Commonwealth</span>" in the aftermath of the revolt.
+Wilhelm Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**Vanguard**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Collectivist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Central Union the Commonwealth</span>" in the aftermath of the revolt.
 
-According to the government, these plans were to be set in motion in protest against Staal's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Communist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved the Commonwealth from violent revolt.
+According to the government, these plans were to be set in motion in protest against Staal's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Collectivist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved the Commonwealth from violent revolt.
 
-But Staal and the <span style="color: #7A3C00;">Royalists</span> cannot be trusted. They could just as easily have planted the evidence to manufacture a pretext for crushing the <span style="color: #700000;">**Communists**</span>.
+But Staal and the <span style="color: #7A3C00;">Royalists</span> cannot be trusted. They could just as easily have planted the evidence to manufacture a pretext for crushing the <span style="color: #700000;">**Collectivists**</span>.
 
 - @kpd_ban
 
@@ -90,11 +90,11 @@ if (Q.heartland_leader === "Crowde") {
 !}
 audio: music/1930_1933/Einheitsfrontlied.mp3
 
-All <span style="color: #700000;">**Communist**</span> Assembly members who haven't fled to the Central Union are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**Vanguard**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
+All <span style="color: #700000;">**Collectivist**</span> Assembly members who haven't fled to the Central Union are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**Vanguard**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
 
-<span style="color: #700000;">**Communist**</span> party offices are officially closed down, with the Commonwealth Army's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span style="color: #700000;">**Collectivists**</span> are removed by force, and replaced with [? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span>?][? if not gnu_formed: Staal?] loyalists.
+<span style="color: #700000;">**Collectivist**</span> party offices are officially closed down, with the Commonwealth Army's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span style="color: #700000;">**Collectivists**</span> are removed by force, and replaced with [? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span>?][? if not gnu_formed: Staal?] loyalists.
 
-[? if heartland_leader == "Crowde": Furthermore, Crowde has authorized an extensive crackdown on suspected <span style="color: #700000;">Communist</span> members using his authority as Minister-President of Heartland, even if said members don't pose a significant threat. ?]
+[? if heartland_leader == "Crowde": Furthermore, Crowde has authorized an extensive crackdown on suspected <span style="color: #700000;">Collectivist</span> members using his authority as Minister-President of Heartland, even if said members don't pose a significant threat. ?]
 
 [? if sapd_formed: Along with the <span style="color: #700000;">**Collectivists**</span>, the <span style="color: #9B0000;">**SAPD**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
 
@@ -287,7 +287,7 @@ if (d3 && window) {
 }
 !}
 
-It must suck for those <span style="color: #700000;">**Communists**</span>, but they had it coming for them. Cynically, we could benefit electorally as the only legal <span style="color: #9B0000;">Marxist</span> party.
+It must suck for those <span style="color: #700000;">**Collectivists**</span>, but they had it coming for them. Cynically, we could benefit electorally as the only legal <span style="color: #9B0000;">Vaelist</span> party.
 
 = Assembly composition
 
@@ -355,7 +355,7 @@ It must suck for those <span style="color: #700000;">**Communists**</span>, but 
 title: How will the <span style="color: #750e0e;">Central Union</span> respond?
 subtitle: The country ironically funding the Commonwealth Army's secret rearmament.
 
-Despite the <span style="color: #750e0e;">Central Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Central Union</span> politicians are privately outraged as fleeing <span style="color: #700000;">**Collectivists**</span> politicians spread the news of their party's dissolution.
+Despite the <span style="color: #750e0e;">Central Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Collectivist**</span> brethren on the streets, many <span style="color: #750e0e;">Central Union</span> politicians are privately outraged as fleeing <span style="color: #700000;">**Collectivists**</span> politicians spread the news of their party's dissolution.
 
 However, despite this, Halsmark has adhered to his policy of secretly aiding the Commonwealth in its rearmament through officer training and supplying armament technology. Staal's fears have thus subsided for now, with Halsmark having near complete control over his party.
 
@@ -367,7 +367,7 @@ choose-if: staal_marcher_influence < 6
 
 We are in no position to fight a civil war against the full force of the state, but we cannot let Staal live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the the Banners as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**Vanguard**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
 
-We don't know if Staal will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**Marchers**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
+We don't know if Staal will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**Marchers**</span> to protest in solidarity with the <span style="color: #700000;">**Collectivists**</span>. 
 
 Do we continue to bide our time?
 
@@ -456,7 +456,7 @@ We are not alone. [? if marcher_alone: Well, we actually are, never mind. ?]
 
 <span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_staal: In Favor?][? if not libs_against_staal: Political Neutrality?]
 
-[? if not marcher_alone: The Unity Coalition parties are nominally against such unconstitutional acts as well. While they may not have an armed self-defense militia, they have several hundred thousand employees in blue-collar and white-collar jobs, and could completely cripple the economy if they act alongside the <span style="color: #c00000;">socialist</span> Free Unions. ?]
+[? if not marcher_alone: The Unity Coalition parties are nominally against such unconstitutional acts as well. While they may not have an armed self-defense militia, they have several hundred thousand employees in blue-collar and white-collar jobs, and could completely cripple the economy if they act alongside the <span style="color: #c00000;">Reformist</span> Free Unions. ?]
 
 - @spd_win
 - @spd_med
@@ -503,7 +503,7 @@ Q.labor_dissent -= 20;
 !}
 view-if: marcher_win
 
-The mass general strike has crippled the Commonwealth economy, bringing the country to a complete standstill. With the the Banners strong and organized, the government cannot simply crush the hundreds of thousands of <span style="color: #c00000;">socialist</span> protesters flooding the streets.
+The mass general strike has crippled the Commonwealth economy, bringing the country to a complete standstill. With the the Banners strong and organized, the government cannot simply crush the hundreds of thousands of <span style="color: #c00000;">Reformist</span> protesters flooding the streets.
 
 Meanwhile, in defiance of the indefinite adjournment of the Assembly, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
 
@@ -565,7 +565,7 @@ on-arrival: hammerstein_win = 1
 
 The general strike proves short-lived. An endless supply of unemployed strikebreakers and Staal's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The the Banners is no match for the Commonwealth Army.
 
-Seizing the moment, Staal expands his crackdown, accusing the <span style="color: #c00000;">**Marchers**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+Seizing the moment, Staal expands his crackdown, accusing the <span style="color: #c00000;">**Marchers**</span> of conspiring with the <span style="color: #700000;">**Collectivists**</span> to incite revolution.
 
 the Commonwealth is lost.
 
@@ -622,6 +622,6 @@ This, combined with his blatant constitutional breach just a week ago, has final
 
 Perhaps its our time to strike?
 
-- @civil_war: The <span style="color: #c00000;">**Marchers**</span> stands with the <span style="color: #700000;">**Communists**</span>.
+- @civil_war: The <span style="color: #c00000;">**Marchers**</span> stands with the <span style="color: #700000;">**Collectivists**</span>.
 - @fight_mild
 - @do_nothing: This isn't our fight.

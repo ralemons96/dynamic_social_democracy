@@ -18,7 +18,7 @@ on-display: {!
 
 = The Enabling Act
 
-As the Assembly gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Enabling Act" proposed by [+ royalist_chancellor +] and the <span style="color: #7A3C00;">**Royalists**</span>. With Staal's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Communists**</span> and the Banners. 
+As the Assembly gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Enabling Act" proposed by [+ royalist_chancellor +] and the <span style="color: #7A3C00;">**Royalists**</span>. With Staal's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Collectivists**</span> and the Banners. 
 
 However, this is not something the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] can easily swallow...
 
@@ -31,7 +31,7 @@ view-if: (unionist_in_gov_mini and pro_republic < 30) or far_right_coalition >= 
 
 [? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is personally assured significant constitutional safeguards by Staal, though he fails to extract a written commitment from [+ chancellor +]. It proves meaningless—[+ chancellor +] never intended to honor them.
 
-Gallax has promised a campaign of revenge against the <span style="color: #c00000;">socialists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against our <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
+Gallax has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against our <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
 
 What are we to do now?
 
@@ -47,9 +47,9 @@ Do we realize that this means civil war, against the full force of the state?
 
 @give_up
 
-Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
+Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">Reformists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
+The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
 
 the Commonwealth is lost.
 

@@ -1,5 +1,5 @@
 title: The <span style="color: #7A3C00;">**Loyalists**</span>'s Show of Strength
-subtitle: An <span style="color: #7A3C00;">**Loyalists**</span> demonstration, right outside the <span style="color: #700000;">**Communist**</span> headquarters.
+subtitle: An <span style="color: #7A3C00;">**Loyalists**</span> demonstration, right outside the <span style="color: #700000;">**Collectivist**</span> headquarters.
 view-if: chancellor = "Staal" and staal_time == 7 and not democracy_paramilitary and heartland_leader == "Staal"
 new-page: true
 tags: event
@@ -20,11 +20,11 @@ on-display: {!
 
 = <span style="color: #7A3C00;">**Loyalists**</span>'s Show of Strength
 
-In an attempt to revive the crumbling morale of the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #7A3C00;">**Royalists**</span>, the paramilitary organization staged a provocative march directly in front of the <span style="color: #700000;">**Collectivists**</span> headquarters—the Verdwen House on Verdwen Square, a major square in one of Axton’s working-class, <span style="color: #700000;">**Communist**</span>-dominated districts.
+In an attempt to revive the crumbling morale of the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #7A3C00;">**Royalists**</span>, the paramilitary organization staged a provocative march directly in front of the <span style="color: #700000;">**Collectivists**</span> headquarters—the Verdwen House on Verdwen Square, a major square in one of Axton’s working-class, <span style="color: #700000;">**Collectivist**</span>-dominated districts.
 
 Acting under Staal’s orders, Axton police cleared the building “for safety reasons” and protected the route of the <span style="color: #7A3C00;">**Loyalists**</span> march, deploying armored trucks and machine-gun squads to suppress any hostile fire from the surrounding buildings.
 
-These extreme precautions culminated in the spectacle of fifteen thousand <span style="color: #7A3C00;">**Loyalists**</span> men parading through the square, chanting slogans such as “We shit on freedom! We shit on the <span style="color: #005EB8;">Jew</span> republic!”—with no <span style="color: #700000;">**Communist**</span> counter-demonstration permitted. When violence broke out, police clashed almost exclusively with <span style="color: #700000;">**Communist**</span> protestors.
+These extreme precautions culminated in the spectacle of fifteen thousand <span style="color: #7A3C00;">**Loyalists**</span> men parading through the square, chanting slogans such as “We shit on freedom! We shit on the <span style="color: #005EB8;">Jew</span> republic!”—with no <span style="color: #700000;">**Collectivist**</span> counter-demonstration permitted. When violence broke out, police clashed almost exclusively with <span style="color: #700000;">**Collectivist**</span> protestors.
 
 - @nazi_2
 
@@ -32,7 +32,7 @@ These extreme precautions culminated in the spectacle of fifteen thousand <span 
 title: We are powerless, with the police on their side.
 on-arrival: loyalist_strength += 25; loyalist_militancy += 0.02; vanguard_strength += 10; disfavored_collectivist -= 2; disfavored_royalist += 2; commons_collectivist -= 2; commons_royalist += 2; royalist_explode -= 1
 
-In the days that follow, <span style="color: #7A3C00;">Royalist</span> morale experiences a renewed, if temporary, surge. The rally projects an aura of legitimacy, as the <span style="color: #7A3C00;">Royalists</span> align themselves with the forces of law and order against the <span style="color: #700000;">**Communists**</span>.
+In the days that follow, <span style="color: #7A3C00;">Royalist</span> morale experiences a renewed, if temporary, surge. The rally projects an aura of legitimacy, as the <span style="color: #7A3C00;">Royalists</span> align themselves with the forces of law and order against the <span style="color: #700000;">**Collectivists**</span>.
 
 For the left, it is a demoralizing blow—an open display of <span style="color: #7A3C00;">Royalist</span> defiance on the very doorstep of the <span style="color: #700000;">**Collectivists**</span>, unopposed and uncontested, with the implicit approval of the government.
 

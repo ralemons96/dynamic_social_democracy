@@ -1,4 +1,4 @@
-title: Reformist leaders resign
+title: Revisionist leaders resign
 new-page: true 
 subtitle: Reformist disagreements with our policies have grown too severe.
 tags: event
@@ -48,6 +48,6 @@ if (Q.n_advisors < Q.n_advisors_start) Q.shuffle_leadership_timer = 0;
 !}
 max-visits: 1
 
-= Reformist leaders resign
+= Revisionist leaders resign
 
 Our policy choices have greatly offended the reformist faction. Many of our most experienced leaders have resigned. 

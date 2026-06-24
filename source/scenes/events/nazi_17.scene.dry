@@ -160,9 +160,9 @@ go-to: something_1
 @something_1
 on-arrival: month += 2; week -= 1; month -= 1 if week < 1; year += 1 if month > 12; month -= 12 if month > 12; chancellor = "Gallax"
 
-Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
+Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">Reformists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is bought back from the Freehold and appointed chancellor. ?]
+The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is bought back from the Freehold and appointed chancellor. ?]
 
 - @enabling_act
 
@@ -199,7 +199,7 @@ set-bg: img/reichstag_fire.jpg
 
 Together with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], and the dictatorial powers offered by the Assembly Fire Decree, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> have won more than an outright majority.
 
-The law is considered a constitutional amendment, requiring two-thirds of the Assembly to approve the bill. The <span style="color: #700000;">**Communists**</span> are de-facto banned, and many <span style="color: #c00000;">**Marchers**</span> deputies are imprisoned under the powers of the Assembly Fire Decree. The <span style="color: #000000;">Unionist Party</span> is the deciding factor, seeking to save the Catholic population from persecution and a second Kulturkampf.
+The law is considered a constitutional amendment, requiring two-thirds of the Assembly to approve the bill. The <span style="color: #700000;">**Collectivists**</span> are de-facto banned, and many <span style="color: #c00000;">**Marchers**</span> deputies are imprisoned under the powers of the Assembly Fire Decree. The <span style="color: #000000;">Unionist Party</span> is the deciding factor, seeking to save the Catholic population from persecution and a second Kulturkampf.
 
 <span style="color: #7A3C00;">**Loyalists**</span> men are positioned inside and outside the chamber, an intense atmosphere of fear settling over the nominally constitutional <span style="color: #000000;">Unionist Party</span>. Werth and Askew argue against the bill, while the majority of the party is in favor of it. The <span style="color: #7A3C00;">Royalists</span> have promised constitutional safeguards, but have refused to put it in writing as requested by Mallin and the <span style="color: #000000;">Unionist Party</span>.
 
