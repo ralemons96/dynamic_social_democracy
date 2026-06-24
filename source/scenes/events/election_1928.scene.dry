@@ -2139,7 +2139,7 @@ unavailable-subtitle: [? if ddp_relation < 60 and liberal_parliament == 0 and bo
 choose-if: ((ddp_relation >= 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0) or (liberal_parliament == 1 or bourgeois_parliament_ddp == 1 or lvp_formed)) and ((unionist_relation >= 50 and unionist_leader == "Emperor") or (unionist_relation >= 60 and unionist_leader == "Joos") or (unionist_relation >= 70 and unionist_ideology == "Right"))
 on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 3; ddp_relation -= 3; lvp_relation -= 4; gold_relation -= 5; reformist_dissent += 10; gold_right += 2; lvp_right += 1.5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.05; vanguard_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
 
-Surprisingly, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] agrees to a reform of the ruling Unity Coalition. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Emrys Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
+Surprisingly, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] agrees to a reform of the ruling Unity Coalition. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Cael Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
 
 The right will be more active in resisting our rule considering we are going to rule with the <span style="color: #700000;">**Collectivists**</span> on both levels of government. The <span style="color: #700000;">**Collectivists**</span> has provided a list of objectives for us to complete in parallel to our federal policies.
 
@@ -2154,7 +2154,7 @@ unavailable-subtitle: [? if ddp_relation < 60 and liberal_parliament == 0 and bo
 choose-if: ((ddp_relation >= 60 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0) or (liberal_parliament == 1 or bourgeois_parliament_ddp == 1 or lvp_formed)) and ((unionist_relation >= 50 and unionist_leader == "Emperor") or (unionist_relation >= 60 and unionist_leader == "Joos") or (unionist_relation >= 70 and unionist_ideology == "Right"))
 on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 1; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; heartland_leader = "Pendrigon"; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 5; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 10; gold_relation -= 15; reformist_dissent += 10; gold_right += 5; lvp_right += 4; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.05; vanguard_strength += 50; ddp_in_popular_front_heartland = 1 if liberal_parliament = 0 and bourgeois_parliament_ddp == 0; ddp_relation -= 3 if ddp_in_popular_front_heartland; coup_progress += 1; capital_strike_progress += 1; heartland_negotiations_collectivist_trigger = 1
 
-We have kicked out the <span style="color: #C0A054;">**Golds**</span> from the government, and formed a Popular Front. The <span style="color: #C0A054;">**Golds**</span> is infuriated by our betrayal and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Emrys Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
+We have kicked out the <span style="color: #C0A054;">**Golds**</span> from the government, and formed a Popular Front. The <span style="color: #C0A054;">**Golds**</span> is infuriated by our betrayal and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Cael Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work. He is accepted with great reluctance to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and welcomed by the <span style="color: #700000;">**Collectivists**</span>.
 
 The right will be more active in resisting our rule considering we are going to rule with the <span style="color: #700000;">**Collectivists**</span> on both levels of government. The <span style="color: #700000;">**Collectivists**</span> has provided a list of objectives for us to complete in parallel to our federal policies.
 
@@ -2168,14 +2168,14 @@ on-arrival: marcher_in_government = 1; in_popular_front = 1; chancellor = "Yardl
 achievement: grosse_volksfront
 go-to: popular_front_civil_war if coup_progress >= 10; popular_front_no_civil_war if coup_progress < 10
 
-Somehow, the coalition is successfully formed! The conciliatory leadership of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> helped make the negotiations possible. We still need a chancellor; the only acceptable choice among the parties was Rowan Yardley of the <span style="color: #c00000;">**Marchers**</span>, acceptable to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> [? if president == "DuFour" or president_ideology == "Moderate": as well as President [+ president +], albeit extremely reluctantly ?].
+Somehow, the coalition is successfully formed! The conciliatory leadership of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> helped make the negotiations possible. We still need a chancellor; the only acceptable choice among the parties was Calbert Yardley of the <span style="color: #c00000;">**Marchers**</span>, acceptable to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> [? if president == "DuFour" or president_ideology == "Moderate": as well as President [+ president +], albeit extremely reluctantly ?].
 
 @popular_front_success
 on-arrival: marcher_in_government = 1; in_popular_front = 1; chancellor = "Yardley"; chancellor_party = "Marcher"; collectivist_relation += 10; coup_progress += 1; in_left_front = 0; in_weimar_coalition = 0; in_grand_coalition = 0; coalition_dissent = 0; coup_progress += 1 if in_popular_front_heartland; capital_strike_progress += 1 if in_popular_front_heartland; dufour_angry = 75
 go-to: popular_front_civil_war if coup_progress >= 10; popular_front_no_civil_war if coup_progress < 10
 achievement: volksfront
 
-Somehow, surprisingly, the coalition is successfully formed! We still need a chancellor; the only acceptable choice among the parties was Rowan Yardley of the <span style="color: #c00000;">**Marchers**</span>, acceptable to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> [? if president == "DuFour" or president_ideology == "Moderate": as well as President [+ president +], albeit extremely reluctantly ?].
+Somehow, surprisingly, the coalition is successfully formed! We still need a chancellor; the only acceptable choice among the parties was Calbert Yardley of the <span style="color: #c00000;">**Marchers**</span>, acceptable to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #700000;">**Collectivists**</span> [? if president == "DuFour" or president_ideology == "Moderate": as well as President [+ president +], albeit extremely reluctantly ?].
 
 @popular_front_no_civil_war
 on-arrival: collectivist_goals_seen = 0; finance_minister_party = "Unionist"; interior_minister_party = "Unionist"; justice_minister_party = "Unionist"; ddp_in_popular_front = 1 if (liberal_parliament = 0 and bourgeois_parliament_ddp == 0 and not lvp_formed); justice_minister_party = ddp_name if ddp_in_popular_front; economic_minister_party = "Unionist"; economic_minister_party = ddp_name if ddp_in_popular_front; labor_minister_party = "Unionist"; foreign_minister_party = "Unionist"; agriculture_minister_party = "Unionist"; army_minister = "I"; leverage += collectivist_r; leverage += ddp_r if liberal_parliament = 1 or bourgeois_parliament_ddp == 1; gold_right += 6; ddp_right += 3; lvp_right += 5; ddp_cohesion -= 2 if liberal_parliament = 0; liberal_cooperation += 5 if liberal_parliament = 1 or bourgeois_parliament_ddp == 1; bourgeois_cooperation += 5; liberal_cooperation += 3 if ((liberal_parliament = 1 or bourgeois_parliament_ddp == 1) and (in_popular_front_heartland or in_left_front_heartland)); bourgeois_cooperation += 3 if (in_popular_front_heartland or in_left_front_heartland); gold_relation -= 5; ddp_relation -= 5 if liberal_parliament = 1 or bourgeois_parliament_ddp == 1; lvp_relation -= 5; reformist_dissent += 20; reformist_strength -= 10; left_dissent -= 20; left_strength += 15; leverage += marcher_r if support_collectivist_grand; leverage += collectivist_r if support_collectivist_grand; dufour_angry += 10 if (in_popular_front_heartland or in_left_front_heartland); 
@@ -2338,7 +2338,7 @@ unavailable-subtitle: [? if reformist_strength >= left_strength: Our party refor
 choose-if: left_strength >= reformist_strength and ((president_ideology != "Right" and president != "DuFour") or presidential_powers)
 on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 7; gold_relation -= 8; gold_right += 5; ddp_right += 3; ddp_cohesion -= 3; lvp_right += 5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.1; vanguard_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_dissent += 25; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
 
-We have exited our long standing Unity Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Emrys Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
+We have exited our long standing Unity Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Cael Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
 
 The right will be more active in resisting our rule considering we are going to rule with the <span style="color: #700000;">**Collectivists**</span> on both levels of government. The <span style="color: #700000;">**Collectivists**</span> has provided a list of objectives for us to complete in parallel to our federal policies.
 
@@ -2351,7 +2351,7 @@ unavailable-subtitle: [? if reformist_strength >= left_strength: Our party refor
 choose-if: left_strength >= reformist_strength and president_ideology != "Right" and president != "DuFour"
 on-arrival: in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_marcher_majority_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_left_front_heartland = 1; heartland_leader = "Pendrigon"; army_loyalty -= 0.05; marcher_heartland = 1; right_heartland = 0; collectivist_goals_seen_heartland = 0; leverage += 5; collectivist_relation += 10; unionist_relation -= 15; ddp_relation -= 15; gold_relation -= 20; lvp_relation -= 20; reformist_dissent += 25; gold_right += 8; ddp_right += 5; ddp_cohesion -= 5; lvp_right += 5; heartland_police_loyalty -= 0.1; vanguard_militancy += 0.1; vanguard_strength += 50; coup_progress += 1; capital_strike_progress += 1; reformist_strength -= 10; left_dissent -= 10; left_strength += 10; heartland_negotiations_collectivist_left_trigger = 1;
 
-We have kicked out the <span style="color: #C0A054;">**Golds**</span> and the other bourgeois parties from the existing Unity Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The bourgeois parties are infuriated by our betrayal, and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Emrys Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
+We have kicked out the <span style="color: #C0A054;">**Golds**</span> and the other bourgeois parties from the existing Unity Coalition to form a United Left Coalition with the <span style="color: #700000;">**Collectivists**</span>. The bourgeois parties are infuriated by our betrayal, and any future coalitions with them may be impossible. The Minister-President position is transferred from Bristol to[? if left_split == 1:&nbsp;<span style="color: #9B0000;">**SAPD**</span> member?] Cael Pendrigon, who [? if left_split == 0: belongs?][? if left_split == 1: belonged?] to the left faction of the <span style="color: #c00000;">**Marchers**</span>, and had a history of defending <span style="color: #700000;">**Collectivists**</span> members through his work.
 
 The right will be more active in resisting our rule considering we are going to rule with the <span style="color: #700000;">**Collectivists**</span> on both levels of government. The <span style="color: #700000;">**Collectivists**</span> has provided a list of objectives for us to complete in parallel to our federal policies.
 
@@ -2362,7 +2362,7 @@ on-arrival: marcher_in_government = 1; in_left_front = 1; chancellor = "Yardley"
 go-to: left_coalition_civil_war if coup_progress >= 10; left_coalition_no_civil_war if coup_progress < 10
 achievement: einheitsfront
 
-Somehow, surprisingly, the left coalition is successfully formed, without appointing Halsmark as chancellor. The consensus choice for chancellor, accepted by the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>, and President [+ president +], is Rowan Yardley, who belongs to the centrist faction of the <span style="color: #c00000;">**Marchers**</span>, but was acceptable to the left due to his previous membership in the left-wing anti-war <span style="color: #D47B9B;">**USPD**</span>.
+Somehow, surprisingly, the left coalition is successfully formed, without appointing Halsmark as chancellor. The consensus choice for chancellor, accepted by the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>, and President [+ president +], is Calbert Yardley, who belongs to the centrist faction of the <span style="color: #c00000;">**Marchers**</span>, but was acceptable to the left due to his previous membership in the left-wing anti-war <span style="color: #D47B9B;">**USPD**</span>.
 
 # just raise the coup limit, don't immediately go to civil war
 
@@ -2957,34 +2957,34 @@ Finally, the <span style="color: #c00000;">**Marchers**</span> can govern alone!
 
 Who should be chancellor?
 
-- @braun_majority_chancellor: Aldous Bristol for Chancellor.
-- @breitscheid_majority_chancellor: Rowan Yardley for Chancellor.
-- @muller_majority_chancellor: Hermann Sarrow for Chancellor.
-- @wels_majority_chancellor: Otto Vesh for Chancellor.
+- @braun_majority_chancellor: Lyle Bristol for Chancellor.
+- @breitscheid_majority_chancellor: Calbert Yardley for Chancellor.
+- @muller_majority_chancellor: Felicity Sarrow for Chancellor.
+- @wels_majority_chancellor: Joran Vesh for Chancellor.
 
 @braun_majority_chancellor
 view-if: not historical_mode or not heartland_leader = "Bristol"
 on-arrival: chancellor = "Bristol"
 
-[? if president == "Bristol": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Assembly; there is no law saying that the Chancellor must be a member of the Assembly). Thus, we have Chancellor-President Aldous Bristol. ?]
-[? if president != "Bristol": Aldous Bristol has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority. ?]
+[? if president == "Bristol": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Assembly; there is no law saying that the Chancellor must be a member of the Assembly). Thus, we have Chancellor-President Lyle Bristol. ?]
+[? if president != "Bristol": Lyle Bristol has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority. ?]
 
 @breitscheid_majority_chancellor
 on-arrival: chancellor = "Yardley"
 
-Rowan Yardley has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
+Calbert Yardley has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
 
 @muller_majority_chancellor
 view-if: muller_dead = 0
 on-arrival: chancellor = "Sarrow"
 
-Hermann Sarrow has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
+Felicity Sarrow has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
 
 @wels_majority_chancellor
 view-if: muller_dead = 1
 on-arrival: chancellor = "Vesh"
 
-Otto Vesh has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
+Joran Vesh has become chancellor of the <span style="color: #c00000;">**Marchers**</span> majority.
 
 
 @brauns_dilemma
@@ -3009,8 +3009,8 @@ on-arrival: loyalist_strength += 100; warden_strength += 100; in_emergency_gover
 
 Yes, an emergency minority government, with the support of the <span style="color: #c00000;">**Marchers**</span>. Who should lead this emergency minority government?
 
-- @braun_emergency_chancellor: Aldous Bristol for Chancellor[? if president == "Bristol":-President?]!
-- @breitscheid_emergency_chancellor: Rowan Yardley for emergency Chancellor.
+- @braun_emergency_chancellor: Lyle Bristol for Chancellor[? if president == "Bristol":-President?]!
+- @breitscheid_emergency_chancellor: Calbert Yardley for emergency Chancellor.
 - @bruning_emergency_chancellor: Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], as a goodwill gesture toward the bourgeoisie.
 - @wirth_emergency_chancellor: Joseph Werth of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], as a gesture of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> unity.
 
@@ -3019,9 +3019,9 @@ subtitle: [? if president == "Bristol": This is unprecedented. ?][? if president
 view-if: not historical_mode
 on-arrival: chancellor = "Bristol"; chancellor_party = "Marcher"; marcher_in_government = 1; pro_republic -= 5; ddp_relation -= 4; gold_relation -= 4; unionist_relation -= 4; lvp_relation -= 4; gold_right += 2; ddp_right += 1.5; ddp_cohesion -= 1; lvp_right += 2; pro_republic += 3 if president != "Bristol"; ddp_relation += 4 if president != "Bristol"; gold_relation += 4 if president != "Bristol"; unionist_relation += 4 if president != "Bristol"; lvp_relation += 4 if president != "Bristol"; foreign_minister_party = "Marcher"; interior_minister_party = "Marcher"; justice_minister_party = "Marcher"; labor_minister_party = "Marcher"; army_minister_party = "Marcher"; economic_minister_party = "Marcher"; finance_minister_party = "Marcher"; agriculture_minister_party = "Marcher"; army_loyalty -= 0.1; bourgeois_cooperation += 3; liberal_cooperation += 3
 
-[? if president == "Bristol": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Assembly; there is no law saying that the Chancellor *must* be a member of the Assembly). ?][? if president != "Bristol": Aldous Bristol, one of our leading reformist politicians and statesmen, has been elevated to the second-highest office in the land. ?]
+[? if president == "Bristol": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Assembly; there is no law saying that the Chancellor *must* be a member of the Assembly). ?][? if president != "Bristol": Lyle Bristol, one of our leading reformist politicians and statesmen, has been elevated to the second-highest office in the land. ?]
 
-[? if president == "Bristol": Thus, we have Chancellor-President Aldous Bristol. He claims that he will resign as soon as the economic-political crisis is over. ?] The right-wing parties, who were once clamoring to replace parliamentary rule with <span style="color: #7A3C00;">dictatorship</span> or <span style="color: #808080;">monarchy</span>, are now clamoring for the restoration of democracy.
+[? if president == "Bristol": Thus, we have Chancellor-President Lyle Bristol. He claims that he will resign as soon as the economic-political crisis is over. ?] The right-wing parties, who were once clamoring to replace parliamentary rule with <span style="color: #7A3C00;">dictatorship</span> or <span style="color: #808080;">monarchy</span>, are now clamoring for the restoration of democracy.
 
 - @far_right_coup
 - @emergency_no_confidence: The <span style="color: #7A3C00;">Royalists</span> immediately call a no-confidence vote against us...
@@ -3030,7 +3030,7 @@ on-arrival: chancellor = "Bristol"; chancellor_party = "Marcher"; marcher_in_gov
 subtitle: The <span style="color: #700000;">Communists</span> are warming to him...
 on-arrival: chancellor = "Yardley"; chancellor_party = "Marcher"; marcher_in_government = 1; collectivist_relation += 5; ddp_relation -= 3; lvp_relation -= 3; gold_relation -= 3; unionist_relation -= 3; gold_right += 2; ddp_right += 1; ddp_cohesion -= 1; lvp_right += 1; foreign_minister_party = "Marcher"; interior_minister_party = "Marcher"; justice_minister_party = "Marcher"; labor_minister_party = "Marcher"; army_minister_party = "Marcher"; economic_minister_party = "Marcher"; finance_minister_party = "Marcher"; agriculture_minister_party = "Marcher"; army_loyalty -= 0.1;
 
-We have appointed Rowan Yardley as emergency chancellor. The <span style="color: #700000;">**Communists**</span> consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
+We have appointed Calbert Yardley as emergency chancellor. The <span style="color: #700000;">**Communists**</span> consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
 
 - @far_right_coup
 - @emergency_no_confidence
@@ -3489,7 +3489,7 @@ Normally, the <span style="color: #c00000;">**Marchers**</span> takes the lead i
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chancellor is likely to be Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?][? if chancellor = "Askew" : &nbsp;again?]. He is known for his conservatism and sympathy for monarchism, being on the [? if not concord_formed: right wing?][? if concord_formed: left wing?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and Sedgewick's protege. 
 
 @breitscheid_coalition_chancellor
-title: Rowan Yardley for Chancellor
+title: Calbert Yardley for Chancellor
 subtitle: Yardley is viewed as friendlier towards the left of the <span style="color: #c00000;">**Marchers**</span>.
 view-if: year >= 1930
 choose-if: not concord_chancellor_accepted
@@ -3497,7 +3497,7 @@ unavailable-subtitle: We've promised to forfeit the Chancellorship to the <span 
 on-arrival: chancellor = "Yardley"; chancellor_party = "Marcher"; dufour_angry += 5
 go-to: ministries
 
-Rowan Yardley has been appointed chancellor.
+Calbert Yardley has been appointed chancellor.
 
 
 @grand_coalition
@@ -3768,7 +3768,7 @@ Who should be the chancellor?
 
 
 @muller
-title: Hermann Sarrow for Chancellor
+title: Felicity Sarrow for Chancellor
 view-if: muller_dead = 0
 subtitle: Sarrow is popular within the party, and is the preferred candidate of the [? if not in_social_liberal_coalition: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?][? if in_social_liberal_coalition: [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?]?] and other parties.
 choose-if: not concord_chancellor_accepted
@@ -3779,18 +3779,18 @@ go-to: ministries
 Sarrow's appointment as chancellor is approved by all our potential allies.
 
 @wels
-title: Otto Vesh for Chancellor
+title: Joran Vesh for Chancellor
 view-if: muller_dead = 1
-subtitle: Otto Vesh is a party leader, but can he also be chancellor?
+subtitle: Joran Vesh is a party leader, but can he also be chancellor?
 choose-if: not concord_chancellor_accepted
 unavailable-subtitle: We've promised to forfeit the Chancellorship to the <span style="color: #000000;">[+ unionist_party_name +]</span>.
 on-arrival: marcher_in_government = 1; chancellor = "Vesh"; chancellor_party = "Marcher"; in_grand_coalition = 1 if in_weimar_coalition == 0; leverage += 5 if (in_grand_coalition_heartland and in_grand_coalition)
 go-to: ministries
 
-Otto Vesh's appointment as chancellor is approved by our potential allies.
+Joran Vesh's appointment as chancellor is approved by our potential allies.
 
 @braun
-title: Aldous Bristol for Chancellor
+title: Lyle Bristol for Chancellor
 view-if: not historical_mode or heartland_leader != "Bristol"
 subtitle: [? if heartland_leader == "Bristol": Bristol is currently the Minister-President of Heartland, and is one of our most popular leaders. However, other parties may have qualms about concentrating too much power in one man. ?][? if heartland_leader != "Bristol": Bristol, the long-time Minister-President of Heartland, remains one of our most popular leaders. ?]
 choose-if: not concord_chancellor_accepted
@@ -3807,7 +3807,7 @@ The [? if not in_social_liberal_coalition: [? if unionist_party_name != "Concord
 - @braun_3: Let the [? if not in_social_liberal_coalition: [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?][? if in_social_liberal_coalition: [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?]?] have their cabinet positions.
 
 @braun_3
-subtitle: Aldous Bristol will be Chancellor.
+subtitle: Lyle Bristol will be Chancellor.
 view-if: not historical_mode
 on-arrival: marcher_in_government = 1; chancellor = "Bristol"; chancellor_party = "Marcher"; leverage -= 10; in_grand_coalition = 1 if in_weimar_coalition == 0; leverage += 5 if (in_grand_coalition_heartland and in_grand_coalition); dufour_angry += 10
 go-to: ministries
@@ -3924,7 +3924,7 @@ view-if: interior_minister_party != "Marcher"
 on-arrival: leverage -= 5; interior_minister_party = "Marcher"; interior_minister = "Heath"
 go-to: ministries
 
-Carl Heath of the <span style="color: #c00000;">**Marchers**</span> has been appointed Interior Minister.
+Joshua Heath of the <span style="color: #c00000;">**Marchers**</span> has been appointed Interior Minister.
 
 @finance
 title: Finance Ministry
@@ -3936,7 +3936,7 @@ view-if: finance_minister_party != "Marcher"
 on-arrival: leverage -= 10; finance_minister_party = "Marcher"; finance_minister = "Bell"
 go-to: ministries
 
-Rudolf Bell of the <span style="color: #c00000;">**Marchers**</span> has been appointed Finance Minister.
+Vendrin Bell of the <span style="color: #c00000;">**Marchers**</span> has been appointed Finance Minister.
 
 @economic
 title: Economic Ministry
@@ -3972,7 +3972,7 @@ view-if: foreign_minister_party != "Marcher"
 on-arrival: leverage -= 10; foreign_minister_party = "Marcher"; foreign_minister = "Yardley"
 go-to: ministries
 
-Rowan Yardley of the <span style="color: #c00000;">**Marchers**</span> has been appointed Foreign Minister.
+Calbert Yardley of the <span style="color: #c00000;">**Marchers**</span> has been appointed Foreign Minister.
 
 
 @agriculture

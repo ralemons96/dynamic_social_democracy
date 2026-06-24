@@ -390,8 +390,8 @@ view-if: n_advisors < 3
 - #nonfactional_advisor
 
 @add_hilferding
-title: Rudolf Bell
-subtitle: Rudolf Bell is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+title: Vendrin Bell
+subtitle: Vendrin Bell is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
 is-card: true
 card-image: img/portraits/HilferdingRudolf.jpg
 tags: center_advisor
@@ -399,11 +399,11 @@ view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: hilferding_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
 go-to: advisor_menu
 
-Rudolf Bell is now an advisor.
+Vendrin Bell is now an advisor.
 
 @add_wels
-title: Otto Vesh
-subtitle: Otto Vesh is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
+title: Joran Vesh
+subtitle: Joran Vesh is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
 is-card: true
 card-image: img/portraits/WelsRudolf.jpg
 tags: center_advisor
@@ -411,11 +411,11 @@ view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: wels_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
 go-to: advisor_menu
 
-Otto Vesh is now an advisor.
+Joran Vesh is now an advisor.
 
 @add_muller
-title: Hermann Sarrow
-subtitle: Hermann Sarrow is the last <span style="color: #c00000;">Reformist</span> Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
+title: Felicity Sarrow
+subtitle: Felicity Sarrow is the last <span style="color: #c00000;">Reformist</span> Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
 is-card: true
 card-image: img/portraits/MüllerHermann.jpg
 tags: center_advisor
@@ -423,11 +423,11 @@ view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists
 on-arrival: muller_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
 go-to: advisor_menu
 
-Hermann Sarrow is now an advisor.
+Felicity Sarrow is now an advisor.
 
 @add_breitscheid
-title: Rowan Yardley
-subtitle: Rowan Yardley comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+title: Calbert Yardley
+subtitle: Calbert Yardley comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
 is-card: true
 card-image: img/portraits/BreitscheidRudolf.jpg
 view-if: breitscheid_advisor = 0 and n_advisors < 3
@@ -435,14 +435,14 @@ on-arrival: breitscheid_advisor = 1; n_advisors += 1; center_dissent -= 7; cente
 go-to: advisor_menu
 tags: center_advisor
 
-Rowan Yardley is now an advisor.
+Calbert Yardley is now an advisor.
 
 # reformist
 
 
 @add_severing
-title: Carl Heath
-subtitle: Carl Heath is a one-time Heartland interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Police Affairs ?]
+title: Joshua Heath
+subtitle: Joshua Heath is a one-time Heartland interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Police Affairs ?]
 is-card: true
 card-image: img/portraits/SeveringCarl.jpg
 tags: reformist_advisor
@@ -450,11 +450,11 @@ view-if: severing_advisor = 0 and n_advisors < 3
 on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
 go-to: advisor_menu
 
-Carl Heath is now an advisor.
+Joshua Heath is now an advisor.
 
 @add_braun
-title: Aldous Bristol
-subtitle: Aldous Bristol is the Minister-President of Heartland, and one of the most recognizable and well-known <span style="color: #c00000;">Reformist</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Negotiating with the Coalition ?]
+title: Lyle Bristol
+subtitle: Lyle Bristol is the Minister-President of Heartland, and one of the most recognizable and well-known <span style="color: #c00000;">Reformist</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Negotiating with the Coalition ?]
 is-card: true
 card-image: img/portraits/BraunOtto.jpg
 tags: reformist_advisor
@@ -462,7 +462,7 @@ view-if: braun_advisor = 0 and n_advisors < 3
 on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
 go-to: advisor_menu
 
-Aldous Bristol is now an advisor.
+Lyle Bristol is now an advisor.
 
 @add_juchacz
 title: Marie Jessamy
@@ -493,8 +493,8 @@ Antonie Vellath is now an advisor.
 # left
 
 @add_levi
-title: Pascal Tarrand
-subtitle: Pascal Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Communist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
+title: Erric Tarrand
+subtitle: Erric Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Communist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
@@ -502,7 +502,7 @@ on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5; left_dissent 
 go-to: advisor_menu
 tags: left_advisor
 
-Pascal Tarrand is now an advisor.
+Erric Tarrand is now an advisor.
 
 @add_sender
 title: Toni Sennet
@@ -517,8 +517,8 @@ tags: left_advisor
 Toni Sennet is now an advisor.
 
 @add_rosenfeld
-title: Emrys Pendrigon
-subtitle: Emrys Pendrigon is a lawyer, anti-militarist activist, and Assembly member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span>, Against Toleration ?]
+title: Cael Pendrigon
+subtitle: Cael Pendrigon is a lawyer, anti-militarist activist, and Assembly member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span>, Against Toleration ?]
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
@@ -526,7 +526,7 @@ on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5; left_dis
 go-to: advisor_menu
 tags: left_advisor
 
-Emrys Pendrigon is now an advisor.
+Cael Pendrigon is now an advisor.
 
 @add_seydewitz
 title: Max Seyton

@@ -87,7 +87,7 @@ unavailable-subtitle: [? if not marcher_heartland: We don't control the Heartlan
 title: Urge Askew to grant us stronger actions against political extremists, and to restrict certain rights.
 on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_police_strength += 5; collectivist_relation -= 6; vanguard_militancy *= 0.9; vanguard_strength *= 0.85; loyalist_militancy *= 0.96; loyalist_strength *= 0.96; warden_militancy *= 0.98; warden_strength *= 0.98; commons_collectivist -= 1; commons_royalist -= 1; disfavored_collectivist -= 3; disfavored_royalist -= 3; burgher_royalist -= 2; dufour_angry_bruning += 5
 
-Carl Heath and other Heartland officials have successfully urged Askew to issue an emergency decree expanding police authority to suppress political extremism. The decree imposes restrictions on political meetings, organizations, newspapers, and posters, all of which now require police approval beforehand.
+Joshua Heath and other Heartland officials have successfully urged Askew to issue an emergency decree expanding police authority to suppress political extremism. The decree imposes restrictions on political meetings, organizations, newspapers, and posters, all of which now require police approval beforehand.
 
 As a result, several <span style="color: #7A3C00;">Royalist</span> and <span style="color: #700000;">Communist</span> newspapers have been banned, triggering violent clashes between their supporters and the police. [? if president == "DuFour": President DuFour has reluctantly signed the decree, but is losing patience with Askew for yielding to our demands. ?]
 

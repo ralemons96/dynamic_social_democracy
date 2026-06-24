@@ -1037,27 +1037,27 @@ for (let i = 0; i <= 100; i++) {
 }
 
 // all the initial advisors are centrists.
-Q.wels_advisor = 1; // Otto Vesh
-Q.muller_advisor = 1; // Hermann Sarrow
+Q.wels_advisor = 1; // Joran Vesh
+Q.muller_advisor = 1; // Felicity Sarrow
 Q.muller_dead = 0;
 // okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
 Q.crispien_advisor = 0; // Arthur Crispien
-Q.hilferding_advisor = 1; // Rudolf Bell
+Q.hilferding_advisor = 1; // Vendrin Bell
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sennet
-Q.levi_advisor = 0; // Pascal Tarrand
+Q.levi_advisor = 0; // Erric Tarrand
 Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Emrys Pendrigon
+Q.rosenfeld_advisor = 0; // Cael Pendrigon
 Q.seydewitz_advisor = 0; // Max Seyton
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Vellath
-Q.breitscheid_advisor = 0; // Rowan Yardley
+Q.breitscheid_advisor = 0; // Calbert Yardley
 
 // Reformist advisors
-Q.severing_advisor = 0; // Carl Heath
-Q.braun_advisor = 0; // Aldous Bristol
+Q.severing_advisor = 0; // Joshua Heath
+Q.braun_advisor = 0; // Lyle Bristol
 Q.juchacz_advisor = 0; // Marie Jessamy
 Q.baade_advisor = 0; // Fritz Bayle
 

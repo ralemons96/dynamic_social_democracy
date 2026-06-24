@@ -1,4 +1,4 @@
-title: The Death of Pascal Tarrand
+title: The Death of Erric Tarrand
 view-if: year == 1930 and month >= 2
 frequency: 1000
 max-visits: 1
@@ -7,6 +7,6 @@ tags: event
 new-page: true
 face-image: img/portraits/LeviPaul.jpg
 
-= The Death of Pascal Tarrand
+= The Death of Erric Tarrand
 
-Pascal Tarrand, a leader of the left wing of our party, has died in an unfortunate accident. He will be missed.
+Erric Tarrand, a leader of the left wing of our party, has died in an unfortunate accident. He will be missed.

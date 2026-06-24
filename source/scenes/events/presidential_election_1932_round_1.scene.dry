@@ -1239,13 +1239,13 @@ on-arrival: president = royalist_candidate_1932; chancellor = "Gallax"; chancell
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 6*(1-dissent); guild_marcher += 4*(1-dissent); burgher_marcher += 4*(1-dissent); landed_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent);
 go-to: achievement_check_1
 
-Aldous Bristol of the <span style="color: #c00000;">**Marchers**</span> has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
+Lyle Bristol of the <span style="color: #c00000;">**Marchers**</span> has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
 @rosenfeld_wins
 on-arrival: president = "Pendrigon"; president_ideology = "Left"; center_dissent -= 5; labor_dissent -= 5; left_dissent -= 15; left_strength += 20; commons_marcher += 9*(1-dissent); disfavored_marcher += 6*(1-dissent); coup_progress += 4; capital_strike_progress += 4
 go-to: achievement_check_1
 
-Emrys Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
+Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
 However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Communist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
 
@@ -1260,7 +1260,7 @@ Nationally renown Zeppelin pilot and independent Hugo Eckhart has won the presid
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 8*(1-dissent); guild_marcher += 5*(1-dissent); burgher_marcher += 5*(1-dissent); landed_marcher += 5*(1-dissent); disfavored_marcher += 5*(1-dissent);
 go-to: achievement_check_1
 
-Dusterel is too ashamed to accept the Presidency, and out of the kindness of his heart, has given it to Aldous Bristol. 
+Dusterel is too ashamed to accept the Presidency, and out of the kindness of his heart, has given it to Lyle Bristol. 
 
 @achievement_check_1
 on-arrival: neue_geschaftsfuhrung = 1 if chancellor == "Askew" and marcher_toleration

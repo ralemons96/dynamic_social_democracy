@@ -50,7 +50,7 @@ if (!dynamicMode && !historicalMode && Q.difficulty != 1) {
 }
 
 if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1934 && Q.month > 7) || Q.year >= 1935)) {
-  // Roter Zar von Preußen - At the end of the game, Aldous Bristol is president, chancellor, and minister-president of prussia at the same time.
+  // Roter Zar von Preußen - At the end of the game, Lyle Bristol is president, chancellor, and minister-president of prussia at the same time.
   if (Q.president == 'Bristol' && Q.chancellor == 'Bristol' && Q.heartland_leader == "Bristol") {
       this.achieve('red_tzar_of_heartland');
   }
@@ -443,20 +443,20 @@ the Commonwealth is currently in the grip of a civil war, a brutal affair that h
 
 
 @braun_victorious
-title: Aldous Bristol victorious
+title: Lyle Bristol victorious
 view-if: president == "Bristol"
 tags: endings
 go-to: eg_menu
 
-Aldous Bristol has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but now he is.
+Lyle Bristol has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but now he is.
 
 @rosenfeld_victorious
-title: Emrys Pendrigon victorious
+title: Cael Pendrigon victorious
 view-if: president == "Pendrigon"
 tags: endings
 go-to: eg_menu
 
-Emrys Pendrigon has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but together with the <span style="color: #700000;">**Collectivists**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
+Cael Pendrigon has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but together with the <span style="color: #700000;">**Collectivists**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
 
 @president_schumacher
 title: Kurt Shackley victorious
@@ -475,12 +475,12 @@ go-to: eg_menu
 Albert Grzesinski has been elected President of the Commonwealth. As a young and ambitious <span style="color: #c00000;">**Marchers**</span> member, he will be shaping the Commonwealth for years to come.
 
 @president_wels
-title: Otto Vesh victorious
+title: Joran Vesh victorious
 view-if: president == "Vesh"
 tags: endings
 go-to: eg_menu
 
-Otto Vesh has been elected President of the Commonwealth. What a long journey it has been for the <span style="color: #c00000;">**Marchers**</span>'s chairman through the Republic. He will be shaping the Commonwealth for years to come.
+Joran Vesh has been elected President of the Commonwealth. What a long journey it has been for the <span style="color: #c00000;">**Marchers**</span>'s chairman through the Republic. He will be shaping the Commonwealth for years to come.
 
 @president_juchacz
 title: Marie Jessamy is President
@@ -938,7 +938,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Lyle Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2154,7 +2154,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Lyle Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2359,13 +2359,13 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if game_achievement_wels: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/wels.png" alt="Otto Vesh Icon"
+    <img src="img/achievement/wels.png" alt="Joran Vesh Icon"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vesh' wilder Ritt</div>
-      <div class="achievement_subtitle"> - elect Otto Vesh as president.
+      <div class="achievement_subtitle"> - elect Joran Vesh as president.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2850,7 +2850,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Lyle Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4066,7 +4066,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Lyle Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4271,13 +4271,13 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if achievement_wels: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/wels.png" alt="Otto Vesh Icon"
+    <img src="img/achievement/wels.png" alt="Joran Vesh Icon"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vesh' wilder Ritt</div>
-      <div class="achievement_subtitle"> - elect Otto Vesh as president.
+      <div class="achievement_subtitle"> - elect Joran Vesh as president.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4761,7 +4761,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Lyle Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5977,7 +5977,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Lyle Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6181,13 +6181,13 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if not achievement_wels: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/wels.png" alt="Otto Vesh Icon"
+    <img src="img/achievement/wels.png" alt="Joran Vesh Icon"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vesh' wilder Ritt</div>
-      <div class="achievement_subtitle"> - elect Otto Vesh as president.
+      <div class="achievement_subtitle"> - elect Joran Vesh as president.
     </div>
   {!</td>!}
 {!</tr>!}

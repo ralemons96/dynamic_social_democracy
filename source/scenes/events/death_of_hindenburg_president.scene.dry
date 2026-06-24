@@ -152,7 +152,7 @@ This might be the <span style="color: #7A3C00;">Royalists</span>' last hurrah; t
 [? if not concord_formed: Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. [? if adenauer_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants.?][? if bruning_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Edmund Askew, their former Chancellor, known for his popular and successful public works program. Widely credited with reviving the Commonwealth’s economy, he is expected to receive broad support from the bourgeois parties that participated in his government should he choose to run. ?]?] [? if ddp_candidate == "Gesling": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives[? if gold_exist and not lvp_formed:&nbsp;in the <span style="color: #C0A054;">**Golds**</span>?] and other parties who dislike the <span style="color: #3E88B3;">**Traditionalists**</span>-<span style="color: #7A3C00;">**Royalists**</span> front. ?][? if ddp_candidate == "Hewes": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Theodor Hewes, a prominent left-liberal journalist, who presents a strong defense of the Unity Republic and its democratic institutions. He aims to be the candidate for the young generation, and bourgeois <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. ?]
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint [? if not concord_formed: Unity?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] ?] Coalition candidate or run our own.
-[? if braun_campaign : Aldous Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if braun_campaign = 0 and not marcher_heartland: Aldous Bristol is tired. After being deposed in Heartland, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if braun_campaign = 0 and marcher_heartland : Aldous Bristol is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
+[? if braun_campaign : Lyle Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if braun_campaign = 0 and not marcher_heartland: Lyle Bristol is tired. After being deposed in Heartland, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if braun_campaign = 0 and marcher_heartland : Lyle Bristol is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
 Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
 [? if womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0: Or, perhaps it is time for a woman to become president. the Commonwealth and the <span style="color: #c00000;">**Marchers**</span> have been leading on women's rights for years, and it is only fitting that we should elect the world's first female president. Perhaps Marie Jessamy could be seen as the "mother of the nation" for her work in social welfare. However, her divorce 28 years ago might make it difficult for the Catholics to support her. ?]
 
@@ -165,7 +165,7 @@ Kurt Shackley is an ambitious rising star in the party, and would be all too wil
 - @gessler_r1: Support [+ lib_candidate_1934_disp +] of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @thalmann_r1: Support Ernst Halsmark of the <span style="color: #700000;">**Collectivists**</span>.
 - @munzenberg_r1: Support Willi Munzer of the <span style="color: #700000;">**Collectivists**</span>.
-- @braun_r1: Support Aldous Bristol.
+- @braun_r1: Support Lyle Bristol.
 - @schumacher_r1: Support Kurt Shackley.
 - @juchacz_r1: Support Marie Jessamy.
 - @cultural_figure: Support a nonpartisan cultural figure?
@@ -234,7 +234,7 @@ choose-if: braun_campaign = 0 and marcher_heartland and resources >= 2
 on-arrival: marcher_candidate = "Bristol"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have convinced Aldous Bristol to run for president once more.
+We have convinced Lyle Bristol to run for president once more.
 
 
 @schumacher_r1
@@ -509,7 +509,7 @@ Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24
 Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Thalmann: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
 Munzenberg: "Willi Munzer of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
-Bristol: "Aldous Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
+Bristol: "Lyle Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Jessamy: "Marie Jessamy of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Einstein: "Albert Einstein, scientist",

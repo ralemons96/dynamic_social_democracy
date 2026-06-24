@@ -185,7 +185,7 @@ go-to: candidate_menu
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own. The viability of a united front, however, depends entirely on our relations with former coalition partners—and whether they’ve fallen under Staal’s influence.
 
-Aldous Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
+Lyle Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
 
 Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
 
@@ -597,7 +597,7 @@ go-to: election_end
 @hammerstein_win
 on-arrival: hammerstein_win = 1
 
-With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Aldous Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Reichskommissar</i>. ?]
+With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Lyle Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Reichskommissar</i>. ?]
 
 - @game_over: Game over.
 

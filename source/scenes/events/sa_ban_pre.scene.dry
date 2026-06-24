@@ -1,5 +1,5 @@
 title: <span style="color: #7A3C00;">**SA**</span> Planned Coup Discovered!
-subtitle: Carl Heath uncovers powerful evidence of a plot...
+subtitle: Joshua Heath uncovers powerful evidence of a plot...
 view-if: year == 1932 and month == 4 and not dufour_term_extended and marcher_heartland
 priority: 4
 tags: event
@@ -24,7 +24,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-With the presidential elections approaching[? if next_election_year_heartland == year:&nbsp;and the next Heartland elections as well?], Heartland Minister of the Interior Carl Heath has ordered an emergency search of all <span style="color: #7A3C00;">Royalist</span> and <span style="color: #7A3C00;">**SA**</span> offices throughout the state.
+With the presidential elections approaching[? if next_election_year_heartland == year:&nbsp;and the next Heartland elections as well?], Heartland Minister of the Interior Joshua Heath has ordered an emergency search of all <span style="color: #7A3C00;">Royalist</span> and <span style="color: #7A3C00;">**SA**</span> offices throughout the state.
 
 During the raids, evidence was uncovered that the <span style="color: #7A3C00;">Royalist</span> Party headquarters in Munich had ordered <span style="color: #7A3C00;">**SA**</span> units to be placed on high alert on election day. In the event of an anticipated [+ royalist_candidate_1932 +] victory, these units were to immediately launch a coup d’état, which included the planned seizure of military installations and weaponry.
 
@@ -90,7 +90,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-With the victory of <span style="color: #c00000;">Reformist</span> [? if president == "Bristol": Aldous Bristol?][? if president == "Pendrigon": Emrys Pendrigon?], an uptick in paramilitary violence has been seen, and even rumors of a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coup. Heartland Minister of the Interior Carl Heath has ordered an emergency search of all <span style="color: #7A3C00;">Royalist</span> and <span style="color: #7A3C00;">**SA**</span> offices throughout the state.
+With the victory of <span style="color: #c00000;">Reformist</span> [? if president == "Bristol": Lyle Bristol?][? if president == "Pendrigon": Cael Pendrigon?], an uptick in paramilitary violence has been seen, and even rumors of a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> coup. Heartland Minister of the Interior Joshua Heath has ordered an emergency search of all <span style="color: #7A3C00;">Royalist</span> and <span style="color: #7A3C00;">**SA**</span> offices throughout the state.
 
 During the raids, evidence was uncovered that the <span style="color: #7A3C00;">Royalist</span> Party headquarters in Munich had ordered to place <span style="color: #7A3C00;">**SA**</span> units on high alert after the election. In the event of a [+ marcher_candidate_1932 +] victory, these units were to immediately launch a coup d’état, which included the planned seizure of military installations and weaponry.
 

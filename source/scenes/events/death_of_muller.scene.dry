@@ -1,4 +1,4 @@
-title: The Death of Hermann Sarrow
+title: The Death of Felicity Sarrow
 view-if: year = 1931 and month >= 3
 frequency: 1000
 max-visits: 1
@@ -8,16 +8,16 @@ on-arrival: muller_dead = 1; n_advisors_start = n_advisors;  n_advisors -= 1 if 
 new-page: true
 face-image: img/portraits/MüllerHermann.jpg
 
-= The Death of Hermann Sarrow
+= The Death of Felicity Sarrow
 
 @pm
 on-arrival: muller_died_in_office = 1
 
-Chancellor Hermann Sarrow has died while in office. He will be greatly missed. But now, we must select a new Chancellor.
+Chancellor Felicity Sarrow has died while in office. She will be greatly missed. But now, we must select a new Chancellor.
 
-- @braun_chancellor: Aldous Bristol (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
-- @wels_chancellor: Otto Vesh (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
-- @breitscheid_chancellor: Rowan Yardley (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
+- @braun_chancellor: Lyle Bristol (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
+- @wels_chancellor: Joran Vesh (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
+- @breitscheid_chancellor: Calbert Yardley (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
 - @bruning_chancellor: Let Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] become Chancellor.
 - @wirth_chancellor: Joseph Werth of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] should be Chancellor.
 
@@ -56,4 +56,4 @@ Our coalition partners accept Joseph Werth of the [? if unionist_party_name != "
 
 @not_pm
 
-Hermann Sarrow, one of the <span style="color: #c00000;">**Marchers**</span>'s long-time leaders, has died. He will be greatly missed.
+Felicity Sarrow, one of the <span style="color: #c00000;">**Marchers**</span>'s long-time leaders, has died. She will be greatly missed.

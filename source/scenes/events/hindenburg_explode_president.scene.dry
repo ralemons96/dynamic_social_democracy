@@ -40,7 +40,7 @@ As for the <span style="color: #c00000;">**Marchers**</span>, we could support a
 
 A leading candidate is Albert Grzesinski of our Reformist faction. Former Interior Minister of Heartland and currently Axton’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Staal. However, his hardline stance against the <span style="color: #700000;">**Communists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
 
-Alternatively, we could nominate Otto Vesh, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Communists</span>, who may begrudgingly tolerate his candidacy.
+Alternatively, we could nominate Joran Vesh, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Communists</span>, who may begrudgingly tolerate his candidacy.
 
 @candidate_menu
 
@@ -48,7 +48,7 @@ Alternatively, we could nominate Otto Vesh, our party chairman and leader of the
 - @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @gessler_r1: Support Gareth Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @grzesinski_r1: Support Albert Grzesinski.
-- @wels_r1: Support Otto Vesh.
+- @wels_r1: Support Joran Vesh.
 
 @eckener_r1
 subtitle: -1 resource - After nominating him, we still have to convince the other parties to support him.
@@ -91,7 +91,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Vesh"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have nominated Otto Vesh to be our presidential candidate.
+We have nominated Joran Vesh to be our presidential candidate.
 
 @r1_menu
 view-if: round = 0
@@ -277,7 +277,7 @@ Seckard: "Hans von Seckard, an independent formerly of the <span style='color: #
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
 Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
-Vesh: "Otto Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
+Vesh: "Joran Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
 }
 for (var k in candidate_descs) {

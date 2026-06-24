@@ -10,7 +10,7 @@ max-visits: 1
 
 The <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**SA**</span> is planning a march through Altona, a working-class neighborhood of Hamburg known for its high working-class population. Altona is a <span style="color: #700000;">**Communist**</span> stronghold, and the planned march will almost certainly lead to violent conflict.
 
-[? if loyalist_ban_repealed: The recent surge in provocative political demonstrations and violence is clearly a result of Goodryke’s decision to lift the <span style="color: #7A3C00;">**SA**</span> ban—yet he places blame not on his own actions, but on our Heartland Interior Minister Carl Heath. ?]
+[? if loyalist_ban_repealed: The recent surge in provocative political demonstrations and violence is clearly a result of Goodryke’s decision to lift the <span style="color: #7A3C00;">**SA**</span> ban—yet he places blame not on his own actions, but on our Heartland Interior Minister Joshua Heath. ?]
 
 - @ban_march: Ban the march before it starts.
 - @allow_police: Allow the march, with a heavy police presence.
