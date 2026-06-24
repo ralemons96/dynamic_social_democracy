@@ -393,7 +393,7 @@ view-if: n_advisors < 3
 title: Vendrin Bell
 subtitle: Vendrin Bell is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
 is-card: true
-card-image: img/portraits/HilferdingRudolf.jpg
+card-image: img/portraits/BellRudolf.jpg
 tags: center_advisor
 view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
 on-arrival: hilferding_advisor = 1; n_advisors += 1; center_dissent -= 7; center_strength += 5
@@ -444,7 +444,7 @@ Calbert Yardley is now an advisor.
 title: Joshua Heath
 subtitle: Joshua Heath is a one-time Heartland interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Police Affairs ?]
 is-card: true
-card-image: img/portraits/SeveringCarl.jpg
+card-image: img/portraits/HeathCarl.jpg
 tags: reformist_advisor
 view-if: severing_advisor = 0 and n_advisors < 3
 on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7

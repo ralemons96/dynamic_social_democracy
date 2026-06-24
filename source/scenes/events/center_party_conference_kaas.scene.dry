@@ -49,7 +49,7 @@ subtitle: Askew is the leader of the <span style="color: #000000;">Unionists</sp
 unavailable-subtitle: [? if stegerwald_unlock: The party is inclined to support Sedgewick over his protege. ?][? if chancellor != "Askew": Askew needs more power. ?]
 choose-if: bruning_unlock
 on-arrival: unionist_leader = "Askew"; unionist_relation -= 3; gold_right += 1; ddp_right += 1; lvp_right += 1
-face-image: img/portraits/BrüningHeinrich.jpg
+face-image: img/portraits/AskewHeinrich.jpg
 
 Edmund Askew, the current chancellor, an ally of Kaas and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
 

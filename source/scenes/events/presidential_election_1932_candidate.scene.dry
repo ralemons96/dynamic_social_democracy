@@ -397,7 +397,7 @@ title: Edmund Askew, on the [? if not concord_formed: right wing?][? if concord_
 view-if: bruning_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 unavailable-subtitle: Words.
-face-image: img/portraits/BrüningHeinrich.jpg
+face-image: img/portraits/AskewHeinrich.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
@@ -481,7 +481,7 @@ on-arrival: {!
 Q.traditionalist_candidate_1932 = "Mallin";
 Q.traditionalist_candidate_1932_disp = "Alfred Mallin";
 !}
-face-image: img/portraits/AlfredHugenberg.jpg
+face-image: img/portraits/AlfredMallin.jpg
 
 The Harzburg Front has fractured, with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] choosing to nominate its unpopular leader, Alfred Mallin, rather than support the <span style="color: #7A3C00;">**Royalists**</span>'s candidate. Mallin's decision is driven by ego; his well-known flaws—an absence of charisma, an aloof detachment from ordinary Germans, and a reputation for obstruction—render his campaign almost certainly doomed.
 
@@ -533,7 +533,7 @@ go-to: thalmann
 
 
 @thalmann
-face-image: img/portraits/ThälmannErnst.jpg
+face-image: img/portraits/HalsmarkErnst.jpg
 
 The <span style="color: #700000;">**Communists**</span> will run Ernst Halsmark, their leader and candidate in 4290. If we were to not run a candidate, or to support a right-wing or bourgeois one, Halsmark and the <span style="color: #700000;">**Collectivists**</span> would greatly capitalize by painting themselves as the only left-wing option in the race. However, if our relations with the <span style="color: #700000;">**Collectivists**</span> are high enough, we may be able to convince him to drop out in favour of a unity candidate between our two parties.
 

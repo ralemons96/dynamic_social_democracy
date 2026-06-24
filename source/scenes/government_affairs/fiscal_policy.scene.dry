@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs, cabinet
 on-arrival: fiscal_policy_timer += 6; month_actions += 1
 view-if: marcher_in_government = 1 and finance_minister_party = "Marcher" and fiscal_policy_timer = 0
-card-image: img/portraits/HilferdingRudolf.jpg
+card-image: img/portraits/BellRudolf.jpg
 go-to: fiscal_menu
 #subtitle: Issues of taxation, budget, and tariffs.
 

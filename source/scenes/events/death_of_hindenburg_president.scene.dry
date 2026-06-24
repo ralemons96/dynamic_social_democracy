@@ -112,7 +112,7 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/Hindenburg_head.jpg";  
+    image.src = "img/DuFour_head.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
@@ -507,7 +507,7 @@ Askew: "Edmund Askew of the <span style='color: #000000;'>Unionist Party</span>"
 Lettow_Vorbeck: "Lethmoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>",
 Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
-Thalmann: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
+Halsmark: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
 Munzenberg: "Willi Munzer of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
 Bristol: "Lyle Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
@@ -623,15 +623,15 @@ if (Q.Gessler_votes || Q.Heuss_votes) {
     Q.lib_running = 0;
 }
 
-if (Q.Adenauer_votes || Q.Bruning_votes) {
+if (Q.Adenauer_votes || Q.Askew_votes) {
     Q.center_running = 1;
     if (Q.Adenauer_votes_disp) {
         Q.Center_votes = Q.Adenauer_votes;
         Q.Center_votes_disp = Q.Adenauer_votes_disp;
     }
-    if (Q.Bruning_votes_disp) {
-        Q.Center_votes = Q.Bruning_votes;
-        Q.Center_votes_disp = Q.Bruning_votes_disp;
+    if (Q.Askew_votes_disp) {
+        Q.Center_votes = Q.Askew_votes;
+        Q.Center_votes_disp = Q.Askew_votes_disp;
     }
 } else {
     Q.center_running = 0;
@@ -655,7 +655,7 @@ if (Q.Hergt_votes || Q.Seldte_votes || Q.Lettow_Vorbeck_votes) {
     Q.reactionary_running = 0;
 }
 
-if (Q.Hugenberg_votes) {
+if (Q.Mallin_votes) {
     Q.hamster_running = 1;
 } else {
     Q.hamster_running = 0;
@@ -670,12 +670,12 @@ Election results:
 [? if Hitler_running : <span style="color: #7A3C00;">**Gallax**</span> - [+ Hitler_votes_disp +]% ?]
 [? if Goring_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Goring_votes_disp +]% ?]
 
-[? if hamster_running : <span style="color: #003755;">**Mallin**</span> - [+ Hugenberg_votes_disp +]% ?]
+[? if hamster_running : <span style="color: #003755;">**Mallin**</span> - [+ Mallin_votes_disp +]% ?]
 
 [? if reactionary_running and not concord_formed : <span style="color: #3E88B3;">**[+ reactionary_candidate_1934 +]**</span> - [+ Reactionary_votes_disp +]% ?]
 [? if reactionary_running and concord_formed : <span style="color: #000000;">**[+ reactionary_candidate_1934 +]**</span> - [+ Reactionary_votes_disp +]% ?]
 
-[? if Thalmann_running : <span style="color: #700000;">**Halsmark**</span> - [+ Thalmann_votes_disp +]% ?]
+[? if Halsmark_running : <span style="color: #700000;">**Halsmark**</span> - [+ Halsmark_votes_disp +]% ?]
 [? if Munzenberg_running : <span style="color: #9B0000;">**Munzer**</span> - [+ Munzenberg_votes_disp +]% ?]
 
 [? if center_running : <span style="color: #000000;">**[+ center_candidate_1934 +]**</span> - [+ Center_votes_disp +]% ?]
@@ -960,11 +960,11 @@ Despite the <span style="color: #7A3C00;">Royalist</span> threats, supporters of
 
 
 @election_end
-go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Goring"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzenberg" or winner = "Munzer"; thalmann_victory if winner = "Thalmann" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Mann"; einstein_victory if winner = "Einstein"
+go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Goring"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzenberg" or winner = "Munzer"; thalmann_victory if winner = "Halsmark" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Mann"; einstein_victory if winner = "Einstein"
 on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Askew") Q.president = "Askew";
-if (Q.president == "Thalmann") Q.president = "Halsmark";
+if (Q.president == "Halsmark") Q.president = "Halsmark";
 if (Q.president == "Munzenberg") Q.president = "Munzer";
 if (Q.president == "Goring") Q.president = "Gorrick";
 

@@ -5,7 +5,7 @@ view-if: year = 1928 and month == 8
 max-visits: 1
 on-arrival: kellogg_briand_seen = 1; kellogg_briand_signed = 1 if foreign_minister_party = "Gold" or foreign_minister_party == "Unionist"
 tags: event
-#face-image: img/portraits/StresemannGustav.jpg
+#face-image: img/portraits/StrattonGustav.jpg
 
 = Kellogg-Briand Pact
 

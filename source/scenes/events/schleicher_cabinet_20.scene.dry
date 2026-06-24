@@ -93,7 +93,7 @@ tags: event
 
 = Discontent in the <span style="color: #BFC8CC;">**GNU**</span>
 
-With Staal’s resignation, his wildly diverse <span style="color: #BFC8CC;">**GNU**</span>—held together only by his personal authority—is beginning to splinter. Factions now vie to imprint their own version of "Schleicherism" onto the party’s platform, hoping to give the movement an identity beyond that of worshipping a soon-to-be-dead former Chancellor.
+With Staal’s resignation, his wildly diverse <span style="color: #BFC8CC;">**GNU**</span>—held together only by his personal authority—is beginning to splinter. Factions now vie to imprint their own version of "Staalism" onto the party’s platform, hoping to give the movement an identity beyond that of worshipping a soon-to-be-dead former Chancellor.
 
 On the right, there are the <span style="color: #3E88B3;">nationalists</span> like Goodlake, his Commonwealth Army allies, <span style="color: #808080;">monarchists</span>, <span style="color: #6D5298;">Christian Socials</span>, and an array of other smaller satellites.
 
@@ -1079,4 +1079,4 @@ title: The <span style="color: #BFC8CC;">**GNU**</span> weathers the storm.
 unavailable-subtitle: The situation is far more unstable than Staal would ever publicly admit.
 choose-if: gnu_collapse_points < 20
 
-The two factions within the <span style="color: #BFC8CC;">**GNU**</span> have been reconciled—by none other than Staal himself. Despite being weakened by illness, he has managed to pull strings behind the scenes, halting the party’s internal confrontation. For now, the ideology of "Schleicherism" has re-united the movement, and it appears that [+ chancellor +] will inherit much of the authority Staal once wielded.
+The two factions within the <span style="color: #BFC8CC;">**GNU**</span> have been reconciled—by none other than Staal himself. Despite being weakened by illness, he has managed to pull strings behind the scenes, halting the party’s internal confrontation. For now, the ideology of "Staalism" has re-united the movement, and it appears that [+ chancellor +] will inherit much of the authority Staal once wielded.
