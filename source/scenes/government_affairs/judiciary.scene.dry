@@ -8,7 +8,7 @@ tags: govt_affairs, cabinet
 
 = Judiciary Reform
 
-The Judiciary is one of the most <span style="color: #808080;">reactionary</span> components of the government, along with the military. Many jurists have held office since the days of the Emperor. They give violent <span style="color: #7A3C00;">fascists</span> like Adolf Gallax laughably light sentences, while ruthlessly persecuting leftists and pacifists for lesser crimes.
+The Judiciary is one of the most <span style="color: #808080;">reactionary</span> components of the government, along with the military. Many jurists have held office since the days of the Emperor. They give violent <span style="color: #7A3C00;">fascists</span> like Alaric Gallax laughably light sentences, while ruthlessly persecuting leftists and pacifists for lesser crimes.
 
 [? if judicial_reform <= 0 : There is great demand in our membership for reforming the judiciary, although this may bring us into a collision course with our coalition allies. ?]
 [? if judicial_reform == 1 : We have started on the path to judicial reform. While some of the most antediluvian and biased justices have been replaced, many still remain. More should be done. ?]

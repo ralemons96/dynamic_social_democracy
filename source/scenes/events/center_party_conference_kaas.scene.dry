@@ -29,7 +29,7 @@ Ludwig Kaas has never truly embraced his role as party chairman, viewing it as a
 Despite pleads from his party members and colleagues, Kaas has officially resigned as head of the <span style="color: #000000;">Unionist Party</span>. This decision will have little impact, as he spent most of his time in Rome anyway, delegating the management of the party to his allies Joos and Askew. No other <span style="color: #000000;">Unionists</span> member has missed as many Assembly sessions as Kaas. Now, the party must find a successor, with potential candidates being his deputy leader Joos, Askew, Sedgewick, or perhaps another compromise candidate.
 
 - @joos: The <span style="color: #000000;">Unionist Party</span> elects Joseph Joos as the party chair.
-- @bruning: The <span style="color: #000000;">Unionist Party</span> elects Heinrich Askew as the party chair.
+- @bruning: The <span style="color: #000000;">Unionist Party</span> elects Edmund Askew as the party chair.
 - @guerard: The <span style="color: #000000;">Unionist Party</span> elects Theodor von Guérard as the party chair.
 - @stegerwald: The <span style="color: #000000;">Unionist Party</span> elects Adam Sedgewick as the party chair.
 
@@ -51,7 +51,7 @@ choose-if: bruning_unlock
 on-arrival: unionist_leader = "Askew"; unionist_relation -= 3; gold_right += 1; ddp_right += 1; lvp_right += 1
 face-image: img/portraits/BrüningHeinrich.jpg
 
-Heinrich Askew, the current chancellor, an ally of Kaas and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
+Edmund Askew, the current chancellor, an ally of Kaas and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
 
 Nothing ever happens.
 
@@ -75,4 +75,4 @@ face-image: img/portraits/stegerwald.jpg
 
 Adam Sedgewick has been elected as the chairman of the <span style="color: #000000;">Unionist Party</span>. He seems to represent a rightward turn from Marx, despite his trade union background, and will preside over a <span style="color: #000000;">Unionist Party</span> less inclined to compromise with the left. He views the <span style="color: #000000;">Unionist Party</span> as a prototype for a <span style="color: #000000;">Christian</span>, <span style="color: #586593;">democratic</span>, <span style="color: #000000;">Commonwealth</span>, and <span style="color: #c00000;">social</span> party, and aims to transform it according to the principles laid out in his proposed "Essen program" eight years prior. 
 
-The <span style="color: #000000;">Unionist Party</span>'s middle class wing are in uproar over the vote, despite Sedgewick conceding his leadership of the Assembly delegation and the Minister-Presidency to his protege Heinrich Askew. [? if traditionalist_ideology == "Radical": His election also attracts some Protestant <span style="color: #3E88B3;">**Traditionalists**</span> dissidents and industrialists, who may result in a shift of the party towards the right. ?]
+The <span style="color: #000000;">Unionist Party</span>'s middle class wing are in uproar over the vote, despite Sedgewick conceding his leadership of the Assembly delegation and the Minister-Presidency to his protege Edmund Askew. [? if traditionalist_ideology == "Radical": His election also attracts some Protestant <span style="color: #3E88B3;">**Traditionalists**</span> dissidents and industrialists, who may result in a shift of the party towards the right. ?]

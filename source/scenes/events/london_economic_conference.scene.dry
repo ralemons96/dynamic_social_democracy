@@ -74,10 +74,10 @@ How should we try to salvage the negotiations?
 
 @salvage_currency
 choose-if: woytinsky_advisor = 1 and wtb_implemented > 1
-unavailable-subtitle: Wladimir Voss would be extremely helpful right now.
+unavailable-subtitle: Valdemar Voss would be extremely helpful right now.
 on-arrival: foreign_aid = 1; disfavored -= 2 if disfavored >= 10; disfavored -= 1.5 if disfavored >= 5; inflation += 1.5; commons_marcher += 4*(1-dissent); burgher_marcher += 3*(1-dissent); economic_growth += 1.5 if economic_growth < 3
 
-Wladimir Voss, now part of our delegation to the conference, uses our successful implementation of the WTB-plan in order to argue for loosening currency valuation. The argument is at least somewhat convincing, and an agreement is reached, leading to increased inflation and demand stimulus throughout the world.
+Valdemar Voss, now part of our delegation to the conference, uses our successful implementation of the WTB-plan in order to argue for loosening currency valuation. The argument is at least somewhat convincing, and an agreement is reached, leading to increased inflation and demand stimulus throughout the world.
 
 @salvage_debts
 choose-if: war_loans <= -2 and pacifism >= 3 and (rearmament_exposed or west_relation >= 3)

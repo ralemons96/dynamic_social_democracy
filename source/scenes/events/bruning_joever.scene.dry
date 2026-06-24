@@ -32,14 +32,14 @@ It’s a shame that Staal would fall for [+ royalist_leader +]’s lies. But the
 - @papen
 
 @goerdeler
-title: Carl Friedrich Goodlake?
+title: Reynold Goodlake?
 subtitle: The Commonwealth Price Commissioner and the Mayor of Leipzig. [? if traditionalist_ideology == "Radical": Former?] <span style="color: #3E88B3;">**Traditionalists**</span> member.
 max-visits: 1
 on-arrival: goerdeler_seen = 1
 face-image: img/portraits/goerdeler.jpg
 go-to: successor_menu
 
-To most political observers, Carl Goodlake, Mayor of Leipzig and the Commonwealth Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the Commonwealth welfare state and finances, was the expected successor to Askew, with his name even being floated around as the Minister-President of Heartland of a <span style="color: #000000;">Unionists</span>-<span style="color: #7A3C00;">**Royalists**</span> coalition.
+To most political observers, Reynold Goodlake, Mayor of Leipzig and the Commonwealth Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the Commonwealth welfare state and finances, was the expected successor to Askew, with his name even being floated around as the Minister-President of Heartland of a <span style="color: #000000;">Unionists</span>-<span style="color: #7A3C00;">**Royalists**</span> coalition.
 
 However, his demands for authorization of sweeping fiscal reforms is too similar to that of Askew in Staal's eyes, who supports a public works solution to the Commonwealth's economic woes. Goodlake will not be the new chancellor.
 

@@ -90,7 +90,7 @@ Q.rubicon_mini_leave = 1;
 
 Still, they place more trust in [+ president +] than in Chancellor [+ old_chancellor +], and under this influence, [+ old_chancellor +] was forced to accept his defeat. His removal, along with the replacement of many <span style="color: #7A3C00;">Royalist</span> cabinet ministers, has stopped the Commonwealth's slippery slope into dictatorship.
 
-[? if chancellor == "Askew": Heinrich Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Vesh": Otto Vesh of the <span style="color: #c00000;">**Marchers**</span> is selected as appointed chancellor. ?]
+[? if chancellor == "Askew": Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Vesh": Otto Vesh of the <span style="color: #c00000;">**Marchers**</span> is selected as appointed chancellor. ?]
 
 The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
 

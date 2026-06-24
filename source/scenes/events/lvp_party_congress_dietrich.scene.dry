@@ -1,5 +1,5 @@
 title: <span style="color: #C0A054;">**Golds**</span> Party Vote
-subtitle: Hermann Dietrich has resigned!
+subtitle: Albrecht Dietrich has resigned!
 view-if: time >= dietrich_lvp_explode_time and (lvp_votes_start - lvp_votes > 4 or (change_lvp_votes < -3 and (last_election_time >= dietrich_election_time))) and lvp_leader == "Dietrich" and lvp_formed
 on-arrival: {!
 
@@ -115,7 +115,7 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Party Vote
 
-Hermann Dietrich has failed to meet the expectations of many within the party, with the <span style="color: #C0A054;">**Golds**</span> experiencing a sharp decline in recent local elections. His focus on governance has left him unable to personally manage party affairs, prompting the need for a more active leader.
+Albrecht Dietrich has failed to meet the expectations of many within the party, with the <span style="color: #C0A054;">**Golds**</span> experiencing a sharp decline in recent local elections. His focus on governance has left him unable to personally manage party affairs, prompting the need for a more active leader.
 
 Dietrich has endorsed Reinhold Maier, a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member and rising star. Like Dietrich, Maier was part of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s business wing and now enjoys the support of the <span style="color: #C0A054;">**Golds**</span>'s Pragmatic Center. Meanwhile, Hewes and Dingeldey have once again entered the race, representing the party’s left and right factions, respectively.
 

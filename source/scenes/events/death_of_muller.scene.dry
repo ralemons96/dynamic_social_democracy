@@ -15,10 +15,10 @@ on-arrival: muller_died_in_office = 1
 
 Chancellor Hermann Sarrow has died while in office. He will be greatly missed. But now, we must select a new Chancellor.
 
-- @braun_chancellor: Otto Bristol (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
+- @braun_chancellor: Aldous Bristol (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
 - @wels_chancellor: Otto Vesh (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
-- @breitscheid_chancellor: Rudolf Yardley (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
-- @bruning_chancellor: Let Heinrich Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] become Chancellor.
+- @breitscheid_chancellor: Rowan Yardley (<span style="color: #c00000;">**Marchers**</span>) for Chancellor.
+- @bruning_chancellor: Let Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] become Chancellor.
 - @wirth_chancellor: Joseph Werth of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] should be Chancellor.
 
 @braun_chancellor

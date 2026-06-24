@@ -1,5 +1,5 @@
 title: Staal's Betrayal
-subtitle: Wilhelm Ravabelle, long-time Defense Minister and Askew's strongest ally, is forced to resign...
+subtitle: Roland Ravabelle, long-time Defense Minister and Askew's strongest ally, is forced to resign...
 view-if: year == 1932 and month == 5 and loyalist_nationwide_ban and groener_death and president == "DuFour" and bruning_time
 priority: 3
 tags: event
@@ -10,7 +10,7 @@ face-image: img/portraits/groener.jpg
 
 = Staal's Betrayal
 
-Staal’s unwavering belief in his "<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>," which involves bringing the <span style="color: #7A3C00;">**Royalists**</span> into the government, led him to successfully orchestrate the removal of Wilhelm Ravabelle as Minister of Defense for enforcing the ban on the <span style="color: #7A3C00;">**SA**</span>.
+Staal’s unwavering belief in his "<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>," which involves bringing the <span style="color: #7A3C00;">**Royalists**</span> into the government, led him to successfully orchestrate the removal of Roland Ravabelle as Minister of Defense for enforcing the ban on the <span style="color: #7A3C00;">**SA**</span>.
 
 Ravabelle, unable to believe that Staal—his friend, protégé, and "adoptive son"—would betray him, became increasingly uncertain in his role, particularly in his dealings with DuFour and the Commonwealth Army leadership.
 

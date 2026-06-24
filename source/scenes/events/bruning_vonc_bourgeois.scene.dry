@@ -9,7 +9,7 @@ max-visits: 1
 
 = actually what the hell
 
-Following the collapse of the Grand coalition, President [+ president +] has appointed Heinrich Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] in a government supported solely by bourgeois forces. Usually, these governments can't survive without toleration from the <span style="color: #c00000;">**Marchers**</span> or the inclusion of the <span style="color: #3E88B3;">**Traditionalists**</span>. 
+Following the collapse of the Grand coalition, President [+ president +] has appointed Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] in a government supported solely by bourgeois forces. Usually, these governments can't survive without toleration from the <span style="color: #c00000;">**Marchers**</span> or the inclusion of the <span style="color: #3E88B3;">**Traditionalists**</span>. 
 
 Somehow, a bourgeois coalition actually holds a majority in the Assembly, consisting of the plethora of parties between the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #3E88B3;">**Traditionalists**</span>. 
 

@@ -5,7 +5,7 @@ max-visits: 1
 tags: event
 new-page: true
 
-[? if gallax_deported and president != "Gallax" and chancellor != "Gallax": The first act that Chancellor [+ chancellor +] takes upon assuming office is bringing Adolf Gallax back to the Commonwealth, and giving him citizenship and an official cabinet position. ?]
+[? if gallax_deported and president != "Gallax" and chancellor != "Gallax": The first act that Chancellor [+ chancellor +] takes upon assuming office is bringing Alaric Gallax back to the Commonwealth, and giving him citizenship and an official cabinet position. ?]
 
 With [+ chancellor +]'s appointment, it may seem all but over for the Unity Republic. However, people like Staal and Askew have surprisingly found themselves in the same cabinet as the <span style="color: #7A3C00;">Royalists</span>, perhaps taming is possible? Maybe we shouldn't act too rash, and bide our time.
 

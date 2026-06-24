@@ -8,7 +8,7 @@ max-visits: 1
 
 = Vote of no confidence
 
-Following the collapse of our coalition, President [+ president +] has appointed Heinrich Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party in a government supported by bourgeois forces. However, they cannot survive without the support from us or Mallin's <span style="color: #3E88B3;">**Traditionalists**</span>.
+Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party in a government supported by bourgeois forces. However, they cannot survive without the support from us or Mallin's <span style="color: #3E88B3;">**Traditionalists**</span>.
 
 Askew, has reorganized his cabinet to include the parties to the right of the [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], such as the new <span style="color: #0087DC;">**KVP**</span>, which has been granted generous cabinet positions. We are left with the choice to "tolerate" the government to prevent the gains of extremists within the Assembly or vote to oust Askew for new elections.
 

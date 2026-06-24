@@ -25,7 +25,7 @@ on-arrival: marcher_in_government = 1; marcher_toleration = 0; marcher_toleratio
 
 [? if in_center_right_coalition_heartland or in_right_coalition_heartland: The Heartland coalition isn't able to survive either, pressure from Mallin and his supporters forces the <span style="color: #3E88B3;">**Traditionalists**</span> to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well. ?]
 
-Heinrich Askew welcomes us into his new cabinet. Now, we have our pick of ministries.
+Edmund Askew welcomes us into his new cabinet. Now, we have our pick of ministries.
 
 - @election_1928.ministries: Now, we must select our ministries.
 

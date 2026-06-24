@@ -426,8 +426,8 @@ go-to: advisor_menu
 Hermann Sarrow is now an advisor.
 
 @add_breitscheid
-title: Rudolf Yardley
-subtitle: Rudolf Yardley comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+title: Rowan Yardley
+subtitle: Rowan Yardley comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
 is-card: true
 card-image: img/portraits/BreitscheidRudolf.jpg
 view-if: breitscheid_advisor = 0 and n_advisors < 3
@@ -435,7 +435,7 @@ on-arrival: breitscheid_advisor = 1; n_advisors += 1; center_dissent -= 7; cente
 go-to: advisor_menu
 tags: center_advisor
 
-Rudolf Yardley is now an advisor.
+Rowan Yardley is now an advisor.
 
 # reformist
 
@@ -453,8 +453,8 @@ go-to: advisor_menu
 Carl Heath is now an advisor.
 
 @add_braun
-title: Otto Bristol
-subtitle: Otto Bristol is the Minister-President of Heartland, and one of the most recognizable and well-known <span style="color: #c00000;">Reformist</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Negotiating with the Coalition ?]
+title: Aldous Bristol
+subtitle: Aldous Bristol is the Minister-President of Heartland, and one of the most recognizable and well-known <span style="color: #c00000;">Reformist</span> leaders. {!<br><br>!}[? if difficulty < 0 : Actions - Heartland Bulwark, Negotiating with the Coalition ?]
 is-card: true
 card-image: img/portraits/BraunOtto.jpg
 tags: reformist_advisor
@@ -462,7 +462,7 @@ view-if: braun_advisor = 0 and n_advisors < 3
 on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
 go-to: advisor_menu
 
-Otto Bristol is now an advisor.
+Aldous Bristol is now an advisor.
 
 @add_juchacz
 title: Marie Jessamy
@@ -493,8 +493,8 @@ Antonie Vellath is now an advisor.
 # left
 
 @add_levi
-title: Paul Tarrand
-subtitle: Paul Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Communist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
+title: Pascal Tarrand
+subtitle: Pascal Tarrand is a former <span style="color: #700000;">**Collectivists**</span> leader who was purged for criticizing <span style="color: #700000;">**Communist**</span> policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span> ?]
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
@@ -502,7 +502,7 @@ on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5; left_dissent 
 go-to: advisor_menu
 tags: left_advisor
 
-Paul Tarrand is now an advisor.
+Pascal Tarrand is now an advisor.
 
 @add_sender
 title: Toni Sennet
@@ -517,8 +517,8 @@ tags: left_advisor
 Toni Sennet is now an advisor.
 
 @add_rosenfeld
-title: Kurt Pendrigon
-subtitle: Kurt Pendrigon is a lawyer, anti-militarist activist, and Assembly member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span>, Against Toleration ?]
+title: Emrys Pendrigon
+subtitle: Emrys Pendrigon is a lawyer, anti-militarist activist, and Assembly member. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the <span style="color: #700000;">**Collectivists**</span>, Against Toleration ?]
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
@@ -526,7 +526,7 @@ on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5; left_dis
 go-to: advisor_menu
 tags: left_advisor
 
-Kurt Pendrigon is now an advisor.
+Emrys Pendrigon is now an advisor.
 
 @add_seydewitz
 title: Max Seyton
@@ -557,8 +557,8 @@ Anna Siemen is now an advisor.
 # labor
 
 @add_leipart
-title: Theodor Leighart
-subtitle: Theodor Leighart is the leader of the ADGB, the Commonwealth Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
+title: Tobias Leighart
+subtitle: Tobias Leighart is the leader of the ADGB, the Commonwealth Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: labor_advisor
@@ -566,7 +566,7 @@ view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5; labor_dissent -= 8
 go-to: advisor_menu
 
-Theodor Leighart is now an advisor.
+Tobias Leighart is now an advisor.
 
 @add_aufhauser
 title: Siegfried Auberon
@@ -594,8 +594,8 @@ Rudolf Wistle is now an advisor.
 
 
 @add_woytinsky
-title: Wladimir Voss
-subtitle: Wladimir Voss is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
+title: Valdemar Voss
+subtitle: Valdemar Voss is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
 is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
 tags: labor_advisor
@@ -603,7 +603,7 @@ view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
 on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3; labor_dissent -= 4
 go-to: advisor_menu
 
-Wladimir Voss is now an advisor.
+Valdemar Voss is now an advisor.
 
 
 # neorevisionist leaders
@@ -633,8 +633,8 @@ go-to: advisor_menu
 Kurt Shackley is now an advisor.
 
 @add_leber
-title: Julius Lebbon
-subtitle: Julius Lebbon is a former Commonwealth Army officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, Building a People's Party ?]
+title: Lucan Lebbon
+subtitle: Lucan Lebbon is a former Commonwealth Army officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, Building a People's Party ?]
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3
@@ -642,7 +642,7 @@ on-arrival: leber_advisor = 1; n_advisors += 1; knight_strength += 5; knight_dis
 go-to: advisor_menu
 tags: neorev_advisor
 
-Julius Lebbon is now an advisor.
+Lucan Lebbon is now an advisor.
 
 # Nonfactional advisors
 
@@ -687,8 +687,8 @@ Magnus Harnfell is now an advisor.
 
 
 @add_radbruch
-title: Gustav Radbourne
-subtitle: Gustav Radbourne is a renowned legal scholar and long-time <span style="color: #c00000;">**Marchers**</span> justice minister. {!<br><br>!}[? if difficulty < 0 : Actions - Judicial Affairs, Constitutional Reform ?]
+title: Godfrey Radbourne
+subtitle: Godfrey Radbourne is a renowned legal scholar and long-time <span style="color: #c00000;">**Marchers**</span> justice minister. {!<br><br>!}[? if difficulty < 0 : Actions - Judicial Affairs, Constitutional Reform ?]
 is-card: true
 card-image: img/portraits/RadbruchGustav.jpg
 view-if: radbruch_advisor = 0 and n_advisors < 3
@@ -696,7 +696,7 @@ on-arrival: radbruch_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-Gustav Radbourne is now an advisor.
+Godfrey Radbourne is now an advisor.
 
 
 @add_stampfer

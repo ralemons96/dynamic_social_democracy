@@ -520,7 +520,7 @@ Current relations: [+ collectivist_relation : relationships +]
 
 [? if sapd_formed: <span style="color: #9B0000;">**SAPD**</span> - <i>Sozialistische Arbeiterpartei Deutschlands</i> (Socialist Worker's Party of the Commonwealth) - a party recently formed in a split from the <span style="color: #c00000;">**Marchers**</span>, the <span style="color: #9B0000;">**SAPD**</span> is essentially an agglomeration of various left-wing splinter groups between the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span>. ?]
 
-<span style="color: #7A3C00;">**Royalists**</span> - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist Commonwealth Worker's Party, or <span style="color: #7A3C00;">Royalists</span>) - a far-right nationalist and antisemitic party. Led by Adolf Gallax, they attempted a coup in 1923, and were banned for it, but have since been legalized.
+<span style="color: #7A3C00;">**Royalists**</span> - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist Commonwealth Worker's Party, or <span style="color: #7A3C00;">Royalists</span>) - a far-right nationalist and antisemitic party. Led by Alaric Gallax, they attempted a coup in 1923, and were banned for it, but have since been legalized.
 
 Current relations: [+ royalist_relation : relationships +]
 

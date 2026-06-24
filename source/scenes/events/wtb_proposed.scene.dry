@@ -1,5 +1,5 @@
 title: The WTB Plan
-subtitle: Wladimir Voss and the ADGB have presented a proposal.
+subtitle: Valdemar Voss and the ADGB have presented a proposal.
 view-if: veran_crash_seen and wtb_points >= 200 and not economic_plan and not wtb_proposed
 tags: event
 new-page: true
@@ -19,7 +19,7 @@ on-display: {!
 
 = The WTB Plan
 
-Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Tarnow, and Bayle have presented the WTB Plan, named after them, to the ADGB and <span style="color: #c00000;">**Marchers**</span> leadership. While the ADGB has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Rudolf Bell, along with Rudolf Yardley and party leader Otto Vesh, are much more resistant, showing significant skepticism.
+Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Tarnow, and Bayle have presented the WTB Plan, named after them, to the ADGB and <span style="color: #c00000;">**Marchers**</span> leadership. While the ADGB has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Rudolf Bell, along with Rowan Yardley and party leader Otto Vesh, are much more resistant, showing significant skepticism.
 
 The fear of inflation caused by funding the plan through public works, especially with hyperinflation still fresh in memory, and the unwillingness to "play doctor at the bedside of capitalism," are the main reasons for the Centrists' reluctance. Maybe they can be convinced?
 

@@ -24,9 +24,9 @@ Q.president = "Bumke (acting)";
 if (Q.judicial_reform >= 4) Q.president = "Großmann (acting)";
 
 Q.reactionary_candidate_1934 = "Selden";
-Q.reactionary_candidate_1934_disp = "Franz Selden";
+Q.reactionary_candidate_1934_disp = "Roderick Selden";
 Q.lib_candidate_1934 = "Gesling";
-Q.lib_candidate_1934_disp = "Otto Gesling";
+Q.lib_candidate_1934_disp = "Gareth Gesling";
 Q.center_candidate_1934 = "Aldermoor";
 Q.center_candidate_1934_disp = "Konrad Aldermoor";
 
@@ -71,7 +71,7 @@ if (Q.traditionalist_ideology == "Moderate" && !Q.concord_formed) {
 
 if (Q.lautenbach_adopted && !Q.concord_formed) {
     Q.center_candidate_1934 = "Askew";
-    Q.center_candidate_1934_disp = "Heinrich Askew";
+    Q.center_candidate_1934_disp = "Edmund Askew";
     Q.bruning_run_1934 = 1;
     Q.adenauer_run_1934 = 0;
     Q.lib_running = 0;
@@ -135,12 +135,12 @@ New presidential elections are to be held as soon as possible. The Commonwealth 
 @candidates
 go-to: candidate_menu
 
-[? if not gallax_deported and gallax_citizen and not gallax_dead : Of course, Adolf Gallax will be running for the <span style="color: #7A3C00;">Royalists</span>, in his third run. We have kept him out of power so far, but nothing is certain. ?]
+[? if not gallax_deported and gallax_citizen and not gallax_dead : Of course, Alaric Gallax will be running for the <span style="color: #7A3C00;">Royalists</span>, in his third run. We have kept him out of power so far, but nothing is certain. ?]
 
-[? if gallax_deported or gallax_dead or (not gallax_citizen and not gallax_deported and not gallax_dead) : With Gallax out of the picture, the <span style="color: #7A3C00;">Royalists</span> will be running Hermann Gorrick as their candidate. ?]
+[? if gallax_deported or gallax_dead or (not gallax_citizen and not gallax_deported and not gallax_dead) : With Gallax out of the picture, the <span style="color: #7A3C00;">Royalists</span> will be running Ulric Gorrick as their candidate. ?]
 This might be the <span style="color: #7A3C00;">Royalists</span>' last hurrah; the party's internal contradictions are heightening, and it is in desperate shortage of funds.
 
-[? if seldte_run_1934: The <span style="color: #3E88B3;">**Traditionalists**</span> will nominate Franz Selden, leader of the <span style="color: #3E88B3;">**Wardens**</span> paramilitary group. He will be endorsed by many of DuFour's most right-wing supporters. They are working more closely with the <span style="color: #7A3C00;">Royalists</span> than before, and in the second round, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties are expected to consolidate into a single anti-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> front. [? if kvp_formed and kvp_candidate == center_candidate_1934: However, the <span style="color: #0087DC;">**KVP**</span>, feeling alienated by this arrangement, has decided to support whomever the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] puts forth. ?] ?][? if hergt_run_1934: The <span style="color: #3E88B3;">**Traditionalists**</span> will nominate Oskar Hargen,[? if traditionalist_leader != "Hargen":&nbsp;former?] leader of the <span style="color: #3E88B3;">**Traditionalists**</span> and former vice chancellor. He will be endorsed by many of DuFour's most right-wing supporters. They are working more closely with the <span style="color: #7A3C00;">Royalists</span> than before, and in the second round, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties are expected to consolidate into a single anti-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> front. ?][? if concord_formed: The <span style="color: #000000;">**[+ unionist_party_name +]**</span> has come together in full support of nominating General Lethmoor, a war hero who was once a member of the <span style="color: #3E88B3;">**Traditionalists**</span>. Despite his initial reluctance, the popular general has agreed to their nomination, signaling his intent to uphold the legacy of DuFour. ?]
+[? if seldte_run_1934: The <span style="color: #3E88B3;">**Traditionalists**</span> will nominate Roderick Selden, leader of the <span style="color: #3E88B3;">**Wardens**</span> paramilitary group. He will be endorsed by many of DuFour's most right-wing supporters. They are working more closely with the <span style="color: #7A3C00;">Royalists</span> than before, and in the second round, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties are expected to consolidate into a single anti-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> front. [? if kvp_formed and kvp_candidate == center_candidate_1934: However, the <span style="color: #0087DC;">**KVP**</span>, feeling alienated by this arrangement, has decided to support whomever the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] puts forth. ?] ?][? if hergt_run_1934: The <span style="color: #3E88B3;">**Traditionalists**</span> will nominate Oskar Hargen,[? if traditionalist_leader != "Hargen":&nbsp;former?] leader of the <span style="color: #3E88B3;">**Traditionalists**</span> and former vice chancellor. He will be endorsed by many of DuFour's most right-wing supporters. They are working more closely with the <span style="color: #7A3C00;">Royalists</span> than before, and in the second round, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties are expected to consolidate into a single anti-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> front. ?][? if concord_formed: The <span style="color: #000000;">**[+ unionist_party_name +]**</span> has come together in full support of nominating General Lethmoor, a war hero who was once a member of the <span style="color: #3E88B3;">**Traditionalists**</span>. Despite his initial reluctance, the popular general has agreed to their nomination, signaling his intent to uphold the legacy of DuFour. ?]
 
 [? if not seldte_run_1934: Alfred Mallin is dissatisfied with endorsing [+ reactionary_candidate_1934 +] and prefers to run himself. However, his finances have been crippled by having solely financed the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] throughout the economic depression, which has also eroded the income from his media empire. [? if hugenberg_run_1934: Despite this, he has scraped together what remains of his personal fortune to launch a presidential campaign, hoping to leverage a second-round endorsement for concessions from [+ reactionary_candidate_1934 +]. ?][? if not hugenberg_run_1934: In an effort to preserve both his party’s solvency and what remains of his wealth, he has refrained from running or endorsing anyone—much to the frustration of his colleagues. ?] ?]
 
@@ -149,10 +149,10 @@ This might be the <span style="color: #7A3C00;">Royalists</span>' last hurrah; t
 
 [? if not concord_formed: Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>. ?]
 
-[? if not concord_formed: Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. [? if adenauer_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants.?][? if bruning_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Heinrich Askew, their former Chancellor, known for his popular and successful public works program. Widely credited with reviving the Commonwealth’s economy, he is expected to receive broad support from the bourgeois parties that participated in his government should he choose to run. ?]?] [? if ddp_candidate == "Gesling": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Otto Gesling, former defense minister, who has crossover appeal to conservatives[? if gold_exist and not lvp_formed:&nbsp;in the <span style="color: #C0A054;">**Golds**</span>?] and other parties who dislike the <span style="color: #3E88B3;">**Traditionalists**</span>-<span style="color: #7A3C00;">**Royalists**</span> front. ?][? if ddp_candidate == "Hewes": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Theodor Hewes, a prominent left-liberal journalist, who presents a strong defense of the Unity Republic and its democratic institutions. He aims to be the candidate for the young generation, and bourgeois <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. ?]
+[? if not concord_formed: Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. [? if adenauer_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants.?][? if bruning_run_1934: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Edmund Askew, their former Chancellor, known for his popular and successful public works program. Widely credited with reviving the Commonwealth’s economy, he is expected to receive broad support from the bourgeois parties that participated in his government should he choose to run. ?]?] [? if ddp_candidate == "Gesling": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives[? if gold_exist and not lvp_formed:&nbsp;in the <span style="color: #C0A054;">**Golds**</span>?] and other parties who dislike the <span style="color: #3E88B3;">**Traditionalists**</span>-<span style="color: #7A3C00;">**Royalists**</span> front. ?][? if ddp_candidate == "Hewes": The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Theodor Hewes, a prominent left-liberal journalist, who presents a strong defense of the Unity Republic and its democratic institutions. He aims to be the candidate for the young generation, and bourgeois <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span>. ?]
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint [? if not concord_formed: Unity?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] ?] Coalition candidate or run our own.
-[? if braun_campaign : Otto Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if braun_campaign = 0 and not marcher_heartland: Otto Bristol is tired. After being deposed in Heartland, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if braun_campaign = 0 and marcher_heartland : Otto Bristol is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
+[? if braun_campaign : Aldous Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side. ?][? if braun_campaign = 0 and not marcher_heartland: Aldous Bristol is tired. After being deposed in Heartland, he has largely retired from politics, and is devoting his time to caring for his dying wife. ?][? if braun_campaign = 0 and marcher_heartland : Aldous Bristol is tired. He does not wish to run, but he is willing to be convinced that he is needed at this moment. His wife is terminally ill, and he does not want more responsibilities. ?]
 Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
 [? if womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0: Or, perhaps it is time for a woman to become president. the Commonwealth and the <span style="color: #c00000;">**Marchers**</span> have been leading on women's rights for years, and it is only fitting that we should elect the world's first female president. Perhaps Marie Jessamy could be seen as the "mother of the nation" for her work in social welfare. However, her divorce 28 years ago might make it difficult for the Catholics to support her. ?]
 
@@ -165,7 +165,7 @@ Kurt Shackley is an ambitious rising star in the party, and would be all too wil
 - @gessler_r1: Support [+ lib_candidate_1934_disp +] of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @thalmann_r1: Support Ernst Halsmark of the <span style="color: #700000;">**Collectivists**</span>.
 - @munzenberg_r1: Support Willi Munzer of the <span style="color: #700000;">**Collectivists**</span>.
-- @braun_r1: Support Otto Bristol.
+- @braun_r1: Support Aldous Bristol.
 - @schumacher_r1: Support Kurt Shackley.
 - @juchacz_r1: Support Marie Jessamy.
 - @cultural_figure: Support a nonpartisan cultural figure?
@@ -195,7 +195,7 @@ view-if: lib_running
 on-arrival: marcher_candidate = lib_candidate_1934; ddp_relation += 4; lvp_relation += 4; gold_candidate = reactionary_candidate_1934 if gold_relation < 40 and not lvp_formed and gold_exist; is_unity_candidate = 1
 go-to: r1_menu
 
-[? if gessler_run_1934: We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>. ?][? if heuss_run_1934: We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. ?]
+[? if gessler_run_1934: We have endorsed Gareth Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>. ?][? if heuss_run_1934: We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. ?]
 
 [? if gold_relation < 40 and not lvp_formed and gold_exist : With our support of [+ lib_candidate_1934 +], the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to [+ reactionary_candidate_1934 +]. ?]
 
@@ -234,7 +234,7 @@ choose-if: braun_campaign = 0 and marcher_heartland and resources >= 2
 on-arrival: marcher_candidate = "Bristol"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
-We have convinced Otto Bristol to run for president once more.
+We have convinced Aldous Bristol to run for president once more.
 
 
 @schumacher_r1
@@ -497,19 +497,19 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 var candidate_descs = {
-Gallax: "Adolf Gallax of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
-Goring: "Hermann Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
-Selden: "Franz Selden of the <span style='color: #3E88B3; font-weight: bold;'>Wardens</span>/<span style='color: #3E88B3; font-weight: bold;'>Traditionalists</span>",
+Gallax: "Alaric Gallax of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+Goring: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+Selden: "Roderick Selden of the <span style='color: #3E88B3; font-weight: bold;'>Wardens</span>/<span style='color: #3E88B3; font-weight: bold;'>Traditionalists</span>",
 Hargen: "Oskar Hargen of the <span style='color: #3E88B3; font-weight: bold;'>Traditionalists</span>",
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000;'>Unionist Party</span>",
-Askew: "Heinrich Askew of the <span style='color: #000000;'>Unionist Party</span>",
+Askew: "Edmund Askew of the <span style='color: #000000;'>Unionist Party</span>",
 Lettow_Vorbeck: "Lethmoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>",
-Gesling: "Otto Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
+Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Thalmann: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
 Munzenberg: "Willi Munzer of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
-Bristol: "Otto Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
+Bristol: "Aldous Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Jessamy: "Marie Jessamy of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Einstein: "Albert Einstein, scientist",
@@ -518,7 +518,7 @@ Ostwick: "Carl von Ostwick, journalist"
 }
 if (Q.unionist_party_name == "Concord") {
     candidate_descs.Aldermoor = "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>";
-    candidate_descs.Askew = "Heinrich Askew of the <span style='color: #000000; font-weight: bold;'>Concord</span>";
+    candidate_descs.Askew = "Edmund Askew of the <span style='color: #000000; font-weight: bold;'>Concord</span>";
 }
 if (Q.lvp_formed) {
     candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>";
@@ -834,7 +834,7 @@ view-if: ddp_candidate = lib_candidate_1934 and marcher_candidate != ddp_candida
 on-departure: ddp_candidate = lib_candidate_1934 if ddp_candidate == marcher_candidate and marcher_running; gold_candidate = lib_candidate_1934 if gold_candidate == marcher_candidate and marcher_running; unionist_candidate = lib_candidate_1934 if unionist_candidate == marcher_candidate and marcher_running; collectivist_candidate = "Halsmark" if collectivist_candidate == marcher_candidate and collectivist_leader != "Conciliators"; collectivist_candidate = "Munzer" if collectivist_candidate == marcher_candidate and collectivist_leader == "Conciliators"; sapd_candidate = collectivist_candidate; marcher_candidate = lib_candidate_1934; ddp_relation += 4; lvp_relation += 4; gold_candidate = reactionary_candidate_1934 if gold_relation < 40 and not lvp_formed and gold_exist; is_unity_candidate = 1
 go-to: r2_campaigning
 
-[? if gessler_run_1934: We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>. ?][? if heuss_run_1934: We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. ?]
+[? if gessler_run_1934: We have endorsed Gareth Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>. ?][? if heuss_run_1934: We have endorsed Theodor Hewes of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. ?]
 
 [? if gold_relation < 40 and not lvp_formed and gold_exist: With our support of [+ lib_candidate_1934 +], the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to [+ reactionary_candidate_1934 +]. ?]
 
@@ -891,7 +891,7 @@ With [+ royalist_candidate +]'s victory, the <span style="color: #7A3C00;">Royal
 @seldte_victory
 on-arrival: chancellor = "Gallax"; chancellor_party = "Royalist"; gallax_revive = 1 if gallax_dead
 
-With Selden's victory, the balance of power passes to the <span style="color: #7A3C00;">Royalists</span>. [? if gallax_deported: His first act is to depose the current chancellor and appoint Adolf Gallax as chancellor, first undoing his deportation. ?][? if not gallax_deported: His first act is to depose the current chancellor and appoint Adolf Gallax as chancellor. ?] [? if gallax_dead: It turns out Gallax never actually died—he faked his suicide. With no body ever recovered, allegedly cremated beyond recognition, he instead fled to America and lived under the alias "Adam Hilt," working as a painter. Now, he is being called back. ?]
+With Selden's victory, the balance of power passes to the <span style="color: #7A3C00;">Royalists</span>. [? if gallax_deported: His first act is to depose the current chancellor and appoint Alaric Gallax as chancellor, first undoing his deportation. ?][? if not gallax_deported: His first act is to depose the current chancellor and appoint Alaric Gallax as chancellor. ?] [? if gallax_dead: It turns out Gallax never actually died—he faked his suicide. With no body ever recovered, allegedly cremated beyond recognition, he instead fled to America and lived under the alias "Adam Hilt," working as a painter. Now, he is being called back. ?]
 
 - @hitler_takes_power: What next?
 - @hitler_constitutional: This is blatantly unconstitutional!
@@ -899,7 +899,7 @@ With Selden's victory, the balance of power passes to the <span style="color: #7
 @hergt_victory_nazi
 on-arrival: chancellor = "Selden"; chancellor_party = "Traditionalist"
 
-With Hargen’s victory—secured with the support of the <span style="color: #7A3C00;">Royalists</span>—the balance of power shifts to them under the terms of their deal. However, Hargen remains deeply reluctant to appoint Adolf Gallax as chancellor[? if not gallax_citizen or gallax_deported:—which would require granting him Commonwealth citizenship?]. Instead, he names <span style="color: #3E88B3;">**Wardens**</span> leader Franz Selden as a compromise candidate between the two parties. Selden will govern through presidential decree, leading a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> cabinet.
+With Hargen’s victory—secured with the support of the <span style="color: #7A3C00;">Royalists</span>—the balance of power shifts to them under the terms of their deal. However, Hargen remains deeply reluctant to appoint Alaric Gallax as chancellor[? if not gallax_citizen or gallax_deported:—which would require granting him Commonwealth citizenship?]. Instead, he names <span style="color: #3E88B3;">**Wardens**</span> leader Roderick Selden as a compromise candidate between the two parties. Selden will govern through presidential decree, leading a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> cabinet.
 
 - @seldte_takes_power: What next?
 - @seldte_constitutional: This is blatantly unconstitutional!

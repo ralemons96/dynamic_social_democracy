@@ -20,6 +20,6 @@ title: There is nothing we can do.
 subtitle: This isn't worth dying over.
 on-arrival: in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; heartland_leader = "Goodlake"; commons_marcher -= 3; commons_collectivist -= 3; disfavored_collectivist -= 3; disfavored_marcher -= 3; left_dissent += 5; labor_dissent += 5; banner_militancy = banner_militancy/1.5; banner_strength -= 300; vanguard_banned = 1; vanguard_strength -= 100; vanguard_militancy -= 0.1; heartland_reichsexekution_timer = 12; next_election_time_heartland = time + 48; next_election_year_heartland = year + 4
 
-DuFour appoints the <span style="color: #3E88B3;">nationalist</span> Carl Friedrich Goodlake, who renounces his party affiliation, to govern over Heartland as a <i>Reichskommissar</i>, charged with dismantling the democratic systems we worked hard to build.
+DuFour appoints the <span style="color: #3E88B3;">nationalist</span> Reynold Goodlake, who renounces his party affiliation, to govern over Heartland as a <i>Reichskommissar</i>, charged with dismantling the democratic systems we worked hard to build.
 
 Future state elections have been postponed indefinitely, to be held only when the situation is deemed "stable enough."

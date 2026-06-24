@@ -1046,37 +1046,37 @@ Q.hilferding_advisor = 1; // Rudolf Bell
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sennet
-Q.levi_advisor = 0; // Paul Tarrand
+Q.levi_advisor = 0; // Pascal Tarrand
 Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Kurt Pendrigon
+Q.rosenfeld_advisor = 0; // Emrys Pendrigon
 Q.seydewitz_advisor = 0; // Max Seyton
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Vellath
-Q.breitscheid_advisor = 0; // Rudolf Yardley
+Q.breitscheid_advisor = 0; // Rowan Yardley
 
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Heath
-Q.braun_advisor = 0; // Otto Bristol
+Q.braun_advisor = 0; // Aldous Bristol
 Q.juchacz_advisor = 0; // Marie Jessamy
 Q.baade_advisor = 0; // Fritz Bayle
 
 // Labor advisors
-Q.leipart_advisor = 0; // Theodor Leighart
+Q.leipart_advisor = 0; // Tobias Leighart
 Q.aufhauser_advisor = 0; // Siegfried Auberon
-Q.woytinsky_advisor = 0; // Wladimir Voss (post-1930)
+Q.woytinsky_advisor = 0; // Valdemar Voss (post-1930)
 Q.wissell_advisor = 0; // Rudolf Wistle
 
 // Revisionist advisors
 Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
 
-Q.leber_advisor = 0; // Julius Lebbon (post-1930)
+Q.leber_advisor = 0; // Lucan Lebbon (post-1930)
 Q.schumacher_advisor = 0; // Kurt Shackley (post-1930)
 Q.wirth_advisor = 0; // troll
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Harnfell
-Q.radbruch_advisor = 0; // Gustav Radbourne
+Q.radbruch_advisor = 0; // Godfrey Radbourne
 Q.stampfer_advisor = 0; // Friedrich Stamper
 
 if (Q.achievement_holy_moly) {

@@ -666,7 +666,7 @@ Ernst Halsmark of the <span style="color: #700000;">**Collectivists**</span> has
 @hitler_wins
 on-arrival: president = royalist_candidate_1932; chancellor = "Gallax"; chancellor_party = "Royalist"
 
-[? if royalist_candidate_1932 == "Gallax" : Adolf Gallax of the <span style="color: #7A3C00;">**Royalists**</span> has won the presidency. He wastes no time in consolidating power. ?]
+[? if royalist_candidate_1932 == "Gallax" : Alaric Gallax of the <span style="color: #7A3C00;">**Royalists**</span> has won the presidency. He wastes no time in consolidating power. ?]
 [? if royalist_candidate_1932 != "Gallax" : The <span style="color: #7A3C00;">**Royalists**</span> candidate [+ president +] has won. The first action President [+ president +] takes is inviting Gallax back into the Commonwealth, and appointing him chancellor. The <span style="color: #7A3C00;">Royalists</span> waste no time in consolidating power. ?]
 
 - @hitler_takes_power: What do we do now?
@@ -675,13 +675,13 @@ on-arrival: president = royalist_candidate_1932; chancellor = "Gallax"; chancell
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 6*(1-dissent); guild_marcher += 4*(1-dissent); burgher_marcher += 4*(1-dissent); landed_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent);
 go-to: achievement_check_1
 
-Otto Bristol of the <span style="color: #c00000;">**Marchers**</span> has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
+Aldous Bristol of the <span style="color: #c00000;">**Marchers**</span> has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
 @rosenfeld_wins
 on-arrival: president = "Pendrigon"; president_ideology = "Left"; center_dissent -= 5; labor_dissent -= 5; left_dissent -= 15; left_strength += 20; commons_marcher += 9*(1-dissent); disfavored_marcher += 6*(1-dissent); coup_progress += 4; capital_strike_progress += 4
 go-to: achievement_check_1
 
-Kurt Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
+Emrys Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
 However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Communist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
 
@@ -696,7 +696,7 @@ Nationally renown Zeppelin pilot and independent Hugo Eckhart has won the presid
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 8*(1-dissent); guild_marcher += 5*(1-dissent); burgher_marcher += 5*(1-dissent); landed_marcher += 5*(1-dissent); disfavored_marcher += 5*(1-dissent);
 go-to: achievement_check_1
 
-Dusterel is too ashamed to accept the Presidency, and out of the kindness of his heart, has given it to Otto Bristol. 
+Dusterel is too ashamed to accept the Presidency, and out of the kindness of his heart, has given it to Aldous Bristol. 
 
 @achievement_check_1
 on-arrival: neue_geschaftsfuhrung = 1 if chancellor == "Askew" and marcher_toleration
@@ -712,12 +712,12 @@ go-to: jarres_win if (reactionary_candidate_1_plurality and reactionary_candidat
 on-arrival: president = "Jarrow"; president_ideology = "Right"; burgher_gold += 4; guild_gold += 4; landed_gold += 4; burgher_lvp += 4; guild_lvp += 4; landed_lvp += 4
 achievement: aller_guten_dinge_sind_zwei
 
-Perhaps surprisingly, Karl Jarrow has made an unforeseen comeback and won the presidency. We hope that his governance will be an improvement over that of DuFour, and that he continues to keep the <span style="color: #7A3C00;">Royalists</span> out of power. 
+Perhaps surprisingly, Lorne Jarrow has made an unforeseen comeback and won the presidency. We hope that his governance will be an improvement over that of DuFour, and that he continues to keep the <span style="color: #7A3C00;">Royalists</span> out of power. 
 
 @gessler_win
 on-arrival: president = "Gesling"; president_ideology = "Moderate"; burgher_ddp += 2; guild_ddp += 2; landed_ddp += 2; burgher_gold += 2; guild_gold += 2; landed_gold += 2; burgher_lvp += 4; guild_lvp += 4; landed_lvp += 4
 
-Otto Gesling has made a comeback and won the presidency. Despite his[? if lvp_formed: &nbsp;former?] affiliation with the <span style="color: #D3C24D;">**Golds**</span>, he isn’t as friendly as his colleagues. However, he is a significant step up from DuFour. Let’s hope he continues to keep the <span style="color: #7A3C00;">Royalists</span> out of power.
+Gareth Gesling has made a comeback and won the presidency. Despite his[? if lvp_formed: &nbsp;former?] affiliation with the <span style="color: #D3C24D;">**Golds**</span>, he isn’t as friendly as his colleagues. However, he is a significant step up from DuFour. Let’s hope he continues to keep the <span style="color: #7A3C00;">Royalists</span> out of power.
 
 @luther_win
 on-arrival: president = "Lytton"; president_ideology = "Moderate"; burgher_gold += 4; guild_gold += 4; landed_gold += 4; burgher_lvp += 4; guild_lvp += 4; landed_lvp += 4
@@ -737,7 +737,7 @@ achievement: bundesrepublik
 @bruning_win
 on-arrival: president = "Askew"; president_ideology = "Moderate"; burgher_unionist += 4; guild_unionist += 4; landed_unionist += 2; faithful_unionist += 2
 
-Heinrich Askew may be an advocate of economic austerity, but as president, he’s a clear step up from DuFour in both his <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> convictions and his stance toward the <span style="color: #c00000;">**Marchers**</span>. Let’s hope he stands firm and keeps the <span style="color: #7A3C00;">Royalists</span> out of power.
+Edmund Askew may be an advocate of economic austerity, but as president, he’s a clear step up from DuFour in both his <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> convictions and his stance toward the <span style="color: #c00000;">**Marchers**</span>. Let’s hope he stands firm and keeps the <span style="color: #7A3C00;">Royalists</span> out of power.
 
 @stegerwald_win
 on-arrival: president = "Sedgewick"; president_ideology = "Moderate"; commons_unionist += 8; burgher_unionist += 6; guild_unionist += 6; landed_unionist += 4; faithful_unionist += 4

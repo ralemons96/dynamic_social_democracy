@@ -151,7 +151,7 @@ The <span style="color: #BFC8CC;">**GNU**</span> has nominated Kurt von Hammerto
 @candidates_nazis
 title: The <span style="color: #7A3C00;">Royalist</span>'s last hurrah?
 
-With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Hermann Gorrick as their candidate.
+With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate.
 
 The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Otto Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Wilhelm Frask as a separate candidate. ?]
 
@@ -185,7 +185,7 @@ go-to: candidate_menu
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own. The viability of a united front, however, depends entirely on our relations with former coalition partners—and whether they’ve fallen under Staal’s influence.
 
-Otto Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
+Aldous Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
 
 Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
 
@@ -397,7 +397,7 @@ on-arrival: {!
 var candidate_descs = {
   Crowde: "Otto Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
   Frask: "Wilhelm Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
-  Goring: "Hermann Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+  Goring: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt von Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
   Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
@@ -597,7 +597,7 @@ go-to: election_end
 @hammerstein_win
 on-arrival: hammerstein_win = 1
 
-With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Otto Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Reichskommissar</i>. ?]
+With [+ gnu_candidate +]'s victory, the <span style="color: #BFC8CC;">**GNU**</span>'s can finally consolidate power with the Chancellorship and Presidency in their hands. [? if heartland_leader == "Bristol": His first action is to depose Aldous Bristol from Heartland, and to install Chancellor [+ chancellor +] as a <i>Reichskommissar</i>. ?]
 
 - @game_over: Game over.
 

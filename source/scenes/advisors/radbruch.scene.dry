@@ -1,13 +1,13 @@
-title: Gustav Radbourne
+title: Godfrey Radbourne
 is-pinned-card: true
 tags: advisor
 card-image: img/portraits/RadbruchGustav.jpg
 view-if: radbruch_advisor = 1
 new-page: true 
 
-= Gustav Radbourne
+= Godfrey Radbourne
 
-Gustav Radbourne is a renowned legal scholar and long-time <span style="color: #c00000;">**Marchers**</span> justice minister. [? if judicial_reform >= 2: He currently has considerable support among party factions due to the <span style="color: #c00000;">Marchers</span>'s success in judicial reforms. ?]
+Godfrey Radbourne is a renowned legal scholar and long-time <span style="color: #c00000;">**Marchers**</span> justice minister. [? if judicial_reform >= 2: He currently has considerable support among party factions due to the <span style="color: #c00000;">Marchers</span>'s success in judicial reforms. ?]
 
 
 - @judiciary_major

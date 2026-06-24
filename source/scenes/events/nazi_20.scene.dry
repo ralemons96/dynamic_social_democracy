@@ -29,4 +29,4 @@ Going through with the promise that he'll finish himself in three minutes if the
 on-arrival: royalist_leader = "Goebbels"; royalist_chancellor = "Gorrick"; gallax_dead = 1; dufour_gallax_r -= 10; papen_strength -= 2; staal_strength += 1; royalist_funds -= 3
 achievement: hitler_tot
 
-Joseph Goebbels succeeds Gallax as party leader, with heavy influence from Hermann Gorrick. The movement has been badly crippled, and are likely to never regain prominence.
+Joseph Goebbels succeeds Gallax as party leader, with heavy influence from Ulric Gorrick. The movement has been badly crippled, and are likely to never regain prominence.

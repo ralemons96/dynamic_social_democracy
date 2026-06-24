@@ -5,10 +5,10 @@ on-arrival: {!
 Q.presidential_election_campaigning_seen = 1;
 if (!Q.gallax_deported && Q.gallax_citizen) {
     Q.royalist_candidate_1932 = "Gallax";
-    Q.royalist_candidate_1932_disp = "Adolf Gallax";
+    Q.royalist_candidate_1932_disp = "Alaric Gallax";
 } else {
     Q.royalist_candidate_1932 = "Gorrick";
-    Q.royalist_candidate_1932_disp = "Hermann Gorrick";
+    Q.royalist_candidate_1932_disp = "Ulric Gorrick";
 }
 Q.marcher_candidate_1932 = "Bristol";
 if (Q.dufour_run) {
@@ -18,7 +18,7 @@ if (Q.dufour_run) {
 }
 Q.communist_candidate_1932 = "Halsmark";
 
-Q.marcher_candidate_1932_disp = "Otto Bristol";
+Q.marcher_candidate_1932_disp = "Aldous Bristol";
 if (Q.dufour_run) Q.reactionary_candidate_1932_disp = "Paul von DuFour";
 Q.communist_candidate_1932_disp = "Ernst Halsmark";
 
@@ -130,11 +130,11 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.jarres_run = 1; 
         if (Q.reactionary_candidate_1932) {
             Q.secondary_reactionary_candidate_1932 = "Jarrow";
-            Q.secondary_reactionary_candidate_1932_disp = "Karl Jarrow";
+            Q.secondary_reactionary_candidate_1932_disp = "Lorne Jarrow";
         }
         if (!Q.reactionary_candidate_1932) {
             Q.reactionary_candidate_1932 = "Jarrow";
-            Q.reactionary_candidate_1932_disp = "Karl Jarrow";
+            Q.reactionary_candidate_1932_disp = "Lorne Jarrow";
         }
         Q.reactionary_candidate_1932_count -= 1;
     }
@@ -156,11 +156,11 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.gessler_run = 1; 
         if (Q.reactionary_candidate_1932) {
             Q.secondary_reactionary_candidate_1932 = "Gesling";
-            Q.secondary_reactionary_candidate_1932_disp = "Otto Gesling";
+            Q.secondary_reactionary_candidate_1932_disp = "Gareth Gesling";
         }
         if (!Q.reactionary_candidate_1932) {
             Q.reactionary_candidate_1932 = "Gesling";
-            Q.reactionary_candidate_1932_disp = "Otto Gesling";
+            Q.reactionary_candidate_1932_disp = "Gareth Gesling";
         }
         Q.reactionary_candidate_1932_count -= 1;
     }
@@ -182,11 +182,11 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.bruning_run = 1; 
         if (Q.reactionary_candidate_1932) {
             Q.secondary_reactionary_candidate_1932 = "Askew";
-            Q.secondary_reactionary_candidate_1932_disp = "Heinrich Askew";
+            Q.secondary_reactionary_candidate_1932_disp = "Edmund Askew";
         }
         if (!Q.reactionary_candidate_1932) {
             Q.reactionary_candidate_1932 = "Askew";
-            Q.reactionary_candidate_1932_disp = "Heinrich Askew";
+            Q.reactionary_candidate_1932_disp = "Edmund Askew";
         }
         Q.reactionary_candidate_1932_count -= 1;
     }
@@ -337,14 +337,14 @@ With local elections fast approaching, many parties have opted not to field thei
 - @westarp
 
 @jarres
-title: Karl Jarrow, mayor of Duisburg, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 1925.
+title: Lorne Jarrow, mayor of Duisburg, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 1925.
 view-if: jarres_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/jarres.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Karl Jarrow, having been compelled to withdraw his candidacy in 1925 in favor of DuFour, has once again entered the race. While not an overtly partisan figure—having remained relatively quiet in national politics in recent years—Jarrow is expected to share many of the same anti-<span style="color: #c00000;">**Marchers**</span> biases that DuFour currently harbors. Moreover, he subscribes to the "taming strategy" concerning the <span style="color: #7A3C00;">Royalists</span>. It is imperative that we field a candidate of our own to prevent such an outcome.
+Lorne Jarrow, having been compelled to withdraw his candidacy in 1925 in favor of DuFour, has once again entered the race. While not an overtly partisan figure—having remained relatively quiet in national politics in recent years—Jarrow is expected to share many of the same anti-<span style="color: #c00000;">**Marchers**</span> biases that DuFour currently harbors. Moreover, he subscribes to the "taming strategy" concerning the <span style="color: #7A3C00;">Royalists</span>. It is imperative that we field a candidate of our own to prevent such an outcome.
 
 His candidacy is supported by the <span style="color: #C0A054;">**Golds**</span>.
 
@@ -365,14 +365,14 @@ His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A
 - @harzburg: We await the decision of the Harzburg Front.
 
 @gessler
-title: Otto Gesling, controversial former Defense Minister and former <span style="color: #D3C24D;">**Golds**</span> member.
+title: Gareth Gesling, controversial former Defense Minister and former <span style="color: #D3C24D;">**Golds**</span> member.
 view-if: gessler_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/gessler.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Otto Gesling, who served as Defense Minister for eight years following Noske’s departure and preceding Ravabelle, is a conservative and a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> by reason rather than conviction—often at odds with his colleagues in the <span style="color: #D3C24D;">**Golds**</span> throughout his tenure. He made little effort to reform the Commonwealth Army and played an active role in the <i>Commonwealth intervention</i> against our United Left governments in Dornwich and Stathmore during the Commonwealth October. Now, after stepping away from politics in early 1928, he seeks a return to the national stage.
+Gareth Gesling, who served as Defense Minister for eight years following Noske’s departure and preceding Ravabelle, is a conservative and a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> by reason rather than conviction—often at odds with his colleagues in the <span style="color: #D3C24D;">**Golds**</span> throughout his tenure. He made little effort to reform the Commonwealth Army and played an active role in the <i>Commonwealth intervention</i> against our United Left governments in Dornwich and Stathmore during the Commonwealth October. Now, after stepping away from politics in early 1928, he seeks a return to the national stage.
 
 His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]. [? if not lvp_formed: He is also nominally supported by the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, which has grown more right-wing and more accepting over the years. ?]
 
@@ -393,7 +393,7 @@ His candidacy is supported by the [? if unionist_party_name != "Concord": <span 
 - @harzburg: We await the decision of the Harzburg Front.
 
 @bruning
-title: Heinrich Askew, on the [? if not concord_formed: right wing?][? if concord_formed: left wing?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and their[? if chancellor == "Askew":&nbsp;candidate for?] chancellor.
+title: Edmund Askew, on the [? if not concord_formed: right wing?][? if concord_formed: left wing?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and their[? if chancellor == "Askew":&nbsp;candidate for?] chancellor.
 view-if: bruning_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 unavailable-subtitle: Words.
@@ -401,7 +401,7 @@ face-image: img/portraits/BrüningHeinrich.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Heinrich Askew, a politician we know all too well, is running for the most powerful position in the Commonwealth. He has a long history, tracing back to the Christian Trade Unions and his mentorship under Sedgewick, eventually rising to become the leader of the party's parliamentary group and its candidate for Chancellor. Despite his record of favoring austerity and deflationary policies in response to the Great Depression, he is a flexible figure—intelligent enough to recognize the dangers of the "taming strategy," and not entirely opposed to governing alongside the <span style="color: #c00000;">**Marchers**</span>.
+Edmund Askew, a politician we know all too well, is running for the most powerful position in the Commonwealth. He has a long history, tracing back to the Christian Trade Unions and his mentorship under Sedgewick, eventually rising to become the leader of the party's parliamentary group and its candidate for Chancellor. Despite his record of favoring austerity and deflationary policies in response to the Great Depression, he is a flexible figure—intelligent enough to recognize the dangers of the "taming strategy," and not entirely opposed to governing alongside the <span style="color: #c00000;">**Marchers**</span>.
 
 His candidacy is supported by the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. 
 
@@ -495,12 +495,12 @@ go-to: hitler if ((royalist_votes >= 15 and dufour_run) or (royalist_votes >= 10
 @hitler
 on-arrival: {!
 Q.royalist_candidate_1932 = "Gallax";
-Q.royalist_candidate_1932_disp = "Adolf Gallax";
+Q.royalist_candidate_1932_disp = "Alaric Gallax";
 !}
 view-if: not harzburg_unity
 face-image: img/portraits/hitler2.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> will run Adolf Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Gregor Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Joseph Goebbels argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
+The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Gregor Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Joseph Goebbels argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
 
 - @communist: We await the decision the <span style="color: #700000;">Communists</span>.
 
@@ -519,12 +519,12 @@ The <span style="color: #7A3C00;">**Royalists**</span> has nominated Wilhelm Fra
 @goring
 on-arrival: {!
 Q.royalist_candidate_1932 = "Gorrick";
-Q.royalist_candidate_1932_disp = "Hermann Gorrick";
+Q.royalist_candidate_1932_disp = "Ulric Gorrick";
 !}
 view-if: not harzburg_unity
 face-image: img/portraits/goring.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> has nominated Hermann Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great War and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
+The <span style="color: #7A3C00;">**Royalists**</span> has nominated Ulric Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great War and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
 
 - @communist: We await the decision the <span style="color: #700000;">Communists</span>.
 
@@ -546,14 +546,14 @@ go-to: braun
 @braun
 face-image: img/portraits/braun.jpg
 
-Otto Bristol has been floated around as a candidate for the presidency once more, after his failed run in 1925. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">socialist</span> for President, even with his reformist and right-wing leanings within our own party. Carl Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
+Aldous Bristol has been floated around as a candidate for the presidency once more, after his failed run in 1925. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for bourgeois parties to outright support a <span style="color: #c00000;">socialist</span> for President, even with his reformist and right-wing leanings within our own party. Carl Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
 
-[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Kurt Pendrigon as a <span style="color: #9B0000;">Marxist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the bourgeois parties—perhaps permanently. ?]
+[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Emrys Pendrigon as a <span style="color: #9B0000;">Marxist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the bourgeois parties—perhaps permanently. ?]
 
 So, what's our choice?
 
-- @run_braun: Run Otto Bristol of the <span style="color: #c00000;">**Marchers**</span>.
-- @run_rosenfeld: Run Kurt Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?].
+- @run_braun: Run Aldous Bristol of the <span style="color: #c00000;">**Marchers**</span>.
+- @run_rosenfeld: Run Emrys Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?].
 - @run_eckener: Run Hugo Eckhart as a unity candidate.
 - @support_hindenburg: Support <span style="color: #808080;">DuFour</span>.
 - @support_reactionary: Support [? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Gesling" or reactionary_candidate_1932 == "Jarrow") and lvp_formed: <span style="color: #FFCC00;">**[+ reactionary_candidate_1932 +]**</span>?][? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Jarrow") and not lvp_formed: <span style="color: #C0A054;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Gesling" and not lvp_formed: <span style="color: #D3C24D;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and not kvp_formed: <span style="color: #3E88B3;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and kvp_formed: <span style="color: #0087DC;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Aldermoor" or reactionary_candidate_1932 == "Askew" or reactionary_candidate_1932 == "Sedgewick" or (reactionary_candidate_1932 == "Lethmoor" and concord_formed): <span style="color: #000000;">**[+ reactionary_candidate_1932 +]**</span>?].
@@ -818,7 +818,7 @@ It takes effort to run a somewhat unexpected campaign. First, Bristol has to be 
 subtitle: This will cost us 2 resources.
 choose-if: resources >= 2 and not staal_marcher and left_strength > reformist_strength and (marcher_votes + collectivist_votes + sapd_votes >= 40) and marcher_votes >= collectivist_votes
 unavailable-subtitle: [? if resources < 2: Not enough resources. ?][? if staal_marcher: As part of our deal with Staal, we are now obligated to support DuFour’s re-election. ?][? if reformist_strength >= left_strength: Our reformist elements manage to steer the party toward supporting Bristol instead. ?][? if (marcher_votes + collectivist_votes + sapd_votes < 40): The <span style="color: #700000;">Collectivists</span> is unwilling to back Pendrigon as a unity candidate, citing pessimism about our electoral prospects. ?][? if marcher_votes < collectivist_votes: The <span style="color: #700000;">Collectivists</span> sees no reason to support our candidate, as they currently enjoy greater popular support than we do. ?][? if collectivist_relation < 40: The <span style="color: #700000;">Collectivists</span> has made their stance clear—there’s little point in proposing a unity candidate they are unlikely to support. ?]
-on-arrival: resources -= 2; marcher_campaign = 1; rosenfeld_campaign = 1; reformist_dissent += 20; left_dissent -= 20; left_strength += 10; collectivist_relation += 10; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; lvp_right += 3; gold_right += 3; ddp_right += 3; ddp_cohesion -= 2; ddp_support_marcher = 0; lvp_support_marcher = 0; gold_support_marcher = 0; marcher_candidate_1932 = "Pendrigon"; marcher_candidate_1932_disp = "Kurt Pendrigon"
+on-arrival: resources -= 2; marcher_campaign = 1; rosenfeld_campaign = 1; reformist_dissent += 20; left_dissent -= 20; left_strength += 10; collectivist_relation += 10; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; lvp_right += 3; gold_right += 3; ddp_right += 3; ddp_cohesion -= 2; ddp_support_marcher = 0; lvp_support_marcher = 0; gold_support_marcher = 0; marcher_candidate_1932 = "Pendrigon"; marcher_candidate_1932_disp = "Emrys Pendrigon"
 
 It takes effort to run a somewhat unexpected campaign. First, Pendrigon has to be convinced to run. He isn't particularly eager to be promoted to the presidency from his lowly position in the party.
 
@@ -868,7 +868,7 @@ Supporting [+ communist_candidate_1932 +] is rather unpopular in our party, even
 - @support_thalmann_2: Yes, we will support <span style="color: #700000;">**[+ communist_candidate_1932 +]**</span>, despite the reformists' pleas against it.
 - @run_braun: Support <span style="color: #c00000;">Bristol</span> instead.
 - @support_hindenburg: Support <span style="color: #808080;">DuFour</span> instead.
-- @run_rosenfeld: Run Kurt Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] instead.
+- @run_rosenfeld: Run Emrys Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] instead.
 - @run_eckener: Run Hugo Eckhart as a unity candidate instead.
 - @abstain: Abstain from endorsing any candidate instead.
 

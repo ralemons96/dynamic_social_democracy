@@ -87,7 +87,7 @@ on-arrival: political_decree += 1; heartland_police_loyalty += 0.04; heartland_p
 face-image: img/stahlhelm_poster.jpg
 go-to: do_campaign
 
-Carl Heath and Otto Bristol have successfully persuaded Askew to issue another emergency decree, forcing 2,500 newspapers—regardless of their political stance or position on the plebiscite—to publish a government statement urging the public to abstain from voting.
+Carl Heath and Aldous Bristol have successfully persuaded Askew to issue another emergency decree, forcing 2,500 newspapers—regardless of their political stance or position on the plebiscite—to publish a government statement urging the public to abstain from voting.
 
 This decision has further inflamed the already volatile political climate, prompting President DuFour to promise a review of the decree following strong backlash from the supporters of Mallin and Gallax.
 

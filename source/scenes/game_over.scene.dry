@@ -50,7 +50,7 @@ if (!dynamicMode && !historicalMode && Q.difficulty != 1) {
 }
 
 if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1934 && Q.month > 7) || Q.year >= 1935)) {
-  // Roter Zar von Preußen - At the end of the game, Otto Bristol is president, chancellor, and minister-president of prussia at the same time.
+  // Roter Zar von Preußen - At the end of the game, Aldous Bristol is president, chancellor, and minister-president of prussia at the same time.
   if (Q.president == 'Bristol' && Q.chancellor == 'Bristol' && Q.heartland_leader == "Bristol") {
       this.achieve('red_tzar_of_heartland');
   }
@@ -379,21 +379,21 @@ this.achieve('game_completed');
 
 @hitler_wins
 view-if: (chancellor == royalist_chancellor or president == "Gallax" or president == "Gorrick" or president == "Frask") and (total_defeat==1 or civil_war_seen == 0)
-title: Adolf Gallax is in undisputed control over the Commonwealth.
+title: Alaric Gallax is in undisputed control over the Commonwealth.
 tags: endings
 go-to: eg_menu
 
-Adolf Gallax is in undisputed control over the Commonwealth. The <span style="color: #c00000;">**Marchers**</span>, along with all of the democratic forces, have failed.
+Alaric Gallax is in undisputed control over the Commonwealth. The <span style="color: #c00000;">**Marchers**</span>, along with all of the democratic forces, have failed.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
 @war_against_hitler
 view-if: (chancellor == royalist_chancellor or president == "Gallax" or president == "Gorrick" or president == "Frask") and (long_war == 1)
-title: Adolf Gallax is in power, but we are fighting to stop him.
+title: Alaric Gallax is in power, but we are fighting to stop him.
 tags: endings
 go-to: eg_menu
 
-Adolf Gallax has taken power in the Commonwealth. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
+Alaric Gallax has taken power in the Commonwealth. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
 
 
 @no_hitler
@@ -443,20 +443,20 @@ the Commonwealth is currently in the grip of a civil war, a brutal affair that h
 
 
 @braun_victorious
-title: Otto Bristol victorious
+title: Aldous Bristol victorious
 view-if: president == "Bristol"
 tags: endings
 go-to: eg_menu
 
-Otto Bristol has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but now he is.
+Aldous Bristol has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but now he is.
 
 @rosenfeld_victorious
-title: Kurt Pendrigon victorious
+title: Emrys Pendrigon victorious
 view-if: president == "Pendrigon"
 tags: endings
 go-to: eg_menu
 
-Kurt Pendrigon has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but together with the <span style="color: #700000;">**Collectivists**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
+Emrys Pendrigon has been elected as President of the Commonwealth. He had never desired to be the most powerful man in the Commonwealth, but together with the <span style="color: #700000;">**Collectivists**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
 
 @president_schumacher
 title: Kurt Shackley victorious
@@ -938,7 +938,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Otto Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1599,7 +1599,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">HITLER TOT</div>
-      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Adolf Gallax</span> end his own life 12 years early. </div>
+      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Alaric Gallax</span> end his own life 12 years early. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2154,7 +2154,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Otto Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2590,7 +2590,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Askew Uber Alles</div>
-      <div class="achievement_subtitle"> - Heinrich Askew is President, Chancellor and Minister-President of Heartland.
+      <div class="achievement_subtitle"> - Edmund Askew is President, Chancellor and Minister-President of Heartland.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2850,7 +2850,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Otto Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3511,7 +3511,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">HITLER TOT</div>
-      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Adolf Gallax</span> end his own life 12 years early. </div>
+      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Alaric Gallax</span> end his own life 12 years early. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4066,7 +4066,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Otto Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4502,7 +4502,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Askew Uber Alles</div>
-      <div class="achievement_subtitle"> - Heinrich Askew is President, Chancellor and Minister-President of Heartland.
+      <div class="achievement_subtitle"> - Edmund Askew is President, Chancellor and Minister-President of Heartland.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4761,7 +4761,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Roter Zar von Preußen</div>
-      <div class="achievement_subtitle"> - Otto Bristol is President, Chancellor, and Minister-President.</div>
+      <div class="achievement_subtitle"> - Aldous Bristol is President, Chancellor, and Minister-President.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5422,7 +5422,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">HITLER TOT</div>
-      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Adolf Gallax</span> end his own life 12 years early. </div>
+      <div class="achievement_subtitle"> - make <span style="color: #7A3C00;">Alaric Gallax</span> end his own life 12 years early. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5977,7 +5977,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Der beliebte Präsident</div>
-      <div class="achievement_subtitle"> - have Otto Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
+      <div class="achievement_subtitle"> - have Aldous Bristol receive 60% or more of the vote in the first round of the 1932 presidential election.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6412,7 +6412,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Askew Uber Alles</div>
-      <div class="achievement_subtitle"> - Heinrich Askew is President, Chancellor and Minister-President of Heartland.
+      <div class="achievement_subtitle"> - Edmund Askew is President, Chancellor and Minister-President of Heartland.
     </div>
   {!</td>!}
 {!</tr>!}

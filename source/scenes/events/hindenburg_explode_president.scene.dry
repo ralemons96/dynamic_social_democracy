@@ -34,7 +34,7 @@ The <span style="color: #700000;">**Communists**</span> are too disorganized fol
 
 Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
 
-Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Otto Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
+Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Köln and member of the Heartland state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
 
 As for the <span style="color: #c00000;">**Marchers**</span>, we could support a joint Unity Coalition candidate or run our own.
 
@@ -46,7 +46,7 @@ Alternatively, we could nominate Otto Vesh, our party chairman and leader of the
 
 - @eckener_r1: Support Hugo Eckhart as a joint Unity Coalition candidate.
 - @adenauer_r1: Support Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
-- @gessler_r1: Support Otto Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
+- @gessler_r1: Support Gareth Gesling of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 - @grzesinski_r1: Support Albert Grzesinski.
 - @wels_r1: Support Otto Vesh.
 
@@ -71,7 +71,7 @@ We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord":
 on-arrival: marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
 go-to: r1_menu
 
-We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
+We have endorsed Gareth Gesling, independent formerly of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 
 [? if impeachment_gold and gold_exist and not lvp_formed: With our support of Gesling, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to Seckard. ?]
 
@@ -276,7 +276,7 @@ var candidate_descs = {
 Seckard: "Hans von Seckard, an independent formerly of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>",
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
-Gesling: "Otto Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
+Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Vesh: "Otto Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
 }
@@ -375,8 +375,8 @@ go-to: r2_menu
 
 In the lead is [+ winner_desc +]. There is no majority in the first round. In the second round, any candidate who wins a plurality will win overall.
 
-[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Otto Gesling has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate bürgerblock. ?]
-[? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of Otto Gesling. This consolidates the votes of the moderate bürgerblock. ?]
+[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Gareth Gesling has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate bürgerblock. ?]
+[? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of Gareth Gesling. This consolidates the votes of the moderate bürgerblock. ?]
 
 What should we do?
 
@@ -401,12 +401,12 @@ We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord":
 [? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and supporting no one.  ?]
 
 @r2_endorse_gessler
-title: Switch our support to Otto Gesling.
+title: Switch our support to Gareth Gesling.
 view-if: ddp_candidate = "Gesling" and marcher_candidate != ddp_candidate
 on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
 go-to: r2_campaigning
 
-We have endorsed Otto Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>.
+We have endorsed Gareth Gesling, independent formerly of the <span style="color: #D3C24D;">**Golds**</span>.
 
 [? if not impeachment_gold and gold_exist and not lvp_formed : With our support of Gesling, the <span style="color: #C0A054;">**Golds**</span> components supporting him have broken away and are now shifting their support to Seckard. ?]
 
