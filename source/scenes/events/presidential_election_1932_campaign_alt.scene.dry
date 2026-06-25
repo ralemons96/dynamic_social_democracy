@@ -179,7 +179,7 @@ face-image: img/center_poster.jpg
 max-visits: 1
 go-to: campaigning_braun
 
-The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has not been the most enthusiastic supporter of Bristol. However, by leveraging our connections with their left wing and trade unions, we push them toward a more active role in the campaign. This should help Bristol secure more votes from their base.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has not been the most enthusiastic supporter of Bristol. However, by leveraging our connections with their left wing and Free Guilds, we push them toward a more active role in the campaign. This should help Bristol secure more votes from their base.
 
 @communist_glaze
 title: We persuade the <span style="color: #700000;">**Collectivists**</span> to take a more active role in our campaign efforts.
@@ -373,7 +373,7 @@ face-image: img/center_poster.jpg
 max-visits: 1
 go-to: campaigning_eckener
 
-The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and the <span style="color: #FFCC00;">liberals</span> have been excluding us from their local campaign committees. However, by leveraging our ties to their left wings and affiliated trade unions, we manage to pressure them into allowing some <span style="color: #c00000;">Reformists</span> to participate.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and the <span style="color: #FFCC00;">liberals</span> have been excluding us from their local campaign committees. However, by leveraging our ties to their left wings and affiliated Free Guilds, we manage to pressure them into allowing some <span style="color: #c00000;">Reformists</span> to participate.
 
 @campaigning_reactionary
 view-if: marcher_support_reactionary

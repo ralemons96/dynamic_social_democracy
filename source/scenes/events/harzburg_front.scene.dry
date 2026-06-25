@@ -1,4 +1,4 @@
-title: The Harzburg Front
+title: The Stowford Front
 subtitle: The right-wing forces unite against the incumbent government.
 new-page: true
 on-arrival: harzburg_front_seen = 1; harzburg_front_time = time; loyalist_strength += 50; loyalist_militancy += 0.1; warden_militancy += 0.1; guild_royalist += 3; disfavored_royalist += 3; landed_royalist += 3; royalist_urgency += 1; iron_front_timer = 0; gold_right += 3 if gold_leader == "Coalfax"; lvp_right += 1; dufour_angry += 15; dufour_angry_bruning += 15
@@ -6,9 +6,9 @@ tags: event
 view-if: year = 1931 and month >= 10 and chancellor != "Staal" and chancellor != "Goodryke" and traditionalist_ideology == "Radical"
 max-visits: 1
 
-= The Harzburg Front
+= The Stowford Front
 
-The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties and paramilitaries - the <span style="color: #7A3C00;">**Royalists**</span> (and its paramilitary the <span style="color: #7A3C00;">**Loyalists**</span>), the <span style="color: #3E88B3;">**Wardens**</span> paramilitary group, and the <span style="color: #3E88B3;">**Traditionalists**</span> - have united to form the Harzburg Front, as a force dedicated to the overthrow of the current government. 
+The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> parties and paramilitaries - the <span style="color: #7A3C00;">**Royalists**</span> (and its paramilitary the <span style="color: #7A3C00;">**Loyalists**</span>), the <span style="color: #3E88B3;">**Wardens**</span> paramilitary group, and the <span style="color: #3E88B3;">**Traditionalists**</span> - have united to form the Stowford Front, as a force dedicated to the overthrow of the current government. 
 
 However, this show of unity lacks substance, as Mallin, Gallax, and the <span style="color: #3E88B3;">**Wardens**</span> compete against one another to assert themselves as the leader of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>. Gallax's erratic behavior—such as vanishing from the podium when <span style="color: #3E88B3;">**Wardens**</span> detachments march by—has offended many conservatives[? if bruning_time:, and inter-party polemics may only serve to reinforce Askew against their pressures?]. [? if gold_leader == "Coalfax" and gold_exist: The <span style="color: #C0A054;">**Golds**</span> has worryingly some sympathies towards the national opposition, with some members even attending or sending congratulatory telegrams. ?][? if bruning_time: Luckily, the [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical":<span style="color: #0087DC;">**KVP**</span>?]'s Trevannon has dissuaded many influential industrialists from taking part in this gathering ?]
 

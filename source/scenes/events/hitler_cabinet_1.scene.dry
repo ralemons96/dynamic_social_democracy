@@ -1,4 +1,4 @@
-title: The Enabling Act
+title: The Unitary Power Decree
 view-if: chancellor_party == "Royalist" and rubicon_mini_time == 2
 new-page: true
 tags: event
@@ -16,9 +16,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The Enabling Act
+= The Unitary Power Decree
 
-As the Assembly gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Enabling Act" proposed by [+ royalist_chancellor +] and the <span style="color: #7A3C00;">**Royalists**</span>. With Staal's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Collectivists**</span> and the Banners. 
+As the Assembly gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Unitary Power Decree" proposed by [+ royalist_chancellor +] and the <span style="color: #7A3C00;">**Royalists**</span>. With Staal's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Collectivists**</span> and the Banners. 
 
 However, this is not something the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] can easily swallow...
 
@@ -60,7 +60,7 @@ title: The [? if unionist_party_name != "Concord": <span style="color: #000000;"
 view-if: (not unionist_in_gov_mini or pro_republic >= 30) and far_right_coalition < 50
 on-arrival: rubicon_mini = 0; rubicon_mini_leave = 1;
 
-[? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is personally assured significant constitutional safeguards by Staal, though he fails to extract a written commitment from [+ chancellor +]. [? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is able to see through these lies, and whips the party's parliamentary delegation to vote against the Enabling Act. 
+[? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is personally assured significant constitutional safeguards by Staal, though he fails to extract a written commitment from [+ chancellor +]. [? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is able to see through these lies, and whips the party's parliamentary delegation to vote against the Unitary Power Decree. 
 
 Staal regards this development as a betrayal, yet his options are limited. President DuFour remains the true deciding factor. He now views the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]’s refusal to support [+ chancellor +] has only deepened his impatience. Disillusioned, DuFour no longer considers [+ chancellor +]’s ambition to lead as a parliamentary chancellor to be credible.
 

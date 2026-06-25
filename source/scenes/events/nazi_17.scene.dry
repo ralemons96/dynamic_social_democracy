@@ -195,7 +195,7 @@ on-display: {!
 audio: music/1930_1933/Burgundian_Lullaby.ogg
 set-bg: img/reichstag_fire.jpg
 
-= Enabling Act
+= Unitary Power Decree
 
 Together with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], and the dictatorial powers offered by the Assembly Fire Decree, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> have won more than an outright majority.
 

@@ -284,7 +284,7 @@ The faction strengths are as follows.
 
 <span style="color: #FF7F00;">Christian Left</span> (<span style="color: #000000;">**Unionists**</span>) - Aldermoor / Sedgewick - [? if concord_ideology == "Left" and labor_left_points_lead: Relevant?][? if concord_ideology == "Left" and not labor_left_points_lead: Limited?][? if concord_ideology != "Left": Marginal?]
 <hr id="read-marker">
-[? if labor_points_lead: The Christian trade unions have found themselves at an advantageous position going into the congress. ?][? if democratic_points_lead: The pro-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> forces have found themselves at an advantageous position going into the congress. ?][? if presidential_points_lead: The <span style="color: #3E88B3;">nationalist</span> forces have found themselves at an advantageous position going into the congress. ?][? if concord_deadlock: No faction seems able to secure a significant plurality of support within the party, so a compromise candidate is expected to emerge. ?]
+[? if labor_points_lead: The Christian Free Guilds have found themselves at an advantageous position going into the congress. ?][? if democratic_points_lead: The pro-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> forces have found themselves at an advantageous position going into the congress. ?][? if presidential_points_lead: The <span style="color: #3E88B3;">nationalist</span> forces have found themselves at an advantageous position going into the congress. ?][? if concord_deadlock: No faction seems able to secure a significant plurality of support within the party, so a compromise candidate is expected to emerge. ?]
 
 The vote for the party's leadership has begun.
 
@@ -297,7 +297,7 @@ The vote for the party's leadership has begun.
 
 @stegerwald
 title: Adam Sedgewick, formerly of the <span style="color: #000000;">Unionists</span>, is elected, no longer an interim leader.
-subtitle: Sedgewick is relatively moderate, and his trade union roots are good news for our cooperation. - <span style="color: #000000;">Catholic Labor</span> Wing
+subtitle: Sedgewick is relatively moderate, and his Free Guild roots are good news for our cooperation. - <span style="color: #000000;">Catholic Labor</span> Wing
 unavailable-subtitle: Sedgewick is seen as too friendly toward us, and the party needs a new face. - <span style="color: #000000;">Catholic Labor</span> Wing
 view-if: president != "Sedgewick"
 choose-if: stegerwald_unlock
@@ -306,12 +306,12 @@ face-image: img/portraits/stegerwald.jpg
 
 Somewhat surprisingly, <span style="color: #000000;">Unionists</span> leader Adam Sedgewick is elected as the chairman of its successor party. This is largely attributed to the unified support from the various Christian labor unions and backing from former <span style="color: #000000;">Unionists</span> and Catholic politicians. However, he remains largely opposed by former <span style="color: #3E88B3;">**Traditionalists**</span> members due to his willingness to cooperate constructively with the <span style="color: #c00000;">**Marchers**</span>.
 
-It was widely expected that, with the merger of the two parties, politicians like Sedgewick would shift to the left wing of the newly created party—and this has indeed proven true. His strongest supporters, aside from the trade unions, include the now strengthened <span style="color: #FF7F00;">Christian Left</span> faction, which will push for a paternalistic economic policy and greater cooperation with the <span style="color: #c00000;">Reformists</span>. Sedgewick is also a committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, a stance that has pushed some ardent monarchists over to the <span style="color: #003755;">**DNF**</span>.
+It was widely expected that, with the merger of the two parties, politicians like Sedgewick would shift to the left wing of the newly created party—and this has indeed proven true. His strongest supporters, aside from the Free Guilds, include the now strengthened <span style="color: #FF7F00;">Christian Left</span> faction, which will push for a paternalistic economic policy and greater cooperation with the <span style="color: #c00000;">Reformists</span>. Sedgewick is also a committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, a stance that has pushed some ardent monarchists over to the <span style="color: #003755;">**DNF**</span>.
 
 @lambach
 title: Walther Lambach, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: Lambach was apart of the <span style="color: #6D5298;">Christian Social</span> wing in the former <span style="color: #3E88B3;">Traditionalists</span>. - <span style="color: #6D5298;">Christian Social</span> Wing
-unavailable-subtitle: Lambach and his trade unions face significant animosity from the broader party, particularly the industrialist backers - <span style="color: #6D5298;">Christian Social</span> Wing.
+unavailable-subtitle: Lambach and his Free Guilds face significant animosity from the broader party, particularly the industrialist backers - <span style="color: #6D5298;">Christian Social</span> Wing.
 choose-if: lambach_unlock
 on-arrival: unionist_relation -= 5; pro_republic -= 5; ddp_relation += 8; gold_relation += 8; lvp_relation += 8; commons_unionist += 10; disfavored_unionist += 5; commons_dnf -= 3; commons_royalist -= 3; commons_marcher -= 3; commons_collectivist -= 2; disfavored_marcher -= 3; disfavored_dnf -= 3; disfavored_royalist -= 3; landed_unionist -= 10; burgher_unionist += 4; burgher_marcher -= 4; guild_unionist -= 10; landed_dnf += 4; guild_dnf += 4; landed_gold += 6; landed_lvp += 8; landed_ddp += 2; guild_gold += 6; guild_ddp += 2; guild_lvp += 8; faithful_unionist -= 6; faithful_marcher += 4; faithful_gold += 2; faithful_lvp += 4; faithful_ddp += 2; concord_leader = "Lambach"; concord_right += 5; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/LambachWalther.jpg

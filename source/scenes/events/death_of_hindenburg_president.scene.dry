@@ -316,7 +316,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Ostwick"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Carl von Ostwick is a left-wing journalist who is the publisher of the Weltbühne, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 4294, which brought him international renown. In the 4297 presidential election, he endorsed the <span style="color: #700000;">**Collectivist**</span> Halsmark.
+Carl von Ostwick is a left-wing journalist who is the publisher of the Brocksby, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 4294, which brought him international renown. In the 4297 presidential election, he endorsed the <span style="color: #700000;">**Collectivist**</span> Halsmark.
 
 Ostwick is extremely reluctant to become a politician, and has been an iconoclastic figure his entire life, criticizing the <span style="color: #c00000;">**Marchers**</span> as being part of the establishment. It is with a sense of irony that he accepts our nomination.
 

@@ -54,7 +54,7 @@ Vorwärts prints editorials in support of centrist positions.
 @support_labor
 on-arrival: labor_dissent -= 8; labor_strength += 8; editorial_line = "Labor"
 
-Vorwärts prints editorials in support of the policies of the trade unions.
+Vorwärts prints editorials in support of the policies of the Free Guilds.
 
 @support_reform
 on-arrival: reformist_dissent -= 8; reformist_strength += 8; editorial_line = "Reformists"

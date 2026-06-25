@@ -21,7 +21,7 @@ on-display: {!
 
 = The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">Sovereigntists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the trade unions, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">Sovereigntists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the Free Guilds, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
 
 [? if commons_marcher < 45 or commons_marcher < commons_royalist or commons_marcher < commons_collectivist : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>'s effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the <span style="color: #c00000;">**Marchers**</span> is no longer the dominant party among the workers. Many the Banners members have left, and many workers are not interested. ?]
 

@@ -83,7 +83,7 @@ on-arrival: soviet_aid_forpol = 1; budget -= 1; soviet_relation += 2; coalition_
 The <span style="color: #940000;">Central Unionists</span> are pleased that we have sent them aid, and have not asked for anything specific in exchange. Our coalition partners are less pleased.
 
 - @kpd: Ask if <span style="color: #940000;">the Central Union</span> could help repair our relations with the <span style="color: #700000;">**Collectivists**</span>.
-- @wittorf: Do the <span style="color: #940000;">Central Unionists</span> know about the Wittorf Affair? Do they know that we know?
+- @wittorf: Do the <span style="color: #940000;">Central Unionists</span> know about the Gembirth Affair? Do they know that we know?
 - @root: Do not mention the <span style="color: #700000;">**Collectivists**</span>.
 
 @soviet_economic_aid_no
@@ -102,7 +102,7 @@ unavailable-subtitle: It is impossible that <span style="color: #8B0000;">Halsma
 on-arrival: wittorf_soviet_union = 1; collectivist_relation += 6*(1-dissent); collectivist_foreign_seen = 1
 max-visits: 1
 
-Of course <span style="color: #8B0000;">Halsmark</span> and the various leaders of the <span style="color: #D50000;">Comintern</span> know about the Wittorf Affair, but they do not seem to know that we know as well. The <span style="color: #D50000;">Comintern</span> was planning to build a narrative around the affair that absolves Halsmark, but perhaps now they will be less inclined to defend him.
+Of course <span style="color: #8B0000;">Halsmark</span> and the various leaders of the <span style="color: #D50000;">Comintern</span> know about the Gembirth Affair, but they do not seem to know that we know as well. The <span style="color: #D50000;">Comintern</span> was planning to build a narrative around the affair that absolves Halsmark, but perhaps now they will be less inclined to defend him.
 
 
 @customs_union

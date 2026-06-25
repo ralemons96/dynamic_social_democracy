@@ -108,7 +108,7 @@ Now, with control over the democratic bulwark once again, we can reassert democr
 - @prussian_affairs_dvp
 
 @labor
-title: Demand more concessions for the trade unions, and restoration of the Commonwealth welfare system.
+title: Demand more concessions for the Free Guilds, and restoration of the Commonwealth welfare system.
 subtitle: Push for higher wages, the repeal of Goodryke’s decrees, and the restoration of the eight-hour workday.
 unavailable-subtitle: [? if staal_marcher_r < 5: We must improve our relations with Staal first. ?][? if dufour_staal_r < 3: Staal insists DuFour would block such a decree, unwilling to undo Goodryke’s measures. ?]
 choose-if: staal_marcher_r >= 5 and dufour_staal_r >= 3

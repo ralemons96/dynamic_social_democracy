@@ -105,7 +105,7 @@ subtitle: Ending 0.5
 view-if: rubicon_mini and not civil_war_seen and (chancellor == royalist_chancellor or president == "Gallax" or president == "Gorrick")
 new-page: true
 
-With the appointment of [+ chancellor +] and the passage of the Enabling Act, the Commonwealth is lost. Staal, increasingly sidelined by health issues, fades into irrelevance. Following[? if president == "DuFour":&nbsp;President DuFour's and?] his[? if president == "DuFour":&nbsp;own?] death, General Werner von Blomberg assumes the presidency, marking the end of the failed taming experiment.
+With the appointment of [+ chancellor +] and the passage of the Unitary Power Decree, the Commonwealth is lost. Staal, increasingly sidelined by health issues, fades into irrelevance. Following[? if president == "DuFour":&nbsp;President DuFour's and?] his[? if president == "DuFour":&nbsp;own?] death, General Werner von Blomberg assumes the presidency, marking the end of the failed taming experiment.
 
 The bourgeois establishment that once collaborated with the <span style="color: #7A3C00;">Royalists</span> is purged en masse during the Night of the Long Knives and offer no serious resistance thereafter, aside from the failed Oster conspiracy in 1938 by former Staal loyalists.
 

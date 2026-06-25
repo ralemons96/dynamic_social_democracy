@@ -180,7 +180,7 @@ face-image: img/center_poster.jpg
 max-visits: 1
 go-to: campaigning_braun
 
-The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has not been the most enthusiastic supporter of Bristol. However, by leveraging our connections with their left wing and trade unions, we push them toward a more active role in the campaign. This should help Bristol secure more votes from their base.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has not been the most enthusiastic supporter of Bristol. However, by leveraging our connections with their left wing and Free Guilds, we push them toward a more active role in the campaign. This should help Bristol secure more votes from their base.
 
 @communist_glaze
 title: We persuade the <span style="color: #700000;">**Collectivists**</span> to take a more active role in our campaign efforts.
@@ -521,7 +521,7 @@ on-arrival: industry_used = 1
 max-visits: 1
 go-to: industrial_2 if dufour_unity >= 5; industrial_3 if dufour_unity < 5
 
-Carl Slack, the chairman of the United DuFour Committees have largely been unsuccessful in convincing big business leaders to sign the petition for DuFour's reelection, but perhaps the gravity of this race would help convince them?
+Carl Slack, the chairman of the United DuFour Committees have largely been unsuccessful in convincing Major Guilds leaders to sign the petition for DuFour's reelection, but perhaps the gravity of this race would help convince them?
 
 @industrial_2
 on-arrival: dufour_support += 2
@@ -542,7 +542,7 @@ on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_norma
 max-visits: 1
 go-to: religion_2 if dufour_unity >= 3; religion_3 if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
 
 @religion_2
 on-arrival: dufour_support += 1
@@ -790,7 +790,7 @@ on-arrival: industry_used = 1
 max-visits: 1
 go-to: industrial_2_op if dufour_unity >= 5; industrial_3_op if dufour_unity < 5
 
-Carl Slack, the chairman of the United DuFour Committees have largely been unsuccessful in convincing big business leaders to sign the petition for DuFour's reelection, but perhaps the gravity of this race would help convince them?
+Carl Slack, the chairman of the United DuFour Committees have largely been unsuccessful in convincing Major Guilds leaders to sign the petition for DuFour's reelection, but perhaps the gravity of this race would help convince them?
 
 @industrial_2_op
 on-arrival: dufour_support += 2
@@ -811,7 +811,7 @@ on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_norma
 max-visits: 1
 go-to: religion_2_op if dufour_unity >= 3; religion_3_op if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated trade unions, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
 
 @religion_2_op
 on-arrival: dufour_support += 1
