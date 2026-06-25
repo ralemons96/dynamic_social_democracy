@@ -856,7 +856,7 @@ view-if: dufour_run and not gallax_support_dufour
 max-visits: 1
 go-to: round2_menu
 
-National Rural League (RLB) - [? if rlb_dufour: <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span> ?][? if not rlb_dufour: <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span> ?]
+Landed League - [? if rlb_dufour: <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span> ?][? if not rlb_dufour: <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span> ?]
 
 Wardens - [? if traditionalist_ideology == "Radical": Abstention?][? if traditionalist_ideology == "Moderate": <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span> ?]
 
@@ -872,7 +872,7 @@ Many <span style="color: #3E88B3;">**Wardens**</span> members defied orders by v
 
 The shift of many right-wing organizations toward [+ royalist_candidate_1932 +]’s candidacy will cripple the parties caught between the <span style="color: #000000;">Unionists</span> and the extremes, polarizing the electorate between the <span style="color: #7A3C00;">Royalists</span> and the <span style="color: #9B0000;">Vaelists</span>—a strategy once championed by Mallin, now turned against him by his former ally.
 
-[? if not rlb_dufour: The RLB’s decision to endorse <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span> rather than abstain has triggered a sharp break with the organization’s moderate affiliates. Their Purl branch, the <span style="color: #006400;">**WBWB**</span>, has been especially vocal, campaigning hard against the endorsement and in favor of [+ reactionary_candidate_1932 +]. Neither this backlash nor Mallin’s push for abstention has convinced the RLB to reverse course, and millions of rural voters are now expected to turn out for [+ royalist_candidate_1932 +] in the next election. ?]
+[? if not rlb_dufour: The Landed League’s decision to endorse <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span> rather than abstain has triggered a sharp break with the organization’s moderate affiliates. Their Purl branch, the <span style="color: #006400;">**WBWB**</span>, has been especially vocal, campaigning hard against the endorsement and in favor of [+ reactionary_candidate_1932 +]. Neither this backlash nor Mallin’s push for abstention has convinced the Landed League to reverse course, and millions of rural voters are now expected to turn out for [+ royalist_candidate_1932 +] in the next election. ?]
 
 @round2_convince_z
 view-if: braun_campaign > 0 and unionist_support_marcher != 1 and not eckener_campaign and not rosenfeld_campaign

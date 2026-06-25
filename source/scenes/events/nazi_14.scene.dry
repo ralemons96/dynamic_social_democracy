@@ -23,7 +23,7 @@ on-display: {!
 
 Following Staal's resignation, DuFour personally commissioned Goodryke to explore the formation of a new cabinet. The man responsible for poisoning the President’s mind against Staal is now to demand the appointment of [+ royalist_chancellor +] as chancellor, while refusing the office for himself.
 
-Prior to this, Goodryke met with <span style="color: #7A3C00;">Royalist</span> leaders such as Gorrick and Frask at Ribbentrop’s villa, where they agreed on a strategy to convince DuFour that [+ royalist_chancellor +] would lead a "nationalist front" cabinet composed mostly of conservatives. This plan also won over Oskar, who, during a tea meeting with Ribbentrop, was persuaded to support the idea. To achieve this, the group must now win Mallin’s backing.
+Prior to this, Goodryke met with <span style="color: #7A3C00;">Royalist</span> leaders such as Gorrick and Frask at Carlile’s villa, where they agreed on a strategy to convince DuFour that [+ royalist_chancellor +] would lead a "nationalist front" cabinet composed mostly of conservatives. This plan also won over Symonnet, who, during a tea meeting with Carlile, was persuaded to support the idea. To achieve this, the group must now win Mallin’s backing.
 
 However, the collapse of the Stowford Front, Mallin's distrust of [+ royalist_chancellor +], and the latter's personality make this a difficult task. The schemers therefore turn to negotiations with the <span style="color: #3E88B3;">**Wardens**</span>, hoping to pressure Mallin to go alone with them.
 
@@ -36,7 +36,7 @@ Roderick Selden of the <span style="color: #3E88B3;">**Wardens**</span>, a staun
 
 However, [+ royalist_leader +] overplayed his hand, using this advantage to demand that a <span style="color: #7A3C00;">Royalist</span> be appointed to the national[? if heartland_leader == "Staal":&nbsp;and Heartland?] Interior ministries[? if heartland_leader == "Staal":, with the Heartland one being especially important due to its direct control over the police?]. [? if heartland_leader == "Staal": Mallin balked at [+ royalist_leader +]’s demands, insisting that the Heartland Interior Ministry go to a non-<span style="color: #7A3C00;">Royalist</span>, and that the Chancellery chief of staff and cabinet spokesman come from his own party. ?][? if heartland_leader != "Staal": Mallin was largely amenable to [+ royalist_leader +]’s demands, but now insists that the <span style="color: #7A3C00;">Royalists</span> withdraw their claim to the Interior Ministry, and that the Chancellery chief of staff and cabinet spokesman come from his party. ?]
 
-[? if heartland_leader == "Staal": Furious at being blocked, [+ royalist_leader +] broke off negotiations, refused to meet Goodryke, and threatened to return to Avriza. Only with difficulty did Gorrick and Ribbentrop persuade him to remain in Axton. Goodryke, desperate to keep talks alive, agreed to support [+ royalist_leader +]’s demands for both interior ministries and the freedom to choose Chancellery personnel—on the condition that he himself would oversee the <span style="color: #7A3C00;">Royalist</span> Interior Minister of Heartland as Minister-President. ?][? if heartland_leader != "Staal": Furious at being blocked, [+ royalist_leader +] broke off negotiations, refused to meet Goodryke, and threatened to return to Avriza. Only with difficulty did Gorrick and Ribbentrop persuade him to remain in Axton. Goodryke, desperate to keep talks alive, agreed to support [+ royalist_leader +]’s demands for the Interior Ministry and the freedom to appoint Chancellery personnel. Whether Mallin will yield on the issue remains unclear. ?]
+[? if heartland_leader == "Staal": Furious at being blocked, [+ royalist_leader +] broke off negotiations, refused to meet Goodryke, and threatened to return to Avriza. Only with difficulty did Gorrick and Carlile persuade him to remain in Axton. Goodryke, desperate to keep talks alive, agreed to support [+ royalist_leader +]’s demands for both interior ministries and the freedom to choose Chancellery personnel—on the condition that he himself would oversee the <span style="color: #7A3C00;">Royalist</span> Interior Minister of Heartland as Minister-President. ?][? if heartland_leader != "Staal": Furious at being blocked, [+ royalist_leader +] broke off negotiations, refused to meet Goodryke, and threatened to return to Avriza. Only with difficulty did Gorrick and Carlile persuade him to remain in Axton. Goodryke, desperate to keep talks alive, agreed to support [+ royalist_leader +]’s demands for the Interior Ministry and the freedom to appoint Chancellery personnel. Whether Mallin will yield on the issue remains unclear. ?]
 
 - @nazi_3
 - @nazi_4
@@ -46,7 +46,7 @@ title: A furious [+ royalist_leader +] challenges Goodryke's claim on Heartland!
 subtitle: He threatens to break off negotiations for good.
 view-if: heartland_leader == "Staal"
 
-[+ royalist_leader +], already incensed by Mallin, now objects to Goodryke’s demand to become Minister-President of Heartland. Goodryke urges Ribbentrop and Gorrick to convince [+ royalist_leader +] to give up the issue, and once again, they manage to calm him with great difficulty.
+[+ royalist_leader +], already incensed by Mallin, now objects to Goodryke’s demand to become Minister-President of Heartland. Goodryke urges Carlile and Gorrick to convince [+ royalist_leader +] to give up the issue, and once again, they manage to calm him with great difficulty.
 
 [+ royalist_leader +] agrees to think over the Heartland question overnight and meet Goodryke again the following morning.
 
@@ -56,7 +56,7 @@ view-if: heartland_leader == "Staal"
 title: Negotiations will continue nonetheless.
 view-if: heartland_leader != "Staal"
 
-[+ royalist_leader +], though personally irritated by the concessions he has been forced to make, agrees—under the influence of Gorrick and Ribbentrop—to meet with Goodryke once again in the morning.
+[+ royalist_leader +], though personally irritated by the concessions he has been forced to make, agrees—under the influence of Gorrick and Carlile—to meet with Goodryke once again in the morning.
 
 - @nazi_5_alt
 

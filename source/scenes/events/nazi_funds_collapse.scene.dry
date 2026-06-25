@@ -33,4 +33,4 @@ title: The <span style="color: #7A3C00;">Royalist</span> movement is temporarily
 subtitle: Austerity within the party that's rallying against it.
 on-arrival: royalist_funds_timer += 12; loyalist_strength -= 50; loyalist_militancy -= 0.05; royalist_explode += 3
 
-Until the grassroots funding the <span style="color: #7A3C00;">**Royalists**</span> once relied on recovers, the party will be operating on a strict budget in the coming months. Even the proceeds from *Mein Kampf*[? if not gallax_dead: —previously funneled into funding Gallax’s lavish lifestyle—?][? if gallax_dead: &nbsp;?]are now being redirected to keep the party afloat.
+Until the grassroots funding the <span style="color: #7A3C00;">**Royalists**</span> once relied on recovers, the party will be operating on a strict budget in the coming months. Even the proceeds from *The Crown Reclaimed*[? if not gallax_dead: —previously funneled into funding Gallax’s lavish lifestyle—?][? if gallax_dead: &nbsp;?]are now being redirected to keep the party afloat.

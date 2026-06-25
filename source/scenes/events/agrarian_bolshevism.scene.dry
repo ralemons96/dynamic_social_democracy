@@ -1,4 +1,4 @@
-title: "Agrarian Bolshevism"
+title: "Agrarian Vaelism"
 subtitle: A controversial policy involving settling unemployed workers on bankrupt estates in the east.
 view-if: bruning_toleration_time >= 6 and second_bruning_cabinet_seen and ((year == 1932 and month >= 5) or year >= 1933) and president == "DuFour" and dufour_angry_bruning >= 150
 max-visits: 1
@@ -19,13 +19,13 @@ on-display: {!
 !}
 on-arrival: disfavored -= 0.5; economic_growth += 0.4; dufour_angry_bruning += 50
 
-= "Agrarian Bolshevism"
+= "Agrarian Vaelism"
 
 One of the [? if unionist_party_name != "Concord":<span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord":<span style="color: #000000;">Concord</span>?]'s Labor Minister Adam Sedgewick’s pet projects is the dismantling of hopelessly bankrupt eastern estates to carve them into peasant homesteads. The problem is that there haven’t been many young workers eager to turn themselves into peasants.
 
-Still, with [? if not kvp_formed and traditionalist_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?] member Sefton Sallow-Schöningen newly sworn in as Commissar for Eastern Aid—following Trevannon’s move to the Transport Ministry—he’s struck a deal with Sedgewick: estates deemed “hopelessly bankrupt” will be handed over to the Labor Ministry. Backed by his promise to the unions, Sedgewick has pushed a decree that allows the government to purchase select estates at prices set by the Eastern Aid office.
+Still, with [? if not kvp_formed and traditionalist_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?] member Sefton Sallow newly sworn in as Commissar for Eastern Aid—following Trevannon’s move to the Transport Ministry—he’s struck a deal with Sedgewick: estates deemed “hopelessly bankrupt” will be handed over to the Labor Ministry. Backed by his promise to the unions, Sedgewick has pushed a decree that allows the government to purchase select estates at prices set by the Eastern Aid office.
 
-Unfortunately for Askew, a copy of the decree has been leaked to the National Rural League (RLB). Its lobbyists—deeply embedded in DuFour’s circle—have denounced it as "<span style="color: #385A38;">Agrarian</span> <span style="color: #9B0000;">Bolshevism</span>" slamming the measure as a descent into <span style="color: #9B0000;">state Reformism</span>. They’ve made sure the President, who along with many friends owns eastern estates, see it as a personal attack.
+Unfortunately for Askew, a copy of the decree has been leaked to the Landed League. Its lobbyists—deeply embedded in DuFour’s circle—have denounced it as "<span style="color: #385A38;">Agrarian</span> <span style="color: #9B0000;">Bolshevism</span>" slamming the measure as a descent into <span style="color: #9B0000;">state Reformism</span>. They’ve made sure the President, who along with many friends owns eastern estates, see it as a personal attack.
 
 - @joever
 
@@ -34,4 +34,4 @@ title: Nice having you, Askew.
 
 The Agriculture Ministry, led by the respected Martin Schiele, does its best to defend the decree before DuFour—but to no avail.
 
-In truth, policy disputes isn’t what will seal Askew’s fate. DuFour had merely planned to give him a few more months to try his luck at Vera. But the scheming—and the sense of urgency—pushed by Staal, Marsden, and Oskar is forcing his hand toward an early, rash decision.
+In truth, policy disputes isn’t what will seal Askew’s fate. DuFour had merely planned to give him a few more months to try his luck at Vera. But the scheming—and the sense of urgency—pushed by Staal, Marsden, and Symonnet is forcing his hand toward an early, rash decision.

@@ -21,7 +21,7 @@ on-arrival: royalist_16_triggered = 1
 
 = Negotiations, Pt. 3
 
-The details of a cabinet headed by [+ royalist_chancellor +] have begun to take final shape, and DuFour took a major step in that direction by summoning General Werner von Blomberg to Axton to be available to succeed Staal as Defense Minister. DuFour believed that he had selected an apolitical, professional officer, but he had instead chosen a man highly susceptible to the allures of <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
+The details of a cabinet headed by [+ royalist_chancellor +] have begun to take final shape, and DuFour took a major step in that direction by summoning General Konrad Halloran to Axton to be available to succeed Staal as Defense Minister. DuFour believed that he had selected an apolitical, professional officer, but he had instead chosen a man highly susceptible to the allures of <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 
 Meanwhile, [+ royalist_chancellor +] gave in to DuFour's insistence that Goodryke become [? if heartland_leader == "Staal": both the Minister-President of Heartland and?] the Vice Chancellor, leading to Goodryke approving Bram Frask's appointment to the national Interior Ministry, and Gorrick to the Heartland one. [+ royalist_leader +] then introduced a new demand: the dissolution of the Assembly so a new election could be held. And as Chancellor, he would also require the passage of an "enabling act", centralizing authority in the cabinet.
 

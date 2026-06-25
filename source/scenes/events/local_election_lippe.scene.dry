@@ -597,9 +597,9 @@ Donors are abandoning them, defections are accelerating, and local organizations
 @hitler_good
 title: How will this affect [+ royalist_leader +] and his party?
 
-In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. However, the <span style="color: #7A3C00;">Royalist</span> gains have alleviated their concerns about his all-or-nothing strategy, and [+ royalist_leader +] used the opportunity to finally address the Crowde issue.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> stewards, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. However, the <span style="color: #7A3C00;">Royalist</span> gains have alleviated their concerns about his all-or-nothing strategy, and [+ royalist_leader +] used the opportunity to finally address the Crowde issue.
 
-He unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the gauleiters.
+He unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the stewards.
 
 His denunciation of his former ally has been kept out of the press, deliberately by [+ royalist_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Staal, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
 
@@ -607,9 +607,9 @@ His denunciation of his former ally has been kept out of the press, deliberately
 title: How will this affect [+ royalist_leader +] and his party?
 on-arrival: royalist_explode += 1
 
-In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. While the <span style="color: #7A3C00;">Royalist</span> gains somewhat mitigated the unrest, the gauleiters still voiced concerns about [+ royalist_leader +]'s strategy. Leaks of discontent continue to reach the press.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> stewards, immediately after the High Cross results were known, things could have turned disastrous if the results had been worse, with unrest already rising among the grassroots. While the <span style="color: #7A3C00;">Royalist</span> gains somewhat mitigated the unrest, the stewards still voiced concerns about [+ royalist_leader +]'s strategy. Leaks of discontent continue to reach the press.
 
-In an attempt to suppress dissent, he unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the gauleiters.
+In an attempt to suppress dissent, he unleashed the full force of his anger against Crowde, condemning the person responsible for his rise to power as a traitor and accusing him of numerous offenses stretching back many years. [+ royalist_leader +] implied that anyone expressing doubts about his all-or-nothing strategy was an accomplice of the disgraced Crowde. This appears to have silenced dissent among the stewards.
 
 His denunciation of his former ally has been kept out of the press, deliberately by [+ royalist_leader +] to shield the party from political fallout due to rumors of a split within its ranks. However, the bad news eventually reaches Chancellor von Staal, as the only person willing to cooperate with him in the party is, in fact, 'finished.'
 
@@ -617,7 +617,7 @@ His denunciation of his former ally has been kept out of the press, deliberately
 title: How will this affect [+ royalist_leader +] and his party?
 on-arrival: royalist_explode += 2
 
-In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters immediately after the High Cross results became known, it was clear—they were not pleased. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy is failing. They cannot simply wait for DuFour to have a sudden change of heart, nor can they rely on a victory at the ballot box.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> stewards immediately after the High Cross results became known, it was clear—they were not pleased. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy is failing. They cannot simply wait for DuFour to have a sudden change of heart, nor can they rely on a victory at the ballot box.
 
 In an attempt to crush dissent, [+ royalist_leader +] unleashed the full force of his anger on Crowde—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. He warned that anyone questioning his strategy was aligning themselves with the disgraced Crowde. But many in the room still sympathized with Crowde’s arguments, and the tirade only deepened their disillusionment with the man they had once seen as a prophet.
 
@@ -627,7 +627,7 @@ The denunciation—and the evident unrest among the <span style="color: #7A3C00;
 title: How will this affect [+ royalist_leader +] and his party?
 on-arrival: royalist_explode += 3
 
-In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> gauleiters immediately after the High Cross results became known, it was clear—they were outraged. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy was failing, and the party was collapsing fast. They could no longer wait for DuFour to have a sudden change of heart, nor could they rely on a victory at the ballot box.
+In a meeting between [+ royalist_leader +] and the <span style="color: #7A3C00;">Royalist</span> stewards immediately after the High Cross results became known, it was clear—they were outraged. The consensus among the leadership was that [+ royalist_leader +]’s all-or-nothing strategy was failing, and the party was collapsing fast. They could no longer wait for DuFour to have a sudden change of heart, nor could they rely on a victory at the ballot box.
 
 In a fit of rage, [+ royalist_leader +] launched into a long and incoherent tirade against Crowde—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. Many in the room still sympathized with Crowde’s arguments, and the outburst only deepened their disillusionment with the man they had once regarded as a prophet.
 

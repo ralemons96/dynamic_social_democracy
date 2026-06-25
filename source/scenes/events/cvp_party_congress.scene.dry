@@ -333,7 +333,7 @@ With his slogan 'No Experiments!', we do not expect any major changes to the par
 
 @gereke
 title: Günther Gereke, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
-subtitle: Gereke has significant influence over the agricultural and industrial establishment, being a key member of the RLB and a founder of another rural association. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
+subtitle: Gereke has significant influence over the agricultural and industrial establishment, being a key member of the Landed League and a founder of another rural association. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
 unavailable-subtitle: A new face, but associated too much with the Westmore elements on the right-wing. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
 choose-if: gereke_unlock
 on-arrival: unionist_relation -= 15; concord_right += 5; nationalism += 5; pro_republic -= 5; burgher_unionist += 3; guild_unionist += 6; landed_unionist += 12; landed_other *= 0.3; landed_dnf -= 3; guild_dnf -= 5; burgher_dnf -= 3; faithful_unionist -= 6; faithful_marcher += 6; unionist_r += other_r*0.3; other_r = other_r*0.7; concord_leader = "Gereke"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25

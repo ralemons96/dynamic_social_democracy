@@ -1,5 +1,5 @@
 title: Staal and the <span style="color: #385A38;">Agrarians</span>
-subtitle: The RLB is disappointed in Staal's agricultural policy.
+subtitle: The Landed League is disappointed in Staal's agricultural policy.
 view-if: chancellor = "Staal" and staal_time == 5 and eastern_aid and traditionalist_ideology == "Radical" and rlb_royalist
 new-page: true
 tags: event
@@ -20,11 +20,11 @@ on-display: {!
 
 = Staal and the <span style="color: #385A38;">Agrarians</span>
 
-Staal’s economic and agricultural ministers remain locked in a bitter struggle over tariffs—part of the broader conflict between industrialists and agrarians. Staal has refused to take a side, maintaining a façade of unity for the public. However, his failure to uphold a promise to continue Goodryke’s protectionist policies—meant to shield Commonwealth farm products from cheap foreign imports—has led the increasingly right-wing National Rural League (RLB) to turn against him.
+Staal’s economic and agricultural ministers remain locked in a bitter struggle over tariffs—part of the broader conflict between industrialists and agrarians. Staal has refused to take a side, maintaining a façade of unity for the public. However, his failure to uphold a promise to continue Goodryke’s protectionist policies—meant to shield Commonwealth farm products from cheap foreign imports—has led the increasingly right-wing Landed League to turn against him.
 
-President DuFour, like many conservative Germans of his generation, viewed agriculture as the bedrock of national life—a source of tradition and moral strength. It was he who, of his own accord, summoned the economic and agricultural ministers, along with Staal, to a meeting with the RLB. The cabinet temporarily mollified the situation by promising future action.
+President DuFour, like many conservative Germans of his generation, viewed agriculture as the bedrock of national life—a source of tradition and moral strength. It was he who, of his own accord, summoned the economic and agricultural ministers, along with Staal, to a meeting with the Landed League. The cabinet temporarily mollified the situation by promising future action.
 
-Yet DuFour and the RLB remained dissatisfied, particularly over the government’s failure to renew a decree shielding bankrupt farmers from foreclosure. In truth, however, the RLB had long since become a political instrument of the <span style="color: #7A3C00;">**Royalists**</span>, more interested in toppling Staal than securing concessions. Despite the earlier agreement, they publicly attacked the chancellor—prompting an angry Staal to break off further talks. DuFour, under the influence of his *noble* friends, voiced his disapproval.
+Yet DuFour and the Landed League remained dissatisfied, particularly over the government’s failure to renew a decree shielding bankrupt farmers from foreclosure. In truth, however, the Landed League had long since become a political instrument of the <span style="color: #7A3C00;">**Royalists**</span>, more interested in toppling Staal than securing concessions. Despite the earlier agreement, they publicly attacked the chancellor—prompting an angry Staal to break off further talks. DuFour, under the influence of his *noble* friends, voiced his disapproval.
 
 Eventually, Staal relented and agreed to issue a new measure protecting bankrupt farmers from foreclosure.
 
@@ -37,6 +37,6 @@ on-arrival: commons_marcher += 2; commons_collectivist += 1; commons_unionist +=
 
 Although not directly related to recent negotiations, a scandal was revealed during a session of the Assembly’s budget committee: a <span style="color: #000000;">Unionist Party</span> member leveled sweeping accusations of fraud against beneficiaries of the Eastern Aid program. Meant to rescue bankrupt estates, the funds were allegedly used instead for racehorses, luxury cars, and lavish holidays—at a time when millions of Germans were living in poverty.
 
-President DuFour himself has been implicated. His *Neudeck* estate—a gift from right-wing industrialists and the RLB in 4292—was transferred into his son Oskar’s name to avoid taxes. Though not legally contestable, the revelation that many of DuFour’s close friends also benefited has deeply unsettled the President, who is now inundated with complaints from his old allies.
+President DuFour himself has been implicated. His *Neudeck* estate—a gift from right-wing industrialists and the Landed League in 4292—was transferred into his son Symonnet’s name to avoid taxes. Though not legally contestable, the revelation that many of DuFour’s close friends also benefited has deeply unsettled the President, who is now inundated with complaints from his old allies.
 
-Given Staal’s reputation for shadowy political maneuvering, and the fact that these revelations surfaced just a day after his break with the RLB, many suspect that he orchestrated the leak as an act of revenge.
+Given Staal’s reputation for shadowy political maneuvering, and the fact that these revelations surfaced just a day after his break with the Landed League, many suspect that he orchestrated the leak as an act of revenge.

@@ -25,7 +25,7 @@ on-display: {!
 
 = Emergency Decree Request
 
-Following the Camarilla’s meeting with Goodryke and [+ royalist_leader +], Staal questions Marsden about what transpired at Ribbentrop’s estate—and finally grasps the precariousness of his position. He decides to test DuFour’s loyalty, arranging an appointment with the President just hours after the Camarilla’s own visit.
+Following the Camarilla’s meeting with Goodryke and [+ royalist_leader +], Staal questions Marsden about what transpired at Carlile’s estate—and finally grasps the precariousness of his position. He decides to test DuFour’s loyalty, arranging an appointment with the President just hours after the Camarilla’s own visit.
 
 The course Staal pursues is one of three options developed by his colleagues in the Defense Ministry. The first two involve unconstitutional maneuvers: either postponing elections or forcing the Assembly into indefinite adjournment.
 
@@ -44,7 +44,7 @@ view-if: not staal_cabinet_smart
 
 Despite the clear advantages of the third option, Staal rejects it. He hints that even if the Assembly cannot oust him directly, a hostile majority could still repeal his emergency decrees—rendering his position untenable. True to Heartland military tradition, which favors offense over defense and prizes personal courage in the face of adversity, Staal may find it too humiliating to swallow his pride and retreat from his earlier threats to dissolve the Assembly.
 
-Nevertheless, he decides to ask the President for authorization to dissolve the Assembly and postpone new elections—despite Oskar likely having convinced his father to oppose this course weeks ago. His position is weakened by the fact that he previously brought down Goodryke, in front of the very cabinet members he retains today, by claiming the Commonwealth Army could not handle the outrage such a blatantly unconstitutional move would provoke.
+Nevertheless, he decides to ask the President for authorization to dissolve the Assembly and postpone new elections—despite Symonnet likely having convinced his father to oppose this course weeks ago. His position is weakened by the fact that he previously brought down Goodryke, in front of the very cabinet members he retains today, by claiming the Commonwealth Army could not handle the outrage such a blatantly unconstitutional move would provoke.
 
 Staal now argues that circumstances have changed. His outreach to the labor unions, he claims, has neutralized the risk of civil war, and his economic plan will soon reduce tensions. As Defense Minister, he also asserts that he has addressed the Commonwealth Army’s deficiencies—it is now better prepared, with greatly expanded stocks of tear gas and streetfighting gear.
 
