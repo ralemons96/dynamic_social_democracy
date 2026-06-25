@@ -34,6 +34,15 @@ if (Q.rubicon_mini) Q.dufour_run_points = 8;
 if (Q.dufour_run_points >= 7) Q.dufour_run = 1;
 
 Q.dufour_signatures = Math.round(Q.dufour_run_points * 0.445 * 100) / 100;
+
+// Commonwealth: DuFour ("The Unifier", young and vigorous) ALWAYS wants to run.
+// The only thing that stops him is assassination by (unconfirmed) Imperial
+// agents when the Commonwealth has grown too stable under him.
+Q.dufour_run = 1;
+if (Q.commonwealth_standing >= 65) {
+    Q.dufour_assassinated = 1;
+    Q.dufour_run = 0;
+}
 !}
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -55,34 +64,35 @@ max-visits: 1
 
 = DuFour's Announcement
 
-President DuFour has expressed his reluctance to run for re-election. At 84 years old, he prefers to spend his remaining years in retirement free from the burdens of his high office. While he has been open to serving longer if his term were extended by the Assembly, the failure of those efforts, combined with his unwillingness to endure a grueling presidential campaign, has caused concern, particularly for Kurt von Staal[? if bruning_toleration_time: and Chancellor [+ chancellor +], on whom he depends to enact his decrees?].
+President DuFour fully intends to run for re-election. Young, vigorous, and hailed across the realm as "The Unifier", he sees a second term as no burden but a mandate — the chance to finish the work of binding the Commonwealth together. His one frustration has been the Assembly's failure to extend his term outright and spare him a grueling campaign, a setback keenly felt by Kurt von Staal[? if bruning_toleration_time: and Chancellor [+ chancellor +], on whom he depends to enact his decrees?].
 
-Wymar Trent, the Mayor of Axton, has formed a re-election committee to persuade DuFour to run again. This effort has included the collection of over [+ dufour_signatures +] million signatures and appeals from a wide array of figures and political parties across Commonwealth society, including Artur Mahraun of the Young Commonwealth Order, and controversial former Defense Ministers Gareth Gesling and Jarren Brask.
+Wymar Trent, the Mayor of Axton, has formed a committee to rally the nation behind DuFour's bid. This effort has gathered over [+ dufour_signatures +] million signatures and appeals from a wide array of figures and political parties across Commonwealth society, including Aldous Marren of the Young Commonwealth Order, and the controversial former Defense Ministers Gareth Gesling and Jarren Brask.
 
-Impressed by the public support, DuFour is reconsidering his decision but insists that his candidacy must be backed by the Commonwealth Right and veteran organizations rather than the Commonwealth Left and Center. [? if not gallax_deported: Gallax?][? if gallax_deported: Standerton?], Mallin, their parties, and the <span style="color: #3E88B3;">**Wardens**</span>—aligned with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>—have demanded concessions in exchange for their support, despite the <span style="color: #3E88B3;">**Wardens**</span>'s general friendliness toward DuFour and its belief that he is one of their own. However, DuFour sees these demands as an affront to his personal honor and refuses to tie his candidacy to the dismissal of the current government or the appointment of Mallin and Gallax.
+Buoyed by the public support, DuFour insists that his candidacy be backed by the Commonwealth Right and veteran organizations rather than the Commonwealth Left and Center. [? if not gallax_deported: Gallax?][? if gallax_deported: Standerton?], Mallin, their parties, and the <span style="color: #3E88B3;">**Wardens**</span>—aligned with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>—have demanded concessions in exchange for their support, despite the <span style="color: #3E88B3;">**Wardens**</span>'s general friendliness toward DuFour and its belief that he is one of their own. However, DuFour sees these demands as an affront to his personal honor and refuses to tie his candidacy to the dismissal of the current government or the appointment of Mallin and Gallax.
 
 - @hindenburg_drop_out
 - @hindenburg_running
 
 @hindenburg_drop_out
-title: We await his decision.
+title: President DuFour is assassinated.
 view-if: not dufour_run
+on-arrival: pro_republic -= 8; coup_progress += 1; nationalism += 5
 
-President DuFour has decided not to run for re-election, citing his health problems and old age as the primary reasons. He feels that the current national situation doesn't warrant a reelection campaign.
+President DuFour is dead—struck down by assassins on the eve of his announcement, killers who slipped away before they could be named. The hand behind them was never confirmed, but suspicion fell at once upon the Empire-in-Exile: a Commonwealth growing stable and confident under "The Unifier" was precisely the Commonwealth they could not abide, and a single stroke has done what years of subversion could not.
 
-This development could be either beneficial or detrimental to us. If we wanted to rally behind DuFour to oppose Gallax and the <span style="color: #7A3C00;">Royalists</span>, the absence of a unifying, widely supported national figure—one capable of garnering support from both the moderate left and right—leaves us at a disadvantage. On the other hand, if we decide to run a candidate of our own, the lack of someone with DuFour's charisma could make it easier for us to secure a victory.
+This throws the republic into turmoil. If we had hoped to rally behind DuFour to oppose Gallax and the <span style="color: #7A3C00;">Royalists</span>, the sudden loss of a unifying, widely supported national figure—one capable of garnering support from both the moderate left and right—leaves us badly exposed. On the other hand, if we decide to run a candidate of our own, the absence of his charisma could make it easier for us to secure a victory.
 
-The absence of a candidate for the Commonwealth middle and moderate right to rally behind creates a vacuum, which will likely be filled as other parties announce their candidates in the near future.
+The vacuum where the Commonwealth middle and moderate right would have rallied will be filled soon enough, as other parties rush to announce their candidates.
 
-- @presidential_election_1932_candidate: Who will the candidates be now that DuFour is retiring?
+- @presidential_election_1932_candidate: Who will the candidates be now that DuFour is gone?
 
 @hindenburg_running
-title: We await his decision.
+title: DuFour will run again.
 view-if: dufour_run
 on-arrival: burgher_kvp += 4; guild_kvp += 4; landed_kvp += 2
 
-[? if traditionalist_ideology == "Moderate": The break of the <span style="color: #3E88B3;">**Wardens**</span> from the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> to endorse DuFour's candidacy, combined with the unconditional support of the Kyffhäuser League, has given DuFour the motivation to run for re-election. He is now convinced that his primary source of support will come from the right.?][? if traditionalist_ideology == "Radical": Despite DuFour rejecting the demands of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>, he still (incorrectly) believes that the friendly leadership of the <span style="color: #3E88B3;">**Wardens**</span>, despite his rejection of their demands, would unconditionally support him. Together with the unconditional backing of the Kyffhäuser League, this has given DuFour the motivation to run for re-election, convinced his primary support would come from the right.?] Of course, a multitude of other factors contributed, including the signature campaign and Staal's persistence.
+[? if traditionalist_ideology == "Moderate": The break of the <span style="color: #3E88B3;">**Wardens**</span> from the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> to endorse DuFour's candidacy, combined with the unconditional support of the Veterans' League, has given DuFour the motivation to run for re-election. He is now convinced that his primary source of support will come from the right.?][? if traditionalist_ideology == "Radical": Despite DuFour rejecting the demands of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>, he still (incorrectly) believes that the friendly leadership of the <span style="color: #3E88B3;">**Wardens**</span>, despite his rejection of their demands, would unconditionally support him. Together with the unconditional backing of the Veterans' League, this has given DuFour the motivation to run for re-election, convinced his primary support would come from the right.?] Of course, a multitude of other factors contributed, including the signature campaign and Staal's persistence.
 
-The Trent committee for DuFour's re-election has been dissolved and replaced by a much larger, national "United DuFour Committees" organization, which will work in coordination with the various local DuFour committees across the country. With the appointment of Westmore and Gereke to top positions, and the exclusion of <span style="color: #c00000;">Reformist</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] politicians, they are attempting to position DuFour as the candidate of the moderate right.
+The Trent committee for DuFour's re-election has been dissolved and replaced by a much larger, national "United DuFour Committees" organization, which will work in coordination with the various local DuFour committees across the country. With the appointment of Westmore and Gerrick to top positions, and the exclusion of <span style="color: #c00000;">Reformist</span> and [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] politicians, they are attempting to position DuFour as the candidate of the moderate right.
 
 - @presidential_election_1932_candidate: Who will the candidates be now that DuFour has decided to run for re-election?
