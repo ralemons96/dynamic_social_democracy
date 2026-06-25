@@ -1,5 +1,5 @@
 title: Vera Economic Conference
-subtitle: The <span style="color: #10069f;">League</span> of <span style="color: #10069f;">Nations</span> unites to tackle the Great Depression...
+subtitle: The great realms convene at Vera to tackle the depression...
 view-if: year = 1933 and month >= 6
 on-arrival: london_economic_conference_seen = 1
 new-page: true
@@ -10,13 +10,13 @@ tags: event
 = Vera Economic Conference
 
 # TODO: if you've recovered, you get economic recovery
-# if you haven't recovered, you can either support Roosevelt or support the UK/Ethia
+# if you haven't recovered, you can either back devaluation or back Ethia/Fulyria's fixed rates
 
-The <span style="color: #10069f;">League</span> of <span style="color: #10069f;">Nations</span> is hosting a conference to discuss the state of the global economy and potential solutions to the ongoing depression. All parties want to reduce tariffs to encourage trade. However, the Western powers are at an impasse; <span style="color: #002654;">Ethia</span> and to a lesser extent <span style="color: #C8102E;">Fulyria</span> are calling for fixed currency exchange rates, while President Roosevelt of the <span style="color: #B31942;">United</span> <span style="color: #0A3161;">States</span> wants to print new money to stimulate demand, calling for "controlled inflation". The <span style="color: #001489;">Europeans</span> want to reduce their debts to the <span style="color: #B31942;">U</span><span style="color: #0A3161;">S</span>, while <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">ica</span> favors continued full payments.
+Ethia has convened the realms at Vera to discuss the state of the continental economy and possible solutions to the ongoing depression. All want to reduce tariffs to encourage trade. But the great powers are at an impasse: <span style="color: #002654;">Ethia</span> and, to a lesser extent, <span style="color: #C8102E;">Fulyria</span> are calling for fixed currency exchange rates, while the merchant-lords of the Allied States want to print new money to stimulate demand, calling for "controlled inflation". The debtor-realms — Ethia and the Commonwealth among them — seek relief on what they owe the Allied States' merchant-lords, who favor continued full payment.
 
 @economic_recovery
 
-[? if wtb_adopted or budget <= 0: the Commonwealth has largely recovered from the crisis, owing in large part to the same sorts of economic policies that Roosevelt is pursuing. ?]
+[? if wtb_adopted or budget <= 0: the Commonwealth has largely recovered from the crisis, owing in large part to the same sorts of economic policies that the reformers is pursuing. ?]
 [? if not wtb_adopted and budget > 0: the Commonwealth has largely recovered from the crisis, without having to resort to budget deficits or devaluing the currency. ?]
 
 - @support_roosevelt
@@ -41,25 +41,25 @@ title: Commonwealth representatives call for stable currency, along with <span s
 view-if: not marcher_in_government
 on-arrival: west_relation += 1
 
-As expected, the conservative Commonwealth bankers support <span style="color: #C8102E;">Fulyria</span> and <span style="color: #002654;">Ethia</span>'s plan to stabilize currency exchange rates. In response to the continued support for fixed currency exchange rates and the impasse on debts, the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span> pull out of the conference, leaving it with no agreements whatsoever.
+As expected, the conservative Commonwealth bankers support <span style="color: #C8102E;">Fulyria</span> and <span style="color: #002654;">Ethia</span>'s plan to stabilize currency exchange rates. In response to the continued support for fixed currency exchange rates and the impasse on debts, the the Allied States pull out of the conference, leaving it with no agreements whatsoever.
 
-[? if disfavored >= 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the Roosevelt administration. ?]
-[? if disfavored < 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the Roosevelt administration as well as our own economic plan. ?]
+[? if disfavored >= 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the reformist powers. ?]
+[? if disfavored < 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the reformist powers as well as our own economic plan. ?]
 
 
 @support_roosevelt
-title: Support Roosevelt's ideas - we must devalue currency.
+title: Support the reformers' ideas - we must devalue currency.
 view-if: marcher_in_government
 
 
-We support Roosevelt's plan for controlled inflation, leaving us at odds with the <span style="color: #001489;">European</span> powers. In response to the continued support for fixed currency exchange rates by <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> and the impasse on debts, the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span> pull out of the conference, leaving it with no agreements whatsoever.
+We support the reformers' plan for controlled inflation, leaving us at odds with the continental powers. In response to the continued support for fixed currency exchange rates by <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> and the impasse on debts, the the Allied States pull out of the conference, leaving it with no agreements whatsoever.
 
 @support_france
 title: Support <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> - we must have stable currency.
 view-if: marcher_in_government
 on-arrival: west_relation += 1; eu_progress += 1
 
-Our position brings us closer to other <span style="color: #001489;">European</span> powers. In response to the continued support for fixed currency exchange rates and the impasse on debts, the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span> pull out of the conference, leaving it with no agreements whatsoever.
+Our position brings us closer to other continental powers. In response to the continued support for fixed currency exchange rates and the impasse on debts, the the Allied States pull out of the conference, leaving it with no agreements whatsoever.
 
 
 @salvage
@@ -69,7 +69,7 @@ view-if: marcher_in_government
 How should we try to salvage the negotiations?
 
 - @salvage_currency: Try to convince <span style="color: #002654;">Ethia</span> and <span style="color: #C8102E;">Fulyria</span> that slowly controlled inflation is possible and desirable.
-- @salvage_debts: Try to convince the <span style="color: #B31942;">U</span><span style="color: #0A3161;">S</span> to reduce war debts for the sake of peace.
+- @salvage_debts: Try to convince the Allied States to reduce war debts for the sake of peace.
 - @no_business: Nothing can be done.
 
 @salvage_currency
@@ -77,20 +77,20 @@ choose-if: woytinsky_advisor = 1 and wtb_implemented > 1
 unavailable-subtitle: Valdemar Voss would be extremely helpful right now.
 on-arrival: foreign_aid = 1; disfavored -= 2 if disfavored >= 10; disfavored -= 1.5 if disfavored >= 5; inflation += 1.5; commons_marcher += 4*(1-dissent); burgher_marcher += 3*(1-dissent); economic_growth += 1.5 if economic_growth < 3
 
-Valdemar Voss, now part of our delegation to the conference, uses our successful implementation of the WTB-plan in order to argue for loosening currency valuation. The argument is at least somewhat convincing, and an agreement is reached, leading to increased inflation and demand stimulus throughout the world.
+Valdemar Voss, now part of our delegation to the conference, uses our successful implementation of the Voss Renewal Plan in order to argue for loosening currency valuation. The argument is at least somewhat convincing, and an agreement is reached, leading to increased inflation and demand stimulus throughout the world.
 
 @salvage_debts
 choose-if: war_loans <= -2 and pacifism >= 3 and (rearmament_exposed or west_relation >= 3)
 unavailable-subtitle: We cannot argue for pacifism in our current state.
 on-arrival: foreign_aid = 1; budget += 1; disfavored -= 1 if disfavored >= 10; disfavored -= 1 if disfavored >= 5; inflation += 1 if inflation < 0; burgher_marcher += 4*(1-dissent); commons_marcher += 3*(1-dissent); economic_growth += 1 if economic_growth < 3
 
-We try to argue that reducing war debts will reduce the risk of a future <span style="color: #001489;">European</span> war, using our successful disarmament and the reduction in Etaluxia reparation payments as an argument. The argument is at least somewhat convincing to the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span>, leading to an agreement to reduce debts from the Great War. This indirectly also improves our economy.
+We try to argue that reducing war debts will reduce the risk of a future continental war, using our successful disarmament and the reduction in War Loan payments as an argument. The argument is at least somewhat convincing to the the Allied States, leading to an agreement to reduce debts from the Great War. This indirectly also improves our economy.
 
 @no_business
 title: This conference is none of our concern.
 view-if: marcher_in_government
 
-The conference collapses, as expected. In response to the continued support for fixed currency exchange rates and the impasse on debts, the <span style="color: #B31942;">Amer</span><span style="color: #0A3161;">icans</span> pull out of the conference, leaving it with no agreements whatsoever.
+The conference collapses, as expected. In response to the continued support for fixed currency exchange rates and the impasse on debts, the the Allied States pull out of the conference, leaving it with no agreements whatsoever.
 
-[? if disfavored >= 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the Roosevelt administration. ?]
-[? if disfavored < 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the Roosevelt administration as well as our own economic plan. ?]
+[? if disfavored >= 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the reformist powers. ?]
+[? if disfavored < 15 : Nevertheless, the world economy is slowly improving due in part to the economic stimulus and more liberal trade policies of the reformist powers as well as our own economic plan. ?]

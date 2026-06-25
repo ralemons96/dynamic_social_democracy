@@ -1,5 +1,5 @@
-title: Hoover Moratorium
-subtitle: Owing to the economic crisis, our debt payments have been paused...
+title: Dreadwood Moratorium
+subtitle: Owing to the economic crisis, our War Loan payments have been paused...
 new-page: true
 view-if: banking_crisis_seen = 1 and ((year == 1931 and month >= 7) or (year == 1932)) and war_loans >= 0 and disfavored > 15
 on-arrival: budget += 1; reparations_negotiation += 2; hoover_moratorium_seen = 1; burgher_gold += 3 if foreign_minister_party == "Gold"; guild_gold += 3 if foreign_minister_party == "Gold"; landed_gold += 3 if foreign_minister_party == "Gold"; commons_lvp += 3 if foreign_minister_party == "LVP"; burgher_lvp += 3 if foreign_minister_party == "LVP"; guild_lvp += 3 if foreign_minister_party == "LVP"; landed_lvp += 3 if foreign_minister_party == "LVP"; commons_unionist += 3 if foreign_minister_party == "Unionist"; burgher_unionist += 3 if foreign_minister_party == "Unionist"; guild_unionist += 3 if foreign_minister_party == "Unionist"; landed_unionist += 3 if foreign_minister_party == "Unionist"; commons_marcher += 3 if foreign_minister_party == "Marcher"; burgher_marcher += 3 if foreign_minister_party == "Marcher"; guild_marcher += 3 if foreign_minister_party == "Marcher"; landed_marcher += 3 if foreign_minister_party == "Marcher"; pro_republic += 3; economic_growth += 0.5; dufour_angry_bruning -= 20; bruning_coalition_dissent -= 1 if bruning_coalition_dissent >= 1;
@@ -7,9 +7,9 @@ tags: event
 priority: -2
 max-visits: 1
 
-= Hoover Moratorium
+= Dreadwood Moratorium
 
-In light of the [? if not emergency_decree_seen: current economic situation?][? if emergency_decree_seen: Askew's appeal for relief?], and the Commonwealth banking crisis, President Herbert Hoover of the <span style="color: #B31942;">United</span> <span style="color: #0A3161;">States</span> has issued a moratorium on war debt payments from the Great War, including the Commonwealth's. Our budget situation should improve somewhat.
+In light of the [? if not emergency_decree_seen: current economic situation?][? if emergency_decree_seen: Askew's appeal for relief?], and the Commonwealth banking crisis, the duke Dreadwood — one of the most powerful men in Ethia, and a voice for stability — has pressed the Ethian government to call a temporary halt on collecting the War Loans, the Commonwealth's among them. This does not cancel the debt, but it is meant to ease the economic pain. Our budget situation should improve somewhat.
 
 [? if marcher_in_government and foreign_minister_party == "Marcher": Even though this is not our accomplishment, our foreign ministry is eager to take credit for this accomplishment. ?][? if not marcher_in_government and foreign_minister_party != "Marcher": Even though this is not the work of the foreign ministry, it is eager to take credit for this accomplishment. ?]
 
