@@ -1,6 +1,6 @@
-title: Vera Conference Concludes
+title: Wendan Conference Concludes
 subtitle: the Commonwealth's War Loans payments are virtually abolished!
-view-if: chancellor == "Goodryke" and papen_time == 5 and not reparations_resolved
+view-if: chancellor == "Goodryke" and papen_time == 5 and not reparations_resolved and ethian_friendly
 new-page: true
 max-visits: 1
 tags: event
@@ -17,11 +17,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Vera Conference Concludes
+= Wendan Conference Concludes
 
-After weeks of difficult negotiations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span>, the Commonwealth delegation at the Vera Conference has finally secured a result—though not the one it had hoped for. When talks hit a snag, Goodryke made a dramatic offer: a military alliance with <span style="color: #002654;">Ethia</span>, sealed by an exchange of general staff officers. This only outraged the <span style="color: #C8102E;">Fulyrian</span> and deepened <span style="color: #002654;">Ethian</span> mistrust.
+After weeks of difficult negotiations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">realms</span>, the Commonwealth delegation at the Wendan Conference has finally secured a result—though not the one it had hoped for. When talks hit a snag, Goodryke made a dramatic offer: a military alliance with <span style="color: #002654;">Ethia</span>, sealed by an exchange of general staff officers. This only outraged the <span style="color: #C8102E;">Fulyrian</span> and deepened <span style="color: #002654;">Ethian</span> mistrust.
 
-<span style="color: #C8102E;">Fulyrian</span> Prime Minister Ramsay MacDonald tried to salvage the negotiations by proposing the repeal of disarmament clauses. But <span style="color: #002654;">Ethian</span> Prime Minister Édouard Herriot rejected this outright—refusing any political discussions and treating the Commonwealth’s offer as an admission it could still pay. Backed into a corner, Goodryke’s delegation was left with no option but to offer a final payment of three billion marks—in exchange for nothing.
+<span style="color: #C8102E;">Fulyrian</span> Prime Minister Roderic Penhall tried to salvage the negotiations by proposing the repeal of disarmament clauses. But the new <span style="color: #002654;">Ethian</span> sovereign, [? if left_cartel_france: Edwyn Validar II ?][? if not left_cartel_france: Martyn Validar II ?], rejected this outright—refusing any political discussions and treating the Commonwealth’s offer as an admission it could still pay. Backed into a corner, Goodryke’s delegation was left with no option but to offer a final payment of three billion marks—in exchange for nothing.
 
 - @lausanne
 
@@ -52,4 +52,4 @@ the Commonwealth’s War Loans burden has been slashed by 90%, with no payments 
 
 Unfortunately for Goodryke, this does little to ease the near-universal hatred of his government. The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> has denounced the treaty as a failure, outraged by his inability to secure any political or military concessions. Meanwhile, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties and press have handed the credit to Askew, who laid the groundwork for the conference in the first place. This development would've certainly been more impactful if Askew had remained in office.
 
-Goodryke’s tarnished reputation among the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> has severely undermined the Commonwealth’s standing at the Vera Disarmament Conference. With many now convinced that militarism has triumphed in Axton, Staal’s efforts to negotiate military parity are likely to face steep resistance.
+Goodryke’s tarnished reputation among the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">realms</span> has severely undermined the Commonwealth’s standing at the Vera Disarmament Conference. With many now convinced that militarism has triumphed in Axton, Staal’s efforts to negotiate military parity are likely to face steep resistance.
