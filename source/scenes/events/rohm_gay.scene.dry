@@ -1,4 +1,4 @@
-title: <span style="color: #7A3C00;">**Loyalists**</span> Leader Isen Glade's <span style="color: red;">Ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> Exposed
+title: <span style="color: #7A3C00;">**Loyalists**</span> Leader Isen Glade's Orcish Ancestry Exposed
 subtitle: The Heartland Ministry of the Interior uncovers shocking revelations about the <span style="color: #7A3C00;">Royalist</span> leader...
 view-if: year == 1932 and month == 3 and not dufour_term_extended and marcher_heartland and not repealed_175
 priority: 3
@@ -8,44 +8,44 @@ new-page: true
 on-arrival: royalist_urgency += 1
 face-image: img/portraits/rohm.jpg
 
-= <span style="color: #7A3C00;">**Loyalists**</span> Leader Isen Glade's <span style="color: red;">Ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> Exposed
+= <span style="color: #7A3C00;">**Loyalists**</span> Leader Isen Glade's Orcish Ancestry Exposed
 
-Linus Aldermere from the Heartland Ministry of the Interior has approached the <span style="color: #c00000;">**Marchers**</span> and informed us about three letters written by <span style="color: #7A3C00;">**Loyalists**</span> leader Isen Glade to Axton nerve specialist Corvin Halle during his self-imposed exile in the southern reaches. These letters, confiscated by the Heartland state police, are notable not for their political content but for Glade’s candid discussions about his <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span>—potentially exposing him to legal action.
+Linus Aldermere from the Heartland Ministry of the Interior has approached the <span style="color: #c00000;">**Marchers**</span> and informed us about three letters written by <span style="color: #7A3C00;">**Loyalists**</span> leader Isen Glade to Axton nerve specialist Corvin Halle during his self-imposed exile in the southern reaches. These letters, confiscated by the Heartland state police, are notable not for their political content but for Glade’s candid discussions of his orcish ancestry—and of the lengths he went to falsify his lineage records to conceal it, potentially exposing him to prosecution for fraud.
 
-Glade has never concealed his <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span>, and Gallax has never taken offense at it. Despite Glade facing multiple prosecutions under the Bloodright Statute in the past, none have been successful. However, this time we now have definitive proof.
+Whispers of orcish blood have long dogged Glade, and Gallax has always waved them away. He has faced challenges under the Bloodright Statute before—the law barring those of falsified or impure lineage from high office—but none have ever stuck. This time, we have definitive proof.
 
 What shall be our next move regarding these letters?
 
-> *"We oppose the disgraceful the Bloodright Statute wherever we can; therefore we must not join the choir of those among us who want to banish a man from society because he is homosexual".*
+> *"We oppose the disgraceful Bloodright Statute wherever we can; we must not join the choir of those who would banish a man from society over the blood in his veins".*
 
  - Die Brocksby, Commonwealth weekly magazine
 
-- @expose_rohm: We will publish the letters, as the revelation of such a high-ranking <span style="color: #7A3C00;">Royalist</span> official being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> will undoubtedly harm their appeal among core demographics.
-- @no_expose_rohm: The <span style="color: #c00000;">**Marchers**</span> is nominally in favor of <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights, and it would be in poor taste to expose such a personal matter.
+- @expose_rohm: We will publish the letters, as the revelation that such a high-ranking <span style="color: #7A3C00;">Royalist</span> official carries orcish blood will undoubtedly harm their appeal among their blood-purist core.
+- @no_expose_rohm: The <span style="color: #c00000;">**Marchers**</span> stands against the Bloodright Statute on principle, and it would be in poor taste to hound a man over his ancestry.
 
 @expose_rohm
 on-arrival: dufour_angry_bruning -= 10; guild_royalist -= 2; landed_royalist -= 2; faithful_royalist -= 2; burgher_marcher -= 0.01; unionist_relation += 3; left_dissent += 5
 
-We have published the Glade letters under the title *Der Fall Glade* (The Glade Affair), distributing the pamphlet across all corners of the Commonwealth. This has damaged the <span style="color: #7A3C00;">Royalist</span> Party’s appeal among its more socially reactionary supporters and has even sparked a plot among some <span style="color: #7A3C00;">Royalist</span> members to murder Glade.
+We have published the Glade letters under the title *The Glade Affair*, distributing the pamphlet across all corners of the Commonwealth. This has damaged the <span style="color: #7A3C00;">Royalist</span> Party’s appeal among its more blood-purist supporters and has even sparked a plot among some <span style="color: #7A3C00;">Royalist</span> members to murder Glade.
 
-The pamphlet argues that a party tolerating <span style="color: red;">ho</span><span style="color: orange;">mo</span><span style="color: yellow;">se</span><span style="color: green;">xu</span><span style="color: blue;">al</span><span style="color: purple;">ity</span> at its highest levels must seek to "poison the people and destroy its moral strength." It warns that this would lead to the Commonwealth’s decline, akin to the fall of ancient the southern courts, and claims that by keeping Glade in power, the Royalists are complicit in "knowingly and intentionally furthering the seduction of Commonwealth youths into becoming <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> minions."
+The pamphlet turns the Royalists' own creed back upon them: a party that vows to "cleanse the realm of tainted blood" has knowingly seated a man of orcish descent at its very summit—and forged his lineage records to keep him there. By their own doctrine, it argues, they stand condemned as frauds and hypocrites, no fit guardians of the bloodlines they claim to defend.
 
 Despite this, Gallax has swiftly come to Glade’s defense, publicly reaffirming his position as leader of the <span style="color: #7A3C00;">**Loyalists**</span>. The electoral performance of the <span style="color: #7A3C00;">Royalists</span> remains largely unaffected, but the impression this controversy leaves on President DuFour may yet prove significant.
 
 Meanwhile, the pamphlet’s publisher, Aldous Brock, has been brutally beaten by <span style="color: #7A3C00;">Royalist</span> deputies inside the Assembly building as an act of revenge—an event that has overshadowed the scandal itself.
 
-- @persecute_rohm: Attempt to persecute Glade! <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> acts are prohibited by the Bloodright Statute, allowing us to open up legal action against him.
+- @persecute_rohm: Attempt to prosecute Glade! Falsifying one's lineage is a crime under the Bloodright Statute, giving us grounds to open legal action against him.
 
 @no_expose_rohm
 on-arrival: guild_royalist -= 2; left_dissent -= 5; wholesome_point += 1; rohm_join_banner_time = time + 6
 
-It would be in poor taste for a party advocating for <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights to attack someone for being gay. We’ve taken the high road, but many within our party feel we’ve missed an opportunity.
+It would be in poor taste for a party that opposes the Bloodright Statute to hound a man over the blood in his veins—the Commonwealth long ago made its peace with whom a man loves, and we will not trade one bigotry for another. We’ve taken the high road, but many within our party feel we’ve missed an opportunity.
 
 @persecute_rohm
-unavailable-subtitle: Despite the widespread distaste for <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, the judiciary is too reactionary to be able to convict a top <span style="color: #7A3C00;">Royalist</span>.
+unavailable-subtitle: Despite the widespread distaste for falsified blood-records, the judiciary is too reactionary to be able to convict a top <span style="color: #7A3C00;">Royalist</span>.
 choose-if: judicial_reform >= 3
 on-arrival: rohm_explode = 1; burgher_royalist -= 2; guild_royalist -= 4; landed_royalist -= 2; faithful_royalist -= 4; left_dissent += 3; loyalist_strength *= 0.9; dufour_angry_bruning -= 10
 
-With definitive proof of Glade violating the Bloodright Statute, the law criminalizing <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> acts, we have been able to initiate legal action against him once more. Glade is unable to deny the authenticity of the letters, and many have taken that as confirmation of their legitimacy.
+With definitive proof of Glade falsifying his lineage under the Bloodright Statute, we have been able to initiate legal action against him once more. Glade is unable to deny the authenticity of the letters, and many have taken that as confirmation of their legitimacy.
 
 In the end, Glade has been convicted under the Bloodright Statute and sentenced to one year in prison. This has brought the scandal back into the spotlight, severely damaging the public perception of the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #7A3C00;">**Loyalists**</span>.

@@ -1,4 +1,4 @@
-title: Gallax Commits Suicide!
+title: Gallax Flees to the Empire!
 subtitle: The <span style="color: #7A3C00;">**Royalists**</span> disintegrates!
 view-if: chancellor = "Staal" and staal_time == 9 and royalist_leader == "Gallax"
 new-page: true
@@ -17,11 +17,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Gallax Commits Suicide!
+= Gallax Flees to the Empire!
 
-Gallax himself has lost belief in his previously unshakable determination that destiny is on his side, and his appointment to the chancellorship is an inevitability. Now, with the defections of Glade and the majority of the <span style="color: #7A3C00;">**Loyalists**</span>, and Crowde's resignation months back: the <span style="color: #7A3C00;">Royalist</span> movement has lost its chance. 
+Gallax himself has lost belief in his previously unshakable determination that destiny is on his side, and his appointment to the chancellorship is an inevitability. Now, with the defections of Glade and the majority of the <span style="color: #7A3C00;">**Loyalists**</span>, and Crowde's resignation months back: the <span style="color: #7A3C00;">Royalist</span> movement has lost its chance.
 
-Going through with the promise that he'll finish himself in three minutes if the party were to split apart, he has done exactly that.
+With the movement crumbling around him, Gallax has slipped across the border to the Empire-in-Exile, abandoning the Commonwealth he claimed to serve. The man who would set the Empress upon a restored throne has fled to her court—and in doing so has laid bare, at last, where his loyalties always lay.
 
 - @nazi_2: The end of a movement.
 
@@ -29,4 +29,4 @@ Going through with the promise that he'll finish himself in three minutes if the
 on-arrival: royalist_leader = "Standerton"; royalist_chancellor = "Gorrick"; gallax_dead = 1; dufour_gallax_r -= 10; papen_strength -= 2; staal_strength += 1; royalist_funds -= 3
 achievement: hitler_tot
 
-Alden Standerton succeeds Gallax as party leader, with heavy influence from Ulric Gorrick. The movement has been badly crippled, and are likely to never regain prominence.
+Alden Standerton succeeds Gallax as party leader, with heavy influence from Ulric Gorrick. With their founder's flight to the enemy now public, the movement is badly discredited, and likely never to regain prominence.
