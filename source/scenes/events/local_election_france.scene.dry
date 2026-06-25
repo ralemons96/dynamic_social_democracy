@@ -1,4 +1,4 @@
-title: 4297 Ethian Legislative Elections
+title: The Ethian Succession
 view-if: year == 1932 and month == 5
 new-page: true
 tags: event
@@ -19,11 +19,11 @@ on-display: {!
 max-visits: 1
 set-bg: img/france_map.jpg
 
-= Elections, [+ month : month +] [+ year_display +]
+= The Ethian Succession, [+ month : month +] [+ year_display +]
 
-The Ethian Third Republic are to hold their legislative elections now.
+Ethia's throne has fallen vacant, and the realm's Ducal Council convenes to elevate a new sovereign from among its great houses — a choice that will shape the Commonwealth's fortunes as much as Ethia's own.
 
-- @france: May our <span style="color: #ff0000;">Reformist</span> comrades do their best...
+- @france: May the Council raise a friend of the Commonwealth...
 
 @france
 on-arrival: {!
@@ -367,32 +367,32 @@ Q.disp_fr_r_france = (Q.disp_fr_r_france != undefined ? parseFloat(Q.disp_fr_r_f
 on-display: {!
 data = [{
     "id": "pcf",
-    "legend": "PCF",
-    "name": "PCF",
+    "legend": "CB",
+    "name": "CB",
     "seats": Math.round(Q.pcf_r_france * 6.5),
 }];
 
 if (Q.pup_r_france) {
     data.push({
         "id": "pup",
-        "legend": "PUP",
-        "name": "PUP",
+        "legend": "LV",
+        "name": "LV",
         "seats": Math.round(Q.pup_r_france * 6.5),
     });
 }
 
 data = data.concat([{
     "id": "sfio",
-    "legend": "SFIO",
-    "name": "SFIO",
+    "legend": "CL",
+    "name": "CL",
     "seats": Math.round(Q.sfio_r_france * 6.5),
 }]);
 
 if (Q.prs_r_france) {
     data.push({
         "id": "prs",
-        "legend": "PRS",
-        "name": "PRS",
+        "legend": "RP",
+        "name": "RP",
         "seats": Math.round(Q.prs_r_france * 6.5),
     });
 }
@@ -400,14 +400,14 @@ if (Q.prs_r_france) {
 if (Q.rad_r_france) {
     data.push({
         "id": "rad",
-        "legend": "RAD",
-        "name": "RAD",
+        "legend": "RH",
+        "name": "RH",
         "seats": Math.round(Q.disp_rad_r_france * 6.5),
     });
     data.push({
         "id": "rad2",
-        "legend": "RAD2",
-        "name": "RAD2",
+        "legend": "FL",
+        "name": "FL",
         "seats": Math.round(Q.disp_ind_rad_r_france * 6.5),
     });
 }
@@ -415,8 +415,8 @@ if (Q.rad_r_france) {
 if (Q.ad_r_france) {
     data.push({
         "id": "ad",
-        "legend": "AD",
-        "name": "AD",
+        "legend": "CA",
+        "name": "CA",
         "seats": Math.round(Q.ad_r_france * 6.5),
     });
 }
@@ -424,8 +424,8 @@ if (Q.ad_r_france) {
 if (Q.pdp_r_france) {
     data.push({
         "id": "pdp",
-        "legend": "PDP",
-        "name": "PDP",
+        "legend": "TB",
+        "name": "TB",
         "seats": Math.round(Q.pdp_r_france * 6.5),
     });
 }
@@ -433,14 +433,14 @@ if (Q.pdp_r_france) {
 if (Q.fr_r_france) {
     data.push({
         "id": "fr",
-        "legend": "FR",
-        "name": "FR",
+        "legend": "IF",
+        "name": "IF",
         "seats": Math.round(Q.disp_fr_r_france * 6.5),
     });
     data.push({
         "id": "fr2",
-        "legend": "FR2",
-        "name": "FR2",
+        "legend": "LH",
+        "name": "LH",
         "seats": Math.round(Q.disp_ind_fr_r_france * 6.5),
     });
 }
@@ -464,53 +464,53 @@ if (window && d3) {
 go-to: france_coalition_menu
 
 
-**Ethian results:**
+**The Ducal Council's composition:**
 
 {!<svg id="france_chamber" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!} 
-{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Assembly Seats</td><td>% Change</td></tr>!}
+{!<tr><td>Faction</td><td>Vote share</td><td>% Change</td><td>Council Seats</td><td>% Change</td></tr>!}
 
-<tr><td colspan="5" style="text-align: center;"><strong>Left Cartel</strong></td></tr>
+<tr><td colspan="5" style="text-align: center;"><strong>The Reform Cartel</strong></td></tr>
 
-{!<tr><td><div class="box" style='background-color:#ff0000; outline: 2px; outline-style: solid;'> </div> !} <span class="tooltip-text" title="Ethian Section of the Workers' International">SFIO</span> {!</td><td>!} **[+ sfio_france_elections_vote +]%** {!</td><td>!} **[+ str_votes_change_sfio_france +]** {!</td><td>!} **[+ sfio_r_france +]%** {!</td><td>!} **[+ str_change_sfio_france +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ff0000; outline: 2px; outline-style: solid;'> </div> !} <span class="tooltip-text" title="the Commons League">CL</span> {!</td><td>!} **[+ sfio_france_elections_vote +]%** {!</td><td>!} **[+ str_votes_change_sfio_france +]** {!</td><td>!} **[+ sfio_r_france +]%** {!</td><td>!} **[+ str_change_sfio_france +]** {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FF6699'> </div> !} <span class="tooltip-text" title="Republican-Reformist Party">PRS</span>: {!</td><td>!} [+ prs_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_prs_france +] {!</td><td>!} [+ prs_r_france +]% {!</td><td>!} [+ str_change_prs_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF6699'> </div> !} <span class="tooltip-text" title="the Reform Pact">RP</span>: {!</td><td>!} [+ prs_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_prs_france +] {!</td><td>!} [+ prs_r_france +]% {!</td><td>!} [+ str_change_prs_france +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#E0B0FF'> </div> !} <span class="tooltip-text" title="Republican, Radical and Radical-Reformist Party">PRRRS</span>: {!</td><td>!} [+ disp_rad_votes_france +]% {!</td><td>!} [+ str_votes_change_rad_france +] {!</td><td>!} [+ disp_rad_r_france +]% {!</td><td>!} [+ str_change_rad_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E0B0FF'> </div> !} <span class="tooltip-text" title="the Radical Houses">RH</span>: {!</td><td>!} [+ disp_rad_votes_france +]% {!</td><td>!} [+ str_votes_change_rad_france +] {!</td><td>!} [+ disp_rad_r_france +]% {!</td><td>!} [+ str_change_rad_france +] {!</td></tr>!}
 
-<tr><td colspan="5" style="text-align: center;"><strong>Republican and Democratic Union</strong></td></tr>
+<tr><td colspan="5" style="text-align: center;"><strong>The Ducal Establishment</strong></td></tr>
 
-{!<tr><td><div class="box" style='background-color:#FFBF00'> </div> !} <span class="tooltip-text" title="Democratic Alliance">AD</span>: {!</td><td>!} [+ ad_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_ad_france +] {!</td><td>!} [+ ad_r_france +]% {!</td><td>!} [+ str_change_ad_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFBF00'> </div> !} <span class="tooltip-text" title="the Crown Alliance">CA</span>: {!</td><td>!} [+ ad_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_ad_france +] {!</td><td>!} [+ ad_r_france +]% {!</td><td>!} [+ str_change_ad_france +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#005ACA'> </div> !} <span class="tooltip-text" title=" Republican Federation">FR</span>: {!</td><td>!} [+ disp_fr_votes_france +]% {!</td><td>!} [+ str_votes_change_fr_france +] {!</td><td>!} [+ disp_fr_r_france +]% {!</td><td>!} [+ str_change_fr_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#005ACA'> </div> !} <span class="tooltip-text" title="the Imperial Federation">IF</span>: {!</td><td>!} [+ disp_fr_votes_france +]% {!</td><td>!} [+ str_votes_change_fr_france +] {!</td><td>!} [+ disp_fr_r_france +]% {!</td><td>!} [+ str_change_fr_france +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#aa4fff'> </div> !} <span class="tooltip-text" title="Independent Radicals">RI</span>: {!</td><td>!} [+ disp_ind_rad_votes_france +]% {!</td><td>!} [+ str_votes_change_rad2_france +] {!</td><td>!} [+ disp_ind_rad_r_france +]% {!</td><td>!} [+ str_change_rad2_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#aa4fff'> </div> !} <span class="tooltip-text" title="the Free Lords">FL</span>: {!</td><td>!} [+ disp_ind_rad_votes_france +]% {!</td><td>!} [+ str_votes_change_rad2_france +] {!</td><td>!} [+ disp_ind_rad_r_france +]% {!</td><td>!} [+ str_change_rad2_france +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#00CCCC'> </div> !} <span class="tooltip-text" title="Popular Democratic Party">PDP</span>: {!</td><td>!} [+ pdp_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_ad_france +] {!</td><td>!} [+ pdp_r_france +]% {!</td><td>!} [+ str_change_pdp_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#00CCCC'> </div> !} <span class="tooltip-text" title="the Temple Bloc">TB</span>: {!</td><td>!} [+ pdp_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_ad_france +] {!</td><td>!} [+ pdp_r_france +]% {!</td><td>!} [+ str_change_pdp_france +] {!</td></tr>!}
  
-{!<tr><td><div class="box" style='background-color:#ADC1FD'> </div> !} <span class="tooltip-text" title="Miscellaneous Right">DVD</span>: {!</td><td>!} [+ disp_ind_fr_votes_france +]% {!</td><td>!} [+ str_votes_change_fr2_france +] {!</td><td>!} [+ disp_ind_fr_r_france +]% {!</td><td>!} [+ str_change_fr2_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ADC1FD'> </div> !} <span class="tooltip-text" title="the Lesser Houses">LH</span>: {!</td><td>!} [+ disp_ind_fr_votes_france +]% {!</td><td>!} [+ str_votes_change_fr2_france +] {!</td><td>!} [+ disp_ind_fr_r_france +]% {!</td><td>!} [+ str_change_fr2_france +] {!</td></tr>!}
 
-<tr><td colspan="5" style="text-align: center;"><strong>Ethian Section of the Collectivist International</strong></td></tr>
+<tr><td colspan="5" style="text-align: center;"><strong>The Levelling Blocs</strong></td></tr>
 
-{!<tr><td><div class="box" style='background-color:#700000'> </div> !}<span class="tooltip-text" title="Ethian Collectivist Party">PCF</span>: {!</td><td>!} [+ pcf_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_pcf_france +] {!</td><td>!} [+ pcf_r_france +]% {!</td><td>!} [+ str_change_pcf_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#700000'> </div> !}<span class="tooltip-text" title="the Collectivist Bloc">CB</span>: {!</td><td>!} [+ pcf_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_pcf_france +] {!</td><td>!} [+ pcf_r_france +]% {!</td><td>!} [+ str_change_pcf_france +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#B22222'> </div> !}<span class="tooltip-text" title="Proletarian Unity Party">PUP</span>: {!</td><td>!} [+ pup_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_pup_france +] {!</td><td>!} [+ pup_r_france +]% {!</td><td>!} [+ str_change_pup_france +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#B22222'> </div> !}<span class="tooltip-text" title="the Levellers">LV</span>: {!</td><td>!} [+ pup_france_elections_vote +]% {!</td><td>!} [+ str_votes_change_pup_france +] {!</td><td>!} [+ pup_r_france +]% {!</td><td>!} [+ str_change_pup_france +] {!</td></tr>!}
 
 {!</table>!}
 <hr id="read-marker">
-Popular Front (<span style="color: #700000;" class="tooltip-text" title="Ethian Collectivist Party">**PCF**</span> + <span style="color: #B22222;" class="tooltip-text" title="Proletarian Unity Party">**PUP**</span> + <span style="color: #F0001C;" class="tooltip-text" title="Ethian Section of the Workers' International">**SFIO**</span> + <span style="color: #FF6699;" class="tooltip-text" title="Republican-Reformist Party">**PRS**</span>): [+ pop_front_france +]% 
+United Front (<span style="color: #700000;" class="tooltip-text" title="the Collectivist Bloc">**CB**</span> + <span style="color: #B22222;" class="tooltip-text" title="the Levellers">**LV**</span> + <span style="color: #F0001C;" class="tooltip-text" title="the Commons League">**CL**</span> + <span style="color: #FF6699;" class="tooltip-text" title="the Reform Pact">**RP**</span>): [+ pop_front_france +]% 
 
-Left Cartel (<span style="color: #F0001C;" class="tooltip-text" title="Ethian Section of the Workers' International">**SFIO**</span> + <span style="color: #FF6699;" class="tooltip-text" title="Republican-Reformist Party">**PRS**</span> + <span style="color: #E0B0FF;" class="tooltip-text" title="Republican, Radical and Radical-Reformist Party">**PRRRS**</span>): [+ left_coalition_france +]% 
+Reform Cartel (<span style="color: #F0001C;" class="tooltip-text" title="the Commons League">**CL**</span> + <span style="color: #FF6699;" class="tooltip-text" title="the Reform Pact">**RP**</span> + <span style="color: #E0B0FF;" class="tooltip-text" title="the Radical Houses">**RH**</span>): [+ left_coalition_france +]% 
 
-Right-wing Coalition (<span style="color: #aa4fff;" class="tooltip-text" title="Independent Radicals">**RI**</span> + <span style="color: #00CCCC;" class="tooltip-text" title="Popular Democratic Party">**PDP**</span> + <span style="color: #FFBF00;" class="tooltip-text" title="Democratic Alliance">**AD**</span> + <span style="color: #005ACA;" class="tooltip-text" title="Republican Federation">**FR**</span>): [+ bourgeois_coalition_france +]% 
+Ducal Bloc (<span style="color: #aa4fff;" class="tooltip-text" title="the Free Lords">**FL**</span> + <span style="color: #00CCCC;" class="tooltip-text" title="the Temple Bloc">**TB**</span> + <span style="color: #FFBF00;" class="tooltip-text" title="the Crown Alliance">**CA**</span> + <span style="color: #005ACA;" class="tooltip-text" title="the Imperial Federation">**IF**</span>): [+ bourgeois_coalition_france +]% 
 
-Republican Concentration (<span style="color: #FF6699;" class="tooltip-text" title="Republican-Reformist Party">**PRS**</span> + <span style="color: #E0B0FF;" class="tooltip-text" title="Republican, Radical and Radical-Reformist Party">**PRRRS**</span> + <span style="color: #aa4fff;" class="tooltip-text" title="Independent Radicals">**RI**</span> + <span style="color: #FFBF00;" class="tooltip-text" title="Democratic Alliance">**AD**</span>): [+ republican_coalition_france +]%
+Centrist Concentration (<span style="color: #FF6699;" class="tooltip-text" title="the Reform Pact">**RP**</span> + <span style="color: #E0B0FF;" class="tooltip-text" title="the Radical Houses">**RH**</span> + <span style="color: #aa4fff;" class="tooltip-text" title="the Free Lords">**FL**</span> + <span style="color: #FFBF00;" class="tooltip-text" title="the Crown Alliance">**CA**</span>): [+ republican_coalition_france +]%
 
 @france_coalition_menu
 
 <hr id="read-marker">
-<span style="color: #002654;">Ethia</span> is known for its historically unstable governments, with most cabinets lasting a few months at best. The last four years have been governed by various groupings of parties to the right of the <span style="color: #F0001C;">**SFIO**</span>, our <span style="color: #c00000;">Reformist</span> comrades. Perhaps it's their turn to rule now, with the return of the Left-Cartel alliance. However, concerns over their radical economic policies may push the <span style="color: #FF6699;">**PRS**</span> and <span style="color: #E0B0FF;">**PRRRS**</span> to form a coalition with the <span style="color: #FFBF00;">**AD**</span> instead.
+<span style="color: #002654;">Ethia</span>'s Ducal Council is famously fractious, its blocs forever shifting and its sovereigns short-lived. For four years the realm has been steered by the houses to the right of the <span style="color: #F0001C;">**CL**</span>, our <span style="color: #c00000;">Reformist</span> comrades. Now, with the Reform Cartel resurgent, the crown may yet pass to a friend of reform. However, wary of the Commons League's levelling designs, the <span style="color: #FF6699;">**RP**</span> and <span style="color: #E0B0FF;">**RH**</span> may instead throw in with the <span style="color: #FFBF00;">**CA**</span> and raise a steadier hand.
 
 - @pop_front_france
 - @left_cartel_france
@@ -518,41 +518,41 @@ Republican Concentration (<span style="color: #FF6699;" class="tooltip-text" tit
 - @right_wing_france
 
 @pop_front_france
-title: The <span style="color: #c00000;">**SFIO**</span> abandons the <span style="color: #E0B0FF;">**PRRRS**</span> and forms a government with the <span style="color: #700000;">**PCF**</span>!
+title: The <span style="color: #c00000;">**CL**</span> sets aside the <span style="color: #E0B0FF;">**RH**</span> and the <span style="color: #700000;">**CB**</span> raises Quintis Ticinius to the throne!
 subtitle: Cheater.
-unavailable-subtitle: <span style="color: #700000;">PCF</span> + <span style="color: #B22222;">PUP</span> + <span style="color: #F0001C;">SFIO</span> + <span style="color: #FF6699;">PRS</span> ([+ pop_front_france +]%)
+unavailable-subtitle: <span style="color: #700000;">CB</span> + <span style="color: #B22222;">LV</span> + <span style="color: #F0001C;">CL</span> + <span style="color: #FF6699;">RP</span> ([+ pop_front_france +]%)
 choose-if: pop_front_france >= 50
 on-arrival: dataminer_detected = 1
 
 ok.
 
 @center_right_france
-title: The <span style="color: #FF6699;">**PRS**</span> and <span style="color: #E0B0FF;">**PRRRS**</span> enter government with the right-liberal <span style="color: #FFBF00;">**AD**</span>.
-subtitle: The economically right-wing <span style="color: #E0B0FF;">**PRRRS**</span> and <span style="color: #aa4fff;">**RI**</span> are opposed to the <span style="color: #F0001C;">**SFIO**</span>'s socialistic policies.
-unavailable-subtitle: The <span style="color: #E0B0FF;">**PRRRS**</span> would rather work with their electoral allies.
+title: The <span style="color: #FF6699;">**RP**</span> and <span style="color: #E0B0FF;">**RH**</span> throw in with the <span style="color: #FFBF00;">**CA**</span> to elevate Martyn Validar II.
+subtitle: The economically right-leaning <span style="color: #E0B0FF;">**RH**</span> and <span style="color: #aa4fff;">**FL**</span> are wary of the <span style="color: #F0001C;">**CL**</span>'s levelling designs.
+unavailable-subtitle: The <span style="color: #E0B0FF;">**RH**</span> would rather back their reformist allies.
 choose-if: left_coalition_france < republican_coalition_france
-on-arrival: west_relation += 2; reparations_negotiation += 1
+on-arrival: west_relation += 2; reparations_negotiation += 1; ethian_friendly = 1
 set-bg: img/map_2.jpg
 
-While not the best outcome, the return of the <span style="color: #E0B0FF;">Radical</span> Édouard Herriot to the Prime Minister position is excellent news for our relations with <span style="color: #002654;">Ethia</span>, as he is much more open to renegotiating the Commonwealth's reparation payments compared to the previous government.
+While not the best outcome, the elevation of Martyn Validar II of the <span style="color: #E0B0FF;">Radical Houses</span> is welcome news for our relations with <span style="color: #002654;">Ethia</span>. Closer to the Empire-in-Exile than we would like, he nonetheless remains far more willing to cancel the Commonwealth's War Loans than the previous sovereign.
 
 @left_cartel_france
-title: The <span style="color: #FFC0C0;">Left-Cartel</span> shall enter government.
-subtitle: The strong electoral results of the <span style="color: #F0001C;">**SFIO**</span> and <span style="color: #FF6699;">**PRS**</span> have pressured the <span style="color: #E0B0FF;">**PRRRS**</span> to enter government with their electoral allies.
-unavailable-subtitle: The <span style="color: #E0B0FF;">**PRRRS**</span> would rather work pursue an agreement with the <span style="color: #FFBF00;">**AD**</span>.
+title: The <span style="color: #FFC0C0;">Reform Cartel</span> shall elevate Edwyn Validar II.
+subtitle: The strong showing of the <span style="color: #F0001C;">**CL**</span> and <span style="color: #FF6699;">**RP**</span> has pressured the <span style="color: #E0B0FF;">**RH**</span> to back their reformist allies.
+unavailable-subtitle: The <span style="color: #E0B0FF;">**RH**</span> would rather pursue an agreement with the <span style="color: #FFBF00;">**CA**</span>.
 choose-if: left_coalition_france >= republican_coalition_france
-on-arrival: west_relation += 3; reparations_negotiation += 2; eu_progress += 1; left_cartel_france = 1
+on-arrival: west_relation += 3; reparations_negotiation += 2; eu_progress += 1; left_cartel_france = 1; ethian_friendly = 1
 achievement: vive_le_cartel
 set-bg: img/map_2.jpg
 
-Surprisingly, the <span style="color: #E0B0FF;">**PRRRS**</span> have decided to enter government with the <span style="color: #F0001C;">**SFIO**</span>, despite their concerns over economic matters. <span style="color: #E0B0FF;">Radical</span> Édouard Herriot has been appointed as the new Prime Minister.
+Surprisingly, the <span style="color: #E0B0FF;">**RH**</span> have thrown their weight behind the <span style="color: #F0001C;">**CL**</span>, despite their misgivings over economic matters. Edwyn Validar II, a known friend of the Commonwealth, is raised to the Ethian throne.
 
-This is excellent news for our relations with <span style="color: #002654;">Ethia</span>, as he and our <span style="color: #F0001C;">Reformist</span> comrades are much more open to renegotiating the Commonwealth's reparation payments compared to the previous government. There are even talks of a <span style="color: #FFDD00;">the Allied States</span> of <span style="color: #001489;">Europe</span> within their new left-wing cabinet.
+This is excellent news for our relations with <span style="color: #002654;">Ethia</span>, as he and our <span style="color: #F0001C;">Reformist</span> comrades are far more willing to cancel the Commonwealth's War Loans than the previous sovereign. There is even talk of a <span style="color: #FFDD00;">Regional</span> <span style="color: #001489;">Concordant</span> taking shape under his new reform-minded court.
 
 @right_wing_france
-title: A Right-wing Coalition is somehow formed, without needing the <span style="color: #E0B0FF;">**PRRRS**</span>.
+title: The <span style="color: #005ACA;">Ducal Bloc</span> somehow raises Servius Validar to the throne, without the <span style="color: #E0B0FF;">**RH**</span>.
 subtitle: Cheater.
-unavailable-subtitle: <span style="color: #aa4fff;">**RI**</span> + <span style="color: #00CCCC;">**PDP**</span> + <span style="color: #FFBF00;">**AD**</span> + <span style="color: #005ACA;">**FR**</span> ([+ bourgeois_coalition_france +]%)
+unavailable-subtitle: <span style="color: #aa4fff;">**FL**</span> + <span style="color: #00CCCC;">**TB**</span> + <span style="color: #FFBF00;">**CA**</span> + <span style="color: #005ACA;">**IF**</span> ([+ bourgeois_coalition_france +]%)
 choose-if: bourgeois_coalition_france >= 50
 on-arrival: dataminer_detected = 1
 
