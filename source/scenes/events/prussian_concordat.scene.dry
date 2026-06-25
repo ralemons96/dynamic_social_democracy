@@ -14,6 +14,6 @@ Despite our Lyle Bristol losing his position as the Minister-President of Heartl
 @sign_concordat
 on-arrival: heartland_concordat = 1; unionist_relation += 4; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed a Concordat between the Free State of Heartland and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Heartland. This sets the stage for the negotiation of a national Concordat covering all of the Commonwealth.
+We have signed a Concordat between the Free State of Heartland and the Temple of the Faithful, enshrining broad religious freedoms across the Heartland — including, most contentiously, the right to worship the God of Magic openly, a question that has festered since the Fall. This sets the stage for the negotiation of a national Concordat covering all of the Commonwealth.
 
-[? if traditionalist_ideology == "Radical": The Catholic members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party. ?]
+[? if traditionalist_ideology == "Radical": The Faithful-aligned members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party to stand with the Temple. ?]
