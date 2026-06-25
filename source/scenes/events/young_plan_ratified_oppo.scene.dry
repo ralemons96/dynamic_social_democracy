@@ -1,13 +1,13 @@
-title: Young Plan Ratified
+title: Serannus Plan Ratified
 new-page: true
 tags: event
 view-if: year = 1930 and month >= 3 and not marcher_in_government and not young_plan_ratified
-on-arrival: gold_right += 3; ddp_right += 1; gold_relation -= 5; lvp_right += 3; lvp_relation -= 5; young_plan_ratified = 1
+on-arrival: gold_right += 3; ddp_right += 1; gold_relation -= 5; lvp_right += 3; lvp_relation -= 5; young_plan_ratified = 1; serannus_pending = 0
 max-visits: 1
 
-= Young Plan Ratified
+= Serannus Plan Ratified
 
-The Young Plan is finally ratified, and with that, the main reason President DuFour and the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: propertied right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of Commonwealth finances in order to make the payments, likely including cuts to social spending.
+The Serannus Plan is finally ratified, and with that, the main reason President DuFour and the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: propertied right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of Commonwealth finances in order to make the payments, likely including cuts to social spending. With the War Loans eased, the question of rearmament — long forbidden — has quietly returned to the national conversation.
 
 - @joever: If this year couldn't get any worse...
 

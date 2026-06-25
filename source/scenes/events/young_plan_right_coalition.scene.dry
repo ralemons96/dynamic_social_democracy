@@ -1,17 +1,17 @@
-title: Young Plan
+title: Serannus Plan
 new-page: true
 subtitle: The [? if in_right_coalition: right-wing ?][? if in_center_right_coalition: center-right ?] coalition has collapsed...
 tags: event
 view-if: year = 1929 and month >= 7 and in_right_coalition or in_center_right_coalition and traditionalist_ideology == "Moderate"
-on-arrival: was_in_center_right_coalition = 1
+on-arrival: was_in_center_right_coalition = 1; serannus_pending = 1
 max-visits: 1
 
-= The Young Plan and the fall of the coalition
+= The Serannus Plan and the fall of the coalition
 
-The Foreign Ministry under Gustav Stratton has agreed to the Young Plan, an agreement with the Western powers to reduce the Commonwealth's reparation payments and give us more fiscal autonomy. Simultaneously, <span style="color: #002654;">Ethia</span> will agree to withdraw its military occupation from the Exetar.
+The Foreign Ministry under Gustav Stratton has agreed to the Serannus Plan — an offer by an <span style="color: #002654;">Ethian</span> delegation to restructure the Commonwealth's War Loans and grant us greater fiscal autonomy, extended only because <span style="color: #002654;">Ethia</span> would sooner shore up a friendly, anti-Axton government than risk a Restorationist one taking its place. Simultaneously, <span style="color: #002654;">Ethia</span> will agree to withdraw its military occupation from the Exetar.
 
-While this seems to be a positive development for the country, the <span style="color: #3E88B3;">**Traditionalists**</span>, despite their moderation, opposes the plan, claiming that any War Loans are a form of national slavery. They have called for a vote of no confidence against the government, supported by the <span style="color: #7A3C00;">**Royalists**</span>, 
-<span style="color: #003755;">**DNF**</span> and the <span style="color: #700000;">**Collectivists**</span>, and for a referendum on the Young Plan.
+While this seems to be a positive development for the country, the <span style="color: #3E88B3;">**Traditionalists**</span>, despite their moderation, oppose the plan — incensed that its relief passes over their own great landed estates — claiming that any War Loans are a form of national slavery. They have called for a vote of no confidence against the government, supported by the <span style="color: #7A3C00;">**Royalists**</span> (who would repudiate the War Loans outright),
+<span style="color: #003755;">**DNF**</span> and the <span style="color: #700000;">**Collectivists**</span>, and for a referendum on the Serannus Plan.
 
 We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining propertied parties.
 

@@ -1,6 +1,6 @@
 title: DuFour Sacks [+ chancellor +]!
 subtitle: DuFour has turned on us...
-view-if: (president == "DuFour" and not presidential_powers and marcher_in_government and dufour_angry >= 115 and dufour_angry_trigger) and chancellor != "Askew" and next_election_time - time > 3 and not in_marcher_majority
+view-if: (president == "DuFour" and not presidential_powers and marcher_in_government and ((dufour_angry >= 115 and not serannus_pending) or (dufour_angry >= 165 and serannus_pending)) and dufour_angry_trigger) and chancellor != "Askew" and next_election_time - time > 3 and not in_marcher_majority
 priority: -1
 new-page: true
 on-arrival: gold_relation -= 8; ddp_relation -= 4; lvp_relation -= 4; unionist_relation -= 4 if chancellor_party != "Unionist"; pro_republic -= 3; pro_republic -= 1 if marcher_r >= 30; pro_republic -= 1 if weimar_coalition >= 50; coup_progress -= 1; dufour_sacked = 1; comeback_a = n_elections

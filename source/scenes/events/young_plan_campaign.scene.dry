@@ -1,18 +1,19 @@
-title: Young Plan Campaigning
+title: Serannus Plan Campaigning
 new-page: true
 subtitle: How should we campaign in favor of the Plan?
 tags: event
 view-if: year = 1929 and month >= 10 and weimar_ref_signatures <= 0
+on-arrival: serannus_pending = 1
 max-visits: 1
 
-= Young Plan Referendum
+= Serannus Plan Referendum
 
-While the Young Plan seems to be a positive development for the country, the Right are gathering signatures to initiate a referendum this December. While the referendum itself is likely to fail, their propaganda is striking a chord with many, especially amid the ongoing depression. 
+While the Serannus Plan seems to be a positive development for the country, the Right are gathering signatures to initiate a referendum this December. While the referendum itself is likely to fail, their propaganda is striking a chord with many, especially amid the ongoing depression. 
 
 It comes down to us to campaign against the rhetoric of those that seek to destroy our republic. [? if marcher_in_government: We are able to use government resources for this campaign, lowering the cost for our party. ?]
 
-- @pro_plan: Campaign in favor of the Young Plan and against the referendum.
-- @no_plan: Do not campaign on the Young Plan, one way or another.
+- @pro_plan: Campaign in favor of the Serannus Plan and against the referendum.
+- @no_plan: Do not campaign on the Serannus Plan, one way or another.
 
 @pro_plan
 subtitle: [? if marcher_in_government: -1 resources ?][? if not marcher_in_government: -2 resources ?]
@@ -23,13 +24,13 @@ on-arrival: resources -= 1 if marcher_in_government; resources -= 2 if not march
 How should we campaign in favor of the Plan?
 
 - @internationalism: As part of a broader campaign in favor of internationalism and pacifism.
-- @rational: The Young Plan is simply the most rational choice for the Commonwealth.
+- @rational: The Serannus Plan is simply the most rational choice for the Commonwealth.
 
 @internationalism
 on-arrival: pro_republic -= 3 if pacifism < 3; commons_marcher += 2 if radio >= 2; nationalism -= 5*(1-dissent) if pacifism >= 2 else nationalism += 3; pacifism += 1; commons_marcher += 5*(1-dissent) if pacifism >= 3 and nationalism <= 50; commons_marcher += 1; commons_royalist += 4 if pacifism < 3; landed_royalist += 5; faithful_marcher -= 3 if pacifism < 3; landed_gold -= 4
 go-to: recalculate
 
-We rail hard against nationalism and in favor of pacifism and belonging to the international community of nations. [? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?][? if pacifism >= 3 and nationalism <= 50 : We have rallied the workers to the cause of internationalism. ?]Although the propertied are not too pleased for us having monopolized the campaign for the Young Plan.
+We rail hard against nationalism and in favor of pacifism and belonging to the international community of nations. [? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?][? if pacifism >= 3 and nationalism <= 50 : We have rallied the workers to the cause of internationalism. ?]Although the propertied are not too pleased for us having monopolized the campaign for the Serannus Plan.
 
 
 @rational
@@ -37,7 +38,7 @@ subtitle: The propertied will be more inclined to work with us on this.
 on-arrival: pro_republic -= 3; pro_republic += 2 if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); nationalism += 5; nationalism -= 2 if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); guild_marcher += 2 if radio >= 2; burgher_marcher += 2 if radio >= 2; guild_marcher += 2; burgher_marcher += 2; commons_royalist += 4; landed_royalist += 5; landed_royalist -= 3 if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); faithful_marcher -= 3; commons_marcher -= 3; commons_marcher += 1 if radio >= 2; landed_gold -= 4; landed_gold += 2 if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)); unionist_relation += 5; gold_relation += 5; ddp_relation += 5; ddp_left += 1; ddp_cohesion += 1; gold_left += 2
 go-to: recalculate
 
-We argue that the Young Plan is simply the most rational choice for the Commonwealth. Although it doesn't advance any broader political objectives, most people can get behind economic stability and recovery. [? if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)): The propertied parties have rallied with us to campaign against the referendum and for the Young Plan.&nbsp;?][? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?]
+We argue that the Serannus Plan is simply the most rational choice for the Commonwealth. Although it doesn't advance any broader political objectives, most people can get behind economic stability and recovery. [? if (unionist_relation >= 50 and (gold_relation >= 40 and ddp_relation >= 40 and gold_ideology != "Right" and not lvp_formed) or (lvp_relation >= 40 and lvp_ideology != "Right" and lvp_formed)): The propertied parties have rallied with us to campaign against the referendum and for the Serannus Plan.&nbsp;?][? if radio >= 2: Our radio network has helped us spread our message.&nbsp;?]
 
 @no_plan
 on-arrival: nationalism += 5; commons_marcher -= 3; guild_marcher -= 3; burgher_marcher -= 3; pacifism -= 1; commons_royalist += 5; landed_royalist += 5; faithful_marcher -= 5; landed_gold -= 5; pro_republic -= 6

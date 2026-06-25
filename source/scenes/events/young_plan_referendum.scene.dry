@@ -1,13 +1,13 @@
-title: Young Plan Referendum
+title: Serannus Plan Referendum
 new-page: true
 subtitle: The results have come in.
 tags: event
 view-if: year = 1929 and month >= 12 and young_plan_signatures >= 10
 max-visits: 1
 
-= Young Plan Referendum
+= Serannus Plan Referendum
 
-After months of campaigning and propaganda by both sides, the Commonwealth people have come to vote on the referendum against the Young Plan, which has taken the backseat in comparison to the devastating economic depression. 
+After months of campaigning and propaganda by both sides, the Commonwealth people have come to vote on the referendum against the Serannus Plan, which has taken the backseat in comparison to the devastating economic depression. 
 
 Passing the referendum would need to require the approval of more than 50% of those eligible to vote, rather than a majority of those that do vote. This makes it impossible for the referendum to succeed, even with the recent economic depression.
 
