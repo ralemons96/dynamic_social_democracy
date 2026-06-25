@@ -23,7 +23,7 @@ Local union leaders who refuse to join are having their offices raided, their fu
 
 The chancellor is also able to palate the industrialists, by placing their power significantly above that of labor in the newly established corporatist framework.
 
-- @schleicher_2: What about the ADGB?
+- @schleicher_2: What about the Greater Worker+s Guild?
 
 @schleicher_2
 go-to: schleicher_adgb_influence if staal_marcher_influence >= 8; schleicher_adgb_choice if staal_marcher_influence < 6 and staal_marcher_r >= 5; schleicher_adgb_joever if staal_marcher_influence < 6 and staal_marcher_r < 5
@@ -49,15 +49,15 @@ Q.staal_marcher_r -= 2;
 Q.staal_marcher_support -= 5;
 !}
 
-Staal now wields extensive influence over the <span style="color: #c00000;">**Marchers**</span>, and even greater sway within our affiliated Free Guild, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Commonwealth Army militia, which threatens action if no decision is made before the deadline—Staal forces their submission to the Commonwealth Labor Front—soon to be integrated.
+Staal now wields extensive influence over the <span style="color: #c00000;">**Marchers**</span>, and even greater sway within our affiliated Free Guild, the Greater Worker+s Guild. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Commonwealth Army militia, which threatens action if no decision is made before the deadline—Staal forces their submission to the Commonwealth Labor Front—soon to be integrated.
 
-The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> members are purged without ceremony.
+The new Greater Worker+s Guild chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> members are purged without ceremony.
 
-The fall of the ADGB marks the beginning of the end. If even the workers no longer stand with us—what power do we really have left?
+The fall of the Greater Worker+s Guild marks the beginning of the end. If even the workers no longer stand with us—what power do we really have left?
 
 @schleicher_adgb_choice
 
-Staal lacks the full leverage to force a <i>fait accompli</i> over the ADGB—at least for now. But we remain cornered, with few good options left. A sizable minority, perhaps even a plurality, of unionists have already fallen under his sway. And his threat is clear: the Commonwealth Army’s militia stands ready to act if no decision is reached before the deadline.
+Staal lacks the full leverage to force a <i>fait accompli</i> over the Greater Worker+s Guild—at least for now. But we remain cornered, with few good options left. A sizable minority, perhaps even a plurality, of unionists have already fallen under his sway. And his threat is clear: the Commonwealth Army’s militia stands ready to act if no decision is reached before the deadline.
 
 Our good relations have kept him from forcing the issue—so far—but his patience is running out.
 
@@ -67,7 +67,7 @@ What shall we do?
 - @schleicher_adgb_choice_2
 
 @schleicher_adgb_choice_1
-title: Approve the ADGB's entry into the DAF.
+title: Approve the Greater Worker+s Guild's entry into the DAF.
 on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_staal = 1;
@@ -90,9 +90,9 @@ Q.staal_marcher_r -= 2;
 Q.staal_marcher_support -= 4;
 !}
 
-The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> elements are purged without ceremony.
+The Greater Worker+s Guild is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> elements are purged without ceremony.
 
-The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
+The fall of the Greater Worker+s Guild marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
 
 @schleicher_adgb_choice_2
 title: We will refuse.
@@ -263,8 +263,8 @@ Q.staal_marcher_r -= 3;
 Q.staal_marcher_support -= 5;
 !}
 
-With Staal lacking the influence to influence the ADGB chairmen personally, or having the adequate relations with us to negotiate a more peaceful solution, violence is the only option.
+With Staal lacking the influence to influence the Greater Worker+s Guild chairmen personally, or having the adequate relations with us to negotiate a more peaceful solution, violence is the only option.
 
-Across the country, ADGB offices are ransacked by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries and the Commonwealth Army, arresting leaders, confiscating funds, and repurposing offices to be used for the DAF.
+Across the country, Greater Worker+s Guild offices are ransacked by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries and the Commonwealth Army, arresting leaders, confiscating funds, and repurposing offices to be used for the DAF.
 
-The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
+The fall of the Greater Worker+s Guild marks the beginning of the end. If even the workers have abandoned us—what power do we have left?

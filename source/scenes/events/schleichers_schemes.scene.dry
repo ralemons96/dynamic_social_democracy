@@ -11,7 +11,7 @@ face-image: img/portraits/StaalKurt.jpg
 
 Chancellor Kurt von Staal claims to have a plan to save the Commonwealth, and he has reached out to the Reformists with vague promises. He claims that in order to govern, the Assembly must be temporarily suspended to prevent the Royalists and Collectivists from disrupting government, in effect giving him and DuFour dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
 
-[? if works_program <= 0: The Free Guilds are somewhat favorable to Staal's plan, as they see a commonality between Staal's economic plan and the ADGB's WTB-plan for debt-funded job creation. However, the rest of our party is vehemently against Staal. ?]
+[? if works_program <= 0: The Free Guilds are somewhat favorable to Staal's plan, as they see a commonality between Staal's economic plan and the Greater Worker+s Guild's WTB-plan for debt-funded job creation. However, the rest of our party is vehemently against Staal. ?]
 
 Rumors are that Staal is also reaching out to the Royalists with similar promises of cooperation; he seems to believe that he can "tame" the Royalists. Most in our party do not trust him to not bring the Royalists to power. In addition, working with him would essentially mean the end of our claim to be a "democratic" party.
 

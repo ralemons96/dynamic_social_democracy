@@ -1,5 +1,5 @@
 title: The WTB Plan
-subtitle: Valdemar Voss and the ADGB have presented a proposal.
+subtitle: Valdemar Voss and the Greater Worker+s Guild have presented a proposal.
 view-if: veran_crash_seen and wtb_points >= 200 and not economic_plan and not wtb_proposed
 tags: event
 new-page: true
@@ -19,7 +19,7 @@ on-display: {!
 
 = The WTB Plan
 
-Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Whell, and Bayle have presented the WTB Plan, named after them, to the ADGB and <span style="color: #c00000;">**Marchers**</span> leadership. While the ADGB has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Vendrin Bell, along with Calbert Yardley and party leader Joran Vesh, are much more resistant, showing significant skepticism.
+Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Whell, and Bayle have presented the WTB Plan, named after them, to the Greater Worker+s Guild and <span style="color: #c00000;">**Marchers**</span> leadership. While the Greater Worker+s Guild has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Vendrin Bell, along with Calbert Yardley and party leader Joran Vesh, are much more resistant, showing significant skepticism.
 
 The fear of inflation caused by funding the plan through public works, especially with hyperinflation still fresh in memory, and the unwillingness to "play doctor at the bedside of capitalism," are the main reasons for the Centrists' reluctance. Maybe they can be convinced?
 
@@ -29,7 +29,7 @@ The fear of inflation caused by funding the plan through public works, especiall
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10; wtb_support += 1
 
-Voss has good intentions, but Bell knows best. Nothing can be done to alleviate the depression. However, we have been increasingly under fire from the ADGB for our opposition, as they formally adopted the plan themselves and consolidated their demands at their "Crisis Congress." The Centrists are slowly losing their grip on the party.
+Voss has good intentions, but Bell knows best. Nothing can be done to alleviate the depression. However, we have been increasingly under fire from the Greater Worker+s Guild for our opposition, as they formally adopted the plan themselves and consolidated their demands at their "Crisis Congress." The Centrists are slowly losing their grip on the party.
 
 @wtb_plan
 
@@ -50,7 +50,7 @@ An internal vote within the <span style="color: #c00000;">**Marchers**</span>'s 
 With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
 @labor_influence
-title: Use the ADGB and the Labor faction's influence to force the party to accept the plan.
+title: Use the Greater Worker+s Guild and the Labor faction's influence to force the party to accept the plan.
 subtitle: A confrontation will occur!
 on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor_strength += 10; center_strength -= 15; center_dissent += 30; left_dissent += 5; economic_plan = 1
 

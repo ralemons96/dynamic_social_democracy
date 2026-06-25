@@ -2773,11 +2773,11 @@ Furthermore, our commitments to pacifism, internationalism, and anti-militarism 
 - @schleicher_dsu_nay_2
 
 @schleicher_labor
-title: The ADGB falls under state influence.
+title: The Greater Worker+s Guild falls under state influence.
 subtitle: Class collaborationism will undermine the workers' power.
 on-arrival: staal_marcher_labor = 1; staal_marcher_concession += 1; staal_marcher_influence += 3; commons_collectivist += commons_marcher*0.2; commons_marcher *= 0.8; disfavored_collectivist += disfavored_marcher*0.2; disfavored_marcher *= 0.8; dues -= 1 if dues > 1; labor_dissent += 40; labor_strength += 10; social_patriot_strength += 10; center_dissent += 40; left_dissent += 60; knight_dissent += 10; reformist_dissent += 10; pro_republic -= 10
 
-We have convinced the ADGB to appoint some sketchy pro-Staal unionists to many top positions in the organization. Only time will tell what Staal will instruct his followers to do, but we can guess it has something to do with class solidarity for the goal of the Commonwealth's rearmament.
+We have convinced the Greater Worker+s Guild to appoint some sketchy pro-Staal unionists to many top positions in the organization. Only time will tell what Staal will instruct his followers to do, but we can guess it has something to do with class solidarity for the goal of the Commonwealth's rearmament.
 
 The working class is not entirely won over to the chancellor yet, and we stand to lose significant numbers of them to the <span style="color: #700000;">**Collectivists**</span>.
 
