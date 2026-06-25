@@ -76,7 +76,7 @@ Buoyed by the public support, DuFour insists that his candidacy be backed by the
 @hindenburg_drop_out
 title: President DuFour is assassinated.
 view-if: not dufour_run
-on-arrival: pro_republic -= 8; coup_progress += 1; nationalism += 5
+on-arrival: pro_republic -= 8; coup_progress += 1; nationalism += 5; dufour_dead = 1
 
 President DuFour is dead—struck down by assassins on the eve of his announcement, killers who slipped away before they could be named. The hand behind them was never confirmed, but suspicion fell at once upon the Empire-in-Exile: a Commonwealth growing stable and confident under "The Unifier" was precisely the Commonwealth they could not abide, and a single stroke has done what years of subversion could not.
 
