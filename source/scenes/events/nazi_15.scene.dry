@@ -20,7 +20,7 @@ on-display: {!
 
 = Negotiations, Pt. 2
 
-With his closest friends, his son, and his chief of staff all advocating for a [+ royalist_chancellor +] chancellorship, DuFour’s once-unshakable resolve to refuse [+ royalist_chancellor +] is beginning to crumble.
+With his closest friends, his nephew, and his chief of staff all advocating for a [+ royalist_chancellor +] chancellorship, DuFour’s once-unshakable resolve to refuse [+ royalist_chancellor +] is beginning to crumble. It is not only their pressure that wears at him: his faith in the Commonwealth’s quarrelsome institutions has worn thin, and beneath it the old Imperial loyalties of his youth stir anew.
 
 - @nazi_2
 
@@ -36,7 +36,7 @@ Elric Hartwell, the elderly *noble* neighbor of the President in East Heartland�
 title: DuFour receives a reassuring message from Gorrick.
 on-arrival: dufour_gallax_r += 1
 
-Gorrick, a decorated war hero and fellow officer, sends a message pledging respect for DuFour’s authority as President. He insists his party has no intention of violating the constitution or politicizing the military—words that make an impression on the old field marshal.
+Gorrick, a decorated war hero and fellow officer, sends a message pledging respect for DuFour’s authority as President. He insists his party has no intention of violating the constitution or politicizing the military—words that make an impression on the President.
 
 - @nazi_4
 

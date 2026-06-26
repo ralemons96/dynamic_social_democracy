@@ -11,4 +11,4 @@ max-visits: 3
 
 President DuFour has made his dissatisfaction with the <span style="color: #c00000;">Reformist</span> presence in government clear and would use his presidential powers to remove us by force—if he actually had them.
 
-[? if dufour_grr_amount <= 2: However, DuFour still holds great sway over the propertied parties and, along with his influential inner circle, has pressured them to break with our government. ?][? if dufour_grr_amount > 2: DuFour has been sidelined lately, and his influence over the propertied parties have weakened. This is the last time we will hear of the old man. ?]
+[? if dufour_grr_amount <= 2: However, DuFour still holds great sway over the propertied parties and, along with his influential inner circle, has pressured them to break with our government. ?][? if dufour_grr_amount > 2: DuFour has been sidelined lately, and his influence over the propertied parties have weakened. This is the last time we will hear of the President. ?]

@@ -1,5 +1,5 @@
 title: Goodryke Proposes his Plan to DuFour
-subtitle: The old man will never appoint [+ royalist_chancellor +]! This will go nowhere.
+subtitle: DuFour will never appoint [+ royalist_chancellor +]! This will go nowhere.
 view-if: chancellor = "Staal" and staal_time == 7 and staal_explode
 new-page: true
 tags: event
@@ -20,9 +20,9 @@ on-display: {!
 
 = Goodryke and DuFour
 
-At the meeting between [+ royalist_leader +], Gorrick, Goodryke, Marsden, and DuFour’s son, everyone—except Symonnet—backs the appointment of [+ royalist_chancellor +] as Chancellor. Marsden’s shift is especially significant; once wary, he now lends weight to the schemers’ influence. The President, who once vowed never to appoint [+ royalist_chancellor +], begins to waver.
+At the meeting between [+ royalist_leader +], Gorrick, Goodryke, Marsden, and DuFour’s nephew, everyone—except Symonnet—backs the appointment of [+ royalist_chancellor +] as Chancellor. Marsden’s shift is especially significant; once wary, he now lends weight to the schemers’ influence. The President, who once vowed never to appoint [+ royalist_chancellor +], begins to waver.
 
-The next morning, Goodryke presents his plan to DuFour. His call for Staal’s dismissal meets no resistance. But when he names [+ royalist_chancellor +] as the preferred successor—rather than himself, as DuFour would prefer—the old man recoils. He remains scornful and deeply distrustful of [+ royalist_chancellor +], deeming him fit, at best, to oversee the postal ministry.
+The next morning, Goodryke presents his plan to DuFour. His call for Staal’s dismissal meets no resistance. But when he names [+ royalist_chancellor +] as the preferred successor—rather than himself, as DuFour would prefer—the President recoils. He remains scornful and deeply distrustful of [+ royalist_chancellor +], deeming him fit, at best, to oversee the postal ministry.
 
 - @nazi_2
 
@@ -30,6 +30,6 @@ The next morning, Goodryke presents his plan to DuFour. His call for Staal’s d
 title: Marsden and Symonnet are called in.
 on-arrival: dufour_gallax_r += 1
 
-The President summons his chief of staff Marsden and his son Symonnet to join the discussion. Marsden backs Goodryke’s proposal that [+ royalist_chancellor +] be appointed Chancellor, with Goodryke serving as Vice Chancellor. He argues that this arrangement is the only viable path out of the political deadlock—and the best way to tame the <span style="color: #7A3C00;">Royalists</span>, pointing to the considerable number of cabinet posts [+ royalist_leader +] has agreed to hand over to conservatives.
+The President summons his chief of staff Marsden and his nephew Symonnet to join the discussion. Marsden backs Goodryke’s proposal that [+ royalist_chancellor +] be appointed Chancellor, with Goodryke serving as Vice Chancellor. He argues that this arrangement is the only viable path out of the political deadlock—and the best way to tame the <span style="color: #7A3C00;">Royalists</span>, pointing to the considerable number of cabinet posts [+ royalist_leader +] has agreed to hand over to conservatives.
 
-By the meeting’s end, however, both DuFour and his son remain unconvinced. They continue to press for Goodryke’s own return to the chancellorship instead.
+By the meeting’s end, however, both DuFour and his nephew remain unconvinced. They continue to press for Goodryke’s own return to the chancellorship instead.
