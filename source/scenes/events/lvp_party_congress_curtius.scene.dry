@@ -215,15 +215,15 @@ Strake is elected to succeed Curtius as the leader of the <span style="color: #C
 
 @stolper
 title: Reinhardt Tinsmore is elected!
-subtitle: Creator of the famed Tinsmore Program, and a <span style="color: #005EB8;">Jew</span>.
-unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> prefers not to exacerbate their reputation as the party for <span style="color: #005EB8;">Jews</span>.
+subtitle: Creator of the famed Tinsmore Program, and an immigrant's son.
+unavailable-subtitle: The <span style="color: #C0A054;">Golds</span> prefers not to exacerbate their reputation as the party of foreign finance.
 choose-if: stolper_lvp_unlock
 on-arrival: lvp_leader = "Tinsmore"; lvp_relation += 6; lvp_left += 3; landed_lvp *= 0.6; landed_royalist += 4; burgher_lvp *= 1.5; guild_lvp *= 1.2; pro_republic += 5
 face-image: img/portraits/stolper.jpg
 
-Reinhardt Tinsmore, a Commonwealth-Freehold economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from the Allied States, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
+Reinhardt Tinsmore, a Commonwealth-Freehold economist who rose from immigrant beginnings in the Allied States, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>—an outsider the party's enemies are quick to sneer at. Even so, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #C0A054;">**Golds**</span> needs to revitalize its middle-class support.
 
-Relations have improved compared to Curtius's tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #C0A054;">**Golds**</span>—due to anti-Semitism—have made cooperation with us easier.
+Relations have improved compared to Curtius's tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #C0A054;">**Golds**</span>—who scorn his foreign origins—have made cooperation with us easier.
 
 @baumer
 title: Gertrud Bäumer is elected!
@@ -233,6 +233,6 @@ choose-if: baumer_lvp_unlock
 on-arrival: lvp_leader = "Bäumer"; lvp_relation += 5; nationalism += lvp_votes; commons_lvp += 6; commons_other -= 2; commons_marcher -= 4; burgher_lvp += 20; burgher_marcher -= 15; burgher_collectivist -= 5; guild_lvp -= 20; guild_traditionalist += 5; guild_traditionalist += 10 if traditionalist_ideology == "Moderate"; guild_royalist += 5; guild_kvp += 10; guild_other += 5; landed_lvp *= 0.5; landed_royalist += 5; landed_traditionalist += 5 if not kvp_formed; landed_kvp += 5; pro_republic -= 5
 face-image: img/portraits/baumer.jpg
 
-Somehow, Gertrud Bäumer, long-time deputy leader of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and now the leader of the <span style="color: #C0A054;">**Golds**</span>'s women's wing, has been elected to the leadership of the <span style="color: #C0A054;">**Golds**</span>. This is quite a bizarre development, but her victory can be attributed to her passionate nationalism and romanticism, as well as her questionable views on <span style="color: #005EB8;">Jews</span> and race, which have garnered the support of nationalists within the party. Additionally, some within the party cynically believe that by electing a woman, they can appeal to a broader female electorate.
+Somehow, Gertrud Bäumer, long-time deputy leader of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and now the leader of the <span style="color: #C0A054;">**Golds**</span>'s women's wing, has been elected to the leadership of the <span style="color: #C0A054;">**Golds**</span>. This is quite a bizarre development, but her victory can be attributed to her passionate nationalism and romanticism, as well as her questionable views on blood and lineage, which have garnered the support of nationalists within the party. Additionally, some within the party cynically believe that by electing a woman, they can appeal to a broader female electorate.
 
 For us, Bäumer's background as a former <span style="color: #D3C24D;">**[+ ddp_name +]**</span> member may work in our favor, improving our relationship with the <span style="color: #C0A054;">**Golds**</span>. However, it remains to be seen whether she will gain more votes than she loses due to her moderate feminist stance, as many refuse to support her purely out of misogyny.

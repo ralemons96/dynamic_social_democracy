@@ -148,16 +148,16 @@ For us, however, his position within the business wing means we have yet to see 
 
 @stolper
 title: Reinhardt Tinsmore is elected!
-subtitle: Creator of the famed Tinsmore Program, and a <span style="color: #005EB8;">Jew</span>.
-unavailable-subtitle: The <span style="color: #D3C24D;">[+ ddp_name +]</span> prefers not to exacerbate their reputation as the party for <span style="color: #005EB8;">Jews</span>.
+subtitle: Creator of the famed Tinsmore Program, and an immigrant's son.
+unavailable-subtitle: The <span style="color: #D3C24D;">[+ ddp_name +]</span> prefers not to exacerbate their reputation as the party of foreign finance.
 choose-if: stolper_lead
 view-if: not dietrich_resign_ddp_left
 on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5
 face-image: img/portraits/stolper.jpg
 
-Reinhardt Tinsmore, a Commonwealth-Freehold economist and the son of <span style="color: #005EB8;">Jewish</span> immigrants from the Allied States, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, reinforcing a stereotype the party has long struggled to dispel. Despite this, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> needs to revitalize its middle-class support.
+Reinhardt Tinsmore, a Commonwealth-Freehold economist who rose from immigrant beginnings in the Allied States, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—an outsider the party's enemies are quick to sneer at. Even so, Tinsmore—renowned for the economic program bearing his name—could be exactly what the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> needs to revitalize its middle-class support.
 
-Relations have improved compared to Dietrich’s tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—due to anti-Semitism—have made cooperation with us easier. Meanwhile, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn’t <span style="color: #ff0000;">moribund</span> after all?
+Relations have improved compared to Dietrich’s tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—who scorn his foreign origins—have made cooperation with us easier. Meanwhile, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn’t <span style="color: #ff0000;">moribund</span> after all?
 
 @luders
 title: Marie-­Elisabeth Lüders is elected!
