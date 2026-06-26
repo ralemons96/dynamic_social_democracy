@@ -595,7 +595,7 @@ Rudolf Wistle is now an advisor.
 
 @add_woytinsky
 title: Valdemar Voss
-subtitle: Valdemar Voss is a former Russian Menshevik who is now the lead Free Guild economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
+subtitle: Valdemar Voss is a former Central Union émigré who is now the lead Free Guild economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
 is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
 tags: labor_advisor

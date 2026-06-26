@@ -62,7 +62,7 @@ on-arrival: pro_republic += 3; commons_collectivist += 2; commons_marcher += 2; 
 face-image: img/kpd_march.jpg
 go-to: do_campaign
 
-Great news! The <span style="color: #D50000;">Comintern</span> has approved the <span style="color: #700000;">**Collectivists**</span>'s participation in our propaganda campaign against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
+Great news! The <span style="color: #D50000;">Collectivist International</span> has approved the <span style="color: #700000;">**Collectivists**</span>'s participation in our propaganda campaign against the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>.
 
 However, this display of left-wing unity has frightened the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #D3C24D;">liberals</span>, with some even choosing to support the referendum to protest.
 

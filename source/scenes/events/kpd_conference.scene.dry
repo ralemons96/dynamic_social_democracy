@@ -10,7 +10,7 @@ tags: event
 
 Now is the <span style="color: #700000;">**Collectivists**</span>'s national party conference, where they will choose their new leadership. The shadow of the Gembirth Affair hangs over it. On one hand are the hardline supporters of Halsmark, who support a "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>" policy that places the <span style="color: #c00000;">**Marchers**</span> as equivalent to the <span style="color: #7A3C00;">Royalists</span>. On the other hand is the "Conciliator" faction, who support a more cooperative policy towards the <span style="color: #c00000;">**Marchers**</span>.
 
-After our discussion with the <span style="color: #940000;">Central Unions</span>, we are inclined to believe that <span style="color: #8B0000;">Halsmark</span> is at least open to the Conciliators. In order to affect the <span style="color: #700000;">**Collectivists**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Comintern</span> leaders as as well as the <span style="color: #700000;">**Collectivists**</span> membership.
+After our discussion with the <span style="color: #940000;">Central Union</span>, we are inclined to believe that <span style="color: #8B0000;">Halsmark</span> is at least open to the Conciliators. In order to affect the <span style="color: #700000;">**Collectivists**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Collectivist International</span> leaders as as well as the <span style="color: #700000;">**Collectivists**</span> membership.
 
 - @conciliator_success
 - @conciliator_fail
@@ -19,7 +19,7 @@ After our discussion with the <span style="color: #940000;">Central Unions</span
 @conciliator_success
 title: The Conciliators are the new leadership of the <span style="color: #700000;">**Collectivists**</span>.
 choose-if: (levi_advisor or rosenfeld_advisor) and (left_strength >= reformist_strength) and (collectivist_relation >= 50) 
-unavailable-subtitle: [?  if not levi_advisor and not rosenfeld_advisor: Our party leadership is not left-wing enough. ?] [? if left_strength < reformist_strength: The <span style="color: #D50000;">Comintern</span> doubts our commitment to <span style="color: #c00000;">Reformism</span>. ?]
+unavailable-subtitle: [?  if not levi_advisor and not rosenfeld_advisor: Our party leadership is not left-wing enough. ?] [? if left_strength < reformist_strength: The <span style="color: #D50000;">Collectivist International</span> doubts our commitment to <span style="color: #c00000;">Reformism</span>. ?]
 on-arrival: collectivist_leader = "Conciliators"; communist_coalition += 3; collectivist_relation += 10*(1-dissent); left_strength += 5; left_dissent -= 8; pro_republic += (collectivist_votes / 2)
 achievement: versohnler
 

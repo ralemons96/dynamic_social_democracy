@@ -13,7 +13,7 @@ At the <span style="color: #D50032;">Labor and Reformist International</span>, w
 - @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">Fulyrian</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in the Commonwealth's favor.
 - @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Liberty Movement</span>.
 - @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">Reformists</span>.
-- @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Comintern</span>'s conference.
+- @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Collectivist International</span>'s conference.
 - @america: Contact the <span style="color: #940f0f;">Reformist Party of the Allied States</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
@@ -54,7 +54,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; collectivist_relation += 5*(1-dissent); communist_coalition += 1 if comintern_seen == 0; comintern_seen += 1
 
-The <span style="color: #8B0000;">hardlines</span> of the <span style="color: #700000;">**Collectivists**</span> insists on calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>", suggesting that we <span style="color: #c00000;">Reformists</span> are as bad or worse than actual <span style="color: #7A3C00;">Sovereigntists</span>. Needless to say, this is not good for our relationship with the <span style="color: #700000;">collectivists</span>. By observing the <span style="color: #D50000;">Comintern</span>, we can better understand the <span style="color: #700000;">**Collectivists**</span>, enabling us to potentially improve relations, or counter the <span style="color: #700000;">**Collectivists**</span> if it may come to that.
+The <span style="color: #8B0000;">hardlines</span> of the <span style="color: #700000;">**Collectivists**</span> insists on calling us "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>", suggesting that we <span style="color: #c00000;">Reformists</span> are as bad or worse than actual <span style="color: #7A3C00;">Sovereigntists</span>. Needless to say, this is not good for our relationship with the <span style="color: #700000;">collectivists</span>. By observing the <span style="color: #D50000;">Collectivist International</span>, we can better understand the <span style="color: #700000;">**Collectivists**</span>, enabling us to potentially improve relations, or counter the <span style="color: #700000;">**Collectivists**</span> if it may come to that.
 
 @america
 subtitle: -1 resources
