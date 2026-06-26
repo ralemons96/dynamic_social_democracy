@@ -111,7 +111,7 @@ if (Q.gold_leader == "Vellt") saxony_adjustment_factors.dvp += 0.1;
 Q.gold_saxony_elections_vote = Q.gold_votes*saxony_adjustment_factors.dvp;
 if (Q.traditionalist_ideology == "Moderate") saxony_adjustment_factors.dnvp += 0.3;
 if (Q.traditionalist_leader == "Lambach") saxony_adjustment_factors.dnvp += 0.2;
-if (Q.traditionalist_leader == "Schiele") saxony_adjustment_factors.dnvp -= 0.3;
+if (Q.traditionalist_leader == "Tilford") saxony_adjustment_factors.dnvp -= 0.3;
 Q.traditionalist_saxony_elections_vote = Q.traditionalist_votes*saxony_adjustment_factors.dnvp;
 if (Q.commons_royalist_normalized >= 20) saxony_adjustment.factors.nsdap += 0.1;
 Q.royalist_saxony_elections_vote = Q.royalist_votes*saxony_adjustment_factors.nsdap;

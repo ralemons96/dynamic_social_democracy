@@ -75,7 +75,7 @@ on-arrival: {!
         Q.industrialists_fkp = Q.guild_gold_normalized;
         Q.agrarians_fkp = Q.landed_kvp_normalized*0.7;
     }
-    if (Q.traditionalist_leader == "Schiele") {
+    if (Q.traditionalist_leader == "Tilford") {
         Q.agrarians_fkp = Q.agrarians_fkp*2;
     }
     if (Q.traditionalist_leader == "Westmore") {

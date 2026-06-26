@@ -11,7 +11,7 @@ face-image: img/portraits/AlfredMallin.jpg
 
 A parliamentary coalition composed of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and all parties to its right—excluding the <span style="color: #7A3C00;">**Royalists**</span>—somehow holds a majority. Mallin, emboldened by an electoral boost from an influx of more "reactionary" <span style="color: #7A3C00;">Royalist</span> voters, has once again grown overconfident, now believing he no longer needs the <span style="color: #7A3C00;">**Royalists**</span> to enter government.
 
-He assumes that [+ royalist_leader +], increasingly pressured by senior figures like Crowde and Frask, will eventually cave to preserve party unity and join the government on his terms. In the meantime, Mallin has taken the first step—accepting appointments as Vice-Chancellor and Finance Minister. Martin Schiele has been removed, replaced by the more conservative Kalckreuth.
+He assumes that [+ royalist_leader +], increasingly pressured by senior figures like Crowde and Frask, will eventually cave to preserve party unity and join the government on his terms. In the meantime, Mallin has taken the first step—accepting appointments as Vice-Chancellor and Finance Minister. Martin Tilford has been removed, replaced by the more conservative Kalckreuth.
 
 - @goerdeler
 

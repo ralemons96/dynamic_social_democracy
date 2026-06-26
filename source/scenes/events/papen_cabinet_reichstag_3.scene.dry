@@ -38,7 +38,7 @@ if (Q.hugenberg_gold) {
     Q.papen_votes += Q.gold_r;
 }
 if (Q.traditionalist_ideology == "Radical") Q.papen_votes += Q.traditionalist_r;
-if (Q.traditionalist_ideology == "Moderate" && (Q.traditionalist_leader == "Schiele" || Q.traditionalist_leader == "Westmore" || Q.traditionalist_leader == "Hargen" || Q.traditionalist_leader == "Trevannon" && !Q.true_christian_democracy)) {
+if (Q.traditionalist_ideology == "Moderate" && (Q.traditionalist_leader == "Tilford" || Q.traditionalist_leader == "Westmore" || Q.traditionalist_leader == "Hargen" || Q.traditionalist_leader == "Trevannon" && !Q.true_christian_democracy)) {
     Q.papen_votes += Q.traditionalist_r;
     Q.traditionalist_papen = 1;
 }

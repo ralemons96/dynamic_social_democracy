@@ -4667,7 +4667,7 @@ if (Q.lvp_formed) {
 
 if (Q.traditionalist_gold_formed) {
     Q.industrial_traditionalist_backing = 4;
-} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Lambach" && Q.traditionalist_leader != "Schiele" || Q.traditionalist_westarp) {
+} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Lambach" && Q.traditionalist_leader != "Tilford" || Q.traditionalist_westarp) {
     Q.industrial_traditionalist_backing = 3;
 } else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Lambach") {
     Q.industrial_traditionalist_backing = 2;
