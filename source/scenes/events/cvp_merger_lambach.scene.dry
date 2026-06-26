@@ -124,7 +124,7 @@ view-if: not concord_reparations
 on-arrival: concord_reparations = 1
 go-to: reparations_right if concord_traditionalist_balance < 50; reparations_moderate if concord_traditionalist_balance >= 50 and concord_traditionalist_balance < 60; reparations_left if concord_traditionalist_balance >= 60
 
-The War Loans issue remains the most contentious point of contention between the two parties, with starkly opposing views on how to handle the Commonwealth’s financial obligations. The <span style="color: #3E88B3;">**Traditionalists**</span>, including Trevannon himself, staunchly opposed the Serannus Plan and has previously clashed with the <span style="color: #000000;">Unionists</span> over foreign policy achievements such as the Locarno Treaties in the past.
+The War Loans issue remains the most contentious point of contention between the two parties, with starkly opposing views on how to handle the Commonwealth’s financial obligations. The <span style="color: #3E88B3;">**Traditionalists**</span>, including Trevannon himself, staunchly opposed the Serannus Plan and has previously clashed with the <span style="color: #000000;">Unionists</span> over foreign policy achievements such as the Vera Accords in the past.
 
 @reparations_right
 on-arrival: concord_traditionalist_balance += 20; concord_right += 5; nationalism += 10; pro_republic -= 5; west_relation -= 1; east_relation -= 2; unionist_relation -= 5; guild_unionist += 4; guild_dnf -= 4; burgher_unionist -= 4; burgher_gold += 4; burgher_lvp += 4; landed_dnf -= 2; landed_unionist += 2

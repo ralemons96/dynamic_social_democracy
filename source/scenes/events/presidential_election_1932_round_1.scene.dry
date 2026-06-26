@@ -1254,7 +1254,7 @@ on-arrival: president = "Eckhart"; president_ideology = "Moderate"; reformist_di
 achievement: zeppelin_kapitan
 go-to: achievement_check_1
 
-Nationally renown Zeppelin pilot and independent Hugo Eckhart has won the presidency! This is a moment of celebration for our party, as his victory helps keep the <span style="color: #7A3C00;">Royalists</span> at bay.
+Nationally renown Airship pilot and independent Hugo Eckhart has won the presidency! This is a moment of celebration for our party, as his victory helps keep the <span style="color: #7A3C00;">Royalists</span> at bay.
 
 @duesterburg_wins
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 8*(1-dissent); guild_marcher += 5*(1-dissent); burgher_marcher += 5*(1-dissent); landed_marcher += 5*(1-dissent); disfavored_marcher += 5*(1-dissent);

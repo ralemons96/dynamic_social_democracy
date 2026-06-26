@@ -658,7 +658,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if year = 1928 and month = 10 and not in_grand_coalition or not (foreign_minister_party = "Gold" or foreign_minister_party = "LVP") and lvp_timer_trigger == 0: Stratton is planning a large internal reform of the <span style="color: #C0A054;">**Golds**</span> spearheaded by Caspar Holt, a Free Guild member. He strikes a strong parallel with Maine in working to expand the party to attract all sectors of society. Although Stratton's health has been declining, he has finally shown focus to his party's internal affairs. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1928 and month = 10 : Hugo Eckhart has successfully completed the first intercontinental flight of a zeppelin! The <i>Graf Zeppelin</i> departed from the Commonwealth and landed in New Jersey, marking the longest non-stop flight to date, lasting over 111 hours in the air. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1928 and month = 10 : Hugo Eckhart has successfully completed the first intercontinental flight of an airship! The <i>Aetheria</i> departed from the Commonwealth and landed in the Allied States, marking the longest non-stop flight to date, lasting over 111 hours in the air. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 11 and not heartland_leader == "Sedgewick": Despite Sedgewick's strong position in the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s leadership race, he faces significant resistance from the party's middle class because of his ties to labor and his opposition to a proposed raise for civil servants. New candidates have emerged for the party congress in December. ?]{!</p>!}
 
@@ -670,7 +670,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if year = 1928 and month = 11 : The <span style="color: #E81B23;">conservatives</span> have secured a landslide victory over the <span style="color: #00AEF3;">liberals</span> in the <span style="color: #B31942;">Allied</span> <span style="color: #0A3161;">States</span> presidential election. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1928 and month = 11 : A cartoon by the name of <i>Steamboat Willie</i>has been released, the first of its kind to feature sound. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1928 and month = 11 : A cartoon by the name of <i>The Tin Whistle</i>has been released, the first of its kind to feature sound. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 12 and (in_center_right_coalition or in_right_coalition) and not lvp_formed and lvp_timer_trigger == 0: The entrance of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> into the governing coalition has increased cooperation between to the two liberal parties, that have undergone a rightwards shift as of late. They've formed a common parliamentary faction with the <span style="color: #C0A054;">**Golds**</span> in the Assembly and party leaders are in talks about further efforts in cooperation. ?]{!</p>!}
 
@@ -684,7 +684,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if year = 1929 and month = 1: The king of the eastern marches has established a <span style="color: #808080;">royal dictatorship</span> under the pretext of domestic political turmoil. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>All Quiet on the Western Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>Silence on the Northern Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1929 and month = 3 and lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s former labor leaders and leftists, and even some <span style="color: #C0A054;">**Golds**</span> leftists such as Caspar Holt, have established the "Social Republican Circle." This faction aims to shift the party's platform from its current middle-class focus to one that also advocates for the interests of workers. ?]{!</p>!}
 
@@ -726,7 +726,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 4: Stratton's secret negotiations with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have borne fruit, with the two parties converging on policy. The recently adopted Tinsmore Program and the transformation of the <span style="color: #C0A054;">**Golds**</span> into a genuine people's party, while keeping their industrial wing in check, have greatly eased the path toward greater cooperation between the two liberal parties. Larger scale negotiations will continue over the next few months. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 8 : Hugo Eckhart has successfully completed the first circumnavigation of the globe in a zeppelin! The journey covered 33,234 kilometers in approximately 21 days, beginning and ending at the same launch site. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 8 : Hugo Eckhart has successfully completed the first circumnavigation of the globe in an airship! The journey covered 33,234 kilometers in approximately 21 days, beginning and ending at the same launch site. ?]{!</p>!}
 
 {!<p class="dnvp">!}[? if year = 1929 and month = 8 and dnf_formed = 1 and pro_republic < 70 and not was_in_center_right_coalition: The <span style="color: #7A3C00;">**Royalists**</span> has been given an important role in planning the referendum against the Serannus Plan, serving as a counter to the historical treatment of Gallax's <span style="color: #7A3C00;">**Royalists**</span> by the right. This includes the inclusion of a paragraph calling for the imprisonment of those responsible for signing, including President DuFour. This has led to the removal of the paragraph to persuade the <span style="color: #3E88B3;">**Traditionalists**</span> to support their initiative as without their backing, there would be nothing more than a humiliating defeat. Internal dissent within the <span style="color: #3E88B3;">**Traditionalists**</span> has increased with the decision to abandon previous plans. ?]{!</p>!}
 
@@ -742,7 +742,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 3: Despite this setback, the reform of the <span style="color: #C0A054;">**Golds**</span>'s party structure has made the demands of their guild-masters far less threatening. [? if not stresemann_dead: Stratton?][? if stresemann_dead: Curtius?] and other high-ranking party officials, including the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s Penn, have agreed to remove the most radical members of their respective parties to facilitate unification. Meanwhile, the previously moribund Liberal Association, in collaboration with various youth groups, has begun drafting a policy platform and forming local chapters. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 9: The Dow Jones Industrial Average has peaked at $381.17, the Golden Twenties continue! ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 crowns, the golden years continue! ?]{!</p>!}
 
 {!<p class="both">!}[? if year = 1929 and month = 10: The initiative against the Serannus Plan has finished collecting its signatures for it to become a referendum, with [+ young_plan_signatures +]% of eligible voters signing[? if young_plan_signatures >= 10 : [? if young_plan_signatures < 11 : &nbsp;barely?] exceeding the 10% minimum requirement.?][? if young_plan_signatures < 10 : [? if young_plan_signatures > 9 :&nbsp;barely?] falling short of the 10% minimum requirement. This will certainly spark some debates within the right-wing parties. ?] ?]{!</p>!}
 
@@ -950,7 +950,7 @@ max-cards: 3
 
 # not timer but dnvp split occurs anyway on the historical date of all the propertied negotiations so it will still work
 
-{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>All Quiet on the Western Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>Silence on the Northern Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
 
 {!<p class="other">!}[? if flavour_8_trigger and flavour_8_trigger_time == time: Many youth and propertied unity organizations that initially supported the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have since distanced themselves from the party due to a sharp rebuff from the <span style="color: #C0A054;">**Golds**</span>'s [+ gold_leader +]. These <span style="color: #C0A054;">**Golds**</span> affiliated organizations, initially frustrated by the lack of progress toward propertied concentration, have now shifted their stance. They condemn the founding of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, arguing that it is incompatible with propertied unity, and called on the founders of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to join the <span style="color: #C0A054;">**Golds**</span> in the creation of a truly comprehensive middle party. These events, coupled with the hostility that has arisen towards the party, have significantly dampened the initial enthusiasm surrounding its founding. ?]{!</p>!}
 
@@ -1946,7 +1946,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if year = 1928 and month = 10 and not in_grand_coalition or not (foreign_minister_party = "Gold" or foreign_minister_party = "LVP") and lvp_timer_trigger == 0: Stratton is planning a large internal reform of the <span style="color: #C0A054;">**Golds**</span> spearheaded by Caspar Holt, a Free Guild member. He strikes a strong parallel with Maine in working to expand the party to attract all sectors of society. Although Stratton's health has been declining, he has finally shown focus to his party's internal affairs. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1928 and month = 10 : Hugo Eckhart has successfully completed the first intercontinental flight of a zeppelin! The <i>Graf Zeppelin</i> departed from the Commonwealth and landed in New Jersey, marking the longest non-stop flight to date, lasting over 111 hours in the air. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1928 and month = 10 : Hugo Eckhart has successfully completed the first intercontinental flight of an airship! The <i>Aetheria</i> departed from the Commonwealth and landed in the Allied States, marking the longest non-stop flight to date, lasting over 111 hours in the air. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 11 and not heartland_leader == "Sedgewick": Despite Sedgewick's strong position in the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s leadership race, he faces significant resistance from the party's middle class because of his ties to labor and his opposition to a proposed raise for civil servants. New candidates have emerged for the party congress in December. ?]{!</p>!}
 
@@ -1958,7 +1958,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if year = 1928 and month = 11 : The <span style="color: #E81B23;">conservatives</span> have secured a landslide victory over the <span style="color: #00AEF3;">liberals</span> in the <span style="color: #B31942;">Allied</span> <span style="color: #0A3161;">States</span> presidential election. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1928 and month = 11 : A cartoon by the name of <i>Steamboat Willie</i>has been released, the first of its kind to feature sound. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1928 and month = 11 : A cartoon by the name of <i>The Tin Whistle</i>has been released, the first of its kind to feature sound. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 12 and (in_center_right_coalition or in_right_coalition) and not lvp_formed and lvp_timer_trigger == 0: The entrance of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> into the governing coalition has increased cooperation between to the two liberal parties, that have undergone a rightwards shift as of late. They've formed a common parliamentary faction with the <span style="color: #C0A054;">**Golds**</span> in the Assembly and party leaders are in talks about further efforts in cooperation. ?]{!</p>!}
 
@@ -1972,7 +1972,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if year = 1929 and month = 1: The king of the eastern marches has established a <span style="color: #808080;">royal dictatorship</span> under the pretext of domestic political turmoil. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>All Quiet on the Western Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>Silence on the Northern Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1929 and month = 3 and lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s former labor leaders and leftists, and even some <span style="color: #C0A054;">**Golds**</span> leftists such as Caspar Holt, have established the "Social Republican Circle." This faction aims to shift the party's platform from its current middle-class focus to one that also advocates for the interests of workers. ?]{!</p>!}
 
@@ -2014,7 +2014,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 4: Stratton's secret negotiations with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have borne fruit, with the two parties converging on policy. The recently adopted Tinsmore Program and the transformation of the <span style="color: #C0A054;">**Golds**</span> into a genuine people's party, while keeping their industrial wing in check, have greatly eased the path toward greater cooperation between the two liberal parties. Larger scale negotiations will continue over the next few months. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 8 : Hugo Eckhart has successfully completed the first circumnavigation of the globe in a zeppelin! The journey covered 33,234 kilometers in approximately 21 days, beginning and ending at the same launch site. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 8 : Hugo Eckhart has successfully completed the first circumnavigation of the globe in an airship! The journey covered 33,234 kilometers in approximately 21 days, beginning and ending at the same launch site. ?]{!</p>!}
 
 {!<p class="dnvp">!}[? if year = 1929 and month = 8 and dnf_formed = 1 and pro_republic < 70 and not was_in_center_right_coalition: The <span style="color: #7A3C00;">**Royalists**</span> has been given an important role in planning the referendum against the Serannus Plan, serving as a counter to the historical treatment of Gallax's <span style="color: #7A3C00;">**Royalists**</span> by the right. This includes the inclusion of a paragraph calling for the imprisonment of those responsible for signing, including President DuFour. This has led to the removal of the paragraph to persuade the <span style="color: #3E88B3;">**Traditionalists**</span> to support their initiative as without their backing, there would be nothing more than a humiliating defeat. Internal dissent within the <span style="color: #3E88B3;">**Traditionalists**</span> has increased with the decision to abandon previous plans. ?]{!</p>!}
 
@@ -2030,7 +2030,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 3: Despite this setback, the reform of the <span style="color: #C0A054;">**Golds**</span>'s party structure has made the demands of their guild-masters far less threatening. [? if not stresemann_dead: Stratton?][? if stresemann_dead: Curtius?] and other high-ranking party officials, including the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s Penn, have agreed to remove the most radical members of their respective parties to facilitate unification. Meanwhile, the previously moribund Liberal Association, in collaboration with various youth groups, has begun drafting a policy platform and forming local chapters. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 9: The Dow Jones Industrial Average has peaked at $381.17, the Golden Twenties continue! ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 crowns, the golden years continue! ?]{!</p>!}
 
 {!<p class="both">!}[? if year = 1929 and month = 10: The initiative against the Serannus Plan has finished collecting its signatures for it to become a referendum, with [+ young_plan_signatures +]% of eligible voters signing[? if young_plan_signatures >= 10 : [? if young_plan_signatures < 11 : &nbsp;barely?] exceeding the 10% minimum requirement.?][? if young_plan_signatures < 10 : [? if young_plan_signatures > 9 :&nbsp;barely?] falling short of the 10% minimum requirement. This will certainly spark some debates within the right-wing parties. ?] ?]{!</p>!}
 
@@ -2238,7 +2238,7 @@ max-cards: 4
 
 # not timer but dnvp split occurs anyway on the historical date of all the propertied negotiations so it will still work
 
-{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>All Quiet on the Western Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>Silence on the Northern Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
 
 {!<p class="other">!}[? if flavour_8_trigger and flavour_8_trigger_time == time: Many youth and propertied unity organizations that initially supported the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have since distanced themselves from the party due to a sharp rebuff from the <span style="color: #C0A054;">**Golds**</span>'s [+ gold_leader +]. These <span style="color: #C0A054;">**Golds**</span> affiliated organizations, initially frustrated by the lack of progress toward propertied concentration, have now shifted their stance. They condemn the founding of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, arguing that it is incompatible with propertied unity, and called on the founders of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to join the <span style="color: #C0A054;">**Golds**</span> in the creation of a truly comprehensive middle party. These events, coupled with the hostility that has arisen towards the party, have significantly dampened the initial enthusiasm surrounding its founding. ?]{!</p>!}
 
