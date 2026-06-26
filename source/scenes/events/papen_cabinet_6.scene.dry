@@ -1,4 +1,4 @@
-title: The 'Potempa Five' Stand Trial for Murder
+title: The 'Magi of Borham' Stands Trial for Murder
 subtitle: The <span style="color: #7A3C00;">Royalists</span> are to exploit their conviction as a propaganda tool.
 view-if: chancellor = "Goodryke" and papen_time == 11
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The 'Potempa Five' Stand Trial for Murder
+= The 'Magi of Borham' Stands Trial for Murder
 
-The so-called "Harrow Five"—the <span style="color: #7A3C00;">**Loyalists**</span> men who broke into the home of a <span style="color: #700000;">**Collectivist**</span> miner and brutally beat him to death—are set to stand trial in Goodryke’s newly established special courts, designed to fast-track death penalty cases. The <span style="color: #7A3C00;">Royalists</span> have wasted no time in slandering the victim, referring to him as subhuman for being both <span style="color: #700000;">**Collectivist**</span> and orc-blooded, in a vile attempt to sway public opinion in favor of the murderers.
+The so-called "Magi of Borham"—the <span style="color: #7A3C00;">Royalist</span> mage who struck down a <span style="color: #700000;">**Collectivist**</span> miner with magic in the open street—is set to stand trial in Goodryke’s newly established special courts, designed to fast-track death penalty cases. The <span style="color: #7A3C00;">Royalists</span> have wasted no time in slandering the victim, referring to him as subhuman for being both <span style="color: #700000;">**Collectivist**</span> and orc-blooded, in a vile attempt to sway public opinion in favor of the murderers.
 
 - @papen
 
@@ -27,6 +27,6 @@ The so-called "Harrow Five"—the <span style="color: #7A3C00;">**Loyalists**</s
 title: The verdict goes down...
 on-arrival: loyalist_militancy += 0.05; vanguard_strength += 25; vanguard_militancy += 0.02; burgher_royalist -= 3; burgher_gold += 2; burgher_lvp += 3; guild_royalist -= 5; guild_traditionalist += 5 if traditionalist_ideology == "Radical"; guild_gold += 2; guild_dnf += 3; landed_royalist -= 3; landed_traditionalist += 3 if traditionalist_ideology == "Radical"; landed_gold += 1; landed_dnf += 3; pro_republic -= 3; commons_collectivist += 4; disfavored_collectivist += 4; dufour_gallax_r -= 1; potempa_five_convicted = 1
 
-Convicted! The five <span style="color: #7A3C00;">**Loyalists**</span> men have been sentenced to death for their atrocious crime. Yet the <span style="color: #7A3C00;">Royalists</span> have only intensified their propaganda, portraying the killers as national heroes and the murder as a patriotic act. This grotesque campaign has emboldened the <span style="color: #7A3C00;">**Loyalists**</span>, with the <span style="color: #7A3C00;">**Royalists**</span> now calling for an escalation in violence to render the Commonwealth "ungovernable."
+Convicted! The mage has been sentenced to death for his atrocious crime. Yet the <span style="color: #7A3C00;">Royalists</span> have only intensified their propaganda, portraying the killers as national heroes and the murder as a patriotic act. This grotesque campaign has emboldened the <span style="color: #7A3C00;">**Loyalists**</span>, with the <span style="color: #7A3C00;">**Royalists**</span> now calling for an escalation in violence to render the Commonwealth "ungovernable."
 
-Rumors have arisen that Goodryke’s government may commute the sentences to win <span style="color: #7A3C00;">Royalist</span> support when the Assembly reconvenes. But this has dealt a serious blow to [+ royalist_chancellor +]’s so-called “oath of legality.” Public revulsion at the Potempa murders—and the <span style="color: #7A3C00;">Royalists</span>’ open approval—has triggered a backlash among their former supporters. Many religious and conservative voters are horrified, and even President DuFour is reportedly sickened by the affair.
+Rumors have arisen that Goodryke’s government may commute the sentences to win <span style="color: #7A3C00;">Royalist</span> support when the Assembly reconvenes. But this has dealt a serious blow to [+ royalist_chancellor +]’s so-called “oath of legality.” Public revulsion at the Borham murder—and the <span style="color: #7A3C00;">Royalists</span>’ open approval—has triggered a backlash among their former supporters. Many religious and conservative voters are horrified, and even President DuFour is reportedly sickened by the affair.

@@ -1,4 +1,4 @@
-title: The 'Potempa Five' Are Pardoned!
+title: The 'Magi of Borham' Is Pardoned!
 subtitle: Murder excused in the name of politics.
 view-if: chancellor = "Goodryke" and papen_time == 13 and potempa_five_convicted and heartland_leader == "Goodryke"
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The 'Potempa Five' Are Pardoned!
+= The 'Magi of Borham' Is Pardoned!
 
-In a bid to win <span style="color: #7A3C00;">Royalist</span> support for his government, Goodryke and his Justice Minister have bowed to pressure and commuted the murderers' sentences, using his power as Heartland's <i>Commonwealth Commissioner</i>. The hope is that the <span style="color: #7A3C00;">**Royalists**</span> will back Goodryke in the upcoming confidence vote—but this capitulation has only strengthened the <span style="color: #7A3C00;">Royalists</span>, laying bare the government's unwillingness—or inability—to confront them.
+In a bid to win <span style="color: #7A3C00;">Royalist</span> support for his government, Goodryke and his Justice Minister have bowed to pressure and commuted the murderer's sentence, using his power as Heartland's <i>Commonwealth Commissioner</i>. The hope is that the <span style="color: #7A3C00;">**Royalists**</span> will back Goodryke in the upcoming confidence vote—but this capitulation has only strengthened the <span style="color: #7A3C00;">Royalists</span>, laying bare the government's unwillingness—or inability—to confront them.
 
 - @papen
 
