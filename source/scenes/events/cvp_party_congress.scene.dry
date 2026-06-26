@@ -273,7 +273,7 @@ The reorganized factions are as follows:
 
 [? if concord_gold_formed: <span style="color: #D8B868;">Strattonites</span> (<span style="color: #C0A054;">**Golds**</span>) - Trevannon - [? if concord_ideology == "Left" and democratic_points_lead: Relevant?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Limited?][? if concord_ideology != "Left" and not democratic_points_lead: Marginal?]?]
 
-[? if concord_gold_formed: <span style="color: #8C7A3C;">Industrialists</span> (<span style="color: #C0A054;">**Golds**</span>) - Trevannon - [? if concord_ideology != "Left" and not labor_points_lead: Influential?][? if not (concord_ideology != "Left" and not labor_points_lead): Relevant?]?]
+[? if concord_gold_formed: <span style="color: #8C7A3C;">Guild-masters</span> (<span style="color: #C0A054;">**Golds**</span>) - Trevannon - [? if concord_ideology != "Left" and not labor_points_lead: Influential?][? if not (concord_ideology != "Left" and not labor_points_lead): Relevant?]?]
 <hr id="read-marker">
 <span style="color: #000000;">the Unionists</span> (<span style="color: #000000;">**Unionists**</span>) - Aldermoor - [? if concord_ideology == "Left" and democratic_points_lead: Powerful?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
 
@@ -305,7 +305,7 @@ It was widely expected that, with the merger of the two parties, politicians lik
 @lambach
 title: Caradoc Maine, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: Maine was apart of the <span style="color: #6D5298;">Faithful Social</span> wing in the former <span style="color: #3E88B3;">Traditionalists</span>. - <span style="color: #6D5298;">Faithful Social</span> Wing
-unavailable-subtitle: Maine and his Free Guilds face significant animosity from the broader party, particularly the industrialist backers - <span style="color: #6D5298;">Faithful Social</span> Wing.
+unavailable-subtitle: Maine and his Free Guilds face significant animosity from the broader party, particularly the guild-master backers - <span style="color: #6D5298;">Faithful Social</span> Wing.
 choose-if: lambach_unlock
 on-arrival: unionist_relation -= 5; pro_republic -= 5; ddp_relation += 8; gold_relation += 8; lvp_relation += 8; commons_unionist += 10; disfavored_unionist += 5; commons_dnf -= 3; commons_royalist -= 3; commons_marcher -= 3; commons_collectivist -= 2; disfavored_marcher -= 3; disfavored_dnf -= 3; disfavored_royalist -= 3; landed_unionist -= 10; burgher_unionist += 4; burgher_marcher -= 4; guild_unionist -= 10; landed_dnf += 4; guild_dnf += 4; landed_gold += 6; landed_lvp += 8; landed_ddp += 2; guild_gold += 6; guild_ddp += 2; guild_lvp += 8; faithful_unionist -= 6; faithful_marcher += 4; faithful_gold += 2; faithful_lvp += 4; faithful_ddp += 2; concord_leader = "Maine"; concord_right += 5; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/LambachWalther.jpg

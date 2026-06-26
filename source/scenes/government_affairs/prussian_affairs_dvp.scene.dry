@@ -49,7 +49,7 @@ on-arrival: heartland_purge += 1; heartland_police_loyalty += 0.03; nationalism 
 
 The bureaucracy is deeply <span style="color: #808080;">reactionary</span>, and many abuse their power to favor the <span style="color: #3E88B3;">political right</span>. By removing the <span style="color: #3E88B3;">pro-monarchy</span> and <span style="color: #7A3C00;">pro-dictatorship</span> elements, we can democratize it. Some of our opponents claim that we are infringing on individual freedoms, but perhaps the security of the republic requires it.
 
-The <span style="color: #C0A054;">**Golds**</span> fills up the bureaucracy with their own monarchist and industrialist sympathizers.
+The <span style="color: #C0A054;">**Golds**</span> fills up the bureaucracy with their own monarchist and guild-master sympathizers.
 
 @ban_sa
 view-if: royalist_urgency >= 3 and loyalist_banned == 0

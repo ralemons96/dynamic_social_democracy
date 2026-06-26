@@ -1029,7 +1029,7 @@ view-if: lvp_formed
 max-visits: 1
 go-to: convince_lvp_success if ((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Coalfax"; convince_lvp_fail if not (((lvp_relation >= 70 and lvp_ideology == "Right") or (lvp_relation >= 60 and lvp_ideology == "Moderate") or (lvp_relation >= 50 and lvp_ideology == "Left")) and lvp_leader != "Coalfax")
 
-The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party.
+The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> guild-masters influencing the party.
 
 @convince_lvp_success
 on-arrival: lvp_support_marcher = 1; lvp_left += 6; lvp_relation += 5; burgher_traditionalist += burgher_lvp*0.1 if not kvp_formed; guild_traditionalist += guild_lvp*0.2 if not kvp_formed; landed_traditionalist += landed_lvp*0.2 if not kvp_formed; burgher_kvp += burgher_lvp*0.1 if not kvp_formed; guild_kvp += guild_lvp*0.2 if not kvp_formed; landed_kvp += landed_lvp*0.2 if not kvp_formed; burgher_lvp *= 0.9; guild_lvp *= 0.8; landed_lvp *= 0.8
@@ -1212,7 +1212,7 @@ view-if: lvp_formed
 max-visits: 1
 go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"))
 
-The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party away from Eckhart.
+The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> guild-masters influencing the party away from Eckhart.
 
 @convince_lvp_success_eckener
 on-arrival: lvp_support_marcher = 1; lvp_left += 3; lvp_relation += 4; guild_lvp -= 2; landed_lvp -= 2; guild_kvp += 2; landed_kvp += 2; guild_kvp += 2 if not kvp_formed; landed_kvp += 2 if not kvp_formed
@@ -1288,4 +1288,4 @@ Thanks to our friendly relations and Eckhart's non-partisanship, the <span style
 on-arrival: gold_support_marcher = 0; gold_right += 1; gold_relation -= 3
 go-to: endorsements_eckener
 
-Unfortunately, under the influence of their industrialist wing, the <span style="color: #C0A054;">**Golds**</span> has rejected our overtures and will continue on their own path.
+Unfortunately, under the influence of their guild-master wing, the <span style="color: #C0A054;">**Golds**</span> has rejected our overtures and will continue on their own path.

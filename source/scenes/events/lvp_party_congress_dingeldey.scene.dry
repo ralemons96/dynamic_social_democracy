@@ -144,7 +144,7 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Party Vote
 
-Coalfax's tenure as leader of the <span style="color: #C0A054;">**Golds**</span> has been marked by a sharp decline in the party’s vote share and a decline in organizational activity. His right-wing positions and close ties to industrialists have made him a divisive figure, with many blaming the party’s rightward shift and association with Major Guilds for its dwindling appeal.
+Coalfax's tenure as leader of the <span style="color: #C0A054;">**Golds**</span> has been marked by a sharp decline in the party’s vote share and a decline in organizational activity. His right-wing positions and close ties to guild-masters have made him a divisive figure, with many blaming the party’s rightward shift and association with Major Guilds for its dwindling appeal.
 
 Despite his unpopularity, the industrial-right remains firmly behind him, giving him a chance to survive the recently introduced vote of no confidence by the left of the party.
 
@@ -153,7 +153,7 @@ Despite his unpopularity, the industrial-right remains firmly behind him, giving
 
 @dingeldey
 title: Coalfax is re-elected.
-subtitle: The industrialists wield significant influence within the <span style="color: #C0A054;">**Golds**</span>, allowing them to leverage their power to sway votes in Coalfax's favor.
+subtitle: The guild-masters wield significant influence within the <span style="color: #C0A054;">**Golds**</span>, allowing them to leverage their power to sway votes in Coalfax's favor.
 view-if: dingeldey_lead
 on-arrival: lvp_relation -= 6; lvp_right += 5; commons_lvp -= 2; burgher_lvp -= 2; landed_lvp -= 2; faithful_lvp -= 2; pro_republic -= 5
 face-image: img/portraits/dingeldey.jpg
@@ -162,7 +162,7 @@ Unexpectedly—and unfortunately for us—Coalfax has survived the vote of no co
 
 @dingeldey_fail
 title: Coalfax is ousted!
-subtitle: The industrialists cannot buy their way out of the mess Coalfax has created.
+subtitle: The guild-masters cannot buy their way out of the mess Coalfax has created.
 view-if: not dingeldey_lead
 on-arrival: {!
 

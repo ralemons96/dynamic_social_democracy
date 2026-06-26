@@ -124,7 +124,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if ((Q.nationalization_progress >= 1 && Q.wtb_implemented >= 1) || (Q.wtb_implemented >= 1 && Q.moderate_plan_progress >= 1) || (Q.nationalization_progress >= 1 && Q.moderate_plan_progress >= 1)) {
       this.achieve("wirtschaftsexperiment");
   }
-  // Syndikalismus - support factory takeovers by workers.
+  // Syndikalismus - support workshop takeovers by workers.
   if (Q.factory_takeovers >= 2) {
       this.achieve("syndikalismus");
   }
@@ -1404,7 +1404,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Syndikalismus</div>
-      <div class="achievement_subtitle"> - support factory takeovers by the workers.</div>
+      <div class="achievement_subtitle"> - support workshop takeovers by the workers.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3316,7 +3316,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Syndikalismus</div>
-      <div class="achievement_subtitle"> - support factory takeovers by the workers.</div>
+      <div class="achievement_subtitle"> - support workshop takeovers by the workers.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5227,7 +5227,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Syndikalismus</div>
-      <div class="achievement_subtitle"> - support factory takeovers by the workers.</div>
+      <div class="achievement_subtitle"> - support workshop takeovers by the workers.</div>
     </div>
   {!</td>!}
 {!</tr>!}

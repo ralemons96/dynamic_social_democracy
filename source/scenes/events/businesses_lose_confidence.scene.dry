@@ -8,7 +8,7 @@ tags: event
 
 = Businesses Lose Confidence
 
-Because of our government's policies, which are perceived as anti-business, the capitalists are reducing their investment and laying off workers. This has the immediate effect of raising unemployment and dissent against our government, especially among the middle class.
+Because of our government's policies, which are perceived as anti-business, the guild-masters are reducing their investment and laying off workers. This has the immediate effect of raising unemployment and dissent against our government, especially among the middle class.
 
 The business community has a variety of suggestions as to how we might improve the business environment.
 
@@ -20,12 +20,12 @@ The business community has a variety of suggestions as to how we might improve t
 @taxes
 on-arrival: upper_tax_rates -= 1; budget -= 1; capital_strike_progress -= 1; disfavored -= 1; burgher_marcher += 4*(1-dissent); guild_marcher += 4*(1-dissent); collectivist_coalition_dissent += 1; collectivist_relation -= 5; left_dissent += 5; commons_marcher -= 5; disfavored_marcher -= 5; 
 
-Cutting taxes improves our relationship with the capitalists.
+Cutting taxes improves our relationship with the guild-masters.
 
 @welfare
 on-arrival: welfare -= 1; budget += 1; capital_strike_progress -= 2; burgher_marcher += 2*(1-dissent); guild_marcher += 2*(1-dissent); commons_marcher -= 5; disfavored_marcher -= 5; disfavored -= 1; left_dissent += 5; labor_dissent += 5; center_dissent += 5; collectivist_coalition_dissent += 1; inflation -= 1; goal_marcher_cancel += 1
 
-Cutting welfare improves our relationship with the capitalists, but it hurts our working-class base.
+Cutting welfare improves our relationship with the guild-masters, but it hurts our working-class base.
 
 
 @nothing

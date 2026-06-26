@@ -9,9 +9,9 @@ new-page: true
 
 = <span style="color: #C0A054;">**Golds**</span> Party Vote
 
-The non-industrialist and Strattonite elements of the <span style="color: #C0A054;">**Golds**</span> have revolted, angered by their marginalization at the hands of the industrialists, who have pushed to realign Stratton’s former party with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>.
+The non-guild-master and Strattonite elements of the <span style="color: #C0A054;">**Golds**</span> have revolted, angered by their marginalization at the hands of the guild-masters, who have pushed to realign Stratton’s former party with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>.
 
-Led by Joss Karnoth, a Axton lawyer, and Count Alexander zu Dohna, a legal expert and widely respected figure on the party’s left wing, they aim to publicly challenge Coalfax and the industrialist faction that has effectively puppeteered him.
+Led by Joss Karnoth, a Axton lawyer, and Count Alexander zu Dohna, a legal expert and widely respected figure on the party’s left wing, they aim to publicly challenge Coalfax and the guild-master faction that has effectively puppeteered him.
 
 They both advocate for cooperation with the minor propertied parties and the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and firmly reject what they call the “psychosis of <span style="color: #7A3C00;">Imperial Sovereigntism</span>.”
 
@@ -22,7 +22,7 @@ title: Coalfax loses the vote of no confidence!
 on-arrival: gold_leader = "zu Dohna-Schlodien"; gold_left += 5; liberal_cooperation += 5; bourgeois_cooperation += 5; gold_relation += 15; gold_relation = 25 if gold_relation < 25; burgher_gold += 4; guild_gold += 4; landed_gold += 2; pro_republic += gold_votes*2; ddp_right += 2; ddp_cohesion += 2
 face-image: img/portraits/dohna.jpg
 
-At a divisive party congress, prominent figures from the party’s left wing—such as Holt, Vellt, and Curtius—force a vote on Coalfax’s leadership of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is ousted, replaced by zu Dohna, prompting the industrialist faction to withdraw its support and shift its funds to the right.
+At a divisive party congress, prominent figures from the party’s left wing—such as Holt, Vellt, and Curtius—force a vote on Coalfax’s leadership of the <span style="color: #C0A054;">**Golds**</span>. Coalfax is ousted, replaced by zu Dohna, prompting the guild-master faction to withdraw its support and shift its funds to the right.
 
 However, the <span style="color: #C0A054;">**Golds**</span>’s move to distance itself from its former industrial backers—and its renewed campaign to revive Stratton’s legacy—has done much to restore some of its lost electoral strength.
 

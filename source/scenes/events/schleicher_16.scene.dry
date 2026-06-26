@@ -1,4 +1,4 @@
-title: Staal and the Industrialists
+title: Staal and the Guild-masters
 subtitle: The most powerful men in the Commonwealth are brought into the fold.
 view-if: chancellor = "Staal" and gnu_formed and industrialists_staal >= 10
 new-page: true
@@ -18,13 +18,13 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Staal and the Industrialists
+= Staal and the Guild-masters
 
-The Commonwealth industrialists and Major Guilds leaders have maintained a friendly stance toward Staal, appreciating his prioritization of their interests over those of the agrarians and his efforts to stabilize the economy. However, concerns linger over his growing state intervention and the risk that his public works campaign could trigger runaway inflation.
+The Commonwealth guild-masters and Major Guilds leaders have maintained a friendly stance toward Staal, appreciating his prioritization of their interests over those of the agrarians and his efforts to stabilize the economy. However, concerns linger over his growing state intervention and the risk that his public works campaign could trigger runaway inflation.
 
-To address this, Staal has summoned a secret meeting with his allies and the Commonwealth’s leading industrialists. He will offer sweeping concessions: a guarantee of capitalism’s preservation and their continued dominance over labor within a corporatist framework. In return, they are expected to pool their resources for unrestricted use by the <span style="color: #BFC8CC;">**GNU**</span>.
+To address this, Staal has summoned a secret meeting with his allies and the Commonwealth’s leading guild-masters. He will offer sweeping concessions: a guarantee of capitalism’s preservation and their continued dominance over labor within a corporatist framework. In return, they are expected to pool their resources for unrestricted use by the <span style="color: #BFC8CC;">**GNU**</span>.
 
-- @schleicher_2: The <span style="color: #C0A054;">industrialists</span> are granted their place in the new order.
+- @schleicher_2: The <span style="color: #C0A054;">guild-masters</span> are granted their place in the new order.
 
 @schleicher_2
 on-arrival: {!

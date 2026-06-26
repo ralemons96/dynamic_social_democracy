@@ -41,7 +41,7 @@ Do we support their radical labor policy?
 @labor_support
 on-arrival: capital_strike_progress += 2; commons_collectivist += 5; commons_marcher += 3*(1-dissent); collectivist_labor_support += 1; coalition_dissent += 1; unionist_relation -= 6; unemployment += 2; collectivist_influence += 2
 
-The pro-labor policy is popular among workers and is bringing the <span style="color: #700000;">**Collectivists**</span> more support, but in response businesses are laying off more workers and reducing hours. This is setting the government up for a confrontation with the capitalists.
+The pro-labor policy is popular among workers and is bringing the <span style="color: #700000;">**Collectivists**</span> more support, but in response businesses are laying off more workers and reducing hours. This is setting the government up for a confrontation with the guild-masters.
 
 @labor_oppose
 on-arrival: collectivist_coalition_dissent += 1; commons_marcher -= 5; commons_collectivist += 5; collectivist_relation -= 6

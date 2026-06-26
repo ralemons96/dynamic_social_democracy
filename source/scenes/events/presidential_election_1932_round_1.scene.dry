@@ -693,7 +693,7 @@ There is no majority in this round. In the second round, any candidate who wins 
 
 [? if traditionalist_candidate_1932 == "Dusterel": Due to [+ traditionalist_candidate_1932 +]'s poor performance, he has withdrawn from the race and personally endorsed [? if reactionary_candidate_1_votes >= reactionary_candidate_2_votes: [+ reactionary_candidate_1932 +]?][? if reactionary_candidate_2_votes > reactionary_candidate_1_votes: [+ secondary_reactionary_candidate_1932 +]?]—despite widespread dislike of him among his supporters. Meanwhile, Mallin has urged his followers to abstain from the second round, drawing intense criticism from within his own party. How this will impact the runoff remains uncertain, but [+ royalist_candidate_1932 +] is likely to capture a sizable share of these voters. ?][? if traditionalist_candidate_1932 == "Mallin": Due to [+ traditionalist_candidate_1932 +]'s poor performance, he has withdrawn from the race and urged his followers to abstain from the second round, drawing intense criticism from within his own party. How this will impact the runoff remains uncertain, but [+ royalist_candidate_1932 +] is likely to capture a sizable share of these voters. ?]
 
-[? if dufour_confidence: DuFour has narrowly missed securing the required majority for a first-round victory, making his success in the runoff highly probable. With state and local elections just a month away, the industrialists and parties backing him have redirected their remaining campaign funds to those contests, confident that his victory is all but assured. This, however, presents a valuable opportunity for [+ royalist_candidate_1932 +] to gain support among [+ traditionalist_candidate_1932 +] voters and leverage their dominance in the presidential campaign to coincide with their local efforts. ?]
+[? if dufour_confidence: DuFour has narrowly missed securing the required majority for a first-round victory, making his success in the runoff highly probable. With state and local elections just a month away, the guild-masters and parties backing him have redirected their remaining campaign funds to those contests, confident that his victory is all but assured. This, however, presents a valuable opportunity for [+ royalist_candidate_1932 +] to gain support among [+ traditionalist_candidate_1932 +] voters and leverage their dominance in the presidential campaign to coincide with their local efforts. ?]
 
 [? if thalmann_votes < 15 and thalmann_votes: The <span style="color: #700000;">**Collectivists**</span> have suffered a demoralizing defeat, leaving many of their supporters disillusioned about the prospects of revolution—a future they once saw as inevitable given the Commonwealth’s current state. In the second round, many will abstain from voting altogether, while a small minority may even cast their ballots for [? if not marcher_campaign: [+ royalist_candidate_1932 +] ?][? if marcher_campaign: [+ marcher_candidate_1932 +] ?]in an effort to make their vote count. ?]
 
@@ -749,7 +749,7 @@ view-if: lvp_formed and eckener_campaign and not lvp_support_marcher
 max-visits: 1
 go-to: convince_lvp_success_eckener if ((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"); convince_lvp_fail_eckener if not (((lvp_relation >= 50 and lvp_ideology == "Right") or (lvp_relation >= 40 and lvp_ideology == "Moderate") or (lvp_relation >= 30 and lvp_ideology == "Left")) and (lvp_leader != "Coalfax" or lvp_ideology != "Right"))
 
-The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party away from Eckhart.
+The <span style="color: #FFCC00;">liberal</span> vote has been falling over time, especially during the current economic depression, so they will probably be of minimal help to us. Still, every little bit counts. They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> guild-masters influencing the party away from Eckhart.
 
 @convince_lvp_success_eckener
 on-arrival: lvp_support_marcher = 1; lvp_left += 3; lvp_relation += 4; guild_lvp -= 2; landed_lvp -= 2; guild_kvp += 2; landed_kvp += 2; guild_kvp += 2 if not kvp_formed; landed_kvp += 2 if not kvp_formed
@@ -826,7 +826,7 @@ Thanks to our friendly relations and Eckhart's non-partisanship, the <span style
 on-arrival: gold_support_marcher = 0; gold_right += 1; gold_relation -= 3
 go-to: round2_menu
 
-Unfortunately, under the influence of their industrialist wing, the <span style="color: #C0A054;">**Golds**</span> has rejected our overtures and will continue on their own path.
+Unfortunately, under the influence of their guild-master wing, the <span style="color: #C0A054;">**Golds**</span> has rejected our overtures and will continue on their own path.
 
 @round2_organizational_endorsement
 title: What about the endorsements of the non-partisan organizations?
@@ -1015,7 +1015,7 @@ if ((Q.lvp_relation >= 65 && Q.lvp_ideology == "Right" || Q.lvp_relation >= 55 &
 !}
 go-to: round2_convince_lvp_success if convince_lvp_success == 1; round2_convince_lvp_fail if convince_lvp_success == 0; round2_convince_lvp_partial if convince_lvp_success == 2
 
-[? if gallax_support_dufour: The <span style="color: #7A3C00;">Royalists</span>'s support of DuFour has dampened their enthusiasm, perhaps we can convince them to turn away from him? ?] They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> industrialists influencing the party.
+[? if gallax_support_dufour: The <span style="color: #7A3C00;">Royalists</span>'s support of DuFour has dampened their enthusiasm, perhaps we can convince them to turn away from him? ?] They will certainly be a hard party to convince, with vehemently anti-<span style="color: #c00000;">Reformist</span> guild-masters influencing the party.
 
 @round2_convince_lvp_success
 on-arrival: lvp_support_marcher = 1; lvp_left += 4; lvp_relation += 3; burgher_traditionalist += burgher_lvp*0.05 if not kvp_formed; guild_traditionalist += guild_lvp*0.15 if not kvp_formed; landed_traditionalist += landed_lvp*0.15 if not kvp_formed; burgher_kvp += burgher_lvp*0.05 if not kvp_formed; guild_kvp += guild_lvp*0.15 if not kvp_formed; landed_kvp += landed_lvp*0.15 if not kvp_formed; burgher_lvp *= 0.95; guild_lvp *= 0.85; landed_lvp *= 0.85
@@ -1247,7 +1247,7 @@ go-to: achievement_check_1
 
 Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**Laborists**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
-However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Collectivist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
+However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Collectivist**</span>. Guild-masters, equally displeased, may resort to protest through their own means.
 
 @eckener_wins
 on-arrival: president = "Eckhart"; president_ideology = "Moderate"; reformist_dissent -= 20; center_dissent -= 5; labor_dissent -= 5; reformist_strength += 20; commons_marcher += 4*(1-dissent); disfavored_marcher += 2*(1-dissent); guild_marcher += 2*(1-dissent); burgher_marcher += 2*(1-dissent); landed_marcher += 2*(1-dissent)

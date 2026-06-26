@@ -250,7 +250,7 @@ face-image: img/portraits/dietrich.jpg
 
 Albrecht Dietrich, formerly affiliated with the business wing of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, has been elected chairman of the <span style="color: #C0A054;">**Golds**</span>. Dietrich is mainly supported by smaller businesses and ruralites, and [? if chancellor == "Askew" and not marcher_in_government: is known for formulating Askew's emergency decrees during his tenure as Finance Minister.?][? if not (chancellor == "Askew" and not marcher_in_government): is known for his fiscal conservatism.?]
 
-Despite this, Dietrich is not as extreme as the industrialists on the right of the party and remains open to cooperation with us if there is no other majority. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
+Despite this, Dietrich is not as extreme as the guild-masters on the right of the party and remains open to cooperation with us if there is no other majority. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @curtius
 title: Julius Curtius is elected!

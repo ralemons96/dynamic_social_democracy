@@ -67,7 +67,7 @@ is-special: true
 
 [? if gnu_existed: <div style="display: flex; gap: 5px; margin-bottom: 5px; margin-left: -3px;"> ?]
 [? if gnu_existed: <img src="img/beauty_of_labor.jpg" alt="Workers and Free Guilds" style="width: 50%;"> ?]
-[? if gnu_existed: <img src="img/capitalism.jpg" alt="Big Business and Industrialists" style="width: 50%;"> ?]
+[? if gnu_existed: <img src="img/capitalism.jpg" alt="Big Business and Guild-masters" style="width: 50%;"> ?]
 [? if gnu_existed: </div> ?]
 
 [? if gnu_existed: <div style="display: flex; justify-content: space-between; gap: 0px; margin-bottom: 5px;"> ?]
@@ -77,7 +77,7 @@ is-special: true
 [? if gnu_existed: <p style="margin-bottom: 2px;">Opinion of [+ chancellor +]: [+ commons_staal : staal_marcher_4 +]</p> ?]
 [? if gnu_existed: </div> ?]
 [? if gnu_existed: <div style="flex: 1; margin-right: -8px;"> ?]
-[? if gnu_existed: <p style="white-space: nowrap;font-weight: bold;margin-bottom: 0px;">Industrialists</p> ?]
+[? if gnu_existed: <p style="white-space: nowrap;font-weight: bold;margin-bottom: 0px;">Guild-masters</p> ?]
 [? if gnu_existed: <p style="margin-bottom: 2px;">Influence: powerful</p> ?]
 [? if gnu_existed: <p style="margin-bottom: 2px;">Opinion of [+ chancellor +]: [+ industrialists_staal : staal_marcher_4 +]</p> ?]
 [? if gnu_existed: </div> ?]

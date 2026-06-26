@@ -248,7 +248,7 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are <span style="color: #c00000;">Reformists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
+**Working Class**: The urban working class - blue-collar workers in workshops, mills, mines, and the like. Most are <span style="color: #c00000;">Reformists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
 
 **old middle class**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. 10-15% of the population.
 
@@ -494,7 +494,7 @@ Current relations: [+ unionist_relation : relationships +]
 
 [? if not lvp_formed: Current relations: [+ ddp_relation : relationships +] ?]
 
-[? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span> - (Commonwealth People's Party) - a conservative-liberal party founded by Gustav Stratton, supported by the middle classes, Burghers and industrialists. The industrial and right wing of the party has been gaining noticeable influence in recent years with Stratton's neglect of party affairs. [? if gold_ideology == "Right": The industrial wing of the party has succeeded in it's takeover of the party and are much less inclined to work with us.?] We have occasionally been in coalitions. ?]
+[? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span> - (Commonwealth People's Party) - a conservative-liberal party founded by Gustav Stratton, supported by the middle classes, Burghers and guild-masters. The industrial and right wing of the party has been gaining noticeable influence in recent years with Stratton's neglect of party affairs. [? if gold_ideology == "Right": The industrial wing of the party has succeeded in it's takeover of the party and are much less inclined to work with us.?] We have occasionally been in coalitions. ?]
 
 [? if not lvp_formed and gold_exist: Current relations: [+ gold_relation : relationships +] ?]
 

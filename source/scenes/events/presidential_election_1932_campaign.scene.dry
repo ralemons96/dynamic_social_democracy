@@ -331,7 +331,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: marcher_support_reactionary
 go-to: embezzlement_options
 
-The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options
 
@@ -515,7 +515,7 @@ go-to: bourgeois_campaign_menu
 In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South the Allied States, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial
-title: Carl Slack of IG Farben will attempt to gain support of key industrialists.
+title: Carl Slack of IG Farben will attempt to gain support of key guild-masters.
 subtitle: DuFour has lost the favor of many of his former backers, maybe they can be convinced again?
 on-arrival: industry_used = 1
 max-visits: 1
@@ -533,7 +533,7 @@ Slack, being the former chairman of the National Federation of Commonwealth Indu
 on-arrival: guild_royalist += 4; guild_kvp -= 2; guild_traditionalist -= 2 if industrial_traditionalist_backing >= 2 and traditionalist_ideology == "Moderate"; guild_other -= 4; landed_royalist += 2
 go-to: bourgeois_campaign_menu
 
-Despite the antipathy the industrialists have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
+Despite the antipathy the guild-masters have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
 
 @religion
 title: The Temple of the Faithful and the dissenting churches have long held political neutrality, perhaps that will change?
@@ -686,7 +686,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: not marcher_support_reactionary
 go-to: embezzlement_options_op
 
-The finances of the DuFour campaign are in disarray. Influential industrialists and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options_op
 
@@ -784,7 +784,7 @@ go-to: bourgeois_campaign_menu_op
 In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Graf Zeppelin pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to South the Allied States, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial_op
-title: Carl Slack of IG Farben will attempt to gain support of key industrialists.
+title: Carl Slack of IG Farben will attempt to gain support of key guild-masters.
 subtitle: DuFour has lost the favor of many of his former backers, maybe they can be convinced again?
 on-arrival: industry_used = 1
 max-visits: 1
@@ -802,7 +802,7 @@ Slack, being the former chairman of the National Federation of Commonwealth Indu
 on-arrival: guild_royalist += 4; guild_kvp -= 2; guild_traditionalist -= 2 if industrial_traditionalist_backing >= 2 and traditionalist_ideology == "Moderate"; guild_other -= 4; landed_royalist += 2
 go-to: bourgeois_campaign_menu_op
 
-Despite the antipathy the industrialists have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
+Despite the antipathy the guild-masters have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
 
 @religion_op
 title: The Temple of the Faithful and the dissenting churches have long held political neutrality, perhaps that will change?

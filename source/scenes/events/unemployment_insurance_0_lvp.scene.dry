@@ -37,7 +37,7 @@ Unfortunately, we must accept this if we are to maintain this coalition. The <sp
 The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the Burghers, have joined in criticizing us for our austerity.
 
 @compromise
-unavailable-subtitle: [? if lvp_relation < 25: We do not have good enough relations with the right-wing parties.?] [? if lvp_right - lvp_left > 8: The <span style="color: #C0A054;">**Golds**</span> industrialists have great control over their party. ?]
+unavailable-subtitle: [? if lvp_relation < 25: We do not have good enough relations with the right-wing parties.?] [? if lvp_right - lvp_left > 8: The <span style="color: #C0A054;">**Golds**</span> guild-masters have great control over their party. ?]
 choose-if: lvp_relation >= 25 and (lvp_right - lvp_left < 8)
 
 [? if not stresemann_dead: Stratton?][? if stresemann_dead: The Strattonites?] and other friendly figures of the former <span style="color: #C0A054;">**Golds**</span> has managed to rally [? if lvp_ideology == "Right" or lvp_ideology == "Moderate": an extremely slim majority of the party?][? if lvp_ideology == "Left": a majority of the party?] to vote in favor of a compromise that contains cuts to the program without increasing contributions. While this is not an ideal solution, what other choice do we have?
@@ -53,7 +53,7 @@ We have accepted the compromise offered by the Burghers. Many of the workers and
 
 @accept_compromise_good
 choose-if: lvp_ideology == "Left" and lvp_relation >= 45
-unavailable-subtitle: [? if lvp_ideology != "Left": The <span style="color: #C0A054;">**Golds**</span> industrialists have great control over their party. ?] [? if lvp_relation < 45: We do not have good enough relations with the right-wing parties. ?]
+unavailable-subtitle: [? if lvp_ideology != "Left": The <span style="color: #C0A054;">**Golds**</span> guild-masters have great control over their party. ?] [? if lvp_relation < 45: We do not have good enough relations with the right-wing parties. ?]
 on-arrival: reformist_strength += 10; reformist_dissent -= 5; coalition_dissent -= 1; guild_lvp -= 3; guild_royalist += 3; unemployment_insurance_threshold = disfavored; gold_left += 3; ddp_left += 1; lvp_left += 3; ddp_cohesion += 1; unemployment_goal_marcher += 1; economic_growth -= 0.1
 
 We have pushed for an increase in both employer and employee contributions rather than to cut benefits for the program itself. The <span style="color: #C0A054;">**Golds**</span> accepts with the influence of [? if not stresemann_dead: Stratton?][? if stresemann_dead: the Strattonites?] and pressures from members of the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.

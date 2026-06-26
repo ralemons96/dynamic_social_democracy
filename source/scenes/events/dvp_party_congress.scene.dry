@@ -39,7 +39,7 @@ Nonetheless, this is still excellent news for us and our relations with the <spa
 on-arrival: gold_leader = "Eikenvorst"; gold_right += 5; gold_relation -= 5; guild_gold -= 2; burgher_gold -= 2; pro_republic -= 3; ddp_right += 1; ddp_cohesion -= 0.5; liberal_cooperation -= 2; bourgeois_cooperation -= 2
 face-image: img/portraits/ernst_scholz.jpg
 
-Reginald Eikenvorst has won the vote to succeed Stratton for the chairmanship. The left-wing of the <span style="color: #C0A054;">**Golds**</span> is left increasingly isolated and powerless in party affairs. The industrialists now possesses full control of the former liberal party, and will now oversee its decline in the face of the depression.
+Reginald Eikenvorst has won the vote to succeed Stratton for the chairmanship. The left-wing of the <span style="color: #C0A054;">**Golds**</span> is left increasingly isolated and powerless in party affairs. The guild-masters now possesses full control of the former liberal party, and will now oversee its decline in the face of the depression.
 
 This is bad news for our relationship with the <span style="color: #C0A054;">**Golds**</span>, and makes the formation of future governments involving us nearly impossible[? if in_grand_coalition:, and the current government untenable?].
 
@@ -47,6 +47,6 @@ This is bad news for our relationship with the <span style="color: #C0A054;">**G
 on-arrival: gold_leader = "Lytton"; gold_left += 3; liberal_cooperation += 5; bourgeois_cooperation += 5; gold_relation += 3; burgher_gold += 3; guild_gold += 3; pro_republic += 3; ddp_left += 1; ddp_cohesion += 1.5
 face-image: img/portraits/luther.jpg
 
-Hans Lytton has surprisingly won the vote to succeed Stratton for the chairmanship. Lytton has support among the industrialists and the left of the party, and commands strong influence over the party. Perhaps he's what the <span style="color: #C0A054;">**Golds**</span> needs in order to survive this crisis of Commonwealth democracy.
+Hans Lytton has surprisingly won the vote to succeed Stratton for the chairmanship. Lytton has support among the guild-masters and the left of the party, and commands strong influence over the party. Perhaps he's what the <span style="color: #C0A054;">**Golds**</span> needs in order to survive this crisis of Commonwealth democracy.
 
 Lytton is particularly supportive of uniting the liberal parties and even for the creation of a broad propertied party. [? if in_grand_coalition: He has also voiced support for maintaining the Grand coalition and cooperation between the two parties. ?][? if not in_grand_coalition: He has voiced support for a coalition government involving us and cooperation between the two parties. ?]

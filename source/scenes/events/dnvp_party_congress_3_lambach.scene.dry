@@ -51,7 +51,7 @@ The turmoil within the <span style="color: #3E88B3;">**Traditionalists**</span> 
 
 @lambach
 choose-if: lambach_trigger and not westarp_trigger and not schiele_trigger
-unavailable-subtitle: [? if schiele_trigger: The <span style="color: #385A38;">agrarian</span> wing of the <span style="color: #3E88B3;">Traditionalists</span> objects, alienated by Maine's preference of the workers. ?][? if westarp_trigger: The national conservatives and industrialists object, claiming that the balance of power is out of order. ?]
+unavailable-subtitle: [? if schiele_trigger: The <span style="color: #385A38;">agrarian</span> wing of the <span style="color: #3E88B3;">Traditionalists</span> objects, alienated by Maine's preference of the workers. ?][? if westarp_trigger: The national conservatives and guild-masters object, claiming that the balance of power is out of order. ?]
 on-arrival: lambach_stays = 1; landed_traditionalist -= 6; landed_royalist += 4; landed_dnf += 4; burgher_traditionalist += 2; burgher_marcher -= 2; guild_traditionalist -= 6; guild_royalist += 4; guild_dnf += 2; burgher_gold += 4; guild_gold += 4; burgher_lvp += 4; guild_lvp += 4; landed_gold += 3; landed_lvp += 3; commons_traditionalist += 12; commons_unionist -= 3; commons_marcher -= 6; commons_royalist -= 4; faithful_traditionalist += 4; faithful_unionist -= 2; faithful_other -= 2; pro_republic += 3; gold_right += 3; ddp_right += 1.5; lvp_right += 2
 face-image: img/portraits/LambachWalther.jpg
 achievement: christlicher_sozialismus

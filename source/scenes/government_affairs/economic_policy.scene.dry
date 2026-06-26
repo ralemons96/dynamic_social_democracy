@@ -93,7 +93,7 @@ choose-if: not industrial_levy
 on-arrival: industrial_levy = 1; reformist_dissent += 10; left_strength += 5; left_dissent -= 5; burgher_marcher -= 4; burgher_ddp -= 2; burgher_royalist += 6; burgher_marcher -= 4; guild_ddp -= 2; guild_royalist += 6; pro_republic -= 3; capital_strike_progress += 3; disfavored += 1; inflation -= 0.8; economic_growth -= 0.8; upper_tax_rates += 1; budget += 1; ddp_right += 3; gold_right += 8; lvp_right += 6; ddp_cohesion -= 3; ddp_relation -= 8; gold_relation -= 15; unionist_relation -= 5; lvp_relation -= 12; dufour_angry += 20; goal_marcher_cancel_peoples += 1
 go-to: austerity
 
-We have kept the collection of the industrial levy, despite it no longer being used to fund our reparation payments. We have expectedly earned the ire of the business community[? if president == "DuFour":, who will take their complaints to President DuFour?]. In response to our decision, industrialists will double their financial support for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>[? if in_grand_coalition and not lvp_formed:, and the <span style="color: #C0A054;">**Golds**</span>, in hopes that they'll take down our government?][? if (in_weimar_coalition or in_grand_coalition) and lvp_formed:, and the <span style="color: #C0A054;">**Golds**</span>, in hopes that they'll take down our government?].
+We have kept the collection of the industrial levy, despite it no longer being used to fund our reparation payments. We have expectedly earned the ire of the business community[? if president == "DuFour":, who will take their complaints to President DuFour?]. In response to our decision, guild-masters will double their financial support for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>[? if in_grand_coalition and not lvp_formed:, and the <span style="color: #C0A054;">**Golds**</span>, in hopes that they'll take down our government?][? if (in_weimar_coalition or in_grand_coalition) and lvp_formed:, and the <span style="color: #C0A054;">**Golds**</span>, in hopes that they'll take down our government?].
 
 @wtb_2
 title: Continue the implementation of the Voss Renewal Plan.
@@ -170,7 +170,7 @@ go-to: nationalize_deficit if budget < nationalize_budget; nationalize_no_defici
 on-arrival: nationalization_progress += 1; capital_strike_progress += 2; disfavored -= 3.5 if disfavored >= 6; disfavored -= 1.2 if works_councils >= 3; commons += 2 if nationalization_progress < 2; budget -= nationalize_budget; works_program += 1; commons_marcher += 8*(1-dissent); disfavored_marcher += 5*(1-dissent); coalition_dissent += 1; gold_relation -= 4; lvp_relation -= 4; left_dissent -= 5; burgher_marcher -= 2; guild_marcher -= 3; economy_goal_completed += 1; economic_plan_goal_marcher += 1; inflation += 2; gold_right += 2; ddp_relation -= 4; ddp_right += 3; ddp_cohesion -= 2; lvp_right += 2; goal_marcher_cancel_peoples += 1; economic_growth += 1.7 if economic_growth < 5;
 achievement: wirtschaftspolitik
 
-[? if nationalization_progress == 1 : We have begun purchasing idling enterprises from the capitalists[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
+[? if nationalization_progress == 1 : We have begun purchasing idling enterprises from the guild-masters[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
 
 [? if nationalization_progress == 1 : The Left argues that this should only be a first step in the <span style="color: #c00000;">Reformist</span> transformation of the economy. Eventually, much of the economy must be brought under popular control. ?]
 
@@ -178,7 +178,7 @@ achievement: wirtschaftspolitik
 
 @nationalize_deficit
 
-Unfortunately, we do not have the budget to begin buying out industrial facilities. Some are urging for deficit spending in order to purchase factories, while others are encouraging (currently illegal) factory takeovers by workers, or nationalization without compensation. Taking any of these actions would require a vast departure from our previous party stances.
+Unfortunately, we do not have the budget to begin buying out industrial facilities. Some are urging for deficit spending in order to purchase workshops, while others are encouraging (currently illegal) workshop takeovers by workers, or nationalization without compensation. Taking any of these actions would require a vast departure from our previous party stances.
 
 - @nationalize_deficit_1
 - @nationalize_without_compensation
@@ -196,7 +196,7 @@ achievement: wirtschaftspolitik
 
 [? if woytinsky_advisor: Most of the party, even on the left, are opposed to budget deficits for any purpose, with the exception of Valdemar Voss. While he did not originally support the left's "transformational" plan, he has come around, and has persuaded the party and the Finance Ministry to support budget deficits in limited cases, for the purpose of exiting from the depression. ?]
 
-[? if nationalization_progress == 1 : We have begun purchasing idling enterprises from the capitalists[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
+[? if nationalization_progress == 1 : We have begun purchasing idling enterprises from the guild-masters[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
 
 [? if nationalization_progress == 1 : The Left argues that this should only be a first step in the <span style="color: #c00000;">Reformist</span> transformation of the economy. Eventually, much of the economy must be brought under popular control. ?]
 
@@ -204,29 +204,29 @@ achievement: wirtschaftspolitik
 
 @nationalize_without_compensation
 title: Nationalize without compensation.
-subtitle: There is no reason why we should not simply take over idle factories. This is likely to provoke a confrontation with the capitalists.
+subtitle: There is no reason why we should not simply take over idle workshops. This is likely to provoke a confrontation with the guild-masters.
 unavailable-subtitle: [? if left_strength <= reformist_strength + center_strength: The bulk of the party does not support this quasi-legal action. ?] [? if judicial_reform < 3 : The judiciary would oppose this action. ?]
 choose-if: left_strength > reformist_strength + center_strength and judicial_reform >= 3
 on-arrival: nationalization_progress += 1; capital_strike_progress += 7; coup_progress += 3; disfavored -= 2.5 if disfavored >= 6; disfavored -= 1.2 if works_councils >= 3 and disfavored >= 3; works_program += 1; commons_marcher += 8*(1-dissent); disfavored_marcher += 6*(1-dissent); coalition_dissent += 2; coalition_dissent -= 1 if unionist_leader == "Stilling"; gold_relation -= 10; unionist_relation -= 8; ddp_relation -= 8; lvp_relation -= 10; left_strength += 15; reformist_dissent += 10; left_dissent -= 10; burgher_marcher -= 5; guild_marcher -= 8; economy_goal_completed += 1; economic_plan_goal_marcher += 1; collectivist_relation += 5*(1-dissent); inflation += 4; gold_right += 5; ddp_right += 5; ddp_cohesion -= 2.5; lvp_right += 5; goal_marcher_cancel_peoples += 1; economic_growth += 1 if economic_growth < 4;
 achievement: wirtschaftspolitik
 
-The capitalists are, predictably, up in arms about our policy of nationalization without compensation. They call it illegal expropriation, and it is. Nevertheless, it is clear that they have failed by keeping their factories idle, and we must take radical action.
+The capitalists are, predictably, up in arms about our policy of nationalization without compensation. They call it illegal expropriation, and it is. Nevertheless, it is clear that they have failed by keeping their workshops idle, and we must take radical action.
 
-[? if nationalization_progress == 1 : We have begun acquiring idling enterprises from the capitalists[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
+[? if nationalization_progress == 1 : We have begun acquiring idling enterprises from the guild-masters[? if works_councils >= 1: , and running them in coordination with empowered works councils ?]. By keeping production going, we can stave off the rising unemployment. ?]
 
 [? if nationalization_progress > 1 : We acquired additional underutilized enterprises and run them in a coordinated <span style="color: #c00000;">Reformist</span> fashion with the works councils, hiring formerly laid off workers. A significant portion of the economy is now under public control. ?]
 
 @empower_workers
-title: Empower workers to take over factories.
-subtitle: We can promise to legalize factory occupations, giving the factories over to worker Free Guilds. This is highly confrontational, and would likely provoke a reaction from right-wing militants as well as capitalists.
+title: Empower workers to take over workshops.
+subtitle: We can promise to legalize workshop occupations, giving the workshops over to worker Free Guilds. This is highly confrontational, and would likely provoke a reaction from right-wing militants as well as capitalists.
 unavailable-subtitle: [? if left_strength <= reformist_strength + knight_strength : The bulk of the party does not support this radical action. ?] [? if judicial_reform < 3 : The judiciary would oppose this action. ?] [? if banner_militancy < 0.25 : If we increased the strength of our paramilitary forces, perhaps we could do this. ?] [? if works_councils < 1 : We need the support of the works councils first. ?]
 choose-if: left_strength > reformist_strength + knight_strength and (judicial_reform >= 3 or banner_militancy >= 0.25) and works_councils >= 1
 on-arrival: nationalization_progress += 1; capital_strike_progress += 6; coup_progress += 5; disfavored -= 3 if disfavored >= 6; disfavored -= 1.5 if works_councils >= 3 and disfavored > 4; works_program += 1; commons_marcher += 10*(1-dissent); disfavored_marcher += 10*(1-dissent); coalition_dissent += 2; coalition_dissent -= 1 if unionist_leader == "Stilling"; gold_relation -= 10; unionist_relation -= 8; ddp_relation -= 8; lvp_relation -= 10; commons_royalist -= 5*(1-dissent); disfavored_royalist -= 5*(1-dissent); left_strength += 15; reformist_dissent += 10; left_dissent -= 10; burgher_marcher -= 5; guild_marcher -= 10; factory_takeovers += 1; economy_goal_completed += 1; economic_plan_goal_marcher += 1; collectivist_relation += 5*(1-dissent); inflation += 3; gold_right += 10; ddp_right += 7.5; ddp_cohesion -= 3; lvp_right += 10; goal_marcher_cancel_peoples += 1; economic_growth += 1 if economic_growth < 3;
 achievement: wirtschaftspolitik
 
-The capitalists are, predictably, up in arms about our policy of legalizing factory occupations. They call it illegal expropriation, and it is. Nevertheless, it is clear that they have failed, and we must take radical action.
+The capitalists are, predictably, up in arms about our policy of legalizing workshop occupations. They call it illegal expropriation, and it is. Nevertheless, it is clear that they have failed, and we must take radical action.
 
-<span style="color: #7A3C00;">Sovereigntists</span> have been taking increasingly violent actions around the occupied factories, calling us thieves and looters. However, the some of the working-class supporters of the <span style="color: #7A3C00;">Sovereigntists</span> have been peeled off, or at least the ones with a sense of class solidarity.
+<span style="color: #7A3C00;">Sovereigntists</span> have been taking increasingly violent actions around the occupied workshops, calling us thieves and looters. However, the some of the working-class supporters of the <span style="color: #7A3C00;">Sovereigntists</span> have been peeled off, or at least the ones with a sense of class solidarity.
 
 
 @nationalize_2
