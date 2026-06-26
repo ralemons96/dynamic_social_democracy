@@ -529,7 +529,7 @@ Bram Frask, a convicted Avriza putsch participant, becomes the first <span style
 
 Gone are the days of <span style="color: #c00000;">Red</span> Stathmore. Suspected <span style="color: #c00000;">Reformists</span> and <span style="color: #D3C24D;">democrats</span> are purged en masse from the civil service. A state police force is established, with Frask preferentially employing <span style="color: #7A3C00;">Royalist</span> officials. All <span style="color: #700000;">collectivist</span> teachers and mayors are dismissed, and newspapers critical of government policy are banned. [? if heartland_leader == "Bristol" and interior_minister_party == "Marcher": Fortunately, Joshua Heath is able to halt the recruitment of <span style="color: #7A3C00;">Royalists</span> into the police force by suspending state subsidies, effectively ending the practice. ?]
 
-With control of the Education Ministry, Frask appoints racial researchers and known <span style="color: #7A3C00;">Royalists</span> to top positions at many universities and bans the anti-war book *Silence on the Northern Front* from being read or played. His attempts to grant Gallax Commonwealth citizenship have so far failed, forcing Gallax to look elsewhere.
+With control of the Education Ministry, Frask appoints racial researchers and known <span style="color: #7A3C00;">Royalists</span> to top positions at many universities and bans the anti-war book *The Glorious Dead* from being read or played. His attempts to grant Gallax Commonwealth citizenship have so far failed, forcing Gallax to look elsewhere.
 
 @bourgeois_coalition_thuringia
 title: The incumbent center-right coalition continues governing.

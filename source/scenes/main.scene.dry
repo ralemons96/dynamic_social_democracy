@@ -684,7 +684,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if year = 1929 and month = 1: The king of the eastern marches has established a <span style="color: #808080;">royal dictatorship</span> under the pretext of domestic political turmoil. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>Silence on the Northern Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>The Glorious Dead</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1929 and month = 3 and lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s former labor leaders and leftists, and even some <span style="color: #C0A054;">**Golds**</span> leftists such as Caspar Holt, have established the "Social Republican Circle." This faction aims to shift the party's platform from its current middle-class focus to one that also advocates for the interests of workers. ?]{!</p>!}
 
@@ -950,7 +950,7 @@ max-cards: 3
 
 # not timer but dnvp split occurs anyway on the historical date of all the propertied negotiations so it will still work
 
-{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>Silence on the Northern Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>The Glorious Dead</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
 
 {!<p class="other">!}[? if flavour_8_trigger and flavour_8_trigger_time == time: Many youth and propertied unity organizations that initially supported the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have since distanced themselves from the party due to a sharp rebuff from the <span style="color: #C0A054;">**Golds**</span>'s [+ gold_leader +]. These <span style="color: #C0A054;">**Golds**</span> affiliated organizations, initially frustrated by the lack of progress toward propertied concentration, have now shifted their stance. They condemn the founding of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, arguing that it is incompatible with propertied unity, and called on the founders of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to join the <span style="color: #C0A054;">**Golds**</span> in the creation of a truly comprehensive middle party. These events, coupled with the hostility that has arisen towards the party, have significantly dampened the initial enthusiasm surrounding its founding. ?]{!</p>!}
 
@@ -1972,7 +1972,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if year = 1929 and month = 1: The king of the eastern marches has established a <span style="color: #808080;">royal dictatorship</span> under the pretext of domestic political turmoil. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>Silence on the Northern Front</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 1: The book <i>The Glorious Dead</i>has been released with controversy. The novel describes the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1929 and month = 3 and lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s former labor leaders and leftists, and even some <span style="color: #C0A054;">**Golds**</span> leftists such as Caspar Holt, have established the "Social Republican Circle." This faction aims to shift the party's platform from its current middle-class focus to one that also advocates for the interests of workers. ?]{!</p>!}
 
@@ -2238,7 +2238,7 @@ max-cards: 4
 
 # not timer but dnvp split occurs anyway on the historical date of all the propertied negotiations so it will still work
 
-{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>Silence on the Northern Front</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1930 and month = 8: The film adaptation of the controversial anti-war novel <i>The Glorious Dead</i>has released in the Allied States, but has yet to arrive on our shores. ?]{!</p>!}
 
 {!<p class="other">!}[? if flavour_8_trigger and flavour_8_trigger_time == time: Many youth and propertied unity organizations that initially supported the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have since distanced themselves from the party due to a sharp rebuff from the <span style="color: #C0A054;">**Golds**</span>'s [+ gold_leader +]. These <span style="color: #C0A054;">**Golds**</span> affiliated organizations, initially frustrated by the lack of progress toward propertied concentration, have now shifted their stance. They condemn the founding of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, arguing that it is incompatible with propertied unity, and called on the founders of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to join the <span style="color: #C0A054;">**Golds**</span> in the creation of a truly comprehensive middle party. These events, coupled with the hostility that has arisen towards the party, have significantly dampened the initial enthusiasm surrounding its founding. ?]{!</p>!}
 
