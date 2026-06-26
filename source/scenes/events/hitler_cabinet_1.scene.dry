@@ -31,7 +31,7 @@ view-if: (unionist_in_gov_mini and pro_republic < 30) or far_right_coalition >= 
 
 [? if not concord_formed: [+ unionist_leader +]?][? if concord_formed: [+ concord_formed +]?] is personally assured significant constitutional safeguards by Staal, though he fails to extract a written commitment from [+ chancellor +]. It proves meaningless—[+ chancellor +] never intended to honor them.
 
-Gallax has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against our <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
+Gallax has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled much blood on the streets. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against all who would stand for the republic, and endless wars to force the realms back under the Crown—a crusade that would set all of Athar ablaze.
 
 What are we to do now?
 

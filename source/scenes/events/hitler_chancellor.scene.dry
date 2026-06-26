@@ -9,7 +9,7 @@ new-page: true
 
 Internal scheming by the camarilla surrounding the president has caused President DuFour to appoint Gallax as chancellor, replacing the unpopular [+ chancellor +]. [? if gallax_deported : Despite his earlier deportation, the <span style="color: #7A3C00;">Royalist</span> leaders and their <span style="color: #3E88B3;">reactionary</span> allies have connived for the president to give him Commonwealth citizenship after all. ?] Some of the <span style="color: #808080;">reactionaries</span> surrounding DuFour believe that he will restore the Commonwealth to its supposed former glory, while others believe that they can control him and his movement.
 
-He has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled blood. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.
+He has promised a campaign of revenge against the <span style="color: #c00000;">Reformists</span>, and the <span style="color: #7A3C00;">Royalists</span> have already spilled blood. In his published manifesto, he promises a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against all who would stand for the republic, and endless wars to force the realms back under the Crown—a crusade that would set all of Athar ablaze.
 
 What are we to do now?
 
