@@ -57,7 +57,7 @@ if (Q.traditionalist_r + Q.gold_r >= 12 && Q.hugenberg_gold) Q.hugenberg_gallax_
 
 The co-leader of the <span style="color: #3E88B3;">**Wardens**</span>, alongside Quillon Smitt-Hannover of the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?], expresses serious reservations about [+ royalist_chancellor +]'s chancellorship.
 
-Dusterel's consent is crucial for his co-leader Selden to enter the cabinet, but Dusterel, having been targeted by <span style="color: #7A3C00;">Royalist</span> attacks due to his <span style="color: #005EB8;">Jewish</span> ancestry, remains deeply wary of a [+ royalist_chancellor +] government.
+Dusterel's consent is crucial for his co-leader Selden to enter the cabinet, but Dusterel, having himself been a target of <span style="color: #7A3C00;">Royalist</span> attacks and intimidation, remains deeply wary of a [+ royalist_chancellor +] government.
 
 Noticing his concerns, [+ royalist_chancellor +] immediately approaches Dusterel, assuring him that the attacks were never approved by him, and with a display of sincere emotion, Dusterel relents, dropping his objections.
 
@@ -120,7 +120,7 @@ Although the arch-enemy of democracy had been installed as chancellor, to everyo
 
 Most people have no idea what has befallen them; the installation of yet another chancellor had become such a common occurrence that a dangerous amount of ordinary folk have grown indifferent.
 
-This astonishing turnabout in [+ royalist_leader +]'s fortunes confirmed his belief that he was a man of destiny, certain to succeed in his plan to purify the Commonwealth of <span style="color: #005EB8;">Jews</span>, and wage endless wars of violent expansion all over Europe. Gallax had not seized power; it had been handed to him by the men who at that moment controlled the Commonwealth’s destiny.
+This astonishing turnabout in [+ royalist_leader +]'s fortunes confirmed his belief that he was a man of destiny, certain to succeed in his plan to purge the Commonwealth of all who stood against the Crown, and wage endless wars to force the realms back under the Empress, all across Athar. Gallax had not seized power; it had been handed to him by the men who at that moment controlled the Commonwealth’s destiny.
 
 What are we to do now?
 
