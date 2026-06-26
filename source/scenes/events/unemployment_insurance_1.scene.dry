@@ -1,4 +1,4 @@
-title: Unemployment Insurance Crisis
+title: The Poorman's Pension Crisis
 subtitle: The right wing of our coalition presents an ultimatum.
 new-page: true
 view-if: marcher_in_government = 1 and (((year = 1930 and month >= 3) or year = 1931 or year = 1932) or (year = 1930 and month >= 9 and prolonged_unemployment_insurance = 1)) and in_grand_coalition = 1 and unemployment_insurance_timer = 0 and (disfavored >= unemployment_insurance_threshold + 3.5 or (disfavored >= 20 and disfavored >= unemployment_insurance_threshold)) and not constructive_vonc and president = "DuFour" and not lvp_formed
@@ -9,7 +9,7 @@ max-visits: 2
 face-image: img/Kollwitz_Arbeitslosigkeit.jpg
 go-to: what_do if unemployment_insurance_crisis = 2
 
-= Unemployment Insurance Crisis
+= The Poorman's Pension Crisis
 
 The economic crisis has caused mass layoffs all throughout the Commonwealth, affecting the industrial working class the hardest. Our welfare spending is increasing due to the greater need.
 
@@ -70,7 +70,7 @@ unavailable-subtitle: [? if reformist_strength + center_strength < left_strength
 choose-if: reformist_strength + center_strength >= left_strength + labor_strength / 2 and unemployment_insurance_crisis < 2
 on-arrival: commons_marcher -= 0.1*commons_marcher; disfavored_marcher -= 0.15*disfavored_marcher; commons_collectivist += 2; commons_royalist += 2; disfavored_collectivist += 4; disfavored_royalist += 4; left_dissent += 12; center_dissent += 7; labor_dissent += 12; reformist_dissent += 3; welfare -= 1; disfavored += 1; pro_republic -= 2; collectivist_relation -= 8; inflation -= 1; ddp_cohesion -= 0.5; ddp_right += 1; prolonged_unemployment_insurance = 1; unemployment_insurance_timer = 6; goal_marcher_cancel += 1; economic_growth -= 0.2
 
-A compromise put forward by Edmund Askew is put into place and the issue is delayed until the autumn. A fixed amount is loaned to the program in the meantime, although not nearly enough for the millions of unemployed. The Left and Labor factions view this as a betrayal of our duty to support unemployment insurance during a crisis.
+A compromise put forward by Edmund Askew is put into place and the issue is delayed until the autumn. A fixed amount is loaned to the program in the meantime, although not nearly enough for the millions of unemployed. The Left and Labor factions view this as a betrayal of our duty to support the Poorman's Pension during a crisis.
 
 @compromise
 unavailable-subtitle: [? if gold_relation < 30 or ddp_relation < 30 or (unionist_relation < 30 or (unionist_relation < 25 and unionist_leader == "Hawkins") or (unionist_relation < 20 and unionist_leader == "Stilling")): We do not have good enough relations with the right-wing parties. ?]

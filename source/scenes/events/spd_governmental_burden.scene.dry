@@ -16,7 +16,7 @@ The weight of governance now falls upon our shoulders. It is our responsibility 
 
 [? if marcher_in_government : - Support workers in labor disputes. ?]
 
-[? if marcher_in_government : - Fund unemployment insurance through employers. ?]
+[? if marcher_in_government : - Fund the Poorman's Pension through employers. ?]
 
 [? if marcher_in_government: - Advance women's rights. ?]
 

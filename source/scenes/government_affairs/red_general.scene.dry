@@ -115,7 +115,7 @@ choose-if: staal_marcher_r >= 5 and dufour_staal_r >= 3
 view-if: not staal_labor
 on-arrival: staal_marcher_concession += 1; staal_labor = 1; staal_marcher_influence += 4; staal_marcher_support += 2; staal_marcher_r -= 2; dufour_staal_r -= 1; disfavored -= 1.8; economic_growth += 0.8; inflation += 1.4; budget -= 1; commons_collectivist -= 6; disfavored_collectivist -= 6; commons_royalist -= 2; disfavored_royalist -= 2; commons_marcher += 6; disfavored_marcher += 6; commons_unionist += 2; disfavored_unionist += 2; commons_gnu += 4; disfavored_gnu += 2; commons_gnu_bonus += 4; disfavored_gnu_bonus += 2; pro_republic += 5; labor_dissent -= 40; labor_strength += 15; social_patriot_strength += 10; staal_approval += 2; industrialists_staal_bonus -= 1
 
-The <span style="color: #c00000;">Social</span> General has lived up to his nickname: the means test for unemployment insurance has been abolished, and an eight-hour workday has been reinstated in select industries to "spread out" the work among more people. Funding for the Labor Ministry, gutted under Goodryke, has been restored, and welfare levels are climbing back from their absolute lows.
+The <span style="color: #c00000;">Social</span> General has lived up to his nickname: the means test for the Poorman's Pension has been abolished, and an eight-hour workday has been reinstated in select industries to "spread out" the work among more people. Funding for the Labor Ministry, gutted under Goodryke, has been restored, and welfare levels are climbing back from their absolute lows.
 
 The downside is clear—Staal now holds significant leverage over the unions, and many workers are beginning to place their loyalty in the chancellor, rather than the party that fought to make this possible.
 

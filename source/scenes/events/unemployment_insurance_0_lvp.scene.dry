@@ -1,4 +1,4 @@
-title: Unemployment Insurance Crisis
+title: The Poorman's Pension Crisis
 subtitle: The <span style="color: #C0A054;">**Golds**</span> presents an ultimatum.
 new-page: true
 view-if: marcher_in_government = 1 and (year = 1929 and month >= 10) and (in_grand_coalition or in_weimar_coalition) and lvp_formed and not ui0_seen and not constructive_vonc
@@ -8,9 +8,9 @@ priority: 2
 max-visits: 1
 face-image: img/Kollwitz_Arbeitslosigkeit.jpg
 
-= Unemployment Insurance Crisis
+= The Poorman's Pension Crisis
 
-With the Serannus Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #C0A054;">**Golds**</span> sets its eyes on cutting the unemployment insurance program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
+With the Serannus Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #C0A054;">**Golds**</span> sets its eyes on cutting the Poorman's Pension program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
 
 [? if lvp_right - lvp_left > 6: The <span style="color: #C0A054;">**Golds**</span> have been moving significantly rightwards since their formation and their industrial backers want nothing less than a collapse of our government.?][? if not lvp_right - lvp_left > 8: Our cabinet has proposed a compromise featuring small cuts to the program along with a slight increase to contributions, but it is not clear if the <span style="color: #C0A054;">**Golds**</span> themselves would agree to it. ?]
 

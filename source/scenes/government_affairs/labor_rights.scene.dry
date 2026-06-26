@@ -7,11 +7,11 @@ view-if: marcher_in_government = 1 and labor_minister_party = "Marcher" and labo
 card-image: img/portraits/WissellRudolf.jpg
 max-visits: 6
 go-to: labor_rights_menu
-#subtitle: Working hours, safety regulations, and unemployment insurance.
+#subtitle: Working hours, safety regulations, and the Poorman's Pension.
 
 = Labor Rights
 
-With control of the Labor Ministry, we can set national standards for labor. Our supporters expect us to enforce a 40-hour work week and enforce safety regulations, as well as fully fund the unemployment insurance program.
+With control of the Labor Ministry, we can set national standards for labor. Our supporters expect us to enforce a 40-hour work week and enforce safety regulations, as well as fully fund the Poorman's Pension program.
 
 # enforce a 40-hour work week
 # develop and enforce safety regulations in mines and industries
@@ -22,7 +22,7 @@ With control of the Labor Ministry, we can set national standards for labor. Our
 - @working_hours: Enforce the 40-hour work week.
 - @shorten_hours: Shorten work hours less than 40 hours.
 - @safety: Develop and enforce safety regulations.
-- @unemployment_insurance: Fund the unemployment insurance program.
+- @unemployment_insurance: Fund the Poorman's Pension program.
 - @root: Do not enact any policies.
 - @easy_discard
 - @cancel_advisor_action
@@ -51,7 +51,7 @@ The Labor Ministry works on developing and enforcing safety regulations, in orde
 view-if: disfavored >= unemployment_insurance_threshold + 4
 subtitle: With increasing unemployment, we must find new ways to fund our signature program.
 
-With the onset of the Depression and its throngs of unemployed, our unemployment insurance program is under strain. The program was never designed for this many claimants; something must be done to balance the budget.
+With the onset of the Depression and its throngs of unemployed, our the Poorman's Pension program is under strain. The program was never designed for this many claimants; something must be done to balance the budget.
 
 - @cut_benefits: Cut benefits.
 - @increase_employers: Increase employer contributions.
@@ -62,13 +62,13 @@ With the onset of the Depression and its throngs of unemployed, our unemployment
 subtitle: The workers will regard this as a betrayal.
 on-arrival: commons_marcher -= 0.12*commons_marcher; disfavored_marcher -= 0.2*disfavored_marcher; commons_collectivist += 5; commons_royalist += 5; disfavored_collectivist += 5; disfavored_royalist += 5; left_dissent += 15; center_dissent += 10; labor_dissent += 15; reformist_dissent += 5; welfare -= 2; budget += 1; disfavored += 3; pro_republic -= 4; collectivist_relation -= 8; inflation -= 2; unemployment_insurance_threshold = disfavored; unemployment_insurance_timer = 10; gold_left += 2; ddp_left += 2 if ddp_ideology == "Left"; commons_ddp += 3 if ddp_ideology == "Left"; lvp_left += 1; goal_marcher_cancel += 1; labor_goal_marcher_peoples += 1; economic_growth -= 0.2;
 
-For budgetary reasons, we have cut unemployment insurance benefits. Unfortunately, our reasons for fiscal discipline are alien to the workers. They are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000 ;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the Burghers, have joined in criticizing us for our austerity.
+For budgetary reasons, we have cut the Poorman's Pension benefits. Unfortunately, our reasons for fiscal discipline are alien to the workers. They are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000 ;">**Collectivists**</span>'s gain, and even the <span style="color: #7A3C00;">**Royalists**</span>, those lapdogs of the Burghers, have joined in criticizing us for our austerity.
 
 @increase_employers
 subtitle: Employers are strongly against this. [? if in_grand_coalition: The [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] will likely break the coalition. ?][? if in_weimar_coalition and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will likely break the coalition. ?]
 on-arrival: capital_strike_progress += 2; coalition_dissent = 2 if in_grand_coalition; coalition_dissent = 2 if (in_weimar_coalition and lvp_formed); coalition_dissent += 1; coalition_dissent += 1 if (lvp_ideology == "Right" and in_weimar_coalition and lvp_formed); welfare += 1; commons_marcher += 6*(1-dissent); disfavored_marcher += 6*(1-dissent); guild_marcher -= 6*(1-dissent); burgher_marcher -= 2*(1-dissent); unemployment_insurance_threshold = disfavored; unemployment_insurance_timer = 10; gold_right += 2; ddp_right += 2; ddp_cohesion -= 1; lvp_right += 2; gold_relation -= 6; unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; unemployment_goal_marcher += 1; goal_marcher_cancel_peoples += 1; economic_growth -= 0.2;
 
-We have increased employer contributions to the unemployment insurance fund, allowing the program to continue without hurting workers and the unemployed. Perhaps understandably, the capitalists and their political parties are furious, while our base in the unions and among the unemployed are pleased.
+We have increased employer contributions to the Poorman's Pension fund, allowing the program to continue without hurting workers and the unemployed. Perhaps understandably, the capitalists and their political parties are furious, while our base in the unions and among the unemployed are pleased.
 
 @balance
 subtitle: Neither workers nor employers will be entirely satisfied or dissatisfied. [? if in_grand_coalition and ((gold_ideology == "Right") or (gold_ideology == "Moderate" and gold_relation < 40) or (gold_ideology == "Left" and gold_relation < 30)) and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will likely consider the compromise unacceptable. ?][? if in_grand_coalition and ((gold_ideology == "Left" and gold_relation >= 30) or (gold_ideology == "Moderate" and gold_relation >= 40)) and gold_ideology != "Right" and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> might grudgingly accept the compromise for now. ?][? if (in_grand_coalition or in_weimar_coalition) and ((lvp_ideology == "Right") or (lvp_ideology == "Moderate" and lvp_relation < 40) or (lvp_ideology == "Left" and lvp_relation < 30)) and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will likely consider the compromise unacceptable. ?][? if (in_grand_coalition or in_weimar_coalition) and ((lvp_ideology == "Left" and lvp_relation >= 30) or (lvp_ideology == "Moderate" and lvp_relation >= 40)) and lvp_ideology != "Right" and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> might grudgingly accept the compromise for now. ?]
