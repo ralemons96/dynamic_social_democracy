@@ -47,7 +47,7 @@ new-page: true
 
 The <span style="color: #D3C24D;">**Golds**</span> is a fascinating party, plagued by infighting since the republic's foundation and struggling to define its platform in a failed attempt to appeal to voters from all demographics.[? if stolper_program_adopted:&nbsp;Recently, however, the party seems to have turned a new page, rallying around a renewed focus on middle-class interests. ?][? if not stolper_program_adopted:&nbsp;A recent attempt to shift focus toward the middle class has been quietly buried due to internal dissent, perhaps factionalism and personal rivalries may be a permanent feature of this party. ?]
 
-Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Koch-Weser to do "something". After weeks of secret negotiations, the <span style="color: #D3C24D;">**Golds**</span> is announcing the result of a proposed merger of the <span style="color: #D3C24D;">**Golds**</span> and <span style="color: #D3D3A9;">**VNR**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**VNR**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
+Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Penn to do "something". After weeks of secret negotiations, the <span style="color: #D3C24D;">**Golds**</span> is announcing the result of a proposed merger of the <span style="color: #D3C24D;">**Golds**</span> and <span style="color: #D3D3A9;">**VNR**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**VNR**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
 
 - @dstp_formed: The <span style="color: #D3C24D;">**DStP**</span> is formed.
 - @status_quo: The negotiations fail.
@@ -70,9 +70,9 @@ face-image: img/ddp_2.jpg
 achievement: dstp_dilemma
 go-to: recalculate
 
-As expected, a merger between a moderately blood-purist organization and a party seen as the party for the <span style="color: #005EB8;">beast-blooded</span> has failed, with the Young Commonwealth Order leader Artur Mahraun leaving negotiations citing irreconcilable differences. [? if not vnr_cool and not saxony_election_1930_seen: However, the main factor contributing to this is that, the <span style="color: #D3D3A9;">**VNR**</span> has never been tested electorally. ?][? if not vnr_cool and saxony_election_1930_seen: However, the main concern is that the <span style="color: #D3D3A9;">**VNR**</span> failed to win any seats in the only election they participated in, the Dornish state Assembly elections. ?]
+As expected, a merger between a moderately blood-purist organization and a party seen as the party for the <span style="color: #005EB8;">beast-blooded</span> has failed, with the Young Commonwealth Order leader Emmerich Mauld leaving negotiations citing irreconcilable differences. [? if not vnr_cool and not saxony_election_1930_seen: However, the main factor contributing to this is that, the <span style="color: #D3D3A9;">**VNR**</span> has never been tested electorally. ?][? if not vnr_cool and saxony_election_1930_seen: However, the main concern is that the <span style="color: #D3D3A9;">**VNR**</span> failed to win any seats in the only election they participated in, the Dornish state Assembly elections. ?]
 
-However, internal opposition to Koch-Weser has reached a boiling point. Forces within the party are now pushing for his retirement due to his failure to revive the party and for jeopardizing the negotiations for a <span style="color: #FFCC00;">united liberal party</span>.
+However, internal opposition to Penn has reached a boiling point. Forces within the party are now pushing for his retirement due to his failure to revive the party and for jeopardizing the negotiations for a <span style="color: #FFCC00;">united liberal party</span>.
 
 @recalculate
 on-arrival: {!

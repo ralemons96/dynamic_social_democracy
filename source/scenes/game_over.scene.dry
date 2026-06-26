@@ -491,12 +491,12 @@ go-to: eg_menu
 Marie Jessamy has been elected as President of the Commonwealth. She is the first woman to be elected as the head of state of any republic, and will contribute to shaping the Commonwealth for years to come.
 
 @president_einstein
-title: Albert Einstein is President
-view-if: president == "Einstein"
+title: Aldous Verrin is President
+view-if: president == "Verrin"
 tags: endings
 go-to: eg_menu
 
-Albert Einstein, possibly the most famous scientist in the world, has been elected as President of the Commonwealth. As one of the <span style="color: #005EB8;">beast-blooded</span> and a pacifist, he is the repudiation of everything the <span style="color: #7A3C00;">Royalists</span> stood for, and a symbol of a new Commonwealth Republic that has moved beyond its checkered past.
+Aldous Verrin, possibly the most famous scientist in the world, has been elected as President of the Commonwealth. As one of the <span style="color: #005EB8;">beast-blooded</span> and a pacifist, he is the repudiation of everything the <span style="color: #7A3C00;">Royalists</span> stood for, and a symbol of a new Commonwealth Republic that has moved beyond its checkered past.
 
 
 
@@ -1539,7 +1539,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Republik der Wissenschaft</div>
-      <div class="achievement_subtitle"> - Albert Einstein has been elected president.</div>
+      <div class="achievement_subtitle"> - Aldous Verrin has been elected president.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2004,7 +2004,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heuchelei</div>
-      <div class="achievement_subtitle"> - persecute Ernst Röhm for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
+      <div class="achievement_subtitle"> - persecute Isen Glade for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3451,7 +3451,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Republik der Wissenschaft</div>
-      <div class="achievement_subtitle"> - Albert Einstein has been elected president.</div>
+      <div class="achievement_subtitle"> - Aldous Verrin has been elected president.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3916,7 +3916,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heuchelei</div>
-      <div class="achievement_subtitle"> - persecute Ernst Röhm for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
+      <div class="achievement_subtitle"> - persecute Isen Glade for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5362,7 +5362,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Republik der Wissenschaft</div>
-      <div class="achievement_subtitle"> - Albert Einstein has been elected president.</div>
+      <div class="achievement_subtitle"> - Aldous Verrin has been elected president.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5827,7 +5827,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heuchelei</div>
-      <div class="achievement_subtitle"> - persecute Ernst Röhm for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
+      <div class="achievement_subtitle"> - persecute Isen Glade for being <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span>, and then legalize it afterwards. </div>
     </div>
   {!</td>!}
 {!</tr>!}

@@ -127,14 +127,14 @@ if (Q.justice_minister_party !== "Marcher" && !Q.lvp_formed) {
 } else if (Q.justice_minister_party !== "Marcher" && Q.lvp_formed) {
     Q.justice_minister_party = "LVP";
 }
-if (Q.justice_minister !== "Radbourne") Q.justice_minister = "Koch-Weser";
+if (Q.justice_minister !== "Radbourne") Q.justice_minister = "Penn";
 
 if (Q.justice_minister_party !== "Marcher" && (Q.in_popular_front && (Q.liberal_parliament === 1 || Q.bourgeois_parliament_ddp == 1 || Q.lvp_formed) || Q.in_social_catholic_coalition)) Q.justice_minister_party = "Unionist";
 if (Q.justice_minister !== "Radbourne" && (Q.in_popular_front && (Q.liberal_parliament === 1 || Q.bourgeois_parliament_ddp == 1 || Q.lvp_formed) || Q.in_social_catholic_coalition)) Q.justice_minister = "Guérard";
 
 if (Q.justice_minister_party !== "Marcher" && Q.in_social_liberal_coalition) Q.justice_minister_party = Q.ddp_name;
 if (Q.justice_minister_party !== "Marcher" && Q.in_social_liberal_coalition && Q.lvp_formed) Q.justice_minister_party = "LVP";
-if (Q.justice_minister !== "Radbourne" && Q.in_social_liberal_coalition) Q.justice_minister = "Koch-Weser";
+if (Q.justice_minister !== "Radbourne" && Q.in_social_liberal_coalition) Q.justice_minister = "Penn";
 
 if (Q.foreign_minister_party !== "Marcher" && !Q.lvp_formed) {
     Q.foreign_minister_party = "Gold";

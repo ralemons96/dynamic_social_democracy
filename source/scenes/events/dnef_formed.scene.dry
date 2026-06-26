@@ -123,7 +123,7 @@ if (Q.dstp_maintained) {
     Q.gnu_r += Q.ddp_r;
     Q.ddp_r = 0;
 
-    Q.ddp_leader = "Mahraun";
+    Q.ddp_leader = "Mauld";
 }
 
 if (Q.kvp_formed && Q.staal_kvp) {
