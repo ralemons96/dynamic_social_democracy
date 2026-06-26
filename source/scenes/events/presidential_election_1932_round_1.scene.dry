@@ -860,7 +860,7 @@ Landed League - [? if rlb_dufour: <span style="color: #808080;">**[+ reactionary
 
 Wardens - [? if traditionalist_ideology == "Radical": Abstention?][? if traditionalist_ideology == "Moderate": <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span> ?]
 
-Commonwealth National Association of Commercial Employees (DHV) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
+Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 
 Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>
 

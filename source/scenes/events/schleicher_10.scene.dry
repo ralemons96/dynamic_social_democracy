@@ -13,7 +13,7 @@ face-image: img/portraits/schleicher.jpg
 [? if gold_leader == "Vellt": Florian Vellt, leader of the <span style="color: #C0A054;">**Golds**</span>, shares much ideological ground with Staal's new party—nationalism, corporatism, and the goal of a <i>national community</i>. A merger with the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> has thus become inevitable. ?]
 
 [? if gold_votes < 4 and gold_leader != "Vellt": Nonetheless, the <span style="color: #C0A054;">**Golds**</span> and its industrial backers will bolster the <span style="color: #BFC8CC;">**GNU**</span> and legitimize it among the middle class, eliminating yet another option for non-<span style="color: #7A3C00;">Royalist</span> propertied voters. ?]
-[? if gold_leader == "Vellt": Vellt's vision of a "new nationalism" will carry a sizable following into his new political home, along with his affiliated white-collar union, the DHV, which he is bringing into the <span style="color: #BFC8CC;">**GNU**</span> as well. ?]
+[? if gold_leader == "Vellt": Vellt's vision of a "new nationalism" will carry a sizable following into his new political home, along with his affiliated white-collar union, the Clerks' Guild, which he is bringing into the <span style="color: #BFC8CC;">**GNU**</span> as well. ?]
 
 - @schleicher_2: The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
 

@@ -567,7 +567,7 @@ Of course, the main goal of the United DuFour Committees is to dispel the notion
 
 @organizational_endorsements
 title: What about the endorsements of the non-partisan organizations?
-subtitle: Influential groups such as the Landed League, DHV, and the Pan-Germans, have been growing a rift between themselves and DuFour.
+subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Germans, have been growing a rift between themselves and DuFour.
 view-if: eckener_used and industry_used and (religion_used or not religion_available) and (westarp_used or marcher_candidate_1932)
 on-arrival: {!
 if (Q.dufour_support) {
@@ -612,7 +612,7 @@ Landed League - [? if rlb_dufour: <span style="color: #808080;">**[+ reactionary
 
 Wardens - [? if traditionalist_candidate_1932 and traditionalist_candidate_1932 != "Mallin":<span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if not traditionalist_candidate_1932 or traditionalist_candidate_1932 == "Mallin": <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span> ?]
 
-Commonwealth National Association of Commercial Employees (DHV) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
+Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 
 Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or [? if traditionalist_candidate_1932 != "Mallin" or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 == "Mallin" and traditionalist_ideology == "Moderate": <span style="color: #003755;">**[+ traditionalist_candidate_1932 +]**</span>?]?]
 
@@ -836,7 +836,7 @@ Of course, the main goal of the United DuFour Committees is to dispel the notion
 
 @organizational_endorsements_op
 title: What about the endorsements of the non-partisan organizations?
-subtitle: Influential groups such as the Landed League, DHV, and the Pan-Germans, have been growing a rift between themselves and DuFour.
+subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Germans, have been growing a rift between themselves and DuFour.
 view-if: eckener_used and industry_used and (religion_used or not religion_available) and nd (westarp_used or marcher_candidate_1932)
 on-arrival: {!
 if (Q.dufour_support) {
@@ -881,7 +881,7 @@ Landed League - [? if rlb_dufour: <span style="color: #808080;">**[+ reactionary
 
 Wardens - [? if traditionalist_candidate_1932 == "Dusterel":<span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 != "Dusterel": <span style="color: #808080;">**[+ reactionary_candidate_1932_disp +]**</span> ?]
 
-Commonwealth National Association of Commercial Employees (DHV) - <span style="color: #808080;">**[+ reactionary_candidate_1932_disp +]**</span>
+Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932_disp +]**</span>
 
 Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?]
 
