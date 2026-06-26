@@ -636,7 +636,7 @@ view-if: bourgeois_coalition_bavaria < 50
 on-arrival: bavaria_minority_bvp = 1; pro_republic -= 2; faithful_royalist -= 2
 go-to: election_menu
 
-Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other propertied parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Catholics. ?]
+Despite the <span style="color: #A2D8E0;">**Arcanists**</span> falling short of a majority, even with the inclusion of other propertied parties, they continue to rule in as a caretaker government. [? if royalist_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**Royalists**</span> has collapsed, due to their disdain for Faithful. ?]
 
 Heinrich Helder, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 
@@ -700,7 +700,7 @@ view-if: left_coalition_bavaria >= 50 and (collectivist_relation >= 60 and colle
 on-arrival: bavaria_marcher = 1; bavaria_collectivist = 1; unionist_relation -= 5; ddp_relation -= 5; gold_relation -= 5; lvp_relation -= 5; coup_progress += 10
 go-to: election_menu
 
-The conservative stronghold of the republic, home to the largest concentration of Catholics and general forces of <span style="color: #808080;">reaction</span> has finally fallen to the forces of the <span style="color: #700000;">Left</span>. Few could have expected the seeds of <span style="color: #c00000;">Reformism</span>, much less <span style="color: #700000;">collectivism</span> to once again take root in Avriza, but the election results showed have made this impossibility into a living nightmare for the right. <span style="color: #3E88B3;">**Wardens**</span> brigands, along with the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> are already rushing to prepare a coup against what they see as a <span style="color: #700000;">collectivist</span> takeover in progress, and we may soon have a civil war on our hands.
+The conservative stronghold of the republic, home to the largest concentration of Faithful and general forces of <span style="color: #808080;">reaction</span> has finally fallen to the forces of the <span style="color: #700000;">Left</span>. Few could have expected the seeds of <span style="color: #c00000;">Reformism</span>, much less <span style="color: #700000;">collectivism</span> to once again take root in Avriza, but the election results showed have made this impossibility into a living nightmare for the right. <span style="color: #3E88B3;">**Wardens**</span> brigands, along with the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> are already rushing to prepare a coup against what they see as a <span style="color: #700000;">collectivist</span> takeover in progress, and we may soon have a civil war on our hands.
 The legacy of the Avrizan Worker’s Republic has been avenged, but at what cost?
 
 @wurttemberg
@@ -1117,7 +1117,7 @@ view-if: bourgeois_coalition_wurttemberg < 50
 on-arrival: wurttemberg_right = 1; wurttemberg_vonc = 1; pro_republic -= 1; faithful_royalist -= 1
 go-to: election_menu
 
-Despite the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and its Protestant conservative partners falling short of a majority, they continue to rule as a caretaker government. This outcome mirrors the one of the 4293 elections, so perhaps this outcome is to be expected.
+Despite the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and its dissenting conservative partners falling short of a majority, they continue to rule as a caretaker government. This outcome mirrors the one of the 4293 elections, so perhaps this outcome is to be expected.
 
 @nsdap_majority_wurttemberg
 title: The <span style="color: #7A3C00;">**Royalists**</span> wins a majority?

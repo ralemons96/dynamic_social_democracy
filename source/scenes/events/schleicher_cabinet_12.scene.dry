@@ -452,7 +452,7 @@ Q.staal_fight = 1;
 
 We are not alone. [? if marcher_alone: Well, we actually are, never mind. ?]
 
-<span style="color: #000000;">[? if not stegerwald_path: Catholics?][? if stegerwald_path: Christians?]</span> - [? if unionist_against_staal: In Favor?][? if not unionist_against_staal: Political Neutrality?]
+<span style="color: #000000;">[? if not stegerwald_path: Faithful?][? if stegerwald_path: Faithful?]</span> - [? if unionist_against_staal: In Favor?][? if not unionist_against_staal: Political Neutrality?]
 
 <span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_staal: In Favor?][? if not libs_against_staal: Political Neutrality?]
 

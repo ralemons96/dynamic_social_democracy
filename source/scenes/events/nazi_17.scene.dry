@@ -199,7 +199,7 @@ set-bg: img/reichstag_fire.jpg
 
 Together with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], and the dictatorial powers offered by the Assembly Fire Decree, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> have won more than an outright majority.
 
-The law is considered a constitutional amendment, requiring two-thirds of the Assembly to approve the bill. The <span style="color: #700000;">**Collectivists**</span> are de-facto banned, and many <span style="color: #c00000;">**Marchers**</span> deputies are imprisoned under the powers of the Assembly Fire Decree. The <span style="color: #000000;">Unionist Party</span> is the deciding factor, seeking to save the Catholic population from persecution and a second Kulturkampf.
+The law is considered a constitutional amendment, requiring two-thirds of the Assembly to approve the bill. The <span style="color: #700000;">**Collectivists**</span> are de-facto banned, and many <span style="color: #c00000;">**Marchers**</span> deputies are imprisoned under the powers of the Assembly Fire Decree. The <span style="color: #000000;">Unionist Party</span> is the deciding factor, seeking to save the Faithful population from persecution and a second Kulturkampf.
 
 <span style="color: #7A3C00;">**Loyalists**</span> men are positioned inside and outside the chamber, an intense atmosphere of fear settling over the nominally constitutional <span style="color: #000000;">Unionist Party</span>. Werth and Askew argue against the bill, while the majority of the party is in favor of it. The <span style="color: #7A3C00;">Royalists</span> have promised constitutional safeguards, but have refused to put it in writing as requested by Mallin and the <span style="color: #000000;">Unionist Party</span>.
 
@@ -209,7 +209,7 @@ The law is considered a constitutional amendment, requiring two-thirds of the As
 @enabling_act_2
 subtitle: It doesn't matter in the end.
 
-A concordat with the Temple of the Faithful is signed months later, protecting the millions of Commonwealth Catholics from potential <span style="color: #7A3C00;">Royalist</span> persecution. The <span style="color: #7A3C00;">**Royalists**</span> becomes the sole political party. Franz von Goodryke is ousted from Heartland, remaining in the powerless position of Vice Chancellor. Mallin is forced to resign.
+A concordat with the Temple of the Faithful is signed months later, protecting the millions of Commonwealth Faithful from potential <span style="color: #7A3C00;">Royalist</span> persecution. The <span style="color: #7A3C00;">**Royalists**</span> becomes the sole political party. Franz von Goodryke is ousted from Heartland, remaining in the powerless position of Vice Chancellor. Mallin is forced to resign.
 
 Efforts to tame the <span style="color: #7A3C00;">Royalists</span> have failed; their relentless consolidation of power leaves only DuFour to check their unlimited authority. Staal is murdered in the Royalists' bloody purge of their rivals, Goodryke delivers one last defiant speech before resigning, and after DuFour’s death, the Commonwealth is lost.
 

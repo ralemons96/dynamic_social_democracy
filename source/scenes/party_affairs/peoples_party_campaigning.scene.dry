@@ -42,9 +42,9 @@ on-arrival: commons_marcher += 3*(1-dissent); burgher_marcher += 3*(1-dissent); 
 As a people's party, we represent women of all classes.
 
 @campaign_catholics
-title: Campaign among political Catholics.
+title: Campaign among political Faithful.
 on-arrival: faithful_marcher += 5*(1-dissent);
 
-Catholics have historically been tied to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], but there is no reason why our party cannot appeal to them. The Heartland Concordat in particular is a sign of our friendship with Catholicism.
+Faithful have historically been tied to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], but there is no reason why our party cannot appeal to them. The Heartland Concordat in particular is a sign of our friendship with the Faith.
 
 

@@ -57,12 +57,12 @@ Even when DuFour was reduced to tears, a strategy that had worked on Askew befor
 
 @papen
 title: Franz von Goodryke?
-subtitle: An relatively unknown Catholic Conservative from the <span style="color: #000000;">Unionist Party</span>. Staal's preferred candidate.
+subtitle: An relatively unknown Faithful Conservative from the <span style="color: #000000;">Unionist Party</span>. Staal's preferred candidate.
 on-arrival: marcher_toleration = 0; marcher_toleration_right = 0; chancellor = "Goodryke"; chancellor_party = "I"; staal_papen_r -= 1
 view-if: westarp_seen and goerdeler_seen
 face-image: img/portraits/GoodrykeFranz.jpg
 
-With Goodlake and Westmore out of the equation, DuFour has grasped the straw Staal offered and appointed a far-right Catholic Conservative, Franz von Goodryke, from the <span style="color: #000000;">Unionist Party</span>, as chancellor. Goodryke is relatively unknown, only whose political experience is limited to two terms in the Heartland state Assembly. The two have been friends since their days in the Heartland military academy.
+With Goodlake and Westmore out of the equation, DuFour has grasped the straw Staal offered and appointed a far-right Faithful Conservative, Franz von Goodryke, from the <span style="color: #000000;">Unionist Party</span>, as chancellor. Goodryke is relatively unknown, only whose political experience is limited to two terms in the Heartland state Assembly. The two have been friends since their days in the Heartland military academy.
 
 Goodryke's decision to take the chancellorship, despite [+ unionist_leader +]'s urging and Goodryke's promise not to, DuFour has used the same tactic on him as he used on Askew, convincing him to accept the position. Due to Goodryke breaking his promise to [+ unionist_leader +] just after he made it, expulsion proceedings and against him are interrupted by his resignation from the <span style="color: #000000;">Unionist Party</span>, forever ruining his relations with the party necessary for a parliamentary majority as they strongly denounce him as the "Ephialtes of the <span style="color: #000000;">Unionist Party</span>".
 

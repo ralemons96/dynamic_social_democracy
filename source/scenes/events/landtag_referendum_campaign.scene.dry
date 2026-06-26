@@ -50,7 +50,7 @@ on-arrival: pro_republic += 3; faithful_royalist -= 4; faithful_unionist += 3; f
 face-image: img/weimar_coalition.jpg
 go-to: do_campaign
 
-The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has joined our efforts with its own propaganda campaign, doing their part in targeting Catholics and urging them to stay home.
+The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has joined our efforts with its own propaganda campaign, doing their part in targeting Faithful and urging them to stay home.
 
 @communist_prussia
 title: Request assistance from the <span style="color: #700000;">**Collectivists**</span>.

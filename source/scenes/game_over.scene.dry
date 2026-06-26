@@ -1329,7 +1329,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Katholischer Sozialismus</div>
-      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Catholic support is at least 50%.</div>
+      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Faithful support is at least 50%.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1644,7 +1644,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Christliche Volkspartei</div>
-      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Christian People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
+      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Faithful People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1659,7 +1659,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1734,7 +1734,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sozialchristliche Koalition</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1824,7 +1824,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Historischer Kompromiss</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1839,7 +1839,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Frahm und Brandt</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2726,7 +2726,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Merz und Eikenvorst</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3241,7 +3241,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Katholischer Sozialismus</div>
-      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Catholic support is at least 50%.</div>
+      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Faithful support is at least 50%.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3556,7 +3556,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Christliche Volkspartei</div>
-      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Christian People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
+      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Faithful People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3571,7 +3571,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3646,7 +3646,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(196, 177, 86, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sozialchristliche Koalition</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3736,7 +3736,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Historischer Kompromiss</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3751,7 +3751,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Frahm und Brandt</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4637,7 +4637,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Merz und Eikenvorst</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5152,7 +5152,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Katholischer Sozialismus</div>
-      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Catholic support is at least 50%.</div>
+      <div class="achievement_subtitle"> - <span style="color: #c00000; font-weight: bold;">Marchers</span> Faithful support is at least 50%.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5467,7 +5467,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Christliche Volkspartei</div>
-      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Christian People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
+      <div class="achievement_subtitle"> - a <i>true</i> <span style="color: #000000;">Faithful People's Party</span> (<span style="color: #000000; font-weight: bold;">Concord</span>) forms. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5482,7 +5482,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5557,7 +5557,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sozialchristliche Koalition</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5647,7 +5647,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Historischer Kompromiss</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5662,7 +5662,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Frahm und Brandt</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> while the Left remains in the <span style="color: #c00000; font-weight: bold;">Marchers</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6547,7 +6547,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Merz und Eikenvorst</div>
-      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
+      <div class="achievement_subtitle"> - form a <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition with the <i>true</i> <span style="color: #000000; font-weight: bold;">Concord</span> where the <span style="color: #c00000; font-weight: bold;">Marchers</span> is junior partner and Askew is Chancellor.
     </div>
   {!</td>!}
 {!</tr>!}

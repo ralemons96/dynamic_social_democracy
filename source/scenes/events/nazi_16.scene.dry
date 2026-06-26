@@ -50,7 +50,7 @@ DuFour and his nephew have suspected the worst of Staal and didn’t take the tr
 
 DuFour has approved the ministers proposed, but Goodryke, knowing that DuFour will never make [+ royalist_chancellor +] the chancellor of a presidential cabinet, purposefully avoids disclosing that detail to him—though he knows DuFour will realize it soon enough.
 
-By leaving the Justice Ministry vacant on the list of cabinet members, Goodryke sought to create the impression that it was being reserved for a <span style="color: #000000;">Unionist Party</span> member, and that its appointment was pending final negotiations. This simple act of deception has convinced DuFour that he is appointing a parliamentary chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credence to the scheme.
+By leaving the Justice Ministry vacant on the list of cabinet members, Goodryke sought to create the impression that it was being reserved for a <span style="color: #000000;">Unionist Party</span> member, and that its appointment was pending final negotiations. This simple act of deception has convinced DuFour that he is appointing a parliamentary chancellor, with the [? if not stegerwald_path: Faithful?][? if stegerwald_path: Faithful?] party’s earlier overtures lending credence to the scheme.
 
 - @root: We await tomorrow.
 
@@ -63,4 +63,4 @@ That evening, Goodryke once again asked DuFour to appoint [+ royalist_chancellor
 
 DuFour has since approved the proposed ministers, but Goodryke, fully aware that the President would never accept [+ royalist_chancellor +] as the head of a presidential cabinet, deliberately withholds that detail—though he knows DuFour will realize it soon enough.
 
-By leaving the Justice Ministry vacant on the cabinet list, Goodryke creates the illusion that the post is being reserved for a <span style="color: #000000;">Unionist Party</span> member and that final negotiations are still ongoing. This simple act of deception convinces DuFour that he is appointing a parliamentary Chancellor, with the [? if not stegerwald_path: Catholic?][? if stegerwald_path: Christian?] party’s earlier overtures lending credibility to the ruse.
+By leaving the Justice Ministry vacant on the cabinet list, Goodryke creates the illusion that the post is being reserved for a <span style="color: #000000;">Unionist Party</span> member and that final negotiations are still ongoing. This simple act of deception convinces DuFour that he is appointing a parliamentary Chancellor, with the [? if not stegerwald_path: Faithful?][? if stegerwald_path: Faithful?] party’s earlier overtures lending credibility to the ruse.

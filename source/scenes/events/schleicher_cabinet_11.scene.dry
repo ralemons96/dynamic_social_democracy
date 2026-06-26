@@ -1,5 +1,5 @@
 title: The <i>Temple Concordat</i> Is Signed!
-subtitle: Catholic rights across the Commonwealth are now formally guaranteed.
+subtitle: Faithful rights across the Commonwealth are now formally guaranteed.
 view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Renck" and reichskonkordat = 0 
 max-visits: 1
 new-page: true
@@ -19,7 +19,7 @@ on-display: {!
 
 = Temple Concordat Signing
 
-During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Concordat</i> has officially been signed between the Commonwealth and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
+During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Concordat</i> has officially been signed between the Commonwealth and the Roma Faithful Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Faithful, and the right of the church to appoint their own clergy. Faithful in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
 
 - @reichskonkordat
 
@@ -75,9 +75,9 @@ face-image: img/portraits/RenckLudwig.jpg
 
 = Unionist Party Conference
 
-Having achieved his lifelong goal, Renck sees little reason to remain as leader of the <span style="color: #000000;">Unionist Party</span>—a position he had long described as a burden and expressed displeasure with. As a result, a new leadership race is set to take place within the party, with Staal able to influence the outcome through his connections with Renck and the <span style="color: #000000;">Christian</span> Trade Unions.
+Having achieved his lifelong goal, Renck sees little reason to remain as leader of the <span style="color: #000000;">Unionist Party</span>—a position he had long described as a burden and expressed displeasure with. As a result, a new leadership race is set to take place within the party, with Staal able to influence the outcome through his connections with Renck and the <span style="color: #000000;">Faithful</span> Trade Unions.
 
-The candidate backed by the <span style="color: #000000;">Christian</span> unions and those advocating for a more interconfessional <span style="color: #000000;">Unionist Party</span> rallies around Sedgewick.
+The candidate backed by the <span style="color: #000000;">Faithful</span> unions and those advocating for a more interfaith <span style="color: #000000;">Unionist Party</span> rallies around Sedgewick.
 
 Edwin Hughes, Staal's [? if not dsu_in_gov: former ?]Interior Minister[? if heartland_coup_lose:&nbsp;of Heartland and the Commonwealth?], has rejoined the party and is Staal’s preferred candidate. Hughes is a true believer in Staal's vision for a new the Commonwealth—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Unionists</span>'s right wing, though not as far right as Goodryke. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Staal's backing that remains the key to elevating him to leadership.
 
@@ -100,6 +100,6 @@ unavailable-subtitle: Sedgewick is unavailable.
 choose-if: stegerwald_points >= bracht_points
 on-arrival: unionist_leader = "Sedgewick"; faithful_unionist -= 8; faithful_marcher += 2; faithful_traditionalist += 2; faithful -= 5; commons_unionist += 4; burgher_unionist += 2; guild_unionist += 2; landed_unionist += 2; unionist_relation -= 5
 
-Sedgewick has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Hughes from seizing control of the <span style="color: #000000;">Unionist Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Staal's growing influence.
+Sedgewick has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Hughes from seizing control of the <span style="color: #000000;">Unionist Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Faithful</span> unions, who continue to resist Staal's growing influence.
 
-Although Sedgewick favors immediately opening the <span style="color: #000000;">Unionist Party</span> to Protestants, the party simply lacks the funds to establish regional branches across Protestant the Commonwealth, with recent elections having already exhausted its resources.
+Although Sedgewick favors immediately opening the <span style="color: #000000;">Unionist Party</span> to dissenters, the party simply lacks the funds to establish regional branches across the Commonwealth, with recent elections having already exhausted its resources.

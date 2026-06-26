@@ -58,7 +58,7 @@ Unfortunately, the historically strict party discipline of the <span style="colo
 
 @urge_against_austerity_limited
 title: Put forth a proposal to increase welfare spending and reverse austerity cuts.
-subtitle: This move will drive a wedge between the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and their Labor and <span style="color: #FF7F00;">Christian Left</span> factions.
+subtitle: This move will drive a wedge between the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and their Labor and <span style="color: #FF7F00;">Faithful Left</span> factions.
 go-to: urge_success_limited if unionist_relation >= 40; urge_failure if unionist_relation < 40
 
 @urge_success_limited

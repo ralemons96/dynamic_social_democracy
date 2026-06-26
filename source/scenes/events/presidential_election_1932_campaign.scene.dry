@@ -216,7 +216,7 @@ Since it's election season, we are able to accelerate campaigning efforts. Buy o
 - @middle_class: Add 1 "Middle Class" to the cart.
 - @rural: Add 1 "Rural" to the cart.
 - @unemployed: Add "Unemployed" to the cart.
-- @catholics: Add "Catholic" to the cart.
+- @catholics: Add "Faithful" to the cart.
 - @checkout
 
 @workers
@@ -536,25 +536,25 @@ go-to: bourgeois_campaign_menu
 Despite the antipathy the industrialists have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
 
 @religion
-title: The Catholic Church and Lutheran Church have long held political neutrality, perhaps that will change?
+title: The Temple of the Faithful and the dissenting churches have long held political neutrality, perhaps that will change?
 view-if: unionist_support_marcher != 1
 on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_normalized < 50; faithful_royalist -= 4 if faithful_unionist_normalized < 50 and faithful_royalist_normalized >= 8;
 max-visits: 1
 go-to: religion_2 if dufour_unity >= 3; religion_3 if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the dissenting churches have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Temple of the Faithful is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Faithful leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Faithful-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Faithful population behind a candidate whom most instinctively associate with the old orthodoxy and Heartland authoritarianism.
 
 @religion_2
 on-arrival: dufour_support += 1
 go-to: bourgeois_campaign_menu
 
-Despite strong opposition from state and local Protestant church organizations—many of whose members sympathize with [+ royalist_candidate_1932 +] and the <span style="color: #7A3C00;">**Royalists**</span>—they have taken a public stand and will be campaigning in favor of DuFour, even amid growing calls for them to withdraw their endorsements.
+Despite strong opposition from state and local dissenting church organizations—many of whose members sympathize with [+ royalist_candidate_1932 +] and the <span style="color: #7A3C00;">**Royalists**</span>—they have taken a public stand and will be campaigning in favor of DuFour, even amid growing calls for them to withdraw their endorsements.
 
 @religion_3
 on-arrival: burgher_royalist += 2; guild_royalist += 2; landed_royalist += 2; burgher_kvp -= 2; guild_kvp -= 2; landed_kvp -= 2; burgher_traditionalist -= 2 if traditionalist_ideology == "Moderate"; guild_traditionalist -= 2 if traditionalist_ideology == "Moderate"; landed_traditionalist -= 2 if traditionalist_ideology == "Moderate"; burgher_other -= 2 if not kvp_formed; guild_other -= 2 if not kvp_formed; landed_other -= 2 if not kvp_formed
 go-to: bourgeois_campaign_menu
 
-Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Royalist</span> sentiment within state and local churches has prevented church leaders from taking a public stand for DuFour. Many devout Protestants will now be voting for [+ royalist_candidate_1932 +] as a result, as the church now claims that intervening in a presidential election would be against its nature.
+Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Royalist</span> sentiment within state and local churches has prevented church leaders from taking a public stand for DuFour. Many devout dissenters will now be voting for [+ royalist_candidate_1932 +] as a result, as the church now claims that intervening in a presidential election would be against its nature.
 
 @westarp
 title: Westmore, one of DuFour's close friends, will attempt to rally conservative forces for DuFour.
@@ -805,25 +805,25 @@ go-to: bourgeois_campaign_menu_op
 Despite the antipathy the industrialists have toward [? if not gallax_deported: Gallax and the ?]<span style="color: #7A3C00;">**Royalists**</span> due to their crypto-<span style="color: #c00000;">Reformist</span> policies, a large part of them are firmly opposed to DuFour, and will withhold their donations. The DuFour campaign is beginning to heavily fall behind the <span style="color: #7A3C00;">**Royalists**</span> in more rural areas, primarily due to the lack of resources.
 
 @religion_op
-title: The Catholic Church and Lutheran Church have long held political neutrality, perhaps that will change?
+title: The Temple of the Faithful and the dissenting churches have long held political neutrality, perhaps that will change?
 view-if: unionist_support_marcher != 1
 on-arrival: religion_used = 1; faithful_unionist += 4 if faithful_unionist_normalized < 50; faithful_royalist -= 4 if faithful_unionist_normalized < 50 and faithful_royalist_normalized >= 8
 max-visits: 1
 go-to: religion_2_op if dufour_unity >= 3; religion_3_op if dufour_unity < 3
 
-Prominent leaders of the Lutheran Church have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Catholic Church is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Catholic leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Catholic-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Catholic population behind a candidate whom most instinctively associate with Lutheran orthodoxy and Heartland authoritarianism.
+Prominent leaders of the dissenting churches have endorsed President DuFour, arguing that despite their historical political neutrality, his reelection is a pressing necessity. Meanwhile, the Temple of the Faithful is even more united in support of DuFour than it was for Wilhelm Croft in 4290. Faithful leaders, historically skeptical of <span style="color: #7A3C00;">Imperial Sovereigntism</span>, have actively discouraged their members from joining <span style="color: #7A3C00;">Royalist</span> paramilitary organizations. This, combined with the strong support of Faithful-affiliated Free Guilds, will prove enormously significant in rallying a skeptical Faithful population behind a candidate whom most instinctively associate with the old orthodoxy and Heartland authoritarianism.
 
 @religion_2_op
 on-arrival: dufour_support += 1
 go-to: bourgeois_campaign_menu_op
 
-Despite strong opposition from state and local Protestant church organizations—many of whose members sympathize with [+ royalist_candidate_1932 +] and the <span style="color: #7A3C00;">**Royalists**</span>—they have taken a public stand and will be campaigning in favor of DuFour, even amid growing calls for them to withdraw their endorsements.
+Despite strong opposition from state and local dissenting church organizations—many of whose members sympathize with [+ royalist_candidate_1932 +] and the <span style="color: #7A3C00;">**Royalists**</span>—they have taken a public stand and will be campaigning in favor of DuFour, even amid growing calls for them to withdraw their endorsements.
 
 @religion_3_op
 on-arrival: burgher_royalist += 2; guild_royalist += 2; landed_royalist += 2; burgher_kvp -= 2; guild_kvp -= 2; landed_kvp -= 2; burgher_traditionalist -= 2 if traditionalist_ideology == "Moderate"; guild_traditionalist -= 2 if traditionalist_ideology == "Moderate"; landed_traditionalist -= 2 if traditionalist_ideology == "Moderate"; burgher_other -= 2 if not kvp_formed; guild_other -= 2 if not kvp_formed; landed_other -= 2 if not kvp_formed
 go-to: bourgeois_campaign_menu_op
 
-Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Royalist</span> sentiment within state and local churches has prevented church leaders from taking a public stand for DuFour. Many devout Protestants will now be voting for [+ royalist_candidate_1932 +] as a result, as the church now claims that intervening in a presidential election would be against its nature.
+Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Royalist</span> sentiment within state and local churches has prevented church leaders from taking a public stand for DuFour. Many devout dissenters will now be voting for [+ royalist_candidate_1932 +] as a result, as the church now claims that intervening in a presidential election would be against its nature.
 
 @westarp_op
 title: Westmore, one of DuFour's close friends, will attempt to rally conservative forces for DuFour.

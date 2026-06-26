@@ -215,7 +215,7 @@ Since it's election season, we are able to accelerate campaigning efforts. Buy o
 - @middle_class: Add 1 "Middle Class" to the cart.
 - @rural: Add 1 "Rural" to the cart.
 - @unemployed: Add "Unemployed" to the cart.
-- @catholics: Add "Catholic" to the cart.
+- @catholics: Add "Faithful" to the cart.
 - @checkout
 
 @workers

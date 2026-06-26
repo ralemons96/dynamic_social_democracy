@@ -9,9 +9,9 @@ face-image: img/beauty_of_labor.jpg
 
 = Organized Labor Under Threat
 
-We have observed extensive infiltration of Staal's supporters into the leadership of the Greater Worker+s Guild, the <span style="color: #000000;">Christian</span>, and <span style="color: #D3C24D;">liberal</span> Free Guilds—with the rank-and-file of all three even more inclined to back him.
+We have observed extensive infiltration of Staal's supporters into the leadership of the Greater Worker+s Guild, the <span style="color: #000000;">Faithful</span>, and <span style="color: #D3C24D;">liberal</span> Free Guilds—with the rank-and-file of all three even more inclined to back him.
 
-In response, a proposal for a united labor front—bringing together our Greater Worker+s Guild, the <span style="color: #000000;">Christian</span> GcG formerly led by Sedgewick, and the <span style="color: #D3C24D;">Hirsch-Duncker</span> liberal unions under Emil Lemmer—has been floated by figures like our Emory Lespan and the <span style="color: #000000;">Unionists</span>'s Aldwin Stilling.
+In response, a proposal for a united labor front—bringing together our Greater Worker+s Guild, the <span style="color: #000000;">Faithful</span> GcG formerly led by Sedgewick, and the <span style="color: #D3C24D;">Hirsch-Duncker</span> liberal unions under Emil Lemmer—has been floated by figures like our Emory Lespan and the <span style="color: #000000;">Unionists</span>'s Aldwin Stilling.
 
 The hope is that such unity will allow organized labor to resist coercion from Staal’s government and secure a stronger position within the corporatist order he has been promoting, should it come to that.
 
@@ -68,6 +68,6 @@ Q.commons_gnu += 2;
 
 Without coordination among the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> unions, Staal has moved quickly to strike separate deals with the more right-leaning organizations. The Clerks' Guild, the conservative white-collar union, has been the first to pledge loyalty to the "new state," joined by the <span style="color: #D3C24D;">Hirsch-Duncker</span> unions—too marginal to wield real leverage anyway.
 
-The <span style="color: #000000;">Christian</span> unions have been cozying up to Staal for months[? if unionist_in_gov:, and Sedgewick's entry into government has only accelerated these talks of cooperation between his cabinet and the unionists.?][? if not unionist_in_gov:, though they remain broadly wary of Staal and his true intentions.?] Their advocacy for a "pluralistic" model, where unions retain formal autonomy within a corporatist the Commonwealth, has only made Staal’s task easier.
+The <span style="color: #000000;">Faithful</span> unions have been cozying up to Staal for months[? if unionist_in_gov:, and Sedgewick's entry into government has only accelerated these talks of cooperation between his cabinet and the unionists.?][? if not unionist_in_gov:, though they remain broadly wary of Staal and his true intentions.?] Their advocacy for a "pluralistic" model, where unions retain formal autonomy within a corporatist the Commonwealth, has only made Staal’s task easier.
 
 [? if staal_marcher_influence >= 6: Staal has also been quietly cultivating allies within the Greater Worker+s Guild itself. Voices calling for the rejection of <span style="color: #9B0000;">Vaelism</span> and a break with the <span style="color: #c00000;">**Marchers**</span> are growing louder by the day. Damn it. ?]

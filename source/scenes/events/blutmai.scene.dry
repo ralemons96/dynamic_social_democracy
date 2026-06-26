@@ -35,7 +35,7 @@ on-display: {!
 
 We issued the order to ban the demonstrations, and sent police to enforce the ban. There was a confrontation between the police and <span style="color: #700000;">**Collectivists**</span>, and violence erupted. Reports say that the Axton police killed dozens of demonstrators and innocent bystanders. The <span style="color: #700000;">**Collectivists**</span> are already calling this incident *Blutmai*, "Bloody May".
 
-This may end any attempt at reconciliation with the <span style="color: #700000;">**Collectivists**</span>, but the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Christian People's**</span>?] and [? if not lvp_formed: <span style="color: #C0A054;">**People's**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties approve of our action.
+This may end any attempt at reconciliation with the <span style="color: #700000;">**Collectivists**</span>, but the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Faithful People's**</span>?] and [? if not lvp_formed: <span style="color: #C0A054;">**People's**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties approve of our action.
 
 - @corrupt_police: It is the fault of corrupt and <span style="color: #808080;">reactionary</span> elements within the police. Purge those responsible.
 - @communist_fault: It is the fault of the <span style="color: #700000;">**Collectivists**</span> for refusing to follow the rule of law.

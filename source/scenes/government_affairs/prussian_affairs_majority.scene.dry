@@ -100,12 +100,12 @@ The <span style="color: #700000;">Collectivist</span> <span style="color: #70000
 view-if: (heartland_concordat_progress < 2 and unionist_leader != "Renck") or (heartland_concordat_progress < 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat_progress += 1; unionist_relation += 2*(1-dissent);
 
-We are making progress towards negotiating a concordat between Heartland and the Catholic church. [? if unionist_leader = "Renck": Aurelian Renck of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party uses his connections to speed up negotiations. ?]
+We are making progress towards negotiating a concordat between Heartland and the Faithful church. [? if unionist_leader = "Renck": Aurelian Renck of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party uses his connections to speed up negotiations. ?]
 
 @sign_concordat
 view-if: (heartland_concordat_progress >= 2 and not unionist_leader = "Renck") or (heartland_concordat_progress >= 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat = 1; unionist_relation += 8; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed a Concordat between the Free State of Heartland and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Heartland. This sets the stage for the negotiation of a national Concordat covering all of the Commonwealth.
+We have signed a Concordat between the Free State of Heartland and the Roma Faithful Church, guaranteeing religious freedom for Faithful in Heartland. This sets the stage for the negotiation of a national Concordat covering all of the Commonwealth.
 
-[? if traditionalist_ideology == "Radical": The Catholic members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party. ?]
+[? if traditionalist_ideology == "Radical": The Faithful members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party. ?]

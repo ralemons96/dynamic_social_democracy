@@ -17,7 +17,7 @@ face-image: img/weimar_coalition.jpg
 
 = Democratic Bulwark Dismantled
 
-We have somehow antagonized the <span style="color: #000000;">Christians</span> involved in the <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Christian</span> Coalition ruling over Heartland, and they have called a vote of no confidence against us.
+We have somehow antagonized the <span style="color: #000000;">Faithful</span> involved in the <span style="color: #c00000;">Social</span>-<span style="color: #000000;">Faithful</span> Coalition ruling over Heartland, and they have called a vote of no confidence against us.
 
 [? if marcher_r_heartland + collectivist_r_heartland + sapd_r_heartland < 50: The only alternative coalition that can be formed with the current composition of the state parliament is a broad right-wing coalition, ranging from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the [? if center_right_coalition_heartland >= 50: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if center_right_coalition_heartland < 50: <span style="color: #7A3C00;">**Royalists**</span>?]. [? if traditionalist_ideology == "Radical" and not traditionalist_westarp: However, this is heavily unlikely with the <span style="color: #3E88B3;">**Traditionalists**</span>'s all-or-nothing stance on governance. ?]?][? if marcher_r_heartland + collectivist_r_heartland + sapd_r_heartland >= 50: New elections will have to be called, as all parties to our right lack the votes necessary to form an alternative majority coalition—even if they were to unite behind a single candidate. ?]
 

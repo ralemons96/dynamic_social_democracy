@@ -1,5 +1,5 @@
 title: Staal Enacts Concessions to Labor!
-subtitle: The <span style="color: #000000;">Christian</span> and <span style="color: #c00000;">Free Unions</span> are ecstatic!
+subtitle: The <span style="color: #000000;">Faithful</span> and <span style="color: #c00000;">Free Unions</span> are ecstatic!
 view-if: chancellor == "Staal" and staal_post and not staal_labor and next_reichstag_time == (rubicon_time + 1) and next_reichstag_time > 0
 max-visits: 1
 new-page: true

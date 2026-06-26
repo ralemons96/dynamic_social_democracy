@@ -14,10 +14,10 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @liberals: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?] and conservative-liberal <span style="color: #C0A054;">Commonwealth People's Party</span>.
 - @liberals_ddp: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?].
 - @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Golds</span>.
-- @center: Strengthen our bonds with the Catholic [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
-- @cvp: Reconcile with the <span style="color: #000000;">Christian People's Party</span>.
+- @center: Strengthen our bonds with the Faithful [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+- @cvp: Reconcile with the <span style="color: #000000;">Faithful People's Party</span>.
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
-- @dnvp: Open dialogue with [? if traditionalist_leader != "Lambach": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Lambach": Lambach and the <span style="color: #6D5298;">Christian Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
+- @dnvp: Open dialogue with [? if traditionalist_leader != "Lambach": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Lambach": Lambach and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
 - @spd_alone: The <span style="color: #c00000;">Marchers</span> can stand alone for now.
 - @easy_discard
@@ -102,7 +102,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; unionist_relation += 6*(1 - dissent); concord_left += 1
 
-It's not exactly easy to get the <span style="color: #000000;">Christians</span> to like us again—but it's not impossible either. We will leverage our connections with their <span style="color: #FF7F00;">Christian Left</span> and Labor factions to lay the groundwork for a potential reconciliation between our two parties.
+It's not exactly easy to get the <span style="color: #000000;">Faithful</span> to like us again—but it's not impossible either. We will leverage our connections with their <span style="color: #FF7F00;">Faithful Left</span> and Labor factions to lay the groundwork for a potential reconciliation between our two parties.
 
 @liberals_ddp
 view-if: not lvp_formed and not gold_exist
