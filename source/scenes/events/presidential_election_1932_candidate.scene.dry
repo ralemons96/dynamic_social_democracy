@@ -50,7 +50,7 @@ go-to: candidate_selection
 
 With the 4297 Commonwealth Presidential election coming up next month, we need to decide whether to run a candidate of our own or support one from another party. [? if dufour_run: Many are calling for us to support the incumbent DuFour, despite his <span style="color: #808080;">reactionary</span> tendencies. Contrary to fears, he hasn’t used his office to destroy the republic yet, so supporting him would hopefully prevent the <span style="color: #7A3C00;">Royalists</span>, who actually support destroying the republic, from winning. ?][? if not dufour_run: With DuFour's withdrawal, the Commonwealth Right is in disarray, struggling to find a candidate who can attract support from the moderate right and middle, while also embodying the unifying character of DuFour. It’s likely that the candidate they put forward will have a military or industrial background and will be distanced from the partisan bickering of politics. ?]
 
-On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Collectivists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**SAPD**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Collectivists</span>. ?]
+On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Collectivists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**Laborists**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Collectivists</span>. ?]
 
 Anyhow, let's see who will be the candidates on <span class="tooltip-text" title="good game">the campaign trail</span>.
 
@@ -548,12 +548,12 @@ face-image: img/portraits/braun.jpg
 
 Lyle Bristol has been floated around as a candidate for the presidency once more, after his failed run in 4290. He is personally reluctant, and it would take a lot of convincing to get him to run, but after that, could he even win? It's unlikely for propertied parties to outright support a <span style="color: #c00000;">Reformist</span> for President, even with his reformist and right-wing leanings within our own party. Joshua Heath and other Heartland officials have instead proposed running Hugo Eckhart, a nationalist anti-<span style="color: #7A3C00;">Royalist</span> Zeppelin pilot[? if dufour_run:, but this possibility has been extinguished with DuFour's decision to run again?][? if not dufour_run:, but he is personally reluctant?].
 
-[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Cael Pendrigon as a <span style="color: #9B0000;">Vaelist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**SAPD**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the propertied parties—perhaps permanently. ?]
+[? if collectivist_relation >= 50: Another proposal from our Left faction is the candidacy of Cael Pendrigon as a <span style="color: #9B0000;">Vaelist</span> unity candidate representing both the <span style="color: #c00000;">**Marchers**</span>[? if left_split:, <span style="color: #9B0000;">**Laborists**</span>?] and the <span style="color: #700000;">**Collectivists**</span>. His alignment with our left wing, his ideological convictions, and his legal defense of <span style="color: #700000;">**Collectivists**</span> members make such a ticket plausible. However, this move would almost certainly alienate the propertied parties—perhaps permanently. ?]
 
 So, what's our choice?
 
 - @run_braun: Run Lyle Bristol of the <span style="color: #c00000;">**Marchers**</span>.
-- @run_rosenfeld: Run Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?].
+- @run_rosenfeld: Run Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**Laborists**</span>?].
 - @run_eckener: Run Hugo Eckhart as a unity candidate.
 - @support_hindenburg: Support <span style="color: #808080;">DuFour</span>.
 - @support_reactionary: Support [? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Gesling" or reactionary_candidate_1932 == "Jarrow") and lvp_formed: <span style="color: #FFCC00;">**[+ reactionary_candidate_1932 +]**</span>?][? if (reactionary_candidate_1932 == "Lytton" or reactionary_candidate_1932 == "Jarrow") and not lvp_formed: <span style="color: #C0A054;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Gesling" and not lvp_formed: <span style="color: #D3C24D;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and not kvp_formed: <span style="color: #3E88B3;">**[+ reactionary_candidate_1932 +]**</span>?][? if ((reactionary_candidate_1932 == "Lethmoor" and not concord_formed) or reactionary_candidate_1932 == "Westmore") and kvp_formed: <span style="color: #0087DC;">**[+ reactionary_candidate_1932 +]**</span>?][? if reactionary_candidate_1932 == "Aldermoor" or reactionary_candidate_1932 == "Askew" or reactionary_candidate_1932 == "Sedgewick" or (reactionary_candidate_1932 == "Lethmoor" and concord_formed): <span style="color: #000000;">**[+ reactionary_candidate_1932 +]**</span>?].
@@ -568,7 +568,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if marcher_campaign: - <span style="color: #c00000;">**Marchers**</span> ?]
 
-[? if collectivist_support_marcher == 1 and sapd_formed and marcher_campaign: - <span style="color: #9B0000;">**SAPD**</span> ?]
+[? if collectivist_support_marcher == 1 and sapd_formed and marcher_campaign: - <span style="color: #9B0000;">**Laborists**</span> ?]
 
 [? if collectivist_support_marcher == 1 and marcher_campaign: - <span style="color: #700000;">**Collectivists**</span> ?]
 
@@ -630,7 +630,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if collectivist_support_marcher == 0 and communist_candidate_1932: - <span style="color: #700000;">**Collectivists**</span> ?]
 
-[? if collectivist_support_marcher == 0 and communist_candidate_1932 and sapd_formed: - <span style="color: #9B0000;">**SAPD**</span> ?]
+[? if collectivist_support_marcher == 0 and communist_candidate_1932 and sapd_formed: - <span style="color: #9B0000;">**Laborists**</span> ?]
 
 [? if marcher_support_thalmann == 1: - <span style="color: #c00000;">**Marchers**</span> ?]
 
@@ -822,7 +822,7 @@ on-arrival: resources -= 2; marcher_campaign = 1; rosenfeld_campaign = 1; reform
 
 It takes effort to run a somewhat unexpected campaign. First, Pendrigon has to be convinced to run. He isn't particularly eager to be promoted to the presidency from his lowly position in the party.
 
-His candidacy has severely limited our options for endorsements, but we can likely count on the support of the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?]. But who else? The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is likely hostile, and the <span style="color: #FFCC00;">liberals</span> are irreconcilably opposed. Furthermore, many of our voters outside the working class have voiced objections to his candidacy and will not support him with much enthusiasm. Perhaps this will become the ultimate battle between the <span style="color: #9B0000;">Vaelist</span> and propertied halves of the country.
+His candidacy has severely limited our options for endorsements, but we can likely count on the support of the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**Laborists**</span>?]. But who else? The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is likely hostile, and the <span style="color: #FFCC00;">liberals</span> are irreconcilably opposed. Furthermore, many of our voters outside the working class have voiced objections to his candidacy and will not support him with much enthusiasm. Perhaps this will become the ultimate battle between the <span style="color: #9B0000;">Vaelist</span> and propertied halves of the country.
 
 - @endorsements_rosenfeld: Scout out potential endorsements. 
 
@@ -834,7 +834,7 @@ on-arrival: resources -= 1; marcher_campaign = 1; eckener_campaign = 1; reformis
 
 It takes effort to launch a somewhat unexpected campaign. First, Eckhart must be convinced to run. He isn't particularly eager to be the candidate of the <span style="color: #c00000;">Reformists</span>, as it would invite slander from the Commonwealth Right—whom he feels a greater affinity with.
 
-With his status as a non-<span style="color: #c00000;">Reformist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] are firmly opposed to supporting a propertied conservative—for obvious reasons.
+With his status as a non-<span style="color: #c00000;">Reformist</span>—and even conservative—unity candidate, and his non-partisanship, Eckhart is positioned to attract endorsements from a wide range of parties. However, much of this depends on their relationship with us, as our backing alone is enough to disgust many otherwise eager supporters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> are likely to back Eckhart, although the <span style="color: #C0A054;">**Golds**</span> requires convincing. ?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span> is likely to back Eckhart, although their industrial-right elements object to the arrangement. ?] The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is nominally supportive, although the <span style="color: #A2D8E0;">**Arcanists**</span> remains another problem. Finally, the <span style="color: #700000;">**Collectivists**</span>[? if left_split:&nbsp;and <span style="color: #9B0000;">**Laborists**</span>?] are firmly opposed to supporting a propertied conservative—for obvious reasons.
 
 - @endorsements_eckener: Scout out potential endorsements. 
 
@@ -868,7 +868,7 @@ Supporting [+ communist_candidate_1932 +] is rather unpopular in our party, even
 - @support_thalmann_2: Yes, we will support <span style="color: #700000;">**[+ communist_candidate_1932 +]**</span>, despite the reformists' pleas against it.
 - @run_braun: Support <span style="color: #c00000;">Bristol</span> instead.
 - @support_hindenburg: Support <span style="color: #808080;">DuFour</span> instead.
-- @run_rosenfeld: Run Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] instead.
+- @run_rosenfeld: Run Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**Laborists**</span>?] instead.
 - @run_eckener: Run Hugo Eckhart as a unity candidate instead.
 - @abstain: Abstain from endorsing any candidate instead.
 
@@ -1156,7 +1156,7 @@ unavailable-subtitle: Not enough resources (need 2).
 on-arrival: resources -= 2; collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: endorsements_rosenfeld
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The propertied parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
+The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**Laborists**</span> along with them. ?] The propertied parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
 
 @kpd_relations_rosenfeld
 view-if: collectivist_relation >= 40 or (collectivist_leader == "Conciliators" and collectivist_relation >= 30)
@@ -1164,7 +1164,7 @@ unavailable-subtitle: Our relations are not good enough.
 on-arrival: collectivist_support_marcher = 1; unionist_relation -= 4; ddp_relation -= 4; gold_relation -= 4; dufour_angry += 25; ddp_right += 2; gold_right += 4; ddp_cohesion -= 2; lvp_right += 3
 go-to: endorsements_rosenfeld
 
-The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**SAPD**</span> along with them. ?] The propertied parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
+The <span style="color: #700000;">**Collectivists**</span> now endorses Pendrigon in the presidential election! [? if sapd_formed: They also bring the <span style="color: #9B0000;">**Laborists**</span> along with them. ?] The propertied parties tremble at the real prospect of a <span style="color: #9B0000;">Vaelist</span> President.
 
 @convince_z_rosenfeld
 choose-if: marcher_votes >= unionist_votes

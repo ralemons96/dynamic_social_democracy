@@ -59,7 +59,7 @@ go-to: candidate_selection
 
 [? if marcher_campaign: - <span style="color: #c00000;">**Marchers**</span> ?]
 
-[? if collectivist_support_marcher == 1 and sapd_formed and marcher_campaign: - <span style="color: #9B0000;">**SAPD**</span> ?]
+[? if collectivist_support_marcher == 1 and sapd_formed and marcher_campaign: - <span style="color: #9B0000;">**Laborists**</span> ?]
 
 [? if collectivist_support_marcher == 1 and marcher_campaign: - <span style="color: #700000;">**Collectivists**</span> ?]
 
@@ -121,7 +121,7 @@ go-to: candidate_selection
 
 [? if collectivist_support_marcher == 0 and communist_candidate_1932: - <span style="color: #700000;">**Collectivists**</span> ?]
 
-[? if collectivist_support_marcher == 0 and communist_candidate_1932 and sapd_formed: - <span style="color: #9B0000;">**SAPD**</span> ?]
+[? if collectivist_support_marcher == 0 and communist_candidate_1932 and sapd_formed: - <span style="color: #9B0000;">**Laborists**</span> ?]
 
 [? if marcher_support_thalmann == 1: - <span style="color: #c00000;">**Marchers**</span> ?]
 

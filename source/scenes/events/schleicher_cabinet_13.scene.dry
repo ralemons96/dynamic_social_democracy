@@ -71,8 +71,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_alt) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_alt * 2),
     });
 }
@@ -254,7 +254,7 @@ go-to: negotiation_menu_med if marcher_med; negotiation_menu_win if marcher_win
 
 [? if gnu_formed and marcher_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} Marchers: {!</td><td>!} [+ marcher_r_alt +]% {!</td></tr>!} ?]
 
-[? if sapd_formed and sapd_r_alt: {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} SAPD: {!</td><td>!} [+ sapd_r_alt +]% {!</td></tr>!} ?]
+[? if sapd_formed and sapd_r_alt: {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} Laborists: {!</td><td>!} [+ sapd_r_alt +]% {!</td></tr>!} ?]
 
 [? if collectivist_r_alt: {!<tr><td><div class="box" style='background-color:#700000'> </div></td><td>!} Collectivists: {!</td><td>!} [+ collectivist_r_alt +]% {!</td></tr>!} ?]
 
@@ -496,7 +496,7 @@ achievement: getrennt_marschieren_vereint_schlagen
 
 With our leverage, we have negotiated the reconvening of the Assembly, with Staal promising not to obstruct the chamber's right to assemble as it sees fit. Furthermore, we secured an agreement that his government will not infringe upon the people's right to organize peacefully or on the freedom of the press, with all emergency restrictions lifted.
 
-The most controversial concession was the lifting of the ban on the <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed: and <span style="color: #9B0000;">**SAPD**</span>?], a major retreat and an open sign of Staal's defeat. Although expectedly, the <span style="color: #700000;">**Vanguard**</span> remains banned.
+The most controversial concession was the lifting of the ban on the <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed: and <span style="color: #9B0000;">**Laborists**</span>?], a major retreat and an open sign of Staal's defeat. Although expectedly, the <span style="color: #700000;">**Vanguard**</span> remains banned.
 
 President DuFour, along with the <span style="color: #C0A054;">industrialists</span> and <span style="color: #3E88B3;">nationalists</span>, have now completely lost confidence in the chancellor. A vote of no confidence and new elections are expected. We can harness the significant public enthusiasm shown in defiance of dictatorship and need not fear further democratic backsliding—so long as Staal keeps his word.
 

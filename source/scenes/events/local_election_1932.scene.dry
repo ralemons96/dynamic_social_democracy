@@ -195,7 +195,7 @@ if (Q.unionist_local_elections_vote + Q.ddp_local_elections_vote + Q.gold_local_
 {!<tr><td>Party</td><td>Vote share</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_local_elections_vote +]%** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_local_elections_vote +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_local_elections_vote +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_local_elections_vote +]% {!</td></tr>!}
 
@@ -457,8 +457,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_bavaria) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_bavaria * 1.28),
     });
 }
@@ -582,7 +582,7 @@ go-to: bavaria_coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>state Assembly Seats</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_bavaria_elections_vote +]%** {!</td><td>!} [+ marcher_r_bavaria +]% {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_bavaria_elections_vote +]% {!</td><td>!} [+ sapd_r_bavaria +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_bavaria_elections_vote +]% {!</td><td>!} [+ sapd_r_bavaria +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_bavaria_elections_vote +]% {!</td><td>!} [+ collectivist_r_bavaria +]%  {!</td></tr>!}
 
@@ -609,7 +609,7 @@ go-to: bavaria_coalition_menu
 <hr id="read-marker">
 The <span style="color: #38C538;">Avrizan Peasants’ League</span> serves as the nucleus of the federal <span style="color: #007A00;">Commonwealth Peasants' Party</span> and is surprisingly liberal and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> compared to other agricultural parties and organizations, such as the <span style="color: #7FCEB1;">**CNBLP**</span>. Recently, they even exited the <span style="color: #A2D8E0;">**Arcanists**</span>'s cabinet over a dispute about taxes. [? if concord_formed: <br><br> With the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, the <span style="color: #3E88B3;">**Traditionalists**</span>'s Avrizan branch has largely merged into the <span style="color: #A2D8E0;">**Arcanists**</span>, although some elements have instead chosen to align with the <span style="color: #003755;">**DNF**</span>. ?]
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_bavaria +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_bavaria +]% 
 
 Traffic Light Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #38C538;">Avrizan Peasants’ League</span>): [+ marcher_coalition_bavaria +]% 
 
@@ -931,8 +931,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_wurttemberg) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_wurttemberg * 0.8),
     });
 }
@@ -1057,7 +1057,7 @@ go-to: wurttemberg_coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>state Assembly Seats</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_wurttemberg_elections_vote +]%** {!</td><td>!} [+ marcher_r_wurttemberg +]% {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_wurttemberg_elections_vote +]% {!</td><td>!} [+ sapd_r_wurttemberg +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_wurttemberg_elections_vote +]% {!</td><td>!} [+ sapd_r_wurttemberg +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_wurttemberg_elections_vote +]% {!</td><td>!} [+ collectivist_r_wurttemberg +]%  {!</td></tr>!}
 
@@ -1084,7 +1084,7 @@ go-to: wurttemberg_coalition_menu
 <hr id="read-marker">
 The <span style="color: #006400;">Purl Farmers' and Winegrowers' Association</span> (<span style="color: #006400;">**WBWB**</span>) is a regional branch of the Landed League, and closely cooperates with the regional party of the <span style="color: #3E88B3;">**Traditionalists**</span>, the <span style="color: #3E88B3;">Purl Citizens' Party</span>.[? if concord_formed: However, the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has prompted a merger between the <span style="color: #3E88B3;">Citizens' Party</span> and the <span style="color: #000000;">Unionist Party</span>. ?]
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_wurttemberg +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_wurttemberg +]% 
 
 [? if not concord_formed: Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #000000;">**[+ unionist_party_name +]**</span>): [+ marcher_coalition_wurttemberg +]% ?][? if concord_formed: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_wurttemberg +]% ?]
 

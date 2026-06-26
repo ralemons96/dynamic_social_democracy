@@ -93,7 +93,7 @@ The Commonwealth Army and <span style="color: #7A3C00;">far</span>-<span style="
 
 [? if heartland_leader == "Goodlake": Goodlake, despite hopes that he would shift toward democratic rule, ignores the <span style="color: #000000;">Unionist Party</span>'s objections and rules with Staal's full confidence. ?][? if heartland_leader == "Bristol" or heartland_leader == "Sedgewick" or heartland_leader == "Lytton" or heartland_leader == "Askew": The Heartland government refuses to side with Staal here, and does not enforce his orders. ?]
 
-[? if sapd_formed: Alongside the <span style="color: #700000;">**Collectivists**</span>, the <span style="color: #9B0000;">**SAPD**</span> is declared complicit and its members are hunted down just the same. Are we really going to let the government throw our former comrades into prisons? ?][? if not sapd_formed: Are we really going to let the government throw our comrades into prisons? ?]
+[? if sapd_formed: Alongside the <span style="color: #700000;">**Collectivists**</span>, the <span style="color: #9B0000;">**Laborists**</span> is declared complicit and its members are hunted down just the same. Are we really going to let the government throw our former comrades into prisons? ?][? if not sapd_formed: Are we really going to let the government throw our comrades into prisons? ?]
 
 - @do_nothing
 - @fight_mild
@@ -117,8 +117,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r * Q.reichstag_size),
     });
 }
@@ -316,7 +316,7 @@ They should’ve simply not burned down the Assembly. What were they thinking—
 
 [? if gnu_formed: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} Marchers: {!</td><td>!} [+ marcher_r +]% {!</td></tr>!} ?]
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} Laborists: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div></td><td>!} Collectivists: {!</td><td>!} [+ collectivist_r +]% {!</td></tr>!}
 

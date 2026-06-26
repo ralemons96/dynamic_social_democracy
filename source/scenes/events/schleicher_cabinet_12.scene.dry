@@ -96,7 +96,7 @@ All <span style="color: #700000;">**Collectivist**</span> Assembly members who h
 
 [? if heartland_leader == "Crowde": Furthermore, Crowde has authorized an extensive crackdown on suspected <span style="color: #700000;">Collectivist</span> members using his authority as Minister-President of Heartland, even if said members don't pose a significant threat. ?]
 
-[? if sapd_formed: Along with the <span style="color: #700000;">**Collectivists**</span>, the <span style="color: #9B0000;">**SAPD**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
+[? if sapd_formed: Along with the <span style="color: #700000;">**Collectivists**</span>, the <span style="color: #9B0000;">**Laborists**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
 
 - @do_nothing
 - @fight_mild
@@ -120,8 +120,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r * Q.reichstag_size),
     });
 }
@@ -319,7 +319,7 @@ It must suck for those <span style="color: #700000;">**Collectivists**</span>, b
 
 [? if gnu_formed: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} Marchers: {!</td><td>!} [+ marcher_r +]% {!</td></tr>!} ?]
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} Laborists: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div></td><td>!} Collectivists: {!</td><td>!} [+ collectivist_r +]% {!</td></tr>!}
 

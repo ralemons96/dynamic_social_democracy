@@ -333,8 +333,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_saxony) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_saxony * 0.96),
     });
 }
@@ -474,7 +474,7 @@ go-to: saxony_achievement
 {!<tr><td>Party</td><td>Vote share</td><td>state Assembly Seats</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_saxony_elections_vote +]%** {!</td><td>!} [+ marcher_r_saxony +]% {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_saxony_elections_vote +]% {!</td><td>!} [+ sapd_r_saxony +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_saxony_elections_vote +]% {!</td><td>!} [+ sapd_r_saxony +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#fe9e00'> </div> !}ASPD: {!</td><td>!} [+ aspd_saxony_elections_vote +]% {!</td><td>!} [+ aspd_r_saxony +]% {!</td></tr>!}
 
@@ -511,7 +511,7 @@ The Dornish Dispute arose when the Dornish branch of the <span style="color: #c0
 
 Notable members of the <span style="color: #fe9e00;">**ASPD**</span> include Bevan Hale, August Winnig (a supporter of the officers’ putsch), Lorcan Underthorn (a "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolshevik</span>"), and its party leader, former Minister-President Kerrick Brunmoor. The party was labeled "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntist</span>" by the <span style="color: #700000;">**Collectivists**</span>, marking the <span class="tooltip-text" title="that's me! the modman!">origin</span> of the term.
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_saxony +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ASPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
 

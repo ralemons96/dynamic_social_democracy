@@ -1245,7 +1245,7 @@ Lyle Bristol of the <span style="color: #c00000;">**Marchers**</span> has won th
 on-arrival: president = "Pendrigon"; president_ideology = "Left"; center_dissent -= 5; labor_dissent -= 5; left_dissent -= 15; left_strength += 20; commons_marcher += 9*(1-dissent); disfavored_marcher += 6*(1-dissent); coup_progress += 4; capital_strike_progress += 4
 go-to: achievement_check_1
 
-Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**SAPD**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
+Cael Pendrigon of the [? if not left_split: <span style="color: #c00000;">**Marchers**</span>?][? if left_split: <span style="color: #9B0000;">**Laborists**</span>?] has won the presidency! This is a moment of celebration for our party, and his victory is able to bolster our support.
 
 However, his leftism has sparked rumors of a planned "March on Axton" by the <span style="color: #7A3C00;">**Loyalists**</span> and <span style="color: #3E88B3;">**Wardens**</span>, who see his election as tantamount to electing a <span style="color: #700000;">**Collectivist**</span>. Industrialists, equally displeased, may resort to protest through their own means.
 

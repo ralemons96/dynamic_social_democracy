@@ -89,8 +89,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r * Q.reichstag_size),
     });
 }
@@ -257,7 +257,7 @@ if (d3 && window) {
     var lines = d3.linegraph(false, false,
             Q.parties_graph,
             {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC'},
-            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -270,7 +270,7 @@ if (d3 && window) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
             {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC'},
-            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'SAPD', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -317,7 +317,7 @@ if (d3 && window) {
 
 [? if gnu_formed: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} Marchers: {!</td><td>!} [+ marcher_r +]% {!</td></tr>!} ?]
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} Laborists: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div></td><td>!} Collectivists: {!</td><td>!} [+ collectivist_r +]% {!</td></tr>!}
 

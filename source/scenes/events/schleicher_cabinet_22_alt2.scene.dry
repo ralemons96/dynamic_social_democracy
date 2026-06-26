@@ -10,7 +10,7 @@ go-to: treviranus_menu
 
 Trevannon, having failed to win over the <span style="color: #6A1E1E;">**DSU**</span>, has now turned to us for support. We find ourselves in the role of kingmaker, while the Chancellor grows increasingly desperate to secure a majority. However, DuFour—on his death bed—lacks the energy to intervene in the process, leading Trevannon to personally approach us with an offer.
 
-He is offering to repeal the ban on the <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?], in return for us refraining to call a vote of no confidence on his government until DuFour inevitably kicks the bucket.
+He is offering to repeal the ban on the <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**Laborists**</span>?], in return for us refraining to call a vote of no confidence on his government until DuFour inevitably kicks the bucket.
 
 But perhaps we can bypass this deadlock by targeting DuFour himself. With a two-thirds majority in the Assembly, we could initiate impeachment proceedings under Article 59 or trigger a recall election under Article 43. If the recall election were to fail, the Assembly would be dissolved for new elections.
 
@@ -57,7 +57,7 @@ Q.impeachment_votes = parseFloat(Q.impeachment_votes.toFixed(1));
 !}
 max-visits: 1
 
-We are able to gather the support of [+ marcher_r + collectivist_r + sapd_r +]% of the Assembly, with all <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] deputies expected to vote in favor. Our effort is also aided by the fact that DuFour only has a few months left to live.
+We are able to gather the support of [+ marcher_r + collectivist_r + sapd_r +]% of the Assembly, with all <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**Laborists**</span>?] deputies expected to vote in favor. Our effort is also aided by the fact that DuFour only has a few months left to live.
 
 [? if impeachment_ddp: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of the only propertied parties standing up for the Unity Republic and the constitution the party's founders drafted. We are expected to see their deputies vote with us. ?][? if not impeachment_ddp and not lvp_formed: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has strayed too far from its former <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> ideals, and now sees support for DuFour as a hard but necessary choice in the national interest. ?]
 

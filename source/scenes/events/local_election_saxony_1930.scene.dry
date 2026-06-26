@@ -435,8 +435,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_saxony) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_saxony * 0.96),
     });
 }
@@ -605,7 +605,7 @@ go-to: saxony_coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>state Assembly Seats</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_saxony_elections_vote +]%** {!</td><td>!} [+ marcher_r_saxony +]% {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_saxony_elections_vote +]% {!</td><td>!} [+ sapd_r_saxony +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_saxony_elections_vote +]% {!</td><td>!} [+ sapd_r_saxony +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#fe9e00'> </div> !}ASPD: {!</td><td>!} [+ aspd_saxony_elections_vote +]% {!</td><td>!} [+ aspd_r_saxony +]% {!</td></tr>!}
 
@@ -644,7 +644,7 @@ go-to: saxony_coalition_menu
 <hr id="read-marker">
 The [+ saxony_leader +] Cabinet has collapsed a few months ago due to a dispute involving the Dornish Reichrat delegation voting for the Serannus Plan, which has resulted in the loss of confidence from the <span style="color: #3E88B3;">**Traditionalists**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**Royalists**</span>. However, they do elect the [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]'s Orrin Sheckley as Minister-President in a caretaker cabinet of experts, before the <span style="color: #7A3C00;">**Royalists**</span> ultimately voted for dissolving parliament. The political climate has greatly changed from last year, and the extremist parties are expected to gain. 
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**SAPD**</span>?]): [+ left_coalition_saxony +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ASPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
 

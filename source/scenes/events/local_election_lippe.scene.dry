@@ -366,8 +366,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r_lippe) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r_lippe * 0.21),
     });
 }
@@ -498,7 +498,7 @@ Vote % changes are compared to the last *Assembly* election. <br> Seat % changes
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>state Assembly Seats</td><td>% Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **Marchers:** {!</td><td>!} **[+ marcher_lippe_elections_vote +]%** {!</td><td>!} **[+ str_votes_change_marcher_lippe +]** {!</td><td>!} **[+ marcher_r_lippe +]%** {!</td><td>!} **[+ str_change_marcher_lippe +]** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}SAPD: {!</td><td>!} [+ sapd_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_sapd_lippe +] {!</td><td>!} [+ sapd_r_lippe +]% {!</td><td>!} [+ str_change_sapd_lippe +] ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_sapd_lippe +] {!</td><td>!} [+ sapd_r_lippe +]% {!</td><td>!} [+ str_change_sapd_lippe +] ?]
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_collectivist_lippe +] {!</td><td>!} [+ collectivist_r_lippe +]% {!</td><td>!} [+ str_change_collectivist_lippe +] {! </td></tr>!}
 

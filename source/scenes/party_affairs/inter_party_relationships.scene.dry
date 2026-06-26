@@ -219,8 +219,8 @@ data = [{
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
         "id": "sapd",
-        "legend": "SAPD",
-        "name": "SAPD",
+        "legend": "Laborists",
+        "name": "Laborists",
         "seats": Math.round(Q.sapd_r * Q.reichstag_size),
     });
 }
