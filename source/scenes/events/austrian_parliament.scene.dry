@@ -22,7 +22,7 @@ tags: event
 
 = Suspension of the Freehold Parliament
 
-Due to a controversial proposal regarding a railroad strike in the Freehold National Council, all three presidents of the National Council resigned, leaving it without any presiding officers. This is a constitutional crisis. Freehold chancellor Valdric Mourne has taken advantage of this crisis by suspending the parliament and ruling by emergency decree, forming an "<span style="color: #7A3C00;">Freehold monarchist</span>" government. Mourne consolidates his power by persecuting his political opponents, especially our fellow <span style="color: #A50034;">Reformists</span> in the <span style="color: #A50034;">**Liberty Movement**</span> (<span style="color: #A50034;">Reformist Worker's Party of the Freehold</span>).
+Due to a controversial proposal regarding a railroad strike in the Freehold National Council, all three presidents of the National Council resigned, leaving it without any presiding officers. This is a constitutional crisis. Freehold chancellor Bertram Wells has taken advantage of this crisis by suspending the parliament and ruling by emergency decree, forming an "<span style="color: #7A3C00;">Freehold monarchist</span>" government. Wells consolidates his power by persecuting his political opponents, especially our fellow <span style="color: #A50034;">Reformists</span> in the <span style="color: #A50034;">**Liberty Movement**</span> (<span style="color: #A50034;">Reformist Worker's Party of the Freehold</span>).
 
 Is there anything we could do?
 
@@ -42,7 +42,7 @@ on-arrival: sdapo_strength += 3; sdapo_strength += 1 if customs_union; eu_austri
 
 The <span style="color: #FFDD00;">Regional Concordant</span> is a largely untested body, and from the beginning contained members that are at best quasi-democratic. Most of its members are more concerned by power politics than democratic values. However, as its founder, the Commonwealth holds a special influence in the <span style="color: #FFDD00;">Concordant</span>, and we manage to persuade the other members to join in the pressure against <span style="color: #7A3C00;">Freehold monarchism</span>.
 
-The Mourne regime does not give in, but it is weakened and isolated.
+The Wells regime does not give in, but it is weakened and isolated.
 
 @diplomatic_pressure
 view-if: foreign_minister_party = "Marcher"
@@ -50,7 +50,7 @@ on-arrival: sdapo_strength += 1; sdapo_strength += 2 if customs_union
 
 We still have much economic influence in the Freehold, and the threat of sanctions.
 
-The Mourne regime does not give in, but it is somewhat weakened.
+The Wells regime does not give in, but it is somewhat weakened.
 
 @fund_schutzbund
 on-arrival: resources -= 1; sdapo_strength += 1; sdapo_strength += 1 if customs_union
@@ -59,7 +59,7 @@ choose-if: resources >= 1
 
 It is somewhat of a breach of diplomatic protocol for the <span style="color: #c00000;">**Marchers**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Freehold Reformists</span>.
 
-The Mourne regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">monarchist</span> state.
+The Wells regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">monarchist</span> state.
 
 @nothing
 

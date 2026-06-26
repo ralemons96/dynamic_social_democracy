@@ -13,7 +13,7 @@ tags: event
 # long civil war if sdapo_strength = 5 or 4 - opportunity for interference/forced peace
 # instant defeat if sdapo_strength < 4
 
-The crisis in the Freehold is continuing. The "<span style="color: #7A3C00;">Freehold monarchist</span>" government led by Valdric Mourne continues to rule by emergency decree. It has been persecuting its political opposition, primarily the <span style="color: #A50034;">Reformists</span> of the <span style="color: #A50034;">**Liberty Movement**</span>.
+The crisis in the Freehold is continuing. The "<span style="color: #7A3C00;">Freehold monarchist</span>" government led by Bertram Wells continues to rule by emergency decree. It has been persecuting its political opposition, primarily the <span style="color: #A50034;">Reformists</span> of the <span style="color: #A50034;">**Liberty Movement**</span>.
 
 [? if sdapo_strength < 6: Now, the Freehold is entering a state of civil war. When the police attempted to seize weapons from the Liberty militia, the Liberty militia responded with force, shooting at the government troops. Fighting has sporadically broken out between Liberty militia and government forces all over the Freehold. ?]
 

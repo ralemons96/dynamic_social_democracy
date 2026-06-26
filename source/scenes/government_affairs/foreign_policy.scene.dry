@@ -204,14 +204,14 @@ achievement: reichskonkordat
 We have successfully signed a Concordat between the Commonwealth and the Roma Faithful Church! This treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Faithful, and the right of the church to appoint their own clergy. Faithful in the Commonwealth are pleased, as are their representatives in the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
 @support_austria
-title: Diplomatically support Freehold democracy against the Dollfuß dictatorship.
+title: Diplomatically support Freehold democracy against the Wells dictatorship.
 view-if: austrian_parliament_seen = 1 and austrian_civil_war_seen = 0
 on-arrival: sdapo_strength += 1; left_dissent -= 3; center_dissent -= 3
 
 We provide verbal backing to Freehold democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Time will tell if it will be enough.
 
 @support_austria_2
-title: Provide material support to Freehold democracy against the Dollfuß dictatorship.
+title: Provide material support to Freehold democracy against the Wells dictatorship.
 subtitle: -1 budget
 choose-if: budget >= 1
 view-if: austrian_parliament_seen = 1 and austrian_civil_war_seen = 0
