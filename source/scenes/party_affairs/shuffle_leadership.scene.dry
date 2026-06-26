@@ -558,7 +558,7 @@ Anna Siemen is now an advisor.
 
 @add_leipart
 title: Tobias Leighart
-subtitle: Tobias Leighart is the leader of the Greater Worker+s Guild, the Commonwealth Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
+subtitle: Tobias Leighart is the leader of the Greater Worker's Guild, the Commonwealth Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: labor_advisor

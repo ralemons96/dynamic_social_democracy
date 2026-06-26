@@ -9,7 +9,7 @@ go-to: schleicher_menu if not staal_marcher_adopted; schleicher_spd_established 
 
 = Relations with the Red General
 
-[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Kurt von Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker+s Guild, our union, has shown some openness to an accommodation with General Kurt von Staal. He has also shown interest in winning over the union through his support for public works. ?]
+[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Kurt von Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker's Guild, our union, has shown some openness to an accommodation with General Kurt von Staal. He has also shown interest in winning over the union through his support for public works. ?]
 
 @schleicher_menu
 
@@ -22,24 +22,24 @@ go-to: schleicher_menu if not staal_marcher_adopted; schleicher_spd_established 
 
 @spd_schleicher_adopted
 subtitle: The unions have firmly decided, but convincing the party is a whole another matter.
-unavailable-subtitle: The pro-Staal factions aren't strong enough to have an impact on Greater Worker+s Guild policy.
+unavailable-subtitle: The pro-Staal factions aren't strong enough to have an impact on Greater Worker's Guild policy.
 view-if: staal_marcher_support >= 10
 choose-if: labor_strength + reformist_strength + social_patriot_strength >= (center_strength*1.5) + left_strength
 on-arrival: staal_marcher_adopted = 1; staal_marcher_r += 1 if staal_marcher_r < 5; center_dissent += 5; left_dissent += 10; labor_strength += 10; reformist_strength += 5; staal_approval += 2
 max-visits: 1
 
-The Greater Worker+s Guild leadership has now officially—although only in private—taken a stance in favor of cooperating with the "Red General." The union will attempt to leverage its influence over the <span style="color: #c00000;">**Marchers**</span> to push our hesitant party leadership toward adopting the same position.
+The Greater Worker's Guild leadership has now officially—although only in private—taken a stance in favor of cooperating with the "Red General." The union will attempt to leverage its influence over the <span style="color: #c00000;">**Marchers**</span> to push our hesitant party leadership toward adopting the same position.
 
 Gradually, a shift in opinion is becoming visible within the party. Lyle Bristol has now come out in support of making deals with the General.
 
 @convince_spd_schleicher
 subtitle: [? if chancellor == "Goodryke": It's almost impossible to argue to the party to pursue this line, at least with Goodryke as chancellor. ?][? if chancellor == "Staal": Cooperation with the General himself is not unthinkable, with his concessions made toward the unions. ?]
-unavailable-subtitle: The pro-Staal factions aren't strong enough to have an impact on Greater Worker+s Guild policy.
+unavailable-subtitle: The pro-Staal factions aren't strong enough to have an impact on Greater Worker's Guild policy.
 view-if: staal_marcher_support < 10
 choose-if: labor_strength + reformist_strength + social_patriot_strength >= (center_strength*1.5) + left_strength
 on-arrival: staal_marcher_support += 3; staal_marcher_support += 1 if wtb_adopted; staal_marcher_support -= 1 if chancellor == "Goodryke"; staal_marcher_support -= 1 if otl_heartland_coup_seen; commons_marcher -= 1; disfavored_marcher -= 1; commons_collectivist += 1; disfavored_collectivist += 1; center_dissent += 5; left_dissent += 5
 
-Slowly but surely, the Greater Worker+s Guild leadership is beginning to warm to the idea of constructive cooperation with the so-called "Red General." However, much work remains to be done—many within the union, and the overwhelming majority of the <span style="color: #c00000;">**Marchers**</span>, remain firmly opposed to cooperating with the man [? if chancellor == "Goodryke": propping up the widely despised Goodryke cabinet?][? if chancellor == "Staal": who now heads a widely unpopular government?]. [? if wtb_adopted: Our adoption of the WTB Plan—and Staal’s public support for similar public works initiatives—has modestly increased the party’s willingness to consider cooperation. ?]
+Slowly but surely, the Greater Worker's Guild leadership is beginning to warm to the idea of constructive cooperation with the so-called "Red General." However, much work remains to be done—many within the union, and the overwhelming majority of the <span style="color: #c00000;">**Marchers**</span>, remain firmly opposed to cooperating with the man [? if chancellor == "Goodryke": propping up the widely despised Goodryke cabinet?][? if chancellor == "Staal": who now heads a widely unpopular government?]. [? if wtb_adopted: Our adoption of the Voss Renewal Plan—and Staal’s public support for similar public works initiatives—has modestly increased the party’s willingness to consider cooperation. ?]
 
 [? if otl_heartland_coup_seen: Furthermore, his role in the coup against our Heartland government has only deepened the animosity toward both him and the <span style="color: #c00000;">**Marchers**</span>. ?] Rumors about our cooperation has damaged our standing among the working class.
 
@@ -68,7 +68,7 @@ We continue to decry the anti-democratic opposition as ruinous to the Republic, 
 subtitle: More regular meetings will be held between the two groups.
 on-arrival: staal_marcher_r += 1; staal_marcher_support += 1; staal_marcher_influence += 1
 
-Regular secret meetings between the Greater Worker+s Guild, the <span style="color: #c00000;">**Marchers**</span>, and von Staal are being held. This will aid in reducing the mutual distrust between the party and the government.
+Regular secret meetings between the Greater Worker's Guild, the <span style="color: #c00000;">**Marchers**</span>, and von Staal are being held. This will aid in reducing the mutual distrust between the party and the government.
 
 @schleicher_distance
 subtitle: We will sideline his sympathizers.

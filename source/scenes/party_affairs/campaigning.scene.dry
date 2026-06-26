@@ -27,7 +27,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: commons_marcher += 6*(1-dissent); commons_marcher -= 1 if disfavored >= 20; commons_marcher -= 1 if disfavored >= 30; commons_marcher += 3*(1-dissent) if wtb_adopted = 1; resources -= 1; commons_marcher += 3*(1-dissent) if nationalization_progress >= 1;
 
-We have increased our campaigning among the workers. [? if disfavored >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract workers. ?]
+We have increased our campaigning among the workers. [? if disfavored >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the Voss Renewal Plan gives us a new rallying point around which to attract workers. ?]
 
 @new_middle
 subtitle: -1 resources
@@ -59,7 +59,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: disfavored_marcher += 6*(1-dissent); resources -= 1; disfavored_marcher -= 3 if welfare < 0; disfavored_marcher -= 2 if disfavored >= 30; disfavored_marcher += 6*(1-dissent) if wtb_adopted = 1; disfavored_marcher += 3*(1-dissent) if welfare >= 2;
 
-We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
+We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the Voss Renewal Plan gives us a new rallying point around which to attract support from the unemployed. ?]
 
 @catholics
 subtitle: -1 resources

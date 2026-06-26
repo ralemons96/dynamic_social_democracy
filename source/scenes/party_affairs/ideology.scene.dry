@@ -75,7 +75,7 @@ if (Q.ideology && Q.ideology != "socpat") {
 go-to: changed if changed = 1
 on-departure: ideology = "socpat"; social_patriot_strength += 10; left_dissent += 10; center_dissent += 10; reformist_dissent += 5; unionist_relation += 6; gold_relation += 6; ddp_relation += 6; lvp_relation += 6; collectivist_relation -= 15; gold_left += 1; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 1
 
-The social patriot wing of the party, widely regarded as Staal's puppets, is the most supportive of the <span style='color: #c00000;'>**Marchers**</span> and Greater Worker+s Guild adopting a more nationalist stance.
+The social patriot wing of the party, widely regarded as Staal's puppets, is the most supportive of the <span style='color: #c00000;'>**Marchers**</span> and Greater Worker's Guild adopting a more nationalist stance.
 
 @changed
 on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5

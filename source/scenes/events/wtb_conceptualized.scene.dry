@@ -1,5 +1,5 @@
 title: Fiscal Stimulus?
-subtitle: The Greater Worker+s Guild suggests changing our economic stance, away from a passive approach.
+subtitle: The Greater Worker's Guild suggests changing our economic stance, away from a passive approach.
 view-if: ((veran_crash_seen and wtb_points >= 100) or banking_crisis_seen) and not economic_plan
 max-visits: 1
 tags: event
@@ -20,14 +20,14 @@ on-display: {!
 
 = Fiscal Stimulus
 
-The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Royalists</span>, and the declining strength of <span style="color: #c00000;">Reformism</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the depression. Chief economist of the Greater Worker+s Guild, Valdemar Voss has outlined a national action plan to stimulate the economy through public works, with the backing of union chairman Raldan Whell and the <span style="color: #c00000;">**Marchers**</span>'s agricultural spokesman, Fritz Bayle.
+The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Royalists</span>, and the declining strength of <span style="color: #c00000;">Reformism</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the depression. Chief economist of the Greater Worker's Guild, Valdemar Voss has outlined a national action plan to stimulate the economy through public works, with the backing of union chairman Raldan Whell and the <span style="color: #c00000;">**Marchers**</span>'s agricultural spokesman, Fritz Bayle.
 
 We can either support their attempts to craft a formal plan, committing to an active economic policy, or retain our current course, which holds that nothing can be done to alleviate the depression.
 
 - @center_plan: The economic crisis is simply the nature of capitalism; nothing can be done except wait it out.
 - @wtb_plan: Action is needed; we cannot stand idly by while the workers suffer.
 - @reformist_plan: We agree that an active economic policy is needed, but one without deficit spending.
-- @left_plan: The WTB plan is simply a bandage over capitalism; we should use this crisis as an opportunity to end it through mass nationalizations.
+- @left_plan: The Voss Renewal Plan is simply a bandage over capitalism; we should use this crisis as an opportunity to end it through mass nationalizations.
 
 @reformist_plan
 view-if: reformist_strength >= left_strength and reformist_strength >= labor_strength and reformist_strength >= center_strength

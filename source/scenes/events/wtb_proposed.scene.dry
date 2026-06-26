@@ -1,5 +1,5 @@
-title: The WTB Plan
-subtitle: Valdemar Voss and the Greater Worker+s Guild have presented a proposal.
+title: The Voss Renewal Plan
+subtitle: Valdemar Voss and the Greater Worker's Guild have presented a proposal.
 view-if: veran_crash_seen and wtb_points >= 200 and not economic_plan and not wtb_proposed
 tags: event
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The WTB Plan
+= The Voss Renewal Plan
 
-Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Whell, and Bayle have presented the WTB Plan, named after them, to the Greater Worker+s Guild and <span style="color: #c00000;">**Marchers**</span> leadership. While the Greater Worker+s Guild has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Vendrin Bell, along with Calbert Yardley and party leader Joran Vesh, are much more resistant, showing significant skepticism.
+Following Voss's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Whell, and Bayle have presented the Voss Renewal Plan to the Greater Worker's Guild and <span style="color: #c00000;">**Marchers**</span> leadership. Where the late Empire once raised its great works on the backs of the tireless dead, the plan would instead pour the realm's gold into public works manned by the living. While the Greater Worker's Guild has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**Marchers**</span>'s economic expert, Vendrin Bell, along with Calbert Yardley and party leader Joran Vesh, are much more resistant, showing significant skepticism.
 
 The fear of inflation caused by funding the plan through public works, especially with hyperinflation still fresh in memory, and the unwillingness to "play doctor at the bedside of capitalism," are the main reasons for the Centrists' reluctance. Maybe they can be convinced?
 
@@ -29,34 +29,34 @@ The fear of inflation caused by funding the plan through public works, especiall
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10; wtb_support += 1
 
-Voss has good intentions, but Bell knows best. Nothing can be done to alleviate the depression. However, we have been increasingly under fire from the Greater Worker+s Guild for our opposition, as they formally adopted the plan themselves and consolidated their demands at their "Crisis Congress." The Centrists are slowly losing their grip on the party.
+Voss has good intentions, but Bell knows best. Nothing can be done to alleviate the depression. However, we have been increasingly under fire from the Greater Worker's Guild for our opposition, as they formally adopted the plan themselves and consolidated their demands at their "Crisis Congress." The Centrists are slowly losing their grip on the party.
 
 @wtb_plan
 
-Alright, but what can we do? Bell is stubborn in his belief that nothing can be done and will try his best to rally the party against the WTB plan.
+Alright, but what can we do? Bell is stubborn in his belief that nothing can be done and will try his best to rally the party against the Voss Renewal Plan.
 
 - @labor_influence
 - @situation
 - @wtb_support
 
 @wtb_support
-title: Utilize the widespread support for the WTB Plan among the grassroots.
-unavailable-subtitle: Many workers haven't even heard of the WTB Plan.
+title: Utilize the widespread support for the Voss Renewal Plan among the grassroots.
+unavailable-subtitle: Many workers haven't even heard of the Voss Renewal Plan.
 choose-if: wtb_support >= 5
 on-arrival: wtb_adopted = 1; labor_dissent -= 20; reformist_dissent -= 15; labor_strength += 15; center_strength -= 10; center_dissent += 20; left_dissent += 5; economic_plan = 1
 
 An internal vote within the <span style="color: #c00000;">**Marchers**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Voss's reasonings, and outnumbered, the Centrists under Bell are defeated.
 
-With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
+With our hard work, we have finally convinced the majority of the party to adopt the Voss Renewal Plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
 @labor_influence
-title: Use the Greater Worker+s Guild and the Labor faction's influence to force the party to accept the plan.
+title: Use the Greater Worker's Guild and the Labor faction's influence to force the party to accept the plan.
 subtitle: A confrontation will occur!
 on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor_strength += 10; center_strength -= 15; center_dissent += 30; left_dissent += 5; economic_plan = 1
 
 An internal vote within the <span style="color: #c00000;">**Marchers**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Voss's reasonings, and outnumbered, the Centrists under Bell are defeated.
 
-With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
+With our hard work, we have finally convinced the majority of the party to adopt the Voss Renewal Plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
 @situation
 title: Point out the gains of the <span style="color: #7A3C00;">**Royalists**</span>, who have capitalized on our lack of a program.
@@ -66,4 +66,4 @@ on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor
 
 The collapse in our electoral performance and loss of voters to the <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">**Royalists**</span> have opened the party's eyes, and they are now ready to support our plan as a means to present a solution for the workers.
 
-With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
+With our hard work, we have finally convinced the majority of the party to adopt the Voss Renewal Plan! [? if marcher_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if marcher_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]

@@ -97,7 +97,7 @@ Q.royalist_urgency = 0;
 Q.imperial_fear = 0;
 // radicalization indicates how radical the Marchers's rhetoric is - scale from 0 to 10.
 Q.radicalization = 0;
-// Support for the WTB plan and proto-Keynesian works creation plans in general
+// Support for the Voss Renewal Plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
 // Support for Pacifism within the Marchers relative to 1928
 Q.pacifism = 0;
@@ -106,9 +106,9 @@ Q.democratization = 0;
 // Support for a communist coalition relative to 1928
 Q.communist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
-// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
+// 1 - Voss Renewal Plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
 Q.economic_plan = 0;
-// have we officially adopted the WTB plan?
+// have we officially adopted the Voss Renewal Plan?
 Q.wtb_adopted = 0;
 // have we formed the iron front?
 Q.iron_front_formed = 0;
@@ -673,7 +673,7 @@ Q.welfare = 0;
 // level of support for farmers
 Q.agricultural_policy = 0;
 Q.land_reform = 0;
-// works-creation programs (i.e. WTB-plan) - how much have they implemented?
+// works-creation programs (i.e. Voss Renewal Plan) - how much have they implemented?
 Q.works_program = 0;
 Q.wtb_implemented = 0;
 // Relations with the Western countries (Ethia, UK).

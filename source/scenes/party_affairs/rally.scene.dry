@@ -75,7 +75,7 @@ Mass rallies are a common feature of <span style="color: #c00000;">Reformist</sp
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
 - @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
-- @wtb: Support the WTB plan!
+- @wtb: Support the Voss Renewal Plan!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
@@ -108,10 +108,10 @@ Our speakers denounce the military establishment and all the spending entering t
 @wtb
 view-if: wtb_adopted = 1
 choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not marcher_in_government and not marcher_toleration))
-unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the WTB plan is necessary to continue an effective campaign. ?]
+unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the Voss Renewal Plan is necessary to continue an effective campaign. ?]
 on-arrival: commons_marcher += 3*(1-dissent); disfavored_marcher += 3*(1-dissent); landed_marcher += 1*(1-dissent); burgher_marcher += 1*(1-dissent); guild_marcher += 1*(1-dissent); commons_marcher += 3*(1-dissent) if wtb_implemented; disfavored_marcher += 3*(1-dissent) if wtb_implemented; landed_marcher += 2*(1-dissent) if wtb_implemented; burgher_marcher += 2*(1-dissent) if wtb_implemented; guild_marcher += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
 
-The WTB plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
+The Voss Renewal Plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 
 @local

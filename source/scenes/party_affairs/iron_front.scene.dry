@@ -28,7 +28,7 @@ The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">
 - @defense: Rally for defense against the <span style="color: #7A3C00;">Sovereigntists</span> with the the Banners.
 - @pacifism: Rally for pacifism, against nationalism and war.
 - @republic: Rally to save the democratic republic against <span style="color: #7A3C00;">dictatorship</span>.
-- @wtb: Rally for economic change and the WTB-Plan.
+- @wtb: Rally for economic change and the Voss Renewal Plan.
 - @antisemitism
 - @easy_discard
 
@@ -55,10 +55,10 @@ The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">
 @wtb
 view-if: wtb_adopted == 1
 choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not marcher_in_government and not marcher_toleration))
-unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the WTB plan is necessary to continue an effective campaign. ?]
+unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the Voss Renewal Plan is necessary to continue an effective campaign. ?]
 on-arrival: commons_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent); burgher_marcher += 2*(1-dissent); guild_marcher += 1*(1-dissent); landed_marcher += 1*(1-dissent); commons_marcher += 4*(1-dissent) if wtb_implemented; disfavored_marcher += 4*(1-dissent) if wtb_implemented; landed_marcher += 2*(1-dissent) if wtb_implemented; burgher_marcher += 3*(1-dissent) if wtb_implemented; guild_marcher += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
 
-The WTB-Plan is the rallying point for the entire <span style="color: #c00000;">**Marchers**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
+The Voss Renewal Plan is the rallying point for the entire <span style="color: #c00000;">**Marchers**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 @antisemitism
 title: Rally against blood-purism and in defense of the <span style="color: #005EB8;">beast-blooded</span>.

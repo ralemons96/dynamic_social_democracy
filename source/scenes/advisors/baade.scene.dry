@@ -36,7 +36,7 @@ We have increased our campaigning among farmers and the rural populace.
 title: Addressing the economic crisis
 subtitle: Formulate a plan to rescue us from the economic crisis.
 choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and veran_crash_seen
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if veran_crash_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if veran_crash_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the Voss Renewal Plan. ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 5; wtb_points += 15
 
-[? if not wtb_concept: Voss, Whell, and Bayle, has been working together to draft a plan for getting us out of the depression. Bayle canvasses in favor of this plan throughout the party. ?][? if wtb_concept: The WTB-plan, named for its primary supporters Voss, Whell, and Bayle, has been adopted as the unions' plan for getting us out of the depression. Bayle canvasses in favor of this plan throughout the party. ?]
+[? if not wtb_concept: Voss, Whell, and Bayle, has been working together to draft a plan for getting us out of the depression. Bayle canvasses in favor of this plan throughout the party. ?][? if wtb_concept: The Voss Renewal Plan, named for its primary supporters Voss, Whell, and Bayle, has been adopted as the unions' plan for getting us out of the depression. Bayle canvasses in favor of this plan throughout the party. ?]

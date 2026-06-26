@@ -11,11 +11,11 @@ tags: party_affairs, govt_affairs
 
 Our party is wracked as to how to deal with the economic crisis. From the centrist faction, Bell argues that the economic crisis must be allowed to play out, because it is simply a part of the cyclic nature of capitalism.
 
-[? if not wtb_concept: The Labor faction is arguing for increased welfare spending to alleviate the suffering of the workers. Their economist, Valdemar Voss, has voiced support for a public works campaign involving deficit spending, but it will take time to iron out the details. Furthermore, he will need the united support of the Greater Worker+s Guild; otherwise, he won't have the power to challenge Bell's stance. ?][? if wtb_concept: From labor, the economist Valdemar Voss argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Bell, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Bell, Voss's strategy is opposed to Vaelist principles. ?]
+[? if not wtb_concept: The Labor faction is arguing for increased welfare spending to alleviate the suffering of the workers. Their economist, Valdemar Voss, has voiced support for a public works campaign involving deficit spending, but it will take time to iron out the details. Furthermore, he will need the united support of the Greater Worker's Guild; otherwise, he won't have the power to challenge Bell's stance. ?][? if wtb_concept: From labor, the economist Valdemar Voss argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Bell, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Bell, Voss's strategy is opposed to Vaelist principles. ?]
 
-[? if wtb_concept: The so-called WTB plan, after its chief supporters Voss, Whell, and Bayle, is receiving more attention within the party. ?]
+[? if wtb_concept: The so-called Voss Renewal Plan, after its chief supporters Voss, Whell, and Bayle, is receiving more attention within the party. ?]
 
-However, leftists in the party argue that the WTB plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to <span style="color: #c00000;">Reformism</span>.
+However, leftists in the party argue that the Voss Renewal Plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to <span style="color: #c00000;">Reformism</span>.
 
 Meanwhile, moderates and reformists draw up proposals for a limited plan of job creation through public works, funded through taxes, that does not involve deficit spending or large-scale restructuring of the economy. Labor argues that the plan is inadequate in its scale and ambition.
 
@@ -41,7 +41,7 @@ choose-if: labor_strength >= left_strength and labor_strength >= center_strength
 view-if: wtb_concept
 on-arrival: center_dissent += 10; left_dissent += 5; labor_strength += 5; wtb_support += 1; wtb_points += 10
 
-Our support of the WTB plan alienates the orthodox Vaelists of the Centrist faction, and faces both opposition and support from a variety of sources across the spectrum. Leftists argue that the plan is flawed because it leaves capitalism intact, while some reformists are cautiously optimistic.
+Our support of the Voss Renewal Plan alienates the orthodox Vaelists of the Centrist faction, and faces both opposition and support from a variety of sources across the spectrum. Leftists argue that the plan is flawed because it leaves capitalism intact, while some reformists are cautiously optimistic.
 
 We have not yet convinced the party to formally adopt the plan. More work needs to be done.
 
