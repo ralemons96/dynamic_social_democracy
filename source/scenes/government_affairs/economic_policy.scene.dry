@@ -86,7 +86,7 @@ We have slashed wages for government employees by about 15%, framing it as a pai
 
 @industrial_levy
 title: Maintain the industrial levy.
-subtitle: A War Loans tax now rendered obsolete by the Young Plan. Businesses will be displeased. +1 budget
+subtitle: A War Loans tax now rendered obsolete by the Serannus Plan. Businesses will be displeased. +1 budget
 unavailable-subtitle: We've already maintained the tax.
 view-if: young_plan_ratified
 choose-if: not industrial_levy

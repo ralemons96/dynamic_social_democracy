@@ -46,7 +46,7 @@ new-page: true
 
 = Collapse of the Dornish Cabinet
 
-The [+ saxony_leader +] Cabinet's days are numbered following a dispute over the Dornish Commonwealth Council delegation's support for the Young Plan, which has led to a loss of confidence from the <span style="color: #3E88B3;">**Traditionalists**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**Royalists**</span>.
+The [+ saxony_leader +] Cabinet's days are numbered following a dispute over the Dornish Commonwealth Council delegation's support for the Serannus Plan, which has led to a loss of confidence from the <span style="color: #3E88B3;">**Traditionalists**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**Royalists**</span>.
 
 We can either exit the opposition and prop up the cabinet to avoid new elections, or maintain our role in opposition-supporting all votes of no confidences. [? if marcher_coalition_possible_saxony >= 50: While a [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with the liberals could be an option, the strong leftist leanings of the Dornish <span style="color: #c00000;">**Marchers**</span> make such an alliance unlikely. ?]
 

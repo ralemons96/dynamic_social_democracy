@@ -7,9 +7,9 @@ new-page: true
 
 = Friedrich Stamper
 
-Friedrich Stamper is the long-time editor-in-chief of Vorwärts, our party newspaper, and also a Assembly member. He was historically part of the Majority <span style="color: #c00000;">**Marchers**</span> that supported our participation in the Great War, but also supports cooperation with the <span style="color: #700000;">**Collectivists**</span> to save the Republic. 
+Friedrich Stamper is the long-time editor-in-chief of The Forward, our party newspaper, and also a Assembly member. He was historically part of the Majority <span style="color: #c00000;">**Marchers**</span> that supported our participation in the Great War, but also supports cooperation with the <span style="color: #700000;">**Collectivists**</span> to save the Republic. 
 
-[? if collectivist_truce: Since such a SPD-KPD cooperation can be considered achieved through a truce with the Vanguard, Stamper is emboldened to direct Vorwärts fully towards placating internal dissent by supporting a Center position. ?]
+[? if collectivist_truce: Since such a SPD-KPD cooperation can be considered achieved through a truce with the Vanguard, Stamper is emboldened to direct The Forward fully towards placating internal dissent by supporting a Center position. ?]
 
 - @media_
 - @faction_support_
@@ -28,7 +28,7 @@ go-to: media
 
 @faction_support_
 title: Editorial Line
-subtitle: We can change the editorial line of Vorwärts to support a particular faction.
+subtitle: We can change the editorial line of The Forward to support a particular faction.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6
@@ -44,28 +44,28 @@ Which faction should we support?
 @support_left
 on-arrival: left_dissent -= 8; left_strength += 8; editorial_line = "Left"
 
-Vorwärts prints editorials in support of Left positions.
+The Forward prints editorials in support of Left positions.
 
 @support_center
 on-arrival: center_dissent -= 8; center_strength += 8; editorial_line = "Center"
 
-Vorwärts prints editorials in support of centrist positions.
+The Forward prints editorials in support of centrist positions.
 
 @support_labor
 on-arrival: labor_dissent -= 8; labor_strength += 8; editorial_line = "Labor"
 
-Vorwärts prints editorials in support of the policies of the Free Guilds.
+The Forward prints editorials in support of the policies of the Free Guilds.
 
 @support_reform
 on-arrival: reformist_dissent -= 8; reformist_strength += 8; editorial_line = "Reformists"
 
-Vorwärts prints editorials in support of the reformist policies.
+The Forward prints editorials in support of the reformist policies.
 
 @support_neorev
 view-if: neorevisionism
 on-arrival: knight_dissent -= 8; knight_strength += 8; editorial_line = "Neorevisionists"; royalist_urgency += 1
 
-Vorwärts prints editorials in support of neorevisionist ideas.
+The Forward prints editorials in support of neorevisionist ideas.
 
 @kpd_cooperation
 title: Cooperation with the <span style="color: #700000;">**Collectivists**</span>

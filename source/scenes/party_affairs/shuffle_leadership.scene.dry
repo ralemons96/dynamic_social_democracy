@@ -701,7 +701,7 @@ Godfrey Radbourne is now an advisor.
 
 @add_stampfer
 title: Friedrich Stamper
-subtitle: Friedrich Stamper is the long-time editor-in-chief of Vorwärts, our party newspaper. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the <span style="color: #700000;">Collectivists</span> ?]
+subtitle: Friedrich Stamper is the long-time editor-in-chief of The Forward, our party newspaper. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the <span style="color: #700000;">Collectivists</span> ?]
 is-card: true
 card-image: img/portraits/StampferFriedrich.jpg
 view-if: stampfer_advisor = 0 and n_advisors < 3 and not stampfer_killed

@@ -27,7 +27,7 @@ We know all of this is nonsense, but Staal has slowly taken steps toward the <i>
 - @press_censorship
 
 @press_censorship
-title: Hopefully nothing happens to Vorwärts.
+title: Hopefully nothing happens to The Forward.
 on-arrival: {!
 Q.press_censorship = 1;
 Q.staal_approval += 2;
@@ -125,4 +125,4 @@ With the powers Staal has handed to the new Ministry of National Guidance, fresh
 
 We have already seen this unfold. The <span style="color: #BFC8CC;">**GNU**</span> has been "acquiring" private newspapers and filling their offices with government loyalists, turning them into little more than state mouthpieces. Many other editors have been forced out of their posts—some for no reason other than being <span style="color: #005EB8;">beast-blooded</span>.
 
-[? if staal_marcher_r >= 5: Staal, however, has been notably lenient with Vorwärts. Perhaps he is grateful for our past support—or perhaps he is simply waiting until we are too weak to resist. Collaboration, it seems, pays off? ?][? if staal_marcher_influence >= 6 and staal_marcher_r < 5: Using his growing influence over the <span style="color: #c00000;">**Marchers**</span>, Staal has even managed to install some of his own supporters to quietly "edit" the paper. It's jarring to see our supposed "newfound support" for rearmament—framed as a noble way to provide jobs—splashed across the front page. ?][? if staal_marcher_influence < 6 and staal_marcher_r < 5: It seems even our newspaper, Vorwärts, hasn't been spared from the crackdown. The offices are raided, staff arrested on dubious charges, and we can't even broadcast the truth for the workers to hear. ?] Stamper hasn't been seen at his desk for some time now. Must be a long vacation.
+[? if staal_marcher_r >= 5: Staal, however, has been notably lenient with The Forward. Perhaps he is grateful for our past support—or perhaps he is simply waiting until we are too weak to resist. Collaboration, it seems, pays off? ?][? if staal_marcher_influence >= 6 and staal_marcher_r < 5: Using his growing influence over the <span style="color: #c00000;">**Marchers**</span>, Staal has even managed to install some of his own supporters to quietly "edit" the paper. It's jarring to see our supposed "newfound support" for rearmament—framed as a noble way to provide jobs—splashed across the front page. ?][? if staal_marcher_influence < 6 and staal_marcher_r < 5: It seems even our newspaper, The Forward, hasn't been spared from the crackdown. The offices are raided, staff arrested on dubious charges, and we can't even broadcast the truth for the workers to hear. ?] Stamper hasn't been seen at his desk for some time now. Must be a long vacation.

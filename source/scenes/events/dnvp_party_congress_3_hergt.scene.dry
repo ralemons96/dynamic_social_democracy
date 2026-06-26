@@ -11,7 +11,7 @@ new-page: true
 
 The victory of the moderates within the <span style="color: #3E88B3;">**Traditionalists**</span> has not entirely halted the party’s rightward shift since its electoral defeat. Hargen’s triumph over the democratic Young Conservatives, led by Trevannon, has dashed our hopes for a more democratic and constructive <span style="color: #3E88B3;">**Traditionalists**</span>.
 
-While the initial turmoil following Mallin’s split and the Young Plan has subsided, a rightward shift in the party’s policies remains possible, especially as the <span style="color: #7A3C00;">**Royalists**</span> threatens to eclipse them. The ongoing crisis in the Commonwealth continues to radicalize the electorate—and, by extension, the propertied parties that represent them.
+While the initial turmoil following Mallin’s split and the Serannus Plan has subsided, a rightward shift in the party’s policies remains possible, especially as the <span style="color: #7A3C00;">**Royalists**</span> threatens to eclipse them. The ongoing crisis in the Commonwealth continues to radicalize the electorate—and, by extension, the propertied parties that represent them.
 
 - @statusquo: Hargen has once again won re-election.
 - @schiele: The mantle is transferred to Martin Tilford and the <span style="color: #385A38;">agrarians</span>.
@@ -24,7 +24,7 @@ face-image: img/portraits/OskarHergt.jpg
 
 Cuthbert Hargen has been re-elected once again. However, he and the national conservatives within the party are increasingly looking toward alliances with forces to their right, as their previous hostility toward the <span style="color: #003755;">**DNF**</span> continues to fade. Furthermore, the propertied elites influencing the party have pushed its leadership to reconsider some form of cooperation with the <span style="color: #7A3C00;">**Royalists**</span>, aiming to integrate them as a "constructive component of the state" through a so-called '<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>'.
 
-Recently, discussions have emerged about a new referendum—one designed to unite the Commonwealth right, much like the Young Plan referendum attempted, but this time focused on prematurely dissolving the Heartland state Assembly. Given the radicalized political climate, such a move would allow the <span style="color: #7A3C00;">**Royalists**</span>, which currently holds a meager [+ royalist_r_heartland +]% of seats, to make significant gains.
+Recently, discussions have emerged about a new referendum—one designed to unite the Commonwealth right, much like the Serannus Plan referendum attempted, but this time focused on prematurely dissolving the Heartland state Assembly. Given the radicalized political climate, such a move would allow the <span style="color: #7A3C00;">**Royalists**</span>, which currently holds a meager [+ royalist_r_heartland +]% of seats, to make significant gains.
 
 @schiele
 choose-if: land_reform >= 1 or landed_marcher_normalized >= 30 or landed_royalist_normalized >= landed_traditionalist_normalized

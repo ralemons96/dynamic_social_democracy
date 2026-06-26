@@ -1,4 +1,4 @@
-title: Constitution Day
+title: Independence Day
 subtitle: The Unity Republic has reached its thirteenth birthday.
 view-if: chancellor = "Goodryke" and papen_time and year == 1932 and month == 8 and week == 2
 new-page: true
@@ -18,7 +18,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Constitution Day
+= Independence Day
 
 It has been thirteen years since the adoption of the Unity Constitution in 4284—a date still marked as a public holiday in its commemoration.
 

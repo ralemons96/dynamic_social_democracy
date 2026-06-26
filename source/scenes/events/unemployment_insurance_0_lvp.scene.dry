@@ -10,7 +10,7 @@ face-image: img/Kollwitz_Arbeitslosigkeit.jpg
 
 = Unemployment Insurance Crisis
 
-With the Young Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #C0A054;">**Golds**</span> sets its eyes on cutting the unemployment insurance program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
+With the Serannus Plan not providing the necessary fiscal relief as many have hoped, the <span style="color: #C0A054;">**Golds**</span> sets its eyes on cutting the unemployment insurance program to balance the books. The program is on the verge of financial collapse with the increasing numbers of unemployed, we need to decide what to do to prevent this.
 
 [? if lvp_right - lvp_left > 6: The <span style="color: #C0A054;">**Golds**</span> have been moving significantly rightwards since their formation and their industrial backers want nothing less than a collapse of our government.?][? if not lvp_right - lvp_left > 8: Our cabinet has proposed a compromise featuring small cuts to the program along with a slight increase to contributions, but it is not clear if the <span style="color: #C0A054;">**Golds**</span> themselves would agree to it. ?]
 
@@ -23,7 +23,7 @@ on-arrival: marcher_in_government = 0; grand_coalition_collapsed = 1 if in_grand
 
 Fine. If the Burghers wish to blow up the government, let them do so. <span style="color: #c00000;">Reformists</span> will not be complicit in the destruction of the working class.
 
-[? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-propertied cabinet. Using the emergency powers of Article 48, Askew and President DuFour have passed cuts over the objections of the Assembly. The <span style="color: #3E88B3;">**Traditionalists**</span> won't enter a government that is ratifying the Young Plan therefore no majority can be found.
+[? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-propertied cabinet. Using the emergency powers of Article 48, Askew and President DuFour have passed cuts over the objections of the Assembly. The <span style="color: #3E88B3;">**Traditionalists**</span> won't enter a government that is ratifying the Serannus Plan therefore no majority can be found.
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 

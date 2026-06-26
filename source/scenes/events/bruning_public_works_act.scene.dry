@@ -1,4 +1,4 @@
-title: Public Works Mobilization Act
+title: Commonwealth Labor Mobilization Act
 subtitle: The Askew cabinet announces a job creation program.
 view-if: (bruning_time >= 6 or bruning_lite_time >= 6) and ((year == 1932 and month >= 5) or year >= 1933) and disfavored >= 30 and (in_center_right_coalition or in_right_coalition) and not works_program
 max-visits: 1
@@ -20,7 +20,7 @@ on-display: {!
 on-arrival: bruning_skibidi_time = time + 3 if not reparations_resolved
 set-bg: img/map_2.jpg
 
-= Public Works Mobilization Act
+= Commonwealth Labor Mobilization Act
 
 With Askew focused on securing a foreign policy victory, the [? if unionist_party_name != "Concord":<span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord":<span style="color: #000000;">**Concord**</span>?]'s Labor Minister Adam Sedgewick and the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?]'s Vice Chancellor and Finance Minister Albrecht Dietrich have been developing a job creation program. The <span style="color: #6D5298;">Faithful Socials</span> and several <span style="color: #3E88B3;">**Traditionalists**</span> figures, such as Günther Gereke, have also backed this approach. However, given the state of the national budget, such a program was not feasible without either severe welfare cuts or a breakthrough on War Loans—delaying action until now due to fears of public backlash.
 

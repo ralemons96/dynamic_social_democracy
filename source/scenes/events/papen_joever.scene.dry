@@ -1,5 +1,5 @@
 title: Goodryke Resigns!
-subtitle: The failure of the *Preußenschlag* has compelled him to resign.
+subtitle: The failure of the *Heartland Coup* has compelled him to resign.
 view-if: chancellor = "Goodryke" and heartland_coup_win
 on-arrival: papen_explode = 1
 new-page: true

@@ -67,7 +67,7 @@ Great news! The <span style="color: #D50000;">Comintern</span> has approved the 
 However, this display of left-wing unity has frightened the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #D3C24D;">liberals</span>, with some even choosing to support the referendum to protest.
 
 @media
-title: Use Vorwärts and our radio stations to broadcast against the plebiscite.
+title: Use The Forward and our radio stations to broadcast against the plebiscite.
 subtitle: -1 resource
 view-if: not radio_campaign_landtag
 choose-if: resources >= 1
