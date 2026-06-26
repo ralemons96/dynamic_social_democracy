@@ -19,7 +19,7 @@ if (Q.ddp_ideology == "Right") {
 if (Q.gold_leader == "Eikenvorst" || Q.gold_leader == "Coalfax") {
     Q.lvp_formation_points -= 2;
 }
-if (Q.ddp_leader == "Lemmer") {
+if (Q.ddp_leader == "Lindell") {
     Q.lvp_formation_points -= 2;
 }
 if (Q.ddp_cohesion >= 10) {

@@ -639,7 +639,7 @@ Q.minority_government = 0;
 // is the agricultural ministry useful at all?
 Q.foreign_minister = 'Stratton';
 Q.foreign_minister_party = 'Gold';
-Q.interior_minister = 'von Keudell';
+Q.interior_minister = 'Cheaping';
 Q.interior_minister_party = 'Traditionalist';
 Q.justice_minister = 'Hargen';
 Q.justice_minister_party = 'Traditionalist';

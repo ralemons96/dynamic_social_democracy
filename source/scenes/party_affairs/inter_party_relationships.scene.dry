@@ -17,7 +17,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @center: Strengthen our bonds with the Faithful [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @cvp: Reconcile with the <span style="color: #000000;">Faithful People's Party</span>.
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
-- @dnvp: Open dialogue with [? if traditionalist_leader != "Lambach": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Lambach": Lambach and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
+- @dnvp: Open dialogue with [? if traditionalist_leader != "Maine": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Maine": Maine and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
 - @spd_alone: The <span style="color: #c00000;">Marchers</span> can stand alone for now.
 - @easy_discard
@@ -166,8 +166,8 @@ However, given the influence of the <span style="color: #C0A054;">**Golds**</spa
 
 @dnvp
 view-if: wacky_weimar
-choose-if: resources >= 1 and ((traditionalist_leader == "Trevannon" and true_christian_democracy) or (traditionalist_leader == "Lambach" and lambach_stays))
-unavailable-subtitle: [? if resources < 1: Not enough resources. ?] [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Lambach": Trevannon or Lambach must lead the <span style="color: #3E88B3;">Traditionalists</span>. ?][? if not true_christian_democracy and traditionalist_leader == "Trevannon": Trevannon's wholesomeness is restrained by his own party. ?][? if not lambach_stays and traditionalist_leader == "Lambach": Lambach's wholesomeness is restrained by his own party, he must consolidate his position first. ?]
+choose-if: resources >= 1 and ((traditionalist_leader == "Trevannon" and true_christian_democracy) or (traditionalist_leader == "Maine" and lambach_stays))
+unavailable-subtitle: [? if resources < 1: Not enough resources. ?] [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Maine": Trevannon or Maine must lead the <span style="color: #3E88B3;">Traditionalists</span>. ?][? if not true_christian_democracy and traditionalist_leader == "Trevannon": Trevannon's wholesomeness is restrained by his own party. ?][? if not lambach_stays and traditionalist_leader == "Maine": Maine's wholesomeness is restrained by his own party, he must consolidate his position first. ?]
 on-arrival: resources -= 1; traditionalist_relation += 10*(1-dissent); pro_republic += 3; left_dissent += 10; center_dissent += 10
 
 We have reached out to [+ traditionalist_leader +], who responds warmly to our requests. However, it would take much more convincing to get the evil and unwholesome side of the <span style="color: #3E88B3;">**Traditionalists**</span> behind closer cooperation. Our Left and Center factions voice their disapproval.
@@ -176,8 +176,8 @@ We have reached out to [+ traditionalist_leader +], who responds warmly to our r
 
 @dnvp_wholesome
 title: Conclude an electoral alliance with the <span style="color: #3E88B3;">**Traditionalists**</span>.
-choose-if: in_wholesome_coalition and lambach_stays and traditionalist_leader == "Lambach"
-unavailable-subtitle: [? if traditionalist_leader != "Lambach" or not lambach_stays: Only Lambach can accept this deal after he has consolidated power. ?][? if not in_wholesome_coalition: We must be governing together. ?]
+choose-if: in_wholesome_coalition and lambach_stays and traditionalist_leader == "Maine"
+unavailable-subtitle: [? if traditionalist_leader != "Maine" or not lambach_stays: Only Maine can accept this deal after he has consolidated power. ?][? if not in_wholesome_coalition: We must be governing together. ?]
 on-arrival: {!
 Q.traditionalist_wholesome = 1; 
 

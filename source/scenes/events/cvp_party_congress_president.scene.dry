@@ -44,7 +44,7 @@ Q.lambach_unlock = 0;
 Q.stegerwald_unlock = 0;
 Q.gereke_unlock = 0;
 
-if (Q.traditionalist_leader == "Lambach") {
+if (Q.traditionalist_leader == "Maine") {
     Q.concord_right += 10;
 }
 
@@ -79,7 +79,7 @@ if (Q.traditionalist_gold_formed || Q.concord_gold_formed) {
 }
 
 
-if (Q.traditionalist_leader == "Lambach" && !Q.lambach_bonus) {
+if (Q.traditionalist_leader == "Maine" && !Q.lambach_bonus) {
     Q.labor_right_points += 6;
     Q.lambach_bonus = 1;
 }
@@ -107,7 +107,7 @@ if (Q.unions_independent) {
 if (Q.commons_unionist_normalized) {
     Q.labor_right_points += Q.commons_unionist_normalized * ((100 - Q.pro_republic) / 200);
     Q.labor_left_points += Q.commons_unionist_normalized * (Q.pro_republic / 200);
-    if (Q.traditionalist_leader == "Lambach") {
+    if (Q.traditionalist_leader == "Maine") {
         Q.labor_right_points += Q.commons_unionist_normalized * ((100 - Q.pro_republic) / 200);
     }
 }
@@ -263,12 +263,12 @@ The faction strengths are as follows.
 
 <span style="color: #3E3B2D;">Far-Right Faithful</span> (<span style="color: #000000;">**Unionists**</span>) - ??? - [? if (concord_ideology != "Right" or royalist_votes < 30): Fringe ?][? if (concord_ideology == "Right" and royalist_votes >= 30): Marginal ?]
 
-<span style="color: #3E88B3;">National Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Gereke - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead and not conservative_right_points_lead: Influential?][? if concord_ideology != "Left" and conservative_right_points_lead: Powerful?]
+<span style="color: #3E88B3;">National Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Aveling - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead and not conservative_right_points_lead: Influential?][? if concord_ideology != "Left" and conservative_right_points_lead: Powerful?]
 
-<span style="color: #385A38;">Agrarians</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Gereke - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead: Relevant?][? if concord_ideology != "Left" and agrarian_right_points_lead: Influential?]
+<span style="color: #385A38;">Agrarians</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Aveling - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead: Relevant?][? if concord_ideology != "Left" and agrarian_right_points_lead: Influential?]
 
 <hr id="read-marker">
-<span style="color: #6D5298;">Faithful Socials</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Lambach - [? if concord_ideology == "Left" and not labor_points_lead: Marginal?][? if ((concord_ideology != "Left" and not presidential_points_lead and not labor_points_lead) or (concord_ideology == "Left" and labor_points_lead)): Limited?][? if concord_ideology != "Left" and presidential_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and labor_points_lead and not labor_right_points_lead: Influential?][? if concord_ideology != "Left" and labor_right_points_lead: Powerful?]
+<span style="color: #6D5298;">Faithful Socials</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Maine - [? if concord_ideology == "Left" and not labor_points_lead: Marginal?][? if ((concord_ideology != "Left" and not presidential_points_lead and not labor_points_lead) or (concord_ideology == "Left" and labor_points_lead)): Limited?][? if concord_ideology != "Left" and presidential_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and labor_points_lead and not labor_right_points_lead: Influential?][? if concord_ideology != "Left" and labor_right_points_lead: Powerful?]
 
 <span style="color: #330000;">Faithful Labor</span> (<span style="color: #000000;">**Unionists**</span>) - Sedgewick - [? if concord_ideology == "Left" and labor_left_points_lead: Powerful?][? if (concord_ideology == "Left" and not labor_left_points_lead) or labor_points_lead: Influential?][? if concord_ideology != "Left" and democratic_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and not democratic_points_lead and not labor_points_lead: Limited?]
 <hr id="read-marker">
@@ -309,15 +309,15 @@ Somewhat surprisingly, <span style="color: #000000;">Unionists</span> leader Ada
 It was widely expected that, with the merger of the two parties, politicians like Sedgewick would shift to the left wing of the newly created party—and this has indeed proven true. His strongest supporters, aside from the Free Guilds, include the now strengthened <span style="color: #FF7F00;">Faithful Left</span> faction, which will push for a paternalistic economic policy and greater cooperation with the <span style="color: #c00000;">Reformists</span>. Sedgewick is also a committed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, a stance that has pushed some ardent monarchists over to the <span style="color: #003755;">**DNF**</span>.
 
 @lambach
-title: Walther Lambach, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
-subtitle: Lambach was apart of the <span style="color: #6D5298;">Faithful Social</span> wing in the former <span style="color: #3E88B3;">Traditionalists</span>. - <span style="color: #6D5298;">Faithful Social</span> Wing
-unavailable-subtitle: Lambach and his Free Guilds face significant animosity from the broader party, particularly the industrialist backers - <span style="color: #6D5298;">Faithful Social</span> Wing.
+title: Caradoc Maine, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+subtitle: Maine was apart of the <span style="color: #6D5298;">Faithful Social</span> wing in the former <span style="color: #3E88B3;">Traditionalists</span>. - <span style="color: #6D5298;">Faithful Social</span> Wing
+unavailable-subtitle: Maine and his Free Guilds face significant animosity from the broader party, particularly the industrialist backers - <span style="color: #6D5298;">Faithful Social</span> Wing.
 choose-if: lambach_unlock
-on-arrival: unionist_relation -= 5; pro_republic -= 5; ddp_relation += 8; gold_relation += 8; lvp_relation += 8; commons_unionist += 10; disfavored_unionist += 5; commons_dnf -= 3; commons_royalist -= 3; commons_marcher -= 3; commons_collectivist -= 2; disfavored_marcher -= 3; disfavored_dnf -= 3; disfavored_royalist -= 3; landed_unionist -= 10; burgher_unionist += 4; burgher_marcher -= 4; guild_unionist -= 10; landed_dnf += 4; guild_dnf += 4; landed_gold += 6; landed_lvp += 8; landed_ddp += 2; guild_gold += 6; guild_ddp += 2; guild_lvp += 8; faithful_unionist -= 6; faithful_marcher += 4; faithful_gold += 2; faithful_lvp += 4; faithful_ddp += 2; concord_leader = "Lambach"; concord_right += 5; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
+on-arrival: unionist_relation -= 5; pro_republic -= 5; ddp_relation += 8; gold_relation += 8; lvp_relation += 8; commons_unionist += 10; disfavored_unionist += 5; commons_dnf -= 3; commons_royalist -= 3; commons_marcher -= 3; commons_collectivist -= 2; disfavored_marcher -= 3; disfavored_dnf -= 3; disfavored_royalist -= 3; landed_unionist -= 10; burgher_unionist += 4; burgher_marcher -= 4; guild_unionist -= 10; landed_dnf += 4; guild_dnf += 4; landed_gold += 6; landed_lvp += 8; landed_ddp += 2; guild_gold += 6; guild_ddp += 2; guild_lvp += 8; faithful_unionist -= 6; faithful_marcher += 4; faithful_gold += 2; faithful_lvp += 4; faithful_ddp += 2; concord_leader = "Maine"; concord_right += 5; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/LambachWalther.jpg
 achievement: christlicher_sozialismus
 
-Somehow, the <span style="color: #6D5298;">Faithful Social</span> wing, now diluted within a much larger party, has managed to elect one of their own as the leader of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Walther Lambach, the writer of the Lambach article years ago[? if traditionalist_leader == "Lambach":, and the most recent leader of the <span style="color: #3E88B3;">**Traditionalists**</span>?], has won the vote largely due to the unified support of the Faithful labor unions, who strongly back his vision for a national community.
+Somehow, the <span style="color: #6D5298;">Faithful Social</span> wing, now diluted within a much larger party, has managed to elect one of their own as the leader of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Caradoc Maine, the writer of the Maine article years ago[? if traditionalist_leader == "Maine":, and the most recent leader of the <span style="color: #3E88B3;">**Traditionalists**</span>?], has won the vote largely due to the unified support of the Faithful labor unions, who strongly back his vision for a national community.
 
 More <span style="color: #c00000;">worker-friendly</span> policies have been added to the platform, such as expanding social welfare, increasing pensions, and implementing more progressive income taxes. They've even rejected austerity as a solution to the Commonwealth's current economic crisis, instead voicing support for public works. However, this has significantly strained industrial enthusiasm for the formation of the new party, and they have begun redirecting funds toward the <span style="color: #FFCC00;">liberals</span>.
 
@@ -339,16 +339,16 @@ Konrad Aldermoor, the long-time Mayor of Bradford, has been elevated to the lead
 With his slogan 'No Experiments!', we do not expect any major changes to the party program under his leadership, fostering a sense among the people that the <span style="color: #000000;">**[+ unionist_party_name +]**</span> is a pole of stability that the Commonwealth people can rally behind. In terms of our relationship with the <span style="color: #000000;">Faithful</span>, Aldermoor, being a former <span style="color: #000000;">Unionists</span> member, is relatively more friendly toward us than many others to his right. We can also count on the pressure from the <span style="color: #FF7F00;">Faithful Left</span>, who, similar to the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s left wing historically, are powerless to enact changes to the left but are influential in preventing changes to the right.
 
 @gereke
-title: Günther Gereke, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
-subtitle: Gereke has significant influence over the agricultural and industrial establishment, being a key member of the Landed League and a founder of another rural association. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
+title: Garren Aveling, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+subtitle: Aveling has significant influence over the agricultural and industrial establishment, being a key member of the Landed League and a founder of another rural association. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
 unavailable-subtitle: A new face, but associated too much with the Westmore elements on the right-wing. - <span style="color: #3E88B3;">National Conservative</span> and <span style="color: #385A38;">Agrarian</span> Wing
 choose-if: gereke_unlock
-on-arrival: unionist_relation -= 15; concord_right += 5; nationalism += 5; pro_republic -= 5; burgher_unionist += 3; guild_unionist += 6; landed_unionist += 12; landed_other *= 0.3; landed_dnf -= 3; guild_dnf -= 5; burgher_dnf -= 3; faithful_unionist -= 6; faithful_marcher += 6; unionist_r += other_r*0.3; other_r = other_r*0.7; concord_leader = "Gereke"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
+on-arrival: unionist_relation -= 15; concord_right += 5; nationalism += 5; pro_republic -= 5; burgher_unionist += 3; guild_unionist += 6; landed_unionist += 12; landed_other *= 0.3; landed_dnf -= 3; guild_dnf -= 5; burgher_dnf -= 3; faithful_unionist -= 6; faithful_marcher += 6; unionist_r += other_r*0.3; other_r = other_r*0.7; concord_leader = "Aveling"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/gereke.jpg
 
-Günther Gereke, a lawyer and prominent politician from rural the Commonwealth, has been elected as the new leader of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. What makes him notable is that he is an <span style="color: #385A38;">agrarian</span> politician from west of the Elbe River, a leading reformist economic theorist, and someone with close ties to General Kurt von Staal. He bears similarities to Trevannon, though he is far less dogmatic in his beliefs.
+Garren Aveling, a lawyer and prominent politician from rural the Commonwealth, has been elected as the new leader of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. What makes him notable is that he is an <span style="color: #385A38;">agrarian</span> politician from west of the Elbe River, a leading reformist economic theorist, and someone with close ties to General Kurt von Staal. He bears similarities to Trevannon, though he is far less dogmatic in his beliefs.
 
-Thanks to Gereke’s strong relationship with the <span style="color: #7FCEB1;">**CNBLP**</span>, a rural special-interest party, he has successfully negotiated a merger of the declining party into the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, though only a few officials remain in the effectively dead party. His support for a public works program has stemmed criticism from the labor factions, and his ability to unite the key interest groups on which the Commonwealth Right depends on will help secure strong <span style="color: #3E88B3;">nationalist</span> backing for the party.
+Thanks to Aveling’s strong relationship with the <span style="color: #7FCEB1;">**CNBLP**</span>, a rural special-interest party, he has successfully negotiated a merger of the declining party into the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, though only a few officials remain in the effectively dead party. His support for a public works program has stemmed criticism from the labor factions, and his ability to unite the key interest groups on which the Commonwealth Right depends on will help secure strong <span style="color: #3E88B3;">nationalist</span> backing for the party.
 
 Needless to say, this has not sat well with the <span style="color: #000000;">**[+ unionist_party_name +]**</span>’s Faithful wing, and has made cooperation within the party impossible for the foreseeable future.
 
@@ -448,15 +448,15 @@ In the first few rounds of balloting, no candidate is able to rally a majority o
 <hr id="read-marker">
 <span style="color: #6D5298;">Faithful Socials</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Lethmoor - [? if concord_ideology == "Left" and not labor_points_lead: Marginal?][? if ((concord_ideology != "Left" and not presidential_points_lead) or (concord_ideology == "Left" and labor_points_lead)): Limited?][? if concord_ideology != "Left" and presidential_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and labor_points_lead: Influential?][? if concord_ideology != "Left" and labor_right_points_lead: Powerful?]
 
-<span style="color: #330000;">Faithful Labor</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Bolz - [? if concord_ideology == "Left" and labor_left_points_lead: Powerful?][? if (concord_ideology == "Left" and not labor_left_points_lead) or labor_points_lead: Influential?][? if concord_ideology != "Left" and democratic_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and not democratic_points_lead and not labor_points_lead: Limited?]
+<span style="color: #330000;">Faithful Labor</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole - [? if concord_ideology == "Left" and labor_left_points_lead: Powerful?][? if (concord_ideology == "Left" and not labor_left_points_lead) or labor_points_lead: Influential?][? if concord_ideology != "Left" and democratic_points_lead and not labor_points_lead: Relevant?][? if concord_ideology != "Left" and not democratic_points_lead and not labor_points_lead: Limited?]
 <hr id="read-marker">
 <span style="color: #0087DC;">People's Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Goodlake / Lethmoor - [? if concord_ideology == "Left" and democratic_points_lead: Dominant?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
 
-<span style="color: #000099;">Faithful Right</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Lenmoor-Jung / Bolz - [? if concord_ideology == "Left" and democratic_points_lead: Influential?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Relevant?][? if concord_ideology == "Right" and not democratic_points_lead: Limited?]
+<span style="color: #000099;">Faithful Right</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Lenmoor-Jung / Cole - [? if concord_ideology == "Left" and democratic_points_lead: Influential?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Relevant?][? if concord_ideology == "Right" and not democratic_points_lead: Limited?]
 <hr id="read-marker">
-<span style="color: #000000;">the Unionists</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Bolz / Lenmoor-Jung - [? if concord_ideology == "Left" and democratic_points_lead: Powerful?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
+<span style="color: #000000;">the Unionists</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole / Lenmoor-Jung - [? if concord_ideology == "Left" and democratic_points_lead: Powerful?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
 
-<span style="color: #FF7F00;">Faithful Left</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Bolz - [? if concord_ideology == "Left" and labor_left_points_lead: Relevant?][? if concord_ideology == "Left" and not labor_left_points_lead: Limited?][? if concord_ideology != "Left": Marginal?]
+<span style="color: #FF7F00;">Faithful Left</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole - [? if concord_ideology == "Left" and labor_left_points_lead: Relevant?][? if concord_ideology == "Left" and not labor_left_points_lead: Limited?][? if concord_ideology != "Left": Marginal?]
 <hr id="read-marker">
 All the compromise candidates that have emerged are broadly acceptable to the majority of the party, but a final decision on which to elect has yet to be made. Retired war hero and Assembly member Lethmoor has been suggested as a unity candidate, but persuading the reluctant Lethmoor to lead a political party would require far more than just factional support.
 
@@ -467,18 +467,18 @@ All the compromise candidates that have emerged are broadly acceptable to the ma
 - @vorbeck
 
 @bolz
-title: Eugen Bolz, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
-subtitle: Bolz is the current Minister-President of Purl, having governed harmoniously with Baswick's state <span style="color: #3E88B3;">**Traditionalists**</span> for the entire duration - <span style="color: #000099;">Faithful Right</span> Wing
-unavailable-subtitle: Bolz is already reluctant to give up his job, and without unified support behind him, he will stay out of national politics. - <span style="color: #000099;">Faithful Right</span> Wing
+title: Bertram Cole, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
+subtitle: Cole is the current Minister-President of Purl, having governed harmoniously with Baswick's state <span style="color: #3E88B3;">**Traditionalists**</span> for the entire duration - <span style="color: #000099;">Faithful Right</span> Wing
+unavailable-subtitle: Cole is already reluctant to give up his job, and without unified support behind him, he will stay out of national politics. - <span style="color: #000099;">Faithful Right</span> Wing
 choose-if: bolz_unlock
-on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 4; faithful_unionist += 5; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Bolz"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
+on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 4; faithful_unionist += 5; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Cole"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/bolz.jpg
 
-Minister-President of Purl Eugen Bolz has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Bolz has worked harmoniously with the respected Cassian Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
+Minister-President of Purl Bertram Cole has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Cole has worked harmoniously with the respected Cassian Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
 
-However, Bolz's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Bolz will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
+However, Cole's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Cole will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
 
-Given Bolz's refusal to enter a Unity Coalition in Purl back in 4293, viewing the <span style="color: #c00000;">**Marchers**</span> as 'incapable of governing,' we do not expect much improvement in our relationship moving forward.
+Given Cole's refusal to enter a Unity Coalition in Purl back in 4293, viewing the <span style="color: #c00000;">**Marchers**</span> as 'incapable of governing,' we do not expect much improvement in our relationship moving forward.
 
 @lejeune_jung
 title: Edras Lenmoor-Jung, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.

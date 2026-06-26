@@ -2300,13 +2300,13 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
             Q.burgher_gold += 4/12;
         }
     } 
-    if (Q.ddp_leader == "Lemmer") Q.commons_ddp += 8/12;
-    if (Q.ddp_leader != "Lemmer") Q.commons_ddp += 4/12;
+    if (Q.ddp_leader == "Lindell") Q.commons_ddp += 8/12;
+    if (Q.ddp_leader != "Lindell") Q.commons_ddp += 4/12;
     Q.burgher_ddp += 6/12;
     Q.guild_ddp += 6/12;
     Q.landed_ddp += 2/12;
-    if (Q.ddp_leader == "Lemmer") Q.disfavored_ddp += 6/12;
-    if (Q.ddp_leader != "Lemmer") Q.disfavored_ddp += 2/12;
+    if (Q.ddp_leader == "Lindell") Q.disfavored_ddp += 6/12;
+    if (Q.ddp_leader != "Lindell") Q.disfavored_ddp += 2/12;
     if (!Q.lvp_defect) {
         Q.commons_lvp += 4/12;
         Q.burgher_lvp += 12/12;
@@ -2318,7 +2318,7 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
     }
     if (Q.marcher_toleration_right || Q.in_right_coalition || Q.in_center_right_coalition) {
         Q.commons_traditionalist += 4/12;
-        if (Q.traditionalist_leader == "Lambach") Q.commons_traditionalist += 12/12;
+        if (Q.traditionalist_leader == "Maine") Q.commons_traditionalist += 12/12;
         Q.burgher_traditionalist += 6/12;
         Q.guild_traditionalist += 6/12;
         Q.landed_traditionalist += 4/12;
@@ -2374,13 +2374,13 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
             Q.burgher_gold += 2/12;
         }
     } 
-    if (Q.ddp_leader == "Lemmer") Q.commons_ddp += 4/12;
-    if (Q.ddp_leader != "Lemmer") Q.commons_ddp += 2/12;
+    if (Q.ddp_leader == "Lindell") Q.commons_ddp += 4/12;
+    if (Q.ddp_leader != "Lindell") Q.commons_ddp += 2/12;
     Q.burgher_ddp += 4/12;
     Q.guild_ddp += 4/12;
     Q.landed_ddp += 1/12;
-    if (Q.ddp_leader == "Lemmer") Q.disfavored_ddp += 4/12;
-    if (Q.ddp_leader != "Lemmer") Q.disfavored_ddp += 2/12;
+    if (Q.ddp_leader == "Lindell") Q.disfavored_ddp += 4/12;
+    if (Q.ddp_leader != "Lindell") Q.disfavored_ddp += 2/12;
     if (!Q.lvp_defect) {
         Q.commons_lvp += 2/12;
         Q.burgher_lvp += 10/12;
@@ -2392,7 +2392,7 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
     }
     if (Q.marcher_toleration_right || Q.in_right_coalition || Q.in_center_right_coalition) {
         Q.commons_traditionalist += 3/12;
-        if (Q.traditionalist_leader == "Lambach") Q.commons_traditionalist += 6/12;
+        if (Q.traditionalist_leader == "Maine") Q.commons_traditionalist += 6/12;
         Q.burgher_traditionalist += 4/12;
         Q.guild_traditionalist += 4/12;
         Q.landed_traditionalist += 2/12;
@@ -4667,11 +4667,11 @@ if (Q.lvp_formed) {
 
 if (Q.traditionalist_gold_formed) {
     Q.industrial_traditionalist_backing = 4;
-} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Lambach" && Q.traditionalist_leader != "Tilford" || Q.traditionalist_westarp) {
+} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Maine" && Q.traditionalist_leader != "Tilford" || Q.traditionalist_westarp) {
     Q.industrial_traditionalist_backing = 3;
-} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Lambach") {
+} else if (Q.traditionalist_ideology == "Moderate" && Q.traditionalist_leader != "Maine") {
     Q.industrial_traditionalist_backing = 2;
-} else if (Q.traditionalist_leader == "Triumvirate" || Q.traditionalist_leader == "Lambach") {
+} else if (Q.traditionalist_leader == "Triumvirate" || Q.traditionalist_leader == "Maine") {
     Q.industrial_traditionalist_backing = 1;
 } else {
     Q.industrial_traditionalist_backing = 0;
@@ -4688,7 +4688,7 @@ if (Q.traditionalist_ideology == "Moderate") {
 }
 
 if (Q.concord_formed) {
-    if (Q.concord_ideology != "Left" && Q.concord_leader != "Lambach") {
+    if (Q.concord_ideology != "Left" && Q.concord_leader != "Maine") {
         Q.industrial_unionist_backing = 4;
     } else {
         Q.industrial_unionist_backing = 3;

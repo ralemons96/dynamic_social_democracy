@@ -1,6 +1,6 @@
 title: The <span style="color: #000000;">Unionists</span> merges with the <span style="color: #3E88B3;">**Traditionalists**</span>!
 subtitle: A behemoth of the Commonwealth Right is formed...
-view-if: year >= 1931 and (100 - unionist_relation) >= marcher_votes and unionist_ideology == "Right" and (unionist_leader == "Sedgewick" or unionist_leader == "Aldermoor") and (((in_marcher_majority or in_left_front) and (not marcher_heartland or in_left_front_heartland or in_marcher_majority_heartland)) or (marcher_votes + pro_republic + left_strength >= 150)) and traditionalist_leader == "Lambach" and stegerwald_transformation_timer == 0 and not concord_formed and not dkp_merger_waiting
+view-if: year >= 1931 and (100 - unionist_relation) >= marcher_votes and unionist_ideology == "Right" and (unionist_leader == "Sedgewick" or unionist_leader == "Aldermoor") and (((in_marcher_majority or in_left_front) and (not marcher_heartland or in_left_front_heartland or in_marcher_majority_heartland)) or (marcher_votes + pro_republic + left_strength >= 150)) and traditionalist_leader == "Maine" and stegerwald_transformation_timer == 0 and not concord_formed and not dkp_merger_waiting
 max-visits: 1
 tags: event
 priority: 3
@@ -24,7 +24,7 @@ The <span style="color: #000000;">Unionist Party</span>, having undergone a majo
 
 We have suffered a falling out with the <span style="color: #000000;">Unionist Party</span>, which now seeks to sever its remaining ties to us in order to clear the path for a merger with the <span style="color: #3E88B3;">**Traditionalists**</span>. Our few remaining allies within their ranks have been sidelined—left powerless to obstruct the party’s rightward drift. This shift has enabled the party’s leadership, alongside newly integrated right-wing dissenting politicians, to open negotiations with the <span style="color: #3E88B3;">**Traditionalists**</span> on a possible unification. 
 
-However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Tilford, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans. Lambach himself is in favor, aligning with [+ unionist_leader +] in supporting the call for a national community.
+However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Tilford, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans. Maine himself is in favor, aligning with [+ unionist_leader +] in supporting the call for a national community.
 
 - @cvp_dnvp: Negotiations between the two parties have begun.
 
@@ -202,7 +202,7 @@ Democracy - Supports a presidential government, otherwise maintain the status qu
 on-arrival: concord_traditionalist_balance += 15; concord_left += 4; unionist_relation += 15; pro_republic += 15; landed_unionist -= 6; landed_dnf += 4; landed_other += 2; guild_unionist -= 6; guild_dnf += 4; guild_other += 2; burgher_unionist -= 4; burgher_dnf += 2; burgher_other += 2; commons_unionist += 5; commons_marcher -= 3; disfavored_unionist += 4; disfavored_marcher -= 3
 go-to: cvp_dnvp_menu
 
-The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> attempted to insert their long-standing support for monarchism into the party platform, but were decisively outvoted by the staunchly <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> <span style="color: #000000;">Unionists</span>, along with support from Lambach himself, having been the writer of the Lambach article years prior.
+The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> attempted to insert their long-standing support for monarchism into the party platform, but were decisively outvoted by the staunchly <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> <span style="color: #000000;">Unionists</span>, along with support from Maine himself, having been the writer of the Maine article years prior.
 
 Monarchy – Official endorsement of the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system
 

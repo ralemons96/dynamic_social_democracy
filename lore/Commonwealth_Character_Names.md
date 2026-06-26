@@ -47,7 +47,7 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Hewes | Theodor | |
 | Gesling | Gareth | |
 | Jarrow | Lorne | |
-| Lemmer | Emil | |
+| Lindell | Hollis | Golds left wing / Free Guilds (was "Emil Lemmer") |
 | Trendelenburg | Erwin | |
 | Vance | Walter | initial chancellor (Unionist; govt falls early) — *surname-only* |
 | Sedgewick | Adam | Unionist figure |
@@ -56,8 +56,8 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Aldermoor | Konrad | |
 | Goodlake | Reynold | |
 | Trevannon | Gottfried | |
-| Lambach | Walther | |
-| Bolz | Eugen | |
+| Maine | Caradoc | Traditionalist Faithful-Social wing (was "Walther Lambach"); the "Maine article" |
+| Cole | Bertram | Unionist, Minister-President of Purl (was "Eugen Bolz") |
 | Koch-Weser | Ewart | *surname-only* |
 | Külz | Reiner | *surname-only* |
 | Hermes | Andreas | *surname-only* |
@@ -75,7 +75,7 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Frask | Wilhelm | |
 | Hargen | Oskar | |
 | Schiele | Martin | |
-| Gereke | Günther | |
+| Aveling | Garren | Traditionalist agrarian / public-works (was "Günther Gereke") |
 | Brackwald | Lothar | *surname-only* |
 
 ## State / cabinet / other
@@ -86,7 +86,7 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Hammerton | Gideon | GNU president — *surname-only* |
 | Eckhart | Hugo | |
 | Ravabelle | Roland | Army Minister / Defence Minister — *surname-only* |
-| Keudell | Viktor | *surname-only* |
+| Cheaping | Emeric | Traditionalist People's Conservative (was "von Keudell") |
 | Brennan | Liam | Labour Minister — *surname-only* |
 | Köhler | Albin | Finance Minister — *surname-only* |
 | Lethmoor | Cedric | *surname-only* |

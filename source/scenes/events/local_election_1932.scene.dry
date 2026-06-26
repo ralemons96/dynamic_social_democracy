@@ -1098,7 +1098,7 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 The <span style="color: #000000;">Unionist Party</span> in Purl has historically been unfriendly toward us, opting to continue governing in a minority coalition with the <span style="color: #3E88B3;">**Traditionalists**</span> as they view us as incapable of governing, even when a Unity Coalition was possible in 4293.
 
-Under the stable leadership of <span style="color: #000000;">Eugen Bolz</span> and <span style="color: #3E88B3;">Cassian Baswick</span>, Purl has surprisingly managed to mitigate the worst effects of the economic depression. However, its police force is notorious for its anti-<span style="color: #c00000;">Reformist</span> bias, targeting us more aggressively than the more violent <span style="color: #7A3C00;">Royalists</span>.
+Under the stable leadership of <span style="color: #000000;">Bertram Cole</span> and <span style="color: #3E88B3;">Cassian Baswick</span>, Purl has surprisingly managed to mitigate the worst effects of the economic depression. However, its police force is notorious for its anti-<span style="color: #c00000;">Reformist</span> bias, targeting us more aggressively than the more violent <span style="color: #7A3C00;">Royalists</span>.
 
 - @z_toleration_wurttemberg
 - @nsdap_majority_wurttemberg
@@ -1159,7 +1159,7 @@ go-to: election_menu
 
 Despite the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] in Purl being historically hostile, we've managed to convince them to form a majority Unity Coalition. We will now focus on eliminating the <span style="color: #3E88B3;">nationalist</span> and anti-democratic biases in the police force.
 
-<span style="color: #000000;">Eugen Bolz</span> retains the Minister-President position, as part of our agreement.
+<span style="color: #000000;">Bertram Cole</span> retains the Minister-President position, as part of our agreement.
 
 @social_liberal_coalition_wurttemberg
 title: A <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition is formed!

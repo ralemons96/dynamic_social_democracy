@@ -1,6 +1,6 @@
 title: <span style="color: #C0A054;">**Golds**</span> Party Vote
 subtitle: The Karnoth-Dohna group ousts Coalfax!
-view-if: ((year == 1931 and month == 12) or year >= 1932) and gold_leader == "Coalfax" and (gold_ideology == "Left" or (gold_ideology == "Moderate" and pro_republic >= 60)) and gold_exist and (traditionalist_ideology == "Radical" or traditionalist_leader == "Lambach") and not lvp_formed and not (lvp_timer_1_trigger and (lvp_merger_1_timer or lvp_trigger_1_time))
+view-if: ((year == 1931 and month == 12) or year >= 1932) and gold_leader == "Coalfax" and (gold_ideology == "Left" or (gold_ideology == "Moderate" and pro_republic >= 60)) and gold_exist and (traditionalist_ideology == "Radical" or traditionalist_leader == "Maine") and not lvp_formed and not (lvp_timer_1_trigger and (lvp_merger_1_timer or lvp_trigger_1_time))
 on-arrival: gold_right += 3 if gold_relation < 30; gold_left += 2 if gold_relation >= 50; gold_right += 2 if not in_grand_coalition
 max-visits: 1
 tags: event

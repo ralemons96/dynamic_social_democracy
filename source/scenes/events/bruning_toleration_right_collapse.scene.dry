@@ -33,7 +33,7 @@ The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;
 title: Oppose the vote of no confidence, voting in favor of the government.
 subtitle: We will hope that the <span style="color: #3E88B3;">**Traditionalists**</span> manages to get its house in order.
 on-arrival: left_dissent += 5
-go-to: vonc_hergt if traditionalist_leader == "Hargen"; vonc_treviranus if traditionalist_leader == "Trevannon"; vonc_lambach if traditionalist_leader == "Lambach"; vonc_moderate if traditionalist_leader == "Tilford" or traditionalist_leader == "Westmore"
+go-to: vonc_hergt if traditionalist_leader == "Hargen"; vonc_treviranus if traditionalist_leader == "Trevannon"; vonc_lambach if traditionalist_leader == "Maine"; vonc_moderate if traditionalist_leader == "Tilford" or traditionalist_leader == "Westmore"
 
 
 @vonc_hergt
@@ -138,7 +138,7 @@ Q.bruning_coalition = Q.cordon_sanitaire;
 Q.bruning_coalition = Math.round((Q.bruning_coalition - Q.bruning_coalition_loss) * 10) / 10;
 !}
 
-Walther Lambach, a strong supporter of Askew and, to some extent, democracy, has enforced party discipline to ensure the Assembly delegation votes in favor of Askew. However, the anger many within his party has against him and his <span style="color: #6D5298;">Faithful Social</span> ideals has split the party almost down the middle.
+Caradoc Maine, a strong supporter of Askew and, to some extent, democracy, has enforced party discipline to ensure the Assembly delegation votes in favor of Askew. However, the anger many within his party has against him and his <span style="color: #6D5298;">Faithful Social</span> ideals has split the party almost down the middle.
 
 - @results6: The Assembly convenes.
 - @results7: The Assembly convenes.

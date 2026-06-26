@@ -164,7 +164,7 @@ title: The vote has been deadlocked!
 subtitle: No candidate is able to gather a sufficient amount of votes.
 view-if: lvp_deadlock
 on-arrival: {!
-if (((Q.commons_marcher_normalized < 40 || Q.unions_independent) || Q.burgher_lvp_normalized >= 50 || Q.nationalism >= 55) && Q.traditionalist_leader != "Lambach") Q.glatzel_lvp_unlock = 1;
+if (((Q.commons_marcher_normalized < 40 || Q.unions_independent) || Q.burgher_lvp_normalized >= 50 || Q.nationalism >= 55) && Q.traditionalist_leader != "Maine") Q.glatzel_lvp_unlock = 1;
 if ((Q.nationalism >= 60) && Q.womens_rights >= 4) Q.baumer_lvp_unlock = 1;
 if (((Q.lvp_ideology == "Left" || Q.lvp_relation >= 50) || (Q.burgher_lvp_normalized + Q.guild_lvp_normalized >= 65)) && Q.confronting_antisemitism >= 1 && Q.stolper_program_adopted) Q.stolper_lvp_unlock = 1;
 if (Q.baumer_lvp_unlock) {

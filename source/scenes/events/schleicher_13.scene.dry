@@ -12,7 +12,7 @@ With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> effectively dea
 
 That belief has only strengthened with the rise of the <span style="color: #BFC8CC;">**GNU**</span>. Now, more party members are calling for a formal merger into Staal's organization. His appeals to national unity have struck a psychological blow to the rank and file of a party that always championed the welfare and unity of the nation as a whole above all.
 
-Old-line <span style="color: #D3C24D;">democrats</span> like Dietrich and Hewes remain the most resistant, committed <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> to the core. But figures like Lemmer and the party’s left wing are proving more susceptible to Staal’s calls for national unity.
+Old-line <span style="color: #D3C24D;">democrats</span> like Dietrich and Hewes remain the most resistant, committed <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> to the core. But figures like Lindell and the party’s left wing are proving more susceptible to Staal’s calls for national unity.
 
 Nonetheless, a vote is conducted, and the opposition wins.
 
@@ -29,8 +29,8 @@ Q.ddp_relation = Q.gnu_relation;
 Q.gnu_r += Q.ddp_r;
 Q.ddp_r = 0;
 
-if (Q.ddp_ideology == "Left") Q.ddp_leader = "Lemmer";
-if (Q.ddp_ideology != "Left") Q.ddp_leader = "Hellpach";
+if (Q.ddp_ideology == "Left") Q.ddp_leader = "Lindell";
+if (Q.ddp_ideology != "Left") Q.ddp_leader = "Whitmore";
 
 Q.old_ddp_name = Q.ddp_name;
 Q.ddp_name = "DStP";

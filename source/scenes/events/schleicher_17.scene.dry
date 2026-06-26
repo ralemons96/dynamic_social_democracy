@@ -143,7 +143,7 @@ go-to: schleicher_2_dnf_post
 
 With Staal’s backing, the dissident factions have been absorbed into the <span style="color: #3E88B3;">**Traditionalists**</span>, which has been "encouraged" to reform itself into a <i>Rechtsblock</i>[? if not traditionalist_gnu:, and strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> as well?], firmly aligned with the Staal government.
 
-Mallin is now left with his tiny <span style="color: #003755;">**DNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Lambach": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
+Mallin is now left with his tiny <span style="color: #003755;">**DNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Maine": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
 
 @schleicher_2_dnf_post
 on-arrival: {!
@@ -178,7 +178,7 @@ Q.dnf_r = Math.round((Q.dnf_r) * 10 / 10)
 Q.gnu_r += Q.traditionalist_r;
 Q.traditionalist_r = 0;
 
-if (Q.traditionalist_leader != "Lambach") Q.traditionalist_leader = "Trevannon";
+if (Q.traditionalist_leader != "Maine") Q.traditionalist_leader = "Trevannon";
 !}
 
 Current composition of the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>:

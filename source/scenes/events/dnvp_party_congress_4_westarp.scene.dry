@@ -10,10 +10,10 @@ new-page: true
 
 With Westmore elected president, he can no longer serve as party chairman. An emergency party congress is therefore convened to choose his successor. Optimism runs high within the party—one of their own now holds the presidency, and they possess the power to exclude the <span style="color: #c00000;">**Marchers**</span> from government positions entirely.
 
-Edras Lenmoor-Jung, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>’s small Faithful wing, is Westmore’s chosen successor. His main rival is Walter von Keudell, with links to <span style="color: #0087DC;">People's Conservative</span> faction and a former Interior Minister under Vael. Both are widely regarded as unifying figures and share a similar ideological outlook; the outcome of the vote is unlikely to significantly alter the party’s overall direction.
+Edras Lenmoor-Jung, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>’s small Faithful wing, is Westmore’s chosen successor. His main rival is Emeric Cheaping, with links to <span style="color: #0087DC;">People's Conservative</span> faction and a former Interior Minister under Vael. Both are widely regarded as unifying figures and share a similar ideological outlook; the outcome of the vote is unlikely to significantly alter the party’s overall direction.
 
 - @lejeune_jung: Edras Lenmoor-Jung is elected.
-- @keudell: Walter von Keudell is elected.
+- @keudell: Emeric Cheaping is elected.
 
 @lejeune_jung
 choose-if: stegerwald_path or traditionalist_votes < 10 or pro_republic < 60
@@ -26,7 +26,7 @@ Lenmoor-Jung has, as expected, won the election with Westmore’s blessing, secu
 @keudell
 choose-if: not (stegerwald_path or traditionalist_votes < 10 or pro_republic < 60)
 unavailable-subtitle: The <span style="color: #3E88B3;">Traditionalists</span> believes that electing a conservative Faithful will strengthen their electoral prospects.
-on-arrival: traditionalist_leader = "Keudell"; burgher_traditionalist += 6; burgher_gold -= 4; burgher_lvp -= 4; guild_traditionalist -= 2; landed_traditionalist -= 2
+on-arrival: traditionalist_leader = "Cheaping"; burgher_traditionalist += 6; burgher_gold -= 4; burgher_lvp -= 4; guild_traditionalist -= 2; landed_traditionalist -= 2
 face-image: img/portraits/keudell.jpg
 
-Von Keudell, long considered the underdog, has won the election for the <span style="color: #3E88B3;">**Traditionalists**</span> chairmanship. Branding himself as the voice of the "young generation," he criticized the party's entrenched ties to Ironreach industrialists and elites as liabilities that alienate younger voters. While his ascent irritates some within the party establishment, he is nonetheless expected to continue Westmore’s general decision-making style—albeit with a stronger focus on broadening support among the emerging urban middle class.
+Cheaping, long considered the underdog, has won the election for the <span style="color: #3E88B3;">**Traditionalists**</span> chairmanship. Branding himself as the voice of the "young generation," he criticized the party's entrenched ties to Ironreach industrialists and elites as liabilities that alienate younger voters. While his ascent irritates some within the party establishment, he is nonetheless expected to continue Westmore’s general decision-making style—albeit with a stronger focus on broadening support among the emerging urban middle class.

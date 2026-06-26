@@ -2,7 +2,7 @@ title: Unions Declare Independence
 new-page: true 
 subtitle: Labor's disagreements with our policies have grown too severe.
 tags: event
-view-if: labor_dissent >= 60 and traditionalist_leader == "Lambach" and not unions_independent and chancellor != "Staal"
+view-if: labor_dissent >= 60 and traditionalist_leader == "Maine" and not unions_independent and chancellor != "Staal"
 on-arrival: {!
 Q.unions_independent = 1;
 

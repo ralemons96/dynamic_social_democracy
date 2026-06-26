@@ -17,8 +17,8 @@ if (Q.gold_right > (Q.gold_left*1.5) || (Q.gold_right > (Q.gold_left + 4))) {
     Q.gold_ideology = "Moderate"
 }
 
-if ((Q.pro_republic >= 80 && Q.gold_ideology == "Left") && Q.gold_reform && Q.traditionalist_leader != "Lambach") Q.thiel_unlock = 1;
-if ((Q.pro_republic < 80 || Q.gold_ideology != "Left") && Q.gold_reform && Q.traditionalist_leader != "Lambach") Q.glatzel_unlock = 1;
+if ((Q.pro_republic >= 80 && Q.gold_ideology == "Left") && Q.gold_reform && Q.traditionalist_leader != "Maine") Q.thiel_unlock = 1;
+if ((Q.pro_republic < 80 || Q.gold_ideology != "Left") && Q.gold_reform && Q.traditionalist_leader != "Maine") Q.glatzel_unlock = 1;
 if (Q.gold_ideology == "Right" && !Q.thiel_unlock && !Q.glatzel_unlock) Q.dingeldey_unlock = 1;
 if ((Q.gold_ideology == "Moderate" || Q.gold_ideology == "Left") && !Q.thiel_unlock && !Q.glatzel_unlock) Q.kardorff_unlock = 1;
 
