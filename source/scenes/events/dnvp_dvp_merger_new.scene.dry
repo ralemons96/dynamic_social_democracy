@@ -182,7 +182,7 @@ Major Factions:
 - @glatzel: Florian Vellt.
 - @treviranus: Gottfried Trevannon.
 - @raumer: Hans von Raumer.
-- @hergt: Symonnet Hargen.
+- @hergt: Cuthbert Hargen.
 - @westarp: Kuno von Westmore.
 
 @glatzel
@@ -225,7 +225,7 @@ on-arrival: fkp_leader = "Hargen"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/OskarHergt.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Symonnet Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Vellt was the first to go, followed by Hans von Raumer, whose industrialist backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Gottfried Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Cuthbert Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Vellt was the first to go, followed by Hans von Raumer, whose industrialist backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Gottfried Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
 
 Hargen’s victory has seen our relations with the <span style="color: #00C0FF;">**FKP**</span> sour. His entrenched monarchism and hostility toward democratic processes have already led him to explore increased cooperation with the far right, including informal contacts with the Wardens. Genuine legislative collaboration now seems all but impossible, making building coalitions in the future increasingly difficult.
 
@@ -236,6 +236,6 @@ on-arrival: fkp_leader = "Westmore"; fkp_ideology = "National Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Vellt was the first to be eliminated. In subsequent ballots, moderate conservatives around Hans von Raumer and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Symonnet Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Gottfried Trevannon.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Vellt was the first to be eliminated. In subsequent ballots, moderate conservatives around Hans von Raumer and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Cuthbert Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Gottfried Trevannon.
 
 Westmore’s ascension means that the right is now effectively devoid of democratic parties. His explicit antisemitism and paramilitary sympathies signal a dangerous shift toward radical exclusion and street‑tier violence. This will make stabilizing the republic increasingly difficult, as the right increasingly rejects the republic.
