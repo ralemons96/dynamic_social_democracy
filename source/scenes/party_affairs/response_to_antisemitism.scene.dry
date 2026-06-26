@@ -1,4 +1,4 @@
-title: Confronting Antisemitism
+title: Confronting Blood-Purism
 new-page: true
 is-card: true
 view-if: iron_front_formed == 1 and royalist_urgency >= 3
@@ -7,22 +7,22 @@ card-image: img/iron_front.png
 tags: party_affairs, antifascism
 max-visits: 1
 
-= Confronting Antisemitism
+= Confronting Blood-Purism
 
-Antisemitism has long been a latent feature of Commonwealth society, but since the beginning of the economic depression, it has grown to a horrifying extent. The <span style="color: #7A3C00;">Royalists</span> are the worst of it, but all the right-wing parties are deeply antisemitic. Regarding the <span style="color: #c00000;">**Marchers**</span> specifically, our right-wing enemies love to deploy their racist rhetoric against our many <span style="color: #005EB8;">Jewish</span> comrades, magnifying criticism of any minor transgression, and they call the entire <span style="color: #c00000;">**Marchers**</span> a <span style="color: #005EB8;">Jewish</span> party. We are a favorite target of their invectives.
+Blood-purism has long been a latent feature of Commonwealth society, but since the beginning of the economic depression, it has grown to a horrifying extent. The <span style="color: #7A3C00;">Royalists</span> are the worst of it, but all the right-wing parties are deeply committed to blood-purity. Regarding the <span style="color: #c00000;">**Marchers**</span> specifically, our right-wing enemies love to deploy their purity rhetoric against our many <span style="color: #005EB8;">beast-blooded</span> comrades—those of orcish, goblin, or tiefling stock—magnifying criticism of any minor transgression, and they call the entire <span style="color: #c00000;">**Marchers**</span> a party of <span style="color: #005EB8;">half-bloods</span>. We are a favorite target of their invectives.
 
-- @socialism_of_fools: Antisemitism is the "<span style="color: #c00000;">Reformism</span> of <span style="color: #7A3C00;">fools</span>". We will defeat them with real <span style="color: #c00000;">Reformism</span>.
-- @if: Antisemitism is a crisis. Direct the full force of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> against antisemitism.
-- @all: All Germans will suffer from <span style="color: #7A3C00;">Imperial Sovereigntism</span>, not just the <span style="color: #005EB8;">Jews</span>. We do not need a separate policy for them.
+- @socialism_of_fools: Blood-purism is the "<span style="color: #c00000;">Reformism</span> of <span style="color: #7A3C00;">fools</span>". We will defeat them with real <span style="color: #c00000;">Reformism</span>.
+- @if: Blood-purism is a crisis. Direct the full force of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> against it.
+- @all: All Commonwealthers will suffer from <span style="color: #7A3C00;">Imperial Sovereigntism</span>, not just the <span style="color: #005EB8;">beast-blooded</span>. We do not need a separate policy for them.
 
 @socialism_of_fools
 
-The best policy to deal with this sort of irrational, senseless hatred is to ignore it. Few are swayed by racist rhetoric; the best way to combat it is to provide economic security so that people do not turn to antisemitism.
+The best policy to deal with this sort of irrational, senseless hatred is to ignore it. Few are swayed by racist rhetoric; the best way to combat it is to provide economic security so that people do not turn to blood-purism.
 
 @if
 on-arrival: confronting_antisemitism += 2; loyalist_strength -= 20; democratization += 1; pacifism += 1; nationalism -= 5*(1-dissent); commons_royalist -= 6*(1-dissent);
 
-We develop an entire campaign against antisemitism under the auspices of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. Hopefully our campaign can sway the workers away from <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
+We develop an entire campaign against blood-purism under the auspices of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. Hopefully our campaign can sway the workers away from <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 
 @all
 

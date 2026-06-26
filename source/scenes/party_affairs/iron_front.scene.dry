@@ -61,8 +61,8 @@ on-arrival: commons_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent
 The WTB-Plan is the rallying point for the entire <span style="color: #c00000;">**Marchers**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 @antisemitism
-title: Rally against antisemitism and in defense of <span style="color: #005EB8;">Jewish</span> Germans.
+title: Rally against blood-purism and in defense of the <span style="color: #005EB8;">beast-blooded</span>.
 view-if: confronting_antisemitism > 1
 on-arrival: nationalism -= 4*(1-dissent); pro_republic += 1.5*(1-dissent); confronting_antisemitism += 1; commons_royalist -= 4*(1-dissent); disfavored_royalist -= 4*(1-dissent); ddp_left += 0.5; lvp_left += 1
 
-The <span style="color: #7A3C00;">Royalists</span> and other <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> political movements are increasingly turning their hatred against the <span style="color: #005EB8;">Jewish</span> community of the Commonwealth. The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies in defense of individual <span style="color: #005EB8;">Jews</span> and the broader community against violence.
+The <span style="color: #7A3C00;">Royalists</span> and other <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> political movements are increasingly turning their hatred against the <span style="color: #005EB8;">beast-blooded</span> of the Commonwealth—those of orcish, goblin, and tiefling descent. The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies in defense of individual <span style="color: #005EB8;">half-bloods</span> and the broader community against violence.

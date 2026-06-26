@@ -258,7 +258,7 @@ go-to: menu
 
 **Faithful** are the largest religious minority, at about 30% of the population. [? if not concord_formed: They disproportionately support the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?][? if concord_formed: They find themselves split between supporting the <span style="color: #000000;">**Concord**</span> and the <span style="color: #c00000;">**Marchers**</span>. ?] (or the <span style="color: #A2D8E0;">**the Arcanists**</span> in <span style="color: #00CCFF;">Avriza</span>).
 
-**Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, [? if ddp_name == "Gold" or not ddp_name: mostly the Golds?][? if ddp_name == "DStP": although the mild antisemitism of the Young Commonwealth Order and it's association with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has driven them away?], although substantial numbers support the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>.
+**Those of beast-blood**—orcish, goblin, kobold, and tiefling—account for between 0.5% to 1% of the population, and tend to support liberal parties, [? if ddp_name == "Gold" or not ddp_name: mostly the Golds?][? if ddp_name == "DStP": although the mild blood-purism of the Young Commonwealth Order and it's association with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has driven them away?], although substantial numbers support the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>.
 
 
 @public_opinion
