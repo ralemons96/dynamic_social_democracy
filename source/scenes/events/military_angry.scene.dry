@@ -18,7 +18,7 @@ The Commonwealth Army remains widely respected across the political spectrum—e
 - @reform
 
 @concessions
-title: Perhaps another battleship will keep them happy?
+title: Perhaps another war-galleon will keep them happy?
 subtitle: Conceding to the Commonwealth Army is viewed as a betrayal of our core values.
 choose-if: reformist_strength >= labor_strength and reformist_strength >= left_strength and budget >= 1
 unavailable-subtitle: [? if (labor_strength > reformist_strength) or (left_strength > reformist_strength): Our party refuses to tolerate concessions to the Commonwealth Army. ?][? if budget < 1: We lack the necessary budget. ?]

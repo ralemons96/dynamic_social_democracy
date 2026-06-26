@@ -1,4 +1,4 @@
-title: Panzerkreuzer A
+title: Galleon Fleet
 subtitle: A political question
 tags: event, govt_affairs
 is-card: true
@@ -7,14 +7,14 @@ face-image: img/panzerkreuzer.jpg
 view-if: panzerkreuzer_seen = 0 and year = 1928 and month >= 8 and month < 10 and army_minister_party != "Marcher" and marcher_in_government = 1
 new-page: true
 
-= Panzerkreuzer
+= Galleon Fleet
 
-The Commonwealth Army Ministry is demanding the construction of a new battlecruiser, as part of the Commonwealth's rearmament. Our coalition partners are united in support. While many of our members are vehemently against new military spending, this vote may be necessary to preserve the coalition. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have also switched their positions for construction, fragmenting their party.?]
+The Commonwealth Army Ministry is demanding the construction of a new war-galleon, as part of the Commonwealth's rearmament. Our coalition partners are united in support. While many of our members are vehemently against new military spending, this vote may be necessary to preserve the coalition. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have also switched their positions for construction, fragmenting their party.?]
 
-[? if not panzerkreuzer_campaign: Our lack of an electoral campaign against the ship's construction will limit the backlash among our working-class base. ?][? if panzerkreuzer_campaign: We campaigned on food for children instead of battlecruisers. Will we really betray our campaign promises? ?]
+[? if not panzerkreuzer_campaign: Our lack of an electoral campaign against the ship's construction will limit the backlash among our working-class base. ?][? if panzerkreuzer_campaign: We campaigned on food for children instead of war-galleons. Will we really betray our campaign promises? ?]
 
-- @vote_yes: Vote yes, for constructing the battlecruiser.
-- @vote_no: Vote no, against constructing the battlecruiser.
+- @vote_yes: Vote yes, for constructing the war-galleon.
+- @vote_no: Vote no, against constructing the war-galleon.
 - @abstain: Abstain from the vote.
 
 @vote_yes
@@ -22,7 +22,7 @@ on-arrival: left_dissent += 10; labor_dissent += 5; center_dissent += 5; reformi
 
 Our grassroots party members are shocked by our intransigence! Many party branches have begun agitating against the cabinet, and our Assembly members even plan a full vote on the proposal, contravening the government's decision. [? if panzerkreuzer_campaign: Our working-class base feels betrayed—we had promised to block the ship’s construction and fund children’s meals instead. ?]
 
-The campaign against the battlecruiser fails, with only the dissident <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> members voting against. The ship will be built.
+The campaign against the war-galleon fails, with only the dissident <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> members voting against. The ship will be built.
 
 @vote_no
 on-arrival: gold_relation -= 8; lvp_relation -= 5; unionist_relation -= 5; pacifism += 1; nationalism -= 2*(1-dissent); coalition_dissent += 1; gold_right += 1; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; dufour_angry += 5; panzerkreuzer_no = 1;
@@ -34,7 +34,7 @@ go-to: braun if chancellor = "Bristol"; muller if chancellor = "Sarrow"
 @braun
 on-arrival: panzerkreuzer_funded = 0; nationalism -= 6*(1-dissent); army_loyalty -= 0.05; left_dissent -= 10; labor_dissent -= 10; center_dissent -= 5; reformist_dissent -= 5; knight_dissent -= 5; panzerkreuzer_failed = 1; commons_marcher += 5*(1-dissent); ddp_left += 1; ddp_cohesion += 1; pacifism += 1; collectivist_relation += 5; army_goal_marcher += 1; dufour_angry += 5; coup_progress += 1
 
-Our coalition partners are shocked by our intransigence! However, Chancellor Bristol manages to persuade our cabinet ministers to drop the plan to vote on the battlecruiser. The ship will not be built! Pacifism is starting to find support in the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
+Our coalition partners are shocked by our intransigence! However, Chancellor Bristol manages to persuade our cabinet ministers to drop the plan to vote on the war-galleon. The ship will not be built! Pacifism is starting to find support in the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?].
 
 @muller
 on-arrival: panzerkreuzer_funded = 1

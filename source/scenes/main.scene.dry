@@ -640,7 +640,7 @@ max-cards: 3
 
 {!<p class="both">!}[? if year = 1928 and month = 9 : After the poor performance of the <span style="color: #7A3C00;">**Royalists**</span> in the recent election, Alaric Gallax's ban on public speaking in Heartland has been lifted. ?] {!</p>!}
 
-{!<p class="both">!}[? if year = 1928 and month = 9 and marcher_in_government = 0 : The propertied government has approved construction of a new battlecruiser, as part of the Commonwealth's rearmament. We have gained some support as an opposition party advocating food for children instead of battleships. ?]{!</p>!}
+{!<p class="both">!}[? if year = 1928 and month = 9 and marcher_in_government = 0 : The propertied government has approved construction of a new war-galleon, as part of the Commonwealth's rearmament. We have gained some support as an opposition party advocating food for children instead of war-galleons. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 9 : Adam Sedgewick, chairman of the Faithful Free Guilds,[? if heartland_leader == "Sedgewick": and Minister-President of Heartland,?] is the frontrunner to succeed Wilhelm Croft. He advocates for a broad interfaith “people’s bloc” over special interest groups. He is skeptical of cooperation with us.?]{!</p>!}
 
@@ -1928,7 +1928,7 @@ max-cards: 4
 
 {!<p class="both">!}[? if year = 1928 and month = 9 : After the poor performance of the <span style="color: #7A3C00;">**Royalists**</span> in the recent election, Alaric Gallax's ban on public speaking in Heartland has been lifted. ?] {!</p>!}
 
-{!<p class="both">!}[? if year = 1928 and month = 9 and marcher_in_government = 0 : The propertied government has approved construction of a new battlecruiser, as part of the Commonwealth's rearmament. We have gained some support as an opposition party advocating food for children instead of battleships. ?]{!</p>!}
+{!<p class="both">!}[? if year = 1928 and month = 9 and marcher_in_government = 0 : The propertied government has approved construction of a new war-galleon, as part of the Commonwealth's rearmament. We have gained some support as an opposition party advocating food for children instead of war-galleons. ?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 9 : Adam Sedgewick, chairman of the Faithful Free Guilds,[? if heartland_leader == "Sedgewick": and Minister-President of Heartland,?] is the frontrunner to succeed Wilhelm Croft. He advocates for a broad interfaith “people’s bloc” over special interest groups. He is skeptical of cooperation with us.?]{!</p>!}
 
