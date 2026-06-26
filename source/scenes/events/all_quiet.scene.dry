@@ -1,5 +1,5 @@
-title: All Quiet on the Western Front
-subtitle: Censorship and violence over a movie...
+title: The Glorious Dead
+subtitle: Censorship and violence over a play...
 view-if: year = 1930 and month = 12 and marcher_heartland and not all_quiet_seen
 on-arrival: all_quiet_seen = 1
 max-visits: 1
@@ -7,40 +7,40 @@ tags: event
 new-page: true
 face-image: img/All_Quiet.jpg
 
-= All Quiet on the Western Front
+= The Glorious Dead
 
-The Allied film *All Quiet on the Western Front*, based on the Commonwealth novel *Im Westen nichts Neues* by Edric Renmark, is a film about the experiences of Commonwealth soldiers in the Great War, and how they gradually became disillusioned with the ideas of patriotism and nationalism. 
+The acclaimed play *The Glorious Dead*, adapted from Edric Renmark's Commonwealth novel, follows ordinary soldiers through the Great War and their slow disillusionment with patriotism and glory—and turns, in its final act, into an open indictment of the old Emperor who marched Athar into the slaughter. 
 
-As an anti-war film, it is the target of major protest by <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> actors, especially the <span style="color: #7A3C00;">Royalists</span> and the <span style="color: #3E88B3;">**Wardens**</span>. They are calling for the government to ban the film. If we do not ban it, the <span style="color: #7A3C00;">**Loyalists**</span> threatens to violently stop the film from being shown or watched.
+As an anti-war play, it is the target of major protest by <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> actors, especially the <span style="color: #7A3C00;">Royalists</span> and the <span style="color: #3E88B3;">**Wardens**</span>. They are calling for the government to ban the play. If we do not ban it, the <span style="color: #7A3C00;">**Loyalists**</span> threatens to violently stop the play from being shown or watched.
 
-- @ban: Ban the film, to prevent <span style="color: #7A3C00;">Royalist</span> violence.
-- @allow: Allow the film to be shown.
-- @allow_protect: Allow the film to be shown, and use the Heartland police to prevent <span style="color: #7A3C00;">Royalist</span> disruptions.
-- @everyone: In fact, everyone needs to learn the lessons of this film. Give free tickets to students and government employees.
+- @ban: Ban the play, to prevent <span style="color: #7A3C00;">Royalist</span> violence.
+- @allow: Allow the play to be shown.
+- @allow_protect: Allow the play to be shown, and use the Heartland police to prevent <span style="color: #7A3C00;">Royalist</span> disruptions.
+- @everyone: In fact, everyone needs to learn the lessons of this play. Give free tickets to students and government employees.
 
 @ban
 on-arrival: guild_royalist += 5; burgher_royalist += 3; commons_royalist += 2; disfavored_royalist += 2; loyalist_strength += 50; nationalism += 6; pro_republic -= 5
 
-When we ban the film, the <span style="color: #7A3C00;">Royalists</span> immediately celebrate it as a major victory; they claim that even the red Vaelists agree with them! It is a major boost to their morale.
+When we ban the play, the <span style="color: #7A3C00;">Royalists</span> immediately celebrate it as a major victory; they claim that even the red Vaelists agree with them! It is a major boost to their morale.
 
 
 @allow
 on-arrival: nationalism += 3; guild_royalist += 5; burgher_royalist += 3; commons_royalist += 1; disfavored_royalist += 1; loyalist_strength += 15; pro_republic -= 3; strife += 1
 
-While we allow the film, showings are marred by violence. Showings of the film eventually stop, and the <span style="color: #7A3C00;">Royalists</span> claim victory.
+While we allow the play, showings are marred by violence. Showings of the play eventually stop, and the <span style="color: #7A3C00;">Royalists</span> claim victory.
 
 
 @allow_protect
 choose-if: heartland_police_loyalty >= 0.65 and ((heartland_leader = "Bristol" or heartland_leader = "Pendrigon") or unionist_relation >= 65)
-unavailable-subtitle: [? if heartland_police_loyalty < 0.65:The police are not willing to protect the film. ?] [? if not heartland_leader = "Bristol" and not heartland_leader = "Pendrigon" and unionist_relation < 65: Our coalition partners restrain us from policing actions. ?]
+unavailable-subtitle: [? if heartland_police_loyalty < 0.65:The police are not willing to protect the play. ?] [? if not heartland_leader = "Bristol" and not heartland_leader = "Pendrigon" and unionist_relation < 65: Our coalition partners restrain us from policing actions. ?]
 on-arrival: nationalism -= 4; pro_republic += 4*(1-dissent); strife += 1
 
-Under the protection of the police, the people are allowed to watch the film in peace. <span style="color: #7A3C00;">Royalist</span> disturbances are kept to a minimum.
+Under the protection of the police, the people are allowed to watch the play in peace. <span style="color: #7A3C00;">Royalist</span> disturbances are kept to a minimum.
 
 @everyone
 choose-if: heartland_police_loyalty >= 0.75 and heartland_leader = "Bristol" or heartland_leader = "Pendrigon"
 unavailable-subtitle: [? if heartland_police_loyalty < 0.75: The police are unable to guarantee the safety of all the attendees. ?] [? if not heartland_leader = "Bristol" and not heartland_leader = "Pendrigon": Our coalition partners restrain us from this action. ?]
 on-arrival: nationalism -= 5; pro_republic += 5*(1-dissent); commons_royalist -= 3; disfavored_royalist -= 3; burgher_royalist -= 3
 
-Under police protection, crowds throng the film's showings, as <span style="color: #7A3C00;">Royalists</span> protest outside. The reception is mixed, but a new national conversation develops, reexamining the right-wing histories of the war. Quietly, many minds are changed, or at least affected in subtle ways.
+Under police protection, crowds throng the play's showings, as <span style="color: #7A3C00;">Royalists</span> protest outside. The reception is mixed, but a new national conversation develops, reexamining the right-wing histories of the war. Quietly, many minds are changed, or at least affected in subtle ways.
 
