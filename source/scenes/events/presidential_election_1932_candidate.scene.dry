@@ -401,7 +401,7 @@ face-image: img/portraits/AskewHeinrich.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Edmund Askew, a politician we know all too well, is running for the most powerful position in the Commonwealth. He has a long history, tracing back to the Faithful Trade Unions and his mentorship under Sedgewick, eventually rising to become the leader of the party's parliamentary group and its candidate for Chancellor. Despite his record of favoring austerity and deflationary policies in response to the Great Depression, he is a flexible figure—intelligent enough to recognize the dangers of the "taming strategy," and not entirely opposed to governing alongside the <span style="color: #c00000;">**Marchers**</span>.
+Edmund Askew, a politician we know all too well, is running for the most powerful position in the Commonwealth. He has a long history, tracing back to the Faithful Free Guilds and his mentorship under Sedgewick, eventually rising to become the leader of the party's parliamentary group and its candidate for Chancellor. Despite his record of favoring austerity and deflationary policies in response to the Great Depression, he is a flexible figure—intelligent enough to recognize the dangers of the "taming strategy," and not entirely opposed to governing alongside the <span style="color: #c00000;">**Marchers**</span>.
 
 His candidacy is supported by the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. 
 

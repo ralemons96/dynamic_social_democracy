@@ -25,8 +25,8 @@ on-arrival: advisor_action_timer = 6; burgher_marcher += 6*(1-dissent);
 We have increased our organizing among white-collar workers.
 
 @union_unity
-title: Union-party coordination
-subtitle: Reduce dissent among the unions.
+title: Free Guild-party coordination
+subtitle: Reduce dissent among the Free Guilds.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; labor_dissent -= 10;

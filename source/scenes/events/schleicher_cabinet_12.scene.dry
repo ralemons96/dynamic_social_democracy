@@ -456,7 +456,7 @@ We are not alone. [? if marcher_alone: Well, we actually are, never mind. ?]
 
 <span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_staal: In Favor?][? if not libs_against_staal: Political Neutrality?]
 
-[? if not marcher_alone: The Unity Coalition parties are nominally against such unconstitutional acts as well. While they may not have an armed self-defense militia, they have several hundred thousand employees in blue-collar and white-collar jobs, and could completely cripple the economy if they act alongside the <span style="color: #c00000;">Reformist</span> Free Unions. ?]
+[? if not marcher_alone: The Unity Coalition parties are nominally against such unconstitutional acts as well. While they may not have an armed self-defense militia, they have several hundred thousand employees in blue-collar and white-collar jobs, and could completely cripple the economy if they act alongside the <span style="color: #c00000;">Reformist</span> Free Guilds. ?]
 
 - @spd_win
 - @spd_med
@@ -553,7 +553,7 @@ The nationwide general strike against Staal's authoritarian regime has brought t
 
 Meanwhile, in defiance of the indefinite adjournment of the Assembly, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
 
-However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Staal’s sympathizers embedded within the unions themselves.
+However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Staal’s sympathizers embedded within the Free Guilds themselves.
 
 - @z_break
 - @schleicher_cabinet_13_pre_pre
@@ -563,7 +563,7 @@ title: Our protests are ineffective.
 view-if: marcher_lose
 on-arrival: hammerstein_win = 1
 
-The general strike proves short-lived. An endless supply of unemployed strikebreakers and Staal's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The the Banners is no match for the Commonwealth Army.
+The general strike proves short-lived. An endless supply of unemployed strikebreakers and Staal's own sympathizers within the Free Guilds render it largely ineffective. Protesters are shot, civilians killed. The the Banners is no match for the Commonwealth Army.
 
 Seizing the moment, Staal expands his crackdown, accusing the <span style="color: #c00000;">**Marchers**</span> of conspiring with the <span style="color: #700000;">**Collectivists**</span> to incite revolution.
 

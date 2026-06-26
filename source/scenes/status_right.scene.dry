@@ -66,7 +66,7 @@ is-special: true
 [? if gnu_existed: <p style="text-align: center;margin-bottom: 5px;">[+ chancellor +]'s public popularity: [+ staal_approval : staal_popularity +]</p> ?]
 
 [? if gnu_existed: <div style="display: flex; gap: 5px; margin-bottom: 5px; margin-left: -3px;"> ?]
-[? if gnu_existed: <img src="img/beauty_of_labor.jpg" alt="Workers and Trade Unions" style="width: 50%;"> ?]
+[? if gnu_existed: <img src="img/beauty_of_labor.jpg" alt="Workers and Free Guilds" style="width: 50%;"> ?]
 [? if gnu_existed: <img src="img/capitalism.jpg" alt="Big Business and Industrialists" style="width: 50%;"> ?]
 [? if gnu_existed: </div> ?]
 

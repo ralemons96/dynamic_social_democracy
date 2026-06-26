@@ -113,7 +113,7 @@ Assembly composition:
 [? if not concord_formed and not traditionalist_defunct: <span class="tooltip-text" title="Commonwealth National People's Party" style="color: #3E88B3;">**Traditionalists**</span>: [+ traditionalist_r +]%?]
 [? if dnf_formed: <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: [+ dnf_r +]% ?]
 # 1928: 3, 1930: 18
-[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
+[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Free Guild" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
 [? if not royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
 [? if royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: [+ nvf_r +]%?]
@@ -247,7 +247,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if dnf_formed : <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: Authoritarian Conservatism (Mallin) ?]
 
-[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [? if not dsu_alt: Strasserism?][? if dsu_alt: Center Imperial Sovereigntism?] ([+ dsu_leader +])?]
+[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Free Guild" style="color: #6A1E1E;">**DSU**</span>: [? if not dsu_alt: Strasserism?][? if dsu_alt: Center Imperial Sovereigntism?] ([+ dsu_leader +])?]
 
 [? if not ddp_name: UNINITIALIZED ?][? if ddp_name != 0: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: Imperial Sovereigntism ([+ royalist_leader +])?]
 
@@ -273,7 +273,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if traditionalist_gold_formed: <span class="tooltip-text" title="Free Conserative Party" style="color: #00C0FF;">**FKP**</span>: high ?] 
 
-[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: none ?]
+[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Free Guild" style="color: #6A1E1E;">**DSU**</span>: none ?]
 
 <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [? if industrial_royalist_backing == 0: none?][? if industrial_royalist_backing == 1: low?][? if industrial_royalist_backing == 2: medium?]
 

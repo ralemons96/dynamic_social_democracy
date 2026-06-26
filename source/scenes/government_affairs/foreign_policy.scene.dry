@@ -108,11 +108,11 @@ Of course <span style="color: #8B0000;">Halsmark</span> and the various leaders 
 @customs_union
 title: Form a customs union with the Freehold?
 subtitle: This will likely incur the wrath of <span style="color: #002654;">Ethia</span>.
-unavailable-subtitle: This is superseded by the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>.
+unavailable-subtitle: This is superseded by the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>.
 choose-if: eu = 0
 view-if: veran_crash_seen = 1 and customs_union = 0
 
-The right has long desired closer ties with the Freehold, with the eventual goal of the merger of the two Commonwealth-speaking countries. A customs union with the Freehold is the first step towards this goal. Additionally, many believe that a union with the Freehold would improve our current economic circumstances.
+The right has long desired closer ties with the Freehold, with the eventual goal of the merger of the two Commonwealth-speaking countries. A customs union with the Freehold is the first step towards this goal. Additionally, many believe that a Free Guild with the Freehold would improve our current economic circumstances.
 
 However, the Allies, especially <span style="color: #002654;">Ethia</span>, are likely to object. This agreement would break the terms of the Etaluxia Treaty, and could lead to economic sanctions, further hurting our economy.
 
@@ -173,7 +173,7 @@ on-arrival: military_parity = 1 if eu or (west_relation >= 8 and reformist_stren
 
 General Staal has demanded that we raise the issue of rearmament, which remains restricted under the Treaty of Etaluxia. However, <span style="color: #002654;">Ethian</span> Premier Édouard Herriot seized on this as an admission that the Commonwealth is, in fact, capable of paying its War Loans and would simply redirect freed-up funds toward rearmament.
 
-[? if military_parity:[? if eu: However, with the formation of the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> and its defense agreements, preventing the Commonwealth’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">revolutionaries</span>.?] As a result, the <span style="color: #7A3C00;">**Royalists**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Collectivists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
+[? if military_parity:[? if eu: However, with the formation of the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span> and its defense agreements, preventing the Commonwealth’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">revolutionaries</span>.?] As a result, the <span style="color: #7A3C00;">**Royalists**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Collectivists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
 
 [? if not military_parity: This has caused great embarrassment to our pacifist and democratic image, both at home and abroad. Damn you, Staal! ?]
 
@@ -220,25 +220,25 @@ on-arrival: budget -= 1; sdapo_strength += 3; left_dissent -= 6; center_dissent 
 In public, we provide verbal backing to Freehold democracy, wage a war of words against <span style="color: #7A3C00;">Austrofascism</span>, and promulgate additional trade sanctions. Privately, we provide financial and various forms of "support" to our comrades in the Freehold in their struggle against dictatorship.
 
 @european_union
-title: Take steps to form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>".
+title: Take steps to form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>".
 subtitle: Is a "the Allied States of Europe" possible?
 unavailable-subtitle: [? if west_relation < 7 : Our relations with the West are not good enough. ?] [? if east_relation < 4 : Our relations with the East are not good enough. ?]
 view-if: war_loans <= -2 and eu_progress < 3 and not eu and france_left_seen
 choose-if: west_relation >= 7 and east_relation >= 4
 on-arrival: eu_negotiation = 1; eu_progress += 1; west_relation += 1; foreign_goal_marcher_peoples += 1
 
-Forming a "<span style="color: #FFDD00;">the Allied States</span> of <span style="color: #001489;">Europe</span>" has long been part of the <span style="color: #c00000;">**Revisionist**</span> foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of <span style="color: #001489;">Europe</span>, we can begin to hold multilateral negotiations for more <span style="color: #001489;">European</span> <span style="color: #FFDD00;">federalism</span>. It will take time to hammer out the exact shape of this future "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>", however.
+Forming a "<span style="color: #FFDD00;">the Allied States</span> of <span style="color: #001489;">Europe</span>" has long been part of the <span style="color: #c00000;">**Revisionist**</span> foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of <span style="color: #001489;">Europe</span>, we can begin to hold multilateral negotiations for more <span style="color: #001489;">European</span> <span style="color: #FFDD00;">federalism</span>. It will take time to hammer out the exact shape of this future "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>", however.
 
 
 @european_union_2
-title: We can sign a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>!
+title: We can sign a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>!
 view-if: west_relation >= 5 and east_relation >= 4 and eu_progress >= 3 and not eu and france_left_seen
 on-arrival: eu = 1; disfavored -= 2 if disfavored >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; commons_marcher += 5*(1-dissent); burgher_marcher += 5*(1-dissent); guild_marcher += 5*(1-dissent); landed_marcher += 4*(1-dissent); faithful_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent); pro_republic += 5; nationalism -= 5; budget += 1; ddp_left += 3; ddp_cohesion += 3; ddp_relation += 10; lvp_relation += 5; foreign_goal_marcher_peoples += 1; economic_growth += 1 if economic_growth < 3; collectivist_coalition_dissent += 1; collectivist_relation -= 10
 max-visits: 1
 achievement: eu
 
-Along with <span style="color: #002654;">Ethia</span>, <span style="color: #C8102E;">Fulyria</span>, and many other states of Western and Eastern Europe, we have signed a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>! It is hoped that <span style="color: #001489;">Europe</span> has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
+Along with <span style="color: #002654;">Ethia</span>, <span style="color: #C8102E;">Fulyria</span>, and many other states of Western and Eastern Europe, we have signed a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>! It is hoped that <span style="color: #001489;">Europe</span> has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
 
-A major component of the union is the free movement of people and goods across the countries of Europe, as well as the stabilization of currency exchange rates. This provides new markets for Commonwealth products and new sources of investment.
+A major component of the Free Guild is the free movement of people and goods across the countries of Europe, as well as the stabilization of currency exchange rates. This provides new markets for Commonwealth products and new sources of investment.
 
 <span style="color: #7A3C00;">Sovereigntist</span> the southern realms remains a problem, and the <span style="color: #750e0e;">Central Union</span> also lies outside the system. But for now, there is new hope for peace and prosperity throughout the continent.

@@ -558,7 +558,7 @@ Anna Siemen is now an advisor.
 
 @add_leipart
 title: Tobias Leighart
-subtitle: Tobias Leighart is the leader of the Greater Worker's Guild, the Commonwealth Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
+subtitle: Tobias Leighart is the leader of the Greater Worker's Guild, the Commonwealth Free Guild Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis[? if red_general_unlock and rubicon:, Negotiating with the Red General?]?]
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: labor_advisor
@@ -570,7 +570,7 @@ Tobias Leighart is now an advisor.
 
 @add_aufhauser
 title: Siegfried Auberon
-subtitle: Siegfried Auberon is the leader of the AfA-Bund, the white-collar Free Guild federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Union-Party Coordination, Addressing the Economic Crisis ?]
+subtitle: Siegfried Auberon is the leader of the AfA-Bund, the white-collar Free Guild federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Free Guild-Party Coordination, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
 tags: labor_advisor
@@ -582,7 +582,7 @@ Siegfried Auberon is now an advisor.
 
 @add_wissell
 title: Rudolf Wistle
-subtitle: Rudolf Wistle is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination, Labor Rights ?]
+subtitle: Rudolf Wistle is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Free Guild-Party Coordination, Labor Rights ?]
 is-card: true
 card-image: img/portraits/WissellRudolf.jpg
 tags: labor_advisor

@@ -132,7 +132,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if ((Q.chancellor_party == "Royalist" || Q.chancellor == "Gallax" || Q.president == "Gorrick" || Q.president == "Frask" || Q.president == "Gallax") && Q.total_defeat) {
       this.achieve('stolperstein');
   }
-  // Heidelberger Programm - fulfill the goals of the Heidelberg programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European  Union.
+  // Heidelberger Programm - fulfill the goals of the Heidelberg programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European  Free Guild.
   if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_law >= 1 && Q.upper_tax_rates > Q.lower_tax_rates && Q.works_councils > 0 && Q.eu > 0)) {
       this.achieve('heidelberger_programm');
   }
@@ -594,12 +594,12 @@ go-to: eg_menu
 Works councils now have substantially greater influence, giving workers democratic control over their economic lives.
 
 @european_union
-title: There is now a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>!
+title: There is now a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>!
 view-if: eu = 1
 tags: endings
 go-to: eg_menu
 
-We have helped to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> to bring peace and prosperity to the continent. Time will tell how effective it will be.
+We have helped to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span> to bring peace and prosperity to the continent. Time will tell how effective it will be.
 
 @achievements
 title: Achievements
@@ -1449,7 +1449,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vereinigte Staaten von Europa</div>
-      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>".</div>
+      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>".</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1464,7 +1464,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heidelberger Programm</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2049,7 +2049,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Weltfrieden</div>
-      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Union</span> without ever negotiating.
+      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Free Guild</span> without ever negotiating.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3361,7 +3361,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vereinigte Staaten von Europa</div>
-      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>".</div>
+      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>".</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3376,7 +3376,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heidelberger Programm</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3961,7 +3961,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Weltfrieden</div>
-      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Union</span> without ever negotiating.
+      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Free Guild</span> without ever negotiating.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5272,7 +5272,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Vereinigte Staaten von Europa</div>
-      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>".</div>
+      <div class="achievement_subtitle"> - form a "<span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>".</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5287,7 +5287,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Heidelberger Programm</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5872,7 +5872,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Weltfrieden</div>
-      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Union</span> without ever negotiating.
+      <div class="achievement_subtitle"> - sign the treaty to form the <span style='color: #001489;'>European</span> <span style='color: #FFDD00;'>Free Guild</span> without ever negotiating.
     </div>
   {!</td>!}
 {!</tr>!}

@@ -82,7 +82,7 @@ view-if: boycott_count < 5
 max-visits: 1
 go-to: boycott_elections_menu
 
-The efficacy of our boycott depends on two key factors: party dissent and our control over labor. If the Staal-sympathetic factions within the unions and the party choose to vote for the <span style="color: #BFC8CC;">**GNU**</span> regardless, our boycott will be in vain.
+The efficacy of our boycott depends on two key factors: party dissent and our control over labor. If the Staal-sympathetic factions within the Free Guilds and the party choose to vote for the <span style="color: #BFC8CC;">**GNU**</span> regardless, our boycott will be in vain.
 
 Boycott efficacy: [+ marcher_boycott_efficacy : boycott_efficacy +]
 
@@ -105,7 +105,7 @@ view-if: boycott_count < 5
 max-visits: 1
 go-to: boycott_elections_menu
 
-[? if not unionist_gnu: The <span style="color: #000000;">Unionist Party</span> is internally split on this. Their ties to the Staal cabinet and the pro-Staal sentiment expressed by many of their party members have made joining the <span style="color: #c00000;">Reformist</span>-led boycott a hard pill to swallow. However, we have gained the sympathy of their left wing. ?][? if unionist_gnu: The <span style="color: #000000;">Unionist Party</span> is already a <i>bloc party</i>, so it's out of the question. However, we have some sympathetic voices on the party's left wing, like Werth and Aldwin Stilling of the <span style="color: #000000;">Faithful</span> labor unions, lending their support nonetheless. ?]
+[? if not unionist_gnu: The <span style="color: #000000;">Unionist Party</span> is internally split on this. Their ties to the Staal cabinet and the pro-Staal sentiment expressed by many of their party members have made joining the <span style="color: #c00000;">Reformist</span>-led boycott a hard pill to swallow. However, we have gained the sympathy of their left wing. ?][? if unionist_gnu: The <span style="color: #000000;">Unionist Party</span> is already a <i>bloc party</i>, so it's out of the question. However, we have some sympathetic voices on the party's left wing, like Werth and Aldwin Stilling of the <span style="color: #000000;">Faithful</span> Free Guilds, lending their support nonetheless. ?]
 
 Boycott efficacy: [+ unionist_boycott_efficacy : boycott_efficacy +]
 

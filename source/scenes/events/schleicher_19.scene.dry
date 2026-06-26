@@ -17,9 +17,9 @@ face-image: img/beauty_of_labor.jpg
 
 Staal has been working intensively over the past weeks to forge a formal alliance between the Free Guilds and the state, focusing his efforts on the <span style="color: #000000;">Faithful</span> associations. Their negotiations have now "succeeded"—with heavy doses of state intimidation and interference ensuring they accepted an offer that would have been unthinkable under normal circumstances.
 
-Under this agreement, the blue-collar <span style="color: #D3C24D;">Hirsch-Duncker</span>, <span style="color: #000000;">Faithful</span>, and the Strasserist <span style="color: #7A3C00;">**NSBO**</span> unions are merged into the new Commonwealth Labor Front (DAF). White-collar and civil servant unions, including the Clerks' Guild, are folded into their own section within the Front. The right to strike is curtailed, and all members are made to pledge full loyalty to the so-called "national interest"—however the state chooses to define it.
+Under this agreement, the blue-collar <span style="color: #D3C24D;">Hirsch-Duncker</span>, <span style="color: #000000;">Faithful</span>, and the Strasserist <span style="color: #7A3C00;">**NSBO**</span> Free Guilds are merged into the new Commonwealth Labor Front (DAF). White-collar and civil servant Free Guilds, including the Clerks' Guild, are folded into their own section within the Front. The right to strike is curtailed, and all members are made to pledge full loyalty to the so-called "national interest"—however the state chooses to define it.
 
-Local union leaders who refuse to join are having their offices raided, their funds confiscated, and themselves imprisoned. While membership in the Commonwealth Labor Front is technically voluntary, access to benefits—and even basic protections—is now locked behind it, making participation all but mandatory. Furthermore, a new department is established in the DAF, tasked solely with spreading state propaganda and binding the workers more tightly into the <i>national community</i>.
+Local Free Guild leaders who refuse to join are having their offices raided, their funds confiscated, and themselves imprisoned. While membership in the Commonwealth Labor Front is technically voluntary, access to benefits—and even basic protections—is now locked behind it, making participation all but mandatory. Furthermore, a new department is established in the DAF, tasked solely with spreading state propaganda and binding the workers more tightly into the <i>national community</i>.
 
 The chancellor is also able to palate the industrialists, by placing their power significantly above that of labor in the newly established corporatist framework.
 
@@ -212,7 +212,7 @@ The nationwide general strike against Staal's authoritarian regime has brought t
 
 Meanwhile, in defiance of the indefinite adjournment of the Assembly, the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties have banded together to unofficially reconvene the chamber at a separate location, openly challenging federal authority.
 
-However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Staal’s sympathizers embedded within the unions themselves.
+However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Staal’s sympathizers embedded within the Free Guilds themselves.
 
 - @schleicher_cabinet_13_pre
 
@@ -226,7 +226,7 @@ title: Our protests are ineffective.
 view-if: marcher_lose
 on-arrival: hammerstein_win = 1
 
-The general strike proves short-lived. An endless supply of unemployed strikebreakers and Staal's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The the Banners is no match for the Commonwealth Army.
+The general strike proves short-lived. An endless supply of unemployed strikebreakers and Staal's own sympathizers within the Free Guilds render it largely ineffective. Protesters are shot, civilians killed. The the Banners is no match for the Commonwealth Army.
 
 Seizing the moment, Staal expands his crackdown, accusing the <span style="color: #c00000;">**Marchers**</span> of conspiring with the <span style="color: #700000;">**Collectivists**</span> to incite revolution.
 

@@ -36,7 +36,7 @@ go-to: menu
 
 = Timeline of the Marchers and the Republic (until 4293)
 
-**4240**: The Marchers are formed from a union of the old reform-leagues of the Commons — a standing voice for the laborers and journeymen of the Axton Empire. In time they grow into the largest party in the Assembly that the Empire had grudgingly raised.
+**4240**: The Marchers are formed from a Free Guild of the old reform-leagues of the Commons — a standing voice for the laborers and journeymen of the Axton Empire. In time they grow into the largest party in the Assembly that the Empire had grudgingly raised.
 
 **4279**: The Second Great War begins. Emperor Reikzar's legions fall upon Ethia and then, at the height of their triumph, upon the Allied States. The Marchers vote for the war credits amid bitter dissent — the first open breach between the party's patriot and pacifist wings.
 
@@ -93,7 +93,7 @@ Assembly composition:
 [? if not concord_formed and not traditionalist_defunct: <span class="tooltip-text" title="Commonwealth National People's Party" style="color: #3E88B3;">**Traditionalists**</span>: [+ traditionalist_r +]%?]
 [? if dnf_formed: <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**DNF**</span>: [+ dnf_r +]% ?]
 # 1928: 3, 1930: 18
-[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Union" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
+[? if dsu_exist: <span class="tooltip-text" title="Commonwealth Social Free Guild" style="color: #6A1E1E;">**DSU**</span>: [+ dsu_r +]%?]
 [? if not royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_r +]%?]
 [? if royalist_split: <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>: [+ royalist_gallax_r +]%?]
 [? if nvf_exist: <span class="tooltip-text" title="National People's Front" style="color: #142e20;">**NVF**</span>: [+ nvf_r +]%?]

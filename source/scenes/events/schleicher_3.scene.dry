@@ -1,4 +1,4 @@
-title: Staal and the Trade Unions
+title: Staal and the Free Guilds
 subtitle: The General meets with the Greater Worker's Guild once more.
 view-if: chancellor == "Goodryke" and papen_time == 24 and papen_post_2 and red_general_unlock
 new-page: true
@@ -6,11 +6,11 @@ tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= Staal and the Trade Unions
+= Staal and the Free Guilds
 
 A few months back, a line of communication was opened between the General and the Greater Worker's Guild's leadership, with the understanding of further meetings.
 
-Following the results of the last election, von Staal has reached out to the various <span style="color: #000000;">Faithful</span> and <span style="color: #c00000;">Reformist</span> unions once again, presumably in an attempt to broker a political truce.
+Following the results of the last election, von Staal has reached out to the various <span style="color: #000000;">Faithful</span> and <span style="color: #c00000;">Reformist</span> Free Guilds once again, presumably in an attempt to broker a political truce.
 
 - @schleicher
 
@@ -20,7 +20,7 @@ on-arrival: staal_marcher_support += 2; staal_marcher_r += 1
 
 Greater Worker's Guild leaders Tobias Leighart and Nevin Edgemoor have met with Chancellor-designate Staal, who promised to rescind Goodryke’s most offensive emergency wage decrees, launch a public works program, and abandon the former chancellor’s plans to impose his “New State” via presidential decree.
 
-We are pleasantly surprised by these concessions, and Staal has earned some goodwill among the union leadership. Still, deep distrust remains—after all, he was the one controlling Goodryke when those very decrees and the unconstitutional postponement of elections were proposed.
+We are pleasantly surprised by these concessions, and Staal has earned some goodwill among the Free Guild leadership. Still, deep distrust remains—after all, he was the one controlling Goodryke when those very decrees and the unconstitutional postponement of elections were proposed.
 
 > *"Republic or monarchy is not the question now, but rather what should this republic look like."*
 

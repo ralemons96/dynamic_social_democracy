@@ -381,7 +381,7 @@ max-visits: 1
 on-arrival: dufour_funds += 1; ddp_relation += 5; unionist_relation += 5; lvp_relation += 5; ddp_left += 1; pro_republic += 3; burgher_ddp += 3; guild_ddp += 3; burgher_gold += 3 if gold_ideology != "Right"; guild_gold += 3 if gold_ideology != "Right"; burgher_lvp += 3; guild_lvp += 3; burgher_royalist -= 3 if burgher_royalist_normalized >= 40; guild_royalist -= 3 if burgher_royalist_normalized >= 40; landed_other += 3; banner_militancy += 0.06; loyalist_strength -= 50; embezzle_2 = 1
 go-to: embezzlement_options
 
-We have met with politicians from the [? if lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?], the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party, the the Banners, and even some <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> peasant unions. We have agreed to allocate Heartland state funds to their groups, strengthening the DuFour campaign among those excluded from the official committee while also improving our relationship with these factions.
+We have met with politicians from the [? if lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?], the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party, the the Banners, and even some <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> peasant Free Guilds. We have agreed to allocate Heartland state funds to their groups, strengthening the DuFour campaign among those excluded from the official committee while also improving our relationship with these factions.
 
 @campaigning_hindenburg_2
 on-arrival: {!
@@ -657,7 +657,7 @@ face-image: img/poster_0.jpg
 max-visits: 1
 go-to: campaigning_thalmann
 
-Let's face it, the middle class is never going to support someone like [+ communist_candidate_1932 +], no matter how hard we try. However, we do manage to convince some of our own in the <span style="color: #c00000;">Reformist</span> white-collar unions to come around.
+Let's face it, the middle class is never going to support someone like [+ communist_candidate_1932 +], no matter how hard we try. However, we do manage to convince some of our own in the <span style="color: #c00000;">Reformist</span> white-collar Free Guilds to come around.
 
 @united_left
 title: We persuade the <span style="color: #700000;">**Collectivists**</span> to let us take a more active role in their campaign efforts.

@@ -14,7 +14,7 @@ Leighart is a leader of the Greater Worker's Guild, the largest federation of <s
 - @schleicher
 - @root: Return to main
 
-# leipart was one of the people who argued for union independence
+# leipart was one of the people who argued for Free Guild independence
 #- @union_unity
 
 @organizing
@@ -33,7 +33,7 @@ choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and veran_crash_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if veran_crash_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the Voss Renewal Plan. ?]
 on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 5; wtb_points += 15
 
-[? if not wtb_concept: Voss, Whell, and Bayle, has been working together to draft a plan for getting us out of the depression. Leighart canvasses in favor of this policy throughout the party and the unions. ?][? if wtb_concept: The Voss Renewal Plan, named for its primary supporters Voss, Whell, and Bayle, has been adopted as the unions' plan for getting us out of the depression. Leighart canvasses in favor of this policy throughout the party and the unions. ?]
+[? if not wtb_concept: Voss, Whell, and Bayle, has been working together to draft a plan for getting us out of the depression. Leighart canvasses in favor of this policy throughout the party and the Free Guilds. ?][? if wtb_concept: The Voss Renewal Plan, named for its primary supporters Voss, Whell, and Bayle, has been adopted as the Free Guilds' plan for getting us out of the depression. Leighart canvasses in favor of this policy throughout the party and the Free Guilds. ?]
 
 @schleicher
 title: Negotiating with the Red General
@@ -46,8 +46,8 @@ go-to: red_general
 
 
 @union_unity
-title: Union-party coordination
-subtitle: Reduce dissent among the unions.
+title: Free Guild-party coordination
+subtitle: Reduce dissent among the Free Guilds.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; labor_dissent -= 5; labor_strength += 5

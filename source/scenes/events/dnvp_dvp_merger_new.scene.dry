@@ -173,7 +173,7 @@ Major Factions:
 
 <hr id="read-marker">
 
-<span style="color: #D8B868;">Right-wing Unions</span> (<span style="color: #C0A054;">**Golds**</span> and [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?]) [+ dhv_fkp +]
+<span style="color: #D8B868;">Right-wing Free Guilds</span> (<span style="color: #C0A054;">**Golds**</span> and [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?]) [+ dhv_fkp +]
 
 <span style="color: #D8B868;">Strattonites</span> (<span style="color: #C0A054;">**Golds**</span>) [+ stressmanites_fkp +]
 
@@ -192,7 +192,7 @@ on-arrival: fkp_leader = "Vellt"; fkp_ideology = "Paternalistic Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/glatzel.jpg
 
-Against expectations, Frank Vellt prevailed in a drawn‑out, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress. Centrists like Trevannon and von Raumer were the first to fall in the election, ultimately endorsing Vellt over hard‑line monarchists such as Hargen and Westmore. By the final ballot, Vellt had assembled a coalition of moderate [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?] holdouts, white-collar union delegates, and the remaining <span style="color: #C0A054;">**Golds**</span> moderates, clinching the chairmanship despite standing on the party’s left.
+Against expectations, Frank Vellt prevailed in a drawn‑out, multi‑round ballot at the <span style="color: #00C0FF;">**FKP**</span>’s inaugural congress. Centrists like Trevannon and von Raumer were the first to fall in the election, ultimately endorsing Vellt over hard‑line monarchists such as Hargen and Westmore. By the final ballot, Vellt had assembled a coalition of moderate [? if traditionalist_ideology == "Moderate":<span style="color: #3E88B3;">**Traditionalists**</span> ?][? if kvp_formed:<span style="color: #0087DC;">**KVP**</span>?] holdouts, white-collar Free Guild delegates, and the remaining <span style="color: #C0A054;">**Golds**</span> moderates, clinching the chairmanship despite standing on the party’s left.
 
 This outcome represents the best potential scenario for us, as Vellt remains open to some negotiation with the <span style="color: #c00000;">**Marchers**</span>. However, the new <span style="color: #00C0FF;">**FKP**</span> will still be a far more obstinate partner than Stratton’s <span style="color: #C0A054;">**Golds**</span>, given the enduring influence of agrarian and industrialist factions. Any cooperation will likely be more constrained than in the past. Still, compared to the uncompromising hardliners who nearly won the contest, Vellt’s victory is a relief. 
 

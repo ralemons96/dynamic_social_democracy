@@ -19,11 +19,11 @@ on-display: {!
 
 = Transport Strike in Axton
 
-In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between Axton Transit, the capital's transport company, and our own <span style="color: #c00000;">Reformist</span> union, the Free Carters' Guild. Although the wage cuts have been reduced by roughly 90% due to the Free Carters' Guild's efforts, the <span style="color: #700000;">**Red Carters**</span> (the <span style="color: #700000;">**Collectivists**</span>' union) has vehemently protested the change.
+In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between Axton Transit, the capital's transport company, and our own <span style="color: #c00000;">Reformist</span> Free Guild, the Free Carters' Guild. Although the wage cuts have been reduced by roughly 90% due to the Free Carters' Guild's efforts, the <span style="color: #700000;">**Red Carters**</span> (the <span style="color: #700000;">**Collectivists**</span>' Free Guild) has vehemently protested the change.
 
-The <span style="color: #700000;">**Collectivists**</span> is not protesting a modest reduction in the Axton Transit workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**Red Carters**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Free Carters' Guild and the <span style="color: #7A3C00;">**Loyalist Labour League**</span>, the <span style="color: #7A3C00;">Royalist</span> union, is set to vote on whether to proceed with the strike.
+The <span style="color: #700000;">**Collectivists**</span> is not protesting a modest reduction in the Axton Transit workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**Red Carters**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Free Carters' Guild and the <span style="color: #7A3C00;">**Loyalist Labour League**</span>, the <span style="color: #7A3C00;">Royalist</span> Free Guild, is set to vote on whether to proceed with the strike.
 
-With extensive <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">Royalist</span> propaganda spreading throughout the workforce, our local union is left with no choice but to hold a vote among the entire workforce, rather than just union members.
+With extensive <span style="color: #700000;">**Collectivists**</span> and <span style="color: #7A3C00;">Royalist</span> propaganda spreading throughout the workforce, our local Free Guild is left with no choice but to hold a vote among the entire workforce, rather than just Free Guild members.
 
 # TODO
 
@@ -37,7 +37,7 @@ unavailable-subtitle: The Free Carters' Guild is too reformist to commit to a st
 choose-if: left_strength + (labor_strength / 2) >= reformist_strength + center_strength
 on-arrival: unionist_relation -= 10; ddp_relation -= 10; lvp_relation -= 10; gold_relation -= 10; left_strength += 8; left_dissent -= 10; labor_dissent -= 5; reformist_dissent += 15; center_dissent += 10; collectivist_relation += 10; communist_coalition += 1; royalist_relation += 5
 
-Through our active efforts to rally reluctant workers—despite the strike being largely unnecessary due to our own union’s negotiations—we have surpassed the required three-fourths majority of all employees in favor. We are now participating in a strike alongside elements of the <span style="color: #700000;">**Red Carters**</span> and <span style="color: #7A3C00;">**Loyalist Labour League**</span>, a fact the propertied parties are quick to attack us for.
+Through our active efforts to rally reluctant workers—despite the strike being largely unnecessary due to our own Free Guild’s negotiations—we have surpassed the required three-fourths majority of all employees in favor. We are now participating in a strike alongside elements of the <span style="color: #700000;">**Red Carters**</span> and <span style="color: #7A3C00;">**Loyalist Labour League**</span>, a fact the propertied parties are quick to attack us for.
 
 - @yay_strike_2
 
@@ -59,7 +59,7 @@ go-to: nay_strike_2 if commons_marcher_normalized + pro_republic < 100; nay_stri
 @nay_strike_2
 on-arrival: unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; gold_relation += 3; collectivist_relation -= 10; communist_coalition -= 1
 
-Only 84% of the workforce participates in the vote, and of those that vote, 79% of workers have voted for a strike, owing to the <span style="color: #700000;">**Red Carters**</span>' extensive influence on the strike committee. This doesn't follow the standard union practice of requiring 3/4ths of all employees to vote in favour, not just those who vote, as pointed out by the Free Carters' Guild. However, this position cannot be maintained with an increasingly radicalized and unorganized workforce, and a central strike commitee is formed between the three unions, with the <span style="color: #700000;">**Red Carters**</span> being dominant.
+Only 84% of the workforce participates in the vote, and of those that vote, 79% of workers have voted for a strike, owing to the <span style="color: #700000;">**Red Carters**</span>' extensive influence on the strike committee. This doesn't follow the standard Free Guild practice of requiring 3/4ths of all employees to vote in favour, not just those who vote, as pointed out by the Free Carters' Guild. However, this position cannot be maintained with an increasingly radicalized and unorganized workforce, and a central strike commitee is formed between the three Free Guilds, with the <span style="color: #700000;">**Red Carters**</span> being dominant.
 
 - @strike_yeah
 
