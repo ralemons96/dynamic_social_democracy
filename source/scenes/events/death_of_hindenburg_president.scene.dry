@@ -293,7 +293,7 @@ go-to: r1_menu
 
 Aldous Verrin is a Nobel Prize-winning scientist, director of the Reikzar Institute for Physics, and international advocate for peace. He was a founding member of the <span style="color: #D3C24D;">Commonwealth Democratic Party</span> ([? if dstp_formed: whose successor would support him in the election?][? if not dstp_formed: who will support him in the election?]), but has also expressed sympathy towards <span style="color: #c00000;">Reformism</span>.
 
-He did not wish to run for president, disliking the public nature of campaigning, but we have somehow convinced him that his candidacy will be crucial to the future of the Commonwealth and the world. As a <span style="color: #005EB8;">Jewish</span> Commonwealth pacifist, his becoming president would be a repudiation of everything the <span style="color: #7A3C00;">Royalists</span> stand for.
+He did not wish to run for president, disliking the public nature of campaigning, but we have somehow convinced him that his candidacy will be crucial to the future of the Commonwealth and the world. As a <span style="color: #005EB8;">beast-blooded</span> Commonwealth pacifist, his becoming president would be a repudiation of everything the <span style="color: #7A3C00;">Royalists</span> stand for.
 
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will endorse Verrin's candidacy.
 
