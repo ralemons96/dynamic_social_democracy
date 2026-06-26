@@ -1,5 +1,5 @@
 title: March on Axton
-subtitle: Right-wing militants are taking action...
+subtitle: Reactionary Militants march on the capital...
 view-if: ((marcher_in_government = 1 and coup_progress >= 10 and year >= 1930 and (loyalist_banned=0 or warden_banned=0 or far_right_force >= 40)) or (year >= 1933 and month >= 2 and royalist_normalized + traditionalist_normalized >= 0.5)) and march_on_berlin_timer = 0
 new-page: true
 max-visits: 4
@@ -11,7 +11,7 @@ tags: event
 
 The <span style="color: #7A3C00;">far</span> <span style="color: #3E88B3;">right</span> is mobilizing. Paramilitary forces of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span>, organized under the Stowford Front, have marched on Axton, threatening to violently overthrow the government.
 
-They demand either immediate elections under the "supervision" of the nationalist paramilitaries, or else the immediate resignation of the government and the appointment of Alaric Gallax as chancellor[? if gallax_deported : , and the revocation of his deportation ?]. It is obvious that they are threatening a civil war if their demands are not met.
+They demand either immediate elections under the "supervision" of the Reactionary Militants, or else the immediate resignation of the government and the appointment of Alaric Gallax as chancellor[? if gallax_deported : , and the revocation of his deportation ?]. It is obvious that they are threatening a civil war if their demands are not met.
 
 @non_govt_menu
 

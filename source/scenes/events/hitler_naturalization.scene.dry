@@ -21,9 +21,9 @@ tags: event
 
 = Naturalization of Alaric Gallax
 
-The leader of the <span style="color: #7A3C00;">Royalists</span>, Alaric Gallax, remains a stateless person after renouncing his Freehold citizenship in 4290. Numerous attempts have been made by him and his supporters to secure a civil service appointment, as this would automatically grant him Commonwealth citizenship under existing law—making it the easiest path to naturalization. Citizenship is a prerequisite for Gallax to become President or Chancellor and would bolster his image as the "Führer of the Germans."
+The leader of the <span style="color: #7A3C00;">Royalists</span>, Alaric Gallax, remains a stateless person after renouncing his Freehold citizenship in 4290. Numerous attempts have been made by him and his supporters to secure a civil service appointment, as this would automatically grant him Commonwealth citizenship under existing law—making it the easiest path to naturalization. Citizenship is a prerequisite for Gallax to become President or Chancellor and would bolster his image as the "restorer of the Empress."
 
-[? if thuringia_royalist: Bram Frask, former <span style="color: #7A3C00;">**Royalists**</span> minister in Stathmore, has managed to appoint Gallax as Gendarmerie Commissioner in a small Stathmore town. However, for reasons unknown, Gallax tore up his own certificate of appointment. ?][? if brunswick_gallax: In the small Free State of Brackwater, a <span style="color: #7A3C00;">**Royalists**</span>-<span style="color: #3E88B3;">**Traditionalists**</span> coalition has been governing with the support of the propertied parties. In an attempt to secure Gallax's citizenship, they sought to appoint him as a professor in secret. However, the scheme was exposed and halted due to his lack of academic qualifications. A parliamentary inquiry is now in progress, but further legal prosecution is blocked by the propertied parties. This revelation has tarnished his reputation across the Commonwealth. ?]
+[? if thuringia_royalist: Bram Frask, former <span style="color: #7A3C00;">**Royalists**</span> minister in Stathmore, has managed to appoint Gallax as Gendarmerie Commissioner in a small Stathmore town. However, for reasons unknown, Gallax tore up his own certificate of appointment. ?][? if brunswick_gallax: In the small state of Brackwater, a <span style="color: #7A3C00;">**Royalists**</span>-<span style="color: #3E88B3;">**Traditionalists**</span> coalition has been governing with the support of the propertied parties. In an attempt to secure Gallax's citizenship, they sought to appoint him as a professor in secret. However, the scheme was exposed and halted due to his lack of academic qualifications. A parliamentary inquiry is now in progress, but further legal prosecution is blocked by the propertied parties. This revelation has tarnished his reputation across the Commonwealth. ?]
 
 With the presidential elections approaching, it is likely that Gallax will make one final attempt to obtain citizenship.
 
@@ -45,13 +45,13 @@ on-arrival: gallax_citizen = 0; pro_republic += 3
 
 In order for the <span style="color: #7A3C00;">**Royalists**</span> to quickly and discreetly grant Gallax citizenship, they had to collaborate with the [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist:[? if not concord_formed:<span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed:<span style="color: #000000;">**[+ unionist_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.
 
-As a result, Gallax will remain a stateless person, and this will damage his reputation as the Führer of the Germans.
+As a result, Gallax will remain a stateless person, and this will damage his reputation as the restorer of the Empress.
 
 @nothing
 choose-if: not brunswick_gallax
 unavailable-subtitle: The <span style="color: #7A3C00;">Royalists</span> is in control of Brackwater.
 on-arrival: gallax_citizen = 0; pro_republic += 3; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2
 
-With the <span style="color: #7A3C00;">Royalists</span> being excluded from all *Länders* and *Freistaats*, they are unable to convince their governments to appoint Gallax to civil service.
+With the <span style="color: #7A3C00;">Royalists</span> being excluded from all state governments, they are unable to convince their governments to appoint Gallax to civil service.
 
-As a result, Gallax will remain a stateless person, and this will damage his reputation as the Führer of the Germans.
+As a result, Gallax will remain a stateless person, and this will damage his reputation as the restorer of the Empress.
