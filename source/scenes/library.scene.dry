@@ -537,7 +537,7 @@ go-to: menu
 
 **Paramilitary groups:**
 
-**the Banners** <span style="color: #000000;"><b>Schwarz</b></span>-<span style="color: #DD0000;"><b>Rot</b></span>-<span style="color: #FFCC00;"><b>Gold</b></span>: The Banners are an organization affiliated with all of the democratic parties - the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">**[+ unionist_party_name +]**</span>, and [? if lvp_formed: the former ?]<span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but primarily with the <span style="color: #c00000;">**Marchers**</span>. Historically, this has been an unarmed organization.
+**the Banners** <span style="color: #1F3A93;"><b>Blue</b></span>-and-<span style="color: #AEB8CC;"><b>White</b></span>: The Banners are an organization affiliated with all of the democratic parties - the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">**[+ unionist_party_name +]**</span>, and [? if lvp_formed: the former ?]<span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but primarily with the <span style="color: #c00000;">**Marchers**</span>. Historically, this has been an unarmed organization.
 
 Strength: [+ banner_strength +] thousand
 

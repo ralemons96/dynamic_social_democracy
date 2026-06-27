@@ -824,16 +824,16 @@ on-display: {!
   }
 
   var schwarz = document.createElement('span');
-  schwarz.textContent = 'Schwarz';
-  schwarz.style.color = getColor(33, percentComplete, '#000000');
+  schwarz.textContent = 'Blue ';
+  schwarz.style.color = getColor(33, percentComplete, '#1F3A93');
 
   var rot = document.createElement('span');
-  rot.textContent = 'Rot';
-  rot.style.color = getColor(66, percentComplete, '#DD0000');
+  rot.textContent = 'and ';
+  rot.style.color = getColor(66, percentComplete, '#3A5BA0');
 
   var gold = document.createElement('span');
-  gold.textContent = 'Gold';
-  gold.style.color = getColor(100, percentComplete, '#FFCC00');
+  gold.textContent = 'White';
+  gold.style.color = getColor(100, percentComplete, '#AEB8CC');
 
   mode.appendChild(schwarz);
   mode.appendChild(rot);
@@ -6524,9 +6524,9 @@ on-display: {!
   const content = document.querySelector('#page #mid_panel #content') || document.body;
 
   const headers = [
-    { text: 'Schwarz', color: '#000000', bgColor: 'rgba(0, 0, 0, 0.2)' },
-    { text: 'Rot', color: '#DD0000', bgColor: 'rgba(221, 0, 0, 0.2)' },
-    { text: 'Gold', color: '#FFCC00', bgColor: 'rgba(255, 204, 0, 0.2)' },
+    { text: 'Blue', color: '#1F3A93', bgColor: 'rgba(31, 58, 147, 0.2)' },
+    { text: 'and', color: '#3A5BA0', bgColor: 'rgba(58, 91, 160, 0.2)' },
+    { text: 'White', color: '#AEB8CC', bgColor: 'rgba(174, 184, 204, 0.2)' },
   ];
 
   const rows = [
