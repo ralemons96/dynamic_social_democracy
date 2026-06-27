@@ -375,8 +375,8 @@ go-to: r2_menu
 
 In the lead is [+ winner_desc +]. There is no majority in the first round. In the second round, any candidate who wins a plurality will win overall.
 
-[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Gareth Gesling has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate bürgerblock. ?]
-[? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of Gareth Gesling. This consolidates the votes of the moderate bürgerblock. ?]
+[? if gessler_drops_out : The <span style="color: #FFCC00;">liberal</span> candidate Gareth Gesling has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate propertied bloc. ?]
+[? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of Gareth Gesling. This consolidates the votes of the moderate propertied bloc. ?]
 
 What should we do?
 
