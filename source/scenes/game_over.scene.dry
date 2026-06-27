@@ -524,7 +524,7 @@ view-if: chancellor_party == "Collectivist" or president == "Halsmark" and total
 tags: endings
 go-to: eg_menu
 
-The <span style="color: #700000;">**Collectivists**</span> has won power in the Commonwealth, with our assistance. They will try to remake the Commonwealth in the <span style="color: #750e0e;">Soviet</span> image. How much they succeed is yet to be determined.
+The <span style="color: #700000;">**Collectivists**</span> has won power in the Commonwealth, with our assistance. They will try to remake the Commonwealth in the <span style="color: #750e0e;">Central Union</span>'s image. How much they succeed is yet to be determined.
 
 @works_program
 title: Works program enacted!
