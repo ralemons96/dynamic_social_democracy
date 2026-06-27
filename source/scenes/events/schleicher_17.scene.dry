@@ -33,7 +33,7 @@ With internal party democracy long dead—party congresses stacked with loyalist
 
 @hugenberg_dnf
 
-Mallin and the <span style="color: #003755;">**DNF**</span>, once buoyed by their early popularity as one of the few parties to unconditionally back Goodryke, have since soured their relations with the chancellery. Mallin's demand for full control over the agricultural and economic ministries has strained ties, and his uncompromising opposition to Staal has sparked discontent within the <span style="color: #003755;">**DNF**</span>—a party once built entirely from his loyalists.
+Mallin and the <span style="color: #003755;">**CNF**</span>, once buoyed by their early popularity as one of the few parties to unconditionally back Goodryke, have since soured their relations with the chancellery. Mallin's demand for full control over the agricultural and economic ministries has strained ties, and his uncompromising opposition to Staal has sparked discontent within the <span style="color: #003755;">**CNF**</span>—a party once built entirely from his loyalists.
 
 Many of his former allies are now bewildered that Mallin would turn against a fellow <span style="color: #808080;">reactionary</span>, especially one who ostensibly shares his vision of steering the Commonwealth toward authoritarian rule.
 
@@ -44,9 +44,9 @@ With Mallin’s personal fortune—once sustained by his media empire—running 
 @schleicher_2_dnvp
 go-to: schleicher_2_dnvp_post
 
-With Staal’s backing, the dissident factions have been absorbed into the [? if not kvp_formed: newly revived <span style="color: #0087DC;">**KVP**</span>, which, at the chancellor’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and kvp_gnu: <span style="color: #0087DC;">**KVP**</span>, which, at Staal’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and not kvp_gnu: <span style="color: #0087DC;">**KVP**</span>, which has also been strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>. ?]
+With Staal’s backing, the dissident factions have been absorbed into the [? if not kvp_formed: newly revived <span style="color: #0087DC;">**CPP**</span>, which, at the chancellor’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which, at Staal’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and not kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which has also been strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>. ?]
 
-What’s left of Mallin’s <span style="color: #3E88B3;">**Traditionalists**</span> is a shadow of its former self, and his sway on the national stage has all but vanished. But that man never gives up. [? if kvp_leader != "Trevannon": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #0087DC;">**KVP**</span>. ?]
+What’s left of Mallin’s <span style="color: #3E88B3;">**Traditionalists**</span> is a shadow of its former self, and his sway on the national stage has all but vanished. But that man never gives up. [? if kvp_leader != "Trevannon": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #0087DC;">**CPP**</span>. ?]
 
 @schleicher_2_dnvp_post
 on-arrival: {!
@@ -132,18 +132,18 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if other_gnu: - **Others** ?]
 
-[? if kvp_gnu: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if kvp_gnu: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if traditionalist_gnu: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
+[? if nvf_gnu: - <span style="color: #142e20;">**NPF**</span> ?]
 
 @schleicher_2_dnf
 go-to: schleicher_2_dnf_post
 
 With Staal’s backing, the dissident factions have been absorbed into the <span style="color: #3E88B3;">**Traditionalists**</span>, which has been "encouraged" to reform itself into a <i>Rechtsblock</i>[? if not traditionalist_gnu:, and strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> as well?], firmly aligned with the Staal government.
 
-Mallin is now left with his tiny <span style="color: #003755;">**DNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Maine": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
+Mallin is now left with his tiny <span style="color: #003755;">**CNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Maine": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
 
 @schleicher_2_dnf_post
 on-arrival: {!
@@ -197,8 +197,8 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if other_gnu: - **Others** ?]
 
-[? if kvp_gnu: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if kvp_gnu: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if traditionalist_gnu: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
+[? if nvf_gnu: - <span style="color: #142e20;">**NPF**</span> ?]

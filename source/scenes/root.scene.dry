@@ -1620,7 +1620,7 @@ if (!Q.lvp_formed) {
     var _mins = ['foreign','economic','finance','justice','agriculture','interior','labor'];
     for (var _i = 0; _i < _mins.length; _i++) {
         var _p = Q[_mins[_i] + '_minister_party'];
-        if (_p === 'Gold' || _p === 'DDP' || _p === 'DStP') Q[_mins[_i] + '_minister_party'] = 'LVP';
+        if (_p === 'Gold' || _p === 'DDP' || _p === 'CSP') Q[_mins[_i] + '_minister_party'] = 'LVP';
     }
     // seed the key coalitions so the first status view is correct (post_event recomputes each turn)
     Q.weimar_coalition = parseFloat(((Q.marcher_r||0) + Q.lvp_r + (Q.unionist_r||0) - (Q.bvp_r||0)).toFixed(1));

@@ -59,9 +59,9 @@ go-to: bruning_lives_wp if bruning_coalition >= 50 and wp_reversal; bruning_dies
 on-arrival: bruning_not_joever = 1; burgher_royalist += burgher_other*0.5; burgher_other *= 0.5; guild_royalist += guild_other*0.5; guild_other *= 0.5
 face-image: img/wp2.jpg
 
-The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively canceling out the impact of the other propertied parties that voted against it.
+The <span style="color: #b8996f;">**ECP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government, effectively canceling out the impact of the other propertied parties that voted against it.
 
-This sudden shift by the <span style="color: #b8996f;">**WP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
+This sudden shift by the <span style="color: #b8996f;">**ECP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 
 Despite the formation of a more right-leaning cabinet, the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> remains unwilling to support Askew, as they seek to claim full control for themselves.
 
@@ -70,9 +70,9 @@ on-arrival: time_to_election = 3; marcher_toleration = 0; marcher_toleration_rig
 face-image: img/wp2.jpg
 call: set_next_election_time
 
-The <span style="color: #b8996f;">**WP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government[? if cnblp_defect or (gold_defect and gold_exist):, counteracting the impact of the [? if gold_defect and gold_exist: <span style="color: #C0A054;">**Golds**</span>'s?][? if not gold_defect or not gold_exist: [? if cnblp_defect: <span style="color: #7FCEB1;">**CNBLP**</span>'s?]?] withdrawal?].
+The <span style="color: #b8996f;">**ECP**</span> has unexpectedly reversed its opposition to Askew's government following last-minute concessions from the Chancellor. In a crucial no-confidence vote, they sided with the government[? if cnblp_defect or (gold_defect and gold_exist):, counteracting the impact of the [? if gold_defect and gold_exist: <span style="color: #C0A054;">**Golds**</span>'s?][? if not gold_defect or not gold_exist: [? if cnblp_defect: <span style="color: #7FCEB1;">**FCL**</span>'s?]?] withdrawal?].
 
-This sudden shift by the <span style="color: #b8996f;">**WP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
+This sudden shift by the <span style="color: #b8996f;">**ECP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 
 Unfortunately, all of this effort is for naught, with only [+ bruning_coalition +]% of the Assembly voting against the Askew government. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 

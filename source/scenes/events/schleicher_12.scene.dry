@@ -41,8 +41,8 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if other_gnu: - **Others** ?]
 
-[? if kvp_gnu: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if kvp_gnu: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if traditionalist_gnu: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
+[? if nvf_gnu: - <span style="color: #142e20;">**NPF**</span> ?]

@@ -47,21 +47,21 @@ new-page: true
 
 The <span style="color: #D3C24D;">**Golds**</span> is a fascinating party, plagued by infighting since the republic's foundation and struggling to define its platform in a failed attempt to appeal to voters from all demographics.[? if stolper_program_adopted:&nbsp;Recently, however, the party seems to have turned a new page, rallying around a renewed focus on middle-class interests. ?][? if not stolper_program_adopted:&nbsp;A recent attempt to shift focus toward the middle class has been quietly buried due to internal dissent, perhaps factionalism and personal rivalries may be a permanent feature of this party. ?]
 
-Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Penn to do "something". After weeks of secret negotiations, the <span style="color: #D3C24D;">**Golds**</span> is announcing the result of a proposed merger of the <span style="color: #D3C24D;">**Golds**</span> and <span style="color: #D3D3A9;">**VNR**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**VNR**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
+Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Penn to do "something". After weeks of secret negotiations, the <span style="color: #D3C24D;">**Golds**</span> is announcing the result of a proposed merger of the <span style="color: #D3C24D;">**Golds**</span> and <span style="color: #D3D3A9;">**PNA**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**PNA**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
 
-- @dstp_formed: The <span style="color: #D3C24D;">**DStP**</span> is formed.
+- @dstp_formed: The <span style="color: #D3C24D;">**CSP**</span> is formed.
 - @status_quo: The negotiations fail.
 
 @dstp_formed
 view-if: dstp_formation_points >= 3
-on-arrival: dstp_formed = 1; ddp_name = "DStP"; liberal_cooperation -= 5; bourgeois_cooperation -= 3; burgher_ddp -= 2; guild_ddp += 4; landed_ddp += 2; ddp_right += 2; ddp_relation -= 5; pro_republic -= 3; nationalism += 5; justice_minister_party = ddp_name if justice_minister_party == "Gold"; agriculture_minister_party = ddp_name if agriculture_minister_party == "Gold"; economic_minister_party = ddp_name if economic_minister_party == "Gold"; finance_minister_party = ddp_name if finance_minister_party == "Gold"
+on-arrival: dstp_formed = 1; ddp_name = "CSP"; liberal_cooperation -= 5; bourgeois_cooperation -= 3; burgher_ddp -= 2; guild_ddp += 4; landed_ddp += 2; ddp_right += 2; ddp_relation -= 5; pro_republic -= 3; nationalism += 5; justice_minister_party = ddp_name if justice_minister_party == "Gold"; agriculture_minister_party = ddp_name if agriculture_minister_party == "Gold"; economic_minister_party = ddp_name if economic_minister_party == "Gold"; finance_minister_party = ddp_name if finance_minister_party == "Gold"
 face-image: img/dstp.jpg
 achievement: dstp_dilemma
 go-to: recalculate
 
 This has come as a complete shock to those inside and outside the party, for the <span style="color: #D3C24D;">**Golds**</span> to merge with the political wing of a mildly blood-purist paramilitary group "Young Commonwealth Order". Ongoing negotiations to unite the liberal and propertied parties has been considerably damaged, due to the <span style="color: #D3C24D;">**Golds**</span>'s attempts to promote a left-wing split from the <span style="color: #C0A054;">**Golds**</span>.
 
-In this agreement, the <span style="color: #D3C24D;">**Golds**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest propertied ally. Despite this, the formation of the <span style="color: #D3C24D;">**DStP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Hollis Lindell helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
+In this agreement, the <span style="color: #D3C24D;">**Golds**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest propertied ally. Despite this, the formation of the <span style="color: #D3C24D;">**CSP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Hollis Lindell helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
 
 @status_quo
 view-if: dstp_formation_points < 3
@@ -70,7 +70,7 @@ face-image: img/ddp_2.jpg
 achievement: dstp_dilemma
 go-to: recalculate
 
-As expected, a merger between a moderately blood-purist organization and a party seen as the party for the <span style="color: #005EB8;">beast-blooded</span> has failed, with the Young Commonwealth Order leader Emmerich Mauld leaving negotiations citing irreconcilable differences. [? if not vnr_cool and not saxony_election_1930_seen: However, the main factor contributing to this is that, the <span style="color: #D3D3A9;">**VNR**</span> has never been tested electorally. ?][? if not vnr_cool and saxony_election_1930_seen: However, the main concern is that the <span style="color: #D3D3A9;">**VNR**</span> failed to win any seats in the only election they participated in, the Dornish state Assembly elections. ?]
+As expected, a merger between a moderately blood-purist organization and a party seen as the party for the <span style="color: #005EB8;">beast-blooded</span> has failed, with the Young Commonwealth Order leader Emmerich Mauld leaving negotiations citing irreconcilable differences. [? if not vnr_cool and not saxony_election_1930_seen: However, the main factor contributing to this is that, the <span style="color: #D3D3A9;">**PNA**</span> has never been tested electorally. ?][? if not vnr_cool and saxony_election_1930_seen: However, the main concern is that the <span style="color: #D3D3A9;">**PNA**</span> failed to win any seats in the only election they participated in, the Dornish state Assembly elections. ?]
 
 However, internal opposition to Penn has reached a boiling point. Forces within the party are now pushing for his retirement due to his failure to revive the party and for jeopardizing the negotiations for a <span style="color: #FFCC00;">united liberal party</span>.
 

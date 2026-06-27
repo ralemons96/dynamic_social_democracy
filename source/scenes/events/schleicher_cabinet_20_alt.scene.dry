@@ -9,7 +9,7 @@ tags: event
 
 With Staal resigning in shame, the <span style="color: #BFC8CC;">**GNU**</span> no longer has a god-like figure to rally around. The factions and politicians once held together by his influence have now decided it is best to go their separate ways.
 
-The <i>bloc partys</i> are freed, and the bulk of the organization — those not drawn from their ranks — has splintered off in different directions. The right-wing, more nationalist section has salvaged the party's national structures and will continue on by merging into the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?], now rallying behind Trevannon.
+The <i>bloc partys</i> are freed, and the bulk of the organization — those not drawn from their ranks — has splintered off in different directions. The right-wing, more nationalist section has salvaged the party's national structures and will continue on by merging into the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?], now rallying behind Trevannon.
 
 The more left-leaning—and quite frankly, eccentric—elements of the movement have formed a new <span style="color: #fe9e00;">Old Reformist Party</span> (<span style="color: #fe9e00;">**ORP**</span>), grounded in class collaboration, nationalism, and laborism. They call for a "Volksocialism", whatever that means.
 
@@ -261,7 +261,7 @@ if (Q.unionist_leader == "Hughes") {
 }
 
 if (Q.kvp_formed) {
-    Q.treviranus_party = "KVP";
+    Q.treviranus_party = "CPP";
 } else {
     Q.treviranus_party = "Traditionalist";
 }

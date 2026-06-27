@@ -59,7 +59,7 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 @new_prussia_election
 on-arrival: heartland_coalition_trigger = 1 if right_coalition_heartland < 50
 
-Mallin has also attracted some members of the <span style="color: #3E88B3;">**Traditionalists**</span> to split into the <span style="color: #003755;">**DNF**</span> in the Heartland state Assembly too.
+Mallin has also attracted some members of the <span style="color: #3E88B3;">**Traditionalists**</span> to split into the <span style="color: #003755;">**CNF**</span> in the Heartland state Assembly too.
 
 We have an opportunity to change the composition of the Heartland coalition.
 

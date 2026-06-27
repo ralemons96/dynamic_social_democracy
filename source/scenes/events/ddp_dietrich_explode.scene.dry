@@ -182,6 +182,6 @@ With no candidate able to secure a majority, everyone has unanimously agreed to 
 
 @ha
 title: Very funny, please revert the changes.
-on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5; ddp_name = "DStP" if dstp_formed; ddp_name = "Gold" if not dstp_formed
+on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5; ddp_name = "CSP" if dstp_formed; ddp_name = "Gold" if not dstp_formed
 
 You are no fun. Tinsmore is eventually chosen as a compromise candidate.

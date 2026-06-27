@@ -29,7 +29,7 @@ new-page: true
 
 The <span style="color: #C0A054;">**Golds**</span> has made its decision in favor of merging the two parties; now, the fate of the unification rests with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. The most prominent proponents within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> in favor of the merger are those in the business wing, who have pursued this goal for years.
 
-On the other hand, leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> strongly oppose the merger citing obvious concerns, as well as those who favor a potential merger with the <span style="color: #D3D3A9;">**VNR**</span> instead. A defeat in this decision would spell the end of liberal cooperation for the foreseeable future, severely demoralizing the Commonwealth middle class, with the blame falling on the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
+On the other hand, leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> strongly oppose the merger citing obvious concerns, as well as those who favor a potential merger with the <span style="color: #D3D3A9;">**PNA**</span> instead. A defeat in this decision would spell the end of liberal cooperation for the foreseeable future, severely demoralizing the Commonwealth middle class, with the blame falling on the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 
 - @ddp_success: The party votes...
 - @ddp_fail: The party votes...

@@ -9,10 +9,10 @@ card-image: img/weimar_coalition_2.jpg
 
 = Inter-Party Relationships
 
-The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Unity Coalition of the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">Unionists</span>, and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties. [? if concord_formed: However the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has only really made cooperation with the <span style="color: #D3C24D;">liberals</span> possible. ?] We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Unity Coalition of the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #000000;">Unionists</span>, and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties. [? if concord_formed: However the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> has only really made cooperation with the <span style="color: #D3C24D;">liberals</span> possible. ?] We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @liberals: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?] and conservative-liberal <span style="color: #C0A054;">Commonwealth People's Party</span>.
-- @liberals_ddp: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?].
+- @liberals: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "CSP": <span style="color: #D3C24D;">Commonwealth State Party</span>?] and conservative-liberal <span style="color: #C0A054;">Commonwealth People's Party</span>.
+- @liberals_ddp: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "CSP": <span style="color: #D3C24D;">Commonwealth State Party</span>?].
 - @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Golds</span>.
 - @center: Strengthen our bonds with the Faithful [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 - @cvp: Reconcile with the <span style="color: #000000;">Commonwealth People's Conservative Party</span>.
@@ -318,8 +318,8 @@ if (Q.other_r) {
 if (Q.kvp_formed && Q.kvp_r) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r * Q.reichstag_size),
     });
 }
@@ -336,8 +336,8 @@ if (Q.traditionalist_r && !Q.traditionalist_wholesome) {
 if (Q.dnf_formed && Q.dnf_r) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r * Q.reichstag_size),
     });
 }
@@ -345,8 +345,8 @@ if (Q.dnf_formed && Q.dnf_r) {
 if (Q.dsu_exist && Q.dsu_r) {
     data.push({
         "id": "dsu",
-        "legend": "DSU",
-        "name": "DSU",
+        "legend": "CSG",
+        "name": "CSG",
         "seats": Math.round(Q.dsu_r * Q.reichstag_size),
     });
 }
@@ -372,8 +372,8 @@ if (!Q.royalist_split && Q.royalist_r) {
 if (Q.nvf_exist && Q.nvf_r) {
     data.push({
         "id": "nvf",
-        "legend": "NVF",
-        "name": "NVF",
+        "legend": "NPF",
+        "name": "NPF",
         "seats": Math.round(Q.nvf_r * Q.reichstag_size),
     });
 }

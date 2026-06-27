@@ -153,9 +153,9 @@ title: The <span style="color: #7A3C00;">Royalist</span>'s last hurrah?
 
 With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate.
 
-The <span style="color: #6A1E1E;">**DSU**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Bram Frask as a separate candidate. ?]
+The <span style="color: #6A1E1E;">**CSG**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Bram Frask as a separate candidate. ?]
 
-[? if nvf_candidate == gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be backing [+ gnu_candidate +], as they remain within the <span style="color: #BFC8CC;">**GNU**</span> umbrella. ?][? if nvf_candidate != gnu_candidate: The remnants of the <span style="color: #142e20;">**NVF**</span> will be boycotting the election entirely—continuing their deluded course of waiting for the "right moment" to spark an armed rebellion. ?]
+[? if nvf_candidate == gnu_candidate: The remnants of the <span style="color: #142e20;">**NPF**</span> will be backing [+ gnu_candidate +], as they remain within the <span style="color: #BFC8CC;">**GNU**</span> umbrella. ?][? if nvf_candidate != gnu_candidate: The remnants of the <span style="color: #142e20;">**NPF**</span> will be boycotting the election entirely—continuing their deluded course of waiting for the "right moment" to spark an armed rebellion. ?]
 
 With the <span style="color: #7A3C00;">Royalists</span> movement remaining divided, none of their candidates have any remote chance to winning.
 
@@ -395,8 +395,8 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 var candidate_descs = {
-  Crowde: "Corin Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
-  Frask: "Bram Frask of the <span style='color: #6A1E1E; font-weight: bold;'>DSU</span>",
+  Crowde: "Corin Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>CSG</span>",
+  Frask: "Bram Frask of the <span style='color: #6A1E1E; font-weight: bold;'>CSG</span>",
   Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt von Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
@@ -405,7 +405,7 @@ var candidate_descs = {
 };
 
 if (Q.dstp_formed) {
-    candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>DStP</span>";
+    candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>CSP</span>";
 }
 if (Q.lvp_formed) {
     candidate_descs.Hewes = "Theodor Hewes of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>";

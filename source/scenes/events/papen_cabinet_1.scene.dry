@@ -24,7 +24,7 @@ Franz von Goodryke has unveiled his new cabinet—assembled almost entirely on S
 
 The only party formally represented in the cabinet is the <span style="color: #3E88B3;">**Traditionalists**</span>, which holds three ministries. The remaining posts are occupied by right-wing independents, in line with Goodryke’s stated goal of forming a government "free from party influence." Staal has been promoted to Defense Minister, where he intends to steer the administration from behind the scenes.
 
-At present, only Mallin’s [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are prepared to back the cabinet when the Assembly reconvenes.
+At present, only Mallin’s [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?] are prepared to back the cabinet when the Assembly reconvenes.
 
 - @papen
 

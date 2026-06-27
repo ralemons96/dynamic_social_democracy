@@ -25,7 +25,7 @@ Q.staal_approval -= 4;
 if (Q.traditionalist_ideology == "Radical" && !Q.kvp_formed) {
     Q.treviranus_party = "GNU";
 } else if (Q.traditionalist_ideology == "Radical" && Q.kvp_formed) {
-    Q.treviranus_party = "KVP";
+    Q.treviranus_party = "CPP";
 } else if (Q.traditionalist_ideology == "Moderate") {
     Q.treviranus_party = "Traditionalist";
 }

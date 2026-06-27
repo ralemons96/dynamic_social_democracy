@@ -43,11 +43,11 @@ Bristol is selected to be the Minister-President of Heartland.
 
 @far_right_coalition_prussia
 title: <span style="color: #7A3C00;">Far</span>-[? if not dnf_formed:<span style="color: #3E88B3;">right</span>?][? if dnf_formed:<span style="color: #003755;">right</span>?] Coalition
-subtitle: <span style="color: #7A3C00;">**Royalists**</span> + [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span> ?] ([+ far_right_coalition_heartland +]%)
+subtitle: <span style="color: #7A3C00;">**Royalists**</span> + [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span> ?] ([+ far_right_coalition_heartland +]%)
 view-if: far_right_coalition_heartland >= 50
 on-arrival: in_far_right_coalition_heartland = 1; coup_progress += 5; landed_royalist += 10; commons_royalist += 10; burgher_royalist += 10; guild_royalist += 10; disfavored_royalist += 10; commons_marcher -= 5; commons_collectivist -= 5; heartland_leader = "Gorrick"; warden_strength += 100; warden_militancy += 0.1; loyalist_strength += 200; loyalist_militancy += 0.1; vanguard_banned = 1; vanguard_strength -= 50; banner_strength -= 200; heartland_police_loyalty -= 0.5
 
-There are enough votes for the <span style="color: #7A3C00;">Royalists</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span> ?] to form a coalition. Ulric Gorrick is elevated to the position of Minister-President and immediately starts dismantling its democratic institutions.
+There are enough votes for the <span style="color: #7A3C00;">Royalists</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span> ?] to form a coalition. Ulric Gorrick is elevated to the position of Minister-President and immediately starts dismantling its democratic institutions.
 
 A wave of terror and repression unfolds, targeting the <span style="color: #c00000;">Reformists</span> and <span style="color: #700000;">collectivists</span>. Violence erupts in the streets, with bullets flying and leftists being killed or imprisoned.
 
@@ -92,8 +92,8 @@ Letting go the democratic bulwark to the right-wing parties is deeply unpopular 
 
 @bourgeois_coalition_kvp
 title: A Bürgerblock is formed.
-unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span>?] ([+ bourgeois_coalition_heartland +]%)
-subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span>?] ([+ bourgeois_coalition_heartland +]%)
+unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
+subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 view-if: bourgeois_coalition_heartland >= 50 and not concord_formed
 on-arrival: in_center_right_coalition_heartland = 1; heartland_leader = "Sedgewick"; heartland_leader = "Askew" if unionist_leader == "Sedgewick"; burgher_marcher -= 4; ddp_right += 2; ddp_cohesion -= 2; gold_right += 2; lvp_right += 2; center_dissent += 10; left_dissent += 5; labor_dissent += 20; reformist_dissent += 20; knight_dissent += 10; ddp_right += 1; lvp_right += 3; heartland_police_loyalty -= 0.06; heartland_police_strength -= 8; pro_republic -= 3; ddp_relation -= 4; unionist_relation -= 4; gold_relation -= 4; lvp_relation -= 4
 

@@ -85,7 +85,7 @@ go-to: candidate_selection
 
 [? if (gold_choice == reactionary_candidate_1932 or dufour_run) and gold_support_marcher != 1 and not lvp_formed and reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
-[? if (kvp_choice == reactionary_candidate_1932 or dufour_run) and kvp_formed and reactionary_candidate_1932: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if (kvp_choice == reactionary_candidate_1932 or dufour_run) and kvp_formed and reactionary_candidate_1932: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if (traditionalist_choice == reactionary_candidate_1932 or dufour_run) and traditionalist_ideology == "Moderate" and not concord_formed: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
@@ -105,7 +105,7 @@ go-to: candidate_selection
 
 [? if (gold_choice == secondary_reactionary_candidate_1932 or dufour_run) and gold_support_marcher != 1 and not lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
-[? if (kvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and kvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if (kvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and kvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if (traditionalist_choice == secondary_reactionary_candidate_1932 or dufour_run) and traditionalist_ideology == "Moderate" and not concord_formed and secondary_reactionary_candidate_1932: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
@@ -127,7 +127,7 @@ go-to: candidate_selection
 
 [? if traditionalist_candidate_1932 and traditionalist_ideology == "Radical": - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if traditionalist_candidate_1932 and traditionalist_ideology == "Moderate": - <span style="color: #003755;">**DNF**</span> ?]
+[? if traditionalist_candidate_1932 and traditionalist_ideology == "Moderate": - <span style="color: #003755;">**CNF**</span> ?]
 
 - @campaigning_braun: Time to hit the campaign trail! 
 - @campaigning_rosenfeld: Time to hit the campaign trail! 

@@ -40,7 +40,7 @@ go-to: schleicher_success if staal_support >= 50; schleicher_failed if staal_sup
 
 With the exception of the Free Guilds, every faction of the Marchers is horrified by this betrayal of democracy.
 
-[? if collectivist_relation <= 10 and left_strength + center_strength < labor_strength: Somehow, the Traditionalists has agreed to Staal's proposal, forming a temporary alliance with the general against Royalists and Collectivists. ?][? if unionist_relation >= 50 : The Unionist Party also supports Staal's plan. ?][? if gold_relation >= 30 : In addition, the Golds and some other smaller parties support this proposal. ?][? if collectivist_relation > 10 or left_strength + center_strength >= labor_strength: The Traditionalists, despite being courted by Staal, is not interested in joining this alliance. Traditionalists chairman Mallin seems to prefer working with Gallax to any alliance that includes the SPD. ?]
+[? if collectivist_relation <= 10 and left_strength + center_strength < labor_strength: Somehow, the Traditionalists has agreed to Staal's proposal, forming a temporary alliance with the general against Royalists and Collectivists. ?][? if unionist_relation >= 50 : The Unionist Party also supports Staal's plan. ?][? if gold_relation >= 30 : In addition, the Golds and some other smaller parties support this proposal. ?][? if collectivist_relation > 10 or left_strength + center_strength >= labor_strength: The Traditionalists, despite being courted by Staal, is not interested in joining this alliance. Traditionalists chairman Mallin seems to prefer working with Gallax to any alliance that includes the Marchers. ?]
 
 @schleicher_success
 on-arrival: time_to_election = 13; schleichers_scheme_success = 1; next_election_time = 10000;

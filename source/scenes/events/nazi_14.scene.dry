@@ -30,7 +30,7 @@ However, the collapse of the Stowford Front, Mallin's distrust of [+ royalist_ch
 - @nazi_2
 
 @nazi_2
-title: The <span style="color: #3E88B3;">**Wardens**</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are sounded out for cabinet posts.
+title: The <span style="color: #3E88B3;">**Wardens**</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?] are sounded out for cabinet posts.
 
 Roderick Selden of the <span style="color: #3E88B3;">**Wardens**</span>, a staunch opponent of Staal’s efforts to bring his paramilitary under state control, quickly succumbed to the promise of a cabinet post. His decision is announced during negotiations with Mallin, putting the latter at a disadvantage and increasing the pressure on him to follow suit.
 

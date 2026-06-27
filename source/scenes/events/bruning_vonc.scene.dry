@@ -10,7 +10,7 @@ max-visits: 1
 
 Following the collapse of our coalition, President [+ president +] has appointed Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] Party in a government supported by propertied forces. However, they cannot survive without the support from us or the <span style="color: #3E88B3;">**Traditionalists**</span>. 
 
-Askew, has reorganized his cabinet to include the parties to the right of the [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], such as the <span style="color: #b8996f;">**WP**</span> and let the <span style="color: #3E88B3;">**Traditionalists**</span> take over as Minister of Agriculture, presumably to pressure the <span style="color: #3E88B3;">**Traditionalists**</span> to support his government. We are left with the choice to "tolerate" the government to prevent the gains of extremists within the Assembly or vote to oust Askew for new elections.
+Askew, has reorganized his cabinet to include the parties to the right of the [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if not lvp_formed and not gold_exist: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], such as the <span style="color: #b8996f;">**ECP**</span> and let the <span style="color: #3E88B3;">**Traditionalists**</span> take over as Minister of Agriculture, presumably to pressure the <span style="color: #3E88B3;">**Traditionalists**</span> to support his government. We are left with the choice to "tolerate" the government to prevent the gains of extremists within the Assembly or vote to oust Askew for new elections.
 
 - @vote_no
 - @vote_no_nothing
@@ -46,7 +46,7 @@ on-arrival: welfare -= 1; left_dissent += 10; labor_dissent += 10; commons_march
 
 We try to convince the workers that this policy is necessary in order to maintain a stable parliamentary government, and to deal with the fiscal consequences of the depression. Still, this policy provides excellent recruiting fodder for <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Collectivists**</span>.
 
-Westmore and his group of moderates that still remain within the <span style="color: #3E88B3;">**Traditionalists**</span> are outraged with Mallin letting the <span style="color: #c00000;">**Marchers**</span> influence the [+ chancellor +] right-wing government, and resign en masse[? if kvp_formed:&nbsp;to join the <span style="color: #0087DC;">**KVP**</span>?].
+Westmore and his group of moderates that still remain within the <span style="color: #3E88B3;">**Traditionalists**</span> are outraged with Mallin letting the <span style="color: #c00000;">**Marchers**</span> influence the [+ chancellor +] right-wing government, and resign en masse[? if kvp_formed:&nbsp;to join the <span style="color: #0087DC;">**CPP**</span>?].
 
 @vote_yes_nothing
 title: Oppose the vote of no confidence, voting for the government.

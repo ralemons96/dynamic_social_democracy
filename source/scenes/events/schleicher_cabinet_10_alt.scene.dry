@@ -1,4 +1,4 @@
-title: The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
+title: The <span style="color: #6A1E1E;">**CSG**</span> Enters Government
 subtitle: Our choice doesn't matter after all.
 view-if: chancellor == "Staal" and not dsu_in_gov and not dsu_was_gov and unionist_in_gov and unionist_leader == "Hughes" and staal_post_time >= 8
 max-visits: 1
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #6A1E1E;">**DSU**</span> Enters Government
+= The <span style="color: #6A1E1E;">**CSG**</span> Enters Government
 
-With the favorable Hughes being installed at the head of the <span style="color: #000000;">Unionist Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**DSU**</span> into the Staal cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Royalists</span> that can be tamed. 
+With the favorable Hughes being installed at the head of the <span style="color: #000000;">Unionist Party</span>, the party no longer voice loud reservations over the inclusion of the "reasonable" <span style="color: #6A1E1E;">**CSG**</span> into the Staal cabinet, to increase its popular backing, and to tame the <span style="color: #7A3C00;">Royalists</span> that can be tamed. 
 
 This goes completely against Staal's promise to us, that he'll never let the <span style="color: #7A3C00;">Royalists</span> into cabinet if we were to give him a major concession. e have been conned, big time.
 
@@ -45,7 +45,7 @@ Q.staal_marcher_r -= 4;
 Q.staal_marcher_influence -= 3;
 !}
 
-Bram Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": —both in the Commonwealth and in Heartland?]. Garrick Crowde takes the vice-chancellorship—a title in name only. [? if heartland_leader == "Goodlake":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Crowde installed in Heartland, Goodlake stays on—as Staal’s loyal puppet and as a concession to the <span style="color: #000000;">Unionist Party</span>. ?]
+Bram Frask is nominated to the Interior Ministry[? if old_heartland_leader == "Staal": —both in the Commonwealth and in Heartland?]. Garrick Crowde takes the vice-chancellorship—a title in name only. [? if heartland_leader == "Goodlake":  Although the <span style="color: #6A1E1E;">**CSG**</span> would’ve preferred Crowde installed in Heartland, Goodlake stays on—as Staal’s loyal puppet and as a concession to the <span style="color: #000000;">Unionist Party</span>. ?]
 
 At the <span style="color: #7A3C00;">Royalists’</span> insistence, Edrik Halbridge is brought in as an independent to head the Economic Ministry.
 

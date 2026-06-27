@@ -450,9 +450,9 @@ set-jump: post_election
 go-to: election_end
 
 @seeckt_victory
-on-arrival: chancellor = "Frask"; chancellor_party = "DSU"
+on-arrival: chancellor = "Frask"; chancellor_party = "CSG"
 
-With Seckard's victory, the balance of power passes to the <span style="color: #7A3C00;">Royalists</span> once more, who expect a reward for their support for him. He has gone ahead with appointing Bram Frask of the <span style="color: #6A1E1E;">**DSU**</span> as chancellor, which will inevitably start a full-scale civil war.
+With Seckard's victory, the balance of power passes to the <span style="color: #7A3C00;">Royalists</span> once more, who expect a reward for their support for him. He has gone ahead with appointing Bram Frask of the <span style="color: #6A1E1E;">**CSG**</span> as chancellor, which will inevitably start a full-scale civil war.
 
 - @fight: Did we do all this for nothing? Fight!
 

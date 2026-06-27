@@ -1,4 +1,4 @@
-title: <span style="color: #6A1E1E;">**DSU**</span> Policy
+title: <span style="color: #6A1E1E;">**CSG**</span> Policy
 subtitle: The <span style="color: #7A3C00;">Royalist</span> ministers are carrying out their own policies. 
 view-if: chancellor == "Staal" and dsu_in_gov and dsu_policy_timer <= 0
 on-arrival: {!
@@ -21,7 +21,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= <span style="color: #6A1E1E;">**DSU**</span> Policy
+= <span style="color: #6A1E1E;">**CSG**</span> Policy
 
 With the <span style="color: #7A3C00;">Royalists</span> in government, they seek to pursue their policy course. 
 

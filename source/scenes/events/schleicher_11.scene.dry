@@ -1,4 +1,4 @@
-title: The <span style="color: #0087DC;">**KVP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
+title: The <span style="color: #0087DC;">**CPP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 subtitle: The party attempts to secure government participation by merging into Staal's bloc.
 view-if: chancellor = "Staal" and staal_post and kvp_formed and not kvp_gnu and ((kvp_votes < 6 and not bourgeois_list_kvp) or kvp_leader == "Trevannon") and nationalists_staal >= 6 and gnu_formed and not staal_cabinet_weak
 new-page: true
@@ -7,9 +7,9 @@ tags: event
 max-visits: 1
 face-image: img/portraits/schleicher.jpg
 
-= <span style="color: #0087DC;">**KVP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
+= <span style="color: #0087DC;">**CPP**</span> joins the <span style="color: #BFC8CC;">**GNU**</span>
 
-Despite Staal opening his cabinet to members of mainstream political parties, the <span style="color: #0087DC;">**KVP**</span> has yet to receive such an invitation—this, despite their continued support for Staal and the close personal ties between him and many party members. Noticing this, Staal moves to offer them a deal they cannot refuse: two ministerial posts of their choosing and full integration into the <span style="color: #BFC8CC;">**GNU**</span>.
+Despite Staal opening his cabinet to members of mainstream political parties, the <span style="color: #0087DC;">**CPP**</span> has yet to receive such an invitation—this, despite their continued support for Staal and the close personal ties between him and many party members. Noticing this, Staal moves to offer them a deal they cannot refuse: two ministerial posts of their choosing and full integration into the <span style="color: #BFC8CC;">**GNU**</span>.
 
 While old-guard figures like Westmore voice serious concerns about sacrificing the party’s independence and ideology, Trevannon—armed with several hundred thousand Gold donated from Staal himself—succeeds in "convincing" the party to approve the merger.
 
@@ -29,7 +29,7 @@ Q.kvp_r = 0;
 Q.kvp_leader = "Trevannon";
 !}
 
-Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #0087DC;">**KVP**</span>.
+Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #0087DC;">**CPP**</span>.
 
 Current composition of the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>:
 
@@ -47,8 +47,8 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if other_gnu: - **Others** ?]
 
-[? if kvp_gnu: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if kvp_gnu: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if traditionalist_gnu: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
+[? if nvf_gnu: - <span style="color: #142e20;">**NPF**</span> ?]

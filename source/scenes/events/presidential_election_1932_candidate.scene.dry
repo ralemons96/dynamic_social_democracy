@@ -423,7 +423,7 @@ His candidacy is supported by the [? if unionist_party_name != "Concord": <span 
 - @harzburg: We await the decision of the Stowford Front.
 
 @vorbeck
-title: Paul von Lethmoor, war hero of the Great War and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
+title: Paul von Lethmoor, war hero of the Great War and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
 view-if: vorbeck_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 unavailable-subtitle: Lethmoor is reluctant to lead, and prefers his unglamorous life away from the public. Unless he is convinced, of course.
@@ -435,7 +435,7 @@ By some miracle for the Commonwealth Right, they have managed to persuade Paul v
 
 How Lethmoor would govern remains uncertain. It is highly likely that, much like DuFour, a camarilla of close advisors would shape his decisions from behind the scenes.
 
-His candidacy is backed by the [? if not vorbeck_fallback: [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?], along with a disparate coalition of minor propertied parties. ?][? if vorbeck_fallback: entirety of the Bürgerblock parties, who view him as their collective last hope at retaining power. ?]
+His candidacy is backed by the [? if not vorbeck_fallback: [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?], along with a disparate coalition of minor propertied parties. ?][? if vorbeck_fallback: entirety of the Bürgerblock parties, who view him as their collective last hope at retaining power. ?]
 
 - @harzburg: We await the decision of the Stowford Front.
 
@@ -451,7 +451,7 @@ Kuno von Westmore, a familiar figure in Commonwealth politics, has long been a s
 
 It is imperative that we prevail over these forces of reaction if we are to have any hope of returning to government.
 
-His candidacy is backed by the [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?], along with a disparate coalition of minor propertied parties.
+His candidacy is backed by the [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?], along with a disparate coalition of minor propertied parties.
 
 - @harzburg: We await the decision of the Stowford Front.
 
@@ -483,7 +483,7 @@ Q.traditionalist_candidate_1932_disp = "Alfred Mallin";
 !}
 face-image: img/portraits/AlfredMallin.jpg
 
-The Stowford Front has fractured, with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] choosing to nominate its unpopular leader, Alfred Mallin, rather than support the <span style="color: #7A3C00;">**Royalists**</span>'s candidate. Mallin's decision is driven by ego; his well-known flaws—an absence of charisma, an aloof detachment from ordinary Germans, and a reputation for obstruction—render his campaign almost certainly doomed.
+The Stowford Front has fractured, with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?] choosing to nominate its unpopular leader, Alfred Mallin, rather than support the <span style="color: #7A3C00;">**Royalists**</span>'s candidate. Mallin's decision is driven by ego; his well-known flaws—an absence of charisma, an aloof detachment from ordinary Germans, and a reputation for obstruction—render his campaign almost certainly doomed.
 
 [? if traditionalist_ideology == "Radical": The <span style="color: #3E88B3;">**Wardens**</span>, infuriated by Mallin's abandonment of negotiations for a united front, have reverted to their traditional stance of non-partisanship, a position long favored by many in their ranks. Nonetheless, their supporters are expected to divide roughly evenly among the right-wing candidates. ?][? if traditionalist_ideology == "Moderate": If there was ever a chance of the <span style="color: #3E88B3;">**Wardens**</span> supporting a candidate of the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span>, it has vanished with the hated Mallin entering the race. ?]
 
@@ -596,7 +596,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if (gold_choice == reactionary_candidate_1932 or dufour_run) and gold_support_marcher != 1 and not lvp_formed and reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
-[? if (kvp_choice == reactionary_candidate_1932 or dufour_run) and kvp_formed and reactionary_candidate_1932: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if (kvp_choice == reactionary_candidate_1932 or dufour_run) and kvp_formed and reactionary_candidate_1932: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if (traditionalist_choice == reactionary_candidate_1932 or dufour_run) and traditionalist_ideology == "Moderate" and not concord_formed: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
@@ -616,7 +616,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if (gold_choice == secondary_reactionary_candidate_1932 or dufour_run) and gold_support_marcher != 1 and not lvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #C0A054;">**Golds**</span> ?]
 
-[? if (kvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and kvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if (kvp_choice == secondary_reactionary_candidate_1932 or dufour_run) and kvp_formed and secondary_reactionary_candidate_1932: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if (traditionalist_choice == secondary_reactionary_candidate_1932 or dufour_run) and traditionalist_ideology == "Moderate" and not concord_formed and secondary_reactionary_candidate_1932: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
@@ -638,7 +638,7 @@ go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_cam
 
 [? if traditionalist_candidate_1932 and traditionalist_ideology == "Radical": - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if traditionalist_candidate_1932 and traditionalist_ideology == "Moderate": - <span style="color: #003755;">**DNF**</span> ?]
+[? if traditionalist_candidate_1932 and traditionalist_ideology == "Moderate": - <span style="color: #003755;">**CNF**</span> ?]
 
 @abstain
 title: This is highly controversial within the party!
@@ -810,7 +810,7 @@ on-arrival: resources -= 2; marcher_campaign = 1; braun_campaign = 1; reformist_
 
 It takes effort to run a somewhat unexpected campaign. First, Bristol has to be convinced to run. [? if dufour_run: He himself had supported voting for DuFour, and it takes a good deal of prodding to convince him of his destiny. ?][? if not dufour_run: It takes a good deal of prodding to convince him of his destiny. ?]
 
-[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #C0A054;">**Golds**</span> aren't exactly the biggest fans of <span style="color: #c00000;">Reformism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Collectivists**</span>?
+[? if not lvp_formed: The [? if ddp_votes < 2: miniscule remnants of the?] [? if ddp_name == "Gold": <span style="color: #D3C24D;">**Democratic Party**</span>?][? if ddp_name == "CSP": <span style="color: #D3C24D;">**State Party**</span>?] aren't guaranteed to support us, [? if ddp_relation < 40: with a deterioration in our relationship?][? if ddp_relation >= 40: but are open to it due to their reluctance in supporting DuFour?]?][? if lvp_formed: The <span style="color: #C0A054;">**Golds**</span> aren't exactly the biggest fans of <span style="color: #c00000;">Reformism</span>, [? if lvp_relation < 40: with the deterioration in relations making their support a near impossibility.?][? if lvp_relation >= 40: but are at least open to it due to their reluctance in supporting DuFour?]?]. Who else will? Can we convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to support Bristol? What about the <span style="color: #700000;">**Collectivists**</span>?
 
 - @endorsements_braun: Scout out potential endorsements. 
 

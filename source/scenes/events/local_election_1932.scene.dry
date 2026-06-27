@@ -209,11 +209,11 @@ if (Q.unionist_local_elections_vote + Q.ddp_local_elections_vote + Q.gold_local_
  
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_local_elections_vote +]% {!</td></tr>!}
 
-[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_local_elections_vote +]% {!</td></tr>!} ?]
+[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}CPP: {!</td><td>!} [+ kvp_local_elections_vote +]% {!</td></tr>!} ?]
 
 [? if not concord_formed: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_local_elections_vote +]% {!</td></tr>!}?]
 
-[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_local_elections_vote +]% {!</td></tr>!} ?]
+[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}CNF: {!</td><td>!} [+ dnf_local_elections_vote +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_local_elections_vote +]% {!</td></tr>!}
 {!</table>!}
@@ -527,8 +527,8 @@ if (Q.other_r_bavaria) {
 if (Q.kvp_formed && Q.kvp_r_bavaria) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r_bavaria * 1.28),
     });
 }
@@ -543,8 +543,8 @@ if (Q.traditionalist_r_bavaria) {
 if (Q.dnf_formed && Q.dnf_r_bavaria) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r_bavaria * 1.28),
     });
 }
@@ -598,16 +598,16 @@ go-to: bavaria_coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ non_farm_bavaria_elections_vote +]% {!</td><td>!} [+ non_farm_r_bavaria +]%  {!</td></tr>!}
 
-[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_bavaria_elections_vote +]% {!</td><td>!} [+ kvp_r_bavaria +]%  {!</td></tr>!} ?]
+[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}CPP: {!</td><td>!} [+ kvp_bavaria_elections_vote +]% {!</td><td>!} [+ kvp_r_bavaria +]%  {!</td></tr>!} ?]
 
 [? if not concord_formed: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_bavaria_elections_vote +]% {!</td><td>!} [+ traditionalist_r_bavaria +]%  {!</td></tr>!}?]
 
-[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_bavaria_elections_vote +]% {!</td><td>!} [+ dnf_r_bavaria +]%  {!</td></tr>!} ?]
+[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}CNF: {!</td><td>!} [+ dnf_bavaria_elections_vote +]% {!</td><td>!} [+ dnf_r_bavaria +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_bavaria_elections_vote +]% {!</td><td>!} [+ royalist_r_bavaria +]%  {!</td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-The <span style="color: #38C538;">Avrizan Peasants’ League</span> serves as the nucleus of the federal <span style="color: #007A00;">Commonwealth Peasants' Party</span> and is surprisingly liberal and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> compared to other agricultural parties and organizations, such as the <span style="color: #7FCEB1;">**CNBLP**</span>. Recently, they even exited the <span style="color: #A2D8E0;">**Arcanists**</span>'s cabinet over a dispute about taxes. [? if concord_formed: <br><br> With the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, the <span style="color: #3E88B3;">**Traditionalists**</span>'s Avrizan branch has largely merged into the <span style="color: #A2D8E0;">**Arcanists**</span>, although some elements have instead chosen to align with the <span style="color: #003755;">**DNF**</span>. ?]
+The <span style="color: #38C538;">Avrizan Peasants’ League</span> serves as the nucleus of the federal <span style="color: #007A00;">Commonwealth Peasants' Party</span> and is surprisingly liberal and <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> compared to other agricultural parties and organizations, such as the <span style="color: #7FCEB1;">**FCL**</span>. Recently, they even exited the <span style="color: #A2D8E0;">**Arcanists**</span>'s cabinet over a dispute about taxes. [? if concord_formed: <br><br> With the formation of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>, the <span style="color: #3E88B3;">**Traditionalists**</span>'s Avrizan branch has largely merged into the <span style="color: #A2D8E0;">**Arcanists**</span>, although some elements have instead chosen to align with the <span style="color: #003755;">**CNF**</span>. ?]
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:  + <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_bavaria +]% 
 
@@ -615,7 +615,7 @@ Traffic Light Coalition (<span style="color: #c00000;">**Marchers**</span> + [? 
 
 [? if not kvp_formed: Propertied Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_bavaria +]% ?]
 
-[? if kvp_formed: Propertied Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
+[? if kvp_formed: Propertied Coalition (<span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**CPP**</span>): [+ bourgeois_coalition_bavaria +]% ?]
 
 @bavaria_coalition_menu
 
@@ -1000,8 +1000,8 @@ if (Q.other_r_wurttemberg) {
 if (Q.kvp_formed && Q.kvp_r_wurttemberg) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r_wurttemberg * 0.8),
     });
 }
@@ -1017,8 +1017,8 @@ if (Q.traditionalist_r_wurttemberg) {
 if (Q.dnf_formed && Q.dnf_r_wurttemberg) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r_wurttemberg * 0.8),
     });
 }
@@ -1073,11 +1073,11 @@ go-to: wurttemberg_coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ non_farm_wurttemberg_elections_vote +]% {!</td><td>!} [+ non_farm_r_wurttemberg +]%  {!</td></tr>!}
 
-[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_wurttemberg_elections_vote +]% {!</td><td>!} [+ kvp_r_wurttemberg +]%  {!</td></tr>!} ?]
+[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}CPP: {!</td><td>!} [+ kvp_wurttemberg_elections_vote +]% {!</td><td>!} [+ kvp_r_wurttemberg +]%  {!</td></tr>!} ?]
 
 [? if not concord_formed: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_wurttemberg_elections_vote +]% {!</td><td>!} [+ traditionalist_r_wurttemberg +]%  {!</td></tr>!}?]
 
-[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_wurttemberg_elections_vote +]% {!</td><td>!} [+ dnf_r_wurttemberg +]%  {!</td></tr>!} ?]
+[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}CNF: {!</td><td>!} [+ dnf_wurttemberg_elections_vote +]% {!</td><td>!} [+ dnf_r_wurttemberg +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_wurttemberg_elections_vote +]% {!</td><td>!} [+ royalist_r_wurttemberg +]%  {!</td></tr>!}
 {!</table>!}
@@ -1090,7 +1090,7 @@ United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span
 
 [? if not kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others**[? if traditionalist_ideology == "Moderate" and not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ bourgeois_coalition_wurttemberg +]% ?]
 
-[? if kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
+[? if kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #006400;">**WBWB**</span> + **Others** + <span style="color: #0087DC;">**CPP**</span>): [+ bourgeois_coalition_wurttemberg +]% ?]
 
 [? if( ddp_wurttemberg_elections_vote + gold_wurttemberg_elections_vote < 8 and not lvp_formed) or (lvp_wurttemberg_elections_vote < 12 and lvp_formed): The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> [? if gold_exist: and <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] have suffered a major defeat, losing a significant number of seats compared to 1928. This will severely demoralize the <span style="color: #FFCC00;">liberals</span>, who had hoped to maintain their traditional stronghold over Purl. Combined with other local elections, the <span style="color: #FFCC00;">liberal parties</span> are essentially dead as an effective political force. ?]
 

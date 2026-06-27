@@ -8,7 +8,7 @@ go-to: treviranus_menu
 
 = Government of National Unity
 
-Trevannon, having failed to win over the <span style="color: #6A1E1E;">**DSU**</span>, has now turned to us for support. We find ourselves in the role of kingmaker, while the Chancellor grows increasingly desperate to secure a majority. However, DuFour—on his death bed—lacks the energy to intervene in the process, leading Trevannon to personally approach us with an offer.
+Trevannon, having failed to win over the <span style="color: #6A1E1E;">**CSG**</span>, has now turned to us for support. We find ourselves in the role of kingmaker, while the Chancellor grows increasingly desperate to secure a majority. However, DuFour—on his death bed—lacks the energy to intervene in the process, leading Trevannon to personally approach us with an offer.
 
 He is offering to repeal the ban on the <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**Laborists**</span>?], in return for us refraining to call a vote of no confidence on his government until DuFour inevitably kicks the bucket.
 
@@ -71,7 +71,7 @@ We are able to gather the support of [+ marcher_r + collectivist_r + sapd_r +]% 
 
 The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain DuFour’s most loyal supporters. Even Mallin recognizes the danger of a potential <span style="color: #c00000;">Reformist</span> president should DuFour be removed from office.
 
-The <span style="color: #7A3C00;">**Royalists**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NVF**</span>?] will break with the <span style="color: #6A1E1E;">**DSU**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
+The <span style="color: #7A3C00;">**Royalists**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NPF**</span>?] will break with the <span style="color: #6A1E1E;">**CSG**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
 
 - @reichstag_impeach_2
 - @reichstag_impeach_fail

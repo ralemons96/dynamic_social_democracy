@@ -10,7 +10,7 @@ tags: event
 
 With DuFour making it clear that he expects a parliamentary cabinet from Trevannon, the Chancellor has moved to significantly broaden the governing coalition—reaching well to the left. The biggest surprise is the return of Askew as Foreign Minister.
 
-Though Trevannon and his allies are interested in taming the <span style="color: #7A3C00;">Royalists</span>, the <span style="color: #6A1E1E;">**DSU**</span> has no interest in becoming a junior partner in a partisan conservative government.
+Though Trevannon and his allies are interested in taming the <span style="color: #7A3C00;">Royalists</span>, the <span style="color: #6A1E1E;">**CSG**</span> has no interest in becoming a junior partner in a partisan conservative government.
 
 Trevannon inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**ORP**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
 
@@ -41,7 +41,7 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, Trevannon isn't able to conjure up a majority without the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
+As expected, Trevannon isn't able to conjure up a majority without the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #6A1E1E;">**CSG**</span>. His government remains a caretaker for the time being.
 
 New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 

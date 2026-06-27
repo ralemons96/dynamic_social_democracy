@@ -151,8 +151,8 @@ if (Q.other_r_alt) {
 if (Q.kvp_formed && Q.kvp_r_alt) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r_alt * 2),
     });
 }
@@ -169,8 +169,8 @@ if (Q.traditionalist_r_alt) {
 if (Q.dnf_formed && Q.dnf_r_alt) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r_alt * 2),
     });
 }
@@ -178,8 +178,8 @@ if (Q.dnf_formed && Q.dnf_r_alt) {
 if (Q.dsu_exist && Q.dsu_r_alt) {
     data.push({
         "id": "dsu",
-        "legend": "DSU",
-        "name": "DSU",
+        "legend": "CSG",
+        "name": "CSG",
         "seats": Math.round(Q.dsu_r_alt * 2),
     });
 }
@@ -205,8 +205,8 @@ if (!Q.royalist_split && Q.royalist_r_alt) {
 if (Q.nvf_exist && Q.nvf_r_alt) {
     data.push({
         "id": "nvf",
-        "legend": "NVF",
-        "name": "NVF",
+        "legend": "NPF",
+        "name": "NPF",
         "seats": Math.round(Q.nvf_r_alt * 2),
     });
 }
@@ -246,11 +246,11 @@ go-to: negotiation_menu_med if marcher_med; negotiation_menu_win if marcher_win
 
 [? if other_gnu and other_r_alt: {!<tr><td><div class="box2" style='background-color:#707070'> </div></td><td>!} Others: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
 
-[? if kvp_formed and not concord_kvp_formed and kvp_gnu and kvp_r_alt: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
+[? if kvp_formed and not concord_kvp_formed and kvp_gnu and kvp_r_alt: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div></td><td>!} CPP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
 
 [? if not concord_formed and traditionalist_gnu and traditionalist_r_alt: {!<tr><td><div class="box2" style='background-color:#316B8F'> </div></td><td>!} Traditionalists: {!</td><td>!} [+ traditionalist_r_alt +]% {!</td></tr>!} ?]
 
-[? if nvf_exist and nvf_r_alt and nvf_gnu: {!<tr><td><div class="box2" style='background-color:#0F2116'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
+[? if nvf_exist and nvf_r_alt and nvf_gnu: {!<tr><td><div class="box2" style='background-color:#0F2116'> </div></td><td>!} NPF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
 
 [? if gnu_formed and marcher_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} Marchers: {!</td><td>!} [+ marcher_r_alt +]% {!</td></tr>!} ?]
 
@@ -268,19 +268,19 @@ go-to: negotiation_menu_med if marcher_med; negotiation_menu_win if marcher_win
 
 [? if not other_gnu and other_r_alt: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r_alt +]% {!</td></tr>!} ?]
 
-[? if kvp_formed and not concord_kvp_formed and not kvp_gnu and kvp_r_alt: {!<tr><td><div class="box" style='background-color:#0087DC'> </div></td><td>!} KVP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
+[? if kvp_formed and not concord_kvp_formed and not kvp_gnu and kvp_r_alt: {!<tr><td><div class="box" style='background-color:#0087DC'> </div></td><td>!} CPP: {!</td><td>!} [+ kvp_r_alt +]% {!</td></tr>!} ?]
 
 [? if not concord_formed and not traditionalist_gnu and traditionalist_r_alt: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div></td><td>!} Traditionalists: {!</td><td>!} [+ traditionalist_r_alt +]% {!</td></tr>!} ?]
 
-[? if dnf_formed and dnf_r_alt: {!<tr><td><div class="box" style='background-color:#003755'> </div></td><td>!} DNF: {!</td><td>!} [+ dnf_r_alt +]% {!</td></tr>!} ?]
+[? if dnf_formed and dnf_r_alt: {!<tr><td><div class="box" style='background-color:#003755'> </div></td><td>!} CNF: {!</td><td>!} [+ dnf_r_alt +]% {!</td></tr>!} ?]
 
-[? if dsu_exist and dsu_r_alt: {!<tr><td><div class="box" style='background-color:#6A1E1E'> </div></td><td>!} DSU: {!</td><td>!} [+ dsu_r_alt +]% {!</td></tr>!} ?]
+[? if dsu_exist and dsu_r_alt: {!<tr><td><div class="box" style='background-color:#6A1E1E'> </div></td><td>!} CSG: {!</td><td>!} [+ dsu_r_alt +]% {!</td></tr>!} ?]
 
 [? if not royalist_split and royalist_r_alt: {!<tr><td><div class="box" style='background-color:#7A3C00'> </div></td><td>!} Royalists: {!</td><td>!} [+ royalist_r_alt +]% {!</td></tr>!} ?]
 
 [? if royalist_split and royalist_gallax_r_alt: {!<tr><td><div class="box" style='background-color:#7A3C00'> </div></td><td>!} Royalists: {!</td><td>!} [+ royalist_gallax_r_alt +]% {!</td></tr>!} ?]
 
-[? if nvf_exist and nvf_r_alt and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
+[? if nvf_exist and nvf_r_alt and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div></td><td>!} NPF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
 {!</table>!}
 
 Total: [+ total_r_alt_2 +]% of the original Assembly involved.

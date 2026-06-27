@@ -33,7 +33,7 @@ if (Q.ddp_ideology == "Left") Q.ddp_leader = "Lindell";
 if (Q.ddp_ideology != "Left") Q.ddp_leader = "Whitmore";
 
 Q.old_ddp_name = Q.ddp_name;
-Q.ddp_name = "DStP";
+Q.ddp_name = "CSP";
 !}
 
 Staal sees keeping the <span style="color: #D3C24D;">**[+ old_ddp_name +]**</span> as a separate but closely tied <i>bloc party</i> as more effective in attracting voters, and for now, maintains their nominal independence[? if not dstp_formed:, though under a new name to shed the old and ironic "Democratic" label?]. [+ ddp_leader +] has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #D3C24D;">[+ ddp_name +]</span>.
@@ -54,8 +54,8 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 
 [? if other_gnu: - **Others** ?]
 
-[? if kvp_gnu: - <span style="color: #0087DC;">**KVP**</span> ?]
+[? if kvp_gnu: - <span style="color: #0087DC;">**CPP**</span> ?]
 
 [? if traditionalist_gnu: - <span style="color: #3E88B3;">**Traditionalists**</span> ?]
 
-[? if nvf_gnu: - <span style="color: #142e20;">**NVF**</span> ?]
+[? if nvf_gnu: - <span style="color: #142e20;">**NPF**</span> ?]

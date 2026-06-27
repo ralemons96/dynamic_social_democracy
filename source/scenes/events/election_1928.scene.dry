@@ -169,7 +169,7 @@ view-if: boycott_count < 5
 max-visits: 1
 go-to: boycott_elections_menu
 
-It appears that the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #6A1E1E;">**DSU**</span> haven’t abandoned their ballot-box tactics and have chosen to participate in the elections regardless. [? if nvf_exist and not nvf_gnu: The <span style="color: #142e20;">**NVF**</span>, however, have boycotted, preferring to pool their limited resources into the <span style="color: #7A3C00;">**Loyalists**</span> rather than waste them on a costly electoral campaign. ?]
+It appears that the <span style="color: #7A3C00;">**Royalists**</span> and <span style="color: #6A1E1E;">**CSG**</span> haven’t abandoned their ballot-box tactics and have chosen to participate in the elections regardless. [? if nvf_exist and not nvf_gnu: The <span style="color: #142e20;">**NPF**</span>, however, have boycotted, preferring to pool their limited resources into the <span style="color: #7A3C00;">**Loyalists**</span> rather than waste them on a costly electoral campaign. ?]
 
 @boycott_elections_3
 title: We have finished negotiations.
@@ -1477,8 +1477,8 @@ if (Q.gold_r && !Q.lvp_formed && Q.gold_exist) {
 if (Q.left_gnu_r && Q.left_gnu) {
     data.push({
         "id": "left_gnu",
-        "legend": "Left_DNEF",
-        "name": "Left_DNEF",
+        "legend": "Left_GNU",
+        "name": "Left_GNU",
         "seats": Math.round(Q.left_gnu_r * Q.reichstag_size),
     });
 }
@@ -1513,8 +1513,8 @@ if (Q.true_gnu_r && Q.gnu_formed && !Q.right_gnu && Q.left_gnu) {
 if (Q.right_gnu_r && Q.right_gnu) {
     data.push({
         "id": "right_gnu",
-        "legend": "Right_DNEF",
-        "name": "Right_DNEF",
+        "legend": "Right_GNU",
+        "name": "Right_GNU",
         "seats": Math.round(Q.right_gnu_r * Q.reichstag_size),
     });
 }
@@ -1522,8 +1522,8 @@ if (Q.right_gnu_r && Q.right_gnu) {
 if (Q.wp_r) {
     data.push({
         "id": "wp",
-        "legend": "WP",
-        "name": "WP",
+        "legend": "ECP",
+        "name": "ECP",
         "seats": Math.round(Q.wp_r * Q.reichstag_size),
     });
 }
@@ -1531,8 +1531,8 @@ if (Q.wp_r) {
 if (Q.cnblp_r) {
     data.push({
         "id": "farm3",
-        "legend": "CNBLP",
-        "name": "CNBLP",
+        "legend": "FCL",
+        "name": "FCL",
         "seats": Math.round(Q.cnblp_r * Q.reichstag_size),
     });
 }
@@ -1540,8 +1540,8 @@ if (Q.cnblp_r) {
 if (Q.csvd_r && Q.csvd_formed) {
     data.push({
         "id": "csvd",
-        "legend": "CSVD",
-        "name": "CSVD",
+        "legend": "FSP",
+        "name": "FSP",
         "seats": Math.round(Q.csvd_r * Q.reichstag_size),
     });
 }
@@ -1567,15 +1567,15 @@ if (Q.true_aspd_r && (Q.aspd_other || Q.aspd_kvp)) {
 if (Q.kvp_formed && Q.kvp_r && !Q.aspd_kvp && !Q.traditionalist_gold_formed) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r * Q.reichstag_size),
     });
 } else if (Q.kvp_formed && Q.kvp_r && Q.aspd_kvp && !Q.traditionalist_gold_formed) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round((Q.kvp_r - Q.true_aspd_r) * Q.reichstag_size),
     });
 }
@@ -1583,8 +1583,8 @@ if (Q.kvp_formed && Q.kvp_r && !Q.aspd_kvp && !Q.traditionalist_gold_formed) {
 if (Q.traditionalist_gold_formed) {
     data.push({
         "id": "fkp",
-        "legend": "FKP",
-        "name": "FKP",
+        "legend": "FCP",
+        "name": "FCP",
         "seats": Math.round(Q.kvp_r * Q.reichstag_size),
     });
 }
@@ -1601,8 +1601,8 @@ if (Q.traditionalist_r && !Q.traditionalist_wholesome) {
 if (Q.dnf_formed && Q.dnf_r) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r * Q.reichstag_size),
     });
 }
@@ -1610,8 +1610,8 @@ if (Q.dnf_formed && Q.dnf_r) {
 if (Q.dsu_exist && Q.dsu_r) {
     data.push({
         "id": "dsu",
-        "legend": "DSU",
-        "name": "DSU",
+        "legend": "CSG",
+        "name": "CSG",
         "seats": Math.round(Q.dsu_r * Q.reichstag_size),
     });
 }
@@ -1637,8 +1637,8 @@ if (!Q.royalist_split && Q.royalist_r) {
 if (Q.nvf_exist && Q.nvf_r) {
     data.push({
         "id": "nvf",
-        "legend": "NVF",
-        "name": "NVF",
+        "legend": "NPF",
+        "name": "NPF",
         "seats": Math.round(Q.nvf_r * Q.reichstag_size),
     });
 }
@@ -1661,7 +1661,7 @@ if (window && d3) {
     var lines = d3.linegraph(false, false,
             Q.parties_graph,
             {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC', 'fkp': '#00C0FF'},
-            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FKP'});
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'CNF', 'kvp': 'CPP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FCP'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     d3.select("#election_history").datum(Q.election_records).call(lines);
@@ -1672,7 +1672,7 @@ if (window && d3) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
             {'marcher': '#E3000F', 'collectivist': '#700000', 'ddp': '#D3C24D', 'unionist': '#000', 'gold': '#D5AC27', 'traditionalist': '#3E88B3', 'royalist': '#7A3C00', 'other': '#a0a0a0', 'sapd': '#9B0000', 'dnf': '#003755', 'kvp': '#0087DC', 'lvp': '#FFCC00', 'gnu': '#BFC8CC', 'fkp': '#00C0FF'},
-            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'DNF', 'kvp': 'KVP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FKP'});
+            {'marcher': 'Marcher', 'collectivist': 'Collectivist', 'ddp': Q.ddp_name, 'unionist': Q.unionist_party_name + ' + Arcanists', 'gold': 'Gold', 'traditionalist': 'Traditionalist', 'royalist': 'Royalist', 'other': 'Others', 'sapd': 'Laborists', 'dnf': 'CNF', 'kvp': 'CPP', 'lvp': 'LVP', 'gnu': 'GNU', 'fkp': 'FCP'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -1692,9 +1692,9 @@ go-to: achievement_check_e
 
 [? if gnu_formed and (right_gnu or left_gnu): {!<tr><td><div class="box3" style='background-color:#BFC8CC'> </div> !} GNU: {!</td><td>!} [+ staal_gnu_votes +]% {!</td><td>!} [+ str_votes_change_staal_gnu +] {!</td><td>!} [+ staal_gnu_r +]% {!</td><td>!} [+ str_change_gnu +] {!</td></tr>!} ?]
 
-[? if gnu_formed and left_gnu: {!<tr><td><div class="box2" style='background-color:#B86558'> </div> !} DNEF-SB: {!</td><td>!} [+ left_gnu_votes +]% {!</td><td>!} [+ str_votes_change_left_gnu +] {!</td><td>!} [+ left_gnu_r +]% {!</td><td>!} [+ str_change_left_gnu +] {!</td></tr>!} ?]
+[? if gnu_formed and left_gnu: {!<tr><td><div class="box2" style='background-color:#B86558'> </div> !} GNU-SB: {!</td><td>!} [+ left_gnu_votes +]% {!</td><td>!} [+ str_votes_change_left_gnu +] {!</td><td>!} [+ left_gnu_r +]% {!</td><td>!} [+ str_change_left_gnu +] {!</td></tr>!} ?]
 
-[? if gnu_formed and right_gnu: {!<tr><td><div class="box2" style='background-color:#5F7278'> </div> !} DNEF-VLB: {!</td><td>!} [+ right_gnu_votes +]% {!</td><td>!} [+ str_votes_change_right_gnu +] {!</td><td>!} [+ right_gnu_r +]% {!</td><td>!} [+ str_change_right_gnu +] {!</td></tr>!} ?]
+[? if gnu_formed and right_gnu: {!<tr><td><div class="box2" style='background-color:#5F7278'> </div> !} GNU-VLB: {!</td><td>!} [+ right_gnu_votes +]% {!</td><td>!} [+ str_votes_change_right_gnu +] {!</td><td>!} [+ right_gnu_r +]% {!</td><td>!} [+ str_change_right_gnu +] {!</td></tr>!} ?]
 
 [? if gnu_formed and (right_gnu or left_gnu): <tr><td colspan="5" style="text-align: center;"><hr id="read-marker"></td></tr> ?]
 
@@ -1710,11 +1710,11 @@ go-to: achievement_check_e
 
 [? if other_gnu: {!<tr><td><div class="box2" style='background-color:#707070'> </div> !} Others: {!</td><td>!} [+ other_votes +]% {!</td><td>!} [+ str_votes_change_other +] {!</td><td>!} [+ other_r +]% {!</td><td>!} [+ str_change_other +] {!</td></tr>!} ?]
 
-[? if kvp_formed and not concord_kvp_formed and kvp_gnu: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div> !}KVP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
+[? if kvp_formed and not concord_kvp_formed and kvp_gnu: {!<tr><td><div class="box2" style='background-color:#0072C0'> </div> !}CPP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
 
 [? if not concord_formed and traditionalist_gnu: {!<tr><td><div class="box2" style='background-color:#316B8F'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_votes +]% {!</td><td>!} [+ str_votes_change_traditionalist +] {!</td><td>!} [+ traditionalist_r +]% {!</td><td>!} [+ str_change_traditionalist +] {!</td></tr>!}?]
 
-[? if nvf_exist and nvf_gnu: {!<tr><td><div class="box2" style='background-color:#0F2116'> </div> !} NVF: {!</td><td>!} [+ nvf_votes +]% {!</td><td>!} [+ str_votes_change_nvf +] {!</td><td>!} [+ nvf_r +]% {!</td><td>!} [+ str_change_nvf +] {!</td></tr>!} ?]
+[? if nvf_exist and nvf_gnu: {!<tr><td><div class="box2" style='background-color:#0F2116'> </div> !} NPF: {!</td><td>!} [+ nvf_votes +]% {!</td><td>!} [+ str_votes_change_nvf +] {!</td><td>!} [+ nvf_r +]% {!</td><td>!} [+ str_change_nvf +] {!</td></tr>!} ?]
 
 [? if gnu_formed: <tr><td colspan="5" style="text-align: center;"><hr id="read-marker"></td></tr> ?]
 
@@ -1742,23 +1742,23 @@ go-to: achievement_check_e
 
 [? if aspd_other: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ORP: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
 
-[? if traditionalist_gold_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#00C0FF'> </div> !}FKP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
+[? if traditionalist_gold_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#00C0FF'> </div> !}FCP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
 
-[? if kvp_formed and not traditionalist_gold_formed and not concord_kvp_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
+[? if kvp_formed and not traditionalist_gold_formed and not concord_kvp_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}CPP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
 
 [? if aspd_kvp: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ORP: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
 
 [? if not concord_formed and not traditionalist_gnu and not traditionalist_defunct and not traditionalist_wholesome: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_votes +]% {!</td><td>!} [+ str_votes_change_traditionalist +] {!</td><td>!} [+ traditionalist_r +]% {!</td><td>!} [+ str_change_traditionalist +] {!</td></tr>!}?]
 
-[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_votes +]% {!</td><td>!} [+ str_votes_change_dnf +] {!</td><td>!} [+ dnf_r +]% {!</td><td>!} [+ str_change_dnf +] {!</td></tr>!} ?]
+[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}CNF: {!</td><td>!} [+ dnf_votes +]% {!</td><td>!} [+ str_votes_change_dnf +] {!</td><td>!} [+ dnf_r +]% {!</td><td>!} [+ str_change_dnf +] {!</td></tr>!} ?]
 
-[? if dsu_exist: {!<tr><td><div class="box" style='background-color:#6A1E1E'> </div> !} DSU: {!</td><td>!} [+ dsu_votes +]% {!</td><td>!} [+ str_votes_change_dsu +] {!</td><td>!} [+ dsu_r +]% {!</td><td>!} [+ str_change_dsu +] {!</td></tr>!} ?]
+[? if dsu_exist: {!<tr><td><div class="box" style='background-color:#6A1E1E'> </div> !} CSG: {!</td><td>!} [+ dsu_votes +]% {!</td><td>!} [+ str_votes_change_dsu +] {!</td><td>!} [+ dsu_r +]% {!</td><td>!} [+ str_change_dsu +] {!</td></tr>!} ?]
 
 [? if not royalist_split: {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_votes +]% {!</td><td>!} [+ str_votes_change_royalist +] {!</td><td>!} [+ royalist_r +]% {!</td><td>!} [+ str_change_royalist +] {!</td></tr>!} ?]
 
 [? if royalist_split: {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_gallax_votes +]% {!</td><td>!} [+ str_votes_change_royalist_gallax +] {!</td><td>!} [+ royalist_gallax_r +]% {!</td><td>!} [+ str_change_royalist_gallax +] {!</td></tr>!} ?]
 
-[? if nvf_exist and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div> !} NVF: {!</td><td>!} [+ nvf_votes +]% {!</td><td>!} [+ str_votes_change_nvf +] {!</td><td>!} [+ nvf_r +]% {!</td><td>!} [+ str_change_nvf +] {!</td></tr>!} ?]
+[? if nvf_exist and not nvf_gnu: {!<tr><td><div class="box" style='background-color:#142e20'> </div> !} NPF: {!</td><td>!} [+ nvf_votes +]% {!</td><td>!} [+ str_votes_change_nvf +] {!</td><td>!} [+ nvf_r +]% {!</td><td>!} [+ str_change_nvf +] {!</td></tr>!} ?]
 {!</table>!}
 
 {!<button class="tab_button" id="demographics_tab" onclick="window.toggleDem();">Demographic Results</button>!}
@@ -1850,7 +1850,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ faithful_gold_display +]%[? if n_elections != 1 and demo_change_faithful_gold_display != 0 : ([+ demo_change_faithful_gold_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if kvp_formed and not traditionalist_gold_formed: {!<tr>!}
-            {!<td><span style="color: #0087DC;">!}**KVP**{!</span></td>!}
+            {!<td><span style="color: #0087DC;">!}**CPP**{!</span></td>!}
             {!<td style="background-color: rgba(0, 135, 220, 0.2); padding: 10px; font-size: 0.85em;">!}[+ commons_kvp_display +]%[? if n_elections != 1 and       demo_change_commons_kvp_display != 0 : ([+ demo_change_commons_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ burgher_kvp_display +]%[? if n_elections != 1 and demo_change_burgher_kvp_display != 0 : ([+ demo_change_burgher_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ guild_kvp_display +]%[? if n_elections != 1 and demo_change_guild_kvp_display != 0 : ([+ demo_change_guild_kvp_display +])?]{!</td>!}
@@ -1859,7 +1859,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ faithful_kvp_display +]%[? if n_elections != 1 and demo_change_faithful_kvp_display != 0 : ([+ demo_change_faithful_kvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if traditionalist_gold_formed: {!<tr>!}
-            {!<td><span style="color: #00C0FF;">!}**FKP**{!</span></td>!}
+            {!<td><span style="color: #00C0FF;">!}**FCP**{!</span></td>!}
             {!<td style="background-color: rgba(0, 192, 255, 0.2); padding: 10px; font-size: 0.85em;">!}[+ commons_kvp_display +]%[? if n_elections != 1 and       demo_change_commons_kvp_display != 0 : ([+ demo_change_commons_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ burgher_kvp_display +]%[? if n_elections != 1 and demo_change_burgher_kvp_display != 0 : ([+ demo_change_burgher_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ guild_kvp_display +]%[? if n_elections != 1 and demo_change_guild_kvp_display != 0 : ([+ demo_change_guild_kvp_display +])?]{!</td>!}
@@ -1877,7 +1877,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ faithful_traditionalist_display +]%[? if n_elections != 1 and demo_change_faithful_traditionalist_display != 0 : ([+ demo_change_faithful_traditionalist_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if dnf_formed: {!<tr>!}
-            {!<td><span style="color: #003755;">!}**DNF**{!</span></td>!}
+            {!<td><span style="color: #003755;">!}**CNF**{!</span></td>!}
             {!<td style="background-color: rgba(0, 31, 48, 0.2); padding: 10px; font-size: 0.85em;">!}[+ commons_dnf_display +]%[? if n_elections != 1 and       demo_change_commons_dnf_display != 0 : ([+ demo_change_commons_dnf_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ burgher_dnf_display +]%[? if n_elections != 1 and demo_change_burgher_dnf_display != 0 : ([+ demo_change_burgher_dnf_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ guild_dnf_display +]%[? if n_elections != 1 and demo_change_guild_dnf_display != 0 : ([+ demo_change_guild_dnf_display +])?]{!</td>!}
@@ -1934,7 +1934,7 @@ go-to: achievement_check_e
 
 [? if bourgeois_coalition >= 25 and not kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + **Others**): [+ bourgeois_coalition +]% ?]
 
-[? if bourgeois_coalition >= 25 and kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**KVP**</span>): [+ bourgeois_coalition +]% ?]
+[? if bourgeois_coalition >= 25 and kvp_formed: Propertied Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #0087DC;">**CPP**</span>): [+ bourgeois_coalition +]% ?]
 
 [? if traditionalist_ideology == "Moderate" and not lvp_formed and not concord_formed: Center-Right Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if not concord_formed:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?]): [+ center_right_coalition +]% ?]
 
@@ -1942,19 +1942,19 @@ go-to: achievement_check_e
 
 [? if (concord_formed and far_right_coalition >= 25) or (gallax_right_coalition >= 50 and rubicon): Black-Brown Coalition (<span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ gallax_right_coalition +]% ?]
 
-[? if gnu_formed: Staal Right Coalition (<span style="color: #BFC8CC;">**GNU**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if not other_gnu:&nbsp;+ **Others**?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate" and not traditionalist_gnu:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">**DSU**</span>?]): [+ staal_right_coalition +]% ?]
+[? if gnu_formed: Staal Right Coalition (<span style="color: #BFC8CC;">**GNU**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if not other_gnu:&nbsp;+ **Others**?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate" and not traditionalist_gnu:&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">**CSG**</span>?]): [+ staal_right_coalition +]% ?]
 
 [? if gnu_formed: Staal Left Coalition (<span style="color: #BFC8CC;">**GNU**</span> + <span style="color: #c00000;">**Marchers**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]): [+ staal_left_coalition +]% ?]
 
 [? if traditionalist_ideology == "Radical" and far_right_coalition >= 35 and not concord_formed: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Coalfax" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #3E88B3;">**Traditionalists**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
 
-[? if traditionalist_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Coalfax" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #003755;">**DNF**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
+[? if traditionalist_ideology == "Moderate" and far_right_coalition >= 30: <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> Coalition ([? if (gold_leader == "Coalfax" and gold_ideology == "Right" and gold_right - gold_left >= 15) or hugenberg_gold: <span style="color: #C0A054;">**Golds**</span> + ?]<span style="color: #003755;">**CNF**</span> + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition +]% ?]
 
 [? if royalist_urgency <= 1 and royalist_r >= 15 : The rapid rise in <span style="color: #7A3C00;">**Royalists**</span> votes is extremely worrying. Many had believed that the party was <span style="color: #ff0000;">moribund</span>; now, some of us consider it to be the greatest threat to democracy in the Commonwealth. ?]
 
 [? if anti_democratic_coalition >= 50 and traditionalist_ideology == "Radical": Together, the anti-democratic <span style="color: #700000;">**Collectivists**</span>, <span style="color: #3E88B3;">**Traditionalists**</span>, and <span style="color: #7A3C00;">**Royalists**</span> have a majority in the Assembly. A stable governing majority will be almost impossible. ?]
 
-[? if anti_democratic_coalition >= 50 and traditionalist_ideology == "Moderate": Together, the anti-democratic <span style="color: #700000;">**Collectivists**</span>, <span style="color: #003755;">**DNF**</span>, and <span style="color: #7A3C00;">**Royalists**</span> have a majority in the Assembly. A stable governing majority will be almost impossible. ?]
+[? if anti_democratic_coalition >= 50 and traditionalist_ideology == "Moderate": Together, the anti-democratic <span style="color: #700000;">**Collectivists**</span>, <span style="color: #003755;">**CNF**</span>, and <span style="color: #7A3C00;">**Royalists**</span> have a majority in the Assembly. A stable governing majority will be almost impossible. ?]
 
 [? if gallax_right_coalition >= 50 and rubicon and gallax_right_coalition_time == time: The <span style="color: #000000;">Unionist Party</span> and its <span style="color: #A2D8E0;">Avrizan</span> counterpart, together with the <span style="color: #7A3C00;">**Royalists**</span>, constitute a majority in the Assembly. This has sparked rumors of a potential parliamentary-backed Black-Brown coalition that could unseat [+ chancellor +]—rumors that are unlikely to materialize, as the ideological gulf between the <span style="color: #7A3C00;">Royalists</span> and the constitutionalist <span style="color: #000000;">Unionist Party</span> remains vast. ?]
 
@@ -2054,11 +2054,11 @@ Placeholder
 
 @schleicher_right_coalition
 title: Staal forms a parliamentary cabinet with the right.
-subtitle: <span style="color: #BFC8CC;">**GNU**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if not other_gnu:&nbsp;+ **Others**?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">**KVP**</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">**DSU**</span>?] ([+ staal_right_coalition +]%)
+subtitle: <span style="color: #BFC8CC;">**GNU**</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #A2D8E0;">**Arcanists**</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if not other_gnu:&nbsp;+ **Others**?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">**CSG**</span>?] ([+ staal_right_coalition +]%)
 view-if: staal_right_coalition >= 50 and chancellor == "Staal" and staal_time and gnu_formed
-unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">[+ unionist_party_name +]</span> + <span style="color: #A2D8E0;">Arcanists</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if not other_gnu:&nbsp;+ Others?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">KVP</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">Traditionalists</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">DSU</span>?] ([+ staal_right_coalition +]%) [? if not staal_parliament_trigger: - Staal has no interest in leading a coalition backed by parliament, rather than decree. ?]
+unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span>[? if not unionist_gnu:&nbsp;+ <span style="color: #000000;">[+ unionist_party_name +]</span> + <span style="color: #A2D8E0;">Arcanists</span>?][? if not lvp_formed and not dstp_gnu:&nbsp;+ <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if not lvp_formed and gold_exist and not gold_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if lvp_formed and not lvp_gnu:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if not other_gnu:&nbsp;+ Others?][? if kvp_formed and not kvp_gnu:&nbsp;+ <span style="color: #0087DC;">CPP</span>?][? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #3E88B3;">Traditionalists</span>?][? if dsu_exist:&nbsp;+ <span style="color: #6A1E1E;">CSG</span>?] ([+ staal_right_coalition +]%) [? if not staal_parliament_trigger: - Staal has no interest in leading a coalition backed by parliament, rather than decree. ?]
 choose-if: staal_parliament_trigger
-on-arrival: in_staal_right_coalition = 1; marcher_in_government = 0; dsu_in_gov = 1; vice_chancellor = "Crowde"; heartland_leader = "Crowde" if heartland_leader == "Staal" or heartland_leader == "Sedgewick"; foreign_minister_party = "GNU"; interior_minister_party = "DSU"; justice_minister_party = "Unionist"; justice_minister_party = "LVP" if lvp_formed; labor_minister_party = "Unionist"; army_minister_party = "GNU"; economic_minister_party = "I"; finance_minister_party = "GNU"; agriculture_minister_party = "GNU"; labor_minister = "Sedgewick"; army_minister = "Staal"; pro_republic -= 8; staal_marcher_influence -= 2; staal_marcher_support -= 4; staal_marcher_r -= 2; staal_approval += 2
+on-arrival: in_staal_right_coalition = 1; marcher_in_government = 0; dsu_in_gov = 1; vice_chancellor = "Crowde"; heartland_leader = "Crowde" if heartland_leader == "Staal" or heartland_leader == "Sedgewick"; foreign_minister_party = "GNU"; interior_minister_party = "CSG"; justice_minister_party = "Unionist"; justice_minister_party = "LVP" if lvp_formed; labor_minister_party = "Unionist"; army_minister_party = "GNU"; economic_minister_party = "I"; finance_minister_party = "GNU"; agriculture_minister_party = "GNU"; labor_minister = "Sedgewick"; army_minister = "Staal"; pro_republic -= 8; staal_marcher_influence -= 2; staal_marcher_support -= 4; staal_marcher_r -= 2; staal_approval += 2
 
 Placeholder
 
@@ -2199,14 +2199,14 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 
 @far_right_coalition
 title: <span style="color: #7A3C00;">Far</span>-[? if not dnf_formed:<span style="color: #3E88B3;">right</span>?][? if dnf_formed:<span style="color: #003755;">right</span>?] Coalition
-subtitle: <span style="color: #7A3C00;">**Royalists**</span> + [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span> ?] ([+ far_right_coalition +]%)
+subtitle: <span style="color: #7A3C00;">**Royalists**</span> + [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span> ?] ([+ far_right_coalition +]%)
 view-if: far_right_coalition >= 50
 unavailable-subtitle: Pendrigon would never allow this.
 choose-if: president != "Pendrigon"
 go-to: far_right_win if (year >= 1932 or royalist_r >= 44 or chancellor == "Goodlake") and president != "Bristol"; far_right_fail if (year < 1932 and royalist_r < 44 and chancellor != "Goodlake") and president != "Bristol"; far_right_braun if president == "Bristol"
 priority: 2
 
-There are enough votes for the <span style="color: #7A3C00;">Royalists</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span> ?] to form a coalition. [+ royalist_leader +] has made his participation in government contingent on being appointed chancellor. It is up to President [+ president +] to decide. As this is a parliamentary cabinet, [+ president +] is more likely to appoint [+ royalist_chancellor +].
+There are enough votes for the <span style="color: #7A3C00;">Royalists</span> and the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span> ?] to form a coalition. [+ royalist_leader +] has made his participation in government contingent on being appointed chancellor. It is up to President [+ president +] to decide. As this is a parliamentary cabinet, [+ president +] is more likely to appoint [+ royalist_chancellor +].
 
 @far_right_win
 on-arrival: chancellor = royalist_chancellor; chancellor_party = "Royalist"
@@ -2232,7 +2232,7 @@ The <span style="color: #808080;">reactionary</span> establishment is still very
 
 With [+ royalist_leader +] and Mallin refusing to join any reformed Askew cabinet, DuFour has sidestepped the issue by turning to the staunchly conservative Goodlake, who renounced his affiliation with the <span style="color: #3E88B3;">**Traditionalists**</span> to accept the post.
 
-Upon taking office, however, Goodlake has yet to secure formal support from the <span style="color: #7A3C00;">**Royalists**</span> or [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?]—support he needs, given that the <span style="color: #c00000;">**Marchers**</span>[? if not lvp_formed:&nbsp;and likely the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] will not back his government.
+Upon taking office, however, Goodlake has yet to secure formal support from the <span style="color: #7A3C00;">**Royalists**</span> or [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?]—support he needs, given that the <span style="color: #c00000;">**Marchers**</span>[? if not lvp_formed:&nbsp;and likely the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] will not back his government.
 
 The coming months will reveal whether Goodlake can govern—and if the <span style="color: #7A3C00;">**Royalists**</span> is truly serious about entering government.
 
@@ -2362,7 +2362,7 @@ on-arrival: marcher_in_government = 1; in_left_front = 1; chancellor = "Yardley"
 go-to: left_coalition_civil_war if coup_progress >= 10; left_coalition_no_civil_war if coup_progress < 10
 achievement: einheitsfront
 
-Somehow, surprisingly, the left coalition is successfully formed, without appointing Halsmark as chancellor. The consensus choice for chancellor, accepted by the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>, and President [+ president +], is Calbert Yardley, who belongs to the centrist faction of the <span style="color: #c00000;">**Marchers**</span>, but was acceptable to the left due to his previous membership in the left-wing anti-war <span style="color: #D47B9B;">**USPD**</span>.
+Somehow, surprisingly, the left coalition is successfully formed, without appointing Halsmark as chancellor. The consensus choice for chancellor, accepted by the <span style="color: #c00000;">**Marchers**</span>, <span style="color: #700000;">**Collectivists**</span>, and President [+ president +], is Calbert Yardley, who belongs to the centrist faction of the <span style="color: #c00000;">**Marchers**</span>, but was acceptable to the left due to his previous membership in the left-wing anti-war <span style="color: #D47B9B;">**Independents**</span>.
 
 # just raise the coup limit, don't immediately go to civil war
 
@@ -2638,7 +2638,7 @@ if (Q.next_reichstag_month > 12) {
 face-image: img/portraits/GoodrykeFranz.jpg
 go-to: no_majority_papen_plus
 
-With the <span style="color: #7A3C00;">**Royalists**</span> commanding a strong position in parliament, it can decide the fate of the independent Goodryke cabinet, as only the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?][? if gold_exist and hugenberg_gold:&nbsp;and <span style="color: #C0A054;">**Golds**</span>?] are the only other parties willing to tie themselves to the unpopular chancellor. 
+With the <span style="color: #7A3C00;">**Royalists**</span> commanding a strong position in parliament, it can decide the fate of the independent Goodryke cabinet, as only the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?][? if gold_exist and hugenberg_gold:&nbsp;and <span style="color: #C0A054;">**Golds**</span>?] are the only other parties willing to tie themselves to the unpopular chancellor. 
 # TODO
 @no_majority_papen_plus
 
@@ -2687,7 +2687,7 @@ The prospect of negotiations with the <span style="color: #7A3C00;">Royalist</sp
 - @schleicher_dsu
 
 @schleicher_dsu
-title: Staal invites the <span style="color: #6A1E1E;">**DSU**</span> into cabinet?
+title: Staal invites the <span style="color: #6A1E1E;">**CSG**</span> into cabinet?
 
 Despite their addition barely doing much to grant Staal a majority, it signals a major step toward Staal's goal of integrating "favorable" <span style="color: #7A3C00;">Royalists</span> into the state—as he acknowledges that this is how much he's going to get. Their poor electoral performance will grant them few cabinet posts, but there remains substantial risks in letting the <span style="color: #7A3C00;">Royalists</span> govern.
 
@@ -2795,7 +2795,7 @@ The <span style="color: #c00000;">**Marchers**</span> is demoralized, as many th
 - @schleicher_dsu_nay_2
 
 @schleicher_dsu_nay_2
-title: The <span style="color: #6A1E1E;">**DSU**</span> is kept away from government!
+title: The <span style="color: #6A1E1E;">**CSG**</span> is kept away from government!
 subtitle: The <span style="color: #000000;">Unionist Party</span> has been flirting with a return to governance.
 on-arrival: {!
 Q.unionist_in_gov = 1;
@@ -2834,7 +2834,7 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-Staal has suspended talks with the <span style="color: #6A1E1E;">**DSU**</span> by deliberately creating an impasse over control of the Interior Ministry. In the meantime, the absence of <span style="color: #7A3C00;">Royalists</span> in the cabinet has made it tolerable for the <span style="color: #000000;">Unionist Party</span> to return to government, with Adam Sedgewick securing the Labor Ministry and the nominal Vice Chancellorship, alongside other members claiming the Transport and Justice portfolios. The <span style="color: #A2D8E0;">**Arcanists**</span> is also granted the Postal Ministry. [? if unionist_leader == "Renck": Staal has also secured Aurelian Renck's backing by promising the immediate negotiation of a <i>Temple Concordat</i> with the Temple of the Faithful. ?]
+Staal has suspended talks with the <span style="color: #6A1E1E;">**CSG**</span> by deliberately creating an impasse over control of the Interior Ministry. In the meantime, the absence of <span style="color: #7A3C00;">Royalists</span> in the cabinet has made it tolerable for the <span style="color: #000000;">Unionist Party</span> to return to government, with Adam Sedgewick securing the Labor Ministry and the nominal Vice Chancellorship, alongside other members claiming the Transport and Justice portfolios. The <span style="color: #A2D8E0;">**Arcanists**</span> is also granted the Postal Ministry. [? if unionist_leader == "Renck": Staal has also secured Aurelian Renck's backing by promising the immediate negotiation of a <i>Temple Concordat</i> with the Temple of the Faithful. ?]
 
 [? if old_heartland_leader == "Staal": The Heartland <i>Commonwealth Commissioner</i> post is also handed from Staal to Goodlake—a signal that Staal has genuinely abandoned Goodryke's scheme for state centralization, and gestures toward an eventual return to democratic governance once stability is restored. Bristol is overjoyed at this, and argues that only a break with Staal would change his mind. ?]
 
@@ -3093,7 +3093,7 @@ Q.no_confidence_succeeds = (Q.no_confidence_votes > 50) ? 1 : 0;
 Q.no_confidence_votes = parseFloat(Q.no_confidence_votes.toFixed(1));
 !}
 
-The <span style="color: #7A3C00;">**Royalists**</span>[? if dnf_formed:, <span style="color: #003755;">**DNF**</span>?][? if kvp_formed:, <span style="color: #0087DC;">**KVP**</span>?] and <span style="color: #3E88B3;">**Traditionalists**</span> will vote against us, of course. The other parties vote their conscience. [? if unionist_no_confidence: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is voting against us. ?] [? if lvp_no_confidence and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will vote against us. ?] [? if collectivist_no_confidence: The <span style="color: #700000;">**Collectivists**</span> votes against us. ?] [? if other_no_confidence: The assortment of minor parties are voting against us. ?]
+The <span style="color: #7A3C00;">**Royalists**</span>[? if dnf_formed:, <span style="color: #003755;">**CNF**</span>?][? if kvp_formed:, <span style="color: #0087DC;">**CPP**</span>?] and <span style="color: #3E88B3;">**Traditionalists**</span> will vote against us, of course. The other parties vote their conscience. [? if unionist_no_confidence: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is voting against us. ?] [? if lvp_no_confidence and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will vote against us. ?] [? if collectivist_no_confidence: The <span style="color: #700000;">**Collectivists**</span> votes against us. ?] [? if other_no_confidence: The assortment of minor parties are voting against us. ?]
 
 In total, [+ no_confidence_votes +]% of the Assembly is against us. [? if no_confidence_succeeds : We have lost the vote of no confidence. ?]
 
@@ -3189,7 +3189,7 @@ on-arrival: leverage += 10; leverage += 5 if not lvp_formed; leverage += 5 if lv
 achievement: sozialliberale_koalition
 go-to: soc_lib_chancellor_menu if not (secularized and abortion_rights and womens_work and family_law and trans_rights and reformed_183 and repealed_175); kulturkampf if (secularized and abortion_rights and womens_work and family_law and trans_rights and reformed_183 and repealed_175)
 
-We have enough votes to form a "<span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span> and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] party! This type of coalition has never been tested before and is only possible as a last resort after our fallout with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
+We have enough votes to form a "<span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span> and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] party! This type of coalition has never been tested before and is only possible as a last resort after our fallout with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 # add achievement for ts
 
 Who should be the chancellor?
@@ -3215,7 +3215,7 @@ on-arrival: leverage += 5; leverage += 5 if not lvp_formed; leverage += 5 if lvp
 achievement: sozialliberale_koalition
 go-to: soc_lib_chancellor_menu if not (secularized and abortion_rights and womens_work and family_law and trans_rights and reformed_183 and repealed_175); kulturkampf if (secularized and abortion_rights and womens_work and family_law and trans_rights and reformed_183 and repealed_175)
 
-We have enough votes to form a "<span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span> and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] party! This coalition has never been tested before and is only possible because the behemoth right-wing <span style="color: #000000;">**[+ unionist_party_name +]**</span> includes certain <span style="color: #3E88B3;">**Traditionalists**</span> elements.
+We have enough votes to form a "<span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span> and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] party! This coalition has never been tested before and is only possible because the behemoth right-wing <span style="color: #000000;">**[+ unionist_party_name +]**</span> includes certain <span style="color: #3E88B3;">**Traditionalists**</span> elements.
 
 Who should be the chancellor?
 
@@ -3432,7 +3432,7 @@ choose-if: ((unionist_relation >= 30 and unionist_ideology == "Right" and year <
 on-arrival: weimar_coalition_failed = 1
 view-if: (weimar_coalition >= 50 or (weimar_coalition >= 49.5 and other_r >= 8 and (year < 1930 or year > 1932))) and (liberal_parliament == 1 or bourgeois_parliament_ddp == 1) and not lvp_formed and not concord_formed
 
-We have enough votes to form a "Unity Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] parties. However the [? if liberal_parliament: liberals?][? if bourgeois_parliament_ddp: propertied?] are in a parliamentary group which prevents the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> from being included in our coalition by themselves.
+We have enough votes to form a "Unity Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] parties. However the [? if liberal_parliament: liberals?][? if bourgeois_parliament_ddp: propertied?] are in a parliamentary group which prevents the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> from being included in our coalition by themselves.
 
 We can either spend resources to convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to break away from this arrangement, or to find another governing arrangement.
 
@@ -3467,7 +3467,7 @@ go-to: weimar_coalition_2
 @weimar_coalition_2
 go-to: weimar_spd_lead if (unionist_leader != "Sedgewick" or (unionist_leader == "Sedgewick" and (unionist_r - bvp_r) < 16)) or president_ideology == "Left"; weimar_z_lead if (unionist_leader == "Sedgewick" and (unionist_r - bvp_r) >= 16) and president_ideology != "Left"
 
-We have enough votes to form a "Unity Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] parties! This has been our preferred governing coalition since 4284. [? if weimar_coalition < 50: We are able to form a minority coalition, thanks to the toleration of the <span style="color: #63C489;">Commonwealth-Hanoverian Party</span>. 🙏🙏🙏 ?]
+We have enough votes to form a "Unity Coalition" government consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?] parties! This has been our preferred governing coalition since 4284. [? if weimar_coalition < 50: We are able to form a minority coalition, thanks to the toleration of the <span style="color: #63C489;">Commonwealth-Hanoverian Party</span>. 🙏🙏🙏 ?]
 
 @weimar_spd_lead
 
@@ -3511,7 +3511,7 @@ go-to: grand_coalition_spd_lead if ((n_elections <= 1 and largest_party == "Marc
 @grand_coalition_bourgeois_parliament
 on-arrival: grand_coalition_failed = 1
 
-There are enough votes to form a majority coalition consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties.
+There are enough votes to form a majority coalition consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties.
 
 However the propertied are in a parliamentary group which prevents the liberal parties from from being included in our coalition by themselves. We can either spend resources to convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span> to break away from this arrangement, or to find another governing arrangement. The <span style="color: #C0A054;">**Golds**</span> is very reluctant to this step.
 
@@ -3531,7 +3531,7 @@ go-to: grand_coalition
 @grand_coalition_z_lead
 go-to: grand_coalition_z_lead_2 if ((gold_relation >= 30 and not lvp_formed) or (lvp_relation >= 30 and lvp_formed)); grand_coalition_fail if ((gold_relation < 30 and not lvp_formed) or (lvp_relation < 30 and lvp_formed))
 
-There are enough votes to form a majority coalition consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties. Given our rather weak electoral performance, [? if marcher_no_confidence = 1 : and our previous vote of no confidence against the government, ?][? if no_confidence_against_marcher = 1 : and the vote of no confidence against us, ?] President [+ president +] has asked the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to take the lead role in forming a government.
+There are enough votes to form a majority coalition consisting of the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties. Given our rather weak electoral performance, [? if marcher_no_confidence = 1 : and our previous vote of no confidence against the government, ?][? if no_confidence_against_marcher = 1 : and the vote of no confidence against us, ?] President [+ president +] has asked the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to take the lead role in forming a government.
 
 
 @grand_coalition_z_lead_2
@@ -3636,7 +3636,7 @@ The prospect of new elections has proved daunting for the propertied parties—a
 
 With [+ royalist_leader +] and Mallin refusing to join any reformed Askew cabinet, DuFour has sidestepped the issue by turning to the staunchly conservative Goodlake, who renounced his affiliation with the <span style="color: #3E88B3;">**Traditionalists**</span> to accept the post.
 
-Upon taking office, however, Goodlake has yet to secure formal support from the <span style="color: #7A3C00;">**Royalists**</span> or [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?]—support he needs, given that the <span style="color: #c00000;">**Marchers**</span>[? if not lvp_formed:&nbsp;and likely the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] will not back his government.
+Upon taking office, however, Goodlake has yet to secure formal support from the <span style="color: #7A3C00;">**Royalists**</span> or [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?]—support he needs, given that the <span style="color: #c00000;">**Marchers**</span>[? if not lvp_formed:&nbsp;and likely the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] will not back his government.
 
 The coming months will reveal whether Goodlake can govern—and if the <span style="color: #7A3C00;">**Royalists**</span> is truly serious about entering government.
 
@@ -3717,7 +3717,7 @@ Under the influence of Gustav Stratton, the [? if not lvp_formed: <span style="c
 
 The [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] asks us to adhere to their conservative economic policies (that is, extreme austerity and labor discipline) in exchange for us joining the coalition.
 
-- @beg_dvp_2: But they would not have a majority without the <span style="color: #c00000;">**Marchers**</span>! The [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if dnf_formed: <span style="color: #003755;">**DNF**</span> ?] and <span style="color: #7A3C00;">**Royalists**</span> have no interest in participating in government.
+- @beg_dvp_2: But they would not have a majority without the <span style="color: #c00000;">**Marchers**</span>! The [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if dnf_formed: <span style="color: #003755;">**CNF**</span> ?] and <span style="color: #7A3C00;">**Royalists**</span> have no interest in participating in government.
 - @dvp_prussia: We will offer them participation in the Heartland government.
 - @no_majority: There is no chance that we would agree.
 - @brauns_dilemma
@@ -3727,7 +3727,7 @@ The [? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if 
 @beg_dvp_2
 go-to: beg_dvp_fail
 
-We make the case that without the <span style="color: #c00000;">**Marchers**</span>, there is no parliamentary majority, given the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if dnf_formed: <span style="color: #003755;">**DNF**</span> ?] and <span style="color: #7A3C00;">**Royalists**</span>'s hostility to constitutional government.
+We make the case that without the <span style="color: #c00000;">**Marchers**</span>, there is no parliamentary majority, given the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span> ?][? if dnf_formed: <span style="color: #003755;">**CNF**</span> ?] and <span style="color: #7A3C00;">**Royalists**</span>'s hostility to constitutional government.
 
 @beg_dvp_succeed
 go-to: join_bruning
@@ -3753,7 +3753,7 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 @grand_coalition_spd_lead
 on-arrival: leverage -= 15 if (gold_relation < 25 or gold_ideology == "Right") and not lvp_formed; leverage -= 10 if (lvp_relation < 25 or lvp_ideology == "Right") and lvp_formed; dufour_angry = 60
 
-As expected, the <span style="color: #c00000;">**Marchers**</span> is the largest party, and this time, we are expected to take the lead role in the formation of the next government, including selecting the chancellor. President [+ president +] has asked us to form a majority coalition with the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "DStP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties.
+As expected, the <span style="color: #c00000;">**Marchers**</span> is the largest party, and this time, we are expected to take the lead role in the formation of the next government, including selecting the chancellor. President [+ president +] has asked us to form a majority coalition with the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] (<span style="color: #000000;">**[+ unionist_party_name +]**</span>), <span style="color: #A2D8E0;">**Avrizan People's**</span> (<span style="color: #A2D8E0;">**Arcanists**</span>), [? if ddp_name == "Gold" and not lvp_formed: <span style="color: #D3C24D;">**Democratic**</span>?][? if ddp_name == "CSP" and not lvp_formed: <span style="color: #D3C24D;">**State**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] [? if not lvp_formed: (<span style="color: #D3C24D;">**[+ ddp_name +]**</span>)?][? if lvp_formed: (<span style="color: #C0A054;">**Golds**</span>)?][? if not lvp_formed: , and <span style="color: #C0A054;">**People's**</span> (<span style="color: #C0A054;">**Golds**</span>)?] parties.
 
 [? if gold_relation < 25 or gold_ideology == "Right" and not lvp_formed: As our relation with the <span style="color: #C0A054;">**Golds**</span> is poor, they are demanding more minister posts in order to remain part of the coalition. ?][? if lvp_relation < 25 or lvp_ideology == "Right" and lvp_formed: As our relation with the <span style="color: #C0A054;">**Golds**</span> is poor, they are demanding more minister posts in order to remain part of the coalition. ?] [? if in_grand_coalition_heartland: The <span style="color: #C0A054;">**Golds**</span> are willing to grant us more cabinet posts as a result of including them in the Heartland cabinet. ?]
 

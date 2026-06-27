@@ -363,16 +363,16 @@ if (Q.other_r_thuringia) {
     });
     data.push({
         "id": "wp",
-        "legend": "WP",
-        "name": "WP",
+        "legend": "ECP",
+        "name": "ECP",
         "seats": Math.round(Q.wp_r_thuringia * 0.53),
     });
 }
 if (Q.kvp_formed && Q.kvp_r_thuringia) {
     data.push({
         "id": "kvp",
-        "legend": "KVP",
-        "name": "KVP",
+        "legend": "CPP",
+        "name": "CPP",
         "seats": Math.round(Q.kvp_r_thuringia * 0.53),
     });
 }
@@ -386,8 +386,8 @@ data = data.concat([{
 if (Q.dnf_formed && Q.dnf_r_thuringia) {
     data.push({
         "id": "dnf",
-        "legend": "DNF",
-        "name": "DNF",
+        "legend": "CNF",
+        "name": "CNF",
         "seats": Math.round(Q.dnf_r_thuringia * 0.53),
     });
 }
@@ -439,30 +439,30 @@ go-to: thuringia_coalition_menu
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} Golds: {!</td><td>!} [+ gold_thuringia_elections_vote +]% {!</td><td>!} [+ gold_r_thuringia +]%  {!</td></tr>!} ?]
  
-{!<tr><td><div class="box" style='background-color:#7FCEB1'> </div> !} CNBLP: {!</td><td>!} [+ farm_thuringia_elections_vote +]% {!</td><td>!} [+ farm_r_thuringia +]%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#7FCEB1'> </div> !} FCL: {!</td><td>!} [+ farm_thuringia_elections_vote +]% {!</td><td>!} [+ farm_r_thuringia +]%  {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#b8996f'> </div> !} WP: {!</td><td>!} [+ wp_thuringia_elections_vote +]% {!</td><td>!} [+ wp_r_thuringia +]%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#b8996f'> </div> !} ECP: {!</td><td>!} [+ wp_thuringia_elections_vote +]% {!</td><td>!} [+ wp_r_thuringia +]%  {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ true_other_thuringia_elections_vote +]% {!</td><td>!} 0%  {!</td></tr>!}
 
-[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_thuringia_elections_vote +]% {!</td><td>!} [+ kvp_r_thuringia +]%  {!</td></tr>!} ?]
+[? if kvp_formed : {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}CPP: {!</td><td>!} [+ kvp_thuringia_elections_vote +]% {!</td><td>!} [+ kvp_r_thuringia +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_thuringia_elections_vote +]% {!</td><td>!} [+ traditionalist_r_thuringia +]%  {!</td></tr>!}
 
-[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}DNF: {!</td><td>!} [+ dnf_thuringia_elections_vote +]% {!</td><td>!} [+ dnf_r_thuringia +]%  {!</td></tr>!} ?]
+[? if dnf_formed : {!<tr><td><div class="box" style='background-color:#003755'> </div> !}CNF: {!</td><td>!} [+ dnf_thuringia_elections_vote +]% {!</td><td>!} [+ dnf_r_thuringia +]%  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_thuringia_elections_vote +]% {!</td><td>!} [+ royalist_r_thuringia +]%  {!</td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-Stathmore is currently governed by a broad center-right coalition, which holds exactly half of the state Assembly's seats. This coalition includes all parties to the right of us, along with the special interest parties, the <span style="color: #b8996f;">**WP**</span> and <span style="color: #7FCEB1;">**CNBLP**</span>, both of which have a significant presence in state politics.
+Stathmore is currently governed by a broad center-right coalition, which holds exactly half of the state Assembly's seats. This coalition includes all parties to the right of us, along with the special interest parties, the <span style="color: #b8996f;">**ECP**</span> and <span style="color: #7FCEB1;">**FCL**</span>, both of which have a significant presence in state politics.
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_thuringia +]% 
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_thuringia:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_thuringia +]% 
 
-Propertied Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
+Propertied Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**FCL**</span> + <span style="color: #b8996f;">**ECP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ bourgeois_coalition_thuringia +]%
 
-Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**CNBLP**</span> + <span style="color: #b8996f;">**WP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**KVP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>[? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #003755;">**DNF**</span> ?] + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition_thuringia +]%
+Right-wing Coalition ([? if unionist_r_thuringia: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #7FCEB1;">**FCL**</span> + <span style="color: #b8996f;">**ECP**</span>[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>[? if traditionalist_ideology == "Moderate":&nbsp;+ <span style="color: #003755;">**CNF**</span> ?] + <span style="color: #7A3C00;">**Royalists**</span>): [+ far_right_coalition_thuringia +]%
 
 [? if royalist_thuringia_elections_vote >= 8: The rapid rise of the <span style="color: #7A3C00;">**Royalists**</span> in state and local elections is certainly worth keeping an eye on. ?]
 
@@ -495,7 +495,7 @@ if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lv
 !}
 
 <hr id="read-marker">
-The propertied parties have historically been hostile to us in state politics, especially after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #D47B9B;">**USPD**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. They still haven't forgiven the <span style="color: #c00000;">**Marchers**</span> for this. 
+The propertied parties have historically been hostile to us in state politics, especially after the notorious <span style="color: #c00000;">**Marchers**</span>-<span style="color: #D47B9B;">**Independents**</span>-<span style="color: #700000;">**Collectivists**</span> United Left government faced a <i>Commonwealth intervention</i> six years ago. They still haven't forgiven the <span style="color: #c00000;">**Marchers**</span> for this. 
 
 Meanwhile, the surging <span style="color: #7A3C00;">**Royalists**</span>, now controlling [+ royalist_r_thuringia +]% of the state Assembly, is no longer content with mere toleration and demands a role in government. With the propertied parties determined to exclude us from power, Stathmore may well become the first state to appoint a <span style="color: #7A3C00;">Royalist</span> minister.
 
@@ -516,7 +516,7 @@ choose-if: toleration_possible
 view-if: bourgeois_coalition_thuringia < 50
 on-arrival: thuringia_right = 1; pro_republic -= 1; landed_royalist += 2; guild_royalist += 2; landed_other -= 2; guild_traditionalist -= 2
 
-Surprisingly, through our reconciliation with the propertied parties, they have accepted our toleration to prevent the <span style="color: #7A3C00;">**Royalists**</span> from entering government. However, this provides valuable propaganda for the <span style="color: #7A3C00;">Royalists</span>, who gain support at the expense of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #7FCEB1;">**CNBLP**</span>, who are now tainted by their association with us.
+Surprisingly, through our reconciliation with the propertied parties, they have accepted our toleration to prevent the <span style="color: #7A3C00;">**Royalists**</span> from entering government. However, this provides valuable propaganda for the <span style="color: #7A3C00;">Royalists</span>, who gain support at the expense of the <span style="color: #3E88B3;">**Traditionalists**</span> and <span style="color: #7FCEB1;">**FCL**</span>, who are now tainted by their association with us.
 
 @far_right_coalition_thuringia
 title: The incumbent coalition is expanded to include the <span style="color: #7A3C00;">**Royalists**</span>.
@@ -579,7 +579,7 @@ subtitle: Congratulations.
 view-if: marcher_r_thuringia >= 50
 on-arrival: thuringia_marcher = 1; landed_royalist -= 3; burgher_royalist -= 4; guild_royalist -= 4; commons_collectivist -= 2; disfavored_collectivist -= 2; commons_marcher += 2; disfavored_marcher += 2; burgher_marcher += 4; guild_marcher += 4; landed_marcher += 3; pro_republic += 5; heartland_police_loyalty += 0.05; loyalist_strength -= 50
 
-To the sheer horror of the right-wing parties in Stathmore, an unforeseen occurrence has swept over the state: a complete Marchers majority. Members of the far-right cry foul; voter fraud, other forms of subterfuge, and attacks ranging to outright conspiracy is hurled at the results. Nonetheless, <span style="color: #c00000;">Red</span> Stathmore is restored, without the revolutionary concerns of the <span style="color: #D47B9B;">**USPD**</span>/<span style="color: #700000;">**Collectivists**</span>’s presence in the landtag.
+To the sheer horror of the right-wing parties in Stathmore, an unforeseen occurrence has swept over the state: a complete Marchers majority. Members of the far-right cry foul; voter fraud, other forms of subterfuge, and attacks ranging to outright conspiracy is hurled at the results. Nonetheless, <span style="color: #c00000;">Red</span> Stathmore is restored, without the revolutionary concerns of the <span style="color: #D47B9B;">**Independents**</span>/<span style="color: #700000;">**Collectivists**</span>’s presence in the landtag.
 
 We have undertaken the purging of reactionary sentiments within the police, and revamped the state’s school curriculum to move away from the nationalistic values that remain prevalent. More work is set to be done, but at least DuFour’s gaze has been turned away… for now.
 
