@@ -1558,8 +1558,8 @@ if (Q.other_r) {
 if (Q.true_aspd_r && (Q.aspd_other || Q.aspd_kvp)) {
     data.push({
         "id": "aspd",
-        "legend": "ASPD",
-        "name": "ASPD",
+        "legend": "ORP",
+        "name": "ORP",
         "seats": Math.round(Q.true_aspd_r * Q.reichstag_size),
     });
 }
@@ -1740,13 +1740,13 @@ go-to: achievement_check_e
  
 [? if not other_gnu: {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_votes +]% {!</td><td>!} [+ str_votes_change_other +] {!</td><td>!} [+ other_r +]% {!</td><td>!} [+ str_change_other +] {!</td></tr>!} ?]
 
-[? if aspd_other: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ASPD: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
+[? if aspd_other: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ORP: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
 
 [? if traditionalist_gold_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#00C0FF'> </div> !}FKP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
 
 [? if kvp_formed and not traditionalist_gold_formed and not concord_kvp_formed and not kvp_gnu: {!<tr><td><div class="box" style='background-color:#0087DC'> </div> !}KVP: {!</td><td>!} [+ kvp_votes +]% {!</td><td>!} [+ str_votes_change_kvp +] {!</td><td>!} [+ kvp_r +]% {!</td><td>!} [+ str_change_kvp +] {!</td></tr>!} ?]
 
-[? if aspd_kvp: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ASPD: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
+[? if aspd_kvp: {!<tr><td><div class="box2" style='background-color:#fe9e00'> </div> !} ORP: {!</td><td>!} [+ aspd_votes +]% {!</td><td>!} [+ str_votes_change_aspd +] {!</td><td>!} [+ aspd_r +]% {!</td><td>!} [+ str_change_aspd +] {!</td></tr>!} ?]
 
 [? if not concord_formed and not traditionalist_gnu and not traditionalist_defunct and not traditionalist_wholesome: {!<tr><td><div class="box" style='background-color:#3E88B3'> </div> !} Traditionalists: {!</td><td>!} [+ traditionalist_votes +]% {!</td><td>!} [+ str_votes_change_traditionalist +] {!</td><td>!} [+ traditionalist_r +]% {!</td><td>!} [+ str_change_traditionalist +] {!</td></tr>!}?]
 

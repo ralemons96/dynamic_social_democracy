@@ -477,8 +477,8 @@ data = data.concat([{
 if (Q.aspd_r_saxony) {
     data.push({
         "id": "aspd",
-        "legend": "ASPD",
-        "name": "ASPD",
+        "legend": "ORP",
+        "name": "ORP",
         "seats": Math.round(Q.aspd_r_saxony * 0.96),
     });
 }
@@ -636,7 +636,7 @@ go-to: saxony_coalition_menu
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#9B0000'> </div> !}Laborists: {!</td><td>!} [+ sapd_saxony_elections_vote +]% {!</td><td>!} [+ sapd_r_saxony +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#fe9e00'> </div> !}ASPD: {!</td><td>!} [+ aspd_saxony_elections_vote +]% {!</td><td>!} [+ aspd_r_saxony +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#fe9e00'> </div> !}ORP: {!</td><td>!} [+ aspd_saxony_elections_vote +]% {!</td><td>!} [+ aspd_r_saxony +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_saxony_elections_vote +]% {!</td><td>!} [+ collectivist_r_saxony +]%  {!</td></tr>!}
 
@@ -671,13 +671,13 @@ go-to: saxony_coalition_menu
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} Royalists: {!</td><td>!} [+ royalist_saxony_elections_vote +]% {!</td><td>!} [+ royalist_r_saxony +]%  {!</td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-[? if aspd_dead and reformists_resign: Despite the <span style="color: #fe9e00;">**ASPD**</span>'s reunion with the <span style="color: #c00000;">**Marchers**</span> after the state Assembly election 4 years ago, our party's leftist direction at the federal level has driven them to split off again. ?]
+[? if aspd_dead and reformists_resign: Despite the <span style="color: #fe9e00;">**ORP**</span>'s reunion with the <span style="color: #c00000;">**Marchers**</span> after the state Assembly election 4 years ago, our party's leftist direction at the federal level has driven them to split off again. ?]
 [? if royalist_r_saxony > (royalist_r_saxony_old + 5) and not saxony_royalist: The <span style="color: #7A3C00;">**Royalists**</span> have made significant gains relative to last election.  This may make a stable governing arrangement more difficult this time around. ?]
 [? if saxony_royalist: Following Gregor Stasser's anti-capitalist antics of the previous coalition, the propertied parties are quite reluctant to include the <span style="color: #7A3C00;">**Royalists**</span> in government again. ?]
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
 
-Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ASPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
+Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ORP**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
 
 [? if traditionalist_ideology == "Moderate": Propertied Coalition ([? if unionist_r_saxony: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + ?][? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span> + <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if vnr_formed:&nbsp;+ <span style="color: #D3D3A9;">**VNR**</span> ?] + <span style="color: #11DD11;">**SLV**</span> + <span style="color: #b8996f;">**WP**</span> + <span style="color: #0075EB;">**VRP**</span>[? if csvd_formed:&nbsp;+ <span style="color: #8ED8E4;">**CSVD**</span> ?] + <span style="color: #3E88B3;">**Traditionalists**</span>): [+ true_bourgeois_coalition_saxony +]% ?]
 
@@ -796,7 +796,7 @@ Once again, the propertied parties have secured a majority all on their own.
 The continued propertied strength is demoralizing both to the <span style="color: #7A3C00;">**Royalists**</span> and to us, as we are once again relegated to the powerless opposition role. 
 
 @ddp_saxony
-title: We will form a coalition with only the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if reformists_resign or not aspd_dead: and the <span style="color: #fe9e00;">**ASPD**</span>?].
+title: We will form a coalition with only the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if reformists_resign or not aspd_dead: and the <span style="color: #fe9e00;">**ORP**</span>?].
 subtitle: With the <span style="color: #C0A054;">**Golds**</span> having lurched to the right, this may be a viable option.
 view-if: (marcher_r_saxony + aspd_r_saxony + ddp_r_saxony >= 50) and gold_exist and not toleration_possible_saxony
 choose-if: ddp_relation >= 100 and ddp_ideology == "Left" and not bourgeois_parliament_ddp and liberal_cooperation < 10
@@ -806,7 +806,7 @@ on-arrival: saxony_marcher = 1; saxony_groko = 0; saxony_toleration = 0; commons
 Somehow, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is willing to form a coalition with us, without the increasingly <span style="color: #808080;">reactionary</span> <span style="color: #C0A054;">**Golds**</span> on board.
 
 @soclib_saxony_cvp
-title: We will form a coalition with only the <span style="color: #FFCC00;">liberals</span>[? if reformists_resign or not aspd_dead: and the <span style="color: #fe9e00;">**ASPD**</span>?].
+title: We will form a coalition with only the <span style="color: #FFCC00;">liberals</span>[? if reformists_resign or not aspd_dead: and the <span style="color: #fe9e00;">**ORP**</span>?].
 subtitle: With the <span style="color: #000000;">**Concord**</span> having lurched to the right, this may be a viable option.
 view-if: true_bourgeois_coalition_saxony < 50 and (marcher_r_saxony + aspd_r_saxony + ddp_r_saxony + gold_r_saxony + lvp_r_saxony >= 50) and concord_formed and concord_coalition_right
 choose-if: (gold_relation >= 60 and gold_ideology == "Left" and not lvp_formed and gold_exist) or (lvp_relation >= 70 and lvp_ideology != "Right" and lvp_formed) or (ddp_relation >= 70 and not gold_exist)
@@ -893,7 +893,7 @@ With our decline in popularity, and our party and the propertied refusing to gov
 title: Perhaps our splinter parties and the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> could be persuaded, in the name of stability?
 view-if: marcher_r_saxony + sapd_r_saxony + aspd_r_saxony + ddp_r_saxony >= 50 
 choose-if: (collectivist_relation >= 30 or (marcher_r_saxony + aspd_r_saxony + ddp_r_saxony >= 50 and ddp_relation >= 80)) and ((ddp_relation >= 80 and (ddp_ideology == "Left") and left_strength < 20 and saxony_marcher) or (ddp_relation >= 60 and marcher_r_saxony + sapd_r_saxony + aspd_r_saxony >= 50) or (marcher_r_saxony + sapd_r_saxony >= 50))
-unavailable-subtitle: [? if collectivist_relation < 30 and sapd_formed: The <span style="color: #9B0000;">**Laborists**</span> refuses. ?][? if ddp_relation < 60 and (reformists_resign or not aspd_dead): The <span style="color: #fe9e00;">**ASPD**</span> refuses. ?][? if (ddp_relation < 80 or ddp_ideology != "Left" or not marcher_r_saxony or left_strength >= 20) and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> refuses. ?]
+unavailable-subtitle: [? if collectivist_relation < 30 and sapd_formed: The <span style="color: #9B0000;">**Laborists**</span> refuses. ?][? if ddp_relation < 60 and (reformists_resign or not aspd_dead): The <span style="color: #fe9e00;">**ORP**</span> refuses. ?][? if (ddp_relation < 80 or ddp_ideology != "Left" or not marcher_r_saxony or left_strength >= 20) and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> refuses. ?]
 on-arrival: saxony_marcher = 1; saxony_marcher_splinter = 1; pro_republic += 1; guild_ddp -= 2; burgher_ddp -= 2; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
 
 We have cobbled together a majority coalition with other constitutional left-of-center parties.  Hopefully it lasts.
@@ -932,7 +932,7 @@ This development has weakened the[? if royalist_r_saxony < 10: already-strugglin
 @new_grand_coalition_saxony
 title: A [? if lvp_formed and stegerwald_path: Unity?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition is formed!
 subtitle: We have finally reconciled with the propertied parties, and they're willing to govern with us again.
-unavailable-subtitle: [? if red_saxony: The propertied are not ready to forgive us for coalitioning with the <span style="color: #700000;">**Collectivists**</span>. ?][? if unionist_relation < 50 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?][? if left_strength >= 25: Our Dornish organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ASPD</span>. ?][? if concord_formed: The <span style="color: #000000;">**Concord**</span> refuses to work with us. ?]
+unavailable-subtitle: [? if red_saxony: The propertied are not ready to forgive us for coalitioning with the <span style="color: #700000;">**Collectivists**</span>. ?][? if unionist_relation < 50 and stegerwald_path: We need higher relations with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if gold_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">Golds</span>?][? if lvp_formed: <span style="color: #C0A054;">Golds</span>?]. ?][? if left_strength >= 25: Our Dornish organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ORP</span>. ?][? if concord_formed: The <span style="color: #000000;">**Concord**</span> refuses to work with us. ?]
 view-if: marcher_coalition_saxony >= 50 and not saxony_groko
 choose-if: marcher_coalition_possible_saxony and left_strength < 25 and (concord_coalition_left or (concord_coalition_moderate and far_right_coalition_saxony < 50 and bourgeois_coalition_saxon < 50) or not concord_formed) and not red_saxony
 on-arrival: saxony_marcher = 1; saxony_groko = 1; saxony_toleration = 0; commons_royalist -= 3; disfavored_royalist -= 3; commons_marcher += 3; disfavored_marcher += 3; commons_royalist -= 3; disfavored_royalist -= 3; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; gold_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; red_saxony = 0; saxony_joever = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
@@ -1066,4 +1066,4 @@ subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 and not saxony_marcher_maj
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -= 3; pro_republic += 5; saxony_toleration = 0; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 1
 
-Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a goverment of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the propertied and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the collectivists... [? if aspd_share > 0: The ASPD seeing as we no longer require on coalition negoations to form goverment has decided to join us. ?] 
+Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a goverment of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the propertied and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the collectivists... [? if aspd_share > 0: The ORP seeing as we no longer require on coalition negoations to form goverment has decided to join us. ?] 

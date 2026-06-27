@@ -240,7 +240,7 @@ new-page: true
 
 = First <span style="color: #000000;">**[+ unionist_party_name +]**</span> Congress
 
-The <span style="color: #000000;">Faithful People's Party</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) has officially been founded! Adam Sedgewick, orchestrator of this arrangement and leader of the former <span style="color: #000000;">Unionists</span>, has been chosen as the interim leader of the new party.
+The <span style="color: #000000;">Commonwealth People's Conservative Party</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) has officially been founded! Adam Sedgewick, orchestrator of this arrangement and leader of the former <span style="color: #000000;">Unionists</span>, has been chosen as the interim leader of the new party.
 
 The <span style="color: #000000;">**[+ unionist_party_name +]**</span>'s inaugural congress will play a major role in shaping the direction of the newly founded party, and to elect a new chairman. It finally looks like we might have some competition now.
 
@@ -506,7 +506,7 @@ choose-if: westarp_unlock
 on-arrival: unionist_relation -= 10; concord_right += 3; burgher_unionist += 4; burgher_dnf -= 4; guild_unionist += 4; guild_dnf -= 4; landed_unionist += 2; landed_dnf -= 2; faithful_unionist -= 2; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Westmore"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-A key figure of the Commonwealth Right since the Republic's inception, Kuno von Westmore has ascended to the leadership role of the colossal <span style="color: #000000;">Faithful People's Party</span>—certainly a significant step up. His election was primarily driven by the unified support of the entire former <span style="color: #3E88B3;">nationalist</span> faction within the party.
+A key figure of the Commonwealth Right since the Republic's inception, Kuno von Westmore has ascended to the leadership role of the colossal <span style="color: #000000;">Commonwealth People's Conservative Party</span>—certainly a significant step up. His election was primarily driven by the unified support of the entire former <span style="color: #3E88B3;">nationalist</span> faction within the party.
 
 Westmore is highly experienced in managing internal dissent and is careful not to lean too heavily into any one particular wing of the party, aiming to avoid fracturing the organization. While the party program remains largely unchanged, there has been a noticeable increase in blood-purist and pro-monarchist rhetoric, as Westmore seeks to preserve the character of the now-defunct <span style="color: #3E88B3;">**Traditionalists**</span> within this new entity.
 

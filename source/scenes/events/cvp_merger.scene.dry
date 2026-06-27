@@ -20,7 +20,7 @@ new-page: true
 
 = The <span style="color: #000000;">Unionists</span> merges with the <span style="color: #3E88B3;">**Traditionalists**</span>
 
-The <span style="color: #000000;">Unionist Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Faithful People's Party</span> under [+ unionist_leader +], has been flirting with the idea of merging with [+ traditionalist_leader +]'s <span style="color: #3E88B3;">**Traditionalists**</span> for the past few months. Their mutual participation in the currently governing right-wing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #c00000;">Reformists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation.
+The <span style="color: #000000;">Unionist Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Commonwealth People's Conservative Party</span> under [+ unionist_leader +], has been flirting with the idea of merging with [+ traditionalist_leader +]'s <span style="color: #3E88B3;">**Traditionalists**</span> for the past few months. Their mutual participation in the currently governing right-wing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Royalists</span> and <span style="color: #c00000;">Reformists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation.
 
 Following our fallout with the <span style="color: #000000;">Unionist Party</span> over their new direction, our remaining allies within their ranks have been sidelined, leaving them powerless to oppose the proposed merger. This shift has enabled the party’s leadership, alongside newly integrated right-wing dissenting politicians, to open negotiations with the <span style="color: #3E88B3;">**Traditionalists**</span> on a possible unification. However, resistance remains: the <span style="color: #3E88B3;">**Traditionalists**</span>’s old guard, led by figures like Westmore and Tilford, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as War Loans.
 
@@ -210,7 +210,7 @@ view-if: not concord_economy and concord_reparations and concord_monarchy
 on-arrival: concord_economy = 1
 go-to: economy_right if concord_traditionalist_balance < 45; economy_moderate if concord_traditionalist_balance >= 45 and concord_traditionalist_balance < 55; economy_left if concord_traditionalist_balance >= 55
 
-A potential big-tent <span style="color: #000000;">Faithful People's Party</span> faces the difficult task of addressing the diverse economic concerns of its broad electoral base. This base spans across farmers, aristocrats, landowners, large businesses, small businesses, civil servants, white-collar workers, blue-collar urban workers, and many others from all walks of life.
+A potential big-tent <span style="color: #000000;">Commonwealth People's Conservative Party</span> faces the difficult task of addressing the diverse economic concerns of its broad electoral base. This base spans across farmers, aristocrats, landowners, large businesses, small businesses, civil servants, white-collar workers, blue-collar urban workers, and many others from all walks of life.
 
 @economy_right
 on-arrival: concord_traditionalist_balance += 10; concord_right += 5; landed_unionist += 2; landed_dnf -= 2; guild_unionist += 6; guild_dnf -= 2; guild_gold -= 2; guild_lvp -= 2; burgher_unionist += 4; burgher_dnf -= 2; commons_unionist -= 3; commons_marcher += 5; disfavored_unionist -= 3; disfavored_marcher += 5
@@ -315,7 +315,7 @@ face-image: img/cvp.jpg
 call: cvp_formed
 achievement: christliche_volkspartei
 
-The agreement is finalized, and the <i>Faithful People's Party</i> (<span style="color: #000000;">Faithful People's Party</span>) is born.
+The agreement is finalized, and the <i>Commonwealth People's Conservative Party</i> (<span style="color: #000000;">Commonwealth People's Conservative Party</span>) is born.
 
 The <span style="color: #000000;">**Concord**</span> aims to follow the Essen Program of 4285, transforming the Commonwealth Right into a party that rallies around <span style="color: #000000;">Faithful</span>, <span style="color: #586593;">democratic</span>, <span style="color: #000000;">Commonwealth</span>, and <span style="color: #c00000;">social</span> principles.
 
@@ -334,7 +334,7 @@ subtitle: Huh?
 call: cvp_dvp_formed
 view-if: concord_gold_trigger
 
-Before the <span style="color: #000000;">Faithful People's Party</span> was to be announced to the public, representatives from the beleaguered <span style="color: #C0A054;">**Golds**</span> have shown their interest in joining the arrangement as well.
+Before the <span style="color: #000000;">Commonwealth People's Conservative Party</span> was to be announced to the public, representatives from the beleaguered <span style="color: #C0A054;">**Golds**</span> have shown their interest in joining the arrangement as well.
 
 This leaves the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> as the only liberal party in the political landscape, now flourishing with defections from the <span style="color: #C0A054;">**Golds**</span>'s left wing.
 

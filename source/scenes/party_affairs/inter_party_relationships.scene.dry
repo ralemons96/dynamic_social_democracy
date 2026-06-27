@@ -15,7 +15,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @liberals_ddp: Strengthen our bonds with the left-liberal [? if ddp_name == "Gold": <span style="color: #D3C24D;">Commonwealth Democratic Party</span>?][? if ddp_name == "DStP": <span style="color: #D3C24D;">Commonwealth State Party</span>?].
 - @liberals_lvp: Strengthen our bonds with the <span style="color: #FFCC00;">Golds</span>.
 - @center: Strengthen our bonds with the Faithful [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
-- @cvp: Reconcile with the <span style="color: #000000;">Faithful People's Party</span>.
+- @cvp: Reconcile with the <span style="color: #000000;">Commonwealth People's Conservative Party</span>.
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
 - @dnvp: Open dialogue with [? if traditionalist_leader != "Maine": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Maine": Maine and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
