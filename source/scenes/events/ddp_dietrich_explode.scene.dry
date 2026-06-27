@@ -160,15 +160,15 @@ Reinhardt Tinsmore, a Commonwealth-Freehold economist who rose from immigrant be
 Relations have improved compared to Dietrich’s tenure, as Tinsmore's strained ties with parties to the right of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>—who scorn his foreign origins—have made cooperation with us easier. Meanwhile, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn’t <span style="color: #ff0000;">moribund</span> after all?
 
 @luders
-title: Marie-­Elisabeth Lüders is elected!
+title: Margery Thayer is elected!
 subtitle: The most active woman within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and strongly internationalist. Associated with the party's left wing.
 view-if: dietrich_resign_ddp_left
-on-arrival: ddp_leader = "Lüders"; ddp_relation += 15; ddp_left += 5; ddp_cohesion -= 3; nationalism -= 5; landed_ddp *= 0.5; guild_ddp *= 0.5; guild_gold += 5; landed_gold += 3; faithful_ddp *= 0.5; faithful_unionist += 2; burgher_ddp *= 2; burgher_marcher -= 10; commons_ddp += 6; commons_marcher -= 4; commons_collectivist -= 2; pro_republic += ddp_votes + 2; eu_progress += 1; west_relation += 1
+on-arrival: ddp_leader = "Thayer"; ddp_relation += 15; ddp_left += 5; ddp_cohesion -= 3; nationalism -= 5; landed_ddp *= 0.5; guild_ddp *= 0.5; guild_gold += 5; landed_gold += 3; faithful_ddp *= 0.5; faithful_unionist += 2; burgher_ddp *= 2; burgher_marcher -= 10; commons_ddp += 6; commons_marcher -= 4; commons_collectivist -= 2; pro_republic += ddp_votes + 2; eu_progress += 1; west_relation += 1
 face-image: img/portraits/luders.jpg
 
-Marie-Elisabeth Lüders, the second most important woman in the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and easily the most active advocate for the rights and wellbeing of women, children, and the workers of the Commonwealth, is elected to the leadership of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. This victory comes with the backing of Hollis Lindell and his liberal Free Guilds, who have gained significant influence in recent months.
+Margery Thayer, the second most important woman in the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and easily the most active advocate for the rights and wellbeing of women, children, and the workers of the Commonwealth, is elected to the leadership of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. This victory comes with the backing of Hollis Lindell and his liberal Free Guilds, who have gained significant influence in recent months.
 
-Our relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has greatly improved compared to how it was under Dietrich. Lüders is a strong internationalist and has previously advocated for continental cooperation, which will benefit us in future negotiations. She was also one of the strongest opponents of the merger with the Young Commonwealth Order, arguing against their blood-purism. However, it remains to be seen whether she will gain more votes than she loses due to her feminism, as many refuse to support her purely out of misogyny.
+Our relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has greatly improved compared to how it was under Dietrich. Thayer is a strong internationalist and has previously advocated for continental cooperation, which will benefit us in future negotiations. She was also one of the strongest opponents of the merger with the Young Commonwealth Order, arguing against their blood-purism. However, it remains to be seen whether she will gain more votes than she loses due to her feminism, as many refuse to support her purely out of misogyny.
 
 @deadlock
 title: The vote has been deadlocked!
