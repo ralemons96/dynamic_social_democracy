@@ -14,7 +14,7 @@ We must do something to protect the workers against these predations.
 
 # - @battle: Test our defense units in battle against the fascists!
 - @arm_rb: Increase training and armaments for the the Banners.
-- @if_training: Train Free Guild members to fight as part of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>.
+- @if_training: Train Free Guild members to fight as part of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>.
 - @prussian_police_training: Use the Heartland police to help train the the Banners.
 - @peace: Try to avoid all militant confrontations, as much as possible.
 - @truce_rfb: Try to make peace with the <span style="color: #8B0000;">**Vanguard**</span>.
@@ -42,7 +42,7 @@ view-if: iron_front_formed == 1
 on-arrival: banner_militancy += 0.03; banner_strength += 200; loyalist_strength += 50; 
 max-visits: 2
 
-As part of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>, we are increasing coordination between the the Banners and the Free Guilds, and many Free Guild members want to become more involved.
+As part of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>, we are increasing coordination between the the Banners and the Free Guilds, and many Free Guild members want to become more involved.
 
 @prussian_police_training
 view-if: heartland_leader = "Bristol" or heartland_leader = "Pendrigon" and heartland_police_loyalty > 0.5

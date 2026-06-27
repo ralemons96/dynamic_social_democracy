@@ -36,8 +36,8 @@ on-arrival: royalist_urgency += 1; knight_dissent -= 5; knight_strength += 5
 The <span style="color: #7A3C00;">Royalists</span> are one of the foremost threats to the Commonwealth republic. However, we are still formulating a strategy to confront them, and still trying to build up consensus within our party for action. Check back on this later.
 
 @iron_front
-title: Form the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>!
-subtitle: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> consists of the <span style="color: #c00000;">**Marchers**</span>, the Free Guilds, and the the Banners.
+title: Form the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>!
+subtitle: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span> consists of the <span style="color: #c00000;">**Marchers**</span>, the Free Guilds, and the the Banners.
 view-if: royalist_urgency >= 3 and iron_front_formed == 0
 on-arrival: iron_front_formed = 1; radicalization += 1; royalist_urgency += 1; commons_marcher += 5*(1-dissent); pro_republic += 5*(1-dissent); left_dissent -= 8; knight_dissent -= 10; knight_strength += 5
 on-display: {!  
@@ -54,9 +54,9 @@ on-display: {!
 !}
 achievement: eiserne_front
 
-The <span style="color: #7A3C00;">Royalist</span> threat can no longer be ignored. We must build a new organization to confront them - the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> - consisting of the <span style="color: #c00000;">**Marchers**</span>, the Greater Worker's Guild Free Guild federation, and the *the Banners* <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<span style="color: #DD0000;"><b><i>Rot</i></b></span>-<span style="color: #FFCC00;"><b><i>Gold</i></b></span>. We have a new symbol - the Three Arrows, pointing down towards the left.
+The <span style="color: #7A3C00;">Royalist</span> threat can no longer be ignored. We must build a new organization to confront them - the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> - consisting of the <span style="color: #c00000;">**Marchers**</span>, the Greater Worker's Guild federation, and the *Banners* <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<span style="color: #DD0000;"><b><i>Rot</i></b></span>-<span style="color: #FFCC00;"><b><i>Gold</i></b></span>. We have a new symbol - the Three Spears, pointing down towards the left.
 
-What do the three arrows stand for?
+What do the three spears stand for?
 
 - @unity: Unity, Activity, and Discipline.
 - @anti: Opposition to <span style="color: #7A3C00;">Imperial Sovereigntism</span>, <span style="color:rgb(90, 0, 0);">Halsmarkism</span>, and <span style="color: #808080;">Monarchism</span>.
@@ -82,4 +82,4 @@ go-to: if_end
 
 @if_end
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> has given a new energy to our party.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> has given a new energy to our party.

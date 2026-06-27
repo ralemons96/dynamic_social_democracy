@@ -610,7 +610,7 @@ Valdemar Voss is now an advisor.
 
 @add_mierendorff
 title: Carlo Marrow
-subtitle: Carlo Marrow is one of the youngest members of the Assembly, and the originator of the "Neo-Revisionist" movement. He is an anti-Royalist strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>, Warning About the <span style="color: #7A3C00;">Royalists</span> ?]
+subtitle: Carlo Marrow is one of the youngest members of the Assembly, and the originator of the "Neo-Revisionist" movement. He is an anti-Royalist strategist. {!<br><br>!}[? if difficulty < 0 : Actions - Build the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>, Warning About the <span style="color: #7A3C00;">Royalists</span> ?]
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
 view-if: mierendorff_advisor = 0 and n_advisors < 3

@@ -13,8 +13,8 @@ The <span style="color: #7A3C00;">far</span>-<span style="color: #003755;">right
 However, this show of unity lacks substance, as Mallin, Gallax, and the <span style="color: #3E88B3;">**Wardens**</span> compete against one another to assert themselves as the leader of the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span>. Gallax's erratic behavior—such as vanishing from the podium when <span style="color: #3E88B3;">**Wardens**</span> detachments march by—has offended many conservatives[? if bruning_time:, and inter-party polemics may only serve to reinforce Askew against their pressures?]. Luckily, the <span style="color: #3E88B3;">**Traditionalists**</span>'s leadership has dissuaded many influential guild-masters from taking part in this gathering. However, the inclusion of the <span style="color: #3E88B3;">**Wardens**</span> in this alliance—and a quiet, growing nostalgia for the old Empire—pressures the <span style="color: #3E88B3;">**Traditionalists**</span> to move toward closer ties.
 
 - @strategy: We must develop a coherent strategy to combat the Right.
-- @confronting_nazis.iron_front: We must form the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>!
-- @iron_front: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> will be our answer!
+- @confronting_nazis.iron_front: We must form the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>!
+- @iron_front: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span> will be our answer!
 
 @strategy
 view-if: royalist_urgency < 3

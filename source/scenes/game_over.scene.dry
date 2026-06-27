@@ -860,7 +860,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Iron Banners</div>
-      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Front</span>.</div>
+      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Banner</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2744,7 +2744,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Iron Banners</div>
-      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Front</span>.</div>
+      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Banner</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4627,7 +4627,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(91, 154, 141, 0.1);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Iron Banners</div>
-      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Front</span>.</div>
+      <div style="font-size: 90%; color: #444; "> - form the <span style="color: #c00000; font-weight: bold;">Iron</span> <span style="color: #1A1A1A; font-weight: bold;">Banner</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}

@@ -16,19 +16,19 @@ Carlo Marrow is the founder of the neo-revisionist ideological tendency, and sup
 - @root: Return to main
 
 @iron_front_buildup
-title: Build up the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>
+title: Build up the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>
 subtitle: Increase our propaganda measures to recruit more members into the the Banners. 
 choose-if: advisor_action_timer == 0 and iron_front_formed
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> has not yet been formed. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span> has not yet been formed. ?]
 on-arrival: advisor_action_timer = 6; banner_strength += 200*(commons_marcher_normalized / 100);
 
 We have recruited more members into the the Banners.
 
 
 @form_iron_front
-title: Forming the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>
+title: Forming the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>
 choose-if: advisor_action_timer == 0 and iron_front_formed == 0 and royalist_urgency >= 2
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> has already been formed. ?][? if royalist_urgency < 2 : The party does not yet see the danger of the <span style="color: #7A3C00;">Royalists</span>. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed : The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span> has already been formed. ?][? if royalist_urgency < 2 : The party does not yet see the danger of the <span style="color: #7A3C00;">Royalists</span>. ?]
 on-arrival: advisor_action_timer = 6; banner_strength += 50; royalist_urgency += 1
 go-to: confronting_nazis.iron_front 
 

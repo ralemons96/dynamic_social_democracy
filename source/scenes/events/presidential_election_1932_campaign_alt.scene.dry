@@ -148,14 +148,14 @@ We have a plethora of campaign options at our disposal.
 - @hope: Let's hope the Commonwealth will make the correct choice.
 
 @iron_front
-title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Bristol.
+title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> to support Bristol.
 view-if: iron_front_formed
 on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_braun
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Imperial Sovereigntism</span>, <span style="color:rgb(90, 0, 0);">Halsmarkism</span>, and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Imperial Sovereigntism</span>, <span style="color:rgb(90, 0, 0);">Halsmarkism</span>, and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election.
 
 @media
 title: Use our radio stations to broadcast in favor of Bristol.
@@ -270,14 +270,14 @@ We have a plethora of campaign options at our disposal.
 - @hope: Let's hope the Commonwealth will make the correct choice.
 
 @iron_front_rosenfeld
-title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> to support Pendrigon.
+title: Rally the full strength of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> to support Pendrigon.
 view-if: iron_front_formed
 on-arrival: radicalization = 3 if radicalization > 3; commons_marcher += radicalization + 3; burgher_marcher += radicalization + 2; disfavored_marcher += radicalization + 2; pro_republic += 3; nationalism -= 3; knight_dissent -= 10; knight_strength += 10; left_dissent -= 10; banner_strength += 100; commons_royalist -= 3 if strife >= 5 and far_right_paramilitary; burgher_royalist -= 3 if strife >= 5 and far_right_paramilitary; disfavored_royalist -= 3 if strife >= 5 and far_right_paramilitary
 max-visits: 1
 face-image: img/iron_front_poster.png
 go-to: campaigning_rosenfeld
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Imperial Sovereigntism</span> and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election. This will help us shore up support among more reluctant workers.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> immediately gets to work, rallying around its slogan of opposing <span style="color: #7A3C00;">Imperial Sovereigntism</span> and <span style="color: #808080;">Monarchism</span>, which is especially relevant in this election. This will help us shore up support among more reluctant workers.
 
 @media_rosenfeld
 title: Use our radio stations to broadcast in favor of Pendrigon.

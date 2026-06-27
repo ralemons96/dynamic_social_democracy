@@ -19,11 +19,11 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>
+= The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">Sovereigntists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the Free Guilds, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> is our new anti-<span style="color: #7A3C00;">Sovereigntists</span> coordination front, consisting of the <span style="color: #c00000;">**Marchers**</span>, the Free Guilds, and the the Banners. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>?
 
-[? if commons_marcher < 45 or commons_marcher < commons_royalist or commons_marcher < commons_collectivist : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>'s effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the <span style="color: #c00000;">**Marchers**</span> is no longer the dominant party among the workers. Many the Banners members have left, and many workers are not interested. ?]
+[? if commons_marcher < 45 or commons_marcher < commons_royalist or commons_marcher < commons_collectivist : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>'s effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the <span style="color: #c00000;">**Marchers**</span> is no longer the dominant party among the workers. Many the Banners members have left, and many workers are not interested. ?]
 
 - @defense: Rally for defense against the <span style="color: #7A3C00;">Sovereigntists</span> with the the Banners.
 - @pacifism: Rally for pacifism, against nationalism and war.
@@ -38,19 +38,19 @@ choose-if: resources >= banner_militarization_cost
 view-if: not banner_explode
 on-arrival: resources -= banner_militarization_cost; banner_strength += 50; banner_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">Sovereigntists</span> paramilitaries, strengthening the the Banners.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">Sovereigntists</span> paramilitaries, strengthening the the Banners.
 
 [? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
 
 @pacifism
 on-arrival: pacifism += 1; nationalism -= 5 if pacifism >= 3; commons_marcher += 5*(1-dissent) if pacifism >= 4; disfavored_marcher += 4*(1-dissent) if pacifism >= 4; burgher_marcher += 4*(1-dissent) if pacifism >= 4
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies against nationalism and war.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> rallies against nationalism and war.
 
 @republic
 on-arrival: pro_republic += 3*(1-dissent); democratization += 1; commons_marcher += 3*(1-dissent) if democratization >= 4; disfavored_marcher += 2*(1-dissent) if democratization >= 4; burgher_marcher += 3*(1-dissent) if democratization >= 4; ddp_left += 0.5 if democratization >= 4; lvp_left += 0.5 if democratization >= 4
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies in defense of the democratic republic and against <span style="color: #7A3C00;">dictatorship</span>.
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> rallies in defense of the democratic republic and against <span style="color: #7A3C00;">dictatorship</span>.
 
 @wtb
 view-if: wtb_adopted == 1
@@ -58,11 +58,11 @@ choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not marc
 unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the Voss Renewal Plan is necessary to continue an effective campaign. ?]
 on-arrival: commons_marcher += 4*(1-dissent); disfavored_marcher += 4*(1-dissent); burgher_marcher += 2*(1-dissent); guild_marcher += 1*(1-dissent); landed_marcher += 1*(1-dissent); commons_marcher += 4*(1-dissent) if wtb_implemented; disfavored_marcher += 4*(1-dissent) if wtb_implemented; landed_marcher += 2*(1-dissent) if wtb_implemented; burgher_marcher += 3*(1-dissent) if wtb_implemented; guild_marcher += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
 
-The Voss Renewal Plan is the rallying point for the entire <span style="color: #c00000;">**Marchers**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
+The Voss Renewal Plan is the rallying point for the entire <span style="color: #c00000;">**Marchers**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 @antisemitism
 title: Rally against blood-purism and in defense of the <span style="color: #005EB8;">beast-blooded</span>.
 view-if: confronting_antisemitism > 1
 on-arrival: nationalism -= 4*(1-dissent); pro_republic += 1.5*(1-dissent); confronting_antisemitism += 1; commons_royalist -= 4*(1-dissent); disfavored_royalist -= 4*(1-dissent); ddp_left += 0.5; lvp_left += 1
 
-The <span style="color: #7A3C00;">Royalists</span> and other <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> political movements are increasingly turning their hatred against the <span style="color: #005EB8;">beast-blooded</span> of the Commonwealth—those of orcish, goblin, and tiefling descent. The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> rallies in defense of individual <span style="color: #005EB8;">half-bloods</span> and the broader community against violence.
+The <span style="color: #7A3C00;">Royalists</span> and other <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> political movements are increasingly turning their hatred against the <span style="color: #005EB8;">beast-blooded</span> of the Commonwealth—those of orcish, goblin, and tiefling descent. The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> rallies in defense of individual <span style="color: #005EB8;">half-bloods</span> and the broader community against violence.

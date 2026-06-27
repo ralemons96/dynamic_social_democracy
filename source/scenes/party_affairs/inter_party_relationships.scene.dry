@@ -420,7 +420,7 @@ on-arrival: commons_ddp = 0; burgher_ddp = 0; guild_ddp = 0; landed_ddp = 0; fai
 We have formed the anti-Liberal front with Crowde's faction within the <span style="color: #7A3C00;">**Royalists**</span>. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and <span style="color: #3E88B3;">**Traditionalists**</span> also join in.
 
 @nsdap_wholesome_2
-title: Merge the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> and the Stowford Front.
+title: Merge the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> and the Stowford Front.
 unavailable-subtitle: [? if royalist_relation < 50: We need higher relations. ?][? if not harzburg_front_seen: The Stowford Front hasn't been invented yet. ?]
 choose-if: royalist_relation >= 50 and harzburg_front_seen
 on-arrival: banner_strength += loyalist_strength; banner_strength += warden_strength; banner_militancy += 0.5; loyalist_strength = 0; warden_strength = 0
