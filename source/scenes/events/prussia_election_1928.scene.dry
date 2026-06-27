@@ -1162,7 +1162,7 @@ on-arrival: in_center_right_coalition_heartland = 1; hands_tied_heartland = 0; h
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition_prussia
-title: Refuse to form a government, so that a Bürgerblock may be formed.
+title: Refuse to form a government, so that a Propertied Bloc may be formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others ([+ center_right_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others** ([+ center_right_coalition_heartland +]%)
 view-if: concord_formed and center_right_coalition_heartland >= 50
@@ -1173,7 +1173,7 @@ on-arrival: in_center_right_coalition_heartland = 1; hands_tied_heartland = 0; h
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition_kvp_prussia
-title: Refuse to form a government, so that a Bürgerblock may be formed.
+title: Refuse to form a government, so that a Propertied Bloc may be formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 view-if: bourgeois_coalition_heartland >= 50 and not concord_formed

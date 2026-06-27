@@ -65,7 +65,7 @@ After the success of the coalition government with the <span style="color: #7000
 @kpd_blutmai
 on-arrival: collectivist_relation += 3*(1 - dissent); reformist_dissent += 1
 
-After the events of Blütmai, reconciling with the <span style="color: #700000;">Collectivists</span> is difficult, if not impossible. Nevertheless, we must try.
+After the events of the Red Spring, reconciling with the <span style="color: #700000;">Collectivists</span> is difficult, if not impossible. Nevertheless, we must try.
 
 @center
 subtitle: -1 resources

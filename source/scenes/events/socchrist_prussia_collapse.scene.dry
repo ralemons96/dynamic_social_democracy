@@ -66,7 +66,7 @@ There are enough votes for the <span style="color: #7A3C00;">Royalists</span> an
 A wave of terror and repression unfolds, targeting the <span style="color: #c00000;">Reformists</span> and <span style="color: #700000;">collectivists</span>. Violence erupts in the streets, with bullets flying and leftists being killed or imprisoned.
 
 @right_coalition
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #3E88B3;">**Traditionalists**</span> + **Others** ([+ right_coalition_heartland +]%)
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed:&nbsp;+ <span style="color: #C0A054;">Golds</span>?] + <span style="color: #3E88B3;">Traditionalists</span> + Others ([+ right_coalition_heartland +]%) [? if (traditionalist_ideology == "Radical" and not traditionalist_westarp) or (year = 1929 and month >= 7):- The <span style="color: #3E88B3;">Traditionalists</span> is not interested in a coalition with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].?]
 view-if: right_coalition_heartland >= 50 and not concord_formed
@@ -80,7 +80,7 @@ It won't take long for the government to collapse and for us to take power throu
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @center_right_coalition
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others + <span style="color: #3E88B3;">Traditionalists</span> ([+ center_right_coalition_heartland +]%) [? if (year = 1929 and month >= 7): The <span style="color: #3E88B3;">Traditionalists</span> is not interested in a coalition with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].?]
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #3E88B3;">**Traditionalists**</span> ([+ center_right_coalition_heartland +]%)
 view-if: traditionalist_ideology == "Moderate" and center_right_coalition_heartland >= 50 and dnf_formed and right_coalition_heartland < 50 and not lvp_formed and not concord_formed
@@ -94,7 +94,7 @@ It won't take long for the government to collapse and for us to take power throu
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others ([+ center_right_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others** ([+ center_right_coalition_heartland +]%)
 view-if: concord_formed and center_right_coalition_heartland >= 50
@@ -105,7 +105,7 @@ Letting go the democratic bulwark to the right-wing parties is deeply unpopular 
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition_kvp
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 view-if: bourgeois_coalition_heartland >= 50 and not concord_formed

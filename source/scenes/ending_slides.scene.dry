@@ -199,7 +199,7 @@ We are only able to enter government as part of a "left bloc" with the <span sty
 - @go_back
 
 @civil_war_win
-title: Bürgerkrieg
+title: Civil War
 subtitle: Ending 4
 view-if: civil_war_seen and republic_victory
 new-page: true

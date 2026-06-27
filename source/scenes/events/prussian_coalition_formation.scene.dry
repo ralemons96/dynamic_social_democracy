@@ -276,7 +276,7 @@ The <span style="color: #700000;">**Collectivists**</span> presents us with a li
 They say that they expect to see these goals fulfilled in [+ collectivist_ultimatum_heartland_timer +] months. Otherwise, they will vote to dissolve the coalition.
 
 @right_coalition_prussia
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed and gold_exist: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + <span style="color: #3E88B3;">**Traditionalists**</span> + **Others** ([+ right_coalition_heartland +]%)
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span>[? if gold_exist and not lvp_formed:&nbsp;+ <span style="color: #C0A054;">Golds</span>?][? if lvp_formed:&nbsp;+ <span style="color: #C0A054;">Golds</span>?] + <span style="color: #3E88B3;">Traditionalists</span> + Others ([+ right_coalition_heartland +]%) [? if (traditionalist_ideology == "Radical" and not traditionalist_westarp) or (year = 1929 and month >= 7):- The <span style="color: #3E88B3;">Traditionalists</span> is not interested in a coalition with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].?]
 view-if: right_coalition_heartland >= 50 and not concord_formed
@@ -288,7 +288,7 @@ on-arrival: in_right_coalition_heartland = 1; hands_tied_heartland = 0; hands_ti
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @center_right_coalition_prussia
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others + <span style="color: #3E88B3;">Traditionalists</span> ([+ center_right_coalition_heartland +]%) [? if (year = 1929 and month >= 7): The <span style="color: #3E88B3;">Traditionalists</span> is not interested in a coalition with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].?]
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others** + <span style="color: #3E88B3;">**Traditionalists**</span> ([+ center_right_coalition_heartland +]%)
 view-if: traditionalist_ideology == "Moderate" and center_right_coalition_heartland >= 50 and dnf_formed and right_coalition_heartland < 50 and not lvp_formed and not concord_formed
@@ -300,7 +300,7 @@ on-arrival: in_center_right_coalition_heartland = 1; hands_tied_heartland = 0; h
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition_prussia
-title: A Bürgerblock is formed.
+title: A Propertied Bloc is formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others ([+ center_right_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?] + **Others** ([+ center_right_coalition_heartland +]%)
 view-if: concord_formed and center_right_coalition_heartland >= 50
@@ -311,7 +311,7 @@ on-arrival: in_center_right_coalition_heartland = 1; hands_tied_heartland = 0; h
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
 @bourgeois_coalition_kvp_prussia
-title: Refuse to form a government, so that a Bürgerblock may be formed.
+title: Refuse to form a government, so that a Propertied Bloc may be formed.
 unavailable-subtitle: <span style="color: #000000;">[+ unionist_party_name +]</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">Golds</span>?]?][? if lvp_formed:<span style="color: #C0A054;">Golds</span>?] + Others[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 subtitle: <span style="color: #000000;">**[+ unionist_party_name +]**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if gold_exist:&nbsp;+ <span style="color: #C0A054;">**Golds**</span>?]?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] + **Others**[? if kvp_formed:&nbsp;+ <span style="color: #0087DC;">**CPP**</span>?] ([+ bourgeois_coalition_heartland +]%)
 view-if: bourgeois_coalition_heartland >= 50 and not concord_formed

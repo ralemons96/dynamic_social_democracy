@@ -435,7 +435,7 @@ By some miracle for the Commonwealth Right, they have managed to persuade Paul v
 
 How Lethmoor would govern remains uncertain. It is highly likely that, much like DuFour, a camarilla of close advisors would shape his decisions from behind the scenes.
 
-His candidacy is backed by the [? if not vorbeck_fallback: [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?], along with a disparate coalition of minor propertied parties. ?][? if vorbeck_fallback: entirety of the Bürgerblock parties, who view him as their collective last hope at retaining power. ?]
+His candidacy is backed by the [? if not vorbeck_fallback: [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?], along with a disparate coalition of minor propertied parties. ?][? if vorbeck_fallback: entirety of the Propertied Bloc parties, who view him as their collective last hope at retaining power. ?]
 
 - @harzburg: We await the decision of the Stowford Front.
 
