@@ -14,7 +14,7 @@ go-to: deport_violence if loyalist_strength >= 200; deport_success if loyalist_s
 
 @deport_violence
 
-When the police approach, he is surrounded by his <span style="color: #7A3C00;">**Loyalists**</span> guards, preventing him from being extricated! We can attempt to force a confrontation, but that may have negative consequences. The the Banners may also attempt to draw off the <span style="color: #7A3C00;">**Loyalists**</span>.
+When the police approach, he is surrounded by his <span style="color: #7A3C00;">**Loyalists**</span> guards, preventing him from being extricated! We can attempt to force a confrontation, but that may have negative consequences. The Banners may also attempt to draw off the <span style="color: #7A3C00;">**Loyalists**</span>.
 
 - @force_approach: Force the approach!
 - @no_deport: Cancel the deportation.

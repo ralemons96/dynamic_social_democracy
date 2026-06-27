@@ -622,7 +622,7 @@ Carlo Marrow is now an advisor.
 
 @add_schumacher
 title: Kurt Shackley
-subtitle: Kurt Shackley is a Great War veteran and energetic speaker for the <span style="color: #c00000;">social-democratic</span> cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the the Banners, Addressing the Economic Crisis ?]
+subtitle: Kurt Shackley is a Great War veteran and energetic speaker for the <span style="color: #c00000;">social-democratic</span> cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Banners, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor

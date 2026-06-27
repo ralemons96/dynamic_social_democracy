@@ -2753,7 +2753,7 @@ subtitle: This is a point of no return.
 unavailable-subtitle: [? if staal_marcher_r < 5: Our relations with Staal are too low. ?][? if staal_marcher_support < 8: Our party won't support compromising our independence. ?]
 choose-if: staal_marcher_r >= 5 and staal_marcher_support >= 8
 
-Exploiting our unusually good relations with the chancellor, we have moved to strike a deal with him to block <span style="color: #7A3C00;">Royalist</span> entry into the cabinet. We have threatened mass action by organized labor and the withdrawal of the the Banners from his plans. Yet Staal sees greater advantage in aligning with the <span style="color: #7A3C00;">Royalists</span> regardless, and we are negotiating from a position of weakness.
+Exploiting our unusually good relations with the chancellor, we have moved to strike a deal with him to block <span style="color: #7A3C00;">Royalist</span> entry into the cabinet. We have threatened mass action by organized labor and the withdrawal of the Banners from his plans. Yet Staal sees greater advantage in aligning with the <span style="color: #7A3C00;">Royalists</span> regardless, and we are negotiating from a position of weakness.
 
 What shall we give up?
 
@@ -2784,13 +2784,13 @@ The working class is not entirely won over to the chancellor yet, and we stand t
 - @schleicher_dsu_nay_2
 
 @schleicher_reichsbanner
-title: The the Banners is integrated into the state.
+title: The Banners is integrated into the state.
 subtitle: We will be defenseless.
 on-arrival: staal_marcher_para = 1; staal_marcher_concession += 1; staal_marcher_influence += 2; army_strength += 75; army_militancy -= (1 - banner_militancy); banner_militancy = 0.02; banner_strength = 300; loyalist_strength += 50; vanguard_strength += 200; heartland_police_militancy = 1.5; heartland_police_strength += 15; commons_marcher -= 4; disfavored_marcher -= 6; burgher_marcher -= 2; commons_collectivist += 2; disfavored_collectivist += 4; knight_dissent += 60; knight_strength -= 10; labor_dissent += 30; center_dissent += 20; left_dissent += 50; reformist_dissent += 10; dues -= 1 if dues > 1; pro_republic -= 10
 
-The the Banners has been largely disarmed, with Staal promising increased funding for the police to maintain order in the streets.
+The Banners has been largely disarmed, with Staal promising increased funding for the police to maintain order in the streets.
 
-The <span style="color: #c00000;">**Marchers**</span> is demoralized, as many the Banners members defect to the <span style="color: #700000;">**Collectivists**</span> and their <span style="color: #700000;">**Vanguard**</span>. We are now compelled to back the Commonwealth Army's auxiliaries in their campaigns against the <span style="color: #700000;">**Collectivists**</span>.
+The <span style="color: #c00000;">**Marchers**</span> is demoralized, as many Banner members defect to the <span style="color: #700000;">**Collectivists**</span> and their <span style="color: #700000;">**Vanguard**</span>. We are now compelled to back the Commonwealth Army's auxiliaries in their campaigns against the <span style="color: #700000;">**Collectivists**</span>.
 
 - @schleicher_dsu_nay_2
 
@@ -3307,7 +3307,7 @@ go-to: cvp_demands_menu
 A demand put forth by their <span style="color: #3E88B3;">nationalist</span> Right-<span style="color: #000000;">Faithful</span>, and <span style="color: #C0A054;">industrial</span> wing, meeting this has secured us substantial progress in negotiations.
 
 @cvp_reichsbanner
-title: We must disarm the the Banners.
+title: We must disarm the Banners.
 subtitle: The <span style="color: #000000;">**[+ unionist_party_name +]**</span> insist that they pose a threat to the stability of the government—and that the job should be left to the police.
 tags: cvp_demands
 view-if: concord_banner_accepted = 0
@@ -3348,7 +3348,7 @@ on-arrival: concord_chancellor_accepted = 0; concord_negotiations_points -= 10
 go-to: cvp_demands_menu
 
 @drop_cvp_reichsbanner
-title: Drop our promise to disarm the the Banners.
+title: Drop our promise to disarm the Banners.
 tags: drop_cvp_demands
 view-if: concord_banner_accepted = 1
 on-arrival: concord_banner_accepted = 0; concord_negotiations_points -= 10

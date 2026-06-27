@@ -1,4 +1,4 @@
-title: The the Banners Is Banned!
+title: The Banners Is Banned!
 subtitle: Our so-called "revolutionary militia" is now officially outlawed nationwide.
 view-if: chancellor == "Staal" and (dsu_in_gov or dsu_was_gov) and dsu_policy and ((reichstag_joever_time >= 8 and not staal_post_protests) or (reichstag_joever_time >= 18 and staal_post_protests)) and banner_force < 20 and (state_force + far_right_force) >= 80 and not staal_pause and (heartland_leader == "Crowde" or heartland_leader == "Goodlake")
 max-visits: 1
@@ -20,7 +20,7 @@ on-display: {!
 
 = the Banners Banned
 
-Following months of state repression, the hollowed-out remnants of the the Banners are officially banned. With the more moderate fighters having retired or been absorbed into the state’s militias, only die-hard <span style="color: #c00000;">Reformists</span> remain in the self-defense organization. This has given Staal the pretext to brand the <span style="color: #700000;">**Vanguard**</span> and the the Banners as jointly conspiring toward revolutionary overthrow—and to extend the ban to both.
+Following months of state repression, the hollowed-out remnants of the Banners are officially banned. With the more moderate fighters having retired or been absorbed into the state’s militias, only die-hard <span style="color: #c00000;">Reformists</span> remain in the self-defense organization. This has given Staal the pretext to brand the <span style="color: #700000;">**Vanguard**</span> and the Banners as jointly conspiring toward revolutionary overthrow—and to extend the ban to both.
 
 If this ban goes through, we will be left defenseless against state oppression. Many in the party urge us to resist, while others claim that the era of paramilitaries is over and argue for preemptive disarmament to placate Staal.
 
@@ -30,7 +30,7 @@ If this ban goes through, we will be left defenseless against state oppression. 
 @fight
 title: Fight!
 
-Are you sure? Staal is only moving against the the Banners because he feels confident now that it’s weak. He may be eagerly awaiting a pretext to strike at the <span style="color: #c00000;">**Marchers**</span> itself. The full force of the state is more than we can resist.
+Are you sure? Staal is only moving against the Banners because he feels confident now that it’s weak. He may be eagerly awaiting a pretext to strike at the <span style="color: #c00000;">**Marchers**</span> itself. The full force of the state is more than we can resist.
 
 You should reconsider.
 
@@ -38,7 +38,7 @@ You should reconsider.
 - @rb_explode
 
 @rb_explode
-title: Disband the the Banners.
+title: Disband the Banners.
 subtitle: +2 resources
 on-arrival: {!
 Q.banner_explode = 1;

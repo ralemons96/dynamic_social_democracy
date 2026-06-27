@@ -26,12 +26,12 @@ If a majority isn't received, the alternative would be to pit the <span style="c
 - @Sovereigntist
 
 @Sovereigntist
-title: Immediately strengthen the the Banners in response.
+title: Immediately strengthen the Banners in response.
 subtitle: -1 resource
 unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
 on-arrival: royalist_urgency += 1; resources -= 1; banner_strength += 200; banner_militancy += 0.05
 
-This development has persuaded the <span style="color: #c00000;">**Marchers**</span> leadership—and Joran Vesh himself—to grant the the Banners independent authority and financial support, which its leaders deem essential.
+This development has persuaded the <span style="color: #c00000;">**Marchers**</span> leadership—and Joran Vesh himself—to grant the Banners independent authority and financial support, which its leaders deem essential.
 
 Such backing is especially critical following our loss of Heartland and its well-equipped police force.

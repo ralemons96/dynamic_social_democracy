@@ -8,14 +8,14 @@ tags: party_affairs; antifascism
 
 = Streetfighting
 
-Battles rage on the streets between the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>, nationalist <span style="color: #3E88B3;">**Wardens**</span>, collectivist <span style="color: #8B0000;">**Red Vanguard**</span>, and our own the Banners. In some parts of the country, conditions are nearing civil war levels, as dozens of people are killed each month.
+Battles rage on the streets between the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>, nationalist <span style="color: #3E88B3;">**Wardens**</span>, collectivist <span style="color: #8B0000;">**Red Vanguard**</span>, and our own Banners. In some parts of the country, conditions are nearing civil war levels, as dozens of people are killed each month.
 
 We must do something to protect the workers against these predations.
 
 # - @battle: Test our defense units in battle against the fascists!
-- @arm_rb: Increase training and armaments for the the Banners.
+- @arm_rb: Increase training and armaments for the Banners.
 - @if_training: Train Free Guild members to fight as part of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>.
-- @prussian_police_training: Use the Heartland police to help train the the Banners.
+- @prussian_police_training: Use the Heartland police to help train the Banners.
 - @peace: Try to avoid all militant confrontations, as much as possible.
 - @truce_rfb: Try to make peace with the <span style="color: #8B0000;">**Vanguard**</span>.
 - @easy_discard
@@ -25,7 +25,7 @@ view-if: banner_militancy > 0.1 and banner_militancy < 0.5
 on-arrival: banner_militancy += 0.1; loyalist_strength += 40; banner_strength -= 100; 
 max-visits: 1
 
-Many the Banners members are not ready for actual fighting, and thus quit. However, the remainder are toughened as a result. Our confrontations also provide ample recruiting material for the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>.
+Many Banner members are not ready for actual fighting, and thus quit. However, the remainder are toughened as a result. Our confrontations also provide ample recruiting material for the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span>.
 
 @arm_rb
 subtitle: -[+ banner_militarization_cost +] resource
@@ -33,27 +33,27 @@ choose-if: resources >= banner_militarization_cost
 unavailable-subtitle: Not enough resources ([+ banner_militarization_cost +] needed).
 on-arrival: resources -= banner_militarization_cost; banner_militancy += 0.06; banner_strength += 50; loyalist_strength += 50; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
 
-We have increased training and purchased more armaments for the the Banners.
+We have increased training and purchased more armaments for the Banners.
 
-[? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] seem to be convinced that it is necessary for the the Banners to be militarized, and mute their criticisms. ?] ?]
+[? if not concord_leave_banner and not banner_exit: [? if strife < 5: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] decries the militarization of the Banners, and its members are leaving the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization. ?][? if strife >= 5: Seeing the strife that has filled the Commonwealth's streets, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed:<span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #C0A054;">**Golds**</span>?] seem to be convinced that it is necessary for the Banners to be militarized, and mute their criticisms. ?] ?]
 
 @if_training
 view-if: iron_front_formed == 1
 on-arrival: banner_militancy += 0.03; banner_strength += 200; loyalist_strength += 50; 
 max-visits: 2
 
-As part of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>, we are increasing coordination between the the Banners and the Free Guilds, and many Free Guild members want to become more involved.
+As part of the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span>, we are increasing coordination between the Banners and the Free Guilds, and many Free Guild members want to become more involved.
 
 @prussian_police_training
 view-if: heartland_leader = "Bristol" or heartland_leader = "Pendrigon" and heartland_police_loyalty > 0.5
 on-arrival: banner_militancy += 0.05; loyalist_strength += 50; heartland_police_training += 1
 
-The loyal sections of the Heartland police can help train the the Banners.
+The loyal sections of the Heartland police can help train the Banners.
 
 @peace
 on-arrival: banner_militancy -= 0.02; banner_strength -= 50; pacifism += 1
 
-By not fighting, the strength of the the Banners atrophies. Pacifists in the party are gaining the upper hand.
+By not fighting, the strength of the Banners atrophies. Pacifists in the party are gaining the upper hand.
 
 @truce_rfb
 subtitle: The <span style="color: #8B0000;">Vanguard</span> will be added to the balance of power.

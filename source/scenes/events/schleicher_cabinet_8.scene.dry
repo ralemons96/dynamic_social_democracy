@@ -30,7 +30,7 @@ With the <span style="color: #7A3C00;">Royalists</span> in government, they seek
 - @works_alt
 
 @interior
-title: The <span style="color: #7A3C00;">Royalists</span> crack down on the the Banners and <span style="color: #700000;">**Vanguard**</span>!
+title: The <span style="color: #7A3C00;">Royalists</span> crack down on the Banners and <span style="color: #700000;">**Vanguard**</span>!
 subtitle: Ordered by Bram Frask of the Interior Ministry.
 on-arrival: {!
 Q.staal_marcher_r -= 1;

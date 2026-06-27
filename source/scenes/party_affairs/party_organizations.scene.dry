@@ -15,7 +15,7 @@ In addition to being a political party, the <span style="color: #c00000;">**Marc
 - @newspapers: Fund more newspapers and journalists.
 - @welfare: Fund more mutual aid and welfare programs.
 - @culture: Fund sports leagues, educational, and cultural programs.
-- @rb: Fund the the Banners, our self-defense organization.
+- @rb: Fund the Banners, our self-defense organization.
 - @youth: We have the reputation of being a party for old men. Support the youth organizations.
 - @nothing: Do not increase funding for any program.
 - @easy_discard
@@ -54,7 +54,7 @@ subtitle: -1 resources
 view-if: not banner_explode
 on-arrival: resources -= 1; banner_strength  += 100; banner_militancy += 0.01; banner_timer = 0; funded_banner += 1
 
-We have increased recruiting to the the Banners.
+We have increased recruiting to the Banners.
 
 @youth
 choose-if: resources > 0
@@ -63,7 +63,7 @@ subtitle: -1 resources
 view-if: not banner_explode
 on-arrival: resources -= 1; banner_strength += 50; banner_militancy += 0.02; young_socialists += 1; left_strength += 5; knight_strength += 5; radicalization += 1;
 
-Our new youth members flock to the left or neorevisionist wings of the party, and also bring new radicalism to the the Banners.
+Our new youth members flock to the left or neorevisionist wings of the party, and also bring new radicalism to the Banners.
 
 @nothing
 

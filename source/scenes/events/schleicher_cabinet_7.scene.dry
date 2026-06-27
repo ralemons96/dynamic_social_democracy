@@ -30,7 +30,7 @@ The <span style="color: #7A3C00;">**Loyalists**</span>'s dramatic escalation of 
 
 Although Staal admires the patriotic militarism of the <span style="color: #7A3C00;">**Loyalists**</span>, he now dismisses it as little more than Glade's tool for a <span style="color: #c00000;">socialistic</span> "national revolution"—a gang of thugs turning their violence against ordinary citizens. Glade's open agitation for such a revolution has left Staal no choice but to ban the organization outright.
 
-But Staal's objective is already achieved: former "desirable" <span style="color: #7A3C00;">**Loyalists**</span> fighters have been integrated into a newly built militia attached to the Commonwealth Army, composed of ex-fighters and the unemployed. This force has been deployed to maintain order in the streets, working alongside the local police. However, they remain lenient toward their former comrades and display significant bias against the the Banners and <span style="color: #700000;">**Vanguard**</span>.
+But Staal's objective is already achieved: former "desirable" <span style="color: #7A3C00;">**Loyalists**</span> fighters have been integrated into a newly built militia attached to the Commonwealth Army, composed of ex-fighters and the unemployed. This force has been deployed to maintain order in the streets, working alongside the local police. However, they remain lenient toward their former comrades and display significant bias against the Banners and <span style="color: #700000;">**Vanguard**</span>.
 
 Nonetheless, this has succeeded in shifting public opinion toward the "law and order" chancellor, and further against the parliamentary system that failed to protect them.
 
@@ -38,14 +38,14 @@ Nonetheless, this has succeeded in shifting public opinion toward the "law and o
 - @schleicher_3
 
 @schleicher_2
-title: Maintain the funding of the the Banners.
+title: Maintain the funding of the Banners.
 
 It's good to maintain our own self-defense organization, just in case.
 
 @schleicher_3
-title: Defund the the Banners; the threat is no longer present.
+title: Defund the Banners; the threat is no longer present.
 subtitle: +[+ banner_disarm_cost +] resources
 view-if: banner_disarm_cost > 0
 on-arrival: banner_militancy *= 0.5; banner_strength -= 400; resources += banner_disarm_cost; disfavored_marcher -= 4; disfavored_collectivist += 2; vanguard_strength += 100
 
-With the Commonwealth Army keeping order in the streets, we have no further need for the the Banners's self-defense role. Better to spend our scarce funds on electoral propaganda rather than weapons.
+With the Commonwealth Army keeping order in the streets, we have no further need for the Banners's self-defense role. Better to spend our scarce funds on electoral propaganda rather than weapons.

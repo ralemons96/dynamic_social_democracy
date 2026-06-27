@@ -1,5 +1,5 @@
 title: the Banners Membership Dwindles
-subtitle: Our unpopularity has impaired the the Banners's recruitment ability.
+subtitle: Our unpopularity has impaired the Banners's recruitment ability.
 view-if: banner_militancy >= 0.1 and commons_marcher_normalized + disfavored_marcher_normalized < (commons_collectivist_normalized + commons_royalist_normalized + commons_traditionalist_normalized + (banner_militancy*100)) and time >= banner_unpopularity_time
 new-page: true
 tags: event
@@ -19,7 +19,7 @@ on-arrival: banner_unpopularity_time = time + 6
 
 = the Banners Membership Dwindles
 
-Unfortunately, the the Banners's effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the workers aren't particularly enthusiastic about joining. [? if left_strength >= 40: However, more militant members from our left wing have largely remained. ?] [? if marcher_votes >= 29: Furthermore, we are unable to recruit significant amount of supporters from non-worker demographics. ?]
+Unfortunately, the Banners's effectiveness is dragged down by the <span style="color: #c00000;">**Marchers**</span>'s unpopularity, as the workers aren't particularly enthusiastic about joining. [? if left_strength >= 40: However, more militant members from our left wing have largely remained. ?] [? if marcher_votes >= 29: Furthermore, we are unable to recruit significant amount of supporters from non-worker demographics. ?]
 
 - @reichsbanner_joever: Unfortunate.
 

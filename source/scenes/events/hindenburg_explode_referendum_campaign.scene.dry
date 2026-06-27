@@ -57,10 +57,10 @@ face-image: img/weimar_coalition_3.jpg
 go-to: do_campaign
 max-visits: 1
 
-We manage to funnel state funds into the coffers of the the Banners and various supporting <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties and organizations. Still, it pales in comparison to the mountains of silver and gold flowing to DuFour from the Commonwealth Army.
+We manage to funnel state funds into the coffers of the Banners and various supporting <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties and organizations. Still, it pales in comparison to the mountains of silver and gold flowing to DuFour from the Commonwealth Army.
 
 @reichsbanner
-title: It’s time for the the Banners to get a little more <i>active</i>.
+title: It’s time for the Banners to get a little more <i>active</i>.
 subtitle: -2 resource
 view-if: not bourgeois_campaign_dufour
 choose-if: resources >= 2 and knight_strength >= reformist_strength
@@ -70,7 +70,7 @@ face-image: img/reichsbanner_2.jpg
 go-to: do_campaign
 max-visits: 1
 
-The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The propertied parties are criticizing us turning the the Banners into a <span style="color: #c00000;">Reformist</span> militia.
+The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">**Loyalists**</span> have harassed us long enough—it’s time to strike back. The propertied parties are criticizing us turning the Banners into a <span style="color: #c00000;">Reformist</span> militia.
 
 @hope
 view-if: bourgeois_campaign_dufour or heartland_campaign_dufour or bourgeois_campaign_dufour

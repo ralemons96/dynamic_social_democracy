@@ -18,7 +18,7 @@ However, the true motivation is clear: the left-wing coalition governing Stathmo
 
 @defend
 title: Fight against this overthrow attempt!
-subtitle: Labor will call a general strike. The the Banners and Vanguard will be mobilized to resist the Commonwealth Army. 
+subtitle: Labor will call a general strike. The Banners and Vanguard will be mobilized to resist the Commonwealth Army. 
 
 The Commonwealth Army and Stalhelm are already preparing to enter Stathmore. Our forces are unprepared for a fight and many Reformists think that the risk of civl war over Stathmore is too high. Do we recognize this?
 
@@ -39,7 +39,7 @@ As the Commonwealth Army and their reactionary auxiliaries march into Stathmore,
 on-arrival: loyalist_strength *= 0.8; warden_strength *= 0.8; left_dissent -= 10; reformist_dissent -= 10; reichsexekution_defeated = 1; pro_republic += 5; commons_marcher += 4; disfavored_marcher += 4; commons_collectivist += 3; disfavored_collectivist += 3; commons_royalist -= 6; disfavored_royalist -= 6; dufour_angry -= 35; dufour_angry_bruning += 30; coup_victory = 1; collectivist_relation += 15; vanguard_strength += 100; vanguard_militancy += 0.1; banner_strength += 200
 achievement: drei_pfeile
 
-The the Banners and Vanguard confront the reactionaries on the road to Stathmore and somehow, the enemy has retreated without a fight! They were surprised by our resistance and DuFour has decided to not risk a civil war over Stathmore.
+The Banners and Vanguard confront the reactionaries on the road to Stathmore and somehow, the enemy has retreated without a fight! They were surprised by our resistance and DuFour has decided to not risk a civil war over Stathmore.
 
 This show of force has reinvigorated support for both the <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> and has weakened the Sovereigntists and reactionaries. DuFour's ire has also been turned away from us. For now. 
 

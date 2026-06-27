@@ -12,7 +12,7 @@ go-to: main_rally; sa_disrupt if loyalist_force > 25 and not loyalist_banned and
 The <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has disrupted our rally! Their street troops are preventing us from meeting.
 
 - @police_protect: Call the police to protect our rally.
-- @rb_protect: Use the the Banners to protect our rally.
+- @rb_protect: Use the Banners to protect our rally.
 - @both_protect: The police and the Banners should work together to protect our rally.
 - @cancel: Cancel the rally.
 
@@ -38,17 +38,17 @@ go-to: rb_protect_win if banner_success >= 0; rb_protect_lose if banner_success 
 @rb_protect_win
 go-to: main_rally
 
-The the Banners has successfully protected our rally against the <span style="color: #7A3C00;">**Loyalists**</span>! Our meeting can go ahead as usual.
+The Banners has successfully protected our rally against the <span style="color: #7A3C00;">**Loyalists**</span>! Our meeting can go ahead as usual.
 
 @rb_protect_lose
 on-arrival: commons_royalist += 3; banner_strength -= 50
 
-Unfortunately, the the Banners was not able to hold back the <span style="color: #7A3C00;">**Loyalists**</span> mob. The <span style="color: #7A3C00;">Royalists</span> have won this show of strength.
+Unfortunately, the Banners was not able to hold back the <span style="color: #7A3C00;">**Loyalists**</span> mob. The <span style="color: #7A3C00;">Royalists</span> have won this show of strength.
 
 @both_protect
 view-if: heartland_leader = "Bristol" or heartland_leader = "Pendrigon"
 choose-if: heartland_police_training > 0
-unavailable-subtitle: The loyal sections of the police have never coordinated with the the Banners before.
+unavailable-subtitle: The loyal sections of the police have never coordinated with the Banners before.
 on-arrival: banner_success = banner_strength*banner_militancy - loyalist_strength*loyalist_militancy + heartland_police_loyalty*heartland_police_militancy*heartland_police_strength*2; strife += 1
 go-to: both_protect_win if banner_success >= 0; both_protect_lose if banner_success < 0
 
