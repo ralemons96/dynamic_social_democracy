@@ -337,7 +337,7 @@ With local elections fast approaching, many parties have opted not to field thei
 - @westarp
 
 @jarres
-title: Lorne Jarrow, mayor of Duisburg, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 4290.
+title: Lorne Jarrow, mayor of Dunmoor, former Vice-Chancellor, and the <span style="color: #C0A054;">**Golds**</span>'s candidate in 4290.
 view-if: jarres_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/jarres.jpg

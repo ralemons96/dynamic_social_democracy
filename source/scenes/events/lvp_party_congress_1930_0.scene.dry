@@ -86,7 +86,7 @@ if (Q.interior_minister !== "Heath") Q.interior_minister = "Werth";
 
 if (Q.interior_minister_party !== "Marcher" && Q.in_social_liberal_coalition) Q.interior_minister_party = Q.ddp_name;
 if (Q.interior_minister_party !== "Marcher" && Q.in_social_liberal_coalition && Q.lvp_formed) Q.interior_minister_party = "LVP";
-if (Q.interior_minister !== "Heath" && Q.in_social_liberal_coalition) Q.interior_minister = "Külz";
+if (Q.interior_minister !== "Heath" && Q.in_social_liberal_coalition) Q.interior_minister = "Kells";
 
 if (Q.finance_minister_party !== "Marcher" && Q.in_grand_coalition && !Q.lvp_formed) {
     Q.finance_minister_party = "Gold";
@@ -96,7 +96,7 @@ if (Q.finance_minister_party !== "Marcher" && Q.in_grand_coalition && !Q.lvp_for
 if (Q.finance_minister !== "Bell" && (Q.in_grand_coalition)) Q.finance_minister = "Moldenhauer";
 
 if (Q.finance_minister_party !== "Marcher" && (Q.in_weimar_coalition && !Q.lvp_formed || Q.in_popular_front || Q.in_social_catholic_coalition)) Q.finance_minister_party = "Unionist";
-if (Q.finance_minister !== "Bell" && (Q.in_weimar_coalition && !Q.lvp_formed || Q.in_popular_front || Q.in_social_catholic_coalition)) Q.finance_minister = "Köhler";
+if (Q.finance_minister !== "Bell" && (Q.in_weimar_coalition && !Q.lvp_formed || Q.in_popular_front || Q.in_social_catholic_coalition)) Q.finance_minister = "Calder";
 
 if (Q.finance_minister_party !== "Marcher" && Q.in_social_liberal_coalition) Q.finance_minister_party = Q.ddp_name;
 if (Q.finance_minister_party !== "Marcher" && Q.in_social_liberal_coalition && Q.lvp_formed) Q.finance_minister_party = "LVP";
@@ -130,7 +130,7 @@ if (Q.justice_minister_party !== "Marcher" && !Q.lvp_formed) {
 if (Q.justice_minister !== "Radbourne") Q.justice_minister = "Penn";
 
 if (Q.justice_minister_party !== "Marcher" && (Q.in_popular_front && (Q.liberal_parliament === 1 || Q.bourgeois_parliament_ddp == 1 || Q.lvp_formed) || Q.in_social_catholic_coalition)) Q.justice_minister_party = "Unionist";
-if (Q.justice_minister !== "Radbourne" && (Q.in_popular_front && (Q.liberal_parliament === 1 || Q.bourgeois_parliament_ddp == 1 || Q.lvp_formed) || Q.in_social_catholic_coalition)) Q.justice_minister = "Guérard";
+if (Q.justice_minister !== "Radbourne" && (Q.in_popular_front && (Q.liberal_parliament === 1 || Q.bourgeois_parliament_ddp == 1 || Q.lvp_formed) || Q.in_social_catholic_coalition)) Q.justice_minister = "Verrald";
 
 if (Q.justice_minister_party !== "Marcher" && Q.in_social_liberal_coalition) Q.justice_minister_party = Q.ddp_name;
 if (Q.justice_minister_party !== "Marcher" && Q.in_social_liberal_coalition && Q.lvp_formed) Q.justice_minister_party = "LVP";

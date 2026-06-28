@@ -675,7 +675,7 @@ Fritz Bayle is now an advisor.
 
 @add_hirschfeld
 title: Magnus Harnfell
-subtitle: Magnus Harnfell is the founder of the Institut für Sexualwissenschaft and an advocate for the rights of sexual minorities. {!<br><br>!}[? if difficulty < 0 : Actions - Homosexual Rights, Women's Rights, Science Funding ?]
+subtitle: Magnus Harnfell is the founder of the Institute of Sexual Science and an advocate for the rights of sexual minorities. {!<br><br>!}[? if difficulty < 0 : Actions - Homosexual Rights, Women's Rights, Science Funding ?]
 is-card: true
 card-image: img/portraits/HirschfeldMagnus.jpg
 view-if: hirschfeld_advisor = 0 and n_advisors < 3

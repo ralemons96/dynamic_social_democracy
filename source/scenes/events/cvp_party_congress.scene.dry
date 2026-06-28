@@ -486,13 +486,13 @@ It goes without saying, this will make cooperation within the party impossible f
 
 @goerdeler
 title: Reynold Goodlake, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
-subtitle: Goodlake is the Mayor of Leipzig, harbouring fiscally conservative views and a support of <span style="color: #808080;">monarchism</span>. - <span style="color: #0087DC;">People's Conservatives</span>
+subtitle: Goodlake is the Mayor of Lindholt, harbouring fiscally conservative views and a support of <span style="color: #808080;">monarchism</span>. - <span style="color: #0087DC;">People's Conservatives</span>
 unavailable-subtitle: Goodlake is seen as too right-wing for the <span style="color: #0087DC;">Volkskonservativ</span> movement, who only begrudgingly supports his candidacy. - <span style="color: #0087DC;">People's Conservatives</span>
 choose-if: goerdeler_unlock
 on-arrival: unionist_relation -= 5; concord_right += 3; unionist_relation -= 5; nationalism += 5; pro_republic -= 3; burgher_unionist += 6; burgher_dnf -= 4; guild_unionist += 6; guild_dnf -= 4; faithful_unionist -= 4; faithful_marcher += 2; commons_unionist -= 4; disfavored_unionist -= 4; concord_leader = "Goodlake"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/goerdeler.jpg
 
-The Mayor of Leipzig Reynold Goodlake has been promoted to the leadership of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Goodlake is aligned more with Westmore than anything, but Trevannon is willing to give the mayor a go. Goodlake is known for his strong support and position in Askew's cabinet, and his fiscal conservatism has attracted support of key industrial backers.
+The Mayor of Lindholt Reynold Goodlake has been promoted to the leadership of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Goodlake is aligned more with Westmore than anything, but Trevannon is willing to give the mayor a go. Goodlake is known for his strong support and position in Askew's cabinet, and his fiscal conservatism has attracted support of key industrial backers.
 
 Goodlake's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. I actually don't know what to write for this guy, his WW2 anti-Royalist plots aren't relevant at this time since he viewed Gallax as an enlightened dictator at this time. I guess he supports taming the Royalists I guess?
 

@@ -98,11 +98,11 @@ if (Q.next_reichstag_month > 12) {
 Q.pro_republic += 3;
 Q.reichstag_goring = 0;
 Q.reichstag_president = "Lowe";
-if (!(Q.largest_party != "Royalist" && ((Q.weimar_coalition >= 40) || (Q.popular_front_coalition >= 50 && Q.collectivist_relation >= 50)))) Q.reichstag_president = "Eßer";
+if (!(Q.largest_party != "Royalist" && ((Q.weimar_coalition >= 40) || (Q.popular_front_coalition >= 50 && Q.collectivist_relation >= 50)))) Q.reichstag_president = "Esker";
 !}
 
 [? if largest_party != "Royalist": In Assembly tradition, as the <span style="color: #c00000;">**Marchers**</span> is the largest party, the <span style="color: #000000;">Unionist Party</span> feels bound to support us, regardless of our relations. ?][? if (unionist_relation >= 55 or gallax_right_coalition < 50) and largest_party == "Royalist": However, the <span style="color: #000000;">Unionist Party</span> simply cannot bring itself to support elevating a <span style="color: #7A3C00;">Royalist</span> to the Assembly presidency, breaking with tradition to elect our candidate. ?]
 
-[? if largest_party != "Royalist" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and collectivist_relation >= 50)): Paul Lowe is elected President of the Assembly once more, a position he held for the majority of the republic. ?][? if not (largest_party != "Royalist" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and collectivist_relation >= 50))): Unfortunately, very few other parties are willing—or have the votes—to back our candidate, Paul Lowe, and the chamber instead settles on the <span style="color: #000000;">Unionists</span>'s Thomas Eßer. ?]
+[? if largest_party != "Royalist" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and collectivist_relation >= 50)): Paul Lowe is elected President of the Assembly once more, a position he held for the majority of the republic. ?][? if not (largest_party != "Royalist" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and collectivist_relation >= 50))): Unfortunately, very few other parties are willing—or have the votes—to back our candidate, Paul Lowe, and the chamber instead settles on the <span style="color: #000000;">Unionists</span>'s Thomas Esker. ?]
 
 However, the Assembly agenda committee, over our objections, has voted for a two-week adjournment with the support of the parties to our right.
