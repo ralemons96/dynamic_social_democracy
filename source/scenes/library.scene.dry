@@ -478,7 +478,7 @@ go-to: menu
 @parties
 go-to: menu
 
-[? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span> - (Commonwealth National Unity Front) - A "presidential" party founded by Chancellor Kurt von Staal and his allies, this movement embraces a syncretic ideology that defies easy categorization within the political spectrum. At its core, it is built on militarism, nationalism, and corporatism. The party garners support from urbanites, blue-collar workers, the middle classes, and even some of the unemployed, all united by their shared loyalty to the chancellor. ?]
+[? if gnu_formed: <span style="color: #BFC8CC;">**GNU**</span> - (Commonwealth National Unity Front) - A "presidential" party founded by Chancellor Kurt Staal and his allies, this movement embraces a syncretic ideology that defies easy categorization within the political spectrum. At its core, it is built on militarism, nationalism, and corporatism. The party garners support from urbanites, blue-collar workers, the middle classes, and even some of the unemployed, all united by their shared loyalty to the chancellor. ?]
 
 [? if gnu_formed: Current relations: [+ gnu_relation : relationships +] ?]
 

@@ -9,12 +9,12 @@ go-to: schleicher_menu if not staal_marcher_adopted; schleicher_spd_established 
 
 = Relations with the Red General
 
-[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Kurt von Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker's Guild, our Free Guild, has shown some openness to an accommodation with General Kurt von Staal. He has also shown interest in winning over the Free Guild through his support for public works. ?]
+[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Kurt Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker's Guild, our Free Guild, has shown some openness to an accommodation with General Kurt Staal. He has also shown interest in winning over the Free Guild through his support for public works. ?]
 
 @schleicher_menu
 
 - @spd_schleicher_adopted: Adopt a policy of cooperation with the Red General!
-- @convince_spd_schleicher: Push the party toward a more cooperative line with von Staal.
+- @convince_spd_schleicher: Push the party toward a more cooperative line with Staal.
 - @united_front: Reiterate our opposition against the <span style="color: #808080;">reactionaries</span>.
 - @united_front_majority: Reiterate our opposition against the <span style="color: #808080;">reactionaries</span>.
 - @easy_discard
@@ -68,7 +68,7 @@ We continue to decry the anti-democratic opposition as ruinous to the Republic, 
 subtitle: More regular meetings will be held between the two groups.
 on-arrival: staal_marcher_r += 1; staal_marcher_support += 1; staal_marcher_influence += 1
 
-Regular secret meetings between the Greater Worker's Guild, the <span style="color: #c00000;">**Marchers**</span>, and von Staal are being held. This will aid in reducing the mutual distrust between the party and the government.
+Regular secret meetings between the Greater Worker's Guild, the <span style="color: #c00000;">**Marchers**</span>, and Staal are being held. This will aid in reducing the mutual distrust between the party and the government.
 
 @schleicher_distance
 subtitle: We will sideline his sympathizers.
@@ -128,6 +128,6 @@ on-arrival: staal_marcher_concession += 1; staal_marcher_influence += 2; staal_m
 
 Although many <span style="color: #808080;">reactionary</span> figures in the cabinet have already been replaced by <span style="color: #000000;">Unionist Party</span> appointees, further reform is needed to nudge Staal’s government toward a more democratic appearance.
 
-The Finance Ministry, previously held by Schwerin von Krosigk, is handed over to a more neutral, non-partisan banker. The Interior Ministry and the Minister without Portfolio post are assigned to the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?] moderate, Gottfried Trevannon. The Agricultural Ministry is granted to Sefton Sallow, a [? if not kvp_formed and traditionalist_ideology == "Radical": <span style="color: #7FCEB1;">**FCL**</span>?][? if kvp_formed: <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?] <span style="color: #385A38;">agrarian</span> in support of peasant homesteads.
+The Finance Ministry, previously held by Schwerin Krosigk, is handed over to a more neutral, non-partisan banker. The Interior Ministry and the Minister without Portfolio post are assigned to the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?] moderate, Gottfried Trevannon. The Agricultural Ministry is granted to Sefton Sallow, a [? if not kvp_formed and traditionalist_ideology == "Radical": <span style="color: #7FCEB1;">**FCL**</span>?][? if kvp_formed: <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?] <span style="color: #385A38;">agrarian</span> in support of peasant homesteads.
 
 Though these shifts may seem minor on the surface, the entry of more democratic-leaning ministers into the cabinet makes our continued support more palatable to both the party and our electorate—and subtly shifts the balance in key cabinet votes.

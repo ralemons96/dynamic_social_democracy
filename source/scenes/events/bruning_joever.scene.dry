@@ -12,7 +12,7 @@ face-image: img/portraits/AskewHeinrich.jpg
 
 Askew's days are numbered. The only reason President DuFour is keeping him around is solely by the fact of his foreign policy expertise, and his claim that he's only 'one hundred meters from the finish line' from achieving a huge breakthrough in terms of securing an abolishment of War Loans at Vera and the Commonwealth's rearmament at Vera, an issue close to DuFour's heart. The only hope for Askew's political salvation rests in those conferences. [? if not dufour_sacked: There is also no precedent of the President sacking a government that still enjoys a parliamentary majority. ?]
 
-However, General Kurt von Staal sees Askew as the biggest obstacle in his '<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>', as Askew has refused to take serious efforts toward bringing the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> into government. The sense of urgency Staal has invoked onto the issue, along with his convincing of DuFour's State Secretary Oren Marsden and his nephew Symonnet, has brought DuFour to make an early and rash decision on the matter.
+However, General Kurt Staal sees Askew as the biggest obstacle in his '<span class="tooltip-text" title="Coined by conservative elites like Staal and Goodryke, this strategy aims to control the dynamic Royalist movement and integrate it into the state by introducing the party to government. In their eyes, this would moderate the Royalists, transforming them into a constructive component of the state.">taming strategy</span>', as Askew has refused to take serious efforts toward bringing the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> into government. The sense of urgency Staal has invoked onto the issue, along with his convincing of DuFour's State Secretary Oren Marsden and his nephew Symonnet, has brought DuFour to make an early and rash decision on the matter.
 
 - @schleicher_time
 
@@ -44,7 +44,7 @@ To most political observers, Reynold Goodlake, Mayor of Lindholt and the Commonw
 However, his demands for authorization of sweeping fiscal reforms is too similar to that of Askew in Staal's eyes, who supports a public works solution to the Commonwealth's economic woes. Goodlake will not be the new chancellor.
 
 @westarp
-title: Kuno von Westmore?
+title: Kuno Westmore?
 subtitle: DuFour's preferred choice, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
 max-visits: 1
 on-arrival: westarp_seen = 1
@@ -56,13 +56,13 @@ DuFour's personal preference is the [? if traditionalist_leader != "Westmore":fo
 Even when DuFour was reduced to tears, a strategy that had worked on Askew before, Westmore remains firm in his refusal. Westmore will not be the new chancellor.
 
 @papen
-title: Franz von Goodryke?
+title: Franz Goodryke?
 subtitle: An relatively unknown Faithful Conservative from the <span style="color: #000000;">Unionist Party</span>. Staal's preferred candidate.
 on-arrival: marcher_toleration = 0; marcher_toleration_right = 0; chancellor = "Goodryke"; chancellor_party = "I"; staal_papen_r -= 1
 view-if: westarp_seen and goerdeler_seen
 face-image: img/portraits/GoodrykeFranz.jpg
 
-With Goodlake and Westmore out of the equation, DuFour has grasped the straw Staal offered and appointed a far-right Faithful Conservative, Franz von Goodryke, from the <span style="color: #000000;">Unionist Party</span>, as chancellor. Goodryke is relatively unknown, only whose political experience is limited to two terms in the Heartland state Assembly. The two have been friends since their days in the Heartland military academy.
+With Goodlake and Westmore out of the equation, DuFour has grasped the straw Staal offered and appointed a far-right Faithful Conservative, Franz Goodryke, from the <span style="color: #000000;">Unionist Party</span>, as chancellor. Goodryke is relatively unknown, only whose political experience is limited to two terms in the Heartland state Assembly. The two have been friends since their days in the Heartland military academy.
 
 Goodryke's decision to take the chancellorship, despite [+ unionist_leader +]'s urging and Goodryke's promise not to, DuFour has used the same tactic on him as he used on Askew, convincing him to accept the position. Due to Goodryke breaking his promise to [+ unionist_leader +] just after he made it, expulsion proceedings and against him are interrupted by his resignation from the <span style="color: #000000;">Unionist Party</span>, forever ruining his relations with the party necessary for a parliamentary majority as they strongly denounce him as the "Ephialtes of the <span style="color: #000000;">Unionist Party</span>".
 

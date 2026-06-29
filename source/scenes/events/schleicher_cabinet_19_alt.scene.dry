@@ -15,7 +15,7 @@ With his faith in the Commonwealth Army shattered, he has turned back to his old
 - @treviranus
 
 @treviranus
-title: Kuno von Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
+title: Kuno Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
 subtitle: DuFour's preferred choice once again, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
 face-image: img/portraits/Trevannon.jpg
 on-arrival: {!

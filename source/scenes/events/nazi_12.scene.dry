@@ -1,5 +1,5 @@
 title: The Camarilla Joins the Conspiracy
-subtitle: Symonnet von DuFour and Oren Marsden meet with [+ royalist_leader +] and Goodryke.
+subtitle: Symonnet DuFour and Oren Marsden meet with [+ royalist_leader +] and Goodryke.
 view-if: chancellor = "Staal" and staal_time == 7 and staal_explode
 new-page: true
 tags: event

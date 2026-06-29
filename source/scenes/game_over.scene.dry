@@ -512,7 +512,7 @@ view-if: total_defeat == 0 and long_war == 0 and staal_marcher and wtb_implement
 tags: endings
 go-to: eg_menu
 
-We were forced to strike a deal with Kurt von Staal, abandoning our pacifist and anti-militarist roots. With his reputation as a schemer, he could betray us at any moment.
+We were forced to strike a deal with Kurt Staal, abandoning our pacifist and anti-militarist roots. With his reputation as a schemer, he could betray us at any moment.
 
 Was it really worth it?
 

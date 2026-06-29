@@ -20,7 +20,7 @@ on-display: {!
 
 = Secret Commonwealth Army Meeting
 
-Through our intelligence work, the <span style="color: #c00000;">**Marchers**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Royalist</span> leaders Garrick Crowde, Ulric Gorrick, and [? if not rohm_explode: Isen Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], with former General Edwin von Stülpnagel, a close ally of Staal.
+Through our intelligence work, the <span style="color: #c00000;">**Marchers**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Royalist</span> leaders Garrick Crowde, Ulric Gorrick, and [? if not rohm_explode: Isen Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], with former General Edwin Stülpnagel, a close ally of Staal.
 
 The topic of the conference was about possible joint action between the Commonwealth Army and the <span style="color: #7A3C00;">**Loyalists**</span>, if the leftists were to make a move following the elections.
 
@@ -35,11 +35,11 @@ This all but confirms our suspicions that General Staal is conspiring with the <
 - @schleicher_2
 
 @schleicher_2
-title: Von Staal offers to meet with the Free Guilds, and to ease their fears.
+title: Staal offers to meet with the Free Guilds, and to ease their fears.
 subtitle: The Free Guilds are independent of the party, and have agreed to participate.
 on-arrival: staal_marcher_r += 1; staal_marcher_support += 1; labor_dissent += 5
 
-The invitation for a direct meeting between Tobias Leighart, leader of the Greater Worker's Guild, and von Staal is declined. Instead, a larger meeting is held, including Goodryke, his Interior Minister, and the Greater Worker's Guild’s co-chairs.
+The invitation for a direct meeting between Tobias Leighart, leader of the Greater Worker's Guild, and Staal is declined. Instead, a larger meeting is held, including Goodryke, his Interior Minister, and the Greater Worker's Guild’s co-chairs.
 
 At the meeting, the Free Guild leaders confront Staal over alleged secret agreements with the <span style="color: #7A3C00;">**Loyalists**</span>, prompting both Staal and Goodryke to strike a more conciliatory tone in response to Free Guild complaints about unfair government treatment. Staal denies any such deals with the <span style="color: #7A3C00;">**Loyalists**</span>, insisting that the government's highest priority is reducing unemployment. Goodryke also requests the Free Guilds to use their influence to persuade the <span style="color: #c00000;">**Marchers**</span> to give the government time to deliver results.
 

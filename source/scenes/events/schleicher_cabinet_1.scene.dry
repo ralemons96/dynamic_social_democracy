@@ -8,7 +8,7 @@ priority: 3
 on-arrival: pro_republic += 5; staal_marcher_support += 1; staal_marcher_support += 2 if wtb_adopted; staal_marcher_r += 1 if wtb_adopted; staal_approval += 1
 face-image: img/portraits/schleicher_chancellor.jpg
 
-= Von Staal Cabinet
+= Staal Cabinet
 
 Chancellor Staal has unveiled his new cabinet—retaining all but two of Goodryke’s ministers. His top priority, he claims, is putting people back to work. To that end, he has appointed Garren Aveling, President of the Rural Municipal Congress and a reformist economic theorist, as <i>Commonwealth Commissioner</i> for Employment, with a full seat in the cabinet.
 

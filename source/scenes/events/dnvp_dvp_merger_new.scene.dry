@@ -181,9 +181,9 @@ Major Factions:
 
 - @glatzel: Florian Vellt.
 - @treviranus: Gottfried Trevannon.
-- @raumer: Hans von Raumer.
+- @raumer: Hans Raumer.
 - @hergt: Cuthbert Hargen.
-- @westarp: Kuno von Westmore.
+- @westarp: Kuno Westmore.
 
 @glatzel
 subtitle: Hailing from the reformist elements of the <span style="color: #C0A054;">**Golds**</span>, he seeks to create a unitary force on the right.
@@ -197,7 +197,7 @@ Against expectations, Frank Vellt prevailed in a drawn‑out, multi‑round ba
 This outcome represents the best potential scenario for us, as Vellt remains open to some negotiation with the <span style="color: #c00000;">**Marchers**</span>. However, the new <span style="color: #00C0FF;">**FCP**</span> will still be a far more obstinate partner than Stratton’s <span style="color: #C0A054;">**Golds**</span>, given the enduring influence of agrarian and guild-master factions. Any cooperation will likely be more constrained than in the past. Still, compared to the uncompromising hardliners who nearly won the contest, Vellt’s victory is a relief. 
 
 @raumer
-subtitle: Backed by manu prominent guild-masters from the <span style="color: #C0A054;">**Golds**</span>, von Raumer aims to strengthen the bourgiois.
+subtitle: Backed by manu prominent guild-masters from the <span style="color: #C0A054;">**Golds**</span>, Raumer aims to strengthen the bourgiois.
 choose-if: winner_fkp = "Raumer"
 on-arrival: fkp_leader = "von-Raumer"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed

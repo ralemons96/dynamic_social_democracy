@@ -1,5 +1,5 @@
 title: Staal's Proposal
-subtitle: General Kurt von Staal contacts our party...
+subtitle: General Kurt Staal contacts our party...
 view-if: year >= 1930 and president = "DuFour" and marcher_in_government and not in_left_front and not in_popular_front and not presidential_powers and wtb_adopted and not unions_independent and reformist_strength + labor_strength >= left_strength + center_strength and army_loyalty >= 0.2 and (not panzerkreuzer_no or panzerkreuser_seen) and not rearmament_exposed and reparations_negotiation >= 3 and not weltbuhne_dropped and collectivist_relation < 35 and army_minister_party != "Marcher" and pacifism < 5 and nationalization_progress < 5 and not works_program
 on-arrival: staal_wtb_proposal_seen = 1
 new-page: true
@@ -9,7 +9,7 @@ face-image: img/portraits/StaalKurt.jpg
 
 = Staal's Proposal
 
-General Kurt von Staal, head of the Commonwealth Army's Office of Ministerial Affairs and a major member of President DuFour's inner circle, has requested a meeting with the <span style="color: #c00000;">**Marchers**</span>'s leadership. The <span style="color: #c00000;">Red</span> General, as he is called, has established contact with our Free Guilds, supporting our public works projects over austerity and deflationary policies.
+General Kurt Staal, head of the Commonwealth Army's Office of Ministerial Affairs and a major member of President DuFour's inner circle, has requested a meeting with the <span style="color: #c00000;">**Marchers**</span>'s leadership. The <span style="color: #c00000;">Red</span> General, as he is called, has established contact with our Free Guilds, supporting our public works projects over austerity and deflationary policies.
 
 He claims that he can put in a good word for us and our Voss Renewal Plan to President DuFour—perhaps even securing its passage through emergency powers. However, Staal is a known schemer and a staunch anti-leftist. Should we trust what he has to say?
 

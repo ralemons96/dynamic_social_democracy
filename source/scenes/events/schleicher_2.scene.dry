@@ -19,7 +19,7 @@ on-display: {!
 
 = Staal and the Banners
 
-Defense Minister von Staal has founded the *Reichskuratorium für Jugendertüchtigung* (Commonwealth Institute to Promote Youth Fitness), a program designed to have Commonwealth Army officers teach “military sports” to young workers. Staal aims to secure the participation of the Banners in this initiative, hoping it will serve as a counterweight to the <span style="color: #7A3C00;">**Loyalists**</span> and advance his broader strategy of integrating paramilitary groups into the state. Preparing youth for future military service has long been part of his rearmament agenda. The program will be led by General Stülpnagel, an advisor of his.
+Defense Minister Staal has founded the *Reichskuratorium für Jugendertüchtigung* (Commonwealth Institute to Promote Youth Fitness), a program designed to have Commonwealth Army officers teach “military sports” to young workers. Staal aims to secure the participation of the Banners in this initiative, hoping it will serve as a counterweight to the <span style="color: #7A3C00;">**Loyalists**</span> and advance his broader strategy of integrating paramilitary groups into the state. Preparing youth for future military service has long been part of his rearmament agenda. The program will be led by General Stülpnagel, an advisor of his.
 
 Staal has begun talks with <span style="color: #c00000;">Reformist</span> youth organizations, who have in turn informed the <span style="color: #c00000;">**Marchers**</span> leadership. While the Banners and the Greater Worker's Guild support participation, the <span style="color: #c00000;">**Marchers**</span> leadership is wary. They fear that joining the initiative is a thinly veiled attempt toward rearmament and would tie them too closely to the unpopular [+ chancellor +] government, and instead seek to maintain total opposition.
 
@@ -37,7 +37,7 @@ on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; banner_militancy +
 
 The Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. the Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
 
-This program has strengthened the Banners and improved our relations with von Staal. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Collectivists**</span>.
+This program has strengthened the Banners and improved our relations with Staal. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Collectivists**</span>.
 
 @wait
 title: Persuade the Banners to remain non-committal for now, at least until the next election.

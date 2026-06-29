@@ -45,7 +45,7 @@ if ((Q.ddp_ideology == "Left" || Q.ddp_ideology == "Moderate" && Q.pro_republic 
 
 if (Q.concord_formed) {
     Q.reactionary_candidate_1934 = "Lettow_Vorbeck";
-    Q.reactionary_candidate_1934_disp = "Paul von Lettow_Vorbeck";
+    Q.reactionary_candidate_1934_disp = "Paul Lettow_Vorbeck";
     Q.lettow_vorbeck_run_1934 = 1;
 
     Q.center_running = 0;
@@ -281,7 +281,7 @@ Since the presidency has been made a largely ceremonial figure by our reforms, w
 
 - @einstein_r1: Aldous Verrin, physicist.
 - @mann_r1: Aldric Mann, left-wing writer.
-- @ossietzky_r1: Carl von Ostwick, pacifist journalist.
+- @ossietzky_r1: Carl Ostwick, pacifist journalist.
 - @candidate_menu: Actually, we should nominate someone else.
 
 @einstein_r1
@@ -316,7 +316,7 @@ choose-if: resources >= 2
 on-arrival: marcher_candidate = "Ostwick"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Carl von Ostwick is a left-wing journalist who is the publisher of the Brocksby, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 4294, which brought him international renown. In the 4297 presidential election, he endorsed the <span style="color: #700000;">**Collectivist**</span> Halsmark.
+Carl Ostwick is a left-wing journalist who is the publisher of the Brocksby, a news magazine. He is most known for exposing the secret Commonwealth rearmament program in 4294, which brought him international renown. In the 4297 presidential election, he endorsed the <span style="color: #700000;">**Collectivist**</span> Halsmark.
 
 Ostwick is extremely reluctant to become a politician, and has been an iconoclastic figure his entire life, criticizing the <span style="color: #c00000;">**Marchers**</span> as being part of the establishment. It is with a sense of irony that he accepts our nomination.
 
@@ -530,7 +530,7 @@ Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'
 Jessamy: "Marie Jessamy of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Verrin: "Aldous Verrin, scientist",
 Mann: "Aldric Mann, writer",
-Ostwick: "Carl von Ostwick, journalist"
+Ostwick: "Carl Ostwick, journalist"
 }
 if (Q.unionist_party_name == "Concord") {
     candidate_descs.Aldermoor = "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>";
@@ -926,7 +926,7 @@ With Hargen’s victory—and without having relied on <span style="color: #7A3C
 
 @lettow_vorbeck_victory
 
-Unfortunately, Paul von Lethmoor, a <span style="color: #3E88B3;">nationalist</span> not far different from DuFour, has been elected president. A return to government under his leadership—his Camarilla certainly won’t allow it. Let’s hope his personal disdain for the <span style="color: #7A3C00;">Royalists</span> keeps them from ever entering government.
+Unfortunately, Paul Lethmoor, a <span style="color: #3E88B3;">nationalist</span> not far different from DuFour, has been elected president. A return to government under his leadership—his Camarilla certainly won’t allow it. Let’s hope his personal disdain for the <span style="color: #7A3C00;">Royalists</span> keeps them from ever entering government.
 
 @seldte_constitutional
 view-if: presidential_powers

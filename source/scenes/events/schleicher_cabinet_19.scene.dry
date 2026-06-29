@@ -44,7 +44,7 @@ But Goodlake is no Staal. He lacks the vast network of political ties that his p
 Perhaps the house of cards Staal so carefully built is already beginning to wobble.
 
 @bredow
-title: Ferdinand von Bredon - <span style="color: #BFC8CC;">**GNU**</span>
+title: Ferdinand Bredon - <span style="color: #BFC8CC;">**GNU**</span>
 subtitle: Deputy Defense Minister. Ideology suspected to be similar to Staal's.
 face-image: img/portraits/bredow.jpg
 choose-if: bredow_unlock
@@ -58,8 +58,8 @@ Q.staal_marcher_influence -= 4;
 Q.staal_marcher_support -= 5; 
 !}
 
-Presenting himself as a continuation of Staal and as another non-partisan military man, von Bredon has won his close friend Staal's favor. Although former chancellor Staal is officially retired, he still pulls many strings behind the scenes, unwilling to give up that scheming of his. 
+Presenting himself as a continuation of Staal and as another non-partisan military man, Bredon has won his close friend Staal's favor. Although former chancellor Staal is officially retired, he still pulls many strings behind the scenes, unwilling to give up that scheming of his. 
 
-However, von Bredon is certainly no Staal, he possesses no vast network of political connections throughout all walks of life, and Staal's personal popularity has largely failed to transfer over to his hand picked successor.
+However, Bredon is certainly no Staal, he possesses no vast network of political connections throughout all walks of life, and Staal's personal popularity has largely failed to transfer over to his hand picked successor.
 
 Perhaps the house of cards Staal has carefully built will come tumbling down?

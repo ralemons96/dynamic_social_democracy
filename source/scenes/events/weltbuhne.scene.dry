@@ -13,7 +13,7 @@ tags: event
 
 = The Brocksby Trial
 
-The <span style="color: #c00000;">left-wing</span> news and literary magazine Brocksby has been targeted by the national authorities for allegedly revealing state secrets. The magazine published articles alleging a secret rearmament program by the Commonwealth Army, in contravention of the Treaty of Etaluxia. The military authorities obviously do not want this information to be known. It does not help that the magazine's editor, Carl von Ostwick, is a well-known pacifist.
+The <span style="color: #c00000;">left-wing</span> news and literary magazine Brocksby has been targeted by the national authorities for allegedly revealing state secrets. The magazine published articles alleging a secret rearmament program by the Commonwealth Army, in contravention of the Treaty of Etaluxia. The military authorities obviously do not want this information to be known. It does not help that the magazine's editor, Carl Ostwick, is a well-known pacifist.
 
 [? if marcher_in_government and justice_minister_party = "Marcher" : With our control of the Justice Ministry, we could simply drop the case. ?]
 [? if marcher_in_government and justice_minister_party != "Marcher" : The Justice Ministry is seeking to persecute the editor and journalist of Brocksby. We can try to persuade our coalition partners to drop the case, but they will likely resist. ?]
@@ -29,7 +29,7 @@ choose-if: marcher_in_government and justice_minister_party = "Marcher"
 unavailable-subtitle: [? if not marcher_in_government : <span style="color: #c00000;">Marchers</span> not in government. ?] [? if marcher_in_government and justice_minister_party != "Marcher": The <span style="color: #c00000;">Marchers</span> does not control the Justice Ministry. ?]
 on-arrival: weltbuhne_dropped = 1; gold_relation -= 4; nationalism -= 3*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); army_loyalty -= 0.05; west_relation += 1; east_relation += 1; coup_progress += 1; reparations_negotiation += 1; pacifism += 1; ddp_relation += 3; ddp_left += 1; lvp_relation -= 2; dufour_angry += 5
 
-The Justice Ministry has dropped all persecution of Carl von Ostwick and Walter Kreiser, the journalist responsible for the offending publication. In fact, some say that the Brocksby journalists should be feted as heroes.
+The Justice Ministry has dropped all persecution of Carl Ostwick and Walter Kreiser, the journalist responsible for the offending publication. In fact, some say that the Brocksby journalists should be feted as heroes.
 
 The Western powers and all countries that feel threatened by Commonwealth militarism are pleased that we have turned a chapter in our history.
 [? if (in_grand_coalition or (in_weimar_coalition and lvp_formed)): On the other hand, the right-wing members of our governing coalition disapprove of this action, as does the Commonwealth Army. ?][? if not in_grand_coalition : On the other hand, the Commonwealth Army disapproves of dropping the case. ?]

@@ -561,7 +561,7 @@ if (Q.chancellor === "Bredon") {
 }
 !}
 
-The Commonwealth people had only briefly united behind their so-called savior, General Kurt von Staal. Now, with a return to political normalcy looming, there is no place for an incoherent vehicle like the <span style="color: #BFC8CC;">**GNU**</span> to rally the nation behind lofty abstractions like "non-partisanship" and the <i>national community</i>.
+The Commonwealth people had only briefly united behind their so-called savior, General Kurt Staal. Now, with a return to political normalcy looming, there is no place for an incoherent vehicle like the <span style="color: #BFC8CC;">**GNU**</span> to rally the nation behind lofty abstractions like "non-partisanship" and the <i>national community</i>.
 
 With Staal nearing the end—both politically and personally—he is in no position to stop the unraveling of his own creation. Perhaps this will be remembered as his greatest blunder: that everything he built ends in anticlimax. Yet the Unity system has already been gutted over the past few years.
 
@@ -607,7 +607,7 @@ Following the collapse of the <span style="color: #BFC8CC;">**GNU**</span>, a vo
 - @dnef_collapse_3
 
 @dnef_collapse_3
-title: Kuno von Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
+title: Kuno Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
 subtitle: DuFour's preferred choice once again, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
 face-image: img/portraits/Trevannon.jpg
 on-arrival: {!

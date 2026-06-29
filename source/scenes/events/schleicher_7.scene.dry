@@ -9,7 +9,7 @@ face-image: img/portraits/schleicher.jpg
 
 = The Free Guilds and Staal
 
-Tobias Leighart and the Greater Worker's Guild's vice chairmen have requested a meeting with Chancellor von Staal to discuss the funding of Staal's planned public works program, which Aveling has almost finished despite Staal unwilling to cut through red tape to speed up the process for him. 
+Tobias Leighart and the Greater Worker's Guild's vice chairmen have requested a meeting with Chancellor Staal to discuss the funding of Staal's planned public works program, which Aveling has almost finished despite Staal unwilling to cut through red tape to speed up the process for him. 
 
 However, Staal has used this meeting to discuss the possibility of the Greater Worker's Guild endorsing his planned postponement of new elections, which the organization denounced any potential breach of the constitution. [? if heartland_leader == "Staal": "Anti-Staal sentiment has grown so much in the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties, that Lyle Bristol reversed his earlier willingness to join with the chancellor in asking the president to postpone elections unconstitutionally. ?]
 
