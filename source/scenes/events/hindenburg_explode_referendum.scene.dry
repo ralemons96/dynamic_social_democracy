@@ -85,9 +85,9 @@ DuFour has been agitated by the weakness of the incumbent government and, under 
 - @schizo
 
 @schizo
-title: Crown Prince Aldric...?
+title: Restore the Crown...?
 on-arrival: {!
-Q.chancellor = "Hohenzollern";
+Q.chancellor = "Halvard";
 Q.vice_chancellor = "Goodryke";
 
 const contentElement = document.getElementById('content');
@@ -103,9 +103,9 @@ const header = document.querySelector('header');
 header.style.color = '#ffffff';
 !}
 
-Under the influence of Ferris Goodryke—and apparently Staal as well—DuFour has appointed Prince Halvard, a scion of the old imperial line, as Chancellor, reportedly with his father’s blessing.
+Under the influence of Ferris Goodryke—and apparently Staal as well—DuFour has appointed Lord Halvard, a fervent partisan of the old imperial cause, as Chancellor — a naked bid to bind the Commonwealth once more to the crown of Empress Jacqueline Scilos.
 
-It is clear the chaos of the past year has taken its toll. In the end, DuFour now trusts no one but his dearest friend, Goodryke. It's unknown of the former chancellor's reasoning behind such a pick, but perhaps he would've hoped that reinstating a monarchy, the people can rally around him as they once rallied around DuFour. 
+It is clear the chaos of the past year has taken its toll. In the end, DuFour now trusts no one but his dearest friend, Goodryke. It's unknown of the former chancellor's reasoning behind such a pick, but perhaps he would've hoped that restoring the Empress’s crown, the people might rally to the throne as they once rallied around DuFour. 
 
 A bloody three-way civil war is inevitable.
 
