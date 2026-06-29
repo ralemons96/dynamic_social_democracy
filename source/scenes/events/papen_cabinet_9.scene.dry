@@ -1,4 +1,4 @@
-title: Goodryke Drafts Sweeping Amendments to the Constitution!
+title: Goodryke Drafts Sweeping Amendments to the Unity Constitution!
 subtitle: Despite his extreme unpopularity, the chancellor has ordered his cabinet to begin drafting sweeping constitutional amendments.
 view-if: chancellor = "Goodryke" and papen_time and papen_post_2
 new-page: true

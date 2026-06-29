@@ -47,7 +47,7 @@ go-to: elections if bruning_event_seen or year < 1930
 
 Fine. If the Burghers wish to blow up the government, let them do so. <span style="color: #c00000;">Reformists</span> will not be complicit in the destruction of the working class.
 
-[? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-propertied cabinet. Using the emergency powers of Article 48, Askew and President DuFour have passed the welfare cuts over the objections of the Assembly.
+[? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-propertied cabinet. Using the Emergency Articles, Askew and President DuFour have passed the welfare cuts over the objections of the Assembly.
 
 [? if not bruning_event_seen and year >= 1930: New elections haven't been called yet but it's likely that they will be soon, considering Askew most likely doesn't have the majority of the Assembly behind him. ?]
 
