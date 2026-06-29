@@ -134,7 +134,7 @@ Theodor Hewes a journalist turned politician and a rising star has been elected 
 Hewes's victory strengthens the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s cooperation with us, as he has urged his party members that it is crucial to save Commonwealth democracy. A visible revival in party activities has already been seen, but funding still remains a major obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn't <span style="color: #ff0000;">moribund</span> after all?
 
 @maier
-title: Reinhold Galanides is elected!
+title: Roland Galanides is elected!
 subtitle: A youthful and energetic rising star, free from helplessness, defeatism, and rigid dogma.
 unavailable-subtitle: Galanides is the preferred candidate of the business wing, and it appears they don't have enough power over the <span style="color: #D3C24D;">[+ ddp_name +]</span>.
 choose-if: maier_lead
@@ -142,7 +142,7 @@ view-if: not dietrich_resign_ddp_left
 on-arrival: ddp_leader = "Galanides"; ddp_relation -= 3; ddp_right += 3; burgher_ddp *= 1.5; guild_ddp *= 1.5; landed_ddp += 2; pro_republic += 3; liberal_cooperation += 3; bourgeois_cooperation += 2
 face-image: img/portraits/maier.jpg
 
-Reinhold Galanides, a major figure in Purl politics and a rising star in the dying party, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. Youthful and energetic, he is not bound by traditional liberal principles like many veteran members of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, making him a strong choice for a party plagued by defeatism and internal strife.
+Roland Galanides, a major figure in Purl politics and a rising star in the dying party, has been elected chairman of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. Youthful and energetic, he is not bound by traditional liberal principles like many veteran members of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, making him a strong choice for a party plagued by defeatism and internal strife.
 
 For us, however, his position within the business wing means we have yet to see significant improvements in cooperation compared to Dietrich’s tenure. Anyhow, a visible revival in party activities is already underway, though funding remains a persistent obstacle. Perhaps the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> isn't <span style="color: #ff0000;">moribund</span> after all?
 

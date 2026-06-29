@@ -697,7 +697,7 @@ There is no majority in this round. In the second round, any candidate who wins 
 
 [? if thalmann_votes < 15 and thalmann_votes: The <span style="color: #700000;">**Collectivists**</span> have suffered a demoralizing defeat, leaving many of their supporters disillusioned about the prospects of revolution—a future they once saw as inevitable given the Commonwealth’s current state. In the second round, many will abstain from voting altogether, while a small minority may even cast their ballots for [? if not marcher_campaign: [+ royalist_candidate_1932 +] ?][? if marcher_campaign: [+ marcher_candidate_1932 +] ?]in an effort to make their vote count. ?]
 
-[? if traditionalist_candidate_1932: There had been discussions of Crown Prince Wilhelm running as a Stowford unity candidate, a prospect the <span style="color: #7A3C00;">**Royalists**</span> showed interest in supporting. However, the <span style="color: #3E88B3;">**Traditionalists**</span> and the <span style="color: #3E88B3;">**Wardens**</span> rejected the idea due to their hostility toward an accommodation with the <span style="color: #7A3C00;">**Royalists**</span>. The nail in the coffin was that his own father threatened to disinherit him if he stood for the "<span style="color: #c00000;">red</span> <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> presidential seat of an Harlow". He has since endorsed [+ royalist_candidate_1932 +]. ?]
+[? if traditionalist_candidate_1932: There had been discussions of Crown Prince Aldric running as a Stowford unity candidate, a prospect the <span style="color: #7A3C00;">**Royalists**</span> showed interest in supporting. However, the <span style="color: #3E88B3;">**Traditionalists**</span> and the <span style="color: #3E88B3;">**Wardens**</span> rejected the idea due to their hostility toward an accommodation with the <span style="color: #7A3C00;">**Royalists**</span>. The nail in the coffin was that his own father threatened to disinherit him if he stood for the "<span style="color: #c00000;">red</span> <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> presidential seat of an Harlow". He has since endorsed [+ royalist_candidate_1932 +]. ?]
 
 [? if gallax_support_dufour : In order to consolidate the vote for the <span style="color: #808080;">right</span>, and to prevent a <span style="color: #c00000;">Reformist</span> from becoming president, <span style="color: #7A3C00;">[+ royalist_candidate_1932 +]</span> is no longer running in the second round, and has switched his endorsement to <span style="color: #808080;">DuFour</span>. ?]
 
@@ -781,7 +781,7 @@ if (Q.unionist_relation >= 65) Q.bvp_support_marcher = 1;
 go-to: z_failed_eckener if unionist_support_marcher = 0; z_success_eckener if unionist_support_marcher = 1; z_partial_eckener if unionist_support_marcher = 2
 max-visits: 1
 
-We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wilhelm Croft in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
+We remind the <span style="color: #000000;">Unionist Party</span> of our past friendships, our support of Wendell Croft in 4290, and promote Eckhart as a non-partisan unity candidate that can stop the <span style="color: #7A3C00;">Royalists</span>.
 
 @z_success_eckener
 go-to: round2_menu
@@ -930,7 +930,7 @@ view-if: heartland_leader == "Bristol"
 on-arrival: unionist_support_marcher = 1; heartland_leader = "Sedgewick"; heartland_leader = "Askew" if unionist_leader == "Sedgewick"; reformist_dissent += 10; center_dissent += 10; labor_dissent += 10; left_dissent += 5; commons_marcher -= 5; burgher_marcher -= 5; landed_marcher -= 3; braun_resign = 1; dufour_angry_bruning += 30 if bruning_time
 go-to: round2_menu
 
-Ironic, considering that seven years ago, we brokered a deal for Wilhelm Croft to resign in favor of Bristol in exchange for our support for him in the presidential elections. Anyhow, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is now convinced to support Bristol over DuFour.
+Ironic, considering that seven years ago, we brokered a deal for Wendell Croft to resign in favor of Bristol in exchange for our support for him in the presidential elections. Anyhow, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is now convinced to support Bristol over DuFour.
 
 The Minister-President position is transferred to the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s [+ heartland_leader +]. Hopefully, their support will outweigh the loss of popularity and internal dissent caused by the resignation of our most well-known figure.
 

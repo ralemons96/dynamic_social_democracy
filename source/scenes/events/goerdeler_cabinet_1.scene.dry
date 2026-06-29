@@ -11,7 +11,7 @@ face-image: img/portraits/goerdeler.jpg
 
 The country still needs to be governed, and Goodlake is forced to announce new cabinet picks, who he stresses as purely caretaker until an agreement can be struck with the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>. This has resulted in a cabinet dominated by independents, who sit in the seats of posts that Goodlake intends to give up in a potential future government.
 
-The <span style="color: #D3C24D;">left-liberal</span> ministers are sacked, signalling a break by Goodlake. The <span style="color: #3E88B3;">**Traditionalists**</span> is given a sizable role in the government, with Wilhelm Gayl holding the Interior Ministry, and Trevannon taking the Transport Ministry. Martin Tilford, who served under Vael, will serve as Agricultural minister once more. 
+The <span style="color: #D3C24D;">left-liberal</span> ministers are sacked, signalling a break by Goodlake. The <span style="color: #3E88B3;">**Traditionalists**</span> is given a sizable role in the government, with Warrick Gale holding the Interior Ministry, and Trevannon taking the Transport Ministry. Martin Tilford, who served under Vael, will serve as Agricultural minister once more. 
 
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has grown increasingly apprehensive about its role in the Goodlake cabinet, refusing to commit ministers like Adam Sedgewick and Askew to the Labor and Foreign Ministries, respectively. Their refusal to serve alongside the anti-social Mallin has thrown a wrench into ongoing negotiations.
 
@@ -23,7 +23,7 @@ face-image: img/portraits/AlfredMallin.jpg
 
 General Kurt Staal, now the most influential member of the Camarilla and increasingly entangled in political scheming, begins courting the intractable Mallin. With the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> divided, Staal concludes that the <span style="color: #7A3C00;">**Royalists**</span> would have no choice but to fall in line.
 
-Mallin makes his demands clear: he wants the Vice-Chancellorship, control of the Economic Ministry, and sole authority over economic policy. This suits Goodlake, a fellow fiscal conservative—but Mallin, emboldened by his leverage, overreaches. He adds that his former party rival, Martin Tilford, should resign in favor of Count Eberhard Kalckreuth, a Mallin supporter within the Landed League.
+Mallin makes his demands clear: he wants the Vice-Chancellorship, control of the Economic Ministry, and sole authority over economic policy. This suits Goodlake, a fellow fiscal conservative—but Mallin, emboldened by his leverage, overreaches. He adds that his former party rival, Martin Tilford, should resign in favor of Count Everard Calbeck, a Mallin supporter within the Landed League.
 
 An impasse forms, prompting Staal to turn to [+ royalist_leader +], whose party is—surprisingly—now seen as more reasonable than Mallin’s.
 

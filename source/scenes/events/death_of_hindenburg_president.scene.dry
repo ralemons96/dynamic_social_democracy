@@ -44,8 +44,8 @@ if ((Q.ddp_ideology == "Left" || Q.ddp_ideology == "Moderate" && Q.pro_republic 
 }
 
 if (Q.concord_formed) {
-    Q.reactionary_candidate_1934 = "Lettow_Vorbeck";
-    Q.reactionary_candidate_1934_disp = "Paul Lettow_Vorbeck";
+    Q.reactionary_candidate_1934 = "Varr";
+    Q.reactionary_candidate_1934_disp = "Paul Varr";
     Q.lettow_vorbeck_run_1934 = 1;
 
     Q.center_running = 0;
@@ -101,7 +101,7 @@ if (Q.reactionary_candidate_1934 == "Selden" && (Q.center_candidate_1934 == "Ask
 
 Q.sapd_candidate = Q.collectivist_candidate;
 
-if (Q.reactionary_candidate_1934 == "Lettow_Vorbeck") Q.reactionary_candidate_1934 = "Lethmoor";
+if (Q.reactionary_candidate_1934 == "Varr") Q.reactionary_candidate_1934 = "Lethmoor";
 
 Q.is_unity_candidate = 0;
 
@@ -520,7 +520,7 @@ Hargen: "Cuthbert Hargen of the <span style='color: #3E88B3; font-weight: bold;'
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000;'>Unionist Party</span>",
 Askew: "Edmund Askew of the <span style='color: #000000;'>Unionist Party</span>",
-Lettow_Vorbeck: "Lethmoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>",
+Varr: "Lethmoor of the <span style='color: #000000; font-weight: bold;'>Concord</span>",
 Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Halsmark: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
@@ -555,7 +555,7 @@ for (var i = 0; i < Q.parties.length; i++) {
     var supported_candidate = Q[party + '_candidate'];
     //console.log(party, supported_candidate);
     supported_candidate = supported_candidate.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    if (supported_candidate == "Lethmoor") supported_candidate = "Lettow_Vorbeck";
+    if (supported_candidate == "Lethmoor") supported_candidate = "Varr";
     Q[supported_candidate + '_running'] = 1;
     if (!current_round_candidates.includes(supported_candidate)) {
         current_round_candidates.push(supported_candidate);
@@ -653,7 +653,7 @@ if (Q.Adenauer_votes || Q.Askew_votes) {
     Q.center_running = 0;
 }
 
-if (Q.Hergt_votes || Q.Seldte_votes || Q.Lettow_Vorbeck_votes) {
+if (Q.Hergt_votes || Q.Seldte_votes || Q.Varr_votes) {
     Q.reactionary_running = 1;
     if (Q.Hergt_votes_disp) {
         Q.Reactionary_votes = Q.Hergt_votes;
@@ -663,9 +663,9 @@ if (Q.Hergt_votes || Q.Seldte_votes || Q.Lettow_Vorbeck_votes) {
         Q.Reactionary_votes = Q.Seldte_votes;
         Q.Reactionary_votes_disp = Q.Seldte_votes_disp;
     }
-    if (Q.Lettow_Vorbeck_votes) {
-        Q.Reactionary_votes = Q.Lettow_Vorbeck_votes;
-        Q.Reactionary_votes_disp = Q.Lettow_Vorbeck_votes;
+    if (Q.Varr_votes) {
+        Q.Reactionary_votes = Q.Varr_votes;
+        Q.Reactionary_votes_disp = Q.Varr_votes;
     }
 } else {
     Q.reactionary_running = 0;

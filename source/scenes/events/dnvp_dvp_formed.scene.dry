@@ -57,7 +57,7 @@ if (Q.winner_fkp = "Vellt") {
     Q.burgher_kvp = Q.burgher_kvp * 0.9;
 }
 
-if (Q.winner_fkp = "Raumer") {
+if (Q.winner_fkp = "Raymont") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.landed_dnf += Q.landed_kvp * 0.2;
         Q.landed_kvp = Q.landed_kvp * 0.8;

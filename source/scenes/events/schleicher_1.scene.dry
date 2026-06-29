@@ -20,7 +20,7 @@ on-display: {!
 
 = Secret Commonwealth Army Meeting
 
-Through our intelligence work, the <span style="color: #c00000;">**Marchers**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Royalist</span> leaders Garrick Crowde, Ulric Gorrick, and [? if not rohm_explode: Isen Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], with former General Edwin Stülpnagel, a close ally of Staal.
+Through our intelligence work, the <span style="color: #c00000;">**Marchers**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Royalist</span> leaders Garrick Crowde, Ulric Gorrick, and [? if not rohm_explode: Isen Glade?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**Loyalists**</span>?], with former General Edwin Stallard, a close ally of Staal.
 
 The topic of the conference was about possible joint action between the Commonwealth Army and the <span style="color: #7A3C00;">**Loyalists**</span>, if the leftists were to make a move following the elections.
 

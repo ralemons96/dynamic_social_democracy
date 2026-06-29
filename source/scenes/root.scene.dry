@@ -544,7 +544,7 @@ Q.economic_records = [];
 // State of the government
 Q.president = "DuFour";
 Q.president_ideology = "DuFour";
-// starting chancellor: Wilhelm Croft
+// starting chancellor: Wendell Croft
 Q.chancellor = "Vance";
 Q.chancellor_party = 'Unionist';
 Q.marcher_in_government = 0;

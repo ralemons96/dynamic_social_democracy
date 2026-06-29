@@ -103,7 +103,7 @@ Q.bruning_coalition = Q.cordon_sanitaire;
 Q.bruning_coalition = Math.round((Q.bruning_coalition - Q.bruning_coalition_loss) * 10) / 10;
 !}
 
-Gottfried Trevannon, a strong supporter of Askew and, to some extent, democracy, has enforced party discipline to ensure the Assembly delegation votes in favor of Askew. However, despite his efforts to democratize the party, many defy his orders and vote against Askew's government.
+Godwin Trevannon, a strong supporter of Askew and, to some extent, democracy, has enforced party discipline to ensure the Assembly delegation votes in favor of Askew. However, despite his efforts to democratize the party, many defy his orders and vote against Askew's government.
 
 - @results2: The Assembly convenes.
 - @results3: The Assembly convenes.
