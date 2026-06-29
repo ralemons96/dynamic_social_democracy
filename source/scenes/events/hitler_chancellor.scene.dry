@@ -1,7 +1,7 @@
 title: Gallax appointed Chancellor!
 subtitle: The beginning of the end...
 view-if: year >= 1933 and president = "DuFour" and (chancellor = "Goodryke" or chancellor = "Staal") and staal_chancellor_timer == 1 and in_grand_coalition = 0 and marcher_in_government = 0 and largest_party = "Royalist" and gallax_deported = 0 and not presidential_powers and not schleichers_scheme_success
-on-departure: chancellor = "Gallax"; chancellor_party = "Royalist"
+on-departure: chancellor = "Gallax"; chancellor_party = "Royalist"; gallax_empire_end = 1
 #tags: event
 new-page: true
 

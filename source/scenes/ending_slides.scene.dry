@@ -1,5 +1,5 @@
 title: Ending Slides
-view-if: (chancellor != "Gallax" and president != "Gallax" and president != "Gorrick" and (not total_defeat or papen_win)) or rubicon_mini
+view-if: (chancellor != "Gallax" and president != "Gallax" and president != "Gorrick" and (not total_defeat or papen_win)) or rubicon_mini or gallax_empire_end
 on-arrival: {!
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
@@ -77,7 +77,20 @@ if (Q.weimar_win) {
       Q.empire_outcome = "war_conquest";
     }
   }
+} else if (Q.gallax_empire_end && !Q.republic_victory && !Q.long_war) {
+  // Gallax opened the gate (Part C): DuFour reached for the restorationist, and the Empire collects
+  // what the republic could no longer hold. This is the dark mirror of the Staal reunification - not
+  // a realm walking north by treaty, but a province delivered up. Texture from the cascade-earned
+  // collusion (imperial_collusion) and the Empire's willingness (empire_posture).
+  var _gPosture = (Q.empire_posture === undefined) ? 50 : Q.empire_posture;
+  var _gCollusion = Q.imperial_collusion || 0;
+  Q.empire_outcome = "submission";
+  Q.gate_resisted = Q.civil_war_seen ? 1 : 0;
+  Q.gate_welcomed = ((_gPosture >= 55) || (_gCollusion >= 3)) ? 1 : 0;
 }
+// RESERVED (Staal-aware): when the Staal "fair reunification" spine is built (see
+// just-did-an-audit-harmonic-graham.md D3), redirect the Staal/GNU win here with
+// Q.empire_outcome = "reunification" to reuse the existing @reunification slide. Inert until then.
 !}
 set-bg: img/paper.jpg
 new-page: true
@@ -85,6 +98,7 @@ new-page: true
 A chapter in history closes.
 
 - @taming_lose
+- @gate_opened
 - @dnef_win
 - @weimar_win
 - @weimar_mega_win
@@ -494,5 +508,24 @@ It was over more quickly than anyone had feared. An army half-loyal and underfed
 The Restoration had its day of triumph. The Royalists rode home behind the legions; the Registry was reopened and the loyalty-oaths restored, save that now it was the magi, elevated as the chosen caste of the God of Magic's restored cult, who held the whip-hand over those who had once watched them. The faithful gave thanks for order. The schools taught that the long republican experiment had been an aberration, a fever, now mercifully broken.
 
 And the people who had built the Commonwealth, who had voted in it and argued in it and never quite loved it enough to save it, learned the oldest lesson of all the failed republics: that liberty undefended is liberty surrendered, and that the bill, when it comes, is always paid in full.
+
+- @go_back
+
+@gate_opened
+title: The Gate Opened
+subtitle: Ending — Submission
+view-if: empire_outcome == "submission"
+new-page: true
+set-bg: img/paper.jpg
+
+The Commonwealth is reunified with the Empire, and President DuFour knows exactly what he has done.
+
+He does not pretend otherwise. By his reckoning the choice had come down to two roads: submit now, while the Empire still offers terms, or fight a war of reunification the Commonwealth cannot win—a war waged, with Athar already sliding into chaos, for nothing but honor. The Assembly had failed, and so had every alternative to it. Reunification on the best terms still available, he concludes, is the last service he can render his people, and he signs.
+
+[? if gate_resisted: The terms are worse for the fighting. The Banners rise and are broken, the [+ royalist_chancellor +] government clears the streets, and the Empire takes a province that has bled rather than one handed over clean. ?][? if not gate_resisted: There is no rising worth the name. The republic is not so much overthrown as wound up and put away, with little left to resist it. ?] The [+ royalist_chancellor +] government is no gentle thing: Reformist deputies are jailed or scattered, the Collectivists are driven into exile, and the Assembly is reduced to a chamber that ratifies the Crown's decrees. But the reunification holds. What passes back under the Empress's authority is not the self-governing realm the negotiators once imagined, but a province, on the Empire's terms.
+
+[? if gate_welcomed: For many, it is not an unwelcome end. A decade of deadlock and hunger has worn the country down, and a good number of Commonwealthers prefer the Empire's order to another winter of crisis. Under Empress Jacqueline Scilos the realm is markedly more progressive on the rights of women than the republic ever managed to be, and many women—long promised equality and long handed excuses—accept the trade with little mourning. ?][? if not gate_welcomed: The country accepts it without welcoming it. The Empress's banner goes up over Axton to quiet streets: not consent, but exhaustion, and the absence of any strength left to refuse. ?]
+
+DuFour dies in office, remembered by the new order as the man who spared the Commonwealth a hopeless war. The republic ends not in delusion but in calculation—its president judged it already lost, and chose the terms of its ending over the manner of its defense.
 
 - @go_back

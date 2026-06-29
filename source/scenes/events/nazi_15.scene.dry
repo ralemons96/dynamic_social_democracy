@@ -5,6 +5,7 @@ new-page: true
 tags: event
 priority: -4
 max-visits: 1
+on-arrival: imperial_collusion += 1
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  

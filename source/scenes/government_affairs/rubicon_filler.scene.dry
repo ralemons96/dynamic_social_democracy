@@ -31,13 +31,13 @@ We have reduced dissent across all factions.
 
 @campaign
 subtitle: We must defend our creation.
-on-arrival: pro_republic += 2
+on-arrival: pro_republic += 2; dufour_faith += 1
 
 In a few years time, the Commonwealth people will thank us.
 
 @protest
 subtitle: The [+ chancellor +] cabinet must not be allowed to stand.
 view-if: papen_post_2
-on-arrival: pro_republic -= 2; commons_marcher += 1; burgher_marcher += 1
+on-arrival: pro_republic -= 2; commons_marcher += 1; burgher_marcher += 1; dufour_faith -= 1
 
 Labor has taken to the streets.

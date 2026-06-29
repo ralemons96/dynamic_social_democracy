@@ -9,6 +9,8 @@ on-arrival: {!
 Q.rubicon = 1; 
 Q.week = 1;
 Q.resources = 2;
+Q.dufour_faith = 3;
+Q.imperial_collusion = 0;
 const contentElement = document.getElementById('content');
 contentElement.style.backgroundColor = '#645E51';
 
