@@ -381,7 +381,7 @@ title: Alaric Gallax is in undisputed control over the Commonwealth.
 tags: endings
 go-to: eg_menu
 
-Alaric Gallax is in undisputed control over the Commonwealth. The <span style="color: #c00000;">**Marchers**</span>, along with all of the democratic forces, have failed.
+Alaric Gallax is in undisputed control over the Commonwealth. The <span style="color: #c00000;">**Marchers**</span>, along with all of the democratic forces, have failed. The road he marches now leads north, toward the Crown he swore to serve—and the Empress's court has only to wait.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
@@ -410,7 +410,7 @@ title: Despite the deportation of Gallax, the <span style="color: #7A3C00;">Roya
 tags: endings
 go-to: eg_menu
 
-<p>Despite the deportation of Gallax, the <span style="color: #7A3C00;">**Royalists**</span> has somehow still wormed its way into power.</p> [? if long_war == 1 : We are fighting them for control of the Commonwealth. ?]
+<p>Despite the deportation of Gallax, the <span style="color: #7A3C00;">**Royalists**</span> has somehow still wormed its way into power, and the long shadow of the Empire lengthens over the Commonwealth.</p> [? if long_war == 1 : We are fighting them for control of the Commonwealth. ?]
 
 
 @civil_war_won
