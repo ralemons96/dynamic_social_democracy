@@ -19,7 +19,7 @@ on-display: {!
 
 = Staal and the Banners
 
-Defense Minister Staal has founded the *Reichskuratorium für Jugendertüchtigung* (Commonwealth Institute to Promote Youth Fitness), a program designed to have Commonwealth Army officers teach “military sports” to young workers. Staal aims to secure the participation of the Banners in this initiative, hoping it will serve as a counterweight to the <span style="color: #7A3C00;">**Loyalists**</span> and advance his broader strategy of integrating paramilitary groups into the state. Preparing youth for future military service has long been part of his rearmament agenda. The program will be led by General Stallard, an advisor of his.
+Defense Minister Staal has founded the *Commonwealth Youth Corps* (Commonwealth Institute to Promote Youth Fitness), a program designed to have Commonwealth Army officers teach “military sports” to young workers. Staal aims to secure the participation of the Banners in this initiative, hoping it will serve as a counterweight to the <span style="color: #7A3C00;">**Loyalists**</span> and advance his broader strategy of integrating paramilitary groups into the state. Preparing youth for future military service has long been part of his rearmament agenda. The program will be led by General Stallard, an advisor of his.
 
 Staal has begun talks with <span style="color: #c00000;">Reformist</span> youth organizations, who have in turn informed the <span style="color: #c00000;">**Marchers**</span> leadership. While the Banners and the Greater Worker's Guild support participation, the <span style="color: #c00000;">**Marchers**</span> leadership is wary. They fear that joining the initiative is a thinly veiled attempt toward rearmament and would tie them too closely to the unpopular [+ chancellor +] government, and instead seek to maintain total opposition.
 
@@ -30,7 +30,7 @@ the Banners Chairman Conrad Holt has put forward the most compelling argument in
 - @nay
 
 @yay
-title: Approve the participation of the Banners and our youth organizations in the *Reichskuratorium*.
+title: Approve the participation of the Banners and our youth organizations in the *Youth Corps*.
 unavailable-subtitle: The party is too distrustful of Staal to allow this.
 choose-if: staal_marcher_support >= 4 or knight_strength >= center_strength
 on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; banner_militancy += 0.06; banner_strength += 200; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
@@ -43,7 +43,7 @@ This program has strengthened the Banners and improved our relations with Staal.
 title: Persuade the Banners to remain non-committal for now, at least until the next election.
 on-arrival: staal_marcher_support += 1; staal_banner_wait = 1; banner_strength += 50; banner_militancy += 0.02
 
-We have secured a commitment from the Banners leadership not to make any official decision regarding participation in the *Reichskuratorium* before the upcoming elections—a compromise between the party factions. However, some local members may still choose to enroll in the training programs on their own initiative.
+We have secured a commitment from the Banners leadership not to make any official decision regarding participation in the *Youth Corps* before the upcoming elections—a compromise between the party factions. However, some local members may still choose to enroll in the training programs on their own initiative.
 
 @nay
 title: Force the Banners to reject this offer, and persuade them to cut off communications with the general.

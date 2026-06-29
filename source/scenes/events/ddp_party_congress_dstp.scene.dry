@@ -1,5 +1,5 @@
 title: Discontent in the <span style="color: #D3C24D;">**CSP**</span>.
-subtitle: The conflict between the Young Germans and <span style="color: #D3C24D;">**Democrats**</span> has reached a climax...
+subtitle: The conflict between the Young Commonwealthers and <span style="color: #D3C24D;">**Democrats**</span> has reached a climax...
 view-if: year == 1930 and month >= 10 and not lvp_formed and dstp_formed
 on-arrival: {!
 Q.dstp_collapse_seen = 1;

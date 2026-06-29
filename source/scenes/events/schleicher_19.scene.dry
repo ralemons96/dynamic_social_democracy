@@ -17,9 +17,9 @@ face-image: img/beauty_of_labor.jpg
 
 Staal has been working intensively over the past weeks to forge a formal alliance between the Free Guilds and the state, focusing his efforts on the <span style="color: #000000;">Faithful</span> associations. Their negotiations have now "succeeded"—with heavy doses of state intimidation and interference ensuring they accepted an offer that would have been unthinkable under normal circumstances.
 
-Under this agreement, the blue-collar <span style="color: #D3C24D;">Hirsch-Duncker</span>, <span style="color: #000000;">Faithful</span>, and the Strasserist <span style="color: #7A3C00;">**NSBO**</span> Free Guilds are merged into the new Commonwealth Labor Front (DAF). White-collar and civil servant Free Guilds, including the Clerks' Guild, are folded into their own section within the Front. The right to strike is curtailed, and all members are made to pledge full loyalty to the so-called "national interest"—however the state chooses to define it.
+Under this agreement, the blue-collar <span style="color: #D3C24D;">Hartwell</span>, <span style="color: #000000;">Faithful</span>, and the <span style="color: #7A3C00;">**Crowdeist**</span> Free Guilds are merged into the new Commonwealth Labor Front (CLF). White-collar and civil servant Free Guilds, including the Clerks' Guild, are folded into their own section within the Front. The right to strike is curtailed, and all members are made to pledge full loyalty to the so-called "national interest"—however the state chooses to define it.
 
-Local Free Guild leaders who refuse to join are having their offices raided, their funds confiscated, and themselves imprisoned. While membership in the Commonwealth Labor Front is technically voluntary, access to benefits—and even basic protections—is now locked behind it, making participation all but mandatory. Furthermore, a new department is established in the DAF, tasked solely with spreading state propaganda and binding the workers more tightly into the <i>national community</i>.
+Local Free Guild leaders who refuse to join are having their offices raided, their funds confiscated, and themselves imprisoned. While membership in the Commonwealth Labor Front is technically voluntary, access to benefits—and even basic protections—is now locked behind it, making participation all but mandatory. Furthermore, a new department is established in the CLF, tasked solely with spreading state propaganda and binding the workers more tightly into the <i>national community</i>.
 
 The chancellor is also able to palate the guild-masters, by placing their power significantly above that of labor in the newly established corporatist framework.
 
@@ -67,7 +67,7 @@ What shall we do?
 - @schleicher_adgb_choice_2
 
 @schleicher_adgb_choice_1
-title: Approve the Greater Worker's Guild's entry into the DAF.
+title: Approve the Greater Worker's Guild's entry into the CLF.
 on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_staal = 1;
@@ -90,7 +90,7 @@ Q.staal_marcher_r -= 2;
 Q.staal_marcher_support -= 4;
 !}
 
-The Greater Worker's Guild is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> elements are purged without ceremony.
+The Greater Worker's Guild is now being absorbed into the CLF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Vaelist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**Marchers**</span> elements are purged without ceremony.
 
 The fall of the Greater Worker's Guild marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
 
@@ -265,6 +265,6 @@ Q.staal_marcher_support -= 5;
 
 With Staal lacking the influence to influence the Greater Worker's Guild chairmen personally, or having the adequate relations with us to negotiate a more peaceful solution, violence is the only option.
 
-Across the country, Greater Worker's Guild offices are ransacked by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries and the Commonwealth Army, arresting leaders, confiscating funds, and repurposing offices to be used for the DAF.
+Across the country, Greater Worker's Guild offices are ransacked by the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries and the Commonwealth Army, arresting leaders, confiscating funds, and repurposing offices to be used for the CLF.
 
 The fall of the Greater Worker's Guild marks the beginning of the end. If even the workers have abandoned us—what power do we have left?

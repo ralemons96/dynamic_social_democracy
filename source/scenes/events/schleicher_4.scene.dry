@@ -1,5 +1,5 @@
 title: Staal and the Banners
-subtitle: It's time to decide our stance on the *Reichskuratorium*.
+subtitle: It's time to decide our stance on the *Youth Corps*.
 view-if: chancellor = "Staal" and staal_banner_wait
 new-page: true
 tags: event
@@ -29,7 +29,7 @@ We can either build goodwill and strengthen the Banners through our participatio
 - @nay
 
 @yay
-title: Approve the participation of the Banners and our youth organizations in the *Reichskuratorium*.
+title: Approve the participation of the Banners and our youth organizations in the *Youth Corps*.
 unavailable-subtitle: The party is too distrustful of Staal to allow this.
 choose-if: staal_marcher_support >= 4 or knight_strength >= center_strength
 on-arrival: staal_marcher_support += 2; staal_marcher_r += 1; banner_militancy += 0.04; banner_strength += 125; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10

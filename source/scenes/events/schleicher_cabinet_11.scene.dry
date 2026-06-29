@@ -1,4 +1,4 @@
-title: The <i>Temple Concordat</i> Is Signed!
+title: The <i>Temple Accord</i> Is Signed!
 subtitle: Faithful rights across the Commonwealth are now formally guaranteed.
 view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Renck" and reichskonkordat = 0 
 max-visits: 1
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Temple Concordat Signing
+= Temple Accord Signing
 
-During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Concordat</i> has officially been signed between the Commonwealth and the Roma Faithful Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Faithful, and the right of the church to appoint their own clergy. Faithful in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
+During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Accord</i> has officially been signed between the Commonwealth and the Roma Faithful Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Faithful, and the right of the church to appoint their own clergy. Faithful in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
 
 - @reichskonkordat
 

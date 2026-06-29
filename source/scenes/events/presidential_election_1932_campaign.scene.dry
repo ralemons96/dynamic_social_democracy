@@ -567,7 +567,7 @@ Of course, the main goal of the United DuFour Committees is to dispel the notion
 
 @organizational_endorsements
 title: What about the endorsements of the non-partisan organizations?
-subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Germans, have been growing a rift between themselves and DuFour.
+subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Commonwealthers, have been growing a rift between themselves and DuFour.
 view-if: eckener_used and industry_used and (religion_used or not religion_available) and (westarp_used or marcher_candidate_1932)
 on-arrival: {!
 if (Q.dufour_support) {
@@ -836,7 +836,7 @@ Of course, the main goal of the United DuFour Committees is to dispel the notion
 
 @organizational_endorsements_op
 title: What about the endorsements of the non-partisan organizations?
-subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Germans, have been growing a rift between themselves and DuFour.
+subtitle: Influential groups such as the Landed League, Clerks' Guild, and the Pan-Commonwealthers, have been growing a rift between themselves and DuFour.
 view-if: eckener_used and industry_used and (religion_used or not religion_available) and nd (westarp_used or marcher_candidate_1932)
 on-arrival: {!
 if (Q.dufour_support) {
