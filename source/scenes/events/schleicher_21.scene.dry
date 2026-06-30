@@ -35,16 +35,16 @@ on-display: {!
 
 = The <span style="color: #c00000;">**Marchers**</span> Slips Away
 
-Low-ranking party members loyal to Staal have steadily climbed the ranks, until a new executive committee finally replaces the old guard that had served the party since the founding of the republic.
+Low-ranking party members loyal to Staal have steadily climbed the ranks, until a new executive committee finally replaces the old guard that had served the party since the founding of the republic. The change is gradual, and almost gentle: the old leaders are not purged but eased into retirement, their pensions secure and their honors intact, while Staal’s men quietly take the empty chairs.
 
-At its head now stand Staal’s yes-men—figures like the notorious former Defense Minister Jarren Brask and Leland Ardwin, a nationalist voice within the Greater Worker's Guild, fiercely hostile to the Treaty of Etaluxia and far closer to Staal’s ideology than the mere pragmatism of Bristol or Leighart.
+At its head now stand figures like the former Defense Minister Jarren Brask and Leland Ardwin, a nationalist voice within the Greater Worker's Guild, fiercely hostile to the Treaty of Etaluxia and far closer to Staal’s ideology than the mere pragmatism of Bristol or Leighart.
 
-The <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> welcomes its new member.
+The <span style="color: #c00000;">**Marchers**</span> is not abolished, nor banned, nor broken. It is folded—name, press, and membership intact—into the broad tent of the <span style="color: #BFC8CC;">**GNU**</span>, where it keeps a real place as the recognized voice of the worker, and no real power at all. It will go on speaking for labor in Staal's national movement; and after him, when the Commonwealth is handed up to the Empire, it will go on speaking for labor in the advisory Assembly that replaces the old chamber—a large party, sometimes the largest, in a body that decides nothing. The <span style="color: #c00000;">Reformist</span> movement does not die today. It is merely made safe.
 
 - @spd_joever
 
 @spd_joever
-title: The end of <span style="color: #c00000;">Reformism</span>.
+title: The <span style="color: #c00000;">Reformist</span> movement, made safe.
 go-to: game_over if not (dynamic_mode or historical_mode or difficulty == 1); sozialdemokratische_blockpartei if (dynamic_mode or historical_mode or difficulty == 1)
 
 @sozialdemokratische_blockpartei
