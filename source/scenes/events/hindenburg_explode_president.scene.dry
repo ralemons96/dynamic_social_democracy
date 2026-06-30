@@ -60,7 +60,7 @@ go-to: r1_menu
 We have convinced Hugo Eckhart to run on behalf of the <span style="color: #c00000;">**Marchers**</span>, and hopefully the rest of the Unity Coalition as well.
 
 @adenauer_r1
-on-arrival: marcher_candidate = "Aldermoor"; unionist_relation += 4; Adenauer_bonus -= 2.5 if not impeachment_bvp; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+on-arrival: marcher_candidate = "Aldermoor"; unionist_relation += 4; Aldermoor_bonus -= 2.5 if not impeachment_bvp; Seckard_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r1_menu
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
@@ -153,7 +153,7 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 Unfortunately, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is not convinced.
 
 @z_success
-on-arrival: unionist_candidate = marcher_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: unionist_candidate = marcher_candidate; Seckard_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is convinced! They will be supporting [+ marcher_candidate +] for the election.
@@ -171,7 +171,7 @@ The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unioni
 @pay_z
 choose-if: resources >= 2
 subtitle: -2 resources
-on-arrival: resources -= 2; unionist_candidate = marcher_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: resources -= 2; unionist_candidate = marcher_candidate; Seckard_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
 With our resources, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] are convinced to support [+ marcher_candidate +]. Konrad Aldermoor will drop out of the race.
@@ -333,16 +333,16 @@ go-to: r2_start if round = 1 and not has_majority; election_end if round > 1; r1
 
 Election results:
 
-[? if Seeckt_running : <span style="color: #808080;">**Seckard**</span> - [+ Seeckt_votes_disp +]% ?]
+[? if Seckard_running : <span style="color: #808080;">**Seckard**</span> - [+ Seckard_votes_disp +]% ?]
 
-[? if Adenauer_running : <span style="color: #000000;">**Aldermoor**</span> - [+ Adenauer_votes_disp +]% ?]
+[? if Aldermoor_running : <span style="color: #000000;">**Aldermoor**</span> - [+ Aldermoor_votes_disp +]% ?]
 
-[? if Gessler_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Gesling**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Gesling**</span>?] - [+ Gessler_votes_disp +]% ?]
+[? if Gesling_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Gesling**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Gesling**</span>?] - [+ Gesling_votes_disp +]% ?]
 
-[? if Eckener_running : <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> - [+ Eckener_votes_disp +]% ?]
+[? if Eckhart_running : <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span> - [+ Eckhart_votes_disp +]% ?]
 
 [? if Grenshaw_running : <span style="color: #c00000;">**Grenshaw**</span> - [+ Grenshaw_votes_disp +]% ?]
-[? if Wels_running : <span style="color: #c00000;">**Vesh**</span> - [+ Wels_votes_disp +]% ?]
+[? if Vesh_running : <span style="color: #c00000;">**Vesh**</span> - [+ Vesh_votes_disp +]% ?]
 
 [? if sapd_candidate == "Boycott" or collectivist_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
 
@@ -351,7 +351,7 @@ on-arrival: {!
 Q.adenauer_drops_out = 0;
 Q.gessler_drops_out = 0;
 if (Q.unionist_candidate == "Aldermoor" && (Q.ddp_candidate == "Gesling" && !Q.lvp_formed || Q.gold_candidate == "Gesling" && !Q.lvp_formed && Q.gold_exist || Q.lvp_candidate == "Gesling" && Q.lvp_formed) && Q.unionist_candidate != Q.marcher_candidate && (Q.ddp_candidate != Q.marcher_candidate && !Q.lvp_formed || Q.gold_candidate != Q.marcher_candidate && !Q.lvp_formed && Q.gold_exist || Q.lvp_candidate != Q.marcher_candidate && Q.lvp_exist)) {
-    if (Q.Adenauer_votes > Q.Gessler_votes) {
+    if (Q.Aldermoor_votes > Q.Gesling_votes) {
         Q.gessler_drops_out = 1;
         if (Q.ddp_candidate != Q.marcher_candidate) {
             Q.ddp_candidate = "Aldermoor";
@@ -391,7 +391,7 @@ What should we do?
 @r2_endorse_adenauer
 title: Switch our support to Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 view-if: unionist_candidate = "Aldermoor" and marcher_candidate != unionist_candidate
-on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Aldermoor"; unionist_relation += 4; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+on-departure: collectivist_candidate = "Boycott" if collectivist_candidate == marcher_candidate; sapd_candidate = collectivist_candidate; marcher_candidate = "Aldermoor"; unionist_relation += 4; Seckard_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r2_campaigning
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].

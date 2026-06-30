@@ -524,7 +524,7 @@ Varr: "Lethmoor of the <span style='color: #000000; font-weight: bold;'>Concord<
 Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
 Halsmark: "Ernst Halsmark of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
-Munzenberg: "Willi Munzer of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
+Munzer: "Willi Munzer of the <span style='color: #700000; font-weight: bold;'>Collectivists</span>",
 Bristol: "Lyle Bristol of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Jessamy: "Marie Jessamy of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
@@ -615,35 +615,35 @@ Q.winner_votes = Math.round(1000*Q.winner_votes/total_votes)/10;
 Q.winner_votes_disp = Q.winner_votes.toFixed(1);
 Q.winner_desc = candidate_descs[Q.winner];
 
-if (Q.Braun_votes || Q.Schumacher_votes || Q.Juchacz_votes) {
+if (Q.Bristol_votes || Q.Shackley_votes || Q.Jessamy_votes) {
     Q.marcher_running = 1;
-    if (Q.Braun_votes_disp) Q.Socialist_votes_disp = Q.Braun_votes_disp;
-    if (Q.Schumacher_votes_disp) Q.Socialist_votes_disp = Q.Schumacher_votes_disp;
-    if (Q.Juchacz_votes_disp) Q.Socialist_votes_disp = Q.Juchacz_votes_disp;
+    if (Q.Bristol_votes_disp) Q.Socialist_votes_disp = Q.Bristol_votes_disp;
+    if (Q.Shackley_votes_disp) Q.Socialist_votes_disp = Q.Shackley_votes_disp;
+    if (Q.Jessamy_votes_disp) Q.Socialist_votes_disp = Q.Jessamy_votes_disp;
 } else {
     Q.marcher_running = 0;
 }
 
 
-if (Q.Gessler_votes || Q.Heuss_votes) {
+if (Q.Gesling_votes || Q.Hewes_votes) {
     Q.lib_running = 1;
-    if (Q.Gessler_votes_disp) {
-        Q.Liberal_votes = Q.Gessler_votes;
-        Q.Liberal_votes_disp = Q.Gessler_votes_disp;
+    if (Q.Gesling_votes_disp) {
+        Q.Liberal_votes = Q.Gesling_votes;
+        Q.Liberal_votes_disp = Q.Gesling_votes_disp;
     }
-    if (Q.Heuss_votes_disp) {
-        Q.Liberal_votes = Q.Heuss_votes;
-        Q.Liberal_votes_disp = Q.Heuss_votes_disp;
+    if (Q.Hewes_votes_disp) {
+        Q.Liberal_votes = Q.Hewes_votes;
+        Q.Liberal_votes_disp = Q.Hewes_votes_disp;
     }
 } else {
     Q.lib_running = 0;
 }
 
-if (Q.Adenauer_votes || Q.Askew_votes) {
+if (Q.Aldermoor_votes || Q.Askew_votes) {
     Q.center_running = 1;
-    if (Q.Adenauer_votes_disp) {
-        Q.Center_votes = Q.Adenauer_votes;
-        Q.Center_votes_disp = Q.Adenauer_votes_disp;
+    if (Q.Aldermoor_votes_disp) {
+        Q.Center_votes = Q.Aldermoor_votes;
+        Q.Center_votes_disp = Q.Aldermoor_votes_disp;
     }
     if (Q.Askew_votes_disp) {
         Q.Center_votes = Q.Askew_votes;
@@ -653,15 +653,15 @@ if (Q.Adenauer_votes || Q.Askew_votes) {
     Q.center_running = 0;
 }
 
-if (Q.Hergt_votes || Q.Seldte_votes || Q.Varr_votes) {
+if (Q.Hargen_votes || Q.Selden_votes || Q.Varr_votes) {
     Q.reactionary_running = 1;
-    if (Q.Hergt_votes_disp) {
-        Q.Reactionary_votes = Q.Hergt_votes;
-        Q.Reactionary_votes_disp = Q.Hergt_votes_disp;
+    if (Q.Hargen_votes_disp) {
+        Q.Reactionary_votes = Q.Hargen_votes;
+        Q.Reactionary_votes_disp = Q.Hargen_votes_disp;
     }
-    if (Q.Seldte_votes_disp) {
-        Q.Reactionary_votes = Q.Seldte_votes;
-        Q.Reactionary_votes_disp = Q.Seldte_votes_disp;
+    if (Q.Selden_votes_disp) {
+        Q.Reactionary_votes = Q.Selden_votes;
+        Q.Reactionary_votes_disp = Q.Selden_votes_disp;
     }
     if (Q.Varr_votes) {
         Q.Reactionary_votes = Q.Varr_votes;
@@ -683,7 +683,7 @@ go-to: r2_start if round = 1 and not has_majority; election_end if round > 1; r1
 
 Election results:
 
-[? if Hitler_running : <span style="color: #7A3C00;">**Gallax**</span> - [+ Hitler_votes_disp +]% ?]
+[? if Gallax_running : <span style="color: #7A3C00;">**Gallax**</span> - [+ Gallax_votes_disp +]% ?]
 [? if Gorrick_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Gorrick_votes_disp +]% ?]
 
 [? if hamster_running : <span style="color: #003755;">**Mallin**</span> - [+ Mallin_votes_disp +]% ?]
@@ -692,31 +692,31 @@ Election results:
 [? if reactionary_running and concord_formed : <span style="color: #000000;">**[+ reactionary_candidate_1934 +]**</span> - [+ Reactionary_votes_disp +]% ?]
 
 [? if Halsmark_running : <span style="color: #700000;">**Halsmark**</span> - [+ Halsmark_votes_disp +]% ?]
-[? if Munzenberg_running : <span style="color: #9B0000;">**Munzer**</span> - [+ Munzenberg_votes_disp +]% ?]
+[? if Munzer_running : <span style="color: #9B0000;">**Munzer**</span> - [+ Munzer_votes_disp +]% ?]
 
 [? if center_running : <span style="color: #000000;">**[+ center_candidate_1934 +]**</span> - [+ Center_votes_disp +]% ?]
 
 [? if lib_running : [? if not lvp_formed: <span style="color: #D3C24D;">**[+ lib_candidate_1934 +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**[+ lib_candidate_1934 +]**</span>?] - [+ Liberal_votes_disp +]% ?]
 
-[? if Eckener_running : <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> - [+ Eckener_votes_disp +]% ?]
+[? if Eckhart_running : <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span> - [+ Eckhart_votes_disp +]% ?]
 
 [? if marcher_running : <span style="color: #c00000;">**[+ marcher_candidate +]**</span> - [+ Socialist_votes_disp +]% ?]
 # cultural candidates
 [? if Verrin_running : <span style="color: #CFC88F;">**Verrin**</span> - [+ Verrin_votes_disp +]% ?]
-[? if Ossietzky_running : <span style="color: #E0A0A0;">**Ostwick**</span> - [+ Ossietzky_votes_disp +]% ?]
+[? if Ostwick_running : <span style="color: #E0A0A0;">**Ostwick**</span> - [+ Ostwick_votes_disp +]% ?]
 [? if Mann_running : <span style="color: #E0A0A0;">**Mann**</span> - [+ Mann_votes_disp +]% ?]
 
 @r2_start
 on-arrival: {!
 // 1. coordination between the right/far-right
 if (!Q.concord_formed) {
-    if (Q.Hitler_votes && Q.Reactionary_votes) {
-        if (Q.Hitler_votes > Q.Reactionary_votes) {
+    if (Q.Gallax_votes && Q.Reactionary_votes) {
+        if (Q.Gallax_votes > Q.Reactionary_votes) {
             Q.traditionalist_candidate = "Gallax";
             Q.other_candidate = "Gallax";
             if (Q.kvp_candidate == Q.reactionary_candidate_1934) Q.kvp_candidate = "Gallax";
             Q.dnf_candidate = "Gallax";
-            Q.Hitler_bonus = (Q.Hitler_bonus || 0) - 0.25*Q.other_votes;
+            Q.Gallax_bonus = (Q.Gallax_bonus || 0) - 0.25*Q.other_votes;
             if (Q.center_running) {
                 Q.Center_bonus = (Q.Center_bonus || 0) + 0.25*Q.other_votes;
             } else if (Q.lib_running) {
@@ -768,7 +768,7 @@ if (!Q.concord_formed) {
         if (Q.royalist_candidate == Q.reactionary_candidate_1934) {
             Q.Reactionary_bonus = (Q.Reactionary_bonus || 0) - 0.25*Q.other_votes;
         } else if (Q.royalist_candidate == "Gallax" || Q.royalist_candidate == "Gorrick") {
-            Q.Hitler_bonus = (Q.Hitler_bonus || 0) - 0.25*Q.other_votes;
+            Q.Gallax_bonus = (Q.Gallax_bonus || 0) - 0.25*Q.other_votes;
         }
     }
 }
