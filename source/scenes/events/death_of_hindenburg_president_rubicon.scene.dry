@@ -106,6 +106,10 @@ if (Q.Heuss_votes_pre < 8) {
 }
 Q.royalist_candidate = "Gorrick";
 Q.royalist_gallax_candidate = "Gorrick";
+if (!Q.gallax_deported) {
+    Q.royalist_candidate = "Gallax";
+    Q.royalist_gallax_candidate = "Gallax";
+}
 if (Q.dsu_leader != "Corin Crowde") Q.dsu_candidate = "Frask";
 if (Q.dsu_leader == "Corin Crowde") Q.dsu_candidate = "Crowde";
 Q.nvf_candidate = "Boycott";
@@ -113,6 +117,8 @@ if (Q.nvf_gnu) Q.nvf_candidate = "Hammerton";
 Q.traditionalist_candidate = "Hammerton";
 Q.other_candidate = "Hammerton";
 Q.is_unity_candidate = 0;
+Q.dufour_endorse_boost = 0.03;
+Q.red_scare = 0;
 Q.sapd_candidate = Q.collectivist_candidate;
 Q.kvp_candidate = Q.traditionalist_candidate;
 Q.dnf_candidate = Q.traditionalist_candidate;
@@ -136,7 +142,7 @@ tags: event
 
 President DuFour has announced his retirement, withdrawing to his family after long years at the republic's helm. An era of history is closing, and the future remains to be seen.
 
-The nation pours out tribute to its war hero and outgoing president—though this devotion is confined largely to the political right. On his way out, DuFour makes no secret of where his blessing lies: with the strongmen and the national-order forces who built the new dispensation alongside him. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
+The nation pours out tribute to its war hero and outgoing president—though this devotion is confined largely to the political right. On his way out, DuFour endorses the [+ gnu_candidate +] candidacy openly, and frames the coming election as a test of the order he and Staal have built: if the people return the [+ gnu_candidate +], the path to the Empire is clear; if they do not, he reasons, then Staal never had the mandate he claimed, and the question answers itself. Staal does not take it so philosophically. He regards the early retirement as a betrayal—DuFour placing his family and his conscience above the nation, and gambling the whole settlement on a single vote at the worst possible moment, when a democratic president could still undo everything. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
 
 New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Gorman Grothmoor ?] serves as the acting president.
 
@@ -151,7 +157,7 @@ The <span style="color: #BFC8CC;">**GNU**</span> has nominated Kurt Hammerton-Eq
 @candidates_nazis
 title: The <span style="color: #7A3C00;">Royalist</span>'s last hurrah?
 
-With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate.
+[? if not gallax_deported: Unwilling to let the [+ gnu_candidate +] inherit the whole of the right, the hardline <span style="color: #7A3C00;">Royalists</span> will be fielding Alaric Gallax himself as their candidate. ?][? if gallax_deported: With Gallax gone from the political scene, the <span style="color: #7A3C00;">Royalists</span> will be fielding Ulric Gorrick as their candidate. ?]
 
 The <span style="color: #6A1E1E;">**CSG**</span> will be running [? if dsu_candidate == "Crowde": their party leader, Corin Crowde, as a separate candidate. ?][? if dsu_candidate == "Frask": Bram Frask as a separate candidate. ?]
 
@@ -171,7 +177,7 @@ The <span style="color: #3E88B3;">nationalists</span> are unified in their suppo
 @candidates_dems
 title: The <span style="color: #700000;">**Collectivists**</span>? The Unity Parties? Who will they support?
 
-With the <span style="color: #700000;">**Collectivists**</span> having been heavily suppressed during Staal’s tenure, they are no longer a significant political force. [? if collectivist_banned: They are even banned outright, preventing them from endorsing their own candidate. With boycotting rendered pointless, they have no choice but to support whoever we put forward. ?][? if not collectivist_banned: Grateful for our role in sparing them from Staal’s crackdown months ago, they are fully backing whoever we choose to nominate. ?]
+With the <span style="color: #700000;">**Collectivists**</span> having been heavily suppressed during Staal’s tenure, they are no longer a significant political force. [? if collectivist_banned: They are banned outright, unable to field a candidate of their own; if we ask, they will quietly throw what weight they have left behind whoever we put forward. ?][? if not collectivist_banned: Grateful for our role in sparing them from Staal’s crackdown, they could be brought to back our candidate—though they will need persuading, and the question of how openly they campaign for us is a delicate one. ?]
 
 [? if unionist_candidate == "Aldermoor": The <span style="color: #000000;">Unionists</span> is not fully convinced to back [+ gnu_candidate +] and has chosen to run its own candidate: Konrad Aldermoor. The Mayor of Bradford since the Republic's inception, and a member of the Heartland legislature, he's an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower" to broaden its appeal among dissenters, Aldermoor was first proposed by Sedgewick himself. Though situated on the right wing of his party, he remains firmly committed to the Unity Republic and opposes Staal’s threats against it. ?]
 
@@ -254,8 +260,34 @@ view-if: round = 0
 - @convince_ddp_spd
 - @convince_ddp_unity
 - @convince_dvp_unity
+- @convince_collectivists
 - @round_1: Let the voting begin.
 
+
+# convincing the Collectivists to back our democratic candidate (Part D)
+@convince_collectivists
+title: Appeal to the <span style="color: #700000;">**Collectivists**</span> to back [+ marcher_candidate +].
+view-if: marcher_candidate != gnu_candidate and marcher_candidate != "Boycott" and collectivist_candidate != marcher_candidate
+unavailable-subtitle: They are too estranged from us to listen.
+choose-if: collectivist_banned or collectivist_relation >= 45 or (collectivist_relation >= 35 and collectivist_leader == "Conciliators")
+max-visits: 1
+
+[? if collectivist_banned: Banned and hunted, the <span style="color: #700000;">Collectivists</span> have nothing left to run on their own. ?][? if not collectivist_banned: The <span style="color: #700000;">Collectivists</span> remember who shielded them from Staal's worst, and they are willing to listen. ?] They will line up behind [+ marcher_candidate +]—but how they do it is the question. A quiet word to their voters keeps the bargain out of Staal's newspapers; a loud campaign brings more of them to the polls, but hands the <span style="color: #BFC8CC;">**GNU**</span> exactly the "red front" it wants to run against.
+
+- @collectivists_lowkey: Take their quiet backing.
+- @collectivists_vigorous: Ask them to campaign in force.
+
+@collectivists_lowkey
+on-arrival: collectivist_candidate = marcher_candidate
+go-to: r1_menu if round = 0; r2_campaigning if round = 1
+
+The <span style="color: #700000;">Collectivists</span> pass the word quietly: their people will vote for [+ marcher_candidate +]. No rallies, no banners—just votes. The democratic parties, watching, raise no objection to what they can pretend not to see.
+
+@collectivists_vigorous
+on-arrival: collectivist_candidate = marcher_candidate; sapd_candidate = marcher_candidate; red_scare = 1
+go-to: r1_menu if round = 0; r2_campaigning if round = 1
+
+The <span style="color: #700000;">Collectivists</span> throw themselves into the campaign—red banners in the workshop districts, their speakers sharing our platforms. It brings their voters out in force. It also unsettles the propertied parties, who have spent a decade being told that a vote for us is a vote for the <span style="color: #700000;">Collectivists</span>—and now see the proof paraded down the boulevards. Some of the centre drifts toward [+ gnu_candidate +].
 
 # convincing Z to support a unity candidate
 @convince_z_unity
@@ -398,6 +430,7 @@ var candidate_descs = {
   Crowde: "Corin Crowde of the <span style='color: #6A1E1E; font-weight: bold;'>CSG</span>",
   Frask: "Bram Frask of the <span style='color: #6A1E1E; font-weight: bold;'>CSG</span>",
   Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
+  Gallax: "Alaric Gallax of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Hammerton: "Kurt Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
   Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
@@ -444,6 +477,16 @@ for (var party of Q.parties_election) {
         candidate_votes[supported_candidate] = Q[party + '_normalized'];
     }
 }
+// DuFour's endorsement (Part D): a small, beatable bump to the GNU candidate.
+if (Q.gnu_candidate in candidate_votes) {
+    candidate_votes[Q.gnu_candidate] += (Q.dufour_endorse_boost || 0);
+}
+// Red scare (Part D): a vigorous Collectivist campaign spooks the centre toward the GNU.
+if (Q.red_scare && Q.marcher_candidate != Q.gnu_candidate && (Q.marcher_candidate in candidate_votes)) {
+    var _scare = Math.min(0.03, candidate_votes[Q.marcher_candidate]);
+    candidate_votes[Q.marcher_candidate] -= _scare;
+    if (Q.gnu_candidate in candidate_votes) candidate_votes[Q.gnu_candidate] += _scare;
+}
 var total_votes = 0;
 Q.winner = "";  
 Q.winner_votes = 0;
@@ -481,17 +524,19 @@ Election results:
 
 [? if Gorrick_running : <span style="color: #7A3C00;">**Gorrick**</span> - [+ Gorrick_votes_disp +]% ?]
 
-[? if Strasser_running : <span style="color: #6A1E1E;">**Crowde**</span> - [+ Strasser_votes_disp +]% ?]
+[? if Gallax_running : <span style="color: #7A3C00;">**Gallax**</span> - [+ Gallax_votes_disp +]% ?]
 
-[? if Frick_running : <span style="color: #6A1E1E;">**Frask**</span> - [+ Frick_votes_disp +]% ?]
+[? if Crowde_running : <span style="color: #6A1E1E;">**Crowde**</span> - [+ Crowde_votes_disp +]% ?]
 
-[? if Hammerstein_running : <span style="color: #BFC8CC;">**Hammerton**</span> - [+ Hammerstein_votes_disp +]% ?]
+[? if Frask_running : <span style="color: #6A1E1E;">**Frask**</span> - [+ Frask_votes_disp +]% ?]
 
-[? if Adenauer_running : <span style="color: #000000;">**Aldermoor**</span> - [+ Adenauer_votes_disp +]% ?]
+[? if Hammerton_running : <span style="color: #BFC8CC;">**Hammerton**</span> - [+ Hammerton_votes_disp +]% ?]
 
-[? if Heuss_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Hewes**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Hewes**</span>?] - [+ Heuss_votes_disp +]% ?]
+[? if Aldermoor_running : <span style="color: #000000;">**Aldermoor**</span> - [+ Aldermoor_votes_disp +]% ?]
 
-[? if Schumacher_running : <span style="color: #c00000;">**Shackley**</span> - [+ Schumacher_votes_disp +]% ?]
+[? if Hewes_running : [? if not lvp_formed: <span style="color: #D3C24D;">**Hewes**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**Hewes**</span>?] - [+ Hewes_votes_disp +]% ?]
+
+[? if Shackley_running : <span style="color: #c00000;">**Shackley**</span> - [+ Shackley_votes_disp +]% ?]
 
 [? if marcher_candidate == "Boycott" or sapd_candidate == "Boycott" or collectivist_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
 
@@ -500,7 +545,7 @@ on-arrival: {!
 Q.adenauer_drops_out = 0;
 Q.heuss_drops_out = 0;
 if (Q.unionist_candidate == "Aldermoor" && (Q.ddp_candidate == "Hewes" || Q.gold_candidate == "Hewes" || Q.lvp_candidate == "Hewes") && Q.unionist_candidate != Q.marcher_candidate && (Q.ddp_candidate != Q.marcher_candidate || Q.gold_candidate != Q.marcher_candidate || Q.lvp_candidate != Q.marcher_candidate)) {
-    if (Q.Adenauer_votes > Q.Heuss_votes) {
+    if (Q.Aldermoor_votes > Q.Hewes_votes) {
         Q.heuss_drops_out = 1;
         if (Q.ddp_candidate != Q.marcher_candidate && Q.ddp_candidate != Q.gnu_candidate) {
             Q.ddp_candidate = "Aldermoor";
@@ -516,12 +561,20 @@ if (Q.unionist_candidate == "Aldermoor" && (Q.ddp_candidate == "Hewes" || Q.gold
         Q.unionist_candidate = "Hewes";
     }
 }
+// Gallax dropout (Part D): if a democrat leads round 1, Gallax withdraws and throws the
+// hardcore-Royalist vote behind the GNU to block them (he too wants the Empire).
+Q.gallax_drops_out = 0;
+if ((Q.royalist_gallax_candidate == "Gallax" || Q.royalist_candidate == "Gallax") && (Q.winner == "Shackley" || Q.winner == "Hewes" || Q.winner == "Aldermoor")) {
+    Q.gallax_drops_out = 1;
+    Q.royalist_gallax_candidate = Q.gnu_candidate;
+    Q.royalist_candidate = Q.gnu_candidate;
+}
 !}
 go-to: r2_menu
 
 In the lead is [+ winner_desc +]. There is no majority in the first round. In the second round, any candidate who wins a plurality will win overall.
 
-The <span style="color: #7A3C00;">Royalists</span> and their splinter parties remain divided, locked in a permanent grudge. As a result, [+ dsu_candidate +] and [+ royalist_candidate +] will continue to run separately. Their inability to set aside mutual animosities signals the effective death of the movement, which spends more time quarreling internally than opposing the regime.
+[? if not gallax_drops_out: The <span style="color: #7A3C00;">Royalists</span> and their splinter parties remain divided, locked in a permanent grudge. As a result, [+ dsu_candidate +] and [+ royalist_candidate +] will continue to run separately. Their inability to set aside mutual animosities signals the effective death of the movement, which spends more time quarreling internally than opposing the regime. ?][? if gallax_drops_out: Rather than let a democrat take the presidency, Alaric Gallax has withdrawn from the second round and thrown his weight behind [+ gnu_candidate +]. He has no love for Staal's men, but he means to see the Commonwealth returned to the Empire one way or another—and the [+ gnu_candidate +] is a surer road to it than any republican. The hardline <span style="color: #7A3C00;">Royalist</span> vote consolidates behind the GNU. ?]
 
 [? if heuss_drops_out : The liberal candidate Theodor Hewes has dropped out in favor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]'s Konrad Aldermoor. This consolidates the votes of the moderate <i>Propertied Bloc</i>, and they're expected to put up a decent fight against [+ gnu_candidate +]. ?]
 [? if adenauer_drops_out : The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] candidate Konrad Aldermoor has dropped out in favor of the liberal candidate Theodor Hewes. This consolidates the votes of the moderate <i>Propertied Bloc</i>, and they're expected to put up a decent fight against [+ gnu_candidate +]. ?]
@@ -579,6 +632,7 @@ view-if: round = 1
 - @convince_ddp_spd
 - @convince_ddp_unity
 - @convince_dvp_unity
+- @convince_collectivists
 - @r2_vote: Let the voting begin.
 
 
