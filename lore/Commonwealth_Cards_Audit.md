@@ -115,20 +115,21 @@ premise reframe. My recommendation is in the third column; jot your call in **�
 Found while auditing the cards, but **not card-fixable** — they're game-wide terms or live in events.
 Each wants a decision before a sweep.
 
-### C1 · "Kurt Staal" — 35× across 22 files · **DECISION NEEDED**
-Staal's first name is **"Kurt"** game-wide (`main`, `status`, `status_right`, `game_over`,
-`ending_slides`, `library`, the portrait `img/portraits/StaalKurt.jpg` + its `alt="Kurt Staal"`, and
-~16 event files). But `Commonwealth_Character_Names.md` canon is **"Werner"** — "Kurt" is the
-un-reskinned Schleicher first name.
-→ **Decide:** sweep to **"Werner Staal"** (or surname-only **"Staal"** / "General Staal", as I did in
-`red_general`) across all 35 + the portrait alt-text (the art filename is internal/deferred) — *or*
-accept "Kurt" as canon and update the names doc. **Recommend Werner / surname-only.**
+### C1 · "Kurt Staal" → "Werner Staal" — swept 36× / 22 files · **DONE (2026-06-30)**
+Staal's first name was **"Kurt"** game-wide (core UI, the portrait `alt` text, ~18 event files) — the
+un-reskinned Schleicher first name; `Commonwealth_Character_Names.md` canon = **Werner**.
+→ **Swept "Kurt Staal" → "Werner Staal"** (36 occ / 22 files, `reskin_swap.mjs`, LF-safe, compile
+exit 0); 0 stale remain. The portrait alt-text now reads "Werner Staal"; the art filename
+`img/portraits/StaalKurt.jpg` stays (internal/deferred). `red_general` keeps surname-only
+"Staal"/"General Staal" (both canon-valid). **"Kurt Shackley" (Schumacher) is a separate canon
+character** and was untouched.
 
-### C2 · "social democracy / social-democratic" — 35× across 22 files · **DECISION NEEDED**
-Appears in core UI (`status`, `status_right`, `library`, `game_over`, `ending_slides`, `main`) and many
-events. The setting's creed is **Reformism** (style guide: socialism → Reformism; the SPD → the
-Marchers). One card instance survives (`shuffle_leadership` L625, left untouched pending your call).
-→ **Decide:** keep "social democracy" as a generic descriptor, or sweep → **"Reformism / Reformist"**.
+### C2 · "social-democratic" → "Reformist" — 1 instance · **DONE (2026-06-30)**
+**Correction:** the earlier "35× / 22 files" figure was a mislabeled grep — that file list was
+actually the Kurt Staal set (C1). In reality "social democracy / social-democratic" is only **one
+player-facing instance** — `shuffle_leadership` L625, now **"the Reformist cause"** — plus **2
+out-of-universe credits citations** (Smaldone / Winkler bibliography), which stay per the
+credits-are-real-world rule.
 
 ### C3 · events-only residuals (cards are clean)
 - **"Wendell Croft"** — 18× across 9 files (`root`, `main`, `election_1928`, `presidential_election_1932_*`,
@@ -138,6 +139,13 @@ Marchers). One card instance survives (`shuffle_leadership` L625, left untouched
 - **"Storm Troopers"** — 2× (`nazi_18`, `nazi_19`) → **the Loyalists** (same fix as the card trio).
 - *(Check during the events pass: "Roma Faithful Church" appears only in `schleicher_cabinet_11` now;
   the religious-institution naming standardised per §A4.)*
+
+### C4 · "Kurt Hammerton" / "Kurt Hammerton-Equord" → Gideon Hammerton · **FLAG (awaiting OK)**
+Same leaked-"Kurt" class, different character — surfaced while sweeping C1. The GNU president
+**Hammerton** shows as "Kurt Hammerton-Equord" (`status_right` alt-text; `death_of_hindenburg_president_rubicon`
+L434) and "General Kurt Hammerton" (`schleicher_cabinet_6` L24). Canon (names doc) = **Gideon
+Hammerton**, surname-only — and the real-world "-Equord" suffix should drop too. Recommend the same
+fix as Staal; say the word and I'll sweep it (the `hammerstein.jpg` art filename stays).
 
 ---
 

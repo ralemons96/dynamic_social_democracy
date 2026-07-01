@@ -63,7 +63,7 @@ As this marks yet another cabinet's fall under Staal's influence, DuFour's suspi
 - @papen_3
 
 @papen_3
-title: General Kurt Staal is appointed chancellor!
+title: General Werner Staal is appointed chancellor!
 on-arrival: {!
 Q.chancellor = "Staal";
 if (Q.heartland_leader == "Goodryke") Q.heartland_leader = "Staal"

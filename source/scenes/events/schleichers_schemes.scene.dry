@@ -9,7 +9,7 @@ face-image: img/portraits/StaalKurt.jpg
 
 = Staal's Schemes
 
-Chancellor Kurt Staal claims to have a plan to save the Commonwealth, and he has reached out to the Reformists with vague promises. He claims that in order to govern, the Assembly must be temporarily suspended to prevent the Royalists and Collectivists from disrupting government, in effect giving him and DuFour dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
+Chancellor Werner Staal claims to have a plan to save the Commonwealth, and he has reached out to the Reformists with vague promises. He claims that in order to govern, the Assembly must be temporarily suspended to prevent the Royalists and Collectivists from disrupting government, in effect giving him and DuFour dictatorial powers. In the meantime, he is enacting a public works program and job creation plan, which he claims will stabilize the economy, 
 
 [? if works_program <= 0: The Free Guilds are somewhat favorable to Staal's plan, as they see a commonality between Staal's economic plan and the Greater Worker's Guild's Voss Renewal Plan for debt-funded job creation. However, the rest of our party is vehemently against Staal. ?]
 
