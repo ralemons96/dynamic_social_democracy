@@ -12,7 +12,7 @@ At the <span style="color: #D50032;">Labor and Reformist International</span>, w
 
 - @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> and <span style="color: #C8102E;">Far Western</span> <span style="color: #f0456a;">Democratic Movements</span> to move their governments in the Commonwealth's favor.
 - @austria: Learn organization and street fighting from the <span style="color: #A50034;">Freehold Liberty Movement</span>.
-- @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">Reformists</span>.
+- @scandi: Learn the path of economics and reform from the Nievalian <span style="color: #D70926;">Reformists</span>.
 - @comintern: Embed a spy in the <span style="color: #D50000;">Collectivist International</span>'s conference.
 - @america: Contact the <span style="color: #940f0f;">Reformist Party of the Allied States</span>.
 - @return: We do not need international contacts at the moment.
@@ -46,7 +46,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: reformist_strength += 3; wtb_support += 1; resources -= 1; moderate_plan_support += 1
 
-The programs of the Nordic <span style="color: #D70926;">Reformists</span> involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
+The programs of the Nievalian <span style="color: #D70926;">Reformists</span> involve active government intervention in the economy. The Nievalians are a northern kingdom long allied to the Empire, yet their devotion to the welfare of common folk keeps their own democratic movements content. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
 
 @comintern
 subtitle: -1 resources
