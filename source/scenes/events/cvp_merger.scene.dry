@@ -224,7 +224,7 @@ Welfare - the Commonwealth cannot afford welfare and maintain a balanced budget 
 
 Labor - Strongly against any <span style="color: #c00000;">socialistic</span> policies that benefit the Free Guilds
 
-Great Depression - Maintain fiscal orthodoxy, productive industries and agriculture must be kept afloat though
+economic calamity - Maintain fiscal orthodoxy, productive industries and agriculture must be kept afloat though
 
 @economy_moderate
 on-arrival: guild_unionist += 4; guild_gold -= 2; guild_lvp -= 2; burgher_unionist += 4; burgher_dnf -= 2; commons_unionist -= 1.5; commons_marcher += 3; disfavored_unionist -= 1.5; disfavored_marcher += 3; concord_economy_keynes = 1
@@ -238,7 +238,7 @@ Welfare - Focus on funding the current system, as the poor are suffering
 
 Labor - Against any <span style="color: #c00000;">socialistic</span> policies, but neutrality in labor affairs is a key component of the national community.
 
-Great Depression - Experiment with a public works plan, combined with an increase in the money supply
+economic calamity - Experiment with a public works plan, combined with an increase in the money supply
 
 @economy_left
 on-arrival: concord_traditionalist_balance -= 10; concord_left += 5; landed_unionist -= 4; landed_dnf += 2; landed_gold += 2; landed_lvp += 2; guild_unionist -= 6; guild_dnf += 2; guild_gold += 4; guild_lvp += 4; burgher_unionist += 4; burgher_dnf -= 2; burgher_ddp -= 2; commons_unionist += 8; commons_marcher -= 5; commons_collectivist -= 3; disfavored_unionist += 8; disfavored_marcher -= 5; disfavored_royalist -= 3; concord_economy_keynes = 1
@@ -250,7 +250,7 @@ Taxation - Implement more progressive taxes and regulations, to ensure a fair th
 
 Economic Policy - Implement a 'Social market economy', a middle way between capitalism and <span style="color: #c00000;">Reformism</span>
 
-Great Depression - A public works program is needed, the people must get back to work
+economic calamity - A public works program is needed, the people must get back to work
 
 @coalition
 title: Inter-Party Relations

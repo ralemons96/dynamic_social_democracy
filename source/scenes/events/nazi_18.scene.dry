@@ -26,7 +26,7 @@ Instances of the Tessen revolt are spreading across the nation, first in Stathmo
 
 Nonetheless, this is great news! The Banners and police can finally bring an end to the unceasing political violence plaguing the Commonwealth the past years.
 
-- @nazi_2: Staal seeks to attract former <span style="color: #7A3C00;">Storm Troopers</span> into a government militia.
+- @nazi_2: Staal seeks to attract former <span style="color: #7A3C00;">Loyalists</span> into a government militia.
 
 @nazi_2
 on-arrival: loyalist_strength *= 0.9; loyalist_militancy -= 0.05; army_strength += 25; reichstag_militancy -= 1.5; vanguard_strength += 75; vanguard_militancy += 0.1; disfavored_royalist -= 4; disfavored_collectivist += 2; royalist_explode += 1

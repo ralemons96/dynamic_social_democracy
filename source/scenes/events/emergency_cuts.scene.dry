@@ -8,7 +8,7 @@ max-visits: 4
 
 = Emergency budget cuts
 
-Due to the crisis of the Great Depression, government budgets have fallen and welfare spending has risen substantially. Chancellor [+ chancellor +] has used the Emergency Articles of the Unity Constitution in order to pass an emergency bill cutting welfare spending.
+Due to the crisis of the economic calamity, government budgets have fallen and welfare spending has risen substantially. Chancellor [+ chancellor +] has used the Emergency Articles of the Unity Constitution in order to pass an emergency bill cutting welfare spending.
 
 [? if marcher_toleration : If we reject this, it would mean the end of the toleration agreement, and [+ chancellor +] would likely dissolve the Assembly and call new elections. Of course, the workers are opposed to this policy, although it might be necessary for economic and political stability. ?]
 

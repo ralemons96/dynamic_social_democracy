@@ -8,4 +8,4 @@ max-visits: 1
 
 = Global Economic Recovery
 
-Finally, countries across the world seem to be recovering from the worst effects of the Great Depression. It is an uneven recovery, but we seem to be exiting the worst period of crisis. [? if disfavored >= 10: Our unemployment has fallen. ?]
+Finally, countries across the world seem to be recovering from the worst effects of the economic calamity. It is an uneven recovery, but we seem to be exiting the worst period of crisis. [? if disfavored >= 10: Our unemployment has fallen. ?]

@@ -3829,7 +3829,7 @@ go-to: ministries
 
 This is highly unexpected, and many in the left and center of our party are criticizing this decision.
 
-[? if year == 1928 : Since Wendell Croft resigned, Edmund Askew has been appointed chancellor. ?]
+[? if year == 1928 : Since Vance resigned, Edmund Askew has been appointed chancellor. ?]
 [? if year > 1928 and (not return_to_normalcy or not stegerwald_path): Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed chancellor. ?]
 [? if year > 1928 and return_to_normalcy and stegerwald_path: Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed chancellor. With Askew too unpopular, the newly <span class="tooltip-text" title="good mod">dynamic</span> [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] seeks to preserve its electoral strength. ?]
 
