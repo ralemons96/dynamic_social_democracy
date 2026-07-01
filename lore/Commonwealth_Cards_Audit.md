@@ -140,12 +140,13 @@ credits-are-real-world rule.
 - *(Check during the events pass: "Roma Faithful Church" appears only in `schleicher_cabinet_11` now;
   the religious-institution naming standardised per §A4.)*
 
-### C4 · "Kurt Hammerton" / "Kurt Hammerton-Equord" → Gideon Hammerton · **FLAG (awaiting OK)**
+### C4 · "Kurt Hammerton" / "Kurt Hammerton-Equord" → Gideon Hammerton · **DONE (2026-06-30)**
 Same leaked-"Kurt" class, different character — surfaced while sweeping C1. The GNU president
-**Hammerton** shows as "Kurt Hammerton-Equord" (`status_right` alt-text; `death_of_hindenburg_president_rubicon`
-L434) and "General Kurt Hammerton" (`schleicher_cabinet_6` L24). Canon (names doc) = **Gideon
-Hammerton**, surname-only — and the real-world "-Equord" suffix should drop too. Recommend the same
-fix as Staal; say the word and I'll sweep it (the `hammerstein.jpg` art filename stays).
+**Hammerton** was shown as "Kurt Hammerton-Equord" (×5) and "General Kurt Hammerton" (×3). **Swept →
+"Gideon Hammerton"** (8 occ / 6 files: `status`, `status_right`, `death_of_hindenburg_president_rubicon`,
+`military_angry`, `sa_ban_post`, `schleicher_cabinet_6`), dropping the real-world "-Equord". The
+internal `"Hammerton"` value, `hammerstein_win` flag, and `hammerstein.jpg` art are untouched; 0 stale
+remain, compile exit 0.
 
 ---
 

@@ -45,7 +45,7 @@ is-special: true
 [? if gnu_existed: <div style="position: relative; width: 100%; max-width: 600px; margin: auto;"> ?]
 
 [? if gnu_existed: <div style="white-space: nowrap; display: flex; justify-content: space-between; width: 100%;"> ?]
-[? if gnu_existed: [? if president == "DuFour": <div style="text-align: left; flex: 1;">Paul DuFour</div> ?][? if president == "Burnell (acting)": <div style="text-align: left; flex: 1;">Erwin Burnell (acting)</div> ?][? if president == "Grothmoor (acting)": <div style="text-align: left; flex: 1;">Gorman Grothmoor (acting)</div> ?][? if president == "Hammerton": <div style="text-align: left; flex: 1;">Kurt Hammerton-Equord</div> ?][? if president == "Seckard": <div style="text-align: left; flex: 1;">Hans Seckard</div> ?] ?]
+[? if gnu_existed: [? if president == "DuFour": <div style="text-align: left; flex: 1;">Paul DuFour</div> ?][? if president == "Burnell (acting)": <div style="text-align: left; flex: 1;">Erwin Burnell (acting)</div> ?][? if president == "Grothmoor (acting)": <div style="text-align: left; flex: 1;">Gorman Grothmoor (acting)</div> ?][? if president == "Hammerton": <div style="text-align: left; flex: 1;">Gideon Hammerton</div> ?][? if president == "Seckard": <div style="text-align: left; flex: 1;">Hans Seckard</div> ?] ?]
 [? if gnu_existed and chancellor == "Staal": <div style="text-align: right; flex: 1;">Werner Staal</div> ?]
 [? if gnu_existed and chancellor == "Bredon": <div style="text-align: right; flex: 1;">Ferdinand Bredon</div> ?]
 [? if gnu_existed and chancellor == "Goodlake": <div style="text-align: right; flex: 1;">Reynold Goodlake</div> ?]
@@ -55,7 +55,7 @@ is-special: true
 [? if gnu_existed and president == "DuFour": <img src="img/portraits/hindenburger.jpg" alt="Paul DuFour" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Burnell (acting)": <img src="img/portraits/bumke.jpg" alt="Erwin Burnell" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Grothmoor (acting)": <img src="img/portraits/placeholder.jpg" alt="Hermann Grothmoor" style="width: 50%;"> ?]
-[? if gnu_existed and president == "Hammerton": <img src="img/portraits/hammerstein.jpg" alt="Kurt Hammerton-Equord" style="width: 50%;"> ?]
+[? if gnu_existed and president == "Hammerton": <img src="img/portraits/hammerstein.jpg" alt="Gideon Hammerton" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Seckard": <img src="img/portraits/seeckt.jpg" alt="Hans Seckard" style="width: 50%;"> ?]
 [? if gnu_existed and chancellor == "Staal": <img src="img/portraits/StaalKurt.jpg" alt="Werner Staal" style="width: 50%;"> ?]
 [? if gnu_existed and chancellor == "Bredon": <img src="img/portraits/bredow.jpg" alt="Ferdinand Bredon" style="width: 50%;"> ?]

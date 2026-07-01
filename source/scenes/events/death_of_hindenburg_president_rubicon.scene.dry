@@ -150,7 +150,7 @@ New presidential elections are to be held as soon as possible. The <span style="
 
 @candidates
 
-The <span style="color: #BFC8CC;">**GNU**</span> has nominated Kurt Hammerton-Equord—a Commonwealth Army general, long-time friend of Staal, and the current Chief of the Army. He considers himself a servant of the state rather than of any political party, and served as Staal’s liaison to the Free Guilds in recent months. He has also been responsible for overseeing the expansion of the Commonwealth Army during this time. Little else is known about his ideological convictions; like Staal, he is flexible.
+The <span style="color: #BFC8CC;">**GNU**</span> has nominated Gideon Hammerton—a Commonwealth Army general, long-time friend of Staal, and the current Chief of the Army. He considers himself a servant of the state rather than of any political party, and served as Staal’s liaison to the Free Guilds in recent months. He has also been responsible for overseeing the expansion of the Commonwealth Army during this time. Little else is known about his ideological convictions; like Staal, he is flexible.
 
 - @candidates_nazis
 
@@ -431,7 +431,7 @@ var candidate_descs = {
   Frask: "Bram Frask of the <span style='color: #6A1E1E; font-weight: bold;'>CSG</span>",
   Gorrick: "Ulric Gorrick of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
   Gallax: "Alaric Gallax of the <span style='color: #7A3C00; font-weight: bold;'>Royalists</span>",
-  Hammerton: "Kurt Hammerton-Equord of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
+  Hammerton: "Gideon Hammerton of the <span style='color: #BFC8CC; font-weight: bold;'>GNU</span>",
   Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
   Hewes: "Theodor Hewes of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
   Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
