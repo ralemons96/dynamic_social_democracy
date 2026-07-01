@@ -9,7 +9,7 @@ go-to: schleicher_menu if not staal_marcher_adopted; schleicher_spd_established 
 
 = Relations with the Red General
 
-[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Kurt Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker's Guild, our Free Guild, has shown some openness to an accommodation with General Kurt Staal. He has also shown interest in winning over the Free Guild through his support for public works. ?]
+[? if chancellor_party == "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains in full control of the government for the time being, we must not get complacent. Staal certainly has more tricks up his sleeve — it is too early to ignore his ability to further influence the environment. ?][? if chancellor_party != "Marcher": While the <span style="color: #c00000;">**Marchers**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the Greater Worker's Guild, our Free Guild, has shown some openness to an accommodation with General Staal. He has also shown interest in winning over the Free Guild through his support for public works. ?]
 
 @schleicher_menu
 

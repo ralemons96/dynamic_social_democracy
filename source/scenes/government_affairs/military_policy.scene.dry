@@ -42,6 +42,6 @@ choose-if: budget >= 1 and army_loyalty < 1
 unavailable-subtitle: [? if budget < 1 : We do not have the budget. ?][? if army_loyalty >= 1 : The Commonwealth Army is already fully loyal to the democratic government. ?]
 on-arrival: coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); army_loyalty += 0.15; army_militancy -= 0.5 if army_loyalty < 0.5; budget -= 1; coup_progress += 1; gold_relation -= 5; pacifism += 1; democratization += 1; gold_right += 2; ddp_left += 1; lvp_right += 1; dufour_angry += 5;
 
-Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-<span style="color: #808080;">reactionary</span> backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Kapp putsch.
+Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-<span style="color: #808080;">reactionary</span> backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Avriza putsch.
 
 The center-right parties are committed to the military and deeply suspicious of our efforts to reform it.

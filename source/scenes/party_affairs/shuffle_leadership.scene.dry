@@ -570,7 +570,7 @@ Tobias Leighart is now an advisor.
 
 @add_aufhauser
 title: Siegfried Auberon
-subtitle: Siegfried Auberon is the leader of the AfA-Bund, the white-collar Free Guild federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Free Guild-Party Coordination, Addressing the Economic Crisis ?]
+subtitle: Siegfried Auberon is the leader of the white-collar Free Guild federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing White-Collar Workers, Free Guild-Party Coordination, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
 tags: labor_advisor
@@ -622,7 +622,7 @@ Carlo Marrow is now an advisor.
 
 @add_schumacher
 title: Kurt Shackley
-subtitle: Kurt Shackley is a Great War veteran and energetic speaker for the <span style="color: #c00000;">social-democratic</span> cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Banners, Addressing the Economic Crisis ?]
+subtitle: Kurt Shackley is a veteran of the Great Wars and an energetic speaker for the <span style="color: #c00000;">social-democratic</span> cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Banners, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor
@@ -634,7 +634,7 @@ Kurt Shackley is now an advisor.
 
 @add_leber
 title: Lucan Lebbon
-subtitle: Lucan Lebbon is a former Commonwealth Army officer who resigned in opposition to the Kapp coup attempt. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, Building a People's Party ?]
+subtitle: Lucan Lebbon is a former Commonwealth Army officer who resigned in opposition to the Avriza putsch. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Democracy, Military Affairs, Building a People's Party ?]
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3

@@ -8,12 +8,12 @@ card-image: img/international.jpg
 max-visits: 4
 #subtitle: Building ties with our fraternal socialist parties.
 
-At the <span style="color: #D50032;">Labor and Reformist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">Reformist</span> parties in <span style="color: #001489;">Europe</span> and across the world.
+At the <span style="color: #D50032;">Labor and Reformist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">Reformist</span> parties on <span style="color: #001489;">the continent</span> and across the world.
 
-- @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">Fulyrian</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in the Commonwealth's favor.
-- @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Liberty Movement</span>.
+- @fr_uk: Build relationships with the <span style="color: #002654;">Ethian</span> and <span style="color: #C8102E;">Far Western</span> <span style="color: #f0456a;">Democratic Movements</span> to move their governments in the Commonwealth's favor.
+- @austria: Learn organization and street fighting from the <span style="color: #A50034;">Freehold Liberty Movement</span>.
 - @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">Reformists</span>.
-- @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Collectivist International</span>'s conference.
+- @comintern: Embed a spy in the <span style="color: #D50000;">Collectivist International</span>'s conference.
 - @america: Contact the <span style="color: #940f0f;">Reformist Party of the Allied States</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
@@ -35,7 +35,7 @@ unavailable-subtitle: Not enough resources.
 audio: shuffle music/communist/workers_of_vienna_normalized.mp3
 on-arrival: left_strength += 3; radicalization += 1; banner_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
 
-Our the Banners can learn much in paramilitary organization and training from the Freehold Liberty militia (the Republican Protection League), the paramilitary branch of the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">Reformists</span>.
+Our the Banners can learn much in paramilitary organization and training from the Freehold Liberty militia (the Republican Protection League), the paramilitary branch of the <span style="color: #A50034;">Freehold Reformists</span>.
 
 [? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Freehold <span style="color: #A50034;">Reformist Worker's Party</span> build up their resources in preparation for a future struggle, legally and illegally. ?]
 

@@ -72,7 +72,7 @@ The <span style="color: #7A3C00;">**Loyalists**</span> have won this show of str
 Mass rallies are a common feature of <span style="color: #c00000;">Reformist</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
 
 - @class_struggle: The class struggle of the proletariat against the Burghers.
-- @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
+- @welfare: Social policy - the maintenance and expansion of social welfare programs.
 - @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
 - @wtb: Support the Voss Renewal Plan!
@@ -100,7 +100,7 @@ Our speakers defend the <span style="color: #000000;">rep</span><span style="col
 @pacifism
 on-arrival: pacifism += 1; nationalism -= 3*(1 - dissent); commons_marcher += 2*(1 - dissent) if pacifism >= 3; disfavored_marcher += 1*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; burgher_marcher += 2*(1-dissent) if pacifism >= 3; ddp_left += 0.5 if (pacifism >= 3 and nationalism <= 50)
 
-Our speakers denounce the military establishment and all the spending entering that black hole. Some adventurous speakers question the responsibility of the military elites in organizing the Great War.
+Our speakers denounce the military establishment and all the spending entering that black hole. Some adventurous speakers question the responsibility of the military elites in organizing the Great Wars.
 
 [? if pacifism < 3 : Given the volume of nationalist indoctrination in our society, it is difficult to argue so vehemently against the military. ?]
 [? if pacifism >= 3 : Since we have consistently made pacifism a theme of our campaign, the workers are enthusiastic about our message. ?]

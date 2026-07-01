@@ -61,7 +61,7 @@ As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="
 view-if: royalist_urgency >= 3 and not loyalist_banned and (chancellor == "Goodryke" or chancellor == "Staal")
 on-arrival: loyalist_strength *= 0.97; loyalist_militancy -= 0.02; heartland_police_loyalty -= 0.02; loyalist_strength *= 0.98 if heartland_police_loyalty >= 0.75
 
-While an outright ban on the <span style="color: #7A3C00;">**Loyalists**</span> may be out of reach, we can make life as difficult as possible for the <span style="color: #7A3C00;">Storm Troopers</span>. The most reckless among them can be prosecuted on charges of murder and related crimes, and we can ensure legal public demonstrations and meetings are protected from their unlawful disruptions.
+While an outright ban on the <span style="color: #7A3C00;">**Loyalists**</span> may be out of reach, we can make life as difficult as possible for the <span style="color: #7A3C00;">Loyalists</span>. The most reckless among them can be prosecuted on charges of murder and related crimes, and we can ensure legal public demonstrations and meetings are protected from their unlawful disruptions.
 
 @unban_sa
 view-if: loyalist_banned = 1
@@ -104,6 +104,6 @@ We are making progress towards negotiating a concordat between Heartland and the
 view-if: (heartland_concordat_progress >= 2 and not unionist_leader = "Renck") or (heartland_concordat_progress >= 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat = 1; unionist_relation += 8; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed an Accord between the Free State of Heartland and the Roma Faithful Church, guaranteeing religious freedom for Faithful in Heartland. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
+We have signed an Accord between the Free State of Heartland and the Faithful Church, guaranteeing religious freedom for Faithful in Heartland. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
 
 [? if traditionalist_ideology == "Radical": The Faithful members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party. ?]
