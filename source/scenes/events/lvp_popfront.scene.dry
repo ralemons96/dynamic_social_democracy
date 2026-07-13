@@ -56,7 +56,7 @@ The vote succeeds with [+ 100 - popular_front_coalition +]% of the vote, and our
 call: set_next_election_time
 go-to: collapse_prussia if (popular_front_coalition_heartland < 50 and ddp_in_popular_front_heartland)
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @let_it_happen_braun
 on-arrival: marcher_caretaker = 1
@@ -65,11 +65,11 @@ go-to: collapse_prussia if (popular_front_coalition_heartland < 50 and ddp_in_po
 
 The vote succeeds, and our government has resigned. Chancellor [+ chancellor +] remains as the head of a caretaker government, but no longer has the power to enact new policies.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @collapse_prussia
 view-if: (popular_front_coalition_heartland < 50 and ddp_in_popular_front_heartland) and not (in_popular_front and ddp_in_popular_front and popular_front_coalition < 50 and not constructive_vonc)
 on-arrival: was_in_social_catholic_coalition_heartland = 0; was_in_social_liberal_coalition_heartland = 0; was_in_weimar_coalition_heartland = 0; was_in_grand_coalition_heartland = 0; was_in_social_catholic_coalition_heartland = 1 if in_social_catholic_coalition_heartland == 1 or in_minority_social_catholic_coalition_heartland == 1; was_in_social_liberal_coalition_heartland = 1 if in_social_liberal_coalition_heartland == 1 or in_minority_social_liberal_coalition_heartland == 1; was_in_weimar_coalition_heartland = 1 if ((in_weimar_coalition_heartland == 1 or in_minority_weimar_coalition_heartland == 1) or (in_grand_coalition_heartland == 1 and lvp_formed)); was_in_grand_coalition_heartland = 1 if (in_grand_coalition_heartland == 1 or in_minority_grand_coalition_heartland == 1); in_right_coalition_heartland = 0; in_social_catholic_coalition_heartland = 0; in_social_liberal_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; in_minority_social_catholic_coalition_heartland = 0; in_minority_social_liberal_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; ddp_in_popular_front_heartland = 0; collectivist_goals_seen_heartland = 0; marcher_toleration_heartland = 0
 call: set_next_election_time_prussia
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +]. 
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +]. 

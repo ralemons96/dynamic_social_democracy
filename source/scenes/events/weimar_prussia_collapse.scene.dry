@@ -132,4 +132,4 @@ call: set_next_election_time_prussia
 
 No coalition is able to be formed, forcing [+ heartland_leader +] to call new elections, with the extremist parties likely to benefit from.
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +]. 
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +]. 

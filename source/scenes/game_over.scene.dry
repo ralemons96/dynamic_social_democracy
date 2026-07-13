@@ -365,7 +365,6 @@ this.achieve('game_completed');
 
 = End
 
-[? if (chancellor == royalist_chancellor or president == "Gallax" or president == "Gorrick" or president == "Frask") and not republic_victory: <iframe src="https://en.wikipedia.org/wiki/The_Holocaust" height="800 " width="545" style=" margin-left: -20px; border: 1px solid #000; "></iframe> ?]
 
 @eg_menu
 

@@ -48,7 +48,7 @@ go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_
 
 President [+ president +], tired of this instability, has forced Askew's resignation to pave the way for new elections, hoping that the gains of the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> will persuade him to enter a coalition with them.
 
-The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @new_prussia_election
 on-arrival: heartland_coalition_trigger = 1

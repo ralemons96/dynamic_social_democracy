@@ -26,7 +26,7 @@ call: set_next_election_time
 
 We have broken with the [+ chancellor +] government, and have voted against them in a vote of no confidence. We also repealed their emergency powers. Westmore and his group of moderates that still remain within the <span style="color: #3E88B3;">**Traditionalists**</span> are outraged with Mallin letting the <span style="color: #c00000;">**Marchers**</span> takedown [+ chancellor +]'s right-wing government, and resign en masse.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @vote_no_nothing
 title: Support the vote of no confidence, voting against the government.

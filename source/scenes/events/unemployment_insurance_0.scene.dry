@@ -25,7 +25,7 @@ Fine. If the Burghers wish to blow up the government, let them do so. <span styl
 
 [? if chancellor_party = "Marcher" : Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed Chancellor. ?] Askew now leads an all-propertied cabinet. Using the Emergency Articles, Askew and President DuFour have passed cuts over the objections of the Assembly. The <span style="color: #3E88B3;">**Traditionalists**</span> won't enter a government that is ratifying the Serannus Plan therefore no majority can be found.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @accept
 unavailable-subtitle: [? if reformist_strength + center_strength + labor_strength / 2 < left_strength + labor_strength / 2: The party won't allow this. ?]

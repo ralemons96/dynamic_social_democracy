@@ -22,7 +22,7 @@ go-to: recalculate
 
 We have voted against the [+ chancellor +] government in a vote of no confidence. 
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 
 @vote_yes
@@ -34,7 +34,7 @@ go-to: recalculate
 
 We have once again voted in favor of the [+ chancellor +] government in a vote of no confidence. However, our parliamentary delegation is in open revolt over this decision and has announced they will disobey our orders, ultimately bringing down the [+ chancellor +] government regardless.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 
 @recalculate

@@ -32,7 +32,7 @@ Since we are currently ruling as part of an emergency government, we may use qua
 on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; gold_relation -= 8; lvp_relation -= 8; unionist_relation -= 8; ddp_relation -= 10; collectivist_relation -= 8; coup_progress += 2; commons_marcher -= 4; burgher_marcher -= 5; guild_marcher -= 5; landed_marcher -= 5; faithful_marcher -= 5; disfavored_marcher -= 5; coup_progress += 2 if royalist_normalized >= 0.3; coup_progress += 2 if royalist_normalized + traditionalist_normalized >= 0.5 and traditionalist_ideology = "Radical"; coup_progress += 2 if royalist_normalized + dnf_normalized >= 0.5 and traditionalist_ideology = "Moderate"; loyalist_strength += 100 if coup_progress >= 7; warden_strength += 100 if coup_progress >= 7
 achievement: ausnahmezustand
 
-Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year +].
+Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 Let us hope this does not backfire.
 
@@ -2553,7 +2553,7 @@ There is no path to a majority government. President DuFour is tired of the chao
 
 Goodryke is immediately faced with a vote of no confidence, given his unpopularity. However the <span style="color: #c00000;">**Marchers**</span> votes, he is guaranteed to fall, due to the unanimous hatred against him from all other parties.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @no_majority_bruning_toleration
 on-arrival: no_majority_bruning_elections += 1
@@ -2642,7 +2642,7 @@ With the <span style="color: #7A3C00;">**Royalists**</span> commanding a strong 
 # TODO
 @no_majority_papen_plus
 
-However, it's likely that even a coalition of all parties to the right won't receive a majority, not without the support of the antagonistic <span style="color: #000000;">Unionist Party</span>. The new Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+However, it's likely that even a coalition of all parties to the right won't receive a majority, not without the support of the antagonistic <span style="color: #000000;">Unionist Party</span>. The new Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +].
 
 @no_majority_papen_2
 on-arrival: {!
@@ -2904,7 +2904,7 @@ With Goodryke back in his inner circle after Staal’s fall, and his disillusion
 
 Once again, the question stands before us: do we choose to tolerate this cabinet? That is for you to decide.
 
-The new Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+The new Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +].
 
 @hitler_chancellor
 on-arrival: chancellor = "Gallax"; chancellor_party = "Royalist"
@@ -3144,7 +3144,7 @@ if (Q.pro_republic < 36) {
 !}
 view-if: no_confidence_votes > 50
 
-The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
+The next elections are set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 
 @no_confidence_win
@@ -3616,7 +3616,7 @@ if (Q.far_right_coalition >= 50) {
 }
 !}
 
-There is no path to a workable Assembly majority or minority government. The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
+There is no path to a workable Assembly majority or minority government. The next elections are set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 The people's faith in democracy is shaken by this ordeal. Of course, the <span style="color: #7A3C00;">Royalists</span> are exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader.
 
@@ -3889,7 +3889,7 @@ go-to: right_coalition_2
 @new_elections_spd
 on-arrival: next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year = year + 1 if next_election_month > 12; next_election_month = next_election_month - 12 if next_election_month > 12; burgher_marcher -= 5; guild_marcher -= 5; commons_marcher -= 3; faithful_marcher -= 3; in_election = 1
 
-Since the remaining propertied and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_election_month : month +] [+ next_election_year +]. The previous chancellor has resigned, and has been replaced by Edmund Askew, also of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], ruling as part of a presidential cabinet. 
+Since the remaining propertied and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_election_month : month +] [+ next_election_year + 2365 +]. The previous chancellor has resigned, and has been replaced by Edmund Askew, also of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], ruling as part of a presidential cabinet. 
 
 We are seen as responsible for the failure to form a government, and many of our middle-class and even some working-class supporters have deserted the party.
 

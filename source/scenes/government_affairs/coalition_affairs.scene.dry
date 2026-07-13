@@ -71,4 +71,4 @@ We have called for a vote of no confidence in ourselves, and have brought down t
 @elections
 call: set_next_election_time
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].

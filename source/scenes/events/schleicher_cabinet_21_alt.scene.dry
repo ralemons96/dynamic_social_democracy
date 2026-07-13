@@ -45,7 +45,7 @@ if (Q.next_election_month > 12) {
 
 As expected, Trevannon isn't able to conjure up a majority without the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #6A1E1E;">**CSG**</span>. His government remains a caretaker for the time being.
 
-New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].
 
 @reichstag_nay
 title: Vote against the motion of no confidence, and tolerate the cabinet.

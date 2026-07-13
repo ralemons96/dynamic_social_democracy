@@ -54,7 +54,7 @@ Fine. If the Burghers wish to blow up the government, let them do so. <span styl
 @elections
 call: set_next_election_time
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @accept
 unavailable-subtitle: [? if reformist_strength + center_strength < left_strength + labor_strength: The party won't allow this. ?]

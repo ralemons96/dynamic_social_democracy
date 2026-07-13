@@ -18,4 +18,4 @@ call: set_next_election_time_prussia
 
 As expected, the democratic process returns to the state of Heartland and [+ heartland_leader +] has called new elections.
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].

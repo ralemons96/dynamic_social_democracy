@@ -32,7 +32,7 @@ call: set_next_election_time
 
 We have officially broken with the [+ chancellor +] government, voting against them in a vote of no confidence. Continuing to support such a government would go against all our values. The propertied parties have also joined in, choosing to cut their losses rather than engage in a futile attempt to save Askew’s government.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @vote_yes
 title: Vote in favor of this measure to continue the toleration agreement.

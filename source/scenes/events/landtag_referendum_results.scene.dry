@@ -39,7 +39,7 @@ call: set_next_election_time_prussia
 
 It's over for Commonwealth democracy. [+ landtag_ref_votes +]% of the eligible Heartland population has voted for it, dissolving the state Assembly and calling new elections, where the extremists are expected to make colossal gains at our expense. [? if landtag_ref_collectivist: All my homies hate the <span style="color: #700000;">**Collectivists**</span>. ?]
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].
 
 @PLR_failed_votes
 on-arrival: {!

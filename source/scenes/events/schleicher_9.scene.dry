@@ -29,6 +29,6 @@ choose-if: staal_marcher_influence < 6
 unavailable-subtitle: There isn't any.
 on-arrival: staal_marcher_support -= 6; staal_marcher_influence -= 3; staal_marcher_r -= 4; staal_approval -= 2; staal_marcher_adopted = 0; unionist_relation += 3; ddp_relation += 3; lvp_relation += 3; commons_marcher += 4; disfavored_marcher += 2; commons_collectivist -= 2; commons_gnu -= 2; disfavored_gnu -= 2; burgher_marcher += 6; burgher_ddp -= 4; burgher_lvp -= 4; burgher_gnu -= 2; labor_dissent += 25; reformist_dissent += 15; labor_strength -= 10; reformist_strength -= 10; center_dissent -= 20; left_dissent -= 20; knight_dissent -= 10; adjustmentFactors_gnu += 0.06; staal_rig_exposed = 1
 
-We have publicly broken with Staal, presenting the frankly thin evidence to the public—including a shady 3-million Gold donation to the <span style="color: #BFC8CC;">**GNU**</span>.
+We have publicly broken with Staal, presenting the frankly thin evidence to the public—including a shady 3-million crowns donation to the <span style="color: #BFC8CC;">**GNU**</span>.
 
 Staal dismisses it as simple politics, but many voters aren’t convinced. They’re rallying behind us as *the* democratic choice, now alert to democratic backsliding.

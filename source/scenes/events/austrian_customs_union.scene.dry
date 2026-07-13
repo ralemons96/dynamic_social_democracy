@@ -44,7 +44,7 @@ go-to: new_prussia_election if in_social_catholic_coalition_heartland or in_weim
 
 With the support of the <span style="color: #700000;">**Collectivists**</span>, we have successfully stopped the formation of the customs union. This results in the fall of the [+ chancellor +] government.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @new_prussia_election
 on-arrival: unionist_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; collectivist_relation += 5; gold_right += 3; ddp_right += 2; lvp_right += 2; pro_republic -= 3; burgher_marcher -= 2; landed_marcher -= 2; guild_marcher -= 2; faithful_marcher -= 2; burgher_royalist += 2; guild_royalist += 2; landed_royalist += 2; faithful_royalist += 2; in_right_coalition_heartland = 0; in_social_catholic_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; ddp_in_popular_front_heartland = 0; collectivist_goals_seen_heartland = 0; marcher_toleration_heartland = 0; heartland_coalition_trigger = 0
@@ -52,7 +52,7 @@ call: set_next_election_time_prussia
 
 The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has called a retaliatory vote in Heartland, forcing the dissolution of the state Assembly for new elections.
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].
 
 A double dissolution has shaken the people's faith in democracy, with the <span style="color: #7A3C00;">Royalists</span> exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader.
 

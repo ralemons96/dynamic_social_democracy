@@ -23,7 +23,7 @@ call: set_next_election_time
 
 We have officially broken with the [+ chancellor +] government, voting against them in a vote of no confidence. The propertied parties have also joined in, rather than engage in a futile attempt to save Askew’s government.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @vonc_no
 title: Oppose the vote of no confidence, voting in favor of the government.
@@ -74,7 +74,7 @@ The <span style="color: #b8996f;">**ECP**</span> has unexpectedly reversed its o
 
 This sudden shift by the <span style="color: #b8996f;">**ECP**</span> has all but sealed its political demise. Already struggling to maintain support among the middle class, the party now faces mass defections, with local chapters either dissolving or breaking away entirely.
 
-Unfortunately, all of this effort is for naught, with only [+ bruning_coalition +]% of the Assembly voting against the Askew government. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+Unfortunately, all of this effort is for naught, with only [+ bruning_coalition +]% of the Assembly voting against the Askew government. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @bruning_dies_no_wp
 on-arrival: time_to_election = 3; marcher_toleration = 0; marcher_toleration_right = 0; bruning_cabinet_collapsed = 1
@@ -82,4 +82,4 @@ call: set_next_election_time
 
 We are once again compelled to vote in favor of the [+ chancellor +] government to prevent the extremist parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span> from translating their growing popular support into parliamentary gains.
 
-Unfortunately, all efforts to save the government have been in vain. Only [+ bruning_coalition +]% of the Assembly voted to support Askew’s government. As a result, new elections have been scheduled for [+ next_election_month : month +] [+ next_election_year +].
+Unfortunately, all efforts to save the government have been in vain. Only [+ bruning_coalition +]% of the Assembly voted to support Askew’s government. As a result, new elections have been scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +].

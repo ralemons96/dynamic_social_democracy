@@ -122,9 +122,9 @@ Assembly composition:
 
 [? if marcher_in_government = 1 : Budget: [+ budget +] ?]
 
-Next election: [+ next_election_month : month +] [+ next_election_year +]
+Next election: [+ next_election_month : month +] [+ next_election_year + 2365 +]
 
-Next Heartland election: [? if heartland_leader != "Goodryke" and heartland_leader != "Staal": [+ next_election_month_heartland : month +] [+ next_election_year_heartland +][? if rubicon:, Week [+ next_election_week_heartland +] ?] ?][? if heartland_leader == "Goodryke" or heartland_leader == "Staal": postponed indefinitely ?]
+Next Heartland election: [? if heartland_leader != "Goodryke" and heartland_leader != "Staal": [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +][? if rubicon:, Week [+ next_election_week_heartland +] ?] ?][? if heartland_leader == "Goodryke" or heartland_leader == "Staal": postponed indefinitely ?]
 
 = Economics
 
@@ -170,9 +170,9 @@ Method of governing: Presidential decrees
 = Government
 
 [? if chancellor == "Staal" and not staal_economy_time: Public Works: being formulated <br>?][? if chancellor == "Staal" and staal_economy_time: Public Works: in effect <br>?]
-Assembly: [? if reichstag_rubicon: in session?][? if not reichstag_rubicon and not reichstag_break: dissolved?][? if next_reichstag_time > rubicon_time and next_reichstag_time and not reichstag_rubicon and next_election_time - time > 2:, reconvenes on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +]. ?][? if reichstag_break: indefinitely adjourned ?]<br>
-Next election: [? if not marburg_trigger: [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +] ?][? if marburg_trigger: postponed indefinitely ?]<br>
-Next Heartland election: [? if heartland_leader != "Goodryke" and heartland_leader != "Staal": [+ next_election_month_heartland : month +] [+ next_election_year_heartland +], Week [+ next_election_week_heartland +] ?][? if heartland_leader == "Goodryke" or heartland_leader == "Staal": postponed indefinitely ?]
+Assembly: [? if reichstag_rubicon: in session?][? if not reichstag_rubicon and not reichstag_break: dissolved?][? if next_reichstag_time > rubicon_time and next_reichstag_time and not reichstag_rubicon and next_election_time - time > 2:, reconvenes on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +]. ?][? if reichstag_break: indefinitely adjourned ?]<br>
+Next election: [? if not marburg_trigger: [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +] ?][? if marburg_trigger: postponed indefinitely ?]<br>
+Next Heartland election: [? if heartland_leader != "Goodryke" and heartland_leader != "Staal": [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +], Week [+ next_election_week_heartland +] ?][? if heartland_leader == "Goodryke" or heartland_leader == "Staal": postponed indefinitely ?]
 [? if chancellor == "Staal" and year == 1933 and month < 2 and week < 3: <br>Next state election: January 1933, Week 3 ?]
 
 = Party

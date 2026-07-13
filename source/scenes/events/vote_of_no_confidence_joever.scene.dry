@@ -72,7 +72,7 @@ The vote succeeds, and our government has resigned. Chancellor Askew has been ap
 @elections
 call: set_next_election_time
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @let_it_happen_braun
 on-arrival: marcher_caretaker = 1
@@ -80,4 +80,4 @@ call: set_next_election_time
 
 The vote succeeds, and our government has resigned. Chancellor [+ chancellor +] remains as the head of a caretaker government, but no longer has the power to enact new policies.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].

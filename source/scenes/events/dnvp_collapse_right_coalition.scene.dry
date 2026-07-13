@@ -37,7 +37,7 @@ on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition 
 call: set_next_election_time
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @vonc_no
 title: Support the rump [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]-led government, voting in favor of the government.
@@ -56,7 +56,7 @@ call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 5
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @new_prussia_election
 on-arrival: heartland_coalition_trigger = 1

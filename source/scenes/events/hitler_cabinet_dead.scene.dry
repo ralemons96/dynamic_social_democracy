@@ -92,7 +92,7 @@ Still, they place more trust in [+ president +] than in Chancellor [+ old_chance
 
 [? if chancellor == "Askew": Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Vesh": Joran Vesh of the <span style="color: #c00000;">**Marchers**</span> is selected as appointed chancellor. ?]
 
-The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
+The next elections are set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @give_up_2
 

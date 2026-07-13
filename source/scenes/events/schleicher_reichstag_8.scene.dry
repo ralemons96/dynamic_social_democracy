@@ -29,7 +29,7 @@ priority: 2
 
 Chancellor Staal and the <span style="color: #BFC8CC;">**GNU**</span> now see an opportunity to dramatically boost their seat share in fresh elections—paving the way to consolidate power and govern outright with only the loyal <span style="color: #6A1E1E;">**CSG**</span>, free from parliamentarianism.
 
-New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].
 
 - @prussia_election
 
@@ -46,4 +46,4 @@ title: [+ heartland_leader +] bends to pressure.
 on-arrival: next_election_week_heartland = next_election_week if rubicon and next_election_time - time < 3; next_election_week_heartland = week + 6 if rubicon and next_election_time - time >= 3; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4; next_election_week_heartland -= 4 if rubicon and next_election_week_heartland > 4
 call: set_next_election_time_prussia
 
-New state Assembly elections are scheduled for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +], Week [+ next_election_week +].
+New state Assembly elections are scheduled for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +], Week [+ next_election_week +].

@@ -340,7 +340,7 @@ With our limited leverage, we are only able to negotiate the reconvening of the 
 
 This is a disappointing outcome, but perhaps a vote of no confidence and new elections could turn the tide. After all, we will be able to harness the significant enthusiasm shown by the people in defiance of dictatorship.
 
-The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +].
 
 @rights
 title: Demand the above, and [? if not reichstag_fire_decree_staal: also guarantees for democratic rights?][? if reichstag_fire_decree_staal: a repeal of the Assembly Fire Decree?].
@@ -409,7 +409,7 @@ With our limited leverage, we have managed to negotiate the reconvening of the A
 
 This is a disappointing outcome for all our efforts, but perhaps a vote of no confidence and new elections could turn the tide. After all, we can harness the significant public enthusiasm shown in defiance of dictatorship, and we need not fear further democratic backsliding—so long as Staal keeps his word.
 
-The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +].
 
 @schemes
 title: Demand the above, and also guarantees for the continued independence of political organizations.
@@ -500,7 +500,7 @@ The most controversial concession was the lifting of the ban on the <span style=
 
 President DuFour, along with the <span style="color: #C0A054;">guild-masters</span> and <span style="color: #3E88B3;">nationalists</span>, have now completely lost confidence in the chancellor. A vote of no confidence and new elections are expected. We can harness the significant public enthusiasm shown in defiance of dictatorship and need not fear further democratic backsliding—so long as Staal keeps his word.
 
-The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
+The Assembly will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year + 2365 +], Week [+ next_reichstag_week +].
 
 @democracy
 title: Demand the above, and Staal's resignation.

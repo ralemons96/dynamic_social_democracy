@@ -331,7 +331,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: marcher_support_reactionary
 go-to: embezzlement_options
 
-The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million crowns from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options
 
@@ -342,7 +342,7 @@ The finances of the DuFour campaign are in disarray. Influential guild-masters a
 - @campaigning_hindenburg_2: The funding situation is solved.
 
 @embezzle
-title: Gunther Aveling has miraculously presented millions of Gold from an unknown source.
+title: Gunther Aveling has miraculously presented millions of crowns from an unknown source.
 view-if: bruning_time or chancellor == "Goodlake"
 max-visits: 1
 on-arrival: dufour_funds += 3; burgher_kvp += 2; guild_kvp += 2; landed_kvp += 4; burgher_traditionalist += 2 if traditionalist_ideology == "Moderate"; guild_traditionalist += 2 if traditionalist_ideology == "Moderate"; landed_traditionalist += 4 if traditionalist_ideology == "Moderate"; landed_other += 4 if not kvp_formed; landed_royalist -= 4 if landed_royalist_normalized >= 35; pro_republic += 3; embezzle_1 = 1
@@ -686,7 +686,7 @@ Q.dufour_funds_old = Q.dufour_funds;
 view-if: not marcher_support_reactionary
 go-to: embezzlement_options_op
 
-The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million Gold from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
+The finances of the DuFour campaign are in disarray. Influential guild-masters and business leaders are withholding significant donations due to his perceived betrayal of the Right. A lingering debt of five million crowns from his 4290 campaign remains unpaid, while additional funds are needed to cover organizational costs. [? if dufour_funds < 5: Efforts to raise money from the parties backing DuFour’s reelection are further complicated by their own financial struggles. Many have already depleted their resources and are carefully preserving what little remains for the upcoming state elections at the end of April. ?][? if dufour_funds >= 5: Fundraising efforts are further hindered by the parties backing DuFour’s reelection, as they prefer to reserve their funds for the upcoming state elections in late April, believing his victory is already assured. ?]
 
 @embezzlement_options_op
 
@@ -695,7 +695,7 @@ The finances of the DuFour campaign are in disarray. Influential guild-masters a
 - @bourgeois_campaign_op: The funding situation is solved.
 
 @embezzle_op
-title: Gunther Aveling has miraculously presented millions of Gold from an unknown source.
+title: Gunther Aveling has miraculously presented millions of crowns from an unknown source.
 view-if: bruning_time
 max-visits: 1
 on-arrival: dufour_funds += 3; burgher_kvp += 2; guild_kvp += 2; landed_kvp += 4; burgher_traditionalist += 2 if traditionalist_ideology == "Moderate"; guild_traditionalist += 2 if traditionalist_ideology == "Moderate"; landed_traditionalist += 4 if traditionalist_ideology == "Moderate"; landed_other += 4 if not kvp_formed; landed_royalist -= 4 if landed_royalist_normalized >= 35; pro_republic += 3; embezzle_1_op = 1
@@ -704,7 +704,7 @@ go-to: embezzlement_options_op
 Gunther Aveling, [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #7FCEB1;">**FCL**</span>?] member responsible for raising funds for the DuFour campaign, has managed to secure and disburse seven million crowns to the campaign—though some of these funds have been diverted to his own party. The volume of private and corporate donations alone would have been insufficient to cover the campaign's expenses, making it evident that state financing, particularly from the Commonwealth Army, played a role.
 
 @embezzle_op_2
-title: Gunther Aveling has miraculously presented millions of Gold from an unknown source.
+title: Gunther Aveling has miraculously presented millions of crowns from an unknown source.
 view-if: not bruning_time
 max-visits: 1
 on-arrival: dufour_funds += 1

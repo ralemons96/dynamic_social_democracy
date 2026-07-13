@@ -42,4 +42,4 @@ if (Q.next_election_month > 12) {
 
 Before the Assembly was to convene, Goodlake presents a decree to dissolve it. He expects that, with the exodus of voters from the <span style="color: #7A3C00;">**Royalists**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].

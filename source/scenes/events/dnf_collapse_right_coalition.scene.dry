@@ -35,7 +35,7 @@ on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition 
 call: set_next_election_time
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @vonc_no
 title: Oppose the vote of no confidence, voting for the government.
@@ -56,7 +56,7 @@ call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 5
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The right-wing coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @new_prussia_election
 on-arrival: heartland_coalition_trigger = 1 if center_right_coalition_heartland < 50
@@ -94,4 +94,4 @@ view-if: center_right_coalition_heartland < 50
 on-arrival: was_in_weimar_coalition_heartland = 1 if (in_weimar_coalition_heartland == 1 or in_minority_weimar_coalition_heartland == 1); was_in_grand_coalition_heartland = 1 if (in_grand_coalition_heartland == 1 or in_minority_grand_coalition_heartland == 1); in_right_coalition_heartland = 0; in_weimar_coalition_heartland = 0; in_grand_coalition_heartland = 0; in_minority_grand_coalition_heartland = 0; in_popular_front_heartland = 0; in_left_front_heartland = 0; in_marcher_majority_heartland = 0; in_center_right_coalition_heartland = 0; in_far_right_coalition_heartland = 0; in_minority_weimar_coalition_heartland = 0; marcher_heartland = 0; right_heartland = 0; ddp_in_popular_front_heartland = 0; marcher_toleration_heartland = 0; collectivist_goals_seen_heartland = 0
 call: set_next_election_time_prussia
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].

@@ -37,4 +37,4 @@ if (Q.next_election_month > 12) {
 
 It succeeds.
 
-New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].

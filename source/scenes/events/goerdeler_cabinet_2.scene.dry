@@ -63,4 +63,4 @@ Q.disfavored_marcher += 2;
 
 Despite this embarrassment and show of unpopularity by the Goodlake government, Staal and the Camarilla see this as an opportunity. He expects that, with the exodus of voters from the <span style="color: #7A3C00;">**Royalists**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].

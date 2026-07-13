@@ -51,4 +51,4 @@ subtitle: modman is lazy and doesn't want to code this
 @new_elections
 call: set_next_election_time_prussia
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].

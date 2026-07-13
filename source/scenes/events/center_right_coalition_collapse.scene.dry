@@ -18,5 +18,5 @@ subtitle: The government will collapse, and there will be new elections.
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0
 call: set_next_election_time
 
-The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+The <span style="color: #000000;">propertied</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 

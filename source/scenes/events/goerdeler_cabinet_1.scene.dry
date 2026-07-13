@@ -95,18 +95,6 @@ if (Q.traditionalist_ideology === "Radical") {
     Q.landed_traditionalist += 6;
 }
 !}
-on-display: {!  
-    var cardEl = document.createElement('div');  
-    cardEl.className = "face-figure2";  
-
-    var image = new Image();  
-    image.className = "face-img";  
-    image.src = "https://en.meming.world/images/en/4/4b/Shocked_Black_Guy.jpg";  
-
-    cardEl.appendChild(image);  
-    var contentDiv = document.querySelector("#page #mid_panel #content");
-    contentDiv.appendChild(cardEl);
-!}
 
 Askew's point is proven: the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span> is not sincere in their intentions of entering government and governing responsibly. 
 

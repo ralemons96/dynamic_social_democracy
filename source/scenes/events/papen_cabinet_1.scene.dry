@@ -46,4 +46,4 @@ on-arrival: next_election_time = time+1 if next_election_time >= time+1; next_el
 
 Goodryke has dissolved the Assembly to spark new elections, as apart of their promise to the <span style="color: #7A3C00;">**Royalists**</span> and the hope that they'll win the most seats in the Assembly, allowing Goodryke a majority needed to establish an authoritarian government.
 
-New Assembly elections are set for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+New Assembly elections are set for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].

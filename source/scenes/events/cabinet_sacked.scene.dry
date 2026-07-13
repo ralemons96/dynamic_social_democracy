@@ -52,4 +52,4 @@ view-if: bruning_event_seen or year < 1930
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; pro_republic -= 5
 call: set_next_election_time
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].

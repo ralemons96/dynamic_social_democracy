@@ -108,7 +108,7 @@ unavailable-subtitle: We don't have that power anymore. You really screwed us he
 call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_grand_coalition = 0; in_weimar_coalition = 0; in_popular_front = 0; marcher_toleration = 0; marcher_toleration_right = 0; coalition_dissent = 0; pro_republic -= 5; guild_marcher -= 3; burgher_marcher -= 2; commons_marcher -= 3 if pro_republic < 50; commons_marcher -= 4 if pro_republic < 40; guild_royalist += 4 if pro_republic < 50; burgher_royalist += 3 if pro_republic < 50; lvp_right += 3; ddp_right += 2; ddp_cohesion -= 1; gold_right += 3
 
-We have sacked Askew and called for new elections for [+ next_election_month : month +] [+ next_election_year +].
+We have sacked Askew and called for new elections for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @bruning_chain
 view-if: not constructive_vonc and not (right_coalition >= 50 and (traditionalist_ideology == "Moderate" or traditionalist_westarp) and not (year = 1929 and month >= 7)) and not ((center_right_coalition >= 50 and right_coalition < 50) and traditionalist_ideology == "Moderate" and not (year = 1929 and month >= 7)) and (not bruning_event_seen and year >= 1930)
@@ -134,7 +134,7 @@ on-arrival: time_to_election = 3; marcher_in_government = 0; grand_coalition_col
 
 The vote succeeds, and their government has resigned. Chancellor Askew remains as the head of an acting government, consisting solely of the propertied parties. He immediately proceeds to cut welfare spending substantially.
 
-New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @wirth_resign_braun
 call: set_next_election_time
@@ -142,7 +142,7 @@ on-arrival: time_to_election = 3; chancellor = "Vesh"; chancellor_party = "March
 
 Unable to bear the stress of keeping the coalition together, Werth has announced his intentions to resign as chancellor.
 
-[+ president +] has appointed as replacement Vesh, who is immediately faced with a successful motion of no confidence. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
+[+ president +] has appointed as replacement Vesh, who is immediately faced with a successful motion of no confidence. New elections have been set for [+ next_election_month : month +] [+ next_election_year + 2365 +].
 
 @wirth_resign_hindenburg
 on-arrival: chancellor = "Askew"; chancellor_party = "Unionist"

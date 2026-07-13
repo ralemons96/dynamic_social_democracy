@@ -179,7 +179,7 @@ With the vulnerability and widespread opposition to the Goodryke cabinet now ful
 
 The time is not yet right for the government to openly violate the constitution, and doing so could spark a civil war. The Commonwealth Army would not be able to withstand the opposition of 90% of the nation.
 
-A minor constitutional crisis erupts when Assembly President [+ reichstag_president +] disputes the validity of Goodryke's dissolution decree. [+ reichstag_president +] argues that the Assembly remains in session, contending that the decree is invalid as it was countersigned by a government that had just been overthrown by a vote of no confidence. [+ reichstag_president +] ultimately concedes the issue before the courts were to decide, and new Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
+A minor constitutional crisis erupts when Assembly President [+ reichstag_president +] disputes the validity of Goodryke's dissolution decree. [+ reichstag_president +] argues that the Assembly remains in session, contending that the decree is invalid as it was countersigned by a government that had just been overthrown by a vote of no confidence. [+ reichstag_president +] ultimately concedes the issue before the courts were to decide, and new Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].
 
 @reichstag_2_alt
 title: The government cannot adequately suppress unrest, civil war is inevitable.

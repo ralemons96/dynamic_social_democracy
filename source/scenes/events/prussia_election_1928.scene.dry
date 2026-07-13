@@ -1203,7 +1203,7 @@ call: set_next_election_time_prussia
 
 [? if far_right_coalition_heartland + unionist_r_heartland >= 50: The <span style="color: #000000;">Unionist Party</span>'s failure to form a coalition with the <span style="color: #7A3C00;">**Royalists**</span>, due to the latter's insistence on securing both the Minister-President's office and control of the Heartland police, has left no alternative but to call new elections. ?]
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +][? if rubicon:, Week [+ next_election_week +] ?].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +][? if rubicon:, Week [+ next_election_week +] ?].
 
 [? if anti_democratic_coalition_heartland >= 30: The people's faith in democracy is shaken by this ordeal. Of course, the <span style="color: #7A3C00;">Royalists</span> are exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader. ?]
 
@@ -1228,7 +1228,7 @@ call: set_next_election_time_prussia
 
 Perhaps a more stable majority can be found in more elections.
 
-New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland +], Week [+ next_election_week +].
+New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +], Week [+ next_election_week +].
 
 @prussia_explode
 go-to: prussian_coup_schleicher
