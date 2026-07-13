@@ -6,6 +6,8 @@
 
 **At a glance:** obvious fixes **DONE** (§A) · **3 decision clusters** for you (§B) · founding-year **confirmed canon** (§C).
 
+> **§B EXECUTED 2026-06-30** — all your annotations applied (commits `b704901` B2/B3, `e65f178` B1; compile exit 0). **B1:** "Temple of the Faithful" stripped everywhere → the **Free Worship Accord**, and `schleicher_cabinet_10/11` bundled with a **National Security Act** (Staal's centrist lure to the Unionists, not solely religious). **B2:** "Great War" → "Great Wars"; **DuFour reframed** from war-hero → the Unifier / a patriotic Imperial-Assembly elder (Gorrick & Lethmoor stay war heroes); **Tannenberg** dropped; **East Africa → the Gold Coast**. **B3:** "war guilt clause" → the **National-Debt Clause**. Small follow-ups: Five-Year Plan → Economic Command Schedule, Amsterdam → Westloon, Summer Olympics → the Regional Games; cvp_merger labels capitalized. **One flag:** the Ethian **"Temple Bloc"** faction in `local_election_france` was left as a distinct Ethian coinage (not the Commonwealth Temple) — say if you want it renamed too.
+
 ---
 
 ## §A — Obvious fixes applied this pass (review & override freely)
@@ -36,15 +38,19 @@ Your canon: **the Faithful are people, not a church**; the religious accord is r
 | `nazi_17` | In a Royalist-authoritarian ending, a concordat **shields the Faithful from persecution**. | "A concordat with **the Temple of the Faithful** is signed… protecting the millions of Commonwealth Faithful" |
 | `center_party_conference_joos` | The Unionist clerical wing **forces a resignation over stalled concordat progress**. | "our lack of progress toward an agreement with **the Temple of the Faithful**" |
 
-→ **Suggestion:** reframe each as an accord on **freedom of worship** (reconciling the God of Magic's church with the Conclave), dropping "Temple of the Faithful"/"Roma Faithful Church" — matching the cards. And rename the "**Temple Accord**" (schleicher_cabinet_10/11) → e.g. the **Concord of Faiths** / the **Worship Accord**?  ✎ ______
-
+→ **Suggestion:** reframe each as an accord on **freedom of worship** (reconciling the God of Magic's church with the Conclave), dropping "Temple of the Faithful"/"Roma Faithful Church" — matching the cards. And rename the "**Temple Accord**" (schleicher_cabinet_10/11) → e.g. the **Concord of Faiths** / the **Worship Accord**?  ✎ 
+	- User Thoughts: Freedom of worship alone is unlikely to bring the Unionists in, the Unionists are not a national catholic party similar to Zentrum, they are political centrists. A National Religious Accord is good, but we should also bundle it with a National Security Act, not an Enabling Act, but more of a notice that says that Staal is signaling intent to either restrain/reel in far right paramilitaries while cracking down on Collectivist violence, while also leaving the democratic parties alone. Staal needs to angle that he is a responsible, strong, but not overtly authoritarian center-right to moderate right-wing figure. A national religious accord and security act would appeal to the Unionists heavily, but let's not make it solely about religion.
+	- Remember, we should **completely drop the Temple of the Faithful**. It is not a term that will make sense in this world, there is no unified church, there are dozens of gods and pantheons. The Faithful are a voting block, the Temple of the Faithful is not a term and should be stripped from every instance it appears. 
+	- We can call the broader term The **Free Worship Accord**. 
+	
 **(b) Political / electoral actor** — here it just means the Faithful *as a voting bloc* → "the Faithful":
 
 | Scene | What it does | Current phrasing |
 |---|---|---|
 | `presidential_election_1932_campaign` (×4) | Whether to court the **religious vote** in DuFour's re-election; notes their support. | "**The Temple of the Faithful** and the dissenting churches have long held political neutrality…"; "the **Temple of the Faithful** is even more united in support of DuFour than it was for Wilhelm Croft in 4290" |
 
-→ **Suggestion:** "The Temple of the Faithful" → "**The Faithful**" (the people/bloc). Straightforward.  ✎ ______
+→ **Suggestion:** "The Temple of the Faithful" → "**The Faithful**" (the people/bloc). Straightforward.  ✎ 
+- User Thoughts: Agreed, the Faithful as a voting block is reasonable. These are people more religiously motivated, and those who view issues like the heavy tension between the God of Magic's church and the rest of the Conclave as a major issue. 
 
 **(c) Descriptive / territorial** — a `main` news-ticker beat grants it a sovereign precinct (treats it as a land-holding institution):
 
@@ -67,6 +73,7 @@ Canon = the **Two Great Wars** (the Axton Empire won both, then collapsed). Thes
 
 *(Already correct plural, untouched: `foreign_policy`, `education_science`, `rally`, `shuffle_leadership`.)*
 
+- User Thoughts: This is correct. There were two Great Wars, Axton won the last one but collapsed in the near-aftermath. Let's drop the term that DuFour was actually a major war hero, he wasn't, just bring up that DuFour was actually a patriotic member of the Imperial Assembly if anything. For East Africa, use the term Gold Coast instead, it's a region in the distant southwest of Axton and a wild, frontier zone. It fits fine for this context. Gold Coast is a provincial name that was once part of Axton, then Ethia, now it is is independent, so just say the Gold Coast campaign, not a descriptor like Commonwealth/Axton/Ethian.
 ### B3 · "war guilt clause" → reframe (7×)
 
 The **War Loans** are the predatory price Ethia extracted for its aid at the Founding (the **Treaty of Etaluxia**) — **not** a Versailles "war guilt." The Commonwealth was never guilty of a war (the Axton Empire *won* both Great Wars, then collapsed). "war guilt clause" is a real-world residual.
@@ -77,7 +84,8 @@ The **War Loans** are the predatory price Ethia extracted for its aid at the Fou
 | `lausanne_conference` | Staal's rearmament + debt-clause negotiation agenda. | "the hated **'war guilt' clause**" |
 | `papen_lausanne_conference_1` | Goodryke's push to delete the clause threatens the talks. | "a deletion of the **'war guilt' clause**" |
 
-→ **Suggestion:** drop the "war guilt" framing → the Treaty of Etaluxia's **"blame clause"** / **"national-debt clause"** / **"liability clause"** (the arbitrary clause pinning the cost of Ethian aid on the Commonwealth).  ✎ ______
+→ **Suggestion:** drop the "war guilt" framing → the Treaty of Etaluxia's **"blame clause"** / **"national-debt clause"** / **"liability clause"** (the arbitrary clause pinning the cost of Ethian aid on the Commonwealth).  ✎ 
+- User Thoughts: This is ggood, the National-Debt Clause is a big one.
 
 ---
 
