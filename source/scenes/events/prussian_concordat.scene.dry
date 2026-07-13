@@ -1,5 +1,5 @@
 title: Heartland Accord
-subtitle: The Heartland government has reached an agreement with the Temple of the Faithful.
+subtitle: The Heartland government has reached a Free Worship Accord.
 view-if: year = 1929 and month = 7 and heartland_leader != "Bristol" and marcher_heartland and heartland_concordat = 0
 max-visits: 1
 tags: event
@@ -7,13 +7,13 @@ new-page: true
 
 = Heartland Accord
 
-Despite our Lyle Bristol losing his position as the Minister-President of Heartland, he still possesses great influence within state politics and together with <span style="color: #000000;">Unionist Party</span> members, have negotiated a concordat with the Temple of the Faithful. 
+Despite our Lyle Bristol losing his position as the Minister-President of Heartland, he still possesses great influence within state politics and together with <span style="color: #000000;">Unionist Party</span> members, have negotiated a Free Worship Accord for the Heartland, a settlement reconciling the God of Magic's church with the rest of the Conclave.
 
 - @sign_concordat: The Heartland government shall sign the concordat.
 
 @sign_concordat
 on-arrival: heartland_concordat = 1; unionist_relation += 4; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed an Accord between the Free State of Heartland and the Temple of the Faithful, enshrining broad religious freedoms across the Heartland — including, most contentiously, the right to worship the God of Magic openly, a question that has festered since the Fall. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
+We have signed the Free Worship Accord for the Free State of Heartland, enshrining broad religious freedoms across the Heartland — including, most contentiously, the right to worship the God of Magic openly, a question that has festered since the Fall. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
 
-[? if traditionalist_ideology == "Radical": The Faithful-aligned members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party to stand with the Temple. ?]
+[? if traditionalist_ideology == "Radical": The Faithful-aligned members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party to stand with the Faithful. ?]

@@ -1,4 +1,4 @@
-title: The <i>Temple Accord</i> Is Signed!
+title: The <i>Free Worship Accord</i> Is Signed!
 subtitle: Faithful rights across the Commonwealth are now formally guaranteed.
 view-if: chancellor == "Staal" and unionist_in_gov and unionist_in_gov_time >= 6 and unionist_leader == "Renck" and reichskonkordat = 0 
 max-visits: 1
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= Temple Accord Signing
+= The Free Worship Accord
 
-During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Temple Accord</i> has officially been signed between the Commonwealth and the Roma Faithful Church. The treaty defines a formal relationship between the Church and the Commonwealth state, guaranteeing freedom of worship for Faithful, and the right of the church to appoint their own clergy. Faithful in the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
+During weeks of intense negotiations in the southern courts headed by Aurelian Renck, the <i>Free Worship Accord</i> — bundled with the <i>National Security Act</i> — has officially been signed. The Accord settles the fraught standing of the God of Magic's church against the rest of the Conclave and guarantees every Commonwealth subject the right to worship as they choose; the Security Act commits Staal to reining in the far-right paramilitaries and curbing <span style="color: #700000;">Collectivist</span> violence while sparing the democratic parties. The Faithful across the Commonwealth are pleased, as are their representatives in the <span style="color: #000000;">Unionist Party</span>.
 
 - @reichskonkordat
 

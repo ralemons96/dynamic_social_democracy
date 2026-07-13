@@ -1,5 +1,5 @@
 title: The <span style="color: #000000;">Unionist Party</span> Enters Government
-subtitle: Promises of a <i>Temple Accord</i> lures them into cooperation.
+subtitle: Promises of a <i>Free Worship Accord</i> and a <i>National Security Act</i> lure them into cooperation.
 view-if: chancellor == "Staal" and dsu_in_gov and not dsu_was_gov and not unionist_in_gov and unionist_relation < 70 and unionist_leader == "Renck" and staal_post_time >= 2 and reichskonkordat = 0
 max-visits: 1
 new-page: true
@@ -21,7 +21,7 @@ on-display: {!
 
 Staal has concluded that he needs broader popular and parliamentary support beyond the <span style="color: #6A1E1E;">**CSG**</span>, and has opened talks with Aurelian Renck to secure the backing of the <span style="color: #000000;">Unionist Party</span>. Renck has proven far more willing to cooperate with Staal than he ever was with Goodryke, and the party itself is eager to return to government.
 
-The main obstacle, however, is the <span style="color: #000000;">Unionist Party</span>’s deep reservations about sharing a cabinet with the <span style="color: #7A3C00;">Royalists</span>. To overcome this, Staal and the <span style="color: #6A1E1E;">**CSG**</span> have signaled their readiness to fast-track a <i>Temple Accord</i> with the Temple of the Faithful—an offer that Renck, a longtime advocate of such, finds difficult to refuse.
+The main obstacle, however, is the <span style="color: #000000;">Unionist Party</span>’s deep reservations about sharing a cabinet with the <span style="color: #7A3C00;">Royalists</span>. To overcome this, Staal and the <span style="color: #6A1E1E;">**CSG**</span> have signaled their readiness to fast-track two measures dear to the centrist <span style="color: #000000;">Unionist Party</span>: a <i>Free Worship Accord</i> — settling the vexed standing of the God of Magic's church against the rest of the Conclave and guaranteeing freedom of worship for all — paired with a <i>National Security Act</i> under which Staal pledges to rein in the far-right paramilitaries and curb <span style="color: #700000;">Collectivist</span> street violence while leaving the democratic parties untouched. It is the posture of a firm but responsible statesman, not an aspiring strongman—and Renck, a longtime advocate of such a settlement, finds the offer difficult to refuse.
 
 - @z_in_gov
 
@@ -31,6 +31,6 @@ on-arrival: kaas_puppet = 1; unionist_in_gov = 1; unionist_relation -= 20; pro_r
 
 The <span style="color: #000000;">Unionist Party</span> claims its ministerial positions, with Adam Sedgewick securing the Labor Ministry, and other members taking the Transport and Justice portfolios. The <span style="color: #000000;">Unionist Party</span> also brings the <span style="color: #A2D8E0;">**Arcanists**</span> into the fold, which is granted the Postal Ministry.
 
-With Aurelian Renck’s connections in the southern courts, the negotiation of a <i>Temple Accord</i> is fast-tracked and set to be ready for signing in a few weeks.
+With Aurelian Renck’s connections in the southern courts, the negotiation of a <i>Free Worship Accord</i> is fast-tracked and set to be ready for signing in a few weeks.
 
 However, their entry into government has strained our relations, as they had previously stood in united opposition with us.
