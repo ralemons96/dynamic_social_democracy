@@ -56,7 +56,7 @@ go-to: menu
 
 **4289**: Elections are held. A negotiated easing of the War Loans steadies the realm, and the Commonwealth passes into a fragile prosperity. Gallax is released from prison.
 
-**4290**: The first President of the Commonwealth dies. Paul DuFour — a decorated war hero of conservative temper — is narrowly elected in the second round. The Marchers adopt a new reform program, and a treaty with Ethia settles the western border.
+**4290**: The first President of the Commonwealth dies. Paul DuFour — a patriotic elder of the old Imperial Assembly, of conservative temper — is narrowly elected in the second round. The Marchers adopt a new reform program, and a treaty with Ethia settles the western border.
 
 **4291**: A referendum to seize the diminished estates of the old nobility, pressed by the Marchers and Collectivists, narrowly fails.
 
@@ -549,7 +549,7 @@ Strength: [+ vanguard_strength +] thousand
 
 Militarization: [+ vanguard_militancy : militancy +]
 
-**the Wardens**: A <span style="color: #3E88B3;">right-wing nationalist</span> organization of primarily Great War veterans, descended from the *officer-militias* that emerged after the war. [? if not concord_formed: Associated with the <span style="color: #3E88B3;">**Traditionalists**</span>.?][? if concord_formed: Associated with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and <span style="color: #003755;">**CNF**</span>.?]
+**the Wardens**: A <span style="color: #3E88B3;">right-wing nationalist</span> organization of primarily Great Wars veterans, descended from the *officer-militias* that emerged after the war. [? if not concord_formed: Associated with the <span style="color: #3E88B3;">**Traditionalists**</span>.?][? if concord_formed: Associated with the <span style="color: #000000;">**[+ unionist_party_name +]**</span> and <span style="color: #003755;">**CNF**</span>.?]
 
 Strength: [+ warden_strength +] thousand
 

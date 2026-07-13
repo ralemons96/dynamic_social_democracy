@@ -142,7 +142,7 @@ tags: event
 
 President DuFour has announced his retirement, withdrawing to his family after long years at the republic's helm. An era of history is closing, and the future remains to be seen.
 
-The nation pours out tribute to its war hero and outgoing president—though this devotion is confined largely to the political right. On his way out, DuFour endorses the [+ gnu_candidate +] candidacy openly, and frames the coming election as a test of the order he and Staal have built: if the people return the [+ gnu_candidate +], the path to the Empire is clear; if they do not, he reasons, then Staal never had the mandate he claimed, and the question answers itself. Staal does not take it so philosophically. He regards the early retirement as a betrayal—DuFour placing his family and his conscience above the nation, and gambling the whole settlement on a single vote at the worst possible moment, when a democratic president could still undo everything. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
+The nation pours out tribute to its elder statesman and outgoing president—though this devotion is confined largely to the political right. On his way out, DuFour endorses the [+ gnu_candidate +] candidacy openly, and frames the coming election as a test of the order he and Staal have built: if the people return the [+ gnu_candidate +], the path to the Empire is clear; if they do not, he reasons, then Staal never had the mandate he claimed, and the question answers itself. Staal does not take it so philosophically. He regards the early retirement as a betrayal—DuFour placing his family and his conscience above the nation, and gambling the whole settlement on a single vote at the worst possible moment, when a democratic president could still undo everything. With Staal not expected to live much longer, the era of the Commonwealth's two strongmen nears its end. Now, the country must determine who will author the next chapter of the Unity Republic—if it will still be called that.
 
 New presidential elections are to be held as soon as possible. The <span style="color: #BFC8CC;">**GNU**</span> is expected to field a single candidate, and their victory would guarantee a total consolidation of power for the foreseeable future—an outcome that must be prevented at all costs. In the meantime, Supreme Court chief justice [? if judicial_reform < 4 : Erwin Burnell ?][? if judicial_reform >= 4 : Gorman Grothmoor ?] serves as the acting president.
 
@@ -193,7 +193,7 @@ As for the <span style="color: #c00000;">**Marchers**</span>, we could support a
 
 Lyle Bristol is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
 
-Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great War, but his relatively young age might be relevant.
+Kurt Shackley is an ambitious rising star in the party, and would be all too willing to run. He was a hero in the Great Wars, but his relatively young age might be relevant.
 
 @candidate_menu
 

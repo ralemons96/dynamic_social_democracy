@@ -423,7 +423,7 @@ His candidacy is supported by the [? if unionist_party_name != "Concord": <span 
 - @harzburg: We await the decision of the Stowford Front.
 
 @vorbeck
-title: Paul Lethmoor, war hero of the Great War and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
+title: Paul Lethmoor, war hero of the Great Wars and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
 view-if: vorbeck_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 unavailable-subtitle: Lethmoor is reluctant to lead, and prefers his unglamorous life away from the public. Unless he is convinced, of course.
@@ -431,7 +431,7 @@ face-image: img/portraits/lettowvorbeck.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-By some miracle for the Commonwealth Right, they have managed to persuade Paul Lethmoor—renowned for his successful guerrilla campaign in Commonwealth East Africa during the Great War—to run for the presidency. However, the circumstances now are far more dire than they were in 4290. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
+By some miracle for the Commonwealth Right, they have managed to persuade Paul Lethmoor—renowned for his successful guerrilla campaign in the Gold Coast during the Great Wars—to run for the presidency. However, the circumstances now are far more dire than they were in 4290. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
 
 How Lethmoor would govern remains uncertain. It is highly likely that, much like DuFour, a camarilla of close advisors would shape his decisions from behind the scenes.
 
@@ -459,7 +459,7 @@ His candidacy is backed by the [? if traditionalist_ideology == "Radical": <span
 view-if: dufour_run
 face-image: img/portraits/DuFour.jpg
 
-President DuFour is, of course, running for re-election, and many in our party are prepared to support him as the last bastion of democracy against Gallax and the <span style="color: #7A3C00;">Royalists</span>. The <span class="tooltip-text" title="Following DuFour's overseeing of the Commonwealth's crushing victory at Tannenberg in the Great War, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth masculinity and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> serves as a powerful rallying point for all parties, as he maintains high personal popularity despite everything the Commonwealth has endured. However, the more support he receives from the Commonwealth left and center, the more DuFour views it as a stain on his personal honor. The refusal of Aldous Markwell and other high-ranking officers with whom he served during the war to embrace his candidacy proved particularly painful to the Commonwealth president.
+President DuFour is, of course, running for re-election, and many in our party are prepared to support him as the last bastion of democracy against Gallax and the <span style="color: #7A3C00;">Royalists</span>. The <span class="tooltip-text" title="As a patriot of the old Imperial Assembly who lent his prestige to binding the young Commonwealth together, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth duty and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> serves as a powerful rallying point for all parties, as he maintains high personal popularity despite everything the Commonwealth has endured. However, the more support he receives from the Commonwealth left and center, the more DuFour views it as a stain on his personal honor. The refusal of Aldous Markwell and other high-ranking officers with whom he served during the war to embrace his candidacy proved particularly painful to the Commonwealth president.
 
 In response, he may shift further to the right after the election in an effort to restore his sense of honor and to appease his former comrades and friends on the Commonwealth Right. This urge has only been reinforced by the Stowford Front’s refusal to support him without concessions, as they see DuFour as the greatest obstacle to their rise to power.
 
@@ -524,7 +524,7 @@ Q.royalist_candidate_1932_disp = "Ulric Gorrick";
 view-if: not harzburg_unity
 face-image: img/portraits/goring.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> has nominated Ulric Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great War and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
+The <span style="color: #7A3C00;">**Royalists**</span> has nominated Ulric Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great Wars and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
 
 - @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
 

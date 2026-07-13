@@ -478,7 +478,7 @@ if (Q.marcher_campaign || Q.marcher_support_thalmann || Q.collectivist_support_m
 !}
 go-to: bourgeois_campaign_menu
 
-The United DuFour Committees have set to work improving the perception of moderate right-wing Commonwealth voters toward President DuFour, whose reputation as the Hero of Tannenberg has been tarnished by his support for the hated Unity system. Despite this, the <span class="tooltip-text" title="Following DuFour's overseeing of the Commonwealth's crushing victory at Tannenberg in the Great War, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth masculinity and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> remains intact[? if royalist_candidate_1932 == "Gallax":, and may be the only thing that rivals Gallax's charisma?].
+The United DuFour Committees have set to work improving the perception of moderate right-wing Commonwealth voters toward President DuFour, whose reputation as the beloved Unifier has been tarnished by his support for the hated Unity system. Despite this, the <span class="tooltip-text" title="As a patriot of the old Imperial Assembly who lent his prestige to binding the young Commonwealth together, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth duty and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> remains intact[? if royalist_candidate_1932 == "Gallax":, and may be the only thing that rivals Gallax's charisma?].
 
 It's their turn to campaign.
 
@@ -747,7 +747,7 @@ if (Q.marcher_campaign || Q.marcher_support_thalmann || Q.collectivist_support_m
 view-if: dufour_funds > dufour_funds_old
 go-to: bourgeois_campaign_menu_op
 
-The United DuFour Committees have set to work improving the perception of moderate right-wing Commonwealth voters toward President DuFour, whose reputation as the Hero of Tannenberg has been tarnished by his support for the hated Unity system. Despite this, the <span class="tooltip-text" title="Following DuFour's overseeing of the Commonwealth's crushing victory at Tannenberg in the Great War, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth masculinity and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> remains intact[? if royalist_candidate_1932 == "Gallax":, and may be the only thing that rivals Gallax's charisma?].
+The United DuFour Committees have set to work improving the perception of moderate right-wing Commonwealth voters toward President DuFour, whose reputation as the beloved Unifier has been tarnished by his support for the hated Unity system. Despite this, the <span class="tooltip-text" title="As a patriot of the old Imperial Assembly who lent his prestige to binding the young Commonwealth together, DuFour has become the center of a massive personality cult, lauded as the living ideal of Commonwealth duty and patriotism. He is the embodiment of the best virtues of Heartland tradition.">DuFour Mythos</span> remains intact[? if royalist_candidate_1932 == "Gallax":, and may be the only thing that rivals Gallax's charisma?].
 
 It's their turn to campaign.
 
