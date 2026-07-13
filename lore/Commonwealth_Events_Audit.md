@@ -75,9 +75,9 @@ An `on-display` block embeds a live external iframe to **`en.wikipedia.org/wiki/
 The Unionist party's parliament-chart legend is hardcoded **`"Center"`** (echoes Zentrum) in many files' `on-display` chart JSON, and local-election result tables print **`Z:`** — while the same files use `[+ unionist_party_name +]` (Unionist/Concord) elsewhere. Files incl. `election_1928` L1453, `schleicher_21/22`, `cabinet_12/13/20`, `local_election_saxony*` (×3) + `local_election_thuringia`, `local_election_lippe`.
 → **Suggestion:** replace the hardcoded "Center"/"Z:" with the party name/abbrev. ✎ ______
 
-### C3 · **crowns vs Gold** currency split
-The *same* public-works event reads "500 million **Gold**" in one variant and "half a billion **crowns**" in another (`schleicher_cabinet_5` vs `_5_alt`, `_8_alt`); the presidential campaign mixes "five million **Gold**" and "seven million **crowns**" (`presidential_election_1932_campaign`); `schleicher_16` uses crowns. Note: "Gold" also collides with the **Golds** party name.
-→ **Suggestion:** pick one canonical unit (Gold is dominant game-wide) and standardize, or define crowns as a sub-denomination. ✎ ______
+### C3 · **Currency: "Gold" (prose) vs "Crowns" (lore canon)**  ⚠️ canon call
+Two currency words are in play. **Prose-dominant = "Gold"** ("500 million Gold", "billion Gold", "3-million Gold"), but the **second-pass/lore canon is "Crowns"** (the reskin deliberately rendered "$381.17 → 381 crowns"; the foreign-powers doc + tracker say Crowns). The same public-works event even mixes them (`schleicher_cabinet_5` "Gold" vs `_5_alt`/`_8_alt` "crowns"; `presidential_election_1932_campaign` mixes both; `schleicher_16` crowns). "Gold" also **collides with the Golds party name** — a point in favor of Crowns.
+→ **This is a canon ruling, not just "standardize to the dominant word."** If **Crowns** wins, the sweep is Gold→crowns game-wide (and my 3 interim `dollars→Gold` fixes flip to crowns). If **Gold** wins, pull the crowns outliers up. I used "Gold" for the dollar fixes *only* to match what's most common on screen right now — trivially re-swappable. ✎ ______
 
 ### C4 · **"proletariat" / "proletarian" → the Commons?**
 The style guide maps *the proletariat → the Commons*, but it may be intentional register in Collectivist/Vaelist mouths. Spots: `economic_sanctions` L11, `banking_crisis` L15, `blutmai` `@join` L79, `understanding_enemy` L15 (×2), `election_1928` `@popular_front_prussia`.
