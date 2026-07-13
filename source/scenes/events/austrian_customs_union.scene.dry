@@ -7,13 +7,13 @@ view-if: year = 1931 and month >= 3 and foreign_minister_party != "Marcher" and 
 max-visits: 1
 
 
-= Freehold Customs Free Guild
+= Freehold Customs Union
 
 [? if marcher_in_government: The [+ foreign_minister_party +] foreign minister has a proposal for a customs union with the Freehold. We can either accept or reject this agreement. ?]
 [? if not marcher_in_government: The government of Chancellor [+ chancellor +] has a proposal for a customs union with the Freehold. Most likely, this will happen whatever we decide. ?]
 
 
-The nationalist right has long yearned for closer ties with the Freehold, with the eventual goal of merging the two sister-republics — both raised from the wreckage of the old Empire. A customs union with the Freehold is the first step towards this goal. Additionally, many believe that a Free Guild with the Freehold would improve our current economic circumstances.
+The nationalist right has long yearned for closer ties with the Freehold, with the eventual goal of merging the two sister-republics — both raised from the wreckage of the old Empire. A customs union with the Freehold is the first step towards this goal. Additionally, many believe that a customs union with the Freehold would improve our current economic circumstances.
 
 However, the West — and above all <span style="color: #002654;">Ethia</span>, which holds near-total economic sway over the Freehold — is likely to object. This agreement would break the terms of the Treaty of Etaluxia, and could lead to economic sanctions, further hurting our economy.
 

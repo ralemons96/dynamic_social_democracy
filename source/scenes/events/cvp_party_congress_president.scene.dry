@@ -509,7 +509,7 @@ Goodlake's role as a compromise candidate has hindered his ability to effect sig
 It goes without saying, this will make cooperation within the party impossible for the foreseeable future.
 
 @westarp
-title: Kuno Westmore, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+title: Edgar Westmore, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: A long-time <span style="color: #3E88B3;">Traditionalists</span> stalwart, having prevented Mallin's takeover of the party in the past. - <span style="color: #3E88B3;">National Conservative</span> Wing
 unavailable-subtitle: Westmore is reluctant, and the party needs a new face. - <span style="color: #3E88B3;">National Conservative</span> Wing
 view-if: president != "Westmore"
@@ -517,14 +517,14 @@ choose-if: westarp_unlock
 on-arrival: unionist_relation -= 10; concord_right += 3; burgher_unionist += 4; burgher_dnf -= 4; guild_unionist += 4; guild_dnf -= 4; landed_unionist += 2; landed_dnf -= 2; faithful_unionist -= 2; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Westmore"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-A key figure of the Commonwealth Right since the Republic's inception, Kuno Westmore has ascended to the leadership role of the colossal <span style="color: #000000;">Commonwealth People's Conservative Party</span>—certainly a significant step up. His election was primarily driven by the unified support of the entire former <span style="color: #3E88B3;">nationalist</span> faction within the party.
+A key figure of the Commonwealth Right since the Republic's inception, Edgar Westmore has ascended to the leadership role of the colossal <span style="color: #000000;">Commonwealth People's Conservative Party</span>—certainly a significant step up. His election was primarily driven by the unified support of the entire former <span style="color: #3E88B3;">nationalist</span> faction within the party.
 
 Westmore is highly experienced in managing internal dissent and is careful not to lean too heavily into any one particular wing of the party, aiming to avoid fracturing the organization. While the party program remains largely unchanged, there has been a noticeable increase in blood-purist and pro-monarchist rhetoric, as Westmore seeks to preserve the character of the now-defunct <span style="color: #3E88B3;">**Traditionalists**</span> within this new entity.
 
 It goes without saying, Westmore's leadership will make cooperation within the party impossible for the foreseeable future.
 
 @vorbeck
-title: War Hero Paul Lethmoor, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+title: War Hero Cedric Lethmoor, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: Lethmoor is reluctant to lead, but perhaps his war hero status can serve as a unifying force? - <span style="color: #3E88B3;">National Conservative</span> Wing
 unavailable-subtitle: Lethmoor is reluctant to lead, and prefers his unglamorous life in the Assembly. Unless he is convinced, of course. - <span style="color: #3E88B3;">National Conservative</span> Wing
 view-if: president != "Lethmoor"
@@ -532,7 +532,7 @@ choose-if: vorbeck_unlock
 on-arrival: unionist_relation -= 10; concord_right += 3; pro_republic -= 6; nationalism += 8; burgher_unionist += 12; burgher_dnf -= 6; burgher_royalist -= 3; guild_unionist += 12; guild_dnf -= 6; guild_royalist -= 3; landed_unionist += 6; landed_dnf -= 4; landed_royalist -= 2; faithful_unionist += 4; faithful_dnf -= 2; commons_unionist += 3; commons_dnf -= 3; concord_leader = "Lethmoor"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/lettowvorbeck.jpg
 
-Paul Lethmoor is a war hero renowned for his undefeated record and his successful guerrilla campaign in the Gold Coast, with victories that rival those of DuFour. Despite multiple attempts to involve him in Commonwealth politics, he has remained largely inactive, serving as a member of the Assembly elected under the <span style="color: #3E88B3;">**Traditionalists**</span>. However, the [? if vorbeck_deadlock: unending deadlock at the congress?][? if not vorbeck_deadlock and vorbeck_decline: drastic decline in the moderate right's vote share?][? if not vorbeck_deadlock and not vorbeck_decline and vorbeck_presidential: desire to utilize his character for a potential future election run?] has led to a growing number of factions rallying around his candidacy. The widespread popular support for him draws strong parallels to DuFour's own presidential candidacy declaration in 4290.
+Cedric Lethmoor is a war hero renowned for his undefeated record and his successful guerrilla campaign in the Gold Coast, with victories that rival those of DuFour. Despite multiple attempts to involve him in Commonwealth politics, he has remained largely inactive, serving as a member of the Assembly elected under the <span style="color: #3E88B3;">**Traditionalists**</span>. However, the [? if vorbeck_deadlock: unending deadlock at the congress?][? if not vorbeck_deadlock and vorbeck_decline: drastic decline in the moderate right's vote share?][? if not vorbeck_deadlock and not vorbeck_decline and vorbeck_presidential: desire to utilize his character for a potential future election run?] has led to a growing number of factions rallying around his candidacy. The widespread popular support for him draws strong parallels to DuFour's own presidential candidacy declaration in 4290.
 
 Reluctantly, Lethmoor has accepted the <span style="color: #000000;">**[+ unionist_party_name +]**</span>'s nomination as their next leader. However, he has little interest in managing the party’s internal affairs and has quietly delegated this responsibility to fellow conservatives like Westmore. Nonetheless, he remains the public face of the <span style="color: #000000;">**[+ unionist_party_name +]**</span> as chairman. The most crucial aspect of his election is his ability to inspire the Commonwealth people to rally behind a hero of the Great Wars once again, someone who embodies the image of stability and unity. Time will tell how long this popularity will last.
 

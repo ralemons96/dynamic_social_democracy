@@ -42,7 +42,7 @@ The weight of governance now falls upon our shoulders. It is our responsibility 
 
 [? if marcher_in_government : - Increase science funding. ?]
 
-[? if marcher_in_government : - Take steps towards the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Free Guild</span> or national concordat. ?]
+[? if marcher_in_government : - Take steps towards the <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span> or national concordat. ?]
 
 [? if marcher_in_government : - Assist the rural working class. ?]
 

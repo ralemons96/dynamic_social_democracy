@@ -44,7 +44,7 @@ To most political observers, Reynold Goodlake, Mayor of Lindholt and the Commonw
 However, his demands for authorization of sweeping fiscal reforms is too similar to that of Askew in Staal's eyes, who supports a public works solution to the Commonwealth's economic woes. Goodlake will not be the new chancellor.
 
 @westarp
-title: Kuno Westmore?
+title: Edgar Westmore?
 subtitle: DuFour's preferred choice, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
 max-visits: 1
 on-arrival: westarp_seen = 1

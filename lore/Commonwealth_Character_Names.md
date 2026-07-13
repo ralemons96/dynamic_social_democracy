@@ -55,7 +55,7 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Croft | Wilhelm | former Unionist chancellor & presidential candidate (was "Wilhelm Marx" — the person, not the theorist; renamed in A4b to avoid colliding with Corwin Vael) |
 | Aldermoor | Konrad | |
 | Goodlake | Reynold | |
-| Trevannon | Gottfried | |
+| Trevannon | Godwin | prose canon = **Godwin** (D3 Anglicization; doc's "Gottfried" was stale) |
 | Maine | Caradoc | Traditionalist Faithful-Social wing (was "Walther Lambach"); the "Maine article" |
 | Cole | Bertram | Unionist, Minister-President of Purl (was "Eugen Bolz") |
 | Koch-Weser | Ewart | *surname-only* |
@@ -71,8 +71,8 @@ reads naturally. **(she/her)** marks characters whose prose pronouns must read f
 | Gallax | Alaric | Royalist candidate ("charismatic, not a Hitler") — was "Adolf" |
 | Gorrick | Ulric | |
 | Selden | Roderick | |
-| Goodryke | Franz | the authoritarian chancellor (Unionist→right) |
-| Frask | Wilhelm | |
+| Goodryke | Ferris | the authoritarian chancellor (Unionist→right); prose canon = **Ferris** (de-Germanized from "Franz"=von Papen in D3; doc was stale — do NOT revert to Franz) |
+| Frask | Bram | prose canon = **Bram** (deduped from Wilhelm→Croft anchor in A5c) |
 | Hargen | Oskar | |
 | Schiele | Martin | |
 | Aveling | Garren | Traditionalist agrarian / public-works (was "Günther Gereke") |

@@ -1,5 +1,5 @@
 title: Heartland Police Dissolved
-subtitle: The <i>Staatsschutzamt</i> is formed in its stead.
+subtitle: The <i>State Security Office</i> is formed in its stead.
 view-if: chancellor == "Staal" and (dsu_in_gov or dsu_was_gov) and ((reichstag_joever_time >= 6 and not staal_post_protests) or (reichstag_joever_time >= 16 and staal_post_protests)) and not staal_rights and heartland_leader == "Crowde"
 max-visits: 1
 new-page: true
@@ -22,7 +22,7 @@ on-display: {!
 
 Frask, the <span style="color: #6A1E1E;">**CSG**</span>, and Staal have been coordinating closely to smooth the Commonwealth’s transition into a more authoritarian system. The Heartland police, still riddled with <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> sympathizers, remains a key obstacle—too entrenched to purge outright without crippling the force.
 
-But with the Commonwealth Army’s militia now patrolling the streets under Frask and Crowde’s oversight, there is no longer any need for this relic of the Unity Republic. In its place, the <i>Staatsschutzamt</i> (State Security Office) has been created, staffed by [? if dsu_in_gov: <span style="color: #7A3C00;">Royalists</span> and?] Staal loyalists.
+But with the Commonwealth Army’s militia now patrolling the streets under Frask and Crowde’s oversight, there is no longer any need for this relic of the Unity Republic. In its place, the <i>State Security Office</i> has been created, staffed by [? if dsu_in_gov: <span style="color: #7A3C00;">Royalists</span> and?] Staal loyalists.
 
 - @gestapo
 

@@ -51,7 +51,7 @@ This assuages some of the <span style="color: #700000;">**Collectivists**</span>
 @communist_fault
 on-arrival: collectivist_relation -= 10; unionist_relation += 3; gold_relation += 3; lvp_relation += 2; vanguard_strength -= 80; vanguard_banned = 1; dufour_angry -= 4
 
-If the <span style="color: #700000;">**Collectivists**</span> continues to act illegally, they must suffer the consequences. Thus, we have banned the <span style="color: #8B0000;">**RFKB**</span>, their paramilitary group. The propertied and right-leaning parties approve.
+If the <span style="color: #700000;">**Collectivists**</span> continues to act illegally, they must suffer the consequences. Thus, we have banned the <span style="color: #8B0000;">**Vanguard**</span>, their paramilitary group. The propertied and right-leaning parties approve.
 
 @no_fault
 

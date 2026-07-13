@@ -27,7 +27,7 @@ The [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**<
 
 Despite these divisions, when the [? if not lvp_formed and gold_exist:<span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed or not gold_exist:<span style="color: #3E88B3;">**Traditionalists**</span>?] introduced a vote of no confidence, defectors from both parties tipped the scales, narrowly bringing down Askew’s government. New elections have been scheduled for [+ next_election_month : month +] [+ next_election_year +].
 
-[? if not hoover_moratorium_seen: The one silver lining in this crisis is that with [+ chancellor +] announcing the Commonwealth’s inability to continue paying War Loans, <span style="color: #B31942;">United</span> <span style="color: #0A3161;">States</span> President Herbert Hoover has begun to lobby <span style="color: #002654;">Ethia</span> to agree to a one-year suspension of payments. ?]
+[? if not hoover_moratorium_seen: The one silver lining in this crisis is that with [+ chancellor +] announcing the Commonwealth’s inability to continue paying War Loans, the <span style="color: #0A3161;">Allied States</span> have begun to lobby <span style="color: #002654;">Ethia</span> to agree to a one-year suspension of payments. ?]
 
 @bruning_survive
 view-if: bruning_coalition_dissent < 4
@@ -37,4 +37,4 @@ on-arrival: disfavored += 1.5; burgher_royalist += 2; guild_royalist += 2; budge
 
 As a result, the planned vote of no confidence has been shelved, allowing the propertied-right government to survive—albeit with its unity hanging by a thread.
 
-[? if not hoover_moratorium_seen: The one silver lining in this crisis is that with [+ chancellor +] announcing the Commonwealth’s inability to continue paying War Loans, <span style="color: #B31942;">United</span> <span style="color: #0A3161;">States</span> President Herbert Hoover has begun to lobby <span style="color: #002654;">Ethia</span> to agree to a one-year suspension of payments. ?]
+[? if not hoover_moratorium_seen: The one silver lining in this crisis is that with [+ chancellor +] announcing the Commonwealth’s inability to continue paying War Loans, the <span style="color: #0A3161;">Allied States</span> have begun to lobby <span style="color: #002654;">Ethia</span> to agree to a one-year suspension of payments. ?]

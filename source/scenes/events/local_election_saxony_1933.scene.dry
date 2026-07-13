@@ -673,7 +673,7 @@ go-to: saxony_coalition_menu
 <hr id="read-marker">
 [? if aspd_dead and reformists_resign: Despite the <span style="color: #fe9e00;">**ORP**</span>'s reunion with the <span style="color: #c00000;">**Marchers**</span> after the state Assembly election 4 years ago, our party's leftist direction at the federal level has driven them to split off again. ?]
 [? if royalist_r_saxony > (royalist_r_saxony_old + 5) and not saxony_royalist: The <span style="color: #7A3C00;">**Royalists**</span> have made significant gains relative to last election.  This may make a stable governing arrangement more difficult this time around. ?]
-[? if saxony_royalist: Following Gregor Stasser's anti-capitalist antics of the previous coalition, the propertied parties are quite reluctant to include the <span style="color: #7A3C00;">**Royalists**</span> in government again. ?]
+[? if saxony_royalist: Following Garrick Crowde's anti-capitalist antics of the previous coalition, the propertied parties are quite reluctant to include the <span style="color: #7A3C00;">**Royalists**</span> in government again. ?]
 <hr id="read-marker">
 United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
 

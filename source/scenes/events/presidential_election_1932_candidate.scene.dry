@@ -208,11 +208,11 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.vorbeck_run = 1; 
         if (Q.reactionary_candidate_1932) {
             Q.secondary_reactionary_candidate_1932 = "Lethmoor";
-            Q.secondary_reactionary_candidate_1932_disp = "Paul Lethmoor";
+            Q.secondary_reactionary_candidate_1932_disp = "Cedric Lethmoor";
         }
         if (!Q.reactionary_candidate_1932) {
             Q.reactionary_candidate_1932 = "Lethmoor";
-            Q.reactionary_candidate_1932_disp = "Paul Lethmoor";
+            Q.reactionary_candidate_1932_disp = "Cedric Lethmoor";
         }
         Q.reactionary_candidate_1932_count -= 1;
     }
@@ -221,11 +221,11 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.westarp_run = 1; 
         if (Q.reactionary_candidate_1932) {
             Q.secondary_reactionary_candidate_1932 = "Westmore";
-            Q.secondary_reactionary_candidate_1932_disp = "Kuno Westmore";
+            Q.secondary_reactionary_candidate_1932_disp = "Edgar Westmore";
         }
         if (!Q.reactionary_candidate_1932) {
             Q.reactionary_candidate_1932 = "Westmore";
-            Q.reactionary_candidate_1932_disp = "Kuno Westmore";
+            Q.reactionary_candidate_1932_disp = "Edgar Westmore";
         }
         Q.reactionary_candidate_1932_count -= 1;
     }
@@ -423,7 +423,7 @@ His candidacy is supported by the [? if unionist_party_name != "Concord": <span 
 - @harzburg: We await the decision of the Stowford Front.
 
 @vorbeck
-title: Paul Lethmoor, war hero of the Great Wars and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
+title: Cedric Lethmoor, war hero of the Great Wars and [? if not concord_formed: [? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?]?][? if concord_formed: <span style="color: #000000;">**Concord**</span>?] member.
 view-if: vorbeck_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 unavailable-subtitle: Lethmoor is reluctant to lead, and prefers his unglamorous life away from the public. Unless he is convinced, of course.
@@ -431,7 +431,7 @@ face-image: img/portraits/lettowvorbeck.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-By some miracle for the Commonwealth Right, they have managed to persuade Paul Lethmoor—renowned for his successful guerrilla campaign in the Gold Coast during the Great Wars—to run for the presidency. However, the circumstances now are far more dire than they were in 4290. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
+By some miracle for the Commonwealth Right, they have managed to persuade Cedric Lethmoor—renowned for his successful guerrilla campaign in the Gold Coast during the Great Wars—to run for the presidency. However, the circumstances now are far more dire than they were in 4290. The Commonwealth Right is significantly less unified behind Lethmoor than it had been for President DuFour.
 
 How Lethmoor would govern remains uncertain. It is highly likely that, much like DuFour, a camarilla of close advisors would shape his decisions from behind the scenes.
 
@@ -440,14 +440,14 @@ His candidacy is backed by the [? if not vorbeck_fallback: [? if not concord_for
 - @harzburg: We await the decision of the Stowford Front.
 
 @westarp
-title: Kuno Westmore, [? if traditionalist_leader != "Westmore": former?] leader of the <span style="color: #3E88B3;">**Traditionalists**</span>, and an old friend of DuFour.
+title: Edgar Westmore, [? if traditionalist_leader != "Westmore": former?] leader of the <span style="color: #3E88B3;">**Traditionalists**</span>, and an old friend of DuFour.
 view-if: westarp_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/Kuno_von_Westarp.jpg
 max-visits: 1
 go-to: reactionary_candidates if reactionary_candidate_1932_count_2 > 0
 
-Kuno Westmore, a familiar figure in Commonwealth politics, has long been a stalwart of the <span style="color: #3E88B3;">**Traditionalists**</span>, once serving as both party leader and head of its parliamentary group. While not entirely opposed to his party’s participation in a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system, he has made no secret of his monarchist aspirations. His rigid partisanship and staunchly anti-<span style="color: #c00000;">Reformist</span> convictions are likely to define his rule—perhaps even making him a more hostile figure than DuFour.
+Edgar Westmore, a familiar figure in Commonwealth politics, has long been a stalwart of the <span style="color: #3E88B3;">**Traditionalists**</span>, once serving as both party leader and head of its parliamentary group. While not entirely opposed to his party’s participation in a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system, he has made no secret of his monarchist aspirations. His rigid partisanship and staunchly anti-<span style="color: #c00000;">Reformist</span> convictions are likely to define his rule—perhaps even making him a more hostile figure than DuFour.
 
 It is imperative that we prevail over these forces of reaction if we are to have any hope of returning to government.
 
@@ -897,7 +897,7 @@ if ((Q.lib_drop_out && Q.unionist_drop_out || Q.unionist_drop_out && !Q.secondar
     Q.vorbeck_run = 1;
     Q.vorbeck_fallback = 1;
     Q.reactionary_candidate_1932 = "Lethmoor";
-    Q.reactionary_candidate_1932_disp = "Paul Lethmoor";
+    Q.reactionary_candidate_1932_disp = "Cedric Lethmoor";
     Q.secondary_reactionary_candidate_1932 = 0;
     Q.secondary_reactionary_candidate_1932_disp = 0;
     Q.unionist_choice = Q.reactionary_candidate_1932;
