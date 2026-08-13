@@ -647,7 +647,7 @@ view-if: unionist_r_bavaria >= 50
 on-arrival: bavaria_bvp = 1; burgher_royalist -= 2; guild_royalist -= 2; landed_royalist -= 2; faithful_royalist -= 2; burgher_unionist += 2; guild_unionist += 2; faithful_other += 2; landed_unionist += 2; pro_republic += 1
 go-to: election_menu
 
-The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the propertied parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though.
+The <span style="color: #A2D8E0;">**Arcanists**</span> has surprisingly won an outright majority, and no longer needs the support of the propertied parties. This has cemented Avriza as one of the most stable state governments, maybe not "democratic" though. [? if bvp_relation >= 30: Our patient cultivation of the <span style="color: #A2D8E0;">**Arcanists**</span> pays a quiet dividend: their new government treats our Avrizan organization nearly as a partner. ?][? if bvp_relation < 15: Our standing with the <span style="color: #A2D8E0;">**Arcanists**</span> being what it is, their new government scarcely returns our calls. ?]
 
 Heinrich Helder, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**Arcanists**</span> remains in power.
 

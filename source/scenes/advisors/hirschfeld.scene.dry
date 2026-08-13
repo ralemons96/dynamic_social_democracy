@@ -7,20 +7,21 @@ new-page: true
 
 = Magnus Harnfell
 
-Magnus Harnfell is the founder of the Institute of Sexual Science and an advocate for the rights of sexual minorities. [? if homosexual_rights: He currently has considerable support among party factions due to the <span style="color: #c00000;">**Marchers**</span>'s achievement in <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
+Magnus Harnfell is the founder of the Institute of Sexual Science and an advocate for the rights of sexual minorities. [? if homosexual_rights: He currently has considerable support among party factions due to the <span style="color: #c00000;">**Marchers**</span>'s achievement in homosexual rights. ?]
 
 
 - @homosexual_rights_
 - @womens_rights_
+- @magi_advocacy: Advocacy for the magi.
 - @science_funding
 - @root: Return to main
 
 
 @homosexual_rights_
-title: <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights
-subtitle: Enact policy that supports <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights.
+title: Homosexual rights
+subtitle: Enact policy that supports homosexual rights.
 choose-if: advisor_action_timer = 0 and marcher_in_government and progressive_coalition >= 50 and not concord_women_accepted
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not currently in government. ?][? if progressive_coalition < 50 : We do not have the votes to enact these policies. ?] [? if concord_women_accepted : Our coalition agreement stipulates against action toward <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not marcher_in_government : The <span style="color: #c00000;">Marchers</span> is not currently in government. ?][? if progressive_coalition < 50 : We do not have the votes to enact these policies. ?] [? if concord_women_accepted : Our coalition agreement stipulates against action toward Homosexual rights. ?]
 on-arrival: advisor_action_timer = 6; homosexual_rights_timer -= 11; last_advisor_action = 1
 go-to: homosexual_rights
 
@@ -41,3 +42,12 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.increase_science
 
+
+@magi_advocacy
+title: Advocacy for the magi
+subtitle: Harnfell lends his institute's standing to the magi circles' cause.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; magi_balance += 4 if magi_balance < 100; last_advisor_action = 1
+
+Harnfell turns his pamphleteers and his podium to the magi's cause — lectures in the guild halls, careful essays in the respectable press, a public correspondence with sympathetic jurists. It is slow work against old fear, but the ground shifts a little wherever he speaks.
