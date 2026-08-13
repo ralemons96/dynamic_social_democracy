@@ -44,7 +44,7 @@ With Mallin’s personal fortune—once sustained by his media empire—running 
 @schleicher_2_dnvp
 go-to: schleicher_2_dnvp_post
 
-With Staal’s backing, the dissident factions have been absorbed into the [? if not kvp_formed: newly revived <span style="color: #0087DC;">**CPP**</span>, which, at the chancellor’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which, at Staal’s urging, has become a <i>Rechtsblock</i> where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and not kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which has also been strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>. ?]
+With Staal’s backing, the dissident factions have been absorbed into the [? if not kvp_formed: newly revived <span style="color: #0087DC;">**CPP**</span>, which, at the chancellor’s urging, has become a Right Bloc where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which, at Staal’s urging, has become a Right Bloc where all <span style="color: #3E88B3;">nationalists</span> can coalesce. ?][? if kvp_formed and not kvp_gnu: <span style="color: #0087DC;">**CPP**</span>, which has also been strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span>. ?]
 
 What’s left of Mallin’s <span style="color: #3E88B3;">**Traditionalists**</span> is a shadow of its former self, and his sway on the national stage has all but vanished. But that man never gives up. [? if kvp_leader != "Trevannon": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #0087DC;">**CPP**</span>. ?]
 
@@ -141,7 +141,7 @@ Current composition of the <span style="color: #BFC8CC;">Commonwealth National U
 @schleicher_2_dnf
 go-to: schleicher_2_dnf_post
 
-With Staal’s backing, the dissident factions have been absorbed into the <span style="color: #3E88B3;">**Traditionalists**</span>, which has been "encouraged" to reform itself into a <i>Rechtsblock</i>[? if not traditionalist_gnu:, and strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> as well?], firmly aligned with the Staal government.
+With Staal’s backing, the dissident factions have been absorbed into the <span style="color: #3E88B3;">**Traditionalists**</span>, which has been "encouraged" to reform itself into a Right Bloc[? if not traditionalist_gnu:, and strong-armed into joining the <span style="color: #BFC8CC;">Commonwealth National Unity Front</span> as well?], firmly aligned with the Staal government.
 
 Mallin is now left with his tiny <span style="color: #003755;">**CNF**</span>—no friends, no funds, and no influence on the national stage. There’s a strong chance he’ll give up entirely. But for now, he stubbornly clings on onto whatever influence he has left in his media empire. [? if traditionalist_leader != "Trevannon" and traditionalist_leader != "Maine": Trevannon has since been installed as leader of the now <i>bloc party</i>-aligned <span style="color: #3E88B3;">**Traditionalists**</span>. ?]
 

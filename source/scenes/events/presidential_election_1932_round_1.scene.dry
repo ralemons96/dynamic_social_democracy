@@ -862,9 +862,9 @@ Wardens - [? if traditionalist_ideology == "Radical": Abstention?][? if traditio
 
 Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 
-Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>
+Pan-Commonwealth League (PCL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>
 
-United Patriotic Leagues (VVVD) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>
+United Patriotic Leagues (UPL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>
 
 Veterans' League - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 

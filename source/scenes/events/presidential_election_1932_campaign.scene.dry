@@ -527,7 +527,7 @@ Carl Slack, the chairman of the United DuFour Committees have largely been unsuc
 on-arrival: dufour_support += 2
 go-to: bourgeois_campaign_menu
 
-Slack, being the former chairman of the National Federation of Commonwealth Industry (RDI) and one of the more moderate members, has been successful in soliciting donations from many business leaders who had reservations about backing DuFour again. The radical revolutionary and socialistic policies of <span style="color: #7A3C00;">**Royalists**</span> have greatly discouraged them from donating to [+ royalist_candidate_1932 +]. It now looks like the DuFour campaign finally has the resources to properly establish a campaign infrastructure that can rival Standerton' efforts and the <span style="color: #7A3C00;">Royalists</span>.
+Slack, being the former chairman of the National Federation of Commonwealth Industry (FCI) and one of the more moderate members, has been successful in soliciting donations from many business leaders who had reservations about backing DuFour again. The radical revolutionary and socialistic policies of <span style="color: #7A3C00;">**Royalists**</span> have greatly discouraged them from donating to [+ royalist_candidate_1932 +]. It now looks like the DuFour campaign finally has the resources to properly establish a campaign infrastructure that can rival Standerton' efforts and the <span style="color: #7A3C00;">Royalists</span>.
 
 @industrial_3
 on-arrival: guild_royalist += 4; guild_kvp -= 2; guild_traditionalist -= 2 if industrial_traditionalist_backing >= 2 and traditionalist_ideology == "Moderate"; guild_other -= 4; landed_royalist += 2
@@ -614,9 +614,9 @@ Wardens - [? if traditionalist_candidate_1932 and traditionalist_candidate_1932 
 
 Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 
-Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or [? if traditionalist_candidate_1932 != "Mallin" or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 == "Mallin" and traditionalist_ideology == "Moderate": <span style="color: #003755;">**[+ traditionalist_candidate_1932 +]**</span>?]?]
+Pan-Commonwealth League (PCL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or [? if traditionalist_candidate_1932 != "Mallin" or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 == "Mallin" and traditionalist_ideology == "Moderate": <span style="color: #003755;">**[+ traditionalist_candidate_1932 +]**</span>?]?]
 
-United Patriotic Leagues (VVVD) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or [? if traditionalist_candidate_1932 != "Mallin" or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 == "Mallin" and traditionalist_ideology == "Moderate": <span style="color: #003755;">**[+ traditionalist_candidate_1932 +]**</span>?]?]
+United Patriotic Leagues (UPL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or [? if traditionalist_candidate_1932 != "Mallin" or traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?][? if traditionalist_candidate_1932 == "Mallin" and traditionalist_ideology == "Moderate": <span style="color: #003755;">**[+ traditionalist_candidate_1932 +]**</span>?]?]
 
 Veterans' League - <span style="color: #808080;">**[+ reactionary_candidate_1932 +]**</span>
 
@@ -796,7 +796,7 @@ Carl Slack, the chairman of the United DuFour Committees have largely been unsuc
 on-arrival: dufour_support += 2
 go-to: bourgeois_campaign_menu_op
 
-Slack, being the former chairman of the National Federation of Commonwealth Industry (RDI) and one of the more moderate members, has been successful in soliciting donations from many business leaders who had reservations about backing DuFour again. The radical revolutionary and socialistic policies of <span style="color: #7A3C00;">**Royalists**</span> have greatly discouraged them from donating to [+ royalist_candidate_1932 +]. It now looks like the DuFour campaign finally has the resources to properly establish a campaign infrastructure that can rival Standerton' efforts and the <span style="color: #7A3C00;">Royalists</span>.
+Slack, being the former chairman of the National Federation of Commonwealth Industry (FCI) and one of the more moderate members, has been successful in soliciting donations from many business leaders who had reservations about backing DuFour again. The radical revolutionary and socialistic policies of <span style="color: #7A3C00;">**Royalists**</span> have greatly discouraged them from donating to [+ royalist_candidate_1932 +]. It now looks like the DuFour campaign finally has the resources to properly establish a campaign infrastructure that can rival Standerton' efforts and the <span style="color: #7A3C00;">Royalists</span>.
 
 @industrial_3_op
 on-arrival: guild_royalist += 4; guild_kvp -= 2; guild_traditionalist -= 2 if industrial_traditionalist_backing >= 2 and traditionalist_ideology == "Moderate"; guild_other -= 4; landed_royalist += 2
@@ -883,9 +883,9 @@ Wardens - [? if traditionalist_candidate_1932 == "Dusterel":<span style="color: 
 
 Commonwealth National Association of Commercial Employees (Clerks' Guild) - <span style="color: #808080;">**[+ reactionary_candidate_1932_disp +]**</span>
 
-Pan-Commonwealth League (ADV) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?]
+Pan-Commonwealth League (PCL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?]
 
-United Patriotic Leagues (VVVD) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?]
+United Patriotic Leagues (UPL) - <span style="color: #7A3C00;">**[+ royalist_candidate_1932 +]**</span>[? if traditionalist_candidate_1932:&nbsp;or <span style="color: #3E88B3;">**[+ traditionalist_candidate_1932 +]**</span>?]
 
 Veterans' League - <span style="color: #808080;">**[+ reactionary_candidate_1932_disp +]**</span>
 

@@ -565,7 +565,7 @@ The Commonwealth people had only briefly united behind their so-called savior, G
 
 With Staal nearing the end—both politically and personally—he is in no position to stop the unraveling of his own creation. Perhaps this will be remembered as his greatest blunder: that everything he built ends in anticlimax. Yet the Unity system has already been gutted over the past few years.
 
-The bloc partys will return to their independent status, and it is primarily the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Reformist Party</span> (<span style="color: #fe9e00;">**ORP**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “Volksocialism,” whatever that’s supposed to mean.
+The bloc partys will return to their independent status, and it is primarily the [? if traditionalist_ideology == "Moderate": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Radical": <span style="color: #0087DC;">**CPP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Reformist Party</span> (<span style="color: #fe9e00;">**ORP**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “People's Socialism,” whatever that’s supposed to mean.
 
 - @dnef_collapse_2
 
@@ -682,7 +682,7 @@ go-to: reichstag_view
 
 The two factions within the <span style="color: #BFC8CC;">**GNU**</span> have effectively undergone a split, their differences proving too vast to reconcile. With no resolution in sight, the minority faction has broken away, taking a segment of the party with them.
 
-[? if right_gnu: This unlucky minority is the <span style="color: #BFC8CC;">**GNU**</span>’s right wing, which sought to transform the party into a vehicle for the restoration of the Commonwealth monarchy. The ideological gulf was too great for the ailing Staal to bridge, leading to the formation of the <span style="color: #BFC8CC;">GNU-Fatherland League</span> (<span style="color: #BFC8CC;">**GNU-VLB**</span>)—perhaps an echo of the Commonwealth Fatherland Party of old. ?]
+[? if right_gnu: This unlucky minority is the <span style="color: #BFC8CC;">**GNU**</span>’s right wing, which sought to transform the party into a vehicle for the restoration of the Commonwealth monarchy. The ideological gulf was too great for the ailing Staal to bridge, leading to the formation of the <span style="color: #BFC8CC;">GNU-Fatherland League</span> (<span style="color: #BFC8CC;">**GNU-FL**</span>)—perhaps an echo of the Commonwealth Fatherland Party of old. ?]
 
 [? if left_gnu: This unlucky minority is the <span style="color: #BFC8CC;">**GNU**</span>’s left wing, which hoped to redirect the party toward addressing social inequality and defending the welfare of the Commonwealth worker. Disputes over monarchism and the role of labor in the new corporatist order proved irreconcilable for Staal, resulting in their secession and the founding of the <span style="color: #B86558;">GNU-Social Bloc</span> (<span style="color: #B86558;">**GNU-SB**</span>). ?]
 

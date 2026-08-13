@@ -429,7 +429,7 @@ go-to: thuringia_coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_thuringia_elections_vote +]% {!</td><td>!} [+ collectivist_r_thuringia +]%  {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#C43988'> </div> !}KPO: {!</td><td>!} [+ kpo_thuringia_elections_vote +]% {!</td><td>!} 0%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#C43988'> </div> !}CPO: {!</td><td>!} [+ kpo_thuringia_elections_vote +]% {!</td><td>!} 0%  {!</td></tr>!}
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_thuringia_elections_vote +]% {!</td><td>!} [+ ddp_r_thuringia +]%  {!</td></tr>!} ?]
 
@@ -456,7 +456,7 @@ go-to: thuringia_coalition_menu
 <hr id="read-marker">
 Stathmore is currently governed by a broad center-right coalition, which holds exactly half of the state Assembly's seats. This coalition includes all parties to the right of us, along with the special interest parties, the <span style="color: #b8996f;">**ECP**</span> and <span style="color: #7FCEB1;">**FCL**</span>, both of which have a significant presence in state politics.
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_thuringia +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**CPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_thuringia +]% 
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_thuringia:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_thuringia +]% 
 

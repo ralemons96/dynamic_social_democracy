@@ -10,7 +10,7 @@ tags: event
 
 Our spies and contacts amongst the collectivists have brought news of a scandal engulfing the <span style="color: #700000;">**Collectivists**</span> leadership. An associate of <span style="color: #700000;">**Collectivists**</span> chairman Ernst Halsmark, a <span style="color: #700000;">**Collectivists**</span> official named John Gembirth, is accused of embezzling campaign funds, diverting thousands of Gold for personal use, and Halsmark is accused of covering up the affair. The party's central committee considers this charge serious.
 
-The Conciliators in the <span style="color: #700000;">**Collectivists**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident collectivists in the Vanguard League also have information about this affair, and are planning to publish it.
+The Conciliators in the <span style="color: #700000;">**Collectivists**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident collectivists in the Red Vanguard also have information about this affair, and are planning to publish it.
 
 What should we do with this information?
 
@@ -34,7 +34,7 @@ The information spreads without our help, leading to some loss of <span style="c
 
 
 @secret
-title: It is best to keep this information secret. Prevent the Vanguard League and dissident <span style="color: #700000;">**Collectivists**</span> members from spreading this.
+title: It is best to keep this information secret. Prevent the Red Vanguard and dissident <span style="color: #700000;">**Collectivists**</span> members from spreading this.
 choose-if: levi_advisor or rosenfeld_advisor
 unavailable-subtitle: We do not have contacts among the dissident collectivists.
 on-arrival: wittorf_secret = 1; reformist_dissent += 5; left_dissent += 5

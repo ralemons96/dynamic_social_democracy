@@ -480,7 +480,7 @@ go-to: saxony_achievement
 
 {!<tr><td><div class="box" style='background-color:#700000'> </div> !}Collectivists: {!</td><td>!} [+ collectivist_saxony_elections_vote +]% {!</td><td>!} [+ collectivist_r_saxony +]%  {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#C43988'> </div> !}KPO: {!</td><td>!} [+ kpo_saxony_elections_vote +]% {!</td><td>!} 0%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#C43988'> </div> !}CPO: {!</td><td>!} [+ kpo_saxony_elections_vote +]% {!</td><td>!} 0%  {!</td></tr>!}
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_saxony_elections_vote +]% {!</td><td>!} [+ ddp_r_saxony +]%  {!</td></tr>!} ?]
 
@@ -511,7 +511,7 @@ The Dornish Dispute arose when the Dornish branch of the <span style="color: #c0
 
 Notable members of the <span style="color: #fe9e00;">**ORP**</span> include Bevan Hale, August Winmore (a supporter of the officers’ putsch), Lorcan Underthorn (a "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolshevik</span>"), and its party leader, former Minister-President Kerrick Brunmoor. The party was labeled "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntist</span>" by the <span style="color: #700000;">**Collectivists**</span>, marking the <span class="tooltip-text" title="that's me! the modman!">origin</span> of the term.
 <hr id="read-marker">
-United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**KPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
+United Left Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #C43988;">**CPO**</span> + <span style="color: #700000;">**Collectivists**</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">**Laborists**</span>?]): [+ left_coalition_saxony +]% 
 
 Unity Coalition (<span style="color: #c00000;">**Marchers**</span> + <span style="color: #fe9e00;">**ORP**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if unionist_r_saxony:&nbsp;+&nbsp;<span style="color: #000000;">**[+ unionist_party_name +]**</span> ?][? if not lvp_formed:&nbsp;+&nbsp;<span style="color: #C0A054;">**Golds**</span>?]): [+ marcher_coalition_saxony +]% 
 
