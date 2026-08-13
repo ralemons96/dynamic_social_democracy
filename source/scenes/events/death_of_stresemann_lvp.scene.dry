@@ -3,7 +3,7 @@ view-if: year = 1929 and month == 10 and lvp_formed
 frequency: 1000
 max-visits: 1
 tags: event
-on-arrival: stresemann_dead = 1; lvp_relation -= 5; lvp_right += 3; foreign_minister = "Curtius" if foreign_minister = "Stratton"
+on-arrival: stresemann_dead = 1; lvp_relation -= 5; lvp_right += 3; foreign_minister = "Curthose" if foreign_minister = "Stratton"
 priority: -1
 face-image: img/portraits/Stratton.jpg
 new-page: true

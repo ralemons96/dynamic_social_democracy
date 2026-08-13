@@ -22,7 +22,7 @@ However, the West — and above all <span style="color: #002654;">Ethia</span>, 
 - @end_toleration: Attempt to stop this arrangement!
 
 @let_it_happen
-on-arrival: banking_crisis_timer = 4; curtius_banking_crisis = 1 if not in_weimar_coalition; curtius_explosion_timer = time + 7 if ((gold_leader == "Curtius" and not in_weimar_coalition) or lvp_leader == "Curtius") and not in_popular_front and not in_left_front; customs_union = 1; west_relation -= 2; east_relation -= 2
+on-arrival: banking_crisis_timer = 4; curtius_banking_crisis = 1 if not in_weimar_coalition; curtius_explosion_timer = time + 7 if ((gold_leader == "Curthose" and not in_weimar_coalition) or lvp_leader == "Curthose") and not in_popular_front and not in_left_front; customs_union = 1; west_relation -= 2; east_relation -= 2
 
 The customs union has been formed. Immediately, <span style="color: #002654;">Ethia</span> and other neighboring countries lodge their protests. The longer-term response is yet to be seen.
 

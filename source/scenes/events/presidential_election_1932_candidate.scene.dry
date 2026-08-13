@@ -379,7 +379,7 @@ His candidacy is supported by the [? if not lvp_formed: <span style="color: #C0A
 - @harzburg: We await the decision of the Stowford Front.
 
 @adenauer
-title: Konrad Aldermoor, Mayor of Bradford, and an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower".
+title: Konrad Aldermoor, Mayor of Calbridge, and an advocate for the <span style="color: #000000;">Unionist Party</span> "leaving the tower".
 view-if: adenauer_unlock_pres
 on-arrival: reactionary_candidate_1932_count_2 -= 1
 face-image: img/portraits/adenauer.jpg
@@ -564,7 +564,7 @@ So, what's our choice?
 @view_candidates
 go-to: endorsements_braun if braun_campaign; endorsements_eckener if eckener_campaign; endorsements_rosenfeld if rosenfeld_campaign
 
-[? if marcher_campaign: [? if marcher_candidate_1932 != "Eckhart": <span style="color: #c00000;">**[+ marcher_candidate_1932_disp +]**</span>?][? if marcher_candidate_1932 == "Eckhart": Hugo <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> ?] - supported by: ?]
+[? if marcher_campaign: [? if marcher_candidate_1932 != "Eckhart": <span style="color: #c00000;">**[+ marcher_candidate_1932_disp +]**</span>?][? if marcher_candidate_1932 == "Eckhart": Hugo <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span> ?] - supported by: ?]
 
 [? if marcher_campaign: - <span style="color: #c00000;">**Marchers**</span> ?]
 
@@ -1181,10 +1181,10 @@ It's a long shot, but some in our party believed we could convince the <span sty
 
 Eckhart can't win this election alone, he needs support from other parties.
 
-- @convince_z_eckener: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
-- @convince_ddp_eckener: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
-- @convince_lvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
-- @convince_dvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
+- @convince_z_eckener: Convince the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to back <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span>[? if center_reactionary_candidate_1932:&nbsp;and withdraw support from [+ center_reactionary_candidate_1932_name +]?].
+- @convince_ddp_eckener: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to back <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
+- @convince_lvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
+- @convince_dvp_eckener: Convince the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span>[? if liberal_reactionary_candidate_1932:&nbsp;and withdraw support from [+ liberal_reactionary_candidate_1932_name +]?].
 - @view_candidates: View party endorsements.
 - @hope: We have concluded negotiations with other parties.
 

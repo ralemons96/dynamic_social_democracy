@@ -11,7 +11,7 @@ new-page: true
 
 The <span style="color: #C0A054;">**Golds**</span> are having an internal party vote to elect a successor to former party leader and statesman Gustav Stratton. Despite recent reforms, both the party and its electorate have been shifting to the right in recent years. [? if not in_grand_coalition: The left of the <span style="color: #C0A054;">**Golds**</span> has also been diminished by the current absence of a coalition including both parties. ?]
 
-The candidate on the right is current party leader Reginald Eikenvorst. Eikenvorst has heavy ties to industry and a record of opposing propertied unity. Although the right of the party was weakened, nationalist influences have rose since Stratton's death. On the left is Julius Curtius, [? if in_grand_coalition or in_right_coalition or in_center_right_coalition: the <span style="color: #C0A054;">**Golds**</span>'s [? if (foreign_minister_party == "Gold" and economic_minister_party != "Gold") or (foreign_minister_party == "Gold" and economic_minister_party == "Gold"): Foreign Minister who succeeded Stratton in the role.?][? if economic_minister_party == "Gold" and foreign_minister_party != "Gold": Economic Minister, and a close ally of Stratton?]?][? if not in_grand_coalition: a close ally of Stratton and seen by many as his natural successor?]. A movement to draft former Chancellor Hans Lytton is met with his own personal reluctance, but he remains a possible compromise candidate.
+The candidate on the right is current party leader Reginald Eikenvorst. Eikenvorst has heavy ties to industry and a record of opposing propertied unity. Although the right of the party was weakened, nationalist influences have rose since Stratton's death. On the left is Julius Curthose, [? if in_grand_coalition or in_right_coalition or in_center_right_coalition: the <span style="color: #C0A054;">**Golds**</span>'s [? if (foreign_minister_party == "Gold" and economic_minister_party != "Gold") or (foreign_minister_party == "Gold" and economic_minister_party == "Gold"): Foreign Minister who succeeded Stratton in the role.?][? if economic_minister_party == "Gold" and foreign_minister_party != "Gold": Economic Minister, and a close ally of Stratton?]?][? if not in_grand_coalition: a close ally of Stratton and seen by many as his natural successor?]. A movement to draft former Chancellor Hans Lytton is met with his own personal reluctance, but he remains a possible compromise candidate.
 
 - @resultsdvp: The party votes...
 
@@ -28,10 +28,10 @@ if (Q.gold_right > (Q.gold_left*1.5) || (Q.gold_right > (Q.gold_left + 4))) {
 go-to: curtius if gold_ideology == "Left" or (gold_ideology == "Moderate" and (coalition_dissent < 2 and in_grand_coalition)) and in_grand_coalition; scholz if gold_ideology == "Right" or (gold_ideology == "Moderate" and not in_grand_coalition); luther if (gold_ideology == "Moderate" and (coalition_dissent >= 2 and in_grand_coalition)) or (gold_ideology == "Left" and not in_grand_coalition)
 
 @curtius
-on-arrival: gold_leader = "Curtius"; liberal_cooperation += 1; bourgeois_cooperation += 1; gold_left += 3; gold_relation += 5; burgher_gold += 5; landed_gold += 2; pro_republic += 5; ddp_left += 1; ddp_cohesion += 1
+on-arrival: gold_leader = "Curthose"; liberal_cooperation += 1; bourgeois_cooperation += 1; gold_left += 3; gold_relation += 5; burgher_gold += 5; landed_gold += 2; pro_republic += 5; ddp_left += 1; ddp_cohesion += 1
 face-image: img/portraits/curtius.jpg
 
-Julius Curtius has won the vote to succeed Stratton for the chairmanship. It seems like the guild-masters have finally lost their fight to control the <span style="color: #C0A054;">**Golds**</span>, which has now become a genuine People's Party that Stratton envisioned.
+Julius Curthose has won the vote to succeed Stratton for the chairmanship. It seems like the guild-masters have finally lost their fight to control the <span style="color: #C0A054;">**Golds**</span>, which has now become a genuine People's Party that Stratton envisioned.
 
 This is still excellent news for us and our relations with the <span style="color: #C0A054;">**Golds**</span>. [? if in_grand_coalition: We have noticed a decrease in coalition tensions. ?]
 

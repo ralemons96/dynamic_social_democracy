@@ -1,6 +1,6 @@
 title: <span style="color: #C0A054;">**Golds**</span> Party Vote
-subtitle: Julius Curtius has resigned!
-view-if: curtius_explosion_timer == time and gold_leader == "Curtius" and not lvp_formed
+subtitle: Julius Curthose has resigned!
+view-if: curtius_explosion_timer == time and gold_leader == "Curthose" and not lvp_formed
 on-arrival: {!
 
 if (Q.gold_relation < 35) Q.gold_right += 3;
@@ -32,11 +32,11 @@ new-page: true
 
 Following the disastrous Freehold customs union project, of which he was the architect, he has tendered his resignation from both the Foreign Ministry and the leadership of the <span style="color: #C0A054;">**Golds**</span>. This debacle has significantly discredited him and his allies on the party’s left wing, leading to a rightward shift within the <span style="color: #C0A054;">**Golds**</span>, particularly at the local level.
 
-An internal election must now be held to determine Curtius’s successor. With the industrial wing largely weakened, none of the leading candidates have particularly strong ties to Major Guilds. Caspar Holt and Florian Vellt, both members of the Clerks' Guild - a conservative white-collar Free Guild - and leaders of the <span style="color: #C0A054;">**Golds**</span>'s Young Liberal wing, [? if not gold_reform: are the leading voices pushing for a genuine People's Party?][? if gold_reform: were instrumental in pushing the <span style="color: #C0A054;">**Golds**</span> toward reform years ago?]. Meanwhile, Siegfried Strake, a veteran parliamentarian despite his past affiliation with the <span style="color: #3E88B3;">**Traditionalists**</span>, has significantly moderated over the years and was a close follower of Stratton, advocating for a Unity Coalition with the <span style="color: #c00000;">**Marchers**</span>. And, of course, Coalfax is running again, undeterred by his previous defeat.
+An internal election must now be held to determine Curthose’s successor. With the industrial wing largely weakened, none of the leading candidates have particularly strong ties to Major Guilds. Caspar Holt and Florian Vellt, both members of the Clerks' Guild - a conservative white-collar Free Guild - and leaders of the <span style="color: #C0A054;">**Golds**</span>'s Young Liberal wing, [? if not gold_reform: are the leading voices pushing for a genuine People's Party?][? if gold_reform: were instrumental in pushing the <span style="color: #C0A054;">**Golds**</span> toward reform years ago?]. Meanwhile, Sigebert Strake, a veteran parliamentarian despite his past affiliation with the <span style="color: #3E88B3;">**Traditionalists**</span>, has significantly moderated over the years and was a close follower of Stratton, advocating for a Unity Coalition with the <span style="color: #c00000;">**Marchers**</span>. And, of course, Coalfax is running again, undeterred by his previous defeat.
 
 - @thiel: Caspar Holt is elected!
 - @glatzel: Florian Vellt is elected!
-- @kardorff: Siegfried Strake is elected!
+- @kardorff: Sigebert Strake is elected!
 - @dingeldey: Soren Coalfax is elected.
 
 @thiel
@@ -63,18 +63,18 @@ Florian Vellt is elected to become the new leader of the <span style="color: #C0
 As expected, the remaining guild-masters within the <span style="color: #C0A054;">**Golds**</span> are worried, as the party begins to shift towards including the demands of the worker. This has led to a dramatic shift in the party’s financial backing, as funding from Major Guilds dwindles and is replaced by donations and dues from the Clerks' Guild and its affiliated members. His dynamic leadership should be closely watched.
 
 @kardorff
-subtitle: Strake is able to secure the continuation of Curtius's leadership.
-unavailable-subtitle: [? if dingeldey_unlock: His closeness to Curtius has undermined his position. ?][? if thiel_unlock or glatzel_unlock: The party prefers a new and dynamic leader, preferably not one with closeness to Curtius. ?]
+subtitle: Strake is able to secure the continuation of Curthose's leadership.
+unavailable-subtitle: [? if dingeldey_unlock: His closeness to Curthose has undermined his position. ?][? if thiel_unlock or glatzel_unlock: The party prefers a new and dynamic leader, preferably not one with closeness to Curthose. ?]
 choose-if: kardorff_unlock
 on-arrival: gold_leader = "Strake"; gold_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; gold_relation += 5 if in_grand_coalition; burgher_gold += 4; faithful_gold += 2; landed_gold += 2; guild_gold += 2; pro_republic += 3
 face-image: img/portraits/kardorff.jpg
 
-Strake is elected to succeed Curtius as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Curtius's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Unity Coalition back in 4294.?]
+Strake is elected to succeed Curthose as the leader of the <span style="color: #C0A054;">**Golds**</span>. He is expected to be a continuation of Curthose's leadership, being another Stratton follower and supporter of constructive cooperation with the <span style="color: #c00000;">**Marchers**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Unity Coalition back in 4294.?]
 
 [? if bruning_time: He is also one of the strongest supporters of the Askew government, frequently coming into conflict with the right of the party over support for it. ?]
 
 @dingeldey
-subtitle: Coalfax aims to revert all of Curtius's progress.
+subtitle: Coalfax aims to revert all of Curthose's progress.
 unavailable-subtitle: The right-industrial faction of <span style='color: #C0A054;'>Golds</span> lacks the required influence.
 choose-if: dingeldey_unlock
 on-arrival: old_gold_leader = gold_leader; gold_leader = "Coalfax"; gold_right += 10; gold_relation -= 25; guild_gold -= 3; burgher_gold -= 6; landed_gold -= 4; pro_republic -= 5; ddp_cohesion -= 1; liberal_cooperation -= 5; bourgeois_cooperation -= 5

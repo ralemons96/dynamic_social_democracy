@@ -54,7 +54,7 @@ is-special: true
 [? if gnu_existed: <div style="display: flex;gap: 5px;margin-bottom: 5px;margin-left: -3px;"> ?]
 [? if gnu_existed and president == "DuFour": <img src="img/portraits/hindenburger.jpg" alt="Paul DuFour" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Burnell (acting)": <img src="img/portraits/bumke.jpg" alt="Erwin Burnell" style="width: 50%;"> ?]
-[? if gnu_existed and president == "Grothmoor (acting)": <img src="img/portraits/placeholder.jpg" alt="Hermann Grothmoor" style="width: 50%;"> ?]
+[? if gnu_existed and president == "Grothmoor (acting)": <img src="img/portraits/placeholder.jpg" alt="Gorman Grothmoor" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Hammerton": <img src="img/portraits/hammerstein.jpg" alt="Gideon Hammerton" style="width: 50%;"> ?]
 [? if gnu_existed and president == "Seckard": <img src="img/portraits/seeckt.jpg" alt="Hans Seckard" style="width: 50%;"> ?]
 [? if gnu_existed and chancellor == "Staal": <img src="img/portraits/StaalKurt.jpg" alt="Werner Staal" style="width: 50%;"> ?]

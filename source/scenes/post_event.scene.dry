@@ -1774,7 +1774,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         if (Q.month >= 7) Q.disfavored += 5/12; 
         Q.inflation -= 4/12;
         Q.landed_royalist += 8/12;
-        if (Q.gold_leader == "Curtius") {
+        if (Q.gold_leader == "Curthose") {
             Q.burgher_gold -= 2/12;
             Q.guild_gold -= 2/12;
             Q.burgher_royalist -= 2/12;
@@ -1845,7 +1845,7 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         if (Q.unionist_leader == "Renck") {
             Q.faithful_unionist += 3/12;
         }
-        if (Q.gold_leader == "Curtius" && Q.bruning_time) {
+        if (Q.gold_leader == "Curthose" && Q.bruning_time) {
             Q.landed_gold -= 2/12;
         } else if (Q.gold_leader == "Lytton" && Q.bruning_time) {
             Q.landed_gold -= 1/12;

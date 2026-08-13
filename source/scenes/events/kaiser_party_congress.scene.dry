@@ -18,11 +18,11 @@ Despite Stilling himself supporting Sedgewick’s original vision of Faithful un
 - @kaiser_campaign: We will hold a campaign in support of Aldwin Stilling as party chair.
 
 @adenauer
-subtitle: The Mayor of Bradford, and a strong supporter of 'leaving the tower'. Situated on the right-wing of the party.
+subtitle: The Mayor of Calbridge, and a strong supporter of 'leaving the tower'. Situated on the right-wing of the party.
 on-arrival: unionist_relation -= 15; unionist_ideology = "Right"; unionist_leader = "Aldermoor"; commons_unionist -= 6; commons_marcher += 6; disfavored_unionist -= 6; disfavored_marcher += 6; landed_unionist += 6; guild_unionist += 10; landed_traditionalist -= 4 if traditionalist_ideology == "Moderate"; guild_traditionalist -= 8 if traditionalist_ideology == "Moderate"; faithful_traditionalist -= 4 if traditionalist_ideology == "Moderate"; landed_kvp -= 4 if kvp_formed; guild_kvp -= 8 if kvp_formed; faithful_kvp -= 4 if kvp_formed; landed_other -= 4 if not kvp_formed and traditionalist_ideology == "Radical"; guild_other -= 8 if not kvp_formed and traditionalist_ideology == "Radical"; faithful_other -= 4 if not kvp_formed and traditionalist_ideology == "Radical"; unionist_party_name = "Concord"; stegerwald_skibidi_time = time + 11
 face-image: img/portraits/adenauer.jpg
 
-The influx of dissenting conservatives into the <span style="color: #000000;">Unionist Party</span> has rendered Aldwin Stilling’s leadership untenable. In a decisive internal vote of no confidence, Stilling has been ousted—replaced by Sedgewick ally and long-serving Mayor of Bradford, Konrad Aldermoor. Aldermoor seeks to carry forward Sedgewick’s vision: transforming the party into the dominant force of the Commonwealth Right.
+The influx of dissenting conservatives into the <span style="color: #000000;">Unionist Party</span> has rendered Aldwin Stilling’s leadership untenable. In a decisive internal vote of no confidence, Stilling has been ousted—replaced by Sedgewick ally and long-serving Mayor of Calbridge, Konrad Aldermoor. Aldermoor seeks to carry forward Sedgewick’s vision: transforming the party into the dominant force of the Commonwealth Right.
 
 Unsurprisingly, this development has sparked outrage among the <span style="color: #FF7F00;">Faithful Left</span> and Stilling’s supporters, many of whom have resigned their posts in protest. The party’s close ties to left-leaning Free Guilds have been severely strained, plunging the organization into temporary disarray as labor-aligned factions voice their anger. 
 

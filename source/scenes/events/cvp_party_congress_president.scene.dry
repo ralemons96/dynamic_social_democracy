@@ -325,7 +325,7 @@ This, however, is not good news for us. <span style="color: #6D5298;">Faithful S
 
 @adenauer
 title: Konrad Aldermoor, formerly of the <span style="color: #000000;">Unionists</span>, is elected as their new leader.
-subtitle: Aldermoor, a long-time advocate for 'leaving the tower' and Mayor of Bradford since the Republic's inception - <span style="color: #000000;">the Unionists</span> Wing
+subtitle: Aldermoor, a long-time advocate for 'leaving the tower' and Mayor of Calbridge since the Republic's inception - <span style="color: #000000;">the Unionists</span> Wing
 unavailable-subtitle: [? if stegerwald_unlock or lambach_unlock: Aldermoor lacks the broad appeal needed, and the party prefers to back a Labor candidate instead. ?][? if not stegerwald_unlock and not lambach_unlock: Aldermoor lacks the popular appeal needed for leadership, and the party prefers to back a more right-wing candidate instead. ?] - <span style="color: #000000;">the Unionists</span> Wing
 view-if: president != "Aldermoor"
 choose-if: adenauer_unlock
@@ -334,7 +334,7 @@ face-image: img/portraits/adenauer.jpg
 
 # support losses are because he is a c*tholic
 
-Konrad Aldermoor, the long-time Mayor of Bradford, has been elevated to the leadership of one of the Commonwealth's largest parties, which he strongly supported the formation of. Aldermoor is committed to democratic principles and sits on the right wing of the former <span style="color: #000000;">Unionists</span>, without being tied to Faithful labor. This has granted him the ability to rally a broad coalition of party leaders around his calm and stabilizing leadership against the more fringe politicians of the party.
+Konrad Aldermoor, the long-time Mayor of Calbridge, has been elevated to the leadership of one of the Commonwealth's largest parties, which he strongly supported the formation of. Aldermoor is committed to democratic principles and sits on the right wing of the former <span style="color: #000000;">Unionists</span>, without being tied to Faithful labor. This has granted him the ability to rally a broad coalition of party leaders around his calm and stabilizing leadership against the more fringe politicians of the party.
 
 With his slogan 'No Experiments!', we do not expect any major changes to the party program under his leadership, fostering a sense among the people that the <span style="color: #000000;">**[+ unionist_party_name +]**</span> is a pole of stability that the Commonwealth people can rally behind. In terms of our relationship with the <span style="color: #000000;">Faithful</span>, Aldermoor, being a former <span style="color: #000000;">Unionists</span> member, is relatively more friendly toward us than many others to his right. We can also count on the pressure from the <span style="color: #FF7F00;">Faithful Left</span>, who, similar to the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s left wing historically, are powerless to enact changes to the left but are influential in preventing changes to the right.
 
@@ -442,7 +442,7 @@ In the first few rounds of balloting, no candidate is able to rally a majority o
 
 <span style="color: #3E3B2D;">Far-Right Faithful</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - ??? - [? if (concord_ideology != "Right" or royalist_votes < 30): Fringe ?][? if (concord_ideology == "Right" and royalist_votes >= 25): Marginal ?]
 
-<span style="color: #3E88B3;">National Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Westmore / Lenmoor / Goodlake - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead: Influential?][? if concord_ideology != "Left" and conservative_right_points_lead: Powerful?]
+<span style="color: #3E88B3;">National Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Westmore / Lanmere / Goodlake - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead: Influential?][? if concord_ideology != "Left" and conservative_right_points_lead: Powerful?]
 
 <span style="color: #385A38;">Agrarians</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Westmore - [? if concord_ideology == "Left": Marginal?][? if concord_ideology != "Left" and not presidential_points_lead: Limited?][? if concord_ideology != "Left" and presidential_points_lead: Relevant?][? if concord_ideology != "Left" and agrarian_right_points_lead: Influential?]
 <hr id="read-marker">
@@ -452,9 +452,9 @@ In the first few rounds of balloting, no candidate is able to rally a majority o
 <hr id="read-marker">
 <span style="color: #0087DC;">People's Conservatives</span> (<span style="color: #3E88B3;">**Traditionalists**</span>) - Goodlake / Lethmoor - [? if concord_ideology == "Left" and democratic_points_lead: Dominant?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
 
-<span style="color: #000099;">Faithful Right</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Lenmoor / Cole - [? if concord_ideology == "Left" and democratic_points_lead: Influential?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Relevant?][? if concord_ideology == "Right" and not democratic_points_lead: Limited?]
+<span style="color: #000099;">Faithful Right</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Lanmere / Cole - [? if concord_ideology == "Left" and democratic_points_lead: Influential?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Relevant?][? if concord_ideology == "Right" and not democratic_points_lead: Limited?]
 <hr id="read-marker">
-<span style="color: #000000;">the Unionists</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole / Lenmoor - [? if concord_ideology == "Left" and democratic_points_lead: Powerful?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
+<span style="color: #000000;">the Unionists</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole / Lanmere - [? if concord_ideology == "Left" and democratic_points_lead: Powerful?][? if ((concord_ideology == "Left" and not democratic_points_lead) or (democratic_points_lead and concord_ideology != "Left")): Influential?][? if concord_ideology != "Left" and not democratic_points_lead: Relevant?]
 
 <span style="color: #FF7F00;">Faithful Left</span> (<span style="color: #000000;">**[+ unionist_party_name +]**</span>) - Cole - [? if concord_ideology == "Left" and labor_left_points_lead: Relevant?][? if concord_ideology == "Left" and not labor_left_points_lead: Limited?][? if concord_ideology != "Left": Marginal?]
 <hr id="read-marker">
@@ -481,16 +481,16 @@ However, Cole's role as a compromise candidate has hindered his ability to effec
 Given Cole's refusal to enter a Unity Coalition in Purl back in 4293, viewing the <span style="color: #c00000;">**Marchers**</span> as 'incapable of governing,' we do not expect much improvement in our relationship moving forward.
 
 @lejeune_jung
-title: Edras Lenmoor, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
+title: Edras Lanmere, formerly of the <span style="color: #3E88B3;">Traditionalists</span>, is elected as their new leader.
 subtitle: Major member of the former <span style="color: #3E88B3;">Traditionalists</span>'s Faithful wing, and aligned with Westmore's group. - <span style="color: #3E88B3;">National Conservative</span> Wing
 unavailable-subtitle: Despite his devout faith, he is unable to garner the expected support from <span style="color: #000000;">Unionists</span> and <span style="color: #3E88B3;">nationalist</span> politicians - <span style="color: #3E88B3;">National Conservative</span> Wing
 choose-if: lejeune_jung_unlock
-on-arrival: unionist_relation -= 5; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 3; faithful_unionist += 5; faithful_dnf -= 3; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Lenmoor"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
+on-arrival: unionist_relation -= 5; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; burgher_unionist += 3; guild_unionist += 3; landed_unionist += 3; faithful_unionist += 5; faithful_dnf -= 3; commons_unionist -= 3; disfavored_unionist -= 3; concord_leader = "Lanmere"; concord_ideology = "Right"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/lejeune_jung.jpg
 
-Edras Lenmoor, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>'s Faithful wing, and an advocate for closer ties to the <span style="color: #000000;">Unionists</span> has been elected as leader of a merger between the two. His devout faith has made him acceptable to former <span style="color: #000000;">Unionists</span> members, and his alignment with Westmore's faction has solidified <span style="color: #3E88B3;">nationalist</span> support.
+Edras Lanmere, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>'s Faithful wing, and an advocate for closer ties to the <span style="color: #000000;">Unionists</span> has been elected as leader of a merger between the two. His devout faith has made him acceptable to former <span style="color: #000000;">Unionists</span> members, and his alignment with Westmore's faction has solidified <span style="color: #3E88B3;">nationalist</span> support.
 
-However, Lenmoor's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Lenmoor will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
+However, Lanmere's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Lanmere will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
 
 It goes without saying, this will make cooperation within the party impossible for the foreseeable future.
 

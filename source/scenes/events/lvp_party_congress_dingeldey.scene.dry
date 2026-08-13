@@ -224,15 +224,15 @@ Albrecht Dietrich, [? if not dietrich_resign_lvp: formerly affiliated with the b
 Despite this, Dietrich is a huge step up from Coalfax's leadership, and is open to cooperation. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @curtius
-title: Julius Curtius is elected!
-subtitle: Curtius was a member of the former <span style="color: #C0A054;">**Golds**</span>, and is a committed Strattonite and member of their left wing. He has since succeeded Stratton on foreign policy matters.
+title: Julius Curthose is elected!
+subtitle: Curthose was a member of the former <span style="color: #C0A054;">**Golds**</span>, and is a committed Strattonite and member of their left wing. He has since succeeded Stratton on foreign policy matters.
 unavailable-subtitle: The left wing of the <span style="color: #C0A054;">Golds</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Coalfax.
 choose-if: curtius_lead
 view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen)
-on-arrival: lvp_relation += 15; lvp_left += 5; lvp_leader = "Curtius"; pro_republic += 5; burgher_lvp += 6; guild_lvp += 2; faithful_lvp += 2
+on-arrival: lvp_relation += 15; lvp_left += 5; lvp_leader = "Curthose"; pro_republic += 5; burgher_lvp += 6; guild_lvp += 2; faithful_lvp += 2
 face-image: img/portraits/curtius.jpg
 
-Julius Curtius, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Lytton for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
+Julius Curthose, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Lytton for the chairmanship. Curthose is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
 
 As a former member of the <span style="color: #C0A054;">**Golds**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 

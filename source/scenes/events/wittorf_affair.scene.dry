@@ -8,7 +8,7 @@ tags: event
 
 = Gembirth Affair
 
-Our spies and contacts amongst the collectivists have brought news of a scandal engulfing the <span style="color: #700000;">**Collectivists**</span> leadership. An associate of <span style="color: #700000;">**Collectivists**</span> chairman Ernst Halsmark, a <span style="color: #700000;">**Collectivists**</span> official named John Gembirth, is accused of embezzling campaign funds, diverting thousands of Gold for personal use, and Halsmark is accused of covering up the affair. The party's central committee considers this charge serious.
+Our spies and contacts amongst the collectivists have brought news of a scandal engulfing the <span style="color: #700000;">**Collectivists**</span> leadership. An associate of <span style="color: #700000;">**Collectivists**</span> chairman Ernst Halsmark, a <span style="color: #700000;">**Collectivists**</span> official named John Gembirth, is accused of embezzling campaign funds, diverting thousands of crowns for personal use, and Halsmark is accused of covering up the affair. The party's central committee considers this charge serious.
 
 The Conciliators in the <span style="color: #700000;">**Collectivists**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident collectivists in the Red Vanguard also have information about this affair, and are planning to publish it.
 
@@ -24,7 +24,7 @@ on-arrival: collectivist_relation -= 10; commons_collectivist -= 4; disfavored_c
 
 Our newspapers are among the first to publicize the affair, bringing a torment of criticism to the hypocrisy of the collectivists. We have damaged the <span style="color: #700000;">**Collectivists**</span>'s standing among the workers, but also perhaps closed the door on further cooperation.
 
-In the end, <span style="color: #8B0000;">Halsmark</span>'s pressure helps to keep Halsmark from facing much in the way of consequences.
+In the end, <span style="color: #8B0000;">Vessarion</span>'s pressure helps to keep Halsmark from facing much in the way of consequences.
 
 @nothing
 title: Do nothing with the information.

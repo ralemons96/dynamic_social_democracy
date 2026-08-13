@@ -22,7 +22,7 @@ tags: event
 
 = Suspension of the Freehold Parliament
 
-Due to a controversial proposal regarding a railroad strike in the Freehold National Council, all three presidents of the National Council resigned, leaving it without any presiding officers. This is a constitutional crisis. **Bertram Wells**—a monarchist Freeholder who has long agitated to bring back a king—has seized upon the chaos. Backed by sympathetic officers under <span style="color: #7A3C00;">Colonel Marsh</span>, he has shouldered aside the Freehold's elected Executor, **Barker**, suspended the National Council, and begun ruling by emergency decree under a "<span style="color: #7A3C00;">Freehold monarchist</span>" banner. His aim is no secret: to recall the **Felbrigg** dynasty from its long exile in <span style="color: #002654;">Ethia</span>—the line the Axton Empire dethroned when it absorbed the Freehold generations ago—and set a Felbrigg back upon a throne of the Freehold's own. He has no wish to crawl back under Axton's eagle; he wants a crown the Freehold can call its own. Wells consolidates his grip by persecuting his opponents, especially our fellow <span style="color: #A50034;">Reformists</span> in the <span style="color: #A50034;">**Liberty Movement**</span> (<span style="color: #A50034;">Reformist Worker's Party of the Freehold</span>).
+Due to a controversial proposal regarding a railroad strike in the Freehold National Council, all three presidents of the National Council resigned, leaving it without any presiding officers. This is a constitutional crisis. **Bertram Weldon**—a monarchist Freeholder who has long agitated to bring back a king—has seized upon the chaos. Backed by sympathetic officers under <span style="color: #7A3C00;">Colonel Marbeck</span>, he has shouldered aside the Freehold's elected Executor, **Barwell**, suspended the National Council, and begun ruling by emergency decree under a "<span style="color: #7A3C00;">Freehold monarchist</span>" banner. His aim is no secret: to recall the **Felbrigg** dynasty from its long exile in <span style="color: #002654;">Ethia</span>—the line the Axton Empire dethroned when it absorbed the Freehold generations ago—and set a Felbrigg back upon a throne of the Freehold's own. He has no wish to crawl back under Axton's eagle; he wants a crown the Freehold can call its own. Weldon consolidates his grip by persecuting his opponents, especially our fellow <span style="color: #A50034;">Reformists</span> in the <span style="color: #A50034;">**Liberty Movement**</span> (<span style="color: #A50034;">Reformist Worker's Party of the Freehold</span>).
 
 Is there anything we could do?
 
@@ -42,7 +42,7 @@ on-arrival: sdapo_strength += 3; sdapo_strength += 1 if customs_union; eu_austri
 
 The <span style="color: #FFDD00;">Regional Concordant</span> is a largely untested body, and from the beginning contained members that are at best quasi-democratic. Most of its members are more concerned by power politics than democratic values. However, as its founder, the Commonwealth holds a special influence in the <span style="color: #FFDD00;">Concordant</span>, and we manage to persuade the other members to join in the pressure against <span style="color: #7A3C00;">Freehold monarchism</span>.
 
-The Wells regime does not give in, but it is weakened and isolated.
+The Weldon regime does not give in, but it is weakened and isolated.
 
 @diplomatic_pressure
 view-if: foreign_minister_party = "Marcher"
@@ -50,7 +50,7 @@ on-arrival: sdapo_strength += 1; sdapo_strength += 2 if customs_union
 
 We still have much economic influence in the Freehold, and the threat of sanctions.
 
-The Wells regime does not give in, but it is somewhat weakened.
+The Weldon regime does not give in, but it is somewhat weakened.
 
 @fund_schutzbund
 on-arrival: resources -= 1; sdapo_strength += 1; sdapo_strength += 1 if customs_union
@@ -59,7 +59,7 @@ choose-if: resources >= 1
 
 It is somewhat of a breach of diplomatic protocol for the <span style="color: #c00000;">**Marchers**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Freehold Reformists</span>.
 
-The Wells regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">monarchist</span> state.
+The Weldon regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">monarchist</span> state.
 
 @nothing
 

@@ -161,7 +161,7 @@ This might be the <span style="color: #7A3C00;">Royalists</span>' last hurrah; t
 [? if not seldte_run_1934: Mallin is dissatisfied with endorsing [+ reactionary_candidate_1934 +] and prefers to run himself. However, his finances have been crippled by having solely financed the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">**CNF**</span>?] throughout the economic calamity, which has also eroded the income from his media empire. [? if hugenberg_run_1934: Despite this, he has scraped together what remains of his personal fortune to launch a presidential campaign, hoping to leverage a second-round endorsement for concessions from [+ reactionary_candidate_1934 +]. ?][? if not hugenberg_run_1934: In an effort to preserve both his party’s solvency and what remains of his wealth, he has refrained from running or endorsing anyone—much to the frustration of his colleagues. ?] ?]
 
 [? if collectivist_leader = "Conciliators" : Given the failure of Halsmark's previous runs for president, and his declining stature in the party, the <span style="color: #700000;">**Collectivists**</span> will be running Willem Munzer, a controversial figure sometimes called the "Red millionaire". He is a media magnate who leads a number of <span style="color: #700000;">**Collectivist**</span> front organizations. ?]
-[? if collectivist_leader != "Conciliators" : This will be Ernst Halsmark's third run for president as leader of the <span style="color: #700000;">**Collectivists**</span>. Despite his previous electoral defeats, he retains the loyalty of the party as well as <span style="color: #8B0000;">Halsmark</span>'s <span style="color: #750e0e;">Central Union</span>. ?]
+[? if collectivist_leader != "Conciliators" : This will be Ernst Halsmark's third run for president as leader of the <span style="color: #700000;">**Collectivists**</span>. Despite his previous electoral defeats, he retains the loyalty of the party as well as <span style="color: #8B0000;">Vessarion</span>'s <span style="color: #750e0e;">Central Union</span>. ?]
 
 [? if not concord_formed: Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Airship captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Imperial Sovereigntism</span>. ?]
 
@@ -280,7 +280,7 @@ view-if: presidential_powers >= 1 and pro_republic >= 60 and pacifism >= 3
 Since the presidency has been made a largely ceremonial figure by our reforms, we might set a precedent by nominating a nonpartisan pro-democracy figure from the cultural, scientific, or literary worlds. There are many potential candidates...
 
 - @einstein_r1: Aldous Verrin, physicist.
-- @mann_r1: Aldric Mann, left-wing writer.
+- @mann_r1: Godfrey Steunenberg, left-wing writer.
 - @ossietzky_r1: Carl Ostwick, pacifist journalist.
 - @candidate_menu: Actually, we should nominate someone else.
 
@@ -301,12 +301,12 @@ The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will endorse Verrin'
 subtitle: -2 resources - He might be too <span style="color: #700000;">far left</span> for the propertied parties.
 view-if: collectivist_relation >= 50
 choose-if: resources >= 2
-on-arrival: marcher_candidate = "Mann"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
+on-arrival: marcher_candidate = "Steunenberg"; resources -= 2; is_unity_candidate = 0; is_cultural_candidate = 1;
 go-to: r1_menu
 
-Aldric Mann is a world-renowned novelist and poet who is also known to be a left-wing activist. His political sympathy lies with the <span style="color: #700000;">far left</span>, and he supported the revolutions in 4283 and 4284. He has long lived in the shadow of his better-known brother, Ambrose Mann.
+Godfrey Steunenberg is a world-renowned novelist and poet who is also known to be a left-wing activist. His political sympathy lies with the <span style="color: #700000;">far left</span>, and he supported the revolutions in 4283 and 4284. He has long lived in the shadow of the more celebrated novelist Aldric Mann.
 
-Mann is willing to accept the nomination for president.
+Steunenberg is willing to accept the nomination for president.
 
 
 @ossietzky_r1
@@ -529,7 +529,7 @@ Bristol: "Lyle Bristol of the <span style='color: #c00000; font-weight: bold;'>M
 Shackley: "Kurt Shackley of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Jessamy: "Marie Jessamy of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Verrin: "Aldous Verrin, scientist",
-Mann: "Aldric Mann, writer",
+Steunenberg: "Godfrey Steunenberg, writer",
 Ostwick: "Carl Ostwick, journalist"
 }
 if (Q.unionist_party_name == "Concord") {
@@ -704,7 +704,7 @@ Election results:
 # cultural candidates
 [? if Verrin_running : <span style="color: #CFC88F;">**Verrin**</span> - [+ Verrin_votes_disp +]% ?]
 [? if Ostwick_running : <span style="color: #E0A0A0;">**Ostwick**</span> - [+ Ostwick_votes_disp +]% ?]
-[? if Mann_running : <span style="color: #E0A0A0;">**Mann**</span> - [+ Mann_votes_disp +]% ?]
+[? if Steunenberg_running : <span style="color: #E0A0A0;">**Steunenberg**</span> - [+ Steunenberg_votes_disp +]% ?]
 
 @r2_start
 on-arrival: {!
@@ -976,15 +976,15 @@ Despite the <span style="color: #7A3C00;">Royalist</span> threats, supporters of
 
 
 @election_end
-go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Gorrick"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzenberg" or winner = "Munzer"; thalmann_victory if winner = "Halsmark" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Mann"; einstein_victory if winner = "Verrin"
+go-to: eckener_win if winner = "Eckhart"; juchacz_win if winner = "Jessamy"; bundesrepublik_win if winner = "Shackley" or winner = "Aldermoor"; hitler_victory if winner = "Gallax" or winner = "Gorrick" or winner = "Gorrick"; seldte_victory if winner = "Selden"; hergt_victory_nazi if winner = "Hargen" and royalist_candidate == "Hargen"; hergt_victory_lite if winner = "Hargen" and royalist_candidate != "Hargen"; lettow_vorbeck_victory if winner = "Lethmoor"; munzenberg_victory if winner = "Munzer" or winner = "Munzer"; thalmann_victory if winner = "Halsmark" or winner = "Halsmark"; nazis_lose if winner = "Bristol" or winner = "Gesling" or winner = "Hewes" or winner = "Askew"; cultural_victory if winner = "Ostwick" or winner = "Steunenberg"; einstein_victory if winner = "Verrin"
 on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Askew") Q.president = "Askew";
 if (Q.president == "Halsmark") Q.president = "Halsmark";
-if (Q.president == "Munzenberg") Q.president = "Munzer";
+if (Q.president == "Munzer") Q.president = "Munzer";
 if (Q.president == "Gorrick") Q.president = "Gorrick";
 
-if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Steunenberg" || Q.president == "Verrin") {
     Q.president_ideology = "Left";
 } else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Askew" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";

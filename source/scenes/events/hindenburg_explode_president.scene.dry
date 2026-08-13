@@ -467,10 +467,10 @@ go-to: eckener_win if winner = "Eckhart"; bundesrepublik_win if winner = "Alderm
 on-arrival: {!
 Q.president = Q.winner;
 if (Q.president == "Halsmark") Q.president = "Halsmark";
-if (Q.president == "Munzenberg") Q.president = "Munzer";
+if (Q.president == "Munzer") Q.president = "Munzer";
 if (Q.president == "Gorrick") Q.president = "Gorrick";
 
-if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Mann" || Q.president == "Verrin") {
+if (Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || Q.president == "Bristol" || Q.president == "Ostwick" || Q.president == "Steunenberg" || Q.president == "Verrin") {
     Q.president_ideology = "Left";
 } else if (Q.president == "Eckhart" || Q.president == "Aldermoor" || Q.president == "Gesling" || Q.president == "Hewes") {
     Q.president_ideology = "Moderate";

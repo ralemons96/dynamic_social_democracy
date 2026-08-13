@@ -163,7 +163,7 @@ Q.luther_endorsed_candidate = "None"
 if (Q.lvp_ideology == "Right") {
     Q.luther_endorsed_candidate = "Soren Coalfax"
 } else if (Q.lvp_ideology == "Moderate") {
-    Q.luther_endorsed_candidate = "Julius Curtius"
+    Q.luther_endorsed_candidate = "Julius Curthose"
 } else if (Q.lvp_ideology == "Left") {
     Q.luther_endorsed_candidate = "Albrecht Dietrich"
 }
@@ -172,13 +172,13 @@ if (Q.lvp_relation >= 65) {
     Q.luther_endorsed_candidate = "Theodor Hewes"
 }
 
-if (((Q.curtius_resign_lvp) || (Q.curtius_banking_crisis && Q.banking_crisis_seen)) && Q.luther_endorsed_candidate == "Julius Curtius") {
+if (((Q.curtius_resign_lvp) || (Q.curtius_banking_crisis && Q.banking_crisis_seen)) && Q.luther_endorsed_candidate == "Julius Curthose") {
     Q.luther_endorsed_candidate = "Albrecht Dietrich";
 }
 
 if (Q.luther_endorsed_candidate == "Soren Coalfax") {
     Q.dingeldey_points += 0.5;
-} else if (Q.luther_endorsed_candidate == "Julius Curtius") {
+} else if (Q.luther_endorsed_candidate == "Julius Curthose") {
     Q.curtius_points += 0.5;
 } else if (Q.luther_endorsed_candidate == "Albrecht Dietrich") {
     Q.dietrich_points += 0.5;
@@ -251,15 +251,15 @@ Albrecht Dietrich, formerly affiliated with the business wing of the <span style
 Despite this, Dietrich is not as extreme as the guild-masters on the right of the party and remains open to cooperation with us if there is no other majority. However, his leadership has been quite uninspiring, to say the least. [? if agriculture_minister_party == "LVP" or economic_minister_party == "LVP": The responsibilities of his ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the business wing. ?]
 
 @curtius
-title: Julius Curtius is elected!
-subtitle: Curtius was a member of the former <span style="color: #C0A054;">**Golds**</span>, and is a committed Strattonite and member of their left wing. He has since succeeded Stratton on foreign policy matters.
+title: Julius Curthose is elected!
+subtitle: Curthose was a member of the former <span style="color: #C0A054;">**Golds**</span>, and is a committed Strattonite and member of their left wing. He has since succeeded Stratton on foreign policy matters.
 unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #C0A054;">Golds</span> perceive him as too left-wing, and point out his lackluster record as a successor to Stratton. ?][? if dietrich_lead or heuss_lead: The left wing of the <span style="color: #C0A054;">Golds</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Lytton. ?][? if lvp_deadlock: The left wing of the <span style="color: #C0A054;">Golds</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span style="color: #C0A054;">Golds</span> member. ?]
 choose-if: curtius_lead
 view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen)
-on-arrival: lvp_relation += 7; lvp_left += 4; lvp_leader = "Curtius"; pro_republic += 5; guild_lvp += 6; burgher_lvp += 6
+on-arrival: lvp_relation += 7; lvp_left += 4; lvp_leader = "Curthose"; pro_republic += 5; guild_lvp += 6; burgher_lvp += 6
 face-image: img/portraits/curtius.jpg
 
-Julius Curtius, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Lytton for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
+Julius Curthose, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Lytton for the chairmanship. Curthose is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
 
 As a former member of the <span style="color: #C0A054;">**Golds**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 
@@ -283,7 +283,7 @@ view-if: lvp_deadlock
 The vote has been deadlocked, with no candidate ahead by enough to constitute a majority. You, the player, now has free will to choose a compromise candidate. Spend it wisely.
 
 - @dietrich_compromise: Albrecht Dietrich.
-- @curtius_compromise: Julius Curtius.
+- @curtius_compromise: Julius Curthose.
 
 @dietrich_compromise
 go-to: dietrich

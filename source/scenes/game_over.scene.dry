@@ -132,7 +132,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if ((Q.chancellor_party == "Royalist" || Q.chancellor == "Gallax" || Q.president == "Gorrick" || Q.president == "Frask" || Q.president == "Gallax") && Q.total_defeat) {
       this.achieve('stolperstein');
   }
-  // The Exetar Program - fulfill the goals of the Heidelberg programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European  Free Guild.
+  // The Exetar Program - fulfill the goals of the Exetar programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European  Free Guild.
   if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_law >= 1 && Q.upper_tax_rates > Q.lower_tax_rates && Q.works_councils > 0 && Q.eu > 0)) {
       this.achieve('heidelberger_programm');
   }
@@ -239,12 +239,12 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('wir_schaffen_das');
   }
 
-  if (((Q.ddp_leader == "Lindell" || Q.ddp_leader == "Thayer") && (Q.gold_leader == "Thiel" && Q.gold_exist) && !Q.lvp_formed || ((Q.lvp_leader == "Hewes" || Q.lvp_leader == "Bramwell" || Q.lvp_leader == "Stolper") && Q.lvp_formed)) && Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.collectivist_leader == "Conciliators" && (((Q.unionist_leader == "Stilling" || Q.unionist_leader == "Hawkins" && !Q.fake_joos) && !Q.concord_formed) || Q.concord_leader == "Sedgewick" && Q.concord_formed)) {
+  if (((Q.ddp_leader == "Lindell" || Q.ddp_leader == "Thayer") && (Q.gold_leader == "Holt" && Q.gold_exist) && !Q.lvp_formed || ((Q.lvp_leader == "Hewes" || Q.lvp_leader == "Bramwell" || Q.lvp_leader == "Penn") && Q.lvp_formed)) && Q.true_christian_democracy && Q.traditionalist_leader == "Trevannon" && Q.collectivist_leader == "Conciliators" && (((Q.unionist_leader == "Stilling" || Q.unionist_leader == "Hawkins" && !Q.fake_joos) && !Q.concord_formed) || Q.concord_leader == "Sedgewick" && Q.concord_formed)) {
       this.achieve('blockparteien_parade');
   }
 
   if 
-    (((Q.ddp_leader == "Lindell" || Q.lvp_formed) && (Q.gold_leader == "Thiel" || Q.gold_leader == "Glatzel" || !Q.gold_exist || Q.lvp_formed) && (Q.lvp_leader == "Glatzel" || !Q.lvp_formed)) && ((Q.traditionalist_leader == "Maine" && Q.unionist_leader == "Stilling") && !Q.concord_formed || (Q.concord_leader == "Maine" || Q.concord_leader == "Sedgewick") && Q.concord_formed)) {
+    (((Q.ddp_leader == "Lindell" || Q.lvp_formed) && (Q.gold_leader == "Holt" || Q.gold_leader == "Vellt" || !Q.gold_exist || Q.lvp_formed) && (Q.lvp_leader == "Vellt" || !Q.lvp_formed)) && ((Q.traditionalist_leader == "Maine" && Q.unionist_leader == "Stilling") && !Q.concord_formed || (Q.concord_leader == "Maine" || Q.concord_leader == "Sedgewick") && Q.concord_formed)) {
       this.achieve('der_arbeiterstaat');
   }
 
@@ -260,7 +260,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('kommunistische_alternative');
   }
 
-  if (Q.labor_minister_party == "Marcher" && Q.interior_minister_party == "Marcher" && Q.finance_minister_party == "Marcher" && Q.economic_minister_party == "Marcher" && Q.foreign_minister_party == "Marcher" && Q.justice_minister_party == "Marcher" && Q.agriculture_minister_party == "Marcher" && Q.army_minister_party == "Marcher" && (Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") && Q.chancellor_party == "Marcher" && (Q.president == "Bristol" || Q.president == "Pendrigon" && !Q.left_split || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grzesinski" || Q.president == "Jessamy" || (Q.president == "Pendrigon" && !Q.left_split))) {
+  if (Q.labor_minister_party == "Marcher" && Q.interior_minister_party == "Marcher" && Q.finance_minister_party == "Marcher" && Q.economic_minister_party == "Marcher" && Q.foreign_minister_party == "Marcher" && Q.justice_minister_party == "Marcher" && Q.agriculture_minister_party == "Marcher" && Q.army_minister_party == "Marcher" && (Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") && Q.chancellor_party == "Marcher" && (Q.president == "Bristol" || Q.president == "Pendrigon" && !Q.left_split || Q.president == "Shackley" || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy" || (Q.president == "Pendrigon" && !Q.left_split))) {
       this.achieve('die_rote_republik');
   }
 
@@ -288,7 +288,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   }
 
   if (Q.president != "Hammerton" && Q.president != "Gallax" && Q.president !=   "Gorrick" && Q.president != "Selden" && Q.chancellor != "Gallax" && !Q.hammerstein_win && !(Q.president == "Hargen" && Q.chancellor == "Selden")) {
-    if ((Q.president == "Pendrigon" || Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Ostwick" || Q.president == "Mann") && Q.in_left_front && !Q.civil_war_seen) {
+    if ((Q.president == "Pendrigon" || Q.president == "Halsmark" || Q.president == "Munzer" || Q.president == "Ostwick" || Q.president == "Steunenberg") && Q.in_left_front && !Q.civil_war_seen) {
       Q.collectivist_points_calc = 0;
       Q.collectivist_points_calc += Q.vanguard_force;
       Q.collectivist_points_calc += (100 - Q.pro_republic) / 2;
@@ -401,10 +401,10 @@ go-to: eg_menu
 
 Gallax does not yet control the Commonwealth. [? if chancellor == "Goodryke" : However, Chancellor Goodryke's <span style="color: #808080;">authoritarianism</span> and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> politics are paving the way for Gallax, or someone like him, to take power. ?] [? if chancellor == "Staal" : However, Chancellor Staal's <span style="color: #808080;">authoritarianism</span> and scheming is paving the way for Gallax, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Heartland coup, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> appears to be ascendant. ?][? if chancellor == "Askew" : However, Chancellor Askew's austerity policies and the continuation of the calamity are paving the way for Gallax, or someone like him, to take power. ?]
 
-[? if gallax_deported == 1 : We have deported Gallax back to Austria. Hopefully he will never return. ?]
+[? if gallax_deported == 1 : We have deported Gallax back to the Freehold. Hopefully he will never return. ?]
 
 @nsdap_win
-view-if: chancellor == "Goebbels" or chancellor == "Gorrick" or president == "Gorrick" or president == "Frask"
+view-if: chancellor == "Standerton" or chancellor == "Gorrick" or president == "Gorrick" or president == "Frask"
 title: Despite the deportation of Gallax, the <span style="color: #7A3C00;">Royalists</span> have still taken power...
 tags: endings
 go-to: eg_menu
@@ -464,12 +464,12 @@ go-to: eg_menu
 Kurt Shackley has been elected as President of the Commonwealth. As a young and ambitious <span style="color: #c00000;">**Marchers**</span> member, he will be shaping the Commonwealth for years to come.
 
 @president_grzesinski
-title: Albert Grzesinski victorious
-view-if: president == "Grzesinski"
+title: Albert Grenshaw victorious
+view-if: president == "Grenshaw"
 tags: endings
 go-to: eg_menu
 
-Albert Grzesinski has been elected President of the Commonwealth. As a young and ambitious <span style="color: #c00000;">**Marchers**</span> member, he will be shaping the Commonwealth for years to come.
+Albert Grenshaw has been elected President of the Commonwealth. As a young and ambitious <span style="color: #c00000;">**Marchers**</span> member, he will be shaping the Commonwealth for years to come.
 
 @president_wels
 title: Joran Vesh victorious
@@ -1459,7 +1459,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Exetar Program</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Exetar Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2466,7 +2466,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">4290 Avenged</div>
-      <div class="achievement_subtitle"> - achieve the "Spartakus Rises Again" ending.
+      <div class="achievement_subtitle"> - achieve the "The Vaelists Rise Again" ending.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2526,7 +2526,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sixty-Seven</div>
-      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Ketchup</span> and <span style="color: #D3C24D;">Mustard</span> coalition.
+      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Crimson</span> and <span style="color: #D3C24D;">Gold</span> coalition.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -2702,12 +2702,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if game_achievement_lindner_moribund: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/lindner_moribund.png" alt="Lindner Moribund"
+    <img src="img/achievement/lindner_moribund.png" alt="Golds Moribund"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Lindner Moribund</div>
+      <div style="font-weight: bold;">Golds Moribund</div>
       <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}
@@ -3343,7 +3343,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Exetar Program</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Exetar Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4350,7 +4350,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">4290 Avenged</div>
-      <div class="achievement_subtitle"> - achieve the "Spartakus Rises Again" ending.
+      <div class="achievement_subtitle"> - achieve the "The Vaelists Rise Again" ending.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4410,7 +4410,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sixty-Seven</div>
-      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Ketchup</span> and <span style="color: #D3C24D;">Mustard</span> coalition.
+      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Crimson</span> and <span style="color: #D3C24D;">Gold</span> coalition.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4585,12 +4585,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if achievement_lindner_moribund: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/lindner_moribund.png" alt="Lindner Moribund"
+    <img src="img/achievement/lindner_moribund.png" alt="Golds Moribund"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Lindner Moribund</div>
+      <div style="font-weight: bold;">Golds Moribund</div>
       <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}
@@ -5226,7 +5226,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #c00000; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">The Exetar Program</div>
-      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Heidelberg Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
+      <div class="achievement_subtitle"> - achieve the goals of the <span style="color: #c00000; font-weight: bold;">Marchers</span>'s Exetar Program: social welfare, judicial reform, women's rights in the workplace and family, progressive taxation, works councils, and the formation of a <span style="color: #001489;">Regional</span> <span style="color: #FFDD00;">Concordant</span>.</div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6232,7 +6232,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">4290 Avenged</div>
-      <div class="achievement_subtitle"> - achieve the "Spartakus Rises Again" ending.
+      <div class="achievement_subtitle"> - achieve the "The Vaelists Rise Again" ending.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6292,7 +6292,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(10, 24, 97, 0.25);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Sixty-Seven</div>
-      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Ketchup</span> and <span style="color: #D3C24D;">Mustard</span> coalition.
+      <div class="achievement_subtitle"> - the <span style='color: #c00000; font-weight: bold;'>Marchers</span> holds at least 67% of the vote and Assembly seats, and governs in a <span style="color: #c00000;">Crimson</span> and <span style="color: #D3C24D;">Gold</span> coalition.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6467,12 +6467,12 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
 [? if not achievement_lindner_moribund: 
 {!<tr>!}
   {!<td style="width: 60px; height: 60px; vertical-align: middle; text-align: center; border: 2px solid #0077FF; background-color: rgba(192, 0, 0, 0.1);">!}
-    <img src="img/achievement/lindner_moribund.png" alt="Lindner Moribund"
+    <img src="img/achievement/lindner_moribund.png" alt="Golds Moribund"
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
   {!</td>!}
   {!<td style="border: 2px solid #0077FF; background-color: rgba(97, 24, 19, 0.2);">!}
     <div style="padding-left: 0.5em;">
-      <div style="font-weight: bold;">Lindner Moribund</div>
+      <div style="font-weight: bold;">Golds Moribund</div>
       <div class="achievement_subtitle"> - have the <span style="color: #C0A054; font-weight: bold;">Golds</span> be formed but carry no seats in the Assembly.
     </div>
   {!</td>!}

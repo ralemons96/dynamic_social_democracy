@@ -641,7 +641,7 @@ Results:
 
 [? if not collectivist_support_marcher : <span style="color: #700000;">**[+ communist_candidate_1932 +]**</span> - [+ thalmann_votes_disp +]% ?]
 
-[? if marcher_campaign > 0 : [? if marcher_candidate_1932 != "Eckhart": <span style="color: #c00000;">**[+ marcher_candidate_1932 +]**</span>?][? if marcher_candidate_1932 == "Eckhart": <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span>?] - [+ marcher_president_votes_disp +]% ?]
+[? if marcher_campaign > 0 : [? if marcher_candidate_1932 != "Eckhart": <span style="color: #c00000;">**[+ marcher_candidate_1932 +]**</span>?][? if marcher_candidate_1932 == "Eckhart": <span style="color: #000000;">**Eck**</span><span style="color: #DD0000;">**ha**</span><span style="color: #FFCC00;">**rt**</span>?] - [+ marcher_president_votes_disp +]% ?]
 
 [? if thalmann_votes_rnd_1 > thalmann_votes + 2 and not collectivist_support_marcher: The decline of [+ communist_candidate_1932 +]'s vote share is largely attributed to the futility of his campaign, with estimates suggesting that a significant portion of his former voters have either defected to [+ royalist_candidate_1932 +] or abstained from the second round. The <span style="color: #700000;">**Collectivist**</span> camp is overcome with resignation, as this outcome suggests that the Commonwealth masses are still far from ready for the revolutionary assault against capitalism that he and his party’s leadership had been preparing for. ?]
 
