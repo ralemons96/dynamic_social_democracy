@@ -1,0 +1,14 @@
+title: Aftershocks from Dornwich
+new-page: true
+subtitle: The realm reacts to the new government in Dornwich...
+view-if: saxony_most_recent and time >= saxony_most_recent + 1 and time <= saxony_most_recent + 3 and ((saxony_collectivist and not saxony_red_aftermath_seen) or (saxony_royalist_maj and not saxony_royalist_aftermath_seen))
+on-arrival: saxony_red_aftermath_seen = 1 if saxony_collectivist; commons_royalist += 2 if saxony_collectivist; burgher_royalist += 3 if saxony_collectivist; guild_royalist += 2 if saxony_collectivist; pro_republic -= 2 if saxony_collectivist; dufour_angry += 5 if saxony_collectivist; saxony_royalist_aftermath_seen = 1 if saxony_royalist_maj; commons_marcher += 2 if saxony_royalist_maj; commons_collectivist += 2 if saxony_royalist_maj; banner_strength += 100 if saxony_royalist_maj; pro_republic -= 2 if saxony_royalist_maj
+max-visits: 2
+priority: 1
+tags: event
+
+= Aftershocks from Dornwich
+
+[? if saxony_collectivist: A <span style="color: #700000;">Collectivist</span>-led government in Dornwich has done what a hundred pamphlets could not: it has made the propertied classes afraid. The great papers speak of little else. Deposits are quietly moved to Vera; the Major Guilds convene emergency councils; and in a thousand parlors the same conclusion is reached — that the republic's ordinary parties have failed to hold the line. The <span style="color: #7A3C00;">**Royalists**</span> are the beneficiaries of that fear, and President DuFour makes no secret of his displeasure. ?]
+
+[? if saxony_royalist_maj: The <span style="color: #7A3C00;">**Royalists**</span> now govern a state of the Commonwealth outright, and the whole country has taken note. What was an electoral abstraction is suddenly an administration — police, schools, and courts in Sovereigntist hands. In the workers' quarters the lesson lands hard: men who never marched before are asking where the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> Banners sign their rolls. The republic's defenders grow — and so does the sense that the hour is later than anyone wished to believe. ?]

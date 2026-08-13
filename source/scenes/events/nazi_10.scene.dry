@@ -25,6 +25,7 @@ Despite [+ royalist_leader +] forcing <span style="color: #7A3C00;">**Loyalists*
 In past cases, condemnation from [+ royalist_leader +] was enough to snuff out dissent. But this time, Tessen defied the ban and retained fierce loyalty among his ranks. Local <span style="color: #7A3C00;">Royalist</span> organizations are now split—forced to choose between backing their steward or Tessen—crippling their state organization.
 
 - @nazi_2
+- @exploit: Court the disillusioned rank and file.
 
 @nazi_2
 title: Is this the start of something greater?
@@ -40,4 +41,7 @@ Although this crisis has weakened the <span style="color: #7A3C00;">**Loyalists*
 
 While discontent remains aimed at local party leaders, shielding [+ royalist_leader +] for now, it's only a matter of time before the façade crumbles.
 
-# TODO, more outcomes
+@exploit
+on-arrival: loyalist_strength -= 100; loyalist_militancy -= 0.1; vanguard_strength += 30; disfavored_royalist -= 5; disfavored_collectivist += 2; royalist_explode += 1; commons_marcher += 2; disfavored_marcher += 2; commons_royalist -= 2
+
+The crisis is the same — Tessen's ban defied, the regional commands wavering — but we decline to watch it from the gallery. Party canvassers move quietly through the Loyalist strongholds with a simple message for the disillusioned: the movement that promised them bread has fed them parades. Not many cross over; more simply go home. Every man who hangs up the brown coat, whichever way he goes, is one the Sovereigntists must replace.

@@ -3,25 +3,68 @@ subtitle: As expected, there are clashes between the <span style="color: #700000
 view-if: in_popular_front = 1 and popular_front_dispute_timer = 0 and (labor_minister_party = "Unionist" or economic_minister_party = "Unionist" or interior_minister_party = "Unionist" or agriculture_minister_party = "Unionist")
 new-page: true
 on-arrival: popular_front_dispute_timer = 5;
-#tags: event
-
-# really the popular front dispute should be on a randomized timer
+tags: event
 
 = Disputes within the Popular Front
 
+The Popular Front was never a marriage of affection. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] hold their ministries like a garrison in hostile country, and the <span style="color: #700000;">**Collectivists**</span> treat every compromise as fresh evidence of betrayal. This month the quarrel has found its subject — and both partners look to us, the party in the middle, to say where the government stands.
+
+- @labor: The wage boards.
+- @agriculture: The grain tariff.
+- @foreign: The eastern trade question.
+- @finance: The budget's knife-edge.
+- @economy: The workshop councils.
+- @interior: The conduct of the police.
+- @education: The schools.
+- @secularism: The Faithful's processions.
 
 @labor
+subtitle: Who names the chairs of the disputed wage boards?
+on-arrival: collectivist_relation += 2; unionist_relation -= 3; coalition_dissent += 1
+
+We rule for the Free Guilds' men on the disputed wage boards. The <span style="color: #700000;">**Collectivists**</span> pocket the victory without thanks; the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] note, coldly, that their ministers were not consulted. The government survives the week.
 
 @agriculture
+view-if: agriculture_minister_party = "Unionist"
+subtitle: The Unionist minister wants his tariff.
+on-arrival: unionist_relation += 2; collectivist_relation -= 3; coalition_dissent += 1
+
+We let the minister have his grain tariff. The countryside is quietly pleased and the coalition's right flank steadies — but in the workers' quarters the <span style="color: #700000;">**Collectivists**</span> read out the new bread prices from the rostrum, slowly, twice.
 
 @foreign
+subtitle: How much trade with the Central Union is too much?
+on-arrival: collectivist_relation -= 2; unionist_relation += 1; coalition_dissent += 1
+
+The <span style="color: #700000;">**Collectivists**</span> want the eastern trade channels thrown wide; the Foreign Ministry wants them watched. We hold the middle: the contracts proceed, the credits do not. Neither partner calls it statesmanship, which is usually the sign of a workable compromise.
 
 @finance
+view-if: finance_minister_party = "Unionist" or economic_minister_party = "Unionist"
+subtitle: The budget line will not hold both promises.
+on-arrival: unionist_relation += 2; collectivist_relation -= 3; coalition_dissent += 1
+
+The budget cannot keep faith with both partners, and we side with the ledger: the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] finance line holds. The <span style="color: #700000;">**Collectivists**</span> vote for it under protest and against their own speeches, which they do not forgive us.
 
 @economy
+subtitle: The workshop councils ask for wider powers.
+on-arrival: collectivist_relation += 2; unionist_relation -= 2; coalition_dissent += 1
+
+We extend the workshop councils' remit — modestly, and with more paperwork than power. It is enough for the <span style="color: #700000;">**Collectivists**</span> to claim an advance and for the guild-masters to warn of creeping expropriation, and both, for once, are exaggerating.
 
 @interior
+view-if: interior_minister_party = "Unionist"
+subtitle: The police and the strikers.
+on-arrival: collectivist_relation += 2; unionist_relation -= 2; coalition_dissent += 1
+
+After the week's strike clashes, we put a public question to the Interior Ministry about the conduct of its constables. The rebuke is mild by any standard but a rebuke nonetheless; the minister receives it as a slap, and the <span style="color: #700000;">**Collectivists**</span> as a confession.
 
 @education
+subtitle: Common schools, faith schools, and the money between them.
+on-arrival: unionist_relation += 1; collectivist_relation -= 1; coalition_dissent += 1
+
+The schools budget passes with the faith schools' grants intact and the common schools' roofs repaired — the kind of settlement that satisfies the treasurers and no one else. The question itself is merely postponed, as everyone at the table understands.
 
 @secularism
+subtitle: The processions of the Faithful.
+on-arrival: unionist_relation += 2; collectivist_relation -= 3; coalition_dissent += 2
+
+The <span style="color: #700000;">**Collectivists**</span> demand the great processions of the Faithful be kept from the workers' districts; the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] make the permits a point of honor. We let the processions pass, with marshals and without incident — and the sharpest quarrel of the season goes into both parties' account books against us.

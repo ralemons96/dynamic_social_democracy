@@ -11,4 +11,17 @@ face-image: img/portraits/GoodrykeFranz.jpg
 
 Following the disastrous failure of the Heartland <i>Commonwealth intervention</i>, Goodryke has lost the support of DuFour and his camarilla, making his position untenable. It's expected that General Staal would be the successor to Goodryke, however, being the Defense Minister and mastermind of the failed coup has severely damaged his standing as well. With new elections coming up soon, DuFour may choose to keep Goodryke in office, until a successor can be found with a new, more right-wing Assembly.
 
-# TODO
+However it falls out, the fact stands: the *Heartland Coup* was attempted, and it failed. The question is what the republic does with a victory it did not expect to win.
+
+- @rally: Let the country feel it — the republic has won.
+- @legal: Demand the courts finish what the crisis began.
+
+@rally
+on-arrival: banner_strength += 50; commons_marcher += 2; pro_republic += 2
+
+The Banners march through Axton in good order and better spirits — no triumphalism, the marshals insist, merely a reminder of who held. For once the republic's defenders end a crisis larger than they began it.
+
+@legal
+on-arrival: pro_republic += 2; dufour_angry += 5
+
+We petition the courts to rule on the *intervention* itself, not merely its failure — to put on record that the decree was unlawful from its first line. The judges will take their time, and the palace takes our insolence personally. But precedents, unlike cabinets, outlive presidents.

@@ -75,14 +75,20 @@ title: Finance Ministry
 subtitle: The Finance Ministry is increasing taxes on the rich.
 view-if: finance_minister_party = "Collectivist"
 
-The <span style="color: #700000;">**Collectivists**</span>-controlled Finance Ministry
+The <span style="color: #700000;">**Collectivists**</span>-controlled Finance Ministry has drafted a steep new levy on great fortunes and top incomes, presented as the price of the crisis falling, for once, on those who can bear it.
 
 - @finance_support: Yes, we support increasing taxes on the rich.
 - @finance_oppose: No, now is not the right time.
 
 @finance_support
+on-arrival: capital_strike_progress += 2; budget += 1; commons_collectivist += 4; commons_marcher += 2*(1-dissent); coalition_dissent += 1; unionist_relation -= 4; gold_relation -= 4
+
+The levy passes. The workers cheer a budget balanced for once on the broad backs of the wealthy; the propertied press calls it confiscation, and the flight of capital quickens.
 
 @finance_oppose
+on-arrival: collectivist_coalition_dissent += 1; commons_marcher -= 5; commons_collectivist += 5; collectivist_relation -= 6
+
+We block the levy. The <span style="color: #700000;">**Collectivists**</span> take to their press: the Marchers, they write, would sooner tax bread than fortunes.
 
 @foreign
 title: Foreign Ministry
@@ -95,17 +101,31 @@ The <span style="color: #700000;">**Collectivists**</span>-controlled Foreign Mi
 - @foreign_oppose: No, this must be stopped.
 
 @foreign_support
+on-arrival: soviet_relation += 10; coalition_dissent += 1; unionist_relation -= 4; commons_collectivist += 3
+
+The aid convoys roll east with the government's blessing. The <span style="color: #750e0e;">Central Union</span> takes note, and so — less warmly — does every chancellery to the west of us.
 
 @foreign_oppose
+on-arrival: collectivist_coalition_dissent += 1; commons_marcher -= 5; commons_collectivist += 5; collectivist_relation -= 6
+
+We stop the aid program in committee. The <span style="color: #700000;">**Collectivists**</span> denounce us as errand-boys of the western powers, and their ministers begin conducting foreign policy by press release.
 
 @interior
 title: Interior Ministry
 subtitle: The Interior Ministry is engaged in a purge of the security services.
 view-if: interior_minister_party = "Collectivist"
 
+The <span style="color: #700000;">**Collectivists**</span>-held Interior Ministry has begun removing officers it deems politically unreliable — reactionaries by its lights, professionals by their own. The services are unquestionably hostile to the republic; the question is whether this cure serves the republic or the party administering it.
+
 - @interior_support: Yes, we support purging the security services.
 - @interior_oppose: No, this seems to be a pretext for a <span style="color: #700000;">**Collectivists**</span> power grab.
 
 @interior_support
+on-arrival: interior_police_loyalty += 0.1; coalition_dissent += 1; unionist_relation -= 5; gold_relation -= 4; commons_collectivist += 3
+
+The purge proceeds under our cover. The services emerge more loyal to the government — and the government's enemies note, accurately, that "the government" increasingly means the <span style="color: #700000;">**Collectivists**</span>'s appointees.
 
 @interior_oppose
+on-arrival: collectivist_coalition_dissent += 1; commons_marcher -= 5; commons_collectivist += 5; collectivist_relation -= 6
+
+We halt the purge at the second list of names. The reactionaries keep their posts, the <span style="color: #700000;">**Collectivists**</span> keep the grievance, and we keep a police force loyal to neither of us.

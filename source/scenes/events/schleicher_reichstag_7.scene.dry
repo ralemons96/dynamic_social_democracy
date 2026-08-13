@@ -9,7 +9,7 @@ priority: 2
 
 = Assembly Reconvenes
 
-Let's cut to the chase.
+The chamber Staal shuttered has found its way back into session, and it has not returned to thank him. Every bench knows the single item of business; the clerk has scarcely read the motion before the tellers are counting.
 
 - @reichstag
 
@@ -35,6 +35,6 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-It succeeds.
+It succeeds. The chamber that could agree on nothing else agrees on this: the general's government does not command its confidence. Staal receives the count without expression — and reaches for the instrument he has kept ready since the protests began: dissolution.
 
 New Assembly elections are scheduled for [+ next_election_month : month +] [+ next_election_year + 2365 +], Week [+ next_election_week +].
