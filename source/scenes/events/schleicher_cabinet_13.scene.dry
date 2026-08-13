@@ -292,7 +292,7 @@ We have leverage, and we should use it to extract concessions. No one wants civi
 - @reichstag_reconvene
 - @rights
 - @schemes
-- @civil_war: Screw this! A civil war is necessary after all.
+- @civil_war: Enough. If it must be war, let it be war.
 
 @negotiation_menu_win
 
@@ -300,7 +300,7 @@ We have leverage, and we should use it to extract concessions. No one wants civi
 - @rights
 - @schemes
 - @democracy
-- @civil_war: Screw this! A civil war is necessary after all.
+- @civil_war: Enough. If it must be war, let it be war.
 
 @reichstag_reconvene
 title: Demand a reconvening of the Assembly, with no dirty tricks this time.
@@ -508,4 +508,4 @@ unavailable-subtitle: Not enough leverage.
 choose-if: super_secret_mode
 on-arrival: dataminer_detected = 1; ip_grabber = 1
 
-Lol.
+Against all expectation, the demand is heard.

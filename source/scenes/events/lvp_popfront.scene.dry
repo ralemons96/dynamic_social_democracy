@@ -29,7 +29,7 @@ With the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> dissolving itse
 
 [? if in_popular_front_heartland: [? if popular_front_coalition_heartland >= 50: In Heartland, we luckily possess a majority without their votes, and they are able to leave the state government while we still govern with the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. ?][? if popular_front_coalition_heartland < 50: In Heartland, the former <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s votes was key for the survival of its Popular Front, and now our government lacks a majority without them. ?] ?]
 
-- @popular_front_lives: Ok then.
+- @popular_front_lives: So be it.
 - @collapse: Our government faces a vote of no confidence!
 - @collapse_prussia: Our Heartland government faces a vote of no confidence!
 

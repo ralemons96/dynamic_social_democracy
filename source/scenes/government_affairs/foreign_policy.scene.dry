@@ -175,7 +175,7 @@ General Staal has demanded that we raise the issue of rearmament, which remains 
 
 [? if military_parity:[? if eu: However, with the formation of the Regional Concordant and its defense agreements, preventing the Commonwealth’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">western</span> <span style="color: #C8102E;">powers</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">revolutionaries</span>.?] As a result, the <span style="color: #7A3C00;">**Royalists**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Collectivists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
 
-[? if not military_parity: This has caused great embarrassment to our pacifist and democratic image, both at home and abroad. Damn you, Staal! ?]
+[? if not military_parity: This has caused great embarrassment to our pacifist and democratic image, both at home and abroad. Staal has played us false! ?]
 
 @expose
 title: Expose the secret rearmament plans of the previous foreign ministry!

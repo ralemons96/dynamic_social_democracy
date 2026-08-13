@@ -104,7 +104,7 @@ Whatever their reasoning is, the <span style="color: #c00000;">**Marchers**</spa
 @sack_bruning
 view-if: constructive_vonc and president_ideology == "Left"
 choose-if: presidential_powers != 1
-unavailable-subtitle: We don't have that power anymore. You really screwed us here with your reforms, you know that?
+unavailable-subtitle: We don't have that power anymore. Our own reforms have stripped us of that power.
 call: set_next_election_time
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_grand_coalition = 0; in_weimar_coalition = 0; in_popular_front = 0; marcher_toleration = 0; marcher_toleration_right = 0; coalition_dissent = 0; pro_republic -= 5; guild_marcher -= 3; burgher_marcher -= 2; commons_marcher -= 3 if pro_republic < 50; commons_marcher -= 4 if pro_republic < 40; guild_royalist += 4 if pro_republic < 50; burgher_royalist += 3 if pro_republic < 50; lvp_right += 3; ddp_right += 2; ddp_cohesion -= 1; gold_right += 3
 

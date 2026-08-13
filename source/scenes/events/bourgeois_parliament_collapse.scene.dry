@@ -1,6 +1,6 @@
 title: Propertied Parliamentary Group Collapses!
 new-page: true
-subtitle: Crazy stuffs.
+subtitle: The propertied bloc shifts again.
 tags: event
 view-if: bruning_time >= 6 and (in_center_right_coalition or in_right_coalition or marcher_toleration_right) and (bourgeois_parliament or bourgeois_parliament_no_liberals) and bruning_coalition_dissent >= 3 and not concord_formed
 on-arrival: pro_republic -= 3; gold_right += 5; ddp_cohesion -= 3 if bourgeois_coalition_ddp; ddp_right += 3 if bourgeois_coalition_ddp; lvp_right += 3

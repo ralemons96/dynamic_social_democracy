@@ -222,7 +222,7 @@ Efforts to tame the <span style="color: #7A3C00;">Royalists</span> have failed; 
 unavailable-subtitle: It doesn't matter in the end.
 choose-if: super_secret_mode
 
-Yeah.
+So it is decided.
 
 @civil_war_pre
 title: We must not allow [+ royalist_chancellor +] to consolidate! We will fight on the streets to prevent [+ royalist_chancellor +] from retaining power.

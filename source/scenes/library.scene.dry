@@ -248,13 +248,13 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in workshops, mills, mines, and the like. Most are <span style="color: #c00000;">Reformists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
+**The Commons**: The urban working class - blue-collar workers in workshops, mills, mines, and the like. Most are <span style="color: #c00000;">Reformists</span>, supporting either the <span style="color: #c00000;">**Marchers**</span> or <span style="color: #700000;">**Collectivists**</span>. They make up 40-50% of the population.
 
-**old middle class**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. 10-15% of the population.
+**The Burghers**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. 10-15% of the population.
 
-**new middle class**: The new middle class consists of white-collar workers and government employees. This is the base of <span style="color: #D3C24D;">liberalism</span>. 10-15% of the population.
+**The Guilds**: The new middle class consists of white-collar workers and government employees. This is the base of <span style="color: #D3C24D;">liberalism</span>. 10-15% of the population.
 
-**Rural**: Small and large farmers and independent rural workers. dissenting farmers usually supports the [? if not concord_formed: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed: <span style="color: #000000;">**[+ unionist_party_name +]**</span>?]. [? if landed_royalist_normalized >= 25: However the <span style="color: #7A3C00;">Royalists</span> have gained a strong appeal among them?]. 20-30% of the population.
+**The Landed**: Small and large farmers and independent rural workers. dissenting farmers usually supports the [? if not concord_formed: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed: <span style="color: #000000;">**[+ unionist_party_name +]**</span>?]. [? if landed_royalist_normalized >= 25: However the <span style="color: #7A3C00;">Royalists</span> have gained a strong appeal among them?]. 20-30% of the population.
 
 **Faithful** are the largest religious minority, at about 30% of the population. [? if not concord_formed: They disproportionately support the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]?][? if concord_formed: They find themselves split between supporting the <span style="color: #000000;">**Concord**</span> and the <span style="color: #c00000;">**Marchers**</span>. ?] (or the <span style="color: #A2D8E0;">**the Arcanists**</span> in <span style="color: #00CCFF;">Avriza</span>).
 

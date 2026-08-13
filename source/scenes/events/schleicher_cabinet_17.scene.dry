@@ -21,12 +21,12 @@ on-display: {!
 
 With the Commonwealth Army being deployed to quell political violence, streetfighting between the rivaling paramilitaries have died down in intensity, and the situation is effectively resolved.
 
-The mechanic is disabled.
+The days of the street armies are behind us.
 
 - @streetfighting_joever
 
 @streetfighting_joever
-title: Hooray?
+title: So be it.
 on-arrival: {!
 Q.streetfighting_joever = 1;
 

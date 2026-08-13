@@ -360,7 +360,7 @@ choose-if: treviranus_unlock
 on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; nationalism += 3; pro_republic += 5; burgher_unionist += 6; guild_unionist += 4; landed_unionist -= 4; landed_dnf += 4; burgher_gold -= 4; burgher_lvp -= 4; burgher_ddp -= 2; guild_gold -= 4; guild_lvp -= 4; guild_ddp -= 2; burgher_dnf += 2; guild_dnf += 4; faithful_unionist += 2; concord_leader = "Trevannon"; concord_ideology = "Moderate"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
 face-image: img/portraits/Trevannon.jpg
 
-Godwin Trevannon[? if traditionalist_leader == "Trevannon":, the most recent leader of the <span style="color: #3E88B3;">**Traditionalists**</span>?], leader of the thriving <span style="color: #0087DC;">People's Conservative</span> movement, is seen as the ideal candidate for the first chairman of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. His <span style="color: #3E88B3;">nationalist</span> <span class="tooltip-text" title="that's me! the modman!">origin</span>, strong ties to key figures like Westmore on the right, and his careful cultivation of relations with the <span style="color: #000000;">Faithful</span> have earned him broad support for his leadership.
+Godwin Trevannon[? if traditionalist_leader == "Trevannon":, the most recent leader of the <span style="color: #3E88B3;">**Traditionalists**</span>?], leader of the thriving <span style="color: #0087DC;">People's Conservative</span> movement, is seen as the ideal candidate for the first chairman of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. His <span style="color: #3E88B3;">nationalist</span> origin, strong ties to key figures like Westmore on the right, and his careful cultivation of relations with the <span style="color: #000000;">Faithful</span> have earned him broad support for his leadership.
 
 With his control of the colossally sized <span style="color: #000000;">**[+ unionist_party_name +]**</span>, Trevannon has finally been able to mold it into the <span style="color: #0087DC;">One-Realm Democratic</span> party he has long envisioned. His extensive connections with Staal, Commonwealth industry[? if president == "DuFour":, President DuFour?], and the propertied elite are expected to greatly aid his leadership ambitions.
 
@@ -476,7 +476,7 @@ face-image: img/portraits/bolz.jpg
 
 Minister-President of Purl Bertram Cole has been promoted to the leadership of the national <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Cole has worked harmoniously with the respected Cassian Baswick, a conservative leader of the moderate Purl <span style="color: #3E88B3;">**Traditionalists**</span> since 4289, making him a natural choice as a compromise candidate. This has earned him nearly universal support within the party.
 
-However, Cole's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Cole will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
+However, Cole's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Cole will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of origin.
 
 Given Cole's refusal to enter a Unity Coalition in Purl back in 4293, viewing the <span style="color: #c00000;">**Marchers**</span> as 'incapable of governing,' we do not expect much improvement in our relationship moving forward.
 
@@ -490,7 +490,7 @@ face-image: img/portraits/lejeune_jung.jpg
 
 Edras Lanmere, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>'s Faithful wing, and an advocate for closer ties to the <span style="color: #000000;">Unionists</span> has been elected as leader of a merger between the two. His devout faith has made him acceptable to former <span style="color: #000000;">Unionists</span> members, and his alignment with Westmore's faction has solidified <span style="color: #3E88B3;">nationalist</span> support.
 
-However, Lanmere's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Lanmere will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of <span class="tooltip-text" title="that's me! the modman!">origin</span>.
+However, Lanmere's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. Lanmere will attempt to bridge the religious divides between Faithful and dissenting conservatives, with the party still divided along the lines of their party of origin.
 
 It goes without saying, this will make cooperation within the party impossible for the foreseeable future.
 
@@ -504,7 +504,7 @@ face-image: img/portraits/goerdeler.jpg
 
 The Mayor of Lindholt Reynold Goodlake has been promoted to the leadership of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. Goodlake is aligned more with Westmore than anything, but Trevannon is willing to give the mayor a go. Goodlake is known for his strong support and position in Askew's cabinet, and his fiscal conservatism has attracted support of key industrial backers.
 
-Goodlake's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. I actually don't know what to write for this guy, his WW2 anti-Royalist plots aren't relevant at this time since he viewed Gallax as an enlightened dictator at this time. I guess he supports taming the Royalists I guess?
+Goodlake's role as a compromise candidate has hindered his ability to effect significant change, as he must tread carefully to avoid alienating the factions that helped bring him to power. In truth, his instincts are those of a careful administrator: sound budgets, quiet diplomacy between the factions, and a wary sympathy for the strategy of taming the Royalists through the harness of office.
 
 It goes without saying, this will make cooperation within the party impossible for the foreseeable future.
 

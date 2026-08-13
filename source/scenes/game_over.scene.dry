@@ -436,7 +436,7 @@ go-to: eg_menu
 
 the Commonwealth is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until the Commonwealth's cities are reduced to ruins. 
 
-[? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if west_relation >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The <span style="color: #750e0e;">Soviet Union</span> has aided the <span style="color: #700000;">Communists</span>, but not the <span style="color: #c00000;">socialists</span> and <span style="color: #D3C24D;">democrats</span>, in an attempt to shape the Commonwealth's future government. ?][? if east_aid >= 1 : <span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span> have sent some assistance against the fascists. ?]
+[? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if west_relation >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The <span style="color: #750e0e;">Central Union</span> is flooding aid to the <span style="color: #700000;">Collectivists</span>, in an attempt to shape the Commonwealth's future government. ?][? if east_aid >= 1 : Other northern realms reluctantly send aid in the fight against the reactionaries. ?]
 
 
 @braun_victorious
@@ -516,7 +516,7 @@ We were forced to strike a deal with Werner Staal, abandoning our pacifist and a
 Was it really worth it?
 
 @communist_victory
-title: <span style="color: #700000;">**Communist**</span> victory
+title: <span style="color: #700000;">**Collectivist**</span> victory
 view-if: chancellor_party == "Collectivist" or president == "Halsmark" and total_defeat == 0 and long_war == 0
 tags: endings
 go-to: eg_menu
@@ -1624,7 +1624,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">New Patriotism</div>
-      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
+      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -1654,7 +1654,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Coalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 4297. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">collectivists</span> support Bristol for president in 4297. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3508,7 +3508,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">New Patriotism</div>
-      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
+      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3538,7 +3538,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Coalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 4297. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">collectivists</span> support Bristol for president in 4297. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5391,7 +5391,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">New Patriotism</div>
-      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span> or <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
+      <div class="achievement_subtitle"> - Florian Vellt becomes leader of the <span style="color: #C0A054; font-weight: bold;">Golds</span>. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5421,7 +5421,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Bristol Coalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">communists</span> support Bristol for president in 4297. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #c00000;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Faithful</span>, and <span style="color: #700000;">collectivists</span> support Bristol for president in 4297. </div>
     </div>
   {!</td>!}
 {!</tr>!}

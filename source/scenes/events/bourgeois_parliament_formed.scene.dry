@@ -1,5 +1,5 @@
 title: Propertied Parliamentary Group Formed
-subtitle: Crazy stuffs.
+subtitle: The propertied bloc shifts again.
 view-if: bourgeois_parliament_trigger_event == 1
 max-visits: 1
 tags: event

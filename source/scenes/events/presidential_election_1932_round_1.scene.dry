@@ -1260,7 +1260,7 @@ Nationally renown Airship pilot and independent Hugo Eckhart has won the preside
 on-arrival: president = "Bristol"; president_ideology = "Left"; reformist_dissent -= 15; center_dissent -= 15; labor_dissent -= 15; left_dissent -= 5; commons_marcher += 8*(1-dissent); guild_marcher += 5*(1-dissent); burgher_marcher += 5*(1-dissent); landed_marcher += 5*(1-dissent); disfavored_marcher += 5*(1-dissent);
 go-to: achievement_check_1
 
-Dusterel is too ashamed to accept the Presidency, and out of the kindness of his heart, has given it to Lyle Bristol. 
+Dusterel, unwilling to claim a mandate he does not believe in, stands aside; the office passes to Lyle Bristol as caretaker. 
 
 @achievement_check_1
 on-arrival: neue_geschaftsfuhrung = 1 if chancellor == "Askew" and marcher_toleration

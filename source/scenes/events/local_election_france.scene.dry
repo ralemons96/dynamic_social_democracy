@@ -519,12 +519,12 @@ Centrist Concentration (<span style="color: #FF6699;" class="tooltip-text" title
 
 @pop_front_france
 title: The <span style="color: #c00000;">**CL**</span> sets aside the <span style="color: #E0B0FF;">**RH**</span> and the <span style="color: #700000;">**CB**</span> raises Quintis Ticinius to the throne!
-subtitle: Cheater.
+subtitle: This should not be possible.
 unavailable-subtitle: <span style="color: #700000;">CB</span> + <span style="color: #B22222;">LV</span> + <span style="color: #F0001C;">CL</span> + <span style="color: #FF6699;">RP</span> ([+ pop_front_france +]%)
 choose-if: pop_front_france >= 50
 on-arrival: dataminer_detected = 1
 
-ok.
+It is done.
 
 @center_right_france
 title: The <span style="color: #FF6699;">**RP**</span> and <span style="color: #E0B0FF;">**RH**</span> throw in with the <span style="color: #FFBF00;">**CA**</span> to elevate Martyn Validar II.
@@ -551,7 +551,7 @@ This is excellent news for our relations with <span style="color: #002654;">Ethi
 
 @right_wing_france
 title: The <span style="color: #005ACA;">Ducal Bloc</span> somehow raises Servius Validar to the throne, without the <span style="color: #E0B0FF;">**RH**</span>.
-subtitle: Cheater.
+subtitle: This should not be possible.
 unavailable-subtitle: <span style="color: #aa4fff;">**FL**</span> + <span style="color: #00CCCC;">**TB**</span> + <span style="color: #FFBF00;">**CA**</span> + <span style="color: #005ACA;">**IF**</span> ([+ bourgeois_coalition_france +]%)
 choose-if: bourgeois_coalition_france >= 50
 on-arrival: dataminer_detected = 1

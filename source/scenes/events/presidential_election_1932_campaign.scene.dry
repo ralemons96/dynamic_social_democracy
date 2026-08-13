@@ -210,9 +210,9 @@ go-to: campaign_menu
 @campaign_menu
 
 
-Since it's election season, we are able to accelerate campaigning efforts. Buy one campaign, get another one completely free of charge!
+Since it's election season, we are able to accelerate campaigning efforts. Every crown must work twice; our organizers will stretch them as far as they go.
 
-- @workers: Add 1 "Worker" to the cart.
+- @workers: Commit our organizers to the workers.
 - @middle_class: Add 1 "Middle Class" to the cart.
 - @rural: Add 1 "Rural" to the cart.
 - @unemployed: Add "Unemployed" to the cart.
@@ -250,7 +250,7 @@ go-to: campaign_menu
 
 
 @checkout
-title: Checkout your order.
+title: Confirm our plans.
 go-to: campaigning_braun if braun_campaign; campaigning_rosenfeld if rosenfeld_campaign; campaigning_thalmann if marcher_support_thalmann; campaigning_hindenburg_2 if marcher_support_reactionary
 
 

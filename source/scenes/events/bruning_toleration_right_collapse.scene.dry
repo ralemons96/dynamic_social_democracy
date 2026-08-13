@@ -20,7 +20,7 @@ Hopefully [+ traditionalist_leader +] can restore order within his party, and pr
 
 @vonc_yes
 title: Support the vote of no confidence, voting against the government.
-subtitle: We will be the one to destroy Askew, screw you.
+subtitle: If anyone brings Askew down, it will be us.
 on-arrival: time_to_election = 3; marcher_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; marcher_toleration = 0; marcher_toleration_right = 0; gold_relation -= 4; unionist_relation -= 4; ddp_relation -= 2; lvp_relation -= 3; reformist_dissent += 5
 call: set_next_election_time
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)

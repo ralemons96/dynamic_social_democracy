@@ -122,7 +122,7 @@ face-image: img/portraits/dietrich.jpg
 
 @heuss
 title: Theodor Hewes is elected!
-subtitle: He finally has the motivation to step up, and be the change he wants to see in the world.
+subtitle: He finally has the motivation to step up, and take matters into his own hands at last.
 unavailable-subtitle: He prefers to focus on family, and his party respects that.
 choose-if: heuss_lead_ddp
 view-if: not dietrich_resign_ddp_left
@@ -176,12 +176,12 @@ subtitle: No candidate is able to gather a sufficient amount of votes.
 view-if: ddp_deadlock and not dietrich_resign_ddp_left
 on-arrival: ddp_leader = "Gallax"; ddp_name = "NPD"
 
-With no candidate able to secure a majority, everyone has unanimously agreed to dissolve the party, because no one wants to deal with this. However, the local organizations have reconstituted themselves as the "National Democratic Party of the Commonwealth", not wanting the party to die so easily.
+With no candidate able to secure a majority, the exhausted delegates vote to dissolve the party altogether. However, the local organizations have reconstituted themselves as the "National Democratic Party of the Commonwealth", not wanting the party to die so easily.
 
 - @ha
 
 @ha
-title: Very funny, please revert the changes.
+title: This cannot stand. The party must be reconstituted.
 on-arrival: ddp_leader = "Tinsmore"; ddp_relation += 3; ddp_left += 1; ddp_cohesion -= 3; landed_ddp *= 0.7; landed_royalist += 1; burgher_ddp *= 2; guild_ddp *= 1.5; pro_republic += 5; ddp_name = "CSP" if dstp_formed; ddp_name = "Gold" if not dstp_formed
 
-You are no fun. Tinsmore is eventually chosen as a compromise candidate.
+Cooler heads prevail. Tinsmore is eventually chosen as a compromise candidate.

@@ -27,7 +27,7 @@ But with the Commonwealth Army’s militia now patrolling the streets under Fras
 - @gestapo
 
 @gestapo
-title: Big brother watches.
+title: Nothing moves unwatched.
 on-arrival: {!
 Q.state_police = 1;
 Q.pro_republic -= 5;

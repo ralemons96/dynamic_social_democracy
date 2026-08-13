@@ -817,13 +817,13 @@ Somehow, the liberals are willing to form a coalition with us, without the incre
 
 @far_left_saxony
 title: The <span style="color: #700000;">**Collectivists**</span> will form a government[? if sapd_formed: with the <span style="color: #9B0000;">Laborists</span>?], with or without our participation.
-subtitle: I-
+subtitle: Beyond all expectation.
 view-if: collectivist_r_saxony + sapd_r_saxony >= 50
 on-arrival: dataminer_detected = 1; collectivist_reichsex_sax = 1; collectivist_relation = 65; commons_collectivist += 5; commons_sapd += 5 if sapd_formed
 
-I didn't even know this was possible.  
+None thought such a thing possible.  
 
-The <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> immediately launches a coup attempt against the new Dornish government.  You know what that means...
+The <span style="color: #7A3C00;">Far</span>-<span style="color: #3E88B3;">right</span> immediately launches a coup attempt against the new Dornish government.  And all know what follows.
 
 - @civil_war
 

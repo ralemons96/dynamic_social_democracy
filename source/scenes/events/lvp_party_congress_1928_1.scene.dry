@@ -282,7 +282,7 @@ title: The vote has been deadlocked!
 subtitle: No candidate is able to gather a sufficient amount of votes.
 view-if: lvp_deadlock
 
-The vote has been deadlocked, with no candidate ahead by enough to constitute a majority. You, the player, now has free will to choose a compromise candidate. Spend it wisely.
+The vote has been deadlocked, with no candidate ahead by enough to constitute a majority. With no path to a majority, the choice of a compromise candidate falls to us.
 
 - @dietrich_compromise: Albrecht Dietrich.
 - @curtius_compromise: Julius Curthose.

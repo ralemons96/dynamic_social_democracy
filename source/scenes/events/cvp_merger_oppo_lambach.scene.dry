@@ -336,8 +336,8 @@ view-if: not concord_gold_trigger
 go-to: cvp_party_congress
 
 @cvp_dvp_merger
-title: The <span style="color: #C0A054;">**Golds**</span> also wants in.
-subtitle: Huh?
+title: The <span style="color: #C0A054;">**Golds**</span> also wish to join.
+subtitle: An unexpected third suitor.
 call: cvp_dvp_formed
 view-if: concord_gold_trigger
 
