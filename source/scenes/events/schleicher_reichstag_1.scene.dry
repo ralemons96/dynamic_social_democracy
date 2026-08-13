@@ -41,4 +41,4 @@ In any case, after clearing a few remaining bills, the chamber agrees to a holid
 title: Goodryke's decree on wages is repealed!
 on-arrival: commons_collectivist -= 4; disfavored_collectivist -= 4; commons_unionist += 2; commons_marcher += 2; disfavored_marcher += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Staal"; papen_goal = "Scheme against Staal"; staal_approval += 1
 
-Staal has given his consent for the Assembly to repeal one of Goodryke's more egregious decrees that had particulary offended the Free Guilds, as part of his prior promise and to calm their fury against the government. 
+Staal has given his consent for the Assembly to repeal one of Goodryke's more egregious decrees that had particularly offended the Free Guilds, as part of his prior promise and to calm their fury against the government. 

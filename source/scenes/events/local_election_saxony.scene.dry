@@ -699,7 +699,7 @@ With no viable alternatives, the state Assembly faces dissolution, triggering ne
 [? if saxony_no_majority > 1: This cannot go on. ?][? if saxony_no_majority > 2: This cannot go on. ?][? if saxony_no_majority > 3: This cannot go on. ?][? if saxony_no_majority > 4: This cannot go on. ?][? if saxony_no_majority > 5: This cannot go on. ?][? if saxony_no_majority > 6: This cannot go on. ?][? if saxony_no_majority > 7: This cannot go on. ?][? if saxony_no_majority > 8: This cannot go on. ?][? if saxony_no_majority > 9: This cannot go on. ?][? if saxony_no_majority > 10: This cannot go on. ?][? if saxony_no_majority > 11: This cannot go on. ?][? if saxony_no_majority > 12: This cannot go on. ?]
 
 @spd_majority
-title: Form an Marchers only government!
+title: Form a Marchers only government!
 subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -= 3; pro_republic += 5

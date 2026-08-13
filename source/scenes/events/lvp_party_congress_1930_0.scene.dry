@@ -9,7 +9,7 @@ new-page: true
 
 = First <span style="color: #C0A054;">**Golds**</span> Party Congress
 
-The <span style="color: #FFCC00;">Golds</span> (<span style="color: #C0A054;">**Golds**</span>) has officially been founded! Hans Lytton, former chancellor and <span style="color: #C0A054;">**Golds**</span> member, has been chosen as the interim leader of the new party.
+The <span style="color: #FFCC00;">Golds</span> has officially been founded! Hans Lytton, former chancellor and <span style="color: #C0A054;">**Golds**</span> member, has been chosen as the interim leader of the new party.
 
 The <span style="color: #C0A054;">**Golds**</span>'s inaugural congress will play a major role in shaping the direction of the newly founded party, and most importantly, decide who will lead the liberal movement forward. [? if lvp_ideology == "Right": Disappointingly, the right-wing shift of the predecessor parties has impacted this party as well. ?]
 
@@ -46,7 +46,7 @@ if (!Q.lvp_formed) Q.finance_minister_party = 'Gold';
 Q.agriculture_minister_party = 'Unionist';
 !}
 
-As a result of the nominally left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**Golds**</span> having merged, they demand that their members that were formerly apart of the <span style="color: #C0A054;">**Golds**</span> to be included in the government. We will have to reshuffle the cabinet.
+As a result of the nominally left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**Golds**</span> having merged, they demand that their members that were formerly a part of the <span style="color: #C0A054;">**Golds**</span> to be included in the government. We will have to reshuffle the cabinet.
 
 - @election_1928.ministries: Shuffle the cabinet.
 

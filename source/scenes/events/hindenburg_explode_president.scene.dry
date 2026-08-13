@@ -32,7 +32,7 @@ The <span style="color: #7A3C00;">Royalists</span>, recognizing the precariousne
 
 The <span style="color: #700000;">**Collectivists**</span> are too disorganized following Staal's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">Reformist</span>.
 
-Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowed Airship captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
+Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?], and <span style="color: #c00000;">**Marchers**</span> float the idea of running Hugo Eckhart, a nationally renowned Airship captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Imperial Sovereigntism</span>.
 
 Barring that, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**Marchers**</span> runs its own candidate. The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is considering nominating Konrad Aldermoor, mayor of Calbridge and member of the Heartland state legislature. He calls for an alliance of conservative Faithful democrats that encompasses both Faithful and dissenters. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] might nominate Gareth Gesling, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Royalist</span> alliance.
 
@@ -65,7 +65,7 @@ go-to: r1_menu
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seckard. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
+[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seckard. Hopefully it doesn't lead to a repeat of the 4290 Presidential election. ?]
 
 @gessler_r1
 on-arrival: marcher_candidate = "Gesling"; ddp_relation += 4; gold_candidate = "Seckard" if not impeachment_gold; is_unity_candidate = 1
@@ -276,7 +276,7 @@ var candidate_descs = {
 Seckard: "Hans Seckard, an independent formerly of the <span style='color: #C0A054; font-weight: bold;'>Golds</span>",
 Eckhart: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckhart",
 Aldermoor: "Konrad Aldermoor of the <span style='color: #000000; font-weight: bold;'>Unionist Party</span>",
-Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Golds</span>",
+Gesling: "Gareth Gesling, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>Gold</span>",
 Vesh: "Joran Vesh of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>",
 Grenshaw: "Albert Grenshaw of the <span style='color: #c00000; font-weight: bold;'>Marchers</span>"
 }
@@ -396,7 +396,7 @@ go-to: r2_campaigning
 
 We have endorsed Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?].
 
-[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">the Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to Seckard. ?]
+[? if not impeachment_bvp: With our support of Aldermoor, some of the most conservative parts of the <span style="color: #A2D8E0;">Arcanists</span> have broken away from the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], shifting their support to Seckard. ?]
 
 [? if collectivist_candidate = marcher_candidate: The <span style="color: #700000;">**Collectivists**</span> is now breaking from our previous coalition and supporting no one.  ?]
 

@@ -555,7 +555,7 @@ on-arrival: dufour_gallax_r += 1; dufour_staal_r -= 1; burgher_royalist += 2; gu
 
 The <span style="color: #7A3C00;">Royalists</span> fell short of their peak results—but still gained votes compared to the last election. To the casual observer, the <span style="color: #7A3C00;">**Royalists**</span> looks like it’s back on the rise, and they’ve seized on the outcome as a cheap propaganda boost to reenergize their disillusioned base.
 
-But if we were to look closer. The <span style="color: #7A3C00;">**Royalists**</span> cannot replicate the scale of its High Cross campaign—conducted in a state with barely a quarter of a percent of the Commonwealth’s population—across the country, especially given its financial troubles. The victory feels artificial.
+But if we were to look closer, the <span style="color: #7A3C00;">**Royalists**</span> cannot replicate the scale of its High Cross campaign—conducted in a state with barely a quarter of a percent of the Commonwealth’s population—across the country, especially given its financial troubles. The victory feels artificial.
 
 Still, pressure to bring [+ royalist_chancellor +] into government is once again rising.
 
@@ -573,7 +573,7 @@ Nevertheless, the <span style="color: #7A3C00;">**Royalists**</span> continues t
 - @hitler_eh
 
 @nsdap_joever
-title: The <span style="color: #7A3C00;">**Royalists**</span>'s suffers a crushing defeat!
+title: The <span style="color: #7A3C00;">**Royalists**</span> suffers a crushing defeat!
 view-if: change_royalist_votes_lippe < 0 and change_royalist_votes_lippe > -4
 on-arrival: dufour_gallax_r -= 1; commons_royalist -= 2; disfavored_royalist -= 2; burgher_royalist -= 4; guild_royalist -= 4; landed_royalist -= 4; faithful_royalist -= 2; royalist_funds -= 1
 

@@ -75,7 +75,7 @@ on-arrival: in_right_coalition_heartland = 1; heartland_leader = "Sedgewick"; he
 
 A right coalition is formed, albeit with an extremely narrow majority. They will begin undoing years of reform and democratization that we fought hard to achieve and will let <span style="color: #3E88B3;">right</span>-<span style="color: #7A3C00;">wing</span> paramilitaries like the <span style="color: #3E88B3;">Wardens</span> and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> run free.
 
-It won't take long for the government to collapse and for us to take power through new elections. But when it eventually does, we won't have much allies as our former coalition partners are beginning to shift to the right. When the time comes, who will stand with us?
+It won't take long for the government to collapse and for us to take power through new elections. But when it eventually does, we won't have many allies as our former coalition partners are beginning to shift to the right. When the time comes, who will stand with us?
 
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 
@@ -89,7 +89,7 @@ on-arrival: in_center_right_coalition_heartland = 1; heartland_leader = "Sedgewi
 
 A center-right coalition is formed featuring an broad array of parties to the right of us. They will begin undoing years of reform and democratization that we fought hard to achieve and will let <span style="color: #3E88B3;">right</span>-<span style="color: #7A3C00;">wing</span> paramilitaries like the <span style="color: #3E88B3;">Wardens</span> and the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> run free.
 
-It won't take long for the government to collapse and for us to take power through new elections. But when it eventually does, we won't have much allies as our former coalition partners are beginning to shift to the right. When the time comes, who will stand with us?
+It won't take long for the government to collapse and for us to take power through new elections. But when it eventually does, we won't have many allies as our former coalition partners are beginning to shift to the right. When the time comes, who will stand with us?
 
 [? if unionist_leader != "Sedgewick": Adam Sedgewick?][? if unionist_leader == "Sedgewick": Edmund Askew?] of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] is selected to be the Minister-President of Heartland.
 

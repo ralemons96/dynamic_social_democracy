@@ -26,7 +26,7 @@ on-arrival: advisor_action_timer = 6; emergency_used += 1; resources += 2; commo
 We have gained +2 resources.
 
 @build_reichsbanner
-title: the Banners
+title: The Banners
 subtitle: Shackley supports providing more resources to the Banners.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]

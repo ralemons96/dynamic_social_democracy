@@ -232,7 +232,7 @@ view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_cris
 on-arrival: lvp_relation += 15; lvp_left += 5; lvp_leader = "Curthose"; pro_republic += 5; burgher_lvp += 6; guild_lvp += 2; faithful_lvp += 2
 face-image: img/portraits/curtius.jpg
 
-Julius Curthose, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Lytton for the chairmanship. Curthose is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
+Julius Curthose, Stratton's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**Golds**</span>, has won the vote to succeed Coalfax for the chairmanship. Curthose is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
 
 As a former member of the <span style="color: #C0A054;">**Golds**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 

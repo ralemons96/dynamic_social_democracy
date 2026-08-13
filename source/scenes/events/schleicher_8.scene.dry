@@ -16,7 +16,7 @@ The <span style="color: #808080;">reactionary</span> right will never win over t
 
 In the past, Staal flirted with the idea of building a new "presidential party"—a direct vehicle for rallying public support behind his cabinet. Until now, he had taken no concrete steps. But with new ties to the working class and the moderate forces on the Commonwealth Right, he now has an opportunity to bring such a party to life[? if next_election_time - time < 3: with the elections coming up?].
 
-- @schleicher_2: The <i>Commonwealth National Unity Front</i> (<span style="color: #BFC8CC;">Commonwealth National Unity Front</span>, <span style="color: #BFC8CC;">**GNU**</span>) is formed!
+- @schleicher_2: The <i>Commonwealth National Unity Front</i> (<span style="color: #BFC8CC;">**GNU**</span>) is formed!
 
 @schleicher_2
 on-arrival: gnu_formed = 1; chancellor_party = "GNU"

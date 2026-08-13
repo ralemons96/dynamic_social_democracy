@@ -31,6 +31,6 @@ Speeches are made. Votes are held. Bullets fly in the streets. Some <span style=
 
 The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**CNF**</span>?], will win a majority at the next elections.
 
-the Commonwealth is lost.
+The Commonwealth is lost.
 
 - @game_over

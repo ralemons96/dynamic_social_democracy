@@ -22,7 +22,7 @@ The Banners has become increasingly militarized as of late, with ever-greater qu
 
 - @let_go: Let the <span style="color: #000000;">centrists</span> [? if not lvp_formed: and <span style="color: #D3C24D;">liberals</span>?][? if lvp_formed and not lvp_leave_banner: and <span style="color: #FFCC00;">liberals</span>?] go.
 - @lower_militancy: We must lower the Banners's militancy.
-- @keep_them: Can we convince them that a militant the Banners is necessary for defending the Republic?
+- @keep_them: Can we convince them that a militant Banners is necessary for defending the Republic?
 
 @let_go
 on-arrival: banner_strength *= 0.9; unionist_relation -= 5; ddp_relation -= 5; lvp_relation -= 5; banner_exit = 1; left_strength += 5*(1-dissent); ddp_right += 3; lvp_right += 3

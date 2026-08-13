@@ -24,7 +24,7 @@ choose-if: budget >= 1
 unavailable-subtitle: We do not have the budget.
 on-arrival: budget -= 1; coalition_dissent -= 1 if coalition_dissent > 0; army_loyalty += 0.07 if army_loyalty < 1; army_strength += 20; left_dissent += 5; collectivist_coalition_dissent += 1; west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; eu_progress -= 1; gold_left += 1; gold_relation += 4; lvp_relation += 4; ddp_relation += 2; ddp_cohesion -= 1; ddp_right += 1; lvp_left += 1; goal_marcher_cancel += 1; dufour_angry -= 10; economic_growth += 0.1
 
-The military and the center-right parties are pleasantly surprised that we would increase military funding. Our membership tends to be anti-military, and is less enthused. the Commonwealth's neighbors are watching our military buildup with worry. [? if war_loans >= 0 : This is not good for the War Loans negotiations. ?]
+The military and the center-right parties are pleasantly surprised that we would increase military funding. Our membership tends to be anti-military, and is less enthused. The Commonwealth's neighbors are watching our military buildup with worry. [? if war_loans >= 0 : This is not good for the War Loans negotiations. ?]
 
 @decrease_funding
 subtitle: +1 budget

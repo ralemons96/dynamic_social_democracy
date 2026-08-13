@@ -1,4 +1,4 @@
-title: the Banners
+title: The Banners
 new-page: true
 is-card: true
 tags: party_affairs
@@ -8,7 +8,7 @@ on-arrival: month_actions += 1; banner_timer += 6; banner_militarization_cost = 
 max-visits: 6
 #subtitle: Paramilitary organizing in defense of the republic.
 
-= the Banners
+= The Banners
 
 The *the Banners* <span style="color: #1F3A93;"><b><i>Blue</i></b></span>-and-<span style="color: #AEB8CC;"><b><i>White</i></b></span> is a mass organization for the defense of the Republic against the extremists who threaten it. Some would call it a paramilitary, although currently it is hardly any sort of military. It is officially associated with the pro-democratic parties -the <span style="color: #c00000;">**Marchers**</span>, [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?], and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, but by far the largest component is with the <span style="color: #c00000;">**Marchers**</span>.
 

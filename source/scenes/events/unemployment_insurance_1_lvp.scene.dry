@@ -78,7 +78,7 @@ choose-if: ((lvp_relation >= 35 and lvp_ideology == "Right") or (lvp_relation >=
 
 The <span style="color: #C0A054;">**Golds**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">Sovereigntists</span> and <span style="color: #700000;">collectivists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the Burghers.
 
-The <span style="color: #C0A054;">**Golds**</span> are themselves are split about this, the Assembly delegation may go against the compromise fashioned by their own ministers. [? if lvp_ideology == "Left": However, the <span style="color: #C0A054;">**Golds**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span style="color: #C0A054;">**Golds**</span>.
+The <span style="color: #C0A054;">**Golds**</span> are themselves split about this, the Assembly delegation may go against the compromise fashioned by their own ministers. [? if lvp_ideology == "Left": However, the <span style="color: #C0A054;">**Golds**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span style="color: #C0A054;">**Golds**</span>.
 
 - @accept_compromise: Accept the compromise.
 - @destroy: Reject the compromise and let this government fall.

@@ -51,7 +51,7 @@ The Labor Ministry works on developing and enforcing safety regulations, in orde
 view-if: disfavored >= unemployment_insurance_threshold + 4
 subtitle: With increasing unemployment, we must find new ways to fund our signature program.
 
-With the onset of the economic calamity and its throngs of unemployed, our the Poorman's Pension program is under strain. The program was never designed for this many claimants; something must be done to balance the budget.
+With the onset of the economic calamity and its throngs of unemployed, our Poorman's Pension program is under strain. The program was never designed for this many claimants; something must be done to balance the budget.
 
 - @cut_benefits: Cut benefits.
 - @increase_employers: Increase employer contributions.

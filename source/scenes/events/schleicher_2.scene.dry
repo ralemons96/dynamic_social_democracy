@@ -23,7 +23,7 @@ Defense Minister Staal has founded the *Commonwealth Youth Corps* (Commonwealth 
 
 Staal has begun talks with <span style="color: #c00000;">Reformist</span> youth organizations, who have in turn informed the <span style="color: #c00000;">**Marchers**</span> leadership. While the Banners and the Greater Worker's Guild support participation, the <span style="color: #c00000;">**Marchers**</span> leadership is wary. They fear that joining the initiative is a thinly veiled attempt toward rearmament and would tie them too closely to the unpopular [+ chancellor +] government, and instead seek to maintain total opposition.
 
-the Banners Chairman Conrad Holt has put forward the most compelling argument in favor: without military training—especially for its officers—the Banners cannot hope to defend itself effectively against the <span style="color: #7A3C00;">**Loyalists**</span>.
+The Banners Chairman Conrad Holt has put forward the most compelling argument in favor: without military training—especially for its officers—the Banners cannot hope to defend itself effectively against the <span style="color: #7A3C00;">**Loyalists**</span>.
 
 - @yay
 - @wait
@@ -35,7 +35,7 @@ unavailable-subtitle: The party is too distrustful of Staal to allow this.
 choose-if: staal_marcher_support >= 4 or knight_strength >= center_strength
 on-arrival: staal_marcher_support += 3; staal_marcher_r += 1; banner_militancy += 0.06; banner_strength += 200; commons_marcher -= 4; disfavored_marcher -= 4; nationalism += 10
 
-The Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. the Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
+The Banners is now officially participating in the Commonwealth Institute to Promote Youth Fitness. Their board of trustees, with our input, has swiftly established infantry and naval training schools across the country. The Banners youth are the primary recipients of specialized instruction from former and decommissioned Commonwealth Army officers, and we have secured considerable influence within the institute’s leadership.
 
 This program has strengthened the Banners and improved our relations with Staal. However, our collaboration with an initiative authorized by the deeply unpopular [+ chancellor +] government has cost us support—many have defected to the <span style="color: #700000;">**Collectivists**</span>.
 

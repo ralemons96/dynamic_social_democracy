@@ -11,7 +11,7 @@ When Mallin established his own party, he successfully attracted a significant n
 
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has indicated their willingness to join the government now that the <span style="color: #3E88B3;">**Traditionalists**</span> has rid of their radical right elements. [? if center_right_coalition >= 50 : This is enough to form a functional government without us. ?][? if center_right_coalition < 50 : Although, this still doesn't provide a sufficient majority. ?]
 
-[? if center_right_coalition < 50 : We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining propertied parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. ?]
+[? if center_right_coalition < 50 : We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining propertied parties. Supporting a government that includes the <span style="color: #3E88B3;">**Traditionalists**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. ?]
 
 - @center_right
 - @vonc_yes

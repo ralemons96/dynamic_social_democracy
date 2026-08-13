@@ -254,7 +254,7 @@ However, the stagnation of later decades marked the beginning of the end for tra
 - @go_back
 
 @civil_war_long
-title: the Commonwealth Divided
+title: The Commonwealth Divided
 subtitle: Ending 5
 view-if: civil_war_seen and long_war and not (president = "Hargen" and chancellor == "Selden")
 new-page: true
@@ -280,7 +280,7 @@ Despite the Republic’s paper victory, revanchist sentiment over the loss of Ea
 
 Years later, a global recession—triggered by escalating instability abroad and threats from the <span style="color: #750e0e;">Central Union</span>—obliterates the reconstruction progress made by the ruling <span style="color: #c00000;">**Marchers**</span>, plunging the country into yet another crisis. Following a March on Axton, a "Third Positionist" regime seizes power, led by a new political party composed of former <span style="color: #7A3C00;">Royalists</span> and disillusioned <span style="color: #c00000;">socialists</span>.
 
-the Commonwealth pivots toward autarky and radical self-reliance, sealing its borders to foreigners. The regime earns the moniker "the Black Spot of the continent," ruling for two generations. In that time it coerces the withdrawal of foreign troops from the western marches and reclaims its lost eastern lands—including the contested corridor—capitalizing on the northern realms' distraction with the <span style="color: #750e0e;">Central Union</span> and the shifting priorities of the <span style="color: #0A3161;">western powers</span> as they wage their own distant war.
+The Commonwealth pivots toward autarky and radical self-reliance, sealing its borders to foreigners. The regime earns the moniker "the Black Spot of the continent," ruling for two generations. In that time it coerces the withdrawal of foreign troops from the western marches and reclaims its lost eastern lands—including the contested corridor—capitalizing on the northern realms' distraction with the <span style="color: #750e0e;">Central Union</span> and the shifting priorities of the <span style="color: #0A3161;">western powers</span> as they wage their own distant war.
 
 Today, the Commonwealth remains largely isolated from the rest of the world, with the successor to the dictatorship of old being not much better, being ruled by oligarchs and the wealthy who are relicts of the past regime. Now, the task of <span style="color: #c00000;">Reformism</span> is to prepare for the next election. The incumbent conservative government is unpopular, and we stand to gain. Perhaps the next government will have a <span style="color: #c00000;">socialist</span> plurality.
 
@@ -380,7 +380,7 @@ As the Constitutional Assembly convenes, it is gradually decided that the new <s
 
 The regime immediately begins aligning with the <span style="color: #750e0e;">Central Union</span> and puts forth its first sweeping economic plans. Soon, the State becomes a member of the radical eastern bloc. A second great war breaks out, a vast conflict between the <span style="color: #0A3161;">capitalist</span> and <span style="color: #700000;">Collectivist</span> worlds. It ends with a vast eastern bloc stretching across half the continent. A cold standoff begins against the <span style="color: #0A3161;">Allied States</span>, the western powers, a nationalist eastern empire, and the <span style="color: #002654;">Ethian</span> government in exile.
 
-The <span style="color: #DC241F;">**SUP**</span> assumes an important role in the radical bloc as the leader of its second most industrialized country. the Commonwealth experiences decades of growth under the economic plans, calming most dissent within the country. To combat the remaining opposition, the Party establishes its own dread secret police, modeled on the <span style="color: #750e0e;">Central Union</span>’s.
+The <span style="color: #DC241F;">**SUP**</span> assumes an important role in the radical bloc as the leader of its second most industrialized country. The Commonwealth experiences decades of growth under the economic plans, calming most dissent within the country. To combat the remaining opposition, the Party establishes its own dread secret police, modeled on the <span style="color: #750e0e;">Central Union</span>’s.
 
 Alongside the radical bloc, the <span style="color: #750e0e;">Collective Republic</span> of the Commonwealth largely wins the cold standoff. Key factors include the collapse of the western colonies, a great eastern civil war ending with an unaligned <span style="color: #960000;">socialist</span> realm, and the <span style="color: #0A3161;">Allied States</span> and the western powers shifting towards isolationism.
 

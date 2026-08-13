@@ -119,7 +119,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-Although the arch-enemy of democracy had been installed as chancellor, to everyone's surprise, the usual political violence marked that day. The <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties haven't had the expected reaction to his appointment, and many believe that we should bide our time and prepare for a final showdown when [+ royalist_chancellor +] likely violates the constitution. Many also believe that DuFour will keep [+ royalist_chancellor +] in check, and save Commonwealth democracy from destruction.
+Although the arch-enemy of democracy had been installed as chancellor, to everyone's surprise, no unusual political violence marked the day. The <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties haven't had the expected reaction to his appointment, and many believe that we should bide our time and prepare for a final showdown when [+ royalist_chancellor +] likely violates the constitution. Many also believe that DuFour will keep [+ royalist_chancellor +] in check, and save Commonwealth democracy from destruction.
 
 Most people have no idea what has befallen them; the installation of yet another chancellor had become such a common occurrence that a dangerous amount of ordinary folk have grown indifferent.
 
@@ -165,7 +165,7 @@ on-arrival: month += 2; week -= 1; month -= 1 if week < 1; year += 1 if month > 
 
 Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">Reformists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**CNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is bought back from the Freehold and appointed chancellor. ?]
+The Assembly is burned, ostensibly by a foreign <span style="color: #700000;">collectivist</span>. In the wake, the <span style="color: #7A3C00;">Royalists</span> pass decrees giving them unlimited power. They, combined with the [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">**Traditionalists**</span>?][? if dnf_formed: <span style="color: #003755;">**CNF**</span>?], will win a majority at the next elections. [? if royalist_chancellor != "Gallax": Gallax is brought back from the Freehold and appointed chancellor. ?]
 
 - @enabling_act
 

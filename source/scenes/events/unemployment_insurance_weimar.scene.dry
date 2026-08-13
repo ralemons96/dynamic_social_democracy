@@ -1,5 +1,5 @@
 title: The Poorman's Pension Crisis
-subtitle: Our the Poorman's Pension programs need additional funding...
+subtitle: Our Poorman's Pension programs need additional funding...
 new-page: true
 view-if: marcher_in_government = 1 and (year = 1930 or year = 1931 or year = 1932) and month == 3 and (marcher_in_government and (in_grand_coalition = 0 or constructive_vonc or president_ideology == "Left")) and unemployment_insurance_timer = 0 and disfavored >= unemployment_insurance_threshold + 4 and not (lvp_formed and not constructive_vonc)
 on-arrival: unemployment_insurance_crisis += 1;  unemployment_insurance_timer = 8; crisis_urgency += 1; unemployment_insurance_threshold = disfavored
@@ -11,7 +11,7 @@ face-image: img/Kollwitz_Arbeitslosigkeit.jpg
 
 The economic crisis has caused mass layoffs all throughout the Commonwealth, affecting the industrial working class the hardest. Our welfare spending is increasing due to the greater need.
 
-In the midst of all this, our the Poorman's Pension program is underfunded; the program was never budgeted for this much unemployment. We have to either increase funding or cut benefits.
+In the midst of all this, our Poorman's Pension program is underfunded; the program was never budgeted for this much unemployment. We have to either increase funding or cut benefits.
 
 - @cut_benefits: Cut benefits.
 - @increase_employers: Increase employer contributions.

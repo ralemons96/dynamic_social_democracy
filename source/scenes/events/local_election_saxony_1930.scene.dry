@@ -797,9 +797,9 @@ on-arrival: saxony_election_3_trigger_time = time + 3; saxony_no_majority_2 = 1;
 With no viable alternatives, the state Assembly faces dissolution, triggering new elections—an opportunity the <span style="color: #7A3C00;">**Royalists**</span> hopes to exploit by capitalizing on political instability and the perceived failure of parliamentary democracy.
 
 @spd_majority
-title: Form an Marchers only goverment!
+title: Form a Marchers only government!
 subtitle: Sweat...
 view-if: marcher_r_saxony >= 50 
 on-arrival: saxony_marcher = 1; reformist_dissent -= 5; left_dissent -= 30; left_strength += 10; center_dissent -= 10; labor_dissent -= 10; aspd_dead = 1; commons_marcher += 7; commons_collectivist -= 4; burgher_marcher += 3; guild_marcher += 2; disfavored_marcher += 4; disfavored_royalist -=3; pro_republic += 5
 
-Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a goverment of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the propertied and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the collectivists... [? if aspd_share > 0: The ORP seeing as we no longer require on coalition negoations to form goverment has decided to join us. ?] 
+Unexpectedly, we've found ourselves controlling a majority of the Dornwich landtag and being able to form a government of just the <span style="color: #c00000;">**Marchers**</span>! It is unclear how the propertied and <span style="color: #808080;">reactionaries</span> will react to a <span style="color: #c00000;">Red</span> Dornwich but without the collectivists... [? if aspd_share > 0: The ORP seeing as we no longer require on coalition negoations to form government has decided to join us. ?] 

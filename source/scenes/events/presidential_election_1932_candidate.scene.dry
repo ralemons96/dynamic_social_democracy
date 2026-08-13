@@ -500,9 +500,9 @@ Q.royalist_candidate_1932_disp = "Alaric Gallax";
 view-if: not harzburg_unity
 face-image: img/portraits/hitler2.jpg
 
-The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Garrick Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Alden Standerton argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as as candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
+The <span style="color: #7A3C00;">**Royalists**</span> will run Alaric Gallax, who is likely to only receive the backing of his own party. [? if dufour_run: However, there has been some reluctance on Gallax's part to run against President DuFour, with his character commanding great respect throughout all corners of the Commonwealth. Furthermore, the second most important leader in the <span style="color: #7A3C00;">**Royalists**</span>, Garrick Crowde, opposes his candidacy as he believes he cannot defeat DuFour, but <span style="color: #7A3C00;">Royalist</span> propagandist Alden Standerton argues for it. We suspect that the <span style="color: #7A3C00;">Royalists</span> are putting on a show of indecisiveness, and always had Gallax as a candidate in mind. ?][? if not dufour_run: Gallax is somewhat reluctant to run in the election, believing he cannot win outright. However, the propaganda value of putting the charismatic Gallax forward ahead of the local elections has justified the risk. If he were to win, it would likely mean the swift collapse of the Republic—and possibly civil war. ?]
 
-- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
+- @collectivist: We await the decision of the <span style="color: #700000;">Collectivists</span>.
 
 @frick
 on-arrival: {!
@@ -514,7 +514,7 @@ face-image: img/portraits/frick.jpg
 
 The <span style="color: #7A3C00;">**Royalists**</span> has nominated Bram Frask, who is expected to receive backing only from his own party. [? if dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s deep reluctance to challenge the universally respected and personally popular President DuFour—believing such a move would tarnish his image. Garrick Crowde’s argument ultimately prevailed over Standerton’, and Gallax has chosen to sit this one out. ?][? if not dufour_run: The decision to run Frask instead of the more charismatic and popular Gallax stems from Gallax’s reluctance to enter an unwinnable race, fearing it would damage his image. By putting forward the more pragmatic Frask, he hopes to attract some conservative support ahead of the local elections.?] Should Frask win, he would serve as little more than a proxy for the <span style="color: #7A3C00;">Royalist</span> leader. 
 
-- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
+- @collectivist: We await the decision of the <span style="color: #700000;">Collectivists</span>.
 
 @goring
 on-arrival: {!
@@ -526,7 +526,7 @@ face-image: img/portraits/goring.jpg
 
 The <span style="color: #7A3C00;">**Royalists**</span> has nominated Ulric Gorrick, who is expected to receive support solely from his own party. Normally, Gallax would have been their candidate, but for one reason or another, he is disqualified from the race. With his reputation as a decorated fighter ace from the Great Wars and his strong ties to the conservative establishment and industrial elites, Gorrick will win over some <span style="color: #3E88B3;">nationalists</span> who might have otherwise been wary of Gallax. Still, Gorrick is widely expected to act as little more than a proxy, taking direction from the <span style="color: #7A3C00;">Royalist</span> leader operating behind the scenes.
 
-- @collectivist: We await the decision the <span style="color: #700000;">Collectivists</span>.
+- @collectivist: We await the decision of the <span style="color: #700000;">Collectivists</span>.
 
 @collectivist
 go-to: thalmann
@@ -1224,7 +1224,7 @@ We have convinced the <span style="color: #C0A054;">**Golds**</span> to give Eck
 on-arrival: lvp_support_marcher = 0; lvp_right += 3; lvp_relation -= 5
 go-to: endorsements_eckener
 
-We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Bristol</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">Reformists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
+We have failed to persuade the <span style="color: #C0A054;">**Golds**</span> to back <span style="color: #c00000;">Eckhart</span>, due to their deep antipathy toward cooperating with the <span style="color: #c00000;">Reformists</span>—even with Eckhart at the head of the ticket. This is a major blow—Eckhart was meant to be a unity candidate, and we've clearly failed in that objective.
 
 @convince_z_eckener
 choose-if: marcher_votes >= unionist_votes and not concord_formed

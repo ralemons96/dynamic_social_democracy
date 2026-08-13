@@ -23,7 +23,7 @@ The Banners has increasingly militarized, acquiring arms, conducting paramilitar
 
 - @let_go: Let the <span style="color: #FFCC00;">liberals</span> go.
 - @lower_militancy: We must lower the Banners's militancy.
-- @keep_them: Can we convince them that a militant the Banners is necessary for defending the Republic?
+- @keep_them: Can we convince them that a militant Banners is necessary for defending the Republic?
 
 @let_go
 on-arrival: banner_strength *= 0.95; unionist_relation -= 3; lvp_relation -= 5; lvp_right += 3; pro_republic -= 3; lvp_leave_banner = 1

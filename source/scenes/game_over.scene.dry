@@ -382,7 +382,7 @@ go-to: eg_menu
 
 Alaric Gallax is in undisputed control over the Commonwealth. The <span style="color: #c00000;">**Marchers**</span>, along with all of the democratic forces, have failed. The road he marches now leads north, toward the Crown he swore to serve—and the Empress's court has only to wait.
 
-[? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
+[? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-foresee future. ?]
 
 @war_against_hitler
 view-if: (chancellor == royalist_chancellor or president == "Gallax" or president == "Gorrick" or president == "Frask") and (long_war == 1)
@@ -418,7 +418,7 @@ view-if: republic_victory == 1
 tags: endings
 go-to: eg_menu
 
-We have won the civil war against the <span style="color: #808080;">reactionary</span> forces. the Commonwealth will be changed forever, but it is too early to know how.
+We have won the civil war against the <span style="color: #808080;">reactionary</span> forces. The Commonwealth will be changed forever, but it is too early to know how.
 
 @civil_war_lost
 title: We lost the civil war.
@@ -429,12 +429,12 @@ go-to: eg_menu
 We have lost the civil war. At least it was a quick coup, and ended before the Commonwealth could be plunged into total war.
 
 @long_war
-title: the Commonwealth is gripped by civil war.
+title: The Commonwealth is gripped by civil war.
 view-if: long_war == 1
 tags: endings
 go-to: eg_menu
 
-the Commonwealth is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until the Commonwealth's cities are reduced to ruins. 
+The Commonwealth is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until the Commonwealth's cities are reduced to ruins. 
 
 [? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if west_relation >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The <span style="color: #750e0e;">Central Union</span> is flooding aid to the <span style="color: #700000;">Collectivists</span>, in an attempt to shape the Commonwealth's future government. ?][? if east_aid >= 1 : Other northern realms reluctantly send aid in the fight against the reactionaries. ?]
 
@@ -2255,7 +2255,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">By All Necessary Votes</div>
-      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized the Banners.
+      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized Banners.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -4139,7 +4139,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">By All Necessary Votes</div>
-      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized the Banners.
+      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized Banners.
     </div>
   {!</td>!}
 {!</tr>!}
@@ -6022,7 +6022,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">By All Necessary Votes</div>
-      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized the Banners.
+      <div class="achievement_subtitle"> - govern with an <span style="color: #c00000; font-weight: bold;">Marchers</span>-only majority with a completely demilitarized Banners.
     </div>
   {!</td>!}
 {!</tr>!}

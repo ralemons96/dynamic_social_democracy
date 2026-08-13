@@ -454,7 +454,7 @@ Q.staal_fight = 1;
 
 We are not alone. [? if marcher_alone: Well, we actually are, never mind. ?]
 
-<span style="color: #000000;">[? if not stegerwald_path: Faithful?][? if stegerwald_path: Faithful?]</span> - [? if unionist_against_staal: In Favor?][? if not unionist_against_staal: Political Neutrality?]
+<span style="color: #000000;">Faithful</span> - [? if unionist_against_staal: In Favor?][? if not unionist_against_staal: Political Neutrality?]
 
 <span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_staal: In Favor?][? if not libs_against_staal: Political Neutrality?]
 
@@ -569,7 +569,7 @@ The general strike proves short-lived. An endless supply of unemployed strikebre
 
 Seizing the moment, Staal expands his crackdown, accusing the <span style="color: #c00000;">**Marchers**</span> of conspiring with the <span style="color: #700000;">**Collectivists**</span> to incite revolution.
 
-the Commonwealth is lost.
+The Commonwealth is lost.
 
 - @game_over
 
@@ -622,7 +622,7 @@ Staal has no intention of relinquishing power once stability is restored—his p
 
 This, combined with his blatant constitutional breach just a week ago, has finally galvanized the remaining <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> against the Chancellor.
 
-Perhaps its our time to strike?
+Perhaps it's our time to strike?
 
 - @civil_war: The <span style="color: #c00000;">**Marchers**</span> stands with the <span style="color: #700000;">**Collectivists**</span>.
 - @fight_mild
