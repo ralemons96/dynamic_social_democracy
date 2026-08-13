@@ -46,7 +46,9 @@ on-arrival: commons_marcher += 4; disfavored_marcher += 4; collectivist_relation
 As expected, we have completed the goals set by the <span style="color: #700000;">**Collectivists**</span>. [? if president == "DuFour": However, over the past few months, President DuFour's concerns over our coalition government have grown... ?]
 
 @skibidi
-subtitle: modman is lazy and doesn't want to code this
+subtitle: The talks lead nowhere.
+
+The feelers go out and come back empty: no propertied party will prop up our government while the <span style="color: #700000;">**Collectivists**</span> hound it from the left. New elections it must be.
 
 @new_elections
 call: set_next_election_time_prussia

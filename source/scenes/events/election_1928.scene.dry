@@ -2050,7 +2050,7 @@ unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span> + <span style="co
 choose-if: president != "DuFour"
 on-arrival: leverage -= 10; leverage += 5 if not lvp_formed; leverage += 5 if unionist_ideology == "Left"; in_staal_left_coalition = 1; marcher_in_government = 1; vice_chancellor = "Sedgewick"; heartland_leader = "Goodlake" if heartland_leader == "Staal" or heartland_leader == "Crowde"; foreign_minister_party = "GNU"; interior_minister_party = "GNU"; justice_minister_party = "Unionist"; justice_minister_party = "LVP" if lvp_formed; labor_minister_party = "Unionist"; army_minister_party = "GNU"; economic_minister_party = "GNU"; finance_minister_party = "GNU"; agriculture_minister_party = "GNU"; labor_minister = "Sedgewick"; army_minister = "Staal"; pro_republic += 5; staal_marcher_influence += 4; dufour_angry = -500; staal_approval += 2
 
-Placeholder
+Staal has his parliamentary cabinet, and the <span style="color: #c00000;">**Marchers**</span> have a seat at the table. Whether the general means to share power, or merely to borrow it, remains to be seen.
 
 @schleicher_right_coalition
 title: Staal forms a parliamentary cabinet with the right.
@@ -2060,7 +2060,7 @@ unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span>[? if not unionist
 choose-if: staal_parliament_trigger
 on-arrival: in_staal_right_coalition = 1; marcher_in_government = 0; dsu_in_gov = 1; vice_chancellor = "Crowde"; heartland_leader = "Crowde" if heartland_leader == "Staal" or heartland_leader == "Sedgewick"; foreign_minister_party = "GNU"; interior_minister_party = "CSG"; justice_minister_party = "Unionist"; justice_minister_party = "LVP" if lvp_formed; labor_minister_party = "Unionist"; army_minister_party = "GNU"; economic_minister_party = "I"; finance_minister_party = "GNU"; agriculture_minister_party = "GNU"; labor_minister = "Sedgewick"; army_minister = "Staal"; pro_republic -= 8; staal_marcher_influence -= 2; staal_marcher_support -= 4; staal_marcher_r -= 2; staal_approval += 2
 
-Placeholder
+Staal has his majority, assembled from the parties of the right. The Assembly keeps its forms; the government keeps its own counsel — and the <span style="color: #c00000;">**Marchers**</span> are left outside the door.
 
 @popular_front_coalition
 title: A new "Popular Front" coalition?
@@ -2471,7 +2471,7 @@ go-to: no_majority_bruning_moderate_2 if (chancellor = "Askew" or chancellor = "
 @taming_abandoned
 on-departure: chancellor = "Askew"; chancellor_party = "Unionist"; marcher_toleration = 1; marcher_toleration_right = 1 if traditionalist_ideology == "Moderate"; rubicon_mini = 0
 
-i'm too lazy to implement this right now, anyway [+ chancellor +] is ousted and replaced by good ol bruning
+There is no majority to be found, and no appetite in the palace to go on without one. [+ chancellor +] is dismissed, and President [+ president +] turns once more to Edmund Askew.
 
 @no_majority_spd_moderate
 on-arrival: chancellor = "Askew"; chancellor_party = "Unionist"

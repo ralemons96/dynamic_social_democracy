@@ -1,4 +1,4 @@
-title: The Decision 2010
+title: The Decision
 subtitle: The fate of the Commonwealth rests in DuFour.
 view-if: chancellor = "Staal" and staal_time == 7 and staal_explode and not staal_coup
 new-page: true

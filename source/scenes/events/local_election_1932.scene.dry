@@ -1126,7 +1126,7 @@ view-if: (royalist_r_wurttemberg + dnf_r_wurttemberg >= 50 and traditionalist_id
 on-arrival: wurttemberg_royalist = 1; burgher_royalist += 4; guild_royalist += 4; landed_royalist += 4; burgher_unionist -= 2; guild_unionist -= 2; landed_unionist -= 2; burgher_traditionalist -= 2; guild_traditionalist -= 2; faithful_unionist -= 3; faithful_marcher -= 3; faithful_royalist += 6; landed_other -= 6; pro_republic -= 6
 go-to: election_menu
 
-Damn that's crazy. Look dude I don't know what to write for this.
+The <span style="color: #7A3C00;">**Royalists**</span> claim an outright majority in the state. The propertied parties that once dismissed them now scramble to make terms, and the state administration begins to bend.
 
 @bourgeois_coalition_wurttemberg
 title: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] coalitions with the <span style="color: #006400;">**WBWB**</span>, the <span style="color: #FFCC00;">liberals</span>, and other minor propertied parties.

@@ -879,7 +879,7 @@ unavailable-subtitle: <span style="color: #BFC8CC;">GNU</span> + <span style="co
 choose-if: president != "DuFour" and super_secret_mode
 on-arrival: in_staal_left_coalition_heartland = 1; heartland_leader = "Goodlake"; commons_gnu += 3; burgher_gnu += 3; guild_gnu += 3; landed_gnu += 3; disfavored_gnu += 3; faithful_gnu += 3; commons_collectivist -= 3; commons_marcher -= 3; vanguard_banned = 1; vanguard_strength -= 50; banner_strength -= 200; heartland_police_loyalty = 0; pro_republic -= 10
 
-Placeholder
+In Heartland, Staal takes the <span style="color: #c00000;">**Marchers**</span> into his majority — an arrangement few thought possible. The state government survives in name; how much survives in substance will be measured month by month.
 
 @schleicher_right_coalition_prussia
 title: Staal forms a majority with the right.
