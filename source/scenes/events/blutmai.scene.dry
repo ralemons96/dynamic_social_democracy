@@ -9,7 +9,7 @@ face-image: img/redfront.jpg
 
 = Laborer's Day, 4294
 
-Tensions run high in Axton. The <span style="color: #700000;">**Collectivists**</span> are planning a demonstration to commemorate the 10th anniversary of the <span style="color: #d00000;">Vaelist</span> Uprising. No one has forgotten that it was our party members who ordered the uprising's suppression, and the <span style="color: #700000;">**Collectivists**</span> still blame us for the deaths of Verdwen and Falas.
+Tensions run high in Axton. The <span style="color: #700000;">**Collectivists**</span> are planning a demonstration to commemorate the 10th anniversary of the <span style="color: #d00000;">Vaelist</span> Rising. No one has forgotten that it was our party members who ordered the uprising's suppression, and the <span style="color: #700000;">**Collectivists**</span> still blame us for the deaths of Verdwen and Falas.
 
 Many <span style="color: #000000;">non</span>-<span style="color: #700000;">collectivists</span> are afraid of the possibility of another violent uprising, and our allies in the Heartland coalition are asking the Heartland Interior Ministry to ban the demonstrations.
 
@@ -33,7 +33,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-We issued the order to ban the demonstrations, and sent police to enforce the ban. There was a confrontation between the police and <span style="color: #700000;">**Collectivists**</span>, and violence erupted. Reports say that the Axton police killed dozens of demonstrators and innocent bystanders. The <span style="color: #700000;">**Collectivists**</span> are already calling this incident *Blutmai*, "Bloody May".
+We issued the order to ban the demonstrations, and sent police to enforce the ban. There was a confrontation between the police and <span style="color: #700000;">**Collectivists**</span>, and violence erupted. Reports say that the Axton police killed dozens of demonstrators and innocent bystanders. The <span style="color: #700000;">**Collectivists**</span> are already calling this incident *the Red Spring*.
 
 This may end any attempt at reconciliation with the <span style="color: #700000;">**Collectivists**</span>, but the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Commonwealth People's Conservative**</span>?] and [? if not lvp_formed: <span style="color: #C0A054;">**People's**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?] parties approve of our action.
 
