@@ -161,6 +161,23 @@ Trevannon's creed = **One-Realm Democracy** (ex-"Tory Democracy") · Royalist/Im
 abbrevs **FCI/PCL/UPL** (industry federation / Pan-Commonwealth League / Patriotic Leagues) ·
 **GNU-FL** (the GNU-Fatherland League wing).
 
+## Fit-audit close-out coinages (2026-08-13, user-approved; all collision-checked)
+**Vessarion** — the Central Union ruler (the Stalin figure; split off from Ernst Halsmark, who
+remains the Collectivist chairman; #8B0000 spans) · **Godfrey Steunenberg** — the celebrity
+left-novelist presidential candidate (the Heinrich-Mann figure, per user canon; value
+`"Steunenberg"`; absorbs the old "Kelby" mention; stands in the shadow of **Aldric Mann**, who
+stays the famous novelist; "Ambrose Mann" retired; NB shares "Godfrey" with Radbourne — user's
+explicit pick) · Grzesinski→**Grenshaw** (now value-consistent) · Bredt→**Johan Bredwell** ·
+Scheringer→**Richard Sherring** ("the Sherring Line") · Ludin→**Halden Ludwell** · Curtius→
+**Julius Curthose** (value+display, 171×) · **Freehold cast:** Wells→**Weldon**, Powell→**Powle**,
+Barrett→**Barwick**, Barker→**Barwell**, Colonel Marsh→**Marbeck** · Hermes→**Harmes** ·
+Prittwitz→**Prittwell** · Moldenhauer→**Moldren** (first name = **Damon**) · Eric→**Eldred**
+Gilby · Siegfried→**Sigebert** Strake · Lenmoor→**Lanmere** · finance_minister value "Roland"→
+"Galanides". Places/terms: Perisart hills (South-Tyrol slot), the Vessane Report, the Ledger
+League (AfA-Bund), PFW, CNA, Barrowdale-adjacent tickers → Blackmoor.
+**Stale rows resolved:** Koch-Weser/Külz/Köhler/Schiele/Trendelenburg have no corpus presence —
+their live reskins are Kells, Calder, Trennick (see B3.13); rows kept here as the record.
+
 ## Still deferred
 Real-world historical name-drops in flavour prose (Hess, Liebknecht, Noske, Röhm, Goering, the
 WWII-era references in the endings) — these go under Track A2/A3 of the second pass, not here.
