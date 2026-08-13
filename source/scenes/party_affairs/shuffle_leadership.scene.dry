@@ -34,7 +34,7 @@ console.log(Q.advisor_1)
 frequency: 1
 go-to: rm_main_menu
 
-The <span style="color: #c00000;">**Marchers**</span> is a diverse and <span class="tooltip-text" title="good mod">dynamic</span> party, but its internal divisions cause factional dissent to gradually increase over time. [? if royalist_votes >= 20: However, the threat posed by the <span style="color: #7A3C00;">**Royalists**</span> to the Republic has quieted much of the internal bickering. ?]
+The <span style="color: #c00000;">**Marchers**</span> is a diverse and dynamic party, but its internal divisions cause factional dissent to gradually increase over time. [? if royalist_votes >= 20: However, the threat posed by the <span style="color: #7A3C00;">**Royalists**</span> to the Republic has quieted much of the internal bickering. ?]
 
 Appointing individual advisors will boost their respective faction’s loyalty and influence, at the cost of increasing resentment among the sidelined factions. 
 

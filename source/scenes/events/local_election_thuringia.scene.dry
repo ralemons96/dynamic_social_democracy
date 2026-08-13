@@ -339,8 +339,8 @@ if (Q.lvp_r_thuringia && Q.lvp_formed) {
 if (Q.unionist_r_thuringia) {
     data.push({
         "id": "unionist",
-        "legend": "Center",
-        "name": "Center",
+        "legend": Q.unionist_party_name,
+        "name": Q.unionist_party_name,
         "seats": Math.round(Q.unionist_r_thuringia * 0.53),
     });
 }
@@ -435,7 +435,7 @@ go-to: thuringia_coalition_menu
 
 [? if lvp_formed: {!<tr><td><div class="box" style='background-color:#C0A054'> </div> !} Golds: {!</td><td>!} [+ lvp_thuringia_elections_vote +]% {!</td><td>!} [+ lvp_r_thuringia +]%  {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ unionist_thuringia_elections_vote +]% {!</td><td>!} [+ unionist_r_thuringia +]%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000000'> </div> !} [+ unionist_party_name +]: {!</td><td>!} [+ unionist_thuringia_elections_vote +]% {!</td><td>!} [+ unionist_r_thuringia +]%  {!</td></tr>!}
 
 [? if not lvp_formed: {!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} Golds: {!</td><td>!} [+ gold_thuringia_elections_vote +]% {!</td><td>!} [+ gold_r_thuringia +]%  {!</td></tr>!} ?]
  

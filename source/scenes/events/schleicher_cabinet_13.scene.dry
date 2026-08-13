@@ -115,8 +115,8 @@ if (Q.lvp_r_alt && Q.lvp_formed) {
 
 data = data.concat([{
         "id": "unionist",
-        "legend": "Center",
-        "name": "Center",
+        "legend": Q.unionist_party_name,
+        "name": Q.unionist_party_name,
         "seats": Math.round(Q.unionist_r_alt * 2),
     }
 ]);

@@ -15,8 +15,6 @@ President DuFour has made his dissatisfaction with the <span style="color: #c000
 
 This is a blatant violation of democracy, but we are powerless to stop it. Our only hope is to rally enough support in the next election to reclaim our mandate.
 
-[? if started: (Dear player, PLEASE don't ragequit, toleration is completely changed from Red Autumn. You still have a chance.) ?]
-
 @bruning_right
 on-arrival: marcher_in_government = 0; marcher_toleration = 0; marcher_toleration_right = 0; grand_coalition_collapsed = 1 if in_grand_coalition; chancellor = "Askew"; in_grand_coalition = 0; in_weimar_coalition = 0; coalition_dissent = 0; chancellor_party = "Unionist"; foreign_minister_party = "Gold"; foreign_minister_party = "LVP" if lvp_formed; interior_minister_party = "Traditionalist"; justice_minister_party = "Traditionalist"; labor_minister_party = "Unionist"; army_minister_party = "I"; economic_minister_party = "Gold"; economic_minister_party = "LVP" if lvp_formed; finance_minister_party = "Unionist"; agriculture_minister_party = "Traditionalist"; in_right_coalition = 1; gold_right += 2; lvp_right += 2; liberal_cooperation -= 1; liberal_cooperation -= 3 if liberal_parliament > 0; liberal_parliament = 0 if liberal_parliament > 0; bourgeois_cooperation += 1
 

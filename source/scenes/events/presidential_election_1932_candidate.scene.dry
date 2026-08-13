@@ -52,7 +52,7 @@ With the 4297 Commonwealth Presidential election coming up next month, we need t
 
 On the other hand, many in our party are calling for [+ marcher_candidate_1932_disp +] to run again, but he is reluctant. [? if collectivist_relation >= 50 : Another strange possibility is an united front with the <span style="color: #700000;">Collectivists</span>, either to support their candidate or our own candidate. ?][? if sapd_formed: The <span style="color: #9B0000;">**Laborists**</span>, our former leftists, are likely to share an endorsement with the <span style="color: #700000;">Collectivists</span>. ?]
 
-Anyhow, let's see who will be the candidates on <span class="tooltip-text" title="good game">the campaign trail</span>.
+Anyhow, let's see who will be the candidates on the campaign trail.
 
 @candidate_selection
 

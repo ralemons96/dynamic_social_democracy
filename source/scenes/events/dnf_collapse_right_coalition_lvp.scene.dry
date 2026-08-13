@@ -23,7 +23,7 @@ view-if: bourgeois_coalition >= 50
 on-arrival: marcher_in_government = 0; in_center_right_coalition = 0; in_right_coalition = 0; guild_dnf -= 2; landed_dnf -= 2; ddp_right += 2; ddp_cohesion -= 1.5; liberal_cooperation += 3; bourgeois_cooperation += 10; secret_mode = 1
 go-to: new_prussia_election if (in_center_right_coalition_heartland or in_right_coalition_heartland)
 
-Secret mode is on.
+(Secret mode unlocked.)
 
 @vonc_yes
 title: Support the vote of no confidence, voting against the government.

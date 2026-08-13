@@ -21,7 +21,7 @@ on-display: {!
 
 = The <span style="color: #700000;">**Collectivists**</span> Is Banned!
 
-Bram Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**Vanguard**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Collectivist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Central Union the Commonwealth</span>" in the aftermath of the revolt.
+Bram Frask of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**Collectivists**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**Vanguard**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Collectivist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Collectivist Commonwealth</span>" in the aftermath of the revolt.
 
 According to the government, these plans were to be set in motion in protest against Staal's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Collectivist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved the Commonwealth from violent revolt.
 
@@ -167,8 +167,8 @@ if (Q.lvp_r && Q.lvp_formed) {
 if (Q.unionist_minus_bvp_r) {
     data.push({
         "id": "unionist",
-        "legend": "Center",
-        "name": "Center",
+        "legend": Q.unionist_party_name,
+        "name": Q.unionist_party_name,
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
     });
 }

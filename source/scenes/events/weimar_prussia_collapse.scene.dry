@@ -124,7 +124,7 @@ unavailable-subtitle: <span style="color: #c00000;">Marchers</span> + <span styl
 choose-if: secret_mode = 1
 on-arrival: commons_marcher *= 100; commons += 1000; super_secret_mode = 1; heartland_leader = "joavig"
 
-Super secret mode has been enabled. Shoutout to "joavig" for being the first one to achieve this, on April 29, 2025.
+Super secret mode has been enabled.
 
 @new_elections
 on-arrival: pro_republic -= 5; landed_marcher -= 4; burgher_marcher -= 4; guild_marcher -= 4; commons_marcher -= 3; landed_royalist += 4; burgher_royalist += 4; guild_royalist += 4; commons_royalist += 3

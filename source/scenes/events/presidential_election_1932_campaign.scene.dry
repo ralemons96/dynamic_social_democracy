@@ -506,7 +506,7 @@ go-to: eckener_2 if dufour_unity >= 8; eckener_3 if dufour_unity < 8
 on-arrival: dufour_support += 2
 go-to: bourgeois_campaign_menu
 
-In an attempt to rival the <span class="tooltip-text" title="good mod">dynamism</span> of the <span style="color: #7A3C00;">Royalist</span> campaign, which has utilized aircraft to quickly transport high-profile <span style="color: #7A3C00;">Royalist</span> leaders to deliver up to four speeches per day, Hugo Eckhart has been convinced to take flight across the Commonwealth to drum up popular support for DuFour. 
+In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, which has utilized aircraft to quickly transport high-profile <span style="color: #7A3C00;">Royalist</span> leaders to deliver up to four speeches per day, Hugo Eckhart has been convinced to take flight across the Commonwealth to drum up popular support for DuFour. 
 
 @eckener_3
 on-arrival: disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 3
@@ -775,7 +775,7 @@ go-to: eckener_2_op if dufour_unity >= 8; eckener_3_op if dufour_unity < 8
 on-arrival: dufour_support += 2
 go-to: bourgeois_campaign_menu_op
 
-In an attempt to rival the <span class="tooltip-text" title="good mod">dynamism</span> of the <span style="color: #7A3C00;">Royalist</span> campaign, which has utilized aircraft to quickly transport high-profile <span style="color: #7A3C00;">Royalist</span> leaders to deliver up to four speeches per day, Hugo Eckhart has been convinced to take flight across the Commonwealth to drum up popular support for DuFour. 
+In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, which has utilized aircraft to quickly transport high-profile <span style="color: #7A3C00;">Royalist</span> leaders to deliver up to four speeches per day, Hugo Eckhart has been convinced to take flight across the Commonwealth to drum up popular support for DuFour. 
 
 @eckener_3_op
 on-arrival: disfavored_royalist += 6; disfavored_collectivist -= 3; disfavored_marcher -= 3

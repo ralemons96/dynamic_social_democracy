@@ -1450,8 +1450,8 @@ if (Q.lvp_r && Q.lvp_formed) {
 if (Q.unionist_minus_bvp_r) {
     data.push({
         "id": "unionist",
-        "legend": "Center",
-        "name": "Center",
+        "legend": Q.unionist_party_name,
+        "name": Q.unionist_party_name,
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
     });
 }
@@ -2284,7 +2284,7 @@ on-arrival: chancellor = "Halsmark"; chancellor_party = "Collectivist"; collecti
 
 With great reluctance, President [+ president +] appoints [+ chancellor +] as chancellor.
 
-Immediately, [+ chancellor +] goes to work building a "<span style="color: #750e0e;">Central Union the Commonwealth</span>": consolidating as much power as possible in the <span style="color: #700000;">**Collectivists**</span>, purging state institutions of anti-<span style="color: #700000;">collectivists</span>, and sending street fighters against the "enemies of the people".
+Immediately, [+ chancellor +] goes to work building a "<span style="color: #750e0e;">Collectivist Commonwealth</span>": consolidating as much power as possible in the <span style="color: #700000;">**Collectivists**</span>, purging state institutions of anti-<span style="color: #700000;">collectivists</span>, and sending street fighters against the "enemies of the people".
 
 In response to [+ chancellor +] being appointed Chancellor, the right-wing forces launches almost immediately launch an attempted coup. Troops of the <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> enter Axton and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Commonwealth Army have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Wardens**</span> to stop the <span style="color: #700000;">**Collectivists**</span> from taking power. We are forced to be on the same side as the <span style="color: #700000;">**Collectivists**</span>, whether we want to or not.
 
@@ -3831,7 +3831,7 @@ This is highly unexpected, and many in the left and center of our party are crit
 
 [? if year == 1928 : Since Vance resigned, Edmund Askew has been appointed chancellor. ?]
 [? if year > 1928 and (not return_to_normalcy or not stegerwald_path): Edmund Askew of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed chancellor. ?]
-[? if year > 1928 and return_to_normalcy and stegerwald_path: Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed chancellor. With Askew too unpopular, the newly <span class="tooltip-text" title="good mod">dynamic</span> [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] seeks to preserve its electoral strength. ?]
+[? if year > 1928 and return_to_normalcy and stegerwald_path: Konrad Aldermoor of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] has been appointed chancellor. With Askew too unpopular, the newly dynamic [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] seeks to preserve its electoral strength. ?]
 
 @z_chancellor_wirth
 title: Let Joseph Werth of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] be chancellor.

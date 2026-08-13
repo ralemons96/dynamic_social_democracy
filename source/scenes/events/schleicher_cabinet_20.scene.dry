@@ -771,8 +771,8 @@ if (Q.lvp_r && Q.lvp_formed) {
 if (Q.unionist_minus_bvp_r) {
     data.push({
         "id": "unionist",
-        "legend": "Center",
-        "name": "Center",
+        "legend": Q.unionist_party_name,
+        "name": Q.unionist_party_name,
         "seats": Math.round(Q.unionist_minus_bvp_r * Q.reichstag_size),
     });
 }
