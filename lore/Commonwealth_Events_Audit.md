@@ -6,6 +6,8 @@
 
 **At a glance:** ~55 obvious fixes **DONE** (§A) · **§B** 4 high-priority/player-facing calls · **§C** 7 systemic rulings · **§D** the coinage list (people/orgs/terms) · **§E** verified-correct + one code bug.
 
+> **★ ALL SECTIONS EXECUTED (2026-08-13, Batches 1–6).** Model: user chose *"propose defaults, execute, review after"* — every ✎ below is filled with the decision taken. Rulings locked in-session: **§B3 = minimal patch** (one terse in-voice sentence each), **§C4/C5/C6 = narrator swept, speech kept**. Commits: Batch 1 mechanical (`05efcb2`), Batch 2 placeholders (`e70cf73`), Batch 3 vocab (`aa4f338`), Batch 4 people (`7cc12f8`), Batch 5 orgs/terms (`e9f5921`), Batch 6 loose ends (`22df8ba`). Verified: compile+make-html exit 0; §E fix, dynamic chart legend ("Concord" renders, 0 "Center"), and a §B3 scene all confirmed in the browser engine; 0 console errors (only the pre-existing missing-portrait 404s).
+
 > **The Ferris/Franz trap (resolved):** every reader flagged "Ferris Goodryke" as wrong per the names doc — but the grep is decisive: **0 "Franz Goodryke" in prose, "Ferris" everywhere.** Ferris is the D3 canon; the doc was stale. I corrected `Commonwealth_Character_Names.md` (Goodryke→Ferris, Trevannon→Godwin, Frask→Bram) so this stops recurring. **Do not reintroduce Franz.**
 
 ---
@@ -52,7 +54,7 @@ An `on-display` block embeds a live external iframe to **`en.wikipedia.org/wiki/
 | `local_election_1932` L1129 | *"Damn that's crazy. Look dude I don't know what to write for this."* |
 | `kpd_ultimatum_prussia` L49 | *"modman is lazy and doesn't want to code this"* |
 | `nazi_16` L1 (title) | **"The Decision 2010"** (meme title vs. the serious "Negotiations, Pt. 3" subtitle) |
-→ **Suggestion:** write real prose for each (or cut the branch). These are the ones most likely to break immersion. ✎ ______
+→ **Suggestion:** write real prose for each (or cut the branch). These are the ones most likely to break immersion. ✎ **DONE (minimal patch, Batch 2):** terse in-voice bodies for all 5 + a 6th the table missed (`prussia_election_1928:882` @schleicher_left_coalition_prussia); `taming_abandoned` now has DuFour dismissing the chancellor for Askew; `nazi_16` retitled **"The Decision"** (fits the nazi_15→17 sequence).
 
 ### B4 · Leaked dev / debug / 4th-wall text (renders inline or on hover)
 - **Dev tooltips** `title="good mod"` / `title="good game"` (visible on hover): `dvp_party_congress_2`, `dvp_party_congress_3_luther`, `election_1928` L3834, `goerdeler_cabinet_2_alt`.
@@ -61,7 +63,7 @@ An `on-display` block embeds a live external iframe to **`en.wikipedia.org/wiki/
 - **"Shoutout to 'joavig'… April 29, 2025"** — `weimar_prussia_collapse` L127 (real date + handle).
 - **"All my homies hate the Collectivists"** — `landtag_referendum_results` L40.
 - **4th-wall "Red Autumn"** (names the base game) — `cabinet_sacked` L18, `cabinet_sacked_bruning`.
-→ **Suggestion:** strip/replace. Most are one-liners. ✎ ______
+→ **Suggestion:** strip/replace. Most are one-liners. ✎ **DONE (Batch 1):** all stripped — 26 `good mod`/`good game` tooltips corpus-wide (far more than listed; wrapped words kept), both "Dear player" Red Autumn asides, "report to the dev", "All my homies", the dated joavig shoutout (the super-secret-mode MECHANIC + its subtitle hints kept; "Secret mode is on." → "(Secret mode unlocked.)"). Also stripped a stray 🙏🙏🙏 (election_1928, Batch 5).
 
 ---
 
@@ -73,7 +75,7 @@ An `on-display` block embeds a live external iframe to **`en.wikipedia.org/wiki/
 
 ### C2 · Zentrum **"Center" / "Z:"** chart labels
 The Unionist party's parliament-chart legend is hardcoded **`"Center"`** (echoes Zentrum) in many files' `on-display` chart JSON, and local-election result tables print **`Z:`** — while the same files use `[+ unionist_party_name +]` (Unionist/Concord) elsewhere. Files incl. `election_1928` L1453, `schleicher_21/22`, `cabinet_12/13/20`, `local_election_saxony*` (×3) + `local_election_thuringia`, `local_election_lippe`.
-→ **Suggestion:** replace the hardcoded "Center"/"Z:" with the party name/abbrev. ✎ ______
+→ **Suggestion:** replace the hardcoded "Center"/"Z:" with the party name/abbrev. ✎ **DONE (Batch 1):** 15 chart legend pairs → **dynamic `Q.unionist_party_name`** (Q is in scope in the data.push blocks), 5 `Z:` table rows → `[+ unionist_party_name +]:` — both track the Concord rename. The 3 `editorial_line = "Center"` LOGIC values (root/stampfer/post_event) are a different "Center" and were left. Runtime-verified: legend renders "Concord".
 
 ### C3 · **Currency: "Gold" (prose) vs "Crowns" (lore canon)**  ⚠️ canon call
 Two currency words are in play. **Prose-dominant = "Gold"** ("500 million Gold", "billion Gold", "3-million Gold"), but the **second-pass/lore canon is "Crowns"** (the reskin deliberately rendered "$381.17 → 381 crowns"; the foreign-powers doc + tracker say Crowns). The same public-works event even mixes them (`schleicher_cabinet_5` "Gold" vs `_5_alt`/`_8_alt` "crowns"; `presidential_election_1932_campaign` mixes both; `schleicher_16` crowns). "Gold" also **collides with the Golds party name** — a point in favor of Crowns.
@@ -81,23 +83,28 @@ Two currency words are in play. **Prose-dominant = "Gold"** ("500 million Gold",
 
 ### C4 · **"proletariat" / "proletarian" → the Commons?**
 The style guide maps *the proletariat → the Commons*, but it may be intentional register in Collectivist/Vaelist mouths. Spots: `economic_sanctions` L11, `banking_crisis` L15, `blutmai` `@join` L79, `understanding_enemy` L15 (×2), `election_1928` `@popular_front_prussia`.
-→ **Suggestion:** map narrator-voice uses to "the Commons"; keep in-character Collectivist speech as-is? Or a blanket rule. ✎ ______
+→ **Suggestion:** map narrator-voice uses to "the Commons"; keep in-character Collectivist speech as-is? Or a blanket rule. ✎ **RULED: narrator swept, speech kept (Batch 3).** Swept: economic_sanctions, banking_crisis, understanding_enemy ×2 ("proletarianizing" → "the calamity will sink them into the Commons"). KEPT: the quoted Collectivist "vanguard of the proletariat" (election_1928), blutmai's movement-register "proletarian unity", and all party-internal class-politics uses (ideology/rally/social_welfare/peoples_party etc. — in-register).
 
 ### C5 · lowercase **"the depression" / "economic depression"**
 Canon proper noun is **"the economic calamity"** (applied correctly for the capitalized cases). ~10 generic-lowercase echoes remain: `weimar_referendum`, `young_plan_campaign`, `young_plan_referendum`, `wtb_conceptualized`, `wtb_proposed`, `hunger_chancellor`, `local_election_1932`, `papen_cabinet_7`, `presidential_election_1932_candidate`.
-→ **Suggestion:** standardize to "the economic calamity"/"the calamity", or accept lowercase generics as fine. ✎ ______
+→ **Suggestion:** standardize to "the economic calamity"/"the calamity", or accept lowercase generics as fine. ✎ **DONE (Batch 3):** swept **85 sites / 52 files** (the real count was far above the ~10 listed) via a guarded word-swap — `@depression` scene/option ids, `*_depression` identifiers, `greatdepression.jpg`, comment lines, and modinfo/credits all untouched.
 
 ### C6 · **"capitalism / capitalist"** in narrator prose
 Style guide steers against bare Marxist framing. Narrator-voice spots: `presidential_election_1932_round_2` L646, `return_to_normalcy` L13, `schleicher_16` L25 (also `understanding_enemy` "anti-capitalist"/"top capitalists").
-→ **Suggestion:** consistency ruling — keep (generic English) or soften ("business/monied interests")? ✎ ______
+→ **Suggestion:** consistency ruling — keep (generic English) or soften ("business/monied interests")? ✎ **RULED (Batch 3), consistent with the B3.8b precedent:** the SYSTEM-term/epithet ("capitalism", "anti-capitalist", the Collectivists' own revolutionary framing) is KEPT; capitalist OWNER-**people** → guild-masters (return_to_normalcy "capitalist funders", understanding_enemy "top capitalists" → "the great guild-masters"). schleicher_16's "capitalism's preservation" = system-term, kept.
 
 ### C7 · **"Central Union the Commonwealth"** (botched, 3×)
 `election_1928` L2287, `kpd_vote_of_no_confidence` L35, `schleicher_cabinet_12` L24 — a domestic Collectivist takeover ("consolidating power in the Collectivists, purging state institutions…") is mislabeled with the **foreign USSR-analogue** name (Central Union), and it's missing a word.
-→ **Suggestion:** coin the domestic-Collectivist project name — e.g. "a **Collectivist Commonwealth**" / "a **Commonwealth Commune**" / "the **Second Republic**"? ✎ ______
+→ **Suggestion:** coin the domestic-Collectivist project name — e.g. "a **Collectivist Commonwealth**" / "a **Commonwealth Commune**" / "the **Second Republic**"? ✎ **DONE (Batch 1):** → **"Collectivist Commonwealth"** (3×; no new proper noun needed, the article was already outside the quotes).
 
 ---
 
 ## §D — Coinages needed (real-world residuals)
+
+> **★ EXECUTED (Batches 4–6) — the decision per row, all collision-checked:**
+> **D1 people:** Schifrin→**Alexander Shefford** · Chakhotin→**Serge Chatton** (credits citation kept) · Kreiser→**Walton Kerris** · Winnig→**August Winmore** · "Alfred Mallin"→**"Mallin"** (dropped) · Paul Lowe→**Pascal Lowe** (value "Lowe" kept) · Willi Munzer→**Willem Munzer** (Munzer IS the 294a30f Münzenberg coinage; president value kept) · Ethia's FM Gessler→**Gresham** · Pacelli→**"a senior envoy of the Conclave"** · Stoltzmann→**Stoughton** · Lenmoor-Jung→**Lenmoor** (VALUE+display — it's a concord/traditionalist_leader logic value) · zu Dohna→**Count Alden Marle** (incl the DISPLAYED `gold_leader` value `"zu Dohna-Schlodien"`→`"Marle"`; Karnoth-Marle group) · IG Farben→**the Vellandt Chemical Combine** · Erkelenz→**Arkell** · **Thomas Mann→Ambrose Mann** (NB: Aldric Mann IS the Heinrich reskin, so the brother needed a NEW name — do not merge them) · Ec·ken·er tricolor easter egg re-split **Eck·ha·rt** (library+status) · Raymont unified→**Harmon Raymont**, "von" dropped, DISPLAYED `fkp_leader` value `"von-Raymont"`→`"Raymont"`.
+> **D2 orgs/terms:** SS→**the Crownguard** · KPO→**CPO** · Reichrat→**the Council of Provinces** · Rechtsblock→**Right Bloc** (incl 2 bare in main) · Lebensraum `title=` hovers dropped · RDI/ADV/VVVD→**FCI/PCL/UPL** · GNU-VLB→**GNU-FL** · Volksocialism→**People's Socialism** · swastika→**the crowned sunburst** · China mission→**the eastern empire** · Eupen-Malmedy→**the contested border marches** · Elbe→**the Averlin River** · Baden→**Barrowdale** · Golden Twenties→**the golden years** (B3.6c) · 1848→**4213** · Katastrophenpolitik→**catastrophe politics** · Herr Geheimrat→**Councillor** · November criminals→**"traitors of the Founding"** · Tory Democracy→**One-Realm Democracy** (Trevannon's creed; game_over subtitle too; Fulyrian/library "Tories"→crown conservatives, Etaluxian ticker→Conservatives) · Commonwealth-Hanoverian→**Commonwealth-Harlow Party** · Keynesian→**the deficit-spending school** · national-bolshevik: already 0 in corpus · marx_iv confessional schools→**secular common schools vs the faiths** · Vanguard League→**the Red Vanguard** · achievement file: umlaut-check clean (B3.11a held).
+> **D3:** Vaelist Uprising→**Vaelist Rising** · blutmai gloss→**the Red Spring** (B3.12c) · the doubled Abysm district→**Tarrow** ("Tarrow Bloody Sunday") · Western Allies→**the western powers** (3 plain + 8 flag-color span-split!) · center_party_conference "turn from Vael"→**Croft** (×4) · Commissar→**Commissioner** · cvp_merger garbled "*Free Guild*"→**"accession of the Freehold"** · **Camarilla KEPT** (generic loanword, détente/façade policy) · **Ephialtes**→"great betrayer of the Unionist Party".
 
 ### D1 · People — coin a Commonwealth name (or drop to surname)
 | Scene | Current | Who it really is | ✎ suggestion |
@@ -166,4 +173,4 @@ Style guide steers against bare Marxist framing. Narrator-voice spots: `presiden
 - **Deferred by policy** (unchanged): internal `@ids`, variable names, and asset filenames retaining German (`Kuno_von_Westarp.jpg`, `GoodrykeFranz.jpg`, `StaalKurt.jpg`, `hitler_dead.jpg`, `img/stahlhelm_3.jpg`, achievement id strings, music paths); `//`-comments and `#`-citation lines (e.g. `understanding_enemy`'s "# Harsch p.106"); loanwords already accepted (détente/façade); the "Harzburg Front" filename/vars (player-facing text already = "The Stowford Front").
 - **Established, do not "fix"**: "Unity Constitution"/"Unity Republic", "GNU"/"Commonwealth National Unity Front", "the Forward" (Vorwärts), "Great Wars" (plural), "Serannus Plan"/"Voss Renewal Plan", "the Exetar", "Treaty of Etaluxia", "Veran Crash", founding years 4283/4284.
 
-**Code bug (out of audit scope, but likely crashes that branch):** `local_election_saxony_1933.scene.dry` L116 — `saxony_adjustment.factors.nsdap` should almost certainly be `saxony_adjustment_factors.nsdap` (underscore, not dot-chain). ✎ want this fixed?
+**Code bug (out of audit scope, but likely crashes that branch):** `local_election_saxony_1933.scene.dry` L116 — `saxony_adjustment.factors.nsdap` should almost certainly be `saxony_adjustment_factors.nsdap` (underscore, not dot-chain). ✎ **FIXED (Batch 1)** — verified gone from the compiled bundle; the scene's on-arrival executes clean with a synthetic electorate.

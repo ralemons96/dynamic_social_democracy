@@ -141,6 +141,26 @@ they are referred to by name / title / "She" with **0 male pronouns** in any pro
 scene's `he/his` refer to her male successors; other `chancellor`/`leader` pronouns are other men). The
 "needs a pronoun pass" note below is resolved.
 
+## Events-audit close-out coinages (2026-08-13, Batches 4–6; all collision-checked)
+**People:** Schifrin→**Alexander Shefford** · Chakhotin→**Serge Chatton** (Central-Union exile) ·
+Kreiser→**Walton Kerris** (weltbühne journalist) · Winnig→**August Winmore** · Hugenberg's leaked
+"Alfred" dropped (**Mallin** surname-only) · Löbe's Paul Lowe→**Pascal Lowe** (Paul anchors DuFour;
+`reichstag_president` value "Lowe" kept) · Münzenberg's "Willi" Munzer→**Willem Munzer** (president
+value "Munzer" kept) · Ethia's FM Gessler→**Gresham** (≠ the mod's Gesling) · Pacelli→dropped
+("a senior envoy of the Conclave") · Stoecker's Stoltzmann→**Edric Stoughton** · Lambach's
+Lenmoor-Jung→**Edras Lenmoor** (VALUE+display) · zu Dohna→**Count Alden Marle** (`gold_leader`
+value "Marle"; the **Karnoth-Marle** group) · Erkelenz→**Anton Arkell** · **Ambrose Mann** = Aldric
+Mann's better-known novelist brother (the Thomas-Mann slot — do NOT merge with Aldric) · Raumer
+unified→**Harmon Raymont** (`fkp_leader` value "Raymont"; "Hollis" was a Lindell collision).
+**Orgs/places/terms:** the Royalists' elite guard = **the Crownguard** · Collectivist splinter
+**CPO** (ex-KPO) · the federal chamber = **the Council of Provinces** · IG-Farben-analog =
+**the Vellandt Chemical Combine** · the Elbe = **the Averlin River** · Baden = **Barrowdale**
+(Barrowdale-Purl) · the Altona-analog district of Abysm = **Tarrow** ("Tarrow Bloody Sunday") ·
+Trevannon's creed = **One-Realm Democracy** (ex-"Tory Democracy") · Royalist/Imperial emblem =
+**the crowned sunburst** · the Hanoverian particularists = **the Commonwealth-Harlow Party** ·
+abbrevs **FCI/PCL/UPL** (industry federation / Pan-Commonwealth League / Patriotic Leagues) ·
+**GNU-FL** (the GNU-Fatherland League wing).
+
 ## Still deferred
 Real-world historical name-drops in flavour prose (Hess, Liebknecht, Noske, Röhm, Goering, the
 WWII-era references in the endings) — these go under Track A2/A3 of the second pass, not here.
