@@ -742,7 +742,7 @@ max-cards: 3
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 3: Despite this setback, the reform of the <span style="color: #C0A054;">**Golds**</span>'s party structure has made the demands of their guild-masters far less threatening. [? if not stresemann_dead: Stratton?][? if stresemann_dead: Curthose?] and other high-ranking party officials, including the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s Penn, have agreed to remove the most radical members of their respective parties to facilitate unification. Meanwhile, the previously moribund Liberal Association, in collaboration with various youth groups, has begun drafting a policy platform and forming local chapters. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 crowns, the golden years continue! ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 million crowns, the golden years continue! ?]{!</p>!}
 
 {!<p class="both">!}[? if year = 1929 and month = 10: The initiative against the Serannus Plan has finished collecting its signatures for it to become a referendum, with [+ young_plan_signatures +]% of eligible voters signing[? if young_plan_signatures >= 10 : [? if young_plan_signatures < 11 : &nbsp;barely?] exceeding the 10% minimum requirement.?][? if young_plan_signatures < 10 : [? if young_plan_signatures > 9 :&nbsp;barely?] falling short of the 10% minimum requirement. This will certainly spark some debates within the right-wing parties. ?] ?]{!</p>!}
 
@@ -2030,7 +2030,7 @@ max-cards: 4
 
 {!<p class="other">!}[? if lvp_merger_1_timer == 3: Despite this setback, the reform of the <span style="color: #C0A054;">**Golds**</span>'s party structure has made the demands of their guild-masters far less threatening. [? if not stresemann_dead: Stratton?][? if stresemann_dead: Curthose?] and other high-ranking party officials, including the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>'s Penn, have agreed to remove the most radical members of their respective parties to facilitate unification. Meanwhile, the previously moribund Liberal Association, in collaboration with various youth groups, has begun drafting a policy platform and forming local chapters. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 crowns, the golden years continue! ?]{!</p>!}
+{!<p class="other">!}[? if year = 1929 and month = 9: The Vera Exchange has peaked at 381 million crowns, the golden years continue! ?]{!</p>!}
 
 {!<p class="both">!}[? if year = 1929 and month = 10: The initiative against the Serannus Plan has finished collecting its signatures for it to become a referendum, with [+ young_plan_signatures +]% of eligible voters signing[? if young_plan_signatures >= 10 : [? if young_plan_signatures < 11 : &nbsp;barely?] exceeding the 10% minimum requirement.?][? if young_plan_signatures < 10 : [? if young_plan_signatures > 9 :&nbsp;barely?] falling short of the 10% minimum requirement. This will certainly spark some debates within the right-wing parties. ?] ?]{!</p>!}
 

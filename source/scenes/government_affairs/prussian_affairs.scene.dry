@@ -48,9 +48,9 @@ on-arrival: heartland_purge += 1; heartland_police_loyalty += 0.05; nationalism 
 The bureaucracy is deeply <span style="color: #808080;">reactionary</span>, and many abuse their power to favor the <span style="color: #3E88B3;">political right</span>. By removing the <span style="color: #3E88B3;">pro-monarchy</span> and <span style="color: #7A3C00;">pro-dictatorship</span> elements, we can democratize it. Some of our opponents claim that we are infringing on individual freedoms, but perhaps the security of the republic requires it.
 
 @ban_sa
-view-if: royalist_urgency >= 3 and loyalist_banned == 0
-choose-if: not loyalist_ban_repealed and (heartland_coup_win or not otl_heartland_coup_seen)
-unavailable-subtitle: [+ chancellor +] has threatened a <i>Commonwealth intervention</i>, if we don't follow the orders of his decree.
+view-if: loyalist_banned == 0
+choose-if: royalist_urgency >= 3 and not loyalist_ban_repealed and (heartland_coup_win or not otl_heartland_coup_seen)
+unavailable-subtitle: [? if royalist_urgency < 3: The <span style="color: #7A3C00;">**Loyalists**</span> have not yet given the public cause enough for a ban. ?][? if royalist_urgency >= 3: [+ chancellor +] has threatened a <i>Commonwealth intervention</i>, if we don't follow the orders of his decree. ?]
 on-arrival: loyalist_strength *= 0.9; loyalist_strength *= 0.75 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 1 if heartland_police_loyalty >= 0.75; loyalist_banned_pro = 0 if heartland_police_loyalty < 0.75; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; coup_progress -= 2 if coup_progress >= 6
 
 As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?] 

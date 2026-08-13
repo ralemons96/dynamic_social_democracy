@@ -22,7 +22,7 @@ face-image: img/portraits/Joseph_Hawkins.jpg
 
 [? if concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our lack of progress toward a Free Worship Accord, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins's resignation for his unwillingness to force the <span style="color: #c00000;">**Marchers**</span> to take action. ?]
 
-[? if secularized_a or abortion_rights or homosexual_rights and not concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our progress on rights for women and homosexuals, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins from the chairmanship, citing his unwillingness to obstruct these changes. ?]
+[? if secularized_a or abortion_rights or homosexual_rights and not concordat_explode and not marcher_break_toleration and unionist_relation >= 40: Due to our increasingly socially progressive stances, the clerical wing of the <span style="color: #000000;">Unionist Party</span> has forced Hawkins from the chairmanship, citing his unwillingness to obstruct these changes. ?]
 
 Aurelian Renck, a devoted Faithful priest is expected to succeed him, but Adam Sedgewick is once again running for the party's leadership. 
 
