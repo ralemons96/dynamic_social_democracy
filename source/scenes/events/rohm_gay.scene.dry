@@ -42,6 +42,7 @@ on-arrival: guild_royalist -= 2; left_dissent -= 5; wholesome_point += 1; rohm_j
 It would be in poor taste for a party that opposes the Bloodright Statute to hound a man over the blood in his veins—the Commonwealth long ago made its peace with whom a man loves, and we will not trade one bigotry for another. We’ve taken the high road, but many within our party feel we’ve missed an opportunity.
 
 @persecute_rohm
+achievement: heuchelei
 unavailable-subtitle: Despite the widespread distaste for falsified blood-records, the judiciary is too reactionary to be able to convict a top <span style="color: #7A3C00;">Royalist</span>.
 choose-if: judicial_reform >= 3
 on-arrival: rohm_explode = 1; burgher_royalist -= 2; guild_royalist -= 4; landed_royalist -= 2; faithful_royalist -= 4; left_dissent += 3; loyalist_strength *= 0.9; dufour_angry_bruning -= 10

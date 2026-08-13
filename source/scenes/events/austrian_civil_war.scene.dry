@@ -35,7 +35,7 @@ The uprising lasted for no more than a few days before it was crushed. The Liber
 @long_war
 title: It is a civil war.
 view-if: sdapo_strength = 5 or sdapo_strength = 4
-on-arrival: austria_civil_war = 1
+on-arrival: austria_civil_war = 1; long_war = 1
 
 Neither side is backing down, and the <span style="color: #A50034;">**Liberty Movement**</span> have formed an alternative government after defeating the government troops in some cities. the Freehold is in a state of civil war.
 
@@ -48,7 +48,7 @@ Neither side is backing down, and the <span style="color: #A50034;">**Liberty Mo
 title: As a party, the <span style="color: #c00000;">**Marchers**</span> will provide the <span style="color: #A50034;">**Liberty Movement**</span> with support.
 subtitle: -2 resources
 choose-if: resources >= 2
-on-arrival: resources -= 2; sdapo_strength += 1
+on-arrival: long_war_2 = 1; resources -= 2; sdapo_strength += 1
 go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
 
 The <span style="color: #c00000;">**Marchers**</span> raises its resources to provide arms and volunteers for the <span style="color: #A50034;">**Liberty Movement**</span>.
@@ -64,7 +64,7 @@ We provide diplomatic and some financial and material support to the <span style
 @force_peace
 title: Can we bring the sides together for a peace?
 view-if: marcher_in_government and foreign_minister_party = "Marcher" and sdapo_strength = 5
-on-arrival: austria_peace = 1; pro_republic += 3; coup_progress -= 1; ddp_left += 2; gold_left += 2; lvp_left += 2
+on-arrival: austria_peace = 1; force_peace = 1; pro_republic += 3; coup_progress -= 1; ddp_left += 2; gold_left += 2; lvp_left += 2
 
 The Freehold government obviously sees us as biased, so there is no way they will let us host peace negotiations. However, negotiations begin nonetheless. On neutral ground, with <span style="color: #002654;">Ethia</span> as the <span style="color: #7A3C00;">Freehold monarchists</span>' protector and the Commonwealth as the <span style="color: #A50034;">**Liberty Movement**</span>'s, a peace deal is hammered out. The <span style="color: #A50034;">Reformists</span> are disarmed and give up all pretense of revolution, while the <span style="color: #ABDDA4;">right-wing</span> paramilitaries are also disarmed. Dictatorship ends, and normal government is restored, with free elections.
 

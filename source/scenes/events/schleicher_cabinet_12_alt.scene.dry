@@ -511,6 +511,7 @@ Meanwhile, in defiance of the indefinite adjournment of the Assembly, the <span 
 The next few days will be chaotic—and decisive for the Commonwealth as a whole.
 
 - @z_break
+- @schleicher_cabinet_13_pre_pre
 
 @spd_med
 title: Staal attempts to negotiate with us.
@@ -556,6 +557,7 @@ Meanwhile, in defiance of the indefinite adjournment of the Assembly, the <span 
 However, perhaps we have overestimated our strength—strikes rarely last with unemployment so high, especially with Staal’s sympathizers embedded within the Free Guilds themselves.
 
 - @z_break
+- @schleicher_cabinet_13_pre_pre
 
 @spd_lose
 title: Our protests are ineffective.
@@ -617,3 +619,9 @@ Perhaps it's our time to strike?
 - @civil_war: The <span style="color: #c00000;">**Marchers**</span> stands with the <span style="color: #700000;">**Collectivists**</span>.
 - @fight_mild
 - @do_nothing: This isn't our fight.
+
+@schleicher_cabinet_13_pre_pre
+title: Staal's Turn to Play
+subtitle: Will the general hold firm?
+view-if: not unionist_against_staal
+go-to: schleicher_cabinet_13

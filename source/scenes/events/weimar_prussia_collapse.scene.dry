@@ -122,7 +122,7 @@ subtitle: <span style="color: #c00000;">**Marchers**</span> + <span style="color
 view-if: ddp_relation >= 60 and ddp_ideology == "Left" and ((collectivist_relation >= 60 and collectivist_leader == "Halsmark") or (collectivist_relation >= 40 and collectivist_leader == "Conciliators")) and not lvp_formed
 unavailable-subtitle: <span style="color: #c00000;">Marchers</span> + <span style="color: #700000;">Collectivists</span> + <span style="color: #D3C24D;">[+ ddp_name +]</span>[? if sapd_formed:&nbsp;+ <span style="color: #9B0000;">Laborists</span>?] ([+ progressive_coalition_heartland +]%) - Only on stranger paths.
 choose-if: secret_mode = 1
-on-arrival: commons_marcher *= 100; commons += 1000; super_secret_mode = 1; heartland_leader = "joavig"
+on-arrival: commons_marcher *= 100; commons += 1000; super_secret_mode = 1; heartland_leader = "Joavig"
 
 Super secret mode has been enabled.
 

@@ -1000,7 +1000,7 @@ go-to:  thalmann_victory_2 if rubicon and (dynamic_mode or historical_mode or di
 
 @thalmann_victory_2
 go-to: thalmann_democrat if presidential_powers; thalmann_civil_war if not presidential_powers
-achievement: nach_schleicher_wir
+achievement: nach_staal_wir
 
 @thalmann_civil_war
 on-arrival: collectivist_relation = 80
@@ -1023,7 +1023,7 @@ go-to: nazis_lose if not rubicon; nach_schleicher_wir if rubicon
 The propertied and right-wing parties are up in arms about the prospect of a <span style="color: #700000;">**Collectivist**</span> president, although Munzer and the <span style="color: #700000;">**Collectivists**</span> conciliators take pains to assure the Commonwealth of their commitment to the democratic republic. There is no energy for a coup against the new president. The Burghers will have to live with whatever comes.
 
 @nach_schleicher_wir
-achievement: nach_schleicher_wir
+achievement: nach_staal_wir
 go-to: nazis_lose
 
 @eckener_win

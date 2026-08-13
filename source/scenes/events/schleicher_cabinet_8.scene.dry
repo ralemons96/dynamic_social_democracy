@@ -97,6 +97,7 @@ Q.staal_approval += 2;
 Q.army_militancy += 2;
 
 Q.mefo_bills = 1;
+Q.inflation += 0.5;
 Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg
@@ -147,6 +148,7 @@ Q.staal_approval += 1;
 Q.army_militancy += 1.5;
 
 Q.mefo_bills = 1;
+Q.inflation += 0.5;
 Q.dsu_policy += 1;
 !}
 face-image: img/portraits/SchachtHjalmar.jpg

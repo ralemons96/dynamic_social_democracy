@@ -343,9 +343,7 @@ if (Q.far_right_force >= Q.democracy_force && Q.far_right_force >= Q.state_force
     }
     if (Q.loyalist_force >= Q.warden_force) {
         Q.loyalist_paramilitary = 1;
-        Q.warden_paramilitary = 0;
     } else {
-        Q.warden_paramilitary = 1;
         Q.loyalist_paramilitary = 0;
     }
     Q.far_right_paramilitary = 1;
@@ -994,6 +992,24 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
     // Empire lever (lift 4): each turn the Empire's posture drifts toward our standing -
     // strength makes peace credible, weakness invites war - and our standing cools or
     // inflames the Royalists' nerve.
+    // Recompute the Convention metrics every turn (mirrors the Status-screen formulas)
+    // so ending_slides never sees stale or default values.
+    var _stab = (Q.pro_republic || 0)
+        - 4 * (Q.coup_progress || 0)
+        - 3 * (Q.capital_strike_progress || 0)
+        - Math.max(0, (Q.disfavored || 0) - 8)
+        + Math.max(-5, Math.min(5, (Q.economic_growth || 0)));
+    Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
+    var _ready = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0)
+        + (Q.banner_strength || 0) * (Q.banner_militancy || 0);
+    Q.military_readiness = Math.round(_ready);
+    var _readyNorm = Math.min(100, Q.military_readiness / 4);
+    Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
+        0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
+    var _reunion = 0.4 * (Q.empire_posture || 0) + 0.25 * (Q.magi_balance || 0)
+        + 0.2 * Math.min(100, (Q.royalist_relation || 0) * 2)
+        + 0.15 * (Q.concord_formed ? 100 : 0);
+    Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
     if (Q.empire_posture === undefined) Q.empire_posture = 50;
     if (Q.commonwealth_standing === undefined) Q.commonwealth_standing = 50;
     Q.empire_posture = Math.max(0, Math.min(100, Q.empire_posture + Math.round((Q.commonwealth_standing - Q.empire_posture) * 0.15)));

@@ -559,7 +559,7 @@ Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Roy
 @westarp
 title: Westmore, one of DuFour's close friends, will attempt to rally conservative forces for DuFour.
 on-arrival: westarp_used = 1; dufour_support += 1
-view-if: not marcher_campaign_1932
+view-if: not marcher_candidate_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu
 
@@ -828,7 +828,7 @@ Unfortunately for the DuFour campaign, the pro-<span style="color: #7A3C00;">Roy
 @westarp_op
 title: Westmore, one of DuFour's close friends, will attempt to rally conservative forces for DuFour.
 on-arrival: westarp_used = 1; dufour_support += 1
-view-if: not marcher_campaign_1932
+view-if: not marcher_candidate_1932
 max-visits: 1
 go-to: bourgeois_campaign_menu_op
 

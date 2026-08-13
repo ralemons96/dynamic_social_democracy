@@ -667,7 +667,7 @@ achievement: der_beliebte_prasident
 go-to: calculation
 
 @calculation
-go-to: hindenburg_wins if dufour_majority == 1; thalmann_wins if thalmann_majority == 1; hitler_wins if royalist_president_majority == 1; braun_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Bristol"; duesterburg_wins if duesterburg_majority == 1; rosenfeld_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Pendrigon"; eckener_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Eckhart"; reactionary_candidate_wins if (reactionary_candidate_1_majority or reactionary_candidate_2_majority); no_majority_round1 if any_majority == 0
+go-to: hindenburg_wins if dufour_majority == 1; thalmann_wins if thalmann_majority == 1; hitler_wins if royalist_president_majority == 1; braun_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Bristol"; rosenfeld_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Pendrigon"; eckener_wins if marcher_president_majority == 1 and marcher_candidate_1932 == "Eckhart"; reactionary_candidate_wins if (reactionary_candidate_1_majority or reactionary_candidate_2_majority); no_majority_round1 if any_majority == 0
 
 Results:
 
@@ -705,7 +705,7 @@ There is no majority in this round. In the second round, any candidate who wins 
 
 @round2_menu
 on-arrival: {!
-if (Q.unionist_success_marcher == 2) Q.unionist_support_marcher = 0;
+if (Q.unionist_support_marcher == 2) Q.unionist_support_marcher = 0;
 if ((Q.lvp_support_marcher && Q.lvp_formed || (Q.gold_support_marcher || Q.ddp_support_marcher && (Q.liberal_reactionary_candidate_1932_name == "Gesling" || Q.liberal_vote - Q.ddp_votes < 8))) && Q.liberal_reactionary_candidate_1932 && !Q.lib_drop_out_bourgeois && !Q.lib_drop_out) Q.lib_drop_out_2 = 1;
 if (Q.unionist_support_marcher == 1 && Q.center_reactionary_candidate_1932 && !Q.unionist_drop_out_bourgeois && !Q.unionist_drop_out) Q.unionist_drop_out_2 = 1;
 !}
@@ -1089,7 +1089,7 @@ We have switched our support to [+ reactionary_candidate_1932 +].
 view-if: not dufour_run and secondary_reactionary_candidate_1932 and secondary_reactionary_candidate_1932 != "Westmore" and secondary_reactionary_candidate_1932 != "Lethmoor" and not (lib_drop_out_bourgeois and liberal_reactionary_candidate_1932_name == secondary_reactionary_candidate_1932) and not (unionist_drop_out_bourgeois and center_reactionary_candidate_1932_name == secondary_reactionary_candidate_1932) and not (lib_drop_out_2 and liberal_reactionary_candidate_1932_name == secondary_reactionary_candidate_1932) and not (unionist_drop_out_2 and center_reactionary_candidate_1932_name == secondary_reactionary_candidate_1932) and marcher_choice != secondary_reactionary_candidate_1932
 on-arrival: marcher_support_reactionary = 1; marcher_support_reactionary_2 = 1; marcher_campaign = 0; braun_campaign = 0; rosenfeld_campaign = 0; eckener_campaign = 0; unionist_choice = secondary_reactionary_candidate_1932 if marcher_campaign; ddp_choice = secondary_reactionary_candidate_1932 if marcher_campaign; lvp_choice = secondary_reactionary_candidate_1932 if marcher_campaign; gold_choice = secondary_reactionary_candidate_1932 if marcher_campaign; marcher_choice = secondary_reactionary_candidate_1932; left_dissent += 15; labor_dissent += 10; dufour_angry -= 40; commons_marcher -= 3; commons_collectivist += 3; disfavored_marcher -= 3; disfavored_collectivist += 3
 
-We have switched our support to [+ reactionary_candidate_1932 +].
+We have switched our support to [+ secondary_reactionary_candidate_1932 +].
 
 - @round2_vote: Second round voting begins next month.
 
@@ -1101,7 +1101,7 @@ Q.presidential_election_r2_trigger = 1;
 if (!Q.dufour_run) {
     if ((Q.lvp_support_marcher && Q.lvp_formed || (Q.gold_support_marcher || Q.ddp_support_marcher && (Q.liberal_reactionary_candidate_1932_name == "Gesling" || Q.liberal_vote - Q.ddp_votes < 8))) && Q.   liberal_reactionary_candidate_1932 && !Q.lib_drop_out_bourgeois && !Q.lib_drop_out) Q.lib_drop_out_2 = 1;
     if (Q.unionist_support_marcher == 1 && Q.center_reactionary_candidate_1932 && !Q.unionist_drop_out_bourgeois && !Q.unionist_drop_out) Q.unionist_drop_out_2 = 1;
-    if (((!Q.reactionary_candidate_1932 && !Q.secondary_reactionary_candidate_1932) || (Q.lib_drop_out_2 || Q.lib_drop_out_bourgeois || !Q.liberal_reactionary_candidate_1932) && (Q.   z_drop_out_2 || Q.unionist_drop_out_bourgeois || !Q.center_reactionary_candidate_1932)) && !Q.westarp_unlock_pres && !Q.vorbeck_unlock_pres && (Q.traditionalist_ideology == "Moderate" || Q.kvp_formed)) {
+    if (((!Q.reactionary_candidate_1932 && !Q.secondary_reactionary_candidate_1932) || (Q.lib_drop_out_2 || Q.lib_drop_out_bourgeois || !Q.liberal_reactionary_candidate_1932) && (Q.unionist_drop_out_2 || Q.unionist_drop_out_bourgeois || !Q.center_reactionary_candidate_1932)) && !Q.westarp_unlock_pres && !Q.vorbeck_unlock_pres && (Q.traditionalist_ideology == "Moderate" || Q.kvp_formed)) {
         Q.vorbeck_run = 1;
         Q.vorbeck_fallback = 1;
         Q.vorbeck_trolling = 1;

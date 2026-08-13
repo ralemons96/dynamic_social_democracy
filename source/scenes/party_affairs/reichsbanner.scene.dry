@@ -64,7 +64,7 @@ view-if: womens_rights >= 4 and sender_advisor == 1 and iron_front_formed == 1
 on-arrival: resources -= 1; banner_militancy *= 0.85; banner_strength += 400; women_in_banner = 1; banner_militancy += 0.05 if repealed_175; banner_militancy += 0.04 if trans_rights; banner_militancy += 0.02 if reformed_183;
 go-to: homosexual if trans_rights or repealed_175 or reformed_183
 max-visits: 1
-achievement: women_reichsbanner
+achievement: women_banner
 
 The suggestion to allow women into the Banners is ridiculed by most, except for Toni Sennet. But this is an exceptional time, and we need anyone who is willing to join. Thus, we organize specialized units for women, [? if homosexual_rights > 0: and even some covert units for <span style="color: deepskyblue;">tran</span><span style="color: linen;">sse</span><span style="color: lightpink;">xuals</span> and <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">os</span><span style="color: green;">ex</span><span style="color: blue;">ua</span><span style="color: purple;">ls</span>?].
 
