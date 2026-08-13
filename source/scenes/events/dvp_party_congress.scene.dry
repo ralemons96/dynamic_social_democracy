@@ -39,7 +39,7 @@ Nonetheless, this is still excellent news for us and our relations with the <spa
 on-arrival: gold_leader = "Eikenvorst"; gold_right += 5; gold_relation -= 5; guild_gold -= 2; burgher_gold -= 2; pro_republic -= 3; ddp_right += 1; ddp_cohesion -= 0.5; liberal_cooperation -= 2; bourgeois_cooperation -= 2
 face-image: img/portraits/ernst_scholz.jpg
 
-Reginald Eikenvorst has won the vote to succeed Stratton for the chairmanship. The left-wing of the <span style="color: #C0A054;">**Golds**</span> is left increasingly isolated and powerless in party affairs. The guild-masters now possesses full control of the former liberal party, and will now oversee its decline in the face of the depression.
+Reginald Eikenvorst has won the vote to succeed Stratton for the chairmanship. The left-wing of the <span style="color: #C0A054;">**Golds**</span> is left increasingly isolated and powerless in party affairs. The guild-masters now possesses full control of the former liberal party, and will now oversee its decline in the face of the calamity.
 
 This is bad news for our relationship with the <span style="color: #C0A054;">**Golds**</span>, and makes the formation of future governments involving us nearly impossible[? if in_grand_coalition:, and the current government untenable?].
 

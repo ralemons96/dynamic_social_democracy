@@ -12,7 +12,7 @@ The <span style="color: #7A3C00;">Royalists</span>' rise is unprecedented for a 
 
 # Harsch p. 106-109
 
-The Free Guild researcher Sevrin Gaiger has written an article titled "Panic in the middle class", in which he describes the <span style="color: #7A3C00;">Royalists</span> as being primarily a movement of the middle class, especially lower-middle civil servants and professionals who fear the proletarianizing effects of the economic calamity. Gaiger argues that the middle class has been economically and politically unmoored, long split between many competing parties, squeezed between the Major Guilds and the proletariat. The mix of nationalist, anti-democratic, and loosely anti-capitalist rhetoric of the <span style="color: #7A3C00;">Royalists</span> appeals to this group, perhaps only temporarily before the middle class discovers its true class interests.
+The Free Guild researcher Sevrin Gaiger has written an article titled "Panic in the middle class", in which he describes the <span style="color: #7A3C00;">Royalists</span> as being primarily a movement of the middle class, especially lower-middle civil servants and professionals who fear the economic calamity will sink them into the Commons. Gaiger argues that the middle class has been economically and politically unmoored, long split between many competing parties, squeezed between the Major Guilds and the Commons. The mix of nationalist, anti-democratic, and loosely anti-capitalist rhetoric of the <span style="color: #7A3C00;">Royalists</span> appeals to this group, perhaps only temporarily before the middle class discovers its true class interests.
 
 By contrast, the theoretician Alexander Schifrin understands the <span style="color: #7A3C00;">Royalists</span> as a new, unprecedented type of political movement, a <span style="color: #7A3C00;">Sovereigntist</span> party that has non-economic appeal across class lines. He calls to attention its use of violent propaganda and street demonstrations as central to their rise.
 
@@ -41,7 +41,7 @@ The <span style="color: #7A3C00;">Royalists</span> are the fault of the petty pr
 @p2
 on-arrival: peoples_party_support += 1; knight_strength += 5; left_strength -= 3; left_dissent += 4; center_dissent += 3;
 
-We can combat the <span style="color: #7A3C00;">Royalists</span> by adopting a "People's Party" posture that might compete for support among the middle class. In order to do this, we can create a new and inclusive vision of the party that encompasses all people who work for a living, which is almost everyone in the country save the aristocrats and top capitalists.
+We can combat the <span style="color: #7A3C00;">Royalists</span> by adopting a "People's Party" posture that might compete for support among the middle class. In order to do this, we can create a new and inclusive vision of the party that encompasses all people who work for a living, which is almost everyone in the country save the aristocrats and the great guild-masters.
 
 [? if peoples_party = 0 : This effort faces great opposition from the left and center of our party, who would prefer a party focused on the working class. To fully adopt the vision of a people's party, we should increase our campaigning among other demographics. ?]
 

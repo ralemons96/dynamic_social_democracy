@@ -1,5 +1,5 @@
 title: <span style="color: #3E88B3;">**Traditionalists**</span> Congress
-subtitle: The economic depression has radicalized the party...
+subtitle: The economic calamity has radicalized the party...
 view-if: year = 1930 and month = 11 and traditionalist_leader = "Hargen"
 on-arrival: pro_republic += traditionalist_votes if pro_republic < 50
 max-visits: 1

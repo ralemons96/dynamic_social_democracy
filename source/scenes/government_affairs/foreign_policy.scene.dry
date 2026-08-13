@@ -130,7 +130,7 @@ Immediately, <span style="color: #002654;">Ethia</span> and other neighboring co
 
 @negotiate
 title: Negotiate regarding our remaining obligations from the Treaty of Etaluxia.
-subtitle: [? if young_plan_seen == 1 and veran_crash_seen : After passing the Serannus Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further, given the economic depression. ?][? if young_plan_seen == 1 and not veran_crash_seen : After passing the Serannus Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further. ?]
+subtitle: [? if young_plan_seen == 1 and veran_crash_seen : After passing the Serannus Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further, given the economic calamity. ?][? if young_plan_seen == 1 and not veran_crash_seen : After passing the Serannus Plan, <span style="color: #002654;">Ethia</span> has committed to withdrawing from the Exetar. Now, we must see if they can reduce our War Loans further. ?]
 view-if: war_loans > -2 and reparations_negotiation < 3
 on-arrival: west_relation += 1; reparations_negotiation += 1; reparations_negotiation += 1 if pacifism >= 3; reparations_negotiation += 1 if nationalism <= 50; reparations_negotiation += 1 if west_relation >= 3
 

@@ -9,7 +9,7 @@ face-image: img/Kollwitz_Hospital.jpg
 
 = The Hunger Chancellor
 
-People are calling Chancellor [+ chancellor +] the Hunger Chancellor because of his perceived callousness in the face of the depression. [? if chancellor_party == "Marcher" : This is obviously a very bad sign for us. ?]
+People are calling Chancellor [+ chancellor +] the Hunger Chancellor because of his perceived callousness in the face of the calamity. [? if chancellor_party == "Marcher" : This is obviously a very bad sign for us. ?]
 
 [? if marcher_toleration == 1 : As we are currently tolerating the [+ chancellor +] government, this could very well reflect badly on us. ?]
 

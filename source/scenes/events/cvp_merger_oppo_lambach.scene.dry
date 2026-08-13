@@ -210,7 +210,7 @@ Democracy – Favors a more parliamentary system, with presidential decrees as a
 
 @economy
 title: Economic Policy
-subtitle: The debate over agriculture, welfare, and the depression.
+subtitle: The debate over agriculture, welfare, and the calamity.
 view-if: not concord_economy and concord_reparations and concord_monarchy
 on-arrival: concord_economy = 1
 go-to: economy_right if concord_traditionalist_balance < 20; economy_moderate if concord_traditionalist_balance >= 20 and concord_traditionalist_balance < 30; economy_left if concord_traditionalist_balance >= 30

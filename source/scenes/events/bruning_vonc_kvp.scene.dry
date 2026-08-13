@@ -33,7 +33,7 @@ subtitle: We would essentially provide "toleration" to a propertied government.
 view-if: cordon_sanitaire >= 50
 on-arrival: welfare -= 1; left_dissent += 10; labor_dissent += 10; commons_marcher *= 0.9; disfavored_marcher *= 0.9; disfavored_royalist += 5; disfavored_collectivist += 5; commons_royalist += 5; commons_collectivist += 3; commons_marcher -= 4 if welfare < 0; disfavored_marcher -= 5 if welfare < 0; pro_republic -= 4; collectivist_relation -= 8; landed_kvp += 3; landed_traditionalist -= 3; guild_kvp += 3; guild_traditionalist -= 3; burgher_kvp += 3; burgher_traditionalist -= 3; marcher_toleration_kvp = 1
 
-We try to convince the workers that this policy is necessary in order to maintain a stable parliamentary government, and to deal with the fiscal consequences of the depression. Still, this policy provides excellent recruiting fodder for <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Collectivists**</span>. 
+We try to convince the workers that this policy is necessary in order to maintain a stable parliamentary government, and to deal with the fiscal consequences of the calamity. Still, this policy provides excellent recruiting fodder for <span style="color: #7A3C00;">Royalists</span> and <span style="color: #700000;">**Collectivists**</span>. 
 
 The <span style="color: #0087DC;">**CPP**</span> bolster their credentials against Mallin's "all or nothing" policy.
 

@@ -1,5 +1,5 @@
 title: Global Economic Recovery
-subtitle: Finally, the world economy is leaving the worst throes of the depression.
+subtitle: Finally, the world economy is leaving the worst throes of the calamity.
 view-if: year = 1933 and month >= 6
 on-arrival: disfavored -= 3 if disfavored > 25; disfavored -= 2 if disfavored > 15; disfavored -= 1 if disfavored > 8; commons_royalist -= 5; disfavored_royalist -= 5; inflation += 1.5 if inflation < 0; ddp_left += 4; gold_left += 4; ddp_cohesion += 4; lvp_left += 4
 new-page: true

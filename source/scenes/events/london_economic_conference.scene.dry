@@ -1,5 +1,5 @@
 title: Vera Economic Conference
-subtitle: The great realms convene at Vera to tackle the depression...
+subtitle: The great realms convene at Vera to tackle the calamity...
 view-if: year = 1933 and month >= 6
 on-arrival: london_economic_conference_seen = 1
 new-page: true
@@ -12,7 +12,7 @@ tags: event
 # TODO: if you've recovered, you get economic recovery
 # if you haven't recovered, you can either back devaluation or back Ethia/Fulyria's fixed rates
 
-Ethia has convened the realms at Vera to discuss the state of the continental economy and possible solutions to the ongoing depression. All want to reduce tariffs to encourage trade. But the great powers are at an impasse: <span style="color: #002654;">Ethia</span> and, to a lesser extent, <span style="color: #C8102E;">Fulyria</span> are calling for fixed currency exchange rates, while the merchant-lords of the Allied States want to print new money to stimulate demand, calling for "controlled inflation". The debtor-realms — Ethia and the Commonwealth among them — seek relief on what they owe the Allied States' merchant-lords, who favor continued full payment.
+Ethia has convened the realms at Vera to discuss the state of the continental economy and possible solutions to the ongoing calamity. All want to reduce tariffs to encourage trade. But the great powers are at an impasse: <span style="color: #002654;">Ethia</span> and, to a lesser extent, <span style="color: #C8102E;">Fulyria</span> are calling for fixed currency exchange rates, while the merchant-lords of the Allied States want to print new money to stimulate demand, calling for "controlled inflation". The debtor-realms — Ethia and the Commonwealth among them — seek relief on what they owe the Allied States' merchant-lords, who favor continued full payment.
 
 @economic_recovery
 

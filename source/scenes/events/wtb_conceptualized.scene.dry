@@ -20,9 +20,9 @@ on-display: {!
 
 = Fiscal Stimulus
 
-The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Royalists</span>, and the declining strength of <span style="color: #c00000;">Reformism</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the depression. Chief economist of the Greater Worker's Guild, Valdemar Voss has outlined a national action plan to stimulate the economy through public works, with the backing of Free Guild chairman Raldan Whell and the <span style="color: #c00000;">**Marchers**</span>'s agricultural spokesman, Fritz Bayle.
+The worsening economic situation[? if banking_crisis_seen:, made worse by the Banking Crisis?], the rising strength of the <span style="color: #7A3C00;">Royalists</span>, and the declining strength of <span style="color: #c00000;">Reformism</span> have pushed many in our Labor faction away from the policy stance that nothing can be done to alleviate the calamity. Chief economist of the Greater Worker's Guild, Valdemar Voss has outlined a national action plan to stimulate the economy through public works, with the backing of Free Guild chairman Raldan Whell and the <span style="color: #c00000;">**Marchers**</span>'s agricultural spokesman, Fritz Bayle.
 
-We can either support their attempts to craft a formal plan, committing to an active economic policy, or retain our current course, which holds that nothing can be done to alleviate the depression.
+We can either support their attempts to craft a formal plan, committing to an active economic policy, or retain our current course, which holds that nothing can be done to alleviate the calamity.
 
 - @center_plan: The economic crisis is simply the nature of capitalism; nothing can be done except wait it out.
 - @wtb_plan: Action is needed; we cannot stand idly by while the workers suffer.
@@ -44,7 +44,7 @@ We should use this economic crisis to transform the Commonwealth toward actual <
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10
 
-Voss is promising the workers false hope; nothing can be done to alleviate the depression. We also express concern about the fear of another round of hyperinflation that may result from deficit spending.
+Voss is promising the workers false hope; nothing can be done to alleviate the calamity. We also express concern about the fear of another round of hyperinflation that may result from deficit spending.
 
 @wtb_plan
 view-if: labor_strength >= left_strength and labor_strength >= center_strength

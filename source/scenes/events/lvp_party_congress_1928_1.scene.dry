@@ -143,7 +143,7 @@ new-page: true
 
 = Second <span style="color: #C0A054;">**Golds**</span> Party Congress
 
-The merger of two notoriously factionalized parties has unsurprisingly introduced great dysfunction into the internal politics of the <span style="color: #C0A054;">**Golds**</span>. Not even a unifying figure like Hans Lytton has been able to quell the endless bickering among the party's factions. The economic depression has only deepened these divisions, with disagreements arising even on broadly supported issues like parliamentary government, making unified action nearly impossible.
+The merger of two notoriously factionalized parties has unsurprisingly introduced great dysfunction into the internal politics of the <span style="color: #C0A054;">**Golds**</span>. Not even a unifying figure like Hans Lytton has been able to quell the endless bickering among the party's factions. The economic calamity has only deepened these divisions, with disagreements arising even on broadly supported issues like parliamentary government, making unified action nearly impossible.
 
 While Hans Lytton is expected to secure re-election, scattered candidates across the party could emerge if the majority of the party loses confidence in Lytton's leadership.
 
@@ -155,7 +155,7 @@ view-if: luther_points >= opposition_points
 on-arrival: lvp_relation += 3; lvp_left += 1
 face-image: img/portraits/luther.jpg
 
-Hans Lytton is expectedly re-elected as the leader of the <span style="color: #C0A054;">**Golds**</span>. He will navigate the party through the economic depression and will hopefully try to maintain propertied backing for the Unity system.
+Hans Lytton is expectedly re-elected as the leader of the <span style="color: #C0A054;">**Golds**</span>. He will navigate the party through the economic calamity and will hopefully try to maintain propertied backing for the Unity system.
 
 @luther_fail
 view-if: opposition_points > luther_points
