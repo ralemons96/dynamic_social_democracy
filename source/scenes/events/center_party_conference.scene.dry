@@ -25,7 +25,7 @@ face-image: img/portraits/Ludwig_Renck.jpg
 
 Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He seems to represent a rightward turn from Vael, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
 
-Despite this, Renck is committed to the current constitutional order and the republic. He maintains a close friendship with Eugenio Pacelli, the Papal Nuncio to the Commonwealth, which may prove useful during concordat negotiations.
+Despite this, Renck is committed to the current constitutional order and the republic. He maintains a close friendship with a senior envoy of the Conclave, which may prove useful during concordat negotiations.
 
 @joos
 unavailable-subtitle: Our relations are not good enough.

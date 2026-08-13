@@ -1,4 +1,4 @@
-title: Caepio-Gessler Pact
+title: Caepio-Gresham Pact
 new-page: true
 subtitle: An international treaty for peace
 view-if: year = 1928 and month == 8
@@ -7,9 +7,9 @@ on-arrival: kellogg_briand_seen = 1; kellogg_briand_signed = 1 if foreign_minist
 tags: event
 #face-image: img/portraits/StrattonGustav.jpg
 
-= Caepio-Gessler Pact
+= Caepio-Gresham Pact
 
-A continental treaty has been negotiated which promises an end to war. The pact, brokered between the Allied States — through their envoy Caepio — and Ethia's foreign minister Gessler, promises that its signatories will renounce the use of war, and will settle their disputes peacefully. Realms across the continent are lining up to sign this idealistic agreement — meant above all to ease the tensions that have not stopped festering since the Fall. The Empire-in-Exile, pointedly, has refused to sign, denouncing it as a cage built to bind the rightful heirs of Axton. Its detractors argue that it has no enforcement mechanism, and thus is merely a worthless piece of paper.
+A continental treaty has been negotiated which promises an end to war. The pact, brokered between the Allied States — through their envoy Caepio — and Ethia's foreign minister Gresham, promises that its signatories will renounce the use of war, and will settle their disputes peacefully. Realms across the continent are lining up to sign this idealistic agreement — meant above all to ease the tensions that have not stopped festering since the Fall. The Empire-in-Exile, pointedly, has refused to sign, denouncing it as a cage built to bind the rightful heirs of Axton. Its detractors argue that it has no enforcement mechanism, and thus is merely a worthless piece of paper.
 
 [? if foreign_minister_party = "Gold": Our foreign Minister Gustav Stratton has signed the treaty. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty. Additionally, during [+ foreign_minister +]'s trip to Vera, there has been success in bringing the <span style="color: #002654;">Ethian</span> to consider withdrawing from the Exetar early and to agree to another review of our War Loans by foreign experts. ?][? if foreign_minister_party = "Unionist": Our foreign Minister Joseph Werth has signed the treaty. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty. Additionally, during [+ foreign_minister +]'s trip to Vera, there has been success in bringing the <span style="color: #002654;">Ethian</span> to consider withdrawing from the Exetar early and to agree to another review of our War Loans by foreign experts. ?]
 

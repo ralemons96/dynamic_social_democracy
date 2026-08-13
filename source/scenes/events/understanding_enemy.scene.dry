@@ -14,7 +14,7 @@ The <span style="color: #7A3C00;">Royalists</span>' rise is unprecedented for a 
 
 The Free Guild researcher Sevrin Gaiger has written an article titled "Panic in the middle class", in which he describes the <span style="color: #7A3C00;">Royalists</span> as being primarily a movement of the middle class, especially lower-middle civil servants and professionals who fear the economic calamity will sink them into the Commons. Gaiger argues that the middle class has been economically and politically unmoored, long split between many competing parties, squeezed between the Major Guilds and the Commons. The mix of nationalist, anti-democratic, and loosely anti-capitalist rhetoric of the <span style="color: #7A3C00;">Royalists</span> appeals to this group, perhaps only temporarily before the middle class discovers its true class interests.
 
-By contrast, the theoretician Alexander Schifrin understands the <span style="color: #7A3C00;">Royalists</span> as a new, unprecedented type of political movement, a <span style="color: #7A3C00;">Sovereigntist</span> party that has non-economic appeal across class lines. He calls to attention its use of violent propaganda and street demonstrations as central to their rise.
+By contrast, the theoretician Alexander Shefford understands the <span style="color: #7A3C00;">Royalists</span> as a new, unprecedented type of political movement, a <span style="color: #7A3C00;">Sovereigntist</span> party that has non-economic appeal across class lines. He calls to attention its use of violent propaganda and street demonstrations as central to their rise.
 
 # Harsch p. 77-78
 
@@ -49,7 +49,7 @@ We can combat the <span style="color: #7A3C00;">Royalists</span> by adopting a "
 @p3
 on-arrival: knight_strength += 10; royalist_urgency += 1; neorevisionism += 1;
 
-Working together with other "neorevisionists" such as Sergei Chakhotin, Marrow has developed new propaganda methods to fight the rise of the Royalists. They focus on visually striking symbols and repetitious slogans. Time will tell how effective they are.
+Working together with other "neorevisionists" such as Serge Chatton, Marrow has developed new propaganda methods to fight the rise of the Royalists. They focus on visually striking symbols and repetitious slogans. Time will tell how effective they are.
 
 @p4
 on-arrival: left_strength += 4; center_strength += 4; labor_strength += 4; left_dissent -= 3; center_dissent -= 3; labor_dissent -= 3; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent)

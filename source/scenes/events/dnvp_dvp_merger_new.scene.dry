@@ -181,7 +181,7 @@ Major Factions:
 
 - @glatzel: Florian Vellt.
 - @treviranus: Godwin Trevannon.
-- @raumer: Hollis Raymont.
+- @raumer: Harmon Raymont.
 - @hergt: Cuthbert Hargen.
 - @westarp: Edgar Westmore.
 
@@ -199,11 +199,11 @@ This outcome represents the best potential scenario for us, as Vellt remains ope
 @raumer
 subtitle: Backed by manu prominent guild-masters from the <span style="color: #C0A054;">**Golds**</span>, Raymont aims to strengthen the bourgiois.
 choose-if: winner_fkp = "Raymont"
-on-arrival: fkp_leader = "von-Raymont"; fkp_ideology = "Liberal Conservatism";
+on-arrival: fkp_leader = "Raymont"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/von_raumer.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Hans von Raymont secured the chairmanship by consolidating the party’s pro‑business wing. The moderate Frank Vellt was the first to fall in the competition. In the penultimate round, Godwin Trevannon withdrew and threw his support behind von Raymont, rather than the hard‑line monarchists. Guild-masters and big‑business delegates, long allied with von Raymont, rallied en masse, joined by former <span style="color: #C0A054;">**Golds**</span> deputies and even some Free Guild members, giving him a decisive edge over Kuno von Westmore in the final ballot.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Harmon Raymont secured the chairmanship by consolidating the party’s pro‑business wing. The moderate Frank Vellt was the first to fall in the competition. In the penultimate round, Godwin Trevannon withdrew and threw his support behind von Raymont, rather than the hard‑line monarchists. Guild-masters and big‑business delegates, long allied with von Raymont, rallied en masse, joined by former <span style="color: #C0A054;">**Golds**</span> deputies and even some Free Guild members, giving him a decisive edge over Kuno von Westmore in the final ballot.
 
 This represents an interesting development for us. While von Raymont is firmly linked to the guild-master wing of <span style="color: #00C0FF;">**FCP**</span>, he has demonstrated firm support for Unity Coalitions in previous governments. He even has a good working relationship with Vendrin Bell. However, he would still be active in trying to limit our policies in any future government. Additionally, many of his own supporters in the guild-master wing would seek to prevent any coalition with us, so cooperation will still be more difficult than it was with Stratton's <span style="color: #C0A054;">**Golds**</span>. 
 
@@ -214,7 +214,7 @@ on-arrival: fkp_leader = "Trevannon"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/Trevannon.jpg
 
-After a protracted, multi‑round ballot at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Godwin Trevannon secured the party chairmanship. Building a coalition of moderate <span style="color: #3E88B3;">**Traditionalists**</span> dissidents, rural‑Chamber delegates, and a sprinkling of pragmatic ex‑<span style="color: #C0A054;">**Golds**</span> members allowed him to do well in the first round. Frank Vellt, representing the party’s moderates, was the first to be eliminated. Then industrial conservatives around Hans von Raymont, unwilling to back the hard‑line monarchists, shifted en masse to Trevannon by the penultimate ballot, giving him a clear path to the chairmanship against Kuno von Westmore.
+After a protracted, multi‑round ballot at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Godwin Trevannon secured the party chairmanship. Building a coalition of moderate <span style="color: #3E88B3;">**Traditionalists**</span> dissidents, rural‑Chamber delegates, and a sprinkling of pragmatic ex‑<span style="color: #C0A054;">**Golds**</span> members allowed him to do well in the first round. Frank Vellt, representing the party’s moderates, was the first to be eliminated. Then industrial conservatives around Harmon Raymont, unwilling to back the hard‑line monarchists, shifted en masse to Trevannon by the penultimate ballot, giving him a clear path to the chairmanship against Kuno von Westmore.
 
 Many in our party have signaled their resigned acceptance of Trevannon. While they remain deeply suspicious of his nationalist rhetoric and austere economic agenda, they acknowledge he is less hostile to the Unity order than the outright monarchists within his party. Hopefully, he will act as a bulwark against the rising [? if traditionalist_ideology == "Radical": <span style="color: #3E88B3;">far</span>?][? if traditionalist_ideology == "Moderate": <span style="color: #003755;">far</span>?]-<span style="color: #3E88B3;">right</span> in the country.
 
@@ -225,7 +225,7 @@ on-arrival: fkp_leader = "Hargen"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/OskarHergt.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Cuthbert Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Vellt was the first to go, followed by Hans von Raymont, whose guild-master backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Godwin Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Cuthbert Hargen secured the chairmanship by uniting the party’s monarchist‑conservative wing. The moderate Frank Vellt was the first to go, followed by Harmon Raymont, whose guild-master backers then fragmented between Trevannon and Hargen. In the penultimate round, Kuno von Westmore withdrew and threw his delegates behind Hargen rather than the centrist faction led by Godwin Trevannon. Agrarian conservatives, church‑aligned delegates, and a sizable bloc of <span style="color: #3E88B3;">**Traditionalists**</span> conservatives gave him the edge over Trevannon in the final ballot.
 
 Hargen’s victory has seen our relations with the <span style="color: #00C0FF;">**FCP**</span> sour. His entrenched monarchism and hostility toward democratic processes have already led him to explore increased cooperation with the far right, including informal contacts with the Wardens. Genuine legislative collaboration now seems all but impossible, making building coalitions in the future increasingly difficult.
 
@@ -236,6 +236,6 @@ on-arrival: fkp_leader = "Westmore"; fkp_ideology = "National Conservatism";
 call: dnvp_dvp_formed
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Vellt was the first to be eliminated. In subsequent ballots, moderate conservatives around Hans von Raymont and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Cuthbert Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Godwin Trevannon.
+After several rounds of elimination voting at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Kuno von Westmore prevailed to win the chairmanship by rallying the party’s rural and ethno‑nationalist wings. The moderate Frank Vellt was the first to be eliminated. In subsequent ballots, moderate conservatives around Harmon Raymont and ex‑<span style="color: #C0A054;">**Golds**</span> figures split their votes between Trevannon and Hargen, while Westmore consolidated support from his agrarian‐traditionalist bloc. In the penultimate round, Cuthbert Hargen withdrew and threw his delegates behind Westmore rather than the centerists led by Godwin Trevannon.
 
 Westmore’s ascension means that the right is now effectively devoid of democratic parties. His explicit blood-purism and paramilitary sympathies signal a dangerous shift toward radical exclusion and street‑tier violence. This will make stabilizing the republic increasingly difficult, as the right increasingly rejects the republic.

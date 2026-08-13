@@ -13,7 +13,7 @@ go-to: weltbuhne_dropped if judicial_reform >= 3; weltbuhne_convicted if judicia
 @weltbuhne_convicted
 on-arrival: west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; nationalism += 5; pacifism -= 1; ddp_right += 0.5; lvp_right += 1
 
-Finally, a court has made a decision in the Brocksby case, sentencing the editor Carl Ostwick and journalist Walter Kreiser to prison for 18 months for revealing military secrets. There is outrage in the international community, who see this as yet another example of the Commonwealth's slide into militarism.
+Finally, a court has made a decision in the Brocksby case, sentencing the editor Carl Ostwick and journalist Walton Kerris to prison for 18 months for revealing military secrets. There is outrage in the international community, who see this as yet another example of the Commonwealth's slide into militarism.
 
 - @drop_case: Wait! Maybe we can pardon the journalists?
 - @root: Accept the court's decision.
@@ -24,10 +24,10 @@ view-if: marcher_in_government
 unavailable-subtitle: We do not control the Justice Ministry.
 on-arrival: west_relation += 1; east_relation += 1; reparations_negotiation += 1; pacifism += 1; ddp_left += 0.5; dufour_angry += 5
 
-With our control of the Justice Ministry, we are able to pardon Ostwick and Kreiser. This restores some of our reputation with pacifists and the international community.
+With our control of the Justice Ministry, we are able to pardon Ostwick and Kerris. This restores some of our reputation with pacifists and the international community.
 
 
 @weltbuhne_dropped
 on-arrival: west_relation += 1; east_relation += 1; reparations_negotiation += 1; ddp_relation += 3; pacifism += 1; ddp_left += 1.5; lvp_left += 1; dufour_angry += 5
 
-Finally, a judge has made a decision in the Brocksby case, clearing the editor Carl Ostwick and journalist Walter Kreiser of all charges! The international community and pacifists within the Commonwealth are rejoicing in the verdict. Finally the Commonwealth can be said to have overcome its old imperial militarism.
+Finally, a judge has made a decision in the Brocksby case, clearing the editor Carl Ostwick and journalist Walton Kerris of all charges! The international community and pacifists within the Commonwealth are rejoicing in the verdict. Finally the Commonwealth can be said to have overcome its old imperial militarism.

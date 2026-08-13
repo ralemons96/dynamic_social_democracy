@@ -10,18 +10,18 @@ new-page: true
 
 With Westmore elected president, he can no longer serve as party chairman. An emergency party congress is therefore convened to choose his successor. Optimism runs high within the party—one of their own now holds the presidency, and they possess the power to exclude the <span style="color: #c00000;">**Marchers**</span> from government positions entirely.
 
-Edras Lenmoor-Jung, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>’s small Faithful wing, is Westmore’s chosen successor. His main rival is Emeric Cheaping, with links to <span style="color: #0087DC;">People's Conservative</span> faction and a former Interior Minister under Croft. Both are widely regarded as unifying figures and share a similar ideological outlook; the outcome of the vote is unlikely to significantly alter the party’s overall direction.
+Edras Lenmoor, leader of the <span style="color: #3E88B3;">**Traditionalists**</span>’s small Faithful wing, is Westmore’s chosen successor. His main rival is Emeric Cheaping, with links to <span style="color: #0087DC;">People's Conservative</span> faction and a former Interior Minister under Croft. Both are widely regarded as unifying figures and share a similar ideological outlook; the outcome of the vote is unlikely to significantly alter the party’s overall direction.
 
-- @lejeune_jung: Edras Lenmoor-Jung is elected.
+- @lejeune_jung: Edras Lenmoor is elected.
 - @keudell: Emeric Cheaping is elected.
 
 @lejeune_jung
 choose-if: stegerwald_path or traditionalist_votes < 10 or pro_republic < 60
 unavailable-subtitle: The <span style="color: #3E88B3;">Traditionalists</span> believes it is time for younger blood to take the helm.
-on-arrival: traditionalist_leader = "Lenmoor-Jung"; faithful_traditionalist += 6; faithful_unionist -= 4; guild_traditionalist -= 2; landed_traditionalist -= 2
+on-arrival: traditionalist_leader = "Lenmoor"; faithful_traditionalist += 6; faithful_unionist -= 4; guild_traditionalist -= 2; landed_traditionalist -= 2
 face-image: img/portraits/lejeune_jung.jpg
 
-Lenmoor-Jung has, as expected, won the election with Westmore’s blessing, securing a comfortable majority. He is anticipated to continue Westmore’s decision-making style while working to broaden the <span style="color: #3E88B3;">**Traditionalists**</span>’s appeal among conservative Faithful of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?]. Their first high-profile defector is Ferris Goodryke, an agrarian noble from the far right of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?], who brings a cohort of allies with him.
+Lenmoor has, as expected, won the election with Westmore’s blessing, securing a comfortable majority. He is anticipated to continue Westmore’s decision-making style while working to broaden the <span style="color: #3E88B3;">**Traditionalists**</span>’s appeal among conservative Faithful of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?]. Their first high-profile defector is Ferris Goodryke, an agrarian noble from the far right of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">Concord</span>?], who brings a cohort of allies with him.
 
 @keudell
 choose-if: not (stegerwald_path or traditionalist_votes < 10 or pro_republic < 60)

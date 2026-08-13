@@ -515,7 +515,7 @@ go-to: bourgeois_campaign_menu
 In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Aetheria pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to the far south, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial
-title: Carl Slack of IG Farben will attempt to gain support of key guild-masters.
+title: Carl Slack of the Vellandt Chemical Combine will attempt to gain support of key guild-masters.
 subtitle: DuFour has lost the favor of many of his former backers, maybe they can be convinced again?
 on-arrival: industry_used = 1
 max-visits: 1
@@ -784,7 +784,7 @@ go-to: bourgeois_campaign_menu_op
 In an attempt to rival the dynamism of the <span style="color: #7A3C00;">Royalist</span> campaign, the DuFour campaign initially tried to convince Aetheria pilot Hugo Eckhart to fly across the Commonwealth in support of DuFour. However, with Eckhart already scheduled for a flight to the far south, the campaign had to pivot to an alternative approach. They opted to rent airplanes to drop twenty million leaflets over the Commonwealth population. However, this isn't enough to counteract the <span style="color: #7A3C00;">Royalist</span> style of campaigning.
 
 @industrial_op
-title: Carl Slack of IG Farben will attempt to gain support of key guild-masters.
+title: Carl Slack of the Vellandt Chemical Combine will attempt to gain support of key guild-masters.
 subtitle: DuFour has lost the favor of many of his former backers, maybe they can be convinced again?
 on-arrival: industry_used = 1
 max-visits: 1
