@@ -25,6 +25,8 @@ Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
 // invites invasion. (A disloyal army still has internal coup power - see the force model.)
 var _ready = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0)
     + (Q.banner_strength || 0) * (Q.banner_militancy || 0);
+// Mass unemployment hollows out readiness - conscription pools, arsenal funding, morale.
+_ready *= Math.max(0.55, 1 - 0.03 * Math.max(0, (Q.disfavored || 0) - 12));
 Q.military_readiness = Math.round(_ready);
 // Commonwealth standing (0-100): the three pillars - internal stability, military deterrence,
 // and popular legitimacy. The strength signal that drives the Empire's posture and the

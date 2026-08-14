@@ -12,6 +12,7 @@ Across the northern frontier the Empire-in-Exile waits, and within its court two
 
 - @disarmament: Propose mutual disarmament.
 - @reconciliation: Open quiet talks of reconciliation.
+- @moderates: Contact the moderate elements of the Empire-in-Exile.
 - @saber_rattle: Rattle the saber, and let the Empire see our resolve.
 - @extradite: Extradite the anti-Imperial exiles as a gesture of good faith.
 - @return: Hold our present course.
@@ -31,6 +32,12 @@ subtitle: Open quiet talks - easing the War Loans and the frontier disputes in e
 on-arrival: empire_posture += 7 if empire_posture < 100; budget += 1; nationalism -= 2 if nationalism > 0; dufour_angry -= 5; left_dissent += 2; pro_republic -= 1 if pro_republic > 0;
 
 Through back-channels we let it be known that the Commonwealth would welcome an easing of tensions, and the Empress's envoys respond in kind — a softening of the War Loans, a quiet word on the frontier. [? if president == "DuFour": President DuFour, who wants nothing so much as to spare the realms another war, is gratified. ?][? if president != "DuFour": The presidential palace signals its quiet approval. ?] Our own benches mutter of appeasement.
+
+@moderates
+subtitle: Quiet courtesies to the Empress's conciliators - small gestures that strengthen the peace party at the northern court.
+on-arrival: empire_posture += 5 if empire_posture < 100; dufour_angry -= 3; nationalism -= 1 if nationalism > 0; left_dissent += 1
+
+Nothing is signed and nothing is promised. But letters from the moderate lords of the Empire-in-Exile are answered promptly and warmly; their names are remembered at receptions; their journals receive interviews the hardliners' journals do not. It is diplomacy conducted entirely in courtesies - and at the northern court, where standing is everything, the Empress's peace party finds itself a little stronger for it. Our own left wing notes, sourly, whom we have been writing to.
 
 @saber_rattle
 subtitle: A show of resolve - popular at home, but the Empire's reading of it depends on whether we are strong enough to back it.

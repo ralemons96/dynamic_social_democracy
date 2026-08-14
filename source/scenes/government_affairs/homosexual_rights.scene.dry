@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 card-image: img/hirschfeld.jpg
 frequency: 25
-view-if: marcher_in_government == 1 and chancellor_party == "Marcher" and homosexual_rights_timer == 0 and (magi_registry_repealed == 0 or magi_circles_recognized == 0 or magi_protected == 0 or magi_balance > 0)
+view-if: marcher_in_government == 1 and chancellor_party == "Marcher" and homosexual_rights_timer == 0 and (magi_registry_repealed == 0 or magi_circles_recognized == 0 or magi_protected == 0 or magi_balance > -20)
 on-arrival: homosexual_rights_timer += 11; month_actions += 1
 tags: govt_affairs, cabinet
 
@@ -15,6 +15,7 @@ The magi caste lives beneath a thicket of old imperial law — the Registry that
 - @recognize_circles: Recognize the mage-circles in law.
 - @protect_magi: Outlaw the persecution of magi.
 - @impose_registry: Tighten the Registry and impose new loyalty-oaths.
+- @crackdown: Crack down on disloyal magi.
 - @return: Make no change for now.
 - @easy_discard
 - @cancel_advisor_action
@@ -50,3 +51,11 @@ unavailable-subtitle: The magi are already as estranged from the republic as the
 on-arrival: magi_balance -= 10 if magi_balance > 0; bvp_relation -= 6*(1-dissent); royalist_funds += 2; faithful_marcher += 4; unionist_relation += 4*(1-dissent); gold_relation += 3*(1-dissent);
 
 We tighten the Registry and bind the magi with fresh loyalty-oaths. The Faithful and the order-loving centre are reassured — the cult is watched, the realm is safe. But the magi take the lesson to heart: the republic will never be their home, and the Empress's coin finds new and willing hands among the harried mage-circles.
+
+@crackdown
+subtitle: Sweep the circles for "disloyal" magi - arrests, revoked licenses, findings of unreliability. The centre will approve. The magi will not forget.
+choose-if: magi_balance > -20
+unavailable-subtitle: The magi are already as estranged from the republic as they can be.
+on-arrival: magi_balance -= 8; bvp_relation -= 5*(1-dissent); empire_posture -= 5 if empire_posture > 0; gold_relation += 4*(1-dissent); unionist_relation += 4*(1-dissent); faithful_marcher += 2
+
+The sweep is announced with the word "disloyal" doing all of the work. Licenses are revoked, circle-halls searched, a handful of magi taken in for questioning that the papers are encouraged to photograph. The order-loving centre - the <span style="color: #C0A054;">**Golds**</span>, the <span style="color: #000000;">Unionists</span> - approves audibly. At the northern court, where the Empress counts the magi among her own, the affront is noted and remembered. And in the circle-halls the conclusion hardens one degree further: the republic is not, and will not be, their home.

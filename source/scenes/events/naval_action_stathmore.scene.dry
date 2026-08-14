@@ -1,0 +1,60 @@
+title: Naval Action off Stathmore!
+new-page: true
+subtitle: An Imperial squadron tests the strength of the Galleon Fleet...
+view-if: ivion_seen and time >= crisis_start_time + 9 and not naval_action_seen
+on-arrival: naval_action_seen = 1
+max-visits: 1
+priority: 2
+face-image: img/panzerkreuzer.jpg
+tags: event
+
+= Naval Action off Stathmore!
+
+The wireless from the Stathmore coast is fragmentary but unmistakable: an Imperial squadron has crossed into contested waters and shadowed the Galleon Fleet through the morning fog — and shortly before noon, by "misunderstanding," the shadowing became gunfire. No declaration has followed and none will. The Empire is testing the strength of the republic's fleet, and the whole realm is listening to the guns.
+
+- @observe: Trust the squadron commanders on the scene.
+- @retreat: Order the ships to retreat immediately.
+- @fight: Order the fleet to fight back furiously.
+
+@observe
+subtitle: The Admiralty will manage the action as it develops.
+go-to: observe_weak if military_readiness < 130; observe_average if military_readiness >= 130 and military_readiness < 250; observe_strong if military_readiness >= 250
+
+@observe_weak
+on-arrival: pro_republic -= 4; coalition_dissent += 2 if marcher_in_government; commons_royalist += 3; burgher_royalist += 2; faithful_royalist += 2; loyalist_strength += 50; royalist_funds += 1; army_strength -= 10 if army_strength > 20
+
+The action is a humiliation. Outgunned and outsailed, the fleet loses several war-galleons to capture — and, worse, several more to defection, their officers steaming north under the Imperial colors they never ceased to love. The republic's weakness is now a matter of public record[? if marcher_in_government:, and our coalition partners spend the week assigning blame?]. In the harbor taverns and the propertied clubs alike, the <span style="color: #7A3C00;">**Royalists**</span> say the only thing that needs saying: *this* is what the republic's stewardship of the Empire's fleet has come to.
+
+@observe_average
+on-arrival: commons_royalist += 2; loyalist_strength += 25
+
+The fighting goes poorly. The fleet gives worse than it planned and takes more than it admits, and by evening the ships fall back in good order — defeated, in a show of force that was always meant to be exactly that. The Admiralty calls it a successful disengagement. The <span style="color: #7A3C00;">**Royalists**</span> call it the day the Empire measured the republic and found it wanting, and their version travels further.
+
+@observe_strong
+on-arrival: coalition_dissent -= 1 if marcher_in_government; commons_royalist -= 2; loyalist_strength -= 25
+
+The Imperial squadron finds more fight than it was sent to find. Through a long afternoon the two lines hammer each other to a standstill, and it is the northerners who break off at dusk. No one calls it a victory — but the republic's fleet held contested waters against the Empire's, and everyone who expected otherwise must quietly revise their arithmetic[? if marcher_in_government:. For once, the coalition's quarrels seem smaller than the country's business?].
+
+@retreat
+subtitle: Break off before the action becomes a battle.
+choose-if: chancellor_party == "Marcher" or army_minister_party == "Marcher"
+unavailable-subtitle: Only the chancellery or the War Ministry can issue the order.
+on-arrival: commons_royalist += 3; burgher_royalist += 2; loyalist_strength += 40; royalist_funds += 1
+
+The order goes out over the Admiralty's objections, and the fleet breaks off cleanly — no ships lost, no officers tested, no battle to lose. It is, by every sober measure, the prudent course; prudence, however, does not photograph well. The <span style="color: #7A3C00;">**Royalists**</span> print the picture of the fleet's wakes pointed south and let it speak for itself. The government, at least, is not blamed by its own: an order obeyed is not a defeat suffered.
+
+@fight
+subtitle: The fleet is ordered to give battle in earnest.
+choose-if: chancellor_party == "Marcher" or army_minister_party == "Marcher"
+unavailable-subtitle: Only the chancellery or the War Ministry can issue the order.
+go-to: fight_win if military_readiness >= 250; fight_disaster if military_readiness < 250
+
+@fight_win
+on-arrival: coalition_dissent -= 2 if marcher_in_government; dufour_angry -= 15; pro_republic += 3; commons_royalist -= 3; burgher_royalist -= 2; loyalist_strength -= 50; royalist_funds -= 1
+
+The fleet turns into the enemy line and fights the action the Empire did not want. By nightfall it is the Imperial squadron limping north, two of its war-galleons under tow, and the wireless carrying a sentence the republic has never once been able to send: *the enemy has withdrawn.* [? if president == "DuFour": President DuFour, who has never trusted a republic that could not defend itself, lets it be known that today it did — and that the order came from this government. ?]The <span style="color: #7A3C00;">**Royalists**</span>, whose entire argument is the republic's weakness, spend the week explaining the photographs[? if marcher_in_government:, while our coalition stands taller than it has in a year?].
+
+@fight_disaster
+on-arrival: coalition_dissent += 4 if marcher_in_government; dufour_angry += 30; pro_republic -= 5; commons_royalist += 4; burgher_royalist += 3; faithful_royalist += 3; loyalist_strength += 75; royalist_funds += 2; army_strength -= 10 if army_strength > 20
+
+The order was brave and the fleet was not ready, and the sea off Stathmore settles the difference without sentiment. Ships that should have disengaged are hammered at close range; ships that should have answered signals steam north instead. It is a catastrophe, and — unlike the weather, unlike the Empire — the order that produced it has an address[? if marcher_in_government:. The coalition's partners say so daily?]. [? if president == "DuFour": DuFour's confidence in the government does not survive the week's dispatches. ?]The <span style="color: #7A3C00;">**Royalists**</span> could not have purchased a better afternoon with their entire treasury.
