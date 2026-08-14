@@ -723,7 +723,7 @@ Q.n_advisors = 3;
 // most party affairs and government affairs cards are on a timer.
 Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
-    'inter_party_relationships', 'international_relations', 'gold_factions',
+    'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
     'party_organizations', 'rally', 'banner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
@@ -749,7 +749,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'dsu_policy'];
 Q.rubicon_timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
-    'inter_party_relationships', 'international_relations', 'gold_factions',
+    'inter_party_relationships', 'international_relations',
     'iron_front', 'media', 'enemies',
     'party_organizations', 'rally', 'banner',
     'shuffle_leadership', 'streetfighting', 'peoples_party',
@@ -815,7 +815,6 @@ Q.campaigning_timer = 0;
 Q.marcher_government_burden_timer = 0;
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
-Q.gold_factions_timer = 0;
 Q.economic_policy_timer = 0;
 Q.fiscal_policy_timer = 0;
 Q.foreign_policy_timer = 0;

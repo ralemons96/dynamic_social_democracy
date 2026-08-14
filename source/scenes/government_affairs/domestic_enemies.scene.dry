@@ -27,7 +27,7 @@ As we have control over the Interior Ministry, we can direct police and intellig
 view-if: loyalist_banned == 0
 choose-if: royalist_urgency >= 3
 unavailable-subtitle: The <span style="color: #7A3C00;">**Loyalists**</span> have not yet given the public cause enough — a ban now would read as naked partisanship, and would never survive the courts.
-on-arrival: loyalist_strength *= 0.85; loyalist_strength *= 0.7 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 1 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 0 if interior_police_loyalty < 0.7; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; interior_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; loyalist_coup_progress = coup_progress; coup_progress -= 2 if coup_progress >= 6; interior_goal_heartland -= 1
+on-arrival: loyalist_strength *= 0.85; loyalist_strength *= 0.7 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 1 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 0 if interior_police_loyalty < 0.7; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; interior_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; loyalist_coup_progress = coup_progress; coup_progress -= 2 if coup_progress >= 6; interior_goal_heartland -= 1; gold_left += 1; lvp_left += 1
 
 As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?]
 
@@ -75,7 +75,7 @@ We have arrested more of the <span style="color: #3E88B3;">**Wardens**</span>'s 
 
 @ban_rfb
 view-if: communist_coalition < 3 and vanguard_banned = 0 and in_popular_front_heartland == 0 and in_left_front_heartland == 0
-on-arrival: collectivist_relation -= 15; vanguard_strength -= 50; vanguard_banned = 1; communist_coalition -= 1; unionist_relation += 5; gold_relation += 5; lvp_relation += 5; heartland_police_loyalty += 0.1; interior_police_loyalty += 0.1; collectivist_coalition_dissent += 2; coalition_dissent -= 1 if coalition_dissent > 0 and n_vanguard_banned = 0; n_vanguard_banned += 1; dufour_angry -= 8
+on-arrival: collectivist_relation -= 15; vanguard_strength -= 50; vanguard_banned = 1; communist_coalition -= 1; unionist_relation += 5; gold_relation += 5; lvp_relation += 5; heartland_police_loyalty += 0.1; interior_police_loyalty += 0.1; collectivist_coalition_dissent += 2; coalition_dissent -= 1 if coalition_dissent > 0 and n_vanguard_banned = 0; n_vanguard_banned += 1; dufour_angry -= 8; gold_left += 1; lvp_left += 1
 
 The ban is enthusiastically carried out by the police, perhaps too enthusiastically. The <span style="color: #700000;">Collectivists</span> take this as one more reason why the <span style="color: #c00000;">Reformists</span> are traitors to the left. However, the <span style="color: #000000;">moderate</span> and <span style="color: #C0A054;">center-right</span> parties approve, as do the police.
 

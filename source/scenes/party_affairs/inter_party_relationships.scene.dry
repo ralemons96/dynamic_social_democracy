@@ -19,6 +19,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
 - @dnvp: Open dialogue with [? if traditionalist_leader != "Maine": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Maine": Maine and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
+- @gold_voters: Court the disaffected republican voters of the <span style="color: #C0A054;">Golds</span>.
 - @spd_alone: The <span style="color: #c00000;">Marchers</span> can stand alone for now.
 - @easy_discard
 
@@ -27,7 +28,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; collectivist_inter_party_seen += 1
+on-arrival: resources -= 1; collectivist_inter_party_seen += 1; gold_right += 1; lvp_right += 1
 go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and collectivist_coalition_success = 0 and (collectivist_relation < 40 or collectivist_rectifed_history = 1); kpd_rectification_of_history if collectivist_relation >= 40 and collectivist_rectified_history = 0; kpd_2 if collectivist_coalition_success = 1 and collectivist_rectified_history = 1
 
 @kpd_1
@@ -124,19 +125,19 @@ go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 an
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of our closest allies through the course of the Republic. [? if year >= 1929: Although the national shift to the right is having them question our cooperation. ?]
 
 @dvp_stresemann
-on-arrival: gold_relation += 6*(1 - dissent); gold_left += 1; gold_left += 1 if in_grand_coalition_heartland
+on-arrival: gold_relation += 6*(1 - dissent); gold_left += 2; gold_left += 1 if in_grand_coalition_heartland
 
 Gustav Stratton, the leader of the <span style="color: #C0A054;">**Golds**</span> is the best foreign policy leaders of the republic, and while he has previously expressed <span style="color: #808080;">monarchist</span> tendencies, he has been friendly towards us. [? if in_grand_coalition_heartland: Their inclusion in the Heartland government has fostered a more conciliatory attitude toward us. ?]
 
 @dvp_loss
-on-arrival: gold_relation += 4*(1 - dissent); gold_left += 1; gold_left += 1 if in_grand_coalition_heartland
+on-arrival: gold_relation += 4*(1 - dissent); gold_left += 2; gold_left += 1 if in_grand_coalition_heartland
 
 With the death of Gustav Stratton, the <span style="color: #C0A054;">**Golds**</span> is much less likely to be accommodating of us. In addition, the <span style="color: #D3C24D;">liberal</span> parties are electorally in decline, so perhaps our efforts are best spent elsewhere.
 
 However, given the influence of the <span style="color: #C0A054;">**Golds**</span> among the other <span style="color: #808080;">right</span>-leaning parties[? if president == "DuFour" or president_ideology == "Moderate": and with President [+ president +] ?], it can still be helpful to influence them. [? if in_grand_coalition_heartland: Their inclusion in the Heartland government has also fostered a more conciliatory attitude toward us. ?]
 
 @dvp_moribund
-on-arrival: gold_relation += 4*(1 - dissent); gold_left += 1; gold_left += 1 if in_grand_coalition_heartland
+on-arrival: gold_relation += 4*(1 - dissent); gold_left += 2; gold_left += 1 if in_grand_coalition_heartland
 
 The <span style="color: #D3C24D;">liberal</span> parties (both the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and <span style="color: #C0A054;">**Golds**</span>) are electorally <span style="color: #ff0000;">moribund</span>, so perhaps our efforts are best spent elsewhere.
 
@@ -153,12 +154,12 @@ go-to: lvp_stresemann if stresemann_dead = 0; lvp_loss if stresemann_dead = 1
 The former two liberal parties have been our closest allies through the course of the Republic. [? if year >= 1929: Although the national shift to the right is having them question our cooperation. ?]
 
 @lvp_stresemann
-on-arrival: lvp_relation += 6*(1 - dissent); lvp_left += 1
+on-arrival: lvp_relation += 6*(1 - dissent); lvp_left += 2
 
 Gustav Stratton, the former leader of the <span style="color: #C0A054;">**Golds**</span>, is the best foreign policy leaders of the republic, and while he has previously expressed <span style="color: #808080;">monarchist</span> tendencies, he has been friendly towards us. Stratton's influence over the right wing of the <span style="color: #C0A054;">**Golds**</span> helps sway some more reluctant party members towards us.
 
 @lvp_loss
-on-arrival: lvp_relation += 4*(1 - dissent); lvp_left += 1
+on-arrival: lvp_relation += 4*(1 - dissent); lvp_left += 2
 
 With the death of Gustav Stratton, the right wing of the <span style="color: #C0A054;">**Golds**</span> is much less likely to be accommodating of us. In addition, the <span style="color: #D3C24D;">liberals</span> are electorally in decline, so perhaps our efforts are best spent elsewhere.
 
@@ -432,3 +433,10 @@ The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
 - @return: Continue...
+
+@gold_voters
+view-if: (gold_exist and not lvp_formed and not gold_gnu) or (lvp_formed and not lvp_gnu)
+subtitle: Their republican voters may prefer the genuine article. Free - but the party will notice.
+on-arrival: burgher_marcher += 2; guild_marcher += 1; gold_relation -= 4 if not lvp_formed; gold_left -= 1 if not lvp_formed; gold_right += 1 if not lvp_formed; lvp_relation -= 4 if lvp_formed; lvp_left -= 1 if lvp_formed; lvp_right += 1 if lvp_formed
+
+We stop courting the party and start courting its voters: the clerks, the teachers, the small proprietors who vote <span style="color: #C0A054;">Gold</span> out of habit and read our program with more sympathy than they admit. The party's managers notice - and the republicans inside it, weakened by every defection, notice too. With every seat we take from their left flank, the guild-master right tightens its grip on what remains.
