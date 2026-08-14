@@ -10,3 +10,4 @@ out/game.json.baseline
 tmp_*
 out/html/game.json
 .claude/
+tools/sim/out/
