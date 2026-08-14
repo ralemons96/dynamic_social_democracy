@@ -4,7 +4,7 @@ view-if: year >= 1932 and president = "DuFour" and chancellor = "Staal" and marc
 on-arrival: economic_growth += 1; budget -= 1; disfavored -= 3 if disfavored > 10; landed_traditionalist += 3; guild_traditionalist += 3; burgher_traditionalist += 3; commons_traditionalist += 3
 new-page: true
 max-visits: 1
-face-image: img/portraits/StaalKurt.jpg
+face-image: img/portraits/SchleicherKurt.jpg
 #tags: event
 
 = Staal's Schemes

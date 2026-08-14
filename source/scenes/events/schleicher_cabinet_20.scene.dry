@@ -609,7 +609,7 @@ Following the collapse of the <span style="color: #BFC8CC;">**GNU**</span>, a vo
 @dnef_collapse_3
 title: Edgar Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
 subtitle: DuFour's preferred choice once again, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 on-arrival: {!
 Q.chancellor = "Trevannon";
 Q.staal_approval -= 4;

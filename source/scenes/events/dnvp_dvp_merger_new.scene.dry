@@ -212,7 +212,7 @@ subtitle: Trevannon, ardent reformer, and member of the [? if traditionalist_ide
 choose-if: winner_fkp = "Trevannon"
 on-arrival: fkp_leader = "Trevannon"; fkp_ideology = "Liberal Conservatism";
 call: dnvp_dvp_formed
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 
 After a protracted, multi‑round ballot at the <span style="color: #00C0FF;">**FCP**</span>’s inaugural congress, Godwin Trevannon secured the party chairmanship. Building a coalition of moderate <span style="color: #3E88B3;">**Traditionalists**</span> dissidents, rural‑Chamber delegates, and a sprinkling of pragmatic ex‑<span style="color: #C0A054;">**Golds**</span> members allowed him to do well in the first round. Frank Vellt, representing the party’s moderates, was the first to be eliminated. Then industrial conservatives around Harmon Raymont, unwilling to back the hard‑line monarchists, shifted en masse to Trevannon by the penultimate ballot, giving him a clear path to the chairmanship against Kuno von Westmore.
 

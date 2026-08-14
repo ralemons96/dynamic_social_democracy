@@ -37,7 +37,7 @@ While the turmoil from Mallin’s split and the Serannus Plan has subsided, a fu
 choose-if: treviranus_trigger and not westarp_trigger and not schiele_trigger
 unavailable-subtitle: [? if schiele_trigger: The <span style="color: #385A38;">agrarian</span> wing of the <span style="color: #3E88B3;">Traditionalists</span> objects, claiming that it is their turn to lead. ?][? if westarp_trigger: The national conservatives object, claiming that Trevannon's reforms have gone too far. ?]
 on-arrival: treviranus_stays = 1; landed_traditionalist -= 3; landed_royalist += 3; landed_dnf += 3; burgher_traditionalist += 4; burgher_gold -= 2; burgher_ddp -= 2; burgher_lvp -= 4; commons_traditionalist += 2; commons_unionist -= 2; faithful_traditionalist += 6; faithful_unionist -= 3; faithful_other -= 3; pro_republic += traditionalist_votes / 2; gold_left += 5; ddp_left += 2.5; lvp_left += 3
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 
 Surprisingly, Trevannon has survived efforts to replace him with a more conservative figure, securing a mandate to further reform the party—despite opposition from propertied and <span style="color: #808080;">reactionary</span> elites. [? if hugenberg_removed: However, he remains a puppet of the <span style="color: #3E88B3;">**Traditionalists**</span>'s old guard—figures like Westmore and Hargen—who block any drastic shift toward <span style="color: #0087DC;">People's Conservatism</span>. ?]
 

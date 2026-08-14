@@ -5,7 +5,7 @@ max-visits: 1
 tags: event
 on-arrival: stresemann_dead = 1; lvp_relation -= 5; lvp_right += 3; foreign_minister = "Curthose" if foreign_minister = "Stratton"
 priority: -1
-face-image: img/portraits/Stratton.jpg
+face-image: img/portraits/Stresemann.jpg
 new-page: true
 
 Gustav Stratton, former leader of the <span style="color: #C0A054;">**Golds**</span> and longtime foreign minister, has died at the tragically young age of 51. He was the primary force driving the right of the party to support democracy; without him, the democratic forces in the Republic will be so much weaker. 

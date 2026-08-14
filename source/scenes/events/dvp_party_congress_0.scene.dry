@@ -49,7 +49,7 @@ go-to: left if stresemann_reform_yay; right if stresemann_reform_nay; left_confl
 
 @left
 on-arrival: gold_left += 10; gold_relation += 10; liberal_cooperation += 3; commons_gold += 1; commons_other -= 1; burgher_gold += 4; burgher_other -= 4; guild_gold += 4; guild_other -= 4; landed_gold += 2; landed_other -= 2; faithful_other -= 2; faithful_unionist -= 2; faithful_gold += 4; coalition_dissent -= 2 if in_grand_coalition; gold_reform = 1; pro_republic += 5; ddp_left += 1.5; ddp_cohesion += 1.5
-face-image: img/portraits/Stratton.jpg
+face-image: img/portraits/Stresemann.jpg
 
 Stratton rallies what's left of the <span style="color: #C0A054;">**Golds**</span> that aren't bought out by industry into adopting the proposed reform, not without any fierce opposition from the other half of the party. The guild-masters have diverted their efforts on maintaining influence within the <span style="color: #3E88B3;">**Traditionalists**</span> now, to make up for their loss.
 
@@ -57,7 +57,7 @@ We have noticed an improvement in relations with the <span style="color: #C0A054
 
 @left_conflict
 on-arrival: gold_left += 5; gold_relation += 5; liberal_cooperation += 2; commons_gold += 1; commons_other -= 1; burgher_gold += 2; burgher_other -= 2; guild_gold += 2; guild_other -= 2; faithful_other -= 2; faithful_gold += 2; gold_reform = 1; coalition_dissent -= 1 if in_grand_coalition; pro_republic += 3; ddp_left += 1; ddp_cohesion += 1
-face-image: img/portraits/Stratton.jpg
+face-image: img/portraits/Stresemann.jpg
 
 Stratton and the left-wing of the <span style="color: #C0A054;">**Golds**</span> pushed through the reform by an extremely narrow margin, only achieved by Stratton's threats to resign if it were not to pass. Half of the party's Assembly delegation is tied to industry, which are now without much influence within the <span style="color: #C0A054;">**Golds**</span>, and have mostly shifted to support the <span style="color: #3E88B3;">**Traditionalists**</span> now. Those in the Assembly delegation are now in open conflict with the left-wing of the <span style="color: #C0A054;">**Golds**</span>.
 

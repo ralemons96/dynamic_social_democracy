@@ -12,7 +12,7 @@ if ((Q.marcher_in_foreign_time >= 24 && (!Q.reichskonkordat_progress && Q.in_wei
 max-visits: 1
 tags: event
 new-page: true
-face-image: img/portraits/Joseph_Hawkins.jpg
+face-image: img/portraits/Joseph_Joos.jpg
 
 = <span style="color: #000000;">Unionist Party</span> Conference
 
@@ -32,7 +32,7 @@ Aurelian Renck, a devoted Faithful priest is expected to succeed him, but Adam S
 @kaas
 view-if: not heartland_leader == "Sedgewick" and ((marcher_in_government_time >= 36 and (not reichskonkordat_progress and in_weimar_coalition and foreign_minister_party == "Marcher")) or (marcher_heartland_time >= 30 and not heartland_concordat_progress))
 on-arrival: unionist_leader = "Renck"; unionist_relation -= 5; heartland_concordat_progress += 1; unionist_ideology = "Right"
-face-image: img/portraits/Ludwig_Renck.jpg
+face-image: img/portraits/Ludwig_Kaas.jpg
 
 Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He represents a rightward turn from Hawkins, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
 

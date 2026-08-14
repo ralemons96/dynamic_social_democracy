@@ -5,7 +5,7 @@ max-visits: 1
 tags: event
 on-arrival: stresemann_dead = 1; gold_relation -= 6; gold_relation -= 2 if gold_reform = 0; gold_right += 3.5; gold_right += 1.5 if gold_reform = 0; gold_leader = "Eikenvorst"; gold_leader = "Curthose" if gold_reform; foreign_minister = "Curthose" if foreign_minister = "Stratton"
 priority: -1
-face-image: img/portraits/Stratton.jpg
+face-image: img/portraits/Stresemann.jpg
 new-page: true
 
 = The Death of Gustav Stratton

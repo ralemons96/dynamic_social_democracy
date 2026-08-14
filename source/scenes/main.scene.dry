@@ -2621,7 +2621,7 @@ is-deck: true
 @eco
 title: Economic Policy
 view-if: marcher_in_government = 1 and (economic_minister_party == "Marcher" or finance_minister_party == "Marcher") and economic_policy_timer <= 0 and economic_plan > 0 and veran_crash_seen
-card-image: img/portraits/SmittRobert.jpg
+card-image: img/portraits/SchmidtRobert.jpg
 is-deck: true
 
 - @economic_policy

@@ -20,7 +20,7 @@ if (Q.heartland_leader == "Sedgewick" || Q.faithful_unionist_normalized < 40 || 
 max-visits: 1
 tags: event
 new-page: true
-face-image: img/portraits/Ludwig_Renck.jpg
+face-image: img/portraits/Ludwig_Kaas.jpg
 
 = <span style="color: #000000;">Unionist Party</span> Conference
 
@@ -38,7 +38,7 @@ subtitle: Hawkins is part of the Faithful worker groups, and the current deputy 
 unavailable-subtitle: [? if unionist_relation < 70: Our relations are not good enough. ?][? if bruning_unlock: Askew is able to overshadow Hawkins due to his status as Chancellor. ?][? if stegerwald_unlock: Sedgewick is able to secure the votes of the party's workers. ?]
 choose-if: joos_unlock
 on-arrival: unionist_leader = "Hawkins"; faithful_unionist -= 5; faithful_gold += 3; faithful_lvp += 3; faithful_traditionalist += 3 if traditionalist_ideology == "Moderate"; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 10; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1; fake_joos = 1
-face-image: img/portraits/Joseph_Hawkins.jpg
+face-image: img/portraits/Joseph_Joos.jpg
 
 With our friendly relations, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to promote Cormac Hawkins to become the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Renck. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 
@@ -49,7 +49,7 @@ subtitle: Askew is the leader of the <span style="color: #000000;">Unionists</sp
 unavailable-subtitle: [? if stegerwald_unlock: The party is inclined to support Sedgewick over his protege. ?][? if chancellor != "Askew": Askew needs more power. ?]
 choose-if: bruning_unlock
 on-arrival: unionist_leader = "Askew"; unionist_relation -= 3; gold_right += 1; ddp_right += 1; lvp_right += 1
-face-image: img/portraits/AskewHeinrich.jpg
+face-image: img/portraits/BrüningHeinrich.jpg
 
 Edmund Askew, the current chancellor, an ally of Renck and protege of Sedgewick has got another job under his belt now. Although his responsibilities as chancellor will leave very little room for him to manage the internal affairs of his party, with it once again being left to his colleagues. 
 

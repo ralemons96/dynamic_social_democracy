@@ -4,7 +4,7 @@ new-page: true
 on-arrival: dufour_extension_seen = 1; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 1
 tags: event
 view-if: year = 1932 and month == 1 and ((neo_weimar_coalition + kvp_r >= 66.6 and traditionalist_ideology == "Radical") or (neo_weimar_coalition + traditionalist_r >= 66.6 and traditionalist_ideology == "Moderate")) and not rubicon_mini
-face-image: img/portraits/DuFour.jpg
+face-image: img/portraits/Hindenburg.jpg
 max-visits: 1
 
 = Resolution to Extend DuFour's Term

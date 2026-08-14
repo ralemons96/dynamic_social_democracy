@@ -21,7 +21,7 @@ The consensus candidate on the right is Aurelian Renck, a priest of the Faithful
 @kaas
 view-if: not heartland_leader == "Sedgewick"
 on-arrival: unionist_leader = "Renck"; unionist_relation -= 5; heartland_concordat_progress += 1; unionist_ideology = "Right"
-face-image: img/portraits/Ludwig_Renck.jpg
+face-image: img/portraits/Ludwig_Kaas.jpg
 
 Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He seems to represent a rightward turn from Croft, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
 
@@ -33,7 +33,7 @@ subtitle: Hawkins is likely to be friendlier to us than Renck.
 view-if: not heartland_leader == "Sedgewick"
 choose-if: unionist_relation >= 70
 on-arrival: unionist_leader = "Hawkins"; unionist_ideology = "Left"; faithful_unionist -= 3; faithful_traditionalist += 2; faithful_other += 2; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 4; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1
-face-image: img/portraits/Joseph_Hawkins.jpg
+face-image: img/portraits/Joseph_Joos.jpg
 
 With our grassroots connections, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to support Cormac Hawkins as the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Renck. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 
@@ -43,7 +43,7 @@ view-if: unionist_relation < 70 and not heartland_leader == "Sedgewick"
 unavailable-subtitle: [? if unionist_relation <= 60 : Our relations are not good enough. ?] [? if resources < 1 : We do not have enough resources. ?]
 subtitle: -1 resource. Hawkins is likely to be friendlier to us than Renck.
 on-arrival: resources -= 1; unionist_leader = "Hawkins"; unionist_ideology = "Left"; faithful_traditionalist += 2; faithful_other += 2; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 4; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1
-face-image: img/portraits/Joseph_Hawkins.jpg
+face-image: img/portraits/Joseph_Joos.jpg
 
 With our grassroots connections as well as a professional campaign, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to support Cormac Hawkins as the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Renck. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 

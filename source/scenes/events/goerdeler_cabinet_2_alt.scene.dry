@@ -5,7 +5,7 @@ on-arrival: finance_minister_party = "I"; finance_minister_party = "Traditionali
 new-page: true
 tags: event
 max-visits: 1
-face-image: img/portraits/AlfredMallin.jpg
+face-image: img/portraits/AlfredHugenberg.jpg
 
 = Goodlake I Survives
 
@@ -17,7 +17,7 @@ He assumes that [+ royalist_leader +], increasingly pressured by senior figures 
 
 @goerdeler
 title: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] refuses to work with Mallin!
-face-image: img/portraits/AskewHeinrich.jpg
+face-image: img/portraits/BrüningHeinrich.jpg
 
 As expected, the majority of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] refuses to entertain the idea of governing alongside a figure like Mallin—especially after his remarks on the campaign trail calling for the outright abolition of welfare. Furthermore, it is unlikely that Goodlake would stop this, as he himself has proposed gutting the Poorman's Pension to cut costs.
 

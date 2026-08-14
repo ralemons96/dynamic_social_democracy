@@ -8,7 +8,7 @@ if (!Q.unionist_in_gov_mini) Q.goerdeler_right_coalition -= (Q.unionist_r - Q.bv
 tags: event
 view-if: year = 1932 and (month == 1 or month == 2) and rubicon_mini
 priority: 10
-face-image: img/portraits/DuFour.jpg
+face-image: img/portraits/Hindenburg.jpg
 max-visits: 1
 
 = Resolution to Extend DuFour's Term

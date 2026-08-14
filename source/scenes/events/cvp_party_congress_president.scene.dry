@@ -358,7 +358,7 @@ subtitle: The leader of the <span style="color: #0087DC;">People's Conservative<
 unavailable-subtitle: Trevannon has earned himself enemies to the right, and the Faithful portion of the party is reluctant to back him. - <span style="color: #0087DC;">People's Conservatives</span> and <span style="color: #000099;">Faithful Right</span> Wing
 choose-if: treviranus_unlock
 on-arrival: unionist_relation = 0 if unionist_relation < 0; concord_left += 3 if concord_ideology == "Right"; concord_right += 3 if concord_ideology == "Left"; nationalism += 3; pro_republic += 5; burgher_unionist += 6; guild_unionist += 4; landed_unionist -= 4; landed_dnf += 4; burgher_gold -= 4; burgher_lvp -= 4; burgher_ddp -= 2; guild_gold -= 4; guild_lvp -= 4; guild_ddp -= 2; burgher_dnf += 2; guild_dnf += 4; faithful_unionist += 2; concord_leader = "Trevannon"; concord_ideology = "Moderate"; guild_unionist = 25 if guild_unionist < 25; landed_unionist = 25 if landed_unionist < 25
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 
 Godwin Trevannon[? if traditionalist_leader == "Trevannon":, the most recent leader of the <span style="color: #3E88B3;">**Traditionalists**</span>?], leader of the thriving <span style="color: #0087DC;">People's Conservative</span> movement, is seen as the ideal candidate for the first chairman of the <span style="color: #000000;">**[+ unionist_party_name +]**</span>. His <span style="color: #3E88B3;">nationalist</span> origin, strong ties to key figures like Westmore on the right, and his careful cultivation of relations with the <span style="color: #000000;">Faithful</span> have earned him broad support for his leadership.
 

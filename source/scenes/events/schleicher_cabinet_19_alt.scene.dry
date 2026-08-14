@@ -17,7 +17,7 @@ With his faith in the Commonwealth Army shattered, he has turned back to his old
 @treviranus
 title: Edgar Westmore -[? if traditionalist_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**Traditionalists**</span>
 subtitle: DuFour's preferred choice once again, and [? if traditionalist_leader != "Westmore":former?] <span style="color: #3E88B3;">**Traditionalists**</span> party leader.
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 on-arrival: {!
 Q.chancellor = "Trevannon";
 Q.staal_approval -= 4;

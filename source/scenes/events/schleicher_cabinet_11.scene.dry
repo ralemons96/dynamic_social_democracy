@@ -71,7 +71,7 @@ if (Q.unionist_relation < 10) {
 Q.stegerwald_points += Q.commons_unionist_normalized / 2;
 Q.bracht_points += Q.faithful_unionist_normalized / 10;
 !}
-face-image: img/portraits/RenckLudwig.jpg
+face-image: img/portraits/KaasLudwig.jpg
 
 = Unionist Party Conference
 

@@ -36,7 +36,7 @@ Caradoc Maine has been elected leader of the <span style="color: #3E88B3;">**Tra
 
 @youngconservative
 on-arrival: traditionalist_leader = "Trevannon"; true_christian_democracy = 1; landed_dnf += 3; guild_dnf += 3; landed_other -= 3; guild_other -= 3; burgher_other -= 3; burgher_traditionalist += 3; commons_traditionalist += 1; faithful_traditionalist += 3; faithful_other -= 3; pro_republic += 5; gold_left += 2; ddp_left += 1; lvp_left += 2; faithful_traditionalist += 3 if stegerwald_path; faithful_other -= 3 if stegerwald_path
-face-image: img/portraits/Trevannon.jpg
+face-image: img/portraits/Treviranus.jpg
 
 The reluctance for the party around Hargen and Westmore to fully commit to a democratic party has been increasingly under fire from the <span style="color: #6D5298;">Faithful Socials</span> and "Young Conservatives", and [? if young_plan_signatures < 10 and pro_republic_8 < 70: the failure for the referendum against the Serannus Plan to reach the signature threshold has tipped the balance in their favor?][? if weimar_ref_signatures < 30 and pro_republic_8 >= 70: the underperformance of the referendum for the revision of the Unity constitution has tipped the balance in their favor?][? if (was_in_center_right_coalition == 1 and pro_republic_8 >= 70 and pro_republic >= 70) and not (weimar_ref_signatures < 30 and pro_republic_8 >= 70) and not (young_plan_signatures < 10 and pro_republic_8 < 70): the national opinion increasingly shifting in favor of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ub</span><span style="color: #FFCC00;">lic</span>?]. 
 
