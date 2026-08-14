@@ -1,0 +1,40 @@
+title: The Liberal Factions
+new-page: true
+view-if: gold_factions_timer <= 0 and ((gold_exist and not lvp_formed and not gold_gnu) or (lvp_formed and not lvp_gnu))
+tags: party_affairs
+is-card: true
+on-arrival: month_actions += 1; gold_factions_timer = 8;
+card-image: img/reichstag_2.jpg
+#subtitle: Reading - and nudging - the internal politics of the liberal party.
+
+= The Liberal Factions
+
+[? if not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> are never one party so much as a truce between two: the republican liberals of the old professions, and the guild-master right that pays the bills. Under [+ gold_leader +], the party currently stands for [? if gold_ideology = "Left": Classical Liberalism ?][? if gold_ideology = "Moderate": Conservative Liberalism ?][? if gold_ideology = "Right": National Liberalism ?]— and the truce is always being renegotiated. ?][? if lvp_formed: The united <span style="color: #C0A054;">**Golds**</span> carry both liberal traditions inside one tent: the republican wing of the old <span style="color: #D3C24D;">Democrats</span>, and the guild-master right of the old People's Party. Under [+ lvp_leader +], the party currently stands for [? if lvp_ideology = "Left": Social Liberalism ?][? if lvp_ideology = "Moderate": Conservative Liberalism ?][? if lvp_ideology = "Right": National Liberalism ?]— and the seams show whenever the money and the principles disagree. ?]
+
+[? if not lvp_formed: [? if gold_left - gold_right >= 4: At present the republican wing has the wind at its back: the congress floor, the party press, and the younger deputies lean toward the republic. ?][? if gold_right - gold_left >= 4: At present the guild-master right holds the whip hand — the financiers set the tone, and the republican wing survives on sufferance. ?][? if gold_left - gold_right < 4 and gold_right - gold_left < 4: At present the factions are closely balanced, and the next congress could tip either way. ?] ?][? if lvp_formed: [? if lvp_left - lvp_right >= 4: At present the republican wing has the wind at its back: the congress floor, the party press, and the younger deputies lean toward the republic. ?][? if lvp_right - lvp_left >= 4: At present the guild-master right holds the whip hand — the financiers set the tone, and the republican wing survives on sufferance. ?][? if lvp_left - lvp_right < 4 and lvp_right - lvp_left < 4: At present the factions are closely balanced, and the next congress could tip either way. ?] ?]
+
+Whoever holds the chair when the next leadership fight comes will be decided by this balance. We can lean on it — quietly.
+
+- @court: Court the republican-liberal wing.
+- @poach: Court their disaffected republican voters instead.
+- @watch: Watch, and keep our reading current.
+- @easy_discard
+- @cancel_advisor_action
+
+@court
+subtitle: -1 resource. Strengthen the liberals who can live with the republic — and with us.
+choose-if: resources >= 1 and ((not lvp_formed and gold_relation >= 25) or (lvp_formed and lvp_relation >= 25))
+unavailable-subtitle: [? if resources < 1: We do not have the resources. ?][? if (not lvp_formed and gold_relation < 25) or (lvp_formed and lvp_relation < 25): Relations with the <span style="color: #C0A054;">**Golds**</span> are too poor for our friendship to be worth anything to their republicans. ?]
+on-arrival: resources -= 1; gold_left += 3 if not lvp_formed; gold_relation += 3*(1-dissent) if not lvp_formed; lvp_left += 3 if lvp_formed; lvp_relation += 3*(1-dissent) if lvp_formed; liberal_cooperation += 2
+
+Dinners, introductions, a favorable word in our press for the right liberal at the right moment — nothing that could be called an alliance, everything that makes one thinkable. The republican wing of the <span style="color: #C0A054;">**Golds**</span> grows a little bolder for knowing it does not stand alone.
+
+@poach
+subtitle: Their republican voters may prefer the genuine article.
+on-arrival: burgher_marcher += 2; guild_marcher += 1; gold_relation -= 4 if not lvp_formed; gold_left -= 1 if not lvp_formed; lvp_relation -= 4 if lvp_formed; lvp_left -= 1 if lvp_formed
+
+We stop courting the party and start courting its voters: the clerks, the teachers, the small proprietors who vote <span style="color: #C0A054;">Gold</span> out of habit and read our program with more sympathy than they admit. The party's managers notice — and the republicans inside it, weakened by every defection, notice too.
+
+@watch
+
+We keep our file on the liberal factions current — who dines with whom, which papers take whose money, which deputies are for sale and which are merely for rent. Knowledge first; leverage later.
