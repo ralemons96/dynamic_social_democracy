@@ -112,6 +112,7 @@ A chapter in history closes.
 - @war_repel
 - @war_stalemate
 - @war_conquest
+- @go_back
 
 @taming_lose
 title: The <span style="color: #7A3C00;">Royalist</span> Beast Tamed?

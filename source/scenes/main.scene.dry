@@ -1281,6 +1281,7 @@ max-cards: 3
 - @party
 - @govt
 - @eco
+- @pass_month
 - @time
 - @time_2
 - #advisor
@@ -2581,6 +2582,7 @@ max-cards: 4
 - @party
 - @govt
 - @eco
+- @pass_month
 - @time
 - @time_2
 - #advisor
@@ -2601,6 +2603,15 @@ card-image: img/reichstag_2.jpg
 is-deck: true
 
 - #govt_affairs
+
+@pass_month
+title: Let the Month Pass
+subtitle: Attend to no great business; let the calendar turn.
+view-if: dufour_dead = 1
+is-card: true
+card-image: img/hourglass.jpg
+on-arrival: month_actions += 1
+go-to: root
 
 @time
 title: Bide our Time

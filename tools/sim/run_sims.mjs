@@ -12,6 +12,7 @@ const SEED = parseInt(args.seed || '1', 10);
 const PROFILE = args.profile || 'random';
 const CAP = parseInt(args.cap || '4000', 10);
 const here = dirname(fileURLToPath(import.meta.url));
+const TRACE = args.trace !== undefined ? parseInt(args.trace, 10) : -1;
 const OUT = args.out || join(here, 'out', `${PROFILE}-s${SEED}-r${RUNS}.jsonl`);
 
 const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military_readiness',
@@ -41,7 +42,8 @@ function pickChoice(choices, rnd, profile, loopy) {
   return avail[Math.floor(rnd() * avail.length)].i;
 }
 
-const game = await loadGame();
+// Load a FRESH game object per run - the engine mutates the shared game object
+// (deck caches etc.), which contaminated later runs in a batch.
 mkdirSync(dirname(OUT), { recursive: true });
 const lines = [JSON.stringify({ config: { runs: RUNS, seed: SEED, profile: PROFILE, cap: CAP, date: '(fixed-seed batch)' } })];
 const t0 = Date.now();
@@ -53,6 +55,7 @@ for (let run = 0; run < RUNS; run++) {
   Math.random = seededRandom(runSeed ^ 0x9e3779b9);
   const origLog = console.log;
   console.log = () => {}; // silence in-game debug prints during the run
+  const game = await loadGame();
   const ui = makeSimUI();
   const eng = makeEngine(ui, game);
   const rec = { run, seed: runSeed, error: null, softlock: null, steps: 0 };
@@ -72,6 +75,16 @@ for (let run = 0; run < RUNS; run++) {
       seen.set(sid, (seen.get(sid) || 0) + 1);
       const loopy = seen.get(sid) > 5; // break deterministic menu loops
       const idx = pickChoice(choices, rnd, PROFILE, loopy);
+      if (run === TRACE) {
+        rec._ring = rec._ring || []; rec._lastT = rec._lastT === undefined ? -1 : rec._lastT; rec._lastTs = rec._lastTs || 0;
+        if ((q.time || 0) !== rec._lastT) { rec._lastT = q.time || 0; rec._lastTs = step; }
+        rec._ring.push(sid + ' -> ' + (idx >= 0 ? String(choices[idx].title).replace(/<[^>]*>/g, '').slice(0, 60) : 'NONE'));
+        if (rec._ring.length > 5000) rec._ring.shift();
+        if (step - rec._lastTs === 400) {
+          process.stderr.write('FROZEN time=' + rec._lastT + ' y' + q.year + 'm' + q.month + ' war_choices=' + q.war_choices + ' long_war=' + q.long_war + ' resist_coup=' + q.resist_coup + ' total_defeat=' + q.total_defeat + ' republic_victory=' + q.republic_victory + '\n' + rec._ring.join('\n') + '\n');
+        }
+      }
+
       if (idx < 0) { rec.softlock = { scene: eng.state.sceneId, kind: 'all-locked', titles: choices.map(c => String(c.title).slice(0, 40)) }; break; }
       eng.choose(idx);
     }
