@@ -22,7 +22,38 @@ const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military
   'gold_left', 'gold_right', 'lvp_left', 'lvp_right', 'banner_strength', 'loyalist_strength',
   'vanguard_strength', 'coup_progress'];
 const ENDING_FLAGS = ['weimar_win', 'empire_outcome', 'gallax_empire_end', 'dnef_win',
-  'civil_war_seen', 'republic_victory', 'long_war', 'chancellor', 'president', 'rubicon'];
+  'civil_war_seen', 'republic_victory', 'long_war', 'chancellor', 'president', 'rubicon',
+  'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation'];
+const STRAT_RULES = [
+  [-12, /civil war|revolt|insurrection|uprising|fight on the streets|general strike/i],
+  [-8, /break toleration|end the toleration|tired of austerity/i],
+  [-8, /support the vote of no confidence|call a vote of no confidence|voting against this government/i],
+  [-7, /repairing relationships with the collectivist|support from the collectivists|popular front|left front/i],
+  [-6, /support the left view|simply a bandage|class struggle|nationaliz|socializ|expropriat/i],
+  [-5, /support the centrist view|nothing can be done|false hope|retain our current policy|wait it out/i],
+  [-4, /stand alone/i],
+  [-5, /mod info|credits/i],
+  [9, /begin (dynamic mode)/i],
+  [8, /tolerate|toleration/i],
+  [8, /action is needed|craft a formal plan|voss renewal|renewal plan|widespread support for the voss|force the party to accept the plan/i],
+  [7, /support the labor view|support the reformist view/i],
+  [7, /an active economic policy|without deficit spending/i],
+  [6, /war loans|moratorium|lausanne/i],
+  [6, /oppose any votes of no confidence|voting for the government|join the .{0,20}coalition|enter the .{0,20}coalition/i],
+  [6, /strengthen our bonds|reconcile with the/i],
+  [5, /ban the |persecute|crack down|confronting/i],
+  [5, /campaign|canvass/i],
+  [4, /compromise|mediate|concession/i],
+  [3, /iron banner/i],
+  [2, /rally/i],
+  [1, /party affairs|government affairs/i],
+];
+function stratScore(c) {
+  const t = (String(c.title) + ' ' + String(c.subtitle || '')).replace(/<[^>]*>/g, '');
+  let sc = 0;
+  for (const [w, re] of STRAT_RULES) if (re.test(t)) sc += w;
+  return sc;
+}
 const PASSIVE_RE = /no change|do not|do nothing|stand alone|hold our|hold the line|take no action|watch, and|next week|continue|return to|we await|nothing to do/i;
 
 function snapshot(q) {
@@ -35,6 +66,15 @@ function pickChoice(choices, rnd, profile, loopy) {
   const avail = choices.map((c, i) => ({ c, i })).filter(x => x.c.canChoose);
   if (!avail.length) return -1;
   if (profile === 'first' && !loopy) return avail[0].i;
+  if (profile === 'strategy' && !loopy) {
+    let best = -Infinity, bestIdx = [];
+    for (const x of avail) {
+      const sc = stratScore(x.c);
+      if (sc > best) { best = sc; bestIdx = [x.i]; }
+      else if (sc === best) bestIdx.push(x.i);
+    }
+    return bestIdx[Math.floor(rnd() * bestIdx.length)];
+  }
   if (profile === 'passive') {
     const pas = avail.filter(x => PASSIVE_RE.test(String(x.c.title)));
     if (pas.length && rnd() < 0.8) return pas[Math.floor(rnd() * pas.length)].i;
