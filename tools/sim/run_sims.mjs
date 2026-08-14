@@ -20,7 +20,8 @@ const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military
   'budget', 'resources', 'disfavored', 'inflation', 'marcher_votes', 'royalist_votes',
   'collectivist_votes', 'gold_votes', 'marcher_in_government', 'coalition_dissent',
   'gold_left', 'gold_right', 'lvp_left', 'lvp_right', 'banner_strength', 'loyalist_strength',
-  'vanguard_strength', 'coup_progress'];
+  'vanguard_strength', 'coup_progress',
+  'commons_marcher', 'burgher_marcher', 'guild_marcher', 'landed_marcher', 'disfavored_marcher', 'faithful_marcher', 'bruning_coalition', 'weimar_coalition', 'dissent'];
 const ENDING_FLAGS = ['weimar_win', 'empire_outcome', 'gallax_empire_end', 'dnef_win',
   'civil_war_seen', 'republic_victory', 'long_war', 'chancellor', 'president', 'rubicon',
   'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation'];
@@ -113,6 +114,9 @@ for (let run = 0; run < RUNS; run++) {
       if (!choices || !choices.length) { rec.softlock = { scene: eng.state.sceneId, kind: 'no-choices' }; break; }
       const sid = String(eng.state.sceneId || '');
       seen.set(sid, (seen.get(sid) || 0) + 1);
+      const topNow = sid.split('.')[0];
+      if (/^(election_1928|prussia_election_1928)$/.test(topNow) && rec._lastTop !== topNow) rec.elections = (rec.elections || 0) + 1;
+      rec._lastTop = topNow;
       const loopy = seen.get(sid) > 5; // break deterministic menu loops
       const idx = pickChoice(choices, rnd, PROFILE, loopy);
       if (run === TRACE) {
