@@ -21,10 +21,11 @@ const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military
   'collectivist_votes', 'gold_votes', 'marcher_in_government', 'coalition_dissent',
   'gold_left', 'gold_right', 'lvp_left', 'lvp_right', 'banner_strength', 'loyalist_strength',
   'vanguard_strength', 'coup_progress',
-  'commons_marcher', 'burgher_marcher', 'guild_marcher', 'landed_marcher', 'disfavored_marcher', 'faithful_marcher', 'bruning_coalition', 'weimar_coalition', 'dissent'];
+  'commons_marcher', 'burgher_marcher', 'guild_marcher', 'landed_marcher', 'disfavored_marcher', 'faithful_marcher', 'bruning_coalition', 'weimar_coalition', 'dissent',
+  'lvp_relation', 'lvp_left', 'lvp_right'];
 const ENDING_FLAGS = ['weimar_win', 'empire_outcome', 'gallax_empire_end', 'dnef_win',
   'civil_war_seen', 'republic_victory', 'long_war', 'chancellor', 'president', 'rubicon',
-  'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation'];
+  'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation', 'lvp_relation', 'lvp_ideology', 'lvp_formed'];
 const STRAT_RULES = [
   [-12, /civil war|revolt|insurrection|uprising|fight on the streets|general strike/i],
   [-8, /break toleration|end the toleration|tired of austerity/i],
