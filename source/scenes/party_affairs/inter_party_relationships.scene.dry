@@ -19,6 +19,7 @@ The <span style="color: #c00000;">**Marchers**</span> cannot govern by itself ye
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Collectivist Party</span>.
 - @dnvp: Open dialogue with [? if traditionalist_leader != "Maine": Trevannon and the <span style="color: #0087DC;">People's Conservatives</span>?][? if traditionalist_leader == "Maine": Maine and the <span style="color: #6D5298;">Faithful Socials</span>?] of the <span style="color: #3E88B3;">**Traditionalists**</span>.
 - @nsdap: Establish contact with Crowde and the <span style="color: #7A3C00;">Royalist Party</span>'s left wing.
+- @gold_guildmasters: Court the guild-masters of the <span style="color: #C0A054;">Golds</span>.
 - @gold_voters: Court the disaffected republican voters of the <span style="color: #C0A054;">Golds</span>.
 - @spd_alone: The <span style="color: #c00000;">Marchers</span> can stand alone for now.
 - @easy_discard
@@ -433,6 +434,15 @@ The <span style="color: #3E88B3;">**Wardens**</span> and <span style="color: #7A
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
 - @return: Continue...
+
+@gold_guildmasters
+view-if: gold_exist and not lvp_formed and not gold_gnu
+subtitle: -1 resources. Reassure the industrial wing directly - our left will be furious.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; gold_relation += 8*(1 - dissent); gold_left -= 2 if gold_left >= 2; left_dissent += 10; labor_dissent += 5
+
+We go over the heads of the party's republicans and deal directly with the men who fund it: the guild-masters, the mill owners, the men of the exchanges. Quiet assurances are given on property, on taxation, on the sanctity of contracts. The <span style="color: #C0A054;">**Golds**</span> warm to us considerably - though it is their business wing that pockets the goodwill, while the republicans in the party find themselves talked past. Our own left wing is furious at the spectacle of Reformists courting capital, and the Free Guilds pointedly ask whose party this is.
 
 @gold_voters
 view-if: (gold_exist and not lvp_formed and not gold_gnu) or (lvp_formed and not lvp_gnu)

@@ -1278,7 +1278,7 @@ Q.labor_dissent = 25;
 Q.center_dissent = 25;
 Q.unionist_relation = 41;
 Q.collectivist_relation = 16;
-Q.gold_relation = 38;
+Q.gold_relation = 40;
 Q.ddp_relation = 55;
 Q.budget = 2;
 this.state.disableSaves = true;
@@ -1296,7 +1296,7 @@ Q.base_dues = 3;
 Q.banner_strength = 2000;
 Q.unionist_relation = 41;
 Q.collectivist_relation = 21;
-Q.gold_relation = 38;
+Q.gold_relation = 40;
 Q.ddp_relation = 55;
 Q.budget = 2;
 !}
@@ -1312,7 +1312,7 @@ Q.base_dues = 3;
 Q.banner_strength = 2000;
 Q.unionist_relation = 41;
 Q.collectivist_relation = 21;
-Q.gold_relation = 38;
+Q.gold_relation = 40;
 Q.ddp_relation = 55;
 Q.budget = 2;
 !}
