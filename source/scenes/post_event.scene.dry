@@ -4266,6 +4266,8 @@ if (Q.president == "DuFour" && Q.chancellor == "Goodlake" && !Q.marcher_in_gover
 
 if (Q.rubicon_mini) Q.rubicon_mini_time += 1;
 
+if (Q.marcher_toleration) Q.marcher_toleration_ever = 1;
+
 if (Q.president != "DuFour" && Q.total_bruning_time && Q.chancellor == "Askew" && !Q.marcher_in_government && Q.year >= 1930) {
     Q.bruning_lite_time += Q.bruning_time;
     Q.bruning_time = 0;

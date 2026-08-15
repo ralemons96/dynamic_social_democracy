@@ -308,12 +308,12 @@ Q.guild_traditionalist = 24;
 Q.guild_royalist = 9;
 Q.guild_other = 20;
 
-Q.landed_marcher = 9;
+Q.landed_marcher = 22.5;
 Q.landed_collectivist = 0;
 Q.landed_unionist = 5;
 Q.landed_ddp = 4;
 Q.landed_gold = 15;
-Q.landed_traditionalist = 46;
+Q.landed_traditionalist = 32.5;
 Q.landed_royalist = 3;
 Q.landed_other = 16;
 
@@ -338,7 +338,7 @@ Q.faithful_other = 16;
 Q.commons_marcher_old = 60;
 Q.burgher_marcher_old = 8;
 Q.guild_marcher_old = 4;
-Q.landed_marcher_old = 8;
+Q.landed_marcher_old = 21.5;
 Q.disfavored_marcher_old = 25;
 Q.faithful_marcher_old = 20;
 
