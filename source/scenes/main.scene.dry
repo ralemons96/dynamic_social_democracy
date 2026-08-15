@@ -2607,7 +2607,7 @@ is-deck: true
 @pass_month
 title: Let the Month Pass
 subtitle: Attend to no great business; let the calendar turn.
-view-if: dufour_dead = 1
+view-if: dufour_dead = 1 or year >= 1934
 is-card: true
 card-image: img/hourglass.jpg
 on-arrival: month_actions += 1

@@ -28,10 +28,13 @@ if (Q.dissent > 0.15) {
 }
 Q.total_power += Q.banner_power;
 Q.heartland_police_power = Q.heartland_police_strength*Q.heartland_police_militancy*Q.heartland_police_loyalty;
-if (Q.marcher_heartland && Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon") {
+if (Q.marcher_heartland && (Q.heartland_leader == "Bristol" || Q.heartland_leader == "Pendrigon")) {
     Q.total_power += Q.heartland_police_power;
-} else if (Q.marcher_heartland && Q.heartland_leader !== "Bristol" && Q.heartland_leader !== "Pendrigon") {
+} else if (Q.marcher_heartland) {
     Q.total_power += (Q.heartland_police_power / 2);
+} else {
+    // without the Heartland government, republican-loyal officers still join as volunteers (mirrors the army's /4)
+    Q.total_power += (Q.heartland_police_power / 4);
 }
 if (Q.army_loyalty < 0) {
     Q.army_loyalty = 0;
@@ -151,9 +154,9 @@ A general strike stopped the officers’ putsch in 4285, and it can stop <span s
 max-visits: 1
 go-to: war_menu
 on-arrival: war_choices += 1
-view-if: marcher_heartland = 1
+view-if: marcher_heartland = 1 or heartland_police_loyalty >= 0.4
 
-Since we still control the Heartland government, we can call upon the Heartland police. [? if heartland_police_loyalty < 0.4 : Unfortunately, the police are politically unreliable at best. ?][? if heartland_police_loyalty >= 0.4 and heartland_police_loyalty < 0.65 : In this crucial hour, the Heartland police are split, with about half actively supporting our efforts. ?][? if heartland_police_loyalty >= 0.65 : Most join in supporting our efforts. Our efforts in cultivating <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> loyalties in the police have proven their worth. ?]
+[? if marcher_heartland : Since we still control the Heartland government, we can call upon the Heartland police. ?][? if marcher_heartland and heartland_police_loyalty < 0.4 : Unfortunately, the police are politically unreliable at best. ?][? if marcher_heartland and heartland_police_loyalty >= 0.4 and heartland_police_loyalty < 0.65 : In this crucial hour, the Heartland police are split, with about half actively supporting our efforts. ?][? if marcher_heartland and heartland_police_loyalty >= 0.65 : Most join in supporting our efforts. Our efforts in cultivating <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> loyalties in the police have proven their worth. ?][? if not marcher_heartland : The Heartland government is no longer ours to command — but the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> loyalties we cultivated in its police have not vanished with a change of masters. Officers and constables slip away from their posts in ones and twos, some bringing their service arms, to stand with the republic as volunteers. ?]
 
 
 
