@@ -54,7 +54,7 @@ if (Q.weimar_win) {
   var _reunion = (Q.reunification_support === undefined) ? 33 : Q.reunification_support;
   var _stab = (Q.stability === undefined) ? 50 : Q.stability;
   var _ready = Q.military_readiness || 0;
-  if (_posture >= 65 && _reunion >= 60) {
+  if (_posture >= 65 && _reunion >= 60 && !Q.reconciliation_rejected) {
     Q.empire_outcome = "reunification";
   } else if (_posture >= 50 || (_stab >= 55 && _ready >= 250)) {
     Q.empire_outcome = "cold_war";
@@ -150,7 +150,7 @@ Neither Staal nor DuFour had tried to defend the republic; both had concluded it
 @weimar_win
 title: The Unity Republic Limps Forward
 subtitle: Ending 2
-view-if: ((weimar_win and not return_to_normalcy and marcher_votes < 50 and marcher_r < 50 and pro_republic < 80 and royalist_votes >= 8 and not civil_war_seen) or (weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and rubicon)) and empire_outcome == ""
+view-if: (weimar_win and not return_to_normalcy and marcher_votes < 50 and marcher_r < 50 and pro_republic < 80 and royalist_votes >= 8 and not civil_war_seen) or (weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and rubicon)
 new-page: true
 
 [? if rubicon: The republic survived the Commonwealth Convention, but narrowly, and more through the failure of the men who would have ended it than through any strength of its own. The precedent was a dangerous one: a president had lost faith in parliament, suspended ordinary politics, and invited generals to govern in its place, and the institutions had bent rather than broken only by luck and exhaustion. The Empire-in-Exile, denied its opening, withdrew to wait for the next moment of weakness, and few doubted one would come. The Commonwealth that emerged was intact but unstable—its democracy preserved and badly shaken, its recovery far from certain, its survival dependent on years of hard and unglamorous work.
@@ -181,7 +181,7 @@ Though real democracy was formally restored a generation later following massive
 @weimar_mega_win
 title: The Unity Republic Marches On
 subtitle: Ending 3
-view-if: weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and not rubicon and empire_outcome == ""
+view-if: weimar_win and (return_to_normalcy or marcher_votes >= 50 or marcher_r >= 50 or pro_republic >= 80 or royalist_votes < 8) and not civil_war_seen and not rubicon
 new-page: true
 
 At the turn of the decade, the long calamity and widespread disillusionment with the Unity system left few optimists in the Commonwealth. Yet, the Republic—forged by the will of the people all those years ago—has weathered a crisis of unprecedented proportions. <span style="color: #c00000;">Reformism</span> endures, as do its detractors.

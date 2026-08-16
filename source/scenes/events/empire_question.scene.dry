@@ -1,0 +1,109 @@
+title: The Empire Question
+subtitle: Before the era closes, the Marchers must decide where they stand.
+new-page: true
+view-if: year = 1934 and month >= 3 and month <= 6 and not dufour_dead and not rubicon and not rubicon_mini and president != "Gallax" and president != "Gorrick" and president != "Selden"
+max-visits: 1
+priority: 3
+tags: event
+
+= The Empire Question
+
+DuFour's era is drawing to its close, and every chancery and party office in the capital knows it. Whatever government stands when the old man leaves the stage will inherit the question that has shadowed the Commonwealth since the Fall of Ivion: what is to be done about the <span style="color: #7A3C00;">Axton Empire</span>?
+
+[? if empire_posture >= 65 : The Empress's conciliators hold the upper hand at the Imperial court, and their envoys speak openly of a settlement between the two realms. ?][? if empire_posture >= 40 and empire_posture < 65 : The Imperial court watches the Commonwealth warily; neither the war party nor the Empress's conciliators can claim the upper hand. ?][? if empire_posture < 40 : The hardliners dominate the Imperial court, and their speeches leave little room for any settlement short of the Commonwealth's return by force. ?]
+
+The <span style="color: #c00000;">**Marchers**</span> must now decide how to frame the peace — or the war — that will define the next era.
+
+- @lobby
+- @resist
+- @urge
+- @reject
+- @final_struggle
+- @channels
+- @committee
+
+@lobby
+title: Lobby against the Empire.
+subtitle: -1 resources. Spend our influence turning the public against any settlement.
+view-if: chancellor_party != "Marcher" and foreign_minister_party != "Marcher" and army_minister_party != "Marcher"
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; empire_posture -= 8 if empire_posture >= 8; nationalism += 2
+
+From opposition benches and party presses, we spend what influence we have against the very idea of a settlement. Our editorials name the Empire what it is; our deputies harry every minister who so much as receives an Imperial courier. The mood between the realms sours noticeably.
+
+@resist
+title: Prepare for armed resistance.
+subtitle: If the government will not defend the republic, the Banners will.
+view-if: chancellor_party != "Marcher" and foreign_minister_party != "Marcher" and army_minister_party != "Marcher"
+on-arrival: banner_strength += 50; banner_militancy += 0.05; empire_posture -= 4 if empire_posture >= 4; imperial_fear += 1
+
+Quietly, and then not so quietly, the Banners begin to drill for a war the government refuses to name. New volunteers are mustered and old rifles are counted. The Imperial court takes note — and so does a frightened public.
+
+@urge
+title: Urge the government toward diplomacy.
+subtitle: We may not hold the ministries, but we still have a voice.
+view-if: chancellor_party != "Marcher" and foreign_minister_party != "Marcher" and army_minister_party != "Marcher"
+on-arrival: empire_posture += 4 if empire_posture <= 96; dufour_angry -= 2
+
+We use what standing we have — speeches in the Assembly, quiet words with the chancellery — to urge talks over threats. It is a modest contribution, but the conciliators on both sides of the border hear it.
+
+@reject
+title: Reject any diplomacy!
+subtitle: Slam the door. There will be no settlement with the Empire while we hold power.
+view-if: chancellor_party == "Marcher" or foreign_minister_party == "Marcher" or army_minister_party == "Marcher"
+on-arrival: {!
+if ((Q.empire_posture || 0) > 35) Q.empire_posture = 35;
+Q.reconciliation_rejected = 1;
+Q.nationalism = (Q.nationalism || 0) + 4;
+Q.imperial_fear = (Q.imperial_fear || 0) + 1;
+Q.pro_republic = (Q.pro_republic || 0) + 2;
+!}
+
+The government's answer to the Imperial court is delivered in a single frozen communiqué: there is nothing to discuss. The Empress's conciliators are humiliated before their own hardliners, and the door to reunion swings shut for good. Whatever comes now — a cold peace across a fortified border, or war — the Commonwealth will face it as a nation apart.
+
+@final_struggle
+title: Prepare for the final struggle.
+subtitle: -2 budget. Mobilize everything. If the Empire comes, it will find us ready.
+view-if: chancellor_party == "Marcher" or foreign_minister_party == "Marcher" or army_minister_party == "Marcher"
+choose-if: budget >= 2 and (army_minister_party == "Marcher" or chancellor_party == "Marcher")
+unavailable-subtitle: [? if budget < 2 : We do not have the budget for mobilization on this scale. ?] [? if army_minister_party != "Marcher" and chancellor_party != "Marcher" : Only the chancellery or the War Ministry can order this. ?]
+on-arrival: {!
+if ((Q.empire_posture || 0) > 30) Q.empire_posture = 30;
+Q.budget -= 2;
+Q.army_strength = (Q.army_strength || 0) + 38;
+if ((Q.army_militancy || 0) < 8) Q.army_militancy = (Q.army_militancy || 0) + 0.45;
+if ((Q.army_loyalty || 0) < 0.3) Q.coup_progress = (Q.coup_progress || 0) + 1;
+if ((Q.army_loyalty || 0) < 0.15) Q.coup_progress = (Q.coup_progress || 0) + 1;
+Q.dufour_angry = (Q.dufour_angry || 0) - 8;
+Q.left_dissent = (Q.left_dissent || 0) + 6;
+Q.gold_left = (Q.gold_left || 0) + 2;
+Q.lvp_left = (Q.lvp_left || 0) + 2;
+Q.commons_marcher = (Q.commons_marcher || 0) - 2;
+Q.imperial_fear = (Q.imperial_fear || 0) + 1;
+Q.economic_growth = (Q.economic_growth || 0) + 0.15;
+!}
+
+Every shipyard, arsenal, and drill-ground in the Commonwealth is put to work. The appropriation is vast and the message unmistakable: there will be no reunion, and if the Empire wants its lost province back it will pay in blood for every league. The generals are delighted. Our own base — and a nervous public — rather less so.
+
+@channels
+title: Open diplomatic channels.
+subtitle: Formal correspondence with the Imperial court, in the open.
+view-if: chancellor_party == "Marcher" or foreign_minister_party == "Marcher" or army_minister_party == "Marcher"
+choose-if: foreign_minister_party == "Marcher" or chancellor_party == "Marcher"
+unavailable-subtitle: Only the chancellery or the Foreign Ministry can open formal channels.
+on-arrival: empire_posture += 8 if empire_posture <= 92; dufour_angry -= 3; nationalism -= 2
+
+For the first time since the Fall, the Commonwealth and the Empire exchange notes as governments rather than as enemies. Nothing is settled — but the Empress's conciliators can now point to something real, and the war party on both sides finds its speeches ringing a little hollow.
+
+@committee
+title: Formally open a Reconciliation Committee.
+subtitle: -1 budget. A standing body to negotiate the terms of peace between the realms.[? if coup_progress >= 5 : The officer corps is restive — going down this road may provoke a revolt. ?]
+view-if: chancellor_party == "Marcher" or foreign_minister_party == "Marcher" or army_minister_party == "Marcher"
+choose-if: budget >= 1 and chancellor_party == "Marcher" and foreign_minister_party == "Marcher"
+unavailable-subtitle: [? if budget < 1 : We do not have the budget. ?] [? if chancellor_party != "Marcher" or foreign_minister_party != "Marcher" : This requires both the chancellery and the Foreign Ministry. ?]
+on-arrival: budget -= 1; reconciliation_committee = 1; empire_posture += 15 if empire_posture <= 85; coup_progress += 2; nationalism -= 4; dufour_angry -= 5; royalist_urgency += 1
+
+With the full weight of the chancellery and the Foreign Ministry behind it, a standing Reconciliation Committee is seated — Commonwealth and Imperial delegates at one table, empowered to draft the terms of a lasting settlement between the realms. It is the boldest gesture toward peace since the Founding, and it changes what is possible.
+
+It also has enemies. The Royalists denounce it as capitulation dressed in ribbon, and in the officer corps there are men who mutter that no committee will sign away what the army bled for.

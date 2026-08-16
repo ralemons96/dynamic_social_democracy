@@ -1010,7 +1010,8 @@ Q.military_readiness = Math.round(_ready);
         0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
     var _reunion = 0.4 * (Q.empire_posture || 0) + 0.25 * (Q.magi_balance || 0)
         + 0.2 * Math.min(100, (Q.royalist_relation || 0) * 2)
-        + 0.15 * (Q.concord_formed ? 100 : 0);
+        + 0.15 * (Q.concord_formed ? 100 : 0)
+        + (Q.reconciliation_committee ? 12 : 0);
     Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
     if (Q.empire_posture === undefined) Q.empire_posture = 50;
     if (Q.commonwealth_standing === undefined) Q.commonwealth_standing = 50;
