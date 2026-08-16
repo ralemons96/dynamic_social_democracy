@@ -24,12 +24,12 @@ The Judiciary is one of the most <span style="color: #808080;">reactionary</span
 subtitle: -1 budget
 unavailable-subtitle: Not enough budget.
 choose-if: budget >= 1
-on-arrival: budget -= 1; democratization += 2; coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); commons_marcher += 5*(1-dissent) if democratization >= 3; judicial_reform += 2; pro_republic += 4*(1-dissent); coup_progress += 1; coalition_dissent += 1 if historical_mode; gold_left += 2; ddp_left += 1; lvp_left += 1.5; dufour_angry += 5
+on-arrival: budget -= 1; democratization += 2; coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalition and lvp_formed)); commons_marcher += 5*(1-dissent) if democratization >= 3; judicial_reform += 2; pro_republic += 4*(1-dissent); coup_progress += 1; coalition_dissent += 1 if historical_mode; gold_left += 2; ddp_left += 1; lvp_left += 1.5; dufour_angry += 5; collectivist_relation += 3
 
 We investigate jurists who have shown themselves to have biased or corrupt behavior, and try to remove them, replacing them with more democratically-oriented jurists. This obviously raises quite a great deal of ire in conservative circles, including within our coalition. 
 
 @minor_reforms
-on-arrival: democratization += 1; commons_marcher += 3*(1-dissent) if democratization >= 3; judicial_reform += 1; pro_republic += 2*(1-dissent); judiciary_timer += 6; gold_left += 1; ddp_left += 0.5; lvp_left += 0.5
+on-arrival: democratization += 1; commons_marcher += 3*(1-dissent) if democratization >= 3; judicial_reform += 1; pro_republic += 2*(1-dissent); judiciary_timer += 6; gold_left += 1; ddp_left += 0.5; lvp_left += 0.5; collectivist_relation += 1
 
 We try to remove the most obviously biased and corrupt jurists, while leaving most of the system intact. It is slow work reforming the judiciary.
 

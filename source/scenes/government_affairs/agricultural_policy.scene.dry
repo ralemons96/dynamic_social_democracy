@@ -24,7 +24,7 @@ title: Land Reform
 subtitle: -1 budget - Break up the large aristocratic estates and give land to landless workers.
 unavailable-subtitle: [? if budget <= 0 : Requires 1 budget. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
 choose-if: judicial_reform >= 2 and budget > 0
-on-arrival: budget -= 1; land_reform += 1; coalition_dissent += 1; landed_marcher += 7*(1-dissent); landed_royalist -= 4*(1-dissent); landed_other -= 2*(1-dissent); disfavored -= 1 if disfavored >= 5; gold_relation -= 5; unionist_relation -= 4; lvp_relation -= 3; left_strength += 8; left_dissent -= 5; landed_sol += 3; landed_policy += 1; coup_progress += 1; agriculture_goal_completed += 1; gold_right += 1; lvp_right += 1; agriculture_goal_marcher_peoples += 1; dufour_angry += 10
+on-arrival: budget -= 1; land_reform += 1; coalition_dissent += 1; landed_marcher += 7*(1-dissent); landed_royalist -= 4*(1-dissent); landed_other -= 2*(1-dissent); disfavored -= 1 if disfavored >= 5; gold_relation -= 5; unionist_relation -= 4; lvp_relation -= 3; left_strength += 8; left_dissent -= 5; landed_sol += 3; landed_policy += 1; coup_progress += 1; agriculture_goal_completed += 1; gold_right += 1; lvp_right += 1; agriculture_goal_marcher_peoples += 1; dufour_angry += 10; collectivist_relation += 3
 max-visits: 4
 
 With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, breaking the semi-feudal property relations present in East Heartland and other areas with large estates. The propertied parties and large farmers despise our intrusion into the sacredness of private property, while leftists are cautiously optimistic.

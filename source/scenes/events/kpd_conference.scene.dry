@@ -1,7 +1,7 @@
 title: <span style="color: #700000;">**Collectivists**</span> Party Conference
 subtitle: The <span style="color: #700000;">**Collectivists**</span> chooses their new central committee - will the Gembirth Affair have an influence on their choice?
 new-page: true
-view-if: collectivist_relation >= 50 and wittorf_soviet_union = 1 and year = 1929 and month >= 6 and month <= 8
+view-if: collectivist_relation >= 50 and wittorf_secret = 1 and year = 1929 and month >= 6 and month <= 8
 max-visits: 1
 on-arrival: collectivist_party_conference_seen = 1
 tags: event
@@ -10,7 +10,7 @@ tags: event
 
 Now is the <span style="color: #700000;">**Collectivists**</span>'s national party conference, where they will choose their new leadership. The shadow of the Gembirth Affair hangs over it. On one hand are the hardline supporters of Halsmark, who support a "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">Sovereigntists</span>" policy that places the <span style="color: #c00000;">**Marchers**</span> as equivalent to the <span style="color: #7A3C00;">Royalists</span>. On the other hand is the "Conciliator" faction, who support a more cooperative policy towards the <span style="color: #c00000;">**Marchers**</span>.
 
-After our discussion with the <span style="color: #940000;">Central Union</span>, we are inclined to believe that <span style="color: #8B0000;">Vessarion</span> is at least open to the Conciliators. In order to affect the <span style="color: #700000;">**Collectivists**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Collectivist International</span> leaders as as well as the <span style="color: #700000;">**Collectivists**</span> membership.
+[? if wittorf_soviet_union : After our discussion with the <span style="color: #940000;">Central Union</span>, we are inclined to believe that <span style="color: #8B0000;">Vessarion</span> is at least open to the Conciliators. ?][? if wittorf_soviet_union == 0 : Our discreet handling of the Gembirth Affair has earned us real trust among the dissident Collectivists, and their word is that <span style="color: #8B0000;">Vessarion</span> is at least open to the Conciliators. ?] In order to affect the <span style="color: #700000;">**Collectivists**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Collectivist International</span> leaders as well as the <span style="color: #700000;">**Collectivists**</span> membership.
 
 - @conciliator_success
 - @conciliator_fail
