@@ -18,14 +18,14 @@ The Commonwealth Army Ministry is demanding the construction of a new war-galleo
 - @abstain: Abstain from the vote.
 
 @vote_yes
-on-arrival: left_dissent += 10; labor_dissent += 5; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; panzerkreuzer_funded = 1; collectivist_coalition_dissent += 1; collectivist_relation -= 6; commons_marcher -= 2; commons_marcher -= 4 if panzerkreuzer_campaign; disfavored_marcher -= 2 if panzerkreuzer_campaign; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 1; goal_marcher_cancel += 1; dufour_angry -= 5
+on-arrival: left_dissent += 10; labor_dissent += 5; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; panzerkreuzer_funded = 1; collectivist_coalition_dissent += 1; collectivist_relation -= 6; commons_marcher -= 2; commons_marcher -= 4 if panzerkreuzer_campaign; disfavored_marcher -= 2 if panzerkreuzer_campaign; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 1; goal_marcher_cancel += 1; dufour_angry -= 5; military_confidence += 1
 
 Our grassroots party members are shocked by our intransigence! Many party branches have begun agitating against the cabinet, and our Assembly members even plan a full vote on the proposal, contravening the government's decision. [? if panzerkreuzer_campaign: Our working-class base feels betrayed—we had promised to block the ship’s construction and fund children’s meals instead. ?]
 
 The campaign against the war-galleon fails, with only the dissident <span style="color: #c00000;">**Marchers**</span> and <span style="color: #700000;">**Collectivists**</span> members voting against. The ship will be built.
 
 @vote_no
-on-arrival: gold_relation -= 8; lvp_relation -= 5; unionist_relation -= 5; pacifism += 1; nationalism -= 2*(1-dissent); coalition_dissent += 1; gold_right += 1; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; dufour_angry += 5; panzerkreuzer_no = 1;
+on-arrival: gold_relation -= 8; lvp_relation -= 5; unionist_relation -= 5; pacifism += 1; nationalism -= 2*(1-dissent); coalition_dissent += 1; gold_right += 1; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; dufour_angry += 5; panzerkreuzer_no = 1; military_confidence -= 1 if military_confidence > 0
 go-to: vote_no_chancellor if chancellor_party = "Marcher"; vote_no_pass if chancellor_party != "Marcher"
 
 @vote_no_chancellor

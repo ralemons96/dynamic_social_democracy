@@ -231,6 +231,9 @@ Q.royalist_banned = 0;
 // coups and capital strikes happen when you upset the right or the guild-masters too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
 Q.coup_progress = 0;
+// how far the officer corps trusts us: raised by funding the army and voting for the
+// war-galleons, lowered by cutting them. Gates the penalty-free War Ministry.
+Q.military_confidence = 0;
 Q.capital_strike_progress = 0;
 
 Q.budget = 4;

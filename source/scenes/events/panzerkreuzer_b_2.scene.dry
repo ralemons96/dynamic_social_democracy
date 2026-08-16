@@ -18,14 +18,14 @@ Much of our party is deeply opposed to rearmament, while the center and right pa
 - @ministry: Use the Commonwealth Army Ministry to prevent the construction.
 
 @vote_yes
-on-arrival: left_dissent += 10; labor_dissent += 10; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; panzerkreuzer_b_funded = 1; collectivist_coalition_dissent += 1; collectivist_relation -= 6; commons_marcher -= 6; gold_left += 2; lvp_left += 1; dufour_angry -= 5
+on-arrival: left_dissent += 10; labor_dissent += 10; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; panzerkreuzer_b_funded = 1; collectivist_coalition_dissent += 1; collectivist_relation -= 6; commons_marcher -= 6; gold_left += 2; lvp_left += 1; dufour_angry -= 5; military_confidence += 1
 
 Our grassroots party members are highly critical of our decision. Many party branches have increased their agitation against our parliamentary fraction, especially after we opposed the construction of the first ship in favor of food for children.
 
 The vote in favor of the war-galleon easily passes, with opposition only from the <span style="color: #700000;">**Collectivists**</span>. The ship will be built.
 
 @vote_no
-on-arrival: gold_relation -= 8; lvp_relation -= 5; unionist_relation -= 5; pacifism += 1; nationalism -= 5*(1-dissent); coalition_dissent += 1; commons_marcher += 4*(1-dissent) if nationalism < 49; gold_right += 1; dufour_angry += 5
+on-arrival: gold_relation -= 8; lvp_relation -= 5; unionist_relation -= 5; pacifism += 1; nationalism -= 5*(1-dissent); coalition_dissent += 1; commons_marcher += 4*(1-dissent) if nationalism < 49; gold_right += 1; dufour_angry += 5; military_confidence -= 1 if military_confidence > 0
 go-to: built if (marcher_r + collectivist_r + sapd_r < 50); not_built if (marcher_r + collectivist_r + sapd_r >= 50)
 
 Our vote against the war-galleon is unpopular among the right-wing parties[? if in_grand_coalition or in_weimar_coalition: , including our coalition partners ?][? if marcher_toleration: , including the minority government that we are currently supporting ?].

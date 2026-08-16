@@ -3897,6 +3897,16 @@ We are seen as responsible for the failure to form a government, and many of our
 
 
 @ministries
+on-arrival: {!
+// The officer corps accepts a Marcher War Minister when the party's moderate wings
+// outweigh its centrists and leftists (or one of those has walked out entirely) AND
+// we have actually paid for the forces - funded an appropriation or voted through a
+// war-galleon. Recomputed on every entry to the picker so it is never stale.
+var _moderates = (Q.labor_strength || 0) + (Q.reformist_strength || 0) + (Q.knight_strength || 0);
+var _radicals = (Q.center_strength || 0) + (Q.left_strength || 0);
+var _dominant = (_moderates > _radicals) || Q.left_split || Q.centrists_resign;
+Q.military_ministry_trusted = (_dominant && (Q.military_confidence || 0) >= 1) ? 1 : 0;
+!}
 
 We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. [? if in_left_front : Any ministry that we do not take will be given to the <span style="color: #700000;">**Collectivists**</span>. ?] [? if in_left_front and army_minister_party == "Collectivist" : If the <span style="color: #700000;">**Collectivists**</span> controls the Commonwealth Army Ministry, the army will most likely revolt. ?]
 
@@ -3991,15 +4001,15 @@ Fritz Bayle of the <span style="color: #c00000;">**Marchers**</span> has been ap
 
 @reichswehr
 title: Commonwealth Army Ministry
-subtitle: The Ministry responsible for the armed forces is not typically our domain; General Ravabelle and the propertied-conservatives will be displeased[? if president = "DuFour" or president_ideology != "Left":&nbsp;along with President [+ president +]?].
+subtitle: [? if military_ministry_trusted : The military is comfortable with our leadership for now. ?][? if not military_ministry_trusted : The Ministry responsible for the armed forces is not typically our domain; General Ravabelle and the propertied-conservatives will be displeased[? if president = "DuFour" or president_ideology != "Left":&nbsp;along with President [+ president +]?]. ?]
 unavailable-subtitle: [? if leverage < 15: We do not have enough leverage. ?] [? if concord_ministers_accepted: Our coalition agreement stipulates that we must forfeit the Commonwealth Army Ministry. ?]
 tags: mins_1928
 choose-if: leverage >= 15 and not concord_ministers_accepted
 view-if: army_minister_party != "Marcher"
-on-arrival: leverage -= 15; army_minister_party = "Marcher"; army_minister = "Lebbon"; dufour_angry += 10
+on-arrival: leverage -= 15; army_minister_party = "Marcher"; army_minister = "Lebbon"; dufour_angry += 10 if not military_ministry_trusted
 go-to: ministries
 
-Lucan Lebbon of the <span style="color: #c00000;">**Marchers**</span> has been appointed Commonwealth Army Minister.
+Lucan Lebbon of the <span style="color: #c00000;">**Marchers**</span> has been appointed Commonwealth Army Minister.[? if military_ministry_trusted :  The appointment passes without protest: our moderates hold the party's course, and the appropriations we have voted through have bought us a measure of goodwill in the officers' mess. ?]
 
 
 @no_more
@@ -4204,7 +4214,7 @@ go-to: ministries
 @drop_reichswehr
 title: Drop the Commonwealth Army Ministry.
 view-if: army_minister_party = "Marcher"
-on-arrival: army_minister_party = "I"; army_minister = "Ravabelle"; leverage += 15; dufour_angry -= 10
+on-arrival: army_minister_party = "I"; army_minister = "Ravabelle"; leverage += 15; dufour_angry -= 10 if not military_ministry_trusted
 tags: drop_mins_1928
 go-to: ministries
 
