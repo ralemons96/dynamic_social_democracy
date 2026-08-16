@@ -2,7 +2,7 @@ title: Neorevisionism: a new idea
 new-page: true
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
-view-if: royalist_urgency > 0 and neorevisionism == 0 and (royalist_r >= 10 or royalist_normalized >= 0.15 or radicalization >= 3)
+view-if: neorevisionism == 0 and (royalist_urgency > 0 or military_confidence >= 2) and (royalist_r >= 10 or royalist_normalized >= 0.15 or radicalization >= 2 or military_confidence >= 2)
 on-arrival: shuffle_leadership_timer = 0;
 tags: party_affairs
 frequency: 400

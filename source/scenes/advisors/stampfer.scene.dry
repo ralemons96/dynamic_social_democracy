@@ -62,7 +62,7 @@ on-arrival: reformist_dissent -= 8; reformist_strength += 8; editorial_line = "R
 The Forward prints editorials in support of the reformist policies.
 
 @support_neorev
-view-if: neorevisionism
+view-if: neorevisionism > 0
 on-arrival: knight_dissent -= 8; knight_strength += 8; editorial_line = "Neorevisionists"; royalist_urgency += 1
 
 The Forward prints editorials in support of neorevisionist ideas.

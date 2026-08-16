@@ -219,7 +219,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('polizeistaat');
   }
 
-  if (Q.president == "Hewes" && Q.chancellor == "Aldermoor" && Q.unionist_leader == "Aldermoor" && Q.unionist_party_name == "Concord" && Q.lvp_formed && Q.constitutional_reform >= 3 && !Q.royalist_r && !Q.collectivist_r && Q.neorevisionism && Q.reformist_strength >= Q.left_strength && Q.reformist_strength >= Q.center_strength && Q.reformist_strength >= Q.labor_strength) {
+  if (Q.president == "Hewes" && Q.chancellor == "Aldermoor" && Q.unionist_leader == "Aldermoor" && Q.unionist_party_name == "Concord" && Q.lvp_formed && Q.constitutional_reform >= 3 && !Q.royalist_r && !Q.collectivist_r && Q.neorevisionism > 0 && Q.reformist_strength >= Q.left_strength && Q.reformist_strength >= Q.center_strength && Q.reformist_strength >= Q.labor_strength) {
       this.achieve('wahre_bundesrepublik');
   }
 

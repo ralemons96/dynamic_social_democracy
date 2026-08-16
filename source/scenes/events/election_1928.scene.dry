@@ -4006,7 +4006,7 @@ unavailable-subtitle: [? if leverage < 15: We do not have enough leverage. ?] [?
 tags: mins_1928
 choose-if: leverage >= 15 and not concord_ministers_accepted
 view-if: army_minister_party != "Marcher"
-on-arrival: leverage -= 15; army_minister_party = "Marcher"; army_minister = "Lebbon"; dufour_angry += 10 if not military_ministry_trusted
+on-arrival: leverage -= 15; army_minister_party = "Marcher"; army_minister = "Lebbon"; dufour_angry += 10 if not military_ministry_trusted; military_ministry_penalty_paid = 1 if not military_ministry_trusted; military_ministry_penalty_paid = 0 if military_ministry_trusted; military_confidence += 1
 go-to: ministries
 
 Lucan Lebbon of the <span style="color: #c00000;">**Marchers**</span> has been appointed Commonwealth Army Minister.[? if military_ministry_trusted :  The appointment passes without protest: our moderates hold the party's course, and the appropriations we have voted through have bought us a measure of goodwill in the officers' mess. ?]
@@ -4214,7 +4214,7 @@ go-to: ministries
 @drop_reichswehr
 title: Drop the Commonwealth Army Ministry.
 view-if: army_minister_party = "Marcher"
-on-arrival: army_minister_party = "I"; army_minister = "Ravabelle"; leverage += 15; dufour_angry -= 10 if not military_ministry_trusted
+on-arrival: army_minister_party = "I"; army_minister = "Ravabelle"; leverage += 15; dufour_angry -= 10 if military_ministry_penalty_paid; military_ministry_penalty_paid = 0; military_confidence -= 1 if military_confidence > 0
 tags: drop_mins_1928
 go-to: ministries
 

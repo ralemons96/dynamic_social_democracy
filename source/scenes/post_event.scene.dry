@@ -2,7 +2,7 @@ title: Post Event
 new-page: true
 on-arrival: {!
 
-if (Q.social_patriot && Q.neorevisionism && !Q.left_split && !Q.centrists_resign && !Q.reformists_resign && !Q.unions_independent) {
+if (Q.social_patriot && Q.neorevisionism > 0 && !Q.left_split && !Q.centrists_resign && !Q.reformists_resign && !Q.unions_independent) {
     this.achieve('das_grosste_aller_zelte');
 }
 
@@ -248,7 +248,7 @@ if (Q.disfavored <= 1) {
 
 // re-calculate dissent.
 var total_strength = Q.left_strength + Q.center_strength + Q.labor_strength + Q.reformist_strength;
-if (Q.neorevisionism) {
+if (Q.neorevisionism > 0) {
     total_strength += Q.knight_strength;
 } else {
     Q.knight_strength = 0;
@@ -266,7 +266,7 @@ Q.reformist_strength = 100*Q.reformist_strength/total_strength;
 Q.knight_strength = 100*Q.knight_strength/total_strength;
 
 var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent;
-if (Q.neorevisionism) {
+if (Q.neorevisionism > 0) {
     total_dissent += Q.knight_strength*Q.knight_dissent;
 } else {
     Q.knight_dissent = 0;

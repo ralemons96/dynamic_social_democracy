@@ -611,13 +611,13 @@ Strength: [+ reformist_strength : strength +]
 
 Dissent: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism: **Neorevisionists** ?]
+[? if neorevisionism > 0: **Neorevisionists** ?]
 
-[? if neorevisionism: Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extra-parliamentary action in defense of the republic. ?]
+[? if neorevisionism > 0: Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extra-parliamentary action in defense of the republic. ?]
 
-[? if neorevisionism: Strength: [+ knight_strength : strength +] ?]
+[? if neorevisionism > 0: Strength: [+ knight_strength : strength +] ?]
 
-[? if neorevisionism: Dissent: [+ knight_dissent : dissent +] ?]
+[? if neorevisionism > 0: Dissent: [+ knight_dissent : dissent +] ?]
 
 [? if social_patriot: **Social Patriots** ?]
 
