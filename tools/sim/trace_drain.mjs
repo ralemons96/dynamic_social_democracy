@@ -9,6 +9,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((a, i, arr) =>
 const RUNS = parseInt(args.runs || '20', 10);
 const SEED = parseInt(args.seed || '7', 10);
 const PROFILE = args.profile || 'strategy';
+const QUALITY = args.quality || 'commons_marcher';
 const CAP = 4000;
 
 // strategy scorer copied from run_sims.mjs (kept in sync manually)
@@ -84,14 +85,14 @@ for (let run = 0; run < RUNS; run++) {
   const chain = [];
   const origCS = eng.__changeScene.bind(eng);
   eng.__changeScene = function (id) {
-    chain.push({ id: String(id).split('.')[0], v: eng.state.qualities.commons_marcher, f: eng.state.qualities.gov_burden_fail || 0 });
+    chain.push({ id: String(id).split('.')[0], v: eng.state.qualities[QUALITY], f: eng.state.qualities.gov_burden_fail || 0 });
     origCS(id);
   };
   try {
     eng.beginGame([runSeed]);
     let prevFail = 0, prevTime = -1, startVal;
     chain.length = 0; // discard init chain (root init sets commons from undefined)
-    startVal = eng.state.qualities.commons_marcher;
+    startVal = eng.state.qualities[QUALITY];
     for (let step = 0; step < CAP; step++) {
       if (eng.isGameOver()) break;
       const q = eng.state.qualities;
@@ -112,7 +113,7 @@ for (let run = 0; run < RUNS; run++) {
       chain.length = 0;
       eng.choose(idx);
       const q2 = eng.state.qualities;
-      const now = q2.commons_marcher;
+      const now = q2[QUALITY];
       const era = q2.veran_crash_seen ? 'POST' : 'PRE ';
       if (typeof startVal !== 'number' && typeof now === 'number') { startVal = now; prevFail = q2.gov_burden_fail || 0; continue; }
       // walk the chain: segment i's effect = value at next entry (or final) - value at entry i
@@ -131,15 +132,15 @@ for (let run = 0; run < RUNS; run++) {
       }
       prevFail = q2.gov_burden_fail || 0;
     }
-    const fin = eng.state.qualities.commons_marcher;
+    const fin = eng.state.qualities[QUALITY];
     if (typeof startVal === 'number' && typeof fin === 'number' && run < 3)
       origLog(`  [recon] run ${run}: start ${startVal.toFixed(1)} -> final ${fin.toFixed(1)} (net ${(fin - startVal).toFixed(1)})`);
   } catch (e) { /* run aborted; keep partial attribution */ }
   finally { Math.random = origRandom; console.log = origLog; }
 }
 
-console.log(`\n=== commons_marcher delta attribution — ${RUNS} ${PROFILE} runs (seed ${SEED}) ===`);
-console.log(`total net commons_marcher change (all runs): ${totalDelta.toFixed(1)}  (avg ${(totalDelta / RUNS).toFixed(1)}/run)`);
+console.log(`\n=== ${QUALITY} delta attribution — ${RUNS} ${PROFILE} runs (seed ${SEED}) ===`);
+console.log(`total net ${QUALITY} change (all runs): ${totalDelta.toFixed(1)}  (avg ${(totalDelta / RUNS).toFixed(1)}/run)`);
 console.log(`burden-fail firings: ${burdenFails} total, ${burdenFailsPre} pre-crash  |  pre-crash months in govt: ${govMonthsPre}/${monthsPre} (${(100 * govMonthsPre / Math.max(1, monthsPre)).toFixed(0)}%)`);
 const rows = [...buckets.entries()].sort((a, b) => a[1].sum - b[1].sum);
 console.log('\nbucket'.padEnd(46) + 'net'.padStart(9) + 'hits'.padStart(7) + 'avg/hit'.padStart(9));

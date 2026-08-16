@@ -3,7 +3,7 @@ new-page: true
 subtitle: They don't need us anymore.
 tags: event
 view-if: year = 1930 and month >= 3 and marcher_in_government and not young_plan_ratified
-on-arrival: gold_right += 3; ddp_right += 1; gold_relation -= 5; lvp_right += 3; lvp_relation -= 5; dufour_angry += 10; young_plan_ratified = 1; serannus_pending = 0
+on-arrival: gold_right += 3; ddp_right += 1; lvp_right += 3; dufour_angry += 10; young_plan_ratified = 1; serannus_pending = 0
 max-visits: 1
 
 = Serannus Plan Ratified
