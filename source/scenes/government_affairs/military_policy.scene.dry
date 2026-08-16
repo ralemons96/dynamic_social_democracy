@@ -12,6 +12,7 @@ card-image: img/portraits/LeberJulius.jpg
 The Commonwealth Army is a deeply <span style="color: #808080;">reactionary</span> institution that has been generally hostile to any notion of <span style="color: #c00000;">Reformism</span> or democracy. However, we now control the military as part of the government. What should we do to reform it?
 
 - @increase_funding: Increase funding for the military to purchase its loyalty.
+- @rearmament: Order a significant rearmament of the Commonwealth Army.
 - @decrease_funding: Reduce funding for the military so we have more for social spending.
 - @reform: Conduct a thorough reform of the ranks, reducing the influence of <span style="color: #808080;">reactionaries</span> and making it more hospitable to us.
 - @root: No change to military policy.
@@ -45,3 +46,16 @@ on-arrival: coalition_dissent += 1 if (in_grand_coalition or (in_weimar_coalitio
 Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-<span style="color: #808080;">reactionary</span> backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Avriza putsch.
 
 The center-right parties are committed to the military and deeply suspicious of our efforts to reform it.
+
+@rearmament
+subtitle: -2 budget. The most we can do for the forces - and we answer for it ourselves.
+choose-if: budget >= 2
+unavailable-subtitle: We do not have the budget for a programme on this scale.
+on-arrival: budget -= 2; army_strength += 55; army_militancy += 0.5 if army_militancy < 8; army_loyalty += 0.1 if army_loyalty < 1; military_confidence += 2; knight_dissent -= 10; knight_strength += 5; left_dissent += 10; center_dissent += 6; labor_dissent += 4; commons_marcher -= 3; dufour_angry -= 12; gold_relation += 5; lvp_relation += 5; unionist_relation += 3; gold_left += 2; lvp_left += 2; imperial_fear -= 1 if imperial_fear > 0; economic_growth += 0.2; west_relation -= 1; east_relation -= 1; reparations_negotiation -= 1; goal_marcher_cancel += 1
+
+Because the ministry is ours, the programme is ours to write: new formations, new equipment, new depots, and a budget line the General Staff had not dared to ask for. It is the largest single expansion the Commonwealth has voted since the Founding, and it is signed by a <span style="color: #c00000;">**Marcher**</span> minister.
+
+The effect on the officer corps is immediate. Men who would not shake our hands a year ago now concede, stiffly, that the party of reform has done more for the forces than the parties of order ever did - and the habit of obedience to *this* government begins, cautiously, to take root.
+
+The reaction within our own ranks is another matter entirely. The left is incandescent at the sight of Reformists arming the very institution that has broken every workers' rising in living memory; the centrists mutter about priorities and the social budget; even the Free Guilds ask, pointedly, what these Crowns might have bought in wages and pensions. [? if neorevisionism > 0: The neorevisionists, alone among our wings, are delighted. ?][? if neorevisionism == 0: One faction, though, watches all this with quiet interest - a current in the party that has been waiting for exactly this argument. ?]
+
