@@ -1,6 +1,6 @@
 title: The Larkmoor Plan
 subtitle: A potential step away from deflationary policy?
-view-if: bruning_toleration_time >= 6 and (disfavored + (inflation*-1) + (economic_growth*-1) + (concord_economy_keynes*10) >= 50) and ((year >= 1931 and month >= 9) or year >= 1932) and not works_program and not bruning_skibidi_time and not bruning_sigma_time
+view-if: bruning_toleration_time >= 6 and (disfavored + (inflation*-1) + (economic_growth*-1) + (concord_economy_keynes*10) >= 50) and ((year >= 1931 and month >= 9) or year >= 1932) and not works_program and not bruning_works_act_time and not bruning_works_time
 max-visits: 1
 tags: event
 new-page: true

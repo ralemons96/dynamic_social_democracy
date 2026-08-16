@@ -1,6 +1,6 @@
 title: Exodus from the Banners
 subtitle: Owing to its militarization, the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] [? if not lvp_formed: and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed and not lvp_leave_banner: and <span style="color: #C0A054;">**Golds**</span>?] are leaving the Banners.
-view-if: banner_militancy >= 0.2 and not banner_exit and not banner_stay and not lvp_leave and not concord_formed
+view-if: banner_militancy >= 0.2 and not banner_exit and not banner_stay and not lvp_leave_banner and not concord_formed
 new-page: true
 tags: event
 on-display: {!  

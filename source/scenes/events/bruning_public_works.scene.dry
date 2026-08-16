@@ -18,7 +18,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 set-bg: img/map_2.jpg
-on-arrival: bruning_sigma_time = time + 3
+on-arrival: bruning_works_time = time + 3
 
 = Fifth Emergency Decree for Economy and Finance
 

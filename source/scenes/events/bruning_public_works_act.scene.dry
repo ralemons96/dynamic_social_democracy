@@ -17,7 +17,7 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
-on-arrival: bruning_skibidi_time = time + 3 if not reparations_resolved
+on-arrival: bruning_works_act_time = time + 3 if not reparations_resolved
 set-bg: img/map_2.jpg
 
 = Commonwealth Labor Mobilization Act

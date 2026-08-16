@@ -1,7 +1,7 @@
 title: Second Emergency Decree for Economy and Finance
 subtitle: Chancellor [+ chancellor +] enacts a controversial emergency decree.
 new-page: true
-view-if: total_bruning_time == 15 and bruning_toleration_time and (hoover_moratorium_seen or war_loans == -2) and not emergency_decree_seen and not concord_formed and not lautenbach_adopted and not bruning_sigma_time and not bruning_skibidi_time
+view-if: total_bruning_time == 15 and bruning_toleration_time and (hoover_moratorium_seen or war_loans == -2) and not emergency_decree_seen and not concord_formed and not lautenbach_adopted and not bruning_works_time and not bruning_works_act_time
 on-arrival: emergency_decree_alt_seen = 1; ddp_right += 1; ddp_cohesion -= 1; gold_right += 3; lvp_right += 2; liberal_cooperation -= 1; bourgeois_cooperation -= 1; pro_republic -= 3; burgher_royalist += burgher_ddp*0.1; guild_royalist += guild_ddp*0.05; burgher_royalist += burgher_gold*0.1; guild_royalist += guild_gold*0.1; burgher_ddp *= 0.2; guild_ddp *= 0.9; burgher_gold *= 0.8; guild_gold *= 0.8; burgher_royalist += burgher_lvp*0.2; guild_royalist += guild_lvp*0.2; burgher_lvp *= 0.8; guild_lvp *= 0.8
 tags: event
 face-image: img/article48.jpg

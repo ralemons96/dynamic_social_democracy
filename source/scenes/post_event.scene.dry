@@ -2294,8 +2294,8 @@ if (Q.reichsbank_policy_time >= Q.time) {
 if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_government) {
     if (Q.disfavored >= 20) Q.disfavored *= 0.988;
     if (Q.economic_growth < 0) Q.economic_growth *= 0.985;
-    if (Q.inflation < 0 && !Q.bruning_sigma_time && !Q.bruning_skibidi_time) Q.inflation *= 0.985;
-    if (Q.inflation < 0 && (Q.bruning_sigma_time || Q.bruning_skibidi_time)) Q.inflation *= 0.99;
+    if (Q.inflation < 0 && !Q.bruning_works_time && !Q.bruning_works_act_time) Q.inflation *= 0.985;
+    if (Q.inflation < 0 && (Q.bruning_works_time || Q.bruning_works_act_time)) Q.inflation *= 0.99;
     if (Q.stegerwald_path || Q.concord_formed) {
         Q.commons_unionist += 8/12;
         Q.burgher_unionist += 8/12;

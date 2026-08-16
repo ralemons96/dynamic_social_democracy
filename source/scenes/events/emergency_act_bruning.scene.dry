@@ -1,7 +1,7 @@
 title: Act for the Protection of the Economy and Finance
 subtitle: Chancellor [+ chancellor +] introduces his most controversial act yet.
 new-page: true
-view-if: total_bruning_time == 15 and (in_center_right_coalition or in_right_coalition) and war_loans >= 0 and not hoover_moratorium_seen and not lvp_formed and not liberal_parliament and not bourgeois_parliament and not emergency_act_alt_seen and not concord_formed and not lautenbach_adopted and not bruning_sigma_time and not bruning_skibidi_time
+view-if: total_bruning_time == 15 and (in_center_right_coalition or in_right_coalition) and war_loans >= 0 and not hoover_moratorium_seen and not lvp_formed and not liberal_parliament and not bourgeois_parliament and not emergency_act_alt_seen and not concord_formed and not lautenbach_adopted and not bruning_works_time and not bruning_works_act_time
 on-arrival: emergency_act_seen = 1; ddp_right += 2; ddp_cohesion -= 2; gold_right += 3; lvp_right += 2; pro_republic -= 3; burgher_royalist += burgher_ddp*0.1; guild_royalist += guild_ddp*0.1; burgher_royalist += burgher_gold*0.1; guild_royalist += guild_gold*0.1; burgher_ddp *= 0.8; guild_ddp *= 0.8; burgher_gold *= 0.8; guild_gold *= 0.8; burgher_royalist += burgher_lvp*0.1; guild_royalist += guild_lvp*0.1; burgher_lvp *= 0.9; guild_lvp *= 0.9; burgher_traditionalist -= 4; guild_traditionalist -= 4; burgher_royalist += 4; guild_royalist += 4; burgher_dnf += 2; guild_dnf += 2; landed_traditionalist -= 2; landed_dnf += 2; dufour_angry_bruning += 10; liberal_cooperation -= 3; bourgeois_cooperation -= 3; bruning_coalition_dissent += 1
 tags: event
 face-image: img/bruning.jpg

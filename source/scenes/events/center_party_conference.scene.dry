@@ -11,7 +11,7 @@ new-page: true
 
 Wilhelm Croft, former [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chancellor and presidential candidate, has chosen to resign from leadership of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. Now, the party holds a conference to replace him.
 
-The consensus candidate on the right is Aurelian Renck, a priest of the Faithful who represents the party's traditionalists. On the other hand, there is Cormac Hawkins, a leader of the Faithful Free Guilds, who has been more supportive of cooperation with the <span style="color: #c00000;">**Marchers**</span> than most of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. [? if not heartland_leader == "Sedgewick": Faithful Free Guild chairman Adam Sedgewick has fallen to a distant third, making it highly unlikely that he will win the leadership.?][? if heartland_leader == "Sedgewick": Faithful Free Guild chairman and Minister-President Adam Sedgewick has lost some ground, but he retains strong support from the Heartland branch of the party, effectively securing him the nomination. ?]
+The consensus candidate on the right is Aurelian Renck, a priest of the Faithful who represents the party's traditionalists. On the other hand, there is Cormac Hawkins, a leader of the Faithful Free Guilds, who has been more supportive of cooperation with the <span style="color: #c00000;">**Marchers**</span> than most of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. [? if not heartland_leader == "Sedgewick": Faithful Free Guild chairman Adam Sedgewick has fallen to a distant third, making it highly unlikely that he will win the leadership.?][? if heartland_leader == "Sedgewick": Faithful Free Guild chairman and Minister-President Adam Sedgewick commands the Heartland branch of the party and enters the conference as the favourite — though the party's middle-class wing is quietly organizing behind Renck to deny him the chair. ?]
 
 - @kaas: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] elects Aurelian Renck as the party chair.
 - @joos: Influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to select Cormac Hawkins as the party chair.
@@ -19,18 +19,16 @@ The consensus candidate on the right is Aurelian Renck, a priest of the Faithful
 - @stegerwald: The [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] elects Adam Sedgewick as the party chair.
 
 @kaas
-view-if: not heartland_leader == "Sedgewick"
 on-arrival: unionist_leader = "Renck"; unionist_relation -= 5; heartland_concordat_progress += 1; unionist_ideology = "Right"
 face-image: img/portraits/Ludwig_Kaas.jpg
 
-Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He seems to represent a rightward turn from Croft, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. 
+Aurelian Renck has been selected as the chairman of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?]. He seems to represent a rightward turn from Croft, and will preside over a [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] less inclined to compromise with the left. [? if heartland_leader == "Sedgewick": The vote is a pointed snub to Minister-President Sedgewick, whose Free Guild wing wanted the chair — he retains the Heartland government, but his transformation of the party is checked for now. ?]
 
 Despite this, Renck is committed to the current constitutional order and the republic. He maintains a close friendship with a senior envoy of the Conclave, which may prove useful during concordat negotiations.
 
 @joos
 unavailable-subtitle: Our relations are not good enough.
 subtitle: Hawkins is likely to be friendlier to us than Renck.
-view-if: not heartland_leader == "Sedgewick"
 choose-if: unionist_relation >= 70
 on-arrival: unionist_leader = "Hawkins"; unionist_ideology = "Left"; faithful_unionist -= 3; faithful_traditionalist += 2; faithful_other += 2; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 4; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1
 face-image: img/portraits/Joseph_Joos.jpg
@@ -38,8 +36,8 @@ face-image: img/portraits/Joseph_Joos.jpg
 With our grassroots connections, we have been able to influence the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] delegates to support Cormac Hawkins as the new [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionists</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] chairman. He has long been a friend of the <span style="color: #c00000;">**Marchers**</span>, and will be more inclined to collaborate with us compared to Renck. He also increases the appeal of the [? if unionist_party_name != "Concord": <span style="color: #000000;">Unionist Party</span>?][? if unionist_party_name == "Concord": <span style="color: #000000;">**Concord**</span>?] to the working class, though it comes at the cost of deepening the social and economic divisions once held together by religion.
 
 @joos_campaign
-choose-if: unionist_relation >= 60 and resources >= 1 
-view-if: unionist_relation < 70 and not heartland_leader == "Sedgewick"
+choose-if: unionist_relation >= 60 and resources >= 1
+view-if: unionist_relation < 70
 unavailable-subtitle: [? if unionist_relation <= 60 : Our relations are not good enough. ?] [? if resources < 1 : We do not have enough resources. ?]
 subtitle: -1 resource. Hawkins is likely to be friendlier to us than Renck.
 on-arrival: resources -= 1; unionist_leader = "Hawkins"; unionist_ideology = "Left"; faithful_traditionalist += 2; faithful_other += 2; faithful_marcher += 5; commons_unionist += 5; unionist_relation += 4; zentrum_disintegration += 1; gold_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1

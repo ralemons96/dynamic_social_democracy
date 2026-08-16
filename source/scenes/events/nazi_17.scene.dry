@@ -70,7 +70,7 @@ subtitle: We have failed.
 on-arrival: {!
 Q.gallax_empire_end = 1;
 Q.imperial_collusion = (Q.imperial_collusion || 0) + 1;
-if ((Q.dufour_faith || 0) <= 1) Q.imperial_collusion += 1;
+if (Q.rubicon && (Q.dufour_faith || 0) <= 1) Q.imperial_collusion += 1;
 Q.chancellor = Q.royalist_chancellor;
 Q.chancellor_party = "Royalist";
 Q.vice_chancellor = "Goodryke";

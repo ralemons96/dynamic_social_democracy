@@ -1,6 +1,6 @@
 title: The Glorious Dead
 subtitle: Censorship and violence over a play...
-view-if: year = 1930 and month = 12 and not marcher_r_heartland and not all_quiet_seen
+view-if: year = 1930 and month = 12 and not marcher_heartland and not all_quiet_seen
 on-arrival: all_quiet_seen = 1
 max-visits: 1
 tags: event
