@@ -17,7 +17,7 @@ A delegation of the magi circles has come to the capital — robed, careful, and
 - @refuse: Turn them away. The coalition cannot bear this fight now.
 
 @grant
-on-arrival: magi_balance += 6 if magi_balance < 100; bvp_relation += 4*(1-dissent); faithful_marcher -= 2; unionist_relation -= 3; royalist_relation -= 2
+on-arrival: magi_balance += 6 if magi_balance < 100; bvp_relation += 4*(1-dissent); faithful_marcher -= 2; unionist_relation -= 3
 
 The delegation is received in the chancellery's long gallery, photographed on the steps, and sent home with a commitment of substance. The circles' journals print the pictures for a month. The Faithful's pulpits and the <span style="color: #7A3C00;">Royalist</span> press print them rather longer.
 

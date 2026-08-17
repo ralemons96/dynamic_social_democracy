@@ -129,9 +129,11 @@ Q.unionist_relation = 50;
 Q.collectivist_relation = 30;
 Q.ddp_relation = 60;
 Q.gold_relation = 42;
-// Traditionalists and Royalists are invariably hostile
+// The Traditionalists are invariably hostile. The Royalists do not have a relation track
+// at all: they exist to bring the Commonwealth down, so courting them is not a strategy.
 Q.traditionalist_relation = 5;
-Q.royalist_relation = 0;
+// wacky-mode only: progress along the secret Royalist-courtship branch.
+Q.royalist_courtship = 0;
 Q.lvp_relation = 0;
 // the Arcanists/Eternals (magi party) start wary of the republic
 Q.bvp_relation = 10;

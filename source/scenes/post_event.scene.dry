@@ -1017,7 +1017,6 @@ Q.military_readiness = Math.round(_ready);
     Q.empire_posture = Math.max(0, Math.min(100, Q.empire_posture + Math.round((Q.commonwealth_standing - Q.empire_posture) * 0.15)));
     if (Q.commonwealth_standing >= 60) {
         if (Q.royalist_urgency > 0) Q.royalist_urgency -= 0.5;
-        Q.royalist_relation += 0.5;
     } else if (Q.commonwealth_standing <= 40) {
         Q.royalist_urgency += 0.5;
         Q.royalist_funds += 0.3;

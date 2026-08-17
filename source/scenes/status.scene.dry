@@ -216,7 +216,6 @@ Economic growth: [+ economic_growth_2 +]%
 [? if not concord_formed and not traditionalist_defunct: <span class="tooltip-text" title="Commonwealth National People's Party" style="color: #3E88B3;">**Traditionalists**</span>: [+ traditionalist_relation : relationships +]?]
 
 
-<span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>[? if royalist_split: (and its splinters)?]: [+ royalist_relation : relationships +]
 
 = Party Leadership
 

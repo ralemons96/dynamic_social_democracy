@@ -67,7 +67,7 @@ This is accepted by all parties.
 title: Vote for the <span style="color: #7A3C00;">Royalist</span> motion to grant responsibility to Gorrick.
 view-if: reichstag_president == "Gorrick"
 unavailable-subtitle: Out of the question.
-choose-if: royalist_relation >= 100
+choose-if: 1 = 0
 on-arrival: {!
 Q.reichstag_staal = 1;
 Q.reichstag_break = 0;

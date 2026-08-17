@@ -24,7 +24,7 @@ The magi caste lives beneath a thicket of old imperial law — the Registry that
 subtitle: The Registry names and tracks every mage in the Commonwealth. We can strike it from the books.
 unavailable-subtitle: We have already repealed the Registry.
 view-if: magi_registry_repealed == 0
-on-arrival: magi_registry_repealed = 1; repealed_175 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
+on-arrival: magi_registry_repealed = 1; repealed_175 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
 We strike the Registry from the books. The magi breathe easier — and, courted at last by the republic that once only watched them, the <span style="color: #A2D8E0;">**Arcanists**</span> and even the harder Restorationist benches find a little less reason to look north to the Empress. But the Unity Front is aghast, and among the Faithful, who fear the God-of-Magic cult, the sense of betrayal runs deep.
 
@@ -32,7 +32,7 @@ We strike the Registry from the books. The magi breathe easier — and, courted 
 subtitle: The mage-circles have no standing in law. We can recognize them, as we do the craft-guilds.
 unavailable-subtitle: The mage-circles are already recognized.
 view-if: magi_circles_recognized == 0
-on-arrival: magi_circles_recognized = 1; reformed_183 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
+on-arrival: magi_circles_recognized = 1; reformed_183 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
 The mage-circles are recognized in law, granted the same standing as the craft-guilds. The <span style="color: #A2D8E0;">**Arcanists**</span> are gratified, and the magi caste begins, warily, to imagine a place for itself within the Commonwealth rather than beyond it. The Faithful and the Unity Front do not forgive the gesture.
 
@@ -40,7 +40,7 @@ The mage-circles are recognized in law, granted the same standing as the craft-g
 subtitle: Magi are harried in the streets and the courts with impunity. We can make their persecution a crime.
 unavailable-subtitle: The magi are already protected in law.
 view-if: magi_protected == 0
-on-arrival: magi_protected = 1; trans_rights = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); royalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
+on-arrival: magi_protected = 1; trans_rights = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
 A law against the persecution of magi passes — enforceable, at least, where the police still answer to the republic. It is a profound signal to the magi that their future may lie with the Commonwealth after all. The order-loving centre reads it as capitulation to a power they have always feared.
 

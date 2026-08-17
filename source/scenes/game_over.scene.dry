@@ -196,7 +196,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('linksliberale_renaissance');
   }
 
-  if (Q.unionist_relation <= 5 && ((Q.ddp_relation <= 5 && (Q.gold_relation <= 5 || !Q.gold_exist) && !Q.lvp_formed) || Q.lvp_relation <= 5 && Q.lvp_formed) && Q.collectivist_relation <= 5 && (Q.kvp_relation <= 5 || !Q.kvp_formed) && Q.traditionalist_relation <= 5 && Q.royalist_relation <= 5 && (Q.gnu_relation <= 5 || !Q.gnu_formed)) {
+  if (Q.unionist_relation <= 5 && ((Q.ddp_relation <= 5 && (Q.gold_relation <= 5 || !Q.gold_exist) && !Q.lvp_formed) || Q.lvp_relation <= 5 && Q.lvp_formed) && Q.collectivist_relation <= 5 && (Q.kvp_relation <= 5 || !Q.kvp_formed) && Q.traditionalist_relation <= 5 && (Q.gnu_relation <= 5 || !Q.gnu_formed)) {
       this.achieve('wer_braucht_schon_freunde');
   }
 

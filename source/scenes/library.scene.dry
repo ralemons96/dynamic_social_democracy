@@ -521,7 +521,6 @@ Current relations: [+ collectivist_relation : relationships +]
 
 <span style="color: #7A3C00;">**Royalists**</span> - (Imperial Sovereigntist Commonwealth Worker's Party, or <span style="color: #7A3C00;">Royalists</span>) - a far-right party of **Imperial Sovereigntism** — nationalist and monarchist — that would see the Empire restored, and its old hierarchy of blood with it. Led by Alaric Gallax, they attempted a coup in 4288, and were banned for it, but have since been legalized.
 
-Current relations: [+ royalist_relation : relationships +]
 
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the Commonwealth Middle Class, the Farmer's Party, the Agricultural League, and others. [? if traditionalist_split == 1: They also consist of splinter parties from the <span style="color: #3E88B3;">**Traditionalists**</span>, as a result of Mallin's radical right policies as chairman. ?]Their political position usually lies between the [? if (gold_exist and not lvp_formed) or not started: <span style="color: #C0A054;">**Golds**</span>?][? if lvp_formed: <span style="color: #C0A054;">**Golds**</span>?][? if not gold_exist and started: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] and the [? if not concord_formed: <span style="color: #3E88B3;">**Traditionalists**</span>?][? if concord_formed: <span style="color: #003755;">**CNF**</span>?].
 
