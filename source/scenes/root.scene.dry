@@ -173,7 +173,7 @@ Q.heartland_leader = "Bristol"
 // Number of members in 1928 (in thousands)
 // the Banners, stahlhelm, SA, rotfrontkämpferbund
 Q.banner_strength = 2000;
-Q.banner_militancy = 0.01;
+Q.banner_militancy = 0.03;
 Q.women_in_banner = 0;
 Q.banner_banned = 0;
 Q.warden_strength = 500;

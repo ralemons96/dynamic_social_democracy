@@ -1,6 +1,6 @@
 title: The <span style="color: #C0A054;">**Golds**</span> and the Banners
 subtitle: Due to its militarization, the <span style="color: #FFCC00;">liberals</span> are leaving the Banners.
-view-if: banner_militancy >= 0.04 and not banner_exit and not banner_stay and lvp_formed and lvp_ideology != "Left"
+view-if: banner_militancy >= 0.1 and not banner_exit and not banner_stay and lvp_formed and lvp_ideology != "Left"
 new-page: true
 tags: event
 on-display: {!  
