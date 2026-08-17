@@ -25,7 +25,7 @@ const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military
   'lvp_relation', 'lvp_left', 'lvp_right', 'collectivist_relation', 'unionist_relation', 'neorevisionism', 'military_confidence', 'royalist_urgency'];
 const ENDING_FLAGS = ['weimar_win', 'empire_outcome', 'gallax_empire_end', 'dnef_win',
   'civil_war_seen', 'republic_victory', 'long_war', 'chancellor', 'president', 'rubicon',
-  'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation', 'lvp_relation', 'lvp_ideology', 'lvp_formed', 'collectivist_relation', 'collectivist_leader', 'unionist_leader', 'unionist_ideology'];
+  'wtb_adopted', 'works_program', 'war_loans', 'marcher_toleration', 'gold_relation', 'unionist_relation', 'lvp_relation', 'lvp_ideology', 'lvp_formed', 'collectivist_relation', 'collectivist_leader', 'unionist_leader', 'unionist_ideology', 'total_power', 'enemy_power', 'heartland_police_power', 'banner_power', 'loyal_army_power', 'marcher_heartland', 'heartland_police_loyalty', 'banner_militancy'];
 const STRAT_RULES = [
   [-12, /civil war|revolt|insurrection|uprising|fight on the streets|general strike/i],
   [-8, /break toleration|end the toleration|tired of austerity/i],
