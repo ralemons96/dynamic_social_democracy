@@ -9,16 +9,46 @@ priority: 1
 
 = Paralysis
 
-The crash has hardened into a paralysis. Workshops stand idle, the great houses of the Guilds will not lend a single coin, and the Assembly sits deadlocked — each bench blaming the others while the ruin spreads. Every week of inaction drives more of the Commons into the ranks of the Disfavored, and the cry for action grows louder in the streets. Something must be done, and soon, or the Commonwealth's economy will seize entirely.
+The crash has hardened into a paralysis. Workshops stand idle, the great houses of the Guilds will not lend a single coin, and the Assembly sits deadlocked — each bench blaming the others while the ruin spreads. Every week of inaction drives more of the workless toward those who promise to break the whole arrangement and start again.
 
-- @emergency: We must demand emergency measures.
-- @hold: We must hold to sound finance and weather it.
+Something must be done, and it falls to us to decide what.
 
-@emergency
-on-arrival: crisis_urgency += 1
+- @lobby_dufour
+- @appeal_calm
+- @prepare_instability
+- @emergency_controls
 
-We press for extraordinary measures — relief for the workless, public works, whatever will keep the people fed through the winter. Whether the Assembly can be moved to act is another question.
+@lobby_dufour
+title: Lobby President DuFour to act.
+subtitle: Press the presidency to use its powers while there is still a republic to save.
+on-arrival: crisis_urgency += 1; dufour_angry += 5; army_strength += 10; army_militancy += 0.05 if army_militancy < 8
 
-@hold
+We petition the President directly, urging him to use the powers of his office while the Assembly argues. DuFour receives our delegation coolly — he does not care to be lectured on his duties by the party that spent a decade curbing them — but the message lands. Some of what he authorizes goes, inevitably, to the forces: a state that fears disorder pays its soldiers first.
 
-We counsel patience and a balanced budget, and trust that the storm will spend itself before it breaks us. It is a gamble, and everyone knows it.
+@appeal_calm
+title: Appeal for calm.
+subtitle: -1 resources. Steady the coalition and the country before either cracks.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; coalition_dissent -= 1 if marcher_in_government and coalition_dissent > 0; gold_relation += 4*(1-dissent); lvp_relation += 4*(1-dissent); unionist_relation += 4*(1-dissent)
+
+We spend the party's credit on reassurance rather than agitation: joint statements, quiet meetings, a public insistence that the Commonwealth's institutions will hold. It wins us no votes and solves nothing material, but our partners in government remember who kept his head[? if marcher_in_government:, and the cabinet holds together a little better for it?].
+
+@prepare_instability
+title: Prepare for internal instability.
+subtitle: -1 resources. Recruit for the Banners quietly, before the streets decide for us.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; crisis_urgency += 1; banner_strength += 200; left_dissent -= 3
+
+We put the party's organizers to work while there is still slack in the labour market, and the Banners swell with men who have nothing else to do this winter. It is recruitment, not armament — no drilling, no weapons, nothing the propertied parties could point to in the Assembly — but the ranks are the deepest they have ever been.
+
+@emergency_controls
+title: Apply emergency economic controls!
+subtitle: The ministries we hold can act now, whatever the Assembly decides.
+view-if: chancellor_party == "Marcher" or economic_minister_party == "Marcher" or finance_minister_party == "Marcher"
+on-arrival: crisis_urgency += 1; budget += 2; gold_relation -= 6; lvp_relation -= 6; gold_right += 1; lvp_right += 1; collectivist_relation += 5*(1-dissent); left_dissent -= 10; left_strength += 2; economy_goal_marcher += 1
+
+We use the ministries we hold and do not wait for the Assembly: controls on credit and currency, emergency powers over the exchanges, and a firm hand on what the great houses may do with their money while the country starves. The Treasury is suddenly solvent.
+
+The <span style="color: #C0A054;">**Golds**</span> are appalled — this is precisely the confiscatory instinct they warn their donors about — while the <span style="color: #700000;">**Collectivists**</span> note, with some surprise, that we were willing to do it at all. Our own left wing is delighted for the first time in months.
