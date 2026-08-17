@@ -35,10 +35,9 @@ var _readyNorm = Math.min(100, Q.military_readiness / 4);
 Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
     0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
 // Reunification support (0-100): how ready the realm is for a peaceful return to the Empire -
-// the Empire willing (empire_posture), the magi reconciled (magi_balance), the Royalists cooled
-// (royalist_relation), and a moderated Concord to broker it. The Convention's peaceful path.
-var _reunion = 0.4 * (Q.empire_posture || 0) + 0.25 * (Q.magi_balance || 0)
-    + 0.2 * Math.min(100, (Q.royalist_relation || 0) * 2)
+// the Empire willing (empire_posture), the magi reconciled (magi_balance), and a moderated
+// Concord to broker it. The Convention's peaceful path.
+var _reunion = 0.55 * (Q.empire_posture || 0) + 0.3 * (Q.magi_balance || 0)
     + 0.15 * (Q.concord_formed ? 100 : 0)
     + (Q.reconciliation_committee ? 12 : 0);
 Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
@@ -216,7 +215,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if not concord_formed and not traditionalist_defunct: <span class="tooltip-text" title="Commonwealth National People's Party" style="color: #3E88B3;">**Traditionalists**</span>: [+ traditionalist_relation : relationships +]?]
 
-[? if dnf_formed : <span class="tooltip-text" title="Commonwealth National Front" style="color: #003755;">**CNF**</span>: [+ dnf_relation : relationships +] ?]
 
 <span class="tooltip-text" title="Imperial Sovereigntist Commonwealth Worker's Party (Royalists)" style="color: #7A3C00;">**Royalists**</span>[? if royalist_split: (and its splinters)?]: [+ royalist_relation : relationships +]
 

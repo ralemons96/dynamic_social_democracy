@@ -512,7 +512,6 @@ Current relations: [+ unionist_relation : relationships +]
 
 [? if dnf_formed: <span style="color: #003755;">**CNF**</span> - (Commonwealth National Front) - a far-right nationalist-conservative party, led by Mallin, originally split from the <span style="color: #3E88B3;">**Traditionalists**</span>. It is supported by a small but loyal base of Mallin supporters, consisting of former aristocrats, racists and nationalists. ?]
 
-[? if dnf_formed: Current relations: [+ dnf_relation : relationships +] ?]
 
 <span style="color: #700000;">**Collectivists**</span> - (Commonwealth Collectivist Party) - a radical left-wing offshoot of the <span style="color: #c00000;">**Marchers**</span> that emerged from the turmoil of the Founding. They reject parliamentary democracy, calling instead for a second revolution — a Second Republic that would sweep away the merchant-barons, the reactionary generals, and the old elites who, they say, corrupt the Commonwealth from within. Their creed, **Collectivism**, is Reformism pursued by revolution rather than the ballot.
 

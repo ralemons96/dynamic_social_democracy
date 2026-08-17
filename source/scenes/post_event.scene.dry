@@ -1008,8 +1008,7 @@ Q.military_readiness = Math.round(_ready);
     var _readyNorm = Math.min(100, Q.military_readiness / 4);
     Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
         0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
-    var _reunion = 0.4 * (Q.empire_posture || 0) + 0.25 * (Q.magi_balance || 0)
-        + 0.2 * Math.min(100, (Q.royalist_relation || 0) * 2)
+    var _reunion = 0.55 * (Q.empire_posture || 0) + 0.3 * (Q.magi_balance || 0)
         + 0.15 * (Q.concord_formed ? 100 : 0)
         + (Q.reconciliation_committee ? 12 : 0);
     Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
@@ -3345,6 +3344,7 @@ if (Q.traditionalist_conflict_time == Q.time && (Q.in_center_right_coalition || 
 
 if (Q.time >= Q.traditionalist_scared_gallax_time && (Q.in_center_right_coalition || Q.in_right_coalition) && (Q.royalist_votes + Q.dnf_votes) >= (Q.traditionalist_votes * 3) && !Q.concord_formed) {
     Q.traditionalist_scared_gallax_time = Q.time + 4;
+    Q.traditionalist_scared_gallax = 1;
     Q.bruning_coalition_dissent += 1;
 }
 
@@ -5002,7 +5002,7 @@ if (Q.lvp_formed) {
 }
 
 if (Q.kvp_formed && Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.marcher_r + Q.lvp_r + Q.unionist_r + Q.other_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.marcher_r + Q.lvp_r + Q.unionist_r + Q.other_r + Q.kvp_r + Q.traditionalist_r).toFixed(1));
 } else if (Q.kvp_formed && !Q.lvp_formed) {
     Q.cordon_sanitaire = parseFloat((Q.marcher_r + Q.ddp_r + Q.unionist_r + Q.gold_r + Q.other_r + Q.traditionalist_r + Q.kvp_r).toFixed(1));
 } else if (Q.lvp_formed && !Q.kvp_formed) {

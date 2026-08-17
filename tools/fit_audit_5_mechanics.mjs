@@ -122,8 +122,7 @@ ed('source/scenes/events/1934.scene.dry', [['view-if: year >= 4299 and month >= 
     var _readyNorm = Math.min(100, Q.military_readiness / 4);
     Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
         0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
-    var _reunion = 0.4 * (Q.empire_posture || 0) + 0.25 * (Q.magi_balance || 0)
-        + 0.2 * Math.min(100, (Q.royalist_relation || 0) * 2)
+    var _reunion = 0.55 * (Q.empire_posture || 0) + 0.3 * (Q.magi_balance || 0)
         + 0.15 * (Q.concord_formed ? 100 : 0);
     Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
 ` + anchor;
