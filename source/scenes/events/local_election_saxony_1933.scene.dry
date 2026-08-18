@@ -945,7 +945,7 @@ This development has weakened the <span style="color: #7A3C00;">**Royalists**</s
 title: We will enter a toleration agreement with the propertied parties.
 view-if: not saxony_toleration and marcher_r_saxony < 50
 choose-if: mega_bourgeois_coalition_saxony >= 50 and true_bourgeois_coalition_saxony < 50
-unavailable-subtitle: [? if mega_bourgeois_coalition < 50: Our votes won't matter, as the anti-democratic parties hold a majority. ?][? if true_bourgeois_coalition_saxony >= 50: They don't need our toleration. ?]
+unavailable-subtitle: [? if mega_bourgeois_coalition_saxony < 50: Our votes won't matter, as the anti-democratic parties hold a majority. ?][? if true_bourgeois_coalition_saxony >= 50: They don't need our toleration. ?]
 on-arrival: saxony_toleration = 1; saxony_groko = 0; pro_republic += 2; saxony_groko = 0; red_saxony = 0; saxony_joever = 0; saxony_marcher = 0; saxony_right_2 = 0; saxony_royalist = 0; saxony_marcher_splinter = 0; saxony_soclib = 0; saxony_royalist_maj = 0; saxony_collectivist = 0; saxony_marcher_maj = 0
 
 Unfortunately, we have been relegated to toleration of the propertied parties.   

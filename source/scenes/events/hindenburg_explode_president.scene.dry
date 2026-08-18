@@ -78,7 +78,7 @@ We have endorsed Gareth Gesling, independent formerly of the <span style="color:
 @grzesinski_r1
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
-choose-if: grzesinski_campaign = 0 and resources >= 2
+choose-if: marcher_candidate != "Grenshaw" and resources >= 2
 on-arrival: marcher_candidate = "Grenshaw"; resources -= 2; is_unity_candidate = 0; unionist_relation += 5; ddp_relation += 5; gold_relation += 5; lvp_relation += 5
 go-to: r1_menu
 

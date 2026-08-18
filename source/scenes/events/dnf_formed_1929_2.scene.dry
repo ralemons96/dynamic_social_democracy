@@ -29,7 +29,6 @@ Q.dnf_r = Math.round((Q.traditionalist_r / 2 - 2) * 10) / 10;
 Q.traditionalist_r = Math.round((Q.traditionalist_r - Q.dnf_r) * 10) / 10;
 Q.dnf_r_heartland = Math.round((Q.traditionalist_r_heartland / 2 - 4) * 10) / 10;
 Q.traditionalist_r_heartland = Math.round((Q.traditionalist_r_heartland - Q.dnf_r_heartland) * 10) / 10;
-Q.dnf_relation = 5
 
 Q.old_commons_dnf_display = 0
 Q.old_burgher_dnf_display = 0

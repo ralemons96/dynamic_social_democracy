@@ -78,7 +78,7 @@ subtitle: -1 budget
 choose-if: budget >= 1
 on-arrival: budget -= 1; science += 1; medical_research += 1; economic_growth += 0.4 if economic_growth <= 8; burgher_marcher += 5*(1-dissent); commons_marcher += 3*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 3*(1-dissent); disfavored -= 0.2 if disfavored >= 4; science_funding += 1; education_goal_marcher_peoples += 1
 
-Our research program focuses on medical research to improve the treatment of diseases and public health. [? if change_sex: Some of our medical advancements include new methods for sex change surgery and hormone therapy for <span style="color: deepskyblue;">tran</span><span style="color: linen;">sse</span><span style="color: lightpink;">xuals</span> individuals. ?]
+Our research program focuses on medical research to improve the treatment of diseases and public health. [? if trans_rights: Some of our medical advancements include new methods for sex change surgery and hormone therapy for <span style="color: deepskyblue;">tran</span><span style="color: linen;">sse</span><span style="color: lightpink;">xuals</span> individuals. ?]
 
 @cut_funding
 title: Cut science funding.

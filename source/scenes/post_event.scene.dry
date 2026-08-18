@@ -2774,6 +2774,25 @@ if (Q.works_program <= 3 && Q.wtb_enactment_continuation_finish > Q.time) {
     }
 }
 
+// Dated snapshots that the young-plan and referendum branches below read back.
+// They were declared and read all over the corpus but never actually taken, which left
+// weimar_ref_signatures permanently 0 and the Assembly Referendum unreachable.
+// NB the month counter has already advanced by this point in the turn (the rollover is
+// much further up), so these test the month AFTER the increment: capturing on month N
+// stores the state as it stood through month N-1.
+if (Q.year == 1928 && Q.month == 8) {
+    Q.pro_republic_7 = Q.pro_republic;                  // as of July 4293
+}
+if (Q.year == 1929 && Q.month == 9) {
+    Q.pro_republic_8 = Q.pro_republic;                  // as of August 4294
+}
+if (Q.year == 1929 && Q.month == 10) {                  // as of September 4294;
+    Q.gold_relation_9 = Q.gold_relation;                // captured just above the
+    Q.gold_ideology_9 = Q.gold_ideology;                // branches that read it, so
+    Q.lvp_relation_9 = Q.lvp_relation;                  // the October pass sees it
+    Q.lvp_ideology_9 = Q.lvp_ideology;
+}
+
 if (Q.year == 1929 && Q.month == 7) {
     Q.young_plan_seen = 1;
 }

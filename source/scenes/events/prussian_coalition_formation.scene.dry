@@ -329,4 +329,4 @@ call: set_next_election_time_prussia
 
 New Heartland elections have been set for [+ next_election_month_heartland : month +] [+ next_election_year_heartland + 2365 +].
 
-[? if anti_democratic_votes >= 30: The people's faith in democracy is shaken by this ordeal. Of course, the <span style="color: #7A3C00;">Royalists</span> are exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader. ?]
+[? if anti_democratic_coalition >= 30: The people's faith in democracy is shaken by this ordeal. Of course, the <span style="color: #7A3C00;">Royalists</span> are exploiting the instability to claim that democracy is unworkable, and that the Commonwealth needs a strong leader. ?]

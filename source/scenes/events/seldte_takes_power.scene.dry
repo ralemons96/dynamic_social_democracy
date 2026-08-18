@@ -1,6 +1,7 @@
 title: The <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> Ascendant?
 subtitle: The beginning of the end.
 view-if: chancellor == "Selden"
+max-visits: 1
 on-arrival: marcher_in_government = 0
 tags: event
 new-page: true
