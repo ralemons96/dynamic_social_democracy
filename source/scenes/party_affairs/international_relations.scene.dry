@@ -15,6 +15,7 @@ At the <span style="color: #D50032;">Labor and Reformist International</span>, w
 - @scandi: Learn the path of economics and reform from the Nievalian <span style="color: #D70926;">Reformists</span>.
 - @comintern: Embed a spy in the <span style="color: #D50000;">Collectivist International</span>'s conference.
 - @america: Contact the <span style="color: #940f0f;">Reformist Party of the Allied States</span>.
+- @empire_reformists: Contact the <span style="color: #c00000;">Reformist</span> groups of the <span style="color: #7A3C00;">Empire-in-Exile</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -63,6 +64,18 @@ unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
 The <span style="color: #940f0f;">Reformist Party of the Allied States</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+
+@empire_reformists
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; empire_posture += 5 if empire_posture <= 95
+
+There are <span style="color: #c00000;">Reformist</span> lodges inside the <span style="color: #7A3C00;">Empire-in-Exile</span> older than the Commonwealth itself — mutual societies, guild papers, a co-operative movement the Imperial ministries tolerate because it has never asked for a throne. They are not a party and cannot become one, but they are ours in every way that matters, and the correspondence has never entirely stopped.
+
+We resume it properly: delegations to their congresses, subscriptions to their papers, a standing invitation to ours. None of it is secret and none of it is illegal, on either side of the border.
+
+The effect at court is small and entirely to our benefit. A Commonwealth whose largest party keeps warm relations with the Empire's own workmen is harder for the war faction to describe as a foreign enemy, and the ministers who favour a settlement find us easier to argue for.
 
 @reduce
 
