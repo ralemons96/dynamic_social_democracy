@@ -1,0 +1,66 @@
+title: The Imperial Proclamation
+subtitle: Generous terms in one hand, a rearmament budget in the other...
+new-page: true
+view-if: year = 1931 and month >= 2 and not imperial_proclamation_seen
+on-arrival: imperial_proclamation_seen = 1
+max-visits: 1
+priority: 2
+tags: event
+
+= The Imperial Proclamation
+
+The Imperial chancery publishes what it calls the Proclamation of Reunion, and the terms are, by any reading, generous. Any former territory returning to the Empire is promised its own diet, its own courts, its language and religion untouched, its debts assumed by the Imperial treasury, and — the clause every newspaper in the capital reprinted — its labour law left exactly as its own legislature writes it.
+
+The same week's Imperial budget provides for eleven new regiments, two shipyards, and a doubling of the Northern Fleet.
+
+The <span style="color: #7A3C00;">**Axton Empire**</span> did not have money in Vera when the Exchange fell. Its workshops never stopped, its yards never emptied, and while every other treasury on the continent spent the last year shoring up its banks, the Empire has been buying steel. <span style="color: #D3C24D;">**Ethia**</span> has protested. The <span style="color: #708090;">**Allied States**</span> have protested. Nobody has done anything, because nobody is presently in a position to.
+
+The proclamation is already circulating in the Commonwealth's own marches, in a very good translation.
+
+- @suppress
+- @stand_firm
+- @generous_terms
+- @counter_propaganda
+
+@suppress
+title: Suppress this propaganda!
+subtitle: Use the ministries we hold. The proclamation does not circulate here.
+view-if: chancellor_party == "Marcher" or interior_minister_party == "Marcher" or justice_minister_party == "Marcher"
+on-arrival: reformist_dissent += 5; knight_dissent += 5
+
+Presses are seized, the translation is banned from the post, and the men distributing it in the marches spend a night in the cells. It works: the proclamation stops circulating, and the Empire's offer never reaches most of the people it was written for. Nobody gains from an argument that never happens — least of all the <span style="color: #7A3C00;">**Royalists**</span>.
+
+Our own reformists are uneasy about it. They spent a decade arguing that a republic answers speech with speech, and they are being asked to explain why this particular speech was different.
+
+@stand_firm
+title: Stand firm against the Empire.
+subtitle: Answer the proclamation in public, and let the terms be damned.
+on-arrival: reformist_dissent += 5; knight_dissent += 5; dufour_angry += 5; commons_royalist += 3; burgher_royalist += 2; guild_royalist += 2; faithful_royalist += 2; disfavored_royalist += 2
+
+We answer it head-on: the Commonwealth is not a territory to be reacquired on favourable terms, and no diet the Empress grants can be worth the sovereignty it replaces. It is the right answer and it is a poor argument, because every hour we spend contesting the proclamation is an hour the proclamation is being discussed.
+
+The <span style="color: #7A3C00;">**Royalists**</span> could not have asked for better. They did not have to defend the terms — we did that for them by attacking them — and their meetings are noticeably fuller afterward. President DuFour, who would have preferred the whole business handled quietly, is not pleased.
+
+Our reformists think the tone needlessly absolute for a country that will still have to trade with the Empire next year.
+
+@generous_terms
+title: The terms are unusually generous...
+subtitle: Say what half the country is already thinking. The left will not forgive it.
+on-arrival: left_dissent += 8; center_dissent += 8; dufour_angry += 5; empire_posture += 4 if empire_posture <= 96; commons_royalist += 3; burgher_royalist += 2; guild_royalist += 2; faithful_royalist += 2; disfavored_royalist += 2
+
+We decline to pretend the terms are worse than they are. Read plainly, they concede more to a returning province than the Commonwealth's own constitution concedes to its marches, and saying so out loud is merely accurate.
+
+It is also, in the judgement of our centrists and our left, an act of astonishing political stupidity. To answer an annexation offer by conceding that it is well drafted is to hand the argument to everyone who wants the annexation, and the wing of the party that has spent its life fighting the Empire says so in language that does not print well.
+
+The Imperial legation is delighted with us. So are the <span style="color: #7A3C00;">**Royalists**</span>, who now have a Reformist quotation for their pamphlets. President DuFour is not pleased.
+
+@counter_propaganda
+title: Release counter-propaganda.
+subtitle: -1 resources. Fight the pamphlet with a pamphlet.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; royalist_urgency += 1 if neorevisionism == 0
+
+We answer print with print: our own presses run day and night on the Empire's labour record, its conscription rolls, and the diets it granted the last time it promised one. The two pamphlets cancel each other out almost exactly, which is the most that can be said for the effort.
+
+[? if neorevisionism == 0: The exercise does clarify something for a handful of our organizers, who spend the week discovering how much better the other side is at this than we are, and begin asking whether a party that only ever argues is equipped for the decade ahead. ?][? if neorevisionism > 0: Our neorevisionists ran the campaign and are quietly satisfied with it, which is more than anyone else in the party can say. ?]
