@@ -38,7 +38,7 @@ The <span style="color: #c00000;">**Marchers**</span> is a diverse and dynamic p
 
 Appointing individual advisors will boost their respective faction’s loyalty and influence, at the cost of increasing resentment among the sidelined factions. 
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the Collectivists.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Center is a faction of Center Vaelists, between reform and revolution.">Unionists</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
