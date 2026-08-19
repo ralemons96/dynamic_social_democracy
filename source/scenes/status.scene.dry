@@ -20,27 +20,10 @@ var _stab = (Q.pro_republic || 0)
     - Math.max(0, (Q.disfavored || 0) - 8)
     + Math.max(-5, Math.min(5, (Q.economic_growth || 0)));
 Q.stability = Math.max(0, Math.min(100, Math.round(_stab)));
-// Military readiness / deterrence vs the Empire: the loyal army's fighting power for the
-// republic plus the republican Banners. A strong + loyal army deters; a weak or disloyal one
-// invites invasion. (A disloyal army still has internal coup power - see the force model.)
-var _ready = (Q.army_strength || 0) * (Q.army_militancy || 0) * (Q.army_loyalty || 0)
-    + (Q.banner_strength || 0) * (Q.banner_militancy || 0);
-// Mass unemployment hollows out readiness - conscription pools, arsenal funding, morale.
-_ready *= Math.max(0.55, 1 - 0.03 * Math.max(0, (Q.disfavored || 0) - 12));
-Q.military_readiness = Math.round(_ready);
-// Commonwealth standing (0-100): the three pillars - internal stability, military deterrence,
-// and popular legitimacy. The strength signal that drives the Empire's posture and the
-// Royalists' nerve (computed in the turn loop). Readiness is normalised to a 0-100 scale.
-var _readyNorm = Math.min(100, Q.military_readiness / 4);
-Q.commonwealth_standing = Math.max(0, Math.min(100, Math.round(
-    0.4 * Q.stability + 0.3 * (Q.pro_republic || 0) + 0.3 * _readyNorm)));
-// Reunification support (0-100): how ready the realm is for a peaceful return to the Empire -
-// the Empire willing (empire_posture), the magi reconciled (magi_balance), and a moderated
-// Concord to broker it. The Convention's peaceful path.
-var _reunion = 0.55 * (Q.empire_posture || 0) + 0.3 * (Q.magi_balance || 0)
-    + 0.15 * (Q.concord_formed ? 100 : 0)
-    + (Q.reconciliation_committee ? 12 : 0);
-Q.reunification_support = Math.max(0, Math.min(100, Math.round(_reunion)));
+// military_readiness, commonwealth_standing and reunification_support are no longer shown on
+// this panel - they are surfaced contextually (Relations with the Empire) or read only by
+// events. post_event recomputes all three every turn, so they need no copy of the formulas
+// here. Do not re-add them: the duplicate formulas had to be kept in sync by hand.
 !}
 
 = Status
@@ -73,17 +56,7 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 Commonwealth stability: [+ stability : stability +]
 
-Military readiness: [+ military_readiness : military_readiness +]
-
-Coup risk: [+ coup_progress : coup_risk +]
-
-Magi allegiance: [+ magi_balance : magi_balance +]
-
-Commonwealth standing: [+ commonwealth_standing : commonwealth_standing +]
-
 The Empire's posture: [+ empire_posture : empire_posture +]
-
-Reunification: [+ reunification_support : reunification_support +]
 
 = Government
 
@@ -349,6 +322,8 @@ Q.loyalist_strength_2 = Q.loyalist_strength.toFixed(1);
 Commonwealth Army: [+ army_strength +] thousand troops.
 
 Commonwealth Army Loyalty: [+ army_loyalty : loyalty +]
+
+[? if year >= 1930 and far_right_force >= 30 and not streetfighting_joever: Officers' disquiet: [+ coup_progress : coup_risk +] ?]
 
 Heartland police: [+ heartland_police_strength +] thousand members.
 

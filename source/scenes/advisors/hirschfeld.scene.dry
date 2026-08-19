@@ -51,3 +51,5 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; magi_balance += 4 if magi_balance < 100; last_advisor_action = 1
 
 Harnfell turns his pamphleteers and his podium to the magi's cause — lectures in the guild halls, careful essays in the respectable press, a public correspondence with sympathetic jurists. It is slow work against old fear, but the ground shifts a little wherever he speaks.
+
+He reports that the circles now stand [+ magi_balance : magi_balance +].

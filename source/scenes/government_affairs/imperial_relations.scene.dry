@@ -10,6 +10,8 @@ tags: govt_affairs, cabinet
 
 Across the northern frontier the Empire-in-Exile waits, and within its court two factions contend: the Empress Jacqueline, who would see the Commonwealth return as a crowned constituent realm by treaty rather than by the sword, and the Hardliners, who want only its total subjugation. Which of them prevails depends, in no small part, on us — for a Commonwealth that is strong, stable, and defended makes the Empress's case for her, while a weak and divided one is the Hardliners' best argument. The Foreign Ministry must choose how to carry itself toward the old order.
 
+The attachés' reading of us: our forces are [+ military_readiness : military_readiness +], and the northern court judges the Commonwealth [+ commonwealth_standing : commonwealth_standing +].
+
 - @disarmament: Propose mutual disarmament.
 - @reconciliation: Open quiet talks of reconciliation.
 - @moderates: Contact the moderate elements of the Empire-in-Exile.

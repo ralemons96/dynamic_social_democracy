@@ -11,6 +11,8 @@ tags: govt_affairs, cabinet
 
 The magi caste lives beneath a thicket of old imperial law — the Registry that names every mage, the loyalty-oaths that bind them, the statutes that bar them from the guilds and the higher courts. Watched and resented, and knowing that the greatest workings of magic still invoke the dead God-Emperor's power, many magi have come to believe that only the Empire-in-Exile — which reveres the God of Magic — will ever restore their standing. Magnus Harnfell, the foremost advocate for the magi and a member of our party, urges us to court them with rights and protection. The order-loving centre warns that to coddle the God-of-Magic cult is to invite the Empire into our own house.
 
+As things stand, the circles' allegiance is [+ magi_balance : magi_balance +].
+
 - @repeal_registry: Repeal the Magi Registry.
 - @recognize_circles: Recognize the mage-circles in law.
 - @protect_magi: Outlaw the persecution of magi.

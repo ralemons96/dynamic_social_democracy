@@ -12,6 +12,8 @@ Battles rage on the streets between the <span style="color: #7A3C00;">Royalist</
 
 We must do something to protect the workers against these predations.
 
+The barracks are watching too. [? if coup_progress < 2: For now the Commonwealth Army regards the disorder with professional distaste and nothing more. ?][? if coup_progress >= 2 and coup_progress < 5: There is muttering in the officers' messes about a state that cannot keep its own streets. ?][? if coup_progress >= 5 and coup_progress < 8: The general staff has grown openly antsy at the fighting, and speaks — not quietly — of the need for order. ?][? if coup_progress >= 8: The general staff no longer troubles to hide its contempt. Officers speak of restoring order themselves, and no one contradicts them. ?]
+
 # - @battle: Test our defense units in battle against the fascists!
 - @arm_rb: Increase training and armaments for the Banners.
 - @if_training: Train Free Guild members to fight as part of the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Banner</span>.
