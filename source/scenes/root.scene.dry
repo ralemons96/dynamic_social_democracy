@@ -905,6 +905,9 @@ Q.strife = 0;
 Q.lvp_timer_trigger = 0;
 Q.lvp_timer_1_trigger = 0;
 Q.lvp_timer_2_trigger = 0;
+// months of standing held at an extreme under the current Gold chairman; see post_event
+Q.lvp_moderate_pressure = 0;
+Q.lvp_rightward_pressure = 0;
 Q.ui0_seen = 0;
 Q.young_plan_ratified = 0
 Q.kvp_leader = "Westmore"

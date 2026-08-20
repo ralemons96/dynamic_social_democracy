@@ -54,26 +54,41 @@ if (Q.lvp_relation >= 50) {
     Q.dingeldey_points += 1;
 }
 
+// The two outer bands, so that unusually good and unusually bad standing with the Golds
+// produce visibly different congresses rather than a marginal shift either way.
+if (Q.lvp_relation >= 75) {
+    Q.heuss_points += 2;
+    Q.lvp_left += 2;
+}
+if (Q.lvp_relation < 30) {
+    Q.dingeldey_points += 2;
+    Q.lvp_right += 2;
+}
+
 if (Q.nationalism >= 50) {
     Q.dingeldey_points += 1;
     Q.lvp_right += 1;
 }
 
-if (Q.pro_republic >= 70) {
+// 70 was unreachable at this point in the game - across 119 sampled runs pro_republic never
+// once hit it here (p90 62, best 69), so Hewes forfeited this point unconditionally.
+if (Q.pro_republic >= 65) {
     Q.heuss_points += 1;
     Q.lvp_left += 2;
-} else if (Q.pro_republic < 70) {
+} else if (Q.pro_republic < 65) {
     Q.dingeldey_points += 1;
     Q.lvp_right += 2;
 }
 
-if (Q.lvp_votes >= 11.5) {
+// Lytton's incumbency bonus: the polling bar was low enough (11.5 against a 13.6 median)
+// that he cleared it in almost every run. He remains the default outcome, just beatable.
+if (Q.lvp_votes >= 13) {
     if (Q.lvp_ideology == "Right") {
         Q.lvp_left += 3;
     } else if (Q.lvp_ideology == "Left") {
         Q.lvp_right += 3;
     }
-    Q.luther_points += 5;
+    Q.luther_points += 4;
 }
 
 if (Q.heartland_leader == "Lytton") {

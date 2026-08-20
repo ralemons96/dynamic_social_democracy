@@ -1052,7 +1052,29 @@ Q.military_readiness = Math.round(_ready);
     }
     if (Q.traditionalist_split_2 && Q.traditionalist_split_2_timer >= 1) {
         Q.traditionalist_split_2_timer += 1;
-    }   
+    }
+    // Sustained pressure on the Gold chairmanship. Every leadership change the Golds have is
+    // otherwise electoral - nothing keys on how we have actually treated them - so these two
+    // counters track standing held at an extreme for three consecutive months, which is what
+    // lvp_confidence_vote fires on. They reset the moment standing recovers or slips back.
+    // Thresholds are 55 / 45 rather than 65 / 25, because standing is tightly coupled to who
+    // holds the chair and the mismatch states those numbers describe cannot occur. Measured
+    // over 80 runs: the PEAK standing ever reached under Coalfax was p50 40 / max 62, and the
+    // LOWEST ever reached under Hewes or Dietrich was p50 68 / min 49. At 65 and 25 this event
+    // was provably unreachable. 55 and 45 sit just past the observed extremes, so crossing
+    // them still means deliberately working against the chairman's own gravity.
+    if (Q.lvp_formed) {
+        if (Q.lvp_leader == "Coalfax" && Q.lvp_relation >= 55) {
+            Q.lvp_moderate_pressure = (Q.lvp_moderate_pressure || 0) + 1;
+        } else {
+            Q.lvp_moderate_pressure = 0;
+        }
+        if ((Q.lvp_leader == "Hewes" || Q.lvp_leader == "Dietrich") && Q.lvp_relation <= 45) {
+            Q.lvp_rightward_pressure = (Q.lvp_rightward_pressure || 0) + 1;
+        } else {
+            Q.lvp_rightward_pressure = 0;
+        }
+    }
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};
     for (var party of Q.parties_graph) {

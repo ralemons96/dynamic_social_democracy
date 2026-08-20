@@ -1,0 +1,39 @@
+title: A Question of Confidence
+subtitle: The <span style="color: #C0A054;">**Golds**</span> reconsider their chairman...
+new-page: true
+view-if: lvp_formed and not lvp_confidence_seen and (lvp_moderate_pressure >= 3 or lvp_rightward_pressure >= 3)
+on-arrival: lvp_confidence_seen = 1
+max-visits: 1
+priority: 2
+tags: event
+
+= A Question of Confidence
+
+A party chairman survives on the sufferance of the men who fund him and the men who have to run on his name, and both have been counting.
+
+[? if lvp_moderate_pressure >= 3: Soren Coalfax was installed to keep the <span style="color: #C0A054;">**Golds**</span> at arm's length from us, and for three months now he has presided over the opposite. The working arrangement he was supposed to prevent has held, it has been visibly to the party's benefit, and the moderates who spent his whole chairmanship being told that cooperation was impossible have spent it watching cooperation happen. They have stopped arguing the principle and started counting votes on the executive. ?][? if lvp_rightward_pressure >= 3 and lvp_moderate_pressure < 3: Three months of open hostility between us and the <span style="color: #C0A054;">**Golds**</span> have finished what the guild-masters could not finish on their own. The chairman's whole case was that a liberal party could work with the Marchers on terms that did not humiliate it, and there is now a public record of the last quarter to hold against him. The industrial backers have not had to organize anything. They have simply had to stop defending him. ?]
+
+- @moderates_win
+- @right_wins
+
+@moderates_win
+title: The moderates carry the executive.
+subtitle: Julius Curthose takes the chair.
+view-if: lvp_moderate_pressure >= 3
+on-arrival: lvp_leader = "Curthose"; lvp_relation += 8; lvp_left += 4; coalition_dissent -= 1 if coalition_dissent >= 1; pro_republic += 2; commons_lvp += 1; burgher_lvp += 1; curtius_election_time = time
+face-image: img/portraits/curtius.jpg
+
+Coalfax is not humiliated — the <span style="color: #C0A054;">**Golds**</span> do not do that to their own — but the vote on the executive goes against him and he does not contest a second. Julius Curthose takes the chair with the moderates behind him and the frank understanding that he holds it because the arrangement with us has been working.
+
+It is a smaller change than it looks and a larger one than it sounds. Curthose is no friend of ours in any sentimental sense; he simply belongs to the half of his party that can count, and what he counts is that liberalism has nowhere else to go. The cabinet gets easier. So, quietly, does the republic's standing among people who had been waiting to see whether the propertied parties would defend it.
+
+@right_wins
+title: The guild-masters take the party back.
+subtitle: Soren Coalfax takes the chair.
+view-if: lvp_rightward_pressure >= 3 and lvp_moderate_pressure < 3
+on-arrival: lvp_leader = "Coalfax"; lvp_relation -= 8; lvp_right += 5; lvp_ideology = "Right"; coalition_dissent += 1; pro_republic -= 2 if pro_republic >= 2; guild_lvp += 4; commons_lvp -= 4; burgher_lvp += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
+face-image: img/portraits/dingeldey.jpg
+
+The chairman goes without much of a fight, because there is not much of a case left to make. Soren Coalfax takes the chair on the industrial wing's terms, and the terms are not complicated: the <span style="color: #C0A054;">**Golds**</span> are a party of property first and a party of the republic second, in that order and out loud.
+
+The shift shows up in the party's own base before it shows up anywhere else. The guild halls and the small proprietors, who had been drifting away from a liberalism that seemed to have made its peace with us, come back. The clerks and the salaried men in the industrial towns — the ones who liked the <span style="color: #C0A054;">**Golds**</span> precisely because they were not the party of the guild-masters — do not. In cabinet, everything becomes an argument.
