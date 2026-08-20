@@ -1,7 +1,12 @@
-title: Second <span style="color: #C0A054;">**Golds**</span> Congress
+title: <span style="color: #C0A054;">**Golds**</span> Party Congress
 subtitle: The <span style="color: #C0A054;">**Golds**</span> decides their fate...
-view-if: year == 1930 and month == 4 and lvp_timer_trigger and lvp_formed
+view-if: lvp_formed and year == 1929 and month >= 6 and not lvp_congress_1_seen
 on-arrival: {!
+// The liberals merge at the start of play (root @1928_main), which bypasses the merger
+// events that used to arm lvp_timer_trigger - so this congress keyed on a flag nothing
+// could set any more and never fired. It now keys on lvp_formed, which the start merge
+// does set, and sits about a year into the game instead of Rainage 4295.
+Q.lvp_congress_1_seen = 1;
 Q.heuss_points = 0;
 Q.dietrich_points = 0;
 Q.luther_points = 5;
@@ -141,14 +146,27 @@ tags: event
 face-image: img/weimar_coalition_3.jpg
 new-page: true
 
-= Second <span style="color: #C0A054;">**Golds**</span> Party Congress
+= <span style="color: #C0A054;">**Golds**</span> Party Congress
 
 The merger of two notoriously factionalized parties has unsurprisingly introduced great dysfunction into the internal politics of the <span style="color: #C0A054;">**Golds**</span>. Not even a unifying figure like Hans Lytton has been able to quell the endless bickering among the party's factions. The economic calamity has only deepened these divisions, with disagreements arising even on broadly supported issues like parliamentary government, making unified action nearly impossible.
 
 While Hans Lytton is expected to secure re-election, scattered candidates across the party could emerge if the majority of the party loses confidence in Lytton's leadership.
 
+- @heuss_campaign: We must hold a campaign in support of Theodor Hewes as party chair.
 - @luther: The party votes...
 - @luther_fail: The party votes...
+
+@heuss_campaign
+title: Theodor Hewes is elected!
+subtitle: -1 resource. Hewes is likelier than any of the others to keep the <span style="color: #C0A054;">Golds</span> alongside us.
+choose-if: lvp_relation >= 60 and resources >= 1
+unavailable-subtitle: [? if lvp_relation < 60: Our relations with the <span style="color: #C0A054;">Golds</span> are not good enough for our word to carry at their congress. ?][? if lvp_relation >= 60 and resources < 1: We do not have enough resources. ?]
+on-arrival: resources -= 1; lvp_relation += 10; lvp_left += 7; lvp_ideology = "Left"; lvp_leader = "Hewes"; pro_republic += (lvp_votes / 2); commons_lvp += 2; commons_marcher -= 2; burgher_lvp += 2; guild_lvp -= 4; guild_other += 4 if (traditionalist_ideology == "Radical"); guild_traditionalist += 4 if traditionalist_ideology == "Moderate"; guild_kvp += 4; landed_lvp -= 4; landed_other += 4 if (traditionalist_ideology == "Radical" and not kvp_formed); landed_traditionalist += 4 if traditionalist_ideology == "Moderate"; landed_kvp += 4; faithful_lvp += 2; faithful_marcher -= 2; coalition_dissent -= 1; heuss_explode_time = time + 8; heuss_election_time = time
+face-image: img/portraits/heuss.jpg
+
+We do not pretend the campaign is anything other than what it is. Our press takes Hewes's side, our people in the shared committees make the case for him in rooms we are not supposed to be in, and the funds that pass between friendly parties at congress time pass in the usual direction. It is an intervention in another party's internal affairs, and the <span style="color: #C0A054;">**Golds**</span> know it — but with relations as they are, being seen to be our candidate is worth more to Hewes than it costs him.
+
+Theodor Hewes is elected chairman of the <span style="color: #FFCC00;">**Golds**</span>. His victory empowers the '<span style="color: #c00000;">Social</span> <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>' wing of the party — the men who believe liberalism's future lies in a working arrangement with us rather than with the guild-masters — and the party's industrial backers take note of who put him there.
 
 @luther
 view-if: luther_points >= opposition_points
