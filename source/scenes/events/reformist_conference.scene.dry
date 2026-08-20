@@ -17,7 +17,7 @@ They came to the First. By the Second they had already begun the long walk towar
 
 But the crash has changed the arithmetic for everyone. Across the continent, parties that spent the twenties certain of their own analysis are discovering how little of it survived contact with mass unemployment. There is a hope — thin, but real — that the <span style="color: #700000;">**Collectivists**</span> might use Cainholde to climb down.
 
-[? if collectivist_leader == "Conciliators": Under the Conciliators, they do not need to be asked. The delegation is named within the week, and it is a serious one — not the usual pair of observers sent to file a denunciation, but the men who actually run the party's unions. ?][? if collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3): Halsmark has not said no. That in itself is news. The party press has run nothing on Cainholde in either direction for three weeks, which among the <span style="color: #700000;">**Collectivists**</span> is how an argument sounds from the outside. Someone could push. ?][? if collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3): The reply comes back within days, and it is not a refusal so much as a lecture. The <span style="color: #700000;">**Collectivists**</span> will not attend. To sit at Cainholde would be to concede that the reformist movement is a wing of the workers' cause rather than a betrayal of it, and they decline to concede anything of the kind — least of all to us. ?]
+[? if collectivist_leader == "Conciliators": Under the Conciliators, they do not need to be asked. The delegation is named within the week, and it is a serious one — not the usual pair of observers sent to file a denunciation, but the men who actually run the party's unions. ?][? if collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): Halsmark has not said no. That in itself is news. The party press has run nothing on Cainholde in either direction for three weeks, which among the <span style="color: #700000;">**Collectivists**</span> is how an argument sounds from the outside. Someone could push. ?][? if collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): The reply comes back within days, and it is not a refusal so much as a lecture. The <span style="color: #700000;">**Collectivists**</span> will not attend. To sit at Cainholde would be to concede that the reformist movement is a wing of the workers' cause rather than a betrayal of it, and they decline to concede anything of the kind — least of all to us. ?]
 
 - @conciliators_attend
 - @pay
@@ -28,7 +28,7 @@ But the crash has changed the arithmetic for everyone. Across the continent, par
 @conciliators_attend
 title: Then we go to Cainholde together.
 view-if: collectivist_leader == "Conciliators"
-on-arrival: left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2; soviet_relation += 1; west_relation += 1
+on-arrival: left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2; soviet_relation += 1; east_relation += 1
 
 For the first time since the First Conference, the two delegations travel as delegations rather than as rivals with the same destination. The resolutions that come out of Cainholde are not remarkable — they rarely are — but the photograph is: our people and theirs on the same platform, and no one storming out of it.
 
@@ -39,7 +39,7 @@ Abroad, the reaction is warmer still. The <span style="color: #750e0e;">**Centra
 @pay
 title: Send an approach through the unions.
 subtitle: -1 resource. The industrial federations still talk to each other even when the parties do not.
-view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3)
+view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources (1 needed).
 on-arrival: resources -= 1; left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2
@@ -53,7 +53,7 @@ The effect at home is felt within the month. The <span style="color: #700000;">*
 @leftists
 title: Let our own Left carry the message.
 subtitle: They have the standing with the <span style="color: #700000;">Collectivists</span> that the rest of us do not - if they are strong enough to spend it.
-view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3)
+view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 choose-if: left_strength >= center_strength and left_strength >= labor_strength and left_strength >= reformist_strength and left_strength >= knight_strength
 unavailable-subtitle: Our <span style="color: #c00000;">Left</span> would have to be the strongest faction in the party for Halsmark to take the approach seriously.
 on-arrival: left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2
@@ -67,13 +67,13 @@ The effect at home is felt within the month. The <span style="color: #700000;">*
 @nothing
 title: Cainholde is not worth spending anything on.
 subtitle: Let them decide for themselves.
-view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3)
+view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 
 We let the question answer itself, and it answers the way these questions have answered since the Second Conference. Two observers are sent, without instructions to speak. They file a report describing the proceedings as a rehearsal for the next betrayal, and it is printed in full.
 
 @blind
 title: The <span style="color: #700000;">Collectivists</span> remain blind to the real world.
-view-if: collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 3)
+view-if: collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 
 There is nothing to answer. A party that has decided the crisis proves it was right about everything will read Cainholde as one more proof, and there is no argument available to us that does not confirm the thesis simply by being ours.
 
