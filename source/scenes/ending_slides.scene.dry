@@ -54,9 +54,24 @@ if (Q.weimar_win) {
   var _reunion = (Q.reunification_support === undefined) ? 33 : Q.reunification_support;
   var _stab = (Q.stability === undefined) ? 50 : Q.stability;
   var _ready = Q.military_readiness || 0;
-  if (_posture >= 65 && _reunion >= 60 && !Q.reconciliation_rejected) {
+  // Order matters here, and the old order had a bug: reunification was tested first on posture
+  // alone, but posture DRIFTS TOWARD commonwealth_standing every turn (post_event), and standing
+  // is driven by military readiness. So building a strong republic raised the Empire's posture,
+  // which then read as "they are willing to take us back peacefully" - a player who armed the
+  // realm specifically so the Empire would not dare invade was railroaded into reunification,
+  // and the deterrence ending was unreachable for exactly the play that should earn it.
+  // Now: an explicit choice wins, then earned deterrence, then drift.
+  // NB the old cold_war fallback also tested _stab >= 55, which is dead - stability floors at 0
+  // by the end of the era in every measured run - so deterrence keys on readiness alone.
+  if (Q.reconciliation_committee && _posture >= 55 && !Q.reconciliation_rejected) {
+    // The player actually sat the Reconciliation Committee. That is a chosen ending.
     Q.empire_outcome = "reunification";
-  } else if (_posture >= 50 || (_stab >= 55 && _ready >= 250)) {
+  } else if (_ready >= 250) {
+    // A credible army and the Banners behind it. The Empire wants the realm, but not this much.
+    Q.empire_outcome = "cold_war";
+  } else if (_posture >= 65 && _reunion >= 60 && !Q.reconciliation_rejected) {
+    Q.empire_outcome = "reunification";
+  } else if (_posture >= 50) {
     Q.empire_outcome = "cold_war";
   } else {
     // Provoke -> War. Reuse the civil-war strength x militancy x loyalty model: our loyal army

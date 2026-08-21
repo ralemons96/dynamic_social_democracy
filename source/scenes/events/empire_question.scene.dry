@@ -1,7 +1,7 @@
 title: The Empire Question
 subtitle: Before the era closes, the Marchers must decide where they stand.
 new-page: true
-view-if: year = 1934 and month >= 3 and month <= 6 and not dufour_dead and not rubicon and not rubicon_mini and president != "Gallax" and president != "Gorrick" and president != "Selden"
+view-if: year = 1934 and month >= 1 and month <= 7 and not dufour_dead and not rubicon and not rubicon_mini and president != "Gallax" and president != "Gorrick" and president != "Selden"
 max-visits: 1
 priority: 3
 tags: event
