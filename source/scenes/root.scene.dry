@@ -6,25 +6,16 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Reformism: An Alternate History
+= The End of Spring
 
 @start_menu_2
 
 - @start_1: Start game
-- @modinfo: Mod Info - Last Updated 2026/05/24
 - @credits: Credits
 - @game_over.achievements
 
 @start_1
-on-arrival: player_beg = 1 if not achievement_game_completed
-go-to: start if achievement_game_completed; pls_player if not achievement_game_completed
-
-
-@pls_player
-
-Read.
-
-- @modinfo.infotext: Mod Info - Last Updated 2026/01/25
+go-to: start
 
 
 @start
@@ -1252,14 +1243,7 @@ This is a game of alternate history. While historical accuracy is a major concer
 
 For more information on the politics and government of the Commonwealth Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
-**If you are playing this mod via the Mod Loader in base game, there will be various items missing (parliament colours, images, arrows, etc.). For the intended experience, please play using <a href="https://originn0.github.io/dynamic_social_democracy/" style="color: #0077FF">this</a> link.**
-
-- @1928_mod_mode: Begin (<span style="color: #0077FF;">dynamic</span> mode)
-- @1928_easy: Begin (<span style="color: #5B9A8D;">easy</span> difficulty)
-- @1928_main: Begin (<span style="color: #C4B156;">normal</span> difficulty)
-- @1928_hard: Begin (<span style="color: #A05252;">hard</span> difficulty)
-- @1928_historical: Begin (<span style="color: #611813;">historical</span> mode)
-- @1928_challenge: Custom Modes
+- @1928_mod_mode: Begin
 
 @1928_easy
 on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; banner_strength = 2500; collectivist_relation = 34; unionist_relation = 54; gold_relation = 49; ddp_relation = 65; budget = 5;
@@ -1292,7 +1276,6 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_mod_mode
-subtitle: Intended way of experiencing this mod.
 on-arrival: {!
 Q.difficulty = -1;
 Q.dynamic_mode = 1;
@@ -1642,4 +1625,4 @@ if (!Q.lvp_formed) {
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 
-= 1928
+= 4293
