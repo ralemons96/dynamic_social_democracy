@@ -1053,6 +1053,27 @@ Q.military_readiness = Math.round(_ready);
     if (Q.traditionalist_split_2 && Q.traditionalist_split_2_timer >= 1) {
         Q.traditionalist_split_2_timer += 1;
     }
+    // Taking power steadies the party. The factions stop rehearsing a split the moment the
+    // Marchers actually hold something - a seat in the cabinet, or the presidency. Fires on
+    // each transition INTO government, and once when a Marcher first takes the presidency.
+    // Both are rare, engineered moments; neither is anything a player can toggle cheaply.
+    var _steadied = 0;
+    if (Q.marcher_in_government && !Q.marcher_was_in_government) _steadied = 1;
+    var _marcherPresident = (Q.president == "Bristol" || Q.president == "Shackley"
+        || Q.president == "Vesh" || Q.president == "Grenshaw" || Q.president == "Jessamy"
+        || (Q.president == "Pendrigon" && !Q.left_split));
+    if (_marcherPresident && !Q.marcher_president_steadied) {
+        Q.marcher_president_steadied = 1;
+        _steadied = 1;
+    }
+    Q.marcher_was_in_government = Q.marcher_in_government ? 1 : 0;
+    if (_steadied) {
+        Q.left_dissent = Math.max(0, (Q.left_dissent || 0) - 5);
+        Q.center_dissent = Math.max(0, (Q.center_dissent || 0) - 5);
+        Q.labor_dissent = Math.max(0, (Q.labor_dissent || 0) - 5);
+        Q.reformist_dissent = Math.max(0, (Q.reformist_dissent || 0) - 5);
+        Q.knight_dissent = Math.max(0, (Q.knight_dissent || 0) - 5);
+    }
     // Sustained pressure on the Gold chairmanship. Every leadership change the Golds have is
     // otherwise electoral - nothing keys on how we have actually treated them - so these two
     // counters track standing held at an extreme for three consecutive months, which is what

@@ -42,6 +42,14 @@ Q.dufour_run = 1;
 if (Q.commonwealth_standing >= 65) {
     Q.dufour_assassinated = 1;
     Q.dufour_run = 0;
+    // He dies in Deepsnow; the republic does not elect a successor until Rainage. The
+    // presidency passes to the Constitutional Court in the interim, the same caretaker the
+    // constitution names elsewhere (death_of_hindenburg_president, hindenburg_explode_referendum).
+    // This is deliberately inert: every coercive presidential power in the game - sacking the
+    // cabinet, the state dismissals, the discontent track - is gated on president == "DuFour",
+    // so an acting president simply cannot use them. He holds the chair and nothing else.
+    Q.president = "Burnell (acting)";
+    if (Q.judicial_reform >= 4) Q.president = "Grothmoor (acting)";
 }
 !}
 on-display: {!  

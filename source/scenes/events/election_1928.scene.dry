@@ -4149,6 +4149,20 @@ if (Q.in_wholesome_coalition) {
 });
 }
 if (Q.dufour_angry_old > 0) Q.dufour_angry = Q.dufour_angry_old;
+// Silent one-off, first cabinet only: the Golds read every economic portfolio we leave in
+// their hands as reassurance that a Marcher government is not coming for the ledger. +5 each
+// for Finance and Economics. This stacks with the ambient no-ministry drift in post_event and
+// gives a second, earlier route to a friendly liberal party for a player who wants one.
+if (!Q.first_cabinet_gold_bonus) {
+    Q.first_cabinet_gold_bonus = 1;
+    var _conceded = 0;
+    if (Q.finance_minister_party !== "Marcher") _conceded += 1;
+    if (Q.economic_minister_party !== "Marcher") _conceded += 1;
+    if (_conceded > 0) {
+        Q.lvp_relation = Math.min(100, (Q.lvp_relation || 0) + 5 * _conceded);
+        Q.gold_relation = Math.min(100, (Q.gold_relation || 0) + 5 * _conceded);
+    }
+}
 !}
 subtitle: [? if leverage >= 10 : We still have some more leverage to gain ministries. ?][? if leverage < 10 : We do not have much leverage left. ?]
 tags: mins_1928

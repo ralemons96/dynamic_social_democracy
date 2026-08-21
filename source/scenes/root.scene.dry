@@ -896,6 +896,9 @@ Q.strife = 0;
 Q.lvp_timer_trigger = 0;
 Q.lvp_timer_1_trigger = 0;
 Q.lvp_timer_2_trigger = 0;
+// set once the Marchers first hold power; see post_event (dissent steadying)
+Q.marcher_was_in_government = 0;
+Q.marcher_president_steadied = 0;
 // months of standing held at an extreme under the current Gold chairman; see post_event
 Q.lvp_moderate_pressure = 0;
 Q.lvp_rightward_pressure = 0;
