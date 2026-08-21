@@ -30,7 +30,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; collectivist_inter_party_seen += 1; gold_right += 1; lvp_right += 1
-go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and collectivist_coalition_success = 0 and (collectivist_relation < 40 or collectivist_rectifed_history = 1); kpd_rectification_of_history if collectivist_relation >= 40 and collectivist_rectified_history = 0; kpd_2 if collectivist_coalition_success = 1 and collectivist_rectified_history = 1
+go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and collectivist_coalition_success = 0 and (collectivist_relation < 40 or collectivist_rectified_history = 1); kpd_rectification_of_history if collectivist_relation >= 40 and collectivist_rectified_history = 0; kpd_2 if collectivist_coalition_success = 1 and collectivist_rectified_history = 1
 
 @kpd_1
 on-arrival: collectivist_relation += 6*(1 - dissent); communist_coalition += 1 if collectivist_inter_party_seen <= 1; reformist_dissent += 2; unionist_relation -= 2 if unionist_ideology == "Right"; gold_relation -= 3; ddp_relation -= 2; lvp_relation -= 3

@@ -44,7 +44,7 @@ Q.gold_normalized = 0;
 Q.liberal_parliament = 0;
 Q.parties = Q.parties.filter(party => party !== 'gold');
 
-if (Q.winner_fkp = "Vellt") {
+if (Q.winner_fkp == "Vellt") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.guild_dnf += Q.guild_kvp * 0.2;
         Q.guild_kvp = Q.guild_kvp * 0.8;
@@ -57,7 +57,7 @@ if (Q.winner_fkp = "Vellt") {
     Q.burgher_kvp = Q.burgher_kvp * 0.9;
 }
 
-if (Q.winner_fkp = "Raymont") {
+if (Q.winner_fkp == "Raymont") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.landed_dnf += Q.landed_kvp * 0.2;
         Q.landed_kvp = Q.landed_kvp * 0.8;
@@ -76,7 +76,7 @@ if (Q.winner_fkp = "Raymont") {
     Q.commons_kvp = Q.commons_kvp * 0.5;
 }
 
-if (Q.winner_fkp = "Trevannon") {
+if (Q.winner_fkp == "Trevannon") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.landed_dnf += Q.landed_kvp * 0.1;
         Q.landed_kvp = Q.landed_kvp * 0.9;
@@ -95,7 +95,7 @@ if (Q.winner_fkp = "Trevannon") {
     Q.commons_kvp = Q.commons_kvp * 0.6;
 }
 
-if (Q.winner_fkp = "Hargen") {
+if (Q.winner_fkp == "Hargen") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.landed_kvp += Q.landed_dnf * 0.2;
         Q.landed_dnf = Q.landed_dnf * 0.8;
@@ -112,7 +112,7 @@ if (Q.winner_fkp = "Hargen") {
     Q.burgher_kvp = Q.burgher_kvp * 0.7;
 }
 
-if (Q.winner_fkp = "Westmore") {
+if (Q.winner_fkp == "Westmore") {
     if (Q.traditionalist_ideology == "Moderate") {
         Q.landed_kvp += Q.landed_dnf * 0.4;
         Q.landed_dnf = Q.landed_dnf * 0.6;

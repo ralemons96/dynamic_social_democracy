@@ -47,8 +47,8 @@ if (Q.total_r_alt < 100) {
 }
 
 for (var party of Q.parties) {
-    if (Q[party+'r_alt'] == null || Q[party+'r_alt'] == undefined) {
-        Q[party+'r_alt'] = 0;
+    if (Q[party+'_r_alt'] == null || Q[party+'_r_alt'] == undefined) {
+        Q[party+'_r_alt'] = 0;
     }
 }
 

@@ -125,19 +125,19 @@ on-arrival: {!
         Q.raumer_points_fkp = 0;
     } else {
          Q.treviranus_points_fkp += Q.glatzel_points_fkp;
-         Q.glatzel_points_fkp == 0;
+         Q.glatzel_points_fkp = 0;
     }
     if (Q.glatzel_points_fkp + Q.treviranus_points_fkp + Q.raumer_points_fkp > (Q.hergt_points_fkp + Q.westarp_points_fkp)/2) {
         if (Q.pro_republic > 55) {
             Q.hergt_points_fkp += Q.westarp_points_fkp;
-            Q.westarp_points_fkp == 0;
+            Q.westarp_points_fkp = 0;
         } else {
             Q.westarp_points_fkp += Q.hergt_points_fkp;
-            Q.hergt_points_fkp == 0;
+            Q.hergt_points_fkp = 0;
         }
     }
-    if (Q.raumer_points + Q.treviranus_points_fkp + Q.glatzel_points_fkp > Q.hergt_points_fkp + Q.westarp_points_fkp) {
-        if (Q.gold_leader == "Vellt" && Q.raumer_points + Q.glatzel_points_fkp + (Q.treviranus_points_fkp*0.4) > Q.hergt_points_fkp + Q.westarp_points_fkp) {
+    if (Q.raumer_points_fkp + Q.treviranus_points_fkp + Q.glatzel_points_fkp > Q.hergt_points_fkp + Q.westarp_points_fkp) {
+        if (Q.gold_leader == "Vellt" && Q.raumer_points_fkp + Q.glatzel_points_fkp + (Q.treviranus_points_fkp*0.4) > Q.hergt_points_fkp + Q.westarp_points_fkp) {
             Q.winner_fkp = "Vellt";
         } else {
             if (Q.raumer_points_fkp + Q.glatzel_points_fkp > Q.treviranus_points_fkp) {
@@ -147,7 +147,7 @@ on-arrival: {!
             }
         }
     } else {
-        if ((Q.raumer_points + Q.treviranus_points_fkp + Q.glatzel_points_fkp)*1.1 >= Q.hergt_points_fkp + Q.westarp_points_fkp || Q.hergt_points_fkp > Q.westarp_points_fkp) {
+        if ((Q.raumer_points_fkp + Q.treviranus_points_fkp + Q.glatzel_points_fkp)*1.1 >= Q.hergt_points_fkp + Q.westarp_points_fkp || Q.hergt_points_fkp > Q.westarp_points_fkp) {
             Q.winner_fkp = "Hargen";
         } else {
             Q.winner_fkp = "Westmore";

@@ -4214,7 +4214,7 @@ go-to: ministries
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = "Marcher"
-on-arrival: foreign_minister_party = "Gold"; foreign_minister_party = "LVP" if lvp_formed; foreign_minister = "Stratton"; foreign_minister = "Curthose" if streseman_dead; leverage += 10; foreign_minister_party = "Unionist" if in_weimar_coalition or in_popular_front; foreign_minister = "Werth" if in_weimar_coalition or in_popular_front;
+on-arrival: foreign_minister_party = "Gold"; foreign_minister_party = "LVP" if lvp_formed; foreign_minister = "Stratton"; foreign_minister = "Curthose" if stresemann_dead; leverage += 10; foreign_minister_party = "Unionist" if in_weimar_coalition or in_popular_front; foreign_minister = "Werth" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 

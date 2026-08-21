@@ -1222,15 +1222,15 @@ Q.totalAchievements = achievements.length;
 Q.percentComplete = Math.round((Q.unlockedCount / Q.totalAchievements) * 100);
 
 if (Q.percentComplete >= 33) {
-    this.achieve('achievement_holy');
+    this.achieve('holy');
     Q.achievement_holy = 1;
 }
 if (Q.percentComplete >= 66) {
-    this.achieve('achievement_moly');
+    this.achieve('moly');
     Q.achievement_moly = 1;
 }
 if (Q.percentComplete >= 100) {
-    this.achieve('achievement_holy_moly');
+    this.achieve('holy_moly');
     Q.achievement_holy_moly = 1;
 }
 

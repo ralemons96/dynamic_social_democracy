@@ -230,6 +230,25 @@ if (Q.reactionary_candidate_1932_count > 0) {
         Q.reactionary_candidate_1932_count -= 1;
     }
     
+    // Derive both candidates' ideologies BEFORE the choice block below reads them.
+    // They used to be derived after, so every read saw the 0 set at the top of this block:
+    // the "Liberal" test was dead and the three != "Conservative" tests were always true.
+if (Q.reactionary_candidate_1932 == "Lytton" || Q.reactionary_candidate_1932 == "Gesling" || Q.reactionary_candidate_1932 == "Jarrow") {
+    Q.reactionary_candidate_1932_ideology = "Liberal";
+} else if (Q.reactionary_candidate_1932 == "Westmore" || Q.reactionary_candidate_1932 == "Lethmoor") {
+    Q.reactionary_candidate_1932_ideology = "Conservative";
+} else if (Q.reactionary_candidate_1932 == "Aldermoor" || Q.reactionary_candidate_1932 == "Askew" || Q.reactionary_candidate_1932 == "Sedgewick") {
+    Q.reactionary_candidate_1932_ideology = "Centrist";
+}
+
+if (Q.secondary_reactionary_candidate_1932 == "Lytton" || Q.secondary_reactionary_candidate_1932 == "Gesling" || Q.secondary_reactionary_candidate_1932 == "Jarrow") {
+    Q.secondary_reactionary_candidate_1932_ideology = "Liberal";
+} else if (Q.secondary_reactionary_candidate_1932 == "Westmore" || Q.secondary_reactionary_candidate_1932 == "Lethmoor") {
+    Q.secondary_reactionary_candidate_1932_ideology = "Conservative";
+} else if (Q.secondary_reactionary_candidate_1932 == "Aldermoor" || Q.secondary_reactionary_candidate_1932 == "Askew" || Q.secondary_reactionary_candidate_1932 == "Sedgewick") {
+    Q.secondary_reactionary_candidate_1932_ideology = "Centrist";
+}
+
     if (Q.reactionary_candidate_1932 == "Lytton" || Q.reactionary_candidate_1932 == "Gesling" || Q.reactionary_candidate_1932 == "Jarrow") {
         Q.liberal_reactionary_candidate_1932 = 1;
         Q.liberal_reactionary_candidate_1932_name = Q.reactionary_candidate_1932;
@@ -274,7 +293,7 @@ if (Q.secondary_reactionary_candidate_1932) {
         if (!Q.liberal_reactionary_candidate_1932) Q.ddp_choice = Q.secondary_reactionary_candidate_1932;
         if (!Q.lvp_defect && !Q.liberal_reactionary_candidate_1932) Q.lvp_choice = Q.secondary_reactionary_candidate_1932;
         if (!Q.gold_defect && !Q.liberal_reactionary_candidate_1932) Q.gold_choice = Q.secondary_reactionary_candidate_1932;
-        if (Q.reactionary_candidate_1932_ideology = "Liberal") Q.other_choice = Q.secondary_reactionary_candidate_1932;
+        if (Q.reactionary_candidate_1932_ideology == "Liberal") Q.other_choice = Q.secondary_reactionary_candidate_1932;
     } else if (Q.secondary_reactionary_candidate_1932 == "Aldermoor") {
         Q.unionist_choice = Q.secondary_reactionary_candidate_1932;
         if (Q.liberal_reactionary_candidate_1932) Q.kvp_choice = Q.secondary_reactionary_candidate_1932;
@@ -301,21 +320,6 @@ if (Q.secondary_reactionary_candidate_1932) {
     }
 }
 
-if (Q.reactionary_candidate_1932 == "Lytton" || Q.reactionary_candidate_1932 == "Gesling" || Q.reactionary_candidate_1932 == "Jarrow") {
-    Q.reactionary_candidate_1932_ideology = "Liberal";
-} else if (Q.reactionary_candidate_1932 == "Westmore" || Q.reactionary_candidate_1932 == "Lethmoor") {
-    Q.reactionary_candidate_1932_ideology = "Conservative";
-} else if (Q.reactionary_candidate_1932 == "Aldermoor" || Q.reactionary_candidate_1932 == "Askew" || Q.reactionary_candidate_1932 == "Sedgewick") {
-    Q.reactionary_candidate_1932_ideology = "Centrist";
-}
-
-if (Q.secondary_reactionary_candidate_1932 == "Lytton" || Q.secondary_reactionary_candidate_1932 == "Gesling" || Q.secondary_reactionary_candidate_1932 == "Jarrow") {
-    Q.secondary_reactionary_candidate_1932_ideology = "Liberal";
-} else if (Q.secondary_reactionary_candidate_1932 == "Westmore" || Q.secondary_reactionary_candidate_1932 == "Lethmoor") {
-    Q.secondary_reactionary_candidate_1932_ideology = "Conservative";
-} else if (Q.secondary_reactionary_candidate_1932 == "Aldermoor" || Q.secondary_reactionary_candidate_1932 == "Askew" || Q.secondary_reactionary_candidate_1932 == "Sedgewick") {
-    Q.secondary_reactionary_candidate_1932_ideology = "Centrist";
-}
 
 Q.reactionary_candidate_1932_count_2 = 1;
 if (Q.secondary_reactionary_candidate_1932) Q.reactionary_candidate_1932_count_2 = 2;

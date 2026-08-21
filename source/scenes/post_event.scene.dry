@@ -2401,7 +2401,7 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
     } else if (Q.disfavored >= 10) {
         Q.disfavored *= 0.995;
     }
-    if (Q.economy_growth < -4) {
+    if (Q.economic_growth < -4) {
         Q.economic_growth += 0.2;
     }
     if (Q.inflation < -4) {
@@ -2472,7 +2472,7 @@ if (Q.lautenbach_adopted && Q.lautenbach_plan_time >= Q.time && !Q.marcher_in_go
 if (Q.reformist_plan_time >= Q.time) {
     if (Q.disfavored >= 8) Q.disfavored *= 0.995;
     if (Q.disfavored >= 24) Q.disfavored *= 0.995;
-    if (Q.economy_growth < -4) {
+    if (Q.economic_growth < -4) {
         Q.economic_growth += 0.6;
     } else if (Q.economic_growth < 0) {
         Q.economic_growth += 0.4;
@@ -4874,6 +4874,11 @@ Q.lvp_votes_post_event = Q.lvp_votes;
 Q.traditionalist_votes_post_event = Q.traditionalist_votes; 
 Q.kvp_votes_post_event = Q.kvp_votes; 
 Q.royalist_votes_post_event = Q.royalist_votes; 
+// unionist and gnu were missing from this carry-forward, so the two conditions above
+// (unionist_votes_calculations + 0.2 < unionist_votes_post_event, and the gnu one) compared
+// against undefined and were always false - both industrial-backing shifts never happened.
+Q.unionist_votes_post_event = Q.unionist_votes;
+Q.gnu_votes_post_event = Q.gnu_votes;
 
 if (Q.chancellor != "Goodryke") {
     Q.papen_chancellor_timer = 0;

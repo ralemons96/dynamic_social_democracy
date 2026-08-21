@@ -489,9 +489,9 @@ if (Q.united_left_thuringia >= 50) {
     lvp_toleration_threshold -= 10;
     dvp_toleration_threshold -= 10;
 }
-if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_relation >= lvp_toleration_threshold && Q.lvp_formed)) Q.toleration_possible = 1;
-if (((Q.unionist_relation >= 60 || !Q.stegerwald_path) && ((Q.gold_relation >= (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lvp_relation >= (lvp_toleration_threshold + 5) && Q.lvp_formed)))) Q.marcher_coalition_possible = 1;
-if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lvp_relation < (lvp_toleration_threshold + 5) && Q.lvp_formed)) Q.gold_toleration_threshold_fail = 1;
+if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_relation >= lvp_toleration_threshold && Q.lvp_formed)) Q.toleration_possible = 1; else Q.toleration_possible = 0;
+if (((Q.unionist_relation >= 60 || !Q.stegerwald_path) && ((Q.gold_relation >= (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lvp_relation >= (lvp_toleration_threshold + 5) && Q.lvp_formed)))) Q.marcher_coalition_possible = 1; else Q.marcher_coalition_possible = 0;
+if ((Q.gold_relation < (dvp_toleration_threshold + 5) && !Q.lvp_formed) || (Q.lvp_relation < (lvp_toleration_threshold + 5) && Q.lvp_formed)) Q.gold_toleration_threshold_fail = 1; else Q.gold_toleration_threshold_fail = 0;
 !}
 
 <hr id="read-marker">
@@ -613,7 +613,7 @@ if (Q.thuringia_no_majority) {
     lvp_toleration_threshold = 0;
     dvp_toleration_threshold = 0;
 }
-if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_relation >= lvp_toleration_threshold && Q.lvp_formed)) Q.toleration_possible = 1;
+if ((Q.gold_relation >= dvp_toleration_threshold && !Q.lvp_formed) || (Q.lvp_relation >= lvp_toleration_threshold && Q.lvp_formed)) Q.toleration_possible = 1; else Q.toleration_possible = 0;
 !}
 
 With the propertied parties unable to secure a majority even with the inclusion of the <span style="color: #7A3C00;">**Royalists**</span>, and their refusal to form a coalition with us, no viable majority can be established. The ruling coalition fears that calling new elections will only accelerate their decline and further erode their support.

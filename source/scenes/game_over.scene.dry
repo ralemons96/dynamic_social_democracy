@@ -295,7 +295,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       Q.collectivist_points_calc += Q.disfavored / 2;
       Q.collectivist_points_calc += Q.collectivist_votes;
       Q.collectivist_points_calc += Q.soviet_relation;
-      if (Q.presid_calcent == "Halsmark") Q.collectivist_points_calc += 16;
+      if (Q.president == "Halsmark") Q.collectivist_points_calc += 16;
       if (Q.president == "Munzer") Q.collectivist_points_calc += 10;
       if (Q.collectivist_leader == "Conciliators") Q.collectivist_points_calc += 6;
       if (Q.sapd_formed) {
