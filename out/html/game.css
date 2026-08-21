@@ -923,3 +923,18 @@ th {
 .progress-text {
   margin-top: 10px;
 }
+
+/* Parliament seat colours for the reskinned party ids. The diagram builds its seat
+   classes from the id pushed in election_1928 (marcher, collectivist, unionist, ...),
+   but the stylesheet still only named the originals (spd, kpd, z, ...), so every
+   renamed party fell through to the default black. Colours copied from the originals. */
+.seat.marcher { fill: #E3000F; }   /* was .seat.spd */
+.seat.collectivist { fill: #700000; }   /* was .seat.kpd */
+.seat.unionist { fill: #000; }   /* was .seat.z */
+.seat.traditionalist { fill: #3E88B3; }   /* was .seat.dnvp */
+.seat.royalist { fill: #7A3C00; }   /* was .seat.nsdap */
+.seat.gold { fill: #D5AC27; }   /* was .seat.dvp */
+.seat.gnu { fill: #BFC8CC; }   /* was .seat.dnef */
+.seat.right_gnu { fill: #5F7278; }   /* was .seat.right_dnef */
+.seat.left_gnu { fill: #B86558; }   /* was .seat.left_dnef */
+.seat.traditionalist_wholesome { fill: #3E88B3; }   /* was .seat.dnvp_wholesome */

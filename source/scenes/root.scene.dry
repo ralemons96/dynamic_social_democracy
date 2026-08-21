@@ -1591,6 +1591,14 @@ if (!Q.lvp_formed) {
     Q.lvp_r = Math.round(((Q.ddp_r||0) + (Q.gold_r||0)) * 10) / 10;
     Q.lvp_r_heartland = Math.round(((Q.ddp_r_heartland||0) + (Q.gold_r_heartland||0)) * 10) / 10;
     Q.lvp_votes = Math.round(((Q.ddp_votes||0) + (Q.gold_votes||0)) * 10) / 10;
+    // The merged party inherits the two predecessors' baselines as well as their support.
+    // Without this the first election reported the Golds as gaining their entire share from
+    // nothing, because previous_lvp_last_election_votes simply did not exist - root seeds
+    // previous_ddp_* and previous_gold_* only, and the change loop treats undefined as zero.
+    Q.previous_lvp_last_election_votes = Math.round(((Q.previous_ddp_last_election_votes||0) + (Q.previous_gold_last_election_votes||0)) * 10) / 10;
+    Q.previous_lvp_last_election_votes_heartland = Math.round(((Q.previous_ddp_last_election_votes_heartland||0) + (Q.previous_gold_last_election_votes_heartland||0)) * 10) / 10;
+    Q.old_lvp_r = Math.round(((Q.old_ddp_r||0) + (Q.old_gold_r||0)) * 10) / 10;
+    Q.old_lvp_r_heartland = Math.round(((Q.old_ddp_r_heartland||0) + (Q.old_gold_r_heartland||0)) * 10) / 10;
     Q.lvp_relation = Math.round(((Q.ddp_relation||0) + (Q.gold_relation||0)) / 2);
     Q.lvp_left = ((Q.ddp_left||0) + (Q.gold_left||0)) * 0.5;
     Q.lvp_right = ((Q.ddp_right||0) + (Q.gold_right||0)) * 0.5;

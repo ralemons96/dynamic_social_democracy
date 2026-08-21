@@ -335,7 +335,7 @@ if (Q.gnu_formed) {
 
 // Step 3: Calculate changes in results
 for (var party of Q.parties) {
-    Q['change_' + party + '_r_prussia'] = Q[party + '_r_prussia'] - Q['old_' + party + '_r_prussia'];
+    Q['change_' + party + '_r_prussia'] = Q[party + '_r_prussia'] - Q['old_' + party + '_r_heartland'];
     var sign_prussia = Q['change_' + party + '_r_prussia'] > 0 ?
         '<img src="img/arrowup.png"> ' :
         Q['change_' + party + '_r_prussia'] < 0 ?
@@ -345,8 +345,8 @@ for (var party of Q.parties) {
     Q['str_change_' + party + '_prussia'] = sign_prussia + parseFloat(Q['change_' + party + '_r_prussia']).toFixed(1);
 
     // Calculate changes in votes
-    Q['change_' + party + '_votes_prussia'] = Q[party + '_votes_prussia'] - Q['previous_' + party + '_last_election_votes_prussia'];
-    if (Q['previous_' + party + '_last_election_votes_prussia'] === undefined) {
+    Q['change_' + party + '_votes_prussia'] = Q[party + '_votes_prussia'] - Q['previous_' + party + '_last_election_votes_heartland'];
+    if (Q['previous_' + party + '_last_election_votes_heartland'] === undefined) {
         Q['change_' + party + '_votes_prussia'] = Q[party + '_votes_prussia'];
     }
 
@@ -367,7 +367,9 @@ for (var party of Q.parties) {
 // Store current votes as previous for the next iteration
 for (var party of Q.parties) {
     Q[party + '_last_election_votes_prussia'] = parseFloat(Q[party + '_votes_prussia']).toFixed(1);
-    Q['previous_' + party + '_last_election_votes_prussia'] = parseFloat(Q[party + '_last_election_votes_prussia']).toFixed(1);
+    // Save under the _heartland name the change loop reads - and the one the special-case
+    // parties (dsu, nvf, royalist_gallax, staal_gnu) have always used for both read and write.
+    Q['previous_' + party + '_last_election_votes_heartland'] = parseFloat(Q[party + '_last_election_votes_prussia']).toFixed(1);
 }
 
 if (Q.royalist_split) {
