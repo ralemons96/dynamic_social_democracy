@@ -1,0 +1,36 @@
+title: The Collectivist Memo
+subtitle: A document reaches us from the other side of the workers' movement...
+new-page: true
+view-if: year = 1928 and month >= 4 and month <= 5 and not collectivist_memo_seen
+on-arrival: collectivist_memo_seen = 1
+max-visits: 1
+priority: 2
+tags: event
+
+= The Collectivist Memo
+
+It is not a leak so much as a document that stopped being kept carefully. Someone in the <span style="color: #700000;">**Collectivist**</span> apparatus let a circular reach a friendly printer, and from there it reached us: an internal statement of the line, set out at more length than the party press would ever print.
+
+The line is abstention. The hardliners around Halsmark have carried the argument, and the conclusion is stated without embarrassment — the <span style="color: #700000;">**Collectivists**</span> will not enter a government of the Commonwealth, will not support one from outside, and will not treat the difference between a <span style="color: #c00000;">**Marcher**</span> ministry and a propertied one as a difference worth the party's time. A republic that cannot be overthrown is to be endured, not administered.
+
+What is interesting is the dissent recorded in the margins. The memo answers objections, at length, which means there were objections. There is a wing of that party — not small, and not new — which reads the same situation and concludes the opposite: that abstention hands the state to men who will use it, and that a workers' party which refuses to govern is simply choosing to lose slowly. Their argument does not persuade the leadership. It does not have to. It is being made at all, and it is being made by men whose branches sit alongside ours in the same halls, in the same factories, at the same funerals.
+
+We do not know how strong that wing is. Our reading of the <span style="color: #700000;">**Collectivists**</span> comes from newspapers and from what their people say to our people over a bench, which is to say we are guessing. Those of us who keep a line open to the <span style="color: #D50000;">Collectivist International</span> hear a great deal more, and there are men in our own leadership — Erric Tarrand, Cael Pendrigon — who were in those rooms before the split and are still owed answers by people who stayed. Whether any of that could be turned into something is a question for another day. Today it is only a memo.
+
+- @intransigent
+- @see_the_light
+
+@intransigent
+title: The <span style="color: #700000;">Collectivists</span> are as intransigent as ever.
+
+We file it. There is nothing in it that changes what we are going to do this month, or next, and a party that has spent nine years explaining why we are the principal enemy is not going to be argued out of it by a document we were not supposed to read.
+
+The memo goes into the drawer with the others.
+
+@see_the_light
+title: If only they could see the light.
+on-arrival: left_strength += 2; reformist_strength -= 2 if reformist_strength >= 2
+
+We say nothing publicly, because there is nothing useful to say publicly. But the memo circulates in our own building rather more widely than it strictly needs to, and the passage about the objections gets read aloud more than once.
+
+It settles nothing. It shifts a little weight, though, in the argument our own factions have been having since the split: our <span style="color: #c00000;">Left</span> take it as evidence that there are people over there worth talking to, and our reformists take it as evidence of nothing at all, which is a slightly weaker position than the one they held last week.
