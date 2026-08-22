@@ -71,7 +71,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; empire_posture += 5 if empire_posture <= 95
 
-There are <span style="color: #c00000;">Reformist</span> lodges inside the <span style="color: #7A3C00;">Empire-in-Exile</span> older than the Commonwealth itself — mutual societies, guild papers, a co-operative movement the Imperial ministries tolerate because it has never asked for a throne. They are not a party and cannot become one, but they are ours in every way that matters, and the correspondence has never entirely stopped.
+There are <span style="color: #c00000;">Reformist</span> lodges inside the <span style="color: #7A3C00;">Empire-in-Exile</span> that are older than the Commonwealth itself: mutual societies, guild papers, and a co-operative movement the Imperial ministries tolerate because it has never asked for a throne. They are not a party and cannot become one, but they are ours in every way that matters, and the correspondence has never entirely stopped. The Empire's posture toward us warms.
 
 We resume it properly: delegations to their congresses, subscriptions to their papers, a standing invitation to ours. None of it is secret and none of it is illegal, on either side of the border.
 

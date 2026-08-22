@@ -9,7 +9,7 @@ tags: govt_affairs, cabinet
 
 = Magi Civil Rights
 
-The magi caste lives beneath a thicket of old imperial law — the Registry that names every mage, the loyalty-oaths that bind them, the statutes that bar them from the guilds and the higher courts. Watched and resented, and knowing that the greatest workings of magic still invoke the dead God-Emperor's power, many magi have come to believe that only the Empire-in-Exile — which reveres the God of Magic — will ever restore their standing. Magnus Harnfell, the foremost advocate for the magi and a member of our party, urges us to court them with rights and protection. The order-loving centre warns that to coddle the God-of-Magic cult is to invite the Empire into our own house.
+The magi caste lives under a body of old Imperial law: the Registry that names every mage, the loyalty-oaths that bind them, and the statutes that bar them from the guilds and the higher courts. They are watched and resented. Since the greatest workings of magic still invoke the dead God-Emperor's power, many magi have come to believe that only the Empire-in-Exile, which reveres the God of Magic, will ever restore their standing. Magnus Harnfell, the foremost advocate for the magi and a member of our party, urges us to win them over with rights and protection. The order-loving centre warns that to indulge the God-of-Magic cult is to invite the Empire into our own house.
 
 As things stand, the circles' allegiance is [+ magi_balance : magi_balance +].
 
@@ -28,7 +28,7 @@ unavailable-subtitle: We have already repealed the Registry.
 view-if: magi_registry_repealed == 0
 on-arrival: magi_registry_repealed = 1; repealed_175 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-We strike the Registry from the books. The magi breathe easier — and, courted at last by the republic that once only watched them, the <span style="color: #A2D8E0;">**Arcanists**</span> and even the harder Restorationist benches find a little less reason to look north to the Empress. But the Unity Front is aghast, and among the Faithful, who fear the God-of-Magic cult, the sense of betrayal runs deep.
+We strike the Registry from the books. The magi breathe easier, and the <span style="color: #A2D8E0;">**Arcanists**</span>, courted at last by the republic that once only watched them, find less reason to look north to the Empress. Even the Restorationist benches soften slightly. But the Unionists and the Golds are aghast, and among the Faithful, who fear the God-of-Magic cult, the sense of betrayal runs deep. Magi allegiance and Arcanist relations rise; Unionist, Gold, and Faithful support fall.
 
 @recognize_circles
 subtitle: The mage-circles have no standing in law. We can recognize them, as we do the craft-guilds.
@@ -36,7 +36,7 @@ unavailable-subtitle: The mage-circles are already recognized.
 view-if: magi_circles_recognized == 0
 on-arrival: magi_circles_recognized = 1; reformed_183 = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-The mage-circles are recognized in law, granted the same standing as the craft-guilds. The <span style="color: #A2D8E0;">**Arcanists**</span> are gratified, and the magi caste begins, warily, to imagine a place for itself within the Commonwealth rather than beyond it. The Faithful and the Unity Front do not forgive the gesture.
+The mage-circles are recognised in law and granted the same standing as the craft-guilds. The <span style="color: #A2D8E0;">**Arcanists**</span> are gratified, and the magi begin, warily, to see a place for themselves within the Commonwealth rather than beyond it. The Faithful and the Unionists do not forgive the gesture, and our support among both falls.
 
 @protect_magi
 subtitle: Magi are harried in the streets and the courts with impunity. We can make their persecution a crime.
@@ -44,7 +44,7 @@ unavailable-subtitle: The magi are already protected in law.
 view-if: magi_protected == 0
 on-arrival: magi_protected = 1; trans_rights = 1; homosexual_rights += 1; magi_balance += 8 if magi_balance < 100; bvp_relation += 6*(1-dissent); traditionalist_relation += 2*(1-dissent); concord_traditionalist_balance += 5 if concord_traditionalist_balance > 0; unionist_relation -= 6; gold_relation -= 5; ddp_relation -= 4*(1-dissent); faithful_marcher -= 5; coalition_dissent += 1 if (in_grand_coalition or in_weimar_coalition); economic_growth += 0.1;
 
-A law against the persecution of magi passes — enforceable, at least, where the police still answer to the republic. It is a profound signal to the magi that their future may lie with the Commonwealth after all. The order-loving centre reads it as capitulation to a power they have always feared.
+A law against the persecution of magi passes, enforceable at least where the police still answer to the republic. It tells the magi plainly that their future may lie with the Commonwealth after all, and their allegiance rises. The order-loving centre reads it as capitulation to a power they have always feared, and relations with the Unionists and the Golds fall.
 
 @impose_registry
 subtitle: We can tighten the Registry, bind the magi with fresh loyalty-oaths, and reassure the fearful.
@@ -52,12 +52,12 @@ choose-if: magi_balance > 0
 unavailable-subtitle: The magi are already as estranged from the republic as they can be.
 on-arrival: magi_balance -= 10 if magi_balance > 0; bvp_relation -= 6*(1-dissent); royalist_funds += 2; faithful_marcher += 4; unionist_relation += 4*(1-dissent); gold_relation += 3*(1-dissent);
 
-We tighten the Registry and bind the magi with fresh loyalty-oaths. The Faithful and the order-loving centre are reassured — the cult is watched, the realm is safe. But the magi take the lesson to heart: the republic will never be their home, and the Empress's coin finds new and willing hands among the harried mage-circles.
+We tighten the Registry and bind the magi with fresh loyalty-oaths. The Faithful and the order-loving centre are reassured, since the cult is watched and the realm is safe, and our support among them rises. But the magi take the lesson to heart. The republic will never be their home, and the Empress's coin finds new and willing hands among the harried mage-circles. Magi allegiance falls and the Royalists' funds grow.
 
 @crackdown
-subtitle: Sweep the circles for "disloyal" magi - arrests, revoked licenses, findings of unreliability. The centre will approve. The magi will not forget.
+subtitle: Sweep the circles for "disloyal" magi. The centre will approve; the magi will not forget.
 choose-if: magi_balance > -20
 unavailable-subtitle: The magi are already as estranged from the republic as they can be.
 on-arrival: magi_balance -= 8; bvp_relation -= 5*(1-dissent); empire_posture -= 5 if empire_posture > 0; gold_relation += 4*(1-dissent); unionist_relation += 4*(1-dissent); faithful_marcher += 2
 
-The sweep is announced with the word "disloyal" doing all of the work. Licenses are revoked, circle-halls searched, a handful of magi taken in for questioning that the papers are encouraged to photograph. The order-loving centre - the <span style="color: #C0A054;">**Golds**</span>, the <span style="color: #000000;">Unionists</span> - approves audibly. At the northern court, where the Empress counts the magi among her own, the affront is noted and remembered. And in the circle-halls the conclusion hardens one degree further: the republic is not, and will not be, their home.
+The sweep is announced, with the word "disloyal" doing all the work. Licences are revoked, circle-halls are searched, and a handful of magi are taken in for questioning that the papers are encouraged to photograph. The order-loving centre, the <span style="color: #C0A054;">**Golds**</span> and the <span style="color: #000000;">Unionists</span>, approves audibly, and relations with both improve. At the northern court, where the Empress counts the magi among her own, the affront is noted and remembered, and the Empire's posture cools. In the circle-halls the conclusion hardens: the republic is not, and will not be, their home.

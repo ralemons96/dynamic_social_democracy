@@ -28,7 +28,7 @@ on-arrival: dufour_angry_bruning -= 10; guild_royalist -= 2; landed_royalist -= 
 
 We have published the Glade letters under the title *The Glade Affair*, distributing the pamphlet across all corners of the Commonwealth. This has damaged the <span style="color: #7A3C00;">Royalist</span> Party’s appeal among its more blood-purist supporters and has even sparked a plot among some <span style="color: #7A3C00;">Royalist</span> members to murder Glade.
 
-The pamphlet turns the Royalists' own creed back upon them: a party that vows to "cleanse the realm of tainted blood" has knowingly seated a man of orcish descent at its very summit—and forged his lineage records to keep him there. By their own doctrine, it argues, they stand condemned as frauds and hypocrites, no fit guardians of the bloodlines they claim to defend.
+The pamphlet uses the Royalists' own creed against them. A party that vows to "cleanse the realm of tainted blood" has knowingly seated a man of orcish descent at its summit, and forged his lineage records to keep him there. By their own doctrine, it argues, they are frauds and hypocrites, and no fit guardians of the bloodlines they claim to defend.
 
 Despite this, Gallax has swiftly come to Glade’s defense, publicly reaffirming his position as leader of the <span style="color: #7A3C00;">**Loyalists**</span>. The electoral performance of the <span style="color: #7A3C00;">Royalists</span> remains largely unaffected, but the impression this controversy leaves on President DuFour may yet prove significant.
 
@@ -39,7 +39,7 @@ Meanwhile, the pamphlet’s publisher, Aldous Brock, has been brutally beaten by
 @no_expose_rohm
 on-arrival: guild_royalist -= 2; left_dissent -= 5; wholesome_point += 1; rohm_join_banner_time = time + 6
 
-It would be in poor taste for a party that opposes the Bloodright Statute to hound a man over the blood in his veins—the Commonwealth long ago made its peace with whom a man loves, and we will not trade one bigotry for another. We’ve taken the high road, but many within our party feel we’ve missed an opportunity.
+It would be in poor taste for a party that opposes the Bloodright Statute to hound a man over the blood in his veins. The Commonwealth long ago made its peace with whom a man loves, and we will not trade one prejudice for another. We have taken the high road, but many within our party feel we have missed an opportunity.
 
 @persecute_rohm
 achievement: heuchelei

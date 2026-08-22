@@ -27,7 +27,7 @@ Acting under Staal’s orders, Axton police cleared the building “for safety r
 These extreme precautions culminated in the spectacle of fifteen thousand <span style="color: #7A3C00;">**Loyalists**</span> men parading through the square, chanting slogans such as “We shit on freedom! We shit on the <span style="color: #005EB8;">usurper</span> republic!”—with no <span style="color: #700000;">**Collectivist**</span> counter-demonstration permitted. When violence broke out, police clashed almost exclusively with <span style="color: #700000;">**Collectivist**</span> protestors.
 
 - @nazi_2
-- @counter_rally: Answer them in the streets — with the Vanguard beside us.
+- @counter_rally: Answer them in the streets, with the Vanguard beside us.
 
 @nazi_2
 title: We are powerless, with the police on their side.
@@ -42,4 +42,4 @@ choose-if: collectivist_relation >= 35
 unavailable-subtitle: The <span style="color: #700000;">**Collectivists**</span> will not march beside us.
 on-arrival: banner_strength += 50; vanguard_strength += 25; commons_marcher += 2; commons_collectivist += 2; loyalist_militancy += 0.02; strife += 1
 
-The square is not left to them. By evening the Banners and the <span style="color: #8B0000;">**Vanguard**</span> fill the far end of it — a counter-column twice shouted down and twice re-formed, under more flags than the two parties have ever flown together. The police keep the columns apart, barely. No one on either side will remember the day as a defeat, which is itself a kind of victory for the republic: the streets, at least, are still contested.
+The square is not left to them. By evening the Banners and the <span style="color: #8B0000;">**Vanguard**</span> fill the far end of it, a counter-column twice shouted down and twice re-formed, under more flags than the two parties have ever flown together. The police keep the columns apart, barely. No one on either side will remember the day as a defeat. The streets, at least, are still contested.

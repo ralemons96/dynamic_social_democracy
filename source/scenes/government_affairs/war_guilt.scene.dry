@@ -9,7 +9,7 @@ max-visits: 1
 
 = The Founding Inquiry
 
-The Founding Inquiry has been an intermittent Assembly committee examining the chaos of the Founding — the collapse of the Empire after the God-Emperor's death, and whether the Commonwealth's founders betrayed the new Empress Jacqueline or saved the realm from ruin. So far, it has faced massive resistance from the military establishment[? if president == "DuFour":&nbsp;up to President DuFour?].
+The Founding Inquiry has been an intermittent Assembly committee examining the chaos of the Founding: the collapse of the Empire after the God-Emperor's death, and whether the Commonwealth's founders betrayed the new Empress Jacqueline or saved the realm from ruin. So far it has faced massive resistance from the military establishment[? if president == "DuFour":&nbsp;up to President DuFour?].
 
 - @restart: Restart the inquiry.
 - @root: Do nothing.

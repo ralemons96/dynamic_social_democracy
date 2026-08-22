@@ -8,25 +8,25 @@ tags: event
 
 = The Circles Petition
 
-A delegation of the magi circles has come to the capital — robed, careful, and very well briefed. Their petition is modest on its face: standing before the ordinary courts, relief from the registry's lingering indignities, and an end to the quiet bar that keeps their kind from the civil service's upper floors. Behind it stands the older question the republic has never answered: whether the magi are citizens who happen to work wonders, or a problem to be managed.
+A delegation from the magi circles has arrived in the capital, robed, careful, and well briefed. Their petition is modest on its face: standing before the ordinary courts, relief from the Registry's remaining indignities, and an end to the unwritten bar that keeps magi out of the upper civil service. Behind it is the older question the republic has never answered, whether the magi are citizens who happen to work wonders or a problem to be managed.
 
-[? if bvp_relation >= 30: The <span style="color: #A2D8E0;">**Arcanists**</span> have let it be known, discreetly, that they would receive any courtesy shown the delegation as a courtesy shown to them. ?]The <span style="color: #7A3C00;">Royalists</span> are already drafting their response to whatever we do.
+[? if bvp_relation >= 30: The <span style="color: #A2D8E0;">**Arcanists**</span> have let it be known, discreetly, that any courtesy shown the delegation will be taken as a courtesy shown to them. ?]The <span style="color: #7A3C00;">Royalists</span> are already drafting their response to whatever we do.
 
 - @grant: Receive the delegation and take up their petition.
-- @quiet: Promise study — and deliver delay.
+- @quiet: Promise study, and deliver delay.
 - @refuse: Turn them away. The coalition cannot bear this fight now.
 
 @grant
 on-arrival: magi_balance += 6 if magi_balance < 100; bvp_relation += 4*(1-dissent); faithful_marcher -= 2; unionist_relation -= 3
 
-The delegation is received in the chancellery's long gallery, photographed on the steps, and sent home with a commitment of substance. The circles' journals print the pictures for a month. The Faithful's pulpits and the <span style="color: #7A3C00;">Royalist</span> press print them rather longer.
+The delegation is received in the chancellery's long gallery, photographed on the steps, and sent home with a firm commitment. The circles' journals print the pictures for a month. The Faithful's pulpits and the <span style="color: #7A3C00;">Royalist</span> press print them rather longer. Magi allegiance and relations with the Arcanists improve, while our support among the Faithful and our relations with the Unionists fall.
 
 @quiet
 on-arrival: magi_balance += 1 if magi_balance < 100; bvp_relation -= 2
 
-A commission is struck, a chairman named, a report promised for a season that never quite arrives. The circles have seen this instrument before and know precisely what it is. Nothing is lost, little is gained, and the question keeps.
+A commission is struck, a chairman named, and a report promised for a season that never quite arrives. The circles have seen this instrument before and know exactly what it is. Nothing is lost, little is gained, and relations with the Arcanists cool.
 
 @refuse
 on-arrival: magi_balance -= 6; bvp_relation -= 6; unionist_relation += 2; faithful_marcher += 2
 
-The delegation is not received. The coalition's right breathes out; the circles go home to tell their halls what the republic's friendship is worth. Some of their younger members draw conclusions we may meet again, in harder company.
+The delegation is not received. The coalition's right is relieved, and relations with the Unionists improve. The circles go home to tell their halls what the republic's friendship is worth. Magi allegiance and relations with the Arcanists fall, and some of their younger members draw conclusions we may meet again in harder company.

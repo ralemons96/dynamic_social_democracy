@@ -21,17 +21,17 @@ priority: 1
 
 = The Veran Crash
 
-The great exchange-houses of Vera — the financial heart of Ethia, and of the continent — have suffered the worst collapse in living memory. Credit is freezing across the realms, and the Commonwealth, chained to Ethian capital by the War Loans, will not be spared. Already the effects are upon us: work will vanish, and wages with it. As it ever is, it is the financiers' crisis, and the Commons' burden.
+The great exchange-houses of Vera, the financial centre of Ethia and of the continent, have collapsed. Credit is freezing across the realms. The Commonwealth, tied to Ethian capital by the War Loans, will not be spared. Work will disappear, and wages with it. The crisis is the financiers' doing, and the Commons will bear the cost.
 
 
-- @cap: It is the nature of high finance...
-- @do_something: We must do something to spare the people...
+- @cap: Wait for the markets to correct themselves.
+- @do_something: Look for ways to protect the Commons.
 
 @cap
 
-Perhaps this is simply one of the periodic convulsions of high finance. Perhaps this moment will pass of its own accord.
+Perhaps this is one of the periodic convulsions of high finance, and perhaps it will pass on its own. We wait.
 
 @do_something
 on-arrival: crisis_urgency += 1
 
-What can we do to staunch the suffering of the Commons? It is fast becoming the question of the hour.
+What can be done to limit the suffering of the Commons? The question now dominates the party's discussions.

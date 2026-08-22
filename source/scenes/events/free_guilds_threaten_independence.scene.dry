@@ -8,9 +8,9 @@ tags: event
 
 = The Free Guilds Threaten Independence
 
-An emergency congress of the Free Guilds has issued a formal warning to the party leadership: if the <span style="color: #c00000;">**Marchers**</span> continue on their present course, the Guilds will sever their ties with the party and chart their own political path. Delegates speak openly of running independent labor candidates — or worse, of drifting toward the <span style="color: #700000;">**Collectivists**</span>.
+An emergency congress of the Free Guilds has issued a formal warning to the party leadership. If the <span style="color: #c00000;">**Marchers**</span> continue on their present course, the Guilds will sever their ties with the party and chart their own political path. Delegates speak openly of running independent labour candidates, or worse, of drifting toward the <span style="color: #700000;">**Collectivists**</span>.
 
-The break has not yet come, but the mood in the halls is bitter. This is our one chance to try to make amends — we must be careful.
+The break has not yet come, but the mood in the halls is bitter. This is our one chance to make amends, and we must be careful.
 
 - @concessions
 - @funding
@@ -21,7 +21,7 @@ title: Give concessions to the Free Guilds.
 subtitle: Grant labor more influence in party decision making.
 on-arrival: labor_dissent -= 15; center_dissent += 10
 
-We promise the Free Guilds a stronger hand in party decision making, and a fuller hearing on matters of wages and welfare. The delegates depart somewhat mollified — though the centrists grumble that the party is being held hostage by its own unions.
+We promise the Free Guilds a stronger hand in party decision-making and a fuller hearing on matters of wages and welfare. The delegates leave somewhat mollified, and Labor dissent falls. The centrists complain that the party is being held hostage by its own unions, and their dissent rises.
 
 @funding
 title: Divert party funding to appease the Free Guilds.
@@ -30,10 +30,10 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; labor_dissent -= 20
 
-We quietly redirect party funds into the Guilds' strike chests, benefit societies, and labor press. It is an expensive gesture, but an unmistakable one: the party has not forgotten whose movement this is. The talk of independence recedes, for now.
+We quietly redirect party funds into the Guilds' strike chests, benefit societies, and labour press. It is an expensive gesture but an unmistakable one: the party has not forgotten whose movement this is. Labor dissent falls sharply, and the talk of independence recedes for now.
 
 @no_action
 title: Take no action.
 subtitle: We cannot appease the Free Guilds at the current moment.
 
-The party's position is too delicate to bend to the Guilds' demands right now. We can only hope the moment of danger passes on its own — and that the delegates' warning was a bluff.
+The party's position is too delicate to bend to the Guilds' demands now. We can only hope the moment passes on its own, and that the delegates' warning was a bluff.

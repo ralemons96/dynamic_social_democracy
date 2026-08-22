@@ -9,10 +9,10 @@ card-image: img/reichstag_2.jpg
 
 = Defense Appropriations
 
-The War Ministry is in the hands of the General Staff, not ours — but the army's purse is still voted in the Assembly, and that vote is ours to shape. With the Empire stirring beyond the frontier, the generals press for a larger appropriation. A stronger army would give the Empress pause. A stronger army that does not love the republic, however, is a blade that can be turned inward.
+The War Ministry is in the hands of the General Staff, not ours. But the army's budget is still voted in the Assembly, and that vote is ours to shape. With the Empire stirring beyond the frontier, the generals are pressing for a larger appropriation. A stronger army would give the Empress pause. A stronger army that does not love the republic could also be turned inward.
 
 - @appropriate: Vote the army a generous appropriation.
-- @appropriate_major: Permit significant funding - a rearmament budget in all but name.
+- @appropriate_major: Permit significant funding, a rearmament budget in all but name.
 - @restrain: Hold the line on defense spending.
 - @root: No change to appropriations.
 - @easy_discard
@@ -24,7 +24,7 @@ choose-if: budget >= 1
 unavailable-subtitle: We do not have the budget.
 on-arrival: budget -= 1; army_strength += 25; army_militancy += 0.3 if army_militancy < 8; coup_progress += 1 if army_loyalty < 0.3; coup_progress += 1 if army_loyalty < 0.15; dufour_angry -= 5; left_dissent += 3; gold_left += 1; lvp_left += 1; imperial_fear -= 1 if imperial_fear > 0; economic_growth += 0.1; military_confidence += 1
 
-The Commonwealth Army grows stronger, and the General Staff is gratified[? if president == "DuFour": — as is President DuFour, who has never trusted a republic that could not defend itself?][? if president != "DuFour": — as is the presidential palace?]. The Empire's envoys take note. [? if army_loyalty < 0.3 : But the officer corps remains cold to the republic, and a well-armed army that answers to no democrat is its own kind of danger. ?] Our own membership, long suspicious of the generals, is uneasy.
+The Commonwealth Army grows stronger, and the General Staff is gratified[? if president == "DuFour":, as is President DuFour, who has never trusted a republic that could not defend itself?][? if president != "DuFour":, as is the presidential palace?]. The Empire's envoys take note, and fear of invasion eases. [? if army_loyalty < 0.3 : But the officer corps remains cold to the republic, and a well-armed army that answers to no democrat is its own kind of danger. Coup risk rises. ?] Our own membership, long suspicious of the generals, is uneasy, and Left dissent rises.
 
 @appropriate_major
 subtitle: -2 budget. Our own base will not love this.
@@ -32,11 +32,11 @@ choose-if: budget >= 2
 unavailable-subtitle: We do not have the budget for an appropriation on this scale.
 on-arrival: budget -= 2; army_strength += 38; army_militancy += 0.45 if army_militancy < 8; coup_progress += 1 if army_loyalty < 0.3; coup_progress += 1 if army_loyalty < 0.15; dufour_angry -= 8; left_dissent += 6; gold_left += 2; lvp_left += 2; commons_marcher -= 2; imperial_fear -= 1 if imperial_fear > 0; economic_growth += 0.15; military_confidence += 1
 
-We permit significant funding - the General Staff receives nearly everything it asked for, and a few things it only hinted at. The shipyards and arsenals will run double shifts through the year[? if president == "DuFour": , and President DuFour is, for once, entirely satisfied with his government?]. Our own benches vote for it with their teeth set: every crown of it, the left reminds us, is a crown not spent on bread, and they will say so at every rally between now and the next election.
+We permit significant funding. The General Staff receives nearly everything it asked for, and a few things it only hinted at. The shipyards and arsenals will run double shifts through the year[? if president == "DuFour": , and President DuFour is, for once, entirely satisfied with his government?]. Our own benches vote for it with their teeth set. Every crown of it, the Left reminds us, is a crown not spent on bread, and they will say so at every rally between now and the next election. Left dissent rises and our support among the Commons slips.
 
 @restrain
 choose-if: army_strength > 0
 unavailable-subtitle: There is nothing left to restrain.
 on-arrival: army_strength -= 10 if army_strength > 0; army_militancy -= 0.1 if army_militancy > 0; coup_progress -= 1 if coup_progress > 0; pacifism += 1; left_dissent -= 2; dufour_angry += 3; gold_right += 1; lvp_right += 1; military_confidence -= 1 if military_confidence > 0
 
-We hold the army's purse-strings tight. The generals grumble and the President frowns — a weaker army, he warns, only emboldens the Empress. But the danger of a coup recedes a little, and our own ranks are pleased to see the money go anywhere but the barracks.
+We hold the army's purse-strings tight. The generals grumble and the President frowns, warning that a weaker army only emboldens the Empress. But the danger of a coup recedes a little, and our own ranks are pleased to see the money go anywhere but the barracks. Left dissent falls.

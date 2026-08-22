@@ -437,16 +437,16 @@ Whether it is because we *cannot* or *will not*, we do not make ties with other 
 
 @gold_guildmasters
 view-if: (gold_exist and not lvp_formed and not gold_gnu) or (lvp_formed and not lvp_gnu)
-subtitle: -1 resources. Reassure the industrial wing directly - our left will be furious.
+subtitle: -1 resources. Reassure the industrial wing directly. Our Left will be furious.
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; gold_relation += 8*(1 - dissent) if not lvp_formed; gold_left -= 2 if gold_left >= 2 and not lvp_formed; lvp_relation += 8*(1 - dissent) if lvp_formed; lvp_left -= 2 if lvp_left >= 2 and lvp_formed; left_dissent += 10; labor_dissent += 5
 
-We go over the heads of the party's republicans and deal directly with the men who fund it: the guild-masters, the mill owners, the men of the exchanges. Quiet assurances are given on property, on taxation, on the sanctity of contracts. The <span style="color: #C0A054;">**Golds**</span> warm to us considerably - though it is their business wing that pockets the goodwill, while the republicans in the party find themselves talked past. Our own left wing is furious at the spectacle of Reformists courting capital, and the Free Guilds pointedly ask whose party this is.
+We go over the heads of the party's republicans and deal directly with the men who fund it: the guild-masters, the mill owners, and the men of the exchanges. Quiet assurances are given on property, on taxation, and on the sanctity of contracts. The <span style="color: #C0A054;">**Golds**</span> warm to us considerably, though it is their business wing that pockets the goodwill while the republicans in the party are talked past. Our own Left is furious at the spectacle of Reformists courting capital, and the Free Guilds ask pointedly whose party this is.
 
 @gold_voters
 view-if: (gold_exist and not lvp_formed and not gold_gnu) or (lvp_formed and not lvp_gnu)
-subtitle: Their republican voters may prefer the genuine article. Free - but the party will notice.
+subtitle: Their republican voters may prefer the genuine article. Free, but the party will notice.
 on-arrival: burgher_marcher += 2; guild_marcher += 1; gold_relation -= 4 if not lvp_formed; gold_left -= 1 if not lvp_formed; gold_right += 1 if not lvp_formed; lvp_relation -= 4 if lvp_formed; lvp_left -= 1 if lvp_formed; lvp_right += 1 if lvp_formed
 
-We stop courting the party and start courting its voters: the clerks, the teachers, the small proprietors who vote <span style="color: #C0A054;">Gold</span> out of habit and read our program with more sympathy than they admit. The party's managers notice - and the republicans inside it, weakened by every defection, notice too. With every seat we take from their left flank, the guild-master right tightens its grip on what remains.
+We stop courting the party and start courting its voters: the clerks, the teachers, and the small proprietors who vote <span style="color: #C0A054;">Gold</span> out of habit and read our program with more sympathy than they admit. The party's managers notice, and so do the republicans inside it, who are weakened by every defection. With every seat we take from their left flank, the guild-master right tightens its grip on what remains.

@@ -91,3 +91,47 @@ Vesh, Calbert Yardley, Vendrin Bell, Joshua Heath, Erric Tarrand, Lyle Bristol) 
 (Felicity Sarrow is a woman) — that diverge from the Fix-2 names. Pending the user's decision on
 whether to adopt the lore-compact names (and the pronoun work that implies), this section will be
 reconciled before the Track A2/A5 name sweeps.
+
+## Register — how the prose sounds
+
+The house voice is a **briefing, not a scene.** It reports what happened, who did it, and what it
+means for the party, in plain declarative sentences. Most of the inherited game is already in this
+register; the drift came from port-era additions written in a more literary voice. This section
+exists so there is a rule to check against.
+
+The reference is the owner's rewrite of `events/collectivist_memo.scene.dry`. The same paragraph,
+before and after:
+
+> **Drift:** *It is not a leak so much as a document that stopped being kept carefully. Someone in
+> the Collectivist apparatus let a circular reach a friendly printer, and from there it reached us:
+> an internal statement of the line, set out at more length than the party press would ever print.*
+>
+> **House style:** *With the call for fresh elections, someone in the Collectivist apparatus let a
+> circular reach some of our friends in our Left.*
+
+Seven rules, each of which that pair demonstrates:
+
+1. **Report. Don't narrate.** State the event and its consequence. No literary present tense, no
+   "it begins with a banker, then a shipping family."
+2. **Anchor to the game, not to atmosphere.** "With the call for fresh elections" ties the event to
+   something the player just saw. "A friendly printer" ties it to nothing. Prefer the concrete
+   cause, the named faction, the named person.
+3. **Kill the rhetorical constructions:** "not X so much as Y" / "not X but Y" openers; paragraphs
+   opening "It is" + abstract noun; tricolons; the closing aphorism; and the **spaced em-dash used
+   as a rhetorical pivot** (`depends, in no small part, on us — for a Commonwealth that...`).
+   Measured: the inherited game does use em-dashes, about 5 per thousand words, but tight-set and
+   for plain parentheticals (`credit for the achievement—much to the detriment of`). The drift is
+   the spaced pivot: 28 of the 30 spaced em-dashes on this branch are port-era. Prefer commas and
+   full stops; a tight parenthetical em-dash is acceptable where the original author would use one.
+4. **Name the mechanism.** Say *the Conciliators*, *Halsmark*, *electoral abstentionism*, not
+   "a wing of that party, not small and not new." Using the game's names teaches the system.
+5. **Say what the effect is.** A response's prose should make clear what moved and why. Plain prose
+   can carry the mechanic; literary prose hides it.
+6. **Choice titles are imperatives; outcome titles are plain statements.** *Ban the demonstrations.*
+   *Take action to stabilize the economy!* Not *"Then we go to Cainholde together."* or
+   *"It is hard to forget the past."*
+7. **Length is fine; texture is not.** The register is about sentence shape, not word count. Do not
+   compress a four-option event into two lines to hit the style.
+
+`tools/prose_check.mjs metrics <files>` reports em-dash density and the named constructions per
+file; `tools/prose_check.mjs structure <files>` confirms a rewrite changed no logic line.

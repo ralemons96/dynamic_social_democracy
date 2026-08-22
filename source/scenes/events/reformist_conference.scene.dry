@@ -9,15 +9,15 @@ tags: event
 
 = The Third Reformist Conference
 
-The invitations go out in the spring: the Third Reformist Conference, to convene at Cainholde, in the <span style="color: #750e0e;">**Central Union**</span>. Every four years the Reformist parties of the continent meet to argue out what the movement is for — wages and hours and the franchise, the tariff question, what a party of labor owes a state it does not control. That the <span style="color: #750e0e;">Central Union</span> is willing to host the thing at all is the first interesting fact about it, and the delegations have noticed.
+The invitations have gone out. The Third Reformist Conference will convene at Cainholde in the <span style="color: #750e0e;">**Central Union**</span>. Every four years the Reformist parties of the continent meet to argue out what the movement is for: wages and hours and the franchise, the tariff question, and what a party of labour owes a state it does not control. That the <span style="color: #750e0e;">Central Union</span> is willing to host it at all is the first notable fact about it, and the delegations have noticed.
 
-Our own attendance was never in question. The question, as it was at the Second Conference, is whether the <span style="color: #700000;">**Collectivists**</span> will come.
+Our own attendance was never in question. The question, as at the Second Conference, is whether the <span style="color: #700000;">**Collectivists**</span> will come.
 
-They came to the First. By the Second they had already begun the long walk toward the position they hold now — that reformism is not an ally to be argued with but a fraud to be exposed, and that the Marchers are the more dangerous half of the fraud precisely because workers still believe us. Since then the delegations have not shared a room.
+They attended the First. By the Second they had already begun moving toward their present position: that reformism is not an ally to be argued with but a fraud to be exposed, and that the Marchers are the more dangerous half of the fraud because workers still believe us. Since then the two delegations have not shared a room.
 
-But the crash has changed the arithmetic for everyone. Across the continent, parties that spent the twenties certain of their own analysis are discovering how little of it survived contact with mass unemployment. There is a hope — thin, but real — that the <span style="color: #700000;">**Collectivists**</span> might use Cainholde to climb down.
+But the crash has changed the arithmetic for everyone. Across the continent, parties that spent the twenties certain of their own analysis are discovering how little of it survived contact with mass unemployment. There is a hope, thin but real, that the <span style="color: #700000;">**Collectivists**</span> might use Cainholde to climb down.
 
-[? if collectivist_leader == "Conciliators": Under the Conciliators, they do not need to be asked. The delegation is named within the week, and it is a serious one — not the usual pair of observers sent to file a denunciation, but the men who actually run the party's unions. ?][? if collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): Halsmark has not said no. That in itself is news. The party press has run nothing on Cainholde in either direction for three weeks, which among the <span style="color: #700000;">**Collectivists**</span> is how an argument sounds from the outside. Someone could push. ?][? if collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): The reply comes back within days, and it is not a refusal so much as a lecture. The <span style="color: #700000;">**Collectivists**</span> will not attend. To sit at Cainholde would be to concede that the reformist movement is a wing of the workers' cause rather than a betrayal of it, and they decline to concede anything of the kind — least of all to us. ?]
+[? if collectivist_leader == "Conciliators": Under the Conciliators, they do not need to be asked. The delegation is named within the week, and it is a serious one: not the usual pair of observers sent to file a denunciation, but the men who actually run the party's unions. ?][? if collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): Halsmark has not said no. That alone is news. The party press has run nothing on Cainholde in either direction for three weeks, which among the <span style="color: #700000;">**Collectivists**</span> is how an argument sounds from the outside. Someone could push. ?][? if collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4): The reply comes within days, and it is a lecture rather than a refusal. The <span style="color: #700000;">**Collectivists**</span> will not attend. To sit at Cainholde would be to concede that the reformist movement is a wing of the workers' cause rather than a betrayal of it, and they decline to concede anything of the kind, least of all to us. ?]
 
 - @conciliators_attend
 - @pay
@@ -26,15 +26,15 @@ But the crash has changed the arithmetic for everyone. Across the continent, par
 - @blind
 
 @conciliators_attend
-title: Then we go to Cainholde together.
+title: Attend Cainholde alongside the Collectivists.
 view-if: collectivist_leader == "Conciliators"
 on-arrival: left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2; soviet_relation += 1; east_relation += 1
 
-For the first time since the First Conference, the two delegations travel as delegations rather than as rivals with the same destination. The resolutions that come out of Cainholde are not remarkable — they rarely are — but the photograph is: our people and theirs on the same platform, and no one storming out of it.
+For the first time since the First Conference, the two delegations travel together rather than as rivals with the same destination. The resolutions that come out of Cainholde are unremarkable, as they usually are, but the photograph is not: our people and theirs on the same platform, and no one walking out.
 
-The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line — the social-fascism language, the leaflets naming our ministers as the workers' real enemy — and in the factory districts and the labor exchanges that language had been doing more damage than either party admitted. Our own <span style="color: #c00000;">Left</span> is vindicated and says so; the argument it has been losing for six years is suddenly the argument that was right.
+The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line, the social-fascism language and the leaflets naming our ministers as the workers' real enemy. In the factory districts and the labour exchanges that language had been doing more damage than either party admitted, and our support among the Commons and the unemployed recovers. Our own <span style="color: #c00000;">Left</span> is vindicated and says so. Its strength grows, and its dissent and the centrists' dissent both fall. Relations with the Collectivists improve considerably.
 
-Abroad, the reaction is warmer still. The <span style="color: #750e0e;">**Central Union**</span> has spent two years insisting that its parties abroad were not isolating themselves, and Cainholde lets it prove the point on its own soil. The <span style="color: #D70926;">Nievalian</span> Reformists, who had watched the northern kingdoms' own collectivists follow the hard line into irrelevance, are frankly relieved.
+Abroad, the reaction is warmer still. The <span style="color: #750e0e;">**Central Union**</span> has spent two years insisting that its parties abroad were not isolating themselves, and Cainholde lets it prove the point on its own soil. The <span style="color: #D70926;">Nievalian</span> Reformists, who watched the northern kingdoms' own collectivists follow the hard line into irrelevance, are frankly relieved. Relations with both improve.
 
 @pay
 title: Send an approach through the unions.
@@ -44,37 +44,37 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources (1 needed).
 on-arrival: resources -= 1; left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2
 
-We do not approach the party. We approach the men in the industrial federations who have to share a shop floor with our members whatever the party press says, and we let them make the case upward — that a delegation costs nothing, that refusing looks like fear, that the unemployed do not care who was right in 1924.
+We do not approach the party. We approach the men in the industrial federations who share a shop floor with our members whatever the party press says, and we let them make the case upward. A delegation costs nothing, refusing looks like fear, and the unemployed do not care who was right at the split.
 
 It works, barely. The delegation that goes to Cainholde is small and its instructions are stiff, but it goes, and it does not walk out.
 
-The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line — the social-fascism language, the leaflets naming our ministers as the workers' real enemy — and in the factory districts and the labor exchanges that language had been doing more damage than either party admitted. Our own <span style="color: #c00000;">Left</span> is vindicated and says so; the argument it has been losing for six years is suddenly the argument that was right.
+The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line, the social-fascism language and the leaflets naming our ministers as the workers' real enemy. In the factory districts and the labour exchanges that language had been doing more damage than either party admitted, and our support among the Commons and the unemployed recovers. Our own <span style="color: #c00000;">Left</span> is vindicated and says so. Its strength grows, and its dissent and the centrists' dissent both fall. Relations with the Collectivists improve.
 
 @leftists
 title: Let our own Left carry the message.
-subtitle: They have the standing with the <span style="color: #700000;">Collectivists</span> that the rest of us do not - if they are strong enough to spend it.
+subtitle: They have standing with the <span style="color: #700000;">Collectivists</span> that the rest of us lack, if they are strong enough to use it.
 view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 choose-if: left_strength >= center_strength and left_strength >= labor_strength and left_strength >= reformist_strength and left_strength >= knight_strength
 unavailable-subtitle: Our <span style="color: #c00000;">Left</span> would have to be the strongest faction in the party for Halsmark to take the approach seriously.
 on-arrival: left_strength += 3; left_dissent -= 4 if left_dissent >= 4; center_dissent -= 3 if center_dissent >= 3; collectivist_relation += 8*(1-dissent); commons_marcher += 2; disfavored_marcher += 2
 
-Our Left goes to them, and goes as what it is: the largest faction of the largest workers' party on the continent, which is a thing Halsmark's people cannot dismiss as easily as they dismiss us. The argument they make is not that the Collectivists should trust the Marchers. It is that a party which will not sit in a room with eleven million voters' representatives has decided to be a sect, and that the men making that decision should say so plainly.
+Our Left goes to them as what it is: the largest faction of the largest workers' party on the continent, which Halsmark's people cannot dismiss as easily as they dismiss us. They do not argue that the Collectivists should trust the Marchers. They argue that a party which will not sit in a room with eleven million voters' representatives has chosen to be a sect, and that the men making that choice should say so plainly.
 
 The delegation goes to Cainholde. It is not friendly, and it does not walk out.
 
-The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line — the social-fascism language, the leaflets naming our ministers as the workers' real enemy — and in the factory districts and the labor exchanges that language had been doing more damage than either party admitted. Our own <span style="color: #c00000;">Left</span> is vindicated and says so; the argument it has been losing for six years is suddenly the argument that was right.
+The effect at home is felt within the month. The <span style="color: #700000;">**Collectivists**</span> quietly retire the sharper end of their anti-Marcher line, the social-fascism language and the leaflets naming our ministers as the workers' real enemy. In the factory districts and the labour exchanges that language had been doing more damage than either party admitted, and our support among the Commons and the unemployed recovers. Our own <span style="color: #c00000;">Left</span> is vindicated and says so. Its strength grows, and its dissent and the centrists' dissent both fall. Relations with the Collectivists improve.
 
 @nothing
-title: Cainholde is not worth spending anything on.
+title: Spend nothing on Cainholde.
 subtitle: Let them decide for themselves.
 view-if: collectivist_leader != "Conciliators" and (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 
-We let the question answer itself, and it answers the way these questions have answered since the Second Conference. Two observers are sent, without instructions to speak. They file a report describing the proceedings as a rehearsal for the next betrayal, and it is printed in full.
+We let the question answer itself, and it answers as it has since the Second Conference. Two observers are sent, without instructions to speak. They file a report describing the proceedings as a rehearsal for the next betrayal, and it is printed in full.
 
 @blind
 title: The <span style="color: #700000;">Collectivists</span> remain blind to the real world.
 view-if: collectivist_leader != "Conciliators" and not (collectivist_relation >= 40 or chancellor_party == "I" or chancellor_party == "Royalist" or chancellor_party == "Traditionalist" or chancellor_party == "CSG" or crisis_urgency >= 4)
 
-There is nothing to answer. A party that has decided the crisis proves it was right about everything will read Cainholde as one more proof, and there is no argument available to us that does not confirm the thesis simply by being ours.
+There is nothing to answer. A party that has decided the crisis proves it was right about everything will read Cainholde as one more proof, and no argument of ours could do other than confirm the thesis by being ours.
 
 We go without them, as we did last time.

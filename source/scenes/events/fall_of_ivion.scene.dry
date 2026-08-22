@@ -9,25 +9,25 @@ priority: 1
 
 = The Fall of Ivion
 
-While the Commonwealth turned inward upon its ruin, the Empress's forces moved. The garrison on the Isle of Ivion — that long-contested rock off the northern frontier — has been overrun, its banner struck and the eagle of New Axton raised in its place. The Empire calls it a restoration of order on its own marches. Everyone understands what it truly is: a test, and a promise.
+While the Commonwealth was absorbed in its own crisis, the Empress's forces moved. The garrison on the Isle of Ivion, the long-contested rock off the northern frontier, has been overrun. Its banner was struck and the eagle of New Axton raised in its place. The Empire calls this a restoration of order on its own marches. Everyone else understands it as a test of the Commonwealth's resolve.
 
-The shock runs through the Commonwealth like cold water. In the barracks the General Staff is divided, and not every officer's heart beats for the republic. The Empire's coin flows quietly to the Royalists, who no longer trouble to hide their joy. And among the Faithful, who had only feared the God of Magic's cult from afar, the fear has become something nearer and colder. The Empire is awake again.
+The shock is felt across the Commonwealth. The General Staff is divided, and not every officer is loyal to the republic; army loyalty has fallen. Imperial money is reaching the Royalists, whose funds and confidence both rise. Among the Faithful, who had feared the God of Magic's cult only from a distance, the fear has become immediate. Their support for us falls, and the Royalists and Traditionalists gain.
 
-- @rally: Rally the Banners — the streets must not be left undefended.
-- @calm: Call for calm — we must not let the Empire stampede us into panic.
+- @rally: Rally the Banners.
+- @calm: Call for calm.
 - @dufour: Appeal to President DuFour to stand firm for the Commonwealth.
 
 @rally
 on-arrival: banner_strength += 50; banner_militancy += 0.05
 
-We call up the Banners and the Iron Banner. If the Empire means to test the Commonwealth's nerve, let it not find the streets of Axton undefended.
+We call up the Banners and the Iron Banner. If the Empire intends to test the Commonwealth's nerve, it will not find the streets of Axton undefended. Banner strength and militancy rise.
 
 @calm
 on-arrival: imperial_fear -= 2; pro_republic += 1
 
-We urge calm and unity across the realms, and refuse to let one distant island stampede the Commonwealth into the arms of those who would welcome the Empress home.
+We urge calm and unity across the realms. One distant island must not be allowed to drive the Commonwealth into the arms of those who would welcome the Empress back. Fear of the Empire eases, and support for the republic rises slightly.
 
 @dufour
 on-arrival: royalist_urgency += 1
 
-We press President DuFour to stand firm for the republic he heads. He hears us — but his gaze, of late, seems to drift ever northward, toward the order he knew in his youth.
+We press President DuFour to stand firm for the republic he leads. He listens. But his attention of late has drifted northward, toward the order he knew in his youth, and the Royalists grow bolder.

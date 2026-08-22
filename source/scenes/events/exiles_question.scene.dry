@@ -9,27 +9,27 @@ tags: event
 
 = The Exiles' Question
 
-It begins with a banker, then a shipping family, then a retired general who had been careful for twelve years — one after another, men of standing stop being coy about the Empire. They attend the legation's receptions under their own names. They subscribe, publicly, to funds for the relief of the marches. One of them tells a newspaper that he sees no contradiction between loving the Commonwealth and believing it belongs somewhere.
+Several men of standing have stopped hiding their sympathy for the Empire: a banker, a shipping family, and a retired general who had been careful for twelve years. They attend the legation's receptions under their own names. They subscribe publicly to funds for the relief of the marches. One of them told a newspaper that he sees no contradiction between loving the Commonwealth and believing it belongs to the Empire.
 
-The <span style="color: #3E88B3;">**Traditionalists**</span> are losing people over it, and losing them in a direction their leadership did not expect. Their monarchism was always a domestic proposition: crown, land, faith, and a firm hand at home. The <span style="color: #7A3C00;">**Royalists**</span> offer something simpler and, to a certain kind of man, far more attractive — an actual living Empress, an actual functioning empire, and an end to the argument.
+The <span style="color: #3E88B3;">**Traditionalists**</span> are losing people over it, and in a direction their leadership did not expect. Their monarchism was always domestic: crown, land, faith, and a firm hand at home. The <span style="color: #7A3C00;">**Royalists**</span> offer something simpler and, to a certain kind of man, more attractive: a living Empress, a functioning empire, and an end to the argument. Traditionalist support among the burghers, the land, and the guilds is shifting to the Royalists.
 
-The uncomfortable conclusion of the Interior's own report is that we have been counting Restorationists wrong for years. We counted the ones who march. We did not count the ones who merely wait, and there are considerably more of the second kind.
+The Interior's own report concludes that the number of Restorationists has been underestimated for years. The ones who march were counted. The ones who merely wait were not, and there are considerably more of them.
 
 - @troubling
 - @forget_past
 
 @troubling
-title: Troubling news, to be sure.
-subtitle: Treat it as what it is - a security problem.
+title: Treat it as a security problem.
+subtitle: Note the names and watch the funds.
 on-arrival: empire_posture -= 4 if empire_posture >= 4
 
-We treat the report as a warning rather than a curiosity. The names are noted, the funds are watched, and the legation is left in no doubt that its receptions are counted. It is the correct response to a foreign power cultivating a domestic clientele, and the legation understands it precisely that way.
+We treat the report as a warning. The names are noted, the funds are watched, and the legation is left in no doubt that attendance at its receptions is recorded. This is the correct response to a foreign power cultivating a domestic following, and the legation understands it that way. The Empire's posture cools.
 
 @forget_past
-title: It is hard to forget the past.
+title: Decline to make enemies of them.
 subtitle: These men are not traitors. They are old, and the Empire is what they remember.
 on-arrival: empire_posture += 4 if empire_posture <= 96
 
-We decline to make enemies of them. Most were grown men when the Commonwealth was declared; they buried sons in Imperial uniforms and were told afterward that the country those sons died for had been a mistake. That is not treason. It is grief with a return address.
+We decline to make enemies of them. Most were grown men when the Commonwealth was declared. They buried sons in Imperial uniforms and were told afterward that the country those sons died for had been a mistake. That is not treason; it is grief.
 
-We say so publicly, and the legation notes — accurately — that the Commonwealth's largest party has just described affection for the Empire as something other than a crime.
+We say so publicly. The legation notes, accurately, that the Commonwealth's largest party has just described affection for the Empire as something other than a crime, and the Empire's posture warms.

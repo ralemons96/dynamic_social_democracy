@@ -36,13 +36,13 @@ if (Q.marcher_in_government) {
 
 = The Blockade
 
-The <span style="color: #7A3C00;">Empire-in-Exile</span>'s Northern Fleet is no longer the coastal force it was two years ago. It has doubled, it has been out on exercises all spring, and it has begun stopping merchantmen in the straits — politely, with full paperwork, and entirely on its own authority.
+The <span style="color: #7A3C00;">Empire-in-Exile</span>'s Northern Fleet is no longer the coastal force it was two years ago. It has doubled in size, it has spent the spring on exercises, and it has begun stopping merchant ships in the straits, politely, with full paperwork, and on its own authority.
 
-<span style="color: #D3C24D;">**Ethia**</span> will not concede the sea lanes and has sent its own squadrons north. Neither fleet has fired. Both are now inspecting the same waters, and Commonwealth hulls carrying Commonwealth grain are being boarded by both in turn, sometimes on the same voyage.
+<span style="color: #D3C24D;">**Ethia**</span> will not concede the sea lanes and has sent its own squadrons north. Neither fleet has fired. Both are now inspecting the same waters, and Commonwealth ships carrying Commonwealth grain are being boarded by both in turn, sometimes on the same voyage.
 
-[? if marcher_in_government: The losses land on our desk. Cargoes are impounded, insurance rates on the northern run have tripled overnight, and the Treasury is short by the end of the week. President DuFour would like to know what the government intends to do about it. ?][? if not marcher_in_government and blockade_state_acted: In office, [+ chancellor +] does not hesitate: the Galleon Fleet is ordered north to escort our shipping through, and it is strong enough that both parties to the quarrel decide to be elsewhere. The convoys get through, the Treasury holds, and the credit is entirely his. ?][? if not marcher_in_government and blockade_state_complained: In office, [+ chancellor +] does what a man with no fleet worth the name can do - he lodges a complaint, and lodges it again, and the impounded cargoes stay impounded. The Treasury is short by the end of the week. ?][? if not marcher_in_government and not blockade_responsive: In office, [+ chancellor +] treats the whole affair as beneath comment. No protest is lodged, no escort is ordered, and the shipping interest is told to make its own arrangements. The losses are absorbed by the country, as such losses always are. ?]
+[? if marcher_in_government: The losses fall on the government. Cargoes are impounded, insurance rates on the northern run have tripled, and the Treasury is short by the end of the week. President DuFour wants to know what the government intends to do. ?][? if not marcher_in_government and blockade_state_acted: [+ chancellor +] does not hesitate. The Galleon Fleet is ordered north to escort our shipping through, and it is strong enough that both parties to the quarrel decide to be elsewhere. The convoys get through, the Treasury holds, and the credit is entirely his. ?][? if not marcher_in_government and blockade_state_complained: [+ chancellor +] does what a man without a fleet worth the name can do. He lodges a complaint, and lodges it again, and the impounded cargoes stay impounded. The Treasury is short by the end of the week. ?][? if not marcher_in_government and not blockade_responsive: [+ chancellor +] treats the affair as beneath comment. No protest is lodged, no escort is ordered, and the shipping interest is told to make its own arrangements. The country absorbs the losses. ?]
 
-Whoever is at fault, the <span style="color: #7A3C00;">**Royalists**</span> have the better of the argument in every tavern on the coast: an empire that can seize our grain is an empire we should not have left.
+Whoever is at fault, the <span style="color: #7A3C00;">**Royalists**</span> are winning the argument in every tavern on the coast. Their line is simple: an empire that can seize our grain is an empire we should not have left. Their support rises and the Loyalists gain recruits.
 
 - @runners
 - @complaints
@@ -54,27 +54,27 @@ Whoever is at fault, the <span style="color: #7A3C00;">**Royalists**</span> have
 
 @runners
 title: Send for blockade runners.
-subtitle: Escort the convoys ourselves. The Fleet either means something or it does not.
+subtitle: Escort the convoys with the Galleon Fleet.
 view-if: marcher_in_government
 choose-if: military_readiness >= 200
 unavailable-subtitle: Our forces are nowhere near strong enough to contest the straits.
 on-arrival: budget += 1; dufour_angry -= 5; commons_royalist -= 2; burgher_royalist -= 2; faithful_royalist -= 2; loyalist_strength -= 25
 
-We order the Galleon Fleet north with instructions to escort our shipping through and to treat any interference as what it is. Neither the Imperials nor the Ethians care to find out whether we mean it, and the boardings stop within the fortnight.
+We order the Galleon Fleet north with instructions to escort our shipping through and to treat any interference as hostile. Neither the Imperials nor the Ethians care to test whether we mean it, and the boardings stop within the fortnight.
 
-The cargoes come in, the insurance rates fall back, and the Treasury is whole. The argument in the coastal taverns changes too: it is difficult to sell the case that the Commonwealth cannot protect its own ships while its own ships are visibly being protected.
+The cargoes come in, the insurance rates fall, and the Treasury is whole. The argument in the coastal taverns changes as well. It is hard to sell the claim that the Commonwealth cannot protect its own ships while its own ships are visibly being protected. Royalist support falls and DuFour is satisfied.
 
 @complaints
 title: Lodge formal complaints.
-subtitle: Requires the chancellery or the Foreign Ministry. Make our allies carry the weight.
+subtitle: Requires the chancellery or the Foreign Ministry. Bring our allies into the dispute.
 view-if: marcher_in_government
 choose-if: foreign_minister_party == "Marcher" or chancellor_party == "Marcher"
 unavailable-subtitle: We must hold the chancellery or the Foreign Ministry to act on the Commonwealth's behalf.
 on-arrival: west_relation += 1; east_relation += 1; nationalism -= 1
 
-We take the case to every capital that will hear it: notes to <span style="color: #D3C24D;">**Ethia**</span>, notes to the <span style="color: #708090;">**Allied States**</span>, a formal protest at the Assembly of Realms, and a great deal of quiet work reminding both that a fleet which stops our grain today stops theirs next year.
+We take the case to every capital that will hear it: notes to <span style="color: #D3C24D;">**Ethia**</span>, notes to the <span style="color: #708090;">**Allied States**</span>, a formal protest at the Assembly of Realms, and a good deal of quiet work reminding both that a fleet which stops our grain this year will stop theirs next year.
 
-It recovers nothing that was taken. It does establish the Commonwealth, for the first time since the Fall, as a party to the northern question rather than an object of it — and the West and the North both note who came to them, and how reasonably.
+This recovers nothing that was taken. It does establish the Commonwealth, for the first time since the Fall, as a party to the northern question rather than an object of it. Relations with both the West and the North improve.
 
 @land_trade
 title: Pivot towards land-based trade.
@@ -84,28 +84,28 @@ choose-if: (chancellor_party == "Marcher" or finance_minister_party == "Marcher"
 unavailable-subtitle: [? if chancellor_party != "Marcher" and finance_minister_party != "Marcher" and foreign_minister_party != "Marcher": We hold none of the ministries that could arrange it. ?][? if west_relation < 2 and east_relation < 2: No neighbour trusts us enough to open its roads to our freight. ?]
 on-arrival: budget += 1; economic_growth += 0.1
 
-If the straits are closed, we will not use the straits. Freight is redirected overland through friendly territory — slower, dearer per ton, and entirely beyond the reach of anybody's navy. The arrangement takes three weeks to negotiate and pays for itself before the quarter is out.
+If the straits are closed, we will not use the straits. Freight is redirected overland through friendly territory. It is slower and dearer per ton, and entirely beyond the reach of anyone's navy. The arrangement takes three weeks to negotiate and pays for itself before the quarter is out. The Treasury recovers and growth improves slightly.
 
 @negotiate
-title: Could we negotiate with the Empire-in-Exile?
+title: Negotiate directly with the Empire-in-Exile.
 subtitle: Requires the chancellery or the Foreign Ministry. Deal directly with the fleet that is stopping us.
 view-if: marcher_in_government
 choose-if: (foreign_minister_party == "Marcher" or chancellor_party == "Marcher") and empire_posture >= 40
 unavailable-subtitle: [? if foreign_minister_party != "Marcher" and chancellor_party != "Marcher": We must hold the chancellery or the Foreign Ministry to open talks. ?][? if empire_posture < 40: The Imperial court is in no humour to receive us. ?]
 on-arrival: budget += 1; empire_posture += 8 if empire_posture <= 92; gold_relation += 5; lvp_relation += 5; dufour_angry -= 5; left_dissent += 10; collectivist_relation -= 8; collectivist_coalition_dissent += 1; coalition_dissent += 1 if in_popular_front or in_left_front
 
-We go to them directly, and they are perfectly reasonable about it: a schedule of exemptions for Commonwealth bottoms, signed within the month, on the understanding that our ships are not carrying Ethian cargo under another flag. The impounded grain is released. The Treasury is whole.
+We go to them directly, and they are entirely reasonable about it. A schedule of exemptions for Commonwealth ships is signed within the month, on the understanding that our ships are not carrying Ethian cargo under another flag. The impounded grain is released and the Treasury is whole.
 
-The <span style="color: #C0A054;">**Golds**</span> are delighted — this is precisely the kind of unsentimental commercial diplomacy they have been asking for — and even the <span style="color: #7A3C00;">**Royalists**</span> manage a word of praise for a government that finally spoke to Axton like an adult, though it does nothing to slow their recruiting.
+The <span style="color: #C0A054;">**Golds**</span> are delighted. This is exactly the unsentimental commercial diplomacy they have been asking for, and relations with them improve. Even the <span style="color: #7A3C00;">**Royalists**</span> manage a word of praise for a government that finally spoke to Axton as an equal, though it does nothing to slow their recruiting. The Empire's posture warms considerably and DuFour is pleased.
 
-Our own left is beside itself. We have signed a maritime agreement with the power that took Ivion, on its terms, and the <span style="color: #700000;">**Collectivists**</span> are already printing the word *accommodation* in the largest type they own.
+Our own Left is furious. We have signed a maritime agreement with the power that took Ivion, on its terms. Left dissent rises sharply, and the <span style="color: #700000;">**Collectivists**</span> are already printing the word accommodation in the largest type they own. Relations with them fall.
 
 @outrageous
-title: Outrageous!
-subtitle: Say so loudly, and do nothing else.
+title: Condemn the interference, and do nothing else.
+subtitle: Issue a statement. Take no action.
 view-if: marcher_in_government
 
-The government issues a statement condemning the interference with neutral shipping in the strongest terms available to it, and there the matter rests. The boardings continue.
+The government issues a statement condemning the interference with neutral shipping in the strongest available terms, and there the matter rests. The boardings continue.
 
 @push_chancellor
 title: Push the Chancellor towards a stronger line.
@@ -115,13 +115,13 @@ choose-if: (chancellor_party == "Unionist" and unionist_relation >= 55) or ((cha
 unavailable-subtitle: [+ chancellor +] does not owe us the hearing, and will not take one.
 on-arrival: west_relation += 1; east_relation += 1; nationalism -= 1
 
-We are not in the government, but we are on good enough terms with the men who are. Our people put the case to [+ chancellor +] privately: that a complaint delivered alone is noise, and a complaint delivered alongside <span style="color: #D3C24D;">**Ethia**</span> and the <span style="color: #708090;">**Allied States**</span> is a position.
+We are not in the government, but we are on good terms with the men who are. Our people put the case to [+ chancellor +] privately: a complaint delivered alone is noise, and a complaint delivered alongside <span style="color: #D3C24D;">**Ethia**</span> and the <span style="color: #708090;">**Allied States**</span> is a position.
 
-He takes the advice, and takes the credit, which is the usual arrangement. The Commonwealth ends the month with friends it did not have at the start of it.
+He takes the advice and takes the credit, which is the usual arrangement. The Commonwealth ends the month with allies it did not have at the start of it. Relations with the West and the North improve.
 
 @empire_closer
-title: The Empire draws closer.
-subtitle: There is nothing we can do from here.
+title: Speak from opposition. There is nothing more we can do.
+subtitle: The government is not ours, and neither is the fleet.
 view-if: not marcher_in_government
 
-We say what an opposition can say, which is a great deal, to no effect whatsoever. The fleet is where it is. The government is what it is. The grain sits in an Imperial harbour under a very courteous receipt, and every week it stays there is a week the argument moves further from us.
+We say what an opposition can say, at length and to no effect. The fleet stays where it is. The government stays what it is. The grain sits in an Imperial harbour under a courteous receipt, and every week it stays there the argument moves further from us.

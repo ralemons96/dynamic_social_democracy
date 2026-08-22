@@ -9,7 +9,7 @@ max-visits: 1
 
 = Dreadwood Moratorium
 
-In light of the [? if not emergency_decree_seen: current economic situation?][? if emergency_decree_seen: Askew's appeal for relief?], and the Commonwealth banking crisis, the duke Dreadwood — one of the most powerful men in Ethia, and a voice for stability — has pressed the Ethian government to call a temporary halt on collecting the War Loans, the Commonwealth's among them. This does not cancel the debt, but it is meant to ease the economic pain. Our budget situation should improve somewhat.
+In light of the [? if not emergency_decree_seen: current economic situation?][? if emergency_decree_seen: Askew's appeal for relief?], and the Commonwealth banking crisis, the duke Dreadwood, one of the most powerful men in Ethia and a voice for stability, has pressed the Ethian government to call a temporary halt on collecting the War Loans, the Commonwealth's among them. This does not cancel the debt, but it is meant to ease the economic pain. Our budget situation should improve somewhat.
 
 [? if marcher_in_government and foreign_minister_party == "Marcher": Even though this is not our accomplishment, our foreign ministry is eager to take credit for it. ?][? if not marcher_in_government and foreign_minister_party != "Marcher": Even though this is not the work of the foreign ministry, it is eager to take credit for it. ?]
 

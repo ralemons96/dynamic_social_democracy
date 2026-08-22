@@ -26,7 +26,7 @@ As we have control over the Interior Ministry, we can direct police and intellig
 @ban_sa
 view-if: loyalist_banned == 0
 choose-if: royalist_urgency >= 3
-unavailable-subtitle: The <span style="color: #7A3C00;">**Loyalists**</span> have not yet given the public cause enough — a ban now would read as naked partisanship, and would never survive the courts.
+unavailable-subtitle: The <span style="color: #7A3C00;">**Loyalists**</span> have not yet given the public cause enough. A ban now would read as naked partisanship, and would never survive the courts.
 on-arrival: loyalist_strength *= 0.85; loyalist_strength *= 0.7 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 1 if interior_police_loyalty >= 0.7; loyalist_banned_pro = 0 if interior_police_loyalty < 0.7; loyalist_banned = 1; gold_relation -= 3; heartland_police_loyalty -= 0.05; interior_police_loyalty -= 0.05; loyalist_militancy -= 0.05; loyalist_ban_timer = 6; loyalist_coup_progress = coup_progress; coup_progress -= 2 if coup_progress >= 6; interior_goal_heartland -= 1; gold_left += 1; lvp_left += 1
 
 As it turns out, the <span style="color: #7A3C00;">Royalist</span> <span style="color: #7A3C00;">**Loyalists**</span> has many allies in the police and bureaucracy. Our relationship with the police weakens, and the <span style="color: #7A3C00;">**Loyalists**</span> can still organize illegally, right under the police's noses. [? if loyalist_banned_pro : Nevertheless, the <span style="color: #7A3C00;">**Loyalists**</span> is substantially weakened by our ban. ?]

@@ -9,40 +9,40 @@ tags: event
 
 = Intrigues in the Imperial Court
 
-Word reaches the capital of an address given at the winter court of <span style="color: #7A3C00;">**Axton**</span>. Empress Jacqueline Scilos, three years crowned and no longer treated by her ministers as a child in her father's chair, has told the assembled houses what she intends her reign to be for: the reunification and pacification of the continent, pursued through every avenue available to her — diplomatic, dynastic, commercial, or military.
+Reports have arrived from the winter court at <span style="color: #7A3C00;">**Axton**</span>. Empress Jacqueline Scilos, crowned three years ago and no longer treated by her ministers as a child in her father's chair, has addressed the assembled houses on the aims of her reign. She stated them as the reunification and pacification of the continent, to be pursued by every means available to her: diplomatic, dynastic, commercial, or military.
 
-She named no realm. She did not have to. The Commonwealth was the Empire's second province within living memory, and the court has never once used the past tense about it.
+She did not name the Commonwealth. She did not need to. The Commonwealth was the Empire's second province within living memory, and the court has never accepted its loss.
 
-The dispatches disagree about how seriously to take her. Some read a young sovereign staking out a position before a court that doubts her. Others note that she said *military* out loud, to an audience that includes the men who would have to do it, and that nobody in the hall seemed surprised.
+Our diplomats are divided on how seriously to take the speech. Some see a young sovereign asserting herself before a court that still doubts her. Others point out that she used the word military in front of the officers who would have to carry it out, and that none of them objected.
 
-Whatever she meant by it, we are asked for our position.
+The government and the press are asking for our position.
 
 - @republican
 - @concerning
 - @imperial_origins
 
 @republican
-title: The Marchers remain a fundamentally republican party.
-subtitle: Say plainly that the Commonwealth's independence is not a matter for negotiation.
+title: Reaffirm the party's republicanism.
+subtitle: State that the Commonwealth's independence is not a matter for negotiation.
 on-arrival: empire_posture -= 4 if empire_posture >= 4; center_dissent -= 3; left_dissent -= 3
 
-We answer without hedging: the Commonwealth was made by its own people and will not be unmade by a foreign court, whatever the lady in Axton tells her houses. It is the oldest position our party holds and the one our membership never has to be persuaded of — the centrists and the left close ranks behind it gladly.
+We answer plainly. The Commonwealth was founded by its own people and will not be handed to a foreign court, whatever the Empress tells her houses. This is the oldest position in the party and the one our membership needs no persuading on. The centrists and the Left both rally to it, and dissent in both factions falls.
 
-The Imperial legation registers the statement. Nothing further is said, and something in the correspondence cools by a degree.
+The Imperial legation notes the statement. Relations with the northern court cool slightly.
 
 @concerning
-title: This is a concerning development.
-subtitle: Note it, and commit to nothing.
+title: Call the address concerning, and commit to nothing.
+subtitle: Note it, and take no position.
 
-We call the address concerning, urge the government to watch the situation closely, and decline to say anything that could be quoted back at us later. It is the safest thing we could have published and it commits us to precisely nothing.
+We describe the address as a concerning development, urge the government to monitor the situation closely, and say nothing that could be quoted against us later. This is the safest response available, and it commits us to nothing.
 
 @imperial_origins
-title: The Marchers began in the Empire...
-subtitle: Acknowledge the shared history. Our own left will not thank us for it.
+title: Acknowledge the party's Imperial origins.
+subtitle: Admit the shared history. Our own Left will not thank us for it.
 on-arrival: empire_posture += 8 if empire_posture <= 92; center_dissent += 8; left_dissent += 8
 
-We say the thing that is true and unwelcome: the Marchers were founded in the Empire, by Imperial workers, in Imperial cities, decades before there was a Commonwealth to be loyal to. Our oldest lodges still keep their charters from Axton. If the Empress speaks of a continent that ought not to be at war with itself, she is not speaking a language foreign to us.
+We say the uncomfortable truth. The <span style="color: #c00000;">**Marchers**</span> were founded in the Empire, by Imperial workers in Imperial cities, decades before the Commonwealth existed. Our oldest lodges still hold charters issued in Axton. If the Empress speaks of a continent that should not be at war with itself, the idea is not foreign to us.
 
-The Imperial court receives this warmly — a reformist party in the lost province that does not treat the word *reunion* as an obscenity is worth cultivating.
+The Imperial court welcomes the statement. A reformist party in the former province that does not reject reunion outright is worth cultivating, and the Empire's posture toward us warms considerably.
 
-Our own party receives it rather differently. The centrists think it reckless and the left thinks it something worse; both spend the following weeks saying so at length, and in print.
+Our own party does not welcome it. The centrists call it reckless and the Left calls it worse, and dissent in both factions rises sharply.

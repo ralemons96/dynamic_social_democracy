@@ -108,7 +108,7 @@ on-arrival: wtb_enactment_2_finish = time + 10; works_program += 1; budget -= 3;
 
 @wtb_2_deficit
 title: Continue the implementation of the Voss Renewal Plan.
-subtitle: -3 budget - we will enter a deficit.
+subtitle: -3 budget. We will enter a deficit.
 unavailable-subtitle: Unemployment is low enough that we should not do deficit spending.
 view-if: wtb_implemented > 2 and budget < 3 and budget >= -3
 choose-if: disfavored > 10
@@ -143,7 +143,7 @@ We have started to enact the Voss Renewal Plan. Money is beginning to flow throu
 
 @implement_wtb_deficit
 title: Implement the Voss Renewal Plan.
-subtitle: -[+ wtb_budget +] budget - we will enter deficit spending. [? if wtb_budget == 3 : Our pro-labor policies have reduced the cost of the plan. ?]
+subtitle: -[+ wtb_budget +] budget. We will enter deficit spending. [? if wtb_budget == 3 : Our pro-labor policies have reduced the cost of the plan. ?]
 unavailable-subtitle: [? if disfavored < 8: Unemployment is low enough that the time for the Voss Renewal Plan has passed.?] [? if in_grand_coalition and (finance_minister_party == "Gold" or economic_minister_party == "Gold") and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will obstruct us using their position in the [? if finance_minister_party == "Gold": Finance Ministry?][? if economic_minister_party == "Gold" and finance_minister_party == "Gold":&nbsp;and?][? if economic_minister_party == "Gold": Economic Ministry?]. ?][? if (in_grand_coalition or in_weimar_coalition) and (finance_minister_party == "LVP" or economic_minister_party == "LVP") and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will obstruct us using their position in the [? if finance_minister_party == "LVP": Finance Ministry?][? if economic_minister_party == "LVP" and finance_minister_party == "LVP":&nbsp;and?][? if economic_minister_party == "LVP": Economic Ministry?]. ?] [? if in_grand_coalition and gold_ideology != "Left" and not lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will call a preemptive vote of no confidence. ?][? if (in_grand_coalition or in_weimar_coalition) and lvp_ideology != "Left" and lvp_formed: The <span style="color: #C0A054;">**Golds**</span> will call a preemptive vote of no confidence. ?]
 view-if: budget < wtb_budget and wtb_implemented == 0 and wtb_adopted == 1
 choose-if: disfavored > 8 and (((economic_minister_party != "Gold" and finance_minister_party != "Gold" and (gold_ideology == "Left" and in_grand_coalition) or not in_grand_coalition) and not lvp_formed) or ((economic_minister_party != "LVP" and finance_minister_party != "LVP" and (lvp_ideology == "Left" and (in_grand_coalition or in_weimar_coalition)) or (not in_grand_coalition and not in_weimar_coalition)) and lvp_formed))

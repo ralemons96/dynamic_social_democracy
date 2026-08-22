@@ -104,6 +104,6 @@ We are making progress towards a religious settlement in Heartland, reconciling 
 view-if: (heartland_concordat_progress >= 2 and not unionist_leader = "Renck") or (heartland_concordat_progress >= 1 and unionist_leader = "Renck") and heartland_concordat = 0
 on-arrival: heartland_concordat = 1; unionist_relation += 8; faithful_marcher += 3*(1-dissent); faithful_traditionalist -= 2 if traditionalist_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed an Accord guaranteeing religious freedom across the Free State of Heartland — reconciling the church of the God of Magic with the rest of the Conclave, and securing for the Faithful the right to worship as they choose. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
+We have signed an Accord guaranteeing religious freedom across the Free State of Heartland. It reconciles the church of the God of Magic with the rest of the Conclave and secures for the Faithful the right to worship as they choose. This sets the stage for the negotiation of a national Accord covering all of the Commonwealth.
 
 [? if traditionalist_ideology == "Radical": The Faithful members of the <span style="color: #3E88B3;">**Traditionalists**</span> in Heartland are in open conflict with their leadership over the vote, with many leaving the party. ?]
