@@ -4816,11 +4816,31 @@ if (Q.gnu_formed) {
 
 Q.industrial_total_backing = Q.industrial_ddp_backing + Q.industrial_gold_backing + Q.industrial_lvp_backing + Q.industrial_traditionalist_backing + Q.industrial_kvp_backing + Q.industrial_dnf_backing + Q.industrial_unionist_backing + Q.industrial_gnu_backing;
 
-if (Q.industrial_total_backing < 6 && Q.royalist_votes >= 17) {
-    Q.royalist_industrial_backing = 1;
-} else {
-    Q.royalist_industrial_backing = 0;
+// Royalist industrial backing. Renamed from royalist_industrial_backing to match the
+// industrial_<party>_backing convention every other party uses - and, more to the point,
+// to match what the Industrial Backing panel actually reads. The panel had been showing
+// industrial_royalist_backing, which was set to 0 in root and never touched again, so it
+// read "none" forever no matter what this block computed.
+//
+// The model: major finance stays with the respectable right and is genuinely afraid of the
+// Empire-in-Exile's dirigisme, so it only moves once the propertied parties' own backing has
+// collapsed. But money that has moved does not scuttle back the next quarter, so the ladder
+// ratchets rather than being recomputed from scratch each turn - which is why "medium" was
+// unreachable before: it needed a collapsed propertied bloc AND >= 30% AND 1932 all in the
+// same month, and by the time the Royalists polled 30 the propertied backing had recovered.
+var _royalistBackingWas = Q.industrial_royalist_backing || 0;
+// Two routes in. Either the propertied bloc's own backing collapses and there is nowhere
+// else for the money to go, or the Royalists become the undisputed centre of gravity on the
+// right - polling 30 and double the Traditionalists - which is the point at which the
+// backers who want order stop pretending the respectable right will deliver it. The first
+// route alone almost never fired: it needed the whole bloc under 6 and the Royalists over 17
+// in the same month, which coincided in 16% of runs and never once got past "low".
+if ((Q.industrial_total_backing < 6 && Q.royalist_votes >= 17)
+    || (Q.royalist_votes >= 30 && Q.royalist_votes > Q.traditionalist_votes * 2)) {
+    if (_royalistBackingWas < 1) Q.industrial_royalist_backing = 1;
 }
+// Only an electoral collapse drives them back out.
+if (Q.royalist_votes < 12) Q.industrial_royalist_backing = 0;
 
 if (Q.industrial_total_backing) {
     if (Q.ddp_votes_calculations + 0.2 < Q.ddp_votes_post_event) {
@@ -4858,14 +4878,30 @@ if (Q.industrial_total_backing) {
         Q.guild_gnu += Q.industrial_gnu_backing/Q.industrial_total_backing;
         Q.landed_gnu += Q.industrial_gnu_backing/Q.industrial_total_backing;
     }
+    // The Royalists had no payout block at all, so their backing bought nothing even when it
+    // was funded. Same shape as the others - money props up the propertied end of the vote
+    // when the party is slipping. Weighted to the guilds and the land rather than the salaried
+    // burghers, who are the least willing of the three to pay for the Empire's kind of order.
+    if (Q.royalist_votes_calculations + 0.2 < Q.royalist_votes_post_event) {
+        Q.burgher_royalist += Q.industrial_royalist_backing/Q.industrial_total_backing/3;
+        Q.guild_royalist += Q.industrial_royalist_backing/Q.industrial_total_backing/1.5;
+        Q.landed_royalist += Q.industrial_royalist_backing/Q.industrial_total_backing/1.5;
+    }
 }
 
-if (Q.royalist_industrial_backing == 1) {
-    if (Q.royalist_votes >= 30 && Q.year >= 1932 || Q.gallax_deported) {
-        Q.royalist_industrial_backing = 2;
-    } else {
-        Q.royalist_industrial_backing = 1;
+// "Medium" is the ceiling - the display has no band above it, deliberately. The class of
+// backers who want the Empire's stability and the collaboration contracts that come with it
+// will go this far and no further; the rest stay frightened of the appropriations.
+if ((Q.industrial_royalist_backing || 0) >= 1) {
+    if ((Q.royalist_votes >= 30 && Q.year >= 1932) || Q.gallax_deported) {
+        Q.industrial_royalist_backing = 2;
     }
+}
+// A rise in backing arrives as money, once, on the step. royalist_funds is a small integer
+// scale (insolvency < 0, flourishing 4+) that other events move by 1-3, so this is a one-off
+// bump per level rather than a per-turn drip, which would run away over forty turns.
+if ((Q.industrial_royalist_backing || 0) > _royalistBackingWas) {
+    Q.royalist_funds += (Q.industrial_royalist_backing - _royalistBackingWas);
 }
 
 Q.ddp_votes_post_event = Q.ddp_votes; 
