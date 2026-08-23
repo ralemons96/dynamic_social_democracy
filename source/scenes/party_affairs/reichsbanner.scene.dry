@@ -28,7 +28,7 @@ The *the Banners* <span style="color: #1F3A93;"><b><i>Blue</i></b></span>-and-<s
 choose-if: resources >= banner_militarization_cost
 unavailable-subtitle: Not enough resources ([+ banner_militarization_cost +] needed).
 subtitle: -[+ banner_militarization_cost +] resources
-on-arrival: resources -= banner_militarization_cost; banner_investment += 1; banner_strength += 100; banner_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; marcher_militancy += 0.05; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent); unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
+on-arrival: resources -= banner_militarization_cost; banner_investment += 1; banner_strength += 100; banner_militancy += 0.05; left_strength += 2; left_dissent -= 2; reformist_dissent += 5; marcher_militancy += 0.05; commons_marcher += 2*(1-dissent); disfavored_marcher += 2*(1-dissent); unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5 and not veran_crash_seen
 
 Some in our party decry the increasing militarization of the Banners. They say it is emulating the <span style="color: #3E88B3;">right-wing nationalists</span> or the <span style="color: #700000;">collectivists</span>, and risks alienating our allies in the centrist parties. On the other hand, more left-leaning radicals are being lured to our organizations, away from the <span style="color: #700000;">collectivists</span>.
 

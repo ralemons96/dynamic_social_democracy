@@ -36,7 +36,7 @@ The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">
 subtitle: -[+ banner_militarization_cost +] resources
 choose-if: resources >= banner_militarization_cost
 view-if: not banner_explode
-on-arrival: resources -= banner_militarization_cost; banner_strength += 50; banner_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5
+on-arrival: resources -= banner_militarization_cost; banner_strength += 50; banner_militancy += 0.05; unionist_relation -= 3 if strife < 5; ddp_relation -= 3 if strife < 5; lvp_relation -= 3 if strife < 5 and not veran_crash_seen
 
 The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Banner**</span> rallies for the militant defense of the republic against the <span style="color: #7A3C00;">Sovereigntists</span> paramilitaries, strengthening the Banners.
 

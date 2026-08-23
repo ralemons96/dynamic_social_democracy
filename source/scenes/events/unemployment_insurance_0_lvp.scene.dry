@@ -2,7 +2,7 @@ title: The Poorman's Pension Crisis
 subtitle: The <span style="color: #C0A054;">**Golds**</span> presents an ultimatum.
 new-page: true
 view-if: marcher_in_government = 1 and (year = 1929 and month >= 10) and (in_grand_coalition or in_weimar_coalition) and lvp_formed and not ui0_seen and not constructive_vonc
-on-arrival: budget -= 1 if budget >= 1; lvp_relation -= 3; ui1_seen = 1
+on-arrival: budget -= 1 if budget >= 1; ui1_seen = 1
 tags: event
 priority: 2
 max-visits: 1
@@ -19,7 +19,7 @@ With the Serannus Plan not providing the necessary fiscal relief as many have ho
 - @compromise: Surely there is some compromise to be had?
 
 @destroy
-on-arrival: marcher_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; chancellor = "Askew"; chancellor_party = "Unionist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; marcher_toleration = 0; marcher_toleration_right = 0; left_strength += 8; pro_republic -= 5; burgher_marcher -= 3; landed_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3; reformist_dissent += 5; lvp_right += 3; grand_coalition_collapsed = 1; economic_growth -= 0.3
+on-arrival: marcher_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; chancellor = "Askew"; chancellor_party = "Unionist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; marcher_toleration = 0; marcher_toleration_right = 0; left_strength += 8; pro_republic -= 5; burgher_marcher -= 3; landed_marcher -= 3; guild_marcher -= 3; faithful_marcher -= 3; reformist_dissent += 5; lvp_right += 3; grand_coalition_collapsed = 1; economic_growth -= 0.3; lvp_relation -= 3
 
 Fine. If the Burghers wish to blow up the government, let them do so. <span style="color: #c00000;">Reformists</span> will not be complicit in the destruction of the working class.
 

@@ -15,14 +15,14 @@ Navy leaders are asking for the construction of a new war-galleon, as promised b
 - @vote_no: Do not build the war-galleon.
 
 @vote_yes
-on-arrival: left_dissent += 10; labor_dissent += 10; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; commons_marcher -= 4 if panzerkreuzer_campaign; disfavored_marcher -= 2 if panzerkreuzer_campaign; army_loyalty += 0.1; panzerkreuzer_funded = 1; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 0.5; goal_marcher_cancel += 1; dufour_angry -= 5
+on-arrival: left_dissent += 10; labor_dissent += 10; center_dissent += 5; reformist_dissent += 5; knight_dissent += 5; commons_marcher -= 4 if panzerkreuzer_campaign; disfavored_marcher -= 2 if panzerkreuzer_campaign; army_loyalty += 0.1; panzerkreuzer_funded = 1; gold_left += 1; ddp_right += 1; ddp_cohesion -= 1; lvp_left += 0.5; goal_marcher_cancel += 1; dufour_angry -= 5; lvp_relation += 2
 
 We have pleased the military by supporting the construction of the war-galleon. However, our grassroots party members are shocked by our intransigence! Many party branches have begun agitating against the Assembly delegation. 
 
 [? if panzerkreuzer_campaign: Our working-class base feels betrayed—we had promised to block the ship’s construction and fund children’s meals instead. ?]
 
 @vote_no
-on-arrival: coalition_dissent += 1; army_loyalty -= 0.05; left_dissent -= 10; labor_dissent -= 10; center_dissent -= 5; reformist_dissent -= 5; knight_dissent -= 5; nationalism -= 6; pacifism += 2; unionist_relation -= 5; gold_relation -= 5; lvp_relation -= 3; collectivist_relation += 5; commons_marcher += 5*(1-dissent); ddp_left += 1; panzerkreuzer_failed = 1; gold_right += 1; ddp_left += 2; ddp_cohesion += 1; lvp_right += 1; army_goal_marcher += 1; dufour_angry += 10; coup_progress += 1
+on-arrival: coalition_dissent += 1; army_loyalty -= 0.05; left_dissent -= 10; labor_dissent -= 10; center_dissent -= 5; reformist_dissent -= 5; knight_dissent -= 5; nationalism -= 6; pacifism += 2; unionist_relation -= 5; gold_relation -= 5; lvp_relation -= 2; collectivist_relation += 5; commons_marcher += 5*(1-dissent); ddp_left += 1; panzerkreuzer_failed = 1; gold_right += 1; ddp_left += 2; ddp_cohesion += 1; lvp_right += 1; army_goal_marcher += 1; dufour_angry += 10; coup_progress += 1
 
 Military leaders are upset at the Ministry's decision to not construct the war-galleon, and they have taken the complaints to our coalition partners and President DuFour. However, there is not much they can do to force the construction, as we have control over the Commonwealth Army ministry.
 
