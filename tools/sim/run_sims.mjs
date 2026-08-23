@@ -13,6 +13,11 @@ const PROFILE = args.profile || 'random';
 const CAP = parseInt(args.cap || '4000', 10);
 const here = dirname(fileURLToPath(import.meta.url));
 const TRACE = args.trace !== undefined ? parseInt(args.trace, 10) : -1;
+// controlled experiments: --avoid <choiceId> makes the bot never take that choice;
+// --bounce <sceneId> makes the bot always take the '.back' choice when in that scene
+// (presence-without-use). Both leave the rest of the bot untouched.
+const AVOID = args.avoid || '';
+const BOUNCE = args.bounce || '';
 const OUT = args.out || join(here, 'out', `${PROFILE}-s${SEED}-r${RUNS}.jsonl`);
 
 const METRICS = ['year', 'month', 'time', 'pro_republic', 'stability', 'military_readiness',
@@ -36,7 +41,7 @@ const STRAT_RULES = [
   [-4, /stand alone/i],
   [-5, /mod info|credits/i],
   [9, /begin (dynamic mode)/i],
-  [8, /tolerate|toleration/i],
+  [8, /\btolerate\b|\btoleration\b/i],
   [8, /action is needed|craft a formal plan|voss renewal|renewal plan|widespread support for the voss|force the party to accept the plan/i],
   [7, /support the labor view|support the reformist view/i],
   [7, /an active economic policy|without deficit spending/i],
@@ -47,7 +52,7 @@ const STRAT_RULES = [
   [5, /campaign|canvass/i],
   [4, /compromise|mediate|concession/i],
   [3, /iron banner/i],
-  [2, /rally/i],
+  [2, /\brally\b/i],
   [1, /party affairs|government affairs/i],
 ];
 function stratScore(c) {
@@ -119,7 +124,17 @@ for (let run = 0; run < RUNS; run++) {
       if (/^(election_1928|prussia_election_1928)$/.test(topNow) && rec._lastTop !== topNow) rec.elections = (rec.elections || 0) + 1;
       rec._lastTop = topNow;
       const loopy = seen.get(sid) > 5; // break deterministic menu loops
-      const idx = pickChoice(choices, rnd, PROFILE, loopy);
+      let idx;
+      if (BOUNCE && sid === BOUNCE && choices.some(c => String(c.id).endsWith('.back') && c.canChoose)) {
+        idx = choices.findIndex(c => String(c.id).endsWith('.back') && c.canChoose);
+      } else {
+        const cand = AVOID ? choices.map(c => String(c.id) === AVOID ? { ...c, canChoose: false } : c) : choices;
+        idx = pickChoice(cand, rnd, PROFILE, loopy);
+      }
+      // debugging aid: SIM_DEBUG_STEP=<n> prints run 0's candidate set and pick at that step
+      if (process.env.SIM_DEBUG_STEP && run === 0 && step === parseInt(process.env.SIM_DEBUG_STEP, 10)) {
+        process.stderr.write('[debug step ' + step + ' ' + sid + ' loopy=' + loopy + '] ' + choices.map((c, i) => i + ':' + String(c.id) + (c.canChoose ? '' : '(locked)') + '=' + stratScore(c)).join('  ') + '  -> idx ' + idx + '\n');
+      }
       if (run === TRACE) {
         rec._ring = rec._ring || []; rec._lastT = rec._lastT === undefined ? -1 : rec._lastT; rec._lastTs = rec._lastTs || 0;
         if ((q.time || 0) !== rec._lastT) { rec._lastT = q.time || 0; rec._lastTs = step; }
