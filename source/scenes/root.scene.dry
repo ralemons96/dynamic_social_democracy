@@ -743,6 +743,11 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'bourgeois_negotiations_1930', 'bourgeois_negotiations_1930_aftermath', 'schleichers_schemes',
     'bourgeois_negotiations_elections_1930', 'royalist_decay', 'stegerwald_transformation', 'emergency_fundraising', 'red_general', 'weimar_rally', 'royalist_funds',
     'dsu_policy'];
+// Direct the Party (pinned card): 12-month cooldown ticked explicitly in post_event's
+// month-turn block, not via Q.timers / Q.rubicon_timers. Must start defined: undefined <= 0 is false.
+Q.direct_party_timer = 0;
+Q.direct_party_pending = 0;
+
 Q.rubicon_timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
     'fundraising', 'ideology',
     'inter_party_relationships', 'international_relations',

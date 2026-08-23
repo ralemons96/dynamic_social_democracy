@@ -1,0 +1,19 @@
+title: Direct the Party
+subtitle: Take up any party affair not recently dealt with. Once in twelve months.
+is-pinned-card: true
+tags: advisor
+card-image: img/Vorwaerts_nr_1.png
+view-if: direct_party_timer <= 0 and not direct_party_pending
+on-arrival: direct_party_pending = 1; last_cabinet_action = 1
+new-page: true
+
+= Direct the Party
+
+The executive can set the party's business directly, rather than waiting for a matter to come up in the ordinary way. Any party affair may be taken up now, except those the party has dealt with recently. The matter chosen counts as this month's work, and the executive will not be able to do this again for twelve months.
+
+- #party_affairs
+- @back: Return to main.
+
+@back
+on-arrival: direct_party_pending = 0; last_cabinet_action = 0
+go-to: root

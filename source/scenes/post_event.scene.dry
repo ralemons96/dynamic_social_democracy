@@ -142,6 +142,12 @@ if (rightTools) {
 
 Q.last_advisor_action = 0;
 Q.last_cabinet_action = 0;
+// Direct the Party: the pick is consumed once the chosen card has actually been played
+// (backing out of the list, or cancelling the card, clears the flag before we get here).
+if (Q.direct_party_pending) {
+    Q.direct_party_timer = 12;
+    Q.direct_party_pending = 0;
+}
 // make sure no stat is below 0.
 for (var c of Q.classes) {
     for (var party of Q.parties) {
@@ -1047,6 +1053,9 @@ Q.military_readiness = Math.round(_ready);
             }
         }
     }
+    // Direct the Party cools down on the monthly clock in both modes; it is deliberately
+    // not in Q.timers (frozen in the Rubicon) or Q.rubicon_timers (ticks weekly there).
+    if (Q.direct_party_timer > 0) Q.direct_party_timer -= 1;
     if (Q.lvp_existence_timer >= 0 && (Q.lvp_timer_2_trigger || Q.threshold_lvp) && Q.lvp_formed) {
         Q.lvp_existence_timer += 1;
     }
